@@ -21,7 +21,7 @@ export const GeminiButtonEffect: React.FC<GeminiButtonEffectProps> = ({ classNam
     }
   }, [inView, controls]);
 
-  const transition = { duration: 1, ease: "linear", repeat: Infinity, repeatDelay: 3 };
+  const transition = { duration: 2, ease: "linear", repeat: Infinity, repeatDelay: 2 };
   const variants = { hidden: { pathLength: 0 }, loop: { pathLength: 1 } };
 
   return (
