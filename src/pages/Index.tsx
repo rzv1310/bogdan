@@ -208,21 +208,40 @@ const Index = () => {
               </div>
               <div className="h-[15px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
-                {t.heroQuote.split("\n").map((line, i) => {
-                  if (lang === "ro" && line.includes("Îți apăr drepturile")) {
-                    const [before, after] = line.split("Îți apăr drepturile");
-                    return (
-                      <p key={i} className="mb-2 last:mb-0">
-                        {before}
-                        <br className="hidden md:block" />
-                        <span className="inline md:block">{"Îți apăr drepturile" + after}</span>
-                      </p>
-                    );
-                  }
-                  return (
-                    <p key={i} className="mb-2 last:mb-0">{line}</p>
-                  );
-                })}
+                {lang === "ro" ? (
+                  <>
+                    <div className="hidden md:block">
+                      {(() => {
+                        const parts = t.heroQuote.split("\n");
+                        const l1 = parts[0] || "";
+                        const l2 = parts[1] || "";
+                        const splitIdx = l2.indexOf("Îți apăr drepturile");
+                        const before = splitIdx >= 0 ? l2.slice(0, splitIdx).trim() : l2.trim();
+                        const third = splitIdx >= 0 ? l2.slice(splitIdx).trim() : "";
+                        return (
+                          <div className="space-y-2">
+                            <p className="mb-0">{l1}</p>
+                            <p className="mb-0">{before}</p>
+                            {third && <p className="mb-0">{third}</p>}
+                          </div>
+                        );
+                      })()}
+                    </div>
+                    <div className="md:hidden">
+                      {t.heroQuote.split("\n").map((line, i) => (
+                        <p key={i} className="mb-2 last:mb-0">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  t.heroQuote.split("\n").map((line, i) => (
+                    <p key={i} className="mb-2 last:mb-0">
+                      {line}
+                    </p>
+                  ))
+                )}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
               <div className="mt-5 md:hidden text-center">
