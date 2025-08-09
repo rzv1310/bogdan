@@ -192,7 +192,7 @@ const Index = () => {
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
-          <div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+          <div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight mb-6">
                 {t.heroTitle}
