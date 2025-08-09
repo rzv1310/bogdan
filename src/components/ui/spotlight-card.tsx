@@ -11,7 +11,9 @@ interface GlowCardProps {
   flatOrange?: boolean; // Solid orange border (no gradient)
   borderPx?: number; // Border thickness in px (default 3, use 1 for services)
   blackBg?: boolean; // Force solid black background for the card
-  hoverOnly?: boolean; // Show glow animation only on hover
+  hoverOnly?: boolean; // Show glow animation only on hover (not used for services)
+  borderRunner?: boolean; // Animate a small orange segment around the border continuously
+  noShadow?: boolean; // Disable outer shadow entirely
 }
 
 const glowColorMap = {
@@ -40,6 +42,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
   borderPx,
   blackBg = false,
   hoverOnly = false,
+  borderRunner = false,
+  noShadow = false,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -89,7 +93,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
         calc(var(--y, 0) * 1px),
         hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
       )`,
-      backgroundColor: (blackBg ? "hsl(0 0% 0% / 1)" : ("var(--backdrop, transparent)" as any)) as any,
+      backgroundColor: (blackBg ? ("hsl(var(--hero))" as any) : ("var(--backdrop, transparent)" as any)) as any,
       backgroundSize: "calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)))",
       backgroundPosition: "50% 50%",
       backgroundAttachment: "fixed",
@@ -98,10 +102,18 @@ const GlowCard: React.FC<GlowCardProps> = ({
       touchAction: "none",
     };
 
-    // Flat orange variant: solid orange border and glow without gradient
+    // Flat orange variant: solid border color from design token, no exterior glow
     if (flatOrange) {
-      baseStyles["--backup-border"] = "hsl(30 100% 50% / 0.7)";
-      // keep inner overlay active for animation
+      baseStyles["--backup-border"] = "hsl(var(--accent) / 0.9)";
+      baseStyles["--outer"] = "0";
+      baseStyles.backgroundImage = "none";
+    }
+
+    // Border runner animation: disable spotlight, rely on conic runner, no inner overlay
+    if (borderRunner) {
+      baseStyles["--backup-border"] = "hsl(var(--accent) / 0.7)";
+      baseStyles["--outer"] = "0";
+      baseStyles.backgroundImage = "none";
     }
 
     // Add width and height if provided
@@ -133,8 +145,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
       mask-composite: intersect;
     }
 
-    /* Default colorful glow (not used when flatOrange) */
-    [data-glow]:not([data-flat-orange])::before {
+    /* Default colorful glow (disabled for flatOrange or borderRunner) */
+    [data-glow]:not([data-flat-orange]):not([data-border-runner])::before {
       background-image: radial-gradient(
         calc(var(--spotlight-size) * 0.75) calc(var(--spotlight-size) * 0.75) at
         calc(var(--x, 0) * 1px)
@@ -144,7 +156,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       filter: brightness(2);
     }
 
-    [data-glow]:not([data-flat-orange])::after {
+    [data-glow]:not([data-flat-orange]):not([data-border-runner])::after {
       background-image: radial-gradient(
         calc(var(--spotlight-size) * 0.5) calc(var(--spotlight-size) * 0.5) at
         calc(var(--x, 0) * 1px)
@@ -153,41 +165,26 @@ const GlowCard: React.FC<GlowCardProps> = ({
       );
     }
 
-    /* Flat orange variant: solid orange line, no gradient */
+    /* Flat orange variant: solid orange line, no gradient or shadow */
     [data-glow][data-flat-orange]::before,
     [data-glow][data-flat-orange]::after {
       background: none;
     }
+    [data-glow][data-flat-orange] { box-shadow: none; }
 
-    [data-glow][data-flat-orange] {
-      box-shadow:
-        0 0 0 var(--border-size) hsl(30 100% 50% / 0.7),
-        0 0 25px hsl(30 100% 50% / 0.5),
-        0 0 60px hsl(30 100% 50% / 0.35);
+    /* Border runner: a thin orange segment rotates along the border */
+    @keyframes spin-border { to { transform: rotate(360deg); } }
+    [data-glow][data-border-runner]::before {
+      background-image: conic-gradient(
+        from 0deg,
+        transparent 0deg 346deg,
+        hsl(var(--accent)) 346deg 360deg
+      );
+      transform-origin: center;
+      animation: spin-border 4.5s linear infinite;
     }
-
-    /* Inner glow overlay (animated) */
-    [data-glow] [data-glow] {
-      position: absolute;
-      inset: 0;
-      will-change: filter;
-      opacity: var(--outer, 1);
-      border-radius: calc(var(--radius) * 1px);
-      border-width: calc(var(--border-size) * 20);
-      filter: blur(calc(var(--border-size) * 10));
-      background: none;
-      pointer-events: none;
-      border: none;
-    }
-
-    /* Hover-only activation */
-    [data-glow][data-hover-only] [data-glow] {
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    [data-glow][data-hover-only]:hover [data-glow] {
-      opacity: var(--outer, 1);
-    }
+    [data-glow][data-border-runner]::after { background: none; }
+    [data-glow][data-border-runner] [data-glow] { display: none; }
 
     [data-glow] > [data-glow]::before {
       inset: -10px;
@@ -202,7 +199,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
         ref={cardRef}
         data-glow
         {...(flatOrange ? { "data-flat-orange": true } : {})}
-        {...(hoverOnly ? { "data-hover-only": true } : {})}
+        {...(borderRunner ? { "data-border-runner": true } : {})}
         style={getInlineStyles()}
         className={`
           ${getSizeClasses()}
@@ -211,7 +208,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
           relative 
           grid 
           grid-rows-[auto] 
-          shadow-[0_1rem_2rem_-1rem_rgb(0_0_0_/_0.6)] 
+          ${noShadow ? "" : "shadow-[0_1rem_2rem_-1rem_rgb(0_0_0_/_0.6)]"}
           p-6 
           gap-4 
           backdrop-blur-[5px]

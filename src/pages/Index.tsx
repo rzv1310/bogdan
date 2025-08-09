@@ -264,17 +264,19 @@ const Index = () => {
         </section>
 
         {/* Services */}
-        <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {t.services.map((s, i) => (
-              <GlowCard key={i} customSize flatOrange glowColor="orange" borderPx={1} blackBg hoverOnly className="w-full">
-                <article className="text-card-foreground">
-                  <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-                  <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
-                </article>
-              </GlowCard>
-            ))}
+        <section className="w-full bg-hero text-hero-foreground">
+          <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
+            <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {t.services.map((s, i) => (
+                <GlowCard key={i} customSize borderPx={1} blackBg borderRunner noShadow className="w-full">
+                  <article className="text-hero-foreground">
+                    <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
+                    <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
+                  </article>
+                </GlowCard>
+              ))}
+            </div>
           </div>
         </section>
       </main>
