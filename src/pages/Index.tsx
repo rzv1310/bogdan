@@ -14,7 +14,7 @@ const translations = {
     heroTitle: "Avocat Drept Penal București",
     heroQuote: "„În dreptul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
-    valuesTitle: "Valorile mele",
+    valuesTitle: "Valorile mele:",
     values: ["implicare totală.", "respect.", "discreție absolută."],
     reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: ["experiență dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.", "apărare rapidă și eficientă, de la audieri până la instanță.", "consiliere penală personalizată, bazată pe colaborare strânsă și transparență."],
