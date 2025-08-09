@@ -130,7 +130,7 @@ const Index = () => {
               </h1>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
-                <img src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
+                <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
               </div>
               <div className="h-[15px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
@@ -170,7 +170,7 @@ const Index = () => {
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
-              <img src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md" />
+              <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md" />
             </div>
           </div>
         </section>
