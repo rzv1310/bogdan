@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				signature: ['"Great Vibes"', 'cursive'],
+				signature: ['"Sacramento"', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
