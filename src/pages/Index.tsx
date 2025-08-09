@@ -206,6 +206,7 @@ const Index = () => {
                   className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
                 />
               </div>
+              <div className="h-[15px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
                 {t.heroQuote.split("\n").map((line, i) => (
                   <p key={i} className="mb-2 last:mb-0">
@@ -227,7 +228,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="hidden md:block relative md:max-w-[80%] md:ml-auto">
+            <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
               <img
                 src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png"
                 alt="Portret avocat drept penal în costum, studio"
