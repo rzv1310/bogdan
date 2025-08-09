@@ -172,23 +172,26 @@ const GlowCard: React.FC<GlowCardProps> = ({
     }
     [data-glow][data-flat-orange] { box-shadow: none; }
 
-    /* Border runner: a thin orange segment rotates along the border */
-    @keyframes spin-border { to { transform: rotate(360deg); } }
-    [data-glow][data-border-runner]::before {
-      background-image: conic-gradient(
-        from 0deg,
-        transparent 0deg 346deg,
-        hsl(var(--accent)) 346deg 360deg
-      );
-      transform-origin: center;
-      animation: spin-border 4.5s linear infinite;
-    }
+    /* Border runner: moving luminous orange dot along the border */
+    @keyframes dash-move { to { stroke-dashoffset: -1000; } }
+    [data-glow][data-border-runner]::before,
     [data-glow][data-border-runner]::after { background: none; }
     [data-glow][data-border-runner] [data-glow] { display: none; }
-
-    [data-glow] > [data-glow]::before {
-      inset: -10px;
-      border-width: 10px;
+    [data-glow][data-border-runner] .runner-core,
+    [data-glow][data-border-runner] .runner-glow {
+      stroke-dasharray: 10 990;
+      stroke-dashoffset: 0;
+      animation: dash-move 6s linear infinite;
+      stroke-linecap: round;
+    }
+    [data-glow][data-border-runner] .runner-core {
+      stroke: hsl(var(--accent));
+      stroke-width: 2;
+    }
+    [data-glow][data-border-runner] .runner-glow {
+      stroke: hsl(var(--accent) / 0.4);
+      stroke-width: 6;
+      filter: blur(2px);
     }
   `;
 
@@ -217,6 +220,12 @@ const GlowCard: React.FC<GlowCardProps> = ({
       >
         <div ref={innerRef} data-glow></div>
         {children}
+        {borderRunner && (
+          <svg className="pointer-events-none absolute inset-0 overflow-visible" aria-hidden="true">
+            <rect className="runner-glow" x="0.5" y="0.5" width="99%" height="99%" rx="14" pathLength={1000} fill="none" vectorEffect="non-scaling-stroke" />
+            <rect className="runner-core" x="0.5" y="0.5" width="99%" height="99%" rx="14" pathLength={1000} fill="none" vectorEffect="non-scaling-stroke" />
+          </svg>
+        )}
       </div>
     </>
   );

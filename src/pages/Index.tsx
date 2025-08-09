@@ -272,7 +272,7 @@ const Index = () => {
                 <GlowCard key={i} customSize borderPx={1} blackBg borderRunner noShadow className="w-full">
                   <article className="text-hero-foreground">
                     <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
+                    <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
                   </article>
                 </GlowCard>
               ))}
