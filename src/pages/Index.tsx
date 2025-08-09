@@ -4,6 +4,7 @@ import { Phone, CheckCircle } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
+import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 type Lang = "ro" | "en";
 const translations = {
   ro: {
@@ -223,6 +224,22 @@ const beams: any[] = [
 
 const gradientStops = ["#FFFFFF", "#FFFF00", "#FFA500", "#FFD700"];
 
+const reviewsRO: Reviews3DItem[] = [
+  { name: "M. P.", text: "Profesionalism și discreție. M-a ajutat rapid, cu claritate și empatie.", stars: 5 },
+  { name: "A. T.", text: "Explică pe înțeles, răspunde prompt și își respectă promisiunile.", stars: 5 },
+  { name: "D. S.", text: "Strategie foarte bună în instanță. Rezultatul a fost peste așteptări.", stars: 5 },
+  { name: "I. C.", text: "Comunică transparent, mereu pregătit. Recomand cu toată încrederea.", stars: 5 },
+  { name: "R. B.", text: "Calm, documentat, eficient. A obținut o soluție excelentă pentru mine.", stars: 5 },
+];
+
+const reviewsEN: Reviews3DItem[] = [
+  { name: "M. P.", text: "Professional and discreet. Helped quickly with clarity and empathy.", stars: 5 },
+  { name: "A. T.", text: "Explains clearly, responds promptly, and delivers on promises.", stars: 5 },
+  { name: "D. S.", text: "Great courtroom strategy. The result exceeded expectations.", stars: 5 },
+  { name: "I. C.", text: "Transparent communication, always prepared. Highly recommended.", stars: 5 },
+  { name: "R. B.", text: "Calm, well-documented, efficient. Achieved an excellent outcome.", stars: 5 },
+];
+
 const Index = () => {
   const [lang, setLang] = useState<Lang>("ro");
   const t = translations[lang];
@@ -408,6 +425,13 @@ const Index = () => {
               />
             </div>
           </div>
+        </section>
+        {/* Reviews */}
+        <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
+          <h2 className="text-3xl font-semibold mb-6">
+            {lang === "ro" ? "Recenzii clienți" : "Client reviews"}
+          </h2>
+          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
         </section>
       </main>
 
