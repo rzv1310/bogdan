@@ -193,7 +193,7 @@ const Index = () => {
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight mb-6">
                 {t.heroTitle}
               </h1>
@@ -212,18 +212,13 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="relative max-w-[80%] md:max-w-[80%] mx-auto md:ml-auto">
+            <div className="relative max-w-[80%] md:max-w-[80%] mx-auto md:ml-auto order-1 md:order-2">
               <img
                 src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png"
                 alt="Portret avocat drept penal în costum, studio"
                 loading="lazy"
                 className="w-full h-auto rounded-lg shadow-md"
               />
-              <div className="mt-5 block md:hidden text-center">
-                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
-                  <Button variant="premium" size="lg" className="border border-hero-foreground"><Phone /> 0745 506 443</Button>
-                </a>
-              </div>
             </div>
           </div>
         </section>
