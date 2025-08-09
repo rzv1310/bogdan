@@ -81,7 +81,7 @@ export default function CriminalitateEconomica() {
           </p>
           <div className="h-5" aria-hidden="true"></div>
           <div className="flex justify-center animate-fade-in">
-            <GeminiButtonEffect className="overflow-hidden">
+            <GeminiButtonEffect>
               <a href="tel:+40745506443" aria-label="Vreau avocat!">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> Vreau avocat!

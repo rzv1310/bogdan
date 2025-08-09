@@ -28,7 +28,7 @@ export const GeminiButtonEffect: React.FC<GeminiButtonEffectProps> = ({ classNam
     <div ref={ref} className={cn("relative inline-block isolate", className)}>
       {/* SVG aura behind the button - does not affect layout */}
       <motion.svg
-        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[260px] z-0"
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[140px] sm:w-[480px] sm:h-[180px] md:w-[720px] md:h-[260px] z-0"
         viewBox="0 0 720 260"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden
