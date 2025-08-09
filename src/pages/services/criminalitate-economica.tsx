@@ -424,6 +424,64 @@ export default function CriminalitateEconomica() {
             <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuții de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârșirea de către o persoană care se află în subordinea sa și care a acționat în numele acelui operator economic a uneia dintre infracțiunile prevăzute la art. 18^1 – 18^3 sau săvârșirea unei infracțiuni de corupție ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Codul Vamal</h2>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p><strong>Articolul 270</strong></p>
+
+            <p>(1) Introducerea în sau scoaterea din ţară, prin orice mijloace, a bunurilor sau mărfurilor, prin alte locuri decât cele stabilite pentru control vamal, constituie infracţiunea de contrabandă şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi.</p>
+
+            <p>(2) Constituie, de asemenea, infracţiune de contrabandă şi se pedepseşte potrivit alin. (1): a) introducerea în sau scoaterea din ţară prin locurile stabilite pentru controlul vamal, prin sustragere de la controlul vamal, a bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal, dacă valoarea în vamă a bunurilor sau a mărfurilor sustrase este mai mare de 20.000 lei în cazul produselor supuse accizelor şi mai mare de 40.000 lei în cazul celorlalte bunuri sau mărfuri; b) introducerea în sau scoaterea din ţară, de două ori în decursul unui an, prin locurile stabilite pentru controlul vamal, prin sustragere de la controlul vamal, a bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal, dacă valoarea în vamă a bunurilor sau a mărfurilor sustrase este mai mică de 20.000 lei în cazul produselor supuse accizelor şi mai mică de 40.000 lei în cazul celorlalte bunuri sau mărfuri; c) înstrăinarea sub orice formă a mărfurilor aflate în tranzit vamal.</p>
+
+            <p>(3) Sunt asimilate infracţiunii de contrabandă şi se pedepsesc potrivit alin. (1) colectarea, deţinerea, producerea, transportul, preluarea, depozitarea, predarea, desfacerea şi vânzarea bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal cunoscând că acestea provin din contrabandă sau sunt destinate săvârşirii acesteia.</p>
+
+            <p><strong>Articolul 271</strong></p>
+
+            <p>Introducerea în sau scoaterea din ţară, fără drept, de arme, muniţii, materiale explozibile, droguri, precursori, materiale nucleare sau alte substanţe radioactive, substanţe toxice, deşeuri, reziduuri ori materiale chimice periculoase constituie infracţiunea de contrabandă calificată şi se pedepseşte cu închisoare de la 3 la 12 ani şi interzicerea unor drepturi, dacă legea penală nu prevede o pedeapsă mai mare.</p>
+
+            <p><strong>Articolul 272</strong></p>
+
+            <p>Folosirea, la autoritatea vamală, a documentelor vamale de transport sau comerciale care se referă la alte mărfuri sau bunuri ori la alte cantităţi de mărfuri sau bunuri decât cele prezentate în vamă constituie infracţiunea de folosire de acte nereale şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi.</p>
+
+            <p><strong>Articolul 273</strong></p>
+
+            <p>Folosirea, la autoritatea vamală, a documentelor vamale de transport sau comerciale falsificate constituie infracţiunea de folosire de acte falsificate şi se pedepseşte cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi.</p>
+
+            <p><strong>Articolul 274</strong></p>
+
+            <p>Faptele prevăzute la art. 270-273, săvârşite de una sau mai multe persoane înarmate ori de două sau mai multe persoane împreună, se pedepsesc cu închisoare de la 5 la 15 ani şi interzicerea unor drepturi.</p>
+
+            <p><strong>Articolul 275</strong></p>
+
+            <p>Tentativa la infracţiunile prevăzute la art. 270-274 se pedepseşte.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Statistică Infracțiuni Economice</h2>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p>În anul 2019, la nivelul Direcției de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism – DIICOT, din cele 1.626 cauze de soluționat având ca obiect infracțiuni din sfera criminalității economico-financiare, din care 773 cauze nou înregistrate, a fost soluționat un număr de 366 cauze, față de 250 cauze soluționate în 2018, din cele 1.599 cauze de soluționat, din care 625 cauze nou înregistrate în 2018.</p>
+
+            <p>Infracțiuni de evaziune fiscală – din cele 524 cauze de soluționat în 2019, din care 216 cauze nou înregistrate în perioada de referință, a fost soluționat un număr de 102 cauze, față de 53 de cauze în 2018, din 563 cauze de soluționat, din care 187 nou înregistrate în 2018.</p>
+
+            <p>Infracțiuni de spălare a banilor – din cele 434 de cauze de soluționat în 2019, din care 141 nou înregistrate în perioada de referință, a fost soluționat un număr de 100 cauze, față de 99 cauze în 2018, din 459 cauze de soluționat, din care 157 nou înregistrate în 2018.</p>
+
+            <p>Infracțiuni prevăzute de Codul vamal – din cele 669 cauze de soluționat în 2019, din care 307 cauze nou înregistrate, în perioada de referință a fost soluționat un număr de 172 cauze, față de 123 cauze în 2018, din 635 cauze de soluționat, din care 229 nou înregistrate în 2018.</p>
+
+            <p>Alte infracțiuni economice – din cele 433 cauze de soluționat, din care 250 nou înregistrate, în perioada de referință a fost soluționat un număr de 92 cauze, față de 74 cauze în 2018, din cele 401 cauze de soluționat, din care 209 nou înregistrate în 2018.</p>
+
+            <p>În anul 2019, la nivelul poliției române, au fost soluționate/declinate parchetului un număr de 8914 infracțiuni de înșelăciune, 990 infracțiuni de delapidare, 240 infracțiuni de gestiune frauduloasă, 1324 infracțiuni de abuz în serviciu, 202 infracțiuni de neglijență în serviciu, 339 infracțiuni de luare de mită, 308 infracțiuni de dare de mită, 91 infracțiuni de trafic de influență, 1219 infracțiuni de falsificare de monede, 7147 infracțiuni de fals în înscrisuri, 146 infracțiuni prevăzute de legea societăților comerciale, 3143 infracțiuni prevăzute de legea pentru prevenirea și combaterea evaziunii fiscale, 1322 infracțiuni prevăzute de Codul vamal.</p>
+
+            <p>În anul 2019, la nivelul Direcției Naționale Anticorupție – DNA, au fost trimise în judecată un număr de 265 infracțiuni de corupție (69 – luare de mită, 91 – dare de mită, 28 – trafic de influență, 77 – cumpărare de influență), 56 infracțiuni asimilate infracțiunilor de corupție, 2 infracțiuni în legătură directă cu infracțiunile de corupție, 232 infracțiuni împotriva intereselor financiare ale Uniunii Europene. De asemenea, au fost trimise în judecată un număr de 127 de infracțiuni de evaziune fiscală, 24 infracțiuni de spălare a banilor, 2 infracțiuni de conflict de interese, 67 infracțiuni de fals, 3 infracțiuni de delapidare, 3 infracțiuni de obținere ilegală de fonduri. Cuantumul prejudiciului reținut este de circa 156,4 milioane euro, iar valoarea măsurilor asigurătorii dispuse de procurori pentru repararea pagubei produse prin infracțiune este de circa 224 milioane euro. În perioada de referință au fost înregistrate 2794 de cauze noi.</p>
+
+            <p>Sursă: Raport de activitate 2019 – Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism (www.diicot.ro);Statistica principalelor activități desfășurate de Poliția Română în anul 2019 – Inspectoratul General al Poliției Române (www.politiaromana.ro); Raport de activitate 2019 – Direcția Națională Anticorupție (www.pna.ro).</p>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
