@@ -47,6 +47,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
+  const runnerRef = useRef<SVGRectElement>(null);
 
   useEffect(() => {
     const syncPointer = (e: PointerEvent) => {
@@ -62,7 +63,30 @@ const GlowCard: React.FC<GlowCardProps> = ({
 
     document.addEventListener("pointermove", syncPointer);
     return () => document.removeEventListener("pointermove", syncPointer);
-  }, []);
+   }, []);
+
+  useEffect(() => {
+    if (!borderRunner) return;
+    const rect = runnerRef.current;
+    const el = cardRef.current;
+    if (!rect || !el) return;
+
+    const update = () => {
+      try {
+        const len = rect.getTotalLength();
+        el.style.setProperty("--len", String(len));
+        el.style.setProperty("--dash", "24");
+        el.style.setProperty("--speed", "5s");
+      } catch {}
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    if (el) ro.observe(el);
+    return () => {
+      ro.disconnect();
+    };
+  }, [borderRunner]);
 
   const { base, spread } = glowColorMap[glowColor];
 
@@ -173,15 +197,15 @@ const GlowCard: React.FC<GlowCardProps> = ({
     [data-glow][data-flat-orange] { box-shadow: none; }
 
     /* Border runner: moving luminous orange dot along the border */
-    @keyframes dash-move { to { stroke-dashoffset: -1000; } }
+    @keyframes dash-move { to { stroke-dashoffset: calc(-1 * var(--len)); } }
     [data-glow][data-border-runner]::before,
     [data-glow][data-border-runner]::after { background: none; }
     [data-glow][data-border-runner] [data-glow] { display: none; }
     [data-glow][data-border-runner] .runner-core,
     [data-glow][data-border-runner] .runner-glow {
-      stroke-dasharray: 10 990;
+      stroke-dasharray: var(--dash, 12) calc(var(--len) - var(--dash, 12));
       stroke-dashoffset: 0;
-      animation: dash-move 6s linear infinite;
+      animation: dash-move var(--speed, 5s) linear infinite;
       stroke-linecap: round;
     }
     [data-glow][data-border-runner] .runner-core {
@@ -189,7 +213,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       stroke-width: 2;
     }
     [data-glow][data-border-runner] .runner-glow {
-      stroke: hsl(var(--accent) / 0.4);
+      stroke: hsl(var(--accent) / 0.45);
       stroke-width: 6;
       filter: blur(2px);
     }
@@ -221,9 +245,18 @@ const GlowCard: React.FC<GlowCardProps> = ({
         <div ref={innerRef} data-glow></div>
         {children}
         {borderRunner && (
-          <svg className="pointer-events-none absolute inset-0 overflow-visible" aria-hidden="true">
-            <rect className="runner-glow" x="0.5" y="0.5" width="99%" height="99%" rx="14" pathLength={1000} fill="none" vectorEffect="non-scaling-stroke" />
-            <rect className="runner-core" x="0.5" y="0.5" width="99%" height="99%" rx="14" pathLength={1000} fill="none" vectorEffect="non-scaling-stroke" />
+          <svg
+            className="pointer-events-none absolute overflow-visible"
+            aria-hidden="true"
+            style={{
+              top: "var(--border-size)",
+              right: "var(--border-size)",
+              bottom: "var(--border-size)",
+              left: "var(--border-size)",
+            }}
+          >
+            <rect className="runner-glow" x="0" y="0" width="100%" height="100%" rx={14} fill="none" vectorEffect="non-scaling-stroke" />
+            <rect ref={runnerRef} className="runner-core" x="0" y="0" width="100%" height="100%" rx={14} fill="none" vectorEffect="non-scaling-stroke" />
           </svg>
         )}
       </div>
