@@ -47,6 +47,7 @@ export interface PulseBeamsProps {
     middle: string;
     end: string;
   };
+  gradientStops?: string[];
 }
 
 export const PulseBeams: React.FC<PulseBeamsProps> = ({
@@ -59,6 +60,7 @@ export const PulseBeams: React.FC<PulseBeamsProps> = ({
   baseColor = "var(--slate-800)",
   accentColor = "var(--slate-600)",
   gradientColors,
+  gradientStops,
 }) => {
   return (
     <div
@@ -78,6 +80,7 @@ export const PulseBeams: React.FC<PulseBeamsProps> = ({
           baseColor={baseColor}
           accentColor={accentColor}
           gradientColors={gradientColors}
+          gradientStops={gradientStops}
         />
       </div>
     </div>
@@ -91,7 +94,8 @@ const SVGs: React.FC<{
   baseColor: string;
   accentColor: string;
   gradientColors?: { start: string; middle: string; end: string };
-}> = ({ beams, width, height, baseColor, accentColor, gradientColors }) => {
+  gradientStops?: string[];
+}> = ({ beams, width, height, baseColor, accentColor, gradientColors, gradientStops }) => {
   return (
     <svg
       width={width}
@@ -128,7 +132,7 @@ const SVGs: React.FC<{
             animate={beam.gradientConfig.animate as any}
             transition={beam.gradientConfig.transition as any}
           >
-            <GradientColors colors={gradientColors} />
+            <GradientColors colors={gradientColors} stops={gradientStops} />
           </motion.linearGradient>
         ))}
       </defs>
@@ -138,13 +142,27 @@ const SVGs: React.FC<{
 
 const GradientColors: React.FC<{
   colors?: { start: string; middle: string; end: string };
+  stops?: string[];
 }> = ({
   colors = {
     start: "#18CCFC",
     middle: "#6344F5",
     end: "#AE48FF",
   },
+  stops,
 }) => {
+  if (stops && stops.length >= 4) {
+    const [c0, c1, c2, c3] = stops;
+    return (
+      <>
+        <stop offset="0%" stopColor={c0} stopOpacity="0" />
+        <stop offset="15%" stopColor={c0} stopOpacity="1" />
+        <stop offset="40%" stopColor={c1} stopOpacity="1" />
+        <stop offset="70%" stopColor={c2} stopOpacity="1" />
+        <stop offset="100%" stopColor={c3} stopOpacity="0" />
+      </>
+    );
+  }
   return (
     <>
       <stop offset="0%" stopColor={colors.start} stopOpacity="0" />

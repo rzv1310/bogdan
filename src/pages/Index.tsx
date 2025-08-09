@@ -221,11 +221,7 @@ const beams: any[] = [
   },
 ];
 
-const gradientColors = {
-  start: "#18CCFC",
-  middle: "#6344F5",
-  end: "#AE48FF",
-};
+const gradientStops = ["#FFFFFF", "#FFFF00", "#FFA500", "#FFD700"];
 
 const Index = () => {
   const [lang, setLang] = useState<Lang>("ro");
@@ -370,7 +366,7 @@ const Index = () => {
             <div className="mt-8">
               <PulseBeams
                 beams={beams}
-                gradientColors={gradientColors}
+                gradientStops={gradientStops}
                 width={858}
                 height={434}
                 className="relative w-full h-[180px] md:h-[220px]"
