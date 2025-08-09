@@ -335,7 +335,7 @@ const Index = () => {
                         className="flex items-start gap-3 text-foreground animate-in fade-in-50 zoom-in-50 duration-500"
                         style={{ animationDelay: `${i * 120}ms` }}
                       >
-                        <CheckCircle className="mt-0.5 h-5 w-5 text-accent" aria-hidden="true" />
+                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
                         <span>{v}</span>
                       </li>
                     ))}
@@ -350,7 +350,7 @@ const Index = () => {
                         className="flex items-start gap-3 text-foreground animate-in fade-in-50 zoom-in-50 duration-500"
                         style={{ animationDelay: `${i * 120}ms` }}
                       >
-                        <CheckCircle className="mt-0.5 h-5 w-5 text-accent" aria-hidden="true" />
+                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
                         <span>{r}</span>
                       </li>
                     ))}
