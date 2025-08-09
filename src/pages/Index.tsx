@@ -247,6 +247,15 @@ const Index = () => {
                 </Button>
               </a>
             </div>
+            <div className="h-[30px]" aria-hidden="true"></div>
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
+                loading="lazy"
+                className="w-full h-auto max-w-md md:max-w-lg rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </section>
       </main>
