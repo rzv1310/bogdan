@@ -96,7 +96,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
               transition={spring}
             >
               <div className="p-4 md:p-5">
-                <p className="text-sm md:text-base leading-relaxed">{r.text}</p>
+                <p className="text-base md:text-base leading-relaxed">{r.text}</p>
                 <div className="mt-3 flex items-center justify-between">
                   <span className="text-xs md:text-sm font-medium opacity-90">{r.name}</span>
                   <span className="text-base" aria-label={`${r.stars ?? 5} stele`}>
