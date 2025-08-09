@@ -55,7 +55,7 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-3">{t.nav.services}</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-3 py-2 text-base">{t.nav.services}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
                     {services.map((s) => (
