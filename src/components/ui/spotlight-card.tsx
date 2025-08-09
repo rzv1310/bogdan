@@ -74,8 +74,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
     const update = () => {
       try {
         const len = rect.getTotalLength();
-        el.style.setProperty("--len", String(len));
-        el.style.setProperty("--dash", "24");
+        el.style.setProperty("--len", `${len}px`);
+        el.style.setProperty("--dash", "24px");
         el.style.setProperty("--speed", "5s");
       } catch {}
     };
