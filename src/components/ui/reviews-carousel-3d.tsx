@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
-import { motion, useAnimation, useMotionValue, useTransform } from "framer-motion";
+import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export type Review = {
@@ -10,7 +10,7 @@ export type Review = {
   stars?: number; // default 5
 };
 
-const duration = 0.25;
+
 const spring = { type: "spring", stiffness: 140, damping: 20 } as const;
 
 const IS_SERVER = typeof window === "undefined";
@@ -45,15 +45,11 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
   const [active, setActive] = useState(0);
   const n = reviews.length;
 
-  // gentle autoplay
-  useEffect(() => {
-    const id = setInterval(() => setActive((a) => (a + 1) % n), 4500);
-    return () => clearInterval(id);
-  }, [n]);
+  // autoplay removed (stopped automatic movement)
 
   // drag support
   const xDrag = useMotionValue(0);
-  const dragRotate = useTransform(xDrag, (v) => v * -0.05);
+  
   const controls = useAnimation();
 
   const items = useMemo(() => reviews, [reviews]);
@@ -114,7 +110,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
       </motion.div>
 
       {/* simple controls */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2 md:px-6">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2 md:px-6 transform -translate-y-[30px]">
         <button
           type="button"
           aria-label="Anterior"
