@@ -396,7 +396,7 @@ const Index = () => {
 
         {/* Reviews */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16" aria-label="Recenzii clienți">
-          <h2 className="text-3xl font-semibold mb-2">Recenzii</h2>
+          <h2 className="text-3xl italic mb-2">Cuvintele celor pe care i-am reprezentat sunt cea mai mare satisfacție profesională a mea !</h2>
           <ReviewsCarousel3D
             reviews={[
               { name: "Stefan G.", text: "Am avut un accident rutier și nu știam cum să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!", stars: 5 },
