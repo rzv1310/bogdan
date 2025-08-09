@@ -32,6 +32,10 @@ export default function About() {
     telephone: "+40 745 506 443",
     nationality: "Romanian",
     birthDate: "1983-07-19",
+    memberOf: [
+      { "@type": "Organization", name: "Bucharest Bar" },
+      { "@type": "Organization", name: "Romanian Lawyers Union" }
+    ],
     url: typeof window !== "undefined" ? window.location.href : undefined,
   } as const;
 
@@ -100,6 +104,14 @@ export default function About() {
               <li>Legal500 – Next Generation Partner – 2022 Edition (White-Collar Crime)</li>
               <li>Legal500 – Next Generation Partner – 2023 Edition (White-Collar Crime)</li>
               <li>Legal500 – Next Generation Partner – 2024 Edition (White-Collar Crime)</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="memberships" className="grid gap-4">
+            <h3 id="memberships" className="text-xl font-medium">Memberships</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Member of Bucharest Bar</li>
+              <li>Member of Romanian Lawyers Union</li>
             </ul>
           </section>
 
