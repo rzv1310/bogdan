@@ -388,6 +388,40 @@ export default function CriminalitateEconomica() {
 
             <p>*) Articolul 1</p>
             <p>(1) Prezenta lege instituie măsuri de prevenire, descoperire și sancționare a faptelor de corupție și se aplică următoarelor persoane: a) care exercită o funcție publică, indiferent de modul în care au fost investite, în cadrul autorităților publice sau instituțiilor publice; b) care îndeplinesc, permanent sau temporar, potrivit legii, o funcție sau o însărcinare, în măsura în care participă la luarea deciziilor sau le pot influența, în cadrul serviciilor publice, regiilor autonome, societăților comerciale, companiilor naționale, societăților naționale, unităților cooperatiste sau al altor agenți economici; c) care exercită atribuții de control, potrivit legii;       d) care acordă asistență specializată unităților prevăzute la lit. a) și b), în măsura în care participă la luarea deciziilor sau le pot influența; e) care, indiferent de calitatea lor, realizează, controlează sau acordă asistență specializată, în măsura în care participă la luarea deciziilor sau le pot influența, cu privire la: operațiuni care antrenează circulația de capital, operațiuni de bancă, de schimb valutar sau de credit, operațiuni de plasament, în burse, în asigurări, în plasament mutual ori privitor la conturile bancare și cele asimilate acestora, tranzacții comerciale interne și internaționale; f) care dețin o functie de conducere într-un partid sau într-o formațiune politică, într-un sindicat, într-o organizație patronală ori într-o asociație fără scop lucrativ sau fundație; g) alte persoane fizice decât cele prevăzute la lit. a)-f), în condițiile prevăzute de lege.</p>
+
+            <h3 className="text-lg font-semibold">Infracțiuni împotriva intereselor financiare ale Uniunii Europene</h3>
+
+            <p><strong>Articolul 18^1</strong></p>
+
+            <p>(1) Folosirea sau prezentarea cu rea-credință de documente ori declarații false, inexacte sau incomplete, dacă fapta are ca rezultat obținerea pe nedrept de fonduri din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.</p>
+
+            <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancționează omisiunea de a furniza, cu știință, datele cerute potrivit legii pentru obținerea de fonduri din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, dacă fapta are ca rezultat obținerea pe nedrept a acestor fonduri.</p>
+
+            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+
+            <p><strong>Articolul 18^2</strong></p>
+
+            <p>(1) Schimbarea, fără respectarea prevederilor legale, a destinației fondurilor obținute din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei se pedepsește cu închisoare de la un an la 5 ani și interzicerea unor drepturi.</p>
+
+            <p>(2) Schimbarea, fără respectarea prevederilor legale, a destinației unui folos legal obținut, dacă fapta are ca rezultat diminuarea ilegală a resurselor din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, se sancționează cu pedeapsa prevăzută la alin. (1).</p>
+
+            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+
+            <p><strong>Articolul 18^3</strong></p>
+
+            <p>(1) Folosirea sau prezentarea cu rea-credință de documente ori declarații false, inexacte sau incomplete, care are ca rezultat diminuarea ilegală a resurselor ce trebuie virate către bugetul general al Uniunii Europene sau către bugetele administrate de aceasta ori în numele ei, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.</p>
+
+            <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancționează omisiunea de a furniza, cu știință, datele cerute potrivit legii, dacă fapta are ca rezultat diminuarea ilegală a resurselor ce trebuie virate către bugetul general al Uniunii Europene sau către bugetele administrate de aceasta ori în numele ei.</p>
+
+            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+
+            <p><strong>Articolul 18^4</strong></p>
+
+            <p>Tentativa infracțiunilor prevăzute la art. 18^1-18^3 se pedepseste.</p>
+
+            <p><strong>Articolul 18^5</strong></p>
+
+            <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuții de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârșirea de către o persoană care se află în subordinea sa și care a acționat în numele acelui operator economic a uneia dintre infracțiunile prevăzute la art. 18^1 – 18^3 sau săvârșirea unei infracțiuni de corupție ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
           </CardContent>
         </Card>
       </div>
