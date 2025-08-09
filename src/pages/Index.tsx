@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { GlowCard } from "@/components/ui/spotlight-card";
 
 type Lang = "ro" | "en";
 
@@ -267,13 +268,12 @@ const Index = () => {
           <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {t.services.map((s, i) => (
-              <article
-                key={i}
-                className="rounded-lg border bg-card text-card-foreground p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
-                <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
-              </article>
+              <GlowCard key={i} customSize flatOrange glowColor="orange" className="w-full">
+                <article className="text-card-foreground">
+                  <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
+                  <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
+                </article>
+              </GlowCard>
             ))}
           </div>
         </section>
