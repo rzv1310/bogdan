@@ -262,9 +262,9 @@ const Index = () => {
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
               <GeminiButtonEffect>
-                <a href="tel:+40745506443" aria-label="Vreau avocat">
+                <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                    <Phone /> Vreau avocat!
+                    <Phone /> {t.ctaLawyerButton}
                   </Button>
                 </a>
               </GeminiButtonEffect>
@@ -345,7 +345,7 @@ const Index = () => {
       </main>
 
       <footer className="border-t py-6 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} {t.brand}. Toate drepturile rezervate.
+        © {new Date().getFullYear()} {t.brand}. {t.rightsReserved}
       </footer>
     </div>;
 };

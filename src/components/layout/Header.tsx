@@ -44,8 +44,7 @@ export default function Header() {
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
         <Link to="/" className="font-signature italic text-lg md:text-xl leading-tight md:leading-normal">
-          <span className="block md:inline">avocat</span>
-          <span className="block md:inline"> Bogdan Lamatic</span>
+          {t.brand}
         </Link>
 
         {/* Desktop nav */}
