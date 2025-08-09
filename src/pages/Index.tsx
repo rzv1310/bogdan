@@ -238,11 +238,16 @@ const reviewsRO: Reviews3DItem[] = [
 ];
 
 const reviewsEN: Reviews3DItem[] = [
-  { name: "M. P.", text: "Professional and discreet. Helped quickly with clarity and empathy.", stars: 5 },
-  { name: "A. T.", text: "Explains clearly, responds promptly, and delivers on promises.", stars: 5 },
-  { name: "D. S.", text: "Great courtroom strategy. The result exceeded expectations.", stars: 5 },
-  { name: "I. C.", text: "Transparent communication, always prepared. Highly recommended.", stars: 5 },
-  { name: "R. B.", text: "Calm, well-documented, efficient. Achieved an excellent outcome.", stars: 5 },
+  { name: "Stefan G.", text: "I had a car accident and didn’t know what to do. Mr. Lamatic guided me step by step, and the result was beyond expectations. Thank you!", stars: 5 },
+  { name: "Costică C.", text: "Mr. Lawyer Bogdan Lamatic not only knows the law, but also explains it in a way anyone can understand. He gives you confidence throughout the whole trial. Highly recommended!", stars: 5 },
+  { name: "Mihai C.", text: "As a fellow lawyer, I can say that Bogdan is truly generous with his time and knowledge, always willing to help.", stars: 5 },
+  { name: "Crina A.", text: "I turned to Lawyer Lamatic for a foreclosure situation. The solution he proposed worked perfectly.", stars: 5 },
+  { name: "Matei R.", text: "In a very difficult criminal case, Bogdan managed to obtain a result I thought was impossible. 100% recommended!", stars: 5 },
+  { name: "Ștefan A.", text: "I am a lawyer in Cluj and I collaborated with Bogdan on a medical malpractice case. His legal preparation is impeccable.", stars: 5 },
+  { name: "Nicoleta L.", text: "I was looking for a good lawyer in Bucharest and found Mr. Bogdan Lamatic. I recommend him to everyone who needs a trustworthy lawyer and, above all, a good human being.", stars: 5 },
+  { name: "Gigi T.", text: "Bogdan is very well-prepared in criminal law. He defended me in a case with serious accusations and the result was exceptional.", stars: 5 },
+  { name: "Elena C.", text: "The best criminal lawyer in Bucharest!", stars: 5 },
+  { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
 
 const Index = () => {
@@ -440,7 +445,10 @@ const Index = () => {
                 sunt cea mai mare satisfacție profesională pe care o pot primi!&rdquo;
               </>
             ) : (
-              "Client reviews"
+              <>
+                &ldquo;The words of gratitude from those I have represented<br />
+                are the greatest professional satisfaction I can receive!&rdquo;
+              </>
             )}
           </h2>
           <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
