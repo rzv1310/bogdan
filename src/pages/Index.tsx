@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle, Menu } from "lucide-react";
+import { Phone, CheckCircle } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
@@ -254,29 +254,6 @@ const Index = () => {
   const [lang, setLang] = useState<Lang>("ro");
   const t = translations[lang];
   return <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-        <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="font-signature italic text-lg md:text-xl leading-tight md:leading-normal">
-            <span className="block md:inline">{t.brand.split(" ")[0]}</span>
-            <span className="block md:inline">{t.brand.split(" ").slice(1).join(" ")}</span>
-          </a>
-          <div className="flex items-center gap-2">
-            <button
-              className="md:hidden p-2 rounded-sm text-foreground absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-              aria-label={lang === "ro" ? "Meniu" : "Menu"}
-              type="button"
-            >
-              <Menu size={22} strokeWidth={2} />
-            </button>
-            <Button variant={lang === "ro" ? "premium" : "secondary"} size="sm" aria-label="Limba română" onClick={() => setLang("ro")}>
-              🇷🇴 {t.navLangRO}
-            </Button>
-            <Button variant={lang === "en" ? "premium" : "secondary"} size="sm" aria-label="English language" onClick={() => setLang("en")}>
-              🇬🇧 {t.navLangEN}
-            </Button>
-          </div>
-        </nav>
-      </header>
 
       <main>
         {/* Hero Section */}
