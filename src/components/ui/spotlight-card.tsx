@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, ReactNode } from "react";
+import React, { useEffect, useRef, useState, ReactNode } from "react";
 
 interface GlowCardProps {
   children?: ReactNode;
@@ -47,7 +47,10 @@ const GlowCard: React.FC<GlowCardProps> = ({
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
-  const runnerRef = useRef<SVGRectElement>(null);
+  const runnerRef = useRef<SVGPathElement>(null);
+  const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
+  const [pathD, setPathD] = useState<string>("");
+  const [runnerDur, setRunnerDur] = useState<string>("5s");
 
   useEffect(() => {
     const syncPointer = (e: PointerEvent) => {
@@ -67,26 +70,30 @@ const GlowCard: React.FC<GlowCardProps> = ({
 
   useEffect(() => {
     if (!borderRunner) return;
-    const rect = runnerRef.current;
     const el = cardRef.current;
-    if (!rect || !el) return;
+    if (!el) return;
 
     const update = () => {
-      try {
-        const len = rect.getTotalLength();
-        el.style.setProperty("--len", `${len}px`);
-        el.style.setProperty("--dash", "24px");
-        el.style.setProperty("--speed", "5s");
-      } catch {}
+      const cs = getComputedStyle(el);
+      const br = parseFloat(cs.borderTopLeftRadius || "14");
+      const b = borderPx ?? 1;
+      const w = Math.max(0, el.clientWidth - 2 * b);
+      const h = Math.max(0, el.clientHeight - 2 * b);
+      const r = Math.max(0, Math.min(br - b * 0.5, w / 2, h / 2));
+      const d = roundedRectPath(w, h, r);
+      setPathD(d);
+      const length = 2 * (w + h - 2 * r) + 2 * Math.PI * r;
+      const dur = Math.max(3, Math.min(14, length / 160));
+      setRunnerDur(`${dur.toFixed(2)}s`);
     };
 
     update();
     const ro = new ResizeObserver(update);
-    if (el) ro.observe(el);
+    ro.observe(el);
     return () => {
       ro.disconnect();
     };
-  }, [borderRunner]);
+  }, [borderRunner, borderPx]);
 
   const { base, spread } = glowColorMap[glowColor];
 
@@ -150,6 +157,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
 
     return baseStyles;
   };
+
+  const roundedRectPath = (w: number, h: number, r: number) => `M ${r},0 H ${w - r} A ${r},${r} 0 0 1 ${w},${r} V ${h - r} A ${r},${r} 0 0 1 ${w - r},${h} H ${r} A ${r},${r} 0 0 1 0,${h - r} V ${r} A ${r},${r} 0 0 1 ${r},0 Z`;
 
   const beforeAfterStyles = `
     [data-glow]::before,
@@ -255,8 +264,17 @@ const GlowCard: React.FC<GlowCardProps> = ({
               left: "var(--border-size)",
             }}
           >
-            <rect className="runner-glow" x="0" y="0" width="100%" height="100%" rx={14} fill="none" vectorEffect="non-scaling-stroke" />
-            <rect ref={runnerRef} className="runner-core" x="0" y="0" width="100%" height="100%" rx={14} fill="none" vectorEffect="non-scaling-stroke" />
+            <path ref={runnerRef} id={pathIdRef.current} d={pathD} fill="none" />
+            <circle r={2} fill="hsl(var(--accent))">
+              <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
+                <mpath xlinkHref={`#${pathIdRef.current}`} />
+              </animateMotion>
+            </circle>
+            <circle r={4} fill="hsl(var(--accent) / 0.5)" style={{ filter: "blur(3px)" }}>
+              <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
+                <mpath xlinkHref={`#${pathIdRef.current}`} />
+              </animateMotion>
+            </circle>
           </svg>
         )}
       </div>
