@@ -116,7 +116,7 @@ export const translations = {
     },
     heroTitle: "Criminal Defense Lawyer in Bucharest",
     heroQuote:
-      "“In criminal case, trust saves lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
+      "“In criminal law, trust can save lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
     heroAuthor: "attorney Bogdan Lamatic",
     valuesTitle: "My values",
     values: ["total commitment.", "respect.", "discretion."],
