@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
+import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 
 type Lang = "ro" | "en";
 
@@ -300,15 +301,17 @@ const Index = () => {
           <div className="rounded-xl border p-6 md:p-8 bg-accent/10">
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
-              <a href="tel:+40745506443" aria-label="Vreau avocat">
-                <Button
-                  variant="premium"
-                  size="lg"
-                  className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none"
-                >
-                  <Phone /> Vreau avocat!
-                </Button>
-              </a>
+              <GeminiButtonEffect>
+                <a href="tel:+40745506443" aria-label="Vreau avocat">
+                  <Button
+                    variant="premium"
+                    size="lg"
+                    className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none"
+                  >
+                    <Phone /> Vreau avocat!
+                  </Button>
+                </a>
+              </GeminiButtonEffect>
           </div>
         </section>
 
