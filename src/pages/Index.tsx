@@ -204,6 +204,11 @@ const Index = () => {
                   </p>
                 ))}
               </blockquote>
+              <div className="mt-4 hidden md:block">
+                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
+                  <Button variant="premium" size="lg">0745 506 443</Button>
+                </a>
+              </div>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
             </div>
 
@@ -214,6 +219,11 @@ const Index = () => {
                 loading="lazy"
                 className="w-full h-auto rounded-lg shadow-md"
               />
+              <div className="mt-4 block md:hidden text-center">
+                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
+                  <Button variant="premium" size="lg">0745 506 443</Button>
+                </a>
+              </div>
             </div>
           </div>
         </section>
