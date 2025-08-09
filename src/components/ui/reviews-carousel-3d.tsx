@@ -130,7 +130,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
       </div>
 
       {/* indicators */}
-      <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
+      <div className="absolute top-[300px] md:top-[340px] left-0 right-0 flex justify-center gap-2">
         {items.map((_, i) => (
           <span
             key={i}
