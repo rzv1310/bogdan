@@ -79,7 +79,8 @@ export default function CriminalitateEconomica() {
             Procedurile penale în astfel de cazuri sunt complexe și implică atât expertiză juridică, cât și cunoștințe financiare și fiscale. Un avocat cu experiență în
             white-collar crime îți poate proteja drepturile, poate analiza probele, formula apărări solide și negocia strategii optime pentru obținerea celui mai bun rezultat posibil.
           </p>
-          <div className="mt-2 flex justify-center animate-fade-in">
+          <div className="h-5" aria-hidden="true"></div>
+          <div className="flex justify-center animate-fade-in">
             <GeminiButtonEffect>
               <a href="tel:+40745506443" aria-label="Vreau avocat!">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
@@ -88,6 +89,7 @@ export default function CriminalitateEconomica() {
               </a>
             </GeminiButtonEffect>
           </div>
+          <div className="h-5" aria-hidden="true"></div>
         </section>
         <Card>
           <CardHeader className="p-6">
