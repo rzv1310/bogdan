@@ -82,7 +82,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
             <motion.article
               key={`${r.name}-${i}`}
               className={cn(
-                "absolute left-1/2 top-[33px] md:top-[41px]",
+                "absolute left-1/2 top-[55px] md:top-[55px]",
                 "rounded-xl border bg-card text-card-foreground shadow-sm"
               )}
               style={{
@@ -110,7 +110,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
       </motion.div>
 
       {/* simple controls */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-50 flex items-center justify-between px-2 md:px-6">
+      <div className="pointer-events-none absolute inset-x-0 top-[30px] z-50 flex items-center justify-between px-2 md:px-6">
         <button
           type="button"
           aria-label="Anterior"
