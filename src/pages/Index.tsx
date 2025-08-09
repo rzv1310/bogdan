@@ -123,16 +123,16 @@ const Index = () => {
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
-          <div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+          <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div className="md:order-1">
-              <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight mb-6 py-0">
+              <h1 className="text-[32px] md:text-5xl font-semibold leading-tight tracking-tight mb-6 py-0">
                 {t.heroTitle}
               </h1>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
                 <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
               </div>
-              <div className="h-[15px] md:hidden" aria-hidden="true"></div>
+              <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
                 {lang === "ro" ? <>
                     <div className="hidden md:block">
