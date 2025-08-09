@@ -8,7 +8,9 @@ interface GlowCardProps {
   width?: string | number;
   height?: string | number;
   customSize?: boolean; // When true, ignores size prop and uses width/height or className
-  flatOrange?: boolean; // When true, renders a solid orange glow line without gradient
+  flatOrange?: boolean; // Solid orange border (no gradient)
+  borderPx?: number; // Border thickness in px (default 3, use 1 for services)
+  blackBg?: boolean; // Force solid black background for the card
 }
 
 const glowColorMap = {
@@ -34,6 +36,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
   height,
   customSize = false,
   flatOrange = false,
+  borderPx,
+  blackBg = false,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -69,7 +73,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       "--base": String(base),
       "--spread": String(spread),
       "--radius": "14",
-      "--border": "3",
+      "--border": String(borderPx ?? 3),
       "--backdrop": "hsl(0 0% 60% / 0.12)",
       "--backup-border": "var(--backdrop)",
       "--size": "200",
@@ -77,15 +81,13 @@ const GlowCard: React.FC<GlowCardProps> = ({
       "--border-size": "calc(var(--border, 2) * 1px)",
       "--spotlight-size": "calc(var(--size, 150) * 1px)",
       "--hue": "calc(var(--base) + (var(--xp, 0) * var(--spread, 0)))",
-      backgroundImage: flatOrange
-        ? "none"
-        : `radial-gradient(
+      backgroundImage: `radial-gradient(
         var(--spotlight-size) var(--spotlight-size) at
         calc(var(--x, 0) * 1px)
         calc(var(--y, 0) * 1px),
         hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
       )`,
-      backgroundColor: flatOrange ? "transparent" : ("var(--backdrop, transparent)" as any),
+      backgroundColor: (blackBg ? "hsl(0 0% 0% / 1)" : ("var(--backdrop, transparent)" as any)) as any,
       backgroundSize: "calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)))",
       backgroundPosition: "50% 50%",
       backgroundAttachment: "fixed",

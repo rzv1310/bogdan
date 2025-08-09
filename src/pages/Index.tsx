@@ -7,13 +7,13 @@ type Lang = "ro" | "en";
 
 const translations = {
   ro: {
-    brand: "Bogdan Lamatic",
+    brand: "avocat Bogdan Lamatic",
     navLangRO: "RO",
     navLangEN: "EN",
     heroTitle: "Avocat Drept Penal Bucuresti",
     heroQuote:
       "„În dreptul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
-    heroAuthor: "– avocat Bogdan Lamatic",
+    heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Valorile mele",
     values: ["implicare totală.", "respect.", "discreție."],
     reasonsTitle: "De ce sa lucrezi cu mine",
@@ -82,13 +82,13 @@ const translations = {
     ],
   },
   en: {
-    brand: "Bogdan Lamatic",
+    brand: "attorney Bogdan Lamatic",
     navLangRO: "RO",
     navLangEN: "EN",
     heroTitle: "Criminal Defense Lawyer in Bucharest",
     heroQuote:
       "“In criminal law, trust saves lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
-    heroAuthor: "– attorney Bogdan Lamatic",
+    heroAuthor: "attorney Bogdan Lamatic",
     valuesTitle: "My values",
     values: ["total commitment.", "respect.", "discretion."],
     reasonsTitle: "Why work with me",
@@ -204,7 +204,7 @@ const Index = () => {
                   </p>
                 ))}
               </blockquote>
-              <p className="mt-3 text-sm opacity-80">{t.heroAuthor}</p>
+              <p className="mt-3 text-sm opacity-80 text-right">{t.heroAuthor}</p>
             </div>
 
             <div className="relative">
@@ -268,7 +268,7 @@ const Index = () => {
           <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {t.services.map((s, i) => (
-              <GlowCard key={i} customSize flatOrange glowColor="orange" className="w-full">
+              <GlowCard key={i} customSize flatOrange glowColor="orange" borderPx={1} blackBg className="w-full">
                 <article className="text-card-foreground">
                   <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
                   <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
