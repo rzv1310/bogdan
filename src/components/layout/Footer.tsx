@@ -29,7 +29,7 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-muted-foreground">Website:</span>{" "}
-                <a href="https://avocatdreptpenal.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">avocatdreptpenal.ro</a>
+                <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">avocat-drept-penal.ro</a>
               </li>
               <li>
                 <span className="text-muted-foreground">Program:</span>{" "}
