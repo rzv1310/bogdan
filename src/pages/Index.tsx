@@ -19,7 +19,7 @@ const translations = {
     reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: ["experiență dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.", "apărare rapidă și eficientă, de la audieri până la instanță.", "consiliere penală personalizată, bazată pe colaborare strânsă și transparență."],
     ctaTitle: "Situația ta nu poate aștepta",
-    ctaText: "În drept penal, fiecare oră contează. Contactează-mă AZI pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
+    ctaText: "În drept penal, fiecare oră contează. Sună-mă Azi pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
     callNow: "Sună acum",
     servicesTitle: "Servicii",
     services: [{
@@ -66,7 +66,7 @@ const translations = {
     reasonsTitle: "Why work with me",
     reasons: ["proven track record of acquittals and sentence reductions in complex criminal cases.", "swift and effective defense, from hearings to trial.", "tailored criminal counsel, built on close collaboration and transparency."],
     ctaTitle: "Your situation can’t wait",
-    ctaText: "In criminal law, every hour counts. Contact me now for a confidential consultation and learn how to protect your freedom and reputation.",
+    ctaText: "In criminal law, every hour counts. Call me today for a confidential consultation and learn how to protect your freedom and reputation.",
     callNow: "Call now",
     servicesTitle: "Services",
     services: [{
