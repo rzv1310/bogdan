@@ -74,15 +74,20 @@ export default function CriminalitateEconomica() {
             <li>Schimbarea destinației fondurilor europene</li>
           </ul>
 
-          <div className="flex justify-center py-4">
-            <img
-              src="/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png"
-              alt="Legal 500 Next Generation Partner 2024 - avocat infracțiuni economice"
-              loading="lazy"
-              decoding="async"
-              className="w-[300px] sm:w-[360px] md:w-[400px] h-auto rounded-md shadow"
-            />
-          </div>
+          <figure className="py-4">
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png"
+                alt="Legal 500 Next Generation Partner 2024 - avocat infracțiuni economice"
+                loading="lazy"
+                decoding="async"
+                className="w-[300px] sm:w-[360px] md:w-[400px] h-auto rounded-md shadow"
+              />
+            </div>
+            <figcaption className="mt-2 text-xs text-muted-foreground text-center">
+              av. Bogdan Lamatic | Legal500 – Next Generation Partner – 2024 Edition (White-Collar Crime)
+            </figcaption>
+          </figure>
 
           <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
           <p>
