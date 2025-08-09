@@ -75,7 +75,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telephone</dt>
-                <dd className="font-medium">0745.506.443</dd>
+                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
