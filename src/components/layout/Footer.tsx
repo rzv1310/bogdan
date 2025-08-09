@@ -16,9 +16,6 @@ export default function Footer() {
             <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">Cabinet Avocat Bogdan Lamatic</h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <span className="block font-medium">Cabinet Avocat Bogdan Lamatic</span>
-              </li>
-              <li>
                 <span className="text-muted-foreground">Adresă:</span>{" "}
                 <span>Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5</span>
               </li>
