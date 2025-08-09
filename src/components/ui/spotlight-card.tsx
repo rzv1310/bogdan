@@ -11,6 +11,7 @@ interface GlowCardProps {
   flatOrange?: boolean; // Solid orange border (no gradient)
   borderPx?: number; // Border thickness in px (default 3, use 1 for services)
   blackBg?: boolean; // Force solid black background for the card
+  hoverOnly?: boolean; // Show glow animation only on hover
 }
 
 const glowColorMap = {
@@ -38,6 +39,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
   flatOrange = false,
   borderPx,
   blackBg = false,
+  hoverOnly = false,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -99,7 +101,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
     // Flat orange variant: solid orange border and glow without gradient
     if (flatOrange) {
       baseStyles["--backup-border"] = "hsl(30 100% 50% / 0.7)";
-      baseStyles["--outer"] = "0"; // hide inner blurred overlay
+      // keep inner overlay active for animation
     }
 
     // Add width and height if provided
@@ -164,8 +166,27 @@ const GlowCard: React.FC<GlowCardProps> = ({
         0 0 60px hsl(30 100% 50% / 0.35);
     }
 
-    [data-glow][data-flat-orange] [data-glow] {
-      display: none;
+    /* Inner glow overlay (animated) */
+    [data-glow] [data-glow] {
+      position: absolute;
+      inset: 0;
+      will-change: filter;
+      opacity: var(--outer, 1);
+      border-radius: calc(var(--radius) * 1px);
+      border-width: calc(var(--border-size) * 20);
+      filter: blur(calc(var(--border-size) * 10));
+      background: none;
+      pointer-events: none;
+      border: none;
+    }
+
+    /* Hover-only activation */
+    [data-glow][data-hover-only] [data-glow] {
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    [data-glow][data-hover-only]:hover [data-glow] {
+      opacity: var(--outer, 1);
     }
 
     [data-glow] > [data-glow]::before {
@@ -181,6 +202,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
         ref={cardRef}
         data-glow
         {...(flatOrange ? { "data-flat-orange": true } : {})}
+        {...(hoverOnly ? { "data-hover-only": true } : {})}
         style={getInlineStyles()}
         className={`
           ${getSizeClasses()}
