@@ -344,9 +344,6 @@ const Index = () => {
         </section>
       </main>
 
-      <footer className="border-t py-6 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} {t.brand}. {t.rightsReserved}
-      </footer>
     </div>;
 };
 export default Index;
