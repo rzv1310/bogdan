@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">Date de contact</h2>
+            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">Cabinet Avocat Bogdan Lamatic</h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span className="block font-medium">Cabinet Avocat Bogdan Lamatic</span>
