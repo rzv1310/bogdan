@@ -74,6 +74,16 @@ export default function CriminalitateEconomica() {
             <li>Schimbarea destinației fondurilor europene</li>
           </ul>
 
+          <div className="flex justify-center py-4">
+            <img
+              src="/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png"
+              alt="Legal 500 Next Generation Partner 2024 - avocat infracțiuni economice"
+              loading="lazy"
+              decoding="async"
+              className="w-[300px] sm:w-[360px] md:w-[400px] h-auto rounded-md shadow"
+            />
+          </div>
+
           <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
           <p>
             Procedurile penale în astfel de cazuri sunt complexe și implică atât expertiză juridică, cât și cunoștințe financiare și fiscale. Un avocat cu experiență în
