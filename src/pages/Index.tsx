@@ -256,7 +256,7 @@ const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="font-signature italic text-lg md:text-xl">
+          <a href="#hero" className="font-signature italic text-lg md:text-xl leading-tight md:leading-normal">
             <span className="block md:inline">{t.brand.split(" ")[0]}</span>
             <span className="block md:inline">{t.brand.split(" ").slice(1).join(" ")}</span>
           </a>
