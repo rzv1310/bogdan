@@ -24,7 +24,7 @@ const translations = {
     ],
     ctaTitle: "Situația ta nu poate aștepta",
     ctaText:
-      "În drept penal, fiecare oră contează. Contactează-mă acum pentru o consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
+      "În drept penal, fiecare oră contează. Contactează-mă AZI pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
     callNow: "Sună acum",
     servicesTitle: "Servicii",
     services: [
