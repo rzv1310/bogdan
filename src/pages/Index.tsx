@@ -4,8 +4,6 @@ import { Phone } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
-import { ReviewsCarousel3D } from "@/components/ui/reviews-carousel-3d";
-
 type Lang = "ro" | "en";
 const translations = {
   ro: {
@@ -16,8 +14,8 @@ const translations = {
     heroQuote: "„În dreptul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Valorile mele",
-    values: ["implicare totală.", "respect.", "discreție."],
-    reasonsTitle: "De ce sa lucrezi cu mine",
+    values: ["implicare totală.", "respect.", "discreție absolută."],
+    reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: ["experiență dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.", "apărare rapidă și eficientă, de la audieri până la instanță.", "consiliere penală personalizată, bazată pe colaborare strânsă și transparență."],
     ctaTitle: "Situația ta nu poate aștepta",
     ctaText: "În drept penal, fiecare oră contează. Contactează-mă AZI pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
@@ -307,7 +305,7 @@ const Index = () => {
             <div className="relative z-10 p-6 md:p-8">
               <div className="grid md:grid-cols-2 gap-6 md:gap-12">
                 <div>
-                  <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}:</h2>
+                  <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}</h2>
                   <ul className="space-y-2">
                     {t.values.map((v, i) => <li key={i} className="text-foreground">• {v}</li>)}
                   </ul>
@@ -392,25 +390,6 @@ const Index = () => {
               />
             </div>
           </div>
-        </section>
-
-        {/* Reviews */}
-        <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16" aria-label="Recenzii clienți">
-          <h2 className="text-3xl italic mb-2">Cuvintele de mulțumire ale celor pe care i-am reprezentat <br />sunt cea mai mare satisfacție profesională pe care o pot primi !</h2>
-          <ReviewsCarousel3D
-            reviews={[
-              { name: "Stefan G.", text: "Am avut un accident rutier și nu știam cum să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!", stars: 5 },
-              { name: "Costică C.", text: "Domnul avocat Bogdan Lamatic nu doar că știe legea, dar o și explică pe înțelesul oricui. Și îți da siguranță pe tot timpul procesului. Recomand cu căldură!", stars: 5 },
-              { name: "Mihai C.", text: "În calitate de coleg avocat, pot spune că Bogdan este cu adevărat generos cu timpul și cunoștințele sale, mereu dispus să ajute.", stars: 5 },
-              { name: "Crina A.", text: "Am apelat la avocatul Lamatic pentru o situație de executare silită. Soluția propusă a funcționat perfect.", stars: 5 },
-              { name: "Matei R.", text: "Într-un dosar penal foarte greu Bogdan a reușit să obțină un rezultat pe care îl credeam imposibil. Recomand 100%!", stars: 5 },
-              { name: "Ștefan A.", text: "Sunt avocat în Cluj și am colaborat cu Bogdan pe un dosar de malpraxis medical. Pregătirea sa juridică este impecabilă.", stars: 5 },
-              { name: "Nicoleta L.", text: "Căutam un avocat bun în București și l-am găsit pe domnul Bogdan Lamatic. Îl recomand tuturor celor care au nevoie de un avocat de încredere și in primul rând de un OM", stars: 5 },
-              { name: "Gigi T.", text: "Bogdan este foarte bine pregătit în drept penal. M-a apărat într-un dosar cu acuzații urate și rezultatul a fost excepțional.", stars: 5 },
-              { name: "Elena C.", text: "Cel mai bun avocat penalist din București!", stars: 5 },
-              { name: "Ana-Maria A.", text: "L am avut ca avocat pe Bogdan Lamatic m a aparat intr un dosar de drept penal in București și am fost achitata!", stars: 5 },
-            ]}
-          />
         </section>
       </main>
 
