@@ -13,6 +13,7 @@ interface GlowCardProps {
   blackBg?: boolean; // Force solid black background for the card
   hoverOnly?: boolean; // Show glow animation only on hover (not used for services)
   borderRunner?: boolean; // Animate a small orange segment around the border continuously
+  runnerSpeedFactor?: number; // Multiply runner duration (1 = default, 2 = 50% slower)
   noShadow?: boolean; // Disable outer shadow entirely
 }
 
@@ -43,6 +44,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
   blackBg = false,
   hoverOnly = false,
   borderRunner = false,
+  runnerSpeedFactor = 1,
   noShadow = false,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -83,8 +85,9 @@ const GlowCard: React.FC<GlowCardProps> = ({
       const d = roundedRectPath(w, h, r);
       setPathD(d);
       const length = 2 * (w + h - 2 * r) + 2 * Math.PI * r;
-      const dur = Math.max(3, Math.min(14, length / 160));
-      setRunnerDur(`${dur.toFixed(2)}s`);
+      const baseDur = Math.max(3, Math.min(14, length / 160));
+      const finalDur = baseDur * (runnerSpeedFactor ?? 1);
+      setRunnerDur(`${finalDur.toFixed(2)}s`);
     };
 
     update();
@@ -93,7 +96,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
     return () => {
       ro.disconnect();
     };
-  }, [borderRunner, borderPx]);
+  }, [borderRunner, borderPx, runnerSpeedFactor]);
 
   const { base, spread } = glowColorMap[glowColor];
 
