@@ -208,11 +208,21 @@ const Index = () => {
               </div>
               <div className="h-[15px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
-                {t.heroQuote.split("\n").map((line, i) => (
-                  <p key={i} className="mb-2 last:mb-0">
-                    {line}
-                  </p>
-                ))}
+                {t.heroQuote.split("\n").map((line, i) => {
+                  if (lang === "ro" && line.includes("Îți apăr drepturile")) {
+                    const [before, after] = line.split("Îți apăr drepturile");
+                    return (
+                      <p key={i} className="mb-2 last:mb-0">
+                        {before}
+                        <br className="hidden md:block" />
+                        <span className="inline md:block">{"Îți apăr drepturile" + after}</span>
+                      </p>
+                    );
+                  }
+                  return (
+                    <p key={i} className="mb-2 last:mb-0">{line}</p>
+                  );
+                })}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
               <div className="mt-5 md:hidden text-center">
