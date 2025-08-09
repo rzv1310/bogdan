@@ -205,7 +205,8 @@ const Index = () => {
                 ))}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
-              <div className="mt-5 hidden md:flex justify-center">
+              <div className="hidden md:block h-[35px]" aria-hidden="true"></div>
+              <div className="hidden md:flex justify-center">
                 <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
                   <Button variant="premium" size="lg" className="border border-hero-foreground"><Phone /> 0745 506 443</Button>
                 </a>
