@@ -19,6 +19,7 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { useLanguage } from "@/context/language";
+import { translations } from "@/lib/translations";
 
 const services = [
   { label: "Criminalitate economică", to: "/servicii/criminalitate-economica" },
@@ -34,6 +35,11 @@ const services = [
 
 export default function Header() {
   const { lang, setLang } = useLanguage();
+  const t = translations[lang];
+  const labelFor = (path: string, fallback: string) => {
+    const slug = path.split("/").pop() || "";
+    return (t as any).navServices?.[slug] ?? fallback;
+  };
   return (
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
@@ -47,14 +53,14 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-3">Servicii</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-3">{t.nav.services}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
                     {services.map((s) => (
                       <li key={s.to}>
                         <NavigationMenuLink asChild>
                           <Link to={s.to} className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug">
-                            {s.label}
+                            {labelFor(s.to, s.label)}
                           </Link>
                         </NavigationMenuLink>
                       </li>
@@ -64,8 +70,8 @@ export default function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Despre mine</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Contact</NavLink>
+          <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
 
           {/* Language selector (desktop) */}
           <div className="ml-3 pl-3 border-l flex items-center gap-1">
@@ -127,14 +133,14 @@ export default function Header() {
           </DrawerTrigger>
           <DrawerContent>
             <DrawerHeader>
-              <DrawerTitle>Meniu</DrawerTitle>
+              <DrawerTitle>{t.nav.menu}</DrawerTitle>
             </DrawerHeader>
             <div className="px-4 pb-6">
               <ul className="space-y-1">
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/despre-mine">Despre mine</Link>
+                      <Link to="/despre-mine">{t.nav.about}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
@@ -142,7 +148,7 @@ export default function Header() {
                   <Collapsible>
                     <CollapsibleTrigger asChild>
                       <Button variant="ghost" className="w-full justify-between">
-                        <span>Servicii</span>
+                        <span>{t.nav.services}</span>
                         <ChevronRight className="h-4 w-4" />
                       </Button>
                     </CollapsibleTrigger>
@@ -152,7 +158,7 @@ export default function Header() {
                           <li key={s.to}>
                             <DrawerClose asChild>
                               <Button asChild variant="ghost" className="w-full justify-start text-left">
-                                <Link to={s.to}>{s.label}</Link>
+                                <Link to={s.to}>{labelFor(s.to, s.label)}</Link>
                               </Button>
                             </DrawerClose>
                           </li>
@@ -164,14 +170,14 @@ export default function Header() {
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/blog">Blog</Link>
+                      <Link to="/blog">{t.nav.blog}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact">{t.nav.contact}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
