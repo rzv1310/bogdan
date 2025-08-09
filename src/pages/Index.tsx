@@ -193,10 +193,19 @@ const Index = () => {
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div className="md:order-1">
               <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight mb-6">
                 {t.heroTitle}
               </h1>
+              {/* Mobile-only image right after H1 */}
+              <div className="mt-4 block md:hidden">
+                <img
+                  src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png"
+                  alt="Portret avocat drept penal în costum, studio"
+                  loading="lazy"
+                  className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
+                />
+              </div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
                 {t.heroQuote.split("\n").map((line, i) => (
                   <p key={i} className="mb-2 last:mb-0">
@@ -205,6 +214,11 @@ const Index = () => {
                 ))}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
+              <div className="mt-5 md:hidden text-center">
+                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
+                  <Button variant="premium" size="lg" className="border border-hero-foreground"><Phone /> 0745 506 443</Button>
+                </a>
+              </div>
               <div className="hidden md:block h-[35px]" aria-hidden="true"></div>
               <div className="hidden md:flex justify-center">
                 <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
@@ -213,7 +227,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="relative max-w-[80%] md:max-w-[80%] mx-auto md:ml-auto order-1 md:order-2">
+            <div className="hidden md:block relative md:max-w-[80%] md:ml-auto">
               <img
                 src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png"
                 alt="Portret avocat drept penal în costum, studio"
