@@ -82,7 +82,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
             <motion.article
               key={`${r.name}-${i}`}
               className={cn(
-                "absolute left-1/2 top-[60px] md:top-[60px]",
+                "absolute left-1/2 top-[90px] md:top-[90px]",
                 "rounded-xl border bg-card text-card-foreground shadow-sm"
               )}
               style={{
