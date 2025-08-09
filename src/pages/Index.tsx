@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, CheckCircle } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
@@ -307,13 +307,31 @@ const Index = () => {
                 <div>
                   <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}</h2>
                   <ul className="space-y-2">
-                    {t.values.map((v, i) => <li key={i} className="text-foreground">• {v}</li>)}
+                    {t.values.map((v, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-foreground animate-in fade-in-50 zoom-in-50 duration-500"
+                        style={{ animationDelay: `${i * 120}ms` }}
+                      >
+                        <CheckCircle className="mt-0.5 h-5 w-5 text-accent" aria-hidden="true" />
+                        <span>{v}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div>
                   <h2 className="text-2xl font-semibold mb-3">{t.reasonsTitle}</h2>
                   <ul className="space-y-2">
-                    {t.reasons.map((r, i) => <li key={i} className="text-foreground">• {r}</li>)}
+                    {t.reasons.map((r, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-foreground animate-in fade-in-50 zoom-in-50 duration-500"
+                        style={{ animationDelay: `${i * 120}ms` }}
+                      >
+                        <CheckCircle className="mt-0.5 h-5 w-5 text-accent" aria-hidden="true" />
+                        <span>{r}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
