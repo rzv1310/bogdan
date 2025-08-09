@@ -156,7 +156,7 @@ export default function Header() {
                         {services.map((s) => (
                           <li key={s.to}>
                             <DrawerClose asChild>
-                              <Button asChild variant="ghost" className="w-full justify-start text-left">
+                              <Button asChild variant="ghost" className="w-full justify-start text-left whitespace-normal break-words leading-snug">
                                 <Link to={s.to}>{labelFor(s.to, s.label)}</Link>
                               </Button>
                             </DrawerClose>
