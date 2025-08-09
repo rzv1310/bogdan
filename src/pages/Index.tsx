@@ -270,32 +270,24 @@ const Index = () => {
 
         {/* Values and Reasons */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">{t.valuesTitle}</h2>
-              <ul className="space-y-2">
-                {t.values.map((v, i) => (
-                  <li
-                    key={i}
-                    className="rounded-md border bg-card text-card-foreground p-4"
-                  >
-                    • {v}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">{t.reasonsTitle}</h2>
-              <ul className="space-y-2">
-                {t.reasons.map((r, i) => (
-                  <li
-                    key={i}
-                    className="rounded-md border bg-card text-card-foreground p-4"
-                  >
-                    • {r}
-                  </li>
-                ))}
-              </ul>
+          <div className="rounded-xl border border-accent bg-background p-6 md:p-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12">
+              <div>
+                <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}</h2>
+                <ul className="space-y-2">
+                  {t.values.map((v, i) => (
+                    <li key={i} className="text-foreground">• {v}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold mb-3">{t.reasonsTitle}</h2>
+                <ul className="space-y-2">
+                  {t.reasons.map((r, i) => (
+                    <li key={i} className="text-foreground">• {r}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
