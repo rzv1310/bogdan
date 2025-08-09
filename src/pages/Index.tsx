@@ -438,7 +438,7 @@ const Index = () => {
         </section>
         {/* Reviews */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <h2 className="text-3xl font-semibold mb-6 italic">
+          <h2 className="text-[26px] font-semibold mb-6 italic">
             {lang === "ro" ? (
               <>
                 &bdquo;Cuvintele de mulțumire ale celor pe care i-am reprezentat<br />
