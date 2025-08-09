@@ -247,7 +247,7 @@ const Index = () => {
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
               <div className="mt-6 flex md:justify-start justify-center">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
-                  <Button variant="hero" size="lg">
+                  <Button variant="hero" size="lg" className="border border-hero-foreground text-hero-foreground hover:bg-hero-foreground/10">
                     <Phone /> {t.callNow}
                   </Button>
                 </a>
