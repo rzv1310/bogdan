@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle } from "lucide-react";
+import { Phone, CheckCircle, Menu } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
@@ -261,6 +261,13 @@ const Index = () => {
             <span className="block md:inline">{t.brand.split(" ").slice(1).join(" ")}</span>
           </a>
           <div className="flex items-center gap-2">
+            <button
+              className="md:hidden p-2 rounded-sm text-foreground"
+              aria-label={lang === "ro" ? "Meniu" : "Menu"}
+              type="button"
+            >
+              <Menu size={22} strokeWidth={2} />
+            </button>
             <Button variant={lang === "ro" ? "premium" : "secondary"} size="sm" aria-label="Limba română" onClick={() => setLang("ro")}>
               🇷🇴 {t.navLangRO}
             </Button>
