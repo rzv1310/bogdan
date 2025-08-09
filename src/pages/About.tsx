@@ -41,7 +41,7 @@ export default function About() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="sr-only">{lang === "en" ? "About me" : t.nav.about}</h1>
+      <p className="sr-only">{lang === "en" ? "About me" : t.nav.about}</p>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -59,7 +59,7 @@ export default function About() {
         <main className="mt-6 space-y-8">
           <header>
             <p className="text-sm text-muted-foreground">Curriculum vitae – Europass</p>
-            <h2 className="text-2xl font-semibold tracking-tight">About me – Europass CV</h2>
+            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Europass CV - About Me</h1>
           </header>
 
           <section aria-labelledby="personal-info" className="grid gap-4">
