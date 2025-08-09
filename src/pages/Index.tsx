@@ -207,7 +207,7 @@ const Index = () => {
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
             </div>
 
-            <div className="relative">
+            <div className="relative md:max-w-[80%] md:ml-auto">
               <img
                 src="/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png"
                 alt="Portret avocat drept penal în costum, studio"
