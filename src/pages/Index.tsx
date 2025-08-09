@@ -165,7 +165,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="font-semibold tracking-tight">
+          <a href="#hero" className="font-signature italic text-lg md:text-xl">
             {t.brand}
           </a>
           <div className="flex items-center gap-2">
