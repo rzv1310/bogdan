@@ -44,7 +44,7 @@ export default function Header() {
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex flex-col items-center leading-none text-center select-none">
-          <span className="block ml-0.5 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
+          <span className="block ml-1 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
             {lang === "ro" ? "CABINET AVOCAT" : "LAW OFFICE"}
           </span>
           <span className="block mt-1 md:mt-0 font-signature italic text-base md:text-xl leading-none">Bogdan Lamatic</span>
