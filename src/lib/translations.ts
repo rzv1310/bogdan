@@ -24,7 +24,7 @@ export const translations = {
       "reprezentarea-victimelor-in-procese-penale": "Reprezentarea victimelor în procese penale",
     },
     heroTitle: "Avocat Drept Penal București",
-    heroQuote: "„În dreptul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
+    heroQuote: "„În dosarul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Valorile mele:",
     values: ["implicare totală.", "respect.", "discreție absolută."],
@@ -116,7 +116,7 @@ export const translations = {
     },
     heroTitle: "Criminal Defense Lawyer in Bucharest",
     heroQuote:
-      "“In criminal law, trust saves lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
+      "“In criminal case, trust saves lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
     heroAuthor: "attorney Bogdan Lamatic",
     valuesTitle: "My values",
     values: ["total commitment.", "respect.", "discretion."],
