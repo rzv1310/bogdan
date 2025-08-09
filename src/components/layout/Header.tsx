@@ -7,6 +7,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerTitle,
+  DrawerClose,
 } from "@/components/ui/drawer";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import {
@@ -41,13 +42,12 @@ export default function Header() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-2">
-          <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Despre mine</NavLink>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="px-3">Servicii</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px]">
+                  <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
                     {services.map((s) => (
                       <li key={s.to}>
                         <NavigationMenuLink asChild>
@@ -62,6 +62,7 @@ export default function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Despre mine</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Contact</NavLink>
 
           {/* Language selector (desktop) */}
@@ -93,9 +94,11 @@ export default function Header() {
             <div className="px-4 pb-6">
               <ul className="space-y-1">
                 <li>
-                  <Button asChild variant="ghost" className="w-full justify-start">
-                    <Link to="/despre-mine">Despre mine</Link>
-                  </Button>
+                  <DrawerClose asChild>
+                    <Button asChild variant="ghost" className="w-full justify-start">
+                      <Link to="/despre-mine">Despre mine</Link>
+                    </Button>
+                  </DrawerClose>
                 </li>
                 <li>
                   <Collapsible>
@@ -109,9 +112,11 @@ export default function Header() {
                       <ul className="mt-1 space-y-1 pl-3 border-l">
                         {services.map((s) => (
                           <li key={s.to}>
-                            <Button asChild variant="ghost" className="w-full justify-start text-left">
-                              <Link to={s.to}>{s.label}</Link>
-                            </Button>
+                            <DrawerClose asChild>
+                              <Button asChild variant="ghost" className="w-full justify-start text-left">
+                                <Link to={s.to}>{s.label}</Link>
+                              </Button>
+                            </DrawerClose>
                           </li>
                         ))}
                       </ul>
@@ -119,14 +124,18 @@ export default function Header() {
                   </Collapsible>
                 </li>
                 <li>
-                  <Button asChild variant="ghost" className="w-full justify-start">
-                    <Link to="/blog">Blog</Link>
-                  </Button>
+                  <DrawerClose asChild>
+                    <Button asChild variant="ghost" className="w-full justify-start">
+                      <Link to="/blog">Blog</Link>
+                    </Button>
+                  </DrawerClose>
                 </li>
                 <li>
-                  <Button asChild variant="ghost" className="w-full justify-start">
-                    <Link to="/contact">Contact</Link>
-                  </Button>
+                  <DrawerClose asChild>
+                    <Button asChild variant="ghost" className="w-full justify-start">
+                      <Link to="/contact">Contact</Link>
+                    </Button>
+                  </DrawerClose>
                 </li>
               </ul>
             </div>
