@@ -10,7 +10,7 @@ const translations = {
     brand: "avocat Bogdan Lamatic",
     navLangRO: "RO",
     navLangEN: "EN",
-    heroTitle: "Avocat Drept Penal Bucuresti",
+    heroTitle: "Avocat Drept Penal București",
     heroQuote: "„În dreptul penal, încrederea salvează!\nÎți ascult povestea. Îți înțeleg temerile. Îți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Valorile mele",
