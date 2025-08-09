@@ -307,7 +307,7 @@ const Index = () => {
             <div className="relative z-10 p-6 md:p-8">
               <div className="grid md:grid-cols-2 gap-6 md:gap-12">
                 <div>
-                  <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}</h2>
+                  <h2 className="text-2xl font-semibold mb-3">{t.valuesTitle}:</h2>
                   <ul className="space-y-2">
                     {t.values.map((v, i) => <li key={i} className="text-foreground">• {v}</li>)}
                   </ul>
