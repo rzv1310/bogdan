@@ -63,7 +63,7 @@ export default function About() {
           </header>
 
           <section aria-labelledby="personal-info" className="grid gap-4">
-            <h3 id="personal-info" className="text-xl font-medium">Personal information</h3>
+            <h2 id="personal-info" className="text-xl font-medium">Personal information</h2>
             <dl className="grid gap-2 sm:grid-cols-2">
               <div>
                 <dt className="text-sm text-muted-foreground">Name/Surname</dt>
@@ -97,7 +97,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="recognition" className="grid gap-4">
-            <h3 id="recognition" className="text-xl font-medium">Recognition</h3>
+            <h2 id="recognition" className="text-xl font-medium">Recognition</h2>
             <ul className="list-disc pl-5 space-y-1">
               <li>Legal500 – Rising Star – 2020 Edition (White-Collar Crime)</li>
               <li>Legal500 – Next Generation Partner – 2021 Edition (White-Collar Crime)</li>
@@ -108,7 +108,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="memberships" className="grid gap-4">
-            <h3 id="memberships" className="text-xl font-medium">Memberships</h3>
+            <h2 id="memberships" className="text-xl font-medium">Memberships</h2>
             <ul className="list-disc pl-5 space-y-1">
               <li>Member of Bucharest Bar</li>
               <li>Member of Romanian Lawyers Union</li>
@@ -116,7 +116,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="employment" className="grid gap-4">
-            <h3 id="employment" className="text-xl font-medium">Employment record</h3>
+            <h2 id="employment" className="text-xl font-medium">Employment record</h2>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">Wolf Theiss - Societate civila de avocati, Bucharest, Romania</h4>
               <p className="text-sm text-muted-foreground">Law firm, White collar crime, Compliance, Corporate Investigation, Civil and Commercial law, Litigations</p>
@@ -155,7 +155,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="relevant-record" className="grid gap-4">
-            <h3 id="relevant-record" className="text-xl font-medium">Relevant professional record</h3>
+            <h2 id="relevant-record" className="text-xl font-medium">Relevant professional record</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>Advising a global private equity fund in a sensitive internal fraud in one of its subsidiaries in Romania and related investigation matter on, inter alia, limiting several companies' and shareholders' potential exposures, combined with complex assistance on asset recovery, white collar crime and several compliance processes.</li>
               <li>Advising a large European investment fund in relation to its proposed acquisition of an over 100 MW renewable project and on assessing ongoing asset recovery and white-collar crime angles thereto relevant for the acquisition and for structuring the acquisition.</li>
@@ -189,7 +189,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="publications" className="grid gap-4">
-            <h3 id="publications" className="text-xl font-medium">Publications</h3>
+            <h2 id="publications" className="text-xl font-medium">Publications</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>
                 Newest EU sanctions against Russia target military capabilities, propaganda tools and more, 2022, Wolf Theiss, {" "}
