@@ -245,17 +245,6 @@ const Index = () => {
                 )}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
-              <div className="mt-5 md:hidden text-center">
-                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
-                  <Button variant="premium" size="lg" className="border border-hero-foreground"><Phone /> 0745 506 443</Button>
-                </a>
-              </div>
-              <div className="hidden md:block h-[35px]" aria-hidden="true"></div>
-              <div className="hidden md:flex justify-center">
-                <a href="tel:+40745506443" aria-label="Apelează 0745 506 443">
-                  <Button variant="premium" size="lg" className="border border-hero-foreground"><Phone /> 0745 506 443</Button>
-                </a>
-              </div>
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
@@ -322,7 +311,7 @@ const Index = () => {
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
             <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {t.services.map((s, i) => (
+              {t.services.slice(0, 4).map((s, i) => (
                 <GlowCard key={i} customSize borderPx={1} blackBg borderRunner noShadow className="w-full">
                   <article className="text-hero-foreground">
                     <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
@@ -330,6 +319,28 @@ const Index = () => {
                   </article>
                 </GlowCard>
               ))}
+              <div className="col-span-full flex justify-center">
+                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                  <Button variant="premium" size="lg" className="border border-hero-foreground">
+                    <Phone /> 0745 506 443
+                  </Button>
+                </a>
+              </div>
+              {t.services.slice(4).map((s, i) => (
+                <GlowCard key={i + 4} customSize borderPx={1} blackBg borderRunner noShadow className="w-full">
+                  <article className="text-hero-foreground">
+                    <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
+                    <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
+                  </article>
+                </GlowCard>
+              ))}
+            </div>
+            <div className="mt-8 flex justify-center">
+              <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                <Button variant="premium" size="lg" className="border border-hero-foreground">
+                  <Phone /> 0745 506 443
+                </Button>
+              </a>
             </div>
           </div>
         </section>
