@@ -100,7 +100,7 @@ export const translations = {
     navLangEN: "EN",
     nav: {
       services: "Services",
-      about: "About",
+      about: "About me",
       contact: "Contact",
       blog: "Blog",
       menu: "Menu",
