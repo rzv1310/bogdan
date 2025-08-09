@@ -1,6 +1,9 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
+import { Phone } from "lucide-react";
 
 export default function CriminalitateEconomica() {
   useSEO({
@@ -76,6 +79,15 @@ export default function CriminalitateEconomica() {
             Procedurile penale în astfel de cazuri sunt complexe și implică atât expertiză juridică, cât și cunoștințe financiare și fiscale. Un avocat cu experiență în
             white-collar crime îți poate proteja drepturile, poate analiza probele, formula apărări solide și negocia strategii optime pentru obținerea celui mai bun rezultat posibil.
           </p>
+          <div className="mt-2 flex justify-center animate-fade-in">
+            <GeminiButtonEffect>
+              <a href="tel:+40745506443" aria-label="Vreau avocat!">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> Vreau avocat!
+                </Button>
+              </a>
+            </GeminiButtonEffect>
+          </div>
         </section>
         <Card>
           <CardHeader className="p-6">
