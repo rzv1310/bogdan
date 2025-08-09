@@ -225,11 +225,16 @@ const beams: any[] = [
 const gradientStops = ["#FFFFFF", "#FFFF00", "#FFA500", "#FFD700"];
 
 const reviewsRO: Reviews3DItem[] = [
-  { name: "M. P.", text: "Profesionalism și discreție. M-a ajutat rapid, cu claritate și empatie.", stars: 5 },
-  { name: "A. T.", text: "Explică pe înțeles, răspunde prompt și își respectă promisiunile.", stars: 5 },
-  { name: "D. S.", text: "Strategie foarte bună în instanță. Rezultatul a fost peste așteptări.", stars: 5 },
-  { name: "I. C.", text: "Comunică transparent, mereu pregătit. Recomand cu toată încrederea.", stars: 5 },
-  { name: "R. B.", text: "Calm, documentat, eficient. A obținut o soluție excelentă pentru mine.", stars: 5 },
+  { name: "Stefan G.", text: "Am avut un accident rutier și nu știam cum să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!", stars: 5 },
+  { name: "Costică C.", text: "Domnul avocat Bogdan Lamatic nu doar că știe legea, dar o și explică pe înțelesul oricui. Și îți da siguranță pe tot timpul procesului. Recomand cu căldură!", stars: 5 },
+  { name: "Mihai C.", text: "În calitate de coleg avocat, pot spune că Bogdan este cu adevărat generos cu timpul și cunoștințele sale, mereu dispus să ajute.", stars: 5 },
+  { name: "Crina A.", text: "Am apelat la avocatul Lamatic pentru o situație de executare silită. Soluția propusă a funcționat perfect.", stars: 5 },
+  { name: "Matei R.", text: "Într-un dosar penal foarte greu Bogdan a reușit să obțină un rezultat pe care îl credeam imposibil. Recomand 100%!", stars: 5 },
+  { name: "Ștefan A.", text: "Sunt avocat în Cluj și am colaborat cu Bogdan pe un dosar de malpraxis medical. Pregătirea sa juridică este impecabilă.", stars: 5 },
+  { name: "Nicoleta L.", text: "Căutam un avocat bun în București și l-am găsit pe domnul Bogdan Lamatic. Îl recomand tuturor celor care au nevoie de un avocat de încredere și in primul rând de un OM", stars: 5 },
+  { name: "Gigi T.", text: "Bogdan este foarte bine pregătit în drept penal. M-a apărat într-un dosar cu acuzații urate și rezultatul a fost excepțional.", stars: 5 },
+  { name: "Elena C.", text: "Cel mai bun avocat penalist din București!", stars: 5 },
+  { name: "Ana-Maria A.", text: "L am avut ca avocat pe Bogdan Lamatic, m a aparat intr un dosar de drept penal in București și am fost achitata!", stars: 5 },
 ];
 
 const reviewsEN: Reviews3DItem[] = [
@@ -428,8 +433,15 @@ const Index = () => {
         </section>
         {/* Reviews */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <h2 className="text-3xl font-semibold mb-6">
-            {lang === "ro" ? "Recenzii clienți" : "Client reviews"}
+          <h2 className="text-3xl font-semibold mb-6 italic">
+            {lang === "ro" ? (
+              <>
+                &bdquo;Cuvintele de mulțumire ale celor pe care i-am reprezentat<br />
+                sunt cea mai mare satisfacție profesională pe care o pot primi!&rdquo;
+              </>
+            ) : (
+              "Client reviews"
+            )}
           </h2>
           <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
         </section>
