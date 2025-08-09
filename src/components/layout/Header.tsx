@@ -18,6 +18,7 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
+import { useLanguage } from "@/context/language";
 
 const services = [
   { label: "Criminalitate economică", to: "/servicii/criminalitate-economica" },
@@ -32,6 +33,7 @@ const services = [
 ];
 
 export default function Header() {
+  const { lang, setLang } = useLanguage();
   return (
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
@@ -67,15 +69,51 @@ export default function Header() {
 
           {/* Language selector (desktop) */}
           <div className="ml-3 pl-3 border-l flex items-center gap-1">
-            <Button size="sm" variant="ghost" aria-label="Schimbă limba în română">RO</Button>
-            <Button size="sm" variant="ghost" aria-label="Schimbă limba în engleză">EN</Button>
+            <Button
+              size="sm"
+              variant="ghost"
+              className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+              aria-label="Schimbă limba în română"
+              aria-pressed={lang === "ro"}
+              onClick={() => setLang("ro")}
+            >
+              RO
+            </Button>
+            <Button
+              size="sm"
+              variant="ghost"
+              className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+              aria-label="Schimbă limba în engleză"
+              aria-pressed={lang === "en"}
+              onClick={() => setLang("en")}
+            >
+              EN
+            </Button>
           </div>
         </div>
 
         {/* Mobile language buttons on the right + hamburger centered */}
         <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-1">
-          <Button size="sm" variant="ghost" aria-label="Schimbă limba în română">RO</Button>
-          <Button size="sm" variant="ghost" aria-label="Schimbă limba în engleză">EN</Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+            aria-label="Schimbă limba în română"
+            aria-pressed={lang === "ro"}
+            onClick={() => setLang("ro")}
+          >
+            RO
+          </Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+            aria-label="Schimbă limba în engleză"
+            aria-pressed={lang === "en"}
+            onClick={() => setLang("en")}
+          >
+            EN
+          </Button>
         </div>
         <Drawer>
           <DrawerTrigger asChild>
