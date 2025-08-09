@@ -130,7 +130,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       backgroundAttachment: "fixed",
       border: "var(--border-size) solid var(--backup-border)",
       position: "relative",
-      touchAction: "none",
+      touchAction: "pan-y",
     };
 
     // Flat orange variant: solid border color from design token, no exterior glow
