@@ -63,9 +63,19 @@ export default function Header() {
             </NavigationMenuList>
           </NavigationMenu>
           <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>Contact</NavLink>
+
+          {/* Language selector (desktop) */}
+          <div className="ml-3 pl-3 border-l flex items-center gap-1">
+            <Button size="sm" variant="ghost" aria-label="Schimbă limba în română">RO</Button>
+            <Button size="sm" variant="ghost" aria-label="Schimbă limba în engleză">EN</Button>
+          </div>
         </div>
 
-        {/* Mobile hamburger centered */}
+        {/* Mobile language buttons on the right + hamburger centered */}
+        <div className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-1">
+          <Button size="sm" variant="ghost" aria-label="Schimbă limba în română">RO</Button>
+          <Button size="sm" variant="ghost" aria-label="Schimbă limba în engleză">EN</Button>
+        </div>
         <Drawer>
           <DrawerTrigger asChild>
             <button
