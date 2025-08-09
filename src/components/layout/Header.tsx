@@ -47,7 +47,7 @@ export default function Header() {
           <span className="block font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
             {lang === "ro" ? "CABINET AVOCAT" : "LAW OFFICE"}
           </span>
-          <span className="block font-signature italic text-base md:text-xl leading-none">Bogdan Lamatic</span>
+          <span className="block mt-1 md:mt-0 font-signature italic text-base md:text-xl leading-none">Bogdan Lamatic</span>
         </Link>
 
         {/* Desktop nav */}
