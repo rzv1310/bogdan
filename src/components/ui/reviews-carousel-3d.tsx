@@ -110,7 +110,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
       </motion.div>
 
       {/* simple controls */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2 md:px-6 transform -translate-y-[30px]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-50 flex items-center justify-between px-2 md:px-6">
         <button
           type="button"
           aria-label="Anterior"
