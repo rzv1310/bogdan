@@ -107,3 +107,80 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Book card (Uiverse-inspired) */
+  .book-card {
+    position: relative;
+    border-radius: var(--radius);
+    width: 100%;
+    min-height: 180px;
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    box-shadow: 0 10px 30px -12px hsl(var(--foreground) / 0.3);
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(var(--border));
+    padding: 1rem;
+  }
+  .book-cover {
+    position: absolute;
+    inset: 0;
+    background-color: hsl(var(--muted));
+    border-radius: inherit;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-origin: left;
+    box-shadow: 0 10px 30px -12px hsl(var(--foreground) / 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    will-change: transform;
+  }
+  .book-card:hover .book-cover {
+    transform: rotateY(-80deg);
+  }
+  .book-content {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Service card (Uiverse-inspired) */
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background-color: hsl(var(--hero));
+    color: hsl(var(--hero-foreground));
+    min-height: 220px;
+    box-shadow: 0 20px 40px -20px hsl(var(--foreground) / 0.35);
+  }
+  .service-card-inner {
+    position: absolute;
+    inset: 0.5rem;
+    border-radius: inherit;
+    background-color: hsl(var(--hero) / 0.92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    z-index: 1;
+  }
+  .service-card-glow {
+    position: absolute;
+    width: 140%;
+    height: 120px;
+    left: -50%;
+    top: -40%;
+    background: hsl(var(--background));
+    filter: blur(50px);
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}

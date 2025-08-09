@@ -222,26 +222,30 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h2 className="text-2xl font-semibold mb-4">{t.valuesTitle}</h2>
-              <ul className="space-y-2">
+              <ul className="grid sm:grid-cols-2 gap-4">
                 {t.values.map((v, i) => (
-                  <li
-                    key={i}
-                    className="rounded-md border bg-card text-card-foreground p-4"
-                  >
-                    • {v}
+                  <li key={i} className="book-card">
+                    <div className="book-content">
+                      <p className="text-base font-semibold">{v}</p>
+                    </div>
+                    <div className="book-cover">
+                      <span className="text-sm font-medium">{v}</span>
+                    </div>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
               <h2 className="text-2xl font-semibold mb-4">{t.reasonsTitle}</h2>
-              <ul className="space-y-2">
+              <ul className="grid sm:grid-cols-2 gap-4">
                 {t.reasons.map((r, i) => (
-                  <li
-                    key={i}
-                    className="rounded-md border bg-card text-card-foreground p-4"
-                  >
-                    • {r}
+                  <li key={i} className="book-card">
+                    <div className="book-content">
+                      <p className="text-base font-medium">{r}</p>
+                    </div>
+                    <div className="book-cover">
+                      <span className="text-sm font-medium">{r}</span>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -251,11 +255,11 @@ const Index = () => {
 
         {/* CTA */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 pb-4 md:pb-8">
-          <div className="rounded-xl border p-6 md:p-8 bg-accent/10">
+          <div className="rounded-xl border border-foreground/10 p-6 md:p-8 bg-hero text-hero-foreground">
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
-            <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
+            <p className="text-hero-foreground/80 mb-6 max-w-3xl">{t.ctaText}</p>
             <a href="tel:+40700000000" aria-label={t.callNow}>
-              <Button variant="premium" size="lg">
+              <Button size="lg" className="bg-background text-foreground hover:bg-background/90">
                 <Phone /> {t.callNow}
               </Button>
             </a>
@@ -267,12 +271,12 @@ const Index = () => {
           <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {t.services.map((s, i) => (
-              <article
-                key={i}
-                className="rounded-lg border bg-card text-card-foreground p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
-                <p className="text-muted-foreground whitespace-pre-line">{s.body}</p>
+              <article key={i} className="service-card">
+                <div className="service-card-inner">
+                  <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
+                  <p className="text-sm md:text-base opacity-90 whitespace-pre-line">{s.body}</p>
+                </div>
+                <div className="service-card-glow" aria-hidden="true"></div>
               </article>
             ))}
           </div>
