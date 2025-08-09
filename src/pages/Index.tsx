@@ -245,6 +245,13 @@ const Index = () => {
                 )}
               </blockquote>
               <p className="mt-2 text-lg md:text-xl italic font-signature text-right">{t.heroAuthor}</p>
+              <div className="mt-6 flex md:justify-start justify-center">
+                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
+                  <Button variant="hero" size="lg">
+                    <Phone /> {t.callNow}
+                  </Button>
+                </a>
+              </div>
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
