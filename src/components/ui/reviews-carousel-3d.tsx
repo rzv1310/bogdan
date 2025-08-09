@@ -39,7 +39,7 @@ function circularDiff(i: number, active: number, n: number) {
 
 export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
   const isSm = useMediaQuery("(max-width: 640px)");
-  const cardW = isSm ? 260 : 300; // equal width
+  const cardW = isSm ? 300 : 300; // larger on mobile
   const gap = isSm ? 14 : 18; // equal gap
   const slot = cardW + gap;
   const [active, setActive] = useState(0);
