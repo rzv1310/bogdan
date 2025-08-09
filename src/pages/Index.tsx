@@ -204,7 +204,7 @@ const Index = () => {
                   </p>
                 ))}
               </blockquote>
-              <p className="mt-3 text-sm opacity-80 text-right">{t.heroAuthor}</p>
+              <p className="mt-3 text-2xl md:text-3xl font-signature text-right">{t.heroAuthor}</p>
             </div>
 
             <div className="relative">
