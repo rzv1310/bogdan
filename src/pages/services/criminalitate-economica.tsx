@@ -10,7 +10,7 @@ export default function CriminalitateEconomica() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="text-2xl font-semibold mb-2">Criminalitate economică</h1>
+      <h1 className="text-2xl font-semibold mb-2">Avocat Infracțiuni Economice – Specializat în „White-Collar Crime”</h1>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -28,6 +28,55 @@ export default function CriminalitateEconomica() {
       </Breadcrumb>
 
       <div className="mt-6 space-y-8">
+        <section className="space-y-4">
+          <p>
+            Infracțiunile economice reprezintă ansamblul activităților ilegale de natură financiară, fiscală, comercială, contabilă, bancară sau vamală,
+            sancționate de numeroase articole din Codul penal și legi speciale, precum:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Codul Penal: art. 207, 239-242, 244-248, 249-252, 256^1, 289-292, 295, 297-298, 300-301, 306-307, 309-328</li>
+            <li>Legea nr. 241/2005: art. 3-9 (prevenirea și combaterea evaziunii fiscale)</li>
+            <li>Legea nr. 656/2002: art. 29-33 (prevenirea spălării banilor)</li>
+            <li>Legea nr. 31/1990: art. 271-281 (infracțiuni privind societățile comerciale)</li>
+            <li>Legea nr. 78/2000: art. 6-7, art. 10-13^2, art. 15, art. 18^1-18^5 (corupție și fapte asimilate)</li>
+            <li>Codul Vamal: art. 270-275</li>
+            <li>Alte legi speciale aplicabile.</li>
+          </ul>
+
+          <h2 className="text-xl font-semibold">Ce sunt infracțiunile economice (White-Collar Crime)</h2>
+          <p>
+            Numite și „infracțiuni ale gulerelor albe”, acestea sunt săvârșite, în general, de persoane aflate în poziții sociale sau profesionale importante.
+            Nu implică violență fizică, ci produc pierderi financiare semnificative pentru persoane, companii sau instituții.
+          </p>
+
+          <h2 className="text-xl font-semibold">Exemple de infracțiuni economice</h2>
+          <p>Un avocat specializat în infracțiuni economice poate asigura apărarea în cazuri precum:</p>
+          <ul className="list-disc pl-6 columns-1 md:columns-2 gap-8 [&_li]:break-inside-avoid">
+            <li>Abuz de încredere în fraudarea creditorilor</li>
+            <li>Bancrută frauduloasă</li>
+            <li>Înșelăciune</li>
+            <li>Deturnarea licitațiilor publice</li>
+            <li>Operațiuni financiare frauduloase</li>
+            <li>Luare și dare de mită</li>
+            <li>Trafic și cumpărare de influență</li>
+            <li>Delapidare</li>
+            <li>Abuz în serviciu</li>
+            <li>Falsificare de monede și înscrisuri</li>
+            <li>Deturnare de fonduri</li>
+            <li>Evaziune fiscală</li>
+            <li>Spălarea banilor</li>
+            <li>Contrabandă</li>
+            <li>Utilizarea ilegală a subvențiilor</li>
+            <li>Incompatibilități financiare cu funcția publică</li>
+            <li>Schimbarea destinației fondurilor europene</li>
+          </ul>
+
+          <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
+          <p>
+            Procedurile penale în astfel de cazuri sunt complexe și implică atât expertiză juridică, cât și cunoștințe financiare și fiscale. Un avocat cu experiență în
+            white-collar crime îți poate proteja drepturile, poate analiza probele, formula apărări solide și negocia strategii optime pentru obținerea celui mai bun rezultat posibil.
+          </p>
+        </section>
         <Card>
           <CardHeader className="p-6">
             <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Codul Penal</h2>
