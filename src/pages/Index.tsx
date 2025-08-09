@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
-import { ReviewsCarousel } from "@/components/ui/reviews-carousel";
+import { ReviewsCarousel3D } from "@/components/ui/reviews-carousel-3d";
 
 type Lang = "ro" | "en";
 const translations = {
@@ -397,7 +397,7 @@ const Index = () => {
         {/* Reviews */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16" aria-label="Recenzii clienți">
           <h2 className="text-3xl font-semibold mb-8">Recenzii</h2>
-          <ReviewsCarousel
+          <ReviewsCarousel3D
             reviews={[
               { name: "Stefan G.", text: "Am avut un accident rutier și nu știam cum să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!", stars: 5 },
               { name: "Costică C.", text: "Domnul avocat Bogdan Lamatic nu doar că știe legea, dar o și explică pe înțelesul oricui. Și îți da siguranță pe tot timpul procesului. Recomand cu căldură!", stars: 5 },
