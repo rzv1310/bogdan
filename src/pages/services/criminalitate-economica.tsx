@@ -1364,6 +1364,56 @@ export default function CriminalitateEconomica() {
           </CardContent>
         </Card>
 
+        <Card className="border-accent" aria-labelledby="stats-title">
+          <CardHeader className="p-6">
+            <h2 id="stats-title" className="text-xl font-medium">Infracțiuni Economice | Statistici în România</h2>
+          </CardHeader>
+          <CardContent className="space-y-6 [&_p]:text-base [&_li]:text-base">
+            <section className="space-y-3">
+              <h3 className="text-lg font-semibold">1. Date generale din statistica oficială</h3>
+              <p>
+                Conform România în cifre 2023, publicat de INS (Institutul Național de Statistică), infracțiunile economice fac parte dintre categoriile indicate în agregatul „infracțiuni care aduc atingere unor relații privind conviețuirea socială”.
+                Această consolidare oferă context în raport cu alte grupe de infracțiuni, chiar dacă nu oferă cifre detaliate specifice infracțiunilor economice.
+              </p>
+            </section>
+
+            <section className="space-y-3">
+              <h3 className="text-lg font-semibold">2. Activitatea DIICOT în materia infracțiunilor economico-financiare</h3>
+              <p>Raportul de activitate DIICOT pe anul 2024 evidențiază o creștere a volumului cauzelor soluționate:</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>2024 - 15.191 cauze soluționate (față de 14.719 în 2023)</li>
+                <li>Totodată, separând tipologia cauzelor transfrontaliere, în 2024: 195 cauze privind infracțiuni economico-financiare și contrabandă, dintre care 115 active și 80 pasive.</li>
+              </ul>
+              <p>Acești indicatori reflectă eforturile în investigarea și soluționarea sistematică a infracțiunilor economice grave.</p>
+            </section>
+
+            <section className="space-y-3">
+              <h3 className="text-lg font-semibold">3. Indicatori comparativi 2023</h3>
+              <p>Raportul DIICOT pentru 2023 oferă elemente comparabile:</p>
+              <p>165 cauze de infracțiuni economico-financiare și contrabandă (75 active și 90 pasive).</p>
+              <p>Comparativ cu 2024, se observă o ușoară creștere a volumului cauzelor soluționate în 2024 versus 2023.</p>
+            </section>
+
+            <section className="space-y-3">
+              <h3 className="text-lg font-semibold">Sinteză:</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Tendință ascendentă: atât în volumul soluțiilor, cât și al cauzelor economico-financiare în 2024 față de 2023.</li>
+                <li>Legătură directă cu activitatea DIICOT, indicator esențial în evaluarea capacității instituționale de combatere.</li>
+              </ul>
+            </section>
+
+            <section className="space-y-3">
+              <h3 className="text-lg font-semibold">Surse oficiale:</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>România în cifre 2023 - INS – referințe agregate infracțiuni economice (ZIUA de Constanța, media.dcnews.ro, Institutul Național de Statistică)</li>
+                <li>Raport activitate DIICOT 2024 - total cauze soluționate (diicot.ro)</li>
+                <li>Raport activitate DIICOT 2024 - cauze economico-financiare și contrabandă (media.dcnews.ro)</li>
+                <li>Raport activitate DIICOT 2023 - cauze economico-financiare și contrabandă (ZIUA de Constanța)</li>
+              </ul>
+            </section>
+          </CardContent>
+        </Card>
+
       </div>
     </section>
   );
