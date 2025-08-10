@@ -7,9 +7,9 @@ import { Phone } from "lucide-react";
 
 export default function CauzeDroguri() {
   useSEO({
-    title: "Avocat Trafic Droguri București – Bogdan Lamatic",
+    title: "Avocat Trafic Droguri București - Bogdan Lamatic",
     description:
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București – 17 ani experiență în drept penal.",
+      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 17 ani experiență în drept penal.",
   });
 
   useEffect(() => {

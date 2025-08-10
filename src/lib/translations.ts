@@ -45,7 +45,7 @@ export const translations = {
       {
         title: "DREPT PENAL",
         body:
-          "Am o vastă experiență în reprezentarea clienților în fața tuturor instanțelor de judecată, începând cu cele cu grad de jurisdicție inferior și până la Înalta Curte de Casație și Justiție, precum și la toate nivelurile unităților de parchet de pe lângă instanțele de judecată (de la instanțe ordinare până la Înalta Curte de Casație și Justiție, inclusiv structuri specializate – Direcția Națională Anticorupție, Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism și Parchetul European). Cele mai multe dintre cazurile mele prezintă un grad ridicat de complexitate, incluzând documentație voluminoasă și activități de cercetare pluridisciplinară.",
+          "Am o vastă experiență în reprezentarea clienților în fața tuturor instanțelor de judecată, începând cu cele cu grad de jurisdicție inferior și până la Înalta Curte de Casație și Justiție, precum și la toate nivelurile unităților de parchet de pe lângă instanțele de judecată (de la instanțe ordinare până la Înalta Curte de Casație și Justiție, inclusiv structuri specializate - Direcția Națională Anticorupție, Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism și Parchetul European). Cele mai multe dintre cazurile mele prezintă un grad ridicat de complexitate, incluzând documentație voluminoasă și activități de cercetare pluridisciplinară.",
       },
       {
         title: "Apărare în cauze de criminalitate economică",
@@ -139,7 +139,7 @@ export const translations = {
       {
         title: "CRIMINAL LAW",
         body:
-          "I have extensive experience representing clients before all courts of law, from lower jurisdiction courts to the High Court of Cassation and Justice, as well as before all levels of the prosecutor’s offices attached to the courts (including specialized structures – the National Anticorruption Directorate, the Directorate for Investigating Organized Crime and Terrorism, and the European Public Prosecutor’s Office). Most of my cases are highly complex, involving extensive documentation and multidisciplinary research.",
+          "I have extensive experience representing clients before all courts of law, from lower jurisdiction courts to the High Court of Cassation and Justice, as well as before all levels of the prosecutor’s offices attached to the courts (including specialized structures - the National Anticorruption Directorate, the Directorate for Investigating Organized Crime and Terrorism, and the European Public Prosecutor’s Office). Most of my cases are highly complex, involving extensive documentation and multidisciplinary research.",
       },
       {
         title: "Defense in financial crime cases",
@@ -152,7 +152,7 @@ export const translations = {
           "I advise and defend clients facing allegations such as bribery, abuse of office, influence peddling, unlawful financial benefits, and conflict of interest, ensuring a discreet and strategic approach throughout.",
       },
       {
-        title: "Legal support in crypto-asset–related investigations",
+        title: "Legal support in crypto-asset-related investigations",
         body:
           "I handle cases involving illicit crypto transactions, undeclared digital asset holdings, and fraud involving blockchain technologies — a fast-evolving field that requires both legal clarity and technical understanding.",
       },

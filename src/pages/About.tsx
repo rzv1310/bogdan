@@ -12,8 +12,8 @@ export default function About() {
     title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic",
     description:
       lang === "en"
-        ? "About me – Europass CV of attorney Bogdan Lamatic: experience, recognitions, publications."
-        : "Despre avocat Bogdan Lamatic – informații, experiență și prezentare profesională.",
+        ? "About me - Europass CV of attorney Bogdan Lamatic: experience, recognitions, publications."
+        : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
   });
 
   const personSchema = {
@@ -58,7 +58,7 @@ export default function About() {
       {lang === "en" ? (
         <main className="mt-6 space-y-8">
           <header>
-            <p className="text-sm text-muted-foreground">Curriculum vitae – Europass</p>
+            <p className="text-sm text-muted-foreground">Curriculum vitae - Europass</p>
             <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Europass CV - About Me</h1>
           </header>
 
@@ -99,11 +99,11 @@ export default function About() {
           <section aria-labelledby="recognition" className="grid gap-4">
             <h2 id="recognition" className="text-xl font-medium">Recognition</h2>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Legal500 – Rising Star – 2020 Edition (White-Collar Crime)</li>
-              <li>Legal500 – Next Generation Partner – 2021 Edition (White-Collar Crime)</li>
-              <li>Legal500 – Next Generation Partner – 2022 Edition (White-Collar Crime)</li>
-              <li>Legal500 – Next Generation Partner – 2023 Edition (White-Collar Crime)</li>
-              <li>Legal500 – Next Generation Partner – 2024 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Rising Star - 2020 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2021 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2022 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2023 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2024 Edition (White-Collar Crime)</li>
             </ul>
           </section>
 
@@ -120,36 +120,36 @@ export default function About() {
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">Wolf Theiss - Societate civila de avocati, Bucharest, Romania</h4>
               <p className="text-sm text-muted-foreground">Law firm, White collar crime, Compliance, Corporate Investigation, Civil and Commercial law, Litigations</p>
-              <p className="mt-1">Period: 2022 – 2025</p>
+              <p className="mt-1">Period: 2022 - 2025</p>
             </article>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">„Enache Pirtea & Asociatii” S.p.a.r.l., 32nd Ion Negulici, 1st District, Bucharest, Romania</h4>
               <p className="text-sm text-muted-foreground">Law firm, White collar crime, Civil and Commercial law, Litigations</p>
-              <p className="mt-1">Period: 2020 – 2022</p>
+              <p className="mt-1">Period: 2020 - 2022</p>
               <p>Position: Partner</p>
             </article>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">„Musat & Associates” S.p.a.r.l., 43rd Aviatorilor Boulevard, 1st District, Bucharest, Romania</h4>
               <p className="text-sm text-muted-foreground">Law firm, White collar crime, Civil and Commercial law, Litigations</p>
-              <p className="mt-1">Period: 2013 – 2020</p>
+              <p className="mt-1">Period: 2013 - 2020</p>
               <p>Position: 2013 - 2015: Senior Associate; 2016 - 2020: Managing Associate</p>
             </article>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">Serban & Associates Law firm, Bucharest</h4>
               <p className="text-sm text-muted-foreground">Law firm, White collar crime</p>
-              <p className="mt-1">Period: 2010 – 2013</p>
+              <p className="mt-1">Period: 2010 - 2013</p>
               <p>Position: Senior Associate</p>
             </article>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">Cristina Trelea Law Office, Bucharest</h4>
               <p className="text-sm text-muted-foreground">Law Office</p>
-              <p className="mt-1">Period: 2007 – 2010</p>
+              <p className="mt-1">Period: 2007 - 2010</p>
               <p>Position: Associate</p>
             </article>
             <article className="rounded-md border p-4">
               <h4 className="font-semibold">Sova & Associates Law Firm, Bucharest</h4>
               <p className="text-sm text-muted-foreground">Law firm</p>
-              <p className="mt-1">Period: January 2007 – November 2007</p>
+              <p className="mt-1">Period: January 2007 - November 2007</p>
               <p>Position: Associate</p>
             </article>
           </section>
