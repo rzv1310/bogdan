@@ -213,7 +213,7 @@ export default function CauzeDroguri() {
       <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">
-            Introducere – De ce este esențial să acționezi rapid în cazurile de trafic de droguri
+            De ce este esențial să acționezi rapid în cazurile de trafic de droguri
           </h2>
         </CardHeader>
         <CardContent className="space-y-4 text-base leading-relaxed">
@@ -265,7 +265,7 @@ export default function CauzeDroguri() {
       {/* H3: Droguri de mare risc */}
       <Card className="mt-8 border-accent">
         <CardHeader>
-          <h2 className="text-2xl font-semibold">Drogurile de mare risc – Exemple și implicații legale</h2>
+          <h2 className="text-2xl font-semibold">Drogurile de mare risc</h2>
         </CardHeader>
         <CardContent className="space-y-4 text-base leading-relaxed">
           <p>
@@ -297,7 +297,7 @@ export default function CauzeDroguri() {
       {/* H3: Droguri de risc */}
       <Card className="mt-8 border-accent">
         <CardHeader>
-          <h2 className="text-2xl font-semibold">Drogurile de risc – Exemple și implicații legale</h2>
+          <h2 className="text-2xl font-semibold">Drogurile de risc</h2>
         </CardHeader>
         <CardContent className="space-y-4 text-base leading-relaxed">
           <p>
