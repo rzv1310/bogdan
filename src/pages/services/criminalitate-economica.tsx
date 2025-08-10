@@ -1248,6 +1248,80 @@ export default function CriminalitateEconomica() {
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Vamal</h2>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="cv-art-270">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 270 – Contrabanda</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Introducerea în sau scoaterea din țară, prin orice mijloace, a bunurilor sau mărfurilor, prin alte locuri decât cele stabilite pentru control vamal, constituie infracțiune și se pedepsește cu închisoare de la 2 la 7 ani și confiscarea bunurilor.</p>
+                      <p>(2) Constituie, de asemenea, infracțiune introducerea sau scoaterea din țară, prin locurile stabilite pentru control, fără declararea acestora în documentele vamale, dacă valoarea bunurilor depășește limita prevăzută de lege.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea lipsei intenției directe – dacă bunurile au fost trecute din eroare, fără scop de fraudă, sau dacă valoarea este sub pragul legal, fapta poate fi reîncadrată ca contravenție. De asemenea, dacă locul de trecere a frontierei era unul folosit din cauza unei situații de urgență sau a indicațiilor autorităților, elementul material poate fi contestat.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="cv-art-271">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 271 – Tentativa de contrabandă</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Tentativa la infracțiunea prevăzută la art. 270 se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să arăt că acțiunea nu a depășit faza actelor pregătitoare și că nu există probe că bunurile ar fi trecut efectiv frontiera. Dacă autoritățile au intervenit înainte de orice act de trecere, se poate susține lipsa pericolului social concret.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="cv-art-272">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 272 – Folosirea documentelor vamale falsificate</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Folosirea la autoritatea vamală a documentelor falsificate sau obținute prin mijloace frauduloase, pentru a induce în eroare asupra naturii, cantității sau valorii mărfurilor, se pedepsește cu închisoare de la 3 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, verific autenticitatea documentelor și demonstrez că eventualele neconcordanțe provin din greșeli administrative sau traduceri incorecte, nu din intenție frauduloasă. Dacă documentul a fost întocmit de un terț, fără știrea clientului, se poate invoca lipsa vinovăției.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="cv-art-273">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 273 – Sustragerea de la plata taxelor vamale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Sustragerea de la plata taxelor datorate pentru bunurile introduse sau scoase din țară constituie infracțiune și se pedepsește cu închisoare de la 1 la 5 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, analizez dacă valoarea taxelor este corect calculată și dacă bunurile au fost încadrate corect în nomenclatura vamală. Dacă neplata rezultă dintr-o interpretare greșită a codului tarifar sau dintr-o eroare a comisionarului vamal, răspunderea penală poate fi exclusă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </CardContent>
+        </Card>
+
       </div>
     </section>
   );
