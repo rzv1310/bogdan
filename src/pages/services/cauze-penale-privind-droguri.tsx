@@ -2,6 +2,8 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { useSEO } from "@/hooks/useSEO";
 import { useEffect } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 
 export default function CauzeDroguri() {
   useSEO({
@@ -181,6 +183,15 @@ export default function CauzeDroguri() {
       </p>
 
       <div className="mt-4">
+        <a href="tel:+40745506443" aria-label="Apelează acum">
+          <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90">
+            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
+            Apelează acum: +40 745 506 443
+          </Button>
+        </a>
+      </div>
+
+      <div className="mt-4">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -199,7 +210,7 @@ export default function CauzeDroguri() {
       </div>
 
       {/* H2: Introducere */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">
             Introducere – De ce este esențial să acționezi rapid în cazurile de trafic de droguri
@@ -212,17 +223,17 @@ export default function CauzeDroguri() {
             economice și de corupție.
           </p>
           <p>
-            În toată cariera mea, am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații
-            DIICOT până la procese în fața Înaltei Curți de Casație și Justiție. Știu din practică un adevăr simplu:
-            primele ore după reținere sunt decisive. În astfel de dosare, fiecare detaliu contează – o interceptare
-            contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele
-            incriminate pot schimba radical soarta unui proces.
+            În toată cariera mea, am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații DIICOT până la procese în fața Înaltei Curți de Casație și Justiție.
+          </p>
+          <p>Știu din practică un adevăr simplu: primele ore după reținere sunt decisive.</p>
+          <p>
+            În astfel de dosare, fiecare detaliu contează – o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
           </p>
         </CardContent>
       </Card>
 
       {/* H2: Ce înseamnă traficul de droguri */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Ce înseamnă traficul de droguri în legislația românească</h2>
         </CardHeader>
@@ -252,7 +263,7 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H3: Droguri de mare risc */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Drogurile de mare risc – Exemple și implicații legale</h2>
         </CardHeader>
@@ -276,15 +287,15 @@ export default function CauzeDroguri() {
             </li>
           </ul>
           <p>
-            Cazurile implicând droguri de mare risc sunt tratate cu maximă severitate de instanțe și necesită o
-            strategie juridică solidă și rapidă. În astfel de cazuri, fiecare detaliu procedural contează. Nu de puține
-            ori am obținut rezultate favorabile prin contestarea probelor obținute ilegal.
+            Cazurile implicând droguri de mare risc sunt tratate cu maximă severitate de instanțe și necesită o strategie juridică solidă și rapidă.
           </p>
+          <p>În astfel de cazuri, fiecare detaliu procedural contează.</p>
+          <p>Nu de puține ori am obținut rezultate favorabile prin contestarea probelor obținute ilegal.</p>
         </CardContent>
       </Card>
 
       {/* H3: Droguri de risc */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Drogurile de risc – Exemple și implicații legale</h2>
         </CardHeader>
@@ -311,7 +322,7 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Pedepse și consecințe */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Pedepse și consecințe juridice</h2>
         </CardHeader>
@@ -321,15 +332,16 @@ export default function CauzeDroguri() {
             <li>7–15 ani – droguri de mare risc.</li>
           </ul>
           <p>
-            Factorii agravanti – implicarea minorilor, organizarea în grup sau tranzacțiile internaționale – cresc
-            semnificativ pedeapsa. Consecințele se extind dincolo de închisoare: cazier, interdicții de călătorie,
-            pierderea locului de muncă, afectarea reputației.
+            Factorii agravanti – implicarea minorilor, organizarea în grup sau tranzacțiile internaționale – cresc semnificativ pedeapsa.
+          </p>
+          <p>
+            Consecințele se extind dincolo de închisoare: cazier, interdicții de călătorie, pierderea locului de muncă, afectarea reputației.
           </p>
         </CardContent>
       </Card>
 
       {/* H2: Cum îmi apăr clienții */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Cum îmi apăr clienții în dosarele de trafic de droguri</h2>
         </CardHeader>
@@ -354,7 +366,7 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Statistici România */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Statistici recente privind traficul de droguri în România</h2>
         </CardHeader>
@@ -369,7 +381,7 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Statistici Europa */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Statistici recente privind traficul de droguri în Europa</h2>
         </CardHeader>
@@ -384,7 +396,7 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Întrebări frecvente */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Întrebări frecvente din experiența mea</h2>
         </CardHeader>
@@ -412,15 +424,16 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Contact */}
-      <Card className="mt-8 border-primary">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Contact direct</h2>
         </CardHeader>
         <CardContent className="space-y-2 text-base leading-relaxed">
           <p>
-            Dacă ești anchetat sau inculpat într-un dosar de trafic de droguri în București sau oriunde în România, nu
-            amâna momentul de a solicita ajutor profesionist. Experiența mea în dosare penale complexe îți poate oferi
-            șansa unei apărări eficiente și strategice.
+            Dacă ești anchetat sau inculpat într-un dosar de trafic de droguri în București sau oriunde în România, nu amâna momentul de a solicita ajutor profesionist.
+          </p>
+          <p>
+            Experiența mea în dosare penale complexe îți poate oferi șansa unei apărări eficiente și strategice.
           </p>
           <p>📍 Adresă: Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5, Sector 1, București</p>
           <p>📞 Telefon: +40 745 506 443</p>
