@@ -242,20 +242,20 @@ export default function InfractiuniRutiere() {
       {/* Articole din Codul Penal */}
       <Card className="mt-8 border-accent">
         <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Articole din Codul Penal – linkuri oficiale utile</h2>
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">Articole Utile din Codul Penal</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-1">
-            <li>Art. 334 – Vehicul neînmatriculat/număr fals. (Portal Legislativ)</li>
-            <li>Art. 335 – Conducerea fără permis. (Portal Legislativ)</li>
-            <li>Art. 336 – Conducerea sub influența alcoolului/drogurilor. (Portal Legislativ)</li>
-            <li>Art. 337 – Refuz/sustragere la prelevare. (Portal Legislativ)</li>
-            <li>Art. 338 – Părăsirea locului accidentului. (Portal Legislativ)</li>
+            <li>Art. 334 – Vehicul neînmatriculat/număr fals.</li>
+            <li>Art. 335 – Conducerea fără permis.</li>
+            <li>Art. 336 – Conducerea sub influența alcoolului/drogurilor.</li>
+            <li>Art. 337 – Refuz/sustragere la prelevare.</li>
+            <li>Art. 338 – Părăsirea locului accidentului.</li>
             <li>Art. 339 – Împiedicarea/îngreunarea circulației, întreceri neautorizate. (sintact.ro)</li>
-            <li>Art. 340 – Verificare tehnică/ITP & reparații. (Portal Legislativ)</li>
-            <li>Art. 341 – Lucrări neautorizate în zona drumului public. (Portal Legislativ)</li>
-            <li>Art. 196 – Vătămare corporală din culpă. (Portal Legislativ)</li>
-            <li>Art. 192 – Ucidere din culpă. (Portal Legislativ)</li>
+            <li>Art. 340 – Verificare tehnică/ITP & reparații.</li>
+            <li>Art. 341 – Lucrări neautorizate în zona drumului public.</li>
+            <li>Art. 196 – Vătămare corporală din culpă.</li>
+            <li>Art. 192 – Ucidere din culpă.</li>
           </ul>
         </CardContent>
       </Card>
