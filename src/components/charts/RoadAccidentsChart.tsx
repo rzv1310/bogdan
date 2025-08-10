@@ -49,7 +49,7 @@ export default function RoadAccidentsChart() {
     const cx = (x ?? 0) + (width ?? 0) / 2;
     return (
       <text
-        x={cx}
+        x={cx + (isMobile ? 6 : 8)}
         y={y}
         dy={isMobile ? -4 : -2}
         textAnchor="middle"
