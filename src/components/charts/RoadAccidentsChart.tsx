@@ -17,7 +17,6 @@ import {
 } from "recharts";
 
 const data = [
-  { categorie: "Accidente grave", an2022: 4715, an2023: 4527 },
   { categorie: "Morți", an2022: 1633, an2023: 1545 },
   { categorie: "Răniți grav", an2022: 3695, an2023: 3537 },
   { categorie: "Răniți ușor", an2022: 2076, an2023: 2172 },
