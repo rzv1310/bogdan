@@ -909,6 +909,175 @@ export default function CriminalitateEconomica() {
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 31/1990 privind societățile</h2>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="l31-art-271">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 271 – Declararea necorespunzătoare a capitalului social</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fondatorii, administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care, în prospectele, rapoartele sau comunicările privind constituirea ori funcționarea societății, fac declarații neadevărate sau ascund, cu rea-credință, date esențiale referitoare la situația societății, se pedepsesc cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac ideea de rea-credință – este esențial să demonstrez că eventualele erori din documente provin din neglijență sau interpretări diferite, nu din intenția de a induce în eroare. De asemenea, pot solicita o expertiză contabilă pentru a arăta că datele reflectau realitatea la momentul întocmirii actelor, chiar dacă ulterior situația societății s-a modificat.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-272">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 272 – Prezentarea de date false autorităților</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere, precum și lichidatorii care, cu ocazia prezentării situațiilor financiare sau a altor documente către autorități, includ date false ori omit cu rea-credință să includă datele cerute de lege, se pedepsesc cu închisoare de la unu la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare se bazează pe demonstrarea lipsei intenției și pe evidențierea faptului că eventualele omisiuni nu au avut impact semnificativ asupra realității economice a societății. Dacă lipsa unor date a fost cauzată de interpretări contabile diferite sau de neconcordanțe minore, fapta poate fi reîncadrată sau chiar înlăturată.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-273">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 273 – Falsificarea documentelor societății</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Orice persoană care falsifică registrele societății, procesele-verbale ale adunărilor generale sau alte documente ale societății, se pedepsește cu închisoare de la 2 la 7 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, verific dacă documentele invocate sunt cu adevărat falsificate sau dacă există doar diferențe de formă ori erori de redactare. Este important de arătat că modificările nu au produs consecințe juridice sau nu au fost făcute cu scop fraudulos. Lipsa unui prejudiciu real este un argument puternic pentru diminuarea răspunderii.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-274">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 274 – Folosirea cu rea-credință a bunurilor societății</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care folosesc cu rea-credință bunurile sau creditul societății într-un scop contrar intereselor acesteia ori în folos propriu sau al altuia, se pedepsesc cu închisoare de la 2 la 7 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei caracterului contrar interesului societății – de multe ori, deciziile de afaceri implică riscuri asumate care nu constituie abuz dacă erau justificate economic. Pot arăta că utilizarea bunurilor a urmărit un beneficiu pentru societate, chiar dacă rezultatul nu a fost cel scontat.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-275">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 275 – Împrumuturi sau garanții ilegale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care, fără respectarea condițiilor legale, acordă împrumuturi sau constituie garanții folosind bunurile ori creditul societății, se pedepsesc cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Ca apărător, verific dacă actul a încălcat cu adevărat prevederile legale privind împrumuturile și garanțiile sau dacă există interpretări alternative ale normei aplicabile. Dacă tranzacția a fost în interesul societății ori cu aprobarea adunării generale a asociaților/acționarilor, se poate susține inexistența caracterului ilicit.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-276">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 276 – Distribuirea de dividende fictive</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care distribuie dividende, sub orice formă, din profituri fictive sau care nu puteau fi distribuite potrivit legii, se pedepsesc cu închisoare de la 2 la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, analizez modul de calcul al profitului și verific dacă diferențele constatate nu provin din interpretări contabile diferite sau din estimări de lichidități. Dacă administratorul a acționat în baza unor bilanțuri provizorii aprobate de organele competente, lipsa intenției de fraudă poate fi invocată.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-277">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 277 – Nerespectarea hotărârilor adunării generale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care nu pun în aplicare hotărârile adunării generale a asociaților/acționarilor se pedepsesc cu închisoare de la o lună la un an sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să arăt că neexecutarea hotărârii a fost justificată de circumstanțe obiective – de exemplu, imposibilitatea tehnică sau juridică de a pune în aplicare decizia. De asemenea, dacă hotărârea era nelegală sau ar fi produs un prejudiciu, administratorul putea fi chiar obligat să nu o execute.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-278">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 278 – Împiedicarea controlului</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care împiedică sau îngreunează, prin orice mijloace, efectuarea controlului legal asupra societății, se pedepsesc cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi demonstra că eventualele întârzieri sau lipsa unor documente nu au fost cauzate de intenția de a obstrucționa controlul, ci de dificultăți administrative sau de lipsa accesului la arhivă. Dacă există corespondență cu organul de control prin care se solicită reprogramarea, acest lucru dovedește buna-credință.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-279">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 279 – Divulgarea de informații confidențiale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care divulgă, fără autorizare, date sau informații confidențiale ale societății, se pedepsesc cu închisoare de la 1 la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aici, apărarea se va concentra pe demonstrarea faptului că informațiile divulgate nu aveau caracter confidențial real sau că erau deja publice la momentul comunicării. Dacă divulgarea a fost făcută în interesul societății sau în baza unei obligații legale, caracterul ilicit dispare.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l31-art-280">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 280 – Falsul în documentele societății</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Orice persoană care, cu prilejul întocmirii actelor constitutive sau a altor documente ale societății, folosește acte false ori declară date neadevărate, se pedepsește cu închisoare de la 6 luni la 2 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi insista asupra faptului că eventualele neconcordanțe din documente nu au fost de natură să producă efecte juridice relevante sau că provin din greșeli administrative. Dacă datele pot fi corectate și nu există un prejudiciu concret, se poate cere aplicarea unei sancțiuni mai blânde sau chiar încetarea procesului penal.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </CardContent>
+        </Card>
+
       </div>
     </section>
   );
