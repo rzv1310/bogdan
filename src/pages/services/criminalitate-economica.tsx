@@ -1406,7 +1406,7 @@ export default function CriminalitateEconomica() {
             <section className="space-y-3">
               <h3 className="text-lg font-semibold">Surse oficiale:</h3>
               <ul className="list-disc pl-6 space-y-1">
-                <li>România în cifre 2023 - INS – referințe agregate infracțiuni economice (ZIUA de Constanța, media.dcnews.ro, Institutul Național de Statistică)</li>
+                <li>România în cifre 2023 - INS – referințe agregate infracțiuni economice</li>
                 <li>Raport activitate DIICOT 2024 - total cauze soluționate (diicot.ro)</li>
                 <li>Raport activitate DIICOT 2024 - cauze economico-financiare și contrabandă (media.dcnews.ro)</li>
                 <li>Raport activitate DIICOT 2023 - cauze economico-financiare și contrabandă (ZIUA de Constanța)</li>
