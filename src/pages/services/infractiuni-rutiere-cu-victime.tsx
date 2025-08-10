@@ -55,7 +55,7 @@ export default function InfractiuniRutiere() {
       </div>
 
       {/* De ce să apelezi la mine */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">De ce să apelezi la mine pentru un dosar rutier?</h2>
         </CardHeader>
@@ -70,7 +70,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Infracțiuni fără victime */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce acoperă „infracțiuni rutiere fără victime”</h2>
         </CardHeader>
@@ -96,7 +96,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Infracțiuni cu victime */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">„Infracțiuni rutiere cu victime”</h2>
         </CardHeader>
@@ -130,7 +130,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Plan de lucru */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Cum abordez un dosar rutier (plan de lucru în 4 pași)</h2>
         </CardHeader>
@@ -158,7 +158,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Șoferi profesioniști & companii */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Pentru șoferi profesioniști & companii</h2>
         </CardHeader>
@@ -171,7 +171,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
         </CardHeader>
@@ -191,7 +191,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Documente utile */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Documente utile la prima discuție</h2>
         </CardHeader>
@@ -206,7 +206,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Despre mine */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Despre mine, pe scurt</h2>
         </CardHeader>
@@ -219,7 +219,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Contact rapid */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h3 className="text-xl font-semibold leading-none tracking-tight">Contact rapid – consultanță inițială</h3>
         </CardHeader>
@@ -240,7 +240,7 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* Articole din Codul Penal */}
-      <Card className="mt-8">
+      <Card className="mt-8 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Articole din Codul Penal – linkuri oficiale utile</h2>
         </CardHeader>
