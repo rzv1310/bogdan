@@ -831,6 +831,84 @@ export default function CriminalitateEconomica() {
             </Accordion>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 656/2002 pentru prevenirea și sancționarea spălării banilor</h2>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="l656-art-29">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 29 – Infracțiunea de spălare a banilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracțiune de spălare a banilor și se pedepsește cu închisoare de la 3 la 10 ani:</p>
+                      <p>a) schimbarea sau transferul de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni, în scopul ascunderii sau disimulării originii ilicite ori pentru a ajuta persoana care a săvârșit infracțiunea-sursă să se sustragă de la urmărire, judecată sau executarea pedepsei;</p>
+                      <p>b) ascunderea ori disimularea naturii reale, a provenienței, situării, circulației sau proprietății bunurilor, cunoscând că acestea provin din infracțiuni;</p>
+                      <p>c) dobândirea, deținerea sau folosirea de bunuri, cunoscând că acestea provin din infracțiuni.</p>
+                      <p>(2) Cunoașterea provenienței ilicite a bunurilor se poate deduce din circumstanțele obiective ale cauzei.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe lipsa elementului subiectiv – cunoașterea provenienței ilicite trebuie demonstrată, iar simpla prezumție nu este suficientă. Dacă tranzacția a avut o justificare economică rezonabilă și documente suport, se poate susține buna-credință. De asemenea, dacă infracțiunea-sursă nu este dovedită, acuzația de spălare a banilor se prăbușește automat.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l656-art-30">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 30 – Tentativa</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Tentativa la infracțiunea prevăzută la art. 29 se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi argumenta că acțiunile imputate clientului nu au depășit faza actelor pregătitoare și că nu există probe clare privind scopul de disimulare a provenienței bunurilor. Dacă transferul nu s-a realizat sau nu a avut efectul urmărit, tentativa poate fi exclusă ca faptă lipsită de pericol social concret.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l656-art-31">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 31 – Neaplicarea sancțiunilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Nu se aplică sancțiunile prevăzute la art. 29 persoanei care, înainte ca organul de urmărire penală să fi fost sesizat, a informat autoritățile despre faptele comise și a cooperat pentru identificarea și tragerea la răspundere a celorlalți participanți.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aceasta este o oportunitate importantă pentru client – dacă putem demonstra că a furnizat informații voluntar și înainte de declanșarea oficială a anchetei, atunci răspunderea penală poate fi eliminată. Voi analiza momentul exact al sesizării și voi aduna dovezi că autoritățile au aflat de la client sau cu ajutorul lui.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l656-art-32">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 32 – Confiscarea bunurilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Bunurile care au făcut obiectul infracțiunii de spălare a banilor se confiscă, iar dacă acestea nu se mai găsesc, se confiscă echivalentul lor în bani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Chiar și în caz de condamnare, mă voi concentra pe demonstrarea faptului că bunurile respective nu au proveniență ilicită sau că nu există legătură directă cu fapta imputată. În plus, voi verifica dacă bunurile au fost dobândite de la terți de bună-credință, caz în care confiscarea nu se poate dispune.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </CardContent>
+        </Card>
+
       </div>
     </section>
   );
