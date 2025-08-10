@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { Phone } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
@@ -1413,6 +1414,8 @@ export default function CriminalitateEconomica() {
             </section>
           </CardContent>
         </Card>
+
+        <EconomicCrimesChart />
 
       </div>
     </section>
