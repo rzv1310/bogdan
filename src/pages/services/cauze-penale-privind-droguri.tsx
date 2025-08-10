@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader as TableHeaderUI, TableRow } from "@/components/ui/table";
 import { Phone } from "lucide-react";
+import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function CauzeDroguri() {
   useSEO({
@@ -262,6 +263,11 @@ export default function CauzeDroguri() {
           </ul>
         </CardContent>
       </Card>
+
+      {/* Chart: Pedepse privind infracțiunile legate de droguri */}
+      <div className="mt-8">
+        <DrugPenaltiesChart />
+      </div>
 
       {/* H3: Droguri de mare risc */}
       <Card className="mt-8 border-accent">
