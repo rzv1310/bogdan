@@ -85,7 +85,7 @@ export default function CriminalitateEconomica() {
               />
             </div>
             <figcaption className="mt-2 text-xs text-muted-foreground text-center">
-              av. Bogdan Lamatic | Legal500 – Next Generation Partner – 2024 Edition (White-Collar Crime)
+              av. Bogdan Lamatic | Legal500 - Next Generation Partner - 2024 Edition (White-Collar Crime)
             </figcaption>
           </figure>
 
@@ -499,7 +499,7 @@ export default function CriminalitateEconomica() {
 
             <p><strong>Articolul 18^5</strong></p>
 
-            <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuții de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârșirea de către o persoană care se află în subordinea sa și care a acționat în numele acelui operator economic a uneia dintre infracțiunile prevăzute la art. 18^1 – 18^3 sau săvârșirea unei infracțiuni de corupție ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+            <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuții de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârșirea de către o persoană care se află în subordinea sa și care a acționat în numele acelui operator economic a uneia dintre infracțiunile prevăzute la art. 18^1 - 18^3 sau săvârșirea unei infracțiuni de corupție ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
           </CardContent>
         </Card>
 
@@ -543,21 +543,21 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Statistică Infracțiuni Economice</h2>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p>În anul 2019, la nivelul Direcției de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism – DIICOT, din cele 1.626 cauze de soluționat având ca obiect infracțiuni din sfera criminalității economico-financiare, din care 773 cauze nou înregistrate, a fost soluționat un număr de 366 cauze, față de 250 cauze soluționate în 2018, din cele 1.599 cauze de soluționat, din care 625 cauze nou înregistrate în 2018.</p>
+            <p>În anul 2019, la nivelul Direcției de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism - DIICOT, din cele 1.626 cauze de soluționat având ca obiect infracțiuni din sfera criminalității economico-financiare, din care 773 cauze nou înregistrate, a fost soluționat un număr de 366 cauze, față de 250 cauze soluționate în 2018, din cele 1.599 cauze de soluționat, din care 625 cauze nou înregistrate în 2018.</p>
 
-            <p>Infracțiuni de evaziune fiscală – din cele 524 cauze de soluționat în 2019, din care 216 cauze nou înregistrate în perioada de referință, a fost soluționat un număr de 102 cauze, față de 53 de cauze în 2018, din 563 cauze de soluționat, din care 187 nou înregistrate în 2018.</p>
+            <p>Infracțiuni de evaziune fiscală - din cele 524 cauze de soluționat în 2019, din care 216 cauze nou înregistrate în perioada de referință, a fost soluționat un număr de 102 cauze, față de 53 de cauze în 2018, din 563 cauze de soluționat, din care 187 nou înregistrate în 2018.</p>
 
-            <p>Infracțiuni de spălare a banilor – din cele 434 de cauze de soluționat în 2019, din care 141 nou înregistrate în perioada de referință, a fost soluționat un număr de 100 cauze, față de 99 cauze în 2018, din 459 cauze de soluționat, din care 157 nou înregistrate în 2018.</p>
+            <p>Infracțiuni de spălare a banilor - din cele 434 de cauze de soluționat în 2019, din care 141 nou înregistrate în perioada de referință, a fost soluționat un număr de 100 cauze, față de 99 cauze în 2018, din 459 cauze de soluționat, din care 157 nou înregistrate în 2018.</p>
 
-            <p>Infracțiuni prevăzute de Codul vamal – din cele 669 cauze de soluționat în 2019, din care 307 cauze nou înregistrate, în perioada de referință a fost soluționat un număr de 172 cauze, față de 123 cauze în 2018, din 635 cauze de soluționat, din care 229 nou înregistrate în 2018.</p>
+            <p>Infracțiuni prevăzute de Codul vamal - din cele 669 cauze de soluționat în 2019, din care 307 cauze nou înregistrate, în perioada de referință a fost soluționat un număr de 172 cauze, față de 123 cauze în 2018, din 635 cauze de soluționat, din care 229 nou înregistrate în 2018.</p>
 
-            <p>Alte infracțiuni economice – din cele 433 cauze de soluționat, din care 250 nou înregistrate, în perioada de referință a fost soluționat un număr de 92 cauze, față de 74 cauze în 2018, din cele 401 cauze de soluționat, din care 209 nou înregistrate în 2018.</p>
+            <p>Alte infracțiuni economice - din cele 433 cauze de soluționat, din care 250 nou înregistrate, în perioada de referință a fost soluționat un număr de 92 cauze, față de 74 cauze în 2018, din cele 401 cauze de soluționat, din care 209 nou înregistrate în 2018.</p>
 
             <p>În anul 2019, la nivelul poliției române, au fost soluționate/declinate parchetului un număr de 8914 infracțiuni de înșelăciune, 990 infracțiuni de delapidare, 240 infracțiuni de gestiune frauduloasă, 1324 infracțiuni de abuz în serviciu, 202 infracțiuni de neglijență în serviciu, 339 infracțiuni de luare de mită, 308 infracțiuni de dare de mită, 91 infracțiuni de trafic de influență, 1219 infracțiuni de falsificare de monede, 7147 infracțiuni de fals în înscrisuri, 146 infracțiuni prevăzute de legea societăților comerciale, 3143 infracțiuni prevăzute de legea pentru prevenirea și combaterea evaziunii fiscale, 1322 infracțiuni prevăzute de Codul vamal.</p>
 
-            <p>În anul 2019, la nivelul Direcției Naționale Anticorupție – DNA, au fost trimise în judecată un număr de 265 infracțiuni de corupție (69 – luare de mită, 91 – dare de mită, 28 – trafic de influență, 77 – cumpărare de influență), 56 infracțiuni asimilate infracțiunilor de corupție, 2 infracțiuni în legătură directă cu infracțiunile de corupție, 232 infracțiuni împotriva intereselor financiare ale Uniunii Europene. De asemenea, au fost trimise în judecată un număr de 127 de infracțiuni de evaziune fiscală, 24 infracțiuni de spălare a banilor, 2 infracțiuni de conflict de interese, 67 infracțiuni de fals, 3 infracțiuni de delapidare, 3 infracțiuni de obținere ilegală de fonduri. Cuantumul prejudiciului reținut este de circa 156,4 milioane euro, iar valoarea măsurilor asigurătorii dispuse de procurori pentru repararea pagubei produse prin infracțiune este de circa 224 milioane euro. În perioada de referință au fost înregistrate 2794 de cauze noi.</p>
+            <p>În anul 2019, la nivelul Direcției Naționale Anticorupție - DNA, au fost trimise în judecată un număr de 265 infracțiuni de corupție (69 - luare de mită, 91 - dare de mită, 28 - trafic de influență, 77 - cumpărare de influență), 56 infracțiuni asimilate infracțiunilor de corupție, 2 infracțiuni în legătură directă cu infracțiunile de corupție, 232 infracțiuni împotriva intereselor financiare ale Uniunii Europene. De asemenea, au fost trimise în judecată un număr de 127 de infracțiuni de evaziune fiscală, 24 infracțiuni de spălare a banilor, 2 infracțiuni de conflict de interese, 67 infracțiuni de fals, 3 infracțiuni de delapidare, 3 infracțiuni de obținere ilegală de fonduri. Cuantumul prejudiciului reținut este de circa 156,4 milioane euro, iar valoarea măsurilor asigurătorii dispuse de procurori pentru repararea pagubei produse prin infracțiune este de circa 224 milioane euro. În perioada de referință au fost înregistrate 2794 de cauze noi.</p>
 
-            <p>Sursă: Raport de activitate 2019 – Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism (www.diicot.ro);Statistica principalelor activități desfășurate de Poliția Română în anul 2019 – Inspectoratul General al Poliției Române (www.politiaromana.ro); Raport de activitate 2019 – Direcția Națională Anticorupție (www.pna.ro).</p>
+            <p>Sursă: Raport de activitate 2019 - Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism (www.diicot.ro);Statistica principalelor activități desfășurate de Poliția Română în anul 2019 - Inspectoratul General al Poliției Române (www.politiaromana.ro); Raport de activitate 2019 - Direcția Națională Anticorupție (www.pna.ro).</p>
           </CardContent>
         </Card>
       </div>

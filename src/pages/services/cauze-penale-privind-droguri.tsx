@@ -16,9 +16,9 @@ export default function CauzeDroguri() {
     const origin = window.location.origin;
     const url = origin + window.location.pathname;
     const imageUrl = origin + "/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png";
-    const title = "Avocat Trafic Droguri București – Bogdan Lamatic";
+    const title = "Avocat Trafic Droguri București - Bogdan Lamatic";
     const description =
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București – 17 ani experiență în drept penal.";
+      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 17 ani experiență în drept penal.";
 
     // FAQ JSON-LD
     const faqData = {
@@ -176,7 +176,7 @@ export default function CauzeDroguri() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-        Avocat Trafic Droguri București – Experiența mea în apărarea clienților în dosare DIICOT
+        Avocat Trafic Droguri București - Experiența mea în apărarea clienților în dosare DIICOT
       </h1>
       <p className="mt-2 text-muted-foreground">
         de Bogdan Lamatic, avocat specializat în drept penal și white-collar crime
@@ -227,7 +227,7 @@ export default function CauzeDroguri() {
           </p>
           <p>Știu din practică un adevăr simplu: primele ore după reținere sunt decisive.</p>
           <p>
-            În astfel de dosare, fiecare detaliu contează – o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
+            În astfel de dosare, fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
           </p>
         </CardContent>
       </Card>
@@ -253,10 +253,10 @@ export default function CauzeDroguri() {
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong>Trafic de droguri</strong> – activitate organizată cu scop de distribuire.
+              <strong>Trafic de droguri</strong> - activitate organizată cu scop de distribuire.
             </li>
             <li>
-              <strong>Deținere pentru consum propriu</strong> – faptă distinctă, cu pedepse mai reduse.
+              <strong>Deținere pentru consum propriu</strong> - faptă distinctă, cu pedepse mai reduse.
             </li>
           </ul>
         </CardContent>
@@ -270,20 +270,20 @@ export default function CauzeDroguri() {
         <CardContent className="space-y-4 text-base leading-relaxed">
           <p>
             În dosarele pe care le-am gestionat ca avocat specializat în infracțiuni cu droguri, drogurile de mare risc
-            au atras pedepse severe: 7–15 ani de închisoare. Cele mai frecvente substanțe sunt:
+            au atras pedepse severe: 7-15 ani de închisoare. Cele mai frecvente substanțe sunt:
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li>
-              <strong>Heroină</strong> – foarte adictivă, frecvent asociată cu rețele internaționale.
+              <strong>Heroină</strong> - foarte adictivă, frecvent asociată cu rețele internaționale.
             </li>
             <li>
-              <strong>Cocaină</strong> – drog de lux, deseori descoperit în traficul prin aeroporturi sau porturi.
+              <strong>Cocaină</strong> - drog de lux, deseori descoperit în traficul prin aeroporturi sau porturi.
             </li>
             <li>
-              <strong>LSD</strong> – halucinogen puternic, vândut sub formă de timbre impregnate.
+              <strong>LSD</strong> - halucinogen puternic, vândut sub formă de timbre impregnate.
             </li>
             <li>
-              <strong>Metamfetamină</strong> – drog sintetic cu efecte devastatoare și risc ridicat de dependență.
+              <strong>Metamfetamină</strong> - drog sintetic cu efecte devastatoare și risc ridicat de dependență.
             </li>
           </ul>
           <p>
@@ -305,13 +305,13 @@ export default function CauzeDroguri() {
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li>
-              <strong>Canabis</strong> – cea mai răspândită substanță, sub formă de muguri uscați sau ulei.
+              <strong>Canabis</strong> - cea mai răspândită substanță, sub formă de muguri uscați sau ulei.
             </li>
             <li>
-              <strong>Ecstasy (MDMA)</strong> – pastile colorate, populare în cluburi și festivaluri.
+              <strong>Ecstasy (MDMA)</strong> - pastile colorate, populare în cluburi și festivaluri.
             </li>
             <li>
-              <strong>Amfetamine</strong> – stimulente sintetice, folosite atât recreațional, cât și pentru performanță.
+              <strong>Amfetamine</strong> - stimulente sintetice, folosite atât recreațional, cât și pentru performanță.
             </li>
           </ul>
           <p>
@@ -328,11 +328,11 @@ export default function CauzeDroguri() {
         </CardHeader>
         <CardContent className="space-y-3 text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-1">
-            <li>2–7 ani – droguri de risc.</li>
-            <li>7–15 ani – droguri de mare risc.</li>
+            <li>2-7 ani - droguri de risc.</li>
+            <li>7-15 ani - droguri de mare risc.</li>
           </ul>
           <p>
-            Factorii agravanti – implicarea minorilor, organizarea în grup sau tranzacțiile internaționale – cresc semnificativ pedeapsa.
+            Factorii agravanti - implicarea minorilor, organizarea în grup sau tranzacțiile internaționale - cresc semnificativ pedeapsa.
           </p>
           <p>
             Consecințele se extind dincolo de închisoare: cazier, interdicții de călătorie, pierderea locului de muncă, afectarea reputației.
@@ -349,14 +349,14 @@ export default function CauzeDroguri() {
           <p>În fiecare dosar de trafic de droguri pe care îl preiau în București:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>
-              Verific legalitatea probelor (mandate, interceptări, percheziții) – dacă au fost obținute prin mijloace
+              Verific legalitatea probelor (mandate, interceptări, percheziții) - dacă au fost obținute prin mijloace
               autorizate.
             </li>
             <li>
-              Analizez dosarul DIICOT în detaliu – de la procese-verbale până la rapoarte toxicologice.
+              Analizez dosarul DIICOT în detaliu - de la procese-verbale până la rapoarte toxicologice.
             </li>
             <li>
-              Identific puncte slabe în acuzare – lipsa legăturii directe între client și substanțele incriminate – și
+              Identific puncte slabe în acuzare - lipsa legăturii directe între client și substanțele incriminate - și
               solicit probe suplimentare.
             </li>
             <li>Negociez cu procurorii DIICOT pentru încadrări juridice mai favorabile.</li>
