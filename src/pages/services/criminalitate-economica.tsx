@@ -110,12 +110,20 @@ export default function CriminalitateEconomica() {
             </figcaption>
           </figure>
 
-          <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
-          <p>
-            Procedurile penale în astfel de cazuri sunt complexe și implică atât expertiză juridică, cât și cunoștințe financiare și fiscale. Un avocat cu experiență în
-            white-collar crime îți poate proteja drepturile, poate analiza probele, formula apărări solide și negocia strategii optime pentru obținerea celui mai bun rezultat posibil.
-          </p>
-          <div className="h-5" aria-hidden="true"></div>
+          <section className="mt-6 border border-accent rounded-md p-4">
+            <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
+            <div className="mt-3 space-y-3 text-base leading-relaxed">
+              <p>
+                În dosarele de infracțiuni economice, procedurile penale sunt deosebit de complexe și necesită nu doar cunoștințe juridice avansate, ci și o înțelegere profundă a mecanismelor financiare, fiscale și contabile. <br />În cei peste 17 ani de practică, am constatat că succesul într-un astfel de dosar depinde de capacitatea avocatului de a corela legislația penală cu aspectele tehnice ale tranzacțiilor și fluxurilor financiare.
+              </p>
+              <p>
+                Ca avocat specializat în white-collar crime, îți protejez drepturile încă din prima etapă a anchetei, analizez minuțios probele, identific eventualele nereguli procedurale și formulez strategii de apărare adaptate fiecărui caz. <br />Când este posibil, negociez direct cu procurorii sau cu partea adversă pentru a obține soluții favorabile înainte de ajungerea în instanță, reducând astfel riscul unor sancțiuni severe și limitând impactul asupra reputației tale personale sau profesionale.
+              </p>
+              <p>
+                Scopul meu este să îți ofer o apărare solidă, documentată și discretă, menită să protejeze atât libertatea ta, cât și interesele financiare pe termen lung!
+              </p>
+            </div>
+          </section>
           <div className="flex justify-center animate-fade-in">
             <GeminiButtonEffect>
               <a href="tel:+40745506443" aria-label="Vreau avocat!">
