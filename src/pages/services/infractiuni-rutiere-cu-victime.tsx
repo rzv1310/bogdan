@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 export default function InfractiuniRutiere() {
   useSEO({
@@ -259,6 +260,8 @@ export default function InfractiuniRutiere() {
           </ul>
         </CardContent>
       </Card>
+
+      <RoadAccidentsChart />
     </section>
   );
 }
