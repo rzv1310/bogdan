@@ -73,27 +73,29 @@ export default function CriminalitateEconomica() {
             Nu implică violență fizică, ci produc pierderi financiare semnificative pentru persoane, companii sau instituții.
           </p>
 
-          <h2 className="text-xl font-semibold">Exemple de infracțiuni economice</h2>
-          <p>Un avocat specializat în infracțiuni economice poate asigura apărarea în cazuri precum:</p>
-          <ul className="list-disc pl-6 columns-1 md:columns-2 gap-8 [&_li]:break-inside-avoid">
-            <li>Abuz de încredere în fraudarea creditorilor</li>
-            <li>Bancrută frauduloasă</li>
-            <li>Înșelăciune</li>
-            <li>Deturnarea licitațiilor publice</li>
-            <li>Operațiuni financiare frauduloase</li>
-            <li>Luare și dare de mită</li>
-            <li>Trafic și cumpărare de influență</li>
-            <li>Delapidare</li>
-            <li>Abuz în serviciu</li>
-            <li>Falsificare de monede și înscrisuri</li>
-            <li>Deturnare de fonduri</li>
-            <li>Evaziune fiscală</li>
-            <li>Spălarea banilor</li>
-            <li>Contrabandă</li>
-            <li>Utilizarea ilegală a subvențiilor</li>
-            <li>Incompatibilități financiare cu funcția publică</li>
-            <li>Schimbarea destinației fondurilor europene</li>
-          </ul>
+          <section className="border border-accent rounded-md p-4">
+            <h2 className="text-xl font-semibold">Tipuri de infracțiuni economice pe care le apăr</h2>
+            <p>Un avocat specializat în infracțiuni economice poate asigura apărarea în cazuri precum:</p>
+            <ul className="list-disc pl-6 columns-1 md:columns-2 gap-8 [&_li]:break-inside-avoid">
+              <li>Abuz de încredere în fraudarea creditorilor</li>
+              <li>Bancrută frauduloasă</li>
+              <li>Înșelăciune</li>
+              <li>Deturnarea licitațiilor publice</li>
+              <li>Operațiuni financiare frauduloase</li>
+              <li>Luare și dare de mită</li>
+              <li>Trafic și cumpărare de influență</li>
+              <li>Delapidare</li>
+              <li>Abuz în serviciu</li>
+              <li>Falsificare de monede și înscrisuri</li>
+              <li>Deturnare de fonduri</li>
+              <li>Evaziune fiscală</li>
+              <li>Spălarea banilor</li>
+              <li>Contrabandă</li>
+              <li>Utilizarea ilegală a subvențiilor</li>
+              <li>Incompatibilități financiare cu funcția publică</li>
+              <li>Schimbarea destinației fondurilor europene</li>
+            </ul>
+          </section>
 
           <figure className="py-4">
             <div className="flex justify-center">
