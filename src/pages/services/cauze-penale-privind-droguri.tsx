@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useEffect } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Table, TableBody, TableCell, TableHead, TableHeader as TableHeaderUI, TableRow } from "@/components/ui/table";
 import { Phone } from "lucide-react";
 
 export default function CauzeDroguri() {
@@ -368,6 +369,155 @@ export default function CauzeDroguri() {
                 <Phone /> Sună acum
               </Button>
             </a>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Legea 143/2000 - Tabel articole */}
+      <Card className="mt-8 border-accent">
+        <CardHeader>
+          <h2 className="text-2xl font-semibold">Legea nr. 143/2000 privind prevenirea și combaterea traficului și consumului ilicit de droguri</h2>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeaderUI>
+                <TableRow>
+                  <TableHead className="w-1/3">Articol</TableHead>
+                  <TableHead>Comentariul meu (Bogdan Lamatic)</TableHead>
+                </TableRow>
+              </TableHeaderUI>
+              <TableBody>
+                <TableRow>
+                  <TableCell>
+                    Art. 2 Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, oferirea, punerea în vânzare, vânzarea, distribuirea, livrarea cu orice titlu, trimiterea, transportul, procurarea, cumpărarea, deținerea ori alte operațiuni privind circulația drogurilor de risc, fără drept, se pedepsesc cu închisoare de la 3 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 5 la 15 ani și interzicerea unor drepturi.
+                  </TableCell>
+                  <TableCell>
+                    Este fundamentul majorității dosarelor de trafic intern. Diferența între droguri de risc și de mare risc este crucială pentru pedeapsa aplicată. Strategia de apărare vizează contestarea încadrării substanței, legalitatea probelor și lipsa intenției de comercializare.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 3 Introducerea sau scoaterea din țară, precum și importul ori exportul de droguri de risc, fără drept, se pedepsesc cu închisoare de la 5 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 10 la 20 de ani și interzicerea unor drepturi.
+                  </TableCell>
+                  <TableCell>
+                    Reglementează traficul internațional. Apărarea se concentrează pe legalitatea actelor vamale, eventuale provocări ale organelor de anchetă și lipsa dovezilor privind intenția de distribuire.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 4 Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, cumpărarea sau deținerea de droguri de risc pentru consum propriu, fără drept, se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 6 luni la 3 ani.
+                  </TableCell>
+                  <TableCell>
+                    Face diferența între consum și trafic. Reîncadrarea la consum propriu poate reduce drastic pedeapsa. Este o direcție frecvent explorată în apărare.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 5 Punerea la dispoziție, cu știință, cu orice titlu, a unei locuințe sau a unui local ori a oricărui alt loc amenajat, în care are acces publicul, pentru consum ilicit de droguri sau tolerarea consumului ilicit, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.
+                  </TableCell>
+                  <TableCell>
+                    Am întâlnit cazuri unde simpla tolerare a consumului a dus la dosare penale. Apărarea presupune dovedirea lipsei intenției sau imposibilității de control.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 6 Prescrierea drogurilor de mare risc, cu intenție, de către medic, fără necesitate medicală, se pedepsește cu închisoare de la 1 la 5 ani și interzicerea unor drepturi. Cu aceeași pedeapsă se sancționează eliberarea cu intenție pe baza unei rețete prescrise ilegal sau falsificate. Obținerea prin astfel de rețete se pedepsește cu închisoare de la 1 la 3 ani.
+                  </TableCell>
+                  <TableCell>
+                    Privește circuitul medical și farmaceutic. Apărarea se bazează pe demonstrarea bunei-credințe și pe documente medicale reale care justifică acțiunea.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 7 Administrarea de droguri de mare risc unei persoane, în afara condițiilor legale, se pedepsește cu închisoare de la 1 la 5 ani.
+                  </TableCell>
+                  <TableCell>
+                    Apărarea se bazează pe lipsa probelor privind administrarea efectivă sau necunoașterea naturii substanței.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 8 Furnizarea, în vederea consumului, de inhalanți chimici toxici unui minor se pedepsește cu închisoare de la 6 luni la 2 ani.
+                  </TableCell>
+                  <TableCell>
+                    Nu implică droguri clasice, dar legea sancționează sever. Apărarea urmărește lipsa intenției de a favoriza consumul.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 9 Finanțarea faptelor prevăzute la art. 2-5 se sancționează cu pedepsele prevăzute de lege, limitele acestora majorându-se cu o treime.
+                  </TableCell>
+                  <TableCell>
+                    Se aplică și susținătorilor indirecți. În apărare, probele financiare sunt vitale pentru a demonstra lipsa legăturii cu traficul.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 10 Îndemnul la consum ilicit de droguri de mare risc, prin orice mijloace, se pedepsește cu închisoare de la 6 luni la 3 ani.
+                  </TableCell>
+                  <TableCell>
+                    Chiar și simpla instigare fără consum efectiv este incriminată. Contest interpretarea afirmațiilor ca „îndemn” penal.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 11 Dacă faptele prevăzute la art. 2, 6-8 și 10 au avut ca urmare moartea victimei, pedeapsa este închisoare de la 15 la 25 de ani și interzicerea unor drepturi.
+                  </TableCell>
+                  <TableCell>
+                    Este cea mai gravă situație. Apărarea vizează lipsa legăturii cauzale directe între faptă și deces.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 12 Tentativa la infracțiunile prevăzute la art. 2, 3, art. 4 alin. (2), art. 6 alin. (2)-(3), art. 7 și 9 se pedepsește. Se consideră tentativă și producerea sau procurarea mijloacelor ori luarea de măsuri pentru comitere.
+                  </TableCell>
+                  <TableCell>
+                    Legea pedepsește chiar și pregătirea. Apărarea se bazează pe lipsa intenției directe și neproducerea unui rezultat.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 13 Tentativa la infracțiunile prevăzute la art. 2-7, 9 și 10 se pedepsește. Se consideră tentativă și producerea/procurarea mijloacelor ori luarea de măsuri în vederea comiterii.
+                  </TableCell>
+                  <TableCell>
+                    Este o dublare a reglementării tentativei pentru mai multe articole. Apărarea subliniază lipsa unei intenții certe.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 14 Circumstanțe agravante: făptuitor cu autoritate publică; cadru medical; distribuire către minori, bolnavi psihic, persoane în reabilitare; fapte în instituții; folosirea minorilor; droguri amestecate pentru a le crește pericolul.
+                  </TableCell>
+                  <TableCell>
+                    Prezența unei agravante crește semnificativ pedeapsa. Apărarea urmărește dovedirea inexistenței acestor circumstanțe.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 15 Nu se pedepsește persoana care, înainte de urmărirea penală, denunță autorităților participarea sa, permițând identificarea și tragerea la răspundere penală a celorlalți.
+                  </TableCell>
+                  <TableCell>
+                    Autodenunțul este un instrument strategic pentru evitarea pedepsei, util mai ales în faza incipientă a dosarului.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 16 Persoana care denunță și facilitează identificarea altor participanți beneficiază de reducerea la jumătate a limitelor pedepsei.
+                  </TableCell>
+                  <TableCell>
+                    Colaborarea cu autoritățile poate înjumătăți pedeapsa. Trebuie folosită cu atenție pentru a proteja interesele clientului.
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    Art. 17 Drogurile și alte bunuri rezultate din infracțiuni se confiscă; dacă nu se găsesc, se plătește echivalentul. Se confiscă și banii/valorile dobândite din valorificarea lor.
+                  </TableCell>
+                  <TableCell>
+                    Confiscarea poate afecta grav patrimoniul. În apărare, lupt pentru a dovedi caracterul legal al bunurilor.
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </div>
         </CardContent>
       </Card>
