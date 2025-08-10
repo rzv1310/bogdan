@@ -384,7 +384,7 @@ export default function CauzeDroguri() {
               <TableHeaderUI>
                 <TableRow>
                   <TableHead className="w-1/3">Articol</TableHead>
-                  <TableHead>Comentariul meu (Bogdan Lamatic)</TableHead>
+                  <TableHead>Comentariul meu</TableHead>
                 </TableRow>
               </TableHeaderUI>
               <TableBody>
