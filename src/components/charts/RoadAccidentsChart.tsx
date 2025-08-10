@@ -100,7 +100,7 @@ export default function RoadAccidentsChart() {
         <CardContent className="p-4 sm:p-6 pt-0">
           <div className="h-64 sm:h-80 w-full" ref={chartRef}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data} margin={{ top: isMobile ? 24 : 16, right: 16, left: 0, bottom: isMobile ? 36 : 8 }} barSize={18} barCategoryGap="32%">
+              <BarChart data={data} margin={{ top: isMobile ? 24 : 16, right: 1, left: 15, bottom: isMobile ? 36 : 8 }} barSize={18} barCategoryGap="32%">
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="categorie" interval={0} tick={{ fontSize: isMobile ? 10 : 12 }} angle={isMobile ? -35 : 0} textAnchor={isMobile ? "end" : "middle"} tickMargin={isMobile ? 8 : 5} height={isMobile ? 56 : 30} />
                 <YAxis allowDecimals={false} domain={[0, 'dataMax + 250']} tick={{ fontSize: isMobile ? 10 : 12 }} width={isMobile ? 28 : 40} tickMargin={isMobile ? 2 : 8} />
