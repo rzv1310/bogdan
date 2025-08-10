@@ -11,6 +11,14 @@ export default function CauzeDroguri() {
   });
 
   useEffect(() => {
+    const origin = window.location.origin;
+    const url = origin + window.location.pathname;
+    const imageUrl = origin + "/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png";
+    const title = "Avocat Trafic Droguri București – Bogdan Lamatic";
+    const description =
+      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București – 17 ani experiență în drept penal.";
+
+    // FAQ JSON-LD
     const faqData = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -63,14 +71,103 @@ export default function CauzeDroguri() {
       ],
     } as const;
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "faq-jsonld-droguri";
-    script.text = JSON.stringify(faqData);
-    document.head.appendChild(script);
+    // LegalService JSON-LD
+    const legalServiceData = {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      name: title,
+      description,
+      url,
+      areaServed: "București, România",
+      telephone: "+40 745 506 443",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5",
+        addressLocality: "București",
+        addressCountry: "RO",
+      },
+      founder: {
+        "@type": "Person",
+        name: "Bogdan Lamatic",
+      },
+      sameAs: ["mailto:bogdan.lamatic@yahoo.com"],
+    } as const;
+
+    // BreadcrumbList JSON-LD
+    const breadcrumbData = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasă",
+          item: origin + "/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Cauze penale privind droguri",
+          item: url,
+        },
+      ],
+    } as const;
+
+    // Inject JSON-LD scripts
+    const faqScript = document.createElement("script");
+    faqScript.type = "application/ld+json";
+    faqScript.id = "faq-jsonld-droguri";
+    faqScript.text = JSON.stringify(faqData);
+    document.head.appendChild(faqScript);
+
+    const legalScript = document.createElement("script");
+    legalScript.type = "application/ld+json";
+    legalScript.id = "legalservice-jsonld-droguri";
+    legalScript.text = JSON.stringify(legalServiceData);
+    document.head.appendChild(legalScript);
+
+    const breadcrumbScript = document.createElement("script");
+    breadcrumbScript.type = "application/ld+json";
+    breadcrumbScript.id = "breadcrumb-jsonld-droguri";
+    breadcrumbScript.text = JSON.stringify(breadcrumbData);
+    document.head.appendChild(breadcrumbScript);
+
+    // Open Graph & Twitter meta
+    const createdMetaIds: string[] = [];
+    const setMeta = (
+      id: string,
+      attr: "property" | "name",
+      attrValue: string,
+      content: string
+    ) => {
+      let el = document.getElementById(id) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.id = id;
+        el.setAttribute(attr, attrValue);
+        document.head.appendChild(el);
+        createdMetaIds.push(id);
+      }
+      el.setAttribute("content", content);
+    };
+
+    setMeta("og-title-droguri", "property", "og:title", title);
+    setMeta("og-desc-droguri", "property", "og:description", description);
+    setMeta("og-type-droguri", "property", "og:type", "website");
+    setMeta("og-url-droguri", "property", "og:url", url);
+    setMeta("og-image-droguri", "property", "og:image", imageUrl);
+
+    setMeta("tw-card-droguri", "name", "twitter:card", "summary_large_image");
+    setMeta("tw-title-droguri", "name", "twitter:title", title);
+    setMeta("tw-desc-droguri", "name", "twitter:description", description);
+    setMeta("tw-image-droguri", "name", "twitter:image", imageUrl);
 
     return () => {
-      if (script && script.parentNode) script.parentNode.removeChild(script);
+      faqScript.parentNode?.removeChild(faqScript);
+      legalScript.parentNode?.removeChild(legalScript);
+      breadcrumbScript.parentNode?.removeChild(breadcrumbScript);
+      createdMetaIds.forEach((id) => document.getElementById(id)?.remove());
     };
   }, []);
 
