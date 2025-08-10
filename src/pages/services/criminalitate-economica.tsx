@@ -152,7 +152,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Penal</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="art-207">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 207 – Șantajul</h3>
@@ -652,6 +652,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
@@ -660,7 +667,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 241/2005 pentru prevenirea și combaterea evaziunii fiscale</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l241-art-3">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 3 – Reținerea și neplata impozitelor și contribuțiilor</h3>
@@ -829,6 +836,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
@@ -837,7 +851,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 656/2002 pentru prevenirea și sancționarea spălării banilor</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l656-art-29">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 29 – Infracțiunea de spălare a banilor</h3>
@@ -906,6 +920,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
@@ -914,7 +935,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 31/1990 privind societățile</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l31-art-271">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 271 – Declararea necorespunzătoare a capitalului social</h3>
@@ -1075,6 +1096,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
@@ -1083,7 +1111,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 78/2000</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l78-art-9">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 9 – Infracțiuni asimilate infracțiunilor de corupție</h3>
@@ -1245,6 +1273,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
@@ -1253,7 +1288,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Vamal</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="cv-art-270">
                 <AccordionTrigger className="text-left">
                   <h3 className="text-lg font-semibold">Articolul 270 – Contrabanda</h3>
@@ -1319,6 +1354,13 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex justify-center">
+              <a href="tel:+40745506443" aria-label="Sună acum">
+                <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                  <Phone /> +40 745 506 443
+                </Button>
+              </a>
+            </div>
           </CardContent>
         </Card>
 
