@@ -45,7 +45,7 @@ export default function CriminalitateEconomica() {
           <p>
             Recunoscut de Legal500 timp de cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor economice și de corupție, abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
           </p>
-          <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
+          <p className="bg-accent text-hero-foreground font-bold rounded-md px-3 py-2">
             Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.
           </p>
         </div>
