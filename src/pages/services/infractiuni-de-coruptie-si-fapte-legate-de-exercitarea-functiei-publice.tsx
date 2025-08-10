@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import MitaBarChart from "@/components/charts/MitaBarChart";
 
 export default function CoruptieSiFunctiePublica() {
   useSEO({
@@ -321,6 +322,10 @@ export default function CoruptieSiFunctiePublica() {
           </div>
         </CardContent>
       </Card>
+
+      <div className="mt-8">
+        <MitaBarChart />
+      </div>
     </section>
   );
 }
