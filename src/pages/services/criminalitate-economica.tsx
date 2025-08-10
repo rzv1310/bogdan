@@ -30,6 +30,27 @@ export default function CriminalitateEconomica() {
         </BreadcrumbList>
       </Breadcrumb>
 
+      <section className="mt-4 border border-accent rounded-md p-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <a href="tel:+40745506443" aria-label="Sună acum">
+            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+              <Phone /> Sună acum
+            </Button>
+          </a>
+        </div>
+        <div className="mt-3 space-y-3 text-base leading-relaxed">
+          <p>
+            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 17 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          </p>
+          <p>
+            Recunoscut de Legal500 timp de cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor economice și de corupție, abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
+          </p>
+          <p>
+            Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.
+          </p>
+        </div>
+      </section>
+
       <div className="mt-6 space-y-8">
         <section className="space-y-4">
           <p>
