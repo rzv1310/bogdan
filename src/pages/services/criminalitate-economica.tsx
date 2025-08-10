@@ -1078,6 +1078,176 @@ export default function CriminalitateEconomica() {
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader className="p-6">
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 78/2000</h2>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="l78-art-9">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 9 – Infracțiuni asimilate infracțiunilor de corupție</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta persoanei care, în scopul obținerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite, pretinde, primește ori acceptă promisiunea acestora, direct sau indirect, săvârșită de o persoană care exercită atribuții în cadrul unei persoane juridice, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „foloase necuvenite” – dacă beneficiul primit este justificat printr-un contract sau printr-o relație comercială legală, fapta nu mai are caracter penal. De asemenea, voi arăta că discuțiile ori promisiunile invocate nu au produs consecințe concrete și pot fi încadrate ca simple negocieri.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-10">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 10 – Folosirea influenței</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta persoanei care, având influență sau lăsând să se creadă că are influență asupra unui funcționar, pretinde ori primește bani sau alte foloase pentru a determina funcționarul să îndeplinească ori să nu îndeplinească un act ce intră în atribuțiile sale, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare este să demonstrez că influența reală nu a existat sau că promisiunea nu a avut scopul de a influența un act oficial. Dacă beneficiul primit a fost pentru alt tip de serviciu (consultantă, intermediere legală), încadrarea juridică poate fi schimbată.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-10-1">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 10¹ – Cumpărarea de influență</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Promisiunea, oferirea sau darea de bani ori alte foloase unei persoane care are influență sau lasă să se creadă că are influență asupra unui funcționar, pentru a-l determina pe acesta să îndeplinească sau să nu îndeplinească un act ce intră în atribuțiile sale, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, invoc lipsa intenției de corupere și arăt că plățile au fost făcute în alt scop, fără legătură cu atribuțiile funcționarului. De asemenea, dacă persoana care pretindea influența nu avea, în realitate, capacitatea de a influența funcționarul, elementele constitutive nu sunt îndeplinite.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-12">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 12 – Infracțiuni în legătură cu fondurile europene</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Folosirea sau prezentarea de documente ori declarații false, inexacte sau incomplete, care are ca rezultat obținerea pe nedrept de fonduri din bugetul general al Uniunii Europene, se pedepsește cu închisoare de la 2 la 7 ani.</p>
+                      <p>(2) Nedeclararea informațiilor cerute de lege pentru obținerea acestor fonduri se pedepsește cu aceeași pedeapsă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se concentrează pe demonstrarea lipsei legăturii directe între documentele contestate și acordarea efectivă a fondurilor. Dacă informațiile erau deja cunoscute autorităților sau erorile sunt minore și nu au influențat decizia de finanțare, elementul material lipsește.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-13">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 13 – Deturnarea fondurilor europene</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Folosirea fondurilor din bugetul general al Uniunii Europene în alt scop decât cel pentru care au fost acordate se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi arăta că modificarea destinației fondurilor a fost făcută cu respectarea procedurilor interne ale proiectului sau cu informarea autorității finanțatoare. Dacă există o interpretare rezonabilă a contractului de finanțare, fapta poate fi considerată nepenală.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-13-1">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 13¹ – Abuzul în serviciu în legătură cu obținerea de foloase</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, îndeplinește un act prin care s-a obținut un folos necuvenit pentru sine ori pentru altul, se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac noțiunea de „folos necuvenit” – dacă avantajul obținut are o justificare legală (contract, plată datorată, acord aprobat), acesta nu intră în sfera infracțiunii. De asemenea, verific dacă actul contestat a fost efectiv în atribuțiile funcționarului sau dacă era o decizie colectivă, ceea ce poate dilua răspunderea individuală.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-14">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 14 – Conflictul de interese</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, a îndeplinit un act prin care s-a obținut un folos pentru sine, soț, rude sau afini până la gradul al II-lea inclusiv, se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei legăturii dintre act și avantajul obținut, precum și pe argumentul că beneficiul nu este unul „necuvenit”. De asemenea, dacă funcționarul a acționat la recomandarea sau cu aprobarea superiorilor, răspunderea personală poate fi diminuată.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-15">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 15 – Traficul de influență</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta persoanei care pretinde, primește ori acceptă promisiunea de bani sau alte foloase, lăsând să se creadă că are influență asupra unui funcționar public și că îl va determina pe acesta să îndeplinească sau să nu îndeplinească un act, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, pot arăta că discuțiile au fost lipsite de caracter concret și nu au produs niciun efect juridic. Dacă beneficiul a fost obținut pentru alte activități legitime (consultantă, intermediere comercială), atunci nu se poate reține infracțiunea de trafic de influență.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-16">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 16 – Cumpărarea de influență</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Promisiunea, oferirea sau darea de bani ori alte foloase unei persoane despre care se afirmă că are influență asupra unui funcționar, pentru a-l determina să îndeplinească sau să nu îndeplinească un act, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că nu a existat scopul de a influența un funcționar public sau că suma a fost oferită pentru alt serviciu licit. Dacă pretinsa influență era inexistentă sau imposibilă, fapta nu se poate reține.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-17">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 17 – Denunțarea</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Persoana care a săvârșit una dintre faptele prevăzute la art. 9–16 și care, înainte ca organul de urmărire penală să fi fost sesizat, denunță fapta și facilitează tragerea la răspundere penală a celorlalți participanți, beneficiază de reducerea la jumătate a limitelor de pedeapsă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, pot negocia cu clientul folosirea acestei dispoziții ca strategie, în special în dosarele cu mai mulți participanți. Momentul denunțului este crucial – acesta trebuie făcut înainte ca organele să fie sesizate oficial, altfel nu se aplică reducerea.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </CardContent>
+        </Card>
+
       </div>
     </section>
   );
