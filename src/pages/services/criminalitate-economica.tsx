@@ -657,242 +657,178 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Legea nr. 241/2005</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 241/2005 pentru prevenirea și combaterea evaziunii fiscale</h2>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <p><strong>Articolul 3</strong></p>
-            <p>Constituie infracţiune şi se pedepseşte cu închisoare de la 6 luni la 5 ani fapta contribuabilului care nu reface, cu intenţie sau din culpă, documentele de evidenţă contabilă distruse, în termenul înscris în documentele de control.</p>
-
-            <p><strong>Articolul 4</strong></p>
-            <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani refuzul nejustificat al unei persoane de a prezenta organelor competente documentele legale şi bunurile din patrimoniu, în scopul împiedicării verificărilor financiare, fiscale sau vamale, în termen de cel mult 15 zile de la somaţie.</p>
-
-            <p><strong>Articolul 5</strong></p>
-            <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani împiedicarea, sub orice formă, a organelor competente de a intra, în condiţiile prevăzute de lege, în sedii, incinte ori pe terenuri, cu scopul efectuării verificărilor financiare, fiscale sau vamale.</p>
-
-            <p><strong>Articolul 7</strong></p>
-            <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 5 ani şi interzicerea unor drepturi deţinerea sau punerea în circulaţie, fără drept, a timbrelor, banderolelor ori formularelor tipizate, utilizate în domeniul fiscal, cu regim special.</p>
-            <p>(2) Constituie infracţiune şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi tipărirea, folosirea, deţinerea sau punerea în circulaţie, cu ştiinţă, de timbre, banderole ori formulare tipizate, utilizate în domeniul fiscal, cu regim special, falsificate.</p>
-
-            <p><strong>Articolul 8</strong></p>
-            <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la 3 ani la 10 ani şi interzicerea unor drepturi stabilirea cu rea-credinţă de către contribuabil a impozitelor, taxelor sau contribuţiilor, având ca rezultat obţinerea, fără drept, a unor sume de bani cu titlu de rambursări sau restituiri de la bugetul general consolidat ori compensări datorate bugetului general consolidat.</p>
-            <p>(2) Constituie infracţiune şi se pedepseşte cu închisoare de la 5 ani la 15 ani şi interzicerea unor drepturi asocierea în vederea săvârşirii faptei prevăzute la alin. (1).</p>
-            <p>(3) Tentativa faptelor prevăzute la alin. (1) şi (2) se pedepseşte.</p>
-
-            <p><strong>Articolul 9</strong></p>
-            <p>(1) Constituie infracţiuni de evaziune fiscală şi se pedepsesc cu închisoare de la 2 ani la 8 ani şi interzicerea unor drepturi următoarele fapte săvârşite în scopul sustragerii de la îndeplinirea obligaţiilor fiscale: a) ascunderea bunului ori a sursei impozabile sau taxabile;b) omisiunea, în tot sau în parte, a evidenţierii, în actele  contabile ori în alte documente legale, a operaţiunilor comerciale efectuate sau a veniturilor realizate; c) evidenţierea, în actele contabile sau în alte documente legale, a cheltuielilor care nu au la baza operaţiuni reale ori evidenţierea altor operaţiuni fictive; d) alterarea, distrugerea sau ascunderea de acte contabile, memorii ale aparatelor de taxat ori de marcat electronice fiscale sau de alte mijloace de stocare a datelor; e) executarea de evidente contabile duble, folosindu-se înscrisuri sau alte mijloace de stocare a datelor; f) sustragerea de la efectuarea verificărilor financiare, fiscale sau vamale, prin nedeclararea, declararea fictivă ori declararea inexactă cu privire la sediile principale sau secundare ale persoanelor verificate; g) substituirea, degradarea sau înstrăinarea de către debitor ori de către terţe persoane a bunurilor sechestrate în conformitate cu prevederile Codului de procedură fiscală şi ale Codului de procedură penală.</p>
-            <p>(2) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 100.000 euro, în echivalentul monedei naţionale, limita minimă a pedepsei prevăzute de lege şi limita maximă a acesteia se majorează cu 5 ani.</p>
-            <p>(3) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 500.000 euro, în echivalentul monedei naţionale, limita minimă a pedepsei prevăzute de lege şi limita maximă a acesteia se majorează cu 7 ani.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Legea nr. 656/2002</h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p><strong>Articolul 29</strong></p>
-            <p>(1) Constituie infracțiunea de spălare a banilor și se pedepsește cu închisoare de la 3 la 10 ani:</p>
-            <p>a) schimbarea sau transferul de bunuri, cunoscând că provin din săvârșirea de infracțiuni, în scopul ascunderii sau al disimulării originii ilicite a acestor bunuri ori în scopul de a ajuta persoana care a săvârșit infracțiunea din care provin bunurile să se sustragă de la urmărire, judecată sau executarea pedepsei; b) ascunderea ori disimularea adevăratei naturi a provenienței, a situării, a dispoziției, a circulației sau a proprietății bunurilor ori a drepturilor asupra acestora, cunoscând că bunurile provin din săvârșirea de infracțiuni; c) dobândirea, deținerea sau folosirea de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni.</p>
-            <p>(2) Tentativa se pedepsește.</p>
-            <p>(3) Dacă fapta a fost săvârșită de o persoană juridică, pe lângă pedeapsa amenzii, instanța aplică, după caz, una sau mai multe dintre pedepsele complementare prevăzute la art. 136 alin. (3) lit. a)-c) din Codul penal.</p>
-            <p>(4) Cunoașterea provenienței bunurilor sau scopul urmărit poate fi dedusă/dedus din circumstanțele faptice obiective.</p>
-            <p>(5) Dispozițiile alin. (1)-(4) se aplică indiferent dacă infracțiunea din care provine bunul a fost comisă pe teritoriul României sau în străinătate.</p>
-
-            <p><strong>Articolul 31 *</strong>)</p>
-            <p>(1) Nerespectarea obligațiilor prevăzute la art. 18 constituie infracțiune și se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă, dacă fapta nu constituie o infracțiune mai gravă.</p>
-            <p>(2) Dacă fapta prevăzută la alin. (1) a fost săvârșită din culpă, pedeapsa este închisoarea de la 3 luni la 2 ani sau amenda.</p>
-            <p>*) Articolul 18</p>
-            <p>(1) Persoanele prevăzute la art. 10 aplică, în plus față de măsurile-standard de cunoaștere a clientelei, măsurile suplimentare de cunoaștere a clientelei în următoarele situații care, prin natura lor, pot prezenta un risc sporit de spălare a banilor sau de finanțarea terorismului: a) în cazul persoanelor care nu sunt prezente fizic la efectuarea operațiunilor; b) în cazul relațiilor de corespondent cu instituții de credit din state care nu sunt membre ale Uniunii Europene sau nu aparțin Spațiului Economic European; c) în cazul tranzacțiilor sau relațiilor de afaceri cu persoanele expuse politic, care sunt rezidente într-un alt stat membru al Uniunii Europene sau al Spațiului Economic European ori într-un stat terț.</p>
-            <p>(2) Persoanele prevăzute la art. 10 aplică măsurile suplimentare de cunoaștere a clientelei și în alte cazuri decât cele prevăzute la alin. (1), care, prin natura lor, prezintă un risc sporit de spălare a banilor sau de finanțarea terorismului.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Legea nr. 31/1990</h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p><strong>Articolul 271</strong></p>
-            <p>Se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă fondatorul, administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului ori reprezentantul legal al societății care: a) prezintă, cu rea-credință, în prospectele, rapoartele și comunicările adresate publicului, date neadevărate asupra constituirii societății ori asupra condițiilor economice sau juridice ale acesteia ori ascunde, cu rea-credință, în tot sau în parte, asemenea date; b) prezintă, cu rea-credință, acționarilor/asociaților o situație financiară inexactă sau cu date inexacte asupra condițiilor economice sau juridice ale societății, în vederea ascunderii situației ei reale; c) refuză să pună la dispoziția experților, în cazurile și în condițiile prevăzute la art. 26 și 38, documentele necesare sau îi împiedică, cu rea-credință, să îndeplinească însărcinările primite.</p>
-
-            <p><strong>Articolul 272</strong></p>
-            <p>(1) Se pedepsește cu închisoare de la 6 luni la 3 ani ori cu amendă fondatorul, administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului ori reprezentantul legal al societății care: a) dobândește, în contul societății, acțiuni ale altor societăți, la un preț pe care îl știe vădit superior valorii lor efective, sau vinde, pe seama societății, acțiuni pe care aceasta le deține, la prețuri despre care are cunoștință că sunt vădit inferioare valorii lor efective, în scopul obținerii, pentru el sau pentru alte persoane, a unui folos în paguba societății; b) folosește, cu rea-credință, bunuri sau creditul de care se bucură societatea, într-un scop contrar intereselor acesteia sau în folosul lui propriu ori pentru a favoriza o altă societate în care are interese direct sau indirect; c) se împrumută, sub orice formă, direct sau printr-o persoană interpusă, de la societatea pe care o administrează, de la o societate controlată de aceasta ori de la o societate care controlează societatea pe care el o administrează, suma împrumutată fiind superioară limitei prevăzute la art. 144^4 alin. (3) lit. a), sau face ca una dintre aceste societăți să îi acorde vreo garanție pentru datorii proprii; d) încalcă dispozițiile art. 183.</p>
-            <p>(2) Nu constituie infracțiune fapta prevăzută la alin. (1) lit. b), dacă a fost săvârșită de administratorul, directorul, membrul directoratului ori reprezentantul legal al societății în cadrul unor operațiuni de trezorerie între societate și alte societăți controlate de aceasta sau care o controlează, direct ori indirect.</p>
-            <p>(3) Nu constituie infracțiune fapta prevăzută la alin. (1) lit. c), dacă este săvârșită de către o societate comercială ce are calitatea de fondator, iar împrumutul este realizat de la una dintre societățile controlate ori care o controlează pe aceasta, direct sau indirect.</p>
-
-            <p><strong>Articolul 272^1</strong></p>
-            <p>Se pedepsește cu închisoare de la un an la 5 ani fondatorul, administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului ori reprezentantul legal al societății care: a) răspândește știri false sau întrebuințează alte mijloace frauduloase care au ca efect mărirea ori scăderea valorii acțiunilor sau a obligațiunilor societății ori a altor titluri ce îi aparțin, în scopul obținerii, pentru el sau pentru alte persoane, a unui folos în paguba societății; b) încasează sau plătește dividende, sub orice formă, din profituri fictive ori care nu puteau fi distribuite în cursul exercițiului financiar pe baza situației financiare interimare șianual, pe baza situațiilor financiare anuale, sau contrar celor rezultate din acestea.</p>
-
-            <p><strong>Articolul 273</strong></p>
-            <p>Se pedepsește cu închisoare de la 3 luni la 2 ani ori cu amendă administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului ori reprezentantul legal al societății care: a) emite acțiuni de o valoare mai mică decât valoarea lor legală ori la un preț inferior valorii nominale sau emite noi acțiuni în schimbul aporturilor în numerar, înainte ca acțiunile precedente să fi fost achitate în întregime; b) se folosește, în adunările generale, de acțiunile nesubscrise sau nedistribuite acționarilor; c) acordă împrumuturi sau avansuri asupra acțiunilor societății ori constituie garanții în alte condiții decât cele prevăzute de lege; d) predă titularului acțiunile înainte de termen sau predă acțiuni liberate în total sau în parte, în afară de cazurile stabilite de lege; e) nu respectă dispozițiile legale referitoare la anularea acțiunilor neachitate; f) emite obligațiuni fără respectarea dispozițiilor legale sau acțiuni fără să cuprindă mențiunile cerute de lege.</p>
-
-            <p><strong>Articolul 274</strong></p>
-            <p>Se pedepsește cu închisoare de la o lună la un an ori cu amendă administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului ori reprezentantul legal al societății care: a) îndeplinește hotărârile adunării generale referitoare la schimbarea formei societății, la fuziunea ori la divizarea acesteia sau la reducerea capitalului social, înainte de expirarea termenelor prevăzute de lege; b) îndeplinește hotărârile adunării generale referitoare la reducerea capitalului social, fără ca membrii să fi fost executați pentru efectuarea vărsământului datorat ori fără ca aceștia să fi fost scutiți, prin hotărârea adunării generale, de plata vărsămintelor ulterioare; c) îndeplinește hotărârile adunării generale referitoare la schimbarea formei societății, fuziune, divizare, dizolvare, reorganizare sau reducere a capitalului social, fără informarea organului judiciar ori cu încălcarea interdicției stabilite de acesta, în cazul în care față de societatea comercială s-a început urmărirea penală.</p>
-
-            <p><strong>Articolul 275</strong></p>
-            <p>(1) Se pedepsește cu închisoare de la o lună la un an ori cu amendă administratorul, directorul general, directorul, membrul consiliului de supraveghere sau al directoratului care: a) încalcă, chiar prin persoane interpuse sau prin acte simulate, dispozițiile art. 144^3; b) nu convoacă adunarea generală în cazurile prevăzute de lege sau încalcă dispozițiile art. 193 alin. (2); c) începe operațiuni în numele unei societăți cu răspundere limitată înainte de a se fi efectuat vărsământul integral al capitalului social; d) emite titluri negociabile reprezentând părți sociale ale unei societăți cu răspundere limitată; e) dobândește acțiuni ale societății în contul acesteia în cazurile interzise de lege.</p>
-            <p>(2) Cu pedeapsa prevăzută la alin. (1) se pedepsește și asociatul care încalcă dispozițiile art. 127 sau ale art. 193 alin. (2).</p>
-
-            <p><strong>Articolul 276</strong></p>
-            <p>Se pedepsește cu închisoare de la o lună la un an sau cu amendă cenzorul care nu convoacă adunarea generală în cazurile în care este obligat prin lege.</p>
-
-            <p><strong>Articolul 277</strong></p>
-            <p>(1) Se pedepsește cu închisoare de la 3 luni la un an ori cu amendă persoana care a acceptat sau a păstrat însărcinarea de cenzor, contrar dispozițiilor art. 161 alin. (2), ori persoana care a acceptat însărcinarea de expert, cu încălcarea dispozițiilor art. 39.</p>
-            <p>(2) Hotărârile luate de adunările generale în baza unui raport al unui cenzor sau expert, numit cu încălcarea dispozițiilor art. 161 alin. (2) și ale art. 39, nu pot fi anulate din cauza încălcării dispozițiilor cuprinse în acele articole.</p>
-            <p>(3) Cu pedeapsa prevăzută la alin. (1) se pedepsește și fondatorul, administratorul, directorul, directorul executiv sau cenzorul care își exercită funcțiile sau însărcinările cu încălcarea dispozițiilor prezentei legi referitoare la incompatibilitate.</p>
-
-            <p><strong>Articolul 278</strong></p>
-            <p>(1) Dispozițiile art. 271-277 se aplică și lichidatorului, în măsura în care se referă la obligații ce intră în cadrul atribuțiilor sale.</p>
-            <p>(2) Se pedepsește cu închisoare de la o lună la un an sau cu amendă lichidatorul care face plăți asociaților cu încălcarea dispozițiilor art. 256.</p>
-
-            <p><strong>Articolul 279</strong></p>
-            <p>(1) Se pedepsește cu închisoare de la 3 luni la 2 ani ori cu amendă acționarul sau deținătorul de obligațiuni care:</p>
-            <p>a) trece acțiunile sau obligațiunile sale pe numele altor persoane, în scopul formării unei majorități în adunarea generală, în detrimentul altor acționari ori deținători de obligațiuni;</p>
-            <p>b) votează în adunări generale, în situația prevăzută la lit. a), ca proprietar de acțiuni sau de obligațiuni care în realitate nu îi aparțin;</p>
-            <p>c) în schimbul unui folos material necuvenit, se obligă să voteze într-un anumit sens în adunarea generală sau să nu ia parte la vot.</p>
-            <p>(2) Determinarea unui acționar sau a unui deținător de obligațiuni ca, în schimbul unui folos material necuvenit, să voteze într-un anumit sens în adunările generale ori să nu ia parte la vot se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-
-            <p><strong>Articolul 280^1</strong></p>
-            <p>Transmiterea fictivă a părților sociale ori a acțiunilor deținute într-o societate comercială, în scopul săvârșirii unei infracțiuni sau al sustragerii de la urmărirea penală ori în scopul îngreunării acesteia, se pedepsește cu închisoare de la un an la 5 ani.</p>
-
-            <p><strong>Articolul 280^3</strong></p>
-            <p>Folosirea, cu știință, a actelor unei societăți radiate, în scopul producerii de consecințe juridice, constituie infracțiune și se pedepsește cu închisoare de la 3 luni la 3 ani sau cu amendă.</p>
-
-            <p><strong>Articolul 281</strong></p>
-            <p>Faptele prevăzute în prezentul titlu, dacă, potrivit Codului penal sau unor legi speciale, constituie infracțiuni mai grave, se sancționează cu pedepsele prevăzute de acestea.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Legea nr. 78/2000</h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <h3 className="text-lg font-semibold">Infracțiuni de corupție</h3>
-            <p><strong>Articolul 6</strong></p>
-            <p>Infracțiunile de luare de mită, prevăzută la art. 289 din Codul penal, dare de mită, prevăzută la art. 290 din Codul penal, trafic de influență, prevăzută la art. 291 din Codul penal, și cumpărare de influență, prevăzută la art. 292 din Codul penal, se pedepsesc potrivit prevederilor acelor texte de lege. Dispozițiile art. 308 din Codul penal se aplică în mod corespunzător.</p>
-
-            <p><strong>Articolul 7</strong></p>
-            <p>Faptele de luare de mită sau trafic de influență săvârșite de o persoană care: a) exercită o funcție de demnitate publică; b) este judecător sau procuror; c) este organ de cercetare penală sau are atribuții de constatare ori de sancționare a contravențiilor; d) este una dintre persoanele prevăzute la art. 293 din Codul penal se sancționează cu pedeapsa prevăzută la art. 289 sau 291 din Codul penal, ale cărei limite se majorează cu o treime.</p>
-
-            <h3 className="text-lg font-semibold">Infracțiuni asimilate infracțiunilor de corupție</h3>
-            <p><strong>Articolul 10</strong></p>
-            <p>Constituie infracțiuni și se pedepsesc cu închisoare de la 3 la 10 ani și interzicerea unor drepturi următoarele fapte, dacă sunt săvârșite în scopul obținerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite: a) stabilirea, cu intenție, a unei valori diminuate, față de valoarea comercială reală, a bunurilor aparținând operatorilor economici la care statul sau o autoritate a administrației publice locale este acționar, comisă în cadrul acțiunii de privatizare ori de executare silită, de reorganizare sau lichidare judiciară ori cu ocazia unei operațiuni comerciale, ori a bunurilor aparținând autorității publice sau instituțiilor publice, în cadrul unei acțiuni de vânzare a acestora sau de executare silită, săvârșită de cei care au atribuții de conducere, de administrare, de gestionare, de executare silită, de reorganizare ori lichidare judiciară; b) acordarea de subvenții cu încălcarea legii sau neurmărirea, conform legii, a respectării destinației subvențiilor; c) utilizarea subvențiilor în alte scopuri decât cele pentru care au fost acordate, precum și utilizarea în alte scopuri a creditelor garantate din fonduri publice sau care urmează să fie rambursate din fonduri publice.</p>
-
-            <p><strong>Articolul 11</strong></p>
-            <p>(1) Fapta persoanei care, având sarcina de a supraveghea, a controla, a reorganiza sau a lichida un operator economic privat, îndeplinește pentru acesta vreo însărcinare, intermediază ori înlesnește efectuarea unor operațiuni comerciale sau financiare ori participă cu capital la un asemenea operator economic, dacă fapta este de natură a-i aduce direct sau indirect un folos necuvenit, constituie infracțiune și se pedepsește cu închisoare de la un an la 5 ani și interzicerea unor drepturi.</p>
-            <p>(2) Dacă fapta prevăzută la alin. (1) a fost săvârșită într-un interval de 5 ani de la încetarea însărcinării, pedeapsa este închisoare de la 6 luni la 3 ani sau amendă.</p>
-
-            <p><strong>Articolul 12</strong></p>
-            <p>(1) Sunt pedepsite cu închisoarea de la 1 la 5 ani următoarele fapte, dacă sunt săvâarșite în scopul obținerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite: a) efectuarea de operațiuni financiare, ca acte de comerț, incompatibile cu funcția, atribuția sau însărcinarea pe care o îndeplinește o persoană ori încheierea de tranzacții financiare, utilizând informațiile obținute în virtutea funcției, atribuției sau însărcinării sale; b) folosirea, în orice mod, direct sau indirect, de informații ce nu sunt destinate publicității ori permiterea accesului unor persoane neautorizate la aceste informații.</p>
-            <p>(2) În sensul prezentei legi, operațiunile financiare constau în operațiuni care antrenează circulația de capital, operațiuni de bancă, de schimb valutar sau de credit, operațiuni de plasament, în burse, în asigurări, în plasament mutual ori privitor la conturile bancare și cele asimilate acestora, tranzacții comerciale interne și internaționale. Pentru a fi efectuate ca acte de comerț, operațiunile financiare trebuie să constituie o acțiune de intermediere în circulația bunurilor făcută în mod organizat și sistematic, în scopul obținerii de profit.</p>
-
-            <p><strong>Articolul 13</strong></p>
-            <p>Fapta persoanei care indeplineste o functie de conducere într-un partid, într-un sindicat sau patronat ori în cadrul unei persoane juridice fără scop patrimonial, de a folosi influența ori autoritatea sa în scopul obtinerii pentru sine ori pentru altul de bani, bunuri sau alte foloase necuvenite, se pedepseste cu inchisoare de la unu la 5 ani.</p>
-
-            <p><strong>Articolul 13^1 *</strong>)</p>
-            <p>În cazul infracțiunii de șantaj, prevăzută de art. 207 din Codul penal, în care este implicată o persoană dintre cele prevăzute la art. 1, limitele speciale ale pedepsei se majorează cu o treime.</p>
-
-            <p><strong>Articolul 13^2</strong></p>
-            <p>În cazul infracțiunilor de abuz în serviciu sau de uzurpare a funcției, dacă funcționarul public a obținut pentru sine ori pentru altul un folos necuvenit, limitele speciale ale pedepsei se majorează cu o treime.</p>
-
-            <p><strong>Articolul 15</strong></p>
-            <p>Tentativa la infracțiunile prevăzute în prezenta secțiune se pedepsește.</p>
-
-            <p>*) Articolul 1</p>
-            <p>(1) Prezenta lege instituie măsuri de prevenire, descoperire și sancționare a faptelor de corupție și se aplică următoarelor persoane: a) care exercită o funcție publică, indiferent de modul în care au fost investite, în cadrul autorităților publice sau instituțiilor publice; b) care îndeplinesc, permanent sau temporar, potrivit legii, o funcție sau o însărcinare, în măsura în care participă la luarea deciziilor sau le pot influența, în cadrul serviciilor publice, regiilor autonome, societăților comerciale, companiilor naționale, societăților naționale, unităților cooperatiste sau al altor agenți economici; c) care exercită atribuții de control, potrivit legii;       d) care acordă asistență specializată unităților prevăzute la lit. a) și b), în măsura în care participă la luarea deciziilor sau le pot influența; e) care, indiferent de calitatea lor, realizează, controlează sau acordă asistență specializată, în măsura în care participă la luarea deciziilor sau le pot influența, cu privire la: operațiuni care antrenează circulația de capital, operațiuni de bancă, de schimb valutar sau de credit, operațiuni de plasament, în burse, în asigurări, în plasament mutual ori privitor la conturile bancare și cele asimilate acestora, tranzacții comerciale interne și internaționale; f) care dețin o functie de conducere într-un partid sau într-o formațiune politică, într-un sindicat, într-o organizație patronală ori într-o asociație fără scop lucrativ sau fundație; g) alte persoane fizice decât cele prevăzute la lit. a)-f), în condițiile prevăzute de lege.</p>
-
-            <h3 className="text-lg font-semibold">Infracțiuni împotriva intereselor financiare ale Uniunii Europene</h3>
-
-            <p><strong>Articolul 18^1</strong></p>
-
-            <p>(1) Folosirea sau prezentarea cu rea-credință de documente ori declarații false, inexacte sau incomplete, dacă fapta are ca rezultat obținerea pe nedrept de fonduri din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.</p>
-
-            <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancționează omisiunea de a furniza, cu știință, datele cerute potrivit legii pentru obținerea de fonduri din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, dacă fapta are ca rezultat obținerea pe nedrept a acestor fonduri.</p>
-
-            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
-
-            <p><strong>Articolul 18^2</strong></p>
-
-            <p>(1) Schimbarea, fără respectarea prevederilor legale, a destinației fondurilor obținute din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei se pedepsește cu închisoare de la un an la 5 ani și interzicerea unor drepturi.</p>
-
-            <p>(2) Schimbarea, fără respectarea prevederilor legale, a destinației unui folos legal obținut, dacă fapta are ca rezultat diminuarea ilegală a resurselor din bugetul general al Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, se sancționează cu pedeapsa prevăzută la alin. (1).</p>
-
-            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
-
-            <p><strong>Articolul 18^3</strong></p>
-
-            <p>(1) Folosirea sau prezentarea cu rea-credință de documente ori declarații false, inexacte sau incomplete, care are ca rezultat diminuarea ilegală a resurselor ce trebuie virate către bugetul general al Uniunii Europene sau către bugetele administrate de aceasta ori în numele ei, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.</p>
-
-            <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancționează omisiunea de a furniza, cu știință, datele cerute potrivit legii, dacă fapta are ca rezultat diminuarea ilegală a resurselor ce trebuie virate către bugetul general al Uniunii Europene sau către bugetele administrate de aceasta ori în numele ei.</p>
-
-            <p>(3) Dacă faptele prevăzute la alin. (1) și (2) au produs consecințe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
-
-            <p><strong>Articolul 18^4</strong></p>
-
-            <p>Tentativa infracțiunilor prevăzute la art. 18^1-18^3 se pedepseste.</p>
-
-            <p><strong>Articolul 18^5</strong></p>
-
-            <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuții de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârșirea de către o persoană care se află în subordinea sa și care a acționat în numele acelui operator economic a uneia dintre infracțiunile prevăzute la art. 18^1 - 18^3 sau săvârșirea unei infracțiuni de corupție ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Codul Vamal</h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p><strong>Articolul 270</strong></p>
-
-            <p>(1) Introducerea în sau scoaterea din ţară, prin orice mijloace, a bunurilor sau mărfurilor, prin alte locuri decât cele stabilite pentru control vamal, constituie infracţiunea de contrabandă şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi.</p>
-
-            <p>(2) Constituie, de asemenea, infracţiune de contrabandă şi se pedepseşte potrivit alin. (1): a) introducerea în sau scoaterea din ţară prin locurile stabilite pentru controlul vamal, prin sustragere de la controlul vamal, a bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal, dacă valoarea în vamă a bunurilor sau a mărfurilor sustrase este mai mare de 20.000 lei în cazul produselor supuse accizelor şi mai mare de 40.000 lei în cazul celorlalte bunuri sau mărfuri; b) introducerea în sau scoaterea din ţară, de două ori în decursul unui an, prin locurile stabilite pentru controlul vamal, prin sustragere de la controlul vamal, a bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal, dacă valoarea în vamă a bunurilor sau a mărfurilor sustrase este mai mică de 20.000 lei în cazul produselor supuse accizelor şi mai mică de 40.000 lei în cazul celorlalte bunuri sau mărfuri; c) înstrăinarea sub orice formă a mărfurilor aflate în tranzit vamal.</p>
-
-            <p>(3) Sunt asimilate infracţiunii de contrabandă şi se pedepsesc potrivit alin. (1) colectarea, deţinerea, producerea, transportul, preluarea, depozitarea, predarea, desfacerea şi vânzarea bunurilor sau a mărfurilor care trebuie plasate sub un regim vamal cunoscând că acestea provin din contrabandă sau sunt destinate săvârşirii acesteia.</p>
-
-            <p><strong>Articolul 271</strong></p>
-
-            <p>Introducerea în sau scoaterea din ţară, fără drept, de arme, muniţii, materiale explozibile, droguri, precursori, materiale nucleare sau alte substanţe radioactive, substanţe toxice, deşeuri, reziduuri ori materiale chimice periculoase constituie infracţiunea de contrabandă calificată şi se pedepseşte cu închisoare de la 3 la 12 ani şi interzicerea unor drepturi, dacă legea penală nu prevede o pedeapsă mai mare.</p>
-
-            <p><strong>Articolul 272</strong></p>
-
-            <p>Folosirea, la autoritatea vamală, a documentelor vamale de transport sau comerciale care se referă la alte mărfuri sau bunuri ori la alte cantităţi de mărfuri sau bunuri decât cele prezentate în vamă constituie infracţiunea de folosire de acte nereale şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi.</p>
-
-            <p><strong>Articolul 273</strong></p>
-
-            <p>Folosirea, la autoritatea vamală, a documentelor vamale de transport sau comerciale falsificate constituie infracţiunea de folosire de acte falsificate şi se pedepseşte cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi.</p>
-
-            <p><strong>Articolul 274</strong></p>
-
-            <p>Faptele prevăzute la art. 270-273, săvârşite de una sau mai multe persoane înarmate ori de două sau mai multe persoane împreună, se pedepsesc cu închisoare de la 5 la 15 ani şi interzicerea unor drepturi.</p>
-
-            <p><strong>Articolul 275</strong></p>
-
-            <p>Tentativa la infracţiunile prevăzute la art. 270-274 se pedepseşte.</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Statistică Infracțiuni Economice</h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>În anul 2019, la nivelul Direcției de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism - DIICOT, din cele 1.626 cauze de soluționat având ca obiect infracțiuni din sfera criminalității economico-financiare, din care 773 cauze nou înregistrate, a fost soluționat un număr de 366 cauze, față de 250 cauze soluționate în 2018, din cele 1.599 cauze de soluționat, din care 625 cauze nou înregistrate în 2018.</p>
-
-            <p>Infracțiuni de evaziune fiscală - din cele 524 cauze de soluționat în 2019, din care 216 cauze nou înregistrate în perioada de referință, a fost soluționat un număr de 102 cauze, față de 53 de cauze în 2018, din 563 cauze de soluționat, din care 187 nou înregistrate în 2018.</p>
-
-            <p>Infracțiuni de spălare a banilor - din cele 434 de cauze de soluționat în 2019, din care 141 nou înregistrate în perioada de referință, a fost soluționat un număr de 100 cauze, față de 99 cauze în 2018, din 459 cauze de soluționat, din care 157 nou înregistrate în 2018.</p>
-
-            <p>Infracțiuni prevăzute de Codul vamal - din cele 669 cauze de soluționat în 2019, din care 307 cauze nou înregistrate, în perioada de referință a fost soluționat un număr de 172 cauze, față de 123 cauze în 2018, din 635 cauze de soluționat, din care 229 nou înregistrate în 2018.</p>
-
-            <p>Alte infracțiuni economice - din cele 433 cauze de soluționat, din care 250 nou înregistrate, în perioada de referință a fost soluționat un număr de 92 cauze, față de 74 cauze în 2018, din cele 401 cauze de soluționat, din care 209 nou înregistrate în 2018.</p>
-
-            <p>În anul 2019, la nivelul poliției române, au fost soluționate/declinate parchetului un număr de 8914 infracțiuni de înșelăciune, 990 infracțiuni de delapidare, 240 infracțiuni de gestiune frauduloasă, 1324 infracțiuni de abuz în serviciu, 202 infracțiuni de neglijență în serviciu, 339 infracțiuni de luare de mită, 308 infracțiuni de dare de mită, 91 infracțiuni de trafic de influență, 1219 infracțiuni de falsificare de monede, 7147 infracțiuni de fals în înscrisuri, 146 infracțiuni prevăzute de legea societăților comerciale, 3143 infracțiuni prevăzute de legea pentru prevenirea și combaterea evaziunii fiscale, 1322 infracțiuni prevăzute de Codul vamal.</p>
-
-            <p>În anul 2019, la nivelul Direcției Naționale Anticorupție - DNA, au fost trimise în judecată un număr de 265 infracțiuni de corupție (69 - luare de mită, 91 - dare de mită, 28 - trafic de influență, 77 - cumpărare de influență), 56 infracțiuni asimilate infracțiunilor de corupție, 2 infracțiuni în legătură directă cu infracțiunile de corupție, 232 infracțiuni împotriva intereselor financiare ale Uniunii Europene. De asemenea, au fost trimise în judecată un număr de 127 de infracțiuni de evaziune fiscală, 24 infracțiuni de spălare a banilor, 2 infracțiuni de conflict de interese, 67 infracțiuni de fals, 3 infracțiuni de delapidare, 3 infracțiuni de obținere ilegală de fonduri. Cuantumul prejudiciului reținut este de circa 156,4 milioane euro, iar valoarea măsurilor asigurătorii dispuse de procurori pentru repararea pagubei produse prin infracțiune este de circa 224 milioane euro. În perioada de referință au fost înregistrate 2794 de cauze noi.</p>
-
-            <p>Sursă: Raport de activitate 2019 - Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism (www.diicot.ro);Statistica principalelor activități desfășurate de Poliția Română în anul 2019 - Inspectoratul General al Poliției Române (www.politiaromana.ro); Raport de activitate 2019 - Direcția Națională Anticorupție (www.pna.ro).</p>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="l241-art-3">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 3 – Reținerea și neplata impozitelor și contribuțiilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Reținerea și neplata, în cel mult 30 de zile de la termenul de scadență prevăzut de lege, a sumelor reprezentând impozite sau contribuții cu reținere la sursă se pedepsește cu închisoare de la 1 la 5 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea lipsei intenției directe de a sustrage sumele de la plată. Situațiile financiare dificile, blocajul temporar de lichidități sau credința rezonabilă că plata urma să fie efectuată pot fi argumente solide. De asemenea, achitarea sumelor restante înainte de pronunțarea unei hotărâri definitive poate duce la reducerea sau chiar înlăturarea răspunderii penale, potrivit practicii instanțelor.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-4">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 4 – Reținerea și utilizarea sumelor cu altă destinație</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Reținerea de către contribuabil a sumelor reprezentând impozite, taxe sau contribuții și utilizarea acestora în alte scopuri decât cele prevăzute de lege se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că folosirea sumelor a fost determinată de circumstanțe excepționale și nu a avut scop fraudulos. Dacă se poate arăta că utilizarea fondurilor a fost temporară și destinată menținerii activității economice (ex.: plata salariilor pentru a evita falimentul), instanța poate considera fapta fără pericol social concret sau poate dispune o soluție mai blândă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-6">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 6 – Evidențierea în actele contabile a unor cheltuieli fictive</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Evidențierea, în actele contabile, a unor operațiuni fictive ori nereale, având drept consecință reducerea bazei impozabile, se pedepsește cu închisoare de la 2 la 8 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv” – este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-8">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 8 – Sustragerea de la efectuarea verificărilor fiscale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Refuzul de a prezenta documentele de evidență contabilă sau de a permite accesul organelor fiscale în sediile contribuabilului, în scopul împiedicării verificărilor, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea faptului că refuzul nu a avut un scop fraudulos, ci a fost cauzat de lipsa disponibilității documentelor la momentul controlului, neînțelegeri privind competența organelor de control sau probleme administrative. Dacă există corespondență cu autoritățile prin care se solicită amânarea verificării, acest lucru poate arăta buna-credință a clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-9">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 9 – Evaziunea fiscală</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracțiune de evaziune fiscală și se pedepsește cu închisoare de la 2 la 8 ani și interzicerea unor drepturi orice persoană care:</p>
+                      <p>a) ascunde bunul impozabil sau sursa impozabilă;</p>
+                      <p>b) omite, în tot sau în parte, evidențierea în actele contabile sau în alte documente legale a operațiunilor comerciale efectuate sau a veniturilor realizate;</p>
+                      <p>c) evidențiază în actele contabile operațiuni nereale;</p>
+                      <p>d) alterează, distruge sau ascunde documente contabile;</p>
+                      <p>e) organizează contabilitate dublă;</p>
+                      <p>f) sustrage de la controlul fiscal documentele contabile;</p>
+                      <p>g) se sustrage de la plata obligațiilor fiscale prin alte mijloace ilicite.</p>
+                      <p>(2) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 500.000 lei, limitele de pedeapsă se majorează cu 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, analiza se concentrează pe contestarea prejudiciului și a legăturii cauzale dintre fapta imputată și pierderea fiscală. Dacă tranzacțiile au o justificare economică reală sau dacă există documente care, chiar cu erori, reflectă activitatea desfășurată, elementul intențional poate fi înlăturat. Plata integrală a prejudiciului, conform modificărilor legislative, poate conduce la reducerea pedepsei sau chiar la renunțarea la urmărirea penală.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-10">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 10 – Tentativa</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Tentativa la infracțiunile prevăzute la art. 3–9 se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe ideea că acțiunile clientului nu au depășit faza actelor pregătitoare, care, în lipsa unor dispoziții exprese, nu ar fi sancționabile. Dacă prejudiciul nu s-a produs și nu există certitudine că fapta ar fi fost dusă la capăt, se poate invoca lipsa pericolului social concret.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-10-1">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 10¹ – Cauza de nepedepsire</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>În cazul infracțiunilor prevăzute la art. 8 și art. 9, dacă, în cursul urmăririi penale sau al judecății, până la pronunțarea unei hotărâri definitive, inculpatul acoperă integral prejudiciul produs, majorat cu dobânzi și penalități, se aplică pedeapsa amenzii.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aceasta este una dintre cele mai puternice strategii de apărare: obținerea unui raport de evaluare clar al prejudiciului și achitarea integrală a sumei înainte de sentința definitivă. În multe cazuri, această plată poate transforma o pedeapsă cu închisoarea într-o amendă, permițând clientului să evite privarea de libertate.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-11">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 11 – Reducerea pedepsei</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Dacă, înainte de sesizarea organului de urmărire penală, prejudiciul cauzat este acoperit integral, limitele pedepsei se reduc la jumătate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, acest articol reprezintă un argument decisiv pentru negocierea unei soluții amiabile cu partea vătămată. Demonstrarea bunei-credințe prin plata rapidă a sumei nu doar reduce pedeapsa, ci poate influența și percepția instanței asupra pericolului social al faptei.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-12">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 12 – Excluderea răspunderii penale în cazuri minore</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Nu constituie infracțiune faptele prevăzute la art. 3–9 dacă prejudiciul cauzat este mai mic de 50.000 lei și a fost acoperit integral până la primul termen de judecată.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Ca avocat, primul pas este să solicit o expertiză contabilă independentă pentru a verifica dacă prejudiciul real este sub pragul de 50.000 lei. Dacă acest lucru se confirmă și suma este achitată integral înainte de primul termen, răspunderea penală este exclusă, ceea ce conduce la închiderea dosarului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-13">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 13 – Circumstanțe atenuante</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Instanța poate reține circumstanțe atenuante dacă inculpatul colaborează cu autoritățile, recunoaște fapta și contribuie la recuperarea prejudiciului.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, pot construi strategia pe colaborarea clientului cu organele fiscale și pe furnizarea de documente suplimentare care să ajute la clarificarea situației. Colaborarea activă, combinată cu recunoașterea parțială sau totală a faptelor, poate conduce la pedepse reduse semnificativ, inclusiv la suspendarea executării acestora.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </CardContent>
         </Card>
       </div>
