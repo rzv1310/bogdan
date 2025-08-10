@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
 import * as htmlToImage from "html-to-image";
+import { useIsMobile } from "@/hooks/use-mobile";
 import {
   ResponsiveContainer,
   BarChart,
@@ -24,6 +25,40 @@ const data = [
 
 export default function RoadAccidentsChart() {
   const chartRef = useRef<HTMLDivElement | null>(null);
+  const isMobile = useIsMobile();
+
+  // Custom label renderers to reduce overlap between series labels
+  const renderLabel2022 = (props: any) => {
+    const { x, y, value } = props;
+    return (
+      <text
+        x={x}
+        y={y}
+        dy={isMobile ? -18 : -14}
+        textAnchor="middle"
+        fontSize={isMobile ? 11 : 12}
+        fill="hsl(var(--foreground))"
+      >
+        {value}
+      </text>
+    );
+  };
+
+  const renderLabel2023 = (props: any) => {
+    const { x, y, value } = props;
+    return (
+      <text
+        x={x}
+        y={y}
+        dy={isMobile ? -4 : -2}
+        textAnchor="middle"
+        fontSize={isMobile ? 11 : 12}
+        fill="hsl(var(--foreground))"
+      >
+        {value}
+      </text>
+    );
+  };
 
   const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
@@ -64,17 +99,17 @@ export default function RoadAccidentsChart() {
         <CardContent className="p-4 sm:p-6 pt-0">
           <div className="h-64 sm:h-80 w-full" ref={chartRef}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 8 }} barSize={18} barCategoryGap="32%">
+              <BarChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: isMobile ? 36 : 8 }} barSize={18} barCategoryGap="32%">
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="categorie" tick={{ fontSize: 12 }} />
-                <YAxis allowDecimals={false} />
+                <XAxis dataKey="categorie" interval={0} tick={{ fontSize: isMobile ? 10 : 12 }} angle={isMobile ? -35 : 0} textAnchor={isMobile ? "end" : "middle"} tickMargin={isMobile ? 8 : 5} height={isMobile ? 56 : 30} />
+                <YAxis allowDecimals={false} tick={{ fontSize: isMobile ? 10 : 12 }} width={isMobile ? 28 : 40} tickMargin={isMobile ? 2 : 8} />
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="an2022" name="2022" fill="#D62728" radius={[5, 5, 0, 0]}>
-                  <LabelList dataKey="an2022" position="top" style={{ fontSize: 12 }} />
+                  <LabelList dataKey="an2022" content={renderLabel2022} />
                 </Bar>
                 <Bar dataKey="an2023" name="2023" fill="#FF7F0E" radius={[5, 5, 0, 0]}>
-                  <LabelList dataKey="an2023" position="top" style={{ fontSize: 12 }} />
+                  <LabelList dataKey="an2023" content={renderLabel2023} />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
