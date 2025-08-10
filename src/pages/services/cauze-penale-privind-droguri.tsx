@@ -521,6 +521,13 @@ export default function CauzeDroguri() {
           </div>
         </CardContent>
       </Card>
+      <div className="pt-4">
+        <a href="tel:+40745506443" aria-label="Sună acum">
+          <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+            <Phone /> Sună acum
+          </Button>
+        </a>
+      </div>
 
       {/* H2: Statistici România */}
       <Card className="mt-8 border-accent">
