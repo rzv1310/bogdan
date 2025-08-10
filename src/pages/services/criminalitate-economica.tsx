@@ -4,6 +4,7 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { Phone } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function CriminalitateEconomica() {
   useSEO({
@@ -148,215 +149,509 @@ export default function CriminalitateEconomica() {
         </section>
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Text Legal Infracțiuni Economice. Codul Penal</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Penal</h2>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <h3 className="text-lg font-semibold">Infracțiuni contra libertății persoanei</h3>
-            <p><strong>Articolul 207.</strong> Șantajul</p>
-            <p>(1) Constrângerea unei persoane să dea, să facă, să nu facă sau să sufere ceva, în scopul de a dobândi în mod injust un folos nepatrimonial, pentru sine ori pentru altul, se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează amenințarea cu darea în vileag a unei fapte reale sau imaginare, compromițătoare pentru persoana amenințată ori pentru un membru de familie al acesteia, în scopul prevăzut în alin. (1).</p>
-            <p>(3) Dacă faptele prevăzute în alin. (1) și alin. (2) au fost comise în scopul de a dobândi în mod injust un folos patrimonial, pentru sine sau pentru altul, pedeapsa este închisoarea de la 2 la 7 ani.</p>
+          <CardContent className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="art-207">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 207 – Șantajul</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Constrângerea unei persoane să dea, să facă, să nu facă sau să sufere ceva, în scopul de a dobândi în mod injust un folos nepatrimonial, pentru sine ori pentru altul, se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează amenințarea cu darea în vileag a unei fapte reale sau imaginare, compromițătoare pentru persoana amenințată ori pentru un membru de familie al acesteia, în scopul prevăzut în alin. (1).</p>
+                      <p>(3) Dacă faptele prevăzute în alin. (1) și alin. (2) au fost comise în scopul de a dobândi în mod injust un folos patrimonial, pentru sine sau pentru altul, pedeapsa este închisoarea de la 2 la 7 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul pas este să contest existența scopului injust. Dacă se poate demonstra că acțiunea a fost motivată de un drept legitim – de exemplu, solicitarea unei plăți datorate sau avertizarea privind o situație reală – nu mai vorbim despre șantaj penal. De asemenea, voi analiza contextul relației dintre părți: dacă există un raport comercial, juridic sau personal în care discuțiile au fost tensionate, pot argumenta că ceea ce acuzarea numește „constrângere” a fost de fapt o negociere dură. Orice lipsă de probe directe asupra elementului intențional este în favoarea clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <h3 className="text-lg font-semibold">Infracțiuni contra patrimoniului prin nesocotirea încrederii</h3>
-            <p><strong>Articolul 239.</strong> Abuzul de încredere prin fraudarea creditorilor</p>
-            <p>(1) Fapta debitorului de a înstrăina, ascunde, deteriora sau distruge, în tot sau în parte, valori ori bunuri din patrimoniul său ori de a invoca acte sau datorii fictive în scopul fraudării creditorilor se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează fapta persoanei care, știind că nu va putea plăti, achiziționează bunuri ori servicii producând o pagubă creditorului.</p>
-            <p>(3) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+              <AccordionItem value="art-239">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 239 – Abuzul de încredere prin fraudarea creditorilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta debitorului de a înstrăina, ascunde, deteriora sau distruge, în tot sau în parte, valori ori bunuri din patrimoniul său ori de a invoca acte sau datorii fictive în scopul fraudării creditorilor se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează fapta persoanei care, știind că nu va putea plăti, achiziționează bunuri ori servicii producând o pagubă creditorului.</p>
+                      <p>(3) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Voi verifica dacă există dovezi clare că bunurile au fost ascunse sau înstrăinate cu intenția directă de a frauda creditorii. Dacă acțiunile clientului au fost determinate de necesitatea plății altor datorii sau de menținerea activității economice, putem argumenta lipsa intenției frauduloase. În plus, această infracțiune se judecă doar dacă există plângere prealabilă din partea creditorului – lipsa acesteia sau formularea sa tardivă poate duce la încetarea procesului penal. De asemenea, pot invoca circumstanța că evaluarea prejudiciului nu este certă sau nu se poate dovedi că a fost produs direct de acțiunea clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 240.</strong> Bancruta simplă</p>
-            <p>(1) Neintroducerea sau introducerea tardivă, de către debitorul persoană fizică ori de reprezentantul legal al persoanei juridice debitoare, a cererii de deschidere a procedurii insolvenței, într-un termen care depășește cu mai mult de 6 luni termenul prevăzut de lege de la apariția stării de insolvență, se pedepsește cu închisoare de la 3 luni la un an sau cu amendă.</p>
-            <p>(2) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+              <AccordionItem value="art-240">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 240 – Bancruta simplă</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Neintroducerea sau introducerea tardivă, de către debitorul persoană fizică ori de reprezentantul legal al persoanei juridice debitoare, a cererii de deschidere a procedurii insolvenței, într-un termen care depășește cu mai mult de 6 luni termenul prevăzut de lege de la apariția stării de insolvență, se pedepsește cu închisoarea de la 3 luni la un an sau cu amendă.</p>
+                      <p>(2) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aici apărarea se concentrează pe momentul exact în care s-a instalat starea de insolvență. Dacă putem demonstra că acest moment este incert sau că, în mod obiectiv, clientul nu avea cunoștință de imposibilitatea plăților, elementul subiectiv al infracțiunii lipsește. De asemenea, există situații în care întârzierea depunerii cererii de insolvență se justifică prin negocieri în curs cu creditorii sau prin speranța rezonabilă de redresare financiară. Lipsa plângerii prealabile rămâne un punct procedural puternic în favoarea clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 241.</strong> Bancruta frauduloasă</p>
-            <p>(1) Fapta persoanei care, în frauda creditorilor: a) falsifică, sustrage sau distruge evidențele debitorului ori ascunde o parte din activul averii acestuia; b) înfățișează datorii inexistente sau prezintă în registrele debitorului, în alt act sau în situația financiară sume nedatorate;                          c) înstrăinează, în caz de insolvență a debitorului, o parte din active se pedepsește cu închisoarea de la 6 luni la 5 ani.</p>
-            <p>(2) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+              <AccordionItem value="art-241">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 241 – Bancruta frauduloasă</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta persoanei care, în frauda creditorilor: a) falsifică, sustrage sau distruge evidențele debitorului ori ascunde o parte din activul averii acestuia; b) înfățișează datorii inexistente sau prezintă în registrele debitorului, în alt act sau în situația financiară sume nedatorate; c) înstrăinează, în caz de insolvență a debitorului, o parte din active se pedepsește cu închisoarea de la 6 luni la 5 ani.</p>
+                      <p>(2) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În acest caz, apărarea trebuie să demonstreze lipsa intenției de fraudă și existența unor explicații legitime pentru tranzacțiile contestate. De exemplu, dacă activele au fost înstrăinate pentru a acoperi datorii curente sau pentru a obține lichidități, nu se poate vorbi de scop fraudulos. Voi contesta de asemenea calitatea și validitatea probelor contabile aduse de acuzare – un simplu dezechilibru în documente nu înseamnă automat bancrută frauduloasă. Condiția plângerii prealabile rămâne o barieră procedurală importantă în favoarea clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 242.</strong> Gestiunea frauduloasă</p>
-            <p>(1) Pricinuirea de pagube unei persoane, cu ocazia administrării sau conservării bunurilor acesteia, de către cel care are ori trebuie să aibă grija administrării sau conservării acelor bunuri se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Când fapta prevăzută în alin. (1) a fost săvârșită de administratorul judiciar, de lichidatorul averii debitorului sau de un reprezentant sau prepus al acestora, pedeapsa este închisoarea de la unu la 5 ani.</p>
-            <p>(3) Faptele prevăzute în alin. (1) și alin. (2) săvârșite în scopul de a dobândi un folos patrimonial se pedepsesc cu închisoarea de la 2 la 7 ani.</p>
-            <p>(4) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+              <AccordionItem value="art-242">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 242 – Gestiunea frauduloasă</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Pricinuirea de pagube unei persoane, cu ocazia administrării sau conservării bunurilor acesteia, de către cel care are ori trebuie să aibă grija administrării sau conservării acelor bunuri se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>(2) Când fapta prevăzută în alin. (1) a fost săvârșită de administratorul judiciar, de lichidatorul averii debitorului sau de un reprezentant sau prepus al acestora, pedeapsa este închisoarea de la unu la 5 ani.</p>
+                      <p>(3) Faptele prevăzute în alin. (1) și alin. (2) săvârșite în scopul de a dobândi un folos patrimonial se pedepsesc cu închisoarea de la 2 la 7 ani.</p>
+                      <p>(4) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi urmări să demonstrez că eventualele pagube nu au rezultat dintr-o acțiune intenționată sau din neglijență gravă, ci din decizii comerciale luate în interesul patrimoniului administrat. Este important să subliniez că evaluarea pagubei trebuie să fie concretă și direct legată de actul imputat clientului. În cazul administratorilor judiciari sau lichidatorilor, pot argumenta că deciziile contestate au fost luate în limitele mandatului legal și în baza informațiilor disponibile la acel moment. Lipsa plângerii prealabile poate bloca acțiunea penală.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 244.</strong> Înșelăciunea</p>
-            <p>(1) Inducerea în eroare a unei persoane prin prezentarea ca adevărată a unei fapte mincinoase sau ca mincinoasă a unei fapte adevărate, în scopul de a obține pentru sine sau pentru altul un folos patrimonial injust și dacă s-a pricinuit o pagubă, se pedepsește cu închisoarea de la 6 luni la 3 ani.</p>
-            <p>(2) Înșelăciunea săvârșită prin folosirea de nume sau calități mincinoase ori de alte mijloace frauduloase se pedepsește cu închisoarea de la unu la 5 ani. Dacă mijlocul fraudulos constituie prin el însuși o infracțiune, se aplică regulile privind concursul de infracțiuni.</p>
-            <p>(3) Împăcarea înlătură răspunderea penală.</p>
+              <AccordionItem value="art-244">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 244 – Înșelăciunea</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Inducerea în eroare a unei persoane prin prezentarea ca adevărată a unei fapte mincinoase sau ca mincinoasă a unei fapte adevărate, în scopul de a obține pentru sine sau pentru altul un folos patrimonial injust și dacă s-a pricinuit o pagubă, se pedepsește cu închisoarea de la 6 luni la 3 ani.</p>
+                      <p>(2) Înșelăciunea săvârșită prin folosirea de nume sau calități mincinoase ori de alte mijloace frauduloase se pedepsește cu închisoarea de la unu la 5 ani. Dacă mijlocul fraudulos constituie prin el însuși o infracțiune, se aplică regulile privind concursul de infracțiuni.</p>
+                      <p>(3) Împăcarea înlătură răspunderea penală.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare se bazează pe contestarea intenției și a caracterului mincinos al afirmațiilor sau acțiunilor clientului. Dacă ceea ce acuzarea numește „inducere în eroare” a fost de fapt o eroare comercială sau o estimare greșită, atunci fapta poate fi lipsită de caracter penal. Voi insista pe ideea că eventualul prejudiciu nu a fost produs cu intenție, ci în urma unor circumstanțe obiective. De asemenea, posibilitatea de împăcare cu partea vătămată este o soluție practică ce poate duce la încetarea procesului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 245.</strong> Înșelăciunea privind asigurările</p>
-            <p>(1) Distrugerea, degradarea, aducerea în stare de neîntrebuințare, ascunderea sau înstrăinarea unui bun asigurat împotriva distrugerii, degradării, uzurii, pierderii sau furtului, în scopul de a obține, pentru sine sau pentru altul, suma asigurată, se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Fapta persoanei care, în scopul prevăzut în alin. (1), simulează, își cauzează sau agravează leziuni sau vătămări corporale produse de un risc asigurat se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(3) Împăcarea înlătură răspunderea penală.</p>
+              <AccordionItem value="art-245">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 245 – Înșelăciunea privind asigurările</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Distrugerea, degradarea, aducerea în stare de neîntrebuințare, ascunderea sau înstrăinarea unui bun asigurat, în scopul de a obține, pentru sine sau pentru altul, suma asigurată, se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                      <p>(2) Fapta persoanei care, în scopul prevăzut în alin. (1), simulează, își cauzează sau agravează leziuni ori vătămări corporale produse de un risc asigurat se pedepsește cu închisoarea de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>(3) Împăcarea înlătură răspunderea penală.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Voi analiza dacă există probe tehnice clare care să ateste intenția de a frauda asigurătorul. În multe cazuri, daunele pot fi accidentale sau cauzate de factori externi, iar simpla suspiciune nu este suficientă pentru condamnare. Este esențial să verificăm rapoartele de expertiză și să contestăm concluziile neclare. De asemenea, procedura de împăcare poate reprezenta o cale eficientă de închidere a dosarului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 246.</strong> Deturnarea licitațiilor publice</p>
-            <p>Fapta de a îndepărta, prin constrângere sau corupere, un participant de la o licitație publică ori înțelegerea între participanți pentru a denatura prețul de adjudecare se pedepsește cu închisoarea de la unu la 5 ani.</p>
+              <AccordionItem value="art-246">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 246 – Deturnarea licitațiilor publice</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Fapta de a îndepărta, prin constrângere sau corupere, un participant de la o licitație publică ori înțelegerea între participanți pentru a denatura prețul de adjudecare se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi urmări să dovedesc lipsa oricărei legături directe între acțiunile clientului și rezultatul licitației. Înțelegerea între participanți trebuie dovedită prin probe clare, nu doar prin presupuneri. Dacă discuțiile între părți au avut loc în context legitim (negocieri comerciale generale), putem invoca lipsa elementului constitutiv. De asemenea, analiza procedurii licitației poate evidenția vicii independente de comportamentul clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 247.</strong> Exploatarea patrimonială a unei persoane vulnerabile</p>
-            <p>(1) Fapta creditorului care, cu ocazia dării cu împrumut de bani sau bunuri, profitând de starea de vădită vulnerabilitate a debitorului, datorată vârstei, stării de sănătate, infirmității ori relației de dependență în care debitorul se află față de el, îl face să constituie sau să transmită, pentru sine sau pentru altul, un drept real ori de creanță de valoare vădit disproporționată față de această prestație se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Punerea unei persoane în stare de vădită vulnerabilitate prin provocarea unei intoxicații cu alcool sau cu substanțe psihoactive în scopul de a o determina să consimtă la constituirea sau transmiterea unui drept real ori de creanță sau să renunțe la un drept, dacă s-a produs o pagubă, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+              <AccordionItem value="art-247">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 247 – Exploatarea patrimonială a unei persoane vulnerabile</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta creditorului care, cu ocazia dării cu împrumut de bani sau bunuri, profitând de starea de vădită vulnerabilitate a debitorului, datorată vârstei, stării de sănătate, infirmității ori relației de dependență, îl face să constituie sau să transmită, pentru sine sau pentru altul, un drept real ori de creanță de valoare vădit disproporționată față de această prestație se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                      <p>(2) Punerea unei persoane în stare de vădită vulnerabilitate prin provocarea unei intoxicații cu alcool sau cu substanțe psihoactive în scopul de a o determina să consimtă la constituirea sau transmiterea unui drept real ori de creanță sau să renunțe la un drept, dacă s-a produs o pagubă, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aici, apărarea se concentrează pe demonstrarea faptului că nu a existat o stare reală de vulnerabilitate exploatată de client. Dacă valoarea prestației poate fi justificată prin condițiile pieței sau prin riscul împrumutului, disproporția nu mai este „vădită”. De asemenea, trebuie verificată existența consimțământului liber exprimat și a eventualelor marturii care să confirme lipsa oricărei constrângeri.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 248.</strong> Sancționarea tentativei</p>
-            <p>Tentativa la infracțiunile prevăzute în art. 239 alin. (1), art. 241 și art. 244-247 se pedepsește.</p>
+              <AccordionItem value="art-248">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 248 – Sancționarea tentativei</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Tentativa la infracțiunile prevăzute în art. 239 alin. (1), art. 241 și art. 244-247 se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În cazul tentativei, apărarea se concentrează pe argumentul că acțiunile clientului nu au depășit faza actelor pregătitoare, care nu sunt sancționabile. Dacă fapta nu a fost dusă la îndeplinire din motive independente de voința clientului sau dacă nu există certitudinea că intenția era infracțională, se poate cere achitarea.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <h3 className="text-lg font-semibold">Fraude comise prin sisteme informatice și mijloace de plată electronice</h3>
-            <p><strong>Articolul 249.</strong> Frauda informatică</p>
-            <p>Introducerea, modificarea sau ștergerea de date informatice, restricționarea accesului la aceste date ori împiedicarea în orice mod a funcționării unui sistem informatic, în scopul de a obține un beneficiu material pentru sine sau pentru altul, dacă s-a cauzat o pagubă unei persoane, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+              <AccordionItem value="art-249">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 249 – Frauda informatică</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Introducerea, modificarea sau ștergerea de date informatice, restricționarea accesului la aceste date ori împiedicarea în orice mod a funcționării unui sistem informatic, în scopul de a obține un beneficiu material pentru sine sau pentru altul, dacă s-a cauzat o pagubă unei persoane, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Ca apărător, verific dacă există dovada certă a legăturii dintre acțiunile atribuite clientului și paguba invocată. În multe cazuri, erorile tehnice sau accesările neautorizate pot proveni de la terți ori din defecțiuni de sistem, nu din acțiunea directă a clientului. Lipsa unei expertize informatice solide și independente este un punct de atac. De asemenea, dacă accesul a fost făcut cu acordul sau toleranța proprietarului sistemului, lipsește caracterul neautorizat.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 250.</strong> Efectuarea de operațiuni financiare în mod fraudulos</p>
-            <p>(1) Efectuarea unei operațiuni de retragere de numerar, încărcare sau descărcare a unui instrument de monedă electronică ori de transfer de fonduri, prin utilizarea, fără consimțământul titularului, a unui instrument de plată electronică sau a datelor de identificare care permit utilizarea acestuia, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează efectuarea uneia dintre operațiunile prevăzute în alin. (1), prin utilizarea neautorizată a oricăror date de identificare sau prin utilizarea de date de identificare fictive.</p>
-            <p>(3) Transmiterea neautorizată către altă persoană a oricăror date de identificare, în vederea efectuării uneia dintre operațiunile prevăzute în alin. (1), se pedepsește cu închisoarea de la unu la 5 ani.</p>
+              <AccordionItem value="art-250">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 250 – Efectuarea de operațiuni financiare în mod fraudulos</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Efectuarea unei operațiuni de retragere de numerar, încărcare sau descărcare a unui instrument de monedă electronică ori de transfer de fonduri, prin utilizarea, fără consimțământul titularului, a unui instrument de plată electronică sau a datelor de identificare care permit utilizarea acestuia, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează efectuarea uneia dintre operațiunile prevăzute în alin. (1), prin utilizarea neautorizată a oricăror date de identificare sau prin utilizarea de date de identificare fictive.</p>
+                      <p>(3) Transmiterea neautorizată către altă persoană a oricăror date de identificare, în vederea efectuării uneia dintre operațiunile prevăzute în alin. (1), se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, analizez dacă identificarea electronică a clientului este sigură și dacă nu există posibilitatea ca datele să fi fost folosite de altă persoană. În mediul digital, transferul și multiplicarea datelor pot crea confuzii, iar atribuirea faptei trebuie dovedită cu certitudine. Lipsa unui traseu clar al tranzacției sau existența unor breșe de securitate poate genera îndoială rezonabilă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 251.</strong> Acceptarea operațiunilor financiare efectuate în mod fraudulos</p>
-            <p>(1) Acceptarea unei operațiuni de retragere de numerar, încărcare sau descărcare a unui instrument de monedă electronică ori de transfer de fonduri, cunoscând că este efectuată prin folosirea unui instrument de plată electronică falsificat sau utilizat fără consimțământul titularului său, se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează acceptarea uneia dintre operațiunile prevăzute în alin. (1), cunoscând că este efectuată prin utilizarea neautorizată a oricăror date de identificare sau prin utilizarea de date de identificare fictive.</p>
+              <AccordionItem value="art-251">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 251 – Acceptarea operațiunilor financiare efectuate în mod fraudulos</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Acceptarea unei operațiuni de retragere de numerar, încărcare sau descărcare a unui instrument de monedă electronică ori de transfer de fonduri, cunoscând că este efectuată prin folosirea unui instrument de plată electronică falsificat sau utilizat fără consimțământul titularului său, se pedepsește cu închisoarea de la unu la 5 ani.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează acceptarea uneia dintre operațiunile prevăzute în alin. (1), cunoscând că este efectuată prin utilizarea neautorizată a oricăror date de identificare sau prin utilizarea de date de identificare fictive.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare vizează demonstrarea lipsei cunoștinței cu privire la proveniența frauduloasă a operațiunii. Dacă clientul a primit sumele sau a participat la tranzacții în context obișnuit de afaceri, fără indicii clare de fraudă, nu poate fi reținută intenția. În plus, verific dacă s-au respectat procedurile bancare care ar fi trebuit să detecteze și să blocheze tranzacția suspectă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 252.</strong> Sancționarea tentativei</p>
-            <p>Tentativa la infracțiunile prevăzute în prezentul capitol se pedepsește.</p>
+              <AccordionItem value="art-252">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 252 – Sancționarea tentativei</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Tentativa la infracțiunile prevăzute în prezentul capitol se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, voi arăta că acțiunile clientului nu au depășit faza actelor pregătitoare și că acestea nu sunt incriminate. Dacă intenția infracțională nu a fost dovedită și există explicații alternative pentru comportament, tentativa nu poate fi reținută.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 256^1.</strong> Faptele care au produs consecințe deosebit de grave *)</p>
-            <p>Dacă faptele prevăzute la art. 228, 229, 233, 234, 235, 239, 242, 244, 245, 247, art. 249-251 au produs consecințe deosebit de grave, limitele speciale ale pedepsei prevăzute de lege se majorează cu jumătate.</p>
-            <p>*) Articolul 183. Consecințe deosebit de grave</p>
-            <p>Prin consecințe deosebit de grave se înțelege o pagubă materială mai mare de 2.000.000 lei.</p>
+              <AccordionItem value="art-256-1">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 256¹ – Faptele care au produs consecințe deosebit de grave</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Dacă faptele prevăzute la art. 228, 229, 233, 234, 235, 239, 242, 244, 245, 247, art. 249-251 au produs consecințe deosebit de grave, limitele speciale ale pedepsei prevăzute de lege se majorează cu jumătate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se va concentra pe contestarea cuantumului prejudiciului și a metodei de calcul. Dacă se poate demonstra că paguba este sub pragul de 2.000.000 lei sau că evaluarea nu este susținută de documente și expertize corecte, agravanta nu se aplică. Voi solicita expertize independente pentru recalcularea pagubei.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <h3 className="text-lg font-semibold">Infracțiuni de corupție</h3>
-            <p><strong>Articolul 289.</strong> Luarea de mită</p>
-            <p>(1) Fapta funcționarului public care, direct ori indirect, pentru sine sau pentru altul, pretinde ori primește bani sau alte foloase care nu i se cuvin ori acceptă promisiunea unor astfel de foloase, în legătură cu îndeplinirea, neîndeplinirea, urgentarea ori întârzierea îndeplinirii unui act ce intră în îndatoririle sale de serviciu sau în legătură cu îndeplinirea unui act contrar acestor îndatoriri, se pedepsește cu închisoare de la 3 la 10 ani și interzicerea exercitării dreptului de a ocupa o funcție publică ori de a exercita profesia sau activitatea în executarea căreia a săvârșit fapta.</p>
-            <p>(2) Fapta prevăzută în alin. (1), săvârșită de una dintre persoanele prevăzute în art. 175 alin. (2), constituie infracțiune numai când este comisă în legătură cu neîndeplinirea, întârzierea îndeplinirii unui act privitor la îndatoririle sale legale sau în legătură cu efectuarea unui act contrar acestor îndatoriri.</p>
-            <p>(3) Banii, valorile sau orice alte bunuri primite sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+              <AccordionItem value="art-289">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 289 – Luarea de mită</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta funcționarului public care, direct ori indirect, pentru sine sau pentru altul, pretinde ori primește bani sau alte foloase care nu i se cuvin ori acceptă promisiunea unor astfel de foloase, în legătură cu îndeplinirea, neîndeplinirea, urgentarea ori întârzierea îndeplinirii unui act ce intră în îndatoririle sale de serviciu sau în legătură cu îndeplinirea unui act contrar acestor îndatoriri, se pedepsește cu închisoare de la 3 la 10 ani și interzicerea exercitării dreptului de a ocupa o funcție publică ori de a exercita profesia sau activitatea în executarea căreia a săvârșit fapta.</p>
+                      <p>(2) Fapta prevăzută în alin. (1), săvârșită de una dintre persoanele prevăzute în art. 175 alin. (2), constituie infracțiune numai când este comisă în legătură cu neîndeplinirea, întârzierea îndeplinirii unui act privitor la îndatoririle sale legale sau în legătură cu efectuarea unui act contrar acestor îndatoriri.</p>
+                      <p>(3) Banii, valorile sau orice alte bunuri primite sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe lipsa legăturii cauzale între foloasele primite și atribuțiile de serviciu. Dacă banii au fost primiți ca împrumut, cadou personal sau plată pentru alt tip de serviciu privat, nu se poate vorbi de mită. De asemenea, voi analiza dacă există provocare din partea organelor de urmărire penală, caz în care fapta poate fi dezincriminată.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 290.</strong> Darea de mită</p>
-            <p>(1) Promisiunea, oferirea sau darea de bani ori alte foloase, în condițiile arătate în art. 289, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
-            <p>(2) Fapta prevăzută în alin. (1) nu constituie infracțiune atunci când mituitorul a fost constrâns prin orice mijloace de către cel care a luat mita.</p>
-            <p>(3) Mituitorul nu se pedepsește dacă denunță fapta mai înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta.</p>
-            <p>(4) Banii, valorile sau orice alte bunuri date se restituie persoanei care le-a dat, dacă acestea au fost date în cazul prevăzut în alin. (2) sau date după denunțul prevăzut în alin. (3).</p>
-            <p>(5) Banii, valorile sau orice alte bunuri oferite sau date sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+              <AccordionItem value="art-290">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 290 – Darea de mită</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Promisiunea, oferirea sau darea de bani ori alte foloase, în condițiile arătate în art. 289, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+                      <p>(2) Fapta prevăzută în alin. (1) nu constituie infracțiune atunci când mituitorul a fost constrâns prin orice mijloace de către cel care a luat mita.</p>
+                      <p>(3) Mituitorul nu se pedepsește dacă denunță fapta mai înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta.</p>
+                      <p>(4) Banii, valorile sau orice alte bunuri date se restituie persoanei care le-a dat, dacă acestea au fost date în cazul prevăzut în alin. (2) sau date după denunțul prevăzut în alin. (3).</p>
+                      <p>(5) Banii, valorile sau orice alte bunuri oferite sau date sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul aspect pe care îl explorez este constrângerea – dacă există dovezi că plata a fost făcută sub presiune, atunci fapta nu este incriminată. De asemenea, pot analiza dacă există oportunitatea de a invoca denunțul anterior sesizării oficiale, ceea ce ar înlătura răspunderea penală. Este important să demonstrez că banii nu au fost destinați influențării unui act de serviciu, ci aveau o altă natură (ex.: datorie personală, avans comercial).</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 291.</strong> Traficul de influență</p>
-            <p>(1) Pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, direct sau indirect, pentru sine sau pentru altul, săvârșită de către o persoană care are influență sau lasă să se creadă că are influență asupra unui funcționar public și care promite că îl va determina pe acesta să îndeplinească, să nu îndeplinească, să urgenteze ori să întârzie îndeplinirea unui act ce intră în îndatoririle sale de serviciu sau să îndeplinească un act contrar acestor îndatoriri, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
-            <p>(2) Banii, valorile sau orice alte bunuri primite sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+              <AccordionItem value="art-291">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 291 – Traficul de influență</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, direct sau indirect, pentru sine sau pentru altul, săvârșită de către o persoană care are influență sau lasă să se creadă că are influență asupra unui funcționar public și care promite că îl va determina pe acesta să îndeplinească, să nu îndeplinească, să urgenteze ori să întârzie îndeplinirea unui act ce intră în îndatoririle sale de serviciu sau să îndeplinească un act contrar acestor îndatoriri, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
+                      <p>(2) Banii, valorile sau orice alte bunuri primite sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Apărarea se concentrează pe faptul că influența reală asupra funcționarului public trebuie dovedită. Dacă clientul nu avea în realitate acces la decizia funcționarului, fapta poate fi reclasificată sau chiar înlăturată. O altă linie de apărare este demonstrarea faptului că discuțiile au fost simple exagerări comerciale sau promisiuni fără valoare juridică.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 292.</strong> Cumpărarea de influență</p>
-            <p>(1) Promisiunea, oferirea sau darea de bani ori alte foloase, pentru sine sau pentru altul, direct ori indirect, unei persoane care are influență sau lasă să se creadă că are influență asupra unui funcționar public, pentru a-l determina pe acesta să îndeplinească, să nu îndeplinească, să urgenteze ori să întârzie îndeplinirea unui act ce intră în îndatoririle sale de serviciu sau să îndeplinească un act contrar acestor îndatoriri, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(2) Făptuitorul nu se pedepsește dacă denunță fapta mai înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta.</p>
-            <p>(3) Banii, valorile sau orice alte bunuri se restituie persoanei care le-a dat, dacă au fost date după denunțul prevăzut în alin. (2).</p>
-            <p>(4) Banii, valorile sau orice alte bunuri date sau oferite sunt supuse confiscării, iar dacă acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+              <AccordionItem value="art-292">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 292 – Cumpărarea de influență</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Promisiunea, oferirea sau darea de bani ori alte foloase, pentru sine sau pentru altul, direct ori indirect, unei persoane care are influență sau lasă să se creadă că are influență asupra unui funcționar public, pentru a-l determina pe acesta să îndeplinească, să nu îndeplinească, să urgenteze ori să întârzie îndeplinirea unui act ce intră în îndatoririle sale de serviciu sau să îndeplinească un act contrar acestor îndatoriri, se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
+                      <p>(2) Făptuitorul nu se pedepsește dacă denunță fapta mai înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta.</p>
+                      <p>(3) Banii, valorile sau orice alte bunuri se restituie persoanei care le-a dat, dacă au fost date după denunțul prevăzut în alin. (2).</p>
+                      <p>(4) Banii, valorile sau orice alte bunuri date sau oferite sunt supuse confiscării, iar dacă acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia principală este să subliniez lipsa intenției clientului de a influența efectiv actul funcționarului – pot demonstra că plățile erau pentru alt scop sau în cadrul unei relații comerciale. Invocarea denunțului anterior sesizării este o soluție directă pentru înlăturarea răspunderii. Voi analiza și dacă persoana „influentă” nu avea în realitate acces la funcționar.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <h3 className="text-lg font-semibold">Infracțiuni de serviciu</h3>
-            <p><strong>Articolul 295.</strong> Delapidarea</p>
-            <p>(1) Însușirea, folosirea sau traficarea de către un funcționar public, în interesul său ori pentru altul, de bani, valori sau alte bunuri pe care le gestionează sau le administrează se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării dreptului de a ocupa o funcție publică.</p>
-            <p>(2) Tentativa se pedepsește.</p>
+              <AccordionItem value="art-295">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 295 – Delapidarea</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Însușirea, folosirea sau traficarea de către un funcționar public, în interesul său ori pentru altul, de bani, valori sau alte bunuri pe care le gestionează sau le administrează se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării dreptului de a ocupa o funcție publică.</p>
+                      <p>(2) Tentativa se pedepsește.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, verific dacă bunurile au fost efectiv gestionate sau administrate de client în mod oficial. Dacă lipsește această calitate, infracțiunea nu există. De asemenea, pot demonstra că bunurile au fost folosite temporar și restituite sau că nu există dovadă a intenției de însușire definitivă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 297.</strong> Abuzul în serviciu</p>
-            <p>(1) Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, nu îndeplinește un act sau îl îndeplinește în mod defectuos și prin aceasta cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane fizice sau ale unei persoane juridice se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării dreptului de a ocupa o funcție publică.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează și fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, îngrădește exercitarea unui drept al unei persoane ori creează pentru aceasta o situație de inferioritate pe temei de rasă, naționalitate, origine etnică, limbă, religie, sex, orientare sexuală, apartenență politică, avere, vârstă, dizabilitate, boală cronică necontagioasă sau infecție HIV/SIDA.</p>
+              <AccordionItem value="art-297">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 297 – Abuzul în serviciu</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, nu îndeplinește un act sau îl îndeplinește în mod defectuos și prin aceasta cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane fizice sau ale unei persoane juridice se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării dreptului de a ocupa o funcție publică.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează și fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, îngrădește exercitarea unui drept al unei persoane ori creează pentru aceasta o situație de inferioritate pe temei de rasă, naționalitate, origine etnică, limbă, religie, sex, orientare sexuală, apartenență politică, avere, vârstă, dizabilitate, boală cronică necontagioasă sau infecție HIV/SIDA.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare vizează demonstrarea lipsei intenției directe sau a inexistenței unei pagube concrete. Pot arăta că actul a fost îndeplinit conform procedurilor interne sau că deficiențele invocate au fost minore. Este importantă și verificarea legalității dispozițiilor pe care clientul trebuia să le respecte – dacă norma era neclară, se poate invoca eroarea de drept.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 298.</strong> Neglijența în serviciu</p>
-            <p>Încălcarea din culpă de către un funcționar public a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau prin îndeplinirea ei defectuoasă, dacă prin aceasta se cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane fizice sau ale unei persoane juridice, se pedepsește cu închisoare de la 3 luni la 3 ani sau cu amendă.</p>
+              <AccordionItem value="art-298">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 298 – Neglijența în serviciu</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Încălcarea din culpă de către un funcționar public a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau prin îndeplinirea ei defectuoasă, dacă prin aceasta se cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane fizice sau ale unei persoane juridice, se pedepsește cu închisoarea de la 3 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aici mă concentrez pe lipsa culpei – trebuie dovedit că clientul nu putea anticipa consecințele faptei. Dacă sarcina de serviciu era neclară sau nu îi revenea efectiv, răspunderea penală poate fi exclusă. De asemenea, o pagubă minoră sau lipsa unui prejudiciu cert este un argument puternic.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 300.</strong> Uzurparea funcției</p>
-            <p>Fapta funcționarului public care, în timpul serviciului, îndeplinește un act ce nu intră în atribuțiile sale, dacă prin aceasta s-a produs una dintre urmările prevăzute în art. 297, se pedepsește cu închisoare de la unu la 5 ani sau cu amendă.</p>
+              <AccordionItem value="art-300">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 300 – Obstrucționarea justiției</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta persoanei care, prin amenințări sau prin alte mijloace, împiedică ori îngreunează desfășurarea cercetării penale, judecății sau executării unei pedepse, se pedepsește cu închisoarea de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>(2) Cu aceeași pedeapsă se sancționează împiedicarea sau îngreunarea exercitării atribuțiilor de către un organ de urmărire penală, de către un organ de ordine publică sau de către o instanță.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, primul punct este verificarea clarității probelor privind legătura dintre acțiunea clientului și îngreunarea reală a procesului. Dacă actele comise au fost simple reacții emoționale sau neintenționate, se poate susține lipsa elementului subiectiv. Totodată, dacă „amenințările” nu au avut gravitate sau nu au fost percepute serios, acestea pot fi reclasificate ca faptă contravențională.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 301.</strong> Folosirea funcției pentru favorizarea unor persoane</p>
-            <p>(1) Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, a îndeplinit un act prin care s-a obținut un folos patrimonial pentru sine, pentru soțul său, pentru o rudă ori un afin până la gradul II inclusiv se pedepsește cu închisoarea de la unu la 5 ani și interzicerea exercitării dreptului de a ocupa o funcție publică pe o perioadă de 3 ani.</p>
-            <p>(2) Dispozițiile alin. (1) nu se aplică în cazurile în care actul sau decizia se referă la următoarele situații: a) emiterea, aprobarea sau adoptarea actelor normative; b) exercitarea unui drept recunoscut de lege sau în îndeplinirea unei obligații impuse de lege, cu respectarea condițiilor și limitelor prevăzute de aceasta.</p>
+              <AccordionItem value="art-306">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 306 – Nedenunțarea</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Fapta persoanei care, luând cunoștință de săvârșirea unei infracțiuni contra vieții, de o infracțiune contra integrității corporale sau sănătății ori de o infracțiune contra libertății persoanei, nu o denunță de îndată autorităților, se pedepsește cu închisoare de la 6 luni la 2 ani sau cu amendă.</p>
+                      <p>(2) Nu se pedepsește nedenunțarea săvârșită de soț sau de o rudă apropiată.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă bazez pe faptul că obligația de denunțare nu există dacă persoana avea îndoieli rezonabile privind veridicitatea informației sau dacă a crezut că autoritățile știau deja de faptă. În plus, orice relație apropiată cu făptuitorul (inclusiv legături de prietenie puternice) poate fi invocată ca motiv atenuant.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 306.</strong> Obținerea ilegală de fonduri</p>
-            <p>(1) Folosirea ori prezentarea de documente sau date false, inexacte ori incomplete, pentru primirea aprobărilor sau garanțiilor necesare acordării finanțărilor obținute sau garantate din fonduri publice, dacă are ca rezultat obținerea pe nedrept a acestor fonduri, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
-            <p>(2) Tentativa se pedepsește.</p>
+              <AccordionItem value="art-308">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 308 – Infracțiuni de serviciu comise de alte persoane</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Dispozițiile art. 289–292 și art. 295–297 privind funcționarii publici se aplică în mod corespunzător și faptelor săvârșite de către alte persoane care exercită, permanent sau temporar, cu orice titlu, o însărcinare de orice natură, retribuită sau nu, în serviciul unei persoane fizice dintre cele prevăzute la art. 175 alin. (2), precum și în cadrul oricărei persoane juridice.</p>
+                      <p>(2) Limitele speciale ale pedepsei se reduc cu o treime.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Ca avocat, voi verifica dacă persoana acuzată se încadrează efectiv în această categorie „asimilată” funcționarilor publici. Dacă sarcina pe care o îndeplinea nu avea caracter oficial sau public, infracțiunea poate fi exclusă. Reducerea limitelor de pedeapsă cu o treime este un avantaj pe care îl invoc mereu pentru diminuarea consecințelor juridice.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 307.</strong> Deturnarea de fonduri</p>
-            <p>(1) Schimbarea destinației fondurilor bănești ori a resurselor materiale alocate unei autorități publice sau instituții publice, fără respectarea prevederilor legale, se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează și schimbarea, fără respectarea prevederilor legale, a destinației fondurilor provenite din finanțările obținute sau garantate din fonduri publice.</p>
-            <p>(3) Tentativa se pedepsește.</p>
+              <AccordionItem value="art-312">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 312 – Spălarea banilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Schimbarea sau transferul de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni, în scopul ascunderii sau disimulării originii ilicite a bunurilor ori în scopul de a ajuta persoana care a săvârșit infracțiunea din care provin bunurile să se sustragă de la urmărire, judecată sau executarea pedepsei, se pedepsește cu închisoare de la 3 la 10 ani.</p>
+                      <p>(2) Ascunderea ori disimularea adevăratei naturi, a provenienței, a situării, a dispoziției, a circulației sau a proprietății bunurilor ori a altor drepturi asupra acestora, cunoscând că bunurile provin din infracțiuni, se pedepsește cu aceeași pedeapsă.</p>
+                      <p>(3) Dobândirea, deținerea sau folosirea de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni, se pedepsește cu închisoare de la 3 la 10 ani.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul esențial al faptei – cunoașterea originii ilicite. Dacă clientul poate arăta că a primit bunurile în cadrul unei tranzacții obișnuite și fără suspiciuni rezonabile, atunci lipsesc elementele constitutive. În plus, trebuie verificată infracțiunea-sursă: dacă aceasta nu este dovedită, spălarea banilor nu poate fi reținută.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 309.</strong> Faptele care au produs consecințe deosebit de grave *)</p>
-            <p>Dacă faptele prevăzute în art. 295, art. 297, art. 298, art. 300, art. 303, art. 304, art. 306 sau art. 307 au produs consecințe deosebit de grave, limitele speciale ale pedepsei prevăzute de lege se majorează cu jumătate.</p>
-            <p>*) Articolul 183. Consecințe deosebit de grave</p>
-            <p>Prin consecințe deosebit de grave se înțelege o pagubă materială mai mare de 2.000.000 lei.</p>
+              <AccordionItem value="art-323">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 323 – Falsul material în înscrisuri oficiale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>(1) Falsificarea unui înscris oficial prin contrafacerea scrierii sau a subscrierii ori prin alterarea lui în orice mod, de natură să producă consecințe juridice, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>(2) Folosirea unui înscris oficial falsificat, cunoscând că este fals, se pedepsește cu aceeași pedeapsă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Ca apărător, caut să demonstrez că modificarea sau întocmirea documentului nu a fost de natură să producă efecte juridice sau că clientul nu a știut că documentul este fals. În multe situații, pot invoca lipsa caracterului oficial al înscrisului sau existența unei erori materiale neintenționate.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <h3 className="text-lg font-semibold">Falsificarea de monede, timbre sau de alte valori</h3>
-            <p><strong>Articolul 310.</strong> Falsificarea de monede</p>
-            <p>(1) Falsificarea de monedă cu valoare circulatorie se pedepsește cu închisoarea de la 3 la 10 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează falsificarea unei monede, emise de către autoritățile competente, înainte de punerea oficială în circulație a acesteia.</p>
-            <p>(3) Tentativa se pedepsește.</p>
+              <AccordionItem value="art-326">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 326 – Falsul în declarații</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Declararea necorespunzătoare a adevărului, făcută unei persoane dintre cele prevăzute la art. 175 sau unei unități în care aceasta își desfășoară activitatea, în vederea producerii unei consecințe juridice, pentru sine sau pentru altul, atunci când, potrivit legii ori împrejurărilor, declarația servește la producerea acelei consecințe, se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare este să demonstrez că declarația nu a produs și nu putea produce consecințe juridice. Dacă formularea este vagă, interpretabilă sau rezultă dintr-o confuzie, se poate invoca lipsa intenției directe. Este important și să verific dacă organul căruia i s-a dat declarația avea competența legală pentru a o primi.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-            <p><strong>Articolul 311.</strong> Falsificarea de titluri de credit sau instrumente de plată</p>
-            <p>(1) Falsificarea de titluri de credit, titluri sau instrumente pentru efectuarea plăților sau a oricăror altor titluri ori valori asemănătoare se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(2) Dacă fapta prevăzută în alin. (1) privește un instrument de plată electronică, pedeapsa este închisoarea de la 3 la 10 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(3) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 312.</strong> Falsificarea de timbre sau efecte poștale</p>
-            <p>(1) Falsificarea de timbre de orice fel, mărci poștale, plicuri poștale, cărți poștale sau cupoane răspuns internațional se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 313.</strong> Punerea în circulație de valori falsificate</p>
-            <p>(1) Punerea în circulație a valorilor falsificate prevăzute în art. 310-312, precum și primirea, deținerea sau transmiterea acestora, în vederea punerii lor în circulație, se sancționează cu pedeapsa prevăzută de lege pentru infracțiunea de falsificare prin care au fost produse.</p>
-            <p>(2) Punerea în circulație a valorilor falsificate prevăzute în art. 310-312, săvârșită de către autor sau un participant la infracțiunea de falsificare, se sancționează cu pedeapsa prevăzută de lege pentru infracțiunea de falsificare prin care au fost produse.</p>
-            <p>(3) Repunerea în circulație a uneia dintre valorile prevăzute în art. 310-312, de către o persoană care a constatat, ulterior intrării în posesia acesteia, că este falsificată, se sancționează cu pedeapsa prevăzută de lege pentru infracțiunea de falsificare prin care au fost produse, ale cărei limite speciale se reduc la jumătate.</p>
-            <p>(4) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 314.</strong> Deținerea de instrumente în vederea falsificării de valori</p>
-            <p>(1) Fabricarea, primirea, deținerea sau transmiterea de instrumente sau materiale cu scopul de a servi la falsificarea valorilor sau titlurilor prevăzute în art. 310, art. 311 alin. (1) și art. 312 se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Fabricarea, primirea, deținerea sau transmiterea de echipamente, inclusiv hardware sau software, cu scopul de a servi la falsificarea instrumentelor de plată electronică, se pedepsește cu închisoarea de la 2 la 7 ani.</p>
-            <p>(3) Nu se pedepsește persoana care, după comiterea vreuneia dintre faptele prevăzute în alin. (1) sau alin. (2), înainte de descoperirea acestora și înainte de a se fi trecut la săvârșirea faptei de falsificare, predă instrumentele sau materialele deținute autorităților judiciare ori încunoștințează aceste autorități despre existența lor.</p>
-
-            <p><strong>Articolul 315.</strong> Emiterea frauduloasă de monedă</p>
-            <p>(1) Confecționarea de monedă autentică prin folosirea de instalații sau materiale destinate acestui scop, cu încălcarea condițiilor stabilite de autoritățile competente sau fără acordul acestora, se pedepsește cu închisoarea de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează punerea în circulație a monedei confecționate în condițiile alin. (1), precum și primirea, deținerea sau transmiterea acesteia, în vederea punerii ei în circulație.</p>
-            <p>(3) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 316.</strong> Falsificarea de valori străine</p>
-            <p>Dispozițiile cuprinse în prezentul capitol se aplică și în cazul când infracțiunea privește monede, timbre, titluri de valoare ori instrumente de plată emise în străinătate.</p>
-
-            <h3 className="text-lg font-semibold">Falsificarea instrumentelor de autentificare sau de marcare</h3>
-            <p><strong>Articolul 317.</strong> Falsificarea de instrumente oficiale</p>
-            <p>(1) Falsificarea unui sigiliu, a unei ștampile sau a unui instrument de marcare de care se folosesc persoanele prevăzute în art. 176 sau persoanele fizice menționate în art. 175 alin. (2) se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Falsificarea unui sigiliu, a unei ștampile sau a unui instrument de marcare de care se folosesc alte persoane decât cele prevăzute în alin. (1) se pedepsește cu închisoare de la 3 luni la un an sau cu amendă.</p>
-            <p>(3) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 318.</strong> Folosirea instrumentelor false</p>
-            <p>Folosirea instrumentelor false prevăzute în art. 317 se pedepsește cu închisoare de la 3 luni la 3 ani sau cu amendă.</p>
-
-            <p><strong>Articolul 319.</strong> Falsificarea de instrumente de autentificare străine</p>
-            <p>Dispozițiile cuprinse în prezentul capitol se aplică și atunci când fapta privește instrumente de autentificare sau de marcare folosite de autoritățile unui stat străin.</p>
-
-            <h3 className="text-lg font-semibold">Falsuri în înscrisuri</h3>
-            <p><strong>Articolul 320.</strong> Falsul material în înscrisuri oficiale</p>
-            <p>(1) Falsificarea unui înscris oficial, prin contrafacerea scrierii ori a subscrierii sau prin alterarea lui în orice mod, de natură să producă consecințe juridice, se pedepsește cu închisoarea de la 6 luni la 3 ani.</p>
-            <p>(2) Falsul prevăzut în alin. (1), săvârșit de un funcționar public în exercițiul atribuțiilor de serviciu, se pedepsește cu închisoarea de la unu la 5 ani și interzicerea exercitării unor drepturi.</p>
-            <p>(3) Sunt asimilate înscrisurilor oficiale biletele, tichetele sau orice alte imprimate producătoare de consecințe juridice.</p>
-            <p>(4) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 321.</strong> Falsul intelectual</p>
-            <p>(1) Falsificarea unui înscris oficial cu prilejul întocmirii acestuia, de către un funcționar public aflat în exercitarea atribuțiilor de serviciu, prin atestarea unor fapte sau împrejurări necorespunzătoare adevărului ori prin omisiunea cu știință de a insera unele date sau împrejurări, se pedepsește cu închisoarea de la unu la 5 ani.</p>
-            <p>(2) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 322.</strong> Falsul în înscrisuri sub semnătură privată</p>
-            <p>(1) Falsificarea unui înscris sub semnătură privată prin vreunul dintre modurile prevăzute în art. 320 sau art. 321, dacă făptuitorul folosește înscrisul falsificat ori îl încredințează altei persoane spre folosire, în vederea producerii unei consecințe juridice, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Tentativa se pedepsește.</p>
-
-            <p><strong>Articolul 323.</strong> Uzul de fals</p>
-            <p>Folosirea unui înscris oficial ori sub semnătură privată, cunoscând că este fals, în vederea producerii unei consecințe juridice, se pedepsește cu închisoare de la 3 luni la 3 ani sau cu amendă, când înscrisul este oficial, și cu închisoare de la 3 luni la 2 ani sau cu amendă, când înscrisul este sub semnătură privată.</p>
-
-            <p><strong>Articolul 324.</strong> Falsificarea unei înregistrări tehnice</p>
-            <p>(1) Falsificarea unei înregistrări tehnice prin contrafacere, alterare ori prin determinarea atestării unor împrejurări necorespunzătoare adevărului sau omisiunea înregistrării unor date sau împrejurări, dacă a fost urmată de folosirea de către făptuitor a înregistrării ori de încredințarea acesteia unei alte persoane spre folosire, în vederea producerii unei consecințe juridice, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
-            <p>(2) Cu aceeași pedeapsă se sancționează folosirea unei înregistrări tehnice falsificate în vederea producerii unei consecințe juridice.</p>
-            <p>(3) Prin înregistrare tehnică, în sensul prezentului articol, se înțelege atestarea unei valori, greutăți, măsuri ori a desfășurării unui eveniment, realizată, în tot sau în parte, în mod automat, prin intermediul unui dispozitiv tehnic omologat și care este destinată a proba un anumit fapt, în vederea producerii de consecințe juridice.</p>
-
-            <p><strong>Articolul 325.</strong> Falsul informatic</p>
-            <p>Fapta de a introduce, modifica sau șterge, fără drept, date informatice ori de a restricționa, fără drept, accesul la aceste date, rezultând date necorespunzătoare adevărului, în scopul de a fi utilizate în vederea producerii unei consecințe juridice, constituie infracțiune și se pedepsește cu închisoarea de la unu la 5 ani.</p>
-
-            <p><strong>Articolul 326.</strong> Falsul în declarații</p>
-            <p>(1) Declararea necorespunzătoare a adevărului, făcută unei persoane dintre cele prevăzute în art. 175 sau unei unități în care aceasta își desfășoară activitatea în vederea producerii unei consecințe juridice, pentru sine sau pentru altul, atunci când, potrivit legii ori împrejurărilor, declarația făcută servește la producerea acelei consecințe, se pedepsește cu închisoare de la 6 luni la 2 ani sau cu amendă.</p>
-            <p>(2) Fapta prevăzută la alin. (1), săvârșită pentru a ascunde existența unui risc privind infectarea cu o boală infectocontagioasă, se pedepsește cu închisoare de la unu la 5 ani sau cu amendă.</p>
-
-            <p><strong>Articolul 327.</strong> Falsul privind identitatea</p>
-            <p>(1) Prezentarea sub o identitate falsă ori atribuirea unei asemenea identități altei persoane, făcută unei persoane dintre cele prevăzute în art. 175 sau transmisă unei unități în care aceasta își desfășoară activitatea prin folosirea frauduloasă a unui act ce servește la identificare, legitimare ori la dovedirea stării civile sau a unui astfel de act falsificat, pentru a induce sau a menține în eroare un funcționar public, în vederea producerii unei consecințe juridice, pentru sine ori pentru altul, se pedepsește cu închisoare de la 6 luni la 3 ani.</p>
-            <p>(2) Când prezentarea s-a făcut prin întrebuințarea identității reale a unei persoane, pedeapsa este închisoarea de la unu la 5 ani.</p>
-            <p>(3) Încredințarea unui act ce servește la identificare, legitimare ori la dovedirea stării civile spre a fi folosit fără drept se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă.</p>
-
-            <p><strong>Articolul 328.</strong> Infracțiuni de fals comise în legătură cu autoritatea unui stat străin</p>
-            <p>Dispozițiile cuprinse în prezentul capitol se aplică și atunci când fapta privește acte emise de o autoritate competentă a unui stat străin sau de o organizație internațională instituită printr-un tratat la care România este parte sau declarații ori o identitate asumate în fața acesteia.</p>
+              <AccordionItem value="art-328">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 328 – Uzurparea de calități oficiale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Folosirea fără drept a unei calități oficiale, în scopul de a produce consecințe juridice, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, verific dacă acțiunea clientului chiar a creat aparența unei funcții oficiale și dacă aceasta a produs consecințe concrete. Dacă utilizarea a fost ocazională, în glumă, sau fără intenția de a induce în eroare, lipsesc elementele constitutive.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </CardContent>
         </Card>
 
