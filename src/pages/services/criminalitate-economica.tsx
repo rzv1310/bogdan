@@ -93,7 +93,16 @@ export default function CriminalitateEconomica() {
               <li>Contrabandă</li>
               <li>Utilizarea ilegală a subvențiilor</li>
               <li>Incompatibilități financiare cu funcția publică</li>
-              <li>Schimbarea destinației fondurilor europene</li>
+              <li>
+                Schimbarea destinației fondurilor europene
+                <div className="mt-3">
+                  <a href="tel:+40745506443" aria-label="Sună acum">
+                    <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+                      <Phone /> Sună acum
+                    </Button>
+                  </a>
+                </div>
+              </li>
             </ul>
           </section>
 
