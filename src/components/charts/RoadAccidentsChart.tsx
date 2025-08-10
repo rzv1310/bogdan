@@ -25,7 +25,7 @@ export default function RoadAccidentsChart() {
       <Card className="rounded-2xl shadow-lg border-accent">
         <CardHeader>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-            Accidentele rutiere grave și consecințele lor în anii 2022 și 2023
+            Accidentele rutiere grave și consecințele lor în 2022 și 2023
           </h2>
         </CardHeader>
         <CardContent className="p-4 sm:p-6 pt-0">
@@ -48,22 +48,20 @@ export default function RoadAccidentsChart() {
           </div>
 
           <div className="mt-5 sm:mt-6 space-y-2">
-            <p className="text-xs text-muted-foreground whitespace-pre-line">
-              MINISTERUL AFACERILOR INTERNE
-              {"\n"}INSPECTORATUL GENERAL AL POLIŢIEI ROMÂNE | Direcţia Rutieră
-              {"\n"}Institutul de Cercetare şi Prevenire a Criminalităţii | Buletinul siguranței
-              {"\n"}rutiere Raport anual 2023 | București
-              {"\n"}2024
-            </p>
             <a
               href="https://politiaromana.ro/files/pages_files/BSR_2024_09.01.2025.pdf"
               target="_blank"
               rel="noreferrer noopener"
-              className="underline hover:no-underline inline-flex items-center gap-1 text-xs sm:text-sm"
+              className="underline hover:no-underline inline-flex items-start gap-1 text-xs sm:text-sm"
               aria-label="Deschide Buletinul siguranței rutiere - Raport anual 2023 (PDF)"
             >
-              Deschide raportul (PDF)
-              <ExternalLink className="w-3.5 h-3.5" />
+              <span className="text-xs text-muted-foreground whitespace-pre-line">
+                MINISTERUL AFACERILOR INTERNE
+                {"\n"}INSPECTORATUL GENERAL AL POLIŢIEI ROMÂNE | Direcţia Rutieră
+                {"\n"}Institutul de Cercetare şi Prevenire a Criminalităţii | Buletinul siguranței
+                {"\n"}rutiere Raport anual 2023 | București 2024
+              </span>
+              <ExternalLink className="w-3.5 h-3.5 mt-0.5" />
             </a>
           </div>
         </CardContent>
