@@ -1,5 +1,8 @@
+import React, { useRef } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Download } from "lucide-react";
+import * as htmlToImage from "html-to-image";
 import {
   ResponsiveContainer,
   BarChart,
@@ -20,16 +23,46 @@ const data = [
 ];
 
 export default function RoadAccidentsChart() {
+  const chartRef = useRef<HTMLDivElement | null>(null);
+
+  const handleDownloadPNG = async () => {
+    if (!chartRef.current) return;
+    try {
+      const dataUrl = await htmlToImage.toPng(chartRef.current, {
+        backgroundColor: "#ffffff",
+        pixelRatio: 2,
+        cacheBust: true,
+      });
+      const link = document.createElement("a");
+      link.download = `accidente-rutiere-2022-2023-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error("PNG export failed", err);
+    }
+  };
+
   return (
     <div className="w-full max-w-4xl mx-auto p-4 sm:p-5 md:p-6">
       <Card className="rounded-2xl shadow-lg border-accent">
         <CardHeader>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-            Accidentele rutiere grave și consecințele lor în 2022 și 2023
-          </h2>
+          <div className="flex items-start justify-between gap-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
+              Accidentele rutiere grave și consecințele lor în 2022 și 2023
+            </h2>
+            <Button
+              onClick={handleDownloadPNG}
+              variant="default"
+              size="sm"
+              className="shrink-0 rounded-xl"
+              aria-label="Descarcă graficul ca PNG"
+            >
+              <Download className="w-4 h-4 mr-2" /> PNG
+            </Button>
+          </div>
         </CardHeader>
         <CardContent className="p-4 sm:p-6 pt-0">
-          <div className="h-64 sm:h-80 w-full">
+          <div className="h-64 sm:h-80 w-full" ref={chartRef}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 8 }} barSize={18} barCategoryGap="32%">
                 <CartesianGrid strokeDasharray="3 3" />
@@ -37,10 +70,10 @@ export default function RoadAccidentsChart() {
                 <YAxis allowDecimals={false} />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="an2022" name="2022" fill="hsl(var(--destructive))" radius={[5, 5, 0, 0]}>
+                <Bar dataKey="an2022" name="2022" fill="#D62728" radius={[5, 5, 0, 0]}>
                   <LabelList dataKey="an2022" position="top" style={{ fontSize: 12 }} />
                 </Bar>
-                <Bar dataKey="an2023" name="2023" fill="hsl(var(--primary))" radius={[5, 5, 0, 0]}>
+                <Bar dataKey="an2023" name="2023" fill="#FF7F0E" radius={[5, 5, 0, 0]}>
                   <LabelList dataKey="an2023" position="top" style={{ fontSize: 12 }} />
                 </Bar>
               </BarChart>
