@@ -35,8 +35,8 @@ const EthereumCard = () => {
         </svg>
         <div className="textBox">
           <p className="text head">Ethereum</p>
-          <span>Cryptocurrency</span>
-          <p className="text price">4.320,16€</p>
+          <span>In March 2020 it was</span>
+          <p className="text price">$ 101,10</p>
         </div>
       </div>
     </StyledWrapper>
