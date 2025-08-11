@@ -2,7 +2,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, Calculator } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
@@ -140,7 +140,12 @@ export default function ReprezentareaVictimelor() {
             </li>
           </ul>
           <p className="pt-2">
-            <Link to="/calculator-despagubiri" className="text-primary underline decoration-accent decoration-2 underline-offset-2">
+            <Link
+              to="/calculator-despagubiri"
+              className="inline-flex items-center gap-2 rounded-md border border-accent bg-accent/10 text-accent px-3 py-1.5 text-sm font-medium hover:bg-accent/20 transition-colors"
+              aria-label="Deschide calculatorul de despăgubiri"
+            >
+              <Calculator className="h-4 w-4" aria-hidden="true" />
               Calculator despăgubiri
             </Link>
           </p>
