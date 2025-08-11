@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import EthereumCard from "@/components/crypto/EthereumCard";
 import PhoneLoader from "@/components/crypto/PhoneLoader";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
 export default function InvestigatiiCripto() {
   useSEO({
@@ -346,6 +348,28 @@ export default function InvestigatiiCripto() {
           </CardContent>
         </Card>
       </section>
+
+      {/* Checklist fiscal ANAF - PDF */}
+      <section className="mt-8">
+        <Card className="border-accent">
+          <CardHeader>
+            <CardTitle className="text-2xl font-semibold leading-none tracking-tight">
+              Checklist fiscal ANAF – criptomonede (persoană fizică) – PDF
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <p className="text-muted-foreground">Descarcă ghidul PDF (A4) cu bullets, diacritice și exemple 2025.</p>
+            <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
+              {({ loading }) => (
+                <Button disabled={loading} variant="premium" size="lg">
+                  {loading ? "Pregătesc PDF..." : "Descarcă PDF"}
+                </Button>
+              )}
+            </PDFDownloadLink>
+          </CardContent>
+        </Card>
+      </section>
+
     </main>
   );
 }
