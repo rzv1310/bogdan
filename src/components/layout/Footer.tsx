@@ -12,7 +12,7 @@ export default function Footer() {
     return (t as any).navServices?.[slug] ?? fallback;
   };
   return (
-    <footer className="relative border-t overflow-hidden bg-black text-white">
+    <footer className="relative border-t overflow-hidden bg-black text-white font-light">
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
