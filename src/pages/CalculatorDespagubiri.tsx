@@ -281,8 +281,7 @@ export default function CalculatorDespagubiri() {
                         min={1}
                         max={5}
                         step={1}
-                        className="w-full"
-                        style={{ accentColor: "#ff6a00" }}
+                        className="w-full accent-[hsl(var(--accent))]"
                         value={psych}
                         onChange={(e) => setPsych(clampNum(e.target.value, 1, 5))}
                       />
