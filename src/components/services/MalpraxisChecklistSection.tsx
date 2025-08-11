@@ -1,28 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
-import { toast } from "@/hooks/use-toast";
-import { generateMalpraxisChecklistDocx } from "@/lib/docx/malpraxisChecklist";
 
 export default function MalpraxisChecklistSection() {
-  const handleDownload = async () => {
-    const t = toast({ title: "Se generează documentul...", description: "Pregătim fișierul DOCX completabil." });
-    try {
-      const blob = await generateMalpraxisChecklistDocx();
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "Checklist-Malpraxis-Lamatic.docx";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-      t.update({ title: "Descărcare inițiată", description: "Checklist DOCX creat cu succes." } as any);
-    } catch (err) {
-      console.error(err);
-      toast({ title: "Eroare la generare", description: "Încercați din nou sau contactați-ne telefonic." });
-    }
-  };
 
   return (
     <section className="mt-12 md:mt-16">
@@ -203,11 +182,8 @@ export default function MalpraxisChecklistSection() {
           </div>
 
           <div className="pt-2 flex flex-wrap items-center gap-3">
-            <Button variant="premium" size="lg" onClick={handleDownload} aria-label="Descarcă DOCX completabil">
-              Descarcă DOCX completabil
-            </Button>
-            <Button asChild variant="premium" size="lg" aria-label="Sună acum pentru consultanță malpraxis">
-              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+            <Button asChild variant="premium" size="lg" aria-label="Descarcă PDF checklist malpraxis">
+              <a href="/documente-malpraxis" target="_blank" rel="noopener noreferrer">Descarcă PDF</a>
             </Button>
           </div>
         </CardContent>
