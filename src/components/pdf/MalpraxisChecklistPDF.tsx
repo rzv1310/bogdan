@@ -27,10 +27,19 @@ const styles = StyleSheet.create({
   footerCall: { textAlign: "center", color: "#F97316", fontWeight: 700, marginTop: 12 },
 });
 
+const strip = (input: string) => {
+  return input
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[“”„]/g, '"')
+    .replace(/[’]/g, "'")
+    .replace(/–|—/g, '-');
+};
+
 function Bullet({ children }: { children: string }) {
   return (
     <View style={styles.bullet}>
-      <Text>• {children}</Text>
+      <Text>• {strip(children)}</Text>
     </View>
   );
 }
@@ -39,19 +48,19 @@ export default function MalpraxisChecklistPDF() {
   return (
     <PDFDocument title="Checklist malpraxis medical" author="Av. Bogdan Lamatic">
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>Checklist documente – Malpraxis Medical & Neglijență în serviciu</Text>
-        <Text style={styles.note}>(autor: Av. Bogdan Lamatic, București)</Text>
+        <Text style={styles.title}>{strip("Checklist documente – Malpraxis Medical & Neglijență în serviciu")}</Text>
+        <Text style={styles.note}>{strip("(autor: Av. Bogdan Lamatic, București)")}</Text>
 
         {/* A. Pacienți / aparținători */}
         <View style={styles.sectionBox}>
-          <Text style={styles.sectionHeading}>A. Pentru pacienți / aparținători (partea vătămată)</Text>
+          <Text style={styles.sectionHeading}>{strip("A. Pentru pacienți / aparținători (partea vătămată)")}</Text>
 
-          <Text style={styles.subHeading}>1) Identitate & calitate</Text>
+          <Text style={styles.subHeading}>{strip("1) Identitate & calitate")}</Text>
           <Bullet>CI/pașaport (copie).</Bullet>
           <Bullet>Dovada calității (soț/soție, părinte, moștenitor): certificat de căsătorie/naștere/succesiune (dacă e cazul).</Bullet>
           <Bullet>Procura specială/împuternicire avocațială (dacă depune altcineva în numele tău).</Bullet>
 
-          <Text style={styles.subHeading}>2) Dosar medical complet (cronologic)</Text>
+          <Text style={styles.subHeading}>{strip("2) Dosar medical complet (cronologic)")}</Text>
           <Bullet>Bilet de internare/trimitere, foaia de observație clinică, foi ATI, foi de anestezie.</Bullet>
           <Bullet>Consimțământ informat (toate formularele semnate), foaia de anestezie, check-listuri perioperatorii.</Bullet>
           <Bullet>Raport operator, registrul intervențiilor, epicriza/bilet de externare.</Bullet>
@@ -60,21 +69,21 @@ export default function MalpraxisChecklistPDF() {
           <Bullet>Trasabilitatea dispozitivelor/materialelor (etichete, serii/loturi, UDI), fișe incident.</Bullet>
           <Bullet>Corespondență cu spitalul/medicul (email/SMS), programări, bilete consultație.</Bullet>
 
-          <Text style={styles.subHeading}>3) Prejudicii & probe</Text>
+          <Text style={styles.subHeading}>{strip("3) Prejudicii & probe")}</Text>
           <Bullet>Facturi/bonuri: consultații, tratamente ulterioare, medicamente, transport, îngrijire la domiciliu.</Bullet>
           <Bullet>Dovezi privind veniturile pierdute: contract de muncă/adeverință venit, concedii medicale, indemnizații.</Bullet>
           <Bullet>Fotografii/înregistrări ale leziunilor, jurnale de simptome.</Bullet>
           <Bullet>Martori (nume, date contact, ce au văzut/auzit).</Bullet>
           <Bullet>Dacă a survenit decesul: certificat de deces, raport medico-legal.</Bullet>
 
-          <Text style={styles.subHeading}>4) Pentru sesizarea Comisiei de malpraxis (administrativ)</Text>
+          <Text style={styles.subHeading}>{strip("4) Pentru sesizarea Comisiei de malpraxis (administrativ)")}</Text>
           <Bullet>Cerere către Comisie (o redactez eu).</Bullet>
           <Bullet>Dosarul medical ordonat cronologic (PDF-uri lizibile).</Bullet>
           <Bullet>Cronologie evenimente (vezi șablonul de mai jos).</Bullet>
           <Bullet>Lista cheltuielilor (cu sume și dovezi).</Bullet>
           <Bullet>Datele asigurătorului de malpraxis al medicului/clinicii (dacă le deții).</Bullet>
 
-          <Text style={styles.subHeading}>5) Pentru plângerea penală / acțiunea civilă</Text>
+          <Text style={styles.subHeading}>{strip("5) Pentru plângerea penală / acțiunea civilă")}</Text>
           <Bullet>Plângere penală (o redactez eu) + împuternicire avocațială.</Bullet>
           <Bullet>Calculul despăgubirilor (materiale/morale).</Bullet>
           <Bullet>Orice sesizări anterioare (Colegiul Medicilor, conducerea spitalului).</Bullet>
@@ -82,25 +91,25 @@ export default function MalpraxisChecklistPDF() {
 
         {/* B. Medici / clinici */}
         <View style={styles.sectionBox}>
-          <Text style={styles.sectionHeading}>B. Pentru medici / clinici (apărare)</Text>
+          <Text style={styles.sectionHeading}>{strip("B. Pentru medici / clinici (apărare)")}</Text>
 
-          <Text style={styles.subHeading}>1) Identitate profesională & conformitate</Text>
+          <Text style={styles.subHeading}>{strip("1) Identitate profesională & conformitate")}</Text>
           <Bullet>Aviz de liberă practică, asigurare de răspundere civilă (poliță + anexă), certificări/EMC.</Bullet>
           <Bullet>Fișa postului, fișa atribuțiilor, programul/gărzile din perioada incidentului.</Bullet>
           <Bullet>Contracte de muncă/colaborare, regulament intern/proceduri aplicabile.</Bullet>
 
-          <Text style={styles.subHeading}>2) Documente medicale & standard de îngrijire</Text>
+          <Text style={styles.subHeading}>{strip("2) Documente medicale & standard de îngrijire")}</Text>
           <Bullet>Dosarul medical integral al pacientului (inclusiv log-uri acces EHR, dacă există).</Bullet>
           <Bullet>Consimțăminte, foi de anestezie/ATI, check-listuri, raport operator, traseu pacient.</Bullet>
           <Bullet>Ghiduri/protocoale clinice aplicabile la data faptelor (naționale/ale unității).</Bullet>
           <Bullet>Dovada informării pacientului (materiale scrise, notițe, confirmări).</Bullet>
 
-          <Text style={styles.subHeading}>3) Infrastructură, dispozitive, igienă</Text>
+          <Text style={styles.subHeading}>{strip("3) Infrastructură, dispozitive, igienă")}</Text>
           <Bullet>Trasabilitatea dispozitivelor/materialelor (serii/loturi, UDI), registre sterilizare.</Bullet>
           <Bullet>Autorizații/avize (DSP), acreditare ANMCS, proceduri pentru infecții asociate asistenței medicale.</Bullet>
           <Bullet>Rapoarte mentenanță aparatură, fișe intervenții tehnice.</Bullet>
 
-          <Text style={styles.subHeading}>4) Evenimentul și apărarea</Text>
+          <Text style={styles.subHeading}>{strip("4) Evenimentul și apărarea")}</Text>
           <Bullet>Raport intern eveniment advers, declarații personal, listă echipă medicală implicată.</Bullet>
           <Bullet>Dovezi privind resursele și contextul (grad ocupare, timpi de așteptare, lipsă resurse neimputabilă).</Bullet>
           <Bullet>Comunicare cu pacientul/familia (email/SMS), propuneri de remediere/monitorizare post-incident.</Bullet>
@@ -109,7 +118,7 @@ export default function MalpraxisChecklistPDF() {
 
         {/* C. Bune practici */}
         <View style={styles.sectionBox}>
-          <Text style={styles.sectionHeading}>C. Formatare & bune practici (ambele părți)</Text>
+          <Text style={styles.sectionHeading}>{strip("C. Formatare & bune practici (ambele părți)")}</Text>
           <Bullet>Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic ("2025-08-10 – externare.pdf").</Bullet>
           <Bullet>Nu trimiți originale; aduci originalele doar la solicitarea expresă.</Bullet>
           <Bullet>Pune un index al probelor și numerotează paginile.</Bullet>
@@ -119,7 +128,7 @@ export default function MalpraxisChecklistPDF() {
 
         {/* D. Termene utile */}
         <View style={styles.sectionBox}>
-          <Text style={styles.sectionHeading}>D. Termene utile (orientativ)</Text>
+          <Text style={styles.sectionHeading}>{strip("D. Termene utile (orientativ)")}</Text>
           <Bullet>Comisia de malpraxis: sesizare cât mai repede; acțiunile civile se prescriu, de regulă, în 3 ani de la prejudiciu.</Bullet>
           <Bullet>Contestație decizie Comisie: 15 zile de la comunicare.</Bullet>
           <Bullet>Penal (ucidere/vătămare din culpă, neglijență în serviciu): termenele de prescripție sunt cele din Codul penal (variază în funcție de încadrare).</Bullet>
@@ -127,9 +136,9 @@ export default function MalpraxisChecklistPDF() {
 
         {/* Șabloane rapide */}
         <View style={styles.sectionBox}>
-          <Text style={styles.sectionHeading}>Șabloane rapide (copiază și completează)</Text>
+          <Text style={styles.sectionHeading}>{strip("Șabloane rapide (copiază și completează)")}</Text>
 
-          <Text style={styles.templatesHeading}>1) Cronologie evenimente (pacient)</Text>
+          <Text style={styles.templatesHeading}>{strip("1) Cronologie evenimente (pacient)")}</Text>
           <Bullet>Data/ora:</Bullet>
           <Bullet>Locație (secție/spital):</Bullet>
           <Bullet>Simptome/diagnostic inițial:</Bullet>
@@ -139,14 +148,14 @@ export default function MalpraxisChecklistPDF() {
           <Bullet>Efect imediat (durere, complicații, transfer):</Bullet>
           <Bullet>Document(e) aferente (denumire fișier):</Bullet>
 
-          <Text style={styles.templatesHeading}>2) Lista cheltuieli & pierderi (pacient)</Text>
+          <Text style={styles.templatesHeading}>{strip("2) Lista cheltuieli & pierderi (pacient)")}</Text>
           <Bullet>Cheltuială (ex. „investigații CT”):</Bullet>
           <Bullet>Suma:</Bullet>
           <Bullet>Dată:</Bullet>
           <Bullet>Dovadă (factură/bon nr.):</Bullet>
           <Bullet>Observații (ex. „recomandat de medicul X”):</Bullet>
 
-          <Text style={styles.templatesHeading}>3) Punct de vedere preliminar (medic/clinică)</Text>
+          <Text style={styles.templatesHeading}>{strip("3) Punct de vedere preliminar (medic/clinică)")}</Text>
           <Bullet>Specialitatea/cadrul:</Bullet>
           <Bullet>Standardul/ghidul aplicabil:</Bullet>
           <Bullet>Faptele relevante (cronologic):</Bullet>
@@ -156,7 +165,7 @@ export default function MalpraxisChecklistPDF() {
         </View>
 
         <Text style={styles.footerCall}>
-          <Link src="tel:+40745506443">Sună acum: +40 745 506 443</Link>
+          <Link src="tel:+40745506443">{strip("Sună acum: +40 745 506 443")}</Link>
         </Text>
       </Page>
     </PDFDocument>
