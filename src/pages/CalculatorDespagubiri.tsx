@@ -26,6 +26,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
@@ -406,16 +407,29 @@ export default function CalculatorDespagubiri() {
                 <div className="rounded-xl bg-zinc-50 p-4">
                   <div className="text-sm text-zinc-600 flex items-center gap-2">
                     Estimare
-                    <TooltipProvider delayDuration={!isMobile ? 300 : 0}>
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <BadgeInfo className="w-4 h-4 text-accent" aria-label="Informații estimare" />
-                        </TooltipTrigger>
-                        <TooltipContent>
+                    {isMobile ? (
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <button type="button" aria-label="Informații estimare" className="inline-flex">
+                            <BadgeInfo className="w-4 h-4 text-accent" />
+                          </button>
+                        </PopoverTrigger>
+                        <PopoverContent className="max-w-xs text-sm">
                           Daune materiale + morale, ajustate cu procentul de vinovăție și plafonate la limita poliței (dacă există).
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
+                        </PopoverContent>
+                      </Popover>
+                    ) : (
+                      <TooltipProvider delayDuration={300}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <BadgeInfo className="w-4 h-4 text-accent" aria-label="Informații estimare" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            Daune materiale + morale, ajustate cu procentul de vinovăție și plafonate la limita poliței (dacă există).
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    )}
                   </div>
                   <div className="text-2xl font-bold">{fmtRON(net)}</div>
                   {!isMobile && (
