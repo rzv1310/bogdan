@@ -1,7 +1,21 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { pdf } from "@react-pdf/renderer";
+import MalpraxisChecklistPDF from "@/components/pdf/MalpraxisChecklistPDF";
 
 export default function MalpraxisChecklistSection() {
+
+  const handleDownload = async () => {
+    const win = window.open("about:blank");
+    const blob = await pdf(<MalpraxisChecklistPDF />).toBlob();
+    const url = URL.createObjectURL(blob);
+    if (win) {
+      win.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  };
 
   return (
     <section className="mt-12 md:mt-16">
@@ -182,8 +196,8 @@ export default function MalpraxisChecklistSection() {
           </div>
 
           <div className="pt-2 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" aria-label="Descarcă PDF checklist malpraxis">
-              <a href="/documente-malpraxis" target="_blank" rel="noopener noreferrer">Descarcă PDF</a>
+            <Button onClick={handleDownload} variant="premium" size="lg" aria-label="Descarcă PDF checklist malpraxis">
+              Descarcă PDF
             </Button>
           </div>
         </CardContent>

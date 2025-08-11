@@ -1,6 +1,4 @@
-import { useEffect, useCallback } from "react";
-import { Button } from "@/components/ui/button";
-import { useSEO } from "@/hooks/useSEO";
+import React from "react";
 import {
   Document as PDFDocument,
   Page,
@@ -8,7 +6,6 @@ import {
   View,
   StyleSheet,
   Link,
-  pdf,
 } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
@@ -26,7 +23,6 @@ const styles = StyleSheet.create({
   sectionHeading: { fontSize: 14, fontWeight: 700, marginBottom: 6 },
   subHeading: { fontSize: 11, fontWeight: 700, marginTop: 6, marginBottom: 4 },
   bullet: { marginLeft: 10, marginBottom: 2 },
-  bulletText: {},
   templatesHeading: { fontSize: 12, fontWeight: 700, marginTop: 8, marginBottom: 4 },
   footerCall: { textAlign: "center", color: "#F97316", fontWeight: 700, marginTop: 12 },
 });
@@ -39,7 +35,7 @@ function Bullet({ children }: { children: string }) {
   );
 }
 
-function MalpraxisPDFDoc() {
+export default function MalpraxisChecklistPDF() {
   return (
     <PDFDocument title="Checklist malpraxis medical" author="Av. Bogdan Lamatic">
       <Page size="A4" style={styles.page}>
@@ -95,7 +91,7 @@ function MalpraxisPDFDoc() {
 
           <Text style={styles.subHeading}>2) Documente medicale & standard de îngrijire</Text>
           <Bullet>Dosarul medical integral al pacientului (inclusiv log-uri acces EHR, dacă există).</Bullet>
-          <Bullet>Consimțământe, foi de anestezie/ATI, check-listuri, raport operator, traseu pacient.</Bullet>
+          <Bullet>Consimțăminte, foi de anestezie/ATI, check-listuri, raport operator, traseu pacient.</Bullet>
           <Bullet>Ghiduri/protocoale clinice aplicabile la data faptelor (naționale/ale unității).</Bullet>
           <Bullet>Dovada informării pacientului (materiale scrise, notițe, confirmări).</Bullet>
 
@@ -164,42 +160,5 @@ function MalpraxisPDFDoc() {
         </Text>
       </Page>
     </PDFDocument>
-  );
-}
-
-export default function DocumenteMalpraxis() {
-  useSEO({
-    title: "Checklist malpraxis PDF – Av. Bogdan Lamatic",
-    description: "Descarcă PDF cu checklist complet malpraxis medical și neglijență.",
-    canonical: typeof window !== "undefined" ? `${window.location.origin}/documente-malpraxis` : undefined,
-  });
-
-  const openPdf = useCallback(async () => {
-    const blob = await pdf(<MalpraxisPDFDoc />).toBlob();
-    const url = URL.createObjectURL(blob);
-    const win = window.open(url, "_blank");
-    // Revoke after a short delay to allow the new tab to load
-    setTimeout(() => URL.revokeObjectURL(url), 30000);
-    if (!win) {
-      // Popup blocked; no-op here, the user can click the button below
-    }
-  }, []);
-
-  useEffect(() => {
-    openPdf();
-  }, [openPdf]);
-
-  return (
-    <main className="container mx-auto px-4 py-10">
-      <header className="mb-6">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Checklist malpraxis medical – PDF</h1>
-        <p className="text-muted-foreground mt-1">Documentul se deschide într-un tab nou. Dacă a fost blocat, folosește butonul de mai jos.</p>
-      </header>
-      <section>
-        <Button variant="premium" size="lg" onClick={openPdf} aria-label="Deschide PDF într-un tab nou">
-          Deschide din nou în tab nou
-        </Button>
-      </section>
-    </main>
   );
 }
