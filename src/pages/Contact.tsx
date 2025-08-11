@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Paperclip, AlertCircle, CheckCircle2, ArrowRight } from "lucide-react";
+import { Send, Paperclip, AlertCircle, CheckCircle2, ArrowRight, Phone } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -142,9 +142,17 @@ export default function Contact() {
       <motion.h1 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-3xl md:text-4xl font-bold">
         Contact - Cabinet Avocat Bogdan Lamatic
       </motion.h1>
-      <p className="mt-3 text-muted-foreground max-w-3xl">
+<p className="mt-3 text-muted-foreground max-w-3xl">
         Ai nevoie de asistență penală sau de o evaluare a despăgubirilor? Scrie-mi datele esențiale, atașează actele relevante (PDF/JPG/PNG, max. {MAX_FILE_MB} MB/fișier) și îți răspund rapid cu pașii concreți.
       </p>
+      <div className="mt-4 flex items-center gap-4">
+        <span className="text-sm md:text-base font-medium">Suna-ma acum</span>
+        <a href="tel:+40745506443" aria-label="Sună-mă acum">
+          <Button variant="premium" size="lg" className="border border-hero-foreground">
+            <Phone /> Sună acum
+          </Button>
+        </a>
+      </div>
 
       {/* Form Card */}
       <div className="mt-8 max-w-3xl">
