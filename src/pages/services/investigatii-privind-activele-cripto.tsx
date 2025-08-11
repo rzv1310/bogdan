@@ -38,10 +38,6 @@ export default function InvestigatiiCripto() {
           Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance.
           <br />
           Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).
-          <br />
-          Recunoscut de Legal 500 ca Rising Star (2020) și Next Generation Partner (2021–2024) în White-Collar Crime.
-          <br />
-          În practică, ofer și asistență în investigații legate de criptoactive și blockchain, în paralel cu apărare în cauze financiar-penale și recuperare de prejudicii.
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <Button asChild variant="premium" size="lg">
@@ -51,6 +47,10 @@ export default function InvestigatiiCripto() {
           </Button>
         </div>
       </header>
+
+      <div className="mt-8 flex justify-center">
+        <EthereumCard />
+      </div>
 
       {/* Ce tipuri de spețe crypto gestionez */}
       <section className="mt-8">
@@ -168,13 +168,8 @@ export default function InvestigatiiCripto() {
       </section>
 
       {/* Carduri personalizate și loader apel */}
-      <div className="mt-8 flex flex-col md:flex-row items-start justify-between gap-6">
-        <div className="flex-1">
-          <EthereumCard />
-        </div>
-        <div className="flex-1 flex flex-col items-center md:items-end gap-4">
-          <PhoneLoader />
-        </div>
+      <div className="mt-8 flex justify-center">
+        <PhoneLoader />
       </div>
 
       {/* Instrumente legale */}
