@@ -75,8 +75,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   ctaImage: {
-    width: 42,
-    height: 42,
+    height: 80,
     borderRadius: 4,
     marginRight: 10,
   },
