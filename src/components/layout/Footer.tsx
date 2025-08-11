@@ -12,7 +12,7 @@ export default function Footer() {
     return (t as any).navServices?.[slug] ?? fallback;
   };
   return (
-    <footer className="relative border-t overflow-hidden">
+    <footer className="relative border-t overflow-hidden text-muted-foreground">
       <div className="absolute inset-0">
         <Squares direction="diagonal" speed={0.5} squareSize={40} borderColor="#333" hoverFillColor="#222" />
       </div>
@@ -28,15 +28,15 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-muted-foreground">{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}
-                <a href="tel:+40745506443" className="text-primary underline hover:no-underline">+40 745 506 443</a>
+                <a href="tel:+40745506443" className="underline hover:no-underline">+40 745 506 443</a>
               </li>
               <li>
                 <span className="text-muted-foreground">{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
-                <a href="mailto:bogdan.lamatic@yahoo.com" className="text-primary underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
+                <a href="mailto:bogdan.lamatic@yahoo.com" className="underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
               </li>
               <li>
                 <span className="text-muted-foreground">Website:</span>{" "}
-                <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">avocat-drept-penal.ro</a>
+                <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocat-drept-penal.ro</a>
               </li>
               <li>
                 <span className="text-muted-foreground">{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
