@@ -23,6 +23,7 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
@@ -182,7 +183,7 @@ export default function CalculatorDespagubiri() {
               Calculator despăgubiri victime accidente
             </h1>
             <p className="mt-3 text-zinc-700">
-              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime, 2021–2024).
+              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și <Link to="/servicii/reprezentarea-victimelor-in-procese-penale">obțin despăgubiri pentru accidente rutiere</Link>, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime, 2021–2024).
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">
