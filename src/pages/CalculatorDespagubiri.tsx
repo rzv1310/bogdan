@@ -175,6 +175,7 @@ export default function CalculatorDespagubiri() {
         {/* Hero */}
         <section className="grid grid-cols-1 gap-6 items-start mb-10">
           <div>
+            <div className="h-[30px]" aria-hidden="true" />
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">
               Calculator despăgubiri victime accidente
             </h1>
