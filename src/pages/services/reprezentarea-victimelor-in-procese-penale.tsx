@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
   useSEO({
@@ -138,6 +139,11 @@ export default function ReprezentareaVictimelor() {
               <strong>De la cine?</strong> făptuitor, asigurătorul RCA (dacă e accident rutier), angajator (accidente de muncă), alți responsabili civilmente. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
+          <p className="pt-2">
+            <Link to="/calculator-despagubiri" className="text-primary underline underline-offset-2">
+              Calculator despăgubiri
+            </Link>
+          </p>
         </CardContent>
       </Card>
 
