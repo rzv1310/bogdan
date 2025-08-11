@@ -203,6 +203,7 @@ export default function Contact() {
               </div>
 
               <div>
+                <div className="h-5"></div>
                 <h3 className="text-base font-medium">Atașamente (PDF/JPG/PNG, max. {MAX_FILE_MB} MB/fișier)</h3>
                 <div className="mt-1">
                   <label className={`relative w-full flex items-center justify-between rounded-md border p-2 cursor-pointer ${errors.files ? "border-destructive" : ""}`}>
