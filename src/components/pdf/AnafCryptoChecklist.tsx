@@ -88,7 +88,7 @@ const AnafCryptoChecklist: React.FC = () => (
         <View style={[styles.section]}>
           <Text style={styles.h2}>Regula „200 lei / 600 lei”</Text>
           <Text>
-            Dacă câștigul pe o tranzacție &lt; 200 lei și totalul câștigurilor pe anul fiscal &lt;= 600 lei, acele câștiguri nu se impozitează. Dacă totalul trece de 600 lei, toate câștigurile devin impozabile (și cele sub 200 lei/tranzacție).
+            Dacă câștigul pe o tranzacție &lt; 200 lei și totalul câștigurilor pe anul fiscal ≤ 600 lei, acele câștiguri nu se impozitează. Dacă totalul trece de 600 lei, toate câștigurile devin impozabile (și cele sub 200 lei/tranzacție).
           </Text>
         </View>
 
@@ -125,7 +125,7 @@ const AnafCryptoChecklist: React.FC = () => (
           <Text style={styles.smallMuted}>Notă: sumele sunt în RON. Pentru 2025 folosim pragurile CASS din HG 1506/2024 (salariul minim 4.050 lei).</Text>
 
           <View style={{ marginTop: 6 }}>
-            <Text style={styles.bold}>Ex. 1 — total câștig &lt;= 600 lei, tranzacții mici</Text>
+            <Text style={styles.bold}>Ex. 1 — total câștig ≤ 600 lei, tranzacții mici</Text>
             <Bullet>5 tranzacții cu câștiguri: 120, 90, 150, 110, 100 → total 570</Bullet>
             <Bullet>Sub 200 lei/tranzacție și total &lt;= 600 → nu datorezi impozit, nu datorezi CASS.</Bullet>
           </View>
@@ -141,13 +141,13 @@ const AnafCryptoChecklist: React.FC = () => (
           <View style={{ marginTop: 8 }}>
             <Text style={styles.bold}>Ex. 3 — câștig 40.000 lei</Text>
             <Bullet>Impozit = 10% x 40.000 = 4.000 lei.</Bullet>
-            <Bullet>CASS: 40.000 &gt;= 24.300 și &lt; 48.600 =&gt; Baza de calcul = 6 x 4.050 = 24.300; CASS = 10% x 24.300 = 2.430 lei.</Bullet>
+            <Bullet>CASS: 40.000 ≥ 24.300 și &lt; 48.600 =&gt; Baza de calcul = 6 x 4.050 = 24.300; CASS = 10% x 24.300 = 2.430 lei.</Bullet>
           </View>
 
           <View style={{ marginTop: 8 }}>
             <Text style={styles.bold}>Ex. 4 — câștig 120.000 lei</Text>
             <Bullet>Impozit = 10% x 120.000 = 12.000 lei.</Bullet>
-            <Bullet>CASS: 120.000 &gt;= 97.200 =&gt; Baza de calcul = 24 x 4.050 = 97.200; CASS = 9.720 lei.</Bullet>
+            <Bullet>CASS: 120.000 ≥ 97.200 =&gt; Baza de calcul = 24 x 4.050 = 97.200; CASS = 9.720 lei.</Bullet>
           </View>
         </View>
       </View>
