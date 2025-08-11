@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistSection";
 
 export default function Malpraxis() {
   useSEO({
@@ -256,6 +257,7 @@ export default function Malpraxis() {
           </ul>
         </CardContent>
       </Card>
+      <MalpraxisChecklistSection />
     </section>
   );
 }
