@@ -35,7 +35,7 @@ const StyledWrapper = styled.div`
   .loader {
     --size: 220px;
     --duration: 2s;
-    --logo-color: #ffffff;
+    --logo-color: #8a8a8a;
     --ring-bg-a: rgba(50, 50, 50, 0.2);
     --ring-bg-b: rgba(100, 100, 100, 0.2);
     --ring-border: rgba(100, 100, 100, 1);
@@ -106,6 +106,7 @@ const StyledWrapper = styled.div`
     height: 100%;
     color: var(--logo-color);
     stroke-width: 2.25px;
+    animation: logo-color var(--duration) infinite ease-in-out;
   }
 
   @keyframes ripple {
@@ -122,7 +123,13 @@ const StyledWrapper = styled.div`
       box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
     }
   }
-
+  
+  @keyframes logo-color {
+    0% { color: #6b7280; }
+    50% { color: #ffffff; }
+    100% { color: #6b7280; }
+  }
+  
   @media (max-width: 768px) {
     .loader {
       --size: 180px;
