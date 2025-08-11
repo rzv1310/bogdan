@@ -215,7 +215,7 @@ export default function Contact() {
         Contact - Cabinet Avocat Bogdan Lamatic
       </motion.h1>
 <p className="mt-3 text-muted-foreground max-w-3xl">
-        Ai nevoie de asistență penală sau de o evaluare a despăgubirilor? Scrie-mi datele esențiale, atașează actele relevante (PDF/JPG/PNG, max. {MAX_FILE_MB} MB/fișier) și îți răspund rapid cu pașii concreți.
+        Ai nevoie de asistență penală sau de o evaluare a despăgubirilor? Scrie-mi datele esențiale, atașează actele relevante și îți răspund rapid cu pașii concreți.
       </p>
 <div className="mt-4">
         <span className="text-sm md:text-base font-medium">Sună-mă acum:</span>
