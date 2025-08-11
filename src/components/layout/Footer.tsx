@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { services } from "@/lib/services";
+import { Squares } from "@/components/ui/squares-background";
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -11,8 +12,11 @@ export default function Footer() {
     return (t as any).navServices?.[slug] ?? fallback;
   };
   return (
-    <footer className="border-t bg-background">
-      <div className="mx-auto max-w-6xl px-4 md:px-6 py-10">
+    <footer className="relative border-t overflow-hidden">
+      <div className="absolute inset-0">
+        <Squares direction="diagonal" speed={0.5} squareSize={40} borderColor="#333" hoverFillColor="#222" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
