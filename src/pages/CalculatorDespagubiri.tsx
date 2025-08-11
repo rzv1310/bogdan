@@ -20,7 +20,9 @@ import {
   RefreshCw,
   ArrowRight,
   CheckCircle2,
+  Phone,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
@@ -184,15 +186,22 @@ export default function CalculatorDespagubiri() {
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5" /> Strategie penal + civil (parte vătămată / parte civilă)
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Strategie penal + civil (parte vătămată / parte civilă)
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5" /> Negociere și litigii cu asiguratorii (RCA)
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Negociere și litigii cu asiguratorii (RCA)
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5" /> Expertize medico-legale și accidentologice
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Expertize medico-legale și accidentologice
               </li>
             </ul>
+            <div className="mt-4">
+              <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum">
+                <a href="tel:+40745506443">
+                  <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
+                </a>
+              </Button>
+            </div>
           </div>
           <div>
             <Card>
@@ -482,7 +491,7 @@ export default function CalculatorDespagubiri() {
 
         {/* Contact (FAQ removed) */}
         <section className="mb-12">
-          <Card id="contact">
+          <Card id="contact" className="border border-accent">
             <h2 className="text-xl font-semibold mb-2">Contact rapid</h2>
             <p className="text-sm text-zinc-700 mb-3">
               Trimite-mi detaliile esențiale și îți ofer o evaluare inițială.
@@ -530,7 +539,7 @@ export default function CalculatorDespagubiri() {
 
         {/* Metodă de lucru – mutată la final */}
         <section className="mb-16">
-          <Card>
+          <Card className="border border-accent">
             <h2 className="text-xl font-semibold mb-3">Metoda mea de lucru este următoarea:</h2>
             <ol className="list-decimal pl-5 space-y-2 text-zinc-700">
               <li>
