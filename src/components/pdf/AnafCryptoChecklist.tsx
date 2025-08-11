@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page, Text, View, StyleSheet, Font, Link } from "@react-pdf/renderer";
+import { Document, Page, Text, View, StyleSheet, Font, Link, Image } from "@react-pdf/renderer";
 
 // Register fonts with diacritics support
 Font.register({
@@ -69,12 +69,26 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 6,
     marginTop: 16,
+  },
+  ctaRow: {
+    flexDirection: "row",
     alignItems: "center",
+  },
+  ctaImage: {
+    width: 42,
+    height: 42,
+    borderRadius: 4,
+    marginRight: 10,
+  },
+  ctaContent: {
+    flexDirection: "column",
+    justifyContent: "center",
+    flexGrow: 1,
   },
   ctaTitle: {
     fontSize: 12,
     fontWeight: "bold",
-    marginBottom: 8,
+    marginBottom: 6,
   },
   ctaButton: {
     backgroundColor: "#fff",
@@ -85,6 +99,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     borderRadius: 4,
     textDecoration: "none",
+    alignSelf: "flex-start",
+    marginTop: 6,
   },
   ctaButtonText: {
     color: "#111",
@@ -182,10 +198,15 @@ const AnafCryptoChecklist: React.FC = () => (
         </View>
         {/* CTA final */}
         <View style={[styles.section, styles.ctaBox]}>
-          <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
-          <Link src="tel:+40745506443" style={styles.ctaButton}>
-            <Text style={styles.ctaButtonText}>Sună-mă acum!</Text>
-          </Link>
+          <View style={styles.ctaRow}>
+            <Image src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" style={styles.ctaImage} />
+            <View style={styles.ctaContent}>
+              <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
+              <Link src="tel:+40745506443" style={styles.ctaButton}>
+                <Text style={styles.ctaButtonText}>Sună-mă acum!</Text>
+              </Link>
+            </View>
+          </View>
         </View>
       </View>
     </Page>
