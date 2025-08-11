@@ -174,11 +174,6 @@ export default function InvestigatiiCripto() {
         </div>
         <div className="flex-1 flex flex-col items-center md:items-end gap-4">
           <PhoneLoader />
-          <Button asChild variant="premium" size="lg" aria-label="Sună acum">
-            <a href="tel:+40745506443">
-              <Phone className="mr-2" /> Sună acum
-            </a>
-          </Button>
         </div>
       </div>
 
