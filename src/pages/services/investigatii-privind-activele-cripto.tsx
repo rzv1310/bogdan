@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import EthereumCard from "@/components/crypto/EthereumCard";
 
 export default function InvestigatiiCripto() {
   useSEO({
@@ -164,6 +165,11 @@ export default function InvestigatiiCripto() {
           </CardContent>
         </Card>
       </section>
+
+      {/* Card Ethereum personalizat */}
+      <div className="mt-8">
+        <EthereumCard />
+      </div>
 
       {/* Instrumente legale */}
       <section className="mt-8">
