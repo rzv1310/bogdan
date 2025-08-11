@@ -33,16 +33,19 @@ export default function InvestigatiiCripto() {
           Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts
         </h1>
         <p className="mt-3 text-muted-foreground leading-relaxed">
-          Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance. Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor). Recunoscut de Legal 500 ca Rising Star (2020) și Next Generation Partner (2021–2024) în White-Collar Crime. În practică, ofer și asistență în investigații legate de criptoactive și blockchain, în paralel cu apărare în cauze financiar-penale și recuperare de prejudicii.
+          Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance.
+          <br />
+          Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).
+          <br />
+          Recunoscut de Legal 500 ca Rising Star (2020) și Next Generation Partner (2021–2024) în White-Collar Crime.
+          <br />
+          În practică, ofer și asistență în investigații legate de criptoactive și blockchain, în paralel cu apărare în cauze financiar-penale și recuperare de prejudicii.
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <Button asChild variant="premium" size="lg">
             <a href="tel:+40745506443" aria-label="Sună acum">
               <Phone className="mr-2" /> Sună acum
             </a>
-          </Button>
-          <Button asChild variant="outline" size="lg">
-            <a href="mailto:office@lamatic.ro">Trimite email</a>
           </Button>
         </div>
       </header>
@@ -153,7 +156,11 @@ export default function InvestigatiiCripto() {
             <CardTitle className="text-2xl font-semibold leading-none tracking-tight">De ce eu</CardTitle>
           </CardHeader>
           <CardContent className="text-base leading-relaxed">
-            Am gestionat investigații interne urgente (fraudă, asset recovery, cyber, date), apărare penală în cauze cu prejudicii mari, inclusiv cu autorități specializate (DNA/DIICOT/EPPO), și proiecte de conformare (whistleblowing, AML). Experiența esta atât contencioasă, cât și preventivă, cu accent pe rezultate și confidențialitate.
+            <p>
+              Am gestionat investigații interne urgente (fraudă, asset recovery, cyber, date), apărare penală în cauze cu prejudicii mari, inclusiv cu autorități specializate (DNA/DIICOT/EPPO), și proiecte de conformare (whistleblowing, AML).
+              <br />
+              Experiența esta atât contencioasă, cât și preventivă, cu accent pe rezultate și confidențialitate.
+            </p>
           </CardContent>
         </Card>
       </section>
@@ -300,9 +307,11 @@ export default function InvestigatiiCripto() {
             </div>
             <div>
               <p className="font-semibold">Sunt antreprenor crypto—ce trebuie să fac „ieri”?</p>
-              <p className="text-muted-foreground">
-                Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări. ASF a indicat necesitatea cadrului național de competențe.
-              </p>
+            <p className="text-muted-foreground">
+              Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări.
+              <br />
+              ASF a indicat necesitatea cadrului național de competențe.
+            </p>
             </div>
           </CardContent>
         </Card>
