@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 export default function Malpraxis() {
   useSEO({
