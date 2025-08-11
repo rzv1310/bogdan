@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { services } from "@/lib/services";
-import { Squares } from "@/components/ui/squares-background";
+
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -12,34 +12,31 @@ export default function Footer() {
     return (t as any).navServices?.[slug] ?? fallback;
   };
   return (
-    <footer className="relative border-t overflow-hidden text-muted-foreground">
-      <div className="absolute inset-0">
-        <Squares direction="diagonal" speed={0.5} squareSize={40} borderColor="#333" hoverFillColor="#222" />
-      </div>
+    <footer className="relative border-t overflow-hidden bg-black text-white">
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground"><Link to="/" className="hover:underline">{lang === "en" ? "Bogdan Lamatic Law Office" : "Cabinet Avocat Bogdan Lamatic"}</Link></h2>
+            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to="/" className="hover:underline">{lang === "en" ? "Bogdan Lamatic Law Office" : "Cabinet Avocat Bogdan Lamatic"}</Link></h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <span className="text-muted-foreground">{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
+                <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
                 <span>Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5</span>
               </li>
               <li>
-                <span className="text-muted-foreground">{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}
+                <span>{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}
                 <a href="tel:+40745506443" className="underline hover:no-underline">+40 745 506 443</a>
               </li>
               <li>
-                <span className="text-muted-foreground">{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
+                <span>{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
                 <a href="mailto:bogdan.lamatic@yahoo.com" className="underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
               </li>
               <li>
-                <span className="text-muted-foreground">Website:</span>{" "}
+                <span>Website:</span>{" "}
                 <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocat-drept-penal.ro</a>
               </li>
               <li>
-                <span className="text-muted-foreground">{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
+                <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
                 <span>{lang === "en" ? "Monday - Friday: 08-18" : "Luni - Vineri: 08-18"}</span>
               </li>
             </ul>
@@ -47,7 +44,7 @@ export default function Footer() {
 
           {/* Col 2: Servicii */}
           <nav aria-labelledby="footer-services">
-            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">{t.nav.services}</h2>
+            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">{t.nav.services}</h2>
             <ul className="mt-4 space-y-2 text-sm">
               {services.map((s) => (
                 <li key={s.to}>
@@ -61,7 +58,7 @@ export default function Footer() {
 
           {/* Col 3: Utile */}
           <nav aria-labelledby="footer-utile">
-            <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">{lang === "en" ? "Useful" : "Utile"}</h2>
+            <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase">{lang === "en" ? "Useful" : "Utile"}</h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link to="/contact" className="hover:underline">{t.nav.contact}</Link>
@@ -89,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs">
             © {new Date().getFullYear()} Bogdan Lamatic. {t.rightsReserved}
           </p>
         </div>
