@@ -351,7 +351,7 @@ export default function InvestigatiiCripto() {
 
       {/* Checklist fiscal ANAF - PDF */}
       <section className="mt-8">
-        <Card className="border-accent">
+        <Card className="border-accent bg-accent text-accent-foreground">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold leading-none tracking-tight">
               Checklist fiscal ANAF - crypto (persoană fizică)
@@ -360,7 +360,7 @@ export default function InvestigatiiCripto() {
           <CardContent className="space-y-3">
             <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
               {({ loading }) => (
-                <Button disabled={loading} variant="premium" size="lg">
+                <Button disabled={loading} variant="light" size="lg">
                   {loading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
                 </Button>
               )}
