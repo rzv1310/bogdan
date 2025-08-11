@@ -140,7 +140,7 @@ export default function ReprezentareaVictimelor() {
             </li>
           </ul>
           <p className="pt-2">
-            <Link to="/calculator-despagubiri" className="text-primary underline underline-offset-2">
+            <Link to="/calculator-despagubiri" className="text-primary underline decoration-accent decoration-2 underline-offset-2">
               Calculator despăgubiri
             </Link>
           </p>
