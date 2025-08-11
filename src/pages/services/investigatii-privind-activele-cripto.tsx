@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import EthereumCard from "@/components/crypto/EthereumCard";
+import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 export default function InvestigatiiCripto() {
   useSEO({
@@ -166,9 +167,19 @@ export default function InvestigatiiCripto() {
         </Card>
       </section>
 
-      {/* Card Ethereum personalizat */}
-      <div className="mt-8">
-        <EthereumCard />
+      {/* Carduri personalizate și loader apel */}
+      <div className="mt-8 flex flex-col md:flex-row items-start justify-between gap-6">
+        <div className="flex-1">
+          <EthereumCard />
+        </div>
+        <div className="flex-1 flex flex-col items-center md:items-end gap-4">
+          <PhoneLoader />
+          <Button asChild variant="premium" size="lg" aria-label="Sună acum">
+            <a href="tel:+40745506443">
+              <Phone className="mr-2" /> Sună acum
+            </a>
+          </Button>
+        </div>
       </div>
 
       {/* Instrumente legale */}
