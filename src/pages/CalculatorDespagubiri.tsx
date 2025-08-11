@@ -375,7 +375,7 @@ export default function CalculatorDespagubiri() {
                 </button>
                 <button
                   onClick={calculate}
-                  className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-zinc-900 text-white"
+                  className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 >
                   Calculează <ArrowRight className="w-4 h-4" />
                 </button>
@@ -448,7 +448,7 @@ export default function CalculatorDespagubiri() {
                 </button>
                 <a
                   href="mailto:bogdan.lamatic@yahoo.com"
-                  className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-zinc-900 text-white"
+                  className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 >
                   Trimite-mi pentru evaluare <ArrowRight className="w-4 h-4" />
                 </a>
@@ -505,7 +505,7 @@ export default function CalculatorDespagubiri() {
               ></textarea>
               <a
                 href="mailto:bogdan.lamatic@yahoo.com"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 bg-zinc-900 text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
               >
                 Trimite solicitarea <ArrowRight className="w-4 h-4" />
               </a>
