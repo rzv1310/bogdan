@@ -158,7 +158,7 @@ export default function ReprezentareaVictimelor() {
               <strong>Deschide dosar RCA:</strong> avizare promptă, acte doveditoare (constatare, devize, dovezi cheltuieli). (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              <strong>Consultă un avocat:</strong> te reprezint ca persoană vătămată/parte civilă și calibrez cererile de despăgubiri în raport cu probele și legea. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Consultă un avocat:</strong> te reprezint ca persoană vătămată/parte civilă și calibrez cererile de despăgubiri în raport cu probele și legea. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>
@@ -188,19 +188,19 @@ export default function ReprezentareaVictimelor() {
           <ol className="list-decimal pl-6 space-y-3">
             <li>
               <strong>E obligatoriu să merg în proces penal pentru despăgubiri?</strong>
-              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat. (Portal Legislativ)</p>
+              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat.</p>
             </li>
             <li>
               <strong>Ce termen am pentru pretenții?</strong>
-              <p className="mt-1">Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri. (Portal Legislativ)</p>
+              <p className="mt-1">Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri.</p>
             </li>
             <li>
               <strong>Ce înseamnă că „asigurătorul plătește”?</strong>
-              <p className="mt-1">La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor. (Portal Legislativ)</p>
+              <p className="mt-1">La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor.</p>
             </li>
             <li>
               <strong>Pot participa activ la urmărirea penală?</strong>
-              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP). (Portal Legislativ)</p>
+              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP).</p>
             </li>
           </ol>
         </CardContent>
