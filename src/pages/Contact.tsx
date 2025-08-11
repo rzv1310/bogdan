@@ -145,13 +145,15 @@ export default function Contact() {
 <p className="mt-3 text-muted-foreground max-w-3xl">
         Ai nevoie de asistență penală sau de o evaluare a despăgubirilor? Scrie-mi datele esențiale, atașează actele relevante (PDF/JPG/PNG, max. {MAX_FILE_MB} MB/fișier) și îți răspund rapid cu pașii concreți.
       </p>
-      <div className="mt-4 flex items-center gap-4">
-        <span className="text-sm md:text-base font-medium">Suna-ma acum</span>
+<div className="mt-4">
+        <span className="text-sm md:text-base font-medium">Sună-mă acum:</span>
+        <div className="h-5"></div>
         <a href="tel:+40745506443" aria-label="Sună-mă acum">
           <Button variant="premium" size="lg" className="border border-hero-foreground">
-            <Phone /> Sună acum
+            <Phone /> +40 745 506 443
           </Button>
         </a>
+        <div className="h-5"></div>
       </div>
 
       {/* Form Card */}
