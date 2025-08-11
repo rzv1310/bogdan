@@ -354,7 +354,7 @@ export default function InvestigatiiCripto() {
         <Card className="border-accent">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold leading-none tracking-tight">
-              Checklist fiscal ANAF – criptomonede (persoană fizică) – PDF
+              Checklist fiscal ANAF - crypto (persoană fizică)
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
