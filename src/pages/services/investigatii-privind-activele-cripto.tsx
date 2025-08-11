@@ -358,11 +358,10 @@ export default function InvestigatiiCripto() {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-muted-foreground">Descarcă ghidul PDF (A4) cu bullets, diacritice și exemple 2025.</p>
             <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
               {({ loading }) => (
                 <Button disabled={loading} variant="premium" size="lg">
-                  {loading ? "Pregătesc PDF..." : "Descarcă PDF"}
+                  {loading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
                 </Button>
               )}
             </PDFDownloadLink>
