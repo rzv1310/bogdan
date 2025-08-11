@@ -18,7 +18,6 @@ import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
 import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
-import DocumenteMalpraxis from "./pages/DocumenteMalpraxis";
 import { LanguageProvider } from "@/context/language";
 
 const queryClient = new QueryClient();
@@ -45,7 +44,6 @@ const App = () => (
               <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
               <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
               <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
-              <Route path="/documente-malpraxis" element={<DocumenteMalpraxis />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Route>
