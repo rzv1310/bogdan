@@ -63,13 +63,13 @@ export default function ReprezentareaVictimelor() {
         <CardContent className="text-base leading-relaxed space-y-3">
           <ol className="list-decimal pl-6 space-y-3">
             <li>
-              <strong>Accidente rutiere (RCA/CASCO, vătămări, deces).</strong> Coordonez investigația penală și acțiunea civilă pentru victime și familii: stabilire vinovăție, constituire ca parte civilă, calculul despăgubirilor materiale și morale, negocieri cu asigurătorul RCA conform Legii 132/2017 și normelor ASF. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
+              <strong>Accidente rutiere (RCA/CASCO, vătămări, deces).</strong> Coordonez investigația penală și acțiunea civilă pentru victime și familii: stabilire vinovăție, constituire ca parte civilă, calculul despăgubirilor materiale și morale, negocieri cu asigurătorul RCA conform Legii 132/2017 și normelor ASF. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/ro/a/153/legisla%C8%9Bie-rca" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
             </li>
             <li>
-              <strong>Vătămări corporale și loviri.</strong> Intervin în dosare ce privesc loviri/violențe (art. 193 CP) și vătămare corporală (art. 194 CP) – inclusiv forme agravate sau situațiile în care acțiunea penală se pornește din oficiu potrivit modificărilor legislative recente. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Vătămări corporale și loviri.</strong> Intervin în dosare ce privesc loviri/violențe (art. 193 CP) și vătămare corporală (art. 194 CP) – inclusiv forme agravate sau situațiile în care acțiunea penală se pornește din oficiu potrivit modificărilor legislative recente. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/275633" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              <strong>Vătămare/ucidere din culpă.</strong> Reprezint victimele (ori familiile) în cazuri de vătămare din culpă (art. 196 CP) și ucidere din culpă (art. 192 CP) – deseori corelate cu încălcări ale regulilor de circulație (OUG 195/2002; HG 1391/2006). (<a href="https://lege5.ro/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>, <a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Vătămare/ucidere din culpă.</strong> Reprezint victimele (ori familiile) în cazuri de vătămare din culpă (art. 196 CP) și ucidere din culpă (art. 192 CP) – deseori corelate cu încălcări ale regulilor de circulație (OUG 195/2002; HG 1391/2006). (<a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>, <a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               <strong>Accidente de muncă / răspundere angajator.</strong> Acopăr latura penală și civilă (despăgubiri, venituri pierdute, îngrijire, reparația integrală). Experiența mea include litigii penale cu componentă tehnică și probatoriu amplu.
@@ -101,13 +101,13 @@ export default function ReprezentareaVictimelor() {
                 <strong>Penal:</strong> plângere/completări probatorii, solicitare expertize (medico-legală, accidentologică), valorificarea drepturilor procesuale (art. 81 CPP).
               </li>
               <li>
-                <strong>Civil:</strong> constituire parte civilă în procesul penal sau acțiune separată; cuantific daune materiale (cheltuieli, venituri pierdute, îngrijiri) și morale, cu suport probator complet. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+                <strong>Civil:</strong> constituire parte civilă în procesul penal sau acțiune separată; cuantific daune materiale (cheltuieli, venituri pierdute, îngrijiri) și morale, cu suport probator complet. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
               </li>
             </ul>
           </div>
           <div>
             <p>
-              <strong>C) Negocierea cu asigurătorul RCA.</strong> Deschid și urmăresc dosarul de daună conform Legii 132/2017 și Normei 20/2017 (avizare, constatare, lichidare), negociez și valorific soluția cea mai avantajoasă (plată directă/decontare). (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>C) Negocierea cu asigurătorul RCA.</strong> Deschid și urmăresc dosarul de daună conform Legii 132/2017 și Normei 20/2017 (avizare, constatare, lichidare), negociez și valorific soluția cea mai avantajoasă (plată directă/decontare). (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </p>
           </div>
           <div>
@@ -135,7 +135,7 @@ export default function ReprezentareaVictimelor() {
               <strong>Dobânzi/actualizări:</strong> conform normelor aplicabile și jurisprudenței; pot negocia plăți în tranșe sau tranzacții prealabile.
             </li>
             <li>
-              <strong>De la cine?</strong> făptuitor, asigurătorul RCA (dacă e accident rutier), angajator (accidente de muncă), alți responsabili civilmente. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>De la cine?</strong> făptuitor, asigurătorul RCA (dacă e accident rutier), angajator (accidente de muncă), alți responsabili civilmente. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>
@@ -152,10 +152,10 @@ export default function ReprezentareaVictimelor() {
               <strong>Asistență medicală & documente:</strong> ia toate actele medicale +, la nevoie, certificat medico-legal.
             </li>
             <li>
-              <strong>Sesizează autoritățile:</strong> Poliție/Parchet; în accidente – reguli din OUG 195/2002 + HG 1391/2006. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Sesizează autoritățile:</strong> Poliție/Parchet; în accidente – reguli din OUG 195/2002 + HG 1391/2006. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              <strong>Deschide dosar RCA:</strong> avizare promptă, acte doveditoare (constatare, devize, dovezi cheltuieli). (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Deschide dosar RCA:</strong> avizare promptă, acte doveditoare (constatare, devize, dovezi cheltuieli). (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               <strong>Consultă un avocat:</strong> te reprezint ca persoană vătămată/parte civilă și calibrez cererile de despăgubiri în raport cu probele și legea. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
@@ -188,19 +188,19 @@ export default function ReprezentareaVictimelor() {
           <ol className="list-decimal pl-6 space-y-3">
             <li>
               <strong>E obligatoriu să merg în proces penal pentru despăgubiri?</strong>
-              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)</p>
+              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat. (Portal Legislativ)</p>
             </li>
             <li>
               <strong>Ce termen am pentru pretenții?</strong>
-              <p className="mt-1">Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)</p>
+              <p className="mt-1">Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri. (Portal Legislativ)</p>
             </li>
             <li>
               <strong>Ce înseamnă că „asigurătorul plătește”?</strong>
-              <p className="mt-1">La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)</p>
+              <p className="mt-1">La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor. (Portal Legislativ)</p>
             </li>
             <li>
               <strong>Pot participa activ la urmărirea penală?</strong>
-              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP). (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)</p>
+              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP). (Portal Legislativ)</p>
             </li>
           </ol>
         </CardContent>
@@ -234,19 +234,19 @@ export default function ReprezentareaVictimelor() {
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Cod penal – art. 192, 193, 194, 196. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://lege5.ro/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>)
+              Cod penal – art. 192, 193, 194, 196. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://lege5.ro/gratuit/gezdmnrzgi/art-196-vatamarea-corporala-din-culpa-codul-penal?dp=gqytsojugyzte" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>)
             </li>
             <li>
-              Cod procedură penală – art. 84–85; drepturile persoanei vătămate/partii civile; jurisprudență CCR pe art. 81. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Cod procedură penală – art. 84–85; drepturile persoanei vătămate/partii civile; jurisprudență CCR pe art. 81. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              OUG 195/2002 + HG 1391/2006 – circulație rutieră și regulament. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              OUG 195/2002 + HG 1391/2006 – circulație rutieră și regulament. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Legea 132/2017 + Norma ASF 20/2017 – RCA, dosar daună, limite și proceduri. (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
+              Legea 132/2017 + Norma ASF 20/2017 – RCA, dosar daună, limite și proceduri. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/ro/a/153/legisla%C8%9Bie-rca" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
             </li>
             <li>
-              Legea 211/2004 (protecția victimelor infracțiunilor). (<a href="https://legislatie.just.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Legea 211/2004 (protecția victimelor infracțiunilor). (<a href="https://legislatie.just.ro/Public/DetaliiDocument/52468" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>
