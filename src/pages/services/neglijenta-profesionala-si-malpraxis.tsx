@@ -84,7 +84,7 @@ export default function Malpraxis() {
       {/* Când devine fapta penală */}
       <Card className="mt-8 border-accent">
         <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Când devine fapta penală</h2>
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">Când fapta devine penală</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-3">
           <p>În paralel cu malpraxisul (civil), în anumite situații discutăm fapte penale:</p>
@@ -197,18 +197,22 @@ export default function Malpraxis() {
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-3">
-          <ol className="list-decimal pl-6 space-y-2">
+          <ol className="list-decimal pl-6 space-y-3">
             <li>
-              <strong>Pot cere despăgubiri fără proces penal?</strong> Da. Răspunderea civilă se poate valorifica separat (Comisie + acțiune civilă), independent de penal. (Titlul XVI Legea 95/2006).
+              <strong>Pot cere despăgubiri fără proces penal?</strong>
+              <p className="mt-1">Da. Răspunderea civilă se poate valorifica separat (Comisie + acțiune civilă), independent de penal. (Titlul XVI Legea 95/2006).</p>
             </li>
             <li>
-              <strong>Care este termenul de prescripție?</strong> De regulă, 3 ani pentru malpraxis pe civil; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale.
+              <strong>Care este termenul de prescripție?</strong>
+              <p className="mt-1">De regulă, 3 ani pentru malpraxis pe civil; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale.</p>
             </li>
             <li>
-              <strong>Ce se întâmplă dacă unitatea/medicul nu are asigurare?</strong> E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct. (Art. 689, 690–691 Legea 95/2006; OMS 482/2007).
+              <strong>Ce se întâmplă dacă unitatea/medicul nu are asigurare?</strong>
+              <p className="mt-1">E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct. (Art. 689, 690–691 Legea 95/2006; OMS 482/2007).</p>
             </li>
             <li>
-              <strong>Când discutăm „neglijență în serviciu” penal?</strong> Când încălcarea unei atribuții prevăzute de lege de către un funcționar public (ex. în unitate publică) cauzează pagubă/vătămare; pentru mediul privat funcționează extinderea din art. 308 CP.
+              <strong>Când discutăm „neglijență în serviciu” penal?</strong>
+              <p className="mt-1">Când încălcarea unei atribuții prevăzute de lege de către un funcționar public (ex. în unitate publică) cauzează pagubă/vătămare; pentru mediul privat funcționează extinderea din art. 308 CP.</p>
             </li>
           </ol>
         </CardContent>
@@ -243,10 +247,10 @@ export default function Malpraxis() {
               Legea nr. 95/2006 – Titlul XVI (fost XV): definiții, răspunderea personalului/ unităților, consimțământul informat, Comisia de malpraxis, prescripția (art. 653–691).
             </li>
             <li>
-              OMS nr. 482/2007 (Norme metodologice), cu modificările OMS 1411/2016. (Portal Legislativ)
+              OMS nr. 482/2007 (Norme metodologice), cu modificările OMS 1411/2016. (<a href="https://legislatie.just.ro/public/DetaliiDocument/219432" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Codul penal: art. 192 (ucidere din culpă), 196 (vătămare din culpă), 298 (neglijență în serviciu), 308 (fapte de serviciu comise de alte persoane). (Portal Legislativ)
+              Codul penal: art. 192 (ucidere din culpă), 196 (vătămare din culpă), 298 (neglijență în serviciu), 308 (fapte de serviciu comise de alte persoane). (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/80963" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>
