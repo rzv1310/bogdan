@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+
 import { generateMalpraxisChecklistDocx } from "@/lib/docx/malpraxisChecklist";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -16,13 +16,10 @@ export default function DocumenteMalpraxis() {
     try {
       const blob = await generateMalpraxisChecklistDocx();
       const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "Checklist-Malpraxis-Lamatic.docx";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
+      // Deschide în tab nou (fără a forța downloadul)
+      window.open(url, "_blank", "noopener,noreferrer");
+      // Revocă URL-ul după un timp scurt
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
     } catch (e) {
       console.error("Eroare la generarea DOCX:", e);
     }
@@ -34,6 +31,7 @@ export default function DocumenteMalpraxis() {
 
   return (
     <main className="container mx-auto max-w-3xl py-10">
+      <h1 className="sr-only">Checklist documente – Malpraxis: Descărcare DOCX</h1>
       <Card>
         <CardHeader>
           <CardTitle>Checklist documente – Malpraxis: Descărcare DOCX</CardTitle>
@@ -46,10 +44,7 @@ export default function DocumenteMalpraxis() {
         </CardContent>
         <CardFooter className="flex gap-3">
           <Button onClick={handleDownload} size="lg" aria-label="Descarcă din nou DOCX">
-            Descarcă din nou
-          </Button>
-          <Button asChild variant="secondary" size="lg" aria-label="Înapoi la Neglijență profesională și malpraxis">
-            <Link to="/servicii/neglijenta-profesionala-si-malpraxis">Înapoi</Link>
+            Deschide din nou în tab nou
           </Button>
         </CardFooter>
       </Card>
