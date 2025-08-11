@@ -154,7 +154,7 @@ export default function Contact() {
           </Button>
         </a>
         <div className="h-5"></div>
-        <div className="text-center text-sm text-muted-foreground font-medium">SAU</div>
+        <div className="text-left text-sm text-muted-foreground font-medium">SAU</div>
       </div>
 
       {/* Form Card */}
