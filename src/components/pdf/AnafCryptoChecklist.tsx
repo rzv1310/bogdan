@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page, Text, View, StyleSheet, Font } from "@react-pdf/renderer";
+import { Document, Page, Text, View, StyleSheet, Font, Link } from "@react-pdf/renderer";
 
 // Register fonts with diacritics support
 Font.register({
@@ -60,6 +60,36 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#ddd",
     borderBottomStyle: "solid",
+  },
+  // CTA box styles (accent-aligned)
+  ctaBox: {
+    borderWidth: 1,
+    borderColor: "#f59e0b",
+    borderStyle: "solid",
+    padding: 12,
+    borderRadius: 6,
+    marginTop: 16,
+    alignItems: "center",
+  },
+  ctaTitle: {
+    fontSize: 12,
+    fontWeight: "bold",
+    marginBottom: 8,
+  },
+  ctaButton: {
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: "#f59e0b",
+    borderStyle: "solid",
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 4,
+    textDecoration: "none",
+  },
+  ctaButtonText: {
+    color: "#111",
+    fontSize: 12,
+    fontWeight: "bold",
   },
 });
 
@@ -149,6 +179,13 @@ const AnafCryptoChecklist: React.FC = () => (
             <Bullet>Impozit = 10% x 120.000 = 12.000 lei.</Bullet>
             <Bullet>CASS: 120.000 ≥ 97.200 =&gt; Baza de calcul = 24 x 4.050 = 97.200; CASS = 9.720 lei.</Bullet>
           </View>
+        </View>
+        {/* CTA final */}
+        <View style={[styles.section, styles.ctaBox]}>
+          <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
+          <Link src="tel:+40745506443" style={styles.ctaButton}>
+            <Text style={styles.ctaButtonText}>Sună-mă acum!</Text>
+          </Link>
         </View>
       </View>
     </Page>
