@@ -162,7 +162,7 @@ export default function Contact() {
         <Card>
           <CardHeader className="pb-0">
             <CardTitle className="flex items-center gap-2 text-xl">
-              <Send className="h-5 w-5" aria-hidden="true" /> Trimite o solicitare
+              <Send className="h-5 w-5" aria-hidden="true" /> Trimite-mi o solicitare online
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
