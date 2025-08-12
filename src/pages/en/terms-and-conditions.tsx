@@ -100,6 +100,14 @@ export default function TermsAndConditionsEn() {
           For questions about these Terms: Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 745 506 443 • E‑mail: bogdan.lamatic@yahoo.com
         </p>
       </div>
+
+      <section aria-label="Related policies" className="mt-10">
+        <h2 className="text-xl font-semibold">Related policies</h2>
+        <ul className="list-disc pl-5">
+          <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR – Data Protection</a></li>
+          <li><a href="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</a></li>
+        </ul>
+      </section>
     </section>
   );
 }

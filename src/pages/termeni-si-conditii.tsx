@@ -107,6 +107,14 @@ export default function TermeniSiConditii() {
           Pentru întrebări privind acești Termeni: București, Sector 1, Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 745 506 443 • E‑mail: bogdan.lamatic@yahoo.com
         </p>
       </div>
+
+      <section aria-label="Politici conexe" className="mt-10">
+        <h2 className="text-xl font-semibold">Politici conexe</h2>
+        <ul className="list-disc pl-5">
+          <li><a href="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</a></li>
+          <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
+        </ul>
+      </section>
     </section>
   );
 }

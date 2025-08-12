@@ -102,6 +102,13 @@ export default function GDPRen() {
             <a href="mailto:bogdan.lamatic@yahoo.com"> bogdan.lamatic@yahoo.com</a>.
           </p>
         </section>
+        <section aria-label="Related policies" className="mt-10">
+          <h2>Related policies</h2>
+          <ul>
+            <li><a href="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</a></li>
+            <li><a href="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</a></li>
+          </ul>
+        </section>
       </article>
     </main>
   );

@@ -106,6 +106,13 @@ export default function GDPR() {
             <a href="mailto:bogdan.lamatic@yahoo.com"> bogdan.lamatic@yahoo.com</a>.
           </p>
         </section>
+        <section aria-label="Politici conexe" className="mt-10">
+          <h2>Politici conexe</h2>
+          <ul>
+            <li><a href="/termeni-si-conditii" className="underline hover:no-underline">Termeni și Condiții</a></li>
+            <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
+          </ul>
+        </section>
       </article>
     </main>
   );
