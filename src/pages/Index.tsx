@@ -300,9 +300,9 @@ const Index = () => {
                     <Link
                       to={serviceRoutes[i]!}
                       aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
-                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
                     >
-                      <Play className="h-5 w-5" aria-hidden="true" />
+                      <Play className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   )}
                 </GlowCard>
@@ -324,9 +324,9 @@ const Index = () => {
                     <Link
                       to={serviceRoutes[i + 4]!}
                       aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
-                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
                     >
-                      <Play className="h-5 w-5" aria-hidden="true" />
+                      <Play className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   )}
                 </GlowCard>
