@@ -34,7 +34,7 @@ export default function Blog() {
             </CardHeader>
             <CardContent>
               <Link to="/calculator-despagubiri" aria-label="Deschide calculatorul de despăgubiri">
-                <Button variant="hero" size="sm">Deschide</Button>
+                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Deschide</Button>
               </Link>
             </CardContent>
           </Card>
