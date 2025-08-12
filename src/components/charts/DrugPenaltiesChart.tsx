@@ -28,13 +28,16 @@ const defaultData: DrugPenaltyDataPoint[] = [
 
 interface DrugPenaltiesChartProps {
   data?: DrugPenaltyDataPoint[];
+  unit?: string;
+  minLabel?: string;
+  maxLabel?: string;
 }
 
-export default function DrugPenaltiesChart({ data = defaultData }: DrugPenaltiesChartProps) {
+export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim" }: DrugPenaltiesChartProps) {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   const tooltipFormatter = (value: number, name: string) => {
-    return [`${value} ani`, name] as [string, string];
+    return [`${value} ${unit}`, name] as [string, string];
   };
 
   const handleDownloadPNG = async () => {
@@ -91,8 +94,8 @@ export default function DrugPenaltiesChart({ data = defaultData }: DrugPenalties
                 <YAxis allowDecimals={false} domain={[0, 16]} />
                 <Tooltip formatter={tooltipFormatter as unknown as any} />
                 <Legend />
-                <Bar dataKey="Minim" fill="#FF7F0E" radius={[5, 5, 0, 0]} />
-                <Bar dataKey="Maxim" fill="#D62728" radius={[5, 5, 0, 0]} />
+                <Bar dataKey="Minim" name={minLabel} fill="#FF7F0E" radius={[5, 5, 0, 0]} />
+                <Bar dataKey="Maxim" name={maxLabel} fill="#D62728" radius={[5, 5, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>

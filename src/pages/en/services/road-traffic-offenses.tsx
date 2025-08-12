@@ -155,7 +155,13 @@ export default function RoadTrafficEn() {
         </Card>
 
         <div className="mt-8">
-          <RoadAccidentsChart />
+          <RoadAccidentsChart
+            data={[
+              { categorie: "Deaths", an2022: 1633, an2023: 1545 },
+              { categorie: "Seriously injured", an2022: 3695, an2023: 3537 },
+              { categorie: "Slightly injured", an2022: 2076, an2023: 2172 },
+            ]}
+          />
         </div>
       </section>
     </>

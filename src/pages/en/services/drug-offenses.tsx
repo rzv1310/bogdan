@@ -112,7 +112,15 @@ export default function DrugOffensesEn() {
         </Card>
 
         <div className="mt-8">
-          <DrugPenaltiesChart />
+          <DrugPenaltiesChart
+            data={[
+              { categorie: "Risk drugs", Minim: 2, Maxim: 7 },
+              { categorie: "High-risk drugs", Minim: 7, Maxim: 15 },
+            ]}
+            unit="years"
+            minLabel="Minimum"
+            maxLabel="Maximum"
+          />
         </div>
 
         {/* High-risk vs risk drugs */}

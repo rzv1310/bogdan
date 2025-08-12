@@ -16,13 +16,19 @@ import {
   LabelList,
 } from "recharts";
 
-const data = [
+export type RoadAccidentDataPoint = {
+  categorie: string;
+  an2022: number;
+  an2023: number;
+};
+
+const defaultData: RoadAccidentDataPoint[] = [
   { categorie: "Morți", an2022: 1633, an2023: 1545 },
   { categorie: "Răniți grav", an2022: 3695, an2023: 3537 },
   { categorie: "Răniți ușor", an2022: 2076, an2023: 2172 },
 ];
 
-export default function RoadAccidentsChart() {
+export default function RoadAccidentsChart({ data = defaultData }: { data?: RoadAccidentDataPoint[] }) {
   const chartRef = useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
 
