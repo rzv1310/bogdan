@@ -385,7 +385,7 @@ export default function About() {
                 <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
-                Articol despre Directiva privind avertizorii, 2023, Bizlawyer.ro, {" "}
+                Articol despre Directiva privind Avertizorii de Integritate, 2023, Bizlawyer.ro, {" "}
                 <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
