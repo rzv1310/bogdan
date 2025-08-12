@@ -76,10 +76,10 @@ export default function Footer() {
                 <Link to={lang === "en" ? "/en/terms-and-conditions" : "/termeni-si-conditii"} className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>
               </li>
               <li>
-                <Link to="/gdpr" className="hover:underline">GDPR</Link>
+                <Link to={lang === "en" ? "/en/gdpr" : "/gdpr"} className="hover:underline">GDPR</Link>
               </li>
               <li>
-                <Link to="/politica-cookies" className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
+                <Link to={lang === "en" ? "/en/cookie-policy" : "/politica-cookies"} className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
               </li>
             </ul>
           </nav>

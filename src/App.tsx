@@ -35,6 +35,10 @@ import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liabili
 import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
 import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
 import TermeniSiConditii from "./pages/termeni-si-conditii";
+import GDPR from "./pages/gdpr";
+import PoliticaCookies from "./pages/politica-cookies";
+import GDPRen from "./pages/en/gdpr";
+import CookiePolicyEn from "./pages/en/cookie-policy";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -61,6 +65,8 @@ const App = () => (
               <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
               <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
               <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
+              <Route path="/gdpr" element={<GDPR />} />
+              <Route path="/politica-cookies" element={<PoliticaCookies />} />
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />}>
@@ -68,6 +74,8 @@ const App = () => (
                </Route>
               <Route path="/en/contact" element={<ContactEn />} />
               <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
+              <Route path="/en/gdpr" element={<GDPRen />} />
+              <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
               <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
               <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
               <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
