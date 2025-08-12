@@ -7,7 +7,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function DrugOffensesEn() {
   useSEO({
-    title: "Criminal cases regarding drugs | DIICOT cases",
+    title: "Drug trafficking lawyer Bucharest – DIICOT defense | Bogdan Lamatic",
     description: "Defense in drug trafficking/possession cases across Romania.",
     alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" },
     locale: "en_US",
@@ -35,7 +35,7 @@ export default function DrugOffensesEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Criminal cases regarding drugs",
+            name: "Drug trafficking lawyer – Bucharest",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -46,7 +46,7 @@ export default function DrugOffensesEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Criminal cases regarding drugs – strategy and defense</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Drug trafficking lawyer – Bucharest | Strategy and defense – DIICOT cases</h1>
         <p className="mt-2 text-muted-foreground">by Bogdan Lamatic, criminal defense and white-collar lawyer</p>
 
         <div className="mt-4">

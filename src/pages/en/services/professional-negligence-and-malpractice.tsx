@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MalpracticeEn() {
   useSEO({
-    title: "Professional negligence and malpractice | Lawyer",
+    title: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
     description: "Defense and representation in medical malpractice cases.",
     alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" },
     locale: "en_US",
@@ -34,7 +34,7 @@ export default function MalpracticeEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Professional negligence and malpractice",
+            name: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/professional-negligence-and-malpractice` : "/en/services/professional-negligence-and-malpractice",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -45,7 +45,7 @@ export default function MalpracticeEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Professional negligence and malpractice</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
             I am attorney Bogdan Lamatic, with strong practice in criminal law (white-collar, service offenses) and

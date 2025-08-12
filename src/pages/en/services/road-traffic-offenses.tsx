@@ -7,7 +7,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 export default function RoadTrafficEn() {
   useSEO({
-    title: "Road traffic offenses with victims | Defense & Victim representation",
+    title: "Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest",
     description: "DUIs, no license, leaving the scene; accidents with/without victims.",
     alternates: { en: "/en/services/road-traffic-offenses", ro: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "en_US",
@@ -46,7 +46,7 @@ export default function RoadTrafficEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Road traffic offenses with victims</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
             I am attorney Bogdan Lamatic (Bucharest Bar, since 2007). I defend clients in traffic offenses – from matters

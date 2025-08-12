@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function FinancialCrimeEn() {
   useSEO({
-    title: "Economic Crime Lawyer | Bogdan Lamatic, Bucharest",
+    title: "Economic crime lawyer | White-collar specialist | Bogdan Lamatic, Bucharest",
     description: "Defense in fraud, embezzlement, tax evasion, AML cases.",
     alternates: { en: "/en/services/financial-crime", ro: "/servicii/criminalitate-economica" },
     locale: "en_US",
@@ -50,7 +50,7 @@ export default function FinancialCrimeEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Economic crime – defense and strategy",
+            name: "Economic crime lawyer | White-collar specialist",
             url:
               typeof window !== "undefined"
                 ? `${window.location.origin}/en/services/financial-crime`
@@ -68,7 +68,7 @@ export default function FinancialCrimeEn() {
       />
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Economic crime – defense and strategy</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Economic crime lawyer | White-collar specialist | Bogdan Lamatic</h1>
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>

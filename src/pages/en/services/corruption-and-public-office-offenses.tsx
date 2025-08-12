@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function CorruptionPublicOfficeEn() {
   useSEO({
-    title: "Corruption offenses and acts related to the exercise of public office | Defense",
+    title: "Corruption offenses and acts related to the exercise of public office – Attorney Bogdan Lamatic | Bucharest",
     description: "Bribery, influence peddling, abuse of office. DNA cases.",
     alternates: { en: "/en/services/corruption-and-public-office-offenses", ro: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
     locale: "en_US",
@@ -34,7 +34,7 @@ export default function CorruptionPublicOfficeEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Corruption offenses and acts related to the exercise of public office",
+            name: "Corruption offenses and acts related to the exercise of public office – Attorney Bogdan Lamatic | Bucharest",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/corruption-and-public-office-offenses` : "/en/services/corruption-and-public-office-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -45,7 +45,7 @@ export default function CorruptionPublicOfficeEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Corruption offenses and acts related to the exercise of public office</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Corruption offenses and acts related to the exercise of public office – Attorney Bogdan Lamatic | Bucharest</h1>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

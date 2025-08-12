@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function VictimRepresentationEn() {
   useSEO({
-    title: "Representation of victims in criminal proceedings",
+    title: "Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest",
     description: "Compensation for traffic accidents and bodily harm.",
     alternates: { en: "/en/services/victim-representation-in-criminal-cases", ro: "/servicii/reprezentarea-victimelor-in-procese-penale" },
     locale: "en_US",
@@ -34,7 +34,7 @@ export default function VictimRepresentationEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Representation of victims in criminal cases",
+            name: "Compensation for accident victims and bodily injury",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/victim-representation-in-criminal-cases` : "/en/services/victim-representation-in-criminal-cases",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -45,7 +45,7 @@ export default function VictimRepresentationEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Representation of victims in criminal proceedings</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
