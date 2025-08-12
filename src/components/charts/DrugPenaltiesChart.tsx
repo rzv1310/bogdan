@@ -31,9 +31,10 @@ interface DrugPenaltiesChartProps {
   unit?: string;
   minLabel?: string;
   maxLabel?: string;
+  title?: string;
 }
 
-export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim" }: DrugPenaltiesChartProps) {
+export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim", title }: DrugPenaltiesChartProps) {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   const tooltipFormatter = (value: number, name: string) => {
@@ -64,7 +65,7 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
           <header className="mb-4 sm:mb-6 flex items-start justify-between gap-3">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-                Pedepse privind infracțiunile legate de droguri
+                {title ?? "Pedepse privind infracțiunile legate de droguri"}
               </h2>
               <p className="text-xs sm:text-sm text-muted-foreground mt-1">
                 LEGE nr. 58 din 20 martie 2024 pentru completarea Legii nr. 143/2000 privind prevenirea și combaterea traficului și consumului ilicit de droguri, pentru modificarea Legii nr. 194/2011 privind combaterea operațiunilor cu produse susceptibile de a avea efecte psihoactive, altele decât cele prevăzute de acte normative în vigoare, precum și pentru completarea art. 91 alin. (3) din Legea nr. 286/2009 privind Codul penal

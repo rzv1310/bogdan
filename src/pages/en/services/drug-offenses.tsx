@@ -112,7 +112,7 @@ export default function DrugOffensesEn() {
         </Card>
 
         <div className="mt-8">
-          <DrugPenaltiesChart
+          <DrugPenaltiesChart title="Penalties for drug-related offenses"
             data={[
               { categorie: "Risk drugs", Minim: 2, Maxim: 7 },
               { categorie: "High-risk drugs", Minim: 7, Maxim: 15 },
