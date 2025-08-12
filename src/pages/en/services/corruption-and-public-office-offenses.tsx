@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import MitaBarChart from "@/components/charts/MitaBarChart";
 
 export default function CorruptionPublicOfficeEn() {
   useSEO({
@@ -165,6 +166,16 @@ export default function CorruptionPublicOfficeEn() {
             </ul>
           </CardContent>
         </Card>
+
+        <div className="mt-8">
+          <MitaBarChart
+            title="Defendants sent to trial for bribery / offering a bribe (arts. 289–290 CC), 2023–2024"
+            subtitle="Official data from the Public Ministry annual reports."
+            labels={{ luare: "Bribery (art. 289)", dare: "Offering a bribe (art. 290)" }}
+            downloadAriaLabel="Download chart as PNG"
+            filename="bribery-defendants-2023-2024-en.png"
+          />
+        </div>
       </section>
     </>
   );

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function FinancialCrimeEn() {
   useSEO({
@@ -161,6 +162,17 @@ export default function FinancialCrimeEn() {
             </ul>
           </CardContent>
         </Card>
+
+        {/* DIICOT chart */}
+        <div className="mt-8">
+          <EconomicCrimesChart
+            title="Economic and financial crime and smuggling cases (DIICOT)"
+            subtitle="Public summary data from DIICOT reports – 2023 vs 2024"
+            legendLabels={{ Active: "Active cases", Pasive: "Passive cases", Total: "Total" }}
+            downloadAriaLabel="Download chart as PNG"
+            filename="diicot-economic-crimes-2023-2024-en.png"
+          />
+        </div>
 
         <div className="mt-8">
           <Button asChild variant="premium" size="lg">

@@ -48,7 +48,7 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
         cacheBust: true,
       });
       const link = document.createElement("a");
-      link.download = `diicot-economic-crimes-${new Date().toISOString().slice(0, 10)}.png`;
+      link.download = filename ?? `diicot-economic-crimes-${new Date().toISOString().slice(0, 10)}.png`;
       link.href = dataUrl;
       link.click();
     } catch (err) {
@@ -63,10 +63,10 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
           <header className="mb-4 sm:mb-6 flex items-start justify-between gap-3">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-                Cauze economico-financiare și contrabandă (DIICOT)
+                {title ?? "Cauze economico-financiare și contrabandă (DIICOT)"}
               </h2>
               <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                Date sintetice publice din rapoartele DIICOT – 2023 vs 2024
+                {subtitle ?? "Date sintetice publice din rapoartele DIICOT – 2023 vs 2024"}
               </p>
             </div>
             <Button
@@ -74,7 +74,7 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
               variant="default"
               size="sm"
               className="shrink-0 rounded-xl"
-              aria-label="Descarcă graficul ca PNG"
+              aria-label={downloadAriaLabel}
             >
               <Download className="w-4 h-4 mr-2" /> PNG
             </Button>
@@ -99,9 +99,9 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                     labelStyle={{ fontWeight: 600 }}
                   />
                   <Legend wrapperStyle={{ fontSize: 12, paddingTop: 8 }} />
-                  <Bar dataKey="Active" fill="#1F77B4" radius={[6, 6, 0, 0]} />
-                  <Bar dataKey="Pasive" fill="#D62728" radius={[6, 6, 0, 0]} />
-                  <Bar dataKey="Total" fill="#FF7F0E" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="Active" name={legendLabels?.Active ?? "Active"} fill="#1F77B4" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="Pasive" name={legendLabels?.Pasive ?? "Pasive"} fill="#D62728" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="Total" name={legendLabels?.Total ?? "Total"} fill="#FF7F0E" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
