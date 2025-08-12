@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MoneyLaunderingEn() {
   useSEO({
-    title: "Money Laundering & Asset Concealment | Defense",
+    title: "Cases of money laundering and concealment of assets | Defense",
     description: "Defense in money laundering and asset concealment cases.",
     alternates: { en: "/en/services/money-laundering-and-asset-concealment", ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
     locale: "en_US",
@@ -23,7 +23,7 @@ export default function MoneyLaunderingEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/money-laundering-and-asset-concealment` : "/en/services/money-laundering-and-asset-concealment" },
+              { "@type": "ListItem", position: 2, name: "Cases of money laundering and concealment of assets", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/money-laundering-and-asset-concealment` : "/en/services/money-laundering-and-asset-concealment" },
             ],
           }),
         }}
@@ -34,7 +34,7 @@ export default function MoneyLaunderingEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Money laundering and asset concealment",
+            name: "Cases of money laundering and concealment of assets",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/money-laundering-and-asset-concealment` : "/en/services/money-laundering-and-asset-concealment",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -45,7 +45,7 @@ export default function MoneyLaunderingEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Money laundering and asset concealment</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Cases of money laundering and concealment of assets</h1>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -57,7 +57,7 @@ export default function MoneyLaunderingEn() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Money laundering and asset concealment</BreadcrumbPage>
+              <BreadcrumbPage>Cases of money laundering and concealment of assets</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

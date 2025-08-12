@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MalpracticeEn() {
   useSEO({
-    title: "Professional Negligence & Malpractice | Lawyer",
+    title: "Professional negligence and malpractice | Lawyer",
     description: "Defense and representation in medical malpractice cases.",
     alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" },
     locale: "en_US",

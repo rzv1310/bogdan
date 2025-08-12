@@ -8,7 +8,7 @@ import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 export default function CryptoInvestigationsEn() {
   useSEO({
-    title: "Crypto Asset Investigations | Lawyer in Bucharest",
+    title: "Investigations regarding crypto assets | Lawyer in Bucharest",
     description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
     alternates: { en: "/en/services/crypto-asset-investigations", ro: "/servicii/investigatii-privind-activele-cripto" },
     locale: "en_US",
@@ -33,7 +33,7 @@ export default function CryptoInvestigationsEn() {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Crypto asset investigations",
+                name: "Investigations regarding crypto assets",
                 item:
                   typeof window !== "undefined"
                     ? `${window.location.origin}/en/services/crypto-asset-investigations`
@@ -49,7 +49,7 @@ export default function CryptoInvestigationsEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Crypto asset investigations",
+            name: "Investigations regarding crypto assets",
             url:
               typeof window !== "undefined"
                 ? `${window.location.origin}/en/services/crypto-asset-investigations`
@@ -79,11 +79,11 @@ export default function CryptoInvestigationsEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Crypto asset investigations</BreadcrumbPage>
+                <BreadcrumbPage>Investigations regarding crypto assets</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">Crypto asset investigations</h1>
+          <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">Investigations regarding crypto assets</h1>
           <p className="mt-3 text-muted-foreground leading-relaxed">
             I am Bogdan Lamatic, attorney at the Bucharest Bar (since 2007), with deep practice in white-collar crime,
             internal investigations and compliance. I have represented clients in complex, cross-border matters with

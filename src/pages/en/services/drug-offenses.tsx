@@ -7,7 +7,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function DrugOffensesEn() {
   useSEO({
-    title: "Drug Offenses Defense | DIICOT cases",
+    title: "Criminal cases regarding drugs | DIICOT cases",
     description: "Defense in drug trafficking/possession cases across Romania.",
     alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" },
     locale: "en_US",
@@ -24,7 +24,7 @@ export default function DrugOffensesEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Drug offenses", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses" },
+              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses" },
             ],
           }),
         }}
@@ -35,7 +35,7 @@ export default function DrugOffensesEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Drug offenses",
+            name: "Criminal cases regarding drugs",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
@@ -46,7 +46,7 @@ export default function DrugOffensesEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Drug offenses – strategy and defense</h1>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Criminal cases regarding drugs – strategy and defense</h1>
         <p className="mt-2 text-muted-foreground">by Bogdan Lamatic, criminal defense and white-collar lawyer</p>
 
         <div className="mt-4">
@@ -70,7 +70,7 @@ export default function DrugOffensesEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Drug offenses</BreadcrumbPage>
+                <BreadcrumbPage>Criminal cases regarding drugs</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
