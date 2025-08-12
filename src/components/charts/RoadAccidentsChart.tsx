@@ -28,7 +28,7 @@ const defaultData: RoadAccidentDataPoint[] = [
   { categorie: "Răniți ușor", an2022: 2076, an2023: 2172 },
 ];
 
-export default function RoadAccidentsChart({ data = defaultData }: { data?: RoadAccidentDataPoint[] }) {
+export default function RoadAccidentsChart({ data = defaultData, title }: { data?: RoadAccidentDataPoint[]; title?: string }) {
   const chartRef = useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
 
@@ -90,7 +90,7 @@ export default function RoadAccidentsChart({ data = defaultData }: { data?: Road
         <CardHeader>
           <div className="flex items-start justify-between gap-3">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-              Accidentele rutiere grave și consecințele lor în 2022 și 2023
+              {title ?? "Accidentele rutiere grave și consecințele lor în 2022 și 2023"}
             </h2>
             <Button
               onClick={handleDownloadPNG}

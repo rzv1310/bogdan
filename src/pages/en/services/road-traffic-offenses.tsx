@@ -156,6 +156,7 @@ export default function RoadTrafficEn() {
 
         <div className="mt-8">
           <RoadAccidentsChart
+            title="Serious road accidents and their consequences in 2022 and 2023"
             data={[
               { categorie: "Deaths", an2022: 1633, an2023: 1545 },
               { categorie: "Seriously injured", an2022: 3695, an2023: 3537 },
