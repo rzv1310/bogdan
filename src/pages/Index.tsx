@@ -1,11 +1,12 @@
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle } from "lucide-react";
+import { Phone, CheckCircle, Play } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
+import { Link } from "react-router-dom";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -153,6 +154,18 @@ const reviewsEN: Reviews3DItem[] = [
   { name: "Elena C.", text: "The best criminal lawyer in Bucharest!", stars: 5 },
   { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
+const serviceRoutes: (string | null)[] = [
+  null,
+  "/servicii/criminalitate-economica",
+  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+  "/servicii/investigatii-privind-activele-cripto",
+  "/servicii/cauze-penale-privind-droguri",
+  "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
+  "/servicii/neglijenta-profesionala-si-malpraxis",
+  "/servicii/infractiuni-rutiere-cu-victime",
+  "/servicii/raspundere-penala-incidente-locul-de-munca",
+  "/servicii/reprezentarea-victimelor-in-procese-penale",
+] as const;
 
 const Index = () => {
   const { lang } = useLanguage();
@@ -277,12 +290,23 @@ const Index = () => {
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
             <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {t.services.slice(0, 4).map((s, i) => <GlowCard key={i} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full">
+              {t.services.slice(0, 4).map((s, i) => (
+                <GlowCard key={i} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
                   <article className="text-hero-foreground">
                     <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
                     <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
                   </article>
-                </GlowCard>)}
+                  {serviceRoutes[i] && (
+                    <Link
+                      to={serviceRoutes[i]!}
+                      aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
+                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+                    >
+                      <Play className="h-5 w-5" aria-hidden="true" />
+                    </Link>
+                  )}
+                </GlowCard>
+              ))}
               <div className="col-span-full flex justify-center">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
                   <Button variant="premium" size="lg" className="border border-hero-foreground">
@@ -290,12 +314,23 @@ const Index = () => {
                   </Button>
                 </a>
               </div>
-              {t.services.slice(4).map((s, i) => <GlowCard key={i + 4} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full">
+              {t.services.slice(4).map((s, i) => (
+                <GlowCard key={i + 4} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
                   <article className="text-hero-foreground">
                     <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
                     <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
                   </article>
-                </GlowCard>)}
+                  {serviceRoutes[i + 4] && (
+                    <Link
+                      to={serviceRoutes[i + 4]!}
+                      aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
+                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+                    >
+                      <Play className="h-5 w-5" aria-hidden="true" />
+                    </Link>
+                  )}
+                </GlowCard>
+              ))}
             </div>
             <div className="mt-8">
               <PulseBeams
