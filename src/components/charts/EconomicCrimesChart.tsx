@@ -29,9 +29,14 @@ const defaultData: EconomicCrimesDataPoint[] = [
 
 interface EconomicCrimesChartProps {
   data?: EconomicCrimesDataPoint[];
+  title?: string;
+  subtitle?: string;
+  legendLabels?: { Active: string; Pasive: string; Total: string };
+  downloadAriaLabel?: string;
+  filename?: string;
 }
 
-export default function EconomicCrimesChart({ data = defaultData }: EconomicCrimesChartProps) {
+export default function EconomicCrimesChart({ data = defaultData, title, subtitle, legendLabels, downloadAriaLabel = "Download chart as PNG", filename }: EconomicCrimesChartProps) {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   const handleDownloadPNG = async () => {

@@ -27,14 +27,31 @@ import { toPng } from "html-to-image";
 export default function MitaBarChart({
   source2023 = "https://www.mpublic.ro/sites/default/files/PDF/raport_activitate_2023.pdf",
   source2024 = "https://www.mpublic.ro/sites/default/files/PDF/raport_activitate_2024.pdf",
+  title,
+  labels,
+  subtitle,
+  downloadLabel = "PNG",
+  downloadAriaLabel = "Download chart as PNG",
+  filename,
 }: {
   source2023?: string;
   source2024?: string;
+  title?: string;
+  labels?: { luare: string; dare: string };
+  subtitle?: string;
+  downloadLabel?: string;
+  downloadAriaLabel?: string;
+  filename?: string;
 }) {
   const data = [
     { year: "2023", luare: 107, dare: 154 },
     { year: "2024", luare: 125, dare: 200 },
   ];
+
+  const effectiveLabelMap = {
+    luare: labels?.luare ?? "Luare de mită (art. 289)",
+    dare: labels?.dare ?? "Dare de mită (art. 290)",
+  } as const;
 
   const figRef = useRef<HTMLElement | null>(null);
   const [downloading, setDownloading] = useState(false);
@@ -49,7 +66,7 @@ export default function MitaBarChart({
         filter: (node) => !(node instanceof HTMLElement && (node as HTMLElement).dataset && (node as HTMLElement).dataset.exportIgnore === 'true'),
       });
       const link = document.createElement('a');
-      link.download = 'inculpati-trimisi-in-judecata-luare-dare-mita-art-289-290-2023-2024.png';
+      link.download = filename ?? 'inculpati-trimisi-in-judecata-luare-dare-mita-art-289-290-2023-2024.png';
       link.href = dataUrl;
       link.click();
     } catch (e) {
@@ -66,10 +83,10 @@ export default function MitaBarChart({
       <header className="mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
         <div>
           <h2 id="mita-title" className="text-xl md:text-2xl font-semibold">
-            Inculpați trimiși în judecată pentru luare / dare de mită (art. 289–290 CP), 2023 - 2024
+            {title ?? "Inculpați trimiși în judecată pentru luare / dare de mită (art. 289–290 CP), 2023 - 2024"}
           </h2>
           <p className="text-sm text-gray-600 mt-1">
-            Date oficiale din rapoartele anuale ale Ministerului Public.
+            {subtitle ?? "Date oficiale din rapoartele anuale ale Ministerului Public."}
           </p>
         </div>
         <button
@@ -78,7 +95,7 @@ export default function MitaBarChart({
           data-export-ignore="true"
           className="shrink-0 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-black text-black hover:bg-gray-50 transition disabled:opacity-60 disabled:cursor-not-allowed"
           aria-busy={downloading}
-          aria-label="Descarcă graficul ca PNG"
+          aria-label={downloadAriaLabel}
           disabled={downloading}
         >
           {downloading ? 'Se generează…' : (
@@ -87,7 +104,7 @@ export default function MitaBarChart({
               <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4.007 4.007a1 1 0 0 1-1.414 0L7.279 11.707a1 1 0 0 1 1.414-1.414L11 12.586V4a1 1 0 0 1 1-1z"/>
               <path d="M5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/>
             </svg>
-            <span>PNG</span>
+            <span>{downloadLabel}</span>
           </>
         )}
         </button>
@@ -97,11 +114,11 @@ export default function MitaBarChart({
       <div className="flex flex-wrap items-center gap-3 sm:gap-6 mb-2 text-xs sm:text-sm">
         <span className="inline-flex items-center gap-2">
           <span className="inline-block w-3.5 h-3.5 rounded-sm" style={{ background: '#ff7a00' }} />
-          Luare de mită (art. 289)
+          {effectiveLabelMap.luare}
         </span>
         <span className="inline-flex items-center gap-2">
           <span className="inline-block w-3.5 h-3.5 rounded-sm" style={{ background: '#dc2626' }} />
-          Dare de mită (art. 290)
+          {effectiveLabelMap.dare}
         </span>
       </div>
 
@@ -129,7 +146,7 @@ export default function MitaBarChart({
             <YAxis allowDecimals={false} tickLine={false} axisLine={{ stroke: "#e5e7eb" }} />
             <Tooltip
               cursor={{ fill: "rgba(0,0,0,0.04)" }}
-              formatter={(value: number, name: string) => [value, labelMap[name as keyof typeof labelMap]]}
+              formatter={(value: number, name: string) => [value, (effectiveLabelMap as Record<string, string>)[name] ?? name]}
             />
             
 
