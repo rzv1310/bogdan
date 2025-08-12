@@ -162,6 +162,25 @@ export default function DrugOffensesEn() {
             </div>
           </CardContent>
         </Card>
+
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <ul className="space-y-2">
+              <li>
+                <strong>Can I avoid prison if I had a small quantity?</strong> If it is proven to be for personal use, the penalty can be reduced or replaced with alternative measures.
+              </li>
+              <li>
+                <strong>What should I do if DIICOT summons me for a hearing?</strong> Contact your lawyer immediately and do not give statements without legal advice.
+              </li>
+              <li>
+                <strong>Can the legal qualification be changed from trafficking to possession?</strong> Yes, if there is no proof of intent to commercialize.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
       </section>
     </>
   );

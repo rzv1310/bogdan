@@ -151,6 +151,28 @@ export default function VictimRepresentationEn() {
           </CardContent>
         </Card>
 
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <ol className="list-decimal pl-6 space-y-3">
+              <li>
+                <strong>Is a criminal trial mandatory to obtain compensation?</strong> Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court – we choose the optimal strategy for time and result.
+              </li>
+              <li>
+                <strong>What deadlines apply?</strong> Deadlines depend on the nature of the act (criminal/civil) and the applicable limitation periods; in road accidents we act quickly and notify the insurer promptly.
+              </li>
+              <li>
+                <strong>What does it mean that “the insurer pays”?</strong> In road accidents, the RCA insurer covers the proven damage of third parties; the insurer has clear obligations for ascertainment and settlement of claims.
+              </li>
+              <li>
+                <strong>Can I participate actively in the criminal investigation?</strong> Yes. As an injured person/civil party you can consult the file, make requests and question witnesses/experts (under the law).
+              </li>
+            </ol>
+          </CardContent>
+        </Card>
+
         {/* Contact */}
         <Card className="mt-8 border-accent">
           <CardHeader>

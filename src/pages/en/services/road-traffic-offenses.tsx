@@ -154,6 +154,25 @@ export default function RoadTrafficEn() {
           </CardContent>
         </Card>
 
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <ul className="space-y-2">
+              <li>
+                <strong>Is 0.80 g/l alcohol in blood always a crime?</strong> Yes, above the threshold it falls under art. 336(1); under the threshold we discuss contravention (Road Code). For drugs, the biologically/toxicologically confirmed influence matters.
+              </li>
+              <li>
+                <strong>What if I refuse to provide biological samples?</strong> It is a separate offense (art. 337), even if the BAC would have been below the threshold.
+              </li>
+              <li>
+                <strong>When is leaving the scene not an offense?</strong> The law provides limited situations (e.g., transporting the injured with immediate return).
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
         <div className="mt-8">
           <RoadAccidentsChart
             title="Serious road accidents and their consequences in 2022 and 2023"

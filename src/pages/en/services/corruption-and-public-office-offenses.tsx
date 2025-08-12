@@ -146,6 +146,25 @@ export default function CorruptionPublicOfficeEn() {
             </div>
           </CardContent>
         </Card>
+
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <ul className="space-y-2">
+              <li>
+                <strong>I was offered a "tip". What should I do?</strong> Do not accept. If you have offered money under pressure, we immediately discuss the opportunity of self-reporting (art. 290(3)).
+              </li>
+              <li>
+                <strong>My case is with the DNA. Does the "amount" matter?</strong> Competence may depend on the nature of the offense and criteria in GEO 43/2002; we check your exact situation.
+              </li>
+              <li>
+                <strong>I hold a management role in a state-owned company. Does art. 308 apply to me?</strong> Yes, the rule extends to assimilated persons – we analyze your concrete duties.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
       </section>
     </>
   );

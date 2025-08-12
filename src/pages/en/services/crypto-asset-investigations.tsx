@@ -200,6 +200,34 @@ export default function CryptoInvestigationsEn() {
                 </ul>
               </div>
             </CardContent>
+        </Card>
+        </section>
+
+        <section className="mt-8">
+          <Card className="border-accent">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-base leading-relaxed">
+              <div>
+                <p className="font-semibold">Is “crypto” legal in Romania?</p>
+                <p className="text-muted-foreground">
+                  Yes. It is not legal tender, but holding/trading is allowed; MiCA/TFR, Law 129/2019, the Criminal Code and the Tax Code apply; authorities (NBR/ASF/FIU/ANAF) have distinct roles.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold">Can a lawyer help me recover funds?</p>
+                <p className="text-muted-foreground">
+                  Yes — I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES).
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold">I’m a crypto entrepreneur — what should I have done “yesterday”?</p>
+                <p className="text-muted-foreground">
+                  Do a MiCA/TFR gap assessment, risk-based KYC, sanctions screening, incident-response procedures, staff training, and prepare documentation for authorizations/registrations. The ASF has signaled the need for a national competence framework.
+                </p>
+              </div>
+            </CardContent>
           </Card>
         </section>
 
