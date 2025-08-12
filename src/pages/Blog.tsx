@@ -27,14 +27,14 @@ export default function Blog() {
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article>
-          <Card className="transition-colors border-accent hover:border-primary">
+          <Card className="transition-all hover:shadow-lg border-transparent bg-[image:var(--gradient-primary)] text-hero-foreground hover-scale">
             <CardHeader>
               <CardTitle>Calculator despăgubiri</CardTitle>
-              <CardDescription>Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
+              <CardDescription className="text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
             </CardHeader>
             <CardContent>
               <Link to="/calculator-despagubiri" aria-label="Deschide calculatorul de despăgubiri">
-                <Button variant="secondary" size="sm">Deschide</Button>
+                <Button variant="hero" size="sm">Deschide</Button>
               </Link>
             </CardContent>
           </Card>
