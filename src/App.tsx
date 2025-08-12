@@ -22,6 +22,7 @@ import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
 import { LanguageProvider } from "@/context/language";
 
 // EN pages
+import EnIndex from "./pages/en";
 import ContactEn from "./pages/en/contact";
 import FinancialCrimeEn from "./pages/en/services/financial-crime";
 import CorruptionPublicOfficeEn from "./pages/en/services/corruption-and-public-office-offenses";
@@ -60,7 +61,10 @@ const App = () => (
               <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
               <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
 
-              {/* EN routes */}
+               {/* EN routes */}
+               <Route path="/en" element={<EnIndex />}>
+                 <Route index element={<Index />} />
+               </Route>
               <Route path="/en/contact" element={<ContactEn />} />
               <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
               <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
