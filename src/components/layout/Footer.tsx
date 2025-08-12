@@ -73,7 +73,7 @@ export default function Footer() {
                 <a href="https://consumer-redress.ec.europa.eu/index_ro" target="_blank" rel="noopener noreferrer" className="hover:underline">ANPC-SOL</a>
               </li>
               <li>
-                <Link to="/termeni-si-conditii" className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>
+                <Link to={lang === "en" ? "/en/terms-and-conditions" : "/termeni-si-conditii"} className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>
               </li>
               <li>
                 <Link to="/gdpr" className="hover:underline">GDPR</Link>

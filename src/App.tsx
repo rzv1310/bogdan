@@ -33,8 +33,8 @@ import MalpracticeEn from "./pages/en/services/professional-negligence-and-malpr
 import RoadTrafficEn from "./pages/en/services/road-traffic-offenses";
 import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liability";
 import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
-
-
+import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
+import TermeniSiConditii from "./pages/termeni-si-conditii";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -60,12 +60,14 @@ const App = () => (
               <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
               <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
               <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
+              <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />}>
                  <Route index element={<Index />} />
                </Route>
               <Route path="/en/contact" element={<ContactEn />} />
+              <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
               <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
               <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
               <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
