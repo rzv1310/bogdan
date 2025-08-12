@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Menu, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,15 +21,29 @@ import {
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 
-import { services } from "@/lib/services";
+import { services, servicesEn } from "@/lib/services";
+import { mapPathToLang } from "@/lib/routeMap";
 
 export default function Header() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const svcList = lang === "en" ? servicesEn : services;
+
   const labelFor = (path: string, fallback: string) => {
     const slug = path.split("/").pop() || "";
     return (t as any).navServices?.[slug] ?? fallback;
   };
+
+  const switchLang = (target: "ro" | "en") => {
+    if (target === lang) return;
+    setLang(target);
+    const to = mapPathToLang(pathname, target);
+    navigate(to);
+  };
+
   return (
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
@@ -48,7 +62,7 @@ export default function Header() {
                 <NavigationMenuTrigger className="px-3 py-2 text-base">{t.nav.services}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
-                    {services.map((s) => (
+                    {svcList.map((s) => (
                       <li key={s.to}>
                         <NavigationMenuLink asChild>
                           <Link to={s.to} className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug">
@@ -63,7 +77,7 @@ export default function Header() {
             </NavigationMenuList>
           </NavigationMenu>
           <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
+          <NavLink to={lang === "en" ? "/en/contact" : "/contact"} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
 
           {/* Language selector (desktop) */}
           <div className="ml-3 pl-3 border-l flex items-center gap-1">
@@ -73,7 +87,7 @@ export default function Header() {
               className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
               aria-label="Schimbă limba în română"
               aria-pressed={lang === "ro"}
-              onClick={() => setLang("ro")}
+              onClick={() => switchLang("ro")}
             >
               RO
             </Button>
@@ -83,7 +97,7 @@ export default function Header() {
               className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
               aria-label="Schimbă limba în engleză"
               aria-pressed={lang === "en"}
-              onClick={() => setLang("en")}
+              onClick={() => switchLang("en")}
             >
               EN
             </Button>
@@ -98,7 +112,7 @@ export default function Header() {
             className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
             aria-label="Schimbă limba în română"
             aria-pressed={lang === "ro"}
-            onClick={() => setLang("ro")}
+            onClick={() => switchLang("ro")}
           >
             RO
           </Button>
@@ -108,7 +122,7 @@ export default function Header() {
             className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
             aria-label="Schimbă limba în engleză"
             aria-pressed={lang === "en"}
-            onClick={() => setLang("en")}
+            onClick={() => switchLang("en")}
           >
             EN
           </Button>
@@ -146,7 +160,7 @@ export default function Header() {
                     </CollapsibleTrigger>
                     <CollapsibleContent>
                       <ul className="mt-1 space-y-1 pl-3 border-l">
-                        {services.map((s) => (
+                        {svcList.map((s) => (
                           <li key={s.to}>
                             <DrawerClose asChild>
                               <Button asChild variant="ghost" className="w-full justify-start text-left whitespace-normal break-words leading-snug">
@@ -169,7 +183,7 @@ export default function Header() {
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/contact">{t.nav.contact}</Link>
+                      <Link to={lang === "en" ? "/en/contact" : "/contact"}>{t.nav.contact}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
