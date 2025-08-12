@@ -1,5 +1,6 @@
 export const roToEn: Record<string, string> = {
   "/contact": "/en/contact",
+  "/termeni-si-conditii": "/en/terms-and-conditions",
   "/servicii/criminalitate-economica": "/en/services/financial-crime",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "/en/services/corruption-and-public-office-offenses",
   "/servicii/investigatii-privind-activele-cripto": "/en/services/crypto-asset-investigations",
