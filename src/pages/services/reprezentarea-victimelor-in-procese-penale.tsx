@@ -142,7 +142,7 @@ export default function ReprezentareaVictimelor() {
           <p className="pt-2">
             <Link
               to="/calculator-despagubiri"
-              className="inline-flex items-center gap-2 rounded-md border-2 border-accent bg-accent/25 text-muted-foreground px-3 py-1.5 text-sm font-medium hover:bg-accent/35 transition-colors"
+              className="inline-flex items-center gap-2 rounded-md border-2 border-accent bg-accent text-primary-foreground px-3 py-1.5 text-sm font-semibold hover:opacity-90 transition-colors"
               aria-label="Deschide calculatorul de despăgubiri"
             >
               <Calculator className="h-4 w-4" aria-hidden="true" />
