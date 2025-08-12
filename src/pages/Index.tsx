@@ -6,8 +6,6 @@ import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
-import { Link } from "react-router-dom";
-import { services as servicesList } from "@/lib/services";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -159,7 +157,6 @@ const reviewsEN: Reviews3DItem[] = [
 const Index = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
-  const serviceRoutes = [null, ...servicesList.map((s) => s.to)];
   return <div className="min-h-screen bg-background text-foreground">
 
       <main>
@@ -280,7 +277,7 @@ const Index = () => {
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
             <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {t.services.slice(0, 4).map((s, i) => <GlowCard key={i} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
+              {t.services.slice(0, 4).map((s, i) => <GlowCard key={i} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full">
                   <article className="text-hero-foreground">
                     <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
                     <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
