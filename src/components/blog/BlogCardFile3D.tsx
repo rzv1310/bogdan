@@ -8,9 +8,6 @@ interface BlogCardFile3DProps {
   description?: string
   to: string
   ctaLabel?: string
-  autoIntervalMs?: number
-  autoDurationMs?: number
-  disableAutoOnReduceMotion?: boolean
 }
 
 export function BlogCardFile3D({
@@ -18,9 +15,6 @@ export function BlogCardFile3D({
   description,
   to,
   ctaLabel = "Deschide",
-  autoIntervalMs = 3000,
-  autoDurationMs = 600,
-  disableAutoOnReduceMotion = true,
 }: BlogCardFile3DProps) {
   const descId = React.useId()
 
