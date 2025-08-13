@@ -25,6 +25,7 @@ export function BlogCardFile3D({
   const containerRef = React.useRef<HTMLDivElement | null>(null)
   const [active, setActive] = React.useState(false)
   const [inView, setInView] = React.useState(false)
+  const [hovered, setHovered] = React.useState(false)
 
   // Track if element is in viewport
   React.useEffect(() => {
@@ -41,7 +42,7 @@ export function BlogCardFile3D({
 
   // Auto "peek" animation
   React.useEffect(() => {
-    if (!inView || typeof window === "undefined") return
+    if (!inView || hovered || typeof window === "undefined") return
 
     const prefersReduced = window.matchMedia
       ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
@@ -63,13 +64,18 @@ export function BlogCardFile3D({
       window.clearInterval(intervalId)
       if (timeoutId) window.clearTimeout(timeoutId)
     }
-  }, [inView, autoIntervalMs, autoDurationMs, disableAutoOnReduceMotion])
+  }, [inView, hovered, autoIntervalMs, autoDurationMs, disableAutoOnReduceMotion])
 
   const descId = React.useId()
 
   return (
     <article aria-labelledby={descId} className="animate-fade-in">
-      <div ref={containerRef} className="group">
+      <div
+        ref={containerRef}
+        className="group"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
         {/* 3D file/folder card */}
         <Link
           to={to}
@@ -80,8 +86,9 @@ export function BlogCardFile3D({
             className={cn(
               "relative w-full aspect-[3/2] rounded-xl border border-accent/40",
               "bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))]",
-              "shadow-sm transition-transform duration-300 transform-gpu hover-scale",
-              active ? "-translate-y-1 rotate-[-1.5deg]" : "translate-y-0 rotate-0"
+              "shadow-sm transition-transform ease-out duration-300 will-change-transform transform-gpu hover-scale",
+              active ? "-translate-y-1 rotate-[-2deg] shadow-md" : "translate-y-0 rotate-0",
+              "group-hover:-translate-y-1 group-hover:rotate-[-2deg] group-hover:shadow-lg"
             )}
           >
             {/* Depth layers */}
