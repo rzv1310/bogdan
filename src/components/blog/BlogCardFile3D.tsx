@@ -20,12 +20,11 @@ export function BlogCardFile3D({
 
   return (
     <article aria-labelledby={descId} className="animate-fade-in">
-      <div className="group">
         {/* 3D file/folder card */}
         <Link
           to={to}
           aria-label={`${ctaLabel}: ${title}`}
-          className="block w-full"
+          className="relative group flex flex-col items-center justify-center w-full h-full cursor-pointer"
         >
           <div
             className={cn(
@@ -64,7 +63,7 @@ export function BlogCardFile3D({
             <div
               aria-hidden
               className={cn(
-                "absolute -inset-[6px] rounded-2xl opacity-0",
+                "absolute -inset-[6px] rounded-2xl opacity-0 pointer-events-none",
                 "transition-opacity duration-300",
                 "group-hover:opacity-100",
                 "bg-[radial-gradient(120%_120%_at_50%_0%,hsl(var(--primary)/0.25)_0%,transparent_60%)]"
@@ -72,7 +71,6 @@ export function BlogCardFile3D({
             />
           </div>
         </Link>
-      </div>
 
       {/* Text under card */}
       <div className="mt-3">
