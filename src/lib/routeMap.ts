@@ -4,6 +4,7 @@ export const roToEn: Record<string, string> = {
   "/gdpr": "/en/gdpr",
   "/politica-cookies": "/en/cookie-policy",
   "/blog": "/en/blog",
+  "/despre-mine": "/en/about",
   "/servicii/criminalitate-economica": "/en/services/financial-crime",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "/en/services/corruption-and-public-office-offenses",
   "/servicii/investigatii-privind-activele-cripto": "/en/services/crypto-asset-investigations",

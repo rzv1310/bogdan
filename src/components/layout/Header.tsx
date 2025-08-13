@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex flex-col items-center leading-none text-center select-none">
+        <Link to={mapPathToLang("/", lang)} className="flex flex-col items-center leading-none text-center select-none">
           <span className="block ml-1 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
             {lang === "ro" ? "CABINET AVOCAT" : "LAW OFFICE"}
           </span>
@@ -76,8 +76,8 @@ export default function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <NavLink to="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
-          <NavLink to={lang === "en" ? "/en/contact" : "/contact"} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
+          <NavLink to={mapPathToLang("/despre-mine", lang)} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
+          <NavLink to={mapPathToLang("/contact", lang)} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
 
           {/* Language selector (desktop) */}
           <div className="ml-3 pl-3 border-l flex items-center gap-1">
@@ -146,7 +146,7 @@ export default function Header() {
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/despre-mine">{t.nav.about}</Link>
+                      <Link to={mapPathToLang("/despre-mine", lang)}>{t.nav.about}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
@@ -176,14 +176,14 @@ export default function Header() {
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to="/blog">{t.nav.blog}</Link>
+                      <Link to={mapPathToLang("/blog", lang)}>{t.nav.blog}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
                 <li>
                   <DrawerClose asChild>
                     <Button asChild variant="ghost" className="w-full justify-start">
-                      <Link to={lang === "en" ? "/en/contact" : "/contact"}>{t.nav.contact}</Link>
+                      <Link to={mapPathToLang("/contact", lang)}>{t.nav.contact}</Link>
                     </Button>
                   </DrawerClose>
                 </li>
