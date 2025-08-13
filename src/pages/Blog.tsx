@@ -1,8 +1,8 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-
-
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
   useSEO({
@@ -27,12 +27,16 @@ export default function Blog() {
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article>
-          <Card className="blog-card text-card-foreground">
-            <span className="blog-card__ribbon" aria-hidden="true"></span>
-            <CardHeader className="text-right">
-              <CardTitle className="text-right">Calculator despăgubiri</CardTitle>
-              <CardDescription className="text-right text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
+          <Card className="transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+            <CardHeader>
+              <CardTitle>Calculator despăgubiri</CardTitle>
+              <CardDescription className="text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
             </CardHeader>
+            <CardContent>
+              <Link to="/calculator-despagubiri" aria-label="Deschide calculatorul de despăgubiri">
+                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Deschide</Button>
+              </Link>
+            </CardContent>
           </Card>
         </article>
       </div>
