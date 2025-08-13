@@ -268,12 +268,10 @@ export default function SpalareDeBani() {
 
         {/* Concluzie + CTA final */}
         <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">Concluzie</h2>
-          </CardHeader>
+          {/* Removed header as requested */}
           <CardContent className="space-y-3 text-base leading-relaxed">
             <p>
-              Dosarele de spălare de bani și ascundere de bunuri nu sunt simple ecuații financiare. Ele implică responsabilități morale, încredere în relațiile de afaceri și un echilibru între protejarea patrimoniului și respectarea legii.
+              Dosarele de spălare de bani și ascundere de bunuri nu sunt simple ecuații financiare.
             </p>
             <p>
               O apărare eficientă combină analiza tehnică a fluxurilor financiare cu o strategie juridică adaptată fiecărui capăt de acuzare și o gestiune atentă a măsurilor asigurătorii.
@@ -285,11 +283,6 @@ export default function SpalareDeBani() {
               <Button asChild variant="premium" size="lg">
                 <a href="tel:+40745506443" aria-label="Sună acum pentru analiză confidențială">
                   <Phone className="mr-2" /> Sună acum
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href="mailto:office@lamatic.ro" aria-label="Trimite email pentru programare">
-                  <Mail className="mr-2" /> Trimite email
                 </a>
               </Button>
             </div>
