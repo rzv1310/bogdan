@@ -29,9 +29,9 @@ export default function Blog() {
         <article>
           <Card className="blog-card text-card-foreground">
             <span className="blog-card__ribbon" aria-hidden="true"></span>
-            <CardHeader className="text-left">
-              <CardTitle className="text-left">Calculator despăgubiri</CardTitle>
-              <CardDescription className="text-left text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
+            <CardHeader className="text-right">
+              <CardTitle className="text-right">Calculator despăgubiri</CardTitle>
+              <CardDescription className="text-right text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
             </CardHeader>
           </Card>
         </article>
