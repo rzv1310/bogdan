@@ -22,60 +22,11 @@ export function BlogCardFile3D({
   autoDurationMs = 600,
   disableAutoOnReduceMotion = true,
 }: BlogCardFile3DProps) {
-  const containerRef = React.useRef<HTMLDivElement | null>(null)
-  const [active, setActive] = React.useState(false)
-  const [inView, setInView] = React.useState(false)
-  const [hovered, setHovered] = React.useState(false)
-
-  // Track if element is in viewport
-  React.useEffect(() => {
-    const el = containerRef.current
-    if (!el || typeof window === "undefined") return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.5 }
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [])
-
-  // Auto "peek" animation
-  React.useEffect(() => {
-    if (!inView || hovered || typeof window === "undefined") return
-
-    const prefersReduced = window.matchMedia
-      ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
-      : false
-
-    if (disableAutoOnReduceMotion && prefersReduced) return
-
-    let timeoutId: number | undefined
-    const start = () => {
-      setActive(true)
-      timeoutId = window.setTimeout(() => setActive(false), autoDurationMs)
-    }
-
-    const intervalId = window.setInterval(start, autoIntervalMs)
-    // Run once initially (feels more responsive)
-    start()
-
-    return () => {
-      window.clearInterval(intervalId)
-      if (timeoutId) window.clearTimeout(timeoutId)
-    }
-  }, [inView, hovered, autoIntervalMs, autoDurationMs, disableAutoOnReduceMotion])
-
   const descId = React.useId()
 
   return (
     <article aria-labelledby={descId} className="animate-fade-in">
-      <div
-        ref={containerRef}
-        className="group"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
+      <div className="group">
         {/* 3D file/folder card */}
         <Link
           to={to}
@@ -87,8 +38,7 @@ export function BlogCardFile3D({
               "relative w-full aspect-[3/2] rounded-xl border border-accent/40",
               "bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))]",
               "shadow-sm transition-transform ease-out duration-300 will-change-transform transform-gpu hover-scale",
-              active ? "-translate-y-1 rotate-[-2deg] shadow-md" : "translate-y-0 rotate-0",
-              "group-hover:-translate-y-1 group-hover:rotate-[-2deg] group-hover:shadow-lg"
+              "translate-y-0 rotate-0 group-hover:-translate-y-1 group-hover:rotate-[-1.5deg] group-hover:shadow-lg"
             )}
           >
             {/* Depth layers */}
