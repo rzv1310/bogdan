@@ -185,9 +185,9 @@ export default function Contact() {
             email: "bogdan.lamatic@yahoo.com",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5",
-              addressLocality: "Bucharest",
-              addressRegion: "1st District",
+              streetAddress: "Strada Colonel Stefan Stoika 22",
+              addressLocality: "Bucuresti",
+              addressRegion: "012244",
               addressCountry: "RO",
             },
             openingHours: ["Mo-Fr 08:00-18:00"],

@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
-                <span>Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5</span>
+                <span>{lang === "en" ? "Strada Colonel Stefan Stoika 22, Bucuresti 012244" : "Strada Colonel Stefan Stoika 22, București 012244"}</span>
               </li>
               <li>
                 <span>{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}

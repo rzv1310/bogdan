@@ -23,9 +23,9 @@ export default function About() {
     jobTitle: "Attorney",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Bucharest",
-      addressRegion: "1st District",
-      streetAddress: "22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5",
+      addressLocality: "Bucuresti",
+      addressRegion: "012244",
+      streetAddress: "Strada Colonel Stefan Stoika 22",
       addressCountry: "RO",
     },
     email: "mailto:bogdan.lamatic@yahoo.com",
@@ -69,7 +69,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Address</dt>
-                <dd className="font-medium">Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5</dd>
+                <dd className="font-medium">Strada Colonel Stefan Stoika 22, Bucuresti 012244</dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telephone</dt>
@@ -230,7 +230,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Adresă</dt>
-                <dd className="font-medium">București, Sector 1, Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5</dd>
+                <dd className="font-medium">Strada Colonel Stefan Stoika 22, București 012244</dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telefon</dt>
