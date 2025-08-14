@@ -12,7 +12,7 @@ export default function About() {
     title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic",
     description:
       lang === "en"
-        ? "About me - Europass CV of attorney Bogdan Lamatic: experience, recognitions, publications."
+        ? "About attorney Bogdan Lamatic: experience, recognitions, publications and professional background."
         : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
   });
 
@@ -30,8 +30,6 @@ export default function About() {
     },
     email: "mailto:bogdan.lamatic@yahoo.com",
     telephone: "+40 745 506 443",
-    nationality: "Romanian",
-    birthDate: "1983-07-19",
     memberOf: [
       { "@type": "Organization", name: "Bucharest Bar" },
       { "@type": "Organization", name: "Romanian Lawyers Union" }
@@ -58,8 +56,8 @@ export default function About() {
       {lang === "en" ? (
         <main className="mt-6 space-y-8">
           <header>
-            <p className="text-sm text-muted-foreground">Curriculum vitae - Europass</p>
-            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Europass CV - About Me</h1>
+            <p className="text-sm text-muted-foreground">Curriculum vitae</p>
+            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - About Me</h1>
           </header>
 
           <section aria-labelledby="personal-info" className="grid gap-4">
@@ -80,18 +78,6 @@ export default function About() {
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
                 <dd className="font-medium">bogdan.lamatic@yahoo.com</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Nationality</dt>
-                <dd className="font-medium">Romanian</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Birth date</dt>
-                <dd className="font-medium">19.07.1983</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Sex</dt>
-                <dd className="font-medium">Male</dd>
               </div>
             </dl>
           </section>
@@ -231,8 +217,8 @@ export default function About() {
       ) : (
         <main className="mt-6 space-y-8">
           <header>
-            <p className="text-sm text-muted-foreground">Curriculum vitae - Europass</p>
-            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - CV Europass - Despre mine</h1>
+            <p className="text-sm text-muted-foreground">Curriculum vitae</p>
+            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Despre mine</h1>
           </header>
 
           <section aria-labelledby="personal-info-ro" className="grid gap-4">
@@ -253,18 +239,6 @@ export default function About() {
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
                 <dd className="font-medium">bogdan.lamatic@yahoo.com</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Naționalitate</dt>
-                <dd className="font-medium">Română</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Data nașterii</dt>
-                <dd className="font-medium">19.07.1983</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-muted-foreground">Sex</dt>
-                <dd className="font-medium">Masculin</dd>
               </div>
             </dl>
           </section>
