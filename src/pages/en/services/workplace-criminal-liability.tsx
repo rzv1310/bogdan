@@ -143,6 +143,16 @@ export default function WorkplaceLiabilityEn() {
           </CardContent>
         </Card>
 
+        {/* CTA Button after 3rd card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              I want a lawyer!
+            </Button>
+          </a>
+        </div>
+
         {/* Criminal liability */}
         <Card className="mt-8 border-accent">
           <CardHeader>
@@ -210,6 +220,16 @@ export default function WorkplaceLiabilityEn() {
             </p>
           </CardContent>
         </Card>
+
+        {/* CTA Button after 6th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              I want a lawyer!
+            </Button>
+          </a>
+        </div>
 
         {/* Workers' obligations */}
         <Card className="mt-8 border-accent">
@@ -301,6 +321,16 @@ export default function WorkplaceLiabilityEn() {
           </CardContent>
         </Card>
 
+        {/* CTA Button after 9th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              I want a lawyer!
+            </Button>
+          </a>
+        </div>
+
         {/* OSH services outsourcing */}
         <Card className="mt-8 border-accent">
           <CardHeader>
@@ -357,6 +387,16 @@ export default function WorkplaceLiabilityEn() {
             </p>
           </CardContent>
         </Card>
+
+        {/* CTA Button after 12th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              I want a lawyer!
+            </Button>
+          </a>
+        </div>
 
         {/* Prevention and defense strategies */}
         <Card className="mt-8 border-accent">

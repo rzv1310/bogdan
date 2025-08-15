@@ -142,6 +142,16 @@ export default function RaspunderePenalaMunca() {
           </CardContent>
         </Card>
 
+        {/* CTA Button after 3rd card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              Vreau avocat!
+            </Button>
+          </a>
+        </div>
+
         {/* Răspunderea penală */}
         <Card className="mt-8 border-accent">
           <CardHeader>
@@ -215,6 +225,16 @@ export default function RaspunderePenalaMunca() {
           </CardContent>
         </Card>
 
+        {/* CTA Button after 6th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              Vreau avocat!
+            </Button>
+          </a>
+        </div>
+
         {/* Obligațiile lucrătorilor */}
         <Card className="mt-8 border-accent">
           <CardHeader>
@@ -275,6 +295,16 @@ export default function RaspunderePenalaMunca() {
           </CardContent>
         </Card>
 
+        {/* CTA Button after 9th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              Vreau avocat!
+            </Button>
+          </a>
+        </div>
+
         {/* Compensații și drepturile victimelor */}
         <Card className="mt-8 border-accent">
           <CardHeader>
@@ -331,6 +361,16 @@ export default function RaspunderePenalaMunca() {
             </p>
           </CardContent>
         </Card>
+
+        {/* CTA Button after 12th card */}
+        <div className="mt-6 text-center">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              <Phone className="mr-2 h-5 w-5" />
+              Vreau avocat!
+            </Button>
+          </a>
+        </div>
 
         {/* Obligația de asigurare */}
         <Card className="mt-8 border-accent">
