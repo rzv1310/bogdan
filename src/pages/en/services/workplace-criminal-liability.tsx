@@ -238,6 +238,126 @@ export default function WorkplaceLiabilityEn() {
           </CardContent>
         </Card>
 
+        {/* Accident reporting and investigation procedure */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Accident reporting and investigation procedure</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              In case of an accident, the first step is immediate communication. Any incident defined by law – from accidents causing death or injury, to dangerous incidents or commuting accidents – must be immediately communicated to the employer.
+            </p>
+            <p>
+              If workers from other employers are among the victims, the event must also be communicated to them.
+            </p>
+            <p>
+              In traffic accidents with victims performing their duties, the traffic police communicate the event to the ITM. The communication includes essential data: employer's name, location, date and time of accident, victim's identity, known circumstances and consequences.
+            </p>
+            <p>
+              The employer must preserve the scene until investigation authorities arrive, except when maintaining this state would generate new dangers; then photographs are taken and a report is drawn up with the modifications.
+            </p>
+            <p>
+              Accident investigation aims to establish circumstances, causes, violated regulations and responsibilities. For accidents with temporary work incapacity, investigation is conducted by a commission appointed by the employer, consisting of at least 3 people – a designated worker, a representative of the internal or external prevention service.
+            </p>
+            <p>
+              Persons involved in the accident or the OSH responsible cannot be part of the commission.
+            </p>
+            <p>
+              In case of death, obvious disability, collective accident or dangerous incidents, investigation is performed by ITM. Completion deadlines are 10 working days for events with temporary work incapacity and 15 days for those with death or disability.
+            </p>
+            <p>
+              The investigation file must contain the investigation report, on-site observation note, sketches, photographs, victim and witness statements, OSH training sheets and any other relevant documents. Non-compliance with this procedure can seriously influence guilt assessment.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Compensation and victims' rights */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Compensation and victims' rights</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              In parallel with criminal liability, victims have the right to benefits from the work insurance system.
+            </p>
+            <p>
+              Temporary incapacity allowance is calculated as the average of gross earnings from the last 6 months, and for employees with less than 6 months' seniority, it is calculated for the period actually worked.
+            </p>
+            <p>
+              Compensation for damage to integrity is established according to the severity of the injury and can reach up to 12 minimum base salaries.
+            </p>
+            <p>
+              In case of death, entitled persons (surviving spouse, child, parent, guardian or heirs) receive a lump sum compensation of 4 average gross salaries.
+            </p>
+            <p>
+              Victims can apply for disability pension, and survivors – for survivor's pension, according to Law no. 360/2023.
+            </p>
+            <p>
+              For accidents occurring abroad, medical costs and transportation are reimbursed by the Romanian institution when the employee remains subject to Romanian legislation.
+            </p>
+            <p>
+              All these benefits do not remove the right to claim additional civil damages.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* OSH services outsourcing */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">OSH services outsourcing and employer liability</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              A controversial aspect in practice is the outsourcing of occupational safety and health services.
+            </p>
+            <p>
+              Law no. 319/2006 allows the employer to use external services for developing protection plans and training employees.
+            </p>
+            <p>
+              However, art. 6 para. (2) clearly stipulates that resorting to an external specialist does not exempt them from responsibility.
+            </p>
+            <p>
+              Prosecutors can hold the employer criminally liable alongside the external specialist when lack or non-implementation of OSH measures is found.
+            </p>
+            <p>
+              I have argued in court that criminal liability is individual – a concrete conduct must be imputed, not mere delegation; therefore, in defense, we analyze in detail the contract with the external service and the level of control exercised by the employer.
+            </p>
+            <p>
+              Referring the matter to the High Court for legal clarification could clarify jurisprudence.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Insurance obligation */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Insurance obligation</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              The Labor Code stipulates that the employer must insure all employees against the risk of work accidents and occupational diseases.
+            </p>
+            <p>
+              Additionally, the employer has the obligation to organize periodic training of workers, permanently control the condition of equipment and create conditions for providing first aid and evacuating employees in case of danger. Non-compliance with these obligations can lead to administrative fines and support criminal charges.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Other risks */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Other risks</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              Certain fields – construction, agriculture, extractive industry, transport – present increased risks. Methodological norms define high-risk areas where additional measures are required.
+            </p>
+            <p>
+              Employers with over 50 employees must establish occupational safety and health committees. Periodic updating of risk assessments and adaptation to technical progress are essential.
+            </p>
+          </CardContent>
+        </Card>
+
         {/* Prevention and defense strategies */}
         <Card className="mt-8 border-accent">
           <CardHeader>

@@ -171,6 +171,11 @@ export default function RaspunderePenalaMunca() {
             <p>
               În practica penală, aceste infracțiuni apar adesea împreună: procurorul pune în sarcina făptuitorului atât art. 349/350 pentru nerespectarea obligațiilor preventive, cât şi art. 192/196 pentru rezultatul produs.
             </p>
+
+            <h3 className="text-xl font-semibold mt-6">Răspunderea penală a persoanelor juridice</h3>
+            <p>
+              Codul penal prevede că persoana juridică (cu excepția statului și a autorităților publice) răspunde penal pentru infracțiunile comise în realizarea obiectului de activitate sau în interesul ori în numele său. Această răspundere nu exclude răspunderea penală a persoanei fizice care a contribuit la săvârșirea aceleiași fapte. O societate comercială poate fi inculpată pentru art. 349/350, art. 192 sau art. 196, iar sancțiunile pot include amenda penală, dizolvarea sau suspendarea activității.
+            </p>
           </CardContent>
         </Card>
 
@@ -233,6 +238,126 @@ export default function RaspunderePenalaMunca() {
             </ul>
             <p>
               Îndeplinirea acestor obligaţii poate preveni accidentele şi poate reduce propria răspundere penală.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Procedura de raportare și cercetare */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Procedura de raportare şi cercetare a accidentelor</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              În cazul unui accident, primul pas este comunicarea imediată. Orice incident definit de lege – de la accidentul care a produs deces sau vătămări, la incidentul periculos ori accidentul de traseu – trebuie comunicat de îndată angajatorului.
+            </p>
+            <p>
+              Dacă printre victime se află lucrători ai altor angajatori, evenimentul trebuie comunicat şi acestora.
+            </p>
+            <p>
+              În accidentele de circulaţie cu victime aflate în îndeplinirea îndatoririlor de serviciu, poliţia rutieră comunică evenimentul la ITM. Comunicarea include datele esenţiale: denumirea angajatorului, locul, data şi ora accidentului, identitatea victimei, împrejurările cunoscute şi consecinţele.
+            </p>
+            <p>
+              Angajatorul trebuie să păstreze starea locului până la sosirea organelor de cercetare, cu excepţia situaţiilor în care menţinerea acestei stări ar genera noi pericole; atunci se fac fotografii şi se întocmeşte un proces‑verbal cu modificările.
+            </p>
+            <p>
+              Cercetarea accidentului are ca scop stabilirea împrejurărilor, cauzelor, reglementărilor încălcate şi a răspunderilor. Pentru accidentele cu incapacitate temporară de muncă, cercetarea este efectuată de o comisie desemnată de angajator, formată din cel puţin 3 persoane – un lucrător desemnat, un reprezentant al serviciului intern sau extern de prevenire.
+            </p>
+            <p>
+              Persoanele implicate în producerea accidentului sau responsabilul SSM nu pot face parte din comisie.
+            </p>
+            <p>
+              În caz de deces, invaliditate evidentă, accident colectiv sau incidente periculoase, cercetarea este realizată de ITM. Termenele de finalizare sunt de 10 zile lucrătoare pentru evenimentele cu incapacitate temporară de muncă şi de 15 zile pentru cele cu deces sau invaliditate.
+            </p>
+            <p>
+              Dosarul de cercetare trebuie să conţină procesul‑verbal de cercetare, nota de constatare la faţa locului, schiţe, fotografii, declaraţii ale victimelor şi martorilor, fişele de instruire SSM şi orice alte documente relevante. Nerespectarea acestei proceduri poate influenţa grav aprecierea vinovăţiei.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Compensații și drepturile victimelor */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Compensaţii şi drepturile victimelor</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              În paralel cu răspunderea penală, victimele au dreptul la prestaţii din sistemul asigurărilor de muncă.
+            </p>
+            <p>
+              Indemnizaţia pentru incapacitate temporară se calculează ca medie a câştigurilor brute din ultimele 6 luni, iar pentru salariaţii cu vechime sub 6 luni se calculează pe perioada efectiv lucrată.
+            </p>
+            <p>
+              Compensaţia pentru atingerea integrităţii se stabileşte în funcţie de gravitatea leziunii şi poate ajunge până la 12 salarii de bază minime.
+            </p>
+            <p>
+              În caz de deces, persoanele îndreptăţite (soţul supravieţuitor, copilul, părintele, tutorele sau moştenitorii) primesc o despăgubire unică de 4 salarii medii brute.
+            </p>
+            <p>
+              Victimele pot solicita pensie de invaliditate, iar urmaşii – pensie de urmaş, conform Legii nr. 360/2023.
+            </p>
+            <p>
+              Pentru accidentele produse în străinătate, costurile medicale şi transportul sunt rambursate de instituţia din România atunci când salariatul rămâne supus legislaţiei române.
+            </p>
+            <p>
+              Toate aceste prestaţii nu înlătură dreptul de a cere despăgubiri civile suplimentare.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Externalizarea serviciilor SSM */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Externalizarea serviciilor SSM şi răspunderea angajatorului</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              Un aspect controversat în practică îl reprezintă externalizarea serviciilor de securitate şi sănătate în muncă.
+            </p>
+            <p>
+              Legea nr. 319/2006 permite angajatorului să apeleze la servicii externe pentru elaborarea planurilor de protecţie şi instruirea salariaţilor.
+            </p>
+            <p>
+              Cu toate acestea, art. 6 alin. (2) stipulează clar că recurgerea la un specialist extern nu îl exonerează de responsabilitatea sa.
+            </p>
+            <p>
+              Procurorii pot atrage răspunderea penală a angajatorului alături de specialistul extern atunci când se constată lipsa sau nepunerea în aplicare a măsurilor SSM.
+            </p>
+            <p>
+              Eu am argumentat în instanță că răspunderea penală este individuală – trebuie imputată o conduită concretă, nu simpla delegare; de aceea, în apărare, analizăm detaliat contractul cu serviciul extern şi nivelul de control exercitat de angajator.
+            </p>
+            <p>
+              Sesizarea Înaltei Curţi pentru dezlegarea chestiunii de drept ar putea clarifica jurisprudenţa.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Obligația de asigurare */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Obligaţia de asigurare</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              Codul muncii stipulează că angajatorul trebuie să asigure toţi salariaţii pentru riscul de accidente de muncă şi boli profesionale.
+            </p>
+            <p>
+              De asemenea, angajatorul are obligaţia de a organiza instruirea periodică a lucrătorilor, de a controla permanent starea echipamentelor şi de a crea condiţii pentru acordarea primului ajutor şi evacuarea salariaţilor în caz de pericol. Nerespectarea acestor obligaţii poate duce la amenzi contravenţionale şi susţine acuzaţiile penale.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Alte riscuri */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Alte riscuri</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-3">
+            <p>
+              Anumite domenii – construcţii, agricultură, industria extractivă, transporturi – prezintă riscuri sporite. Normele metodologice definesc zone cu risc ridicat, în care se impun măsuri suplimentare.
+            </p>
+            <p>
+              Angajatorii cu peste 50 de salariaţi trebuie să constituie comitete de securitate şi sănătate în muncă. Actualizarea periodică a evaluărilor de risc şi adaptarea la progresul tehnic sunt esenţiale.
             </p>
           </CardContent>
         </Card>
