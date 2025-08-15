@@ -16,7 +16,70 @@ export default function InvestigatiiCripto() {
   });
 
   return (
-    <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+    <>
+      {/* JSON-LD Structured Data */}
+      {typeof window !== "undefined" && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Acasă",
+                    "item": "https://avocatbogdanlamatic.ro/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Servicii",
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Investigații privind activele cripto",
+                    "item": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto"
+                  }
+                ]
+              })
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Servicii avocat investigații privind activele cripto",
+                "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
+                "url": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto",
+                "areaServed": [
+                  {
+                    "@type": "Country",
+                    "name": "România"
+                  },
+                  {
+                    "@type": "Place",
+                    "name": "Uniunea Europeană"
+                  }
+                ],
+                "availableLanguage": ["ro", "en"],
+                "provider": {
+                  "@type": "Attorney",
+                  "name": "Bogdan Lamatic",
+                  "telephone": "+40745506443"
+                }
+              })
+            }}
+          />
+        </>
+      )}
+      <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <header className="mb-6">
         <Breadcrumb>
           <BreadcrumbList>
@@ -369,6 +432,7 @@ export default function InvestigatiiCripto() {
         </Card>
       </section>
 
-    </main>
+      </main>
+    </>
   );
 }

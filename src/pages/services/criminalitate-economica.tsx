@@ -14,7 +14,70 @@ export default function CriminalitateEconomica() {
   });
 
   return (
-    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+    <>
+      {/* JSON-LD Structured Data */}
+      {typeof window !== "undefined" && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Acasă",
+                    "item": "https://avocatbogdanlamatic.ro/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Servicii",
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Criminalitate economică",
+                    "item": "https://avocatbogdanlamatic.ro/services/criminalitate-economica"
+                  }
+                ]
+              })
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Servicii avocat criminalitate economică",
+                "description": "Asistență și reprezentare în cauze de criminalitate economică",
+                "url": "https://avocatbogdanlamatic.ro/services/criminalitate-economica",
+                "areaServed": [
+                  {
+                    "@type": "Country",
+                    "name": "România"
+                  },
+                  {
+                    "@type": "Place",
+                    "name": "Uniunea Europeană"
+                  }
+                ],
+                "availableLanguage": ["ro", "en"],
+                "provider": {
+                  "@type": "Attorney",
+                  "name": "Bogdan Lamatic",
+                  "telephone": "+40745506443"
+                }
+              })
+            }}
+          />
+        </>
+      )}
+      <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-2">Avocat Infracțiuni Economice | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
       <Breadcrumb>
         <BreadcrumbList>
@@ -1418,6 +1481,7 @@ export default function CriminalitateEconomica() {
         <EconomicCrimesChart />
 
       </div>
-    </section>
+      </section>
+    </>
   );
 }

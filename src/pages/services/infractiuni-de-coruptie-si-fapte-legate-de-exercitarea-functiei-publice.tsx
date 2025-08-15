@@ -13,7 +13,70 @@ export default function CoruptieSiFunctiePublica() {
   });
 
   return (
-    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+    <>
+      {/* JSON-LD Structured Data */}
+      {typeof window !== "undefined" && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Acasă",
+                    "item": "https://avocatbogdanlamatic.ro/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Servicii",
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
+                    "item": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
+                  }
+                ]
+              })
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Servicii avocat infracțiuni de corupție și fapte legate de exercitarea funcției publice",
+                "description": "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA",
+                "url": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+                "areaServed": [
+                  {
+                    "@type": "Country",
+                    "name": "România"
+                  },
+                  {
+                    "@type": "Place",
+                    "name": "Uniunea Europeană"
+                  }
+                ],
+                "availableLanguage": ["ro", "en"],
+                "provider": {
+                  "@type": "Attorney",
+                  "name": "Bogdan Lamatic",
+                  "telephone": "+40745506443"
+                }
+              })
+            }}
+          />
+        </>
+      )}
+      <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
         Infracțiuni de corupție și fapte legate de exercitarea funcției publice – Avocat Bogdan Lamatic | București
       </h1>
@@ -326,6 +389,7 @@ export default function CoruptieSiFunctiePublica() {
       <div className="mt-8">
         <MitaBarChart />
       </div>
-    </section>
+      </section>
+    </>
   );
 }
