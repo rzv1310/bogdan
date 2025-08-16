@@ -5,9 +5,18 @@ import Footer from "./Footer";
 
 export default function Layout() {
   const location = useLocation();
+  
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      // Immediate scroll to top
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      
+      // Additional scroll for mobile devices with a small delay
+      const timeoutId = setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }, 100);
+      
+      return () => clearTimeout(timeoutId);
     }
   }, [location.pathname]);
   return (
