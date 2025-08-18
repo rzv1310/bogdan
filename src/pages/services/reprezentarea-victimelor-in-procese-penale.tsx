@@ -94,7 +94,7 @@ export default function ReprezentareaVictimelor() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" aria-label="Sună acum pentru consultanță victime">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță victime">
           <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
@@ -290,7 +290,7 @@ export default function ReprezentareaVictimelor() {
             Îți ofer o evaluare inițială și un plan de acțiune (probe, încadrări, pași RCA/instanță). Sunt bazat în București, dar lucrez național.
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
-            <Button asChild variant="premium">
+            <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">

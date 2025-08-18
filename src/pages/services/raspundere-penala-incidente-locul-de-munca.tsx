@@ -76,7 +76,7 @@ export default function RaspunderePenalaMunca() {
 
         <div className="mt-6">
           <a href="tel:+40745506443" aria-label="Sună acum">
-            <Button variant="premium" size="lg">
+            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone /> Sună acum
             </Button>
           </a>
