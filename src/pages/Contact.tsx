@@ -376,7 +376,7 @@ export default function Contact() {
                 <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">
                   {status.type === 'sending' ? (<><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Se trimite…</>) : (<><Send className="w-4 h-4" aria-hidden="true" /> Trimite solicitarea</>)}
                 </Button>
-                <Button type="button" variant="secondary" onClick={clearDraft}>Curăță formularul</Button>
+                <Button type="button" variant="secondary" onClick={clearDraft}>Șterge formularul</Button>
                 <div className="text-xs text-muted-foreground">Răspuns în 24–48h lucrătoare (în funcție de urgență)</div>
               </div>
 
