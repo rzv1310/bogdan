@@ -95,7 +95,7 @@ export default function Malpraxis() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" aria-label="Sună acum pentru consultanță malpraxis">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță malpraxis">
           <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
@@ -249,7 +249,7 @@ export default function Malpraxis() {
             </ul>
           </div>
           <div className="pt-2">
-            <Button asChild variant="premium" aria-label="Sună pentru consultanță malpraxis">
+            <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță malpraxis">
               <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
