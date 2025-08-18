@@ -80,9 +80,6 @@ export default function CorruptionPublicOfficeEn() {
               <Phone className="mr-2 h-4 w-4" /> Call now
             </a>
           </Button>
-          <Button variant="premium" size="lg" className="border border-hero-foreground">
-            <Phone /> Call now
-          </Button>
         </div>
 
         {/* Definitions & framework */}

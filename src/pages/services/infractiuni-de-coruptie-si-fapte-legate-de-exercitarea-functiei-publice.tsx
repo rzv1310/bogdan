@@ -96,9 +96,6 @@ export default function CoruptieSiFunctiePublica() {
             <Phone className="mr-2 h-4 w-4" /> Apelează acum
           </a>
         </Button>
-        <Button variant="premium" size="lg" className="border border-hero-foreground">
-          <Phone /> Apelează acum
-        </Button>
       </div>
 
       <div className="mt-6">
