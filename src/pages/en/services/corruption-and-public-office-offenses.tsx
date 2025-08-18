@@ -75,7 +75,7 @@ export default function CorruptionPublicOfficeEn() {
         </div>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call now for anti-corruption advice">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call now for anti-corruption advice">
             <a href="tel:+40745506443">
               <Phone className="mr-2 h-4 w-4" /> Call now
             </a>
@@ -141,7 +141,7 @@ export default function CorruptionPublicOfficeEn() {
               </li>
             </ul>
             <div className="pt-2">
-              <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call for a quick consultation">
+              <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call for a quick consultation">
                 <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Call now</a>
               </Button>
             </div>
