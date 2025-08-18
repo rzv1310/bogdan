@@ -91,7 +91,7 @@ export default function CoruptieSiFunctiePublica() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" aria-label="Sună acum pentru consultanță anticorupție">
+        <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum pentru consultanță anticorupție">
           <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Apelează acum
           </a>
@@ -267,7 +267,7 @@ export default function CoruptieSiFunctiePublica() {
             <li>Pentru companii/instituții – investigații interne, protecția avertizorilor, training anticorupție și plan de remediere.</li>
           </ul>
           <div className="pt-2">
-            <Button asChild variant="premium" size="lg" aria-label="Sună pentru consultanță în dosare de corupție">
+            <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună pentru consultanță în dosare de corupție">
               <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
