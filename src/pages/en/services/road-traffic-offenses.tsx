@@ -59,7 +59,7 @@ export default function RoadTrafficEn() {
         </div>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Button asChild variant="premium" size="lg" aria-label="Call now for a traffic case consultation">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call now for a traffic case consultation">
             <a href="tel:+40745506443">
               <Phone className="mr-2 h-4 w-4" /> Call now
             </a>

@@ -67,7 +67,7 @@ export default function MoneyLaunderingEn() {
         {/* Intro + CTA */}
         <section className="mt-4 border border-accent rounded-md p-4">
           <div className="flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg">
+            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40745506443" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
@@ -263,7 +263,7 @@ export default function MoneyLaunderingEn() {
             <p>Effective defense blends technical analysis of financial flows with a legal strategy tailored to each count and careful management of precautionary measures.</p>
             <p>If you are under investigation, act quickly: document the lawful origin of assets, consult a specialist and prepare your defense early in the investigation.</p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
-              <Button asChild variant="premium" size="lg">
+              <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                 <a href="tel:+40745506443" aria-label="Call now for a confidential review">
                   <Phone className="mr-2" /> Call now
                 </a>

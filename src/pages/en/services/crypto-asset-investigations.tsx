@@ -91,7 +91,7 @@ export default function CryptoInvestigationsEn() {
             cyber fraud, money laundering).
           </p>
           <div className="mt-5 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg">
+            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40745506443" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
@@ -167,7 +167,7 @@ export default function CryptoInvestigationsEn() {
                 </li>
               </ul>
               <div className="pt-2">
-                <Button asChild variant="premium">
+                <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <a href="tel:+40745506443" aria-label="Call now for crypto advice">
                     <Phone className="mr-2" /> Call for advice
                   </a>

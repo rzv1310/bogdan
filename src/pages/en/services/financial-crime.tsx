@@ -86,7 +86,7 @@ export default function FinancialCrimeEn() {
             </BreadcrumbList>
           </Breadcrumb>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg">
+            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40745506443" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
@@ -175,7 +175,7 @@ export default function FinancialCrimeEn() {
         </div>
 
         <div className="mt-8">
-          <Button asChild variant="premium" size="lg">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
             <a href="tel:+40745506443" aria-label="Call now for a case review">
               <Phone className="mr-2" /> Request a quick case review
             </a>
