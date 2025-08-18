@@ -186,7 +186,7 @@ export default function CauzeDroguri() {
 
       <div className="mt-4">
         <a href="tel:+40745506443" aria-label="Apelează acum">
-          <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90">
+          <Button size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none bg-accent text-accent-foreground hover:opacity-90">
             <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
             Apelează acum: +40 745 506 443
           </Button>
