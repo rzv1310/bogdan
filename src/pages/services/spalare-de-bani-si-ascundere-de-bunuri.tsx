@@ -70,12 +70,12 @@ export default function SpalareDeBani() {
         {/* Intro + CTA */}
         <section className="mt-4 border border-accent rounded-md p-4">
           <div className="flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg">
+            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Phone className="mr-2" /> Sună acum
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="mailto:office@lamatic.ro" aria-label="Trimite email">
                 <Mail className="mr-2" /> Trimite email
               </a>
@@ -280,7 +280,7 @@ export default function SpalareDeBani() {
               Dacă sunteți vizat de o anchetă, acționați rapid: documentați proveniența bunurilor, consultați un specialist și pregătiți strategia încă din faza de urmărire penală.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
-              <Button asChild variant="premium" size="lg">
+              <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                 <a href="tel:+40745506443" aria-label="Sună acum pentru analiză confidențială">
                   <Phone className="mr-2" /> Sună acum
                 </a>
