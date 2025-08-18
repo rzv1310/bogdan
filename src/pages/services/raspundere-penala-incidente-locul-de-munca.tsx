@@ -145,7 +145,7 @@ export default function RaspunderePenalaMunca() {
         {/* CTA Button after 3rd card */}
         <div className="mt-6 text-center">
           <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
-            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
             </Button>
@@ -228,7 +228,7 @@ export default function RaspunderePenalaMunca() {
         {/* CTA Button after 6th card */}
         <div className="mt-6 text-center">
           <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
-            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
             </Button>
@@ -298,7 +298,7 @@ export default function RaspunderePenalaMunca() {
         {/* CTA Button after 9th card */}
         <div className="mt-6 text-center">
           <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
-            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
             </Button>
@@ -365,7 +365,7 @@ export default function RaspunderePenalaMunca() {
         {/* CTA Button after 12th card */}
         <div className="mt-6 text-center">
           <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
-            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
             </Button>
