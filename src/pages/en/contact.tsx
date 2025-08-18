@@ -211,7 +211,7 @@ export default function ContactEn() {
         <p className="text-muted-foreground max-w-3xl">Need urgent help or a case assessment? Call me directly.</p>
         <div className="mt-4">
           <a href="tel:+40745506443" aria-label="Call now">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
               <Phone /> Call now: +40 745 506 443
             </Button>
           </a>
