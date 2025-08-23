@@ -156,7 +156,7 @@ export default function ContactEn() {
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
       await submitContact(payload);
-      setStatus({ type: "success", note: "Thank you! I will reply within 24–48 business hours." });
+      setStatus({ type: "success", note: "Thank you! I will reply within 24-48 business hours." });
       toast({ title: "Sent successfully", description: "Your request has been sent." });
       clearDraft();
     } catch (err: any) {
@@ -295,7 +295,7 @@ export default function ContactEn() {
                     autoComplete="off"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
-                    placeholder={'e.g. "Criminal complaint – injured party" or "Criminal investigation – defense"'}
+                    placeholder={'e.g. "Criminal complaint - injured party" or "Criminal investigation - defense"'}
                     ref={subjectRef}
                     aria-invalid={!!errors.subject}
                     aria-describedby={errors.subject ? "error-subject" : undefined}
@@ -354,7 +354,7 @@ export default function ContactEn() {
                   <div className="flex items-start gap-2 text-sm">
                     <Checkbox id="gdpr" ref={gdprRef as any} checked={gdpr} onCheckedChange={(v) => setGdpr(!!v)} className="mt-1" />
                     <label htmlFor="gdpr" className="leading-relaxed">
-                      I agree to the processing of my data according to the GDPR notice. Submitting this form does not create an attorney–client relationship; it is formed only after express confirmation and signing of the power of attorney.
+                      I agree to the processing of my data according to the GDPR notice. Submitting this form does not create an attorney-client relationship; it is formed only after express confirmation and signing of the power of attorney.
                     </label>
                   </div>
                   {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
@@ -365,7 +365,7 @@ export default function ContactEn() {
                     {status.type === 'sending' ? (<><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>) : (<><Send className="w-4 h-4" aria-hidden="true" /> Send request</>)}
                   </Button>
                   <Button type="button" variant="secondary" onClick={clearDraft}>Clear form</Button>
-                  <div className="text-xs text-muted-foreground">Reply within 24–48 business hours (depending on urgency)</div>
+                  <div className="text-xs text-muted-foreground">Reply within 24-48 business hours (depending on urgency)</div>
                 </div>
 
                 {status.type !== "idle" && (

@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function TermeniSiConditii() {
   useSEO({
-    title: "Termeni și Condiții – Cabinet Avocat Bogdan Lamatic",
+    title: "Termeni și Condiții - Cabinet Avocat Bogdan Lamatic",
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
     alternates: { ro: "/termeni-si-conditii", en: "/en/terms-and-conditions" },
     locale: "ro_RO",
@@ -48,7 +48,7 @@ export default function TermeniSiConditii() {
 
         <h2 className="text-2xl font-semibold mt-8">1. Domeniu de aplicare</h2>
         <p>
-          Site‑ul are caracter informativ. Conținutul nu reprezintă consultanță juridică și nu creează o relație avocat–client. O astfel de relație se naște doar după acceptarea
+          Site‑ul are caracter informativ. Conținutul nu reprezintă consultanță juridică și nu creează o relație avocat-client. O astfel de relație se naște doar după acceptarea
           expresă a solicitării și semnarea împuternicirii avocațiale/contractului de asistență juridică.
         </p>
 
@@ -60,7 +60,7 @@ export default function TermeniSiConditii() {
 
         <h2 className="text-2xl font-semibold mt-8">3. Programări și comunicare</h2>
         <p>
-          Pentru programări și comunicare, utilizați datele publicate în secțiunea Contact sau formularul de contact. Răspunsul este, de regulă, în 24–48h lucrătoare, în funcție de urgență.
+          Pentru programări și comunicare, utilizați datele publicate în secțiunea Contact sau formularul de contact. Răspunsul este, de regulă, în 24-48h lucrătoare, în funcție de urgență.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">4. Onorarii și plăți</h2>
@@ -111,7 +111,7 @@ export default function TermeniSiConditii() {
       <section aria-label="Politici conexe" className="mt-10">
         <h2 className="text-xl font-semibold">Politici conexe</h2>
         <ul className="list-disc pl-5">
-          <li><a href="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</a></li>
+          <li><a href="/gdpr" className="underline hover:no-underline">GDPR - Protecția datelor</a></li>
           <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
         </ul>
       </section>

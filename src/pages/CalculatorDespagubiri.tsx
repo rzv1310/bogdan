@@ -187,7 +187,7 @@ export default function CalculatorDespagubiri() {
               Calculator despăgubiri victime accidente
             </h1>
             <p className="mt-3 text-zinc-700">
-              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și <Link to="/servicii/reprezentarea-victimelor-in-procese-penale" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obțin despăgubiri pentru accidente rutiere</Link>, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime, 2021–2024).
+              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și <Link to="/servicii/reprezentarea-victimelor-in-procese-penale" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obțin despăgubiri pentru accidente rutiere</Link>, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime, 2021-2024).
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">
@@ -356,7 +356,7 @@ export default function CalculatorDespagubiri() {
                       />
                     </InputRow>
                     <InputRow
-                      label="Plafon poliță (RON) – opțional"
+                      label="Plafon poliță (RON) - opțional"
                       hint="Dacă îl cunoști, introdu limita RCA; estimarea va fi plafonată"
                     >
                       <input
@@ -401,7 +401,7 @@ export default function CalculatorDespagubiri() {
                 <div className="rounded-xl bg-zinc-50 p-4">
                   <div className="text-sm text-zinc-600">Total despăgubiri (interval)</div>
                   <div className="text-2xl font-bold">
-                    {fmtRON(low)} – {fmtRON(high)}
+                    {fmtRON(low)} - {fmtRON(high)}
                   </div>
                 </div>
                 <div className="rounded-xl bg-zinc-50 p-4">
@@ -512,7 +512,7 @@ export default function CalculatorDespagubiri() {
                 </div>
                 <ul className="text-sm text-zinc-700 space-y-1">
                   <li>Accidente rutiere (RCA/CASCO)</li>
-                  <li>Vătămări corporale (art. 193–196 CP)</li>
+                  <li>Vătămări corporale (art. 193-196 CP)</li>
                   <li>Ucidere din culpă (art. 192 CP)</li>
                   <li>Accidente de muncă</li>
                 </ul>
@@ -556,7 +556,7 @@ export default function CalculatorDespagubiri() {
               <div>
                 <div className="text-lg font-semibold">Ai nevoie de o estimare profesionistă?</div>
                 <div className="text-sm text-zinc-200">
-                  Trimit-mi actele – revin cu un plan și un buget clar.
+                  Trimit-mi actele - revin cu un plan și un buget clar.
                 </div>
               </div>
               <a
@@ -569,7 +569,7 @@ export default function CalculatorDespagubiri() {
           </Card>
         </section>
 
-        {/* Metodă de lucru – mutată la final */}
+        {/* Metodă de lucru - mutată la final */}
         <section className="mb-16">
           <Card className="border border-accent">
             <h2 className="text-xl font-semibold mb-3">Metoda mea de lucru este următoarea:</h2>

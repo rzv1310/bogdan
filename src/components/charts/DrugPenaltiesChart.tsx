@@ -14,7 +14,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Date – pedepse prevăzute de Legea nr. 143/2000
+// Date - pedepse prevăzute de Legea nr. 143/2000
 export type DrugPenaltyDataPoint = {
   categorie: string;
   Minim: number;
@@ -111,7 +111,7 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  LEGE nr. 58 din 20 martie 2024 – completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
+                  LEGE nr. 58 din 20 martie 2024 - completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </li>
