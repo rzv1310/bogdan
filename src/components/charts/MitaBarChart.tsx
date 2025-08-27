@@ -13,7 +13,7 @@ import {
 import { toPng } from "html-to-image";
 
 /**
- * Grafic bară - "Inculpați trimiși în judecată" pentru:
+ * Grafic bară – "Inculpați trimiși în judecată" pentru:
  *  - Luare de mită (art. 289)
  *  - Dare de mită (art. 290)
  * Anii: 2023, 2024
@@ -83,7 +83,7 @@ export default function MitaBarChart({
       <header className="mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
         <div>
           <h2 id="mita-title" className="text-xl md:text-2xl font-semibold">
-            {title ?? "Inculpați trimiși în judecată pentru luare / dare de mită (art. 289-290 CP), 2023 - 2024"}
+            {title ?? "Inculpați trimiși în judecată pentru luare / dare de mită (art. 289–290 CP), 2023 - 2024"}
           </h2>
           <p className="text-sm text-gray-600 mt-1">
             {subtitle ?? "Date oficiale din rapoartele anuale ale Ministerului Public."}
@@ -110,7 +110,7 @@ export default function MitaBarChart({
         </button>
       </header>
 
-      {/* Legendă personalizată - ordinea cerută */}
+      {/* Legendă personalizată – ordinea cerută */}
       <div className="flex flex-wrap items-center gap-3 sm:gap-6 mb-2 text-xs sm:text-sm">
         <span className="inline-flex items-center gap-2">
           <span className="inline-block w-3.5 h-3.5 rounded-sm" style={{ background: '#ff7a00' }} />
@@ -161,7 +161,7 @@ export default function MitaBarChart({
       </div>
 
       <figcaption className="mt-4 text-xs text-gray-600">
-        Sursa: Ministerul Public - Rapoarte de activitate {" "}
+        Sursa: Ministerul Public – Rapoarte de activitate {" "}
         <a className="underline underline-offset-4" href={source2023} target="_blank" rel="noreferrer">
           2023
         </a>{" "}

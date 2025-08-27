@@ -48,7 +48,7 @@ export default function MalpraxisChecklistPDF() {
   return (
     <PDFDocument title="Checklist malpraxis medical" author="Av. Bogdan Lamatic">
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>{strip("Checklist documente - Malpraxis Medical & Neglijență în serviciu")}</Text>
+        <Text style={styles.title}>{strip("Checklist documente – Malpraxis Medical & Neglijență în serviciu")}</Text>
         <Text style={styles.note}>{strip("(autor: Av. Bogdan Lamatic, București)")}</Text>
 
         {/* A. Pacienți / aparținători */}

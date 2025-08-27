@@ -2,7 +2,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function GDPRen() {
   useSEO({
-    title: "GDPR - Data Protection | Bogdan Lamatic Law Office",
+    title: "GDPR – Data Protection | Bogdan Lamatic Law Office",
     description: "Learn how we collect, use, and protect your personal data in accordance with GDPR.",
     alternates: { ro: "/gdpr", en: "/en/gdpr", xDefault: "/en/gdpr" },
     locale: "en_US",
@@ -20,7 +20,7 @@ export default function GDPRen() {
   return (
     <main className="mx-auto max-w-5xl px-4 md:px-6 py-10">
       <header className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight">GDPR - Data Protection</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">GDPR – Data Protection</h1>
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>

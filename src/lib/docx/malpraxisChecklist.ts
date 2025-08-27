@@ -71,7 +71,7 @@ function box(title: string, children: Paragraph[]) {
 export async function generateMalpraxisChecklistDocx(): Promise<Blob> {
   const doc = new Document({
     creator: "Bogdan Lamatic | Avocat Malpraxis Medical, București",
-    title: "Checklist documente - Malpraxis Medical & Neglijență în serviciu",
+    title: "Checklist documente – Malpraxis Medical & Neglijență în serviciu",
     description: "Checklist completabil pentru pacienți, aparținători, medici/clinici",
     styles: {
       paragraphStyles: [
@@ -111,7 +111,7 @@ export async function generateMalpraxisChecklistDocx(): Promise<Blob> {
         },
         children: [
           heading(
-            "Checklist documente - Malpraxis Medical & Neglijență în serviciu",
+            "Checklist documente – Malpraxis Medical & Neglijență în serviciu",
             HeadingLevel.TITLE
           ),
           smallNote("(autor: Av. Bogdan Lamatic, București)"),

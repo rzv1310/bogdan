@@ -116,10 +116,10 @@ const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 const AnafCryptoChecklist: React.FC = () => (
-  <Document title="Checklist fiscal ANAF - criptomonede (persoană fizică)">
+  <Document title="Checklist fiscal ANAF – criptomonede (persoană fizică)">
     <Page size="A4" style={styles.page}>
       <View>
-        <Text style={styles.h1}>Checklist fiscal ANAF - criptomonede (persoană fizică)</Text>
+        <Text style={styles.h1}>Checklist fiscal ANAF – criptomonede (persoană fizică)</Text>
 
         <View style={styles.section}>
           <Bullet>
@@ -146,7 +146,7 @@ const AnafCryptoChecklist: React.FC = () => (
         <View style={[styles.section]}>
           <Text style={styles.h2}>Verifică obligația de CASS (sănătate)</Text>
           <Bullet>
-            Dacă totalul veniturilor extra-salariale din categoriile art. 155 alin. (1) lit. c-h (inclusiv venituri din alte surse — cripto) depășește pragurile 6/12/24 x salariul minim brut, datorezi CASS 10% la Baza de calcul aferentă pragului atins.
+            Dacă totalul veniturilor extra-salariale din categoriile art. 155 alin. (1) lit. c–h (inclusiv venituri din alte surse — cripto) depășește pragurile 6/12/24 x salariul minim brut, datorezi CASS 10% la Baza de calcul aferentă pragului atins.
           </Bullet>
           <Bullet>
             Pentru 2025, salariul minim brut este 4.050 lei (HG nr. 1506/27.11.2024). Praguri CASS 2025: 6 x = 24.300 lei, 12 x = 48.600 lei, 24 x = 97.200 lei.
