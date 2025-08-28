@@ -1,7 +1,7 @@
-import { useCallback } from "react";
+import * as React from "react";
 
 export const useMobileScrollTop = () => {
-  const scrollToTop = useCallback(() => {
+  const scrollToTop = React.useCallback(() => {
     // Force immediate scroll to top
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -13,7 +13,7 @@ export const useMobileScrollTop = () => {
     }
   }, []);
 
-  const handleMobileNavigation = useCallback((callback: () => void) => {
+  const handleMobileNavigation = React.useCallback((callback: () => void) => {
     // Execute navigation
     callback();
     
