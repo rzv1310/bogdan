@@ -261,7 +261,7 @@ const Index = () => {
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
                 <img 
-                  src="/lovable-uploads/1b5cb6e8-bf14-4ecc-9953-9edb116473e0.png"
+                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
                   alt="Portret avocat drept penal în costum, studio" 
                   title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                   loading="eager" 
@@ -314,7 +314,7 @@ const Index = () => {
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
               <img 
-                src="/lovable-uploads/1b5cb6e8-bf14-4ecc-9953-9edb116473e0.png" 
+                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
                 alt="Portret avocat drept penal în costum, studio" 
                 title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                 loading="eager" 
@@ -450,7 +450,7 @@ const Index = () => {
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
               <img
-                src="/lovable-uploads/9d06d593-7393-417b-ae9f-8e605e7e8043.png"
+                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
                 alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
                 title="Avocat drept penal Bucuresti Bogdan Lamatic"
                 loading="lazy"
