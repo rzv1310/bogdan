@@ -23,22 +23,12 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          // Core vendor (critical path)
-          'react-vendor': ['react', 'react-dom'],
-          // Router (lazy loaded with pages)
-          'router': ['react-router-dom'],
-          // UI vendor (lazy loaded)
-          'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-toast', '@radix-ui/react-tooltip'],
-          // Form and validation (lazy loaded)
-          'form-vendor': ['react-hook-form', '@hookform/resolvers', 'zod'],
-          // Chart libraries (lazy loaded)
-          'charts': ['recharts'],
-          // PDF libraries (lazy loaded)  
-          'pdf': ['@react-pdf/renderer', 'docx'],
-          // Heavy utilities (lazy loaded)
-          'utils': ['html-to-image', 'framer-motion'],
-          // Query and state (lazy loaded after initial render)
-          'query': ['@tanstack/react-query'],
+          // Keep critical dependencies in main bundle: react, react-dom, react-router-dom, @tanstack/react-query
+          // Only separate truly heavy, non-critical utilities
+          'charts': ['recharts'], // Only loaded on chart pages
+          'pdf': ['@react-pdf/renderer', 'docx'], // Only loaded for downloads
+          'heavy-utils': ['html-to-image', 'framer-motion'], // Only loaded for animations/exports
+          'radix-forms': ['@hookform/resolvers', 'react-hook-form', 'zod'], // Only loaded for forms
         },
         chunkFileNames: (chunkInfo) => {
           const facadeModuleId = chunkInfo.facadeModuleId ? path.basename(chunkInfo.facadeModuleId, path.extname(chunkInfo.facadeModuleId)) : 'chunk';
