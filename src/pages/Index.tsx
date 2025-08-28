@@ -280,13 +280,13 @@ const Index = () => {
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
-              <div>
+              <GeminiButtonEffect>
                 <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
                 </a>
-              </div>
+              </GeminiButtonEffect>
             </div>
           </div>
         </section>
@@ -338,22 +338,12 @@ const Index = () => {
                 </GlowCard>
               ))}
             </div>
-            <div className="mt-8">
-              <PulseBeams
-                beams={beams}
-                gradientStops={gradientStops}
-                width={858}
-                height={434}
-                className="relative w-full h-[180px] md:h-[220px]"
-              >
-                <div className="flex justify-center">
-                  <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
-                    <Button variant="premium" size="lg" className="border border-hero-foreground">
-                      <Phone /> 0745 506 443
-                    </Button>
-                  </a>
-                </div>
-              </PulseBeams>
+            <div className="mt-8 flex justify-center">
+              <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                <Button variant="premium" size="lg" className="border border-hero-foreground">
+                  <Phone /> 0745 506 443
+                </Button>
+              </a>
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
