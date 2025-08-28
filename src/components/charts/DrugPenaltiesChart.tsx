@@ -108,8 +108,7 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
                 <a
                   className="underline hover:no-underline inline-flex items-center gap-1"
                   href="https://legislatie.just.ro/Public/DetaliiDocument/280178"
-                  target="_blank"
-                  rel="noreferrer noopener"
+                   rel="noreferrer noopener"
                 >
                   LEGE nr. 58 din 20 martie 2024 - completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
                   <ExternalLink className="w-3.5 h-3.5" />

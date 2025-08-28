@@ -162,11 +162,11 @@ export default function MitaBarChart({
 
       <figcaption className="mt-4 text-xs text-gray-600">
         Sursa: Ministerul Public - Rapoarte de activitate {" "}
-        <a className="underline underline-offset-4" href={source2023} target="_blank" rel="noreferrer">
+        <a className="underline underline-offset-4" href={source2023} rel="noreferrer">
           2023
         </a>{" "}
         și {" "}
-        <a className="underline underline-offset-4" href={source2024} target="_blank" rel="noreferrer">
+        <a className="underline underline-offset-4" href={source2024} rel="noreferrer">
           2024
         </a>.
       </figcaption>
