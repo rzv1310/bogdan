@@ -2,43 +2,44 @@ import { useEffect } from 'react';
 
 export default function ResourcePreloader() {
   useEffect(() => {
-    // Preload critical resources for better performance
-    const preloadResources = () => {
-      // Preload hero image with high priority
-      const heroImageLink = document.createElement('link');
-      heroImageLink.rel = 'preload';
-      heroImageLink.as = 'image';
-      heroImageLink.href = '/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1';
-      heroImageLink.setAttribute('fetchpriority', 'high');
-      document.head.appendChild(heroImageLink);
-
-      // Preload critical fonts in Woff2 format
-      const fontPreloads = [
-        {
-          href: 'https://fonts.gstatic.com/s/sacramento/v13/buEzpo6gcdjy0EiZMBUG0CoV_NxLeiw.woff2',
-          type: 'font/woff2',
-          crossorigin: 'anonymous'
-        },
-        {
-          href: 'https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2',
-          type: 'font/woff2', 
-          crossorigin: 'anonymous'
-        }
+    // Secondary resource preloads (non-critical assets already handled in index.html)
+    const preloadSecondaryResources = () => {
+      // Preload other hero section images if needed
+      const secondaryImages = [
+        '/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png',
+        '/lovable-uploads/b1523668-aa61-486e-82ba-395734a9dc03.png'
       ];
 
-      fontPreloads.forEach(font => {
+      secondaryImages.forEach(src => {
         const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'font';
-        link.type = font.type;
-        link.href = font.href;
-        link.crossOrigin = font.crossorigin;
+        link.rel = 'prefetch';
+        link.as = 'image';
+        link.href = src;
         document.head.appendChild(link);
       });
+
+      // Prefetch route chunks for faster navigation
+      const routeChunks = [
+        '/assets/router-',
+        '/assets/ui-vendor-',
+        '/assets/charts-'
+      ];
+
+      // Use requestIdleCallback for non-critical preloading
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          routeChunks.forEach(chunk => {
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = chunk;
+            document.head.appendChild(link);
+          });
+        });
+      }
     };
 
-    // Execute preloading immediately
-    preloadResources();
+    // Execute secondary preloading after a delay
+    setTimeout(preloadSecondaryResources, 1000);
   }, []);
 
   return null; // This component only preloads resources, no visual output

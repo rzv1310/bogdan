@@ -23,15 +23,22 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          // Vendor libraries
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+          // Core vendor (critical path)
+          'react-vendor': ['react', 'react-dom'],
+          // Router (lazy loaded with pages)
+          'router': ['react-router-dom'],
+          // UI vendor (lazy loaded)
+          'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-toast', '@radix-ui/react-tooltip'],
+          // Form and validation (lazy loaded)
+          'form-vendor': ['react-hook-form', '@hookform/resolvers', 'zod'],
           // Chart libraries (lazy loaded)
           'charts': ['recharts'],
           // PDF libraries (lazy loaded)  
           'pdf': ['@react-pdf/renderer', 'docx'],
           // Heavy utilities (lazy loaded)
           'utils': ['html-to-image', 'framer-motion'],
+          // Query and state (lazy loaded after initial render)
+          'query': ['@tanstack/react-query'],
         },
         chunkFileNames: (chunkInfo) => {
           const facadeModuleId = chunkInfo.facadeModuleId ? path.basename(chunkInfo.facadeModuleId, path.extname(chunkInfo.facadeModuleId)) : 'chunk';
