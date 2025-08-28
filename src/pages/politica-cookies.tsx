@@ -85,8 +85,8 @@ export default function PoliticaCookies() {
         <section aria-label="Politici conexe" className="mt-10">
           <h2>Politici conexe</h2>
           <ul>
-            <li><a href="/termeni-si-conditii" className="underline hover:no-underline">Termeni și Condiții</a></li>
-            <li><a href="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</a></li>
+            <li><Link to="/termeni-si-conditii" className="underline hover:no-underline">Termeni și Condiții</Link></li>
+            <li><Link to="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</Link></li>
           </ul>
         </section>
       </article>
