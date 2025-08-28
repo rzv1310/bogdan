@@ -3,43 +3,53 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import Layout from "./components/layout/Layout";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import CriminalitateEconomica from "./pages/services/criminalitate-economica";
-import CoruptieSiFunctiePublica from "./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice";
-import InvestigatiiCripto from "./pages/services/investigatii-privind-activele-cripto";
-import CauzeDroguri from "./pages/services/cauze-penale-privind-droguri";
-import SpalareDeBani from "./pages/services/spalare-de-bani-si-ascundere-de-bunuri";
-import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
-import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
-import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
-import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
-import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
+import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
+import Layout from "./components/layout/Layout";
+
+// Performance optimization: Lazy load all pages for better code splitting
+const Index = lazy(() => import("./pages/Index"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const About = lazy(() => import("./pages/About"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Contact = lazy(() => import("./pages/Contact"));
+const CriminalitateEconomica = lazy(() => import("./pages/services/criminalitate-economica"));
+const CoruptieSiFunctiePublica = lazy(() => import("./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"));
+const InvestigatiiCripto = lazy(() => import("./pages/services/investigatii-privind-activele-cripto"));
+const CauzeDroguri = lazy(() => import("./pages/services/cauze-penale-privind-droguri"));
+const SpalareDeBani = lazy(() => import("./pages/services/spalare-de-bani-si-ascundere-de-bunuri"));
+const Malpraxis = lazy(() => import("./pages/services/neglijenta-profesionala-si-malpraxis"));
+const InfractiuniRutiere = lazy(() => import("./pages/services/infractiuni-rutiere-cu-victime"));
+const RaspunderePenalaMunca = lazy(() => import("./pages/services/raspundere-penala-incidente-locul-de-munca"));
+const ReprezentareaVictimelor = lazy(() => import("./pages/services/reprezentarea-victimelor-in-procese-penale"));
+const CalculatorDespagubiri = lazy(() => import("./pages/CalculatorDespagubiri"));
+const TermeniSiConditii = lazy(() => import("./pages/termeni-si-conditii"));
+const GDPR = lazy(() => import("./pages/gdpr"));
+const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
 
 // EN pages
-import EnIndex from "./pages/en";
-import ContactEn from "./pages/en/contact";
-import BlogEn from "./pages/en/blog";
-import FinancialCrimeEn from "./pages/en/services/financial-crime";
-import CorruptionPublicOfficeEn from "./pages/en/services/corruption-and-public-office-offenses";
-import CryptoInvestigationsEn from "./pages/en/services/crypto-asset-investigations";
-import DrugOffensesEn from "./pages/en/services/drug-offenses";
-import MoneyLaunderingEn from "./pages/en/services/money-laundering-and-asset-concealment";
-import MalpracticeEn from "./pages/en/services/professional-negligence-and-malpractice";
-import RoadTrafficEn from "./pages/en/services/road-traffic-offenses";
-import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liability";
-import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
-import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
-import TermeniSiConditii from "./pages/termeni-si-conditii";
-import GDPR from "./pages/gdpr";
-import PoliticaCookies from "./pages/politica-cookies";
-import GDPRen from "./pages/en/gdpr";
-import CookiePolicyEn from "./pages/en/cookie-policy";
+const EnIndex = lazy(() => import("./pages/en"));
+const ContactEn = lazy(() => import("./pages/en/contact"));
+const BlogEn = lazy(() => import("./pages/en/blog"));
+const FinancialCrimeEn = lazy(() => import("./pages/en/services/financial-crime"));
+const CorruptionPublicOfficeEn = lazy(() => import("./pages/en/services/corruption-and-public-office-offenses"));
+const CryptoInvestigationsEn = lazy(() => import("./pages/en/services/crypto-asset-investigations"));
+const DrugOffensesEn = lazy(() => import("./pages/en/services/drug-offenses"));
+const MoneyLaunderingEn = lazy(() => import("./pages/en/services/money-laundering-and-asset-concealment"));
+const MalpracticeEn = lazy(() => import("./pages/en/services/professional-negligence-and-malpractice"));
+const RoadTrafficEn = lazy(() => import("./pages/en/services/road-traffic-offenses"));
+const WorkplaceLiabilityEn = lazy(() => import("./pages/en/services/workplace-criminal-liability"));
+const VictimRepresentationEn = lazy(() => import("./pages/en/services/victim-representation-in-criminal-cases"));
+const TermsAndConditionsEn = lazy(() => import("./pages/en/terms-and-conditions"));
+const GDPRen = lazy(() => import("./pages/en/gdpr"));
+const CookiePolicyEn = lazy(() => import("./pages/en/cookie-policy"));
+
+// Loading fallback component
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-[50vh]">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+  </div>
+);
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -49,8 +59,9 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route element={<Layout />}>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route element={<Layout />}>
               <Route path="/" element={<Index />} />
               <Route path="/despre-mine" element={<About />} />
               <Route path="/blog" element={<Blog />} />
@@ -89,10 +100,11 @@ const App = () => (
                <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
                <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
                
-               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-               <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       </LanguageProvider>
     </TooltipProvider>

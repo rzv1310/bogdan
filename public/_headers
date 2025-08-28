@@ -1,0 +1,36 @@
+# Performance optimization headers for Netlify
+
+/*
+  # Security headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Performance headers
+  Cache-Control: public, max-age=31536000
+  
+# Static assets - long cache
+/lovable-uploads/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# JavaScript and CSS - with versioning
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - short cache for updates
+/*.html
+  Cache-Control: public, max-age=3600
+
+# Service Worker - no cache
+/sw.js
+  Cache-Control: no-cache
+
+# Images optimization
+*.png
+  Cache-Control: public, max-age=31536000
+*.jpg
+  Cache-Control: public, max-age=31536000
+*.jpeg
+  Cache-Control: public, max-age=31536000
+*.webp
+  Cache-Control: public, max-age=31536000
