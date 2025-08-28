@@ -1,18 +1,14 @@
 import { useEffect } from "react";
 import { useLanguage } from "@/context/language";
-import { useSEO } from "@/hooks/useSEO";
 import Index from "../Index";
 
 export default function EnIndex() {
   const { setLang } = useLanguage();
-  useEffect(() => { setLang("en"); }, [setLang]);
-
-  useSEO({
-    title: "Attorney Bogdan Lamatic - Criminal Defense | Bucharest",
-    description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
-    alternates: { en: "/en", ro: "/" },
-    locale: "en_US",
-  });
+  
+  useEffect(() => { 
+    setLang("en");
+    document.title = "Attorney Bogdan Lamatic - Criminal Defense | Bucharest";
+  }, [setLang]);
   
   return (
     <>

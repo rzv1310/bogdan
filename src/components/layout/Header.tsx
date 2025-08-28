@@ -1,19 +1,9 @@
 import * as React from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { Menu, ChevronRight } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerClose,
-} from "@/components/ui/drawer";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
-import { useMobileScrollTop } from "@/hooks/useMobileScrollTop";
 
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
@@ -42,7 +32,8 @@ export default function Header() {
   const t = translations[lang];
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const { handleMobileNavigation } = useMobileScrollTop();
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const [servicesOpen, setServicesOpen] = React.useState(false);
 
   const svcList = lang === "en" ? servicesEn : services;
 
@@ -153,90 +144,84 @@ export default function Header() {
             EN
           </Button>
         </div>
-        <Drawer>
-          <DrawerTrigger asChild>
-            <button
-              className="md:hidden p-2 rounded-sm text-foreground absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-              aria-label="Meniu"
-              type="button"
-            >
-              <Menu size={22} strokeWidth={2} />
-            </button>
-          </DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader>
-              <DrawerTitle>{t.nav.menu}</DrawerTitle>
-            </DrawerHeader>
-            <div className="px-4 pb-6">
-              <ul className="space-y-1">
-                <li>
-                  <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/despre-mine", lang)))}
+        
+        {/* Mobile menu button */}
+        <div className="md:hidden relative">
+          <button
+            className="p-2 rounded-sm text-foreground absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            aria-label="Meniu"
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <Menu size={22} strokeWidth={2} />
+          </button>
+          
+          {/* Mobile dropdown menu */}
+          {mobileMenuOpen && (
+            <div className="absolute right-0 top-full mt-2 w-64 bg-background border rounded-md shadow-lg z-50">
+              <div className="p-4">
+                <ul className="space-y-2">
+                  <li>
+                    <Link 
+                      to={mapPathToLang("/despre-mine", lang)}
+                      className="block p-2 hover:bg-muted rounded"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span>{t.nav.about}</span>
-                    </Button>
-                  </DrawerClose>
-                </li>
-                <li>
-                  <Collapsible>
-                    <CollapsibleTrigger asChild>
-                      <Button variant="ghost" className="w-full justify-between">
+                      {t.nav.about}
+                    </Link>
+                  </li>
+                  <li>
+                    <div>
+                      <button
+                        className="w-full text-left p-2 hover:bg-muted rounded flex justify-between items-center"
+                        onClick={() => setServicesOpen(!servicesOpen)}
+                      >
                         <span>{t.nav.services}</span>
-                        <ChevronRight className="h-4 w-4" />
-                      </Button>
-                    </CollapsibleTrigger>
-                    <CollapsibleContent>
-                      <ul className="mt-1 space-y-1 pl-3 border-l">
-                        {svcList.map((s) => (
-                          <li key={s.to}>
-                            <DrawerClose asChild>
-                              <Button 
-                                asChild 
-                                variant="ghost" 
-                                className="w-full justify-start text-left whitespace-normal break-words leading-snug"
-                                onClick={() => handleMobileNavigation(() => navigate(s.to))}
+                        <ChevronDown className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      {servicesOpen && (
+                        <ul className="mt-1 space-y-1 pl-4">
+                          {svcList.map((s) => (
+                            <li key={s.to}>
+                              <Link 
+                                to={s.to}
+                                className="block p-2 text-sm hover:bg-muted rounded leading-snug"
+                                onClick={() => {
+                                  setMobileMenuOpen(false);
+                                  setServicesOpen(false);
+                                }}
                               >
-                                <span>{labelFor(s.to, s.label)}</span>
-                              </Button>
-                            </DrawerClose>
-                          </li>
-                        ))}
-                      </ul>
-                    </CollapsibleContent>
-                  </Collapsible>
-                </li>
-                <li>
-                  <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/blog", lang)))}
+                                {labelFor(s.to, s.label)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </li>
+                  <li>
+                    <Link 
+                      to={mapPathToLang("/blog", lang)}
+                      className="block p-2 hover:bg-muted rounded"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span>{t.nav.blog}</span>
-                    </Button>
-                  </DrawerClose>
-                </li>
-                <li>
-                  <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/contact", lang)))}
+                      {t.nav.blog}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to={mapPathToLang("/contact", lang)}
+                      className="block p-2 hover:bg-muted rounded"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span>{t.nav.contact}</span>
-                    </Button>
-                  </DrawerClose>
-                </li>
-              </ul>
+                      {t.nav.contact}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </DrawerContent>
-        </Drawer>
+          )}
+        </div>
       </nav>
     </header>
   );

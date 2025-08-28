@@ -1,18 +1,14 @@
 import { useEffect } from "react";
 import { useLanguage } from "@/context/language";
-import { useSEO } from "@/hooks/useSEO";
 import Index from "./Index";
 
 export default function RoIndex() {
   const { setLang } = useLanguage();
-  useEffect(() => { setLang("ro"); }, [setLang]);
-
-  useSEO({
-    title: "Avocat Bogdan Lamatic - Avocat Drept Penal | București",
-    description: "Apărare în infracțiuni economice, corupție, rutiere, cripto, malpraxis. Experiență 18 ani în drept penal.",
-    alternates: { ro: "/", en: "/en" },
-    locale: "ro_RO",
-  });
+  
+  useEffect(() => { 
+    setLang("ro");
+    document.title = "Avocat Bogdan Lamatic - Avocat Drept Penal | București";
+  }, [setLang]);
   
   return (
     <>

@@ -1,14 +1,13 @@
+import { useEffect } from "react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useSEO } from "@/hooks/useSEO";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Blog() {
-  useSEO({
-    title: "Blog | Avocat Bogdan Lamatic",
-    description: "Articole și noutăți juridice publicate de avocat Bogdan Lamatic.",
-  });
+  useEffect(() => {
+    document.title = "Blog | Avocat Bogdan Lamatic";
+  }, []);
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
