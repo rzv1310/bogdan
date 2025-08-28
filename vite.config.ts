@@ -22,57 +22,21 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          // Ultra-granular splitting for maximum FCP optimization
-          if (id.includes('node_modules')) {
-            // Core bundle - keep essential for first render
-            if (id.includes('react/') || id.includes('react-dom/')) return 'react-core';
-            
-            // Radix UI - split into logical groups
-            if (id.includes('@radix-ui/react-accordion') || 
-                id.includes('@radix-ui/react-collapsible') ||
-                id.includes('@radix-ui/react-tabs')) return 'radix-primitives';
-            if (id.includes('@radix-ui/react-dialog') || 
-                id.includes('@radix-ui/react-sheet') ||
-                id.includes('@radix-ui/react-popover')) return 'radix-overlays';
-            if (id.includes('@radix-ui')) return 'radix-base';
-            
-            // Lucide icons - lazy load all icons
-            if (id.includes('lucide-react')) return 'icons';
-            
-            // React Router - only for non-homepage
-            if (id.includes('react-router')) return 'router';
-            
-            // Heavy utilities
-            if (id.includes('recharts')) return 'charts';
-            if (id.includes('framer-motion') || id.includes('html-to-image')) return 'animations';
-            if (id.includes('@react-pdf') || id.includes('docx')) return 'pdf-utils';
-            if (id.includes('react-hook-form') || id.includes('zod')) return 'forms';
-            
-            // Other vendors
-            return 'vendor';
-          }
-          
-          // App chunks - split by logical boundaries
-          if (id.includes('src/components/ui/squares-background') || 
-              id.includes('src/components/ui/spotlight-card')) return 'heavy-ui';
-          if (id.includes('src/components/layout/Layout')) return 'layout';
-          if (id.includes('src/pages/') && !id.includes('src/pages/Index')) return 'pages';
+        manualChunks: {
+          // Keep critical dependencies in main bundle: react, react-dom, react-router-dom, @tanstack/react-query
+          // Only separate truly heavy, non-critical utilities
+          'charts': ['recharts'], // Only loaded on chart pages
+          'pdf': ['@react-pdf/renderer', 'docx'], // Only loaded for downloads
+          'heavy-utils': ['html-to-image', 'framer-motion'], // Only loaded for animations/exports
+          'radix-forms': ['@hookform/resolvers', 'react-hook-form', 'zod'], // Only loaded for forms
         },
         chunkFileNames: (chunkInfo) => {
           const facadeModuleId = chunkInfo.facadeModuleId ? path.basename(chunkInfo.facadeModuleId, path.extname(chunkInfo.facadeModuleId)) : 'chunk';
           return `js/${facadeModuleId}-[hash].js`;
         },
-      },
-      treeshake: {
-        moduleSideEffects: false,
-        propertyReadSideEffects: false,
-        unknownGlobalSideEffects: false
       }
     },
     target: 'esnext',
     minify: mode === 'production' ? 'esbuild' : false,
-    cssCodeSplit: true,
-    sourcemap: mode === 'development'
   },
 }));

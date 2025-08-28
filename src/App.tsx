@@ -5,8 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
-import CriticalCSS from "./components/performance/CriticalCSS";
-import ResourcePreloader from "./components/performance/ResourcePreloader";
 
 // Eager load only essential components
 import Index from "./pages/Index";
@@ -34,7 +32,7 @@ const GDPR = lazy(() => import("./pages/gdpr"));
 const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
 
 // Lazy load English pages
-const EnIndex = lazy(() => import("./pages/en/index"));
+const EnIndex = lazy(() => import("./pages/en"));
 const ContactEn = lazy(() => import("./pages/en/contact"));
 const BlogEn = lazy(() => import("./pages/en/blog"));
 const FinancialCrimeEn = lazy(() => import("./pages/en/services/financial-crime"));
@@ -62,8 +60,6 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <LanguageProvider>
-        <CriticalCSS />
-        <ResourcePreloader />
         <Toaster />
         <Sonner />
         <BrowserRouter>
