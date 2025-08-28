@@ -1,7 +1,7 @@
-import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useLanguage } from "@/context/language";
 import { useSEO } from "@/hooks/useSEO";
+import Index from "../Index";
 
 export default function EnIndex() {
   const { setLang } = useLanguage();
@@ -13,6 +13,7 @@ export default function EnIndex() {
     alternates: { en: "/en", ro: "/" },
     locale: "en_US",
   });
+  
   return (
     <>
       <script
@@ -46,7 +47,7 @@ export default function EnIndex() {
           }),
         }}
       />
-      <Outlet />
+      <Index />
     </>
   );
 }
