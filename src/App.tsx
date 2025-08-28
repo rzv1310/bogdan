@@ -6,10 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
 
-// Eager load only essential components
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+// Keep only the most critical pages for initial load
 import Layout from "./components/layout/Layout";
+
+// Lazy load ALL pages including main pages for better performance
+const Index = lazy(() => import("./pages/Index"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Lazy load all other pages to reduce initial bundle size
 const About = lazy(() => import("./pages/About"));
@@ -65,7 +67,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Index />} />
+              <Route path="/" element={<Suspense fallback={<PageLoader />}><Index /></Suspense>} />
               <Route path="/despre-mine" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
               <Route path="/blog" element={<Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
               <Route path="/calculator-despagubiri" element={<Suspense fallback={<PageLoader />}><CalculatorDespagubiri /></Suspense>} />
@@ -102,7 +104,7 @@ const App = () => (
                <Route path="/en/services/victim-representation-in-criminal-cases" element={<Suspense fallback={<PageLoader />}><VictimRepresentationEn /></Suspense>} />
                
                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-               <Route path="*" element={<NotFound />} />
+               <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFound /></Suspense>} />
             </Route>
           </Routes>
         </BrowserRouter>
