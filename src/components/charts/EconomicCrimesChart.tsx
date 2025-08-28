@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
@@ -13,6 +13,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { OptimizedChart } from "./OptimizedChart";
 
 // Data DIICOT - cauze economico‑financiare și contrabandă (comparativ)
 export type EconomicCrimesDataPoint = {
@@ -82,29 +83,33 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
 
           {/* Wrapper pentru mobil: permite scroll orizontal dacă apar multe categorii */}
           <div className="w-full overflow-x-auto">
-            <div className="h-64 sm:h-72 md:h-96 min-w-[420px]" ref={chartRef}>
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={data}
-                  margin={{ top: 4, right: 8, left: 0, bottom: 4 }}
-                  barCategoryGap="22%"
-                  barSize={24}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="year" tick={{ fontSize: 12 }} tickMargin={8} />
-                  <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
-                  <Tooltip
-                    wrapperStyle={{ outline: "none" }}
-                    contentStyle={{ borderRadius: 8, padding: 8, fontSize: 12 }}
-                    labelStyle={{ fontWeight: 600 }}
-                  />
-                  <Legend wrapperStyle={{ fontSize: 12, paddingTop: 8 }} />
-                  <Bar dataKey="Active" name={legendLabels?.Active ?? "Active"} fill="#1F77B4" radius={[6, 6, 0, 0]} />
-                  <Bar dataKey="Pasive" name={legendLabels?.Pasive ?? "Pasive"} fill="#D62728" radius={[6, 6, 0, 0]} />
-                  <Bar dataKey="Total" name={legendLabels?.Total ?? "Total"} fill="#FF7F0E" radius={[6, 6, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
+            <OptimizedChart className="h-64 sm:h-72 md:h-96 min-w-[420px]" width={420}>
+              <div ref={chartRef} className="w-full h-full">
+                {useMemo(() => (
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                      data={data}
+                      margin={{ top: 4, right: 8, left: 0, bottom: 4 }}
+                      barCategoryGap="22%"
+                      barSize={24}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="year" tick={{ fontSize: 12 }} tickMargin={8} />
+                      <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
+                      <Tooltip
+                        wrapperStyle={{ outline: "none" }}
+                        contentStyle={{ borderRadius: 8, padding: 8, fontSize: 12 }}
+                        labelStyle={{ fontWeight: 600 }}
+                      />
+                      <Legend wrapperStyle={{ fontSize: 12, paddingTop: 8 }} />
+                      <Bar dataKey="Active" name={legendLabels?.Active ?? "Active"} fill="#1F77B4" radius={[6, 6, 0, 0]} />
+                      <Bar dataKey="Pasive" name={legendLabels?.Pasive ?? "Pasive"} fill="#D62728" radius={[6, 6, 0, 0]} />
+                      <Bar dataKey="Total" name={legendLabels?.Total ?? "Total"} fill="#FF7F0E" radius={[6, 6, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                ), [data, legendLabels])}
+              </div>
+            </OptimizedChart>
           </div>
 
           <footer className="mt-5 sm:mt-6 space-y-2">

@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState } from "react";
+import React, { useRef, useCallback, useState, useMemo } from "react";
 import {
   BarChart,
   Bar,
@@ -11,6 +11,7 @@ import {
   LabelList,
 } from "recharts";
 import { toPng } from "html-to-image";
+import { OptimizedChart } from "./OptimizedChart";
 
 /**
  * Grafic bară - "Inculpați trimiși în judecată" pentru:
@@ -122,43 +123,45 @@ export default function MitaBarChart({
         </span>
       </div>
 
-      <div className="h-[240px] sm:h-[300px] md:h-[360px]">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            data={data}
-            barGap={8}
-            barCategoryGap={20}
-            margin={{ top: 20, right: 24, left: 8, bottom: 8 }}
-          >
-            <defs>
-              <linearGradient id="gradLuare" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#ff7a00" stopOpacity={0.98} />
-                <stop offset="100%" stopColor="#ff7a00" stopOpacity={0.78} />
-              </linearGradient>
-              <linearGradient id="gradDare" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#dc2626" stopOpacity={0.98} />
-                <stop offset="100%" stopColor="#dc2626" stopOpacity={0.78} />
-              </linearGradient>
-            </defs>
+      <OptimizedChart className="h-[240px] sm:h-[300px] md:h-[360px]">
+        {useMemo(() => (
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={data}
+              barGap={8}
+              barCategoryGap={20}
+              margin={{ top: 20, right: 24, left: 8, bottom: 8 }}
+            >
+              <defs>
+                <linearGradient id="gradLuare" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#ff7a00" stopOpacity={0.98} />
+                  <stop offset="100%" stopColor="#ff7a00" stopOpacity={0.78} />
+                </linearGradient>
+                <linearGradient id="gradDare" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#dc2626" stopOpacity={0.98} />
+                  <stop offset="100%" stopColor="#dc2626" stopOpacity={0.78} />
+                </linearGradient>
+              </defs>
 
-            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-            <XAxis dataKey="year" tickLine={false} axisLine={{ stroke: "#e5e7eb" }} />
-            <YAxis allowDecimals={false} tickLine={false} axisLine={{ stroke: "#e5e7eb" }} />
-            <Tooltip
-              cursor={{ fill: "rgba(0,0,0,0.04)" }}
-              formatter={(value: number, name: string) => [value, (effectiveLabelMap as Record<string, string>)[name] ?? name]}
-            />
-            
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <XAxis dataKey="year" tickLine={false} axisLine={{ stroke: "#e5e7eb" }} />
+              <YAxis allowDecimals={false} tickLine={false} axisLine={{ stroke: "#e5e7eb" }} />
+              <Tooltip
+                cursor={{ fill: "rgba(0,0,0,0.04)" }}
+                formatter={(value: number, name: string) => [value, (effectiveLabelMap as Record<string, string>)[name] ?? name]}
+              />
+              
 
-            <Bar dataKey="luare" name="luare" fill="url(#gradLuare)" radius={[8, 8, 0, 0]}>
-              <LabelList dataKey="luare" position="top" formatter={(v: number) => v} className="fill-current" />
-            </Bar>
-            <Bar dataKey="dare" name="dare" fill="url(#gradDare)" radius={[8, 8, 0, 0]}>
-              <LabelList dataKey="dare" position="top" formatter={(v: number) => v} className="fill-current" />
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+              <Bar dataKey="luare" name="luare" fill="url(#gradLuare)" radius={[8, 8, 0, 0]}>
+                <LabelList dataKey="luare" position="top" formatter={(v: number) => v} className="fill-current" />
+              </Bar>
+              <Bar dataKey="dare" name="dare" fill="url(#gradDare)" radius={[8, 8, 0, 0]}>
+                <LabelList dataKey="dare" position="top" formatter={(v: number) => v} className="fill-current" />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        ), [data, effectiveLabelMap])}
+      </OptimizedChart>
 
       <figcaption className="mt-4 text-xs text-gray-600">
         Sursa: Ministerul Public - Rapoarte de activitate {" "}
