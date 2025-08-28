@@ -14,7 +14,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Data DIICOT – cauze economico‑financiare și contrabandă (comparativ)
+// Data DIICOT - cauze economico‑financiare și contrabandă (comparativ)
 export type EconomicCrimesDataPoint = {
   year: string;
   Active: number;
@@ -66,7 +66,7 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                 {title ?? "Cauze economico-financiare și contrabandă (DIICOT)"}
               </h2>
               <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                {subtitle ?? "Date sintetice publice din rapoartele DIICOT – 2023 vs 2024"}
+                {subtitle ?? "Date sintetice publice din rapoartele DIICOT - 2023 vs 2024"}
               </p>
             </div>
             <Button
@@ -139,7 +139,7 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  INS – România în cifre 2023 (context statistic)
+                  INS - România în cifre 2023 (context statistic)
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </li>

@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MoneyLaunderingEn() {
   useSEO({
-    title: "Money laundering & asset concealment | Defense – Bogdan Lamatic",
+    title: "Money laundering & asset concealment | Defense - Bogdan Lamatic",
     description: "Defense in money laundering and asset concealment cases.",
     alternates: { en: "/en/services/money-laundering-and-asset-concealment", ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
     locale: "en_US",
