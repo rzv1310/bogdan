@@ -372,7 +372,21 @@ const Index = () => {
               </>
             )}
           </h2>
-          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {(lang === "ro" ? reviewsRO : reviewsEN).slice(0, 6).map((review, index) => (
+              <div key={index} className="bg-card rounded-lg p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-accent">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i}>★</span>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-foreground mb-4 italic">"{review.text}"</p>
+                <p className="text-muted-foreground font-semibold">- {review.name}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
 
