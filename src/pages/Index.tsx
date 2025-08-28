@@ -7,6 +7,7 @@ import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/useSEO";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -170,6 +171,14 @@ const serviceRoutes: (string | null)[] = [
 const Index = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
+  
+  useSEO({
+    title: "Avocat Bogdan Lamatic - Apărare Penală | București",
+    description: "Apărare în criminalitate economică, corupție, rutier, crypto, malpraxis.",
+    alternates: { ro: "/", en: "/en" },
+    locale: "ro_RO",
+  });
+  
   return <div className="min-h-screen bg-background text-foreground">
 
       <main>
