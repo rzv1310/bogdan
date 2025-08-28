@@ -92,7 +92,7 @@ export default function CoruptieSiFunctiePublica() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță anticorupție">
-          <a href="tel:+40745506443" title="/telefon">
+          <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Apelează acum
           </a>
         </Button>
@@ -102,7 +102,7 @@ export default function CoruptieSiFunctiePublica() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -268,7 +268,7 @@ export default function CoruptieSiFunctiePublica() {
           </ul>
           <div className="pt-2">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță în dosare de corupție">
-              <a href="tel:+40745506443" title="/telefon"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
         </CardContent>
