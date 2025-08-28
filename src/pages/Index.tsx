@@ -7,7 +7,6 @@ import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 import { Link } from "react-router-dom";
-import { OptimizedImage } from "@/components/ui/optimized-image";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -183,12 +182,13 @@ const Index = () => {
               </h1>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
-                <OptimizedImage 
-                  variant="hero"
+                <img 
+                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
                   alt="Portret avocat drept penal în costum, studio" 
                   title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                   loading="eager" 
                   fetchPriority="high" 
+                  decoding="async"
                   width="400"
                   height="600"
                   className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" 
@@ -238,12 +238,13 @@ const Index = () => {
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
-              <OptimizedImage 
-                variant="hero"
+              <img 
+                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
                 alt="Portret avocat drept penal în costum, studio" 
                 title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                 loading="eager" 
                 fetchPriority="high" 
+                decoding="async"
                 width="600"
                 height="900"
                 className="w-full h-auto rounded-lg shadow-md" 
