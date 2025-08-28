@@ -75,7 +75,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telephone</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
+                <dd className="font-medium"><a href="tel:+40745506443" title="/telefon" className="text-primary underline">+40 745 506 443</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -217,7 +217,7 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               Contact me directly for criminal law consultation and legal representation.
             </p>
-            <a href="tel:+40745506443" aria-label="Call now">
+            <a href="tel:+40745506443" title="/telefon" aria-label="Call now">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
                 <Phone /> Call now: +40 745 506 443
               </Button>
@@ -249,7 +249,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telefon</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
+                <dd className="font-medium"><a href="tel:+40745506443" title="/telefon" className="text-primary underline">+40 745 506 443</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -391,7 +391,7 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               Contactează-mă direct pentru consultanță de drept penal și reprezentare juridică.
             </p>
-            <a href="tel:+40745506443" aria-label="Sună acum">
+            <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
                 <Phone /> Sună acum: +40 745 506 443
               </Button>
