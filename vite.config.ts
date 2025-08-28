@@ -35,14 +35,16 @@ export default defineConfig(({ mode }) => ({
     },
     // Optimize CSS
     cssCodeSplit: true,
-    // Improve compression
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: mode === 'production',
-        drop_debugger: mode === 'production',
+    // Improve compression only in production
+    minify: mode === 'production' ? 'terser' : false,
+    ...(mode === 'production' && {
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
       },
-    },
+    }),
     // Optimize chunk size warnings
     chunkSizeWarningLimit: 1000,
   },
