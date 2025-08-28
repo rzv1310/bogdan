@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import * as React from "react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone, Send, Paperclip, AlertCircle, CheckCircle2, ArrowRight, Loader2 } from "lucide-react";
@@ -41,31 +41,31 @@ export default function ContactEn() {
     canonical: "/en/contact",
   });
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [files, setFiles] = useState<File[]>([]);
-  const [gdpr, setGdpr] = useState(false);
-  const [website, setWebsite] = useState(""); // honeypot anti-spam
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [files, setFiles] = React.useState<File[]>([]);
+  const [gdpr, setGdpr] = React.useState(false);
+  const [website, setWebsite] = React.useState(""); // honeypot anti-spam
 
-  const [errors, setErrors] = useState<Errors>({});
-  const [status, setStatus] = useState<{ type: StatusType; note: string }>({ type: "idle", note: "" });
+  const [errors, setErrors] = React.useState<Errors>({});
+  const [status, setStatus] = React.useState<{ type: StatusType; note: string }>({ type: "idle", note: "" });
 
-  const nameRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const phoneRef = useRef<HTMLInputElement>(null);
-  const subjectRef = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
-  const gdprRef = useRef<HTMLButtonElement>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const nameRef = React.useRef<HTMLInputElement>(null);
+  const emailRef = React.useRef<HTMLInputElement>(null);
+  const phoneRef = React.useRef<HTMLInputElement>(null);
+  const subjectRef = React.useRef<HTMLInputElement>(null);
+  const messageRef = React.useRef<HTMLTextAreaElement>(null);
+  const gdprRef = React.useRef<HTMLButtonElement>(null);
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
 
-  const selectedTotalSize = useMemo(() => files.reduce((s, f) => s + f.size, 0), [files]);
+  const selectedTotalSize = React.useMemo(() => files.reduce((s, f) => s + f.size, 0), [files]);
 
   // Draft persistence
   const DRAFT_KEY = "contact_draft_en_v1";
-  useEffect(() => {
+  React.useEffect(() => {
     try {
       const raw = localStorage.getItem(DRAFT_KEY);
       if (raw) {
@@ -79,7 +79,7 @@ export default function ContactEn() {
       }
     } catch {}
   }, []);
-  useEffect(() => {
+  React.useEffect(() => {
     const payload = { name, email, phone, subject, message, gdpr };
     try { localStorage.setItem(DRAFT_KEY, JSON.stringify(payload)); } catch {}
   }, [name, email, phone, subject, message, gdpr]);

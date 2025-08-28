@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
@@ -37,7 +37,7 @@ interface EconomicCrimesChartProps {
 }
 
 export default function EconomicCrimesChart({ data = defaultData, title, subtitle, legendLabels, downloadAriaLabel = "Download chart as PNG", filename }: EconomicCrimesChartProps) {
-  const chartRef = useRef<HTMLDivElement | null>(null);
+  const chartRef = React.useRef<HTMLDivElement | null>(null);
 
   const handleDownloadPNG = async () => {
     if (!chartRef.current) return;

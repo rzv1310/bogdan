@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import * as React from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -14,10 +14,10 @@ export type Review = {
 const spring = { type: "spring", stiffness: 140, damping: 20 } as const;
 
 const IS_SERVER = typeof window === "undefined";
-const useIsomorphicLayoutEffect = IS_SERVER ? useEffect : useLayoutEffect;
+const useIsomorphicLayoutEffect = IS_SERVER ? React.useEffect : React.useLayoutEffect;
 
 function useMediaQuery(query: string) {
-  const [matches, setMatches] = useState(false);
+  const [matches, setMatches] = React.useState(false);
   useIsomorphicLayoutEffect(() => {
     if (IS_SERVER) return;
     const m = window.matchMedia(query);
@@ -42,7 +42,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
   const cardW = isSm ? 300 : 300; // larger on mobile
   const gap = isSm ? 14 : 18; // equal gap
   const slot = cardW + gap;
-  const [active, setActive] = useState(0);
+  const [active, setActive] = React.useState(0);
   const n = reviews.length;
 
   // autoplay removed (stopped automatic movement)
@@ -52,7 +52,7 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
   
   const controls = useAnimation();
 
-  const items = useMemo(() => reviews, [reviews]);
+  const items = React.useMemo(() => reviews, [reviews]);
 
   return (
     <div

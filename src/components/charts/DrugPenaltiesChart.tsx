@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
@@ -35,7 +35,7 @@ interface DrugPenaltiesChartProps {
 }
 
 export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim", title }: DrugPenaltiesChartProps) {
-  const chartRef = useRef<HTMLDivElement | null>(null);
+  const chartRef = React.useRef<HTMLDivElement | null>(null);
 
   const tooltipFormatter = (value: number, name: string) => {
     return [`${value} ${unit}`, name] as [string, string];

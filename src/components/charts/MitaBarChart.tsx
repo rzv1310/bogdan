@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState } from "react";
+import * as React from "react";
 import {
   BarChart,
   Bar,
@@ -53,9 +53,9 @@ export default function MitaBarChart({
     dare: labels?.dare ?? "Dare de mită (art. 290)",
   } as const;
 
-  const figRef = useRef<HTMLElement | null>(null);
-  const [downloading, setDownloading] = useState(false);
-  const handleDownload = useCallback(async () => {
+  const figRef = React.useRef<HTMLElement | null>(null);
+  const [downloading, setDownloading] = React.useState(false);
+  const handleDownload = React.useCallback(async () => {
     if (!figRef.current) return;
     try {
       setDownloading(true);

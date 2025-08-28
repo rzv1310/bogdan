@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import * as React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
@@ -29,7 +29,7 @@ const defaultData: RoadAccidentDataPoint[] = [
 ];
 
 export default function RoadAccidentsChart({ data = defaultData, title }: { data?: RoadAccidentDataPoint[]; title?: string }) {
-  const chartRef = useRef<HTMLDivElement | null>(null);
+  const chartRef = React.useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
 
   // Custom label renderers to reduce overlap between series labels

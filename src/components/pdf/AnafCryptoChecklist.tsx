@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Document, Page, Text, View, StyleSheet, Font, Link, Image } from "@react-pdf/renderer";
 
 // Register fonts with diacritics support
