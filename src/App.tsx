@@ -3,14 +3,18 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
 
-// Eager load critical pages for maximum stability
+// All pages eager loaded for maximum stability
 import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
 
-// Eager load main service pages for reliability
+// Romanian service pages
 import CriminalitateEconomica from "./pages/services/criminalitate-economica";
 import CoruptieSiFunctiePublica from "./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice";
 import InvestigatiiCripto from "./pages/services/investigatii-privind-activele-cripto";
@@ -20,44 +24,27 @@ import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
 import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
+import TermeniSiConditii from "./pages/termeni-si-conditii";
+import GDPR from "./pages/gdpr";
+import PoliticaCookies from "./pages/politica-cookies";
 
-// Eager load all frequently accessed pages for maximum stability
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
-
-// Lazy load only rarely accessed pages
-const NotFound = lazy(() => import("./pages/NotFound"));
-const TermeniSiConditii = lazy(() => import("./pages/termeni-si-conditii"));
-const GDPR = lazy(() => import("./pages/gdpr"));
-const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
-
-// Eager load critical English pages for stability
+// English pages
 import EnIndex from "./pages/en";
 import ContactEn from "./pages/en/contact";
 import BlogEn from "./pages/en/blog";
+import FinancialCrimeEn from "./pages/en/services/financial-crime";
+import CorruptionPublicOfficeEn from "./pages/en/services/corruption-and-public-office-offenses";
+import CryptoInvestigationsEn from "./pages/en/services/crypto-asset-investigations";
+import DrugOffensesEn from "./pages/en/services/drug-offenses";
+import MoneyLaunderingEn from "./pages/en/services/money-laundering-and-asset-concealment";
+import MalpracticeEn from "./pages/en/services/professional-negligence-and-malpractice";
+import RoadTrafficEn from "./pages/en/services/road-traffic-offenses";
+import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liability";
+import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
+import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
+import GDPRen from "./pages/en/gdpr";
+import CookiePolicyEn from "./pages/en/cookie-policy";
 
-// Lazy load English service pages (less critical for initial access)
-const FinancialCrimeEn = lazy(() => import("./pages/en/services/financial-crime"));
-const CorruptionPublicOfficeEn = lazy(() => import("./pages/en/services/corruption-and-public-office-offenses"));
-const CryptoInvestigationsEn = lazy(() => import("./pages/en/services/crypto-asset-investigations"));
-const DrugOffensesEn = lazy(() => import("./pages/en/services/drug-offenses"));
-const MoneyLaunderingEn = lazy(() => import("./pages/en/services/money-laundering-and-asset-concealment"));
-const MalpracticeEn = lazy(() => import("./pages/en/services/professional-negligence-and-malpractice"));
-const RoadTrafficEn = lazy(() => import("./pages/en/services/road-traffic-offenses"));
-const WorkplaceLiabilityEn = lazy(() => import("./pages/en/services/workplace-criminal-liability"));
-const VictimRepresentationEn = lazy(() => import("./pages/en/services/victim-representation-in-criminal-cases"));
-const TermsAndConditionsEn = lazy(() => import("./pages/en/terms-and-conditions"));
-const GDPRen = lazy(() => import("./pages/en/gdpr"));
-const CookiePolicyEn = lazy(() => import("./pages/en/cookie-policy"));
-
-// Loading component for lazy routes
-const PageLoader = () => (
-  <div className="flex items-center justify-center min-h-[200px]">
-    <div className="animate-pulse text-muted-foreground">Se încarcă...</div>
-  </div>
-);
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -83,30 +70,30 @@ const App = () => (
               <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
               <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
               <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
-              <Route path="/termeni-si-conditii" element={<Suspense fallback={<PageLoader />}><TermeniSiConditii /></Suspense>} />
-              <Route path="/gdpr" element={<Suspense fallback={<PageLoader />}><GDPR /></Suspense>} />
-              <Route path="/politica-cookies" element={<Suspense fallback={<PageLoader />}><PoliticaCookies /></Suspense>} />
+              <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
+              <Route path="/gdpr" element={<GDPR />} />
+              <Route path="/politica-cookies" element={<PoliticaCookies />} />
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />} />
                <Route path="/en/about" element={<About />} />
                <Route path="/en/blog" element={<BlogEn />} />
                <Route path="/en/contact" element={<ContactEn />} />
-               <Route path="/en/terms-and-conditions" element={<Suspense fallback={<PageLoader />}><TermsAndConditionsEn /></Suspense>} />
-               <Route path="/en/gdpr" element={<Suspense fallback={<PageLoader />}><GDPRen /></Suspense>} />
-               <Route path="/en/cookie-policy" element={<Suspense fallback={<PageLoader />}><CookiePolicyEn /></Suspense>} />
-               <Route path="/en/services/financial-crime" element={<Suspense fallback={<PageLoader />}><FinancialCrimeEn /></Suspense>} />
-               <Route path="/en/services/corruption-and-public-office-offenses" element={<Suspense fallback={<PageLoader />}><CorruptionPublicOfficeEn /></Suspense>} />
-               <Route path="/en/services/crypto-asset-investigations" element={<Suspense fallback={<PageLoader />}><CryptoInvestigationsEn /></Suspense>} />
-               <Route path="/en/services/drug-offenses" element={<Suspense fallback={<PageLoader />}><DrugOffensesEn /></Suspense>} />
-               <Route path="/en/services/money-laundering-and-asset-concealment" element={<Suspense fallback={<PageLoader />}><MoneyLaunderingEn /></Suspense>} />
-               <Route path="/en/services/professional-negligence-and-malpractice" element={<Suspense fallback={<PageLoader />}><MalpracticeEn /></Suspense>} />
-               <Route path="/en/services/road-traffic-offenses" element={<Suspense fallback={<PageLoader />}><RoadTrafficEn /></Suspense>} />
-               <Route path="/en/services/workplace-criminal-liability" element={<Suspense fallback={<PageLoader />}><WorkplaceLiabilityEn /></Suspense>} />
-               <Route path="/en/services/victim-representation-in-criminal-cases" element={<Suspense fallback={<PageLoader />}><VictimRepresentationEn /></Suspense>} />
+               <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
+               <Route path="/en/gdpr" element={<GDPRen />} />
+               <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
+               <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
+               <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
+               <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
+               <Route path="/en/services/drug-offenses" element={<DrugOffensesEn />} />
+               <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
+               <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
+               <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
+               <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
+               <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
                
                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-               <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFound /></Suspense>} />
+               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </BrowserRouter>
