@@ -29,7 +29,7 @@ import GDPR from "./pages/gdpr";
 import PoliticaCookies from "./pages/politica-cookies";
 
 // English pages
-import EnIndex from "./pages/en";
+import EnIndex from "./pages/en/index";
 import ContactEn from "./pages/en/contact";
 import BlogEn from "./pages/en/blog";
 import FinancialCrimeEn from "./pages/en/services/financial-crime";
