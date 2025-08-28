@@ -31,7 +31,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Critical resource preloads for faster loading -->
-    <link rel="preload" as="image" href="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" fetchpriority="high">
+    <link rel="preload" as="image" href="/lovable-uploads/49019fba-compressed-320w.png" fetchpriority="high" media="(max-width: 480px)">
+    <link rel="preload" as="image" href="/lovable-uploads/49019fba-compressed-400w.png" fetchpriority="high" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="/lovable-uploads/49019fba-desktop-800w.png" fetchpriority="high" media="(min-width: 768px)">
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sacramento/v13/buEzpo6gcdjy0EiZMBUG0CoV_NxLeiw.woff2" crossorigin="anonymous">
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" crossorigin="anonymous">
     <link rel="modulepreload" href="/src/main.tsx">
@@ -55,6 +57,8 @@
       /* Critical layout and typography styles */
       * { margin: 0; padding: 0; box-sizing: border-box; border-color: hsl(var(--border)); }
       body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.5; }
+      /* Prevent layout shift for images */
+      img[width][height] { aspect-ratio: attr(width) / attr(height); }
       .min-h-screen { min-height: 100vh; } .bg-background { background-color: hsl(var(--background)); } .bg-hero { background-color: hsl(var(--hero)); }
       .text-foreground { color: hsl(var(--foreground)); } .text-hero-foreground { color: hsl(var(--hero-foreground)); }
       .font-sacramento { font-family: Sacramento, "Brush Script MT", "Lucida Handwriting", cursive; font-display: swap; }

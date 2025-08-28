@@ -277,6 +277,9 @@ const Index = () => {
                     title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                     loading="eager" 
                     fetchPriority="high"
+                    width="400"
+                    height="600"
+                    style={{ aspectRatio: '2/3' }}
                     className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
                   />
                 </picture>
@@ -342,6 +345,9 @@ const Index = () => {
                   title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                   loading="eager" 
                   fetchPriority="high"
+                  width="400"
+                  height="600"
+                  style={{ aspectRatio: '2/3' }}
                   className="w-full h-auto rounded-lg shadow-md"
                 />
               </picture>
