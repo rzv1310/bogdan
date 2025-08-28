@@ -450,7 +450,7 @@ const Index = () => {
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
               <img
-                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                src="/lovable-uploads/9d06d593-7393-417b-ae9f-8e605e7e8043.png"
                 alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
                 title="Avocat drept penal Bucuresti Bogdan Lamatic"
                 loading="lazy"
