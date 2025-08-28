@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -31,7 +32,9 @@ export default function TermeniSiConditii() {
       <Breadcrumb className="mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+            <BreadcrumbLink asChild>
+              <Link to="/">Acasă</Link>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
@@ -111,8 +114,8 @@ export default function TermeniSiConditii() {
       <section aria-label="Politici conexe" className="mt-10">
         <h2 className="text-xl font-semibold">Politici conexe</h2>
         <ul className="list-disc pl-5">
-          <li><a href="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</a></li>
-          <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
+          <li><Link to="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</Link></li>
+          <li><Link to="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</Link></li>
         </ul>
       </section>
     </section>

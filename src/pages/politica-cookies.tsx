@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function PoliticaCookies() {
@@ -24,7 +25,7 @@ export default function PoliticaCookies() {
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>
-              <a href="/" className="underline hover:no-underline">Acasă</a>
+              <Link to="/" className="underline hover:no-underline">Acasă</Link>
             </li>
             <li>/</li>
             <li aria-current="page">Politica de Cookie-uri</li>

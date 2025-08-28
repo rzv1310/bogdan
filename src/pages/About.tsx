@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -45,7 +46,9 @@ export default function About() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">{lang === "en" ? "Home" : "Acasă"}</BreadcrumbLink>
+            <BreadcrumbLink asChild>
+              <Link to="/">{lang === "en" ? "Home" : "Acasă"}</Link>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

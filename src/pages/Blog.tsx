@@ -16,7 +16,9 @@ export default function Blog() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+            <BreadcrumbLink asChild>
+              <Link to="/">Acasă</Link>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
