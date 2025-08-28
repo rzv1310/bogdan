@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
+import CriticalCSS from "./components/performance/CriticalCSS";
+import ResourcePreloader from "./components/performance/ResourcePreloader";
 
 // Eager load only essential components
 import Index from "./pages/Index";
@@ -60,6 +62,8 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <LanguageProvider>
+        <CriticalCSS />
+        <ResourcePreloader />
         <Toaster />
         <Sonner />
         <BrowserRouter>

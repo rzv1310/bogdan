@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, ReactNode } from "react";
+import { usePerformanceOptimized } from "@/hooks/usePerformanceOptimized";
 
 interface GlowCardProps {
   children?: ReactNode;
@@ -53,11 +54,19 @@ const GlowCard: React.FC<GlowCardProps> = ({
   const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
   const [pathD, setPathD] = useState<string>("");
   const [runnerDur, setRunnerDur] = useState<string>("5s");
+  
+  const { 
+    shouldReduceAnimations,
+    rafDOMOperation 
+  } = usePerformanceOptimized();
+  
   const [cachedWidth, setCachedWidth] = useState(0);
   const [cachedHeight, setCachedHeight] = useState(0);
 
-  // Throttled pointer tracking to reduce forced reflows
+  // Optimized pointer tracking with performance checks
   useEffect(() => {
+    if (shouldReduceAnimations) return;
+    
     let rafId: number;
     let lastX = 0;
     let lastY = 0;
@@ -69,10 +78,14 @@ const GlowCard: React.FC<GlowCardProps> = ({
       if (!rafId) {
         rafId = requestAnimationFrame(() => {
           if (cardRef.current) {
-            cardRef.current.style.setProperty("--x", lastX.toFixed(2));
-            cardRef.current.style.setProperty("--xp", (lastX / window.innerWidth).toFixed(2));
-            cardRef.current.style.setProperty("--y", lastY.toFixed(2));
-            cardRef.current.style.setProperty("--yp", (lastY / window.innerHeight).toFixed(2));
+            rafDOMOperation(() => {
+              if (cardRef.current) {
+                cardRef.current.style.setProperty("--x", lastX.toFixed(2));
+                cardRef.current.style.setProperty("--xp", (lastX / window.innerWidth).toFixed(2));
+                cardRef.current.style.setProperty("--y", lastY.toFixed(2));
+                cardRef.current.style.setProperty("--yp", (lastY / window.innerHeight).toFixed(2));
+              }
+            });
           }
           rafId = 0;
         });
@@ -84,7 +97,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       document.removeEventListener("pointermove", syncPointer);
       if (rafId) cancelAnimationFrame(rafId);
     };
-   }, []);
+   }, [shouldReduceAnimations, rafDOMOperation]);
 
   // Debounced ResizeObserver to reduce forced reflows
   useEffect(() => {
@@ -284,6 +297,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
           p-6 
           gap-4 
           backdrop-blur-[5px]
+          glow-card
           ${className}
         `}
       >

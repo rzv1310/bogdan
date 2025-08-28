@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react"
+import { usePerformanceOptimized } from "@/hooks/usePerformanceOptimized"
 
 interface SquaresProps {
   direction?: "right" | "left" | "up" | "down" | "diagonal"
@@ -26,8 +27,14 @@ export function Squares({
     x: number
     y: number
   } | null>(null)
-  const [cachedDimensions, setCachedDimensions] = useState({ width: 0, height: 0 })
-  const [isLowEndDevice, setIsLowEndDevice] = useState(false)
+  
+  const { 
+    isLowEndDevice, 
+    shouldReduceAnimations, 
+    cachedDimensions, 
+    updateCachedDimensions,
+    rafDOMOperation 
+  } = usePerformanceOptimized()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -39,24 +46,19 @@ export function Squares({
     // Set canvas background
     canvas.style.background = "#060606"
 
-    // Detect low-end device based on hardware concurrency
-    const detectLowEndDevice = () => {
-      const concurrency = navigator.hardwareConcurrency || 4;
-      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      setIsLowEndDevice(concurrency <= 4 && isMobile);
-    };
-
     const resizeCanvas = () => {
-      const width = canvas.offsetWidth;
-      const height = canvas.offsetHeight;
-      
-      // Cache dimensions to avoid repeated DOM access
-      setCachedDimensions({ width, height });
-      
-      canvas.width = width;
-      canvas.height = height;
-      numSquaresX.current = Math.ceil(width / squareSize) + 1;
-      numSquaresY.current = Math.ceil(height / squareSize) + 1;
+      rafDOMOperation(() => {
+        const width = canvas.offsetWidth;
+        const height = canvas.offsetHeight;
+        
+        // Update cached dimensions
+        updateCachedDimensions(canvas);
+        
+        canvas.width = width;
+        canvas.height = height;
+        numSquaresX.current = Math.ceil(width / squareSize) + 1;
+        numSquaresY.current = Math.ceil(height / squareSize) + 1;
+      });
     }
 
     window.addEventListener("resize", resizeCanvas)
@@ -136,16 +138,16 @@ export function Squares({
       requestRef.current = requestAnimationFrame(updateAnimation)
     }
 
-    // Throttled mouse move to reduce forced reflows
+    // Optimized mouse move with performance checks
     let mouseRafId: number;
     const handleMouseMove = (event: MouseEvent) => {
-      if (isLowEndDevice) return; // Skip on low-end devices
+      if (isLowEndDevice || shouldReduceAnimations) return;
       
       if (!mouseRafId) {
         mouseRafId = requestAnimationFrame(() => {
-          const rect = canvas.getBoundingClientRect();
-          const mouseX = event.clientX - rect.left;
-          const mouseY = event.clientY - rect.top;
+          // Use cached dimensions instead of getBoundingClientRect
+          const mouseX = event.clientX - (canvas.offsetLeft || 0);
+          const mouseY = event.clientY - (canvas.offsetTop || 0);
 
           const startX = Math.floor(gridOffset.current.x / squareSize) * squareSize;
           const startY = Math.floor(gridOffset.current.y / squareSize) * squareSize;
@@ -173,11 +175,10 @@ export function Squares({
     canvas.addEventListener("mouseleave", handleMouseLeave)
 
     // Initial setup
-    detectLowEndDevice();
     resizeCanvas();
     
     // Conditionally start animation based on device capability
-    if (!isLowEndDevice) {
+    if (!isLowEndDevice && !shouldReduceAnimations) {
       requestRef.current = requestAnimationFrame(updateAnimation);
     }
 
@@ -193,14 +194,14 @@ export function Squares({
         cancelAnimationFrame(mouseRafId);
       }
     }
-  }, [direction, speed, borderColor, hoverFillColor, hoveredSquare, squareSize, isLowEndDevice])
+  }, [direction, speed, borderColor, hoverFillColor, hoveredSquare, squareSize, isLowEndDevice, shouldReduceAnimations])
 
   return (
     <canvas
       ref={canvasRef}
-      className={`w-full h-full border-none block ${className}`}
+      className={`w-full h-full border-none block squares-background ${className}`}
       style={{
-        willChange: 'transform',
+        willChange: shouldReduceAnimations ? 'auto' : 'transform',
         contain: 'layout style paint',
       }}
     />
