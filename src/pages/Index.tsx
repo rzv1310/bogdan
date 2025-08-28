@@ -3,12 +3,16 @@ import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
-// Keep Index page components eager loaded for stability and performance
-import { GlowCard } from "@/components/ui/spotlight-card";
-import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
-import { PulseBeams } from "@/components/ui/pulse-beams";
-import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
+// Lazy load heavy UI components for better initial performance
+const GlowCard = lazy(() => import("@/components/ui/spotlight-card").then(m => ({ default: m.GlowCard })));
+const GeminiButtonEffect = lazy(() => import("@/components/ui/gemini-button-effect"));
+const PulseBeams = lazy(() => import("@/components/ui/pulse-beams").then(m => ({ default: m.PulseBeams })));
+const ReviewsCarousel3D = lazy(() => import("@/components/ui/reviews-carousel-3d").then(m => ({ default: m.ReviewsCarousel3D })));
+
+// Import types only (no runtime cost)
+import type { Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -359,7 +363,8 @@ const Index = () => {
 
         {/* Values and Reasons */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <GlowCard customSize borderPx={1} borderRunner noShadow className="w-full p-0">
+          <Suspense fallback={<div className="h-40 bg-muted/50 rounded-xl animate-pulse" />}>
+            <GlowCard customSize borderPx={1} borderRunner noShadow className="w-full p-0">
             <div className="absolute inset-[var(--border-size)] rounded-xl bg-background" aria-hidden="true"></div>
             <div className="relative z-10 p-6 md:p-8">
               <div className="grid md:grid-cols-2 gap-6 md:gap-12">
@@ -396,6 +401,7 @@ const Index = () => {
               </div>
             </div>
           </GlowCard>
+          </Suspense>
         </section>
 
         {/* CTA */}
@@ -404,13 +410,15 @@ const Index = () => {
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
-              <GeminiButtonEffect>
+              <Suspense fallback={<div className="h-12 w-40 bg-muted/50 rounded-lg animate-pulse" />}>
+                <GeminiButtonEffect>
                 <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
                 </a>
               </GeminiButtonEffect>
+              </Suspense>
             </div>
           </div>
         </section>
@@ -463,7 +471,8 @@ const Index = () => {
               ))}
             </div>
             <div className="mt-8">
-              <PulseBeams
+              <Suspense fallback={<div className="h-48 w-full bg-muted/50 rounded-xl animate-pulse" />}>
+                <PulseBeams
                 beams={beams}
                 gradientStops={gradientStops}
                 width={858}
@@ -478,6 +487,7 @@ const Index = () => {
                   </a>
                 </div>
               </PulseBeams>
+              </Suspense>
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
@@ -518,7 +528,9 @@ const Index = () => {
               </>
             )}
           </h2>
-          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
+          <Suspense fallback={<div className="h-64 w-full bg-muted/50 rounded-xl animate-pulse" />}>
+            <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
+          </Suspense>
         </section>
       </main>
 

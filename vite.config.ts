@@ -22,7 +22,19 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        // Let Vite handle all chunking automatically for maximum compatibility
+        // Strategic chunking to reduce main thread blocking
+        manualChunks: {
+          // Heavy components that can be deferred
+          'ui-heavy': ['@/components/ui/reviews-carousel-3d', '@/components/ui/spotlight-card', '@/components/ui/gemini-button-effect', '@/components/ui/pulse-beams'],
+          // Chart libraries (only used on some pages)
+          'charts': ['recharts', '@/components/charts/EconomicCrimesChart', '@/components/charts/DrugPenaltiesChart', '@/components/charts/RoadAccidentsChart', '@/components/charts/MitaBarChart'],
+          // PDF and heavy utilities
+          'heavy-utils': ['@react-pdf/renderer', 'docx', 'html-to-image'],
+          // Form libraries
+          'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
+          // Radix UI (heavy but needed)
+          'radix': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tabs', '@radix-ui/react-popover'],
+        },
         chunkFileNames: (chunkInfo) => {
           const facadeModuleId = chunkInfo.facadeModuleId ? path.basename(chunkInfo.facadeModuleId, path.extname(chunkInfo.facadeModuleId)) : 'chunk';
           return `js/${facadeModuleId}-[hash].js`;
@@ -30,7 +42,12 @@ export default defineConfig(({ mode }) => ({
       }
     },
     target: 'esnext',
-    minify: mode === 'production' ? 'esbuild' : false,
-    sourcemap: false, // Disable sourcemaps in production to reduce bundle size
+    minify: 'esbuild',
+    cssMinify: true,
+    sourcemap: false,
+    treeshake: {
+      preset: 'recommended',
+      moduleSideEffects: false
+    }
   },
 }));
