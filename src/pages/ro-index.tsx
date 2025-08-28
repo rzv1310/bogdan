@@ -8,8 +8,8 @@ export default function RoIndex() {
   useEffect(() => { setLang("ro"); }, [setLang]);
 
   useSEO({
-    title: "Avocat Bogdan Lamatic - Avocat Penalist | București",
-    description: "Apărare în infracțiuni economice, corupție, rutiere, cripto, malpraxis. Experiență în drept penal.",
+    title: "Avocat Bogdan Lamatic - Avocat Drept Penal | București",
+    description: "Apărare în infracțiuni economice, corupție, rutiere, cripto, malpraxis. Experiență 18 ani în drept penal.",
     alternates: { ro: "/", en: "/en" },
     locale: "ro_RO",
   });
