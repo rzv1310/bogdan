@@ -23,9 +23,11 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          // Let page components be chunked automatically by Vite's lazy loading
-          if (id.includes('/pages/') || id.includes('/src/pages/')) {
-            return undefined; // Let Vite handle page chunks automatically
+          // CRITICAL: Let all page components be chunked automatically by Vite
+          // This includes both /pages/ and /src/pages/ paths
+          if (id.includes('/pages/') || id.includes('\\pages\\') || 
+              id.includes('/src/pages/') || id.includes('\\src\\pages\\')) {
+            return undefined; // Let Vite handle all page chunks automatically
           }
           
           // Core React dependencies stay in main bundle for performance
