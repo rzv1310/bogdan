@@ -338,12 +338,22 @@ const Index = () => {
                 </GlowCard>
               ))}
             </div>
-            <div className="mt-8 flex justify-center">
-              <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
-                <Button variant="premium" size="lg" className="border border-hero-foreground">
-                  <Phone /> 0745 506 443
-                </Button>
-              </a>
+            <div className="mt-8">
+              <PulseBeams
+                beams={beams}
+                gradientStops={gradientStops}
+                width={858}
+                height={434}
+                className="relative w-full h-[180px] md:h-[220px]"
+              >
+                <div className="flex justify-center">
+                  <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                    <Button variant="premium" size="lg" className="border border-hero-foreground">
+                      <Phone /> 0745 506 443
+                    </Button>
+                  </a>
+                </div>
+              </PulseBeams>
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
@@ -372,21 +382,7 @@ const Index = () => {
               </>
             )}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {(lang === "ro" ? reviewsRO : reviewsEN).slice(0, 6).map((review, index) => (
-              <div key={index} className="bg-card rounded-lg p-6 border border-border">
-                <div className="flex items-center mb-4">
-                  <div className="flex text-accent">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i}>★</span>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-foreground mb-4 italic">"{review.text}"</p>
-                <p className="text-muted-foreground font-semibold">- {review.name}</p>
-              </div>
-            ))}
-          </div>
+          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
         </section>
       </main>
 
