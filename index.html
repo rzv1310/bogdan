@@ -43,7 +43,7 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     
-    <!-- Critical CSS inline for immediate rendering -->
+    <!-- Ultra-Critical CSS inline for FCP optimization -->
     <style id="critical-css-inline">
       /* CSS Variables - Complete Design System */
       :root {
@@ -84,6 +84,26 @@
         --sidebar-ring: 240 9% 98%;
       }
       
+      /* Light mode theme */
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 222.2 84% 4.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 222.2 84% 4.9%;
+          --primary: 222.2 47.4% 11.2%;
+          --primary-foreground: 210 40% 98%;
+          --secondary: 210 40% 96.1%;
+          --secondary-foreground: 222.2 47.4% 11.2%;
+          --muted: 210 40% 96.1%;
+          --muted-foreground: 215.4 16.3% 46.9%;
+          --border: 214.3 31.8% 91.4%;
+          --input: 214.3 31.8% 91.4%;
+          --hero: 0 0% 0%;
+          --hero-foreground: 210 40% 98%;
+        }
+      }
+      
       /* Critical layout and typography styles */
       * { margin: 0; padding: 0; box-sizing: border-box; border-color: hsl(var(--border)); }
       body { 
@@ -105,9 +125,35 @@
       .text-foreground { color: hsl(var(--foreground)); }
       .text-hero-foreground { color: hsl(var(--hero-foreground)); }
       
-      /* Font families with performance optimization */
-      .font-sacramento { font-family: Sacramento, "Brush Script MT", "Lucida Handwriting", cursive; font-display: swap; }
-      .font-inter { font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif; font-display: swap; }
+      /* Font families with ultra-performance optimization */
+      .font-sacramento { 
+        font-family: Sacramento, "Brush Script MT", "Lucida Handwriting", cursive; 
+        font-display: swap;
+        font-weight: 400;
+      }
+      .font-inter { 
+        font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif; 
+        font-display: swap;
+        font-weight: 400;
+      }
+      
+      /* Preload critical font faces */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Sacramento';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://fonts.gstatic.com/s/sacramento/v13/buEzpo6gcdjy0EiZMBUG0CoV_NxLeiw.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
       
       /* Critical flexbox and layout */
       .flex { display: flex; }
@@ -223,27 +269,116 @@
       @media (min-width: 1536px) { .container { max-width: 1536px; } }
     </style>
 
-    <!-- Asynchronous Google Fonts loading to avoid render-blocking -->
+    <!-- Ultra-optimized loading with Service Worker registration -->
     <script>
       (function() {
-        const loadFont = (url) => {
+        // Register Service Worker for aggressive caching
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js', { scope: '/' })
+              .then(registration => {
+                console.log('SW: Registered successfully');
+                
+                // Check for updates
+                registration.addEventListener('updatefound', () => {
+                  const newWorker = registration.installing;
+                  if (newWorker) {
+                    newWorker.addEventListener('statechange', () => {
+                      if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        // New content available, could show update notification
+                        console.log('SW: New content available');
+                      }
+                    });
+                  }
+                });
+              })
+              .catch(err => console.log('SW: Registration failed'));
+          });
+        }
+        
+        // Ultra-optimized font loading with subset optimization
+        const loadFont = (url, unicodeRange) => {
           const link = document.createElement('link');
           link.href = url;
           link.rel = 'stylesheet';
           link.media = 'print';
-          link.onload = () => { link.media = 'all'; };
+          link.onload = () => { 
+            link.media = 'all';
+            // Preload critical glyphs
+            if (unicodeRange) {
+              const preloadLink = document.createElement('link');
+              preloadLink.rel = 'preload';
+              preloadLink.as = 'font';
+              preloadLink.type = 'font/woff2';
+              preloadLink.crossOrigin = 'anonymous';
+              preloadLink.href = url.replace('css2?', 'css2?text=' + encodeURIComponent('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789.,!?ăâîșțĂÂÎȘȚ') + '&');
+              document.head.appendChild(preloadLink);
+            }
+          };
           link.onerror = () => { link.media = 'all'; };
           document.head.appendChild(link);
         };
         
-        loadFont('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-        loadFont('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+        // Load fonts with Romanian character optimization
+        loadFont('https://fonts.googleapis.com/css2?family=Sacramento&display=swap&subset=latin,latin-ext', true);
+        loadFont('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=latin,latin-ext', true);
+        
+        // Preconnect to critical domains
+        const preconnectDomains = [
+          'https://fonts.googleapis.com',
+          'https://fonts.gstatic.com'
+        ];
+        
+        preconnectDomains.forEach(domain => {
+          const link = document.createElement('link');
+          link.rel = 'preconnect';
+          link.href = domain;
+          link.crossOrigin = 'anonymous';
+          document.head.appendChild(link);
+        });
+        
+        // Critical resource hints
+        const modulePreloads = [
+          '/src/main.tsx',
+          '/src/App.tsx',
+          '/src/pages/Index.tsx'
+        ];
+        
+        modulePreloads.forEach(module => {
+          const link = document.createElement('link');
+          link.rel = 'modulepreload';
+          link.href = module;
+          document.head.appendChild(link);
+        });
       })();
     </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <!-- Defer external CSS to avoid render blocking -->
+    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'; this.onload=null;">
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Preload next likely navigation -->
+    <script>
+      // Preload common next pages after initial load
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const preloadLinks = [
+            '/src/pages/services/criminalitate-economica.tsx',
+            '/src/pages/services/infractiuni-rutiere-cu-victime.tsx',
+            '/src/pages/Contact.tsx'
+          ];
+          
+          preloadLinks.forEach(href => {
+            const link = document.createElement('link');
+            link.rel = 'modulepreload';
+            link.href = href;
+            document.head.appendChild(link);
+          });
+        }, 2000);
+      });
+    </script>
   </body>
 </html>

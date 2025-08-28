@@ -113,15 +113,18 @@ All colors MUST be HSL.
   }
 }
 
-/* Optimized font families with proper fallbacks */
+/* Ultra-optimized font families with proper fallbacks and subset loading */
 .font-sacramento {
   font-family: Sacramento, "Brush Script MT", "Lucida Handwriting", cursive;
   font-display: swap;
+  font-variant-ligatures: none;
 }
 
 .font-inter {
   font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
   font-display: swap;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
 }
 
 /* Custom keyframes for components */
