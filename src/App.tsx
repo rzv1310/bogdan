@@ -6,11 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
 
-// Keep only the most critical pages for initial load
+// Keep critical pages eager loaded for stability
+import Index from "./pages/Index";
 import Layout from "./components/layout/Layout";
 
-// Lazy load ALL pages including main pages for better performance
-const Index = lazy(() => import("./pages/Index"));
+// Lazy load non-critical pages
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Lazy load all other pages to reduce initial bundle size
@@ -67,7 +67,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Suspense fallback={<PageLoader />}><Index /></Suspense>} />
+              <Route path="/" element={<Index />} />
               <Route path="/despre-mine" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
               <Route path="/blog" element={<Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
               <Route path="/calculator-despagubiri" element={<Suspense fallback={<PageLoader />}><CalculatorDespagubiri /></Suspense>} />
