@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useMemo, useState } from "react";
 import { useSEO } from "@/hooks/useSEO";
 import {
   Breadcrumb,
@@ -72,20 +72,20 @@ export default function CalculatorDespagubiri() {
     description: "Pagină calcul despăgubiri - în curând.",
   });
 
-  const [eventType, setEventType] = React.useState("accident"); // accident | agresiune | altul
-  const [ittDays, setIttDays] = React.useState(0); // zile îngrijiri medicale/ITT
-  const [hospDays, setHospDays] = React.useState(0); // zile spitalizare
-  const [disability, setDisability] = React.useState(0); // % invaliditate permanentă
-  const [age, setAge] = React.useState(35);
-  const [psych, setPsych] = React.useState(3); // 1..5
-  const [netIncome, setNetIncome] = React.useState(5000);
-  const [monthsOff, setMonthsOff] = React.useState(0);
-  const [medCosts, setMedCosts] = React.useState(0);
-  const [travelCare, setTravelCare] = React.useState(0);
-  const [otherCosts, setOtherCosts] = React.useState(0);
-  const [victimFault, setVictimFault] = React.useState(0); // %
-  const [cap, setCap] = React.useState(0); // opțional, plafon poliță (RON)
-  const [showResults, setShowResults] = React.useState(false); // control results visibility
+  const [eventType, setEventType] = useState("accident"); // accident | agresiune | altul
+  const [ittDays, setIttDays] = useState(0); // zile îngrijiri medicale/ITT
+  const [hospDays, setHospDays] = useState(0); // zile spitalizare
+  const [disability, setDisability] = useState(0); // % invaliditate permanentă
+  const [age, setAge] = useState(35);
+  const [psych, setPsych] = useState(3); // 1..5
+  const [netIncome, setNetIncome] = useState(5000);
+  const [monthsOff, setMonthsOff] = useState(0);
+  const [medCosts, setMedCosts] = useState(0);
+  const [travelCare, setTravelCare] = useState(0);
+  const [otherCosts, setOtherCosts] = useState(0);
+  const [victimFault, setVictimFault] = useState(0); // %
+  const [cap, setCap] = useState(0); // opțional, plafon poliță (RON)
+  const [showResults, setShowResults] = useState(false); // control results visibility
   const isMobile = useIsMobile();
 
   const reset = () => {
@@ -109,7 +109,7 @@ export default function CalculatorDespagubiri() {
     setShowResults(true); // show results when calculate is clicked
   };
 
-  const { material, lostWages, morale, gross, net, low, high } = React.useMemo(() => {
+  const { material, lostWages, morale, gross, net, low, high } = useMemo(() => {
     const _med = clampNum(medCosts);
     const _travel = clampNum(travelCare);
     const _other = clampNum(otherCosts);

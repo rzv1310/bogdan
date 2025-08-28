@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} title="/" className="hover:underline">{lang === "en" ? "Bogdan Lamatic Law Office" : "Cabinet Avocat Bogdan Lamatic"}</Link></h2>
+            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} className="hover:underline">{lang === "en" ? "Bogdan Lamatic Law Office" : "Cabinet Avocat Bogdan Lamatic"}</Link></h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
@@ -26,15 +26,15 @@ export default function Footer() {
               </li>
               <li>
                 <span>{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}
-                <a href="tel:+40745506443" title="/telefon" className="underline hover:no-underline">+40 745 506 443</a>
+                <a href="tel:+40745506443" className="underline hover:no-underline">+40 745 506 443</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
-                <a href="mailto:bogdan.lamatic@yahoo.com" title="/email" className="underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
+                <a href="mailto:bogdan.lamatic@yahoo.com" className="underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
               </li>
               <li>
                 <span>Website:</span>{" "}
-                <a href="https://avocatpenalbucuresti.ro/" title="/avocat-penal-bucuresti" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
+                <a href="https://avocatpenalbucuresti.ro/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
@@ -51,17 +51,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               {svcList.map((s) => (
                 <li key={s.to}>
-                  <Link to={s.to} title={
-                    s.to.includes("cauze-penale-privind-droguri") ? "/avocat-droguri" :
-                    s.to.includes("criminalitate-economica") ? "/criminalitate-economica" :
-                    s.to.includes("infractiuni-de-coruptie") ? "/coruptie" :
-                    s.to.includes("infractiuni-rutiere") ? "/avocat-accidente-rutiere" :
-                    s.to.includes("investigatii-privind-activele-cripto") ? "/avocat-criptomonede" :
-                    s.to.includes("neglijenta-profesionala-si-malpraxis") ? "/avocat-malpraxis" :
-                    s.to.includes("raspundere-penala-incidente") ? "/avocat-incidente-de-munca" :
-                    s.to.includes("reprezentarea-victimelor") ? "/avocat-victime" :
-                    s.to.includes("spalare-de-bani") ? "/avocat-spalare-bani" : ""
-                  } className="hover:underline">
+                  <Link to={s.to} className="hover:underline">
                     {labelFor(s.to, s.label)}
                   </Link>
                 </li>
@@ -74,25 +64,25 @@ export default function Footer() {
             <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase">{lang === "en" ? "Useful" : "Utile"}</h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <Link to={mapPathToLang("/contact", lang)} title="/contact" className="hover:underline">{t.nav.contact}</Link>
+                <Link to={mapPathToLang("/contact", lang)} className="hover:underline">{t.nav.contact}</Link>
               </li>
               <li>
-                <Link to={mapPathToLang("/blog", lang)} title="/blog" className="hover:underline">{t.nav.blog}</Link>
+                <Link to={mapPathToLang("/blog", lang)} className="hover:underline">{t.nav.blog}</Link>
               </li>
               <li>
-                <a href="https://reclamatiisal.anpc.ro/" title="/anpc" rel="noopener noreferrer" className="hover:underline">ANPC-SAL</a>
+                <a href="https://reclamatiisal.anpc.ro/" target="_blank" rel="noopener noreferrer" className="hover:underline">ANPC-SAL</a>
               </li>
               <li>
-                <a href="https://consumer-redress.ec.europa.eu/index_ro" title="/anpc" rel="noopener noreferrer" className="hover:underline">ANPC-SOL</a>
+                <a href="https://consumer-redress.ec.europa.eu/index_ro" target="_blank" rel="noopener noreferrer" className="hover:underline">ANPC-SOL</a>
               </li>
               <li>
-                <Link to={mapPathToLang("/termeni-si-conditii", lang)} title="/termeni-si-conditii" className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>
+                <Link to={mapPathToLang("/termeni-si-conditii", lang)} className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>
               </li>
               <li>
-                <Link to={mapPathToLang("/gdpr", lang)} title="/gdpr" className="hover:underline">GDPR</Link>
+                <Link to={mapPathToLang("/gdpr", lang)} className="hover:underline">GDPR</Link>
               </li>
               <li>
-                <Link to={mapPathToLang("/politica-cookies", lang)} title="/cookies" className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
+                <Link to={mapPathToLang("/politica-cookies", lang)} className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
               </li>
             </ul>
           </nav>

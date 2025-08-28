@@ -1,7 +1,7 @@
-import * as React from "react";
+import React, { useEffect, useRef, useState, ReactNode } from "react";
 
 interface GlowCardProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   className?: string;
   glowColor?: "blue" | "purple" | "green" | "red" | "orange";
   size?: "sm" | "md" | "lg";
@@ -47,20 +47,14 @@ const GlowCard: React.FC<GlowCardProps> = ({
   runnerSpeedFactor = 1,
   noShadow = false,
 }) => {
-  // Fallback if React hooks are not available
-  if (!React.useRef || !React.useState || !React.useEffect) {
-    console.error('React hooks not available in GlowCard');
-    return React.createElement('div', { className: `rounded-2xl border p-6 ${className}` }, children);
-  }
+  const cardRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+  const runnerRef = useRef<SVGPathElement>(null);
+  const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
+  const [pathD, setPathD] = useState<string>("");
+  const [runnerDur, setRunnerDur] = useState<string>("5s");
 
-  const cardRef = React.useRef<HTMLDivElement>(null);
-  const innerRef = React.useRef<HTMLDivElement>(null);
-  const runnerRef = React.useRef<SVGPathElement>(null);
-  const pathIdRef = React.useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
-  const [pathD, setPathD] = React.useState<string>("");
-  const [runnerDur, setRunnerDur] = React.useState<string>("5s");
-
-  React.useEffect(() => {
+  useEffect(() => {
     const syncPointer = (e: PointerEvent) => {
       const { clientX: x, clientY: y } = e;
 
@@ -76,7 +70,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
     return () => document.removeEventListener("pointermove", syncPointer);
    }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!borderRunner) return;
     const el = cardRef.current;
     if (!el) return;

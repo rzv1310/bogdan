@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
+import * as htmlToImage from "html-to-image";
 import {
   BarChart,
   Bar,
@@ -36,28 +37,20 @@ interface EconomicCrimesChartProps {
 }
 
 export default function EconomicCrimesChart({ data = defaultData, title, subtitle, legendLabels, downloadAriaLabel = "Download chart as PNG", filename }: EconomicCrimesChartProps) {
-  const chartRef = React.useRef<HTMLDivElement | null>(null);
+  const chartRef = useRef<HTMLDivElement | null>(null);
 
   const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
     try {
-      // Simple fallback download without html-to-image
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        canvas.width = 800;
-        canvas.height = 400;
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#000000';
-        ctx.font = '16px Arial';
-        ctx.fillText('Economic Crimes Chart - Vezi graficul în browser', 20, 200);
-        
-        const link = document.createElement("a");
-        link.download = filename ?? `diicot-economic-crimes-${new Date().toISOString().slice(0, 10)}.png`;
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-      }
+      const dataUrl = await htmlToImage.toPng(chartRef.current, {
+        backgroundColor: "#ffffff",
+        pixelRatio: 2,
+        cacheBust: true,
+      });
+      const link = document.createElement("a");
+      link.download = filename ?? `diicot-economic-crimes-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = dataUrl;
+      link.click();
     } catch (err) {
       console.error("PNG export failed", err);
     }
@@ -121,7 +114,8 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                 <a
                   className="underline hover:no-underline inline-flex items-center gap-1"
                   href="https://www.diicot.ro/mass-media/evenimente-publice/5355-prezentarea-raportului-de-activitate-diicot-pentru-anul-2024"
-                   rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   Raport DIICOT 2024
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -131,7 +125,8 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                 <a
                   className="underline hover:no-underline inline-flex items-center gap-1"
                   href="https://www.ziuaconstanta.ro/images/stories/2024/03/03/bilant-diicot-raport-2023.pdf"
-                   rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   Raport DIICOT 2023 (PDF)
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -141,7 +136,8 @@ export default function EconomicCrimesChart({ data = defaultData, title, subtitl
                 <a
                   className="underline hover:no-underline inline-flex items-center gap-1"
                   href="https://insse.ro/cms/sites/default/files/field/publicatii/romania_in_cifre_2023.pdf"
-                   rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   INS - România în cifre 2023 (context statistic)
                   <ExternalLink className="w-3.5 h-3.5" />

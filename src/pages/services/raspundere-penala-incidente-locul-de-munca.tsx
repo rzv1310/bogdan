@@ -49,7 +49,7 @@ export default function RaspunderePenalaMunca() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -75,7 +75,7 @@ export default function RaspunderePenalaMunca() {
         </div>
 
         <div className="mt-6">
-          <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
+          <a href="tel:+40745506443" aria-label="Sună acum">
             <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone /> Sună acum
             </Button>
@@ -144,7 +144,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 3rd card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" title="/telefon" aria-label="Vreau avocat - Sună acum">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
@@ -227,7 +227,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 6th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" title="/telefon" aria-label="Vreau avocat - Sună acum">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!

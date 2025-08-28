@@ -28,19 +28,19 @@ export default function CoruptieSiFunctiePublica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
-                    "item": "https://avocatpenalbucuresti.ro/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
+                    "item": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
                   }
                 ]
               })
@@ -54,7 +54,7 @@ export default function CoruptieSiFunctiePublica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni de corupție și fapte legate de exercitarea funcției publice",
                 "description": "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA",
-                "url": "https://avocatpenalbucuresti.ro/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+                "url": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -92,7 +92,7 @@ export default function CoruptieSiFunctiePublica() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță anticorupție">
-          <a href="tel:+40745506443" title="/telefon">
+          <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Apelează acum
           </a>
         </Button>
@@ -102,7 +102,7 @@ export default function CoruptieSiFunctiePublica() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -268,7 +268,7 @@ export default function CoruptieSiFunctiePublica() {
           </ul>
           <div className="pt-2">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță în dosare de corupție">
-              <a href="tel:+40745506443" title="/telefon"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
         </CardContent>

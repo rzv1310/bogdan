@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
+import * as htmlToImage from "html-to-image";
 import {
   BarChart,
   Bar,
@@ -34,7 +35,7 @@ interface DrugPenaltiesChartProps {
 }
 
 export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim", title }: DrugPenaltiesChartProps) {
-  const chartRef = React.useRef<HTMLDivElement | null>(null);
+  const chartRef = useRef<HTMLDivElement | null>(null);
 
   const tooltipFormatter = (value: number, name: string) => {
     return [`${value} ${unit}`, name] as [string, string];
@@ -43,23 +44,15 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
   const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
     try {
-      // Simple fallback download without html-to-image
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        canvas.width = 800;
-        canvas.height = 400;
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#000000';
-        ctx.font = '16px Arial';
-        ctx.fillText('Drug Penalties Chart - Vezi graficul în browser', 20, 200);
-        
-        const link = document.createElement("a");
-        link.download = `pedepse-droguri-${new Date().toISOString().slice(0, 10)}.png`;
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-      }
+      const dataUrl = await htmlToImage.toPng(chartRef.current, {
+        backgroundColor: "#ffffff",
+        pixelRatio: 2,
+        cacheBust: true,
+      });
+      const link = document.createElement("a");
+      link.download = `pedepse-droguri-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = dataUrl;
+      link.click();
     } catch (err) {
       console.error("PNG export failed", err);
     }
@@ -115,7 +108,8 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
                 <a
                   className="underline hover:no-underline inline-flex items-center gap-1"
                   href="https://legislatie.just.ro/Public/DetaliiDocument/280178"
-                   rel="noreferrer noopener"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   LEGE nr. 58 din 20 martie 2024 - completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
                   <ExternalLink className="w-3.5 h-3.5" />

@@ -1,10 +1,11 @@
-import * as React from "react";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "@/context/language";
-import Layout from "./components/layout/Layout";
-import RoIndex from "./pages/ro-index";
+import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Layout from "./components/layout/Layout";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -18,6 +19,7 @@ import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime"
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
 import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
+import { LanguageProvider } from "@/context/language";
 
 // EN pages
 import EnIndex from "./pages/en";
@@ -38,96 +40,63 @@ import GDPR from "./pages/gdpr";
 import PoliticaCookies from "./pages/politica-cookies";
 import GDPRen from "./pages/en/gdpr";
 import CookiePolicyEn from "./pages/en/cookie-policy";
-
 const queryClient = new QueryClient();
 
-// Error Boundary for React hooks errors
-class ReactHooksErrorBoundary extends React.Component<
-  { children: React.ReactNode },
-  { hasError: boolean }
-> {
-  constructor(props: { children: React.ReactNode }) {
-    super(props);
-    this.state = { hasError: false };
-  }
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <LanguageProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Index />} />
+              <Route path="/despre-mine" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
+              <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
+              <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
+              <Route path="/servicii/cauze-penale-privind-droguri" element={<CauzeDroguri />} />
+              <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
+              <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
+              <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
+              <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
+              <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
+              <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
+              <Route path="/gdpr" element={<GDPR />} />
+              <Route path="/politica-cookies" element={<PoliticaCookies />} />
 
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('React hooks error:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return (
-        <div style={{ padding: '20px', textAlign: 'center' }}>
-          <h1>Something went wrong with React hooks.</h1>
-          <button onClick={() => window.location.reload()}>
-            Refresh Page
-          </button>
-        </div>
-      );
-    }
-
-    return this.props.children;
-  }
-}
-
-function App() {
-  return (
-    <ReactHooksErrorBoundary>
-      <QueryClientProvider client={queryClient}>
-        <LanguageProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route element={<Layout />}>
-                <Route path="/" element={<RoIndex />} />
-                <Route path="/despre-mine" element={<About />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
-                <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
-                <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
-                <Route path="/servicii/cauze-penale-privind-droguri" element={<CauzeDroguri />} />
-                <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
-                <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
-                <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
-                <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
-                <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
-                <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
-                <Route path="/gdpr" element={<GDPR />} />
-                <Route path="/politica-cookies" element={<PoliticaCookies />} />
-
-                {/* EN routes */}
-                <Route path="/en" element={<EnIndex />} />
-                <Route path="/en/about" element={<About />} />
-                <Route path="/en/blog" element={<BlogEn />} />
-                <Route path="/en/contact" element={<ContactEn />} />
-                <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
-                <Route path="/en/gdpr" element={<GDPRen />} />
-                <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
-                <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
-                <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
-                <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
-                <Route path="/en/services/drug-offenses" element={<DrugOffensesEn />} />
-                <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
-                <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
-                <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
-                <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
-                <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
-                
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
-        </LanguageProvider>
-      </QueryClientProvider>
-    </ReactHooksErrorBoundary>
-  );
-}
+               {/* EN routes */}
+               <Route path="/en" element={<EnIndex />}>
+                 <Route index element={<Index />} />
+               </Route>
+               <Route path="/en/about" element={<About />} />
+               <Route path="/en/blog" element={<BlogEn />} />
+               <Route path="/en/contact" element={<ContactEn />} />
+               <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
+               <Route path="/en/gdpr" element={<GDPRen />} />
+               <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
+               <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
+               <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
+               <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
+               <Route path="/en/services/drug-offenses" element={<DrugOffensesEn />} />
+               <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
+               <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
+               <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
+               <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
+               <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
+               
+               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+               <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;

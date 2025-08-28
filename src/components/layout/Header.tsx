@@ -1,39 +1,36 @@
-import * as React from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerClose,
+} from "@/components/ui/drawer";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
+import { useMobileScrollTop } from "@/hooks/useMobileScrollTop";
 
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
-
-// Safe Navigation Menu Component with fallback
-function SafeNavigationMenu({ children }: { children: React.ReactNode }) {
-  try {
-    const {
-      NavigationMenu,
-      NavigationMenuList,
-      NavigationMenuItem,
-      NavigationMenuTrigger,
-      NavigationMenuContent,
-      NavigationMenuLink,
-    } = require("@/components/ui/navigation-menu");
-    
-    return React.createElement(NavigationMenu, {}, children);
-  } catch (error) {
-    console.error('NavigationMenu not available, using fallback:', error);
-    return React.createElement('div', { className: 'flex items-center gap-2' }, children);
-  }
-}
 
 export default function Header() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const [servicesOpen, setServicesOpen] = React.useState(false);
+  const { handleMobileNavigation } = useMobileScrollTop();
 
   const svcList = lang === "en" ? servicesEn : services;
 
@@ -52,7 +49,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
-        <Link to={mapPathToLang("/", lang)} title="/" className="flex flex-col items-center leading-none text-center select-none">
+        <Link to={mapPathToLang("/", lang)} className="flex flex-col items-center leading-none text-center select-none">
           <span className="block ml-1 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
             {lang === "ro" ? "CABINET AVOCAT" : "LAW OFFICE"}
           </span>
@@ -61,40 +58,28 @@ export default function Header() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-2">
-          <SafeNavigationMenu>
-            <div className="relative group">
-              <Button variant="ghost" className="px-3 py-2 text-base">
-                {t.nav.services}
-              </Button>
-              <div className="absolute left-0 top-full mt-1 hidden group-hover:block z-50">
-                <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md border">
-                  {svcList.map((s) => (
-                    <li key={s.to}>
-                      <Link 
-                        to={s.to} 
-                        title={
-                          s.to.includes("cauze-penale-privind-droguri") ? "/avocat-droguri" :
-                          s.to.includes("criminalitate-economica") ? "/criminalitate-economica" :
-                          s.to.includes("infractiuni-de-coruptie") ? "/coruptie" :
-                          s.to.includes("infractiuni-rutiere") ? "/avocat-accidente-rutiere" :
-                          s.to.includes("investigatii-privind-activele-cripto") ? "/avocat-criptomonede" :
-                          s.to.includes("neglijenta-profesionala-si-malpraxis") ? "/avocat-malpraxis" :
-                          s.to.includes("raspundere-penala-incidente") ? "/avocat-incidente-de-munca" :
-                          s.to.includes("reprezentarea-victimelor") ? "/avocat-victime" :
-                          s.to.includes("spalare-de-bani") ? "/avocat-spalare-bani" : ""
-                        } 
-                        className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug"
-                      >
-                        {labelFor(s.to, s.label)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </SafeNavigationMenu>
-          <NavLink to={mapPathToLang("/despre-mine", lang)} title="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
-          <NavLink to={mapPathToLang("/contact", lang)} title="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="px-3 py-2 text-base">{t.nav.services}</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
+                    {svcList.map((s) => (
+                      <li key={s.to}>
+                        <NavigationMenuLink asChild>
+                          <Link to={s.to} className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug">
+                            {labelFor(s.to, s.label)}
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+          <NavLink to={mapPathToLang("/despre-mine", lang)} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
+          <NavLink to={mapPathToLang("/contact", lang)} className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
 
           {/* Language selector (desktop) */}
           <div className="ml-3 pl-3 border-l flex items-center gap-1">
@@ -144,84 +129,90 @@ export default function Header() {
             EN
           </Button>
         </div>
-        
-        {/* Mobile menu button - centered */}
-        <div className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <button
-            className="p-2 rounded-sm text-foreground"
-            aria-label="Meniu"
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <Menu size={22} strokeWidth={2} />
-          </button>
-          
-          {/* Mobile dropdown menu */}
-          {mobileMenuOpen && (
-            <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-background border rounded-md shadow-lg z-50">
-              <div className="p-4">
-                <ul className="space-y-2">
-                  <li>
-                    <Link 
-                      to={mapPathToLang("/despre-mine", lang)}
-                      className="block p-2 hover:bg-muted rounded"
-                      onClick={() => setMobileMenuOpen(false)}
+        <Drawer>
+          <DrawerTrigger asChild>
+            <button
+              className="md:hidden p-2 rounded-sm text-foreground absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              aria-label="Meniu"
+              type="button"
+            >
+              <Menu size={22} strokeWidth={2} />
+            </button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle>{t.nav.menu}</DrawerTitle>
+            </DrawerHeader>
+            <div className="px-4 pb-6">
+              <ul className="space-y-1">
+                <li>
+                  <DrawerClose asChild>
+                    <Button 
+                      asChild 
+                      variant="ghost" 
+                      className="w-full justify-start"
+                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/despre-mine", lang)))}
                     >
-                      {t.nav.about}
-                    </Link>
-                  </li>
-                  <li>
-                    <div>
-                      <button
-                        className="w-full text-left p-2 hover:bg-muted rounded flex justify-between items-center"
-                        onClick={() => setServicesOpen(!servicesOpen)}
-                      >
+                      <span>{t.nav.about}</span>
+                    </Button>
+                  </DrawerClose>
+                </li>
+                <li>
+                  <Collapsible>
+                    <CollapsibleTrigger asChild>
+                      <Button variant="ghost" className="w-full justify-between">
                         <span>{t.nav.services}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-                      </button>
-                      {servicesOpen && (
-                        <ul className="mt-1 space-y-1 pl-4">
-                          {svcList.map((s) => (
-                            <li key={s.to}>
-                              <Link 
-                                to={s.to}
-                                className="block p-2 text-sm hover:bg-muted rounded leading-snug"
-                                onClick={() => {
-                                  setMobileMenuOpen(false);
-                                  setServicesOpen(false);
-                                }}
+                        <ChevronRight className="h-4 w-4" />
+                      </Button>
+                    </CollapsibleTrigger>
+                    <CollapsibleContent>
+                      <ul className="mt-1 space-y-1 pl-3 border-l">
+                        {svcList.map((s) => (
+                          <li key={s.to}>
+                            <DrawerClose asChild>
+                              <Button 
+                                asChild 
+                                variant="ghost" 
+                                className="w-full justify-start text-left whitespace-normal break-words leading-snug"
+                                onClick={() => handleMobileNavigation(() => navigate(s.to))}
                               >
-                                {labelFor(s.to, s.label)}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </li>
-                  <li>
-                    <Link 
-                      to={mapPathToLang("/blog", lang)}
-                      className="block p-2 hover:bg-muted rounded"
-                      onClick={() => setMobileMenuOpen(false)}
+                                <span>{labelFor(s.to, s.label)}</span>
+                              </Button>
+                            </DrawerClose>
+                          </li>
+                        ))}
+                      </ul>
+                    </CollapsibleContent>
+                  </Collapsible>
+                </li>
+                <li>
+                  <DrawerClose asChild>
+                    <Button 
+                      asChild 
+                      variant="ghost" 
+                      className="w-full justify-start"
+                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/blog", lang)))}
                     >
-                      {t.nav.blog}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to={mapPathToLang("/contact", lang)}
-                      className="block p-2 hover:bg-muted rounded"
-                      onClick={() => setMobileMenuOpen(false)}
+                      <span>{t.nav.blog}</span>
+                    </Button>
+                  </DrawerClose>
+                </li>
+                <li>
+                  <DrawerClose asChild>
+                    <Button 
+                      asChild 
+                      variant="ghost" 
+                      className="w-full justify-start"
+                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/contact", lang)))}
                     >
-                      {t.nav.contact}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                      <span>{t.nav.contact}</span>
+                    </Button>
+                  </DrawerClose>
+                </li>
+              </ul>
             </div>
-          )}
-        </div>
+          </DrawerContent>
+        </Drawer>
       </nav>
     </header>
   );

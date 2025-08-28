@@ -6,7 +6,6 @@ const PhoneLoader = () => {
     <StyledWrapper>
       <a
         href="tel:+40745506443"
-        title="/telefon"
         aria-label="Sună acum"
         className="loader-link"
       >

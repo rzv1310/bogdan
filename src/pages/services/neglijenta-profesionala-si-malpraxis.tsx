@@ -29,19 +29,19 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Neglijență profesională și malpraxis",
-                    "item": "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis"
+                    "item": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis"
                   }
                 ]
               })
@@ -55,7 +55,7 @@ export default function Malpraxis() {
                 "@type": "LegalService",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
-                "url": "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis",
+                "url": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -96,7 +96,7 @@ export default function Malpraxis() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță malpraxis">
-          <a href="tel:+40745506443" title="/telefon">
+          <a href="tel:+40745506443">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
@@ -106,7 +106,7 @@ export default function Malpraxis() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -250,7 +250,7 @@ export default function Malpraxis() {
           </div>
           <div className="pt-2">
             <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță malpraxis">
-              <a href="tel:+40745506443" title="/telefon"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
         </CardContent>

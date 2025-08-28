@@ -75,7 +75,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telephone</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" title="/telefon" className="text-primary underline">+40 745 506 443</a></dd>
+                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -181,31 +181,31 @@ export default function About() {
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>
                 Newest EU sanctions against Russia target military capabilities, propaganda tools and more, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Revised and improved whistleblowing law adopted in Romania, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Wolf Theiss Corporate Investigations Guide 2022, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Developments on whistleblowers’ protection in Romania, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 EU sanctions against Russia and updates to compliance programmes, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Article on Whistleblowing Directive, 2023, Bizlawyer.ro, {" "}
-                <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Article on Theoretical and practical aspects related to preventive measures in the old and current Code of Criminal Procedure, 2023, Juridice.ro, {" "}
-                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>Various client alerts and articles on criminal law, compliance and whistleblower law topics.</li>
             </ul>
@@ -217,7 +217,7 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               Contact me directly for criminal law consultation and legal representation.
             </p>
-            <a href="tel:+40745506443" title="/telefon" aria-label="Call now">
+            <a href="tel:+40745506443" aria-label="Call now">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
                 <Phone /> Call now: +40 745 506 443
               </Button>
@@ -249,7 +249,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Telefon</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" title="/telefon" className="text-primary underline">+40 745 506 443</a></dd>
+                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -355,31 +355,31 @@ export default function About() {
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>
                 Cele mai noi sancțiuni UE împotriva Rusiei vizează capacitățile militare, instrumentele de propagandă și altele, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Legea avertizorilor revizuită și îmbunătățită, adoptată în România, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Wolf Theiss Corporate Investigations Guide 2022, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Evoluții privind protecția avertizorilor în România, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Sancțiunile UE împotriva Rusiei și actualizări ale programelor de conformitate, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Articol despre Directiva privind Avertizorii de Integritate, 2023, Bizlawyer.ro, {" "}
-                <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Articol „Aspecte teoretice și practice legate de măsurile preventive în vechiul și actualul Cod de procedură penală”, 2023, Juridice.ro, {" "}
-                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>Diverse alerte pentru clienți și articole pe teme de drept penal, conformitate și legea avertizorilor.</li>
             </ul>
@@ -391,7 +391,7 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               Contactează-mă direct pentru consultanță de drept penal și reprezentare juridică.
             </p>
-            <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
+            <a href="tel:+40745506443" aria-label="Sună acum">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
                 <Phone /> Sună acum: +40 745 506 443
               </Button>

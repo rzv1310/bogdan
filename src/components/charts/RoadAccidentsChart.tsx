@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
+import * as htmlToImage from "html-to-image";
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
   ResponsiveContainer,
@@ -28,7 +29,7 @@ const defaultData: RoadAccidentDataPoint[] = [
 ];
 
 export default function RoadAccidentsChart({ data = defaultData, title }: { data?: RoadAccidentDataPoint[]; title?: string }) {
-  const chartRef = React.useRef<HTMLDivElement | null>(null);
+  const chartRef = useRef<HTMLDivElement | null>(null);
   const isMobile = useIsMobile();
 
   // Custom label renderers to reduce overlap between series labels
@@ -69,23 +70,15 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
   const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
     try {
-      // Simple fallback download without html-to-image
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        canvas.width = 800;
-        canvas.height = 400;
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#000000';
-        ctx.font = '16px Arial';
-        ctx.fillText('Road Accidents Chart - Vezi graficul în browser', 20, 200);
-        
-        const link = document.createElement("a");
-        link.download = `accidente-rutiere-2022-2023-${new Date().toISOString().slice(0, 10)}.png`;
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-      }
+      const dataUrl = await htmlToImage.toPng(chartRef.current, {
+        backgroundColor: "#ffffff",
+        pixelRatio: 2,
+        cacheBust: true,
+      });
+      const link = document.createElement("a");
+      link.download = `accidente-rutiere-2022-2023-${new Date().toISOString().slice(0, 10)}.png`;
+      link.href = dataUrl;
+      link.click();
     } catch (err) {
       console.error("PNG export failed", err);
     }
@@ -132,7 +125,8 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
           <div className="mt-5 sm:mt-6 space-y-2">
             <a
               href="https://politiaromana.ro/files/pages_files/BSR_2024_09.01.2025.pdf"
-               rel="noreferrer noopener"
+              target="_blank"
+              rel="noreferrer noopener"
               className="underline hover:no-underline inline-flex items-start gap-1 text-xs sm:text-sm"
               aria-label="Deschide Buletinul siguranței rutiere - Raport anual 2023 (PDF)"
             >

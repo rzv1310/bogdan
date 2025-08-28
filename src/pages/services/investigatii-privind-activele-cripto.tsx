@@ -31,19 +31,19 @@ export default function InvestigatiiCripto() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Investigații privind activele cripto",
-                    "item": "https://avocatpenalbucuresti.ro/servicii/investigatii-privind-activele-cripto"
+                    "item": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto"
                   }
                 ]
               })
@@ -57,7 +57,7 @@ export default function InvestigatiiCripto() {
                 "@type": "LegalService",
                 "name": "Servicii avocat investigații privind activele cripto",
                 "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
-                "url": "https://avocatpenalbucuresti.ro/servicii/investigatii-privind-activele-cripto",
+                "url": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -84,7 +84,7 @@ export default function InvestigatiiCripto() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -106,7 +106,7 @@ export default function InvestigatiiCripto() {
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-            <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
+            <a href="tel:+40745506443" aria-label="Sună acum">
               <Phone className="mr-2" /> Sună acum
             </a>
           </Button>
@@ -175,7 +175,7 @@ export default function InvestigatiiCripto() {
             </ul>
             <div className="pt-2">
               <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum pentru consultanță crypto">
+                <a href="tel:+40745506443" aria-label="Sună acum pentru consultanță crypto">
                   <Phone className="mr-2" /> Sună pentru consultanță
                 </a>
               </Button>
