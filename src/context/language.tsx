@@ -27,7 +27,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo(() => ({ lang, setLang }), [lang]);
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+  return React.createElement(LanguageContext.Provider, { value }, children);
 }
 
 export function useLanguage() {
