@@ -22,14 +22,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Only split truly heavy libraries that are used conditionally
-          'charts': ['recharts'],
-          'pdf': ['@react-pdf/renderer', 'docx'], 
-          'animations': ['framer-motion', 'html-to-image'],
-          'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
-          'radix-ui': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-popover', '@radix-ui/react-tabs'],
-        },
+        // Let Vite handle all chunking automatically for maximum compatibility
         chunkFileNames: (chunkInfo) => {
           const facadeModuleId = chunkInfo.facadeModuleId ? path.basename(chunkInfo.facadeModuleId, path.extname(chunkInfo.facadeModuleId)) : 'chunk';
           return `js/${facadeModuleId}-[hash].js`;
