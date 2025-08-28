@@ -68,7 +68,7 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
 
 export default function CalculatorDespagubiri() {
   useSEO({
-    title: "Calculator despagubiri | Avocat Bogdan Lamatic",
+    title: "Calculator despăgubiri | Avocat Bogdan Lamatic",
     description: "Pagină calcul despăgubiri - în curând.",
   });
 

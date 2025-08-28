@@ -8,7 +8,7 @@ import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistS
 
 export default function Malpraxis() {
   useSEO({
-    title: "Avocat Malpraxis Medical | av. Bogdan Lamatic | Bucuresti | Neglijenta in serviciu",
+    title: "Avocat Malpraxis Medical | av. Bogdan Lamatic | București | Neglijență în serviciu",
     description:
       "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal.",
   });

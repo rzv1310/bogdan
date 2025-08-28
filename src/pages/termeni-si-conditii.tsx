@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function TermeniSiConditii() {
   useSEO({
-    title: "Termeni si Conditii - Cabinet Avocat Bogdan Lamatic",
+    title: "Termeni și Condiții – Cabinet Avocat Bogdan Lamatic",
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
     alternates: { ro: "/termeni-si-conditii", en: "/en/terms-and-conditions" },
     locale: "ro_RO",
