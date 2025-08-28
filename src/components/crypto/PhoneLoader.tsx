@@ -1,140 +1,26 @@
-import styled from 'styled-components';
 import { Phone as PhoneIcon } from 'lucide-react';
 
 const PhoneLoader = () => {
   return (
-    <StyledWrapper>
-      <a
-        href="tel:+40745506443"
-        aria-label="Sună acum"
-        className="loader-link"
-      >
-        <div className="loader" role="button">
-          <div className="box">
-            <div className="logo" aria-hidden>
-              <PhoneIcon className="svg" />
-            </div>
+    <a
+      href="tel:+40745506443"
+      aria-label="Sună acum"
+      className="inline-block no-underline cursor-pointer"
+    >
+      <div className="w-[220px] md:w-[220px] sm:w-[180px] aspect-square relative transition-transform duration-200 hover:scale-105" role="button">
+        <div className="absolute inset-[40%] z-[99] rounded-full border-t border-gray-400 shadow-lg backdrop-blur-sm bg-gradient-to-b from-gray-800/20 to-gray-600/20 animate-[ripple_2s_infinite_ease-in-out]">
+          <div className="absolute inset-0 grid place-content-center p-[30%]">
+            <PhoneIcon className="w-full h-full text-gray-400 stroke-[2.25px] animate-[logo-color_2s_infinite_ease-in-out]" />
           </div>
-          <div className="box" />
-          <div className="box" />
-          <div className="box" />
-          <div className="box" />
         </div>
-      </a>
-    </StyledWrapper>
+        <div className="absolute inset-[30%] z-[98] rounded-full border-t border-gray-400/80 shadow-lg backdrop-blur-sm bg-gradient-to-b from-gray-800/20 to-gray-600/20 animate-[ripple_2s_infinite_ease-in-out] [animation-delay:0.2s]" />
+        <div className="absolute inset-[20%] z-[97] rounded-full border-t border-gray-400/60 shadow-lg backdrop-blur-sm bg-gradient-to-b from-gray-800/20 to-gray-600/20 animate-[ripple_2s_infinite_ease-in-out] [animation-delay:0.4s]" />
+        <div className="absolute inset-[10%] z-[96] rounded-full border-t border-gray-400/40 shadow-lg backdrop-blur-sm bg-gradient-to-b from-gray-800/20 to-gray-600/20 animate-[ripple_2s_infinite_ease-in-out] [animation-delay:0.6s]" />
+        <div className="absolute inset-0 z-[95] rounded-full border-t border-gray-400/20 shadow-lg backdrop-blur-sm bg-gradient-to-b from-gray-800/20 to-gray-600/20 animate-[ripple_2s_infinite_ease-in-out] [animation-delay:0.8s]" />
+      </div>
+    </a>
   );
 };
 
-const StyledWrapper = styled.div`
-  .loader-link {
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .loader {
-    --size: 220px;
-    --duration: 2s;
-    --logo-color: #8a8a8a;
-    --ring-bg-a: rgba(50, 50, 50, 0.2);
-    --ring-bg-b: rgba(100, 100, 100, 0.2);
-    --ring-border: rgba(100, 100, 100, 1);
-    height: var(--size);
-    aspect-ratio: 1;
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .loader:hover {
-    transform: scale(1.02);
-  }
-
-  .loader .box {
-    position: absolute;
-    background: var(--ring-bg-a);
-    background: linear-gradient(0deg, var(--ring-bg-a) 0%, var(--ring-bg-b) 100%);
-    border-radius: 50%;
-    border-top: 1px solid var(--ring-border);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-    backdrop-filter: blur(5px);
-    animation: ripple var(--duration) infinite ease-in-out;
-  }
-
-  .loader .box:nth-child(1) {
-    inset: 40%;
-    z-index: 99;
-  }
-
-  .loader .box:nth-child(2) {
-    inset: 30%;
-    z-index: 98;
-    border-color: rgba(100, 100, 100, 0.8);
-    animation-delay: 0.2s;
-  }
-
-  .loader .box:nth-child(3) {
-    inset: 20%;
-    z-index: 97;
-    border-color: rgba(100, 100, 100, 0.6);
-    animation-delay: 0.4s;
-  }
-
-  .loader .box:nth-child(4) {
-    inset: 10%;
-    z-index: 96;
-    border-color: rgba(100, 100, 100, 0.4);
-    animation-delay: 0.6s;
-  }
-
-  .loader .box:nth-child(5) {
-    inset: 0%;
-    z-index: 95;
-    border-color: rgba(100, 100, 100, 0.2);
-    animation-delay: 0.8s;
-  }
-
-  .loader .logo {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-content: center;
-    padding: 30%;
-  }
-
-  .loader .logo .svg {
-    width: 100%;
-    height: 100%;
-    color: var(--logo-color);
-    stroke-width: 2.25px;
-    animation: logo-color var(--duration) infinite ease-in-out;
-  }
-
-  @keyframes ripple {
-    0% {
-      transform: scale(1);
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-    }
-    50% {
-      transform: scale(1.3);
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px -0px;
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-    }
-  }
-  
-  @keyframes logo-color {
-    0% { color: #6b7280; }
-    50% { color: #ffffff; }
-    100% { color: #6b7280; }
-  }
-  
-  @media (max-width: 768px) {
-    .loader {
-      --size: 180px;
-    }
-  }
-`;
 
 export default PhoneLoader;
