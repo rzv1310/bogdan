@@ -171,6 +171,84 @@ const Index = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   return <div className="min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Avocat Bogdan Lamatic",
+            url:
+              typeof window !== "undefined"
+                ? window.location.origin
+                : "/",
+            telephone: "+40 745 506 443",
+            areaServed: ["RO", "EU"],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Avocat Bogdan Lamatic",
+            url:
+              typeof window !== "undefined"
+                ? window.location.origin
+                : "/",
+            inLanguage: "ro-RO",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Bogdan Lamatic",
+            jobTitle: "Avocat",
+            telephone: "+40 745 506 443",
+            url:
+              typeof window !== "undefined"
+                ? window.location.origin
+                : "/",
+            areaServed: ["RO", "EU"],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": typeof window !== "undefined" ? window.location.origin : "/",
+            name: "Avocat Bogdan Lamatic",
+            telephone: "+40 745 506 443",
+            url:
+              typeof window !== "undefined"
+                ? window.location.origin
+                : "/",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "București",
+              addressCountry: "RO",
+            },
+            areaServed: {
+              "@type": "GeoCircle",
+              geoMidpoint: {
+                "@type": "GeoCoordinates",
+                latitude: 44.4268,
+                longitude: 26.1025,
+              },
+              geoRadius: 50000,
+            },
+          }),
+        }}
+      />
 
       <main>
         {/* Hero Section */}
