@@ -23,7 +23,12 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          // Core React dependencies stay in main bundle
+          // Let page components be chunked automatically by Vite's lazy loading
+          if (id.includes('/pages/') || id.includes('/src/pages/')) {
+            return undefined; // Let Vite handle page chunks automatically
+          }
+          
+          // Core React dependencies stay in main bundle for performance
           if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
             return undefined;
           }
@@ -48,28 +53,18 @@ export default defineConfig(({ mode }) => ({
             return 'forms';
           }
           
-          // Radix UI components (only load when needed)
+          // Radix UI components (only load when needed) but keep slot in main bundle
           if (id.includes('@radix-ui') && !id.includes('@radix-ui/react-slot')) {
             return 'radix-ui';
           }
           
-          // Split large lucide icon bundle
-          if (id.includes('lucide-react') && id.includes('/icons/')) {
+          // Split large lucide icon bundle but keep common icons in main
+          if (id.includes('lucide-react') && id.includes('/icons/') && 
+              !id.includes('phone') && !id.includes('check') && !id.includes('play')) {
             return 'icons';
           }
           
-          // Separate UI components that aren't critical
-          if (id.includes('/ui/') && (
-            id.includes('carousel') || 
-            id.includes('spotlight-card') || 
-            id.includes('gemini-button') ||
-            id.includes('pulse-beams') ||
-            id.includes('reviews-carousel')
-          )) {
-            return 'ui-heavy';
-          }
-          
-          // Keep small, critical components in main bundle
+          // Keep critical and small components in main bundle
           return undefined;
         },
         chunkFileNames: (chunkInfo) => {
