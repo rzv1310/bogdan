@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/context/language";
 import Layout from "./components/layout/Layout";
-import Index from "./pages/Index";
+import RoIndex from "./pages/ro-index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -83,7 +83,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route element={<Layout />}>
-                <Route path="/" element={<Index />} />
+                <Route path="/" element={<RoIndex />} />
                 <Route path="/despre-mine" element={<About />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
