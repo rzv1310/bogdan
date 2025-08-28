@@ -47,6 +47,12 @@ const GlowCard: React.FC<GlowCardProps> = ({
   runnerSpeedFactor = 1,
   noShadow = false,
 }) => {
+  // Fallback if React hooks are not available
+  if (!React.useRef || !React.useState || !React.useEffect) {
+    console.error('React hooks not available in GlowCard');
+    return React.createElement('div', { className: `rounded-2xl border p-6 ${className}` }, children);
+  }
+
   const cardRef = React.useRef<HTMLDivElement>(null);
   const innerRef = React.useRef<HTMLDivElement>(null);
   const runnerRef = React.useRef<SVGPathElement>(null);

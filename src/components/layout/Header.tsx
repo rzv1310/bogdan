@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Menu, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,20 +11,31 @@ import {
   DrawerClose,
 } from "@/components/ui/drawer";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { useMobileScrollTop } from "@/hooks/useMobileScrollTop";
 
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
+
+// Safe Navigation Menu Component with fallback
+function SafeNavigationMenu({ children }: { children: React.ReactNode }) {
+  try {
+    const {
+      NavigationMenu,
+      NavigationMenuList,
+      NavigationMenuItem,
+      NavigationMenuTrigger,
+      NavigationMenuContent,
+      NavigationMenuLink,
+    } = require("@/components/ui/navigation-menu");
+    
+    return React.createElement(NavigationMenu, {}, children);
+  } catch (error) {
+    console.error('NavigationMenu not available, using fallback:', error);
+    return React.createElement('div', { className: 'flex items-center gap-2' }, children);
+  }
+}
 
 export default function Header() {
   const { lang, setLang } = useLanguage();
@@ -58,36 +70,38 @@ export default function Header() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-2">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-3 py-2 text-base">{t.nav.services}</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
-                    {svcList.map((s) => (
-                      <li key={s.to}>
-                        <NavigationMenuLink asChild>
-                           <Link to={s.to} title={
-                             s.to.includes("cauze-penale-privind-droguri") ? "/avocat-droguri" :
-                             s.to.includes("criminalitate-economica") ? "/criminalitate-economica" :
-                             s.to.includes("infractiuni-de-coruptie") ? "/coruptie" :
-                             s.to.includes("infractiuni-rutiere") ? "/avocat-accidente-rutiere" :
-                             s.to.includes("investigatii-privind-activele-cripto") ? "/avocat-criptomonede" :
-                             s.to.includes("neglijenta-profesionala-si-malpraxis") ? "/avocat-malpraxis" :
-                             s.to.includes("raspundere-penala-incidente") ? "/avocat-incidente-de-munca" :
-                             s.to.includes("reprezentarea-victimelor") ? "/avocat-victime" :
-                             s.to.includes("spalare-de-bani") ? "/avocat-spalare-bani" : ""
-                           } className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug">
-                            {labelFor(s.to, s.label)}
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          <SafeNavigationMenu>
+            <div className="relative group">
+              <Button variant="ghost" className="px-3 py-2 text-base">
+                {t.nav.services}
+              </Button>
+              <div className="absolute left-0 top-full mt-1 hidden group-hover:block z-50">
+                <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md border">
+                  {svcList.map((s) => (
+                    <li key={s.to}>
+                      <Link 
+                        to={s.to} 
+                        title={
+                          s.to.includes("cauze-penale-privind-droguri") ? "/avocat-droguri" :
+                          s.to.includes("criminalitate-economica") ? "/criminalitate-economica" :
+                          s.to.includes("infractiuni-de-coruptie") ? "/coruptie" :
+                          s.to.includes("infractiuni-rutiere") ? "/avocat-accidente-rutiere" :
+                          s.to.includes("investigatii-privind-activele-cripto") ? "/avocat-criptomonede" :
+                          s.to.includes("neglijenta-profesionala-si-malpraxis") ? "/avocat-malpraxis" :
+                          s.to.includes("raspundere-penala-incidente") ? "/avocat-incidente-de-munca" :
+                          s.to.includes("reprezentarea-victimelor") ? "/avocat-victime" :
+                          s.to.includes("spalare-de-bani") ? "/avocat-spalare-bani" : ""
+                        } 
+                        className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug"
+                      >
+                        {labelFor(s.to, s.label)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </SafeNavigationMenu>
           <NavLink to={mapPathToLang("/despre-mine", lang)} title="/despre-mine" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.about}</NavLink>
           <NavLink to={mapPathToLang("/contact", lang)} title="/contact" className={({ isActive }) => `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-primary/10 text-primary' : 'hover:bg-muted'}`}>{t.nav.contact}</NavLink>
 
