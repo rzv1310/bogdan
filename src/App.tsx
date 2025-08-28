@@ -6,29 +6,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { LanguageProvider } from "@/context/language";
 
-// Keep critical pages eager loaded for stability
+// Eager load critical pages for maximum stability
 import Index from "./pages/Index";
 import Layout from "./components/layout/Layout";
 
-// Lazy load non-critical pages
-const NotFound = lazy(() => import("./pages/NotFound"));
+// Eager load main service pages for reliability
+import CriminalitateEconomica from "./pages/services/criminalitate-economica";
+import CoruptieSiFunctiePublica from "./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice";
+import InvestigatiiCripto from "./pages/services/investigatii-privind-activele-cripto";
+import CauzeDroguri from "./pages/services/cauze-penale-privind-droguri";
+import SpalareDeBani from "./pages/services/spalare-de-bani-si-ascundere-de-bunuri";
+import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
+import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
+import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
+import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
 
-// Lazy load all other pages to reduce initial bundle size
+// Lazy load only non-critical pages
+const NotFound = lazy(() => import("./pages/NotFound"));
 const About = lazy(() => import("./pages/About"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Contact = lazy(() => import("./pages/Contact"));
 const CalculatorDespagubiri = lazy(() => import("./pages/CalculatorDespagubiri"));
-
-// Lazy load Romanian service pages
-const CriminalitateEconomica = lazy(() => import("./pages/services/criminalitate-economica"));
-const CoruptieSiFunctiePublica = lazy(() => import("./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"));
-const InvestigatiiCripto = lazy(() => import("./pages/services/investigatii-privind-activele-cripto"));
-const CauzeDroguri = lazy(() => import("./pages/services/cauze-penale-privind-droguri"));
-const SpalareDeBani = lazy(() => import("./pages/services/spalare-de-bani-si-ascundere-de-bunuri"));
-const Malpraxis = lazy(() => import("./pages/services/neglijenta-profesionala-si-malpraxis"));
-const InfractiuniRutiere = lazy(() => import("./pages/services/infractiuni-rutiere-cu-victime"));
-const RaspunderePenalaMunca = lazy(() => import("./pages/services/raspundere-penala-incidente-locul-de-munca"));
-const ReprezentareaVictimelor = lazy(() => import("./pages/services/reprezentarea-victimelor-in-procese-penale"));
 const TermeniSiConditii = lazy(() => import("./pages/termeni-si-conditii"));
 const GDPR = lazy(() => import("./pages/gdpr"));
 const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
@@ -72,15 +70,15 @@ const App = () => (
               <Route path="/blog" element={<Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
               <Route path="/calculator-despagubiri" element={<Suspense fallback={<PageLoader />}><CalculatorDespagubiri /></Suspense>} />
               <Route path="/contact" element={<Suspense fallback={<PageLoader />}><Contact /></Suspense>} />
-              <Route path="/servicii/criminalitate-economica" element={<Suspense fallback={<PageLoader />}><CriminalitateEconomica /></Suspense>} />
-              <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<Suspense fallback={<PageLoader />}><CoruptieSiFunctiePublica /></Suspense>} />
-              <Route path="/servicii/investigatii-privind-activele-cripto" element={<Suspense fallback={<PageLoader />}><InvestigatiiCripto /></Suspense>} />
-              <Route path="/servicii/cauze-penale-privind-droguri" element={<Suspense fallback={<PageLoader />}><CauzeDroguri /></Suspense>} />
-              <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<Suspense fallback={<PageLoader />}><SpalareDeBani /></Suspense>} />
-              <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Suspense fallback={<PageLoader />}><Malpraxis /></Suspense>} />
-              <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<Suspense fallback={<PageLoader />}><InfractiuniRutiere /></Suspense>} />
-              <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<Suspense fallback={<PageLoader />}><RaspunderePenalaMunca /></Suspense>} />
-              <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<Suspense fallback={<PageLoader />}><ReprezentareaVictimelor /></Suspense>} />
+              <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
+              <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
+              <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
+              <Route path="/servicii/cauze-penale-privind-droguri" element={<CauzeDroguri />} />
+              <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
+              <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
+              <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
+              <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
+              <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
               <Route path="/termeni-si-conditii" element={<Suspense fallback={<PageLoader />}><TermeniSiConditii /></Suspense>} />
               <Route path="/gdpr" element={<Suspense fallback={<PageLoader />}><GDPR /></Suspense>} />
               <Route path="/politica-cookies" element={<Suspense fallback={<PageLoader />}><PoliticaCookies /></Suspense>} />
