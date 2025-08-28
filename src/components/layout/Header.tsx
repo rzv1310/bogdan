@@ -145,10 +145,10 @@ export default function Header() {
           </Button>
         </div>
         
-        {/* Mobile menu button */}
-        <div className="md:hidden relative">
+        {/* Mobile menu button - centered */}
+        <div className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <button
-            className="p-2 rounded-sm text-foreground absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="p-2 rounded-sm text-foreground"
             aria-label="Meniu"
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -158,7 +158,7 @@ export default function Header() {
           
           {/* Mobile dropdown menu */}
           {mobileMenuOpen && (
-            <div className="absolute right-0 top-full mt-2 w-64 bg-background border rounded-md shadow-lg z-50">
+            <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-background border rounded-md shadow-lg z-50">
               <div className="p-4">
                 <ul className="space-y-2">
                   <li>
