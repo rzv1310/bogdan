@@ -185,7 +185,7 @@ export default function CauzeDroguri() {
       </p>
 
       <div className="mt-4">
-        <a href="tel:+40745506443" aria-label="Apelează acum">
+        <a href="tel:+40745506443" title="/telefon" aria-label="Apelează acum">
           <Button size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none bg-accent text-accent-foreground hover:opacity-90">
             <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
             Apelează acum: +40 745 506 443
@@ -197,7 +197,7 @@ export default function CauzeDroguri() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -370,7 +370,7 @@ export default function CauzeDroguri() {
             <li>Asigur apărarea la toate instanțele, inclusiv la Înalta Curte.</li>
           </ul>
           <div className="pt-4">
-            <a href="tel:+40745506443" aria-label="Sună acum">
+            <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
               <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                 <Phone /> Sună acum
               </Button>

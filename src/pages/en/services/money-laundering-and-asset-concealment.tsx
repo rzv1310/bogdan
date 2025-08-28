@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MoneyLaunderingEn() {
   useSEO({
-    title: "Money laundering & asset concealment | Defense – Bogdan Lamatic",
+    title: "Money laundering & asset concealment | Defense - Bogdan Lamatic",
     description: "Defense in money laundering and asset concealment cases.",
     alternates: { en: "/en/services/money-laundering-and-asset-concealment", ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
     locale: "en_US",
@@ -104,7 +104,7 @@ export default function MoneyLaunderingEn() {
               <li>Converting or transferring assets derived from crime to conceal their illicit origin or help the perpetrator evade prosecution.</li>
               <li>Concealing or disguising the nature, origin, location, disposition, movement or ownership of assets, knowing they derive from crimes. This is commonly referred to as “asset concealment.”</li>
               <li>
-                Acquiring, possessing, or using assets while knowing they come from crimes. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=cuprins%3A%281,entităților%20raportoare%20să%20aplice%20măsuri" target="_blank" rel="noopener noreferrer" className="underline">(art. 49 Law 129/2019)</a>
+                Acquiring, possessing, or using assets while knowing they come from crimes. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=cuprins%3A%281,entităților%20raportoare%20să%20aplice%20măsuri" rel="noopener noreferrer" className="underline">(art. 49 Law 129/2019)</a>
               </li>
             </ul>
             <p>
@@ -117,18 +117,18 @@ export default function MoneyLaunderingEn() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                Mandatory identification of the customer and beneficial owner for all transactions; entities must verify identity and monitor business relationships and transactions to detect unusual operations. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=articolul%2016%2C%20alineatul%20,entităților%20raportoare%20să%20aplice%20măsuri" target="_blank" rel="noopener noreferrer" className="underline">(art. 16)</a>
+                Mandatory identification of the customer and beneficial owner for all transactions; entities must verify identity and monitor business relationships and transactions to detect unusual operations. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=articolul%2016%2C%20alineatul%20,entităților%20raportoare%20să%20aplice%20măsuri" rel="noopener noreferrer" className="underline">(art. 16)</a>
               </li>
               <li>No simplified due diligence when there is suspicion of ML/TF.</li>
               <li>Suspicious transaction reporting is mandatory when a Politically Exposed Person (PEP) is the beneficiary of a life insurance policy and there are grounds for suspicion.</li>
               <li>
-                Access to UBO registers is granted only to persons/organizations demonstrating a legitimate interest; only limited data is displayed and access is subject to an administrative fee. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=19%2C%20alineatul%20%288,%C3%AEntre%C8%9Binere%20%C8%99i%20dezvoltare%20a%20registrului" target="_blank" rel="noopener noreferrer" className="underline">(art. 19 para. 8)</a>
+                Access to UBO registers is granted only to persons/organizations demonstrating a legitimate interest; only limited data is displayed and access is subject to an administrative fee. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=19%2C%20alineatul%20%288,%C3%AEntre%C8%9Binere%20%C8%99i%20dezvoltare%20a%20registrului" rel="noopener noreferrer" className="underline">(art. 19 para. 8)</a>
               </li>
               <li>
-                Record-keeping: reporting entities must retain supporting documents and transaction records for five years and ensure periodic staff training. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=Entitățile%20raportoare%20au%20obligația%20de,%C8%99i%20de%20organismele%20de%20autoreglementare" target="_blank" rel="noopener noreferrer" className="underline">(ONPCSB obligations)</a>
+                Record-keeping: reporting entities must retain supporting documents and transaction records for five years and ensure periodic staff training. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=Entitățile%20raportoare%20au%20obligația%20de,%C8%99i%20de%20organismele%20de%20autoreglementare" rel="noopener noreferrer" className="underline">(ONPCSB obligations)</a>
               </li>
               <li>
-                Supervision of associations and foundations: the Romanian FIU (ONPCSB) supervises their activity on a risk basis and may request information on structure and management. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=26,tipurile%20de%20asocia%C8%9Bii%20%C8%99i%20funda%C8%9Bii" target="_blank" rel="noopener noreferrer" className="underline">(art. 26)</a>
+                Supervision of associations and foundations: the Romanian FIU (ONPCSB) supervises their activity on a risk basis and may request information on structure and management. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=26,tipurile%20de%20asocia%C8%9Bii%20%C8%99i%20funda%C8%9Bii" rel="noopener noreferrer" className="underline">(art. 26)</a>
               </li>
             </ul>
           </CardContent>

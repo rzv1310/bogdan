@@ -84,7 +84,7 @@ export default function CookiePolicyEn() {
           <h2>Related policies</h2>
           <ul>
             <li><a href="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</a></li>
-            <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR – Data Protection</a></li>
+            <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR - Data Protection</a></li>
           </ul>
         </section>
       </article>
