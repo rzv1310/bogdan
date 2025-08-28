@@ -280,13 +280,13 @@ const Index = () => {
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
-              <GeminiButtonEffect>
+              <div>
                 <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
                 </a>
-              </GeminiButtonEffect>
+              </div>
             </div>
           </div>
         </section>
