@@ -30,19 +30,19 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatbogdanlamatic.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Neglijență profesională și malpraxis",
-                    "item": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis"
+                    "item": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis"
                   }
                 ]
               })
@@ -56,7 +56,7 @@ export default function Malpraxis() {
                 "@type": "LegalService",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
-                "url": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis",
+                "url": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
                 "areaServed": [
                   {
                     "@type": "Country",

@@ -55,7 +55,7 @@ export default function InfractiuniRutiere() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni rutiere cu / fără victime",
                 "description": "Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime",
-                "url": "https://avocatbogdanlamatic.ro/services/infractiuni-rutiere-cu-victime",
+                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime",
                 "areaServed": [
                   {
                     "@type": "Country",

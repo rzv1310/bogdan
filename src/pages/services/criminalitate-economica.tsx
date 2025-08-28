@@ -30,19 +30,19 @@ export default function CriminalitateEconomica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatbogdanlamatic.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Criminalitate economică",
-                    "item": "https://avocatbogdanlamatic.ro/services/criminalitate-economica"
+                    "item": "https://avocatpenalbucuresti.ro/services/criminalitate-economica"
                   }
                 ]
               })
@@ -56,7 +56,7 @@ export default function CriminalitateEconomica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat criminalitate economică",
                 "description": "Asistență și reprezentare în cauze de criminalitate economică",
-                "url": "https://avocatbogdanlamatic.ro/services/criminalitate-economica",
+                "url": "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
                 "areaServed": [
                   {
                     "@type": "Country",
