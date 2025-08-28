@@ -29,19 +29,19 @@ export default function InfractiuniRutiere() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatbogdanlamatic.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni rutiere cu / fără victime",
-                    "item": "https://avocatbogdanlamatic.ro/services/infractiuni-rutiere-cu-victime"
+                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime"
                   }
                 ]
               })
