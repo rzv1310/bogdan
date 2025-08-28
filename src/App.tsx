@@ -21,12 +21,14 @@ import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime"
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
 
-// Lazy load only non-critical pages
+// Eager load all frequently accessed pages for maximum stability
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
+
+// Lazy load only rarely accessed pages
 const NotFound = lazy(() => import("./pages/NotFound"));
-const About = lazy(() => import("./pages/About"));
-const Blog = lazy(() => import("./pages/Blog"));
-const Contact = lazy(() => import("./pages/Contact"));
-const CalculatorDespagubiri = lazy(() => import("./pages/CalculatorDespagubiri"));
 const TermeniSiConditii = lazy(() => import("./pages/termeni-si-conditii"));
 const GDPR = lazy(() => import("./pages/gdpr"));
 const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
@@ -66,10 +68,10 @@ const App = () => (
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Index />} />
-              <Route path="/despre-mine" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
-              <Route path="/blog" element={<Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
-              <Route path="/calculator-despagubiri" element={<Suspense fallback={<PageLoader />}><CalculatorDespagubiri /></Suspense>} />
-              <Route path="/contact" element={<Suspense fallback={<PageLoader />}><Contact /></Suspense>} />
+              <Route path="/despre-mine" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
               <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
               <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
