@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>Website:</span>{" "}
-                <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocat-drept-penal.ro</a>
+                <a href="https://avocatpenalbucuresti.ro/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
