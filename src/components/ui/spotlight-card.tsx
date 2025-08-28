@@ -53,6 +53,8 @@ const GlowCard: React.FC<GlowCardProps> = ({
   const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
   const [pathD, setPathD] = useState<string>("");
   const [runnerDur, setRunnerDur] = useState<string>("5s");
+  const [cachedWidth, setCachedWidth] = useState(0);
+  const [cachedHeight, setCachedHeight] = useState(0);
 
   // Throttled pointer tracking to reduce forced reflows
   useEffect(() => {
@@ -91,8 +93,6 @@ const GlowCard: React.FC<GlowCardProps> = ({
     if (!el) return;
 
     let timeoutId: number;
-    const [cachedWidth, setCachedWidth] = useState(0);
-    const [cachedHeight, setCachedHeight] = useState(0);
 
     const update = () => {
       const cs = getComputedStyle(el);
@@ -129,7 +129,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       ro.disconnect();
       clearTimeout(timeoutId);
     };
-  }, [borderRunner, borderPx, runnerSpeedFactor]);
+  }, [borderRunner, borderPx, runnerSpeedFactor, cachedWidth, cachedHeight]);
 
   const { base, spread } = glowColorMap[glowColor];
 
