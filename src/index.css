@@ -109,5 +109,18 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
   }
+}
+
+/* Optimized font families with proper fallbacks */
+.font-sacramento {
+  font-family: Sacramento, "Brush Script MT", "Lucida Handwriting", cursive;
+  font-display: swap;
+}
+
+.font-inter {
+  font-family: Inter, "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-display: swap;
+}
 }
