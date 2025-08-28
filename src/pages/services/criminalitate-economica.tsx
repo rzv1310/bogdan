@@ -9,7 +9,7 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
-    title: "Criminalitate economică | Servicii avocat penal",
+    title: "Criminalitate economica | Servicii avocat penal",
     description: "Asistență și reprezentare în cauze de criminalitate economică.",
   });
 

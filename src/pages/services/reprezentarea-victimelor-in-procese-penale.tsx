@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
   useSEO({
-    title: "Avocat despăgubiri victime accidente / vătămări corporale | av. Bogdan Lamatic, București",
+    title: "Avocat despagubiri victime accidente / vatamare corporale | av. Bogdan Lamatic, Bucuresti",
     description:
       "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale. Evaluare rapidă și strategie completă!",
   });
