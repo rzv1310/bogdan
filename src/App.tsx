@@ -33,10 +33,12 @@ const TermeniSiConditii = lazy(() => import("./pages/termeni-si-conditii"));
 const GDPR = lazy(() => import("./pages/gdpr"));
 const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
 
-// Lazy load English pages
-const EnIndex = lazy(() => import("./pages/en"));
-const ContactEn = lazy(() => import("./pages/en/contact"));
-const BlogEn = lazy(() => import("./pages/en/blog"));
+// Eager load critical English pages for stability
+import EnIndex from "./pages/en";
+import ContactEn from "./pages/en/contact";
+import BlogEn from "./pages/en/blog";
+
+// Lazy load English service pages (less critical for initial access)
 const FinancialCrimeEn = lazy(() => import("./pages/en/services/financial-crime"));
 const CorruptionPublicOfficeEn = lazy(() => import("./pages/en/services/corruption-and-public-office-offenses"));
 const CryptoInvestigationsEn = lazy(() => import("./pages/en/services/crypto-asset-investigations"));
@@ -86,10 +88,10 @@ const App = () => (
               <Route path="/politica-cookies" element={<Suspense fallback={<PageLoader />}><PoliticaCookies /></Suspense>} />
 
                {/* EN routes */}
-               <Route path="/en" element={<Suspense fallback={<PageLoader />}><EnIndex /></Suspense>} />
-               <Route path="/en/about" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
-               <Route path="/en/blog" element={<Suspense fallback={<PageLoader />}><BlogEn /></Suspense>} />
-               <Route path="/en/contact" element={<Suspense fallback={<PageLoader />}><ContactEn /></Suspense>} />
+               <Route path="/en" element={<EnIndex />} />
+               <Route path="/en/about" element={<About />} />
+               <Route path="/en/blog" element={<BlogEn />} />
+               <Route path="/en/contact" element={<ContactEn />} />
                <Route path="/en/terms-and-conditions" element={<Suspense fallback={<PageLoader />}><TermsAndConditionsEn /></Suspense>} />
                <Route path="/en/gdpr" element={<Suspense fallback={<PageLoader />}><GDPRen /></Suspense>} />
                <Route path="/en/cookie-policy" element={<Suspense fallback={<PageLoader />}><CookiePolicyEn /></Suspense>} />
