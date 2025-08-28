@@ -262,11 +262,17 @@ const Index = () => {
               <div className="mt-4 block md:hidden">
                 <picture>
                   <source 
+                    media="(max-width: 480px)" 
+                    srcSet="/lovable-uploads/49019fba-compressed-320w.png 320w"
+                    sizes="(max-width: 480px) 280px"
+                  />
+                  <source 
                     media="(max-width: 640px)" 
-                    srcSet="/lovable-uploads/49019fba-mobile-640w.png"
+                    srcSet="/lovable-uploads/49019fba-compressed-400w.png 400w"
+                    sizes="(max-width: 640px) 320px"
                   />
                   <img 
-                    src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
+                    src="/lovable-uploads/49019fba-compressed-400w.png" 
                     alt="Portret avocat drept penal în costum, studio" 
                     title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                     loading="eager" 
@@ -321,11 +327,17 @@ const Index = () => {
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
               <picture>
                 <source 
+                  media="(min-width: 1024px)" 
+                  srcSet="/lovable-uploads/49019fba-desktop-800w.png 800w"
+                  sizes="(min-width: 1024px) 400px"
+                />
+                <source 
                   media="(min-width: 768px)" 
-                  srcSet="/lovable-uploads/49019fba-desktop-800w.png"
+                  srcSet="/lovable-uploads/49019fba-compressed-400w.png 400w"
+                  sizes="(min-width: 768px) 350px"
                 />
                 <img 
-                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
+                  src="/lovable-uploads/49019fba-compressed-400w.png" 
                   alt="Portret avocat drept penal în costum, studio" 
                   title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                   loading="eager" 
@@ -463,11 +475,17 @@ const Index = () => {
             <div className="flex justify-center">
               <picture>
                 <source 
-                  media="(max-width: 430px)" 
-                  srcSet="/lovable-uploads/e6b30f85-optimized-430w.png"
+                  media="(max-width: 480px)" 
+                  srcSet="/lovable-uploads/e6b30f85-compressed-300w.png 300w"
+                  sizes="(max-width: 480px) 280px"
+                />
+                <source 
+                  media="(max-width: 768px)" 
+                  srcSet="/lovable-uploads/e6b30f85-optimized-430w.png 430w"
+                  sizes="(max-width: 768px) 400px"
                 />
                 <img
-                  src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                  src="/lovable-uploads/e6b30f85-compressed-300w.png"
                   alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
                   title="Avocat drept penal Bucuresti Bogdan Lamatic"
                   loading="lazy"
