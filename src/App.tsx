@@ -34,7 +34,7 @@ const GDPR = lazy(() => import("./pages/gdpr"));
 const PoliticaCookies = lazy(() => import("./pages/politica-cookies"));
 
 // Lazy load English pages
-const EnIndex = lazy(() => import("./pages/en"));
+const EnIndex = lazy(() => import("./pages/en/index"));
 const ContactEn = lazy(() => import("./pages/en/contact"));
 const BlogEn = lazy(() => import("./pages/en/blog"));
 const FinancialCrimeEn = lazy(() => import("./pages/en/services/financial-crime"));

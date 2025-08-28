@@ -269,32 +269,9 @@
       @media (min-width: 1536px) { .container { max-width: 1536px; } }
     </style>
 
-    <!-- Ultra-optimized loading with Service Worker registration -->
+    <!-- Optimized font loading script -->
     <script>
       (function() {
-        // Register Service Worker for aggressive caching
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js', { scope: '/' })
-              .then(registration => {
-                console.log('SW: Registered successfully');
-                
-                // Check for updates
-                registration.addEventListener('updatefound', () => {
-                  const newWorker = registration.installing;
-                  if (newWorker) {
-                    newWorker.addEventListener('statechange', () => {
-                      if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                        // New content available, could show update notification
-                        console.log('SW: New content available');
-                      }
-                    });
-                  }
-                });
-              })
-              .catch(err => console.log('SW: Registration failed'));
-          });
-        }
         
         // Ultra-optimized font loading with subset optimization
         const loadFont = (url, unicodeRange) => {
@@ -356,8 +333,6 @@
 
   <body>
     <div id="root"></div>
-    <!-- Defer external CSS to avoid render blocking -->
-    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'; this.onload=null;">
     <script type="module" src="/src/main.tsx"></script>
     
     <!-- Preload next likely navigation -->
