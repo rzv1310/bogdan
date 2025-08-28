@@ -28,17 +28,8 @@
     <meta property="instagram:site" content="https://www.instagram.com/" />
     <meta property="linkedin:site" content="https://www.linkedin.com/" />
     <link rel="icon" href="/lovable-uploads/c40b182c-b51b-42af-b1d1-50bf623b2110.png" type="image/png">
-    
-    <!-- Performance Optimization: Critical Resource Hints -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Preload hero image for faster LCP -->
-    <link rel="preload" as="image" href="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" fetchpriority="high">
-    
-    <!-- Optimized font loading with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
   </head>
@@ -46,20 +37,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Service Worker for performance -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registered: ', registration);
-            })
-            .catch((registrationError) => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
-      }
-    </script>
   </body>
 </html>

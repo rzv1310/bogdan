@@ -1,2 +1,0 @@
-# This file enables compression optimization
-# It tells build tools and CDNs to compress assets

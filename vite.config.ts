@@ -19,37 +19,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    // Performance optimization: Advanced chunk splitting
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Vendor chunks for better caching
-          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-ui': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
-          'vendor-animation': ['framer-motion'],
-          'vendor-charts': ['recharts'],
-          'vendor-utils': ['clsx', 'tailwind-merge', 'date-fns'],
-        }
-      }
-    },
-    // Optimize CSS
-    cssCodeSplit: true,
-    // Improve compression only in production
-    minify: mode === 'production' ? 'terser' : false,
-    ...(mode === 'production' && {
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true,
-        },
-      },
-    }),
-    // Optimize chunk size warnings
-    chunkSizeWarningLimit: 1000,
-  },
-  // Performance: Optimize dependencies
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
-  },
 }));
