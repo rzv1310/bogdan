@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>Website:</span>{" "}
-                <a href="https://avocatpenalbucuresti.ro/" title="/avocat-penal-bucuresti" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
+                <a href="https://avocatpenalbucuresti.ro/" title="/avocat-penal-bucuresti" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
@@ -80,10 +80,10 @@ export default function Footer() {
                 <Link to={mapPathToLang("/blog", lang)} title="/blog" className="hover:underline">{t.nav.blog}</Link>
               </li>
               <li>
-                <a href="https://reclamatiisal.anpc.ro/" title="/anpc" rel="noopener noreferrer" className="hover:underline">ANPC-SAL</a>
+                <a href="https://reclamatiisal.anpc.ro/" title="/anpc" target="_blank" rel="noopener noreferrer" className="hover:underline">ANPC-SAL</a>
               </li>
               <li>
-                <a href="https://consumer-redress.ec.europa.eu/index_ro" title="/anpc" rel="noopener noreferrer" className="hover:underline">ANPC-SOL</a>
+                <a href="https://consumer-redress.ec.europa.eu/index_ro" title="/anpc" target="_blank" rel="noopener noreferrer" className="hover:underline">ANPC-SOL</a>
               </li>
               <li>
                 <Link to={mapPathToLang("/termeni-si-conditii", lang)} title="/termeni-si-conditii" className="hover:underline">{lang === "en" ? "Terms and Conditions" : "Termeni și Condiții"}</Link>

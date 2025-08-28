@@ -125,7 +125,8 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
           <div className="mt-5 sm:mt-6 space-y-2">
             <a
               href="https://politiaromana.ro/files/pages_files/BSR_2024_09.01.2025.pdf"
-               rel="noreferrer noopener"
+              target="_blank"
+              rel="noreferrer noopener"
               className="underline hover:no-underline inline-flex items-start gap-1 text-xs sm:text-sm"
               aria-label="Deschide Buletinul siguranței rutiere - Raport anual 2023 (PDF)"
             >

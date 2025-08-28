@@ -1,6 +1,5 @@
 import React from "react";
 import { Document, Page, Text, View, StyleSheet, Font, Link, Image } from "@react-pdf/renderer";
-import OptimizedImage from "@/components/ui/optimized-image";
 
 // Register fonts with diacritics support
 Font.register({
@@ -199,11 +198,7 @@ const AnafCryptoChecklist: React.FC = () => (
         {/* CTA final */}
         <View style={[styles.section, styles.ctaBox]}>
           <View style={styles.ctaRow}>
-            <OptimizedImage 
-              variant="pdf" 
-              alt="Avocat drept penal Bogdan Lamatic" 
-              title="Avocat drept penal Bucuresti"
-            />
+            <Image src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" style={styles.ctaImage} />
             <View style={styles.ctaContent}>
               <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
               <Link src="tel:+40745506443" style={styles.ctaButton}>
