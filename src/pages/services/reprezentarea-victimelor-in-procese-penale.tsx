@@ -95,7 +95,7 @@ export default function ReprezentareaVictimelor() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță victime">
-          <a href="tel:+40745506443">
+          <a href="tel:+40745506443" title="/telefon">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
@@ -105,7 +105,7 @@ export default function ReprezentareaVictimelor() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+              <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -291,10 +291,10 @@ export default function ReprezentareaVictimelor() {
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40745506443" title="/telefon"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">
-              <a href="mailto:bogdan.lamatic@yahoo.com">Trimite email</a>
+              <a href="mailto:bogdan.lamatic@yahoo.com" title="/email">Trimite email</a>
             </Button>
           </div>
         </CardContent>

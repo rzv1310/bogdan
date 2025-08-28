@@ -53,7 +53,7 @@ export default function SpalareDeBani() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+                <BreadcrumbLink href="/" title="/">Acasă</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
@@ -71,12 +71,12 @@ export default function SpalareDeBani() {
         <section className="mt-4 border border-accent rounded-md p-4">
           <div className="flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40745506443" title="/telefon" aria-label="Sună acum">
                 <Phone className="mr-2" /> Sună acum
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="mailto:office@lamatic.ro" aria-label="Trimite email">
+              <a href="mailto:office@lamatic.ro" title="/email" aria-label="Trimite email">
                 <Mail className="mr-2" /> Trimite email
               </a>
             </Button>
