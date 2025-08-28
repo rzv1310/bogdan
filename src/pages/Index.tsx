@@ -261,17 +261,12 @@ const Index = () => {
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
                 <img 
-                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
+                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
                   alt="Portret avocat drept penal în costum, studio" 
                   title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                   loading="eager" 
                   fetchPriority="high"
                   className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
-                  onError={(e) => {
-                    console.error('Hero image failed to load:', e);
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
                 />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
@@ -319,17 +314,12 @@ const Index = () => {
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
               <img 
-                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
+                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
                 alt="Portret avocat drept penal în costum, studio" 
                 title="Avocat drept penal Bucuresti Bogdan Lamatic" 
                 loading="eager" 
                 fetchPriority="high"
                 className="w-full h-auto rounded-lg shadow-md"
-                onError={(e) => {
-                  console.error('Hero image failed to load:', e);
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                }}
               />
             </div>
           </div>
