@@ -26,6 +26,8 @@ export function Squares({
     x: number
     y: number
   } | null>(null)
+  const [cachedDimensions, setCachedDimensions] = useState({ width: 0, height: 0 })
+  const [isLowEndDevice, setIsLowEndDevice] = useState(false)
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -37,11 +39,24 @@ export function Squares({
     // Set canvas background
     canvas.style.background = "#060606"
 
+    // Detect low-end device based on hardware concurrency
+    const detectLowEndDevice = () => {
+      const concurrency = navigator.hardwareConcurrency || 4;
+      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      setIsLowEndDevice(concurrency <= 4 && isMobile);
+    };
+
     const resizeCanvas = () => {
-      canvas.width = canvas.offsetWidth
-      canvas.height = canvas.offsetHeight
-      numSquaresX.current = Math.ceil(canvas.width / squareSize) + 1
-      numSquaresY.current = Math.ceil(canvas.height / squareSize) + 1
+      const width = canvas.offsetWidth;
+      const height = canvas.offsetHeight;
+      
+      // Cache dimensions to avoid repeated DOM access
+      setCachedDimensions({ width, height });
+      
+      canvas.width = width;
+      canvas.height = height;
+      numSquaresX.current = Math.ceil(width / squareSize) + 1;
+      numSquaresY.current = Math.ceil(height / squareSize) + 1;
     }
 
     window.addEventListener("resize", resizeCanvas)
@@ -121,22 +136,31 @@ export function Squares({
       requestRef.current = requestAnimationFrame(updateAnimation)
     }
 
+    // Throttled mouse move to reduce forced reflows
+    let mouseRafId: number;
     const handleMouseMove = (event: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect()
-      const mouseX = event.clientX - rect.left
-      const mouseY = event.clientY - rect.top
+      if (isLowEndDevice) return; // Skip on low-end devices
+      
+      if (!mouseRafId) {
+        mouseRafId = requestAnimationFrame(() => {
+          const rect = canvas.getBoundingClientRect();
+          const mouseX = event.clientX - rect.left;
+          const mouseY = event.clientY - rect.top;
 
-      const startX = Math.floor(gridOffset.current.x / squareSize) * squareSize
-      const startY = Math.floor(gridOffset.current.y / squareSize) * squareSize
+          const startX = Math.floor(gridOffset.current.x / squareSize) * squareSize;
+          const startY = Math.floor(gridOffset.current.y / squareSize) * squareSize;
 
-      const hoveredSquareX = Math.floor(
-        (mouseX + gridOffset.current.x - startX) / squareSize,
-      )
-      const hoveredSquareY = Math.floor(
-        (mouseY + gridOffset.current.y - startY) / squareSize,
-      )
+          const hoveredSquareX = Math.floor(
+            (mouseX + gridOffset.current.x - startX) / squareSize,
+          );
+          const hoveredSquareY = Math.floor(
+            (mouseY + gridOffset.current.y - startY) / squareSize,
+          );
 
-      setHoveredSquare({ x: hoveredSquareX, y: hoveredSquareY })
+          setHoveredSquare({ x: hoveredSquareX, y: hoveredSquareY });
+          mouseRafId = 0;
+        });
+      }
     }
 
     const handleMouseLeave = () => {
@@ -149,24 +173,36 @@ export function Squares({
     canvas.addEventListener("mouseleave", handleMouseLeave)
 
     // Initial setup
-    resizeCanvas()
-    requestRef.current = requestAnimationFrame(updateAnimation)
+    detectLowEndDevice();
+    resizeCanvas();
+    
+    // Conditionally start animation based on device capability
+    if (!isLowEndDevice) {
+      requestRef.current = requestAnimationFrame(updateAnimation);
+    }
 
     // Cleanup
     return () => {
-      window.removeEventListener("resize", resizeCanvas)
-      canvas.removeEventListener("mousemove", handleMouseMove)
-      canvas.removeEventListener("mouseleave", handleMouseLeave)
+      window.removeEventListener("resize", resizeCanvas);
+      canvas.removeEventListener("mousemove", handleMouseMove);
+      canvas.removeEventListener("mouseleave", handleMouseLeave);
       if (requestRef.current) {
-        cancelAnimationFrame(requestRef.current)
+        cancelAnimationFrame(requestRef.current);
+      }
+      if (mouseRafId) {
+        cancelAnimationFrame(mouseRafId);
       }
     }
-  }, [direction, speed, borderColor, hoverFillColor, hoveredSquare, squareSize])
+  }, [direction, speed, borderColor, hoverFillColor, hoveredSquare, squareSize, isLowEndDevice])
 
   return (
     <canvas
       ref={canvasRef}
       className={`w-full h-full border-none block ${className}`}
+      style={{
+        willChange: 'transform',
+        contain: 'layout style paint',
+      }}
     />
   )
 }

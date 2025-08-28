@@ -150,3 +150,18 @@ All colors MUST be HSL.
   50% { color: rgb(255, 255, 255); }
   100% { color: rgb(107, 114, 128); }
 }
+
+/* Performance optimizations for layout containment */
+.chart-container {
+  contain: layout style paint;
+}
+
+.glow-card {
+  contain: layout style;
+  will-change: transform;
+}
+
+.squares-background {
+  contain: layout style paint;
+  will-change: transform;
+}

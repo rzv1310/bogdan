@@ -54,33 +54,52 @@ const GlowCard: React.FC<GlowCardProps> = ({
   const [pathD, setPathD] = useState<string>("");
   const [runnerDur, setRunnerDur] = useState<string>("5s");
 
+  // Throttled pointer tracking to reduce forced reflows
   useEffect(() => {
-    const syncPointer = (e: PointerEvent) => {
-      const { clientX: x, clientY: y } = e;
+    let rafId: number;
+    let lastX = 0;
+    let lastY = 0;
 
-      if (cardRef.current) {
-        cardRef.current.style.setProperty("--x", x.toFixed(2));
-        cardRef.current.style.setProperty("--xp", (x / window.innerWidth).toFixed(2));
-        cardRef.current.style.setProperty("--y", y.toFixed(2));
-        cardRef.current.style.setProperty("--yp", (y / window.innerHeight).toFixed(2));
+    const syncPointer = (e: PointerEvent) => {
+      lastX = e.clientX;
+      lastY = e.clientY;
+
+      if (!rafId) {
+        rafId = requestAnimationFrame(() => {
+          if (cardRef.current) {
+            cardRef.current.style.setProperty("--x", lastX.toFixed(2));
+            cardRef.current.style.setProperty("--xp", (lastX / window.innerWidth).toFixed(2));
+            cardRef.current.style.setProperty("--y", lastY.toFixed(2));
+            cardRef.current.style.setProperty("--yp", (lastY / window.innerHeight).toFixed(2));
+          }
+          rafId = 0;
+        });
       }
     };
 
     document.addEventListener("pointermove", syncPointer);
-    return () => document.removeEventListener("pointermove", syncPointer);
+    return () => {
+      document.removeEventListener("pointermove", syncPointer);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
    }, []);
 
+  // Debounced ResizeObserver to reduce forced reflows
   useEffect(() => {
     if (!borderRunner) return;
     const el = cardRef.current;
     if (!el) return;
 
+    let timeoutId: number;
+    const [cachedWidth, setCachedWidth] = useState(0);
+    const [cachedHeight, setCachedHeight] = useState(0);
+
     const update = () => {
       const cs = getComputedStyle(el);
       const br = parseFloat(cs.borderTopLeftRadius || "14");
       const b = borderPx ?? 1;
-      const w = Math.max(0, el.clientWidth - 2 * b);
-      const h = Math.max(0, el.clientHeight - 2 * b);
+      const w = Math.max(0, cachedWidth - 2 * b);
+      const h = Math.max(0, cachedHeight - 2 * b);
       const r = Math.max(0, Math.min(br - b * 0.5, w / 2, h / 2));
       const d = roundedRectPath(w, h, r);
       setPathD(d);
@@ -90,11 +109,25 @@ const GlowCard: React.FC<GlowCardProps> = ({
       setRunnerDur(`${finalDur.toFixed(2)}s`);
     };
 
+    const debouncedUpdate = () => {
+      clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => {
+        setCachedWidth(el.clientWidth);
+        setCachedHeight(el.clientHeight);
+        update();
+      }, 16); // 60fps
+    };
+
+    // Initial update
+    setCachedWidth(el.clientWidth);
+    setCachedHeight(el.clientHeight);
     update();
-    const ro = new ResizeObserver(update);
+
+    const ro = new ResizeObserver(debouncedUpdate);
     ro.observe(el);
     return () => {
       ro.disconnect();
+      clearTimeout(timeoutId);
     };
   }, [borderRunner, borderPx, runnerSpeedFactor]);
 
