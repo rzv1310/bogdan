@@ -258,16 +258,22 @@ const Index = () => {
               <h1 className="text-[32px] md:text-5xl font-semibold leading-tight tracking-tight mb-6 py-0">
                 {t.heroTitle}
               </h1>
-              {/* Mobile-only image right after H1 */}
+              {/* Mobile-only responsive image */}
               <div className="mt-4 block md:hidden">
-                <img 
-                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
-                  alt="Portret avocat drept penal în costum, studio" 
-                  title="Avocat drept penal Bucuresti Bogdan Lamatic" 
-                  loading="eager" 
-                  fetchPriority="high"
-                  className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
-                />
+                <picture>
+                  <source 
+                    media="(max-width: 640px)" 
+                    srcSet="/lovable-uploads/49019fba-mobile-640w.png"
+                  />
+                  <img 
+                    src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
+                    alt="Portret avocat drept penal în costum, studio" 
+                    title="Avocat drept penal Bucuresti Bogdan Lamatic" 
+                    loading="eager" 
+                    fetchPriority="high"
+                    className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
+                  />
+                </picture>
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
@@ -313,14 +319,20 @@ const Index = () => {
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
-              <img 
-                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
-                alt="Portret avocat drept penal în costum, studio" 
-                title="Avocat drept penal Bucuresti Bogdan Lamatic" 
-                loading="eager" 
-                fetchPriority="high"
-                className="w-full h-auto rounded-lg shadow-md"
-              />
+              <picture>
+                <source 
+                  media="(min-width: 768px)" 
+                  srcSet="/lovable-uploads/49019fba-desktop-800w.png"
+                />
+                <img 
+                  src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png?v=1" 
+                  alt="Portret avocat drept penal în costum, studio" 
+                  title="Avocat drept penal Bucuresti Bogdan Lamatic" 
+                  loading="eager" 
+                  fetchPriority="high"
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -449,13 +461,19 @@ const Index = () => {
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
-              <img
-                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
-                alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
-                title="Avocat drept penal Bucuresti Bogdan Lamatic"
-                loading="lazy"
-                className="w-full h-auto max-w-md md:max-w-lg rounded-lg shadow-md"
-              />
+              <picture>
+                <source 
+                  media="(max-width: 430px)" 
+                  srcSet="/lovable-uploads/e6b30f85-optimized-430w.png"
+                />
+                <img
+                  src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                  alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
+                  title="Avocat drept penal Bucuresti Bogdan Lamatic"
+                  loading="lazy"
+                  className="w-full h-auto max-w-md md:max-w-lg rounded-lg shadow-md"
+                />
+              </picture>
             </div>
           </div>
         </section>
