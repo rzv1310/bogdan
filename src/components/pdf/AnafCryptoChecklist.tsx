@@ -198,7 +198,7 @@ const AnafCryptoChecklist: React.FC = () => (
         {/* CTA final */}
         <View style={[styles.section, styles.ctaBox]}>
           <View style={styles.ctaRow}>
-            <Image src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" style={styles.ctaImage} />
+            <Image src="/src/assets/hero-pdf.jpg" style={styles.ctaImage} />
             <View style={styles.ctaContent}>
               <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
               <Link src="tel:+40745506443" style={styles.ctaButton}>
