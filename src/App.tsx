@@ -70,9 +70,7 @@ const App = () => (
               <Route path="/politica-cookies" element={<PoliticaCookies />} />
 
                {/* EN routes */}
-               <Route path="/en" element={<EnIndex />}>
-                 <Route index element={<Index />} />
-               </Route>
+               <Route path="/en" element={<EnIndex />} />
                <Route path="/en/about" element={<About />} />
                <Route path="/en/blog" element={<BlogEn />} />
                <Route path="/en/contact" element={<ContactEn />} />

@@ -147,14 +147,13 @@ export default function Header() {
               <ul className="space-y-1">
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/despre-mine", lang)))}
+                    <Link 
+                      to={mapPathToLang("/despre-mine", lang)}
+                      className="flex items-center w-full justify-start rounded-md px-3 py-2 hover:bg-muted"
+                      onClick={() => handleMobileNavigation(() => {})}
                     >
-                      <span>{t.nav.about}</span>
-                    </Button>
+                      {t.nav.about}
+                    </Link>
                   </DrawerClose>
                 </li>
                 <li>
@@ -170,14 +169,13 @@ export default function Header() {
                         {svcList.map((s) => (
                           <li key={s.to}>
                             <DrawerClose asChild>
-                              <Button 
-                                asChild 
-                                variant="ghost" 
-                                className="w-full justify-start text-left whitespace-normal break-words leading-snug"
-                                onClick={() => handleMobileNavigation(() => navigate(s.to))}
+                              <Link 
+                                to={s.to}
+                                className="flex items-center w-full justify-start rounded-md px-3 py-2 hover:bg-muted text-left whitespace-normal break-words leading-snug"
+                                onClick={() => handleMobileNavigation(() => {})}
                               >
-                                <span>{labelFor(s.to, s.label)}</span>
-                              </Button>
+                                {labelFor(s.to, s.label)}
+                              </Link>
                             </DrawerClose>
                           </li>
                         ))}
@@ -187,26 +185,24 @@ export default function Header() {
                 </li>
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/blog", lang)))}
+                    <Link 
+                      to={mapPathToLang("/blog", lang)}
+                      className="flex items-center w-full justify-start rounded-md px-3 py-2 hover:bg-muted"
+                      onClick={() => handleMobileNavigation(() => {})}
                     >
-                      <span>{t.nav.blog}</span>
-                    </Button>
+                      {t.nav.blog}
+                    </Link>
                   </DrawerClose>
                 </li>
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
-                      onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/contact", lang)))}
+                    <Link 
+                      to={mapPathToLang("/contact", lang)}
+                      className="flex items-center w-full justify-start rounded-md px-3 py-2 hover:bg-muted"
+                      onClick={() => handleMobileNavigation(() => {})}
                     >
-                      <span>{t.nav.contact}</span>
-                    </Button>
+                      {t.nav.contact}
+                    </Link>
                   </DrawerClose>
                 </li>
               </ul>
