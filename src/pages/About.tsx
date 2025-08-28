@@ -1,6 +1,4 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
@@ -211,19 +209,6 @@ export default function About() {
             </ul>
           </section>
 
-          {/* Call to Action */}
-          <section className="mt-12 text-center">
-            <h2 className="text-xl font-medium mb-4">Need Legal Assistance?</h2>
-            <p className="text-muted-foreground mb-6">
-              Contact me directly for criminal law consultation and legal representation.
-            </p>
-            <a href="tel:+40745506443" aria-label="Call now">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
-                <Phone /> Call now: +40 745 506 443
-              </Button>
-            </a>
-          </section>
-
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
@@ -383,19 +368,6 @@ export default function About() {
               </li>
               <li>Diverse alerte pentru clienți și articole pe teme de drept penal, conformitate și legea avertizorilor.</li>
             </ul>
-          </section>
-
-          {/* Call to Action */}
-          <section className="mt-12 text-center">
-            <h2 className="text-xl font-medium mb-4">Ai nevoie de asistență juridică?</h2>
-            <p className="text-muted-foreground mb-6">
-              Contactează-mă direct pentru consultanță de drept penal și reprezentare juridică.
-            </p>
-            <a href="tel:+40745506443" aria-label="Sună acum">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
-                <Phone /> Sună acum: +40 745 506 443
-              </Button>
-            </a>
           </section>
 
           <script
