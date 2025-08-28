@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Send, Paperclip, AlertCircle, CheckCircle2, ArrowRight, Phone, Loader2 } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -161,7 +160,7 @@ export default function Contact() {
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
       await submitContact(payload);
-      setStatus({ type: "success", note: "Mulțumesc! Revin în 24-48h lucrătoare." });
+      setStatus({ type: "success", note: "Mulțumesc! Revin în 24–48h lucrătoare." });
       toast({ title: "Trimis cu succes", description: "Solicitarea ta a fost trimisă.", });
       clearDraft();
     } catch (err: any) {
@@ -202,9 +201,7 @@ export default function Contact() {
       <Breadcrumb className="mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Acasă</Link>
-            </BreadcrumbLink>
+            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
@@ -369,7 +366,7 @@ export default function Contact() {
                 <div className="flex items-start gap-2 text-sm">
                   <Checkbox id="gdpr" ref={gdprRef as any} checked={gdpr} onCheckedChange={(v) => setGdpr(!!v)} className="mt-1" />
                   <label htmlFor="gdpr" className="leading-relaxed">
-                    Sunt de acord cu prelucrarea datelor conform informării GDPR. Trimiterea formularului nu creează o relație avocat-client; aceasta se formează doar după confirmarea expresă și semnarea împuternicirii.
+                    Sunt de acord cu prelucrarea datelor conform informării GDPR. Trimiterea formularului nu creează o relație avocat–client; aceasta se formează doar după confirmarea expresă și semnarea împuternicirii.
                   </label>
                 </div>
                 {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
@@ -380,7 +377,7 @@ export default function Contact() {
                   {status.type === 'sending' ? (<><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Se trimite…</>) : (<><Send className="w-4 h-4" aria-hidden="true" /> Trimite solicitarea</>)}
                 </Button>
                 <Button type="button" variant="secondary" onClick={clearDraft}>Șterge formularul</Button>
-                <div className="text-xs text-muted-foreground">Răspuns în 24-48h lucrătoare (în funcție de urgență)</div>
+                <div className="text-xs text-muted-foreground">Răspuns în 24–48h lucrătoare (în funcție de urgență)</div>
               </div>
 
               {status.type !== "idle" && (

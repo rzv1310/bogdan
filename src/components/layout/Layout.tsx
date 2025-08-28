@@ -2,7 +2,6 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import CriticalCSS from "../performance/CriticalCSS";
 
 export default function Layout() {
   const location = useLocation();
@@ -22,7 +21,6 @@ export default function Layout() {
   }, [location.pathname]);
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <CriticalCSS />
       <Header />
       <main>
         <Outlet />

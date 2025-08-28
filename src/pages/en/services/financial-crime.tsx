@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -74,9 +73,7 @@ export default function FinancialCrimeEn() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/en">Home</Link>
-                </BreadcrumbLink>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
@@ -159,7 +156,7 @@ export default function FinancialCrimeEn() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed">
             <ul className="list-disc pl-6 space-y-2">
-              <li>Criminal Code: bribery (art. 289-292), embezzlement (art. 295), abuse of office (art. 297), fraud (art. 244)</li>
+              <li>Criminal Code: bribery (art. 289–292), embezzlement (art. 295), abuse of office (art. 297), fraud (art. 244)</li>
               <li>Law 241/2005 on tax evasion</li>
               <li>Law 129/2019 (AML/CFT) and related guidance</li>
             </ul>
@@ -170,7 +167,7 @@ export default function FinancialCrimeEn() {
         <div className="mt-8">
           <EconomicCrimesChart
             title="Economic and financial crime and smuggling cases (DIICOT)"
-            subtitle="Public summary data from DIICOT reports - 2023 vs 2024"
+            subtitle="Public summary data from DIICOT reports – 2023 vs 2024"
             legendLabels={{ Active: "Active cases", Pasive: "Passive cases", Total: "Total" }}
             downloadAriaLabel="Download chart as PNG"
             filename="diicot-economic-crimes-2023-2024-en.png"

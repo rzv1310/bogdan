@@ -20,7 +20,7 @@ export default function MalpraxisChecklistSection() {
   return (
     <section className="mt-12 md:mt-16">
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-        Checklist documente - Malpraxis Medical & Neglijență în serviciu
+        Checklist documente – Malpraxis Medical & Neglijență în serviciu
       </h2>
       <p className="text-muted-foreground mt-1">(autor: Av. Bogdan Lamatic, București)</p>
 

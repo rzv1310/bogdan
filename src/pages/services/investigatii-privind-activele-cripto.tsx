@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -32,19 +31,19 @@ export default function InvestigatiiCripto() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Investigații privind activele cripto",
-                    "item": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto"
+                    "item": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto"
                   }
                 ]
               })
@@ -58,7 +57,7 @@ export default function InvestigatiiCripto() {
                 "@type": "LegalService",
                 "name": "Servicii avocat investigații privind activele cripto",
                 "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
-                "url": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto",
+                "url": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -85,9 +84,7 @@ export default function InvestigatiiCripto() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Acasă</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

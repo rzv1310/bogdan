@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function CookiePolicyEn() {
@@ -25,7 +24,7 @@ export default function CookiePolicyEn() {
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>
-              <Link to="/en" className="underline hover:no-underline">Home</Link>
+              <a href="/en" className="underline hover:no-underline">Home</a>
             </li>
             <li>/</li>
             <li aria-current="page">Cookie Policy</li>
@@ -84,8 +83,8 @@ export default function CookiePolicyEn() {
         <section aria-label="Related policies" className="mt-10">
           <h2>Related policies</h2>
           <ul>
-            <li><Link to="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</Link></li>
-            <li><Link to="/en/gdpr" className="underline hover:no-underline">GDPR - Data Protection</Link></li>
+            <li><a href="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</a></li>
+            <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR – Data Protection</a></li>
           </ul>
         </section>
       </article>

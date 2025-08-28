@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function GDPRen() {
   useSEO({
-    title: "GDPR - Data Protection | Bogdan Lamatic Law Office",
+    title: "GDPR – Data Protection | Bogdan Lamatic Law Office",
     description: "Learn how we collect, use, and protect your personal data in accordance with GDPR.",
     alternates: { ro: "/gdpr", en: "/en/gdpr", xDefault: "/en/gdpr" },
     locale: "en_US",
@@ -21,11 +20,11 @@ export default function GDPRen() {
   return (
     <main className="mx-auto max-w-5xl px-4 md:px-6 py-10">
       <header className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight">GDPR - Data Protection</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">GDPR – Data Protection</h1>
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>
-              <Link to="/en" className="underline hover:no-underline">Home</Link>
+              <a href="/en" className="underline hover:no-underline">Home</a>
             </li>
             <li>/</li>
             <li aria-current="page">GDPR</li>
@@ -106,8 +105,8 @@ export default function GDPRen() {
         <section aria-label="Related policies" className="mt-10">
           <h2>Related policies</h2>
           <ul>
-            <li><Link to="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</Link></li>
-            <li><Link to="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</Link></li>
+            <li><a href="/en/terms-and-conditions" className="underline hover:no-underline">Terms and Conditions</a></li>
+            <li><a href="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</a></li>
           </ul>
         </section>
       </article>

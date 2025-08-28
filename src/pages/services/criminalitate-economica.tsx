@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
@@ -30,19 +29,19 @@ export default function CriminalitateEconomica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Criminalitate economică",
-                    "item": "https://avocatpenalbucuresti.ro/services/criminalitate-economica"
+                    "item": "https://avocatbogdanlamatic.ro/services/criminalitate-economica"
                   }
                 ]
               })
@@ -56,7 +55,7 @@ export default function CriminalitateEconomica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat criminalitate economică",
                 "description": "Asistență și reprezentare în cauze de criminalitate economică",
-                "url": "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
+                "url": "https://avocatbogdanlamatic.ro/services/criminalitate-economica",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -83,9 +82,7 @@ export default function CriminalitateEconomica() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Acasă</Link>
-            </BreadcrumbLink>
+            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

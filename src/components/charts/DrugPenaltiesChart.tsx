@@ -1,9 +1,8 @@
-import React, { useRef, useCallback, useMemo } from "react";
+import React, { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
 import * as htmlToImage from "html-to-image";
-import { OptimizedChart } from "./OptimizedChart";
 import {
   BarChart,
   Bar,
@@ -15,7 +14,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Date - pedepse prevăzute de Legea nr. 143/2000
+// Date – pedepse prevăzute de Legea nr. 143/2000
 export type DrugPenaltyDataPoint = {
   categorie: string;
   Minim: number;
@@ -38,11 +37,11 @@ interface DrugPenaltiesChartProps {
 export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", minLabel = "Minim", maxLabel = "Maxim", title }: DrugPenaltiesChartProps) {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
-  const tooltipFormatter = useCallback((value: number, name: string) => {
+  const tooltipFormatter = (value: number, name: string) => {
     return [`${value} ${unit}`, name] as [string, string];
-  }, [unit]);
+  };
 
-  const handleDownloadPNG = useCallback(async () => {
+  const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
     try {
       const dataUrl = await htmlToImage.toPng(chartRef.current, {
@@ -57,26 +56,7 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
     } catch (err) {
       console.error("PNG export failed", err);
     }
-  }, []);
-
-  const chartComponent = useMemo(() => (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart
-        data={data}
-        margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
-        barSize={16}
-        barCategoryGap="35%"
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="categorie" tick={{ fontSize: 12 }} />
-        <YAxis allowDecimals={false} domain={[0, 16]} />
-        <Tooltip formatter={tooltipFormatter as unknown as any} />
-        <Legend />
-        <Bar dataKey="Minim" name={minLabel} fill="#FF7F0E" radius={[5, 5, 0, 0]} />
-        <Bar dataKey="Maxim" name={maxLabel} fill="#D62728" radius={[5, 5, 0, 0]} />
-      </BarChart>
-    </ResponsiveContainer>
-  ), [data, tooltipFormatter, minLabel, maxLabel]);
+  };
 
   return (
     <div className="w-full max-w-4xl mx-auto p-4 sm:p-5 md:p-6">
@@ -102,10 +82,23 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
             </Button>
           </header>
 
-          <div ref={chartRef}>
-            <OptimizedChart className="h-64 sm:h-80 w-full" height={320}>
-              {chartComponent}
-            </OptimizedChart>
+          <div className="h-64 sm:h-80 w-full" ref={chartRef}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                data={data}
+                margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
+                barSize={16}
+                barCategoryGap="35%"
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="categorie" tick={{ fontSize: 12 }} />
+                <YAxis allowDecimals={false} domain={[0, 16]} />
+                <Tooltip formatter={tooltipFormatter as unknown as any} />
+                <Legend />
+                <Bar dataKey="Minim" name={minLabel} fill="#FF7F0E" radius={[5, 5, 0, 0]} />
+                <Bar dataKey="Maxim" name={maxLabel} fill="#D62728" radius={[5, 5, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
 
           <footer className="mt-5 sm:mt-6 space-y-2">
@@ -118,7 +111,7 @@ export default function DrugPenaltiesChart({ data = defaultData, unit = "ani", m
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  LEGE nr. 58 din 20 martie 2024 - completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
+                  LEGE nr. 58 din 20 martie 2024 – completări și modificări privind prevenirea și combaterea traficului și consumului ilicit de droguri
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </li>

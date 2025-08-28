@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -29,19 +28,19 @@ export default function CoruptieSiFunctiePublica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
-                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
+                    "item": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
                   }
                 ]
               })
@@ -55,7 +54,7 @@ export default function CoruptieSiFunctiePublica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni de corupție și fapte legate de exercitarea funcției publice",
                 "description": "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA",
-                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+                "url": "https://avocatbogdanlamatic.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -103,9 +102,7 @@ export default function CoruptieSiFunctiePublica() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Acasă</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

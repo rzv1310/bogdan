@@ -48,7 +48,7 @@ export default function MalpraxisChecklistPDF() {
   return (
     <PDFDocument title="Checklist malpraxis medical" author="Av. Bogdan Lamatic">
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>{strip("Checklist documente - Malpraxis Medical & Neglijență în serviciu")}</Text>
+        <Text style={styles.title}>{strip("Checklist documente – Malpraxis Medical & Neglijență în serviciu")}</Text>
         <Text style={styles.note}>{strip("(autor: Av. Bogdan Lamatic, București)")}</Text>
 
         {/* A. Pacienți / aparținători */}
@@ -119,7 +119,7 @@ export default function MalpraxisChecklistPDF() {
         {/* C. Bune practici */}
         <View style={styles.sectionBox}>
           <Text style={styles.sectionHeading}>{strip("C. Formatare & bune practici (ambele părți)")}</Text>
-          <Bullet>Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic ("2025-08-10 - externare.pdf").</Bullet>
+          <Bullet>Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic ("2025-08-10 – externare.pdf").</Bullet>
           <Bullet>Nu trimiți originale; aduci originalele doar la solicitarea expresă.</Bullet>
           <Bullet>Pune un index al probelor și numerotează paginile.</Bullet>
           <Bullet>Respectă GDPR: acoperă CNP-urile altor pacienți; nu publica date sensibile pe email nesecurizat.</Bullet>

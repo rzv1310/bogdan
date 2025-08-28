@@ -116,17 +116,17 @@ const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 const AnafCryptoChecklist: React.FC = () => (
-  <Document title="Checklist fiscal ANAF - criptomonede (persoană fizică)">
+  <Document title="Checklist fiscal ANAF – criptomonede (persoană fizică)">
     <Page size="A4" style={styles.page}>
       <View>
-        <Text style={styles.h1}>Checklist fiscal ANAF - criptomonede (persoană fizică)</Text>
+        <Text style={styles.h1}>Checklist fiscal ANAF – criptomonede (persoană fizică)</Text>
 
         <View style={styles.section}>
           <Bullet>
             Strânge documentele — istoricul tranzacțiilor (CSV/raport din exchange), curs RON la data vânzării, comisioane directe (trading/withdrawal).
           </Bullet>
           <Bullet>
-            Identifică tranzacțiile care generează venit: vânzare în fiat sau plată în bunuri/servicii. Câștigul = preț vânzare - preț achiziție - costuri directe; impozit 10% pe câștigul impozabil.
+            Identifică tranzacțiile care generează venit: vânzare în fiat sau plată în bunuri/servicii. Câștigul = preț vânzare − preț achiziție − costuri directe; impozit 10% pe câștigul impozabil.
           </Bullet>
         </View>
 
@@ -146,7 +146,7 @@ const AnafCryptoChecklist: React.FC = () => (
         <View style={[styles.section]}>
           <Text style={styles.h2}>Verifică obligația de CASS (sănătate)</Text>
           <Bullet>
-            Dacă totalul veniturilor extra-salariale din categoriile art. 155 alin. (1) lit. c-h (inclusiv venituri din alte surse - cripto) depășește pragurile 6/12/24 x salariul minim brut, datorezi CASS 10% la Baza de calcul aferentă pragului atins.
+            Dacă totalul veniturilor extra-salariale din categoriile art. 155 alin. (1) lit. c–h (inclusiv venituri din alte surse — cripto) depășește pragurile 6/12/24 x salariul minim brut, datorezi CASS 10% la Baza de calcul aferentă pragului atins.
           </Bullet>
           <Bullet>
             Pentru 2025, salariul minim brut este 4.050 lei (HG nr. 1506/27.11.2024). Praguri CASS 2025: 6 x = 24.300 lei, 12 x = 48.600 lei, 24 x = 97.200 lei.
@@ -159,7 +159,7 @@ const AnafCryptoChecklist: React.FC = () => (
         <View style={styles.section}>
           <Text style={styles.h2}>Plata</Text>
           <Bullet>
-            Impozitul pe venit (10%) și CASS (dacă e cazul) se plătesc până la termenul-limită al Declarației Unice.
+            Impozitul pe venit (10%) și CASS (dacă e cazul) se plătesc până la termenul‑limită al Declarației Unice.
           </Bullet>
         </View>
 
@@ -170,27 +170,27 @@ const AnafCryptoChecklist: React.FC = () => (
           <Text style={styles.smallMuted}>Notă: sumele sunt în RON. Pentru 2025 folosim pragurile CASS din HG 1506/2024 (salariul minim 4.050 lei).</Text>
 
           <View style={{ marginTop: 6 }}>
-            <Text style={styles.bold}>Ex. 1 - total câștig ≤ 600 lei, tranzacții mici</Text>
+            <Text style={styles.bold}>Ex. 1 — total câștig ≤ 600 lei, tranzacții mici</Text>
             <Bullet>5 tranzacții cu câștiguri: 120, 90, 150, 110, 100 → total 570</Bullet>
-            <Bullet>Sub 200 lei/tranzacție și total &lt;= 600 - nu datorezi impozit, nu datorezi CASS.</Bullet>
+            <Bullet>Sub 200 lei/tranzacție și total &lt;= 600 → nu datorezi impozit, nu datorezi CASS.</Bullet>
           </View>
 
           <View style={{ marginTop: 8 }}>
-            <Text style={styles.bold}>Ex. 2 - total 950 lei; ai și tranzacții sub 200 lei</Text>
+            <Text style={styles.bold}>Ex. 2 — total 950 lei; ai și tranzacții sub 200 lei</Text>
             <Bullet>6 tranzacții cu câștiguri: 160, 180, 230, 140, 120, 120 → total 950</Bullet>
-            <Bullet>Totalul depășește 600 - toate câștigurile devin impozabile.</Bullet>
+            <Bullet>Totalul depășește 600 → toate câștigurile devin impozabile.</Bullet>
             <Bullet>Impozit = 10% x 950 = 95 lei.</Bullet>
-            <Bullet>CASS: 950 &lt; 24.300 (pragul de 6 x) - nu datorezi CASS (dacă nu ai și alte venituri extra-salariale).</Bullet>
+            <Bullet>CASS: 950 &lt; 24.300 (pragul de 6 x) → nu datorezi CASS (dacă nu ai și alte venituri extra-salariale).</Bullet>
           </View>
 
           <View style={{ marginTop: 8 }}>
-            <Text style={styles.bold}>Ex. 3 - câștig 40.000 lei</Text>
+            <Text style={styles.bold}>Ex. 3 — câștig 40.000 lei</Text>
             <Bullet>Impozit = 10% x 40.000 = 4.000 lei.</Bullet>
             <Bullet>CASS: 40.000 ≥ 24.300 și &lt; 48.600 =&gt; Baza de calcul = 6 x 4.050 = 24.300; CASS = 10% x 24.300 = 2.430 lei.</Bullet>
           </View>
 
           <View style={{ marginTop: 8 }}>
-            <Text style={styles.bold}>Ex. 4 - câștig 120.000 lei</Text>
+            <Text style={styles.bold}>Ex. 4 — câștig 120.000 lei</Text>
             <Bullet>Impozit = 10% x 120.000 = 12.000 lei.</Bullet>
             <Bullet>CASS: 120.000 ≥ 97.200 =&gt; Baza de calcul = 24 x 4.050 = 97.200; CASS = 9.720 lei.</Bullet>
           </View>

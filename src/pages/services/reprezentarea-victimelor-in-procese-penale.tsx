@@ -28,19 +28,19 @@ export default function ReprezentareaVictimelor() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Reprezentarea victimelor în procese penale",
-                    "item": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale"
+                    "item": "https://avocatbogdanlamatic.ro/services/reprezentarea-victimelor-in-procese-penale"
                   }
                 ]
               })
@@ -54,7 +54,7 @@ export default function ReprezentareaVictimelor() {
                 "@type": "LegalService",
                 "name": "Servicii avocat reprezentarea victimelor în procese penale",
                 "description": "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale",
-                "url": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
+                "url": "https://avocatbogdanlamatic.ro/services/reprezentarea-victimelor-in-procese-penale",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -105,9 +105,7 @@ export default function ReprezentareaVictimelor() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Acasă</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

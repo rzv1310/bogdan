@@ -1,10 +1,9 @@
-import React, { useRef, useCallback, useMemo } from "react";
+import React, { useRef } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Download } from "lucide-react";
 import * as htmlToImage from "html-to-image";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { OptimizedChart } from "./OptimizedChart";
 import {
   ResponsiveContainer,
   BarChart,
@@ -68,7 +67,7 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
     );
   };
 
-  const handleDownloadPNG = useCallback(async () => {
+  const handleDownloadPNG = async () => {
     if (!chartRef.current) return;
     try {
       const dataUrl = await htmlToImage.toPng(chartRef.current, {
@@ -83,25 +82,7 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
     } catch (err) {
       console.error("PNG export failed", err);
     }
-  }, []);
-
-  const chartComponent = useMemo(() => (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={data} margin={{ top: isMobile ? 24 : 16, right: 1, left: 15, bottom: isMobile ? 36 : 8 }} barSize={18} barCategoryGap="32%">
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="categorie" interval={0} tick={{ fontSize: isMobile ? 10 : 12 }} angle={isMobile ? -35 : 0} textAnchor={isMobile ? "end" : "middle"} tickMargin={isMobile ? 8 : 5} height={isMobile ? 56 : 30} />
-        <YAxis allowDecimals={false} domain={[0, 'dataMax + 250']} tick={{ fontSize: isMobile ? 10 : 12 }} width={isMobile ? 28 : 40} tickMargin={isMobile ? 2 : 8} />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="an2022" name="2022" fill="#D62728" radius={[5, 5, 0, 0]}>
-          <LabelList dataKey="an2022" content={renderLabel2022} />
-        </Bar>
-        <Bar dataKey="an2023" name="2023" fill="#FF7F0E" radius={[5, 5, 0, 0]}>
-          <LabelList dataKey="an2023" content={renderLabel2023} />
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
-  ), [data, isMobile, renderLabel2022, renderLabel2023]);
+  };
 
   return (
     <div className="w-full max-w-4xl mx-auto p-4 sm:p-5 md:p-6">
@@ -123,10 +104,22 @@ export default function RoadAccidentsChart({ data = defaultData, title }: { data
           </div>
         </CardHeader>
         <CardContent className="p-4 sm:p-6 pt-0">
-          <div ref={chartRef}>
-            <OptimizedChart className="h-64 sm:h-80 w-full" height={320}>
-              {chartComponent}
-            </OptimizedChart>
+          <div className="h-64 sm:h-80 w-full" ref={chartRef}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data} margin={{ top: isMobile ? 24 : 16, right: 1, left: 15, bottom: isMobile ? 36 : 8 }} barSize={18} barCategoryGap="32%">
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="categorie" interval={0} tick={{ fontSize: isMobile ? 10 : 12 }} angle={isMobile ? -35 : 0} textAnchor={isMobile ? "end" : "middle"} tickMargin={isMobile ? 8 : 5} height={isMobile ? 56 : 30} />
+                <YAxis allowDecimals={false} domain={[0, 'dataMax + 250']} tick={{ fontSize: isMobile ? 10 : 12 }} width={isMobile ? 28 : 40} tickMargin={isMobile ? 2 : 8} />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="an2022" name="2022" fill="#D62728" radius={[5, 5, 0, 0]}>
+                  <LabelList dataKey="an2022" content={renderLabel2022} />
+                </Bar>
+                <Bar dataKey="an2023" name="2023" fill="#FF7F0E" radius={[5, 5, 0, 0]}>
+                  <LabelList dataKey="an2023" content={renderLabel2023} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
           </div>
 
           <div className="mt-5 sm:mt-6 space-y-2">

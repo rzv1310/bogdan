@@ -2,17 +2,11 @@ import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle, Play } from "lucide-react";
+import { GlowCard } from "@/components/ui/spotlight-card";
+import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
+import { PulseBeams } from "@/components/ui/pulse-beams";
+import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 import { Link } from "react-router-dom";
-import { lazy, Suspense } from "react";
-
-// Lazy load heavy UI components for better initial performance
-const GlowCard = lazy(() => import("@/components/ui/spotlight-card").then(m => ({ default: m.GlowCard })));
-const GeminiButtonEffect = lazy(() => import("@/components/ui/gemini-button-effect"));
-const PulseBeams = lazy(() => import("@/components/ui/pulse-beams").then(m => ({ default: m.PulseBeams })));
-const ReviewsCarousel3D = lazy(() => import("@/components/ui/reviews-carousel-3d").then(m => ({ default: m.ReviewsCarousel3D })));
-
-// Import types only (no runtime cost)
-import type { Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
@@ -177,84 +171,6 @@ const Index = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   return <div className="min-h-screen bg-background text-foreground">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Avocat Bogdan Lamatic",
-            url:
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "/",
-            telephone: "+40 745 506 443",
-            areaServed: ["RO", "EU"],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Avocat Bogdan Lamatic",
-            url:
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "/",
-            inLanguage: "ro-RO",
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Bogdan Lamatic",
-            jobTitle: "Avocat",
-            telephone: "+40 745 506 443",
-            url:
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "/",
-            areaServed: ["RO", "EU"],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": typeof window !== "undefined" ? window.location.origin : "/",
-            name: "Avocat Bogdan Lamatic",
-            telephone: "+40 745 506 443",
-            url:
-              typeof window !== "undefined"
-                ? window.location.origin
-                : "/",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "București",
-              addressCountry: "RO",
-            },
-            areaServed: {
-              "@type": "GeoCircle",
-              geoMidpoint: {
-                "@type": "GeoCoordinates",
-                latitude: 44.4268,
-                longitude: 26.1025,
-              },
-              geoRadius: 50000,
-            },
-          }),
-        }}
-      />
 
       <main>
         {/* Hero Section */}
@@ -264,31 +180,9 @@ const Index = () => {
               <h1 className="text-[32px] md:text-5xl font-semibold leading-tight tracking-tight mb-6 py-0">
                 {t.heroTitle}
               </h1>
-              {/* Mobile-only responsive image */}
+              {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
-                <picture>
-                  <source 
-                    media="(max-width: 480px)" 
-                    srcSet="/lovable-uploads/49019fba-compressed-320w.png 320w"
-                    sizes="(max-width: 480px) 280px"
-                  />
-                  <source 
-                    media="(max-width: 640px)" 
-                    srcSet="/lovable-uploads/49019fba-compressed-400w.png 400w"
-                    sizes="(max-width: 640px) 320px"
-                  />
-                  <img 
-                    src="/lovable-uploads/49019fba-compressed-400w.png" 
-                    alt="Portret avocat drept penal în costum, studio" 
-                    title="Avocat drept penal Bucuresti Bogdan Lamatic" 
-                    loading="eager" 
-                    fetchPriority="high"
-                    width="400"
-                    height="600"
-                    style={{ aspectRatio: '2/3' }}
-                    className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto"
-                  />
-                </picture>
+                <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
@@ -334,37 +228,14 @@ const Index = () => {
             </div>
 
             <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
-              <picture>
-                <source 
-                  media="(min-width: 1024px)" 
-                  srcSet="/lovable-uploads/49019fba-desktop-800w.png 800w"
-                  sizes="(min-width: 1024px) 400px"
-                />
-                <source 
-                  media="(min-width: 768px)" 
-                  srcSet="/lovable-uploads/49019fba-compressed-400w.png 400w"
-                  sizes="(min-width: 768px) 350px"
-                />
-                <img 
-                  src="/lovable-uploads/49019fba-compressed-400w.png" 
-                  alt="Portret avocat drept penal în costum, studio" 
-                  title="Avocat drept penal Bucuresti Bogdan Lamatic" 
-                  loading="eager" 
-                  fetchPriority="high"
-                  width="400"
-                  height="600"
-                  style={{ aspectRatio: '2/3' }}
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-              </picture>
+              <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" loading="lazy" className="w-full h-auto rounded-lg shadow-md" />
             </div>
           </div>
         </section>
 
         {/* Values and Reasons */}
         <section className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-          <Suspense fallback={<div className="h-40 bg-muted/50 rounded-xl animate-pulse" />}>
-            <GlowCard customSize borderPx={1} borderRunner noShadow className="w-full p-0">
+          <GlowCard customSize borderPx={1} borderRunner noShadow className="w-full p-0">
             <div className="absolute inset-[var(--border-size)] rounded-xl bg-background" aria-hidden="true"></div>
             <div className="relative z-10 p-6 md:p-8">
               <div className="grid md:grid-cols-2 gap-6 md:gap-12">
@@ -401,7 +272,6 @@ const Index = () => {
               </div>
             </div>
           </GlowCard>
-          </Suspense>
         </section>
 
         {/* CTA */}
@@ -410,15 +280,13 @@ const Index = () => {
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
-              <Suspense fallback={<div className="h-12 w-40 bg-muted/50 rounded-lg animate-pulse" />}>
-                <GeminiButtonEffect>
+              <GeminiButtonEffect>
                 <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
                 </a>
               </GeminiButtonEffect>
-              </Suspense>
             </div>
           </div>
         </section>
@@ -471,8 +339,7 @@ const Index = () => {
               ))}
             </div>
             <div className="mt-8">
-              <Suspense fallback={<div className="h-48 w-full bg-muted/50 rounded-xl animate-pulse" />}>
-                <PulseBeams
+              <PulseBeams
                 beams={beams}
                 gradientStops={gradientStops}
                 width={858}
@@ -487,29 +354,15 @@ const Index = () => {
                   </a>
                 </div>
               </PulseBeams>
-              </Suspense>
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="flex justify-center">
-              <picture>
-                <source 
-                  media="(max-width: 480px)" 
-                  srcSet="/lovable-uploads/e6b30f85-compressed-300w.png 300w"
-                  sizes="(max-width: 480px) 280px"
-                />
-                <source 
-                  media="(max-width: 768px)" 
-                  srcSet="/lovable-uploads/e6b30f85-optimized-430w.png 430w"
-                  sizes="(max-width: 768px) 400px"
-                />
-                <img
-                  src="/lovable-uploads/e6b30f85-compressed-300w.png"
-                  alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
-                  title="Avocat drept penal Bucuresti Bogdan Lamatic"
-                  loading="lazy"
-                  className="w-full h-auto max-w-md md:max-w-lg rounded-lg shadow-md"
-                />
-              </picture>
+              <img
+                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
+                loading="lazy"
+                className="w-full h-auto max-w-md md:max-w-lg rounded-lg shadow-md"
+              />
             </div>
           </div>
         </section>
@@ -528,9 +381,7 @@ const Index = () => {
               </>
             )}
           </h2>
-          <Suspense fallback={<div className="h-64 w-full bg-muted/50 rounded-xl animate-pulse" />}>
-            <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
-          </Suspense>
+          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
         </section>
       </main>
 

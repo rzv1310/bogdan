@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -30,19 +29,19 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Neglijență profesională și malpraxis",
-                    "item": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis"
+                    "item": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis"
                   }
                 ]
               })
@@ -56,7 +55,7 @@ export default function Malpraxis() {
                 "@type": "LegalService",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
-                "url": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
+                "url": "https://avocatbogdanlamatic.ro/services/neglijenta-profesionala-si-malpraxis",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -107,9 +106,7 @@ export default function Malpraxis() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Acasă</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

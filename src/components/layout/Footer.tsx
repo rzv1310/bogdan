@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>Website:</span>{" "}
-                <a href="https://avocatpenalbucuresti.ro/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocatpenalbucuresti.ro</a>
+                <a href="https://avocat-drept-penal.ro" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">avocat-drept-penal.ro</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
@@ -45,9 +45,7 @@ export default function Footer() {
 
           {/* Col 2: Servicii */}
           <nav aria-labelledby="footer-services">
-            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">
-              {lang === "en" ? "Criminal Law Attorney Services Bucharest" : "Servicii Avocat Drept Penal Bucuresti"}
-            </h2>
+            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">{t.nav.services}</h2>
             <ul className="mt-4 space-y-2 text-sm">
               {svcList.map((s) => (
                 <li key={s.to}>

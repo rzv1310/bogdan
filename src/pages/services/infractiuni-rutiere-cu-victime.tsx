@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -29,19 +28,19 @@ export default function InfractiuniRutiere() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatbogdanlamatic.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatbogdanlamatic.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni rutiere cu / fără victime",
-                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime"
+                    "item": "https://avocatbogdanlamatic.ro/services/infractiuni-rutiere-cu-victime"
                   }
                 ]
               })
@@ -55,7 +54,7 @@ export default function InfractiuniRutiere() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni rutiere cu / fără victime",
                 "description": "Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime",
-                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime",
+                "url": "https://avocatbogdanlamatic.ro/services/infractiuni-rutiere-cu-victime",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -105,9 +104,7 @@ export default function InfractiuniRutiere() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Acasă</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

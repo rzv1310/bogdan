@@ -3,18 +3,12 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "@/context/language";
-
-// All pages eager loaded for maximum stability
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
-
-// Romanian service pages
 import CriminalitateEconomica from "./pages/services/criminalitate-economica";
 import CoruptieSiFunctiePublica from "./pages/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice";
 import InvestigatiiCripto from "./pages/services/investigatii-privind-activele-cripto";
@@ -24,12 +18,11 @@ import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
 import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
-import TermeniSiConditii from "./pages/termeni-si-conditii";
-import GDPR from "./pages/gdpr";
-import PoliticaCookies from "./pages/politica-cookies";
+import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
+import { LanguageProvider } from "@/context/language";
 
-// English pages
-import EnIndex from "./pages/en/index";
+// EN pages
+import EnIndex from "./pages/en";
 import ContactEn from "./pages/en/contact";
 import BlogEn from "./pages/en/blog";
 import FinancialCrimeEn from "./pages/en/services/financial-crime";
@@ -42,9 +35,11 @@ import RoadTrafficEn from "./pages/en/services/road-traffic-offenses";
 import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liability";
 import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
 import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
+import TermeniSiConditii from "./pages/termeni-si-conditii";
+import GDPR from "./pages/gdpr";
+import PoliticaCookies from "./pages/politica-cookies";
 import GDPRen from "./pages/en/gdpr";
 import CookiePolicyEn from "./pages/en/cookie-policy";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -75,7 +70,9 @@ const App = () => (
               <Route path="/politica-cookies" element={<PoliticaCookies />} />
 
                {/* EN routes */}
-               <Route path="/en" element={<EnIndex />} />
+               <Route path="/en" element={<EnIndex />}>
+                 <Route index element={<Index />} />
+               </Route>
                <Route path="/en/about" element={<About />} />
                <Route path="/en/blog" element={<BlogEn />} />
                <Route path="/en/contact" element={<ContactEn />} />

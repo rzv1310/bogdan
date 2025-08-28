@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function GDPR() {
@@ -25,7 +24,7 @@ export default function GDPR() {
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>
-              <Link to="/" className="underline hover:no-underline">Acasă</Link>
+              <a href="/" className="underline hover:no-underline">Acasă</a>
             </li>
             <li>/</li>
             <li aria-current="page">GDPR</li>
@@ -110,8 +109,8 @@ export default function GDPR() {
         <section aria-label="Politici conexe" className="mt-10">
           <h2>Politici conexe</h2>
           <ul>
-            <li><Link to="/termeni-si-conditii" className="underline hover:no-underline">Termeni și Condiții</Link></li>
-            <li><Link to="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</Link></li>
+            <li><a href="/termeni-si-conditii" className="underline hover:no-underline">Termeni și Condiții</a></li>
+            <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
           </ul>
         </section>
       </article>
