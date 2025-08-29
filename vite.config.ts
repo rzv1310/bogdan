@@ -84,8 +84,8 @@ export default defineConfig(({ mode }) => ({
       }
     },
     target: 'esnext',
-    minify: 'terser',
-    terserOptions: {
+    minify: mode === 'production' ? 'terser' : false,
+    terserOptions: mode === 'production' ? {
       compress: {
         drop_console: true,
         drop_debugger: true,
@@ -98,7 +98,7 @@ export default defineConfig(({ mode }) => ({
       format: {
         comments: false
       }
-    },
+    } : undefined,
     cssCodeSplit: true,
     sourcemap: false,
     reportCompressedSize: false
