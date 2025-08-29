@@ -173,7 +173,7 @@ const Index = () => {
   const t = translations[lang];
   
   useSEO({
-    title: "Avocat Bogdan Lamatic - Apărare Penală | București",
+    title: "Avocat Drept Penal Bucuresti | Bogdan Lamatic | Evaziune | Droguri | Malpraxis | Coruptie | Accidente rutiere | Frauda | Mita | Criminalitate economica",
     description: "Apărare în criminalitate economică, corupție, rutier, crypto, malpraxis.",
     alternates: { ro: "/", en: "/en" },
     locale: "ro_RO",
