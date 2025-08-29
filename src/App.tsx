@@ -23,6 +23,7 @@ import { LanguageProvider } from "@/context/language";
 
 // EN pages
 import EnIndex from "./pages/en";
+import HomepageEN from "./pages/en/Homepage";
 import ContactEn from "./pages/en/contact";
 import BlogEn from "./pages/en/blog";
 import FinancialCrimeEn from "./pages/en/services/financial-crime";
@@ -73,7 +74,7 @@ const App = () => (
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />}>
-                 <Route index element={<Index />} />
+                 <Route index element={<HomepageEN />} />
                </Route>
                <Route path="/en/about" element={<About />} />
                <Route path="/en/blog" element={<BlogEn />} />

@@ -8,9 +8,11 @@ interface SEOOptions {
   alternates?: { ro?: string; en?: string; xDefault?: string };
   // Open Graph locale, e.g. "ro_RO" | "en_GB" | "en_US"
   locale?: string;
+  // Meta robots directives for search engine optimization
+  robotsDirectives?: string;
 }
 
-export function useSEO({ title, description, canonical, alternates, locale }: SEOOptions) {
+export function useSEO({ title, description, canonical, alternates, locale, robotsDirectives }: SEOOptions) {
   useEffect(() => {
     if (title) {
       document.title = title;
@@ -58,6 +60,12 @@ export function useSEO({ title, description, canonical, alternates, locale }: SE
     if (description) setMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description);
     setMeta('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary');
 
+    // Meta robots and googlebot directives
+    if (robotsDirectives) {
+      setMeta('meta[name="robots"]', 'name', 'robots', robotsDirectives);
+      setMeta('meta[name="googlebot"]', 'name', 'googlebot', robotsDirectives);
+    }
+
     // hreflang alternates
     if (alternates) {
       const ensureLink = (hreflang: string, href?: string) => {
@@ -76,5 +84,5 @@ export function useSEO({ title, description, canonical, alternates, locale }: SE
       ensureLink('en', alternates.en);
       if (alternates.xDefault) ensureLink('x-default', alternates.xDefault);
     }
-  }, [title, description, canonical, alternates, locale]);
+  }, [title, description, canonical, alternates, locale, robotsDirectives]);
 }

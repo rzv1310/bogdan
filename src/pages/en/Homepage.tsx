@@ -130,21 +130,8 @@ const beams: any[] = [
 
 const gradientStops = ["#FFFFFF", "#FFFF00", "#FFA500", "#FFD700"];
 
-const reviewsRO: Reviews3DItem[] = [
-  { name: "Stefan G.", text: "Am avut un accident rutier și nu știam cum să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!", stars: 5 },
-  { name: "Costică C.", text: "Domnul avocat Bogdan Lamatic nu doar că știe legea, dar o și explică pe înțelesul oricui. Și îți da siguranță pe tot timpul procesului. Recomand cu căldură!", stars: 5 },
-  { name: "Mihai C.", text: "În calitate de coleg avocat, pot spune că Bogdan este cu adevărat generos cu timpul și cunoștințele sale, mereu dispus să ajute.", stars: 5 },
-  { name: "Crina A.", text: "Am apelat la avocatul Lamatic pentru o situație de executare silită. Soluția propusă a funcționat perfect.", stars: 5 },
-  { name: "Matei R.", text: "Într-un dosar penal foarte greu Bogdan a reușit să obțină un rezultat pe care îl credeam imposibil. Recomand 100%!", stars: 5 },
-  { name: "Ștefan A.", text: "Sunt avocat în Cluj și am colaborat cu Bogdan pe un dosar de malpraxis medical. Pregătirea sa juridică este impecabilă.", stars: 5 },
-  { name: "Nicoleta L.", text: "Căutam un avocat bun în București și l-am găsit pe domnul Bogdan Lamatic. Îl recomand tuturor celor care au nevoie de un avocat de încredere și in primul rând de un OM", stars: 5 },
-  { name: "Gigi T.", text: "Bogdan este foarte bine pregătit în drept penal. M-a apărat într-un dosar cu acuzații urate și rezultatul a fost excepțional.", stars: 5 },
-  { name: "Elena C.", text: "Cel mai bun avocat penalist din București!", stars: 5 },
-  { name: "Ana-Maria A.", text: "L am avut ca avocat pe Bogdan Lamatic, m a aparat intr un dosar de drept penal in București și am fost achitata!", stars: 5 },
-];
-
 const reviewsEN: Reviews3DItem[] = [
-  { name: "Stefan G.", text: "I had a car accident and didn’t know what to do. Mr. Lamatic guided me step by step, and the result was beyond expectations. Thank you!", stars: 5 },
+  { name: "Stefan G.", text: "I had a car accident and didn't know what to do. Mr. Lamatic guided me step by step, and the result was beyond expectations. Thank you!", stars: 5 },
   { name: "Costică C.", text: "Mr. Lawyer Bogdan Lamatic not only knows the law, but also explains it in a way anyone can understand. He gives you confidence throughout the whole trial. Highly recommended!", stars: 5 },
   { name: "Mihai C.", text: "As a fellow lawyer, I can say that Bogdan is truly generous with his time and knowledge, always willing to help.", stars: 5 },
   { name: "Crina A.", text: "I turned to Lawyer Lamatic for a foreclosure situation. The solution he proposed worked perfectly.", stars: 5 },
@@ -155,32 +142,33 @@ const reviewsEN: Reviews3DItem[] = [
   { name: "Elena C.", text: "The best criminal lawyer in Bucharest!", stars: 5 },
   { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
+
 const serviceRoutes: (string | null)[] = [
   null,
-  "/servicii/criminalitate-economica",
-  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
-  "/servicii/investigatii-privind-activele-cripto",
-  "/servicii/cauze-penale-privind-droguri",
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
-  "/servicii/neglijenta-profesionala-si-malpraxis",
-  "/servicii/infractiuni-rutiere-cu-victime",
-  "/servicii/raspundere-penala-incidente-locul-de-munca",
-  "/servicii/reprezentarea-victimelor-in-procese-penale",
+  "/en/services/financial-crime",
+  "/en/services/corruption-and-public-office-offenses",
+  "/en/services/crypto-asset-investigations",
+  "/en/services/drug-offenses",
+  "/en/services/money-laundering-and-asset-concealment",
+  "/en/services/professional-negligence-and-malpractice",
+  "/en/services/road-traffic-offenses",
+  "/en/services/workplace-criminal-liability",
+  "/en/services/victim-representation-in-criminal-cases",
 ] as const;
 
-const Index = () => {
+const HomepageEN = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   
   useSEO({
-    title: "Avocat Drept Penal Bucuresti | Bogdan Lamatic | Evaziune | Droguri | Malpraxis | Coruptie | Accidente rutiere | Frauda | Mita | Criminalitate economica",
-    description: "Avocat drept penal Bucuresti > Bogdan Lamatic > Apărare în criminalitate economică, corupție, accidente rutiere, crypto, malpraxis., droguri ",
-    alternates: { ro: "/", en: "/en", xDefault: "/" },
-    locale: "ro_RO",
-    robotsDirectives: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
+    description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
+    alternates: { en: "/en", ro: "/" },
+    locale: "en_US",
+    robotsDirectives: "index, follow, noarchive",
   });
   
-  const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
+  const currentReviews = reviewsEN;
   
   return <div className="min-h-screen bg-background text-foreground">
     {/* Schema Markup */}
@@ -190,65 +178,65 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "name": "Avocat Bogdan Lamatic",
-          "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "name": "Attorney Bogdan Lamatic",
+          "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
+          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
-            "addressLocality": "București",
-            "addressRegion": "Bucuresti",
+            "addressLocality": "Bucharest",
+            "addressRegion": "Bucharest",
             "postalCode": "020088",
             "addressCountry": "RO"
           },
           "areaServed": [
             {
               "@type": "City",
-              "name": "București",
+              "name": "Bucharest",
               "addressCountry": "RO"
             },
             {
               "@type": "Country",
-              "name": "România"
+              "name": "Romania"
             }
           ],
           "serviceType": [
-            "Apărare penală",
-            "Criminalitate economică",
-            "Infracțiuni de corupție",
-            "Investigații crypto",
-            "Malpraxis medical",
-            "Accidente rutiere"
+            "Criminal defense",
+            "White-collar crime",
+            "Corruption offenses",
+            "Crypto investigations",
+            "Medical malpractice",
+            "Road traffic offenses"
           ],
           "priceRange": "$$",
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Servicii juridice penale",
+            "name": "Criminal legal services",
             "itemListElement": [
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Criminalitate economică",
-                  "description": "Apărare în dosare de evaziune fiscală, fraudă, abuz în serviciu"
+                  "name": "White-collar crime",
+                  "description": "Defense in tax evasion, fraud, abuse of office cases"
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Infracțiuni de corupție",
-                  "description": "Apărare în dosare de luare de mită, dare de mită, trafic de influență"
+                  "name": "Corruption offenses",
+                  "description": "Defense in bribery, influence peddling cases"
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Investigații active crypto",
-                  "description": "Servicii specializate pentru investigații blockchain și active digitale"
+                  "name": "Crypto asset investigations",
+                  "description": "Specialized services for blockchain and digital asset investigations"
                 }
               }
             ]
@@ -282,44 +270,44 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Bogdan Lamatic",
-          "jobTitle": "Avocat specializat în drept penal",
+          "jobTitle": "Criminal defense attorney",
           "worksFor": {
             "@type": "LegalService",
-            "name": "Avocat Bogdan Lamatic"
+            "name": "Attorney Bogdan Lamatic"
           },
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
-            "addressLocality": "București",
-            "addressRegion": "Bucuresti",
+            "addressLocality": "Bucharest",
+            "addressRegion": "Bucharest",
             "postalCode": "020088",
             "addressCountry": "RO"
           },
           "alumniOf": {
             "@type": "Organization",
-            "name": "Universitatea de Vest din Timișoara"
+            "name": "West University of Timișoara"
           },
           "memberOf": {
             "@type": "Organization",
-            "name": "Baroul București"
+            "name": "Bucharest Bar Association"
           },
           "hasCredential": {
             "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Licență în drept",
+            "credentialCategory": "Law degree",
             "recognizedBy": {
               "@type": "Organization",
-              "name": "Baroul București"
+              "name": "Bucharest Bar Association"
             }
           },
           "knowsAbout": [
-            "Drept penal",
-            "Criminalitate economică",
-            "Infracțiuni de corupție",
-            "Investigații blockchain",
-            "Malpraxis medical",
-            "Accidente rutiere cu victime"
+            "Criminal law",
+            "White-collar crime",
+            "Corruption offenses",
+            "Blockchain investigations",
+            "Medical malpractice",
+            "Road traffic offenses"
           ]
         })
       }}
@@ -330,21 +318,21 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Avocat Bogdan Lamatic - Apărare Penală București",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
-          "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
+          "name": "Attorney Bogdan Lamatic - Criminal Defense Bucharest",
+          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
+          "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
+          "inLanguage": "en-US",
           "publisher": {
             "@type": "LegalService",
-            "name": "Avocat Bogdan Lamatic"
+            "name": "Attorney Bogdan Lamatic"
           },
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
               "urlTemplate": typeof window !== "undefined" 
-                ? `${window.location.origin}/search?q={search_term_string}`
-                : "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
+                ? `${window.location.origin}/en/search?q={search_term_string}`
+                : "https://avocatpenalbucuresti.ro/en/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -357,17 +345,17 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
-          "name": "Avocat Bogdan Lamatic",
-          "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LocalBusiness` : "https://avocatpenalbucuresti.ro/en#LocalBusiness",
+          "name": "Attorney Bogdan Lamatic",
+          "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
+          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
-            "addressLocality": "București", 
-            "addressRegion": "Bucuresti",
+            "addressLocality": "Bucharest", 
+            "addressRegion": "Bucharest",
             "postalCode": "020088",
             "addressCountry": "RO"
           },
@@ -397,42 +385,21 @@ const Index = () => {
               </h1>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
-                <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
+                <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
-                {lang === "ro" ? <>
-                    <div className="hidden md:block">
-                      {(() => {
-                    const parts = t.heroQuote.split("\n");
-                    const l1 = parts[0] || "";
-                    const l2 = parts[1] || "";
-                    const splitIdx = l2.indexOf("Îți apăr drepturile");
-                    const before = splitIdx >= 0 ? l2.slice(0, splitIdx).trim() : l2.trim();
-                    const third = splitIdx >= 0 ? l2.slice(splitIdx).trim() : "";
-                    return <div className="space-y-2">
-                            <p className="mb-0">{l1}</p>
-                            <p className="mb-0">{before}</p>
-                            {third && <p className="mb-0">{third}</p>}
-                          </div>;
-                  })()}
-                    </div>
-                    <div className="md:hidden">
-                      {t.heroQuote.split("\n").map((line, i) => <p key={i} className="mb-2 last:mb-0">
-                          {line}
-                        </p>)}
-                    </div>
-                  </> : t.heroQuote.split("\n").map((line, i) => <p key={i} className="mb-2 last:mb-0">
-                      {line}
-                    </p>)}
+                {(() => {
+                  const parts = t.heroQuote.split("\n");
+                  const l1 = parts[0] || "";
+                  const l2 = parts[1] || "";
+                  return <div className="space-y-2">
+                          <p className="mb-0">{l1}</p>
+                          <p className="mb-0">{l2}</p>
+                        </div>;
+                })()}
               </blockquote>
-              <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
-              {lang === "ro" && (
-                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- de 18 ani lângă tine !</p>
-              )}
-              {lang === "en" && (
-                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
-              )}
+              <div className="h-[25px] md:h-[35px]" aria-hidden="true"></div>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="premium" size="lg" className="border border-hero-foreground">
@@ -441,9 +408,8 @@ const Index = () => {
                 </a>
               </div>
             </div>
-
-            <div className="hidden md:block relative md:max-w-[90%] md:ml-auto">
-              <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
+            <div className="md:order-2 hidden md:flex justify-center">
+              <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-2xl max-w-md" />
             </div>
           </div>
         </section>
@@ -597,10 +563,10 @@ const Index = () => {
               </>
             )}
           </h2>
-          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
+          <ReviewsCarousel3D reviews={reviewsEN} />
         </section>
       </main>
-
-    </div>;
+    </div>
 };
-export default Index;
+
+export default HomepageEN;
