@@ -179,7 +179,212 @@ const Index = () => {
     locale: "ro_RO",
   });
   
+  const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
+  
   return <div className="min-h-screen bg-background text-foreground">
+    {/* Schema Markup */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          "name": "Avocat Bogdan Lamatic",
+          "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
+          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "telephone": "+40745506443",
+          "email": "contact@avocatpenalbucuresti.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "addressLocality": "București",
+            "addressRegion": "Bucuresti",
+            "postalCode": "020088",
+            "addressCountry": "RO"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "București",
+              "addressCountry": "RO"
+            },
+            {
+              "@type": "Country",
+              "name": "România"
+            }
+          ],
+          "serviceType": [
+            "Apărare penală",
+            "Criminalitate economică",
+            "Infracțiuni de corupție",
+            "Investigații crypto",
+            "Malpraxis medical",
+            "Accidente rutiere"
+          ],
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicii juridice penale",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Criminalitate economică",
+                  "description": "Apărare în dosare de evaziune fiscală, fraudă, abuz în serviciu"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Infracțiuni de corupție",
+                  "description": "Apărare în dosare de luare de mită, dare de mită, trafic de influență"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Investigații active crypto",
+                  "description": "Servicii specializate pentru investigații blockchain și active digitale"
+                }
+              }
+            ]
+          },
+          "review": currentReviews.slice(0, 5).map(review => ({
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": review.name
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": review.stars,
+              "bestRating": 5
+            },
+            "reviewBody": review.text
+          })),
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 5,
+            "reviewCount": currentReviews.length,
+            "bestRating": 5
+          }
+        })
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Bogdan Lamatic",
+          "jobTitle": "Avocat specializat în drept penal",
+          "worksFor": {
+            "@type": "LegalService",
+            "name": "Avocat Bogdan Lamatic"
+          },
+          "telephone": "+40745506443",
+          "email": "contact@avocatpenalbucuresti.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "addressLocality": "București",
+            "addressRegion": "Bucuresti",
+            "postalCode": "020088",
+            "addressCountry": "RO"
+          },
+          "alumniOf": {
+            "@type": "Organization",
+            "name": "Universitatea de Vest din Timișoara"
+          },
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Baroul București"
+          },
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Licență în drept",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Baroul București"
+            }
+          },
+          "knowsAbout": [
+            "Drept penal",
+            "Criminalitate economică",
+            "Infracțiuni de corupție",
+            "Investigații blockchain",
+            "Malpraxis medical",
+            "Accidente rutiere cu victime"
+          ]
+        })
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Avocat Bogdan Lamatic - Apărare Penală București",
+          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
+          "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
+          "publisher": {
+            "@type": "LegalService",
+            "name": "Avocat Bogdan Lamatic"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": typeof window !== "undefined" 
+                ? `${window.location.origin}/search?q={search_term_string}`
+                : "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        })
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
+          "name": "Avocat Bogdan Lamatic",
+          "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
+          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "telephone": "+40745506443",
+          "email": "contact@avocatpenalbucuresti.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "addressLocality": "București", 
+            "addressRegion": "Bucuresti",
+            "postalCode": "020088",
+            "addressCountry": "RO"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 44.4268,
+            "longitude": 26.1025
+          },
+          "openingHours": "Mo-Fr 09:00-18:00",
+          "paymentAccepted": "Cash, BankTransfer",
+          "currenciesAccepted": "RON, EUR",
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/in/bogdan-lamatic"
+          ]
+        })
+      }}
+    />
 
       <main>
         {/* Hero Section */}
