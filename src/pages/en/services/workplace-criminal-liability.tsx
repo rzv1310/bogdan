@@ -71,7 +71,7 @@ export default function WorkplaceLiabilityEn() {
             In every workplace accident, in every criminal investigation for violating safety regulations, there is a mixture of responsibility, negligence and tragedy.
           </p>
           <p>
-            I practice in Bucharest and my name is Bogdan Lamatic – I have 17 years of experience in criminal law and numerous successful cases in white-collar crime.
+            I practice in Bucharest and my name is Bogdan Lamatic – I have 18 years of experience in criminal law and numerous successful cases in white-collar crime.
           </p>
         </div>
 

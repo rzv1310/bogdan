@@ -11,7 +11,7 @@ export default function CauzeDroguri() {
   useSEO({
     title: "Avocat Trafic Droguri București - Bogdan Lamatic",
     description:
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 17 ani experiență în drept penal.",
+      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.",
   });
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function CauzeDroguri() {
     const imageUrl = origin + "/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png";
     const title = "Avocat Trafic Droguri București - Bogdan Lamatic";
     const description =
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 17 ani experiență în drept penal.";
+      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.";
 
     // FAQ JSON-LD
     const faqData = {
@@ -220,7 +220,7 @@ export default function CauzeDroguri() {
         </CardHeader>
         <CardContent className="space-y-4 text-base leading-relaxed">
           <p>
-            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 17 ani de experiență în drept penal,
+            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal,
             recunoscut de Legal500 cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor
             economice și de corupție.
           </p>

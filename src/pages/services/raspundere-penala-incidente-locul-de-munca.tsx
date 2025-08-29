@@ -70,7 +70,7 @@ export default function RaspunderePenalaMunca() {
             În fiecare accident de muncă, în fiecare investigație penală pentru nerespectarea normelor de securitate, există un amestec de responsabilitate, neglijență şi tragedie.
           </p>
           <p>
-            Îmi desfășor activitatea în București și mă numesc Bogdan Lamatic – am 17 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white‑collar crime.
+            Îmi desfășor activitatea în București și mă numesc Bogdan Lamatic – am 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white‑collar crime.
           </p>
         </div>
 

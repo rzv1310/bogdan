@@ -105,7 +105,7 @@ export default function CriminalitateEconomica() {
         </div>
         <div className="mt-3 space-y-3 text-base leading-relaxed">
           <p>
-            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 17 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
           </p>
           <p>
             Recunoscut de Legal500 timp de cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor economice și de corupție, abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
@@ -190,7 +190,7 @@ export default function CriminalitateEconomica() {
             <h2 className="text-xl font-semibold">De ce ai nevoie de un avocat specializat în infracțiuni economice</h2>
             <div className="mt-3 space-y-3 text-base leading-relaxed">
               <p>
-                În dosarele de infracțiuni economice, procedurile penale sunt deosebit de complexe și necesită nu doar cunoștințe juridice avansate, ci și o înțelegere profundă a mecanismelor financiare, fiscale și contabile. <br />În cei peste 17 ani de practică, am constatat că succesul într-un astfel de dosar depinde de capacitatea avocatului de a corela legislația penală cu aspectele tehnice ale tranzacțiilor și fluxurilor financiare.
+                În dosarele de infracțiuni economice, procedurile penale sunt deosebit de complexe și necesită nu doar cunoștințe juridice avansate, ci și o înțelegere profundă a mecanismelor financiare, fiscale și contabile. <br />În cei peste 18 ani de practică, am constatat că succesul într-un astfel de dosar depinde de capacitatea avocatului de a corela legislația penală cu aspectele tehnice ale tranzacțiilor și fluxurilor financiare.
               </p>
               <p>
                 Ca avocat specializat în white-collar crime, îți protejez drepturile încă din prima etapă a anchetei, analizez minuțios probele, identific eventualele nereguli procedurale și formulez strategii de apărare adaptate fiecărui caz. <br />Când este posibil, negociez direct cu procurorii sau cu partea adversă pentru a obține soluții favorabile înainte de ajungerea în instanță, reducând astfel riscul unor sancțiuni severe și limitând impactul asupra reputației tale personale sau profesionale.

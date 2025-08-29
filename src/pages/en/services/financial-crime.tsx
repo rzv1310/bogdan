@@ -97,7 +97,7 @@ export default function FinancialCrimeEn() {
         {/* Intro */}
         <section className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am Bogdan Lamatic, attorney at the Bucharest Bar, with 17+ years of criminal law practice and a strong
+            I am Bogdan Lamatic, attorney at the Bucharest Bar, with 18+ years of criminal law practice and a strong
             track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and
             abuse of office. I represent both individuals and companies in complex investigations and trials, including
             before the High Court of Cassation and Justice.
