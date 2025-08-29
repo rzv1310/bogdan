@@ -58,7 +58,7 @@ export default function Sitemap() {
         <header className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sitemap</h1>
           <p className="text-xl text-hero-foreground/90 max-w-3xl mx-auto">
-            Harta completă a site-ului avocat penal București. Găsește rapid toate paginile și serviciile disponibile.
+            Harta completă website avocatpenalbucuresti.ro
           </p>
         </header>
 
