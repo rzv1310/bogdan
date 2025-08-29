@@ -40,6 +40,7 @@ import GDPR from "./pages/gdpr";
 import PoliticaCookies from "./pages/politica-cookies";
 import GDPRen from "./pages/en/gdpr";
 import CookiePolicyEn from "./pages/en/cookie-policy";
+import Sitemap from "./pages/Sitemap";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -68,6 +69,7 @@ const App = () => (
               <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
               <Route path="/gdpr" element={<GDPR />} />
               <Route path="/politica-cookies" element={<PoliticaCookies />} />
+              <Route path="/sitemap.xml" element={<Sitemap />} />
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />}>
