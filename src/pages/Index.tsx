@@ -175,8 +175,12 @@ const Index = () => {
   useSEO({
     title: "Avocat Drept Penal Bucuresti | Bogdan Lamatic | Evaziune | Droguri | Malpraxis | Coruptie | Accidente rutiere | Frauda | Mita | Criminalitate economica",
     description: "Avocat drept penal Bucuresti > Bogdan Lamatic > Apărare în criminalitate economică, corupție, accidente rutiere, crypto, malpraxis., droguri ",
-    canonical: "/",
-    alternates: { ro: "/", en: "/en" },
+    canonical: "https://avocatpenalbucuresti.ro",
+    alternates: { 
+      xDefault: "https://avocatpenalbucuresti.ro",
+      ro: "https://avocatpenalbucuresti.ro", 
+      en: "https://avocatpenalbucuresti.ro/en" 
+    },
     locale: "ro_RO",
   });
   
@@ -192,10 +196,16 @@ const Index = () => {
           "@type": "LegalService",
           "name": "Avocat Bogdan Lamatic",
           "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "url": "https://avocatpenalbucuresti.ro",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro"
+            "@id": "https://avocatpenalbucuresti.ro",
+            "name": "Avocat Drept Penal București - Pagina Oficială Română",
+            "inLanguage": "ro-RO",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://avocatpenalbucuresti.ro#website"
+            }
           },
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
@@ -335,7 +345,8 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Avocat Bogdan Lamatic - Apărare Penală București",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "url": "https://avocatpenalbucuresti.ro",
+          "@id": "https://avocatpenalbucuresti.ro#website",
           "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
           "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
           "publisher": {
@@ -346,9 +357,7 @@ const Index = () => {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": typeof window !== "undefined" 
-                ? `${window.location.origin}/search?q={search_term_string}`
-                : "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
+              "urlTemplate": "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -361,10 +370,10 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
+          "@id": "https://avocatpenalbucuresti.ro#LocalBusiness",
           "name": "Avocat Bogdan Lamatic",
           "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
+          "url": "https://avocatpenalbucuresti.ro",
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {

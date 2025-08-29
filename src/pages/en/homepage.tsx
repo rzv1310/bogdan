@@ -163,8 +163,12 @@ const EnHomepage = () => {
   useSEO({
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
     description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
-    canonical: "/en",
-    alternates: { en: "/en", ro: "/" },
+    canonical: "https://avocatpenalbucuresti.ro/en",
+    alternates: { 
+      xDefault: "https://avocatpenalbucuresti.ro",
+      en: "https://avocatpenalbucuresti.ro/en", 
+      ro: "https://avocatpenalbucuresti.ro" 
+    },
     locale: "en_US",
   });
   
@@ -178,7 +182,7 @@ const EnHomepage = () => {
           "@type": "LegalService",
           "name": "Attorney Bogdan Lamatic",
           "description": "Criminal defense lawyer in Bucharest - Defense in white-collar crime, corruption, road traffic cases, crypto investigations and malpractice",
-          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "/en",
+          "url": "https://avocatpenalbucuresti.ro/en",
           "telephone": "+40745506443",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
@@ -201,7 +205,13 @@ const EnHomepage = () => {
           "inLanguage": "en-US",
           "isPartOf": {
             "@type": "WebSite",
-            "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro"
+            "@id": "https://avocatpenalbucuresti.ro#website",
+            "url": "https://avocatpenalbucuresti.ro"
+          },
+          "relatedLink": {
+            "@type": "WebPage",
+            "@id": "https://avocatpenalbucuresti.ro",
+            "name": "Avocat Drept Penal București - Pagina Principală Română"
           }
         })
       }}
