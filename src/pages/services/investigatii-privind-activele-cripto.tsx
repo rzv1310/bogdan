@@ -113,10 +113,6 @@ export default function InvestigatiiCripto() {
         </div>
       </header>
 
-      <div className="mt-8 flex justify-center">
-        <EthereumCard />
-      </div>
-
       {/* Ce tipuri de spețe crypto gestionez */}
       <section className="mt-8">
         <Card className="border-accent">
@@ -146,6 +142,10 @@ export default function InvestigatiiCripto() {
           </CardContent>
         </Card>
       </section>
+
+      <div className="mt-8 flex justify-center">
+        <EthereumCard />
+      </div>
 
       {/* Cum abordez un dosar cu criptomonede */}
       <section className="mt-8">

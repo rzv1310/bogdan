@@ -99,10 +99,6 @@ export default function CryptoInvestigationsEn() {
           </div>
         </header>
 
-        <div className="mt-8 flex justify-center">
-          <EthereumCard />
-        </div>
-
         {/* What types of crypto matters I handle */}
         <section className="mt-8">
           <Card className="border-accent">
@@ -136,6 +132,10 @@ export default function CryptoInvestigationsEn() {
             </CardContent>
           </Card>
         </section>
+
+        <div className="mt-8 flex justify-center">
+          <EthereumCard />
+        </div>
 
         {/* How I approach a crypto case */}
         <section className="mt-8">
