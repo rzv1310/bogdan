@@ -31,19 +31,19 @@ export default function InvestigatiiCripto() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": "https://avocatbogdanlamatic.ro/"
+                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatbogdanlamatic.ro/#servicii"
+                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Investigații privind activele cripto",
-                    "item": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto"
+                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/investigatii-privind-activele-cripto` : "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto"
                   }
                 ]
               })
@@ -57,7 +57,7 @@ export default function InvestigatiiCripto() {
                 "@type": "LegalService",
                 "name": "Servicii avocat investigații privind activele cripto",
                 "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
-                "url": "https://avocatbogdanlamatic.ro/services/investigatii-privind-activele-cripto",
+                "url": typeof window !== "undefined" ? `${window.location.origin}/services/investigatii-privind-activele-cripto` : "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto",
                 "areaServed": [
                   {
                     "@type": "Country",
