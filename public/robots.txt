@@ -37,3 +37,6 @@ Allow: /
 # All other bots
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://avocatpenalbucuresti.ro/sitemap.xml
