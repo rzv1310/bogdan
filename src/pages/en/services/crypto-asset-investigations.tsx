@@ -8,7 +8,7 @@ import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 export default function CryptoInvestigationsEn() {
   useSEO({
-    title: "Crypto lawyer - Investigations into cryptocurrencies and blockchain | Bucharest",
+    title: "Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts",
     description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
     alternates: { en: "/en/services/crypto-asset-investigations", ro: "/servicii/investigatii-privind-activele-cripto" },
     locale: "en_US",
