@@ -11,7 +11,7 @@ export default function About() {
 
   // SEO
   useSEO({
-    title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic",
+    title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic | Bucuresti",
     description:
       lang === "en"
         ? "About attorney Bogdan Lamatic: experience, recognitions, publications and professional background."
