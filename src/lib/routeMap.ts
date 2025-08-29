@@ -14,7 +14,6 @@ export const roToEn: Record<string, string> = {
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
   "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",
   "/servicii/reprezentarea-victimelor-in-procese-penale": "/en/services/victim-representation-in-criminal-cases",
-  "/sitemap": "/en/sitemap",
 };
 
 export const enToRo: Record<string, string> = Object.fromEntries(

@@ -84,9 +84,6 @@ export default function Footer() {
               <li>
                 <Link to={mapPathToLang("/politica-cookies", lang)} className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
               </li>
-              <li>
-                <Link to={mapPathToLang("/sitemap", lang)} className="hover:underline">{lang === "en" ? "Sitemap" : "Harta site"}</Link>
-              </li>
             </ul>
           </nav>
         </div>

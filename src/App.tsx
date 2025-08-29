@@ -40,8 +40,6 @@ import GDPR from "./pages/gdpr";
 import PoliticaCookies from "./pages/politica-cookies";
 import GDPRen from "./pages/en/gdpr";
 import CookiePolicyEn from "./pages/en/cookie-policy";
-import Sitemap from "./pages/Sitemap";
-import SitemapEn from "./pages/en/sitemap";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -70,7 +68,6 @@ const App = () => (
               <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
               <Route path="/gdpr" element={<GDPR />} />
               <Route path="/politica-cookies" element={<PoliticaCookies />} />
-              <Route path="/sitemap" element={<Sitemap />} />
 
                {/* EN routes */}
                <Route path="/en" element={<EnIndex />}>
@@ -82,7 +79,6 @@ const App = () => (
                <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
                <Route path="/en/gdpr" element={<GDPRen />} />
                <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
-               <Route path="/en/sitemap" element={<SitemapEn />} />
                <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
                <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
                <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />

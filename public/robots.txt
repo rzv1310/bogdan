@@ -37,6 +37,3 @@ Allow: /
 # All other bots
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://avocatbogdanlamatic.ro/sitemap.xml
