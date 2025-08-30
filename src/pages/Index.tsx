@@ -390,7 +390,7 @@ const Index = () => {
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
-          <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+          <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-[81px] grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div className="md:order-1">
               <h1 className="text-[28px] md:text-4xl font-semibold leading-tight tracking-tight mb-6 py-0 whitespace-pre-line">
                 {t.heroTitle}
