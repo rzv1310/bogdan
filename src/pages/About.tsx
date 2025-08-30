@@ -95,6 +95,64 @@ export default function About() {
             </Button>
           </div>
 
+          <section aria-labelledby="recognition" className="grid gap-4">
+            <h2 id="recognition" className="text-xl font-medium">Recognition</h2>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Legal500 - Rising Star - 2020 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2021 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2022 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2023 Edition (White-Collar Crime)</li>
+              <li>Legal500 - Next Generation Partner - 2024 Edition (White-Collar Crime)</li>
+            </ul>
+          </section>
+
+          {/* More English sections would continue here */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+          />
+        </main>
+      ) : (
+        /* Romanian Version */
+        <main className="mt-6 space-y-8">
+          <header>
+            <p className="text-sm text-muted-foreground">Curriculum vitae</p>
+            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Despre mine</h1>
+          </header>
+
+          <section aria-labelledby="personal-info-ro" className="grid gap-4">
+            <h2 id="personal-info-ro" className="text-xl font-medium">Informații personale</h2>
+            <dl className="grid gap-2 sm:grid-cols-2">
+              <div>
+                <dt className="text-sm text-muted-foreground">Nume/Prenume</dt>
+                <dd className="font-medium">Lamatic Bogdan-Constantin</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-muted-foreground">Adresă</dt>
+                <dd className="font-medium">Strada Colonel Stefan Stoika 22, București 012244</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-muted-foreground">Telefon</dt>
+                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
+              </div>
+              <div>
+                <dt className="text-sm text-muted-foreground">E-mail</dt>
+                <dd className="font-medium">bogdan.lamatic@yahoo.com</dd>
+              </div>
+            </dl>
+          </section>
+
+          {/* Call to Action Button */}
+          <div className="flex flex-col items-center gap-4 p-6 bg-muted/30 rounded-lg border">
+            <p className="text-center text-sm text-muted-foreground">Sună-mă acum:</p>
+            <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white">
+              <a href="tel:+40745506443" className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                +40 745 506 443
+              </a>
+            </Button>
+          </div>
+
           <section aria-labelledby="recognition-ro" className="grid gap-4">
             <h2 id="recognition-ro" className="text-xl font-medium">Recunoașteri</h2>
             <ul className="list-disc pl-5 space-y-1">
