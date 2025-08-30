@@ -385,7 +385,7 @@ const HomepageEN = () => {
               </h1>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden">
-                <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
+                <img src="/lovable-uploads/f6f940be-8153-43eb-b726-e86e69083af1.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md max-w-[80%] mx-auto" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
@@ -409,7 +409,7 @@ const HomepageEN = () => {
               </div>
             </div>
             <div className="md:order-2 hidden md:flex justify-center">
-              <img src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-2xl max-w-md" />
+              <img src="/lovable-uploads/f6f940be-8153-43eb-b726-e86e69083af1.png" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-2xl max-w-md" />
             </div>
           </div>
         </section>
