@@ -84,6 +84,17 @@ export default function About() {
             </dl>
           </section>
 
+          {/* Call to Action Button */}
+          <div className="flex flex-col items-center gap-4 p-6 bg-muted/30 rounded-lg border">
+            <p className="text-center text-sm text-muted-foreground">Call me now:</p>
+            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+              <a href="tel:+40745506443" className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                +40 745 506 443
+              </a>
+            </Button>
+          </div>
+
           <section aria-labelledby="recognition" className="grid gap-4">
             <h2 id="recognition" className="text-xl font-medium">Recognition</h2>
             <ul className="list-disc pl-5 space-y-1">
@@ -257,6 +268,17 @@ export default function About() {
               </div>
             </dl>
           </section>
+
+          {/* Call to Action Button */}
+          <div className="flex flex-col items-center gap-4 p-6 bg-muted/30 rounded-lg border">
+            <p className="text-center text-sm text-muted-foreground">Sună-mă acum:</p>
+            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+              <a href="tel:+40745506443" className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                +40 745 506 443
+              </a>
+            </Button>
+          </div>
 
           <section aria-labelledby="recognition-ro" className="grid gap-4">
             <h2 id="recognition-ro" className="text-xl font-medium">Recunoașteri</h2>
