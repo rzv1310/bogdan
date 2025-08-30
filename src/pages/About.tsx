@@ -75,7 +75,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
-                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">bogdan-lamatic-b36a2a1b8</a></dd>
+                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">LinkedIn Profile - Attorney Bogdan Lamatic</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -133,7 +133,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
-                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">bogdan-lamatic-b36a2a1b8</a></dd>
+                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">LinkedIn - av. Bogdan Lamatic</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
