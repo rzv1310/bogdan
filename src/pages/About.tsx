@@ -74,8 +74,8 @@ export default function About() {
                 <dd className="font-medium">Strada Colonel Stefan Stoika 22, Bucuresti 012244</dd>
               </div>
               <div>
-                <dt className="text-sm text-muted-foreground">Telephone</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
+                <dt className="text-sm text-muted-foreground">LinkedIn</dt>
+                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">bogdan-lamatic-b36a2a1b8</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
@@ -132,8 +132,8 @@ export default function About() {
                 <dd className="font-medium">Strada Colonel Stefan Stoika 22, București 012244</dd>
               </div>
               <div>
-                <dt className="text-sm text-muted-foreground">Telefon</dt>
-                <dd className="font-medium"><a href="tel:+40745506443" className="text-primary underline">+40 745 506 443</a></dd>
+                <dt className="text-sm text-muted-foreground">LinkedIn</dt>
+                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">bogdan-lamatic-b36a2a1b8</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
