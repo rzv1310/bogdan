@@ -402,7 +402,7 @@ const HomepageEN = () => {
               <div className="h-[25px] md:h-[35px]" aria-hidden="true"></div>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
-                  <Button variant="premium" size="lg" className="border border-hero-foreground">
+                  <Button variant="default" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
                   </Button>
                 </a>
