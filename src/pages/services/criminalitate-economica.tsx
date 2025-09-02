@@ -1014,73 +1014,66 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 656/2002 pentru prevenirea și sancționarea spălării banilor</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 129/2019 pentru prevenirea și combaterea spălării banilor</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
-              <AccordionItem value="l656-art-29">
+              <AccordionItem value="l129-art-49">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 29 – Infracțiunea de spălare a banilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 49 – Infracțiunea de spălare a banilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4 space-y-2">
-                      <p>(1) Constituie infracțiune de spălare a banilor și se pedepsește cu închisoare de la 3 la 10 ani:</p>
-                      <p>a) schimbarea sau transferul de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni, în scopul ascunderii sau disimulării originii ilicite ori pentru a ajuta persoana care a săvârșit infracțiunea-sursă să se sustragă de la urmărire, judecată sau executarea pedepsei;</p>
-                      <p>b) ascunderea ori disimularea naturii reale, a provenienței, situării, circulației sau proprietății bunurilor, cunoscând că acestea provin din infracțiuni;</p>
-                      <p>c) dobândirea, deținerea sau folosirea de bunuri, cunoscând că acestea provin din infracțiuni.</p>
-                      <p>(2) Cunoașterea provenienței ilicite a bunurilor se poate deduce din circumstanțele obiective ale cauzei.</p>
+                      <p>(1) Constituie infracţiunea de spălare a banilor şi se pedepseşte cu închisoare de la 3 la 10 ani:</p>
+                      <p>a) schimbarea sau transferul de bunuri, cunoscând că provin din săvârşirea de infracţiuni, în scopul ascunderii sau al disimulării originii ilicite a acestor bunuri ori în scopul de a ajuta persoana care a săvârşit infracţiunea din care provin bunurile să se sustragă de la urmărire, judecată sau executarea pedepsei;</p>
+                      <p>b) ascunderea ori disimularea adevăratei naturi, a provenienţei, a situării, a dispoziţiei, a circulaţiei sau a proprietăţii bunurilor ori a drepturilor asupra acestora, cunoscând că bunurile provin din săvârşirea de infracţiuni;</p>
+                      <p>c) dobândirea, deţinerea sau folosirea de bunuri de către o altă persoană decât subiectul activ al infracţiunii din care provin bunurile, cunoscând că acestea provin din săvârşirea de infracţiuni.</p>
+                      <p>(2) Tentativa se pedepseşte.</p>
+                      <p>(2¹) Constituie circumstanţă agravantă săvârşirea infracţiunii de spălare a banilor de către una dintre entităţile raportoare prevăzute la art. 5, în exercitarea activităţii sale profesionale.</p>
+                      <p>(3) Dacă fapta a fost săvârşită de o persoană juridică, pe lângă pedeapsa amenzii, instanţa aplică, după caz, una sau mai multe dintre pedepsele complementare prevăzute la art. 136 alin. (3) lit. a) -c) din Legea nr. 286/2009, cu modificările şi completările ulterioare.</p>
+                      <p>(4) Cunoaşterea provenienţei bunurilor sau scopul urmărit trebuie stabilită/stabilit din circumstanţele faptice obiective.</p>
+                      <p>(5) Dispoziţiile alin. (1) - (4) se aplică indiferent dacă infracţiunea din care provine bunul a fost comisă pe teritoriul României sau în alte state membre sau state terţe.</p>
+                      <p>(6) Dispoziţiile alin. (1) - (4) se aplică şi infracţiunilor de spălare a banilor săvârşite în afara teritoriului ţării de către un cetăţean român sau de către o persoană juridică română chiar dacă fapta nu este prevăzută ca infracţiune şi de legea penală a ţării unde a fost săvârşită.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe lipsa elementului subiectiv – cunoașterea provenienței ilicite trebuie demonstrată, iar simpla prezumție nu este suficientă. Dacă tranzacția a avut o justificare economică rezonabilă și documente suport, se poate susține buna-credință. De asemenea, dacă infracțiunea-sursă nu este dovedită, acuzația de spălare a banilor se prăbușește automat.</p>
+                      <p><strong>Comentariul meu:</strong> Noua legislație aduce clarificări importante și extinde domeniul de aplicare. Apărarea se axează pe lipsa elementului subiectiv - cunoașterea provenienței ilicite trebuie demonstrată prin circumstanțe faptice obiective (alin. 4), nu prin simple prezumții. Pentru lit. c), este esențial că se aplică doar „altei persoane decât subiectul activ" al infracțiunii-sursă. Circumstanța agravantă (alin. 2¹) pentru entitățile raportoare necesită demonstrarea că fapta a fost comisă „în exercitarea activității profesionale". Aplicarea extrateritorială (alin. 5-6) poate fi contestată dacă legătura cu România nu este suficient de strânsă.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l656-art-30">
+              <AccordionItem value="l129-art-50">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 30 – Tentativa</h3>
+                  <h3 className="text-lg font-semibold">Articolul 50 – Măsuri asigurătorii obligatorii</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Tentativa la infracțiunea prevăzută la art. 29 se pedepsește.</p>
+                      <p>În cazul în care s-a săvârşit o infracţiune de spălare a banilor sau de finanţare a terorismului, luarea măsurilor asigurătorii este obligatorie, în condiţiile Legii nr. 135/2010 privind Codul de procedură penală, cu modificările şi completările ulterioare.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, voi argumenta că acțiunile imputate clientului nu au depășit faza actelor pregătitoare și că nu există probe clare privind scopul de disimulare a provenienței bunurilor. Dacă transferul nu s-a realizat sau nu a avut efectul urmărit, tentativa poate fi exclusă ca faptă lipsită de pericol social concret.</p>
+                      <p><strong>Comentariul meu:</strong> Caracterul obligatoriu al măsurilor asigurătorii în cazul spălării banilor înseamnă că acestea se vor dispune aproape automat. Strategia de apărare se concentrează pe contestarea proporționalității și necesității măsurilor concrete aplicate. Voi demonstra că bunurile sechestrate depășesc valoarea prejudiciului sau că măsurile afectează nejustificat activitatea economică legitimă. De asemenea, voi invoca respectarea strictă a condițiilor din Codul de procedură penală și voi negocia măsuri alternative care să asigure scopul procesual fără a paraliza complet activitatea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l656-art-31">
+              <AccordionItem value="l129-art-51">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 31 – Neaplicarea sancțiunilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 51 – Confiscarea bunurilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
-                    <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Nu se aplică sancțiunile prevăzute la art. 29 persoanei care, înainte ca organul de urmărire penală să fi fost sesizat, a informat autoritățile despre faptele comise și a cooperat pentru identificarea și tragerea la răspundere a celorlalți participanți.</p>
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) În cazul infracţiunilor de spălare a banilor şi de finanţare a terorismului se aplică dispoziţiile privind confiscarea bunurilor din Legea nr. 286/2009, cu modificările şi completările ulterioare.</p>
+                      <p>(2) Dacă bunurile supuse confiscării nu se găsesc, se confiscă echivalentul lor în bani sau bunurile dobândite în locul acestora.</p>
+                      <p>(3) Veniturile sau alte beneficii materiale obţinute din bunurile prevăzute la alin. (2) se confiscă.</p>
+                      <p>(4) Dacă bunurile supuse confiscării nu pot fi individualizate faţă de bunurile dobândite în mod legal, se confiscă bunuri până la concurenţa valorii bunurilor supuse confiscării.</p>
+                      <p>(5) Dispoziţiile alin. (4) se aplică în mod corespunzător şi veniturilor sau altor beneficii materiale obţinute din bunurile supuse confiscării, ce nu pot fi individualizate faţă de bunurile dobândite în mod legal.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Aceasta este o oportunitate importantă pentru client – dacă putem demonstra că a furnizat informații voluntar și înainte de declanșarea oficială a anchetei, atunci răspunderea penală poate fi eliminată. Voi analiza momentul exact al sesizării și voi aduna dovezi că autoritățile au aflat de la client sau cu ajutorul lui.</p>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="l656-art-32">
-                <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 32 – Confiscarea bunurilor</h3>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="space-y-3">
-                    <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Bunurile care au făcut obiectul infracțiunii de spălare a banilor se confiscă, iar dacă acestea nu se mai găsesc, se confiscă echivalentul lor în bani.</p>
-                    </div>
-                    <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Chiar și în caz de condamnare, mă voi concentra pe demonstrarea faptului că bunurile respective nu au proveniență ilicită sau că nu există legătură directă cu fapta imputată. În plus, voi verifica dacă bunurile au fost dobândite de la terți de bună-credință, caz în care confiscarea nu se poate dispune.</p>
+                      <p><strong>Comentariul meu:</strong> Sistemul de confiscare este extrem de cuprinzător și se aplică conform Legii nr. 286/2009. Strategia de apărare se concentrează pe: 1) Demonstrarea că bunurile contestate au proveniență licită și nu pot fi individualizate față de bunurile ilicite (alin. 4-5); 2) Contestarea calculului valorii bunurilor supuse confiscării și a metodologiei de evaluare; 3) Demonstrarea că bunurile nu au legătură directă cu infracțiunea de spălare; 4) Invocarea drepturilor terților de bună-credință care au dobândit bunuri înainte de comiterea infracțiunii. De asemenea, voi contesta confiscarea „echivalentului" (alin. 2) dacă aceasta se bazează pe estimări nejustificate.</p>
                     </div>
                   </div>
                 </AccordionContent>
