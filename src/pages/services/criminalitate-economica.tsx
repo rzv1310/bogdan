@@ -1289,31 +1289,35 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-10">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10 – Folosirea influenței</h3>
+                  <h3 className="text-lg font-semibold">Articolul 10 – Infracțiuni economice în cadrul privatizării și subvențiilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
-                    <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Fapta persoanei care, având influență sau lăsând să se creadă că are influență asupra unui funcționar, pretinde ori primește bani sau alte foloase pentru a determina funcționarul să îndeplinească ori să nu îndeplinească un act ce intră în atribuțiile sale, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>Constituie infracţiuni şi se pedepsesc cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi următoarele fapte, dacă sunt săvârşite în scopul obţinerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite:</p>
+                      <p>a) stabilirea, cu intenţie, a unei valori diminuate, faţă de valoarea comercială reală, a bunurilor aparţinând operatorilor economici la care statul sau o autoritate a administraţiei publice locale este acţionar, comisă în cadrul acţiunii de privatizare ori de executare silită, de reorganizare sau lichidare judiciară ori cu ocazia unei operaţiuni comerciale, ori a bunurilor aparţinând autorităţii publice sau instituţiilor publice, în cadrul unei acţiuni de vânzare a acestora sau de executare silită, săvârşită de cei care au atribuţii de conducere, de administrare, de gestionare, de executare silită, de reorganizare ori lichidare judiciară;</p>
+                      <p>b) acordarea de subvenţii cu încălcarea legii sau neurmărirea, conform legii, a respectării destinaţiei subvenţiilor;</p>
+                      <p>c) utilizarea subvenţiilor în alte scopuri decât cele pentru care au fost acordate, precum şi utilizarea în alte scopuri a creditelor garantate din fonduri publice sau care urmează să fie rambursate din fonduri publice.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia de apărare este să demonstrez că influența reală nu a existat sau că promisiunea nu a avut scopul de a influența un act oficial. Dacă beneficiul primit a fost pentru alt tip de serviciu (consultantă, intermediere legală), încadrarea juridică poate fi schimbată.</p>
+                      <p><strong>Comentariul meu:</strong> Această infracțiune complexă necesită demonstrarea intenției directe de obținere a unui folos necuvenit. În apărare, mă concentrez pe contestarea evaluării bunurilor - dacă expertiza de evaluare poate fi pusă sub semnul întrebării sau dacă prețul stabilit se încadra în limitele unei fluctuații normale de piață, elementul material poate fi înlăturat. Pentru lit. b) și c), voi demonstra că utilizarea subvențiilor a respectat destinația generală a programului sau că modificările au fost făcute cu informarea autorităților competente.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l78-art-10-1">
+              <AccordionItem value="l78-art-11">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10¹ – Cumpărarea de influență</h3>
+                  <h3 className="text-lg font-semibold">Articolul 11 – Conflictul de interese în activitatea economică</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
-                    <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Promisiunea, oferirea sau darea de bani ori alte foloase unei persoane care are influență sau lasă să se creadă că are influență asupra unui funcționar, pentru a-l determina pe acesta să îndeplinească sau să nu îndeplinească un act ce intră în atribuțiile sale, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Fapta persoanei care, având sarcina de a supraveghea, a controla, a reorganiza sau a lichida un operator economic privat, îndeplineşte pentru acesta vreo însărcinare, intermediază ori înlesneşte efectuarea unor operaţiuni comerciale sau financiare ori participă cu capital la un asemenea operator economic, dacă fapta este de natură a-i aduce direct sau indirect un folos necuvenit, constituie infracţiune şi se pedepseşte cu închisoare de la un an la 5 ani şi interzicerea unor drepturi.</p>
+                      <p>(2) Dacă fapta prevăzută la alin. (1) a fost săvârşită într-un interval de 5 ani de la încetarea însărcinării, pedeapsa este închisoare de la 6 luni la 3 ani sau amendă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, invoc lipsa intenției de corupere și arăt că plățile au fost făcute în alt scop, fără legătură cu atribuțiile funcționarului. De asemenea, dacă persoana care pretindea influența nu avea, în realitate, capacitatea de a influența funcționarul, elementele constitutive nu sunt îndeplinite.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare se axează pe demonstrarea lipsei caracterului necuvenit al folosului obținut. Dacă activitatea desfășurată de client a fost transparentă, declarată autorităților competente și nu a influențat procesul de supraveghere/control, elementul subiectiv lipsește. Pentru alin. (2), termenul de 5 ani este interpretabil - voi demonstra că activitățile nu au legătură cu informațiile obținute în timpul mandatului anterior sau că nu există un avantaj concurențial real.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1321,16 +1325,18 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-12">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 12 – Infracțiuni în legătură cu fondurile europene</h3>
+                  <h3 className="text-lg font-semibold">Articolul 12 – Operațiuni financiare incompatibile și folosirea informațiilor privilegiate</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4 space-y-2">
-                      <p>(1) Folosirea sau prezentarea de documente ori declarații false, inexacte sau incomplete, care are ca rezultat obținerea pe nedrept de fonduri din bugetul general al Uniunii Europene, se pedepsește cu închisoare de la 2 la 7 ani.</p>
-                      <p>(2) Nedeclararea informațiilor cerute de lege pentru obținerea acestor fonduri se pedepsește cu aceeași pedeapsă.</p>
+                      <p>Sunt pedepsite cu închisoarea de la 1 la 5 ani următoarele fapte, dacă sunt săvârşite în scopul obţinerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite:</p>
+                      <p>a) efectuarea de operaţiuni financiare, ca acte de comerţ, incompatibile cu funcţia, atribuţia sau însărcinarea pe care o îndeplineşte o persoană ori încheierea de tranzacţii financiare, utilizând informaţiile obţinute în virtutea funcţiei, atribuţiei sau însărcinării sale;</p>
+                      <p>b) folosirea, în orice mod, direct sau indirect, de informaţii ce nu sunt destinate publicităţii ori permiterea accesului unor persoane neautorizate la aceste informaţii.</p>
+                      <p>(2) În sensul prezentei legi, operaţiunile financiare constau în operaţiuni care antrenează circulaţia de capital, operaţiuni de bancă, de schimb valutar sau de credit, operaţiuni de plasament, în burse, în asigurări, în plasament mutual ori privitor la conturile bancare şi cele asimilate acestora, tranzacţii comerciale interne şi internaţionale. Pentru a fi efectuate ca acte de comerţ, operaţiunile financiare trebuie să constituie o acţiune de intermediere în circulaţia bunurilor făcută în mod organizat şi sistematic, în scopul obţinerii de profit.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Apărarea se concentrează pe demonstrarea lipsei legăturii directe între documentele contestate și acordarea efectivă a fondurilor. Dacă informațiile erau deja cunoscute autorităților sau erorile sunt minore și nu au influențat decizia de finanțare, elementul material lipsește.</p>
+                      <p><strong>Comentariul meu:</strong> În apărarea acestor acuzații, mă concentrez pe demonstrarea că operațiunile financiare nu au caracter sistematic sau organizat (alin. 2), fiind tranzacții izolate fără scop de profit constant. Pentru lit. a), voi arăta că informațiile folosite erau deja publice sau că operațiunile nu au legătură cu funcția deținută. Pentru lit. b), dacă informațiile au fost transmise din eroare sau fără intenția de a produce un avantaj, elementul subiectiv lipsește. De asemenea, voi contesta calificarea unor operațiuni normale ca fiind „incompatibile cu funcția".</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1338,15 +1344,15 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-13">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13 – Deturnarea fondurilor europene</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13 – Folosirea influenței în organizații</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Folosirea fondurilor din bugetul general al Uniunii Europene în alt scop decât cel pentru care au fost acordate se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                      <p>Fapta persoanei care îndeplineşte o funcţie de conducere într-un partid, într-un sindicat sau patronat ori în cadrul unei persoane juridice fără scop patrimonial, de a folosi influenţa ori autoritatea sa în scopul obţinerii pentru sine ori pentru altul de bani, bunuri sau alte foloase necuvenite, se pedepseşte cu închisoare de la unu la 5 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, voi arăta că modificarea destinației fondurilor a fost făcută cu respectarea procedurilor interne ale proiectului sau cu informarea autorității finanțatoare. Dacă există o interpretare rezonabilă a contractului de finanțare, fapta poate fi considerată nepenală.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare se bazează pe demonstrarea că activitățile desfășurate au fost în interesul organizației, nu personal. Dacă beneficiul obținut a fost unul transparent, aprobat de organele de conducere sau justificat prin servicii reale prestate organizației, caracterul necuvenit lipsește. De asemenea, voi contesta existența unei influențe reale - dacă funcția deținută era una onorifică sau fără putere de decizie efectivă, elementul material nu poate fi reținut.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1354,31 +1360,31 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-13-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13¹ – Abuzul în serviciu în legătură cu obținerea de foloase</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13¹ – Șantajul cu circumstanțe agravante</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, îndeplinește un act prin care s-a obținut un folos necuvenit pentru sine ori pentru altul, se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                      <p>În cazul infracţiunii de şantaj, prevăzută de art. 207 din Codul penal, în care este implicată o persoană dintre cele prevăzute la art. 1, limitele speciale ale pedepsei se majorează cu o treime.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac noțiunea de „folos necuvenit” – dacă avantajul obținut are o justificare legală (contract, plată datorată, acord aprobat), acesta nu intră în sfera infracțiunii. De asemenea, verific dacă actul contestat a fost efectiv în atribuțiile funcționarului sau dacă era o decizie colectivă, ceea ce poate dilua răspunderea individuală.</p>
+                      <p><strong>Comentariul meu:</strong> Această circumstanță agravantă se aplică numai pentru persoanele care intră în categoria subiectelor speciale de la art. 1 din lege. În apărare, voi contesta această calitate sau voi demonstra că fapta nu a fost comisă în legătură cu exercitarea funcției. Dacă şantajul a fost unul "civil" (solicitarea unei plăți datorate), nu se poate aplica această agravantă. De asemenea, majorarea cu o treime trebuie calculată corect în raport cu limitele de bază ale infracțiunii de șantaj.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l78-art-14">
+              <AccordionItem value="l78-art-13-2">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 14 – Conflictul de interese</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13² – Abuzul în serviciu cu circumstanțe agravante</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, a îndeplinit un act prin care s-a obținut un folos pentru sine, soț, rude sau afini până la gradul al II-lea inclusiv, se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                      <p>În cazul infracţiunilor de abuz în serviciu sau de uzurpare a funcţiei, dacă funcţionarul public a obţinut pentru sine ori pentru altul un folos necuvenit, limitele speciale ale pedepsei se majorează cu o treime.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei legăturii dintre act și avantajul obținut, precum și pe argumentul că beneficiul nu este unul „necuvenit”. De asemenea, dacă funcționarul a acționat la recomandarea sau cu aprobarea superiorilor, răspunderea personală poate fi diminuată.</p>
+                      <p><strong>Comentariul meu:</strong> Pentru aplicarea acestei agravante, trebuie demonstrat atât abuzul în serviciu de bază, cât și obținerea unui folos necuvenit distinct. În apărare, voi arăta că folosul invocat a fost legal (salariu, diurnă, rambursare de cheltuieli) sau că nu există legătură cauzală între abuzul în serviciu și avantajul obținut. Dacă fapta de bază nu se poate proba, cu atât mai puțin se poate aplica această circumstanță agravantă. De asemenea, voi contesta calculul majorării cu o treime dacă aceasta nu respectă limitele legale ale pedepselor.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1386,15 +1392,15 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-15">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 15 – Traficul de influență</h3>
+                  <h3 className="text-lg font-semibold">Articolul 15 – Tentativa</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Fapta persoanei care pretinde, primește ori acceptă promisiunea de bani sau alte foloase, lăsând să se creadă că are influență asupra unui funcționar public și că îl va determina pe acesta să îndeplinească sau să nu îndeplinească un act, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                      <p>Tentativa la infracţiunile prevăzute în prezenta secţiune se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, pot arăta că discuțiile au fost lipsite de caracter concret și nu au produs niciun efect juridic. Dacă beneficiul a fost obținut pentru alte activități legitime (consultantă, intermediere comercială), atunci nu se poate reține infracțiunea de trafic de influență.</p>
+                      <p><strong>Comentariul meu:</strong> Pentru reținerea tentativei, acuzarea trebuie să demonstreze că clientul a întreprins acte de execuție care să tindă în mod direct și nedoubtă spre comiterea infracțiunii. În apărare, voi arăta că actele imputate nu depășesc faza actelor pregătitoare, care în principiu nu sunt pedepsite. Dacă lipsesc probe clare despre intenția definitivă de comitere a infracțiunii sau dacă "renunțarea voluntară" poate fi invocată, tentativa nu se reține.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1402,31 +1408,101 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-16">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 16 – Cumpărarea de influență</h3>
+                  <h3 className="text-lg font-semibold">Articolul 16 – Concursul de norme</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Promisiunea, oferirea sau darea de bani ori alte foloase unei persoane despre care se afirmă că are influență asupra unui funcționar, pentru a-l determina să îndeplinească sau să nu îndeplinească un act, se pedepsește cu închisoare de la 2 la 10 ani.</p>
+                      <p>Dacă faptele prevăzute în prezenta secţiune constituie, potrivit Codului penal sau unor legi speciale, infracţiuni mai grave, acestea se pedepsesc în condiţiile şi cu sancţiunile stabilite în aceste legi.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că nu a existat scopul de a influența un funcționar public sau că suma a fost oferită pentru alt serviciu licit. Dacă pretinsa influență era inexistentă sau imposibilă, fapta nu se poate reține.</p>
+                      <p><strong>Comentariul meu:</strong> Această normă de rezolvare a concursului este favorabilă apărării, întrucât permite aplicarea legii mai ușoare în raport cu fapta concretă. Voi analiza toate încadrările juridice posibile pentru a identifica cele mai favorabile pentru client. Dacă fapta poate fi incriminată atât sub această lege cât și sub Codul penal, se va aplica norma care prevede pedeapsa mai ușoară sau care oferă mai multe posibilități de apărare. Este important să verific dacă nu cumva există o lege specială mai recentă și mai favorabilă.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l78-art-17">
+              <AccordionItem value="l78-art-18-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 17 – Denunțarea</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18¹ – Infracțiuni privind fondurile europene - obținere frauduloasă</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Folosirea sau prezentarea de documente ori declaraţii false, inexacte sau incomplete, dacă fapta are ca rezultat obţinerea pe nedrept sau reţinerea pe nedrept de fonduri ori active din bugetul Uniunii Europene sau bugetele administrate de aceasta ori în numele ei, se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea exercitării unor drepturi.</p>
+                      <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancţionează omisiunea de a furniza, cu ştiinţă, datele cerute potrivit prevederilor legale pentru obţinerea sau reţinerea de fonduri ori active din bugetul Uniunii Europene sau bugetele administrate de aceasta ori în numele ei, dacă fapta are ca rezultat obţinerea pe nedrept sau reţinerea pe nedrept a acestor fonduri ori active.</p>
+                      <p>(3) Dacă faptele prevăzute la alin. (1) şi (2) au produs consecinţe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Elementul esențial este rezultatul - obținerea sau reținerea pe nedrept a fondurilor. În apărare, voi demonstra că eventualele inexactități din documente nu au influențat decizia de acordare a finanțării sau că informațiile erau deja cunoscute autorității de management. Pentru alin. (2), omisiunea trebuie să fie "cu știință" - dacă lipsesc probe despre cunoașterea obligației de informare, elementul subiectiv nu este îndeplinit. "Consecințele deosebit de grave" (alin. 3) trebuie interpretate restrictiv - nu orice prejudiciu mare constituie circumstanță agravantă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-18-2">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 18² – Schimbarea destinației fondurilor europene</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Schimbarea, fără respectarea prevederilor legale, a destinaţiei fondurilor sau activelor obţinute ori reţinute din bugetul Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei se pedepseşte cu închisoare de la un an la 5 ani şi interzicerea exercitării unor drepturi.</p>
+                      <p>(2) Schimbarea, fără respectarea prevederilor legale, a destinaţiei unui folos legal obţinut, dacă fapta are ca rezultat diminuarea ilegală a resurselor din bugetul Uniunii Europene sau din bugetele administrate de aceasta ori în numele ei, se sancţionează cu pedeapsa prevăzută la alin. (1).</p>
+                      <p>(3) Dacă faptele prevăzute la alin. (1) şi (2) au produs consecinţe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> "Schimbarea destinației" trebuie să fie "fără respectarea prevederilor legale" - voi demonstra că modificările au fost făcute conform procedurii de amendare a contractului sau cu informarea autorității de management. Pentru alin. (2), trebuie probată "diminuarea ilegală" a resurselor UE - dacă fondurile au fost cheltuite pentru obiective similare sau complementare proiectului, elementul material lipsește. În multe cazuri, schimbarea destinației poate fi justificată de necesitățile practice ale implementării proiectului, fără intenție frauduloasă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-18-3">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 18³ – Diminuarea ilegală a resurselor UE</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Folosirea sau prezentarea de documente ori declaraţii false, inexacte sau incomplete, care are ca rezultat diminuarea ilegală a resurselor bugetului Uniunii Europene sau ale bugetelor administrate de aceasta ori în numele ei, se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea exercitării unor drepturi.</p>
+                      <p>(2) Cu pedeapsa prevăzută la alin. (1) se sancţionează omisiunea de a furniza, cu ştiinţă, datele cerute potrivit prevederilor legale, dacă fapta are ca rezultat diminuarea ilegală a resurselor bugetului Uniunii Europene sau ale bugetelor administrate de aceasta ori în numele ei.</p>
+                      <p>(3) Dacă faptele prevăzute la alin. (1) şi (2) au produs consecinţe deosebit de grave, limitele speciale ale pedepsei se majorează cu jumătate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Această infracțiune vizează situațiile în care se diminuează veniturile UE (de ex., declararea incorectă a taxelor vamale sau TVA). În apărare, voi demonstra că eventualele erori din declarații nu au avut impact real asupra bugetului UE sau că diminuarea nu este "ilegală" dacă rezultă din aplicarea corectă a unor interpretări rezonabile ale reglementărilor. Pentru omisiunea cu știință (alin. 2), elementul subiectiv trebuie probat cu certitudine - simple presupuneri nu sunt suficiente.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-18-4">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 18⁴ – Tentativa pentru infracțiunile cu fonduri europene</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Persoana care a săvârșit una dintre faptele prevăzute la art. 9–16 și care, înainte ca organul de urmărire penală să fi fost sesizat, denunță fapta și facilitează tragerea la răspundere penală a celorlalți participanți, beneficiază de reducerea la jumătate a limitelor de pedeapsă.</p>
+                      <p>Tentativa infracţiunilor prevăzute la art. 18¹-18³ se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, pot negocia cu clientul folosirea acestei dispoziții ca strategie, în special în dosarele cu mai mulți participanți. Momentul denunțului este crucial – acesta trebuie făcut înainte ca organele să fie sesizate oficial, altfel nu se aplică reducerea.</p>
+                      <p><strong>Comentariul meu:</strong> Pentru infracțiunile cu fonduri europene, tentativa este pedepsită. În apărare, voi demonstra că actele imputate nu au depășit faza pregătitoare sau că nu exista intenția fermă de comitere a infracțiunii. Dacă documentele false au fost întocmite dar nu au fost depuse la autoritate, sau dacă procedura de acordare a fondurilor nu a fost inițiată, se poate invoca lipsa pericolului social concret. "Renunțarea voluntară" poate constitui o cale de apărare eficientă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l78-art-18-5">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 18⁵ – Răspunderea conducătorilor de entități</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4">
+                      <p>Încălcarea din culpă de către directorul, administratorul sau persoana cu atribuţii de decizie ori de control în cadrul unui operator economic a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau îndeplinirea ei defectuoasă, dacă fapta a avut ca rezultat săvârşirea de către o persoană care se află în subordinea sa şi care a acţionat în numele acelui operator economic a uneia dintre infracţiunile prevăzute la art. 18¹-18³ sau săvârşirea unei infracţiuni de corupţie ori de spălare a banilor în legătură cu fondurile Uniunii Europene, se pedepseşte cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Această infracțiune de neglijență în serviciu necesită probe clare despre încălcarea unei îndatoriri concrete de supraveghere. În apărare, voi demonstra că sistemele de control intern erau adecvate și că infracțiunea comisă de subordonat nu putea fi prevăzută sau împiedicată prin măsuri rezonabile. Dacă conducătorul a acționat conform procedurilor interne și a reglementărilor aplicabile, răspunderea culpoasă nu poate fi reținută. De asemenea, voi contesta legătura cauzală între pretinsa neglijență și infracțiunea comisă de subordonat.</p>
                     </div>
                   </div>
                 </AccordionContent>
