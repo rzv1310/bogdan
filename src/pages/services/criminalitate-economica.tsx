@@ -1400,7 +1400,7 @@ export default function CriminalitateEconomica() {
                       <p>Tentativa la infracţiunile prevăzute în prezenta secţiune se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Pentru reținerea tentativei, acuzarea trebuie să demonstreze că clientul a întreprins acte de execuție care să tindă în mod direct și nedoubtă spre comiterea infracțiunii. În apărare, voi arăta că actele imputate nu depășesc faza actelor pregătitoare, care în principiu nu sunt pedepsite. Dacă lipsesc probe clare despre intenția definitivă de comitere a infracțiunii sau dacă "renunțarea voluntară" poate fi invocată, tentativa nu se reține.</p>
+                      <p><strong>Comentariul meu:</strong> Pentru reținerea tentativei, acuzarea trebuie să demonstreze că clientul a întreprins acte de execuție care să tindă în mod direct spre comiterea infracțiunii. În apărare, voi arăta că actele imputate nu depășesc faza actelor pregătitoare, care în principiu nu sunt pedepsite. Dacă lipsesc probe clare despre intenția definitivă de comitere a infracțiunii sau dacă "renunțarea voluntară" poate fi invocată, tentativa nu se reține.</p>
                     </div>
                   </div>
                 </AccordionContent>
