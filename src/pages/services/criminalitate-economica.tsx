@@ -739,7 +739,7 @@ export default function CriminalitateEconomica() {
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Reținerea și neplata, în cel mult 30 de zile de la termenul de scadență prevăzut de lege, a sumelor reprezentând impozite sau contribuții cu reținere la sursă se pedepsește cu închisoare de la 1 la 5 ani sau cu amendă.</p>
+                      <p>Constituie infracţiune şi se pedepseşte cu închisoare de la 6 luni la 5 ani fapta contribuabilului care nu reface, cu intenţie sau din culpă, documentele de evidenţă contabilă distruse, în termenul înscris în documentele de control.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea lipsei intenției directe de a sustrage sumele de la plată. Situațiile financiare dificile, blocajul temporar de lichidități sau credința rezonabilă că plata urma să fie efectuată pot fi argumente solide. De asemenea, achitarea sumelor restante înainte de pronunțarea unei hotărâri definitive poate duce la reducerea sau chiar înlăturarea răspunderii penale, potrivit practicii instanțelor.</p>
@@ -755,7 +755,7 @@ export default function CriminalitateEconomica() {
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Reținerea de către contribuabil a sumelor reprezentând impozite, taxe sau contribuții și utilizarea acestora în alte scopuri decât cele prevăzute de lege se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                      <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani refuzul nejustificat al unei persoane de a prezenta organelor competente documentele legale şi bunurile din patrimoniu, în scopul împiedicării verificărilor financiare, fiscale sau vamale, în termen de cel mult 15 zile de la somaţie.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că folosirea sumelor a fost determinată de circumstanțe excepționale și nu a avut scop fraudulos. Dacă se poate arăta că utilizarea fondurilor a fost temporară și destinată menținerii activității economice (ex.: plata salariilor pentru a evita falimentul), instanța poate considera fapta fără pericol social concret sau poate dispune o soluție mai blândă.</p>
@@ -764,14 +764,14 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l241-art-6">
+              <AccordionItem value="l241-art-5">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 6 – Evidențierea în actele contabile a unor cheltuieli fictive</h3>
+                  <h3 className="text-lg font-semibold">Articolul 5 – Împiedicarea verificărilor financiare, fiscale sau vamale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Evidențierea, în actele contabile, a unor operațiuni fictive ori nereale, având drept consecință reducerea bazei impozabile, se pedepsește cu închisoare de la 2 la 8 ani.</p>
+                      <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani împiedicarea, sub orice formă, a organelor competente de a intra, în condiţiile prevăzute de lege, în sedii, incinte ori pe terenuri, cu scopul efectuării verificărilor financiare, fiscale sau vamale.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv” – este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
@@ -780,17 +780,70 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l241-art-8">
+              <AccordionItem value="l241-art-6">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 8 – Sustragerea de la efectuarea verificărilor fiscale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 6 – Reţinerea şi nevărsarea impozitelor cu reţinere la sursă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Refuzul de a prezenta documentele de evidență contabilă sau de a permite accesul organelor fiscale în sediile contribuabilului, în scopul împiedicării verificărilor, se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
+                      <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani reţinerea şi nevărsarea, cu intenţie, în cel mult 30 de zile de la scadenţă, a sumelor reprezentând impozite sau contribuţii cu reţinere la sursă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea faptului că refuzul nu a avut un scop fraudulos, ci a fost cauzat de lipsa disponibilității documentelor la momentul controlului, neînțelegeri privind competența organelor de control sau probleme administrative. Dacă există corespondență cu autoritățile prin care se solicită amânarea verificării, acest lucru poate arăta buna-credință a clientului.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-6-1">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 6¹ – Reținerea, neplata și nereținerea impozitelor și contribuțiilor</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracţiuni şi se pedepsesc cu închisoare de la 1 an la 5 ani sau cu amendă reţinerea şi neplata, încasarea şi neplata, în cel mult 60 de zile de la termenul de scadenţă prevăzut de lege, a impozitelor şi/sau contribuţiilor prevăzute în anexa la prezenta lege.</p>
+                      <p>(11) Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 5 ani sau cu amendă nereţinerea impozitelor şi/sau contribuţiilor prevăzute în anexa la prezenta lege.</p>
+                      <p>(2) Prevederea de la alin. (1) intră în vigoare la data de 1 martie 2022.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea lipsei intenției directe de a sustrage sumele de la plată. Situațiile financiare dificile, blocajul temporar de lichidități sau credința rezonabilă că plata urma să fie efectuată pot fi argumente solide. De asemenea, achitarea sumelor restante înainte de pronunțarea unei hotărâri definitive poate duce la reducerea sau chiar înlăturarea răspunderii penale, potrivit practicii instanțelor.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-7">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 7 – Deținerea și circulația timbrelor și formularelor cu regim special</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 5 ani şi interzicerea unor drepturi deţinerea sau punerea în circulaţie, fără drept, a timbrelor, banderolelor ori formularelor tipizate, utilizate în domeniul fiscal, cu regim special.</p>
+                      <p>(2) Constituie infracţiune şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi tipărirea, folosirea, deţinerea sau punerea în circulaţie, cu ştiinţă, de timbre, banderole ori formulare tipizate, utilizate în domeniul fiscal, cu regim special, falsificate.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că folosirea sumelor a fost determinată de circumstanțe excepționale și nu a avut scop fraudulos. Dacă se poate arăta că utilizarea fondurilor a fost temporară și destinată menținerii activității economice (ex.: plata salariilor pentru a evita falimentul), instanța poate considera fapta fără pericol social concret sau poate dispune o soluție mai blândă.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-8">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 8 – Stabilirea cu rea-credință a impozitelor pentru obținerea de restituiri</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi sau cu amendă stabilirea cu rea-credinţă de către contribuabil a impozitelor, taxelor sau contribuţiilor, având ca rezultat obţinerea, fără drept, a unor sume de bani cu titlu de rambursări sau restituiri de la bugetul general consolidat ori compensări datorate bugetului general consolidat.</p>
+                      <p>(2) Constituie infracţiune şi se pedepseşte cu închisoare de la 5 la 15 ani şi interzicerea unor drepturi sau cu amendă asocierea în vederea săvârşirii faptei prevăzute la alin. (1).</p>
+                      <p>(3) Tentativa faptelor prevăzute la alin. (1) şi (2) se pedepseşte.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv" – este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
                     </div>
                   </div>
                 </AccordionContent>
