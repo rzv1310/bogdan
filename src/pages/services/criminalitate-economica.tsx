@@ -843,7 +843,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Tentativa faptelor prevăzute la alin. (1) şi (2) se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea că împiedicarea nu a fost deliberată sau că au existat motive legitime. Dacă accesul a fost refuzat din cauza unei situații de urgență, a lipsei reprezentantului legal sau a unor probleme de securitate, aceasta poate constitui o justificare. De asemenea, dacă organele nu au respectat condițiile prevăzute de lege pentru efectuarea verificărilor (lipsa mandatului, încălcarea procedurii), refuzul accesului poate fi legitim. Colaborarea ulterioară și facilitarea accesului dovedesc absența intenției obstructive.</p>
+                      <p><strong>Comentariul meu:</strong> Acest articol sancționează foarte sever obținerea frauduloasă de restituiri. Apărarea se concentrează pe demonstrarea lipsei „rea-credinței" - dacă contribuabilul a acționat în baza unei interpretări rezonabile a legii sau a unor consultări cu specialiști, elementul subiectiv poate lipsi. De asemenea, trebuie contestată existența „schemei frauduloase" prin demonstrarea că operațiunile au avut substanță economică reală. Pentru varianta de asociere (alin. 2), se contestă existența acordului de voință pentru comiterea infracțiunii și rolul specific al fiecărui participant.</p>
                     </div>
                   </div>
                 </AccordionContent>
