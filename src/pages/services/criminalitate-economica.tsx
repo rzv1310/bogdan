@@ -979,7 +979,7 @@ export default function CriminalitateEconomica() {
                       <p>În cazul în care s-a săvârşit o infracţiune prevăzută de prezenta lege, luarea măsurilor asigurătorii este obligatorie.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Acest nou articol modifică fundamental calculul prescripției, începând să curgă de la sesizarea organului fiscal, nu de la comiterea faptei. Aceasta poate fi favorabilă apărării dacă există întârzieri în sesizare sau dacă sesizarea a fost făcută neconform. Limita maximă de 10 ani oferă certitudine juridică. În apărare, voi contesta data exactă a sesizării și voi verifica dacă au fost respectate formalitățile legale pentru începerea cursului prescripției. Dacă sesizarea a fost nevalidă din motive procedurale, termenul nu începe să curgă.</p>
+                      <p><strong>Comentariul meu:</strong> Caracterul obligatoriu al măsurilor asigurătorii înseamnă că acestea se vor dispune aproape automat la începutul anchetei. În apărarea clientului, mă voi concentra pe contestarea proporționalității și necesității acestor măsuri. Voi demonstra că bunurile sechestrate depășesc valoarea prejudiciului estimat sau că sechestrul afectează nejustificat activitatea economică legitimă. De asemenea, voi negocia măsuri alternative (cauțiune bancară, garanții) care să asigure recuperarea prejudiciului fără a paraliza complet activitatea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -995,7 +995,7 @@ export default function CriminalitateEconomica() {
                       <p>Nu pot fi fondatori, administratori, directori sau reprezentanţi legali ai societăţii comerciale, iar dacă au fost alese, sunt decăzute din drepturi, persoanele care au fost condamnate pentru infracţiunile prevăzute de prezenta lege.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Caracterul obligatoriu al măsurilor asigurătorii înseamnă că acestea se vor dispune aproape automat la începutul anchetei. În apărarea clientului, mă voi concentra pe contestarea proporționalității și necesității acestor măsuri. Voi demonstra că bunurile sechestrate depășesc valoarea prejudiciului estimat sau că sechestrul afectează nejustificat activitatea economică legitimă. De asemenea, voi negocia măsuri alternative (cauțiune bancară, garanții) care să asigure recuperarea prejudiciului fără a paraliza complet activitatea clientului.</p>
+                      <p><strong>Comentariul meu:</strong> Această interdicție este o pedeapsă complementară extrem de severă care poate afecta grav viitorul profesional al clientului. În apărarea clientului, voi demonstra că activitatea comercială este esențială pentru susținerea familiei și pentru plata prejudiciului. Voi negocia soluții alternative cum ar fi supraveghere judiciară, limitarea activității la anumite domenii sau impunerea unui administrator extern. Dacă interdicția este pronunțată, voi explora posibilitatea reabilitării judiciare rapide prin demonstrarea unui comportament exemplar și a plății integrale a obligațiilor.</p>
                     </div>
                   </div>
                 </AccordionContent>
