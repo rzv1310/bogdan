@@ -742,7 +742,7 @@ export default function CriminalitateEconomica() {
                       <p>Constituie infracţiune şi se pedepseşte cu închisoare de la 6 luni la 5 ani fapta contribuabilului care nu reface, cu intenţie sau din culpă, documentele de evidenţă contabilă distruse, în termenul înscris în documentele de control.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea lipsei intenției directe de a sustrage sumele de la plată. Situațiile financiare dificile, blocajul temporar de lichidități sau credința rezonabilă că plata urma să fie efectuată pot fi argumente solide. De asemenea, achitarea sumelor restante înainte de pronunțarea unei hotărâri definitive poate duce la reducerea sau chiar înlăturarea răspunderii penale, potrivit practicii instanțelor.</p>
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, elementul cheie este demonstrarea lipsei intenției sau a culpei în nerefacerea documentelor. Dacă termenul din documentele de control a fost nerezonabil de scurt sau dacă au existat circumstanțe obiective care au împiedicat refacerea (incendiu, inundație, virus informatic), aceasta poate constitui o cauză justificativă. De asemenea, dacă documentele distruse nu erau esențiale pentru determinarea obligațiilor fiscale sau dacă există copii/backup-uri care permit reconstituirea informațiilor, gravitatea faptei poate fi diminuată.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -758,7 +758,7 @@ export default function CriminalitateEconomica() {
                       <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani refuzul nejustificat al unei persoane de a prezenta organelor competente documentele legale şi bunurile din patrimoniu, în scopul împiedicării verificărilor financiare, fiscale sau vamale, în termen de cel mult 15 zile de la somaţie.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că folosirea sumelor a fost determinată de circumstanțe excepționale și nu a avut scop fraudulos. Dacă se poate arăta că utilizarea fondurilor a fost temporară și destinată menținerii activității economice (ex.: plata salariilor pentru a evita falimentul), instanța poate considera fapta fără pericol social concret sau poate dispune o soluție mai blândă.</p>
+                      <p><strong>Comentariul meu:</strong> Apărarea se concentrează pe caracterul „nejustificat" al refuzului. Dacă clientul a avut motive rezonabile să refuze prezentarea documentelor (lipsă de competență a organului de control, nerespectarea procedurilor legale, documentele nu erau disponibile la momentul somaţiei), refuzul poate fi justificat. De asemenea, termenul de 15 zile poate fi considerat insuficient dacă documentele sunt voluminoase sau dacă necesită timp pentru organizare. Colaborarea ulterioară cu autoritățile și prezentarea voluntară a documentelor demonstrează buna-credință.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -790,7 +790,7 @@ export default function CriminalitateEconomica() {
                       <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani reţinerea şi nevărsarea, cu intenţie, în cel mult 30 de zile de la scadenţă, a sumelor reprezentând impozite sau contribuţii cu reţinere la sursă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea faptului că refuzul nu a avut un scop fraudulos, ci a fost cauzat de lipsa disponibilității documentelor la momentul controlului, neînțelegeri privind competența organelor de control sau probleme administrative. Dacă există corespondență cu autoritățile prin care se solicită amânarea verificării, acest lucru poate arăta buna-credință a clientului.</p>
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei intenției directe de fraudă. Dacă întârzierea la plată a fost cauzată de dificultăți financiare obiective, probleme de lichiditate sau credința rezonabilă că sumele vor fi plătite în timp util, elementul intențional poate lipsi. De asemenea, termenul de 30 de zile poate fi considerat prea scurt în anumite circumstanțe economice. Plata sumelor înainte de finalizarea procesului, chiar cu întârziere, demonstrează buna-credință și poate conduce la soluții favorabile.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -808,7 +808,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Prevederea de la alin. (1) intră în vigoare la data de 1 martie 2022.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea lipsei intenției directe de a sustrage sumele de la plată. Situațiile financiare dificile, blocajul temporar de lichidități sau credința rezonabilă că plata urma să fie efectuată pot fi argumente solide. De asemenea, achitarea sumelor restante înainte de pronunțarea unei hotărâri definitive poate duce la reducerea sau chiar înlăturarea răspunderii penale, potrivit practicii instanțelor.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare pentru acest nou articol se concentrează pe demonstrarea că reținerea, neplata sau nereținerea nu a fost intenționată. Termenul extins la 60 de zile oferă mai mult timp, dar trebuie demonstrat că dificultățile financiare sau problemele administrative au fost reale. De asemenea, diferențierea dintre „reținerea și neplata", „încasarea și neplata" și „nereținerea" necesită analize specifice pentru fiecare situație. Achitarea sumelor cu dobânzi și penalități poate conduce la reducerea pedepsei sau aplicarea doar a amenzii.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -825,7 +825,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Constituie infracţiune şi se pedepseşte cu închisoare de la 2 la 7 ani şi interzicerea unor drepturi tipărirea, folosirea, deţinerea sau punerea în circulaţie, cu ştiinţă, de timbre, banderole ori formulare tipizate, utilizate în domeniul fiscal, cu regim special, falsificate.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia mea este să demonstrez că folosirea sumelor a fost determinată de circumstanțe excepționale și nu a avut scop fraudulos. Dacă se poate arăta că utilizarea fondurilor a fost temporară și destinată menținerii activității economice (ex.: plata salariilor pentru a evita falimentul), instanța poate considera fapta fără pericol social concret sau poate dispune o soluție mai blândă.</p>
+                      <p><strong>Comentariul meu:</strong> Pentru acest articol complex, apărarea se axează pe demonstrarea că deținerea sau circulația timbrelor, banderolelor sau formularelor nu a fost „fără drept". Dacă clientul avea o justificare legală pentru posesia acestora (tranzacții comerciale legitime, activitate autorizată), elementul „fără drept" lipsește. Pentru varianta agravată (falsificare), trebuie contestată „știința" că acestea erau falsificate. Expertiza documentelor poate demonstra că diferențele față de originale sunt minore sau neintenționate.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -843,7 +843,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Tentativa faptelor prevăzute la alin. (1) şi (2) se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv" – este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, mă concentrez pe demonstrarea că împiedicarea nu a fost deliberată sau că au existat motive legitime. Dacă accesul a fost refuzat din cauza unei situații de urgență, a lipsei reprezentantului legal sau a unor probleme de securitate, aceasta poate constitui o justificare. De asemenea, dacă organele nu au respectat condițiile prevăzute de lege pentru efectuarea verificărilor (lipsa mandatului, încălcarea procedurii), refuzul accesului poate fi legitim. Colaborarea ulterioară și facilitarea accesului dovedesc absența intenției obstructive.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -870,7 +870,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 1.000.000 euro, în echivalentul monedei naţionale, limita minimă a pedepsei prevăzute de lege şi limita maximă a acesteia se majorează cu 5 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, analiza se concentrează pe contestarea prejudiciului și a legăturii cauzale dintre fapta imputată și pierderea fiscală. Dacă tranzacțiile au o justificare economică reală sau dacă există documente care, chiar cu erori, reflectă activitatea desfășurată, elementul intențional poate fi înlăturat. Plata integrală a prejudiciului, conform modificărilor legislative, poate conduce la reducerea pedepsei sau chiar la renunțarea la urmărirea penală.</p>
+                      <p><strong>Comentariul meu:</strong> Noul text al art. 9 este mult mai cuprinzător și include elemente moderne (factura electronică, aparate fiscale electronice). Apărarea trebuie să demonstreze că activitățile nu au fost săvârșite „în scopul sustragerii de la îndeplinirea obligaţiilor fiscale". Pentru fiecare literă (a-i), există strategii specifice: pentru operațiuni fictive - demonstrarea substanței economice; pentru alterarea aparatelor fiscale - probleme tehnice neintenționate; pentru sistemul RO e-Factura - erori de utilizare, nu fraudă deliberată. Pragurile majorate (500.000 și 1.000.000 euro) oferă posibilități de negociere pentru prejudicii mai mici.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -890,7 +890,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Tentativa la infracţiunea prevăzută la alin. (1) se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, analiza se concentrează pe contestarea prejudiciului și a legăturii cauzale dintre fapta imputată și pierderea fiscală. Dacă tranzacțiile au o justificare economică reală sau dacă există documente care, chiar cu erori, reflectă activitatea desfășurată, elementul intențional poate fi înlăturat. Plata integrală a prejudiciului, conform modificărilor legislative, poate conduce la reducerea pedepsei sau chiar la renunțarea la urmărirea penală.</p>
+                      <p><strong>Comentariul meu:</strong> Acest nou articol vizează scheme transfrontaliere cu pragul extrem de ridicat de 10 milioane euro și pedepse severe (7-15 ani). Apărarea se concentrează pe contestarea caracterului „transfrontalier" al schemei și a legăturii cu bugetul UE. Trebuie demonstrat că activitățile nu au fost coordonate la nivel internațional sau că impactul asupra bugetului UE nu poate fi dovedit. Pentru fiecare literă (a-c), se contestă intenția de fraudă și se demonstrează că erorile privind TVA au fost neintenționate sau au rezultat din interpretări diferite ale legislației europene complexe.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -910,7 +910,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Tentativa la infracţiunea prevăzută la alin. (1) se pedepseşte.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe ideea că acțiunile clientului nu au depășit faza actelor pregătitoare, care, în lipsa unor dispoziții exprese, nu ar fi sancționabile. Dacă prejudiciul nu s-a produs și nu există certitudine că fapta ar fi fost dusă la capăt, se poate invoca lipsa pericolului social concret.</p>
+                      <p><strong>Comentariul meu:</strong> Similar cu art. 9¹, dar vizând bugetul național cu prag de 1 milion euro. Apărarea se axează pe demonstrarea că „scheme frauduloase" nu au existat - activitățile au fost izolate, nu coordonate. Pentru documentele electronice false, se contestă caracterul „fals" și se demonstrează că au fost erori tehnice sau de transmitere. Termenul „nedivulgarea în mod intenţionat" necesită dovezi clare ale intenției - dacă informațiile au fost omise din neglijență sau din cauza complexității legislației, elementul intențional lipsește.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -926,7 +926,7 @@ export default function CriminalitateEconomica() {
                       <p>Constituie infracţiune şi se pedepseşte cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi sau cu amendă operaţiunea de creditare efectuată în mod direct sau indirect de către orice persoană fizică, având drept scop efectuarea unor plăţi cu sume de bani care provin din omisiunea evidenţierii în actele contabile a operaţiunilor comerciale efectuate şi/sau a veniturilor realizate a unuia sau mai multor contribuabili.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Aceasta este una dintre cele mai puternice strategii de apărare: obținerea unui raport de evaluare clar al prejudiciului și achitarea integrală a sumei înainte de sentința definitivă. În multe cazuri, această plată poate transforma o pedeapsă cu închisoarea într-o amendă, permițând clientului să evite privarea de libertate.</p>
+                      <p><strong>Comentariul meu:</strong> Acest articol sancționează operațiunile de creditare cu bani proveniți din evaziune. Apărarea se concentrează pe demonstrarea că sursa banilor utilizați pentru creditare era legală și că nu exista cunoștința despre proveniența din evaziune fiscală. Dacă creditarea a fost făcută prin intermediul instituțiilor financiare autorizate sau dacă există documente care atestă sursa legală a fondurilor, elementul infracțional poate fi înlăturat. De asemenea, se contestă legătura cauzală directă între omisiunea evidențierii operațiunilor și banii folosiți pentru creditare.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -963,7 +963,7 @@ export default function CriminalitateEconomica() {
                       <p>În cazul infracţiunilor prevăzute de prezenta lege, termenul de prescripţie al răspunderii penale începe să curgă de la data sesizării organului fiscal sau de la data sesizării organului de urmărire penală, dar nu mai târziu de 10 ani de la data comiterii infracţiunii.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Aceasta este una dintre cele mai puternice strategii de apărare: obținerea unui raport de evaluare clar al prejudiciului și achitarea integrală a sumei înainte de sentința definitivă. În multe cazuri, această plată poate transforma o pedeapsă cu închisoarea într-o amendă, permițând clientului să evite privarea de libertate.</p>
+                      <p><strong>Comentariul meu:</strong> Noul art. 10 este extrem de complex și oferă multiple oportunități de evitare a pedepsei prin plată. Strategia mea se concentrează pe: 1) Identificarea rapidă a prejudiciului pentru aplicarea termenului de 30 de zile (alin. 1); 2) Calculul corect al majorărilor (15%, 25%, 50%, 100%) pentru diferitele etape procedurale; 3) Utilizarea dreptului de participare la expertiză pentru contestarea prejudiciului; 4) Aplicarea cauzei de reducere la jumătate pentru informarea voluntară (alin. 5); 5) Verificarea aplicabilității excepției pentru recidivă (alin. 6). Acest articol oferă cele mai mari șanse de soluție favorabilă prin plată integrală și colaborare.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -979,7 +979,7 @@ export default function CriminalitateEconomica() {
                       <p>În cazul în care s-a săvârşit o infracţiune prevăzută de prezenta lege, luarea măsurilor asigurătorii este obligatorie.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, acest articol reprezintă un argument decisiv pentru negocierea unei soluții amiabile cu partea vătămată. Demonstrarea bunei-credințe prin plata rapidă a sumei nu doar reduce pedeapsa, ci poate influența și percepția instanței asupra pericolului social al faptei.</p>
+                      <p><strong>Comentariul meu:</strong> Acest nou articol modifică fundamental calculul prescripției, începând să curgă de la sesizarea organului fiscal, nu de la comiterea faptei. Aceasta poate fi favorabilă apărării dacă există întârzieri în sesizare sau dacă sesizarea a fost făcută neconform. Limita maximă de 10 ani oferă certitudine juridică. În apărare, voi contesta data exactă a sesizării și voi verifica dacă au fost respectate formalitățile legale pentru începerea cursului prescripției. Dacă sesizarea a fost nevalidă din motive procedurale, termenul nu începe să curgă.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -995,7 +995,7 @@ export default function CriminalitateEconomica() {
                       <p>Nu pot fi fondatori, administratori, directori sau reprezentanţi legali ai societăţii comerciale, iar dacă au fost alese, sunt decăzute din drepturi, persoanele care au fost condamnate pentru infracţiunile prevăzute de prezenta lege.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Ca avocat, primul pas este să solicit o expertiză contabilă independentă pentru a verifica dacă prejudiciul real este sub pragul de 50.000 lei. Dacă acest lucru se confirmă și suma este achitată integral înainte de primul termen, răspunderea penală este exclusă, ceea ce conduce la închiderea dosarului.</p>
+                      <p><strong>Comentariul meu:</strong> Caracterul obligatoriu al măsurilor asigurătorii înseamnă că acestea se vor dispune aproape automat la începutul anchetei. În apărarea clientului, mă voi concentra pe contestarea proporționalității și necesității acestor măsuri. Voi demonstra că bunurile sechestrate depășesc valoarea prejudiciului estimat sau că sechestrul afectează nejustificat activitatea economică legitimă. De asemenea, voi negocia măsuri alternative (cauțiune bancară, garanții) care să asigure recuperarea prejudiciului fără a paraliza complet activitatea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
