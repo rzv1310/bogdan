@@ -445,26 +445,41 @@ export default function CauzeDroguri() {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Art. 6 Prescrierea drogurilor de mare risc, cu intenție, de către medic, fără necesitate medicală, se pedepsește cu închisoare de la 1 la 5 ani și interzicerea unor drepturi. Cu aceeași pedeapsă se sancționează eliberarea cu intenție pe baza unei rețete prescrise ilegal sau falsificate. Obținerea prin astfel de rețete se pedepsește cu închisoare de la 1 la 3 ani.
+                    <div className="space-y-2">
+                      <p><strong>Art. 6 -</strong></p>
+                      <p>Prescrierea drogurilor de mare risc, cu intenție, de către medic, fără necesitate medicală, se pedepsește cu închisoare de la 1 la 5 ani și interzicerea unor drepturi. Cu aceeași pedeapsă se sancționează eliberarea cu intenție pe baza unei rețete prescrise ilegal sau falsificate. Obținerea prin astfel de rețete se pedepsește cu închisoare de la 1 la 3 ani.</p>
+                    </div>
                   </TableCell>
                   <TableCell>
-                    Privește circuitul medical și farmaceutic. Apărarea se bazează pe demonstrarea bunei-credințe și pe documente medicale reale care justifică acțiunea.
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    Art. 7 Administrarea de droguri de mare risc unei persoane, în afara condițiilor legale, se pedepsește cu închisoare de la 1 la 5 ani.
-                  </TableCell>
-                  <TableCell>
-                    Apărarea se bazează pe lipsa probelor privind administrarea efectivă sau necunoașterea naturii substanței.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Vizează circuitul medical fraudulos - medici care prescriu ilegal și pacienți care obțin substanțe prin rețete false. În apărare pentru medici, demonstrez existența unei necesități medicale reale și buna-credință. Pentru pacienți, combat știința despre caracterul fals al rețetei și demonstrez necesitatea medicală autentică. Documentația medicală detaliată este crucială în astfel de cazuri.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Art. 8 Furnizarea, în vederea consumului, de inhalanți chimici toxici unui minor se pedepsește cu închisoare de la 6 luni la 2 ani.
+                    <div className="space-y-2">
+                      <p><strong>Art. 7 -</strong></p>
+                      <p>Administrarea de droguri de mare risc unei persoane, în afara condițiilor legale, se pedepsește cu închisoare de la 1 la 5 ani.</p>
+                    </div>
                   </TableCell>
                   <TableCell>
-                    Nu implică droguri clasice, dar legea sancționează sever. Apărarea urmărește lipsa intenției de a favoriza consumul.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Infracțiunea de administrare directă de droguri altei persoane. În apărare, contest probele privind administrarea efectivă - de multe ori acuzarea se bazează pe declarații contradictorii ale martorilor. Demonstrez că persoana și-a autoadministrat substanța, că clientul nu cunoștea natura exactă a substanței sau că administrarea a avut loc în context medical justificat.</p>
+                    </div>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <div className="space-y-2">
+                      <p><strong>Art. 8 -</strong></p>
+                      <p>Furnizarea, în vederea consumului, de inhalanți chimici toxici unui minor se pedepsește cu închisoare de la 6 luni la 2 ani.</p>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Protejează minorii de substanțele toxice (spray-uri, solventi etc.), nu doar drogurile clasice. În apărare, demonstrez că substanțele nu erau destinate consumului ca stupefiante, că vânzarea avea alt scop legitim (uz casnic, profesional) sau că vânzătorul nu știa că sunt destinate inhalării de către minori. Verificarea vârstei cumpărătorului poate fi un argument în apărare.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
