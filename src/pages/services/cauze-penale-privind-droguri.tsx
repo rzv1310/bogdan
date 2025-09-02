@@ -396,26 +396,41 @@ export default function CauzeDroguri() {
               <TableBody>
                 <TableRow>
                   <TableCell>
-                    Art. 2 Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, oferirea, punerea în vânzare, vânzarea, distribuirea, livrarea cu orice titlu, trimiterea, transportul, procurarea, cumpărarea, deținerea ori alte operațiuni privind circulația drogurilor de risc, fără drept, se pedepsesc cu închisoare de la 3 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 5 la 15 ani și interzicerea unor drepturi.
+                    <div className="space-y-2">
+                      <p><strong>Art. 2 -</strong></p>
+                      <p>Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, oferirea, punerea în vânzare, vânzarea, distribuirea, livrarea cu orice titlu, trimiterea, transportul, procurarea, cumpărarea, deținerea ori alte operațiuni privind circulația drogurilor de risc, fără drept, se pedepsesc cu închisoare de la 3 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 5 la 15 ani și interzicerea unor drepturi.</p>
+                    </div>
                   </TableCell>
                   <TableCell>
-                    Este fundamentul majorității dosarelor de trafic intern. Diferența între droguri de risc și de mare risc este crucială pentru pedeapsa aplicată. Strategia de apărare vizează contestarea încadrării substanței, legalitatea probelor și lipsa intenției de comercializare.
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    Art. 3 Introducerea sau scoaterea din țară, precum și importul ori exportul de droguri de risc, fără drept, se pedepsesc cu închisoare de la 5 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 10 la 20 de ani și interzicerea unor drepturi.
-                  </TableCell>
-                  <TableCell>
-                    Reglementează traficul internațional. Apărarea se concentrează pe legalitatea actelor vamale, eventuale provocări ale organelor de anchetă și lipsa dovezilor privind intenția de distribuire.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Acest articol este fundamentul majorității dosarelor de trafic de droguri. Diferența crucială între droguri de risc și de mare risc determină pedeapsa aplicată. În apărare, contest încadrarea substanței prin expertize independente, verific legalitatea probelor (mandate, percheziții, interceptări) și demonstrez lipsa intenției de comercializare pentru a reîncadra fapta la consum propriu. Fiecare verb de acțiune din articol trebuie probat distinct de acuzare.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    Art. 4 Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, cumpărarea sau deținerea de droguri de risc pentru consum propriu, fără drept, se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 6 luni la 3 ani.
+                    <div className="space-y-2">
+                      <p><strong>Art. 3 -</strong></p>
+                      <p>Introducerea sau scoaterea din țară, precum și importul ori exportul de droguri de risc, fără drept, se pedepsesc cu închisoare de la 5 la 15 ani și interzicerea unor drepturi. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 10 la 20 de ani și interzicerea unor drepturi.</p>
+                    </div>
                   </TableCell>
                   <TableCell>
-                    Face diferența între consum și trafic. Reîncadrarea la consum propriu poate reduce drastic pedeapsa. Este o direcție frecvent explorată în apărare.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Reglementează traficul transfrontalier de droguri, cu pedepse foarte severe - până la 20 de ani pentru droguri de mare risc. În apărare, verific legalitatea controalelor vamale, contestez mandatele de percheziție, analizez dacă au existat provocări ale organelor de anchetă și demonstrez lipsa intenției de distribuire. Multe dosare se bazează pe interceptări sau colaboratori, care pot fi contestate procedural.</p>
+                    </div>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <div className="space-y-2">
+                      <p><strong>Art. 4 -</strong></p>
+                      <p>Cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, cumpărarea sau deținerea de droguri de risc pentru consum propriu, fără drept, se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă. Dacă faptele privesc droguri de mare risc, pedeapsa este închisoarea de la 6 luni la 3 ani.</p>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Articolul esențial care face diferența între consum și trafic. Reîncadrarea de la art. 2 la art. 4 poate reduce pedeapsa de la 15 ani la maximum 3 ani. În apărare, demonstrez că substanțele erau destinate exclusiv consumului propriu prin analiza cantităților, lipsa echipamentelor de împachetare/cântărire, absența comunicărilor cu potențiali cumpărători și probe despre dependența clientului.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -423,7 +438,9 @@ export default function CauzeDroguri() {
                     Art. 5 Punerea la dispoziție, cu știință, cu orice titlu, a unei locuințe sau a unui local ori a oricărui alt loc amenajat, în care are acces publicul, pentru consum ilicit de droguri sau tolerarea consumului ilicit, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.
                   </TableCell>
                   <TableCell>
-                    Am întâlnit cazuri unde simpla tolerare a consumului a dus la dosare penale. Apărarea presupune dovedirea lipsei intenției sau imposibilității de control.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Incriminează furnizarea de spații pentru consum. Am văzut dosare unde proprietarii de apartamente sau locuri publice au fost acuzați doar pentru că știau de consumul de droguri. În apărare, demonstrez lipsa intenției de a facilita consumul, imposibilitatea controlului total asupra spațiului sau necunoașterea activităților ilicite. Simpla tolerare pasivă nu constituie infracțiune.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
