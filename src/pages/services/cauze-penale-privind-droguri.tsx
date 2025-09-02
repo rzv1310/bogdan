@@ -487,7 +487,9 @@ export default function CauzeDroguri() {
                     Art. 9 Finanțarea faptelor prevăzute la art. 2-5 se sancționează cu pedepsele prevăzute de lege, limitele acestora majorându-se cu o treime.
                   </TableCell>
                   <TableCell>
-                    Se aplică și susținătorilor indirecți. În apărare, probele financiare sunt vitale pentru a demonstra lipsa legăturii cu traficul.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Se aplică și susținătorilor indirecți. În apărare, probele financiare sunt vitale pentru a demonstra lipsa legăturii cu traficul.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -503,7 +505,9 @@ export default function CauzeDroguri() {
                     Art. 11 Dacă faptele prevăzute la art. 2, 6-8 și 10 au avut ca urmare moartea victimei, pedeapsa este închisoare de la 15 la 25 de ani și interzicerea unor drepturi.
                   </TableCell>
                   <TableCell>
-                    Este cea mai gravă situație. Apărarea vizează lipsa legăturii cauzale directe între faptă și deces.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Este cea mai gravă situație. Apărarea vizează lipsa legăturii cauzale directe între faptă și deces.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -511,7 +515,9 @@ export default function CauzeDroguri() {
                     Art. 12 Tentativa la infracțiunile prevăzute la art. 2, 3, art. 4 alin. (2), art. 6 alin. (2)-(3), art. 7 și 9 se pedepsește. Se consideră tentativă și producerea sau procurarea mijloacelor ori luarea de măsuri pentru comitere.
                   </TableCell>
                   <TableCell>
-                    Legea pedepsește chiar și pregătirea. Apărarea se bazează pe lipsa intenției directe și neproducerea unui rezultat.
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Legea pedepsește chiar și pregătirea. Apărarea se bazează pe lipsa intenției directe și neproducerea unui rezultat.</p>
+                    </div>
                   </TableCell>
                 </TableRow>
                 <TableRow>
