@@ -402,7 +402,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Acest articol este fundamentul majorității dosarelor de trafic de droguri. Diferența crucială între droguri de risc și de mare risc determină pedeapsa aplicată. În apărare, contest încadrarea substanței prin expertize independente, verific legalitatea probelor (mandate, percheziții, interceptări) și demonstrez lipsa intenției de comercializare pentru a reîncadra fapta la consum propriu. Fiecare verb de acțiune din articol trebuie probat distinct de acuzare.</p>
                     </div>
                   </TableCell>
@@ -415,7 +415,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Reglementează traficul transfrontalier de droguri, cu pedepse foarte severe - până la 20 de ani pentru droguri de mare risc. În apărare, verific legalitatea controalelor vamale, contestez mandatele de percheziție, analizez dacă au existat provocări ale organelor de anchetă și demonstrez lipsa intenției de distribuire. Multe dosare se bazează pe interceptări sau colaboratori, care pot fi contestate procedural.</p>
                     </div>
                   </TableCell>
@@ -428,7 +428,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Articolul esențial care face diferența între consum și trafic. Reîncadrarea de la art. 2 la art. 4 poate reduce pedeapsa de la 15 ani la maximum 3 ani. În apărare, demonstrez că substanțele erau destinate exclusiv consumului propriu prin analiza cantităților, lipsa echipamentelor de împachetare/cântărire, absența comunicărilor cu potențiali cumpărători și probe despre dependența clientului.</p>
                     </div>
                   </TableCell>
@@ -438,7 +438,7 @@ export default function CauzeDroguri() {
                     Art. 5 Punerea la dispoziție, cu știință, cu orice titlu, a unei locuințe sau a unui local ori a oricărui alt loc amenajat, în care are acces publicul, pentru consum ilicit de droguri sau tolerarea consumului ilicit, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea unor drepturi.
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Incriminează furnizarea de spații pentru consum. Am văzut dosare unde proprietarii de apartamente sau locuri publice au fost acuzați doar pentru că știau de consumul de droguri. În apărare, demonstrez lipsa intenției de a facilita consumul, imposibilitatea controlului total asupra spațiului sau necunoașterea activităților ilicite. Simpla tolerare pasivă nu constituie infracțiune.</p>
                     </div>
                   </TableCell>
@@ -451,7 +451,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Vizează circuitul medical fraudulos - medici care prescriu ilegal și pacienți care obțin substanțe prin rețete false. În apărare pentru medici, demonstrez existența unei necesități medicale reale și buna-credință. Pentru pacienți, combat știința despre caracterul fals al rețetei și demonstrez necesitatea medicală autentică. Documentația medicală detaliată este crucială în astfel de cazuri.</p>
                     </div>
                   </TableCell>
@@ -464,7 +464,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Infracțiunea de administrare directă de droguri altei persoane. În apărare, contest probele privind administrarea efectivă - de multe ori acuzarea se bazează pe declarații contradictorii ale martorilor. Demonstrez că persoana și-a autoadministrat substanța, că clientul nu cunoștea natura exactă a substanței sau că administrarea a avut loc în context medical justificat.</p>
                     </div>
                   </TableCell>
@@ -477,7 +477,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Protejează minorii de substanțele toxice (spray-uri, solventi etc.), nu doar drogurile clasice. În apărare, demonstrez că substanțele nu erau destinate consumului ca stupefiante, că vânzarea avea alt scop legitim (uz casnic, profesional) sau că vânzătorul nu știa că sunt destinate inhalării de către minori. Verificarea vârstei cumpărătorului poate fi un argument în apărare.</p>
                     </div>
                   </TableCell>
@@ -528,7 +528,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Circumstanțele agravante majorează semnificativ pedeapsa și pot dubla termenul de închisoare. În apărare, combat aplicarea acestor circumstanțe prin demonstrarea că: funcția nu a fost exercitată în comiterea faptei, clientul nu știa că beneficiarii erau minori/bolnavi psihic, locația nu se încadrează în zonele protejate enumerate de lege, sau că substanțele nu au fost amestecate intenționat pentru creșterea pericolului.</p>
                     </div>
                   </TableCell>
@@ -541,7 +541,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Autodenunțul este o cauză de neimputabilitate care poate salva clientul de pedepsă dacă este aplicat corect. Strategia presupune timing perfect - trebuie făcut înainte de începerea urmăririi penale și să contribuie real la identificarea altor participanți. Această opțiune trebuie analizată cu atenție pentru că poate compromite și alte persoane din anturajul clientului.</p>
                     </div>
                   </TableCell>
@@ -554,7 +554,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Colaborarea cu autoritățile în timpul urmăririi penale poate înjumătăți pedeapsa. Această opțiune trebuie evaluată strategic - clientul trebuie să ofere informații substanțiale care să ducă la identificarea și condamnarea altor persoane. Beneficiul este mai mic decât la autodenunț, dar rămâne o alternativă viabilă când autodenunțul nu mai este posibil.</p>
                     </div>
                   </TableCell>
@@ -567,7 +567,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Pentru infracțiunile grave cu droguri de mare risc (art. 2 alin. 2 și art. 3 alin. 2), legea interzice suspendarea cu supraveghere. Aceasta înseamnă că pedepsele se execută efectiv în închisoare. În astfel de cazuri, apărarea se concentrează pe reîncadrarea la infracțiuni mai puțin grave care permit suspendarea sau pe obținerea circumstanțelor atenuante.</p>
                     </div>
                   </TableCell>
@@ -582,8 +582,8 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Confiscarea este obligatorie și poate afecta grav patrimoniul clientului. În apărare, combat confiscarea prin demonstrarea că bunurile au proveniență legală, că nu există legătură directă cu infracțiunea sau că valorile au fost dobândite anterior și independent de activitatea infracțională. Plata echivalentului în bani poate ruina financiar o familia, de aceea este esențial să contest această măsură.</p>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Confiscarea este obligatorie și poate afecta grav patrimoniul clientului. În apărare, combat confiscarea prin demonstrarea că bunurile au proveniență legală, că nu există legătură directă cu infracțiunea sau că valorile au fost dobândite anterior și independent de activitatea infracțională. Plata echivalentului în bani poate ruina financiar o familie, de aceea este esențial să contest această măsură.</p>
                     </div>
                   </TableCell>
                 </TableRow>
@@ -601,7 +601,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Procedura de distrugere a drogurilor trebuie respectată riguros pentru a evita contestații procedurale. În apărare, verific dacă au fost păstrate contraprobe suficiente pentru expertize suplimentare, dacă comisia de distrugere a fost constituită legal și dacă procesul-verbal respectă cerințele legale. Orice neregulă procedurală poate vicia probele și afecta acuzarea.</p>
                     </div>
                   </TableCell>
@@ -614,7 +614,7 @@ export default function CauzeDroguri() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <div className="rounded-md bg-muted text-muted-foreground p-4">
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Programele terapeutice în sistemul penitenciar pot oferi o alternativă mai bună decât închisoarea clasică pentru consumatori. În apărare, solicit aplicarea acestei măsuri pentru clienții cu probleme de dependență, demonstrând că reabilitarea este mai eficientă decât pedepsirea pură. Aceasta poate influența pozitiv și durata efectivă a detenției.</p>
                     </div>
                   </TableCell>
