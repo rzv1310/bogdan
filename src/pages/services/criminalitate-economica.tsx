@@ -856,15 +856,18 @@ export default function CriminalitateEconomica() {
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4 space-y-2">
-                      <p>(1) Constituie infracțiune de evaziune fiscală și se pedepsește cu închisoare de la 2 la 8 ani și interzicerea unor drepturi orice persoană care:</p>
-                      <p>a) ascunde bunul impozabil sau sursa impozabilă;</p>
-                      <p>b) omite, în tot sau în parte, evidențierea în actele contabile sau în alte documente legale a operațiunilor comerciale efectuate sau a veniturilor realizate;</p>
-                      <p>c) evidențiază în actele contabile operațiuni nereale;</p>
-                      <p>d) alterează, distruge sau ascunde documente contabile;</p>
-                      <p>e) organizează contabilitate dublă;</p>
-                      <p>f) sustrage de la controlul fiscal documentele contabile;</p>
-                      <p>g) se sustrage de la plata obligațiilor fiscale prin alte mijloace ilicite.</p>
-                      <p>(2) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 500.000 lei, limitele de pedeapsă se majorează cu 5 ani.</p>
+                      <p>(1) Constituie infracţiuni de evaziune fiscală şi se pedepsesc cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi sau cu amendă următoarele fapte săvârşite în scopul sustragerii de la îndeplinirea obligaţiilor fiscale:</p>
+                      <p>a) ascunderea bunului ori a sursei impozabile sau taxabile;</p>
+                      <p>b) omisiunea, în tot sau în parte, a evidenţierii, în actele contabile ori în alte documente legale, a operaţiunilor comerciale efectuate sau a veniturilor realizate;</p>
+                      <p>c) evidenţierea, în actele contabile, în factura electronică sau în alte documente legale, a cheltuielilor care nu au la bază operaţiuni reale ori evidenţierea altor operaţiuni fictive;</p>
+                      <p>d) alterarea, distrugerea sau ascunderea de acte contabile, memorii ale aparatelor de taxat ori de marcat electronice fiscale sau de alte mijloace de stocare a datelor, inclusiv electronice;</p>
+                      <p>e) executarea de evidenţe contabile duble folosindu-se înscrisuri sau alte mijloace de stocare a datelor, inclusiv cele electronice;</p>
+                      <p>f) sustragerea de la efectuarea verificărilor financiare, fiscale sau vamale, prin nedeclararea, declararea fictivă ori declararea inexactă cu privire la sediile principale sau secundare ale persoanelor verificate;</p>
+                      <p>g) substituirea, degradarea sau înstrăinarea de către debitor ori de către terţe persoane a bunurilor sechestrate în conformitate cu prevederile Codului de procedură fiscală şi ale Codului de procedură penală;</p>
+                      <p>h) folosirea de către contribuabil, cu rea-credinţă, a sistemului naţional privind factura electronică RO e-Factura, în vederea creării aparenţei de legalitate a unor operaţiuni fictive sau disimulării circuitului tranzacţional real al bunurilor/serviciilor;</p>
+                      <p>i) utilizarea de aparate de marcat electronice fiscale care nu sunt conectate la sistemul informatic naţional de supraveghere şi monitorizare a datelor fiscale, potrivit legii, sau alterarea aparatelor de marcat electronice fiscale pentru netransmiterea unor date fiscale sau transmiterea unor date fiscale nereale.</p>
+                      <p>(2) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 500.000 euro, în echivalentul monedei naţionale, limita minimă a pedepsei prevăzute de lege şi limita maximă a acesteia se majorează cu 3 ani.</p>
+                      <p>(3) Dacă prin faptele prevăzute la alin. (1) s-a produs un prejudiciu mai mare de 1.000.000 euro, în echivalentul monedei naţionale, limita minimă a pedepsei prevăzute de lege şi limita maximă a acesteia se majorează cu 5 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărarea clientului, analiza se concentrează pe contestarea prejudiciului și a legăturii cauzale dintre fapta imputată și pierderea fiscală. Dacă tranzacțiile au o justificare economică reală sau dacă există documente care, chiar cu erori, reflectă activitatea desfășurată, elementul intențional poate fi înlăturat. Plata integrală a prejudiciului, conform modificărilor legislative, poate conduce la reducerea pedepsei sau chiar la renunțarea la urmărirea penală.</p>
@@ -873,14 +876,75 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l241-art-10">
+              <AccordionItem value="l241-art-9-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10 – Tentativa</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9¹ – Infracțiuni în cadrul schemelor frauduloase transfrontaliere UE</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la 7 la 15 ani şi interzicerea exercitării unor drepturi orice acţiune sau inacţiune comisă în cadrul unor scheme frauduloase cu caracter transfrontalier având ca efect diminuarea cu cel puţin 10.000.000 euro, în echivalentul monedei naţionale, a resurselor bugetului Uniunii Europene, prin:</p>
+                      <p>a) utilizarea sau prezentarea de declaraţii sau documente false, incorecte sau incomplete privind TVA;</p>
+                      <p>b) nedivulgarea de informaţii privind TVA, atunci când aceste informaţii trebuie divulgate potrivit legii;</p>
+                      <p>c) prezentarea de declaraţii corecte privind TVA pentru a masca în mod fraudulos neplata sau constituirea unor drepturi necuvenite la rambursări de TVA.</p>
+                      <p>(2) Tentativa la infracţiunea prevăzută la alin. (1) se pedepseşte.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, analiza se concentrează pe contestarea prejudiciului și a legăturii cauzale dintre fapta imputată și pierderea fiscală. Dacă tranzacțiile au o justificare economică reală sau dacă există documente care, chiar cu erori, reflectă activitatea desfășurată, elementul intențional poate fi înlăturat. Plata integrală a prejudiciului, conform modificărilor legislative, poate conduce la reducerea pedepsei sau chiar la renunțarea la urmărirea penală.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-9-2">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 9² – Infracțiuni în cadrul schemelor frauduloase naționale</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) Constituie infracţiune şi se pedepseşte cu închisoare de la 7 la 15 ani şi interzicerea exercitării unor drepturi orice acţiune comisă în cadrul unor scheme frauduloase având ca efect diminuarea cu cel puţin 1.000.000 euro, în echivalentul monedei naţionale, a resurselor bugetului de stat, prin:</p>
+                      <p>a) utilizarea sau prezentarea de declaraţii sau documente false, documente electronice false, incorecte sau incomplete privind TVA;</p>
+                      <p>b) nedivulgarea în mod intenţionat de informaţii privind TVA, atunci când aceste informaţii trebuie divulgate potrivit legii;</p>
+                      <p>c) prezentarea de declaraţii corecte, declaraţii electronice corecte privind TVA pentru a masca în mod fraudulos neplata sau constituirea unor drepturi necuvenite la rambursări de TVA.</p>
+                      <p>(2) Tentativa la infracţiunea prevăzută la alin. (1) se pedepseşte.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe ideea că acțiunile clientului nu au depășit faza actelor pregătitoare, care, în lipsa unor dispoziții exprese, nu ar fi sancționabile. Dacă prejudiciul nu s-a produs și nu există certitudine că fapta ar fi fost dusă la capăt, se poate invoca lipsa pericolului social concret.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-9-3">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 9³ – Operațiuni de creditare frauduloase</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Tentativa la infracțiunile prevăzute la art. 3–9 se pedepsește.</p>
+                      <p>Constituie infracţiune şi se pedepseşte cu închisoare de la 3 la 10 ani şi interzicerea unor drepturi sau cu amendă operaţiunea de creditare efectuată în mod direct sau indirect de către orice persoană fizică, având drept scop efectuarea unor plăţi cu sume de bani care provin din omisiunea evidenţierii în actele contabile a operaţiunilor comerciale efectuate şi/sau a veniturilor realizate a unuia sau mai multor contribuabili.</p>
+                    </div>
+                    <div className="rounded-md bg-accent text-accent-foreground p-4">
+                      <p><strong>Comentariul meu:</strong> Aceasta este una dintre cele mai puternice strategii de apărare: obținerea unui raport de evaluare clar al prejudiciului și achitarea integrală a sumei înainte de sentința definitivă. În multe cazuri, această plată poate transforma o pedeapsă cu închisoarea într-o amendă, permițând clientului să evite privarea de libertate.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="l241-art-10">
+                <AccordionTrigger className="text-left">
+                  <h3 className="text-lg font-semibold">Articolul 10 – Cauze de nepedepsire și reducerea pedepsei</h3>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-3">
+                    <div className="rounded-md border border-accent bg-background p-4 space-y-2">
+                      <p>(1) În cazul săvârşirii unei infracţiuni prevăzute la art. 6¹, 8 sau 9, dacă până la expirarea unui termen de maximum 30 de zile de la finalizarea controlului efectuat de organele competente, în urma căruia se individualizează un prejudiciu datorat bugetului general consolidat de până la 1.000.000 euro, prejudiciul majorat cu 15% din valoarea acestuia, la care se adaugă dobânzile şi penalităţile, este acoperit integral, prin plată efectivă, fapta nu se pedepseşte. În acest caz, organele competente nu sesizează organele de urmărire penală.</p>
+                      <p>(2) În cazul săvârşirii unei infracţiuni prevăzute la art. 6¹, 8 sau 9, dacă până la primul termen de judecată prejudiciul cauzat este acoperit integral, prin plată efectivă, limitele pedepsei prevăzute de lege pentru fapta săvârşită se reduc la jumătate. Dacă prejudiciul cauzat şi recuperat în aceste condiţii este de până la 1.000.000 euro inclusiv, în echivalentul monedei naţionale, se poate aplica pedeapsa cu amenda. În cazul săvârşirii unei infracţiuni prevăzute la art. 6¹, 8 sau 9, dacă ulterior primului termen de judecată şi până la judecarea definitivă a cauzei prejudiciul cauzat este acoperit integral, prin plată efectivă, limitele pedepsei prevăzute de lege pentru fapta săvârşită se reduc cu o treime. Prejudiciul se va determina în temeiul unei expertize de specialitate. Suspectul sau inculpatul au dreptul de a participa la efectuarea expertizei. Dispoziţiile art. 172-180 din Codul de procedură penală se aplică în mod corespunzător. Despre dispunerea expertizei va fi încunoştinţat suspectul sau inculpatul, persoană fizică sau persoană juridică, prin reprezentant, după caz, dându-i acestuia timpul necesar pentru exercitarea deplină a drepturilor sale procesuale.</p>
+                      <p>(3) În cazul săvârşirii unei infracţiuni prevăzute la art. 6¹, 8 sau 9, prin care s-a cauzat un prejudiciu care nu depăşeşte 1.000.000 euro, în echivalentul monedei naţionale, dacă în cursul urmăririi penale prejudiciul cauzat majorat cu 25% din valoarea acestuia, la care se adaugă dobânzile şi penalităţile, este acoperit integral, prin plată efectivă, fapta nu se pedepseşte, aplicându-se dispoziţiile art. 16 alin. (1) lit. h) din Codul de procedură penală. Dacă în cursul procedurii camerei preliminare sau al judecăţii, până la pronunţarea unei hotărâri în primă instanţă, acelaşi prejudiciu majorat cu 50% din valoarea acestuia, la care se adaugă dobânzile şi penalităţile, este acoperit integral, prin plată efectivă, fapta nu se pedepseşte, aplicându-se dispoziţiile art. 16 alin. (1) lit. h) din Codul de procedură penală. Dacă în cursul judecăţii în apel, până la pronunţarea unei hotărâri judecătoreşti definitive, acelaşi prejudiciu majorat cu 100% din valoarea acestuia, la care se adaugă dobânzile şi penalităţile, este acoperit integral, prin plată efectivă, fapta nu se pedepseşte, aplicându-se dispoziţiile art. 16 alin. (1) lit. h) din Codul de procedură penală.</p>
+                      <p>(4) Dispoziţiile prezentului articol se aplică tuturor inculpaţilor chiar dacă nu au contribuit la acoperirea prejudiciului prevăzut la alin. (1) şi (2).</p>
+                      <p>(5) Dacă persoana care a săvârşit una dintre infracţiunile prevăzute la art. 6¹, 8 sau 9 aduce la cunoştinţa organelor de urmărire penală sau a organelor fiscale infracţiunea comisă, în timp ce aceasta se află în derulare sau în termen de cel mult un an de la data epuizării activităţii infracţionale şi mai înainte ca organele de urmărire penală să fi fost sesizate cu privire la aceasta şi, ulterior, înlesneşte aflarea adevărului şi tragerea la răspundere penală a unuia sau mai multor participanţi la comiterea infracţiunii, limitele speciale se reduc la jumătate.</p>
+                      <p>(6) Dispoziţiile prevăzute la alin. (1) şi (2) nu se aplică dacă făptuitorul a mai săvârşit o infracţiune prevăzută de prezenta lege într-un interval de 5 ani de la comiterea faptei pentru care a beneficiat de prevederile alin. (1) sau (2).</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe ideea că acțiunile clientului nu au depășit faza actelor pregătitoare, care, în lipsa unor dispoziții exprese, nu ar fi sancționabile. Dacă prejudiciul nu s-a produs și nu există certitudine că fapta ar fi fost dusă la capăt, se poate invoca lipsa pericolului social concret.</p>
@@ -891,12 +955,12 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-10-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10¹ – Cauza de nepedepsire</h3>
+                  <h3 className="text-lg font-semibold">Articolul 10¹ – Prescripția răspunderii penale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>În cazul infracțiunilor prevăzute la art. 8 și art. 9, dacă, în cursul urmăririi penale sau al judecății, până la pronunțarea unei hotărâri definitive, inculpatul acoperă integral prejudiciul produs, majorat cu dobânzi și penalități, se aplică pedeapsa amenzii.</p>
+                      <p>În cazul infracţiunilor prevăzute de prezenta lege, termenul de prescripţie al răspunderii penale începe să curgă de la data sesizării organului fiscal sau de la data sesizării organului de urmărire penală, dar nu mai târziu de 10 ani de la data comiterii infracţiunii.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Aceasta este una dintre cele mai puternice strategii de apărare: obținerea unui raport de evaluare clar al prejudiciului și achitarea integrală a sumei înainte de sentința definitivă. În multe cazuri, această plată poate transforma o pedeapsă cu închisoarea într-o amendă, permițând clientului să evite privarea de libertate.</p>
@@ -907,12 +971,12 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-11">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 11 – Reducerea pedepsei</h3>
+                  <h3 className="text-lg font-semibold">Articolul 11 – Măsuri asigurătorii obligatorii</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Dacă, înainte de sesizarea organului de urmărire penală, prejudiciul cauzat este acoperit integral, limitele pedepsei se reduc la jumătate.</p>
+                      <p>În cazul în care s-a săvârşit o infracţiune prevăzută de prezenta lege, luarea măsurilor asigurătorii este obligatorie.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> În apărare, acest articol reprezintă un argument decisiv pentru negocierea unei soluții amiabile cu partea vătămată. Demonstrarea bunei-credințe prin plata rapidă a sumei nu doar reduce pedeapsa, ci poate influența și percepția instanței asupra pericolului social al faptei.</p>
@@ -923,12 +987,12 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-12">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 12 – Excluderea răspunderii penale în cazuri minore</h3>
+                  <h3 className="text-lg font-semibold">Articolul 12 – Interdicții pentru condamnați</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Nu constituie infracțiune faptele prevăzute la art. 3–9 dacă prejudiciul cauzat este mai mic de 50.000 lei și a fost acoperit integral până la primul termen de judecată.</p>
+                      <p>Nu pot fi fondatori, administratori, directori sau reprezentanţi legali ai societăţii comerciale, iar dacă au fost alese, sunt decăzute din drepturi, persoanele care au fost condamnate pentru infracţiunile prevăzute de prezenta lege.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
                       <p><strong>Comentariul meu:</strong> Ca avocat, primul pas este să solicit o expertiză contabilă independentă pentru a verifica dacă prejudiciul real este sub pragul de 50.000 lei. Dacă acest lucru se confirmă și suma este achitată integral înainte de primul termen, răspunderea penală este exclusă, ceea ce conduce la închiderea dosarului.</p>
@@ -937,21 +1001,6 @@ export default function CriminalitateEconomica() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="l241-art-13">
-                <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13 – Circumstanțe atenuante</h3>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="space-y-3">
-                    <div className="rounded-md border border-accent bg-background p-4">
-                      <p>Instanța poate reține circumstanțe atenuante dacă inculpatul colaborează cu autoritățile, recunoaște fapta și contribuie la recuperarea prejudiciului.</p>
-                    </div>
-                    <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, pot construi strategia pe colaborarea clientului cu organele fiscale și pe furnizarea de documente suplimentare care să ajute la clarificarea situației. Colaborarea activă, combinată cu recunoașterea parțială sau totală a faptelor, poate conduce la pedepse reduse semnificativ, inclusiv la suspendarea executării acestora.</p>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
