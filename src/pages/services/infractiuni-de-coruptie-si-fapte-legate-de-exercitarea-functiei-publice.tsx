@@ -372,7 +372,7 @@ export default function CoruptieSiFunctiePublica() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2">
           <p>
-            📍 București • 📞 <a className="underline" href="tel:+40745506443">0745.506.443</a> • ✉️ <a className="underline" href="mailto:bogdan.lamatic@yahoo.com">bogdan.lamatic@yahoo.com</a>.
+            📍 București • 📞 <a className="underline" href="tel:+40745506443">0745.506.443</a> • ✉️ <a className="underline" href="mailto:contact@avocatpenalbucuresti.ro">contact@avocatpenalbucuresti.ro</a>.
             Scrie-mi sau sună pentru evaluarea dosarului tău - răspund prompt și clar!
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
@@ -380,7 +380,7 @@ export default function CoruptieSiFunctiePublica() {
               <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">
-              <a href="mailto:bogdan.lamatic@yahoo.com">Trimite email</a>
+              <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
             </Button>
           </div>
         </CardContent>

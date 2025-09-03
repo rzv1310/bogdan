@@ -182,7 +182,7 @@ export default function Contact() {
             url: "https://avocat-drept-penal.ro/contact",
             areaServed: "România",
             telephone: "+40 745 506 443",
-            email: "bogdan.lamatic@yahoo.com",
+            email: "contact@avocatpenalbucuresti.ro",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Strada Colonel Stefan Stoika 22",

@@ -103,7 +103,7 @@ export default function GDPR() {
           <h2>8. Contact</h2>
           <p>
             Pentru orice întrebări privind datele tale personale, ne poți contacta la
-            <a href="mailto:bogdan.lamatic@yahoo.com"> bogdan.lamatic@yahoo.com</a>.
+            <a href="mailto:contact@avocatpenalbucuresti.ro"> contact@avocatpenalbucuresti.ro</a>.
           </p>
         </section>
         <section aria-label="Politici conexe" className="mt-10">

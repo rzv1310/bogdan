@@ -398,14 +398,14 @@ export default function InvestigatiiCripto() {
           <CardContent className="space-y-3">
             <p>
               București • Telefon: <a className="underline underline-offset-4" href="tel:+40745506443">+40 745 506 443</a> • Email: {" "}
-              <a className="underline underline-offset-4" href="mailto:office@lamatic.ro">office@lamatic.ro</a>
+              <a className="underline underline-offset-4" href="mailto:contact@avocatpenalbucuresti.ro">contact@avocatpenalbucuresti.ro</a>
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Button asChild variant="premium">
                 <a href="tel:+40745506443"><Phone className="mr-2" /> Sună acum</a>
               </Button>
               <Button asChild variant="outline">
-                <a href="mailto:office@lamatic.ro">Trimite email</a>
+                <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
               </Button>
             </div>
           </CardContent>

@@ -30,7 +30,7 @@ export default function About() {
       streetAddress: "Strada Colonel Stefan Stoika 22",
       addressCountry: "RO",
     },
-    email: "mailto:bogdan.lamatic@yahoo.com",
+    email: "mailto:contact@avocatpenalbucuresti.ro",
     telephone: "+40 745 506 443",
     memberOf: [
       { "@type": "Organization", name: "Bucharest Bar" },
@@ -79,7 +79,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
-                <dd className="font-medium">bogdan.lamatic@yahoo.com</dd>
+                <dd className="font-medium">contact@avocatpenalbucuresti.ro</dd>
               </div>
             </dl>
           </section>
@@ -137,7 +137,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
-                <dd className="font-medium">bogdan.lamatic@yahoo.com</dd>
+                <dd className="font-medium">contact@avocatpenalbucuresti.ro</dd>
               </div>
             </dl>
           </section>

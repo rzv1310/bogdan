@@ -76,7 +76,7 @@ export default function SpalareDeBani() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="mailto:office@lamatic.ro" aria-label="Trimite email">
+              <a href="mailto:contact@avocatpenalbucuresti.ro" aria-label="Trimite email">
                 <Mail className="mr-2" /> Trimite email
               </a>
             </Button>

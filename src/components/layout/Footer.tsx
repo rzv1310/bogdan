@@ -30,7 +30,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
-                <a href="mailto:bogdan.lamatic@yahoo.com" className="underline hover:no-underline">bogdan.lamatic@yahoo.com</a>
+                <a href="mailto:contact@avocatpenalbucuresti.ro" className="underline hover:no-underline">contact@avocatpenalbucuresti.ro</a>
               </li>
               <li>
                 <span>Website:</span>{" "}

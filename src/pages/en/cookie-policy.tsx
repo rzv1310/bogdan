@@ -77,7 +77,7 @@ export default function CookiePolicyEn() {
           <h2>6. Contact</h2>
           <p>
             For questions regarding this cookie policy, contact us at
-            <a href="mailto:bogdan.lamatic@yahoo.com"> bogdan.lamatic@yahoo.com</a>.
+            <a href="mailto:contact@avocatpenalbucuresti.ro"> contact@avocatpenalbucuresti.ro</a>.
           </p>
         </section>
         <section aria-label="Related policies" className="mt-10">

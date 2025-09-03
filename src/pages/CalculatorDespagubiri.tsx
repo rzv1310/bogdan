@@ -480,7 +480,7 @@ export default function CalculatorDespagubiri() {
                   <Download className="w-4 h-4" /> Descarcă estimarea (PDF)
                 </button>
                 <a
-                  href="mailto:bogdan.lamatic@yahoo.com"
+                  href="mailto:contact@avocatpenalbucuresti.ro"
                   className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 >
                   Trimite-mi pentru evaluare <ArrowRight className="w-4 h-4" />
@@ -537,7 +537,7 @@ export default function CalculatorDespagubiri() {
                 placeholder="Descrie pe scurt evenimentul (data, locul, ce s-a întâmplat, leziuni)"
               ></textarea>
               <a
-                href="mailto:bogdan.lamatic@yahoo.com"
+                href="mailto:contact@avocatpenalbucuresti.ro"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
               >
                 Trimite solicitarea <ArrowRight className="w-4 h-4" />
@@ -560,7 +560,7 @@ export default function CalculatorDespagubiri() {
                 </div>
               </div>
               <a
-                href="mailto:bogdan.lamatic@yahoo.com"
+                href="mailto:contact@avocatpenalbucuresti.ro"
                 className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-white text-zinc-900"
               >
                 Programează o consultanță <ArrowRight className="w-4 h-4" />

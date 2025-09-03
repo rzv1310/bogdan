@@ -73,7 +73,7 @@ export default function MoneyLaunderingEn() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="mailto:office@lamatic.ro" aria-label="Email us">
+              <a href="mailto:contact@avocatpenalbucuresti.ro" aria-label="Email us">
                 <Mail className="mr-2" /> Email us
               </a>
             </Button>
@@ -269,7 +269,7 @@ export default function MoneyLaunderingEn() {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="mailto:office@lamatic.ro" aria-label="Email for an appointment">
+                <a href="mailto:contact@avocatpenalbucuresti.ro" aria-label="Email for an appointment">
                   <Mail className="mr-2" /> Email us
                 </a>
               </Button>

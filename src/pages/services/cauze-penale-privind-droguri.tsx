@@ -95,7 +95,7 @@ export default function CauzeDroguri() {
         "@type": "Person",
         name: "Bogdan Lamatic",
       },
-      sameAs: ["mailto:bogdan.lamatic@yahoo.com"],
+      sameAs: ["mailto:contact@avocatpenalbucuresti.ro"],
     } as const;
 
     // BreadcrumbList JSON-LD
@@ -710,7 +710,7 @@ export default function CauzeDroguri() {
           </p>
           <p>📍 Adresă: Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5, Sector 1, București</p>
           <p>📞 Telefon: +40 745 506 443</p>
-          <p>📧 E-mail: bogdan.lamatic@yahoo.com</p>
+          <p>📧 E-mail: contact@avocatpenalbucuresti.ro</p>
         </CardContent>
       </Card>
     </section>

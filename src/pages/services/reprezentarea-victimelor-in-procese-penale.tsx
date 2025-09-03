@@ -294,7 +294,7 @@ export default function ReprezentareaVictimelor() {
               <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">
-              <a href="mailto:bogdan.lamatic@yahoo.com">Trimite email</a>
+              <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
             </Button>
           </div>
         </CardContent>
