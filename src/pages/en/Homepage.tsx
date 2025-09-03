@@ -398,8 +398,9 @@ const HomepageEN = () => {
                           <p className="mb-0">{l2}</p>
                         </div>;
                 })()}
-              </blockquote>
-              <div className="h-[25px] md:h-[35px]" aria-hidden="true"></div>
+               </blockquote>
+               <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
+               <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
