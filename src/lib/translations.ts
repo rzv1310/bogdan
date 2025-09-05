@@ -43,7 +43,7 @@ export const translations = {
     servicesTitle: "Servicii | Arii de practică",
     services: [
       {
-        title: "DREPT PENAL",
+        title: "Avocat Drept Penal",
         body:
           "Am o vastă experiență în reprezentarea clienților în fața tuturor instanțelor de judecată, începând cu cele cu grad de jurisdicție inferior și până la Înalta Curte de Casație și Justiție, precum și la toate nivelurile unităților de parchet de pe lângă instanțele de judecată (de la instanțe ordinare până la Înalta Curte de Casație și Justiție, inclusiv structuri specializate - Direcția Națională Anticorupție, Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism și Parchetul European). Cele mai multe dintre cazurile mele prezintă un grad ridicat de complexitate, incluzând documentație voluminoasă și activități de cercetare pluridisciplinară.",
       },
