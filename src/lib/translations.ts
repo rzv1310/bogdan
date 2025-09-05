@@ -40,7 +40,7 @@ export const translations = {
     callNow: "Sună acum",
     ctaLawyerButton: "Vreau avocat!",
     rightsReserved: "Toate drepturile rezervate.",
-    servicesTitle: "Servicii",
+    servicesTitle: "Servicii | Arii de practică",
     services: [
       {
         title: "DREPT PENAL",
@@ -134,7 +134,7 @@ export const translations = {
     callNow: "Call now",
     ctaLawyerButton: "I need a lawyer!",
     rightsReserved: "All rights reserved.",
-    servicesTitle: "Services",
+    servicesTitle: "CRIMINAL LAW PRACTICE AREAS",
     services: [
       {
         title: "CRIMINAL LAW",
