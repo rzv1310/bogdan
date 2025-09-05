@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>{lang === "en" ? "Hours:" : "Program:"}</span>{" "}
-                <span>{lang === "en" ? "Monday - Friday: 08-18" : "Luni - Vineri: 08-18"}</span>
+                <span>{lang === "en" ? "Monday - Friday: 08-22, Saturday - Sunday: 09-20" : "Luni - Vineri: 08-22, Sâmbătă - Duminică: 09-20"}</span>
               </li>
             </ul>
           </section>

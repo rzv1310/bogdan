@@ -364,7 +364,7 @@ const HomepageEN = () => {
             "latitude": 44.4268,
             "longitude": 26.1025
           },
-          "openingHours": "Mo-Fr 09:00-18:00",
+          "openingHours": ["Mo-Fr 08:00-22:00", "Sa-Su 09:00-20:00"],
           "paymentAccepted": "Cash, BankTransfer",
           "currenciesAccepted": "RON, EUR",
           "priceRange": "$$",
