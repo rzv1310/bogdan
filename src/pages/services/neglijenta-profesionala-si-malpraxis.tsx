@@ -70,7 +70,7 @@ export default function Malpraxis() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40745506443"
+                  "telephone": "+40 (31) 632 01 83"
                 }
               })
             }}
@@ -96,7 +96,7 @@ export default function Malpraxis() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță malpraxis">
-          <a href="tel:+40745506443">
+          <a href="tel:+40316320183">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
@@ -250,7 +250,7 @@ export default function Malpraxis() {
           </div>
           <div className="pt-2">
             <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță malpraxis">
-              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
         </CardContent>

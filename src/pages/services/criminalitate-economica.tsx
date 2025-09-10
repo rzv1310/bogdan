@@ -70,7 +70,7 @@ export default function CriminalitateEconomica() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40745506443"
+                  "telephone": "+40 (31) 632 01 83"
                 }
               })
             }}
@@ -97,7 +97,7 @@ export default function CriminalitateEconomica() {
 
       <section className="mt-4 border border-accent rounded-md p-4">
         <div className="flex flex-wrap items-center gap-3">
-          <a href="tel:+40745506443" aria-label="Sună acum">
+          <a href="tel:+40316320183" aria-label="Sună acum">
             <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone /> Sună acum
             </Button>
@@ -161,7 +161,7 @@ export default function CriminalitateEconomica() {
               <li>
                 Schimbarea destinației fondurilor europene
                 <div className="mt-3">
-                  <a href="tel:+40745506443" aria-label="Sună acum">
+                  <a href="tel:+40316320183" aria-label="Sună acum">
                     <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                       <Phone /> Sună acum
                     </Button>
@@ -202,7 +202,7 @@ export default function CriminalitateEconomica() {
           </section>
           <div className="flex justify-center animate-fade-in">
             <GeminiButtonEffect>
-              <a href="tel:+40745506443" aria-label="Vreau avocat!">
+              <a href="tel:+40316320183" aria-label="Vreau avocat!">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> Vreau avocat!
                 </Button>

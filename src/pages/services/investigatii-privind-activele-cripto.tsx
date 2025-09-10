@@ -72,7 +72,7 @@ export default function InvestigatiiCripto() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40745506443"
+                  "telephone": "+40 (31) 632 01 83"
                 }
               })
             }}
@@ -106,7 +106,7 @@ export default function InvestigatiiCripto() {
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-            <a href="tel:+40745506443" aria-label="Sună acum">
+            <a href="tel:+40316320183" aria-label="Sună acum">
               <Phone className="mr-2" /> Sună acum
             </a>
           </Button>
@@ -175,7 +175,7 @@ export default function InvestigatiiCripto() {
             </ul>
             <div className="pt-2">
               <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                <a href="tel:+40745506443" aria-label="Sună acum pentru consultanță crypto">
+                <a href="tel:+40316320183" aria-label="Sună acum pentru consultanță crypto">
                   <Phone className="mr-2" /> Sună pentru consultanță
                 </a>
               </Button>

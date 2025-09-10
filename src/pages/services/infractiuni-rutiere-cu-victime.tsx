@@ -69,7 +69,7 @@ export default function InfractiuniRutiere() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40745506443"
+                  "telephone": "+40 (31) 632 01 83"
                 }
               })
             }}
@@ -94,7 +94,7 @@ export default function InfractiuniRutiere() {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță rutieră">
-          <a href="tel:+40745506443">
+          <a href="tel:+40316320183">
             <Phone className="mr-2 h-4 w-4" /> Apelează acum
           </a>
         </Button>
@@ -215,7 +215,7 @@ export default function InfractiuniRutiere() {
           </ol>
           <div className="pt-2">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună pentru consultanță dosar rutier">
-              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
           </div>
         </CardContent>
@@ -289,12 +289,12 @@ export default function InfractiuniRutiere() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2">
           <p>
-            📍 București • 📞 <a className="underline" href="tel:+40745506443">0745.506.443</a> • ✉️ <a className="underline" href="mailto:contact@avocatpenalbucuresti.ro">contact@avocatpenalbucuresti.ro</a>.
+             📍 București • 📞 <a className="underline" href="tel:+40316320183">+40 (31) 632 01 83</a> • ✉️ <a className="underline" href="mailto:contact@avocatpenalbucuresti.ro">contact@avocatpenalbucuresti.ro</a>.
             Scrie-mi sau sună pentru evaluarea dosarului tău - răspund prompt și clar!
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">
               <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
