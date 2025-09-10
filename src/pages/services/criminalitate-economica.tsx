@@ -717,7 +717,7 @@ export default function CriminalitateEconomica() {
               </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>
@@ -1003,7 +1003,7 @@ export default function CriminalitateEconomica() {
 
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>
@@ -1080,7 +1080,7 @@ export default function CriminalitateEconomica() {
               </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>
@@ -1256,7 +1256,7 @@ export default function CriminalitateEconomica() {
               </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>
@@ -1509,7 +1509,7 @@ export default function CriminalitateEconomica() {
               </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>
@@ -1590,7 +1590,7 @@ export default function CriminalitateEconomica() {
               </AccordionItem>
             </Accordion>
             <div className="flex justify-center">
-              <a href="tel:+40745506443" aria-label="Sună acum">
+              <a href="tel:+40316320183" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> +40 (31) 632 01 83
                 </Button>

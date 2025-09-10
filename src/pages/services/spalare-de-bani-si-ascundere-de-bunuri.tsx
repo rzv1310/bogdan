@@ -281,7 +281,7 @@ export default function SpalareDeBani() {
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                <a href="tel:+40745506443" aria-label="Sună acum pentru analiză confidențială">
+                <a href="tel:+40316320183" aria-label="Sună acum pentru analiză confidențială">
                   <Phone className="mr-2" /> Sună acum
                 </a>
               </Button>

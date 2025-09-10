@@ -631,7 +631,7 @@ export default function CauzeDroguri() {
         </CardContent>
       </Card>
       <div className="pt-4">
-        <a href="tel:+40745506443" aria-label="Sună acum">
+        <a href="tel:+40316320183" aria-label="Sună acum">
           <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
             <Phone /> Sună acum
           </Button>

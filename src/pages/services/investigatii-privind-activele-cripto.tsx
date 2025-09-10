@@ -402,7 +402,7 @@ export default function InvestigatiiCripto() {
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Button asChild variant="premium">
-                <a href="tel:+40745506443"><Phone className="mr-2" /> Sună acum</a>
+                <a href="tel:+40316320183"><Phone className="mr-2" /> Sună acum</a>
               </Button>
               <Button asChild variant="outline">
                 <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
