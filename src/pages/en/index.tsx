@@ -26,7 +26,7 @@ export default function EnIndex() {
               typeof window !== "undefined"
                 ? `${window.location.origin}/en`
                 : "/en",
-            telephone: "+40 745 506 443",
+            telephone: "+40 (31) 632 01 83",
             areaServed: ["RO", "EU"],
           }),
         }}

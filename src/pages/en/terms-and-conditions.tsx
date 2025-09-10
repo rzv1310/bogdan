@@ -97,7 +97,7 @@ export default function TermsAndConditionsEn() {
 
         <h2 className="text-2xl font-semibold mt-8">11. Contact</h2>
         <p>
-          For questions about these Terms: Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 745 506 443 • E‑mail: contact@avocatpenalbucuresti.ro
+          For questions about these Terms: Bucharest, 1st District, 22nd Stefan Stoika Street, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 (31) 632 01 83 • E‑mail: contact@avocatpenalbucuresti.ro
         </p>
       </div>
 

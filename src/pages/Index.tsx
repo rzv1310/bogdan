@@ -193,7 +193,7 @@ const Index = () => {
           "name": "Avocat Bogdan Lamatic",
           "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -287,7 +287,7 @@ const Index = () => {
             "@type": "LegalService",
             "name": "Avocat Bogdan Lamatic"
           },
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -361,7 +361,7 @@ const Index = () => {
           "name": "Avocat Bogdan Lamatic",
           "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -434,7 +434,7 @@ const Index = () => {
                 <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
               )}
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
-                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
+                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
                   </Button>
@@ -496,7 +496,7 @@ const Index = () => {
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
               <GeminiButtonEffect>
-                <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
+                <a href="tel:+40316320183" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
@@ -529,9 +529,9 @@ const Index = () => {
                 </GlowCard>
               ))}
               <div className="col-span-full flex justify-center">
-                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
                   <Button variant="premium" size="lg" className="border border-hero-foreground">
-                    <Phone /> 0745 506 443
+                    <Phone /> (31) 632 01 83
                   </Button>
                 </a>
               </div>
@@ -562,9 +562,9 @@ const Index = () => {
                 className="relative w-full h-[180px] md:h-[220px]"
               >
                 <div className="flex justify-center">
-                  <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                  <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
                     <Button variant="premium" size="lg" className="border border-hero-foreground">
-                      <Phone /> 0745 506 443
+                      <Phone /> (31) 632 01 83
                     </Button>
                   </a>
                 </div>

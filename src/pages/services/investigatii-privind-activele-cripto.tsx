@@ -397,7 +397,7 @@ export default function InvestigatiiCripto() {
           </CardHeader>
           <CardContent className="space-y-3">
             <p>
-              București • Telefon: <a className="underline underline-offset-4" href="tel:+40745506443">+40 745 506 443</a> • Email: {" "}
+              București • Telefon: <a className="underline underline-offset-4" href="tel:+40316320183">+40 (31) 632 01 83</a> • Email: {" "}
               <a className="underline underline-offset-4" href="mailto:contact@avocatpenalbucuresti.ro">contact@avocatpenalbucuresti.ro</a>
             </p>
             <div className="flex flex-wrap items-center gap-3">

@@ -83,7 +83,7 @@ export default function CauzeDroguri() {
       description,
       url,
       areaServed: "București, România",
-      telephone: "+40 745 506 443",
+      telephone: "+40 (31) 632 01 83",
       address: {
         "@type": "PostalAddress",
         streetAddress:
@@ -188,7 +188,7 @@ export default function CauzeDroguri() {
         <a href="tel:+40745506443" aria-label="Apelează acum">
           <Button size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none bg-accent text-accent-foreground hover:opacity-90">
             <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-            Apelează acum: +40 745 506 443
+            Apelează acum: +40 (31) 632 01 83
           </Button>
         </a>
       </div>
@@ -709,7 +709,7 @@ export default function CauzeDroguri() {
             Experiența mea în dosare penale complexe îți poate oferi șansa unei apărări eficiente și strategice.
           </p>
           <p>📍 Adresă: Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5, Sector 1, București</p>
-          <p>📞 Telefon: +40 745 506 443</p>
+          <p>📞 Telefon: +40 (31) 632 01 83</p>
           <p>📧 E-mail: contact@avocatpenalbucuresti.ro</p>
         </CardContent>
       </Card>

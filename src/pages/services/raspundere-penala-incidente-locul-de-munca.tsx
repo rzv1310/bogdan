@@ -37,8 +37,8 @@ export default function RaspunderePenalaMunca() {
             url: typeof window !== "undefined" ? `${window.location.origin}/servicii/raspundere-penala-incidente-locul-de-munca` : "/servicii/raspundere-penala-incidente-locul-de-munca",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
-            telephone: "+40 745 506 443",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            telephone: "+40 (31) 632 01 83",
           }),
         }}
       />

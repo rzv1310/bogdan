@@ -719,7 +719,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>
@@ -1005,7 +1005,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>
@@ -1082,7 +1082,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>
@@ -1258,7 +1258,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>
@@ -1511,7 +1511,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>
@@ -1592,7 +1592,7 @@ export default function CriminalitateEconomica() {
             <div className="flex justify-center">
               <a href="tel:+40745506443" aria-label="Sună acum">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                  <Phone /> +40 745 506 443
+                  <Phone /> +40 (31) 632 01 83
                 </Button>
               </a>
             </div>

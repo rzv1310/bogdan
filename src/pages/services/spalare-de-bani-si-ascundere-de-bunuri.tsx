@@ -41,8 +41,8 @@ export default function SpalareDeBani() {
             url: typeof window !== "undefined" ? `${window.location.origin}/servicii/spalare-de-bani-si-ascundere-de-bunuri` : "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
-            telephone: "+40 745 506 443",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            telephone: "+40 (31) 632 01 83",
           }),
         }}
       />

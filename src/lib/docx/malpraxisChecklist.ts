@@ -324,10 +324,10 @@ export async function generateMalpraxisChecklistDocx(): Promise<Blob> {
           new Paragraph({
             children: [
               new ExternalHyperlink({
-                link: "tel:+40745506443",
+                link: "tel:+40316320183",
                 children: [
                   new TextRun({
-                    text: "Sună acum: +40 745 506 443",
+                    text: "Sună acum: +40 (31) 632 01 83",
                     bold: true,
                     color: ORANGE,
                   }),

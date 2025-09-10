@@ -202,7 +202,7 @@ export default function CalculatorDespagubiri() {
             </ul>
             <div className="mt-4">
               <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum">
-                <a href="tel:+40745506443">
+                <a href="tel:+40316320183">
                   <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
                 </a>
               </Button>
@@ -593,7 +593,7 @@ export default function CalculatorDespagubiri() {
         {/* Call to Action */}
         <section className="text-center mb-12">
           <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum">
-            <a href="tel:+40745506443">
+            <a href="tel:+40316320183">
               <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
             </a>
           </Button>

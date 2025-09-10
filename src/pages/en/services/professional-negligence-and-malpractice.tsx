@@ -38,8 +38,8 @@ export default function MalpracticeEn() {
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/professional-negligence-and-malpractice` : "/en/services/professional-negligence-and-malpractice",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
-            telephone: "+40 745 506 443",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            telephone: "+40 (31) 632 01 83",
           }),
         }}
       />
@@ -59,7 +59,7 @@ export default function MalpracticeEn() {
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call now for malpractice advice">
-            <a href="tel:+40745506443">
+            <a href="tel:+40316320183">
               <Phone className="mr-2 h-4 w-4" /> Call now
             </a>
           </Button>
@@ -152,7 +152,7 @@ export default function MalpracticeEn() {
             </div>
             <div className="pt-2">
               <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call for malpractice consultation">
-                <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Call now</a>
+                <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now</a>
               </Button>
             </div>
           </CardContent>

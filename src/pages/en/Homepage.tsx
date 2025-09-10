@@ -181,7 +181,7 @@ const HomepageEN = () => {
           "name": "Attorney Bogdan Lamatic",
           "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -275,7 +275,7 @@ const HomepageEN = () => {
             "@type": "LegalService",
             "name": "Attorney Bogdan Lamatic"
           },
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -349,7 +349,7 @@ const HomepageEN = () => {
           "name": "Attorney Bogdan Lamatic",
           "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
-          "telephone": "+40745506443",
+          "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
@@ -402,7 +402,7 @@ const HomepageEN = () => {
                <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
-                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
+                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
                   </Button>
@@ -463,7 +463,7 @@ const HomepageEN = () => {
             <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
               <GeminiButtonEffect>
-                <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
+                <a href="tel:+40316320183" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
@@ -496,9 +496,9 @@ const HomepageEN = () => {
                 </GlowCard>
               ))}
               <div className="col-span-full flex justify-center">
-                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
                   <Button variant="premium" size="lg" className="border border-hero-foreground">
-                    <Phone /> 0745 506 443
+                    <Phone /> (31) 632 01 83
                   </Button>
                 </a>
               </div>
@@ -529,9 +529,9 @@ const HomepageEN = () => {
                 className="relative w-full h-[180px] md:h-[220px]"
               >
                 <div className="flex justify-center">
-                  <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează 0745 506 443" : "Call 0745 506 443"}>
+                  <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
                     <Button variant="premium" size="lg" className="border border-hero-foreground">
-                      <Phone /> 0745 506 443
+                      <Phone /> (31) 632 01 83
                     </Button>
                   </a>
                 </div>

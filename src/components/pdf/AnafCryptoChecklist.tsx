@@ -201,7 +201,7 @@ const AnafCryptoChecklist: React.FC = () => (
             <Image src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" style={styles.ctaImage} />
             <View style={styles.ctaContent}>
               <Text style={styles.ctaTitle}>Ai nevoie de ajutor?</Text>
-              <Link src="tel:+40745506443" style={styles.ctaButton}>
+              <Link src="tel:+40316320183" style={styles.ctaButton}>
                 <Text style={styles.ctaButtonText}>Sună-mă acum!</Text>
               </Link>
             </View>

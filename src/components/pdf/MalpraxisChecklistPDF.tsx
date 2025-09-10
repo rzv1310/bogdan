@@ -165,7 +165,7 @@ export default function MalpraxisChecklistPDF() {
         </View>
 
         <Text style={styles.footerCall}>
-          <Link src="tel:+40745506443">{strip("Sună acum: +40 745 506 443")}</Link>
+          <Link src="tel:+40316320183">{strip("Sună acum: +40 (31) 632 01 83")}</Link>
         </Text>
       </Page>
     </PDFDocument>

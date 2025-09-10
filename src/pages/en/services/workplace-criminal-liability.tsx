@@ -38,8 +38,8 @@ export default function WorkplaceLiabilityEn() {
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/workplace-criminal-liability` : "/en/services/workplace-criminal-liability",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
-            telephone: "+40 745 506 443",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            telephone: "+40 (31) 632 01 83",
           }),
         }}
       />
@@ -76,7 +76,7 @@ export default function WorkplaceLiabilityEn() {
         </div>
 
         <div className="mt-6">
-          <a href="tel:+40745506443" aria-label="Call now">
+          <a href="tel:+40316320183" aria-label="Call now">
             <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone /> Call now
             </Button>
@@ -145,7 +145,7 @@ export default function WorkplaceLiabilityEn() {
 
         {/* CTA Button after 3rd card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+          <a href="tel:+40316320183" aria-label="I want a lawyer - Call now">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               I want a lawyer!
@@ -223,7 +223,7 @@ export default function WorkplaceLiabilityEn() {
 
         {/* CTA Button after 6th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+          <a href="tel:+40316320183" aria-label="I want a lawyer - Call now">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               I want a lawyer!
@@ -323,7 +323,7 @@ export default function WorkplaceLiabilityEn() {
 
         {/* CTA Button after 9th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+          <a href="tel:+40316320183" aria-label="I want a lawyer - Call now">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               I want a lawyer!
@@ -390,7 +390,7 @@ export default function WorkplaceLiabilityEn() {
 
         {/* CTA Button after 12th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40745506443" aria-label="I want a lawyer - Call now">
+          <a href="tel:+40316320183" aria-label="I want a lawyer - Call now">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               I want a lawyer!

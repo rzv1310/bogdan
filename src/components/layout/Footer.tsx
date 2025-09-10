@@ -26,7 +26,7 @@ export default function Footer() {
               </li>
               <li>
                 <span>{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}
-                <a href="tel:+40745506443" className="underline hover:no-underline">+40 745 506 443</a>
+                <a href="tel:+40316320183" className="underline hover:no-underline">+40 (31) 632 01 83</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Email:" : "E-mail:"}</span>{" "}
