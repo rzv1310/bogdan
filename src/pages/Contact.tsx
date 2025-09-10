@@ -190,7 +190,7 @@ export default function Contact() {
               addressRegion: "012244",
               addressCountry: "RO",
             },
-            openingHours: ["Mo-Fr 08:00-22:00", "Sa-Su 09:00-20:00"],
+            openingHours: ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
             sameAs: ["https://avocat-drept-penal.ro"],
             contactPoint: [{ "@type": "ContactPoint", telephone: "+40 745 506 443", contactType: "customer service" }],
           }),
