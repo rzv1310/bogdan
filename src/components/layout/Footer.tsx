@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
-                <span>{lang === "en" ? "Strada Colonel Stefan Stoika 22, Bucuresti 012244" : "Strada Colonel Stefan Stoika 22, București 012244"}</span>
+                <a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">{lang === "en" ? "Strada Colonel Stefan Stoika 22, Bucuresti 012244" : "Strada Colonel Stefan Stoika 22, București 012244"}</a>
               </li>
               <li>
                 <span>{lang === "en" ? "Telephone:" : "Telefon:"}</span>{" "}

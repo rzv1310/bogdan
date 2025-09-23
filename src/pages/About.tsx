@@ -71,7 +71,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Address</dt>
-                <dd className="font-medium">Strada Colonel Stefan Stoika 22, Bucuresti 012244</dd>
+                <dd className="font-medium"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, Bucuresti 012244</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
@@ -129,7 +129,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Adresă</dt>
-                <dd className="font-medium">Strada Colonel Stefan Stoika 22, București 012244</dd>
+                <dd className="font-medium"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, București 012244</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
