@@ -37,6 +37,16 @@ export default function RaspunderePenalaMunca() {
             url: typeof window !== "undefined" ? `${window.location.origin}/servicii/raspundere-penala-incidente-locul-de-munca` : "/servicii/raspundere-penala-incidente-locul-de-munca",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Strada Colonel Stefan Stoika 22",
+              addressLocality: "București",
+              addressRegion: "Bucuresti",
+              postalCode: "012244",
+              addressCountry: "RO",
+              url: "https://www.google.com/maps?cid=17818591254142574295"
+            },
+            hasMap: "https://www.google.com/maps?cid=17818591254142574295",
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),

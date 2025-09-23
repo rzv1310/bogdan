@@ -340,7 +340,17 @@ const Index = () => {
           "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
           "publisher": {
             "@type": "LegalService",
-            "name": "Avocat Bogdan Lamatic"
+            "name": "Avocat Bogdan Lamatic",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Strada Colonel Stefan Stoika 22",
+              "addressLocality": "București",
+              "addressRegion": "Bucuresti",
+              "postalCode": "012244",
+              "addressCountry": "RO",
+              "url": "https://www.google.com/maps?cid=17818591254142574295"
+            },
+            "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
           },
           "potentialAction": {
             "@type": "SearchAction",

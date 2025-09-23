@@ -67,6 +67,16 @@ export default function CriminalitateEconomica() {
                   }
                 ],
                 "availableLanguage": ["ro", "en"],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Strada Colonel Stefan Stoika 22",
+                  "addressLocality": "București",
+                  "addressRegion": "Bucuresti",
+                  "postalCode": "012244",
+                  "addressCountry": "RO",
+                  "url": "https://www.google.com/maps?cid=17818591254142574295"
+                },
+                "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",

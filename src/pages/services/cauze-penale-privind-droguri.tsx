@@ -86,11 +86,14 @@ export default function CauzeDroguri() {
       telephone: "+40 (31) 632 01 83",
       address: {
         "@type": "PostalAddress",
-        streetAddress:
-          "Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5",
+        streetAddress: "Strada Colonel Stefan Stoika 22",
         addressLocality: "București",
+        addressRegion: "Bucuresti",
+        postalCode: "012244",
         addressCountry: "RO",
+        url: "https://www.google.com/maps?cid=17818591254142574295"
       },
+      hasMap: "https://www.google.com/maps?cid=17818591254142574295",
       founder: {
         "@type": "Person",
         name: "Bogdan Lamatic",

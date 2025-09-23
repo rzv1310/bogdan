@@ -39,6 +39,16 @@ export default function DrugOffensesEn() {
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Strada Colonel Stefan Stoika 22",
+              addressLocality: "București",
+              addressRegion: "Bucuresti",
+              postalCode: "012244",
+              addressCountry: "RO",
+              url: "https://www.google.com/maps?cid=17818591254142574295"
+            },
+            hasMap: "https://www.google.com/maps?cid=17818591254142574295",
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
