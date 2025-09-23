@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Col 2: Servicii */}
           <nav aria-labelledby="footer-services">
             <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">
-              {lang === "en" ? "Criminal Law Attorney Services Bucharest" : "Servicii Avocat Drept Penal Bucuresti"}
+              {lang === "en" ? "Criminal Law Attorney Services Bucharest" : "Arii de practică"}
             </h2>
             <ul className="mt-4 space-y-2 text-sm">
               {svcList.map((s) => (
