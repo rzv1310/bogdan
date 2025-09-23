@@ -273,7 +273,17 @@ const HomepageEN = () => {
           "jobTitle": "Criminal defense attorney",
           "worksFor": {
             "@type": "LegalService",
-            "name": "Attorney Bogdan Lamatic"
+            "name": "Attorney Bogdan Lamatic",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Strada Colonel Stefan Stoika 22",
+              "addressLocality": "București",
+              "addressRegion": "Bucuresti",
+              "postalCode": "012244",
+              "addressCountry": "RO",
+              "url": "https://www.google.com/maps?cid=17818591254142574295"
+            },
+            "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
           },
           "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
