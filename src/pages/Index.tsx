@@ -197,10 +197,10 @@ const Index = () => {
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "București",
             "addressRegion": "Bucuresti",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "areaServed": [
@@ -291,10 +291,10 @@ const Index = () => {
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "București",
             "addressRegion": "Bucuresti",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "alumniOf": {
@@ -365,10 +365,10 @@ const Index = () => {
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "București", 
             "addressRegion": "Bucuresti",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "geo": {
