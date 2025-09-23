@@ -186,10 +186,25 @@ export default function ContactEn() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ContactPage",
-            name: "Contact - Attorney Bogdan Lamatic",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/contact` : "/en/contact",
-            inLanguage: "en-US",
+            "@type": "Attorney",
+            name: "Attorney Bogdan Lamatic",
+            url: "https://avocatpenalbucuresti.ro/en/contact",
+            areaServed: "Romania",
+            telephone: "+40 (31) 632 01 83",
+            email: "contact@avocatpenalbucuresti.ro",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Strada Colonel Stefan Stoika 22",
+              addressLocality: "Bucuresti",
+              addressRegion: "Bucuresti",
+              postalCode: "012244",
+              addressCountry: "RO",
+              url: "https://www.google.com/maps?cid=17818591254142574295"
+            },
+            hasMap: "https://www.google.com/maps?cid=17818591254142574295",
+            openingHours: ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
+            sameAs: ["https://avocatpenalbucuresti.ro"],
+            contactPoint: [{ "@type": "ContactPoint", telephone: "+40 (31) 632 01 83", contactType: "customer service" }],
           }),
         }}
       />
