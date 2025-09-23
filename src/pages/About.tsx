@@ -29,7 +29,9 @@ export default function About() {
       addressRegion: "012244",
       streetAddress: "Strada Colonel Stefan Stoika 22",
       addressCountry: "RO",
+      url: "https://www.google.com/maps?cid=17818591254142574295"
     },
+    hasMap: "https://www.google.com/maps?cid=17818591254142574295",
     email: "mailto:contact@avocatpenalbucuresti.ro",
     telephone: "+40 (31) 632 01 83",
     memberOf: [

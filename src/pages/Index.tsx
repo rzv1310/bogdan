@@ -201,8 +201,10 @@ const Index = () => {
             "addressLocality": "București",
             "addressRegion": "Bucuresti",
             "postalCode": "012244",
-            "addressCountry": "RO"
+            "addressCountry": "RO",
+            "url": "https://www.google.com/maps?cid=17818591254142574295"
           },
+          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
           "areaServed": [
             {
               "@type": "City",
@@ -295,8 +297,10 @@ const Index = () => {
             "addressLocality": "București",
             "addressRegion": "Bucuresti",
             "postalCode": "012244",
-            "addressCountry": "RO"
+            "addressCountry": "RO",
+            "url": "https://www.google.com/maps?cid=17818591254142574295"
           },
+          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
           "alumniOf": {
             "@type": "Organization",
             "name": "Universitatea de Vest din Timișoara"
@@ -369,8 +373,10 @@ const Index = () => {
             "addressLocality": "București", 
             "addressRegion": "Bucuresti",
             "postalCode": "012244",
-            "addressCountry": "RO"
+            "addressCountry": "RO",
+            "url": "https://www.google.com/maps?cid=17818591254142574295"
           },
+          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": 44.4268,
