@@ -41,6 +41,18 @@ export default function Footer() {
                 <span>{lang === "en" ? "Monday - Friday: 06-22, Saturday - Sunday: 09-20" : "Luni - Vineri: 06-22, Sâmbătă - Duminică: 09-20"}</span>
               </li>
             </ul>
+            
+            {/* Google Maps */}
+            <div className="mt-6">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82397.0866811247!2d25.984249105775728!3d44.42358247088336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201c1d1905a29%3A0xf7485a56b50cded7!2sAvocat%20Drept%20Penal%20Bucuresti%20Bogdan%20Lamatic!5e1!3m2!1sro!2sro!4v1758693746846!5m2!1sro!2sro" 
+                className="w-full h-48 md:h-64 rounded border-0" 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title={lang === "en" ? "Office Location" : "Locația biroului"}
+              />
+            </div>
           </section>
 
           {/* Col 2: Servicii */}
