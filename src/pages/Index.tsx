@@ -603,7 +603,7 @@ const Index = () => {
                 alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
                 title="Avocat drept penal Bucuresti Bogdan Lamatic"
                 loading="lazy"
-                className="w-full h-auto max-w-md md:max-w-[75%] rounded-lg shadow-md"
+                className="w-full h-auto max-w-md md:max-w-sm rounded-lg shadow-md"
               />
             </div>
           </div>
