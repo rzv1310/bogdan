@@ -20,22 +20,6 @@ export default function EnIndex() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Criminal Defense Lawyer in Bucharest, Romania",
-            url:
-              typeof window !== "undefined"
-                ? `${window.location.origin}/en`
-                : "/en",
-            telephone: "+40 (31) 632 01 83",
-            areaServed: ["RO", "EU"],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Criminal Defense Lawyer in Bucharest, Romania",
             url:
