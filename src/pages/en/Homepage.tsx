@@ -371,15 +371,16 @@ const HomepageEN = () => {
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 44.4268,
-            "longitude": 26.1025
+            "latitude": 44.4572663,
+            "longitude": 26.0635712
           },
           "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
           "paymentAccepted": "Cash, BankTransfer",
           "currenciesAccepted": "RON, EUR",
           "priceRange": "$$",
           "sameAs": [
-            "https://www.linkedin.com/in/bogdan-lamatic"
+            "https://www.linkedin.com/in/bogdan-lamatic",
+            "https://x.com/BogdanLamatic"
           ]
         })
       }}
