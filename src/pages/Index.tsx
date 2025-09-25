@@ -190,7 +190,7 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "name": "Avocat Bogdan Lamatic",
+          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
           "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
           "telephone": "+40316320183",
@@ -287,7 +287,7 @@ const Index = () => {
           "jobTitle": "Avocat specializat în drept penal",
           "worksFor": {
             "@type": "LegalService",
-            "name": "Avocat Bogdan Lamatic",
+            "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Strada Colonel Stefan Stoika 22",
@@ -344,13 +344,13 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Avocat Bogdan Lamatic - Apărare Penală București",
+          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
           "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
           "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
           "publisher": {
             "@type": "LegalService",
-            "name": "Avocat Bogdan Lamatic",
+            "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Strada Colonel Stefan Stoika 22",
@@ -382,7 +382,7 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
-          "name": "Avocat Bogdan Lamatic",
+          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
           "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
           "telephone": "+40316320183",

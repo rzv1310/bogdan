@@ -21,7 +21,7 @@ export default function EnIndex() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Attorney Bogdan Lamatic",
+            name: "Criminal Defense Lawyer in Bucharest, Romania",
             url:
               typeof window !== "undefined"
                 ? `${window.location.origin}/en`
@@ -37,7 +37,7 @@ export default function EnIndex() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "Attorney Bogdan Lamatic",
+            name: "Criminal Defense Lawyer in Bucharest, Romania",
             url:
               typeof window !== "undefined"
                 ? `${window.location.origin}/en`

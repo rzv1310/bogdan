@@ -178,7 +178,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "name": "Attorney Bogdan Lamatic",
+          "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
           "telephone": "+40316320183",
@@ -273,7 +273,7 @@ const HomepageEN = () => {
           "jobTitle": "Criminal defense attorney",
           "worksFor": {
             "@type": "LegalService",
-            "name": "Attorney Bogdan Lamatic",
+            "name": "Criminal Defense Lawyer in Bucharest, Romania",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Strada Colonel Stefan Stoika 22",
@@ -328,13 +328,13 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Attorney Bogdan Lamatic - Criminal Defense Bucharest",
+          "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
           "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
           "inLanguage": "en-US",
           "publisher": {
             "@type": "LegalService",
-            "name": "Attorney Bogdan Lamatic"
+            "name": "Criminal Defense Lawyer in Bucharest, Romania"
           },
           "potentialAction": {
             "@type": "SearchAction",
@@ -356,7 +356,7 @@ const HomepageEN = () => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LocalBusiness` : "https://avocatpenalbucuresti.ro/en#LocalBusiness",
-          "name": "Attorney Bogdan Lamatic",
+          "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
           "telephone": "+40316320183",
