@@ -171,99 +171,99 @@ const serviceRoutes: (string | null)[] = [
 
 const faqData = [
   {
-    question: "Cât costă reprezentarea într-un dosar penal?",
+    question: "1. Cât costă reprezentarea într-un dosar penal?",
     answer: "Onorariul depinde de complexitatea dosarului și de stadiul procesului. La prima consultanță (gratuită) stabilesc un tarif estimativ și toate costurile sunt prevăzute transparent în contract. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "Oferiți consultanță inițială gratuită?",
+    question: "2. Oferiți consultanță inițială gratuită?",
     answer: "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "Aveți experiență în dosare penale legate de droguri?",
+    question: "3. Aveți experiență în dosare penale legate de droguri?",
     answer: "Da, am reprezentat clienți în cauze variate – de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri – cu rezultate favorabile."
   },
   {
-    question: "Cât durează un proces penal?",
+    question: "4. Cât durează un proces penal?",
     answer: "Poate varia de la câteva luni la câțiva ani, în funcție de complexitatea cazului și etapele procesuale. Voi face tot posibilul să accelerez procedura în limitele legii. Sunați-mă la +40 (31) 632 01 83 pentru o consultație gratuită."
   },
   {
-    question: "Care sunt drepturile mele ca suspect sau inculpat?",
+    question: "5. Care sunt drepturile mele ca suspect sau inculpat?",
     answer: "Aveți dreptul la avocat, la informarea corectă asupra acuzațiilor, la consultarea dosarului și la un proces echitabil. Le voi explica detaliat în raport cu cazul dvs. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
+    question: "6. Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
     answer: "Da, mă ocup personal de dosar și de reprezentarea în fața instanței. Dacă este nevoie, colaborez și cu parteneri de încredere, dar eu rămân avocatul de contact."
   },
   {
-    question: "Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
+    question: "7. Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
     answer: "Putem folosi căi de atac - apel, recurs sau contestație, în funcție de situația juridică și termenele legale."
   },
   {
-    question: "Pot beneficia de asistență juridică gratuită?",
+    question: "8. Pot beneficia de asistență juridică gratuită?",
     answer: "Da, în anumite condiții puteți obține avocat din oficiu sau sprijin prin sistemul de asistență juridică. Vă pot ajuta să verificați eligibilitatea."
   },
   {
-    question: "Cum pot găsi un avocat bun în România sau in București?",
+    question: "9. Cum pot găsi un avocat bun în România sau in București?",
     answer: "Căutați un avocat înscris în Baroul București, cu experiență dovedită în cazuri similare și cu recenzii pozitive de la clienți. În dreptul penal, experiența practică și cunoașterea procedurii sunt esențiale. Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Avocat drept penal București Bogdan Lamatic Strada Colonel Ștefan Stoika 22, București 012244 Telefon: 0316320183"
   },
   {
-    question: "Pot evita cazierul judiciar dacă îmi recunosc vina?",
+    question: "10. Pot evita cazierul judiciar dacă îmi recunosc vina?",
     answer: "În anumite situații, legea permite aplicarea unor pedepse fără înscriere în cazier (ex. renunțarea la urmărirea penală, amenda administrativă, renunțarea la aplicarea pedepsei). Fiecare caz se analizează individual. Sunați-ma la +40 (31) 632 01 83"
   },
   {
-    question: "Ce drepturi am în cazul reținerii de către poliție?",
+    question: "11. Ce drepturi am în cazul reținerii de către poliție?",
     answer: "Aveți dreptul să fiți informat asupra motivelor, să beneficiați de avocat ales sau din oficiu, să cereți un interpret dacă nu vorbiți româna și să primiți asistență medicală dacă este nevoie. Mă puteți suna începând cu ora 6 dimineața. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "Ce este eliberarea condiționată și pot beneficia de ea?",
+    question: "12. Ce este eliberarea condiționată și pot beneficia de ea?",
     answer: "Eliberarea condiționată este posibilitatea de a fi pus în libertate înainte de termen, dacă ați executat o parte din pedeapsă, ați avut bună purtare și ați îndeplinit condițiile legale."
   },
   {
-    question: "Cât timp poate dura o anchetă penală?",
+    question: "13. Cât timp poate dura o anchetă penală?",
     answer: "Durata depinde de complexitatea cazului și de numărul probelor, însă legea prevede termene maxime pentru fiecare etapă, pentru a asigura un proces echitabil. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "Pot refuza să dau declarații împotriva mea?",
+    question: "14. Pot refuza să dau declarații împotriva mea?",
     answer: "Da, aveți dreptul să nu vă autoincriminați, conform Constituției României și Convenției Europene a Drepturilor Omului."
   },
   {
-    question: "Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
+    question: "15. Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
     answer: "Contactați-mă imediat la +40 (31) 632 01 83. Voi analiza acuzațiile, voi pregăti apărarea și voi contesta probele sau procedurile ilegale pentru a vă proteja drepturile."
   },
   {
-    question: "Am fost prins conducând sub influența alcoolului. Ce risc?",
+    question: "16. Am fost prins conducând sub influența alcoolului. Ce risc?",
     answer: "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "Poliția a găsit droguri asupra mea, dar erau pentru consum propriu. Ce urmează?",
+    question: "17. Poliția a găsit droguri asupra mea, dar erau pentru consum propriu. Ce urmează?",
     answer: "Deținerea de droguri pentru consum este infracțiune. În anumite condiții, se poate obține renunțarea la urmărirea penală sau suspendarea pedepsei. Este important să aveți avocat încă din prima fază. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "Am fost acuzat de furt, dar nu există probe clare. Cum mă pot apăra?",
+    question: "18. Am fost acuzat de furt, dar nu există probe clare. Cum mă pot apăra?",
     answer: "Lipsa probelor suficiente sau probe obținute ilegal pot duce la clasarea dosarului sau la achitare. Vom analiza actele dosarului și vom formula apărările necesare. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "Ce se întâmplă dacă refuz testul de alcoolemie sau de droguri?",
+    question: "19. Ce se întâmplă dacă refuz testul de alcoolemie sau de droguri?",
     answer: "Refuzul testării este infracțiune distinctă și atrage dosar penal. Este mai grav decât un rezultat pozitiv, de aceea e important să cereți imediat asistență juridică. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "Sunt suspect de violență domestică. Care sunt consecințele?",
+    question: "20. Sunt suspect de violență domestică. Care sunt consecințele?",
     answer: "Violența domestică este infracțiune, iar pe lângă pedeapsă se pot dispune ordine de protecție. Voi construi apărarea luând în calcul declarațiile martorilor, probele și circumstanțele. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "Am primit citație ca martor într-un dosar penal. Pot să nu merg?",
+    question: "21. Am primit citație ca martor într-un dosar penal. Pot să nu merg?",
     answer: "Nu. Prezența este obligatorie. Refuzul poate atrage amendă sau chiar aducerea cu mandat. Totuși, aveți dreptul să refuzați să vă autoincriminați."
   },
   {
-    question: "Ce fac dacă sunt acuzat pe nedrept?",
+    question: "22. Ce fac dacă sunt acuzat pe nedrept?",
     answer: "Contactați imediat un avocat. Sunați-mă la +40 (31) 632 01 83 Vom contesta probele, vom aduce martori și expertize independente, iar în unele cazuri putem formula plângere pentru denunț calomnios."
   },
   {
-    question: "Pot fi reținut mai mult de 24 de ore de poliție?",
+    question: "23. Pot fi reținut mai mult de 24 de ore de poliție?",
     answer: "Reținerea nu poate depăși 24 de ore. Prelungirea se face prin arestare preventivă dispusă de judecător, pentru care se impune apărare în fața instanței."
   },
   {
-    question: "Ce înseamnă acord de recunoaștere a vinovăției?",
+    question: "24. Ce înseamnă acord de recunoaștere a vinovăției?",
     answer: "Este o procedură prin care recunoașteți fapta în schimbul unei pedepse reduse. Se aplică doar în anumite situații și trebuie analizat cu atenție, pentru a nu accepta o soluție dezavantajoasă."
   }
 ];
