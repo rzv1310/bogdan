@@ -171,102 +171,129 @@ const serviceRoutes: (string | null)[] = [
 
 const faqData = [
   {
-    question: "1. Ce costuri implică reprezentarea într-un dosar penal?",
+    question: "Cât costă reprezentarea într-un dosar penal?",
     answer: "Onorariul depinde de complexitatea dosarului și de stadiul procesului. La prima consultanță (gratuită) stabilesc un tarif estimativ și toate costurile sunt prevăzute transparent în contract. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "2. Oferiți consultanță inițială gratuită?",
-    answer: "Da, prima consultanță este gratuită. Vă înțeleg situația și vă explic toate opțiunile legale disponibile, fără nicio obligație din partea dumneavoastră."
+    question: "Oferiți consultanță inițială gratuită?",
+    answer: "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "3. În cât timp se rezolvă un dosar penal?",
-    answer: "Durata variază în funcție de complexitatea cauzei. Dosarele simple pot fi rezolvate în 6-12 luni, cele complexe pot dura 2-3 ani. Vă țin la curent cu evoluția dosarului la fiecare etapă."
+    question: "Aveți experiență în dosare penale legate de droguri?",
+    answer: "Da, am reprezentat clienți în cauze variate – de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri – cu rezultate favorabile."
   },
   {
-    question: "4. Ce se întâmplă dacă sunt chemat la audieri?",
-    answer: "Nu mergeți niciodată singur la audieri! Contactați-mă imediat la +40 (31) 632 01 83. Vă voi asista la toate interogatoriile și vă voi pregăti în prealabil."
+    question: "Cât durează un proces penal?",
+    answer: "Poate varia de la câteva luni la câțiva ani, în funcție de complexitatea cazului și etapele procesuale. Voi face tot posibilul să accelerez procedura în limitele legii. Sunați-mă la +40 (31) 632 01 83 pentru o consultație gratuită."
   },
   {
-    question: "5. Pot să fiu achitat în dosarul penal?",
-    answer: "Da, achitarea este posibilă când se demonstrează că fapta nu există, nu constituie infracțiune sau nu ați săvârșit-o. Analizez fiecare caz pentru a identifica cele mai bune strategii de apărare."
+    question: "Care sunt drepturile mele ca suspect sau inculpat?",
+    answer: "Aveți dreptul la avocat, la informarea corectă asupra acuzațiilor, la consultarea dosarului și la un proces echitabil. Le voi explica detaliat în raport cu cazul dvs. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "6. Ce înseamnă control judecătoresc și cum se poate evita?",
-    answer: "Controlul judecătoresc înseamnă restricții de circulație și obligații specifice. Cu o apărare bună, se poate evita sau obține măsuri mai blânde. Important este să acționăm rapid."
+    question: "Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
+    answer: "Da, mă ocup personal de dosar și de reprezentarea în fața instanței. Dacă este nevoie, colaborez și cu parteneri de încredere, dar eu rămân avocatul de contact."
   },
   {
-    question: "7. Cum procedez dacă am primit citație penală?",
-    answer: "Contactați-mă imediat la +40 (31) 632 01 83. Nu ignorați citația! Vă voi reprezenta în toate fazele procesului și vă voi pregăti pentru fiecare etapă."
+    question: "Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
+    answer: "Putem folosi căi de atac - apel, recurs sau contestație, în funcție de situația juridică și termenele legale."
   },
   {
-    question: "8. Ce diferență există între pedeapsa cu închisoarea și pedeapsa cu închisoarea cu executare?",
-    answer: "Închisoarea cu suspendare înseamnă că nu executați pedeapsa dacă respectați condițiile. Închisoarea cu executare înseamnă executarea efectivă. Lupt pentru obținerea suspendării ori de câte ori este posibil."
+    question: "Pot beneficia de asistență juridică gratuită?",
+    answer: "Da, în anumite condiții puteți obține avocat din oficiu sau sprijin prin sistemul de asistență juridică. Vă pot ajuta să verificați eligibilitatea."
   },
   {
-    question: "9. Pot să îmi schimb avocatul în timpul procesului?",
-    answer: "Da, puteți schimba avocatul oricând. Dacă nu sunteți mulțumit de reprezentarea actuală, vă pot prelua dosarul și continua apărarea cu strategii noi și eficiente."
+    question: "Cum pot găsi un avocat bun în România sau in București?",
+    answer: "Căutați un avocat înscris în Baroul București, cu experiență dovedită în cazuri similare și cu recenzii pozitive de la clienți. În dreptul penal, experiența practică și cunoașterea procedurii sunt esențiale. Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Avocat drept penal București Bogdan Lamatic Strada Colonel Ștefan Stoika 22, București 012244 Telefon: 0316320183"
   },
   {
-    question: "10. Ce se întâmplă dacă nu am bani pentru avocat?",
-    answer: "Există opțiuni de plată în rate și, în cazuri sociale, pot acorda reduceri. De asemenea, puteți beneficia de avocat din oficiu, dar recomand reprezentarea cu avocat ales pentru o apărare optimă."
+    question: "Pot evita cazierul judiciar dacă îmi recunosc vina?",
+    answer: "În anumite situații, legea permite aplicarea unor pedepse fără înscriere în cazier (ex. renunțarea la urmărirea penală, amenda administrativă, renunțarea la aplicarea pedepsei). Fiecare caz se analizează individual. Sunați-ma la +40 (31) 632 01 83"
   },
   {
-    question: "11. Cum se poate contesta o decizie penală?",
-    answer: "Hotărârile pot fi contestate prin apel în 10 zile sau recurs în 15 zile. Analizez fiecare hotărâre pentru a identifica căile de atac și motivele de casare. Termenele sunt stricte!"
+    question: "Ce drepturi am în cazul reținerii de către poliție?",
+    answer: "Aveți dreptul să fiți informat asupra motivelor, să beneficiați de avocat ales sau din oficiu, să cereți un interpret dacă nu vorbiți româna și să primiți asistență medicală dacă este nevoie. Mă puteți suna începând cu ora 6 dimineața. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "12. Ce înseamnă acordul de recunoaștere a vinovăției?",
-    answer: "Este o procedură prin care, prin recunoașterea faptelor, se poate obține o reducere de pedeapsă cu 1/3. Analizez dacă este avantajos în cazul dumneavoastră înainte de a recomanda această opțiune."
+    question: "Ce este eliberarea condiționată și pot beneficia de ea?",
+    answer: "Eliberarea condiționată este posibilitatea de a fi pus în libertate înainte de termen, dacă ați executat o parte din pedeapsă, ați avut bună purtare și ați îndeplinit condițiile legale."
   },
   {
-    question: "13. Pot să iau măsuri preventive dacă știu că urmează să fiu anchetat?",
-    answer: "Da! Este crucial să acționăm preventiv. Vă consiliez despre drepturile dumneavoastră, pregătesc documentele necesare și stabilesc strategia de apărare înainte de a fi citat oficial."
+    question: "Cât timp poate dura o anchetă penală?",
+    answer: "Durata depinde de complexitatea cazului și de numărul probelor, însă legea prevede termene maxime pentru fiecare etapă, pentru a asigura un proces echitabil. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "14. Ce se întâmplă cu cazierul judiciar după o condamnare?",
-    answer: "Cazierul se radiază automat după anumite termene (în funcție de pedeapsă) sau prin cerere de reabilitare. Vă ajut să înțelegeți implicațiile și să luați măsurile potrivite pentru viitor."
+    question: "Pot refuza să dau declarații împotriva mea?",
+    answer: "Da, aveți dreptul să nu vă autoincriminați, conform Constituției României și Convenției Europene a Drepturilor Omului."
   },
   {
-    question: "15. Cum se calculează paguba într-un dosar de criminalitate economică?",
-    answer: "Paguba se calculează conform metodologiilor legale specifice. Este esențial să contest calculul incorect al prejudiciului, deoarece acesta influențează pedeapsa. Am experiență în contestarea rapoartelor de expertiză contabilă."
+    question: "Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
+    answer: "Contactați-mă imediat la +40 (31) 632 01 83. Voi analiza acuzațiile, voi pregăti apărarea și voi contesta probele sau procedurile ilegale pentru a vă proteja drepturile."
   },
   {
-    question: "16. Ce înseamnă prescripția răspunderii penale?",
-    answer: "Înseamnă că după o anumită perioadă, statul nu mai poate să vă tragă la răspundere penală. Termenele variază: 3, 5, 10 sau 15 ani. Verific dacă s-a împlinit prescripția în dosarul dumneavoastră."
+    question: "Am fost prins conducând sub influența alcoolului. Ce risc?",
+    answer: "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "17. Pot să recuperez cheltuielile de judecată în caz de achitare?",
-    answer: "Da, în caz de achitare sau încetare a procesului penal puteți recupera cheltuielile de judecată, inclusiv onorariul avocatului. Mă ocup de formularea acestor cereri de despăgubire."
+    question: "Poliția a găsit droguri asupra mea, dar erau pentru consum propriu. Ce urmează?",
+    answer: "Deținerea de droguri pentru consum este infracțiune. În anumite condiții, se poate obține renunțarea la urmărirea penală sau suspendarea pedepsei. Este important să aveți avocat încă din prima fază. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "18. Ce se întâmplă cu bunurile indisponibilizate în dosar?",
-    answer: "Bunurile pot fi restituite dacă se demonstrează că nu provin din infracțiune sau dacă se achită cauza. Formulez cereri de ridicare a sekvestrului și urmăresc restituirea bunurilor clienților mei."
+    question: "Am fost acuzat de furt, dar nu există probe clare. Cum mă pot apăra?",
+    answer: "Lipsa probelor suficiente sau probe obținute ilegal pot duce la clasarea dosarului sau la achitare. Vom analiza actele dosarului și vom formula apărările necesare. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "19. Cum pot să îmi apăr reputația în timpul procesului penal?",
-    answer: "Procesele penale pot afecta grav reputația. Vă consiliez despre comunicarea publică, măsurile de protecție a imaginii și strategiile pentru minimizarea impactului mediatic negativ."
+    question: "Ce se întâmplă dacă refuz testul de alcoolemie sau de droguri?",
+    answer: "Refuzul testării este infracțiune distinctă și atrage dosar penal. Este mai grav decât un rezultat pozitiv, de aceea e important să cereți imediat asistență juridică. Sunați-mă la +40 (31) 632 01 83"
   },
   {
-    question: "20. Ce se întâmplă cu dosarul dacă părăsesc țara?",
-    answer: "Puteți părăsi țara cu acordul instanței sau al procurorului. Dacă plecați ilegal, puteți fi dat în urmărire națională sau internațională. Vă ajut să obțineți acordurile necesare legal."
+    question: "Sunt suspect de violență domestică. Care sunt consecințele?",
+    answer: "Violența domestică este infracțiune, iar pe lângă pedeapsă se pot dispune ordine de protecție. Voi construi apărarea luând în calcul declarațiile martorilor, probele și circumstanțele. Telefon +40 (31) 632 01 83"
   },
   {
-    question: "21. Pot să fiu extradat din altă țară pentru un dosar din România?",
-    answer: "Da, România are acorduri de extrădare cu multe țări. Dacă vă aflați în această situație, vă pot asista prin colaborare cu avocați din țara respectivă pentru a contesta extrădarea."
+    question: "Am primit citație ca martor într-un dosar penal. Pot să nu merg?",
+    answer: "Nu. Prezența este obligatorie. Refuzul poate atrage amendă sau chiar aducerea cu mandat. Totuși, aveți dreptul să refuzați să vă autoincriminați."
   },
   {
-    question: "22. Ce înseamnă circumstanțele atenuante și agravante?",
-    answer: "Atenuantele reduc pedeapsa (prima infracțiune, comportament procesual corect), agravantele o măresc (recidivă, prejudiciu mare). Identific și pledez pentru toate atenuantele aplicabile în cazul dumneavoastră."
+    question: "Ce fac dacă sunt acuzat pe nedrept?",
+    answer: "Contactați imediat un avocat. Sunați-mă la +40 (31) 632 01 83 Vom contesta probele, vom aduce martori și expertize independente, iar în unele cazuri putem formula plângere pentru denunț calomnios."
   },
   {
-    question: "23. Cum să procedez dacă sunt victima unei infracțiuni?",
-    answer: "Ca victimă aveți drepturi importante: despăgubire civilă, protecție, informare despre dosar. Vă reprezint pentru recuperarea daunelor și vă apăr interesele pe parcursul întregului proces."
+    question: "Pot fi reținut mai mult de 24 de ore de poliție?",
+    answer: "Reținerea nu poate depăși 24 de ore. Prelungirea se face prin arestare preventivă dispusă de judecător, pentru care se impune apărare în fața instanței."
   },
   {
-    question: "24. De ce să vă aleg pe dumneavoastră ca avocat?",
-    answer: "Am experiență de peste 10 ani în drept penal, rată mare de succes în dosarele complexe, abordare personalizată pentru fiecare client și disponibilitate 24/7. Prima consultanță este gratuită. Sunați la +40 (31) 632 01 83"
+    question: "Ce înseamnă acord de recunoaștere a vinovăției?",
+    answer: "Este o procedură prin care recunoașteți fapta în schimbul unei pedepse reduse. Se aplică doar în anumite situații și trebuie analizat cu atenție, pentru a nu accepta o soluție dezavantajoasă."
   }
 ];
+
+// Utility function to render text with clickable phone numbers
+const renderTextWithPhoneLinks = (text: string) => {
+  const phoneRegex = /\+40 \(31\) 632 01 83/g;
+  const parts = text.split(phoneRegex);
+  const matches = text.match(phoneRegex);
+  
+  if (!matches) {
+    return text;
+  }
+  
+  return parts.reduce((acc, part, index) => {
+    acc.push(part);
+    if (index < matches.length) {
+      acc.push(
+        <a 
+          key={index}
+          href="tel:+40316320183" 
+          className="underline hover:no-underline text-primary"
+        >
+          +40 (31) 632 01 83
+        </a>
+      );
+    }
+    return acc;
+  }, [] as (string | JSX.Element)[]);
+};
 
 const Index = () => {
   const { lang } = useLanguage();
@@ -933,7 +960,7 @@ const Index = () => {
                           {faq.question}
                         </h3>
                         <p className="text-muted-foreground leading-relaxed">
-                          {faq.answer}
+                          {renderTextWithPhoneLinks(faq.answer)}
                         </p>
                       </div>
                     </CarouselItem>
