@@ -134,7 +134,7 @@ export const translations = {
     callNow: "Call now",
     ctaLawyerButton: "I need a lawyer!",
     rightsReserved: "All rights reserved.",
-    servicesTitle: "CRIMINAL LAW PRACTICE AREAS",
+    servicesTitle: "CRIMINAL JUSTICE ATTORNEY PRACTICE AREAS",
     services: [
       {
         title: "CRIMINAL LAW",
