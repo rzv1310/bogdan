@@ -204,7 +204,7 @@ const faqData = [
   },
   {
     question: "9. Cum pot găsi un avocat bun în România sau in București?",
-    answer: "Căutați un avocat înscris în Baroul București, cu experiență dovedită în cazuri similare și cu recenzii pozitive de la clienți. În dreptul penal, experiența practică și cunoașterea procedurii sunt esențiale. Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Avocat drept penal București Bogdan Lamatic Strada Colonel Ștefan Stoika 22, București 012244 Telefon: 0316320183"
+    answer: "Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Avocat drept penal București Bogdan Lamatic Strada Colonel Ștefan Stoika 22, București 012244 Telefon: 0316320183"
   },
   {
     question: "10. Pot evita cazierul judiciar dacă îmi recunosc vina?",
@@ -268,31 +268,62 @@ const faqData = [
   }
 ];
 
-// Utility function to render text with clickable phone numbers
-const renderTextWithPhoneLinks = (text: string) => {
+// Utility function to render text with clickable phone numbers and URLs
+const renderTextWithLinks = (text: string) => {
+  // First handle URLs
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  let processedText = text.replace(urlRegex, (url) => `||URL||${url}||URL||`);
+  
+  // Then handle phone numbers
   const phoneRegex = /\+40 \(31\) 632 01 83/g;
-  const parts = text.split(phoneRegex);
-  const matches = text.match(phoneRegex);
+  processedText = processedText.replace(phoneRegex, '||PHONE||+40 (31) 632 01 83||PHONE||');
   
-  if (!matches) {
-    return text;
-  }
+  // Also handle the phone number without parentheses format
+  const phoneRegex2 = /0316320183/g;
+  processedText = processedText.replace(phoneRegex2, '||PHONE2||0316320183||PHONE2||');
   
-  return parts.reduce((acc, part, index) => {
-    acc.push(part);
-    if (index < matches.length) {
-      acc.push(
+  // Split by all markers and process
+  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2)\|\|[^|]+\|\|(?:URL|PHONE|PHONE2)\|\|)/);
+  
+  return parts.map((part, index) => {
+    if (part.startsWith('||URL||') && part.endsWith('||URL||')) {
+      const url = part.slice(7, -7);
+      return (
         <a 
-          key={index}
+          key={index} 
+          href={url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline hover:no-underline text-primary"
+        >
+          {url}
+        </a>
+      );
+    } else if (part.startsWith('||PHONE||') && part.endsWith('||PHONE||')) {
+      const phone = part.slice(9, -9);
+      return (
+        <a 
+          key={index} 
           href="tel:+40316320183" 
           className="underline hover:no-underline text-primary"
         >
-          +40 (31) 632 01 83
+          {phone}
+        </a>
+      );
+    } else if (part.startsWith('||PHONE2||') && part.endsWith('||PHONE2||')) {
+      const phone = part.slice(10, -10);
+      return (
+        <a 
+          key={index} 
+          href="tel:+40316320183" 
+          className="underline hover:no-underline text-primary"
+        >
+          {phone}
         </a>
       );
     }
-    return acc;
-  }, [] as (string | JSX.Element)[]);
+    return part;
+  });
 };
 
 const Index = () => {
@@ -959,9 +990,9 @@ const Index = () => {
                         <h3 className="text-xl font-semibold mb-4 text-primary">
                           {faq.question}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {renderTextWithPhoneLinks(faq.answer)}
-                        </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                              {renderTextWithLinks(faq.answer)}
+                            </p>
                       </div>
                     </CarouselItem>
                   ))}
