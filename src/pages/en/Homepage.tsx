@@ -370,7 +370,8 @@ const HomepageEN = () => {
           "sameAs": [
             "https://www.linkedin.com/in/bogdan-lamatic",
             "https://x.com/BogdanLamatic"
-          ]
+          ],
+          "image": typeof window !== "undefined" ? `${window.location.origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg` : "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg"
         })
       }}
     />
