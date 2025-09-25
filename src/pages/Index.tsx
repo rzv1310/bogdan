@@ -204,7 +204,7 @@ const faqData = [
   },
   {
     question: "9. Cum pot găsi un avocat bun în România sau in București?",
-    answer: "Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Sunați-mă pentru o consultație gratuită la 0316320183"
+    answer: "Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine\nSunați-mă pentru o consultație gratuită la 0316320183"
   },
   {
     question: "10. Pot evita cazierul judiciar dacă îmi recunosc vina?",
