@@ -6,6 +6,7 @@ import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -167,6 +168,105 @@ const serviceRoutes: (string | null)[] = [
   "/servicii/raspundere-penala-incidente-locul-de-munca",
   "/servicii/reprezentarea-victimelor-in-procese-penale",
 ] as const;
+
+const faqData = [
+  {
+    question: "1. Ce costuri implică reprezentarea într-un dosar penal?",
+    answer: "Onorariul depinde de complexitatea dosarului și de stadiul procesului. La prima consultanță (gratuită) stabilesc un tarif estimativ și toate costurile sunt prevăzute transparent în contract. Sunați-mă la +40 (31) 632 01 83"
+  },
+  {
+    question: "2. Oferiți consultanță inițială gratuită?",
+    answer: "Da, prima consultanță este gratuită. Vă înțeleg situația și vă explic toate opțiunile legale disponibile, fără nicio obligație din partea dumneavoastră."
+  },
+  {
+    question: "3. În cât timp se rezolvă un dosar penal?",
+    answer: "Durata variază în funcție de complexitatea cauzei. Dosarele simple pot fi rezolvate în 6-12 luni, cele complexe pot dura 2-3 ani. Vă țin la curent cu evoluția dosarului la fiecare etapă."
+  },
+  {
+    question: "4. Ce se întâmplă dacă sunt chemat la audieri?",
+    answer: "Nu mergeți niciodată singur la audieri! Contactați-mă imediat la +40 (31) 632 01 83. Vă voi asista la toate interogatoriile și vă voi pregăti în prealabil."
+  },
+  {
+    question: "5. Pot să fiu achitat în dosarul penal?",
+    answer: "Da, achitarea este posibilă când se demonstrează că fapta nu există, nu constituie infracțiune sau nu ați săvârșit-o. Analizez fiecare caz pentru a identifica cele mai bune strategii de apărare."
+  },
+  {
+    question: "6. Ce înseamnă control judecătoresc și cum se poate evita?",
+    answer: "Controlul judecătoresc înseamnă restricții de circulație și obligații specifice. Cu o apărare bună, se poate evita sau obține măsuri mai blânde. Important este să acționăm rapid."
+  },
+  {
+    question: "7. Cum procedez dacă am primit citație penală?",
+    answer: "Contactați-mă imediat la +40 (31) 632 01 83. Nu ignorați citația! Vă voi reprezenta în toate fazele procesului și vă voi pregăti pentru fiecare etapă."
+  },
+  {
+    question: "8. Ce diferență există între pedeapsa cu închisoarea și pedeapsa cu închisoarea cu executare?",
+    answer: "Închisoarea cu suspendare înseamnă că nu executați pedeapsa dacă respectați condițiile. Închisoarea cu executare înseamnă executarea efectivă. Lupt pentru obținerea suspendării ori de câte ori este posibil."
+  },
+  {
+    question: "9. Pot să îmi schimb avocatul în timpul procesului?",
+    answer: "Da, puteți schimba avocatul oricând. Dacă nu sunteți mulțumit de reprezentarea actuală, vă pot prelua dosarul și continua apărarea cu strategii noi și eficiente."
+  },
+  {
+    question: "10. Ce se întâmplă dacă nu am bani pentru avocat?",
+    answer: "Există opțiuni de plată în rate și, în cazuri sociale, pot acorda reduceri. De asemenea, puteți beneficia de avocat din oficiu, dar recomand reprezentarea cu avocat ales pentru o apărare optimă."
+  },
+  {
+    question: "11. Cum se poate contesta o decizie penală?",
+    answer: "Hotărârile pot fi contestate prin apel în 10 zile sau recurs în 15 zile. Analizez fiecare hotărâre pentru a identifica căile de atac și motivele de casare. Termenele sunt stricte!"
+  },
+  {
+    question: "12. Ce înseamnă acordul de recunoaștere a vinovăției?",
+    answer: "Este o procedură prin care, prin recunoașterea faptelor, se poate obține o reducere de pedeapsă cu 1/3. Analizez dacă este avantajos în cazul dumneavoastră înainte de a recomanda această opțiune."
+  },
+  {
+    question: "13. Pot să iau măsuri preventive dacă știu că urmează să fiu anchetat?",
+    answer: "Da! Este crucial să acționăm preventiv. Vă consiliez despre drepturile dumneavoastră, pregătesc documentele necesare și stabilesc strategia de apărare înainte de a fi citat oficial."
+  },
+  {
+    question: "14. Ce se întâmplă cu cazierul judiciar după o condamnare?",
+    answer: "Cazierul se radiază automat după anumite termene (în funcție de pedeapsă) sau prin cerere de reabilitare. Vă ajut să înțelegeți implicațiile și să luați măsurile potrivite pentru viitor."
+  },
+  {
+    question: "15. Cum se calculează paguba într-un dosar de criminalitate economică?",
+    answer: "Paguba se calculează conform metodologiilor legale specifice. Este esențial să contest calculul incorect al prejudiciului, deoarece acesta influențează pedeapsa. Am experiență în contestarea rapoartelor de expertiză contabilă."
+  },
+  {
+    question: "16. Ce înseamnă prescripția răspunderii penale?",
+    answer: "Înseamnă că după o anumită perioadă, statul nu mai poate să vă tragă la răspundere penală. Termenele variază: 3, 5, 10 sau 15 ani. Verific dacă s-a împlinit prescripția în dosarul dumneavoastră."
+  },
+  {
+    question: "17. Pot să recuperez cheltuielile de judecată în caz de achitare?",
+    answer: "Da, în caz de achitare sau încetare a procesului penal puteți recupera cheltuielile de judecată, inclusiv onorariul avocatului. Mă ocup de formularea acestor cereri de despăgubire."
+  },
+  {
+    question: "18. Ce se întâmplă cu bunurile indisponibilizate în dosar?",
+    answer: "Bunurile pot fi restituite dacă se demonstrează că nu provin din infracțiune sau dacă se achită cauza. Formulez cereri de ridicare a sekvestrului și urmăresc restituirea bunurilor clienților mei."
+  },
+  {
+    question: "19. Cum pot să îmi apăr reputația în timpul procesului penal?",
+    answer: "Procesele penale pot afecta grav reputația. Vă consiliez despre comunicarea publică, măsurile de protecție a imaginii și strategiile pentru minimizarea impactului mediatic negativ."
+  },
+  {
+    question: "20. Ce se întâmplă cu dosarul dacă părăsesc țara?",
+    answer: "Puteți părăsi țara cu acordul instanței sau al procurorului. Dacă plecați ilegal, puteți fi dat în urmărire națională sau internațională. Vă ajut să obțineți acordurile necesare legal."
+  },
+  {
+    question: "21. Pot să fiu extradat din altă țară pentru un dosar din România?",
+    answer: "Da, România are acorduri de extrădare cu multe țări. Dacă vă aflați în această situație, vă pot asista prin colaborare cu avocați din țara respectivă pentru a contesta extrădarea."
+  },
+  {
+    question: "22. Ce înseamnă circumstanțele atenuante și agravante?",
+    answer: "Atenuantele reduc pedeapsa (prima infracțiune, comportament procesual corect), agravantele o măresc (recidivă, prejudiciu mare). Identific și pledez pentru toate atenuantele aplicabile în cazul dumneavoastră."
+  },
+  {
+    question: "23. Cum să procedez dacă sunt victima unei infracțiuni?",
+    answer: "Ca victimă aveți drepturi importante: despăgubire civilă, protecție, informare despre dosar. Vă reprezint pentru recuperarea daunelor și vă apăr interesele pe parcursul întregului proces."
+  },
+  {
+    question: "24. De ce să vă aleg pe dumneavoastră ca avocat?",
+    answer: "Am experiență de peste 10 ani în drept penal, rată mare de succes în dosarele complexe, abordare personalizată pentru fiecare client și disponibilitate 24/7. Prima consultanță este gratuită. Sunați la +40 (31) 632 01 83"
+  }
+];
 
 const Index = () => {
   const { lang } = useLanguage();
@@ -808,6 +908,42 @@ const Index = () => {
             )}
           </h2>
           <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} />
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 px-4 border-t border-accent">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Întrebări frecvente ale clienților mei
+            </h2>
+            
+            <div className="relative">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full border border-accent rounded-lg p-6"
+              >
+                <CarouselContent>
+                  {faqData.map((faq, index) => (
+                    <CarouselItem key={index} className="basis-full">
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold mb-4 text-primary">
+                          {faq.question}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
+            </div>
+          </div>
         </section>
       </main>
 
