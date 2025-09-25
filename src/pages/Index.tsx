@@ -190,6 +190,7 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService",
           "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
           "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
@@ -286,18 +287,7 @@ const Index = () => {
           "name": "Bogdan Lamatic",
           "jobTitle": "Avocat specializat în drept penal",
           "worksFor": {
-            "@type": "LegalService",
-            "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Strada Colonel Stefan Stoika 22",
-              "addressLocality": "București",
-              "addressRegion": "Bucuresti",
-              "postalCode": "012244",
-              "addressCountry": "RO",
-              "url": "https://www.google.com/maps?cid=17818591254142574295"
-            },
-            "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
@@ -349,18 +339,7 @@ const Index = () => {
           "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
           "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
           "publisher": {
-            "@type": "LegalService",
-            "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Strada Colonel Stefan Stoika 22",
-              "addressLocality": "București",
-              "addressRegion": "Bucuresti",
-              "postalCode": "012244",
-              "addressCountry": "RO",
-              "url": "https://www.google.com/maps?cid=17818591254142574295"
-            },
-            "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "potentialAction": {
             "@type": "SearchAction",
