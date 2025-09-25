@@ -282,8 +282,11 @@ const renderTextWithLinks = (text: string) => {
   const phoneRegex2 = /0316320183/g;
   processedText = processedText.replace(phoneRegex2, '||PHONE2||0316320183||PHONE2||');
   
+  // Handle line breaks
+  processedText = processedText.replace(/\n/g, '||BR||');
+  
   // Split by all markers and process
-  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2)\|\|[^|]+\|\|(?:URL|PHONE|PHONE2)\|\|)/);
+  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2|BR)\|\|[^|]*\|\|(?:URL|PHONE|PHONE2)\|\||\|\|BR\|\|)/);
   
   return parts.map((part, index) => {
     if (part.startsWith('||URL||') && part.endsWith('||URL||')) {
@@ -321,6 +324,8 @@ const renderTextWithLinks = (text: string) => {
           {phone}
         </a>
       );
+    } else if (part === '||BR||') {
+      return <br key={index} />;
     }
     return part;
   });
