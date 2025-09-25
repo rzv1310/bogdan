@@ -286,7 +286,7 @@ const renderTextWithLinks = (text: string) => {
   processedText = processedText.replace(/\n/g, '||BR||');
   
   // Split by all markers and process
-  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2|BR)\|\|[^|]*\|\|(?:URL|PHONE|PHONE2)\|\||\|\|BR\|\|)/);
+  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2)\|\|[^|]+\|\|(?:URL|PHONE|PHONE2)\|\||\|\|BR\|\|)/);
   
   return parts.map((part, index) => {
     if (part.startsWith('||URL||') && part.endsWith('||URL||')) {
