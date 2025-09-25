@@ -178,7 +178,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LegalService` : "https://avocatpenalbucuresti.ro/en#LegalService",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService",
           "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
@@ -186,10 +186,10 @@ const HomepageEN = () => {
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "Bucharest",
             "addressRegion": "Bucharest",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "areaServed": [
@@ -273,16 +273,16 @@ const HomepageEN = () => {
           "name": "Bogdan Lamatic",
           "jobTitle": "Criminal defense attorney",
           "worksFor": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LegalService` : "https://avocatpenalbucuresti.ro/en#LegalService"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "Bucharest",
             "addressRegion": "Bucharest",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "alumniOf": {
@@ -323,7 +323,7 @@ const HomepageEN = () => {
           "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
           "inLanguage": "en-US",
           "publisher": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LegalService` : "https://avocatpenalbucuresti.ro/en#LegalService"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "potentialAction": {
             "@type": "SearchAction",
@@ -344,7 +344,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}/en#LocalBusiness` : "https://avocatpenalbucuresti.ro/en#LocalBusiness",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
           "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
@@ -352,10 +352,10 @@ const HomepageEN = () => {
           "email": "contact@avocatpenalbucuresti.ro",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Strada Constantin Prezan nr. 11, et. 1",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
             "addressLocality": "Bucharest", 
             "addressRegion": "Bucharest",
-            "postalCode": "020088",
+            "postalCode": "012244",
             "addressCountry": "RO"
           },
           "geo": {
