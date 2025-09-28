@@ -168,7 +168,7 @@ export default function GDPR() {
             Această Politică de confidențialitate va intra în vigoare începând cu 16 decembrie 2024.
           </p>
           <p>
-            Această Politică de confidențialitate poate fi actualizată din când în când. Orice versiune actualizată va intra în vigoare începând cu data publicării sale pe website-ul https://avocatpenalbucuresti.ro/ sau începând cu data la care vă este notificată în orice mod.
+            Această Politică de confidențialitate poate fi actualizată din când în când. Orice versiune actualizată va intra în vigoare începând cu data publicării sale pe website-ul <a href="/" className="underline hover:no-underline">https://avocatpenalbucuresti.ro/</a> sau începând cu data la care vă este notificată în orice mod.
           </p>
         </section>
 
