@@ -1,30 +1,34 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
-
 export default function TermeniSiConditii() {
   useSEO({
     title: "Termeni și Condiții – Cabinet Avocat Bogdan Lamatic",
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
-    alternates: { ro: "/termeni-si-conditii", en: "/en/terms-and-conditions" },
+    alternates: {
+      ro: "/termeni-si-conditii",
+      en: "/en/terms-and-conditions"
+    },
     locale: "ro_RO",
-    canonical: "/termeni-si-conditii",
+    canonical: "/termeni-si-conditii"
   });
-
-  return (
-    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: typeof window !== "undefined" ? `${window.location.origin}/` : "/" },
-              { "@type": "ListItem", position: 2, name: "Termeni și Condiții", item: typeof window !== "undefined" ? `${window.location.origin}/termeni-si-conditii` : "/termeni-si-conditii" },
-            ],
-          }),
-        }}
-      />
+  return <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [{
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasă",
+          item: typeof window !== "undefined" ? `${window.location.origin}/` : "/"
+        }, {
+          "@type": "ListItem",
+          position: 2,
+          name: "Termeni și Condiții",
+          item: typeof window !== "undefined" ? `${window.location.origin}/termeni-si-conditii` : "/termeni-si-conditii"
+        }]
+      })
+    }} />
 
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Termeni și Condiții</h1>
 
@@ -51,9 +55,7 @@ export default function TermeniSiConditii() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">PROTECȚIA ÎMPOTRIVA VIRUȘILOR</h2>
-        <p>
-          Cabinet Avocat Bogdan Lamatic depune toate eforturile pentru a verifica și testa materialul oferit de acest Website, în toate etapele de producție. De asemenea, recomandăm utilizatorilor să ruleze un program antivirus pentru toate materialele descărcate de pe Internet. Cabinet Avocat Bogdan Lamatic nu poate accepta nicio responsabilitate pentru orice pierdere, întrerupere sau deteriorare a datelor dumneavoastră sau a sistemului dumneavoastră informatic, care poate surveni în timpul navigării pe Website-ul https://avocatpenalbucuresti.ro/.
-        </p>
+        <p>Cabinetul depune toate eforturile pentru a verifica și testa materialul oferit de acest Website, în toate etapele de producție. De asemenea, recomandăm utilizatorilor să ruleze un program antivirus pentru toate materialele descărcate de pe Internet. Cabinetul nu poate accepta nicio responsabilitate pentru orice pierdere, întrerupere sau deteriorare a datelor dumneavoastră sau a sistemului dumneavoastră informatic, care poate surveni în timpul navigării pe Website-ul https://avocatpenalbucuresti.ro/.</p>
 
         <h2 className="text-2xl font-semibold mt-8">RECUNOAȘTEREA PROPRIETĂȚII</h2>
         <p>
@@ -134,6 +136,5 @@ export default function TermeniSiConditii() {
           <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
         </ul>
       </section>
-    </section>
-  );
+    </section>;
 }
