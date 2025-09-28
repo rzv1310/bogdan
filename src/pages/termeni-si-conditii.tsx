@@ -58,12 +58,8 @@ export default function TermeniSiConditii() {
         <p>Cabinetul depune toate eforturile pentru a verifica și testa materialul oferit de acest Website, în toate etapele de producție. De asemenea, recomandăm utilizatorilor să ruleze un program antivirus pentru toate materialele descărcate de pe Internet. Cabinetul nu poate accepta nicio responsabilitate pentru orice pierdere, întrerupere sau deteriorare a datelor dumneavoastră sau a sistemului dumneavoastră informatic, care poate surveni în timpul navigării pe Website-ul https://avocatpenalbucuresti.ro/.</p>
 
         <h2 className="text-2xl font-semibold mt-8">RECUNOAȘTEREA PROPRIETĂȚII</h2>
-        <p>
-          Website-ul oferă oricăruia dintre utilizatorii săi posibilitatea de a accesa conținutul furnizat pentru utilizarea personală a utilizatorului.
-        </p>
-        <p>
-          Prin prezenta recunoașteți și sunteți de acord că https://avocatpenalbucuresti.ro/ și Cabinet Avocat Bogdan Lamatic sunt proprietarii exclusivi al tuturor drepturilor de proprietate intelectuală asupra conținutului Website-ului, inclusiv asupra articolelor, textelor, fotografiilor și ilustrațiilor. De asemenea, sunteți de acord că nu veți utiliza astfel de materiale în niciun fel, cu excepția cazului în care ați primit consimțământul prealabil expres scris din partea Cabinetului de avocatura Bogdan Lamatic.
-        </p>
+        <p>Site-ul oferă oricăruia dintre utilizatorii săi posibilitatea de a accesa conținutul furnizat pentru utilizarea personală a utilizatorului.</p>
+        <p>Prin prezenta recunoașteți și sunteți de acord că Site-ul și Cabinetul Avocat Bogdan Lamatic sunt proprietarii exclusivi al tuturor drepturilor de proprietate intelectuală asupra conținutului Website-ului, inclusiv asupra articolelor, textelor, fotografiilor și ilustrațiilor. De asemenea, sunteți de acord că nu veți utiliza astfel de materiale în niciun fel, cu excepția cazului în care ați primit consimțământul prealabil expres scris din partea Cabinetului de avocatura Bogdan Lamatic.</p>
 
         <h2 className="text-2xl font-semibold mt-8">COMENTARII, ÎNTREBĂRI ȘI FEEDBACK</h2>
         <p>Dacă trimiteți o solicitare prin e-mail către fie un contact specific, fie o adresă de contact generală identificată în Site, vom utiliza datele dumneavoastră personale obținute din solicitarea dumneavoastră pentru a răspunde la cererea dumneavoastră.</p>
