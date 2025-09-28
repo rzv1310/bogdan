@@ -196,7 +196,7 @@ const faqData = [
   },
   {
     question: "7. Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
-    answer: "Putem folosi căi de atac - apel, recurs sau contestație, în funcție de situația juridică și termenele legale."
+    answer: "Putem folosi căi de atac - apel, căi de atac extraordinare - în funcție de situația juridică și termenele legale."
   },
   {
     question: "8. Pot beneficia de asistență juridică gratuită?",
@@ -220,11 +220,11 @@ const faqData = [
   },
   {
     question: "13. Cât timp poate dura o anchetă penală?",
-    answer: "Durata depinde de complexitatea cazului și de numărul probelor, însă legea prevede termene maxime pentru fiecare etapă, pentru a asigura un proces echitabil. Sunați-mă la +40 (31) 632 01 83"
+    answer: "Durata depinde de complexitatea cazului și de numărul probelor, însă legea nu prevede termene maxime pentru fiecare etapă. Sunați-mă la +40 (31) 632 01 83"
   },
   {
     question: "14. Pot refuza să dau declarații împotriva mea?",
-    answer: "Da, aveți dreptul să nu vă autoincriminați, conform Constituției României și Convenției Europene a Drepturilor Omului."
+    answer: "Da, aveți dreptul să nu vă autoincriminați, conform Codului de Procedură Penală, Constituției României și Convenției Europene a Drepturilor Omului."
   },
   {
     question: "15. Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
@@ -252,7 +252,7 @@ const faqData = [
   },
   {
     question: "21. Am primit citație ca martor într-un dosar penal. Pot să nu merg?",
-    answer: "Nu. Prezența este obligatorie. Refuzul poate atrage amendă sau chiar aducerea cu mandat. Totuși, aveți dreptul să refuzați să vă autoincriminați."
+    answer: "Nu. Prezența este obligatorie. Refuzul poate atrage amendă sau chiar aducerea cu mandat. Totuși, aveți dreptul la a fi asistat de un avocat ales și aveți dreptul să refuzați să vă autoincriminați."
   },
   {
     question: "22. Ce fac dacă sunt acuzat pe nedrept?",
