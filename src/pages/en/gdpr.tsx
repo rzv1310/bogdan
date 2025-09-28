@@ -163,7 +163,7 @@ export default function GDPRen() {
             This Privacy policy shall become effective as of 16 august 2025.
           </p>
           <p>
-            This Privacy policy may be updated from time to time. Any updated version shall become effective as of the date of its publication on Bogdan Lamatic Cabinet de Avocat website or as of the date it is notified to you in any way.
+            This Privacy policy may be updated from time to time. Any updated version shall become effective as of the date of its publication on Bogdan Lamatic Law Office website or as of the date it is notified to you in any way.
           </p>
         </section>
 
