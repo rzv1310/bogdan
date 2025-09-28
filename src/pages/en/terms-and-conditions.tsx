@@ -42,7 +42,7 @@ export default function TermsAndConditionsEn() {
 
       <div className="prose prose-neutral dark:prose-invert max-w-none text-base leading-relaxed">
         <p>
-          This page sets the terms of use of the website avocat-drept-penal.ro (the “Website”) and the basic rules governing interactions with the Law Office of Attorney Bogdan Lamatic (the “Law Office”). By accessing or using the Website, you agree to these Terms.
+          This page sets the terms of use of the website https://avocatpenalbucuresti.ro/ (the “Website”) and the basic rules governing interactions with the Law Office of Attorney Bogdan Lamatic (the “Law Office”). By accessing or using the Website, you agree to these Terms.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">1. Scope</h2>
