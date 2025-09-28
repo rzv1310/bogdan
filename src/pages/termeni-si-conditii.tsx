@@ -42,7 +42,7 @@ export default function TermeniSiConditii() {
 
       <div className="prose prose-neutral dark:prose-invert max-w-none text-base leading-relaxed">
         <p>
-          Prezenta pagină stabilește condițiile de utilizare a website‑ului https://avocatpenalbucuresti.ro/ (denumit în continuare „Site‑ul") și regulile minime aplicabile interacțiunilor cu Cabinetul Avocat Bogdan Lamatic (denumit „Cabinetul"). Accesând sau utilizând Site‑ul, sunteți de acord cu acești Termeni.
+          Prezenta pagină stabilește condițiile de utilizare a website‑ului <a href="/" className="underline hover:no-underline">https://avocatpenalbucuresti.ro/</a> (denumit în continuare „Site‑ul") și regulile minime aplicabile interacțiunilor cu Cabinetul Avocat Bogdan Lamatic (denumit „Cabinetul"). Accesând sau utilizând Site‑ul, sunteți de acord cu acești Termeni.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">UTILIZAREA WEBSITE-ULUI</h2>
