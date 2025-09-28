@@ -118,7 +118,7 @@ export default function PoliticaCookies() {
         </section>
 
         <section>
-          <h2>6. Contact</h2>
+          <h2>Contact</h2>
           <p>
             Pentru întrebări legate de politica de cookie-uri, scrie-ne la
             <a href="mailto:contact@avocatpenalbucuresti.ro"> contact@avocatpenalbucuresti.ro</a>.
