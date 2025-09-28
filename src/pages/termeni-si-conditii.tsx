@@ -66,14 +66,10 @@ export default function TermeniSiConditii() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">COMENTARII, ÎNTREBĂRI ȘI FEEDBACK</h2>
-        <p>
-          Dacă trimiteți o solicitare prin e-mail către fie un contact specific, fie o adresă de contact generală identificată pe Website-ul https://avocatpenalbucuresti.ro/, vom utiliza datele dumneavoastră personale obținute din solicitarea dumneavoastră pentru a răspunde la cererea dumneavoastră.
-        </p>
+        <p>Dacă trimiteți o solicitare prin e-mail către fie un contact specific, fie o adresă de contact generală identificată în Site, vom utiliza datele dumneavoastră personale obținute din solicitarea dumneavoastră pentru a răspunde la cererea dumneavoastră.</p>
 
         <h2 className="text-2xl font-semibold mt-8">PRELUCRAREA DATELOR PERSONALE</h2>
-        <p>
-          Anumite date personale sunt colectate prin intermediul Website-ului. Detaliile privind prelucrarea acestor date personale sunt disponibile în Politica noastră de confidențialitate.
-        </p>
+        <p>Anumite date personale sunt colectate prin intermediul Site-ului. Detaliile privind prelucrarea acestor date personale sunt disponibile în Politica noastră de confidențialitate.</p>
 
         <h2 className="text-2xl font-semibold mt-8">RECRUTARE</h2>
         <p>
@@ -81,9 +77,7 @@ export default function TermeniSiConditii() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-8">DECLINAREA RESPONSABILITĂȚII</h2>
-        <p>
-          Informațiile publicate au scop informativ și pot deveni neactuale. Cabinetul nu garantează acuratețea absolută a conținutului și nu răspunde pentru decizii luate exclusiv pe baza acestuia fără consultanță specifică. Website-ul poate conține legături către website-uri și resurse care nu sunt proprietatea noastră. https://avocatpenalbucuresti.ro/ și Cabinetul Avocatului Bogdan Lamatic nu au control asupra acestor website-uri și resurselor găsite în acestea și, prin urmare, nu vor fi răspunzători pentru disponibilitatea acestor website-uri, nici pentru conținutul, publicitatea, bunurile, serviciile, informațiile sau alte materiale disponibile pe sau prin aceste website-uri, pentru funcționalitatea sau performanțele acestor website-uri sau pentru încălcarea oricăror drepturi de proprietate intelectuală sau alte drepturi, care survine prin aceste website-uri. Prin accesarea website-urilor indicate confirmați că înțelegeți posibilele consecințe ale intrării pe website-urile indicate și sunteți de acord și acceptați termenii și condițiile menționate mai sus.
-        </p>
+        <p>Informațiile publicate au scop informativ și pot deveni neactuale. Cabinetul nu garantează acuratețea absolută a conținutului și nu răspunde pentru decizii luate exclusiv pe baza acestuia fără consultanță specifică. Website-ul poate conține legături către website-uri și resurse care nu sunt proprietatea noastră. Site-ul și Cabinetul Avocatului Bogdan Lamatic nu au control asupra acestor website-uri și resurselor găsite în acestea și, prin urmare, nu vor fi răspunzători pentru disponibilitatea acestor website-uri, nici pentru conținutul, publicitatea, bunurile, serviciile, informațiile sau alte materiale disponibile pe sau prin aceste website-uri, pentru funcționalitatea sau performanțele acestor website-uri sau pentru încălcarea oricăror drepturi de proprietate intelectuală sau alte drepturi, care survine prin aceste website-uri. Prin accesarea website-urilor indicate confirmați că înțelegeți posibilele consecințe ale intrării pe website-urile indicate și sunteți de acord și acceptați termenii și condițiile menționate mai sus.</p>
         <p>
           Acest Website este furnizat în scopuri informative și nu constituie consiliere juridică și/sau fiscală. Informațiile nu sunt destinate să înlocuiască consilierea juridică din partea unui avocat autorizat în domeniul de practică implicat în cazul dumneavoastră. Relația avocat–client se naște doar după acceptarea expresă a solicitării și semnarea împuternicirii avocațiale/contractului de asistență juridică.
         </p>
