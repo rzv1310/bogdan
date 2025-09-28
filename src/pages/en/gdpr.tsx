@@ -138,7 +138,7 @@ export default function GDPRen() {
         <section>
           <h2>Your Legal Rights</h2>
           <p>
-            If you expressed your consent with respect to the Processing activities, you may withdraw such consent at any time with future effects. Such withdrawal will not affect the legality of the Processing prior to the withdrawal of your consent. As a general rule, if you withdraw your consent, Bogdan Lamatic Law Office will no longer allow the Processing of your Personal data and will take any appropriate actions to erase any records containing your Personal data. However, if the Processing is mandatory for the provision of Bogdan Lamatic Cabinet de Avocat services and the Processing may be performed on other legal bases stipulated by the applicable legal provisions, Bogdan Lamatic Cabinet de Avocat shall proceed to such Processing and will notify you in this respect.
+            If you expressed your consent with respect to the Processing activities, you may withdraw such consent at any time with future effects. Such withdrawal will not affect the legality of the Processing prior to the withdrawal of your consent. As a general rule, if you withdraw your consent, Bogdan Lamatic Law Office will no longer allow the Processing of your Personal data and will take any appropriate actions to erase any records containing your Personal data. However, if the Processing is mandatory for the provision of Bogdan Lamatic Law Office services and the Processing may be performed on other legal bases stipulated by the applicable legal provisions, Bogdan Lamatic Law Office shall proceed to such Processing and will notify you in this respect.
           </p>
           <p>Under the applicable laws, you have the following rights:</p>
           <ul>
