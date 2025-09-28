@@ -35,42 +35,85 @@ export default function PoliticaCookies() {
 
       <article className="prose prose-neutral max-w-none">
         <section>
-          <h2>1. Ce sunt cookie-urile?</h2>
+          <h2>Ce este un "cookie"?</h2>
           <p>
-            Cookie-urile sunt fișiere mici text stocate pe dispozitivul tău când vizitezi un site. Ele ajută la
-            funcționarea corectă a site-ului, la analiză și la îmbunătățirea experienței de navigare.
+            Cookie-ul este un fișier mic, format din litere și numere care va fi stocat pe computerul, dispozitivul, 
+            terminalul mobil sau alte echipamente ale unui utilizator care accesează Internetul. Cookie-ul este instalat 
+            printr-o cerere a serverului web de la un browser (de ex. Internet Explorer, Chrome) și este complet "pasiv". 
+            Cookie-ul nu conține software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului.
+          </p>
+          <p>
+            Cookie-urile în sine nu solicită date personale pentru a fi utilizate și, în majoritatea cazurilor, 
+            nu identifică utilizatorii de internet.
+          </p>
+          <p>
+            Există două categorii principale de cookie-uri. Cookie-urile de sesiune sunt create temporar în subfolderul 
+            browserului utilizatorului în timpul vizitării Website-ului. După ce utilizatorul părăsește Website-ul, 
+            cookie-ul de sesiune este șters. Cookie-urile persistente rămân în subfolderul browserului utilizatorului 
+            și sunt activate din nou odată ce utilizatorul vizitează Website-ul. Un cookie persistent rămâne în 
+            subfolderul browserului pentru o perioadă stabilită în fișierul cookie-ului.
           </p>
         </section>
 
         <section>
-          <h2>2. Tipuri de cookie-uri utilizate</h2>
-          <ul>
-            <li>Cookie-uri strict necesare pentru funcționarea site-ului;</li>
-            <li>Cookie-uri de performanță și analiză (ex.: trafic și comportament de utilizare);</li>
-            <li>Cookie-uri de funcționalitate (preferințe utilizator).</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>3. Cookie-uri terțe</h2>
+          <h2>Durata de viață a unui cookie</h2>
           <p>
-            Anumite servicii terțe pot seta cookie-uri proprii (ex.: servicii de analiză). Nu controlăm cookie-urile
-            terților; te încurajăm să consulți politicile acestora.
+            Durata de viață a unui cookie poate varia semnificativ, în funcție de scopul pentru care este plasat. 
+            Așa cum este menționat mai sus, unele cookie-uri sunt folosite exclusiv pentru o singură sesiune 
+            (cookie-uri de sesiune) și nu sunt păstrate după ce utilizatorul părăsește website-ul, în timp ce 
+            alte cookie-uri sunt păstrate și refolosite de fiecare dată când utilizatorul revizitează Website-ul 
+            (cookie-uri persistente). Cu toate acestea, cookie-urile pot fi șterse de un utilizator în orice moment 
+            prin intermediul setărilor browserului.
           </p>
         </section>
 
         <section>
-          <h2>4. Cum poți controla cookie-urile</h2>
+          <h2>Cookie-uri terțe părți</h2>
           <p>
-            Poți configura browserul să blocheze sau să te avertizeze despre cookie-uri. Dezactivarea anumitor cookie-uri
-            poate afecta funcționalitatea site-ului.
+            Conținutul Website-ului poate fi furnizat prin terțe părți sau furnizori (de ex., un video). 
+            Astfel de terțe părți pot plasa cookie-uri pe Website (numite "cookie-uri terțe părți", deoarece 
+            nu sunt plasate de acest website). De asemenea, furnizorii terțe părți trebuie să se conformeze 
+            reglementărilor legale în vigoare și cu Politica de Confidențialitate a Site-ului{" "}
+            <a href="https://avocatpenalbucuresti.ro/" className="underline hover:no-underline">
+              https://avocatpenalbucuresti.ro/
+            </a>{" "}
+            și Cabinetului de Avocatura Bogdan Lamatic.
           </p>
         </section>
 
         <section>
-          <h2>5. Modificări ale politicii</h2>
+          <h2>Cookie-uri folosite de acest website</h2>
           <p>
-            Putem actualiza această politică periodic. Orice modificări vor fi publicate pe această pagină.
+            Consimțământul dumneavoastră se aplică următoarelor domenii:{" "}
+            <a href="https://avocatpenalbucuresti.ro/" className="underline hover:no-underline">
+              https://avocatpenalbucuresti.ro/
+            </a>
+          </p>
+          <p>Starea dumneavoastră actuală: Permite toate.</p>
+        </section>
+
+        <section>
+          <h2>Adaptarea setărilor browserului la cookie-uri</h2>
+          <p>
+            Dacă vizitatorul Website-ului este singura persoană care folosește dispozitivul, el/ea poate stabili 
+            termeni de expirare lungi pentru istoricul de navigare. Dacă el/ea folosește dispozitivul împreună cu 
+            o altă persoană, se recomandă să seteze browserul astfel încât să șteargă datele de navigare de fiecare 
+            dată când browserul este închis.
+          </p>
+        </section>
+
+        <section>
+          <h2>Ștergerea cookie-urilor</h2>
+          <p>
+            În general, o aplicație folosită pentru a accesa paginile web permite salvarea implicită a cookie-urilor 
+            pe dispozitiv. Aceste setări pot fi modificate astfel încât gestionarea automată a cookie-urilor să fie 
+            blocată de browserul web sau utilizatorul să fie informat de fiecare dată când cookie-urile sunt trimise 
+            la dispozitivul său.
+          </p>
+          <p>
+            Informații detaliate despre posibilitățile și tipurile de gestionare a cookie-urilor pot fi găsite în 
+            setările aplicației sau browserului. Limitarea folosirii cookie-urilor poate afecta anumite funcționalități 
+            ale Website-ului.
           </p>
         </section>
 
