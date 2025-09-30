@@ -178,7 +178,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService",
           "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
@@ -273,7 +273,7 @@ const HomepageEN = () => {
           "name": "Bogdan Lamatic",
           "jobTitle": "Criminal defense attorney",
           "worksFor": {
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "telephone": "+40316320183",
           "email": "contact@avocatpenalbucuresti.ro",
@@ -323,7 +323,7 @@ const HomepageEN = () => {
           "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
           "inLanguage": "en-US",
           "publisher": {
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
           },
           "potentialAction": {
             "@type": "SearchAction",
@@ -344,7 +344,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
           "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",

@@ -52,7 +52,6 @@ export default function ReprezentareaVictimelor() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "LegalService",
-                "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                 "name": "Servicii avocat reprezentarea victimelor în procese penale",
                 "description": "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale",
                 "url": typeof window !== "undefined" ? `${window.location.origin}/services/reprezentarea-victimelor-in-procese-penale` : "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
@@ -80,7 +79,6 @@ export default function ReprezentareaVictimelor() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                   "telephone": "+40 (31) 632 01 83"
                 }
               })

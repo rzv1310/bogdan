@@ -79,7 +79,6 @@ export default function CauzeDroguri() {
     const legalServiceData = {
       "@context": "https://schema.org",
       "@type": "LegalService",
-      "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
       name: title,
       description,
       url,
@@ -98,11 +97,6 @@ export default function CauzeDroguri() {
       founder: {
         "@type": "Person",
         name: "Bogdan Lamatic",
-      },
-      provider: {
-        "@type": "Attorney",
-        name: "Bogdan Lamatic",
-        "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
       },
       sameAs: ["mailto:contact@avocatpenalbucuresti.ro"],
     } as const;

@@ -21,7 +21,6 @@ export default function About() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
     name: "Bogdan-Constantin Lamatic",
     jobTitle: "Attorney",
     address: {
@@ -37,9 +36,6 @@ export default function About() {
     email: "mailto:contact@avocatpenalbucuresti.ro",
     telephone: "+40 (31) 632 01 83",
     url: "https://avocatpenalbucuresti.ro",
-    worksFor: {
-      "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
-    },
     memberOf: [
       { "@type": "Organization", name: "Bucharest Bar" },
       { "@type": "Organization", name: "Romanian Lawyers Union" }

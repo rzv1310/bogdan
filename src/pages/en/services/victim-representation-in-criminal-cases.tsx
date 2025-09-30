@@ -34,7 +34,6 @@ export default function VictimRepresentationEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             name: "Compensation for accident victims and bodily injury",
             url: typeof window !== "undefined" ? `${window.location.origin}/en/services/victim-representation-in-criminal-cases` : "/en/services/victim-representation-in-criminal-cases",
             areaServed: ["RO", "EU"],
@@ -49,7 +48,7 @@ export default function VictimRepresentationEn() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html", telephone: "+40 (31) 632 01 83" },
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
         }}

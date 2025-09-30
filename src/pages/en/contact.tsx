@@ -187,7 +187,6 @@ export default function ContactEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Attorney",
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             name: "Attorney Bogdan Lamatic",
             url: "https://avocatpenalbucuresti.ro/en/contact",
             areaServed: "Romania",

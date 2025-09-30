@@ -51,7 +51,6 @@ export default function FinancialCrimeEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             name: "Economic crime lawyer | White-collar specialist",
             url:
               typeof window !== "undefined"
@@ -72,7 +71,6 @@ export default function FinancialCrimeEn() {
             provider: {
               "@type": "Person",
               name: "Bogdan Lamatic",
-              "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
               telephone: "+40 (31) 632 01 83",
             },
             telephone: "+40 (31) 632 01 83",
