@@ -10,9 +10,11 @@ interface SEOOptions {
   locale?: string;
   // Meta robots directives for search engine optimization
   robotsDirectives?: string;
+  // Schema.org structured data to inject into <head>
+  schemas?: object[];
 }
 
-export function useSEO({ title, description, canonical, alternates, locale, robotsDirectives }: SEOOptions) {
+export function useSEO({ title, description, canonical, alternates, locale, robotsDirectives, schemas }: SEOOptions) {
   useEffect(() => {
     if (title) {
       document.title = title;
@@ -84,5 +86,21 @@ export function useSEO({ title, description, canonical, alternates, locale, robo
       ensureLink('en', alternates.en);
       if (alternates.xDefault) ensureLink('x-default', alternates.xDefault);
     }
-  }, [title, description, canonical, alternates, locale, robotsDirectives]);
+
+    // Schema.org structured data
+    if (schemas && schemas.length > 0) {
+      // Remove existing schema scripts that we manage
+      const existingSchemas = document.head.querySelectorAll('script[type="application/ld+json"][data-managed="true"]');
+      existingSchemas.forEach(el => el.remove());
+
+      // Inject new schemas
+      schemas.forEach((schema, index) => {
+        const script = document.createElement('script');
+        script.setAttribute('type', 'application/ld+json');
+        script.setAttribute('data-managed', 'true');
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+      });
+    }
+  }, [title, description, canonical, alternates, locale, robotsDirectives, schemas]);
 }

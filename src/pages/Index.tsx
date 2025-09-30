@@ -335,431 +335,219 @@ const Index = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   
+  const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
+  const origin = typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro";
+  
   useSEO({
     title: "Avocat Drept Penal Bucuresti | Bogdan Lamatic | Evaziune | Droguri | Malpraxis | Coruptie | Accidente rutiere | Frauda | Mita | Criminalitate economica",
     description: "Avocat drept penal Bucuresti > Bogdan Lamatic > Apărare în criminalitate economică, corupție, accidente rutiere, crypto, malpraxis., droguri ",
     alternates: { ro: "/", en: "/en", xDefault: "/" },
     locale: "ro_RO",
     robotsDirectives: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  });
-  
-  const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
-  
-  return <div className="min-h-screen bg-background text-foreground">
-    {/* Schema Markup */}
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LegalService",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService",
-          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
-          "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "București",
-            "addressRegion": "Bucuresti",
-            "postalCode": "012244",
-            "addressCountry": "RO",
-            "url": "https://www.google.com/maps?cid=17818591254142574295"
+    schemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "@id": `${origin}#LegalService`,
+        "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
+        "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
+        "url": origin,
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "București",
+          "addressRegion": "Bucuresti",
+          "postalCode": "012244",
+          "addressCountry": "RO",
+          "url": "https://www.google.com/maps?cid=17818591254142574295"
+        },
+        "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "București",
+            "addressCountry": "RO"
           },
-          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "București",
-              "addressCountry": "RO"
-            },
-            {
-              "@type": "Country",
-              "name": "România"
-            }
-          ],
-          "serviceType": [
-            "Apărare penală",
-            "Criminalitate economică",
-            "Infracțiuni de corupție",
-            "Investigații crypto",
-            "Malpraxis medical",
-            "Accidente rutiere"
-          ],
-          "priceRange": "$$",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servicii juridice penale",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Criminalitate economică",
-                  "description": "Apărare în dosare de evaziune fiscală, fraudă, abuz în serviciu"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Infracțiuni de corupție",
-                  "description": "Apărare în dosare de luare de mită, dare de mită, trafic de influență"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Investigații active crypto",
-                  "description": "Servicii specializate pentru investigații blockchain și active digitale"
-                }
-              }
-            ]
-          },
-          "review": currentReviews.slice(0, 5).map(review => ({
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": review.name
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": review.stars,
-              "bestRating": 5
-            },
-            "reviewBody": review.text
-          })),
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": 5,
-            "reviewCount": currentReviews.length,
-            "bestRating": 5
+          {
+            "@type": "Country",
+            "name": "România"
           }
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Bogdan Lamatic",
-          "jobTitle": "Avocat specializat în drept penal",
-          "worksFor": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
+        ],
+        "serviceType": [
+          "Apărare penală",
+          "Criminalitate economică",
+          "Infracțiuni de corupție",
+          "Investigații crypto",
+          "Malpraxis medical",
+          "Accidente rutiere"
+        ],
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicii juridice penale",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Criminalitate economică",
+                "description": "Apărare în dosare de evaziune fiscală, fraudă, abuz în serviciu"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Infracțiuni de corupție",
+                "description": "Apărare în dosare de luare de mită, dare de mită, trafic de influență"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Investigații active crypto",
+                "description": "Servicii specializate pentru investigații blockchain și active digitale"
+              }
+            }
+          ]
+        },
+        "review": currentReviews.slice(0, 5).map(review => ({
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": review.name
           },
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "București",
-            "addressRegion": "Bucuresti",
-            "postalCode": "012244",
-            "addressCountry": "RO",
-            "url": "https://www.google.com/maps?cid=17818591254142574295"
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": review.stars,
+            "bestRating": 5
           },
-          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
-          "alumniOf": {
-            "@type": "Organization",
-            "name": "Universitatea de Vest din Timișoara"
-          },
-          "memberOf": {
+          "reviewBody": review.text
+        })),
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 5,
+          "reviewCount": currentReviews.length,
+          "bestRating": 5
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bogdan Lamatic",
+        "jobTitle": "Avocat specializat în drept penal",
+        "worksFor": {
+          "@id": `${origin}#LegalService`
+        },
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "București",
+          "addressRegion": "Bucuresti",
+          "postalCode": "012244",
+          "addressCountry": "RO",
+          "url": "https://www.google.com/maps?cid=17818591254142574295"
+        },
+        "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Universitatea de Vest din Timișoara"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Baroul București"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Licență în drept",
+          "recognizedBy": {
             "@type": "Organization",
             "name": "Baroul București"
-          },
-          "hasCredential": {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Licență în drept",
-            "recognizedBy": {
-              "@type": "Organization",
-              "name": "Baroul București"
-            }
-          },
-          "knowsAbout": [
-            "Drept penal",
-            "Criminalitate economică",
-            "Infracțiuni de corupție",
-            "Investigații blockchain",
-            "Malpraxis medical",
-            "Accidente rutiere cu victime"
-          ]
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
-          "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
-          "publisher": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": typeof window !== "undefined" 
-                ? `${window.location.origin}/search?q={search_term_string}`
-                : "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
           }
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
-          "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
-          "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
-          "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "București", 
-            "addressRegion": "Bucuresti",
-            "postalCode": "012244",
-            "addressCountry": "RO",
-            "url": "https://www.google.com/maps?cid=17818591254142574295"
+        },
+        "knowsAbout": [
+          "Drept penal",
+          "Criminalitate economică",
+          "Infracțiuni de corupție",
+          "Investigații blockchain",
+          "Malpraxis medical",
+          "Accidente rutiere cu victime"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
+        "url": origin,
+        "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
+        "inLanguage": lang === "ro" ? "ro-RO" : "en-US",
+        "publisher": {
+          "@id": `${origin}#LegalService`
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${origin}/search?q={search_term_string}`
           },
-          "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 44.4572663,
-            "longitude": 26.0635712
-          },
-          "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
-          "paymentAccepted": "Cash, BankTransfer",
-          "currenciesAccepted": "RON, EUR",
-          "priceRange": "$$",
-          "sameAs": [
-            "https://www.linkedin.com/in/bogdan-lamatic",
-            "https://x.com/BogdanLamatic"
-          ],
-          "image": typeof window !== "undefined" ? `${window.location.origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg` : "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg"
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Cât costă reprezentarea într-un dosar penal?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Onorariul depinde de complexitatea dosarului și de stadiul procesului. La prima consultanță (gratuită) stabilesc un tarif estimativ și toate costurile sunt prevăzute transparent în contract. Sunați-mă la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Oferiți consultanță inițială gratuită?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Aveți experiență în dosare penale legate de droguri?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da, am reprezentat clienți în cauze variate – de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri – cu rezultate favorabile."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Cât durează un proces penal?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Poate varia de la câteva luni la câțiva ani, în funcție de complexitatea cazului și etapele procesuale. Voi face tot posibilul să accelerez procedura în limitele legii. Sunați-mă la +40 (31) 632 01 83 pentru o consultație gratuită."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Care sunt drepturile mele ca suspect sau inculpat?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Aveți dreptul la avocat, la informarea corectă asupra acuzațiilor, la consultarea dosarului și la un proces echitabil. Le voi explica detaliat în raport cu cazul dvs. Telefon +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da, mă ocup personal de dosar și de reprezentarea în fața instanței. Dacă este nevoie, colaborez și cu parteneri de încredere, dar eu rămân avocatul de contact."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Putem folosi căi de atac - apel, recurs sau contestație, în funcție de situația juridică și termenele legale."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Pot beneficia de asistență juridică gratuită?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da, în anumite condiții puteți obține avocat din oficiu sau sprijin prin sistemul de asistență juridică. Vă pot ajuta să verificați eligibilitatea."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Cum pot găsi un avocat bun în România sau in București?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Căutați un avocat înscris în Baroul București, cu experiență dovedită în cazuri similare și cu recenzii pozitive de la clienți. În dreptul penal, experiența practică și cunoașterea procedurii sunt esențiale.  Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine  Avocat drept penal București Bogdan Lamatic Strada Colonel Ștefan Stoika 22, București 012244 Telefon: 0316320183"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Pot evita cazierul judiciar dacă îmi recunosc vina?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "În anumite situații, legea permite aplicarea unor pedepse fără înscriere în cazier (ex. renunțarea la urmărirea penală, amenda administrativă, renunțarea la aplicarea pedepsei). Fiecare caz se analizează individual. Sunați-ma la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce drepturi am în cazul reținerii de către poliție?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Aveți dreptul să fiți informat asupra motivelor, să beneficiați de avocat ales sau din oficiu, să cereți un interpret dacă nu vorbiți româna și să primiți asistență medicală dacă este nevoie. Mă puteți suna începând cu ora 6 dimineața. Telefon +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce este eliberarea condiționată și pot beneficia de ea?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Eliberarea condiționată este posibilitatea de a fi pus în libertate înainte de termen, dacă ați executat o parte din pedeapsă, ați avut bună purtare și ați îndeplinit condițiile legale."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Cât timp poate dura o anchetă penală?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Durata depinde de complexitatea cazului și de numărul probelor, însă legea prevede termene maxime pentru fiecare etapă, pentru a asigura un proces echitabil. Sunați-mă la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Pot refuza să dau declarații împotriva mea?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Da, aveți dreptul să nu vă autoincriminați, conform Constituției României și Convenției Europene a Drepturilor Omului."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Contactați-mă imediat la +40 (31) 632 01 83.  Voi analiza acuzațiile, voi pregăti apărarea și voi contesta probele sau procedurile ilegale pentru a vă proteja drepturile."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Am fost prins conducând sub influența alcoolului. Ce risc?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Poliția a găsit droguri asupra mea, dar erau pentru consum propriu. Ce urmează?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Deținerea de droguri pentru consum este infracțiune. În anumite condiții, se poate obține renunțarea la urmărirea penală sau suspendarea pedepsei. Este important să aveți avocat încă din prima fază. Sunați-mă la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Am fost acuzat de furt, dar nu există probe clare. Cum mă pot apăra?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Lipsa probelor suficiente sau probe obținute ilegal pot duce la clasarea dosarului sau la achitare. Vom analiza actele dosarului și vom formula apărările necesare. Telefon +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce se întâmplă dacă refuz testul de alcoolemie sau de droguri?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Refuzul testării este infracțiune distinctă și atrage dosar penal. Este mai grav decât un rezultat pozitiv, de aceea e important să cereți imediat asistență juridică. Sunați-mă la +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Sunt suspect de violență domestică. Care sunt consecințele?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Violența domestică este infracțiune, iar pe lângă pedeapsă se pot dispune ordine de protecție. Voi construi apărarea luând în calcul declarațiile martorilor, probele și circumstanțele. Telefon +40 (31) 632 01 83"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Am primit citație ca martor într-un dosar penal. Pot să nu merg?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nu. Prezența este obligatorie. Refuzul poate atrage amendă sau chiar aducerea cu mandat. Totuși, aveți dreptul să refuzați să vă autoincriminați."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce fac dacă sunt acuzat pe nedrept?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Contactați imediat un avocat. Sunați-mă la +40 (31) 632 01 83  Vom contesta probele, vom aduce martori și expertize independente, iar în unele cazuri putem formula plângere pentru denunț calomnios."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Pot fi reținut mai mult de 24 de ore de poliție?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Reținerea nu poate depăși 24 de ore. Prelungirea se face prin arestare preventivă dispusă de judecător, pentru care se impune apărare în fața instanței."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Ce înseamnă acord de recunoaștere a vinovăției?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Este o procedură prin care recunoașteți fapta în schimbul unei pedepse reduse. Se aplică doar în anumite situații și trebuie analizat cu atenție, pentru a nu accepta o soluție dezavantajoasă."
-              }
-            }
-          ]
-        })
-      }}
-    />
-
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+        "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
+        "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
+        "url": origin,
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "București", 
+          "addressRegion": "Bucuresti",
+          "postalCode": "012244",
+          "addressCountry": "RO",
+          "url": "https://www.google.com/maps?cid=17818591254142574295"
+        },
+        "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.4572663,
+          "longitude": 26.0635712
+        },
+        "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
+        "paymentAccepted": "Cash, BankTransfer",
+        "currenciesAccepted": "RON, EUR",
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.linkedin.com/in/bogdan-lamatic",
+          "https://x.com/BogdanLamatic"
+        ],
+        "image": `${origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg`
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map(faq => ({
+          "@type": "Question",
+          "name": faq.question.replace(/^\d+\.\s*/, ''),
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  });
+  
+  return <div className="min-h-screen bg-background text-foreground">
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">

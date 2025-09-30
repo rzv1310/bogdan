@@ -160,222 +160,201 @@ const HomepageEN = () => {
   const { lang } = useLanguage();
   const t = translations[lang];
   
+  const currentReviews = reviewsEN;
+  const origin = typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro";
+  
   useSEO({
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
     description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
     alternates: { en: "/en", ro: "/" },
     locale: "en_US",
     robotsDirectives: "index, follow, noarchive",
-  });
-  
-  const currentReviews = reviewsEN;
-  
-  return <div className="min-h-screen bg-background text-foreground">
-    {/* Schema Markup */}
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LegalService",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService",
-          "name": "Criminal Defense Lawyer in Bucharest, Romania",
-          "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
-          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "Bucharest",
-            "addressRegion": "Bucharest",
-            "postalCode": "012244",
+    schemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "@id": `${origin}#LegalService`,
+        "name": "Criminal Defense Lawyer in Bucharest, Romania",
+        "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
+        "url": `${origin}/en`,
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "Bucharest",
+          "addressRegion": "Bucharest",
+          "postalCode": "012244",
+          "addressCountry": "RO"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bucharest",
             "addressCountry": "RO"
           },
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "Bucharest",
-              "addressCountry": "RO"
-            },
-            {
-              "@type": "Country",
-              "name": "Romania"
-            }
-          ],
-          "serviceType": [
-            "Criminal defense",
-            "White-collar crime",
-            "Corruption offenses",
-            "Crypto investigations",
-            "Medical malpractice",
-            "Road traffic offenses"
-          ],
-          "priceRange": "$$",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Criminal legal services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "White-collar crime",
-                  "description": "Defense in tax evasion, fraud, abuse of office cases"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Corruption offenses",
-                  "description": "Defense in bribery, influence peddling cases"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Crypto asset investigations",
-                  "description": "Specialized services for blockchain and digital asset investigations"
-                }
-              }
-            ]
-          },
-          "review": currentReviews.slice(0, 5).map(review => ({
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": review.name
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": review.stars,
-              "bestRating": 5
-            },
-            "reviewBody": review.text
-          })),
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": 5,
-            "reviewCount": currentReviews.length,
-            "bestRating": 5
+          {
+            "@type": "Country",
+            "name": "Romania"
           }
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Bogdan Lamatic",
-          "jobTitle": "Criminal defense attorney",
-          "worksFor": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
+        ],
+        "serviceType": [
+          "Criminal defense",
+          "White-collar crime",
+          "Corruption offenses",
+          "Crypto investigations",
+          "Medical malpractice",
+          "Road traffic offenses"
+        ],
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Criminal legal services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "White-collar crime",
+                "description": "Defense in tax evasion, fraud, abuse of office cases"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Corruption offenses",
+                "description": "Defense in bribery, influence peddling cases"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Crypto asset investigations",
+                "description": "Specialized services for blockchain and digital asset investigations"
+              }
+            }
+          ]
+        },
+        "review": currentReviews.slice(0, 5).map(review => ({
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": review.name
           },
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "Bucharest",
-            "addressRegion": "Bucharest",
-            "postalCode": "012244",
-            "addressCountry": "RO"
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": review.stars,
+            "bestRating": 5
           },
-          "alumniOf": {
-            "@type": "Organization",
-            "name": "West University of Timișoara"
-          },
-          "memberOf": {
+          "reviewBody": review.text
+        })),
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 5,
+          "reviewCount": currentReviews.length,
+          "bestRating": 5
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bogdan Lamatic",
+        "jobTitle": "Criminal defense attorney",
+        "worksFor": {
+          "@id": `${origin}#LegalService`
+        },
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "Bucharest",
+          "addressRegion": "Bucharest",
+          "postalCode": "012244",
+          "addressCountry": "RO"
+        },
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "West University of Timișoara"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Bucharest Bar Association"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Law degree",
+          "recognizedBy": {
             "@type": "Organization",
             "name": "Bucharest Bar Association"
-          },
-          "hasCredential": {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Law degree",
-            "recognizedBy": {
-              "@type": "Organization",
-              "name": "Bucharest Bar Association"
-            }
-          },
-          "knowsAbout": [
-            "Criminal law",
-            "White-collar crime",
-            "Corruption offenses",
-            "Blockchain investigations",
-            "Medical malpractice",
-            "Road traffic offenses"
-          ]
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Criminal Defense Lawyer in Bucharest, Romania",
-          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
-          "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
-          "inLanguage": "en-US",
-          "publisher": {
-            "@id": typeof window !== "undefined" ? `${window.location.origin}#LegalService` : "https://avocatpenalbucuresti.ro#LegalService"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": typeof window !== "undefined" 
-                ? `${window.location.origin}/en/search?q={search_term_string}`
-                : "https://avocatpenalbucuresti.ro/en/search?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
           }
-        })
-      }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
-          "name": "Criminal Defense Lawyer in Bucharest, Romania",
-          "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
-          "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
-          "telephone": "+40316320183",
-          "email": "contact@avocatpenalbucuresti.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Strada Colonel Stefan Stoika 22",
-            "addressLocality": "Bucharest", 
-            "addressRegion": "Bucharest",
-            "postalCode": "012244",
-            "addressCountry": "RO"
+        },
+        "knowsAbout": [
+          "Criminal law",
+          "White-collar crime",
+          "Corruption offenses",
+          "Blockchain investigations",
+          "Medical malpractice",
+          "Road traffic offenses"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Criminal Defense Lawyer in Bucharest, Romania",
+        "url": `${origin}/en`,
+        "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": `${origin}#LegalService`
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${origin}/en/search?q={search_term_string}`
           },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 44.4572663,
-            "longitude": 26.0635712
-          },
-          "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
-          "paymentAccepted": "Cash, BankTransfer",
-          "currenciesAccepted": "RON, EUR",
-          "priceRange": "$$",
-          "sameAs": [
-            "https://www.linkedin.com/in/bogdan-lamatic",
-            "https://x.com/BogdanLamatic"
-          ],
-          "image": typeof window !== "undefined" ? `${window.location.origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg` : "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg"
-        })
-      }}
-    />
-
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+        "name": "Criminal Defense Lawyer in Bucharest, Romania",
+        "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
+        "url": `${origin}/en`,
+        "telephone": "+40316320183",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "Bucharest", 
+          "addressRegion": "Bucharest",
+          "postalCode": "012244",
+          "addressCountry": "RO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.4572663,
+          "longitude": 26.0635712
+        },
+        "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
+        "paymentAccepted": "Cash, BankTransfer",
+        "currenciesAccepted": "RON, EUR",
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.linkedin.com/in/bogdan-lamatic",
+          "https://x.com/BogdanLamatic"
+        ],
+        "image": `${origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg`
+      }
+    ]
+  });
+  
+  return <div className="min-h-screen bg-background text-foreground">
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
