@@ -311,14 +311,6 @@ const HomepageEN = () => {
             "publisher": {
               "@type": "LegalService",
               "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
-            },
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://avocatpenalbucuresti.ro/en/search?q={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
             }
           },
           {
