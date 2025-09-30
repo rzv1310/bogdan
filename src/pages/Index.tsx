@@ -523,7 +523,7 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
+          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
           "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
           "description": "Cabinet avocat penal în București, specializat în criminalitate economică, corupție și investigații crypto",
           "url": typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro",

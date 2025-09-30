@@ -344,7 +344,7 @@ const HomepageEN = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": typeof window !== "undefined" ? `${window.location.origin}#LocalBusiness` : "https://avocatpenalbucuresti.ro#LocalBusiness",
+          "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
           "name": "Criminal Defense Lawyer in Bucharest, Romania",
           "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
           "url": typeof window !== "undefined" ? `${window.location.origin}/en` : "https://avocatpenalbucuresti.ro/en",
