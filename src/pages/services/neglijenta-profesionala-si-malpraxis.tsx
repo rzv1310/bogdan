@@ -53,6 +53,7 @@ export default function Malpraxis() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "LegalService",
+                "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
                 "url": typeof window !== "undefined" ? `${window.location.origin}/services/neglijenta-profesionala-si-malpraxis` : "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
@@ -80,6 +81,7 @@ export default function Malpraxis() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
+                  "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                   "telephone": "+40 (31) 632 01 83"
                 }
               })

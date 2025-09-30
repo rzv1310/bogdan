@@ -53,6 +53,7 @@ export default function CriminalitateEconomica() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "LegalService",
+                "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                 "name": "Servicii avocat criminalitate economică",
                 "description": "Asistență și reprezentare în cauze de criminalitate economică",
                 "url": typeof window !== "undefined" ? `${window.location.origin}/services/criminalitate-economica` : "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
@@ -80,6 +81,7 @@ export default function CriminalitateEconomica() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
+                  "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
                   "telephone": "+40 (31) 632 01 83"
                 }
               })

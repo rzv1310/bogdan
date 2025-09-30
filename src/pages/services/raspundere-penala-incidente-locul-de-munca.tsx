@@ -33,6 +33,7 @@ export default function RaspunderePenalaMunca() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
+            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             name: "Răspundere penală pentru incidente la locul de muncă",
             url: typeof window !== "undefined" ? `${window.location.origin}/servicii/raspundere-penala-incidente-locul-de-munca` : "/servicii/raspundere-penala-incidente-locul-de-munca",
             areaServed: ["RO", "EU"],
@@ -47,7 +48,7 @@ export default function RaspunderePenalaMunca() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            provider: { "@type": "Person", name: "Bogdan Lamatic", "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
         }}
