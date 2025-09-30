@@ -172,184 +172,354 @@ const HomepageEN = () => {
     schemas: [
       {
         "@context": "https://schema.org",
-        "@type": "LegalService",
-        "@id": `${origin}#LegalService`,
-        "name": "Criminal Defense Lawyer in Bucharest, Romania",
-        "description": "Criminal defense law firm in Bucharest - Defense in white-collar crime, corruption, road traffic, crypto investigations and malpractice",
-        "url": `${origin}/en`,
-        "telephone": "+40316320183",
-        "email": "contact@avocatpenalbucuresti.ro",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Strada Colonel Stefan Stoika 22",
-          "addressLocality": "Bucharest",
-          "addressRegion": "Bucharest",
-          "postalCode": "012244",
-          "addressCountry": "RO"
-        },
-        "areaServed": [
+        "@graph": [
           {
-            "@type": "City",
-            "name": "Bucharest",
-            "addressCountry": "RO"
+            "@type": "LegalService",
+            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+            "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
+            "description": "Criminal law firm in Bucharest — defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
+            "url": "https://avocatpenalbucuresti.ro/",
+            "telephone": "+40316320183",
+            "email": "contact@avocatpenalbucuresti.ro",
+            "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
+            "priceRange": "$$",
+            "sameAs": [
+              "https://www.linkedin.com/in/bogdan-lamatic",
+              "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
+              "https://x.com/BogdanLamatic",
+              "https://www.instagram.com/bogdanlamatic/",
+              "https://www.facebook.com/profile.php?id=61580770400222",
+              "https://www.tiktok.com/@avocatdreptpenal",
+              "https://pinterest.com/AvocatDreptPenalBogdanLamatic"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Strada Colonel Stefan Stoika 22",
+              "addressLocality": "București",
+              "addressRegion": "Bucuresti",
+              "postalCode": "012244",
+              "addressCountry": "RO"
+            },
+            "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 44.4572663,
+              "longitude": 26.0635712
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "06:00",
+                "closes": "22:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday","Sunday"],
+                "opens": "09:00",
+                "closes": "20:00"
+              }
+            ],
+            "areaServed": [
+              { "@type": "City", "name": "București" },
+              { "@type": "Country", "name": "România" }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Criminal law services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "White-collar crime",
+                    "description": "Defense in tax evasion, fraud, abuse of office and related cases."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corruption offenses",
+                    "description": "Defense in bribery (giving/receiving), influence peddling and related offenses."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Crypto asset investigations",
+                    "description": "Specialized services for blockchain investigations and digital assets."
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "reviewCount": "10"
+            },
+            "review": currentReviews.slice(0, 5).map((review, index) => ({
+              "@type": "Review",
+              "inLanguage": "en-US",
+              "author": { "@type": "Person", "name": review.name },
+              "reviewRating": { "@type": "Rating", "ratingValue": review.stars.toString(), "bestRating": "5" },
+              "reviewBody": review.text
+            }))
           },
           {
-            "@type": "Country",
-            "name": "Romania"
-          }
-        ],
-        "serviceType": [
-          "Criminal defense",
-          "White-collar crime",
-          "Corruption offenses",
-          "Crypto investigations",
-          "Medical malpractice",
-          "Road traffic offenses"
-        ],
-        "priceRange": "$$",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Criminal legal services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "White-collar crime",
-                "description": "Defense in tax evasion, fraud, abuse of office cases"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Corruption offenses",
-                "description": "Defense in bribery, influence peddling cases"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Crypto asset investigations",
-                "description": "Specialized services for blockchain and digital asset investigations"
-              }
-            }
-          ]
-        },
-        "review": currentReviews.slice(0, 5).map(review => ({
-          "@type": "Review",
-          "author": {
             "@type": "Person",
-            "name": review.name
+            "name": "Bogdan Lamatic",
+            "jobTitle": "Criminal defense attorney",
+            "telephone": "+40316320183",
+            "email": "contact@avocatpenalbucuresti.ro",
+            "knowsAbout": [
+              "Criminal law",
+              "White-collar crime",
+              "Corruption offenses",
+              "Blockchain investigations",
+              "Medical malpractice",
+              "Traffic accidents with victims"
+            ],
+            "alumniOf": {
+              "@type": "Organization",
+              "name": "Universitatea de Vest din Timișoara"
+            },
+            "memberOf": {
+              "@type": "Organization",
+              "name": "Baroul București"
+            },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Law degree",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Baroul București"
+              }
+            },
+            "worksFor": {
+              "@type": "LegalService",
+              "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+            }
           },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": review.stars,
-            "bestRating": 5
+          {
+            "@type": "WebSite",
+            "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
+            "url": "https://avocatpenalbucuresti.ro/",
+            "description": "Official website of lawyer Bogdan Lamatic — criminal defense, white-collar crime, and crypto investigations in Bucharest.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@type": "LegalService",
+              "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
           },
-          "reviewBody": review.text
-        })),
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": 5,
-          "reviewCount": currentReviews.length,
-          "bestRating": 5
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Bogdan Lamatic",
-        "jobTitle": "Criminal defense attorney",
-        "worksFor": {
-          "@id": `${origin}#LegalService`
-        },
-        "telephone": "+40316320183",
-        "email": "contact@avocatpenalbucuresti.ro",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Strada Colonel Stefan Stoika 22",
-          "addressLocality": "Bucharest",
-          "addressRegion": "Bucharest",
-          "postalCode": "012244",
-          "addressCountry": "RO"
-        },
-        "alumniOf": {
-          "@type": "Organization",
-          "name": "West University of Timișoara"
-        },
-        "memberOf": {
-          "@type": "Organization",
-          "name": "Bucharest Bar Association"
-        },
-        "hasCredential": {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Law degree",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Bucharest Bar Association"
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does representation in a criminal case cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Fees depend on the complexity of the case and its procedural stage. During the first consultation (free), I provide an estimate and all costs are transparently listed in the contract. Call me at +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer a free initial consultation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, I offer a free initial discussion to evaluate your legal situation and possible defense strategies. Phone +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you have experience with drug-related criminal cases?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, I have represented clients in a wide range of cases — from economic crimes to offenses against the person or drug trafficking — with favorable outcomes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a criminal trial take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It can vary from a few months to several years, depending on complexity and procedural stages. I will do everything possible to expedite proceedings within the law. Call +40 (31) 632 01 83 for a free consultation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are my rights as a suspect or defendant?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You have the right to counsel, to be properly informed of the charges, to consult the file, and to a fair trial. I will explain these in detail in relation to your case. Phone +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will you personally represent me in court?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, I personally handle the case and court representation. When needed, I collaborate with trusted partners, but I remain your contact lawyer."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What options do I have if the court decision is unfavorable?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We can use remedies — appeal or extraordinary remedies — depending on the legal situation and deadlines."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I receive free legal aid?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, in certain conditions you may obtain a court-appointed lawyer or support through the legal aid system. I can help check your eligibility."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I find a good lawyer in Romania or Bucharest?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "My experience and expertise are detailed here: https://avocatpenalbucuresti.ro/despre-mine Call me for a free consultation at 0316320183."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I avoid a criminal record if I plead guilty?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In some situations, the law allows penalties without entry in the criminal record (e.g., waiver of prosecution, administrative fine, waiver of applying the penalty). Each case is analyzed individually. Call +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are my rights if I am detained by the police?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You have the right to be informed of the reasons, to have a chosen or court-appointed lawyer, to request an interpreter if you do not speak Romanian, and to receive medical assistance if needed. You can call me from 6 AM. Phone +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is parole and can I obtain it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Parole allows early release before the end of the sentence if you have served part of it, behaved well, and met the legal conditions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long can a criminal investigation last?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Duration depends on complexity and the amount of evidence; the law does not set maximum terms for each stage. Call me at +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I refuse to incriminate myself?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, you have the right against self-incrimination under the Code of Criminal Procedure, the Romanian Constitution, and the European Convention on Human Rights."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I do if I disagree with the charges against me?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Contact me immediately at +40 (31) 632 01 83. I will review the charges, prepare the defense, and challenge unlawful evidence or procedures to protect your rights."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I was caught driving under the influence. What do I risk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Depending on blood alcohol level, the act may be a misdemeanor or a crime. It can lead to a criminal case, license suspension, and even imprisonment. Proper defense can reduce the sanction. Call +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Police found drugs on me, but they were for personal use. What happens next?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Possession for personal use is a criminal offense. In some conditions, we can obtain waiver of prosecution or a suspended sentence. It's important to have a lawyer from the first stage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I was accused of theft but there is no clear evidence. How can I defend myself?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Insufficient or illegally obtained evidence may lead to dismissal or acquittal. We will review the case file and make the necessary defenses. Phone +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if I refuse breathalyzer or drug testing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Refusal is a separate criminal offense and triggers a criminal case. It is more serious than a positive result, so seek legal assistance immediately. Call +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I am suspected of domestic violence. What are the consequences?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Domestic violence is a criminal offense; protection orders may also be issued. We will build your defense considering witness statements, evidence, and circumstances. Phone +40 (31) 632 01 83."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I received a subpoena as a witness. Can I skip it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Attendance is mandatory. Refusal may lead to a fine or being brought in by warrant. You have the right to be assisted by a lawyer and the right not to self-incriminate."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I do if I'm falsely accused?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Contact a lawyer immediately. Call me at +40 (31) 632 01 83. We will challenge the evidence, bring witnesses and independent expert opinions; in some cases we may file a complaint for false accusation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can the police detain me for more than 24 hours?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Police custody cannot exceed 24 hours. Extension is by preventive arrest ordered by a judge, for which defense before the court is necessary."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a plea agreement?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It is a procedure in which you admit the offense in exchange for a reduced sentence. It applies only in certain cases and must be carefully assessed to avoid a disadvantageous outcome."
+                }
+              }
+            ]
           }
-        },
-        "knowsAbout": [
-          "Criminal law",
-          "White-collar crime",
-          "Corruption offenses",
-          "Blockchain investigations",
-          "Medical malpractice",
-          "Road traffic offenses"
         ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Criminal Defense Lawyer in Bucharest, Romania",
-        "url": `${origin}/en`,
-        "description": "Official site of attorney Bogdan Lamatic - specialized in criminal defense, white-collar crime and crypto investigations in Bucharest",
-        "inLanguage": "en-US",
-        "publisher": {
-          "@id": `${origin}#LegalService`
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": `${origin}/en/search?q={search_term_string}`
-          },
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
-        "name": "Criminal Defense Lawyer in Bucharest, Romania",
-        "description": "Criminal law firm in Bucharest, specialized in white-collar crime, corruption and crypto investigations",
-        "url": `${origin}/en`,
-        "telephone": "+40316320183",
-        "email": "contact@avocatpenalbucuresti.ro",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Strada Colonel Stefan Stoika 22",
-          "addressLocality": "Bucharest", 
-          "addressRegion": "Bucharest",
-          "postalCode": "012244",
-          "addressCountry": "RO"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.4572663,
-          "longitude": 26.0635712
-        },
-        "openingHours": ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
-        "paymentAccepted": "Cash, BankTransfer",
-        "currenciesAccepted": "RON, EUR",
-        "priceRange": "$$",
-        "sameAs": [
-          "https://www.linkedin.com/in/bogdan-lamatic",
-          "https://x.com/BogdanLamatic"
-        ],
-        "image": `${origin}/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg`
       }
     ]
   });
