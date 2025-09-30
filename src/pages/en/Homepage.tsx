@@ -184,7 +184,6 @@ const HomepageEN = () => {
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
             "priceRange": "$$",
             "sameAs": [
-              "https://www.linkedin.com/in/bogdan-lamatic",
               "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
               "https://x.com/BogdanLamatic",
               "https://www.instagram.com/bogdanlamatic/",
