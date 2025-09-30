@@ -178,7 +178,7 @@ const HomepageEN = () => {
             "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
             "description": "Criminal law firm in Bucharest — defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
-            "url": "https://avocatpenalbucuresti.ro/",
+            "url": "https://avocatpenalbucuresti.ro/en",
             "telephone": "+40316320183",
             "email": "contact@avocatpenalbucuresti.ro",
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
@@ -305,7 +305,7 @@ const HomepageEN = () => {
           {
             "@type": "WebSite",
             "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
-            "url": "https://avocatpenalbucuresti.ro/",
+            "url": "https://avocatpenalbucuresti.ro/en",
             "description": "Official website of lawyer Bogdan Lamatic — criminal defense, white-collar crime, and crypto investigations in Bucharest.",
             "inLanguage": "en-US",
             "publisher": {
@@ -316,7 +316,7 @@ const HomepageEN = () => {
               "@type": "SearchAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://avocatpenalbucuresti.ro/search?q={search_term_string}"
+                "urlTemplate": "https://avocatpenalbucuresti.ro/en/search?q={search_term_string}"
               },
               "query-input": "required name=search_term_string"
             }
