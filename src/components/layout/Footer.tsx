@@ -61,7 +61,7 @@ export default function Footer() {
             <h2 id="footer-social" className="text-sm font-semibold tracking-wide uppercase">
               {lang === "en" ? "Follow Us" : "Urmărește-ne"}
             </h2>
-            <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="mt-4 grid grid-cols-2 gap-4">
               <a 
                 href="https://www.linkedin.com/in/bogdan-lamatic/" 
                 target="_blank" 
