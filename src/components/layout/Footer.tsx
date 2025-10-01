@@ -113,7 +113,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="hover:text-primary transition-colors"
                 >
                   <Linkedin size={24} />
                 </a>
@@ -122,7 +121,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="X (Twitter)"
-                  className="hover:text-primary transition-colors"
                 >
                   <Twitter size={24} />
                 </a>
@@ -131,7 +129,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="hover:text-primary transition-colors"
                 >
                   <Instagram size={24} />
                 </a>
@@ -140,7 +137,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="hover:text-primary transition-colors"
                 >
                   <Facebook size={24} />
                 </a>
@@ -149,7 +145,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="TikTok"
-                  className="hover:text-primary transition-colors"
                 >
                   <Music size={24} />
                 </a>
@@ -158,7 +153,6 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Pinterest"
-                  className="hover:text-primary transition-colors"
                 >
                   <Pin size={24} />
                 </a>
