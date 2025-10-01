@@ -3,6 +3,7 @@ import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
+import { Linkedin, Twitter, Instagram, Facebook, Music, Pin } from "lucide-react";
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -15,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t overflow-hidden bg-black text-white font-extralight font-inter">
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
             <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} className="hover:underline">{lang === "en" ? "Criminal Defense Lawyer Bucharest Bogdan Lamatic" : "Avocat Drept Penal Bucuresti Bogdan Lamatic"}</Link></h2>
@@ -55,7 +56,70 @@ export default function Footer() {
             </div>
           </section>
 
-          {/* Col 2: Servicii */}
+          {/* Col 2: Social Media */}
+          <section aria-labelledby="footer-social">
+            <h2 id="footer-social" className="text-sm font-semibold tracking-wide uppercase">
+              {lang === "en" ? "Follow Us" : "Urmărește-ne"}
+            </h2>
+            <div className="mt-4 grid grid-cols-3 gap-4">
+              <a 
+                href="https://www.linkedin.com/in/bogdan-lamatic/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-primary transition-colors"
+              >
+                <Linkedin size={24} />
+              </a>
+              <a 
+                href="https://x.com/BogdanLamatic" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                className="hover:text-primary transition-colors"
+              >
+                <Twitter size={24} />
+              </a>
+              <a 
+                href="https://www.instagram.com/avocat_bogdan_lamatic/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="hover:text-primary transition-colors"
+              >
+                <Instagram size={24} />
+              </a>
+              <a 
+                href="https://www.facebook.com/avocatpenalbucuresti" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="hover:text-primary transition-colors"
+              >
+                <Facebook size={24} />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@avocat_bogdan_lamatic" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="hover:text-primary transition-colors"
+              >
+                <Music size={24} />
+              </a>
+              <a 
+                href="https://ro.pinterest.com/avocatpenalbucuresti/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+                className="hover:text-primary transition-colors"
+              >
+                <Pin size={24} />
+              </a>
+            </div>
+          </section>
+
+          {/* Col 3: Servicii */}
           <nav aria-labelledby="footer-services">
             <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">
               {lang === "en" ? "Criminal Defense Attorney Services" : "Arii de practică"}
@@ -71,7 +135,7 @@ export default function Footer() {
             </ul>
           </nav>
 
-          {/* Col 3: Utile */}
+          {/* Col 4: Utile */}
           <nav aria-labelledby="footer-utile">
             <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase">{lang === "en" ? "Useful" : "Utile"}</h2>
             <ul className="mt-4 space-y-2 text-sm">
