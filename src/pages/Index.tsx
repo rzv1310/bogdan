@@ -414,7 +414,7 @@ const Index = () => {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Infracțiuni de corupție",
+                    "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
                     "description": "Apărare în dosare de luare de mită, dare de mită, trafic de influență"
                   }
                 },
@@ -422,8 +422,56 @@ const Index = () => {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Investigații active crypto",
+                    "name": "Investigații privind activele cripto",
                     "description": "Servicii specializate pentru investigații blockchain și active digitale"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Cauze penale privind droguri",
+                    "description": "Apărare în dosare de trafic și consum de substanțe interzise"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Spălare de bani și ascundere de bunuri",
+                    "description": "Apărare în dosare de spălare de bani și disimulare a provenienței bunurilor"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neglijență profesională și malpraxis",
+                    "description": "Apărare și reprezentare în cazuri de malpraxis medical și profesional"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Infracțiuni rutiere cu victime",
+                    "description": "Apărare în dosare de accidente rutiere cu victime"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Răspundere penală pentru incidente la locul de muncă",
+                    "description": "Apărare în dosare privind accidente de muncă și răspundere penală"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Reprezentarea victimelor în procese penale",
+                    "description": "Reprezentare juridică pentru victime în proceduri penale"
                   }
                 }
               ]

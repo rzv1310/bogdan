@@ -231,16 +231,16 @@ const HomepageEN = () => {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "White-collar crime",
-                    "description": "Defense in tax evasion, fraud, abuse of office and related cases."
+                    "name": "Financial crime",
+                    "description": "Defense in tax evasion, fraud, abuse of office and related cases"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Corruption offenses",
-                    "description": "Defense in bribery (giving/receiving), influence peddling and related offenses."
+                    "name": "Corruption and public office offenses",
+                    "description": "Defense in bribery, influence peddling and related offenses"
                   }
                 },
                 {
@@ -248,7 +248,55 @@ const HomepageEN = () => {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Crypto asset investigations",
-                    "description": "Specialized services for blockchain investigations and digital assets."
+                    "description": "Specialized services for blockchain investigations and digital assets"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Drug offenses",
+                    "description": "Defense in drug trafficking and possession cases"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Money laundering and asset concealment",
+                    "description": "Defense in money laundering and asset origin concealment cases"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Professional negligence and malpractice",
+                    "description": "Defense and representation in medical and professional malpractice cases"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Road traffic offenses",
+                    "description": "Defense in traffic accidents with victims"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Workplace criminal liability",
+                    "description": "Defense in workplace accidents and criminal liability cases"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Victim representation in criminal cases",
+                    "description": "Legal representation for victims in criminal proceedings"
                   }
                 }
               ]
