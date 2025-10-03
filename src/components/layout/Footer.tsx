@@ -109,7 +109,7 @@ export default function Footer() {
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <a 
-                  href="https://www.linkedin.com/in/bogdan-lamatic/" 
+                  href="http://linkedin.com/in/bogdan-lamatic-b36a2a1b8"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -125,7 +125,7 @@ export default function Footer() {
                   <Twitter size={24} />
                 </a>
                 <a 
-                  href="https://www.instagram.com/avocat_bogdan_lamatic/" 
+                  href="https://www.instagram.com/bogdanlamatic/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -133,7 +133,7 @@ export default function Footer() {
                   <Instagram size={24} />
                 </a>
                 <a 
-                  href="https://www.facebook.com/avocatpenalbucuresti" 
+                  href="https://www.facebook.com/profile.php?id=61580770400222"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -141,7 +141,7 @@ export default function Footer() {
                   <Facebook size={24} />
                 </a>
                 <a 
-                  href="https://www.tiktok.com/@avocat_bogdan_lamatic" 
+                  href="https://www.tiktok.com/@avocatdreptpenal"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="TikTok"
@@ -149,7 +149,7 @@ export default function Footer() {
                   <Music size={24} />
                 </a>
                 <a 
-                  href="https://ro.pinterest.com/avocatpenalbucuresti/" 
+                  href="https://ro.pinterest.com/AvocatDreptPenalBogdanLamatic/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Pinterest"
