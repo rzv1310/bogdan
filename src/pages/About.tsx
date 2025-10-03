@@ -18,28 +18,135 @@ export default function About() {
         : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
   });
 
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+    "name": "Despre mine | Avocat Bogdan Lamatic | București",
+    "description": "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
+    "url": "https://avocatpenalbucuresti.ro/despre-mine",
+    "inLanguage": "ro-RO",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://avocatpenalbucuresti.ro/#website",
+      "name": "Avocat Penal București - Bogdan Lamatic",
+      "url": "https://avocatpenalbucuresti.ro"
+    },
+    "about": "https://avocatpenalbucuresti.ro/despre-mine#person",
+    "mainEntity": "https://avocatpenalbucuresti.ro/despre-mine#person",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://avocatpenalbucuresti.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Despre mine",
+          "item": "https://avocatpenalbucuresti.ro/despre-mine"
+        }
+      ]
+    }
+  } as const;
+
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Bogdan-Constantin Lamatic",
-    jobTitle: "Attorney",
-    address: {
+    "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
+    "name": "Bogdan-Constantin Lamatic",
+    "givenName": "Bogdan-Constantin",
+    "familyName": "Lamatic",
+    "jobTitle": "Attorney",
+    "url": "https://avocatpenalbucuresti.ro",
+    "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
+    "email": "contact@avocatpenalbucuresti.ro",
+    "telephone": "+40 (31) 632 01 83",
+    "address": {
       "@type": "PostalAddress",
-      streetAddress: "Strada Colonel Stefan Stoika 22",
-      addressLocality: "București",
-      addressRegion: "Bucuresti",
-      postalCode: "012244",
-      addressCountry: "RO",
-      url: "https://www.google.com/maps?cid=17818591254142574295"
+      "streetAddress": "Strada Colonel Stefan Stoika 22",
+      "addressLocality": "București",
+      "addressRegion": "București",
+      "postalCode": "012244",
+      "addressCountry": "RO",
+      "url": "https://www.google.com/maps?cid=17818591254142574295"
     },
-    hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-    email: "mailto:contact@avocatpenalbucuresti.ro",
-    telephone: "+40 (31) 632 01 83",
-    url: "https://avocatpenalbucuresti.ro",
-    memberOf: [
-      { "@type": "Organization", name: "Bucharest Bar" },
-      { "@type": "Organization", name: "Romanian Lawyers Union" }
+    "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "Wolf Theiss",
+        "url": "https://www.wolftheiss.com"
+      }
     ],
+    "memberOf": [
+      { 
+        "@type": "Organization", 
+        "name": "Baroul București",
+        "url": "https://www.baroul-bucuresti.ro"
+      },
+      { 
+        "@type": "Organization", 
+        "name": "Uniunea Națională a Barourilor din România",
+        "url": "https://www.unbr.ro"
+      }
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Universitatea din București",
+        "sameAs": "https://unibuc.ro"
+      }
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional License",
+        "name": "Avocat membru al Baroului București"
+      }
+    ],
+    "award": [
+      "Legal500 - Rising Star - 2020 Edition (White-Collar Crime)",
+      "Legal500 - Next Generation Partner - 2021 Edition (White-Collar Crime)",
+      "Legal500 - Next Generation Partner - 2022 Edition (White-Collar Crime)",
+      "Legal500 - Next Generation Partner - 2023 Edition (White-Collar Crime)",
+      "Legal500 - Next Generation Partner - 2024 Edition (White-Collar Crime)"
+    ],
+    "knowsAbout": [
+      "Drept penal",
+      "Criminalitate economică",
+      "Infracțiuni de corupție",
+      "Conformitate și investigații corporative",
+      "Recuperare de active",
+      "Protecția datelor",
+      "Drept civil și comercial",
+      "Reprezentare victimelor în procese penale"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/",
+      "https://www.wolftheiss.com/team/bogdan-lamatic/"
+    ],
+    "workLocation": {
+      "@type": "Place",
+      "name": "Cabinet Avocat Bogdan Lamatic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Strada Colonel Stefan Stoika 22",
+        "addressLocality": "București",
+        "addressRegion": "București",
+        "postalCode": "012244",
+        "addressCountry": "RO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.4533",
+        "longitude": "26.0876"
+      },
+      "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+    }
   } as const;
 
   return (
@@ -110,6 +217,10 @@ export default function About() {
           </section>
 
           {/* More English sections would continue here */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
@@ -296,6 +407,10 @@ export default function About() {
             </a>
           </section>
 
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
