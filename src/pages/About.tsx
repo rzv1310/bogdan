@@ -60,11 +60,11 @@ export default function About() {
     "name": "Bogdan-Constantin Lamatic",
     "givenName": "Bogdan-Constantin",
     "familyName": "Lamatic",
-    "jobTitle": "Attorney",
-    "url": "https://avocatpenalbucuresti.ro",
-    "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
+    "jobTitle": "Avocat specializat în drept penal",
+    "url": "https://avocatpenalbucuresti.ro/despre-mine",
+    "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
     "email": "contact@avocatpenalbucuresti.ro",
-    "telephone": "+40 (31) 632 01 83",
+    "telephone": "+40316320183",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Strada Colonel Stefan Stoika 22",
@@ -150,7 +150,7 @@ export default function About() {
     ],
     "workLocation": {
       "@type": "Place",
-      "name": "Cabinet Avocat Bogdan Lamatic",
+      "name": "Avocat Drept Penal București Bogdan Lamatic",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Strada Colonel Stefan Stoika 22",
