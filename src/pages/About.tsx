@@ -9,15 +9,6 @@ export default function About() {
   const { lang } = useLanguage();
   const t = translations[lang];
 
-  // SEO
-  useSEO({
-    title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic | Bucuresti",
-    description:
-      lang === "en"
-        ? "About attorney Bogdan Lamatic: experience, recognitions, publications and professional background."
-        : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
-  });
-
   const unifiedSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -164,6 +155,17 @@ export default function About() {
     ]
   } as const;
 
+  // SEO
+  useSEO({
+    title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic | Bucuresti",
+    description:
+      lang === "en"
+        ? "About attorney Bogdan Lamatic: experience, recognitions, publications and professional background."
+        : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
+    schemas: [unifiedSchema],
+  });
+
+
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <p className="sr-only">{lang === "en" ? "About me" : t.nav.about}</p>
@@ -232,10 +234,6 @@ export default function About() {
           </section>
 
           {/* More English sections would continue here */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(unifiedSchema) }}
-          />
         </main>
       ) : (
         /* Romanian Version */
@@ -417,11 +415,6 @@ export default function About() {
               </Button>
             </a>
           </section>
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(unifiedSchema) }}
-          />
         </main>
       )}
     </section>
