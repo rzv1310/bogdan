@@ -317,37 +317,91 @@ const HomepageEN = () => {
           },
           {
             "@type": "Person",
+            "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
+            "url": "https://avocatpenalbucuresti.ro/despre-mine",
             "name": "Bogdan Lamatic",
-            "jobTitle": "Criminal defense attorney",
+            "jobTitle": "Avocat specializat în drept penal",
+            "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
             "telephone": "+40316320183",
             "email": "contact@avocatpenalbucuresti.ro",
-            "knowsAbout": [
-              "Criminal law",
-              "White-collar crime",
-              "Corruption offenses",
-              "Blockchain investigations",
-              "Medical malpractice",
-              "Traffic accidents with victims"
+            "worksFor": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+            "affiliation": [
+              { "@type": "Organization", "name": "Wolf Theiss" },
+              { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
+              { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
+              { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
             ],
-            "alumniOf": {
-              "@type": "Organization",
-              "name": "Universitatea de Vest din Timișoara"
-            },
-            "memberOf": {
-              "@type": "Organization",
-              "name": "Baroul București"
-            },
-            "hasCredential": {
-              "@type": "EducationalOccupationalCredential",
-              "credentialCategory": "Law degree",
-              "recognizedBy": {
+            "memberOf": [
+              {
                 "@type": "Organization",
-                "name": "Baroul București"
+                "name": "Baroul București",
+                "url": "https://www.baroul-bucuresti.ro/"
+              },
+              {
+                "@type": "Organization",
+                "name": "Uniunea Națională a Barourilor din România",
+                "url": "https://www.unbr.ro/",
+                "sameAs": [
+                  "https://ro.wikipedia.org/wiki/Uniunea_Na%C8%9Bional%C4%83_a_Barourilor_din_Rom%C3%A2nia"
+                ]
               }
+            ],
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Bachelor of Laws (LL.B.)",
+                "datePublished": "2006",
+                "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Postgraduate Diploma in Criminal Law",
+                "datePublished": "2015",
+                "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+              }
+            ],
+            "award": [
+              "Legal 500 – Rising Star (White-Collar Crime) 2020",
+              "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
+              "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
+              "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
+              "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
+            ],
+            "knowsAbout": {
+              "@type": "ItemList",
+              "itemListElement": [
+                { "@type": "Thing", "name": "white-collar economic crime" },
+                { "@type": "Thing", "name": "corporate investigations" },
+                { "@type": "Thing", "name": "compliance" },
+                { "@type": "Thing", "name": "asset recovery and international enforcement" },
+                { "@type": "Thing", "name": "litigation" },
+                { "@type": "Thing", "name": "criminal law" },
+                { "@type": "Thing", "name": "defense in financial crime cases" },
+                { "@type": "Thing", "name": "representation in corruption and public office offenses" },
+                { "@type": "Thing", "name": "legal assistance in crypto asset investigations" },
+                { "@type": "Thing", "name": "representation in drug-related criminal cases" },
+                { "@type": "Thing", "name": "defense in money laundering and asset concealment cases" },
+                { "@type": "Thing", "name": "handling professional negligence and malpractice cases" },
+                { "@type": "Thing", "name": "representation in road traffic offenses with bodily injury or death" },
+                { "@type": "Thing", "name": "criminal liability for workplace incidents" },
+                { "@type": "Thing", "name": "victim representation in criminal proceedings" }
+              ]
             },
-            "worksFor": {
-              "@type": "LegalService",
-              "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+            "sameAs": [
+              "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
+              "https://profesionisti.juridice.ro/bogdan-lamatic",
+              "https://www.google.com/maps?cid=17818591254142574295",
+              "https://www.instagram.com/bogdanlamatic/",
+              "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
+              "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
+            ],
+            "workLocation": {
+              "@type": "Place",
+              "name": "Avocat Drept Penal București Bogdan Lamatic",
+              "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
             }
           },
           {
