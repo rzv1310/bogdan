@@ -351,6 +351,8 @@ const Index = () => {
           {
             "@type": "LegalService",
             "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+            "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
+            "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "name": "Avocat Drept Penal București Bogdan Lamatic",
             "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
             "url": "https://avocatpenalbucuresti.ro/",

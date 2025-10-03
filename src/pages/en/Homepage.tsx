@@ -176,6 +176,8 @@ const HomepageEN = () => {
           {
             "@type": "LegalService",
             "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+            "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
+            "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
             "description": "Criminal law firm in Bucharest — defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
             "url": "https://avocatpenalbucuresti.ro/en",
