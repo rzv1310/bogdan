@@ -18,154 +18,150 @@ export default function About() {
         : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
   });
 
-  const webPageSchema = {
+  const unifiedSchema = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
-    "name": "Despre mine | Avocat Bogdan Lamatic | București",
-    "description": "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
-    "url": "https://avocatpenalbucuresti.ro/despre-mine",
-    "inLanguage": "ro-RO",
-    "isPartOf": {
-      "@type": "WebSite",
-      "@id": "https://avocatpenalbucuresti.ro/#website",
-      "name": "Avocat Penal București - Bogdan Lamatic",
-      "url": "https://avocatpenalbucuresti.ro"
-    },
-    "about": "https://avocatpenalbucuresti.ro/despre-mine#person",
-    "mainEntity": "https://avocatpenalbucuresti.ro/despre-mine#person",
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Acasă",
-          "item": "https://avocatpenalbucuresti.ro/"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
+        "name": "Bogdan-Constantin Lamatic",
+        "givenName": "Bogdan-Constantin",
+        "familyName": "Lamatic",
+        "jobTitle": "Avocat specializat în drept penal",
+        "url": "https://avocatpenalbucuresti.ro/despre-mine",
+        "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
+        "email": "contact@avocatpenalbucuresti.ro",
+        "telephone": "+40316320183",
+        "worksFor": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Colonel Stefan Stoika 22",
+          "addressLocality": "București",
+          "addressRegion": "București",
+          "postalCode": "012244",
+          "addressCountry": "RO"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Despre mine",
-          "item": "https://avocatpenalbucuresti.ro/despre-mine"
-        }
-      ]
-    }
-  } as const;
-
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
-    "name": "Bogdan-Constantin Lamatic",
-    "givenName": "Bogdan-Constantin",
-    "familyName": "Lamatic",
-    "jobTitle": "Avocat specializat în drept penal",
-    "url": "https://avocatpenalbucuresti.ro/despre-mine",
-    "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
-    "email": "contact@avocatpenalbucuresti.ro",
-    "telephone": "+40316320183",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Strada Colonel Stefan Stoika 22",
-      "addressLocality": "București",
-      "addressRegion": "București",
-      "postalCode": "012244",
-      "addressCountry": "RO",
-      "url": "https://www.google.com/maps?cid=17818591254142574295"
-    },
-    "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
-    "affiliation": [
-      { "@type": "Organization", "name": "Wolf Theiss" },
-      { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
-      { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
-      { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
-    ],
-    "memberOf": [
-      { 
-        "@type": "Organization", 
-        "name": "Baroul București",
-        "url": "https://www.baroul-bucuresti.ro/"
-      },
-      { 
-        "@type": "Organization", 
-        "name": "Uniunea Națională a Barourilor din România",
-        "url": "https://www.unbr.ro/",
+        "affiliation": [
+          { "@type": "Organization", "name": "Wolf Theiss" },
+          { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
+          { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
+          { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
+        ],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Baroul București",
+            "url": "https://www.baroul-bucuresti.ro/"
+          },
+          {
+            "@type": "Organization",
+            "name": "Uniunea Națională a Barourilor din România",
+            "url": "https://www.unbr.ro/",
+            "sameAs": [
+              "https://ro.wikipedia.org/wiki/Uniunea_Na%C8%9Bional%C4%83_a_Barourilor_din_Rom%C3%A2nia"
+            ]
+          }
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Bachelor of Laws (LL.B.)",
+            "datePublished": "2006",
+            "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Postgraduate Diploma in Criminal Law",
+            "datePublished": "2015",
+            "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+          }
+        ],
+        "award": [
+          "Legal 500 – Rising Star (White-Collar Crime) 2020",
+          "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
+          "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
+          "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
+          "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
+        ],
+        "knowsAbout": {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "Thing", "name": "criminalitate economică (white-collar)" },
+            { "@type": "Thing", "name": "investigații corporative" },
+            { "@type": "Thing", "name": "conformitate (compliance)" },
+            { "@type": "Thing", "name": "recuperarea activelor și executare internațională" },
+            { "@type": "Thing", "name": "litigii" },
+            { "@type": "Thing", "name": "drept penal" },
+            { "@type": "Thing", "name": "apărare în cauze de criminalitate financiară" },
+            { "@type": "Thing", "name": "reprezentare în infracțiuni de corupție și fapte legate de funcția publică" },
+            { "@type": "Thing", "name": "asistență juridică în investigarea activelor cripto" },
+            { "@type": "Thing", "name": "reprezentare în cauze penale privind drogurile" },
+            { "@type": "Thing", "name": "apărare în dosare de spălare de bani și disimularea provenienței bunurilor" },
+            { "@type": "Thing", "name": "gestionarea cazurilor de neglijență profesională și malpraxis" },
+            { "@type": "Thing", "name": "reprezentare în infracțiuni rutiere cu vătămări corporale sau deces" },
+            { "@type": "Thing", "name": "răspundere penală pentru incidente la locul de muncă" },
+            { "@type": "Thing", "name": "reprezentarea victimelor în proceduri penale" }
+          ]
+        },
         "sameAs": [
-          "https://ro.wikipedia.org/wiki/Uniunea_Na%C8%9Bional%C4%83_a_Barourilor_din_Rom%C3%A2nia"
+          "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
+          "https://profesionisti.juridice.ro/bogdan-lamatic",
+          "https://www.google.com/maps?cid=17818591254142574295",
+          "https://www.instagram.com/bogdanlamatic/",
+          "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
+          "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
+        ],
+        "workLocation": {
+          "@type": "Place",
+          "name": "Avocat Drept Penal București Bogdan Lamatic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Strada Colonel Stefan Stoika 22",
+            "addressLocality": "București",
+            "addressRegion": "București",
+            "postalCode": "012244",
+            "addressCountry": "RO"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 44.4533,
+            "longitude": 26.0876
+          },
+          "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://avocatpenalbucuresti.ro/despre-mine#webpage",
+        "url": "https://avocatpenalbucuresti.ro/despre-mine",
+        "name": "Despre mine – Bogdan-Constantin Lamatic",
+        "inLanguage": "ro-RO",
+        "about": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
+        "mainEntity": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
+        "isPartOf": { "@id": "https://avocatpenalbucuresti.ro/#website" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://avocatpenalbucuresti.ro/despre-mine#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Acasă",
+            "item": "https://avocatpenalbucuresti.ro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Despre mine",
+            "item": "https://avocatpenalbucuresti.ro/despre-mine"
+          }
         ]
       }
-    ],
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Bachelor of Laws (LL.B.)",
-        "datePublished": "2006",
-        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Postgraduate Diploma in Criminal Law",
-        "datePublished": "2015",
-        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
-      }
-    ],
-    "award": [
-      "Legal 500 – Rising Star (White-Collar Crime) 2020",
-      "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
-      "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
-      "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
-      "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
-    ],
-    "knowsAbout": {
-      "@type": "ItemList",
-      "itemListElement": [
-        { "@type": "Thing", "name": "criminalitate economică (white-collar)" },
-        { "@type": "Thing", "name": "investigații corporative" },
-        { "@type": "Thing", "name": "conformitate (compliance)" },
-        { "@type": "Thing", "name": "recuperarea activelor și executare internațională" },
-        { "@type": "Thing", "name": "litigii" },
-        { "@type": "Thing", "name": "drept penal" },
-        { "@type": "Thing", "name": "apărare în cauze de criminalitate financiară" },
-        { "@type": "Thing", "name": "reprezentare în infracțiuni de corupție și fapte legate de funcția publică" },
-        { "@type": "Thing", "name": "asistență juridică în investigații privind activele cripto" },
-        { "@type": "Thing", "name": "reprezentare în cauze penale privind drogurile" },
-        { "@type": "Thing", "name": "apărare în dosare de spălare de bani și disimularea provenienței bunurilor" },
-        { "@type": "Thing", "name": "gestionarea cazurilor de neglijență profesională și malpraxis" },
-        { "@type": "Thing", "name": "reprezentare în infracțiuni rutiere cu vătămări corporale sau deces" },
-        { "@type": "Thing", "name": "răspundere penală pentru incidente la locul de muncă" },
-        { "@type": "Thing", "name": "reprezentarea victimelor în proceduri penale" }
-      ]
-    },
-    "sameAs": [
-      "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
-      "https://profesionisti.juridice.ro/bogdan-lamatic",
-      "https://www.google.com/maps?cid=17818591254142574295",
-      "https://www.instagram.com/bogdanlamatic/",
-      "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
-      "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
-    ],
-    "workLocation": {
-      "@type": "Place",
-      "name": "Avocat Drept Penal București Bogdan Lamatic",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Strada Colonel Stefan Stoika 22",
-        "addressLocality": "București",
-        "addressRegion": "București",
-        "postalCode": "012244",
-        "addressCountry": "RO"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "44.4533",
-        "longitude": "26.0876"
-      },
-      "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
-    }
+    ]
   } as const;
 
   return (
@@ -238,11 +234,7 @@ export default function About() {
           {/* More English sections would continue here */}
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(unifiedSchema) }}
           />
         </main>
       ) : (
@@ -428,11 +420,7 @@ export default function About() {
 
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(unifiedSchema) }}
           />
         </main>
       )}
