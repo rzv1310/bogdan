@@ -605,7 +605,20 @@ const Index = () => {
             ],
             "workLocation": {
               "@type": "Place",
-              "name": "Avocat Drept Penal București Bogdan Lamatic",
+              "name": "Cabinet Avocat Bogdan Lamatic",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Strada Colonel Stefan Stoika 22",
+                "addressLocality": "București",
+                "addressRegion": "București",
+                "postalCode": "012244",
+                "addressCountry": "RO"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "44.4533",
+                "longitude": "26.0876"
+              },
               "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
             }
           },

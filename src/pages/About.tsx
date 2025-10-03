@@ -76,58 +76,77 @@ export default function About() {
     },
     "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
     "affiliation": [
-      {
-        "@type": "Organization",
-        "name": "Wolf Theiss",
-        "url": "https://www.wolftheiss.com"
-      }
+      { "@type": "Organization", "name": "Wolf Theiss" },
+      { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
+      { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
+      { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
     ],
     "memberOf": [
       { 
         "@type": "Organization", 
         "name": "Baroul București",
-        "url": "https://www.baroul-bucuresti.ro"
+        "url": "https://www.baroul-bucuresti.ro/"
       },
       { 
         "@type": "Organization", 
         "name": "Uniunea Națională a Barourilor din România",
-        "url": "https://www.unbr.ro"
+        "url": "https://www.unbr.ro/",
+        "sameAs": [
+          "https://ro.wikipedia.org/wiki/Uniunea_Na%C8%9Bional%C4%83_a_Barourilor_din_Rom%C3%A2nia"
+        ]
       }
     ],
     "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "Universitatea din București",
-        "sameAs": "https://unibuc.ro"
-      }
+      { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
     ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Professional License",
-        "name": "Avocat membru al Baroului București"
+        "credentialCategory": "Bachelor of Laws (LL.B.)",
+        "datePublished": "2006",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Postgraduate Diploma in Criminal Law",
+        "datePublished": "2015",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universitatea Nicolae Titulescu din București" }
       }
     ],
     "award": [
-      "Legal500 - Rising Star - 2020 Edition (White-Collar Crime)",
-      "Legal500 - Next Generation Partner - 2021 Edition (White-Collar Crime)",
-      "Legal500 - Next Generation Partner - 2022 Edition (White-Collar Crime)",
-      "Legal500 - Next Generation Partner - 2023 Edition (White-Collar Crime)",
-      "Legal500 - Next Generation Partner - 2024 Edition (White-Collar Crime)"
+      "Legal 500 – Rising Star (White-Collar Crime) 2020",
+      "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
+      "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
+      "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
+      "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
     ],
-    "knowsAbout": [
-      "Drept penal",
-      "Criminalitate economică",
-      "Infracțiuni de corupție",
-      "Conformitate și investigații corporative",
-      "Recuperare de active",
-      "Protecția datelor",
-      "Drept civil și comercial",
-      "Reprezentare victimelor în procese penale"
-    ],
+    "knowsAbout": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "Thing", "name": "criminalitate economică (white-collar)" },
+        { "@type": "Thing", "name": "investigații corporative" },
+        { "@type": "Thing", "name": "conformitate (compliance)" },
+        { "@type": "Thing", "name": "recuperarea activelor și executare internațională" },
+        { "@type": "Thing", "name": "litigii" },
+        { "@type": "Thing", "name": "drept penal" },
+        { "@type": "Thing", "name": "apărare în cauze de criminalitate financiară" },
+        { "@type": "Thing", "name": "reprezentare în infracțiuni de corupție și fapte legate de funcția publică" },
+        { "@type": "Thing", "name": "asistență juridică în investigații privind activele cripto" },
+        { "@type": "Thing", "name": "reprezentare în cauze penale privind drogurile" },
+        { "@type": "Thing", "name": "apărare în dosare de spălare de bani și disimularea provenienței bunurilor" },
+        { "@type": "Thing", "name": "gestionarea cazurilor de neglijență profesională și malpraxis" },
+        { "@type": "Thing", "name": "reprezentare în infracțiuni rutiere cu vătămări corporale sau deces" },
+        { "@type": "Thing", "name": "răspundere penală pentru incidente la locul de muncă" },
+        { "@type": "Thing", "name": "reprezentarea victimelor în proceduri penale" }
+      ]
+    },
     "sameAs": [
-      "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/",
-      "https://www.wolftheiss.com/team/bogdan-lamatic/"
+      "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
+      "https://profesionisti.juridice.ro/bogdan-lamatic",
+      "https://www.google.com/maps?cid=17818591254142574295",
+      "https://www.instagram.com/bogdanlamatic/",
+      "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
+      "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
     ],
     "workLocation": {
       "@type": "Place",
