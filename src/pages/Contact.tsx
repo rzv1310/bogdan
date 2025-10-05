@@ -159,7 +159,7 @@ export default function Contact() {
     setStatus({ type: "sending", note: "Trimit solicitarea…" });
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
-      await submitContactToNetlify(payload);
+      await submitContactToNetlify(payload, "contact-ro");
       setStatus({ type: "success", note: "Mulțumesc! Revin în 24-48h lucrătoare." });
       toast({ title: "Trimis cu succes", description: "Solicitarea ta a fost trimisă.", });
       clearDraft();

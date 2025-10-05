@@ -13,7 +13,10 @@ function delay(ms: number) {
   return new Promise((res) => setTimeout(res, ms));
 }
 
-export async function submitContactToNetlify(payload: ContactPayload): Promise<{ ok: true }> {
+export async function submitContactToNetlify(
+  payload: ContactPayload,
+  formName: string
+): Promise<{ ok: true }> {
   // Anti-spam: honeypot check
   if (payload.honeypot && payload.honeypot.trim().length > 0) {
     throw new Error("Spam detectat.");
@@ -29,6 +32,7 @@ export async function submitContactToNetlify(payload: ContactPayload): Promise<{
 
   // Build FormData for Netlify Forms
   const formData = new FormData();
+  formData.append("form-name", formName); // Required for Netlify SPA forms
   formData.append("name", payload.name.trim());
   if (payload.email) formData.append("email", payload.email.trim());
   if (payload.phone) formData.append("phone", payload.phone.trim());
@@ -40,11 +44,10 @@ export async function submitContactToNetlify(payload: ContactPayload): Promise<{
     formData.append(`file${index + 1}`, file, file.name);
   });
 
-  // Submit to Netlify Forms via AJAX
+  // Submit to Netlify Forms via AJAX - FormData handles Content-Type automatically
   const response = await fetch("/", {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData as any).toString(),
+    body: formData, // Send FormData directly, don't convert to URLSearchParams
   });
 
   if (!response.ok) {
