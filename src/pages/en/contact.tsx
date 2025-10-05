@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/components/ui/use-toast";
-import { submitContact, type ContactPayload } from "@/lib/contact";
+import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
@@ -155,7 +155,7 @@ export default function ContactEn() {
     setStatus({ type: "sending", note: "Sending your request…" });
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
-      await submitContact(payload);
+      await submitContactToNetlify(payload);
       setStatus({ type: "success", note: "Thank you! I will reply within 24-48 business hours." });
       toast({ title: "Sent successfully", description: "Your request has been sent." });
       clearDraft();
@@ -241,7 +241,10 @@ export default function ContactEn() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
-              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4">
+              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true">
+                {/* Hidden field for Netlify Forms (required for React/SPA) */}
+                <input type="hidden" name="form-name" value="contact-en" />
+                
                 {/* Honeypot anti-spam */}
                 <div className="hidden" aria-hidden="true">
                   <label htmlFor="website">Website</label>

@@ -13,7 +13,7 @@ function delay(ms: number) {
   return new Promise((res) => setTimeout(res, ms));
 }
 
-export async function submitContact(payload: ContactPayload): Promise<{ ok: true }> {
+export async function submitContactToNetlify(payload: ContactPayload): Promise<{ ok: true }> {
   // Anti-spam: honeypot check
   if (payload.honeypot && payload.honeypot.trim().length > 0) {
     throw new Error("Spam detectat.");
@@ -27,27 +27,24 @@ export async function submitContact(payload: ContactPayload): Promise<{ ok: true
     throw new Error("Mesaj prea scurt.");
   }
 
-  // Build FormData for FormSubmit.co
+  // Build FormData for Netlify Forms
   const formData = new FormData();
   formData.append("name", payload.name.trim());
   if (payload.email) formData.append("email", payload.email.trim());
   if (payload.phone) formData.append("phone", payload.phone.trim());
-  formData.append("_subject", `📩 ${payload.subject.trim()}`);
+  formData.append("subject", payload.subject.trim());
   formData.append("message", payload.message.trim());
   
-  // FormSubmit configuration
-  formData.append("_captcha", "false"); // reCAPTCHA invisible
-  formData.append("_template", "table"); // Professional email format
-  
-  // Attach files
+  // Attach files (Netlify supports 1 file per field)
   payload.files.forEach((file, index) => {
-    formData.append(`attachment${index + 1}`, file, file.name);
+    formData.append(`file${index + 1}`, file, file.name);
   });
 
-  // Send to FormSubmit.co
-  const response = await fetch("https://formsubmit.co/contact@avocatpenalbucuresti.ro", {
+  // Submit to Netlify Forms via AJAX
+  const response = await fetch("/", {
     method: "POST",
-    body: formData,
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData as any).toString(),
   });
 
   if (!response.ok) {
