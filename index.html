@@ -36,6 +36,33 @@
   </head>
 
   <body>
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="contact-ro" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="file" name="file1" />
+      <input type="file" name="file2" />
+      <input type="file" name="file3" />
+      <input type="file" name="file4" />
+      <input type="file" name="file5" />
+    </form>
+
+    <form name="contact-en" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="file" name="file1" />
+      <input type="file" name="file2" />
+      <input type="file" name="file3" />
+      <input type="file" name="file4" />
+      <input type="file" name="file5" />
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
