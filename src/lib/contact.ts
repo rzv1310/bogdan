@@ -15,7 +15,8 @@ function delay(ms: number) {
 
 export async function submitContactToNetlify(
   payload: ContactPayload,
-  formName: string
+  formName: string,
+  formElement: HTMLFormElement
 ): Promise<{ ok: true }> {
   // Anti-spam: honeypot check
   if (payload.honeypot && payload.honeypot.trim().length > 0) {
@@ -30,18 +31,27 @@ export async function submitContactToNetlify(
     throw new Error("Mesaj prea scurt.");
   }
 
-  // Build FormData for Netlify Forms
-  const formData = new FormData();
-  formData.append("form-name", formName); // Required for Netlify SPA forms
-  formData.append("name", payload.name.trim());
-  if (payload.email) formData.append("email", payload.email.trim());
-  if (payload.phone) formData.append("phone", payload.phone.trim());
-  formData.append("subject", payload.subject.trim());
-  formData.append("message", payload.message.trim());
-  // Honeypot must match the attribute name declared on the form
-  formData.append("company_website", payload.honeypot ? payload.honeypot.trim() : "");
-  // Include GDPR consent explicitly so it appears in Netlify submissions
-  formData.append("gdpr", payload.gdpr ? "true" : "false");
+  // Use FormData from the form element to automatically capture all fields including reCAPTCHA token
+  const formData = new FormData(formElement);
+  
+  // Ensure form-name is set
+  formData.set("form-name", formName);
+  
+  // Update values from payload (in case they differ from form DOM state)
+  formData.set("name", payload.name.trim());
+  if (payload.email) formData.set("email", payload.email.trim());
+  if (payload.phone) formData.set("phone", payload.phone.trim());
+  formData.set("subject", payload.subject.trim());
+  formData.set("message", payload.message.trim());
+  formData.set("gdpr", payload.gdpr ? "true" : "false");
+  formData.set("company_website", payload.honeypot ? payload.honeypot.trim() : "");
+  
+  // Clear existing file fields and add new ones
+  formData.delete("file1");
+  formData.delete("file2");
+  formData.delete("file3");
+  formData.delete("file4");
+  formData.delete("file5");
   
   // Attach files (Netlify supports 1 file per field)
   payload.files.forEach((file, index) => {
@@ -51,7 +61,7 @@ export async function submitContactToNetlify(
   // Submit to Netlify Forms via AJAX - FormData handles Content-Type automatically
   const response = await fetch("/", {
     method: "POST",
-    body: formData, // Send FormData directly, don't convert to URLSearchParams
+    body: formData, // Send FormData directly with reCAPTCHA token included
   });
 
   if (!response.ok) {

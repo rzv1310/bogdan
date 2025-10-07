@@ -155,7 +155,7 @@ export default function ContactEn() {
     setStatus({ type: "sending", note: "Sending your request…" });
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
-      await submitContactToNetlify(payload, "contact-en");
+      await submitContactToNetlify(payload, "contact-en", e.currentTarget);
       setStatus({ type: "success", note: "Thank you! I will reply within 24-48 business hours." });
       toast({ title: "Sent successfully", description: "Your request has been sent." });
       clearDraft();
