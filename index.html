@@ -37,13 +37,15 @@
 
   <body>
     <!-- A little help for the Netlify post-processing bots -->
-    <form name="contact-ro" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact-ro" netlify netlify-honeypot="company_website" data-netlify-recaptcha="true" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
       <input type="text" name="gdpr" />
+      <input type="text" name="company_website" />
+      <div data-netlify-recaptcha="true"></div>
       <input type="file" name="file1" />
       <input type="file" name="file2" />
       <input type="file" name="file3" />
@@ -51,13 +53,15 @@
       <input type="file" name="file5" />
     </form>
 
-    <form name="contact-en" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact-en" netlify netlify-honeypot="company_website" data-netlify-recaptcha="true" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
       <input type="text" name="gdpr" />
+      <input type="text" name="company_website" />
+      <div data-netlify-recaptcha="true"></div>
       <input type="file" name="file1" />
       <input type="file" name="file2" />
       <input type="file" name="file3" />

@@ -375,10 +375,13 @@ export default function Contact() {
                     Sunt de acord cu prelucrarea datelor conform informării GDPR. Trimiterea formularului nu creează o relație avocat-client; aceasta se formează doar după confirmarea expresă și semnarea împuternicirii.
                   </label>
                 </div>
-                {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
-              </div>
+                  {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
+                </div>
 
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+                {/* reCAPTCHA v2 */}
+                <div data-netlify-recaptcha="true"></div>
+
+                <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">
                   {status.type === 'sending' ? (<><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Se trimite…</>) : (<><Send className="w-4 h-4" aria-hidden="true" /> Trimite solicitarea</>)}
                 </Button>

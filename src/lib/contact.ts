@@ -39,7 +39,7 @@ export async function submitContactToNetlify(
   formData.append("subject", payload.subject.trim());
   formData.append("message", payload.message.trim());
   // Honeypot must match the attribute name declared on the form
-  formData.append("bot-field", payload.honeypot ? payload.honeypot.trim() : "");
+  formData.append("company_website", payload.honeypot ? payload.honeypot.trim() : "");
   // Include GDPR consent explicitly so it appears in Netlify submissions
   formData.append("gdpr", payload.gdpr ? "true" : "false");
   
