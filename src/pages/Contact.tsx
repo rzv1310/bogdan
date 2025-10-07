@@ -241,14 +241,14 @@ export default function Contact() {
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
-            <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-ro" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-ro" method="POST" data-netlify="true" netlify-honeypot="company-website">
               {/* Hidden field for Netlify Forms (required for React/SPA) */}
               <input type="hidden" name="form-name" value="contact-ro" />
               
               {/* Honeypot anti-spam */}
               <div className="hidden" aria-hidden="true">
-                <label htmlFor="bot-field">Don't fill this out if you're human</label>
-                <input id="bot-field" name="bot-field" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
+                <label htmlFor="company-website">Don't fill this out if you're human</label>
+                <input id="company-website" name="company-website" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
               </div>
 
               <div>
@@ -377,6 +377,9 @@ export default function Contact() {
                 </div>
                 {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
               </div>
+
+              {/* reCAPTCHA v2 */}
+              <div data-netlify-recaptcha="true"></div>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">
