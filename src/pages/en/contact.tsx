@@ -241,14 +241,14 @@ export default function ContactEn() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
-              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true">
+              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 {/* Hidden field for Netlify Forms (required for React/SPA) */}
                 <input type="hidden" name="form-name" value="contact-en" />
                 
                 {/* Honeypot anti-spam */}
                 <div className="hidden" aria-hidden="true">
-                  <label htmlFor="website">Website</label>
-                  <input id="website" name="website" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
+                  <label htmlFor="bot-field">Don't fill this out if you're human</label>
+                  <input id="bot-field" name="bot-field" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
                 </div>
 
                 <div>
