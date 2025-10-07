@@ -155,7 +155,7 @@ export default function ContactEn() {
     setStatus({ type: "sending", note: "Sending your request…" });
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
-      await submitContactToNetlify(payload, "contact-en", e.currentTarget);
+      await submitContactToNetlify(payload, "contact-en");
       setStatus({ type: "success", note: "Thank you! I will reply within 24-48 business hours." });
       toast({ title: "Sent successfully", description: "Your request has been sent." });
       clearDraft();
@@ -241,14 +241,14 @@ export default function ContactEn() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
-              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="company_website">
+              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 {/* Hidden field for Netlify Forms (required for React/SPA) */}
                 <input type="hidden" name="form-name" value="contact-en" />
                 
                 {/* Honeypot anti-spam */}
                 <div className="hidden" aria-hidden="true">
-                  <label htmlFor="company_website">Don't fill this out if you're human</label>
-                  <input id="company_website" name="company_website" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
+                  <label htmlFor="bot-field">Don't fill this out if you're human</label>
+                  <input id="bot-field" name="bot-field" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
                 </div>
 
                 <div>
@@ -377,9 +377,6 @@ export default function ContactEn() {
                   </div>
                   {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
                 </div>
-
-                {/* reCAPTCHA v2 */}
-                <div className="g-recaptcha" data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}></div>
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">

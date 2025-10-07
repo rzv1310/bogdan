@@ -159,7 +159,7 @@ export default function Contact() {
     setStatus({ type: "sending", note: "Trimit solicitarea…" });
     try {
       const payload: ContactPayload = { name, email, phone, subject, message, files, gdpr, honeypot: website };
-      await submitContactToNetlify(payload, "contact-ro", e.currentTarget);
+      await submitContactToNetlify(payload, "contact-ro");
       setStatus({ type: "success", note: "Mulțumesc! Revin în 24-48h lucrătoare." });
       toast({ title: "Trimis cu succes", description: "Solicitarea ta a fost trimisă.", });
       clearDraft();
@@ -241,14 +241,14 @@ export default function Contact() {
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
-            <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-ro" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="company_website">
+            <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-ro" method="POST" data-netlify="true" netlify-honeypot="bot-field">
               {/* Hidden field for Netlify Forms (required for React/SPA) */}
               <input type="hidden" name="form-name" value="contact-ro" />
               
               {/* Honeypot anti-spam */}
               <div className="hidden" aria-hidden="true">
-                <label htmlFor="company_website">Nu completa dacă ești om</label>
-                <input id="company_website" name="company_website" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
+                <label htmlFor="bot-field">Don't fill this out if you're human</label>
+                <input id="bot-field" name="bot-field" autoComplete="off" tabIndex={-1} value={website} onChange={(e) => setWebsite(e.target.value)} />
               </div>
 
               <div>
@@ -368,9 +368,6 @@ export default function Contact() {
                 {errors.files && <p className="text-xs text-destructive mt-1">{errors.files}</p>}
               </div>
 
-              {/* reCAPTCHA v2 */}
-              <div className="g-recaptcha" data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}></div>
-
               <div className="space-y-1">
                 <div className="flex items-start gap-2 text-sm">
                   <Checkbox id="gdpr" ref={gdprRef as any} checked={gdpr} onCheckedChange={(v) => setGdpr(!!v)} className="mt-1" />
@@ -378,13 +375,10 @@ export default function Contact() {
                     Sunt de acord cu prelucrarea datelor conform informării GDPR. Trimiterea formularului nu creează o relație avocat-client; aceasta se formează doar după confirmarea expresă și semnarea împuternicirii.
                   </label>
                 </div>
-                  {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
-                </div>
+                {errors.gdpr && <p className="text-xs text-destructive">{errors.gdpr}</p>}
+              </div>
 
-                {/* reCAPTCHA v2 */}
-                <div data-netlify-recaptcha="true"></div>
-
-                <div className="flex flex-wrap items-center gap-3 pt-2">
+              <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">
                   {status.type === 'sending' ? (<><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Se trimite…</>) : (<><Send className="w-4 h-4" aria-hidden="true" /> Trimite solicitarea</>)}
                 </Button>

@@ -33,20 +33,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" fetchpriority="high">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
     <!-- A little help for the Netlify post-processing bots -->
-    <form name="contact-ro" netlify netlify-honeypot="company_website" data-netlify-recaptcha="true" hidden>
+    <form name="contact-ro" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
       <input type="text" name="gdpr" />
-      <input type="text" name="company_website" />
-      <div data-netlify-recaptcha="true"></div>
       <input type="file" name="file1" />
       <input type="file" name="file2" />
       <input type="file" name="file3" />
@@ -54,15 +51,13 @@
       <input type="file" name="file5" />
     </form>
 
-    <form name="contact-en" netlify netlify-honeypot="company_website" data-netlify-recaptcha="true" hidden>
+    <form name="contact-en" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
       <input type="text" name="gdpr" />
-      <input type="text" name="company_website" />
-      <div data-netlify-recaptcha="true"></div>
       <input type="file" name="file1" />
       <input type="file" name="file2" />
       <input type="file" name="file3" />
