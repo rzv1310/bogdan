@@ -241,7 +241,7 @@ export default function ContactEn() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
-              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <form onSubmit={onSubmit} noValidate aria-busy={status.type === "sending"} className="grid gap-4" name="contact-en" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 {/* Hidden field for Netlify Forms (required for React/SPA) */}
                 <input type="hidden" name="form-name" value="contact-en" />
                 
@@ -291,7 +291,7 @@ export default function ContactEn() {
                     <Input
                       id="phone"
                       type="tel"
-                      name="tel"
+                      name="phone"
                       autoComplete="tel"
                       inputMode="tel"
                       value={phone}

@@ -38,10 +38,14 @@ export async function submitContactToNetlify(
   if (payload.phone) formData.append("phone", payload.phone.trim());
   formData.append("subject", payload.subject.trim());
   formData.append("message", payload.message.trim());
+  // Honeypot must match the attribute name declared on the form
+  formData.append("bot-field", payload.honeypot ? payload.honeypot.trim() : "");
+  // Include GDPR consent explicitly so it appears in Netlify submissions
+  formData.append("gdpr", payload.gdpr ? "true" : "false");
   
   // Attach files (Netlify supports 1 file per field)
   payload.files.forEach((file, index) => {
-    formData.append(`file${index + 1}`, file, file.name);
+    formData.append(`file${index + 1}` as string, file, file.name);
   });
 
   // Submit to Netlify Forms via AJAX - FormData handles Content-Type automatically
