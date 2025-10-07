@@ -379,7 +379,7 @@ export default function ContactEn() {
                 </div>
 
                 {/* reCAPTCHA v2 */}
-                <div data-netlify-recaptcha="true"></div>
+                <div className="g-recaptcha" data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}></div>
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <Button type="submit" disabled={status.type === 'sending'} className="inline-flex items-center gap-2">

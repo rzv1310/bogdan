@@ -368,6 +368,9 @@ export default function Contact() {
                 {errors.files && <p className="text-xs text-destructive mt-1">{errors.files}</p>}
               </div>
 
+              {/* reCAPTCHA v2 */}
+              <div className="g-recaptcha" data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}></div>
+
               <div className="space-y-1">
                 <div className="flex items-start gap-2 text-sm">
                   <Checkbox id="gdpr" ref={gdprRef as any} checked={gdpr} onCheckedChange={(v) => setGdpr(!!v)} className="mt-1" />
