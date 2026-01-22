@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/language";
+import { useCookieConsent } from "@/context/cookie-consent";
 import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
-import { Linkedin, Twitter, Instagram, Facebook, Music, Pin } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie } from "lucide-react";
 
 export default function Footer() {
   const { lang } = useLanguage();
+  const { openPreferences } = useCookieConsent();
   const t = translations[lang];
   const labelFor = (path: string, fallback: string) => {
     const slug = path.split("/").pop() || "";
@@ -161,10 +163,21 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 pt-6 border-t">
+        <div className="mt-10 pt-6 border-t flex items-center justify-between">
           <p className="text-xs">
             © {new Date().getFullYear()} Bogdan Lamatic. {t.rightsReserved}
           </p>
+          
+          <button
+            onClick={openPreferences}
+            className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white transition-colors"
+            aria-label={lang === "en" ? "Cookie preferences" : "Preferințe cookie"}
+          >
+            <Cookie size={16} />
+            <span className="hidden sm:inline">
+              {lang === "en" ? "Cookie preferences" : "Preferințe cookie"}
+            </span>
+          </button>
         </div>
       </div>
     </footer>
