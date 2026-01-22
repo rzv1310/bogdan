@@ -1,6 +1,11 @@
 import { useSEO } from "@/hooks/useSEO";
+import { Button } from "@/components/ui/button";
+import { useCookieConsent } from "@/context/cookie-consent";
+import { Settings } from "lucide-react";
 
 export default function PoliticaCookies() {
+  const { openPreferences, consent } = useCookieConsent();
+  
   useSEO({
     title: "Politica de Cookie-uri | Cabinet Avocat Bogdan Lamatic",
     description: "Informații despre cookie-urile utilizate, scopurile lor și cum îți poți gestiona preferințele.",
@@ -34,6 +39,29 @@ export default function PoliticaCookies() {
       </header>
 
       <article className="prose prose-neutral max-w-none">
+        {/* Manage Preferences Section */}
+        <section className="not-prose mb-8 p-4 rounded-lg border border-border bg-muted/50">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold mb-1">Preferințele tale</h2>
+              <p className="text-sm text-muted-foreground">
+                {consent ? (
+                  <>
+                    Analytics: <strong>{consent.analytics ? 'Permis' : 'Refuzat'}</strong> | 
+                    Marketing: <strong>{consent.marketing ? 'Permis' : 'Refuzat'}</strong>
+                  </>
+                ) : (
+                  'Nu ai setat încă preferințele cookie-urilor.'
+                )}
+              </p>
+            </div>
+            <Button onClick={openPreferences} variant="outline" size="sm">
+              <Settings className="h-4 w-4 mr-2" />
+              Gestionează preferințele
+            </Button>
+          </div>
+        </section>
+
         <section>
           <h2>Ce este un "cookie"?</h2>
           <p>
