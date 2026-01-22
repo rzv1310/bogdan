@@ -209,6 +209,16 @@ export default function About() {
                 <dd className="font-medium">contact@avocatpenalbucuresti.ro</dd>
               </div>
             </dl>
+            
+            {/* Portrait image */}
+            <div className="flex justify-center my-6">
+              <img 
+                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
+                alt="Criminal defense attorney Bogdan Lamatic portrait" 
+                title="Criminal defense attorney Bucharest Bogdan Lamatic"
+                className="w-full max-w-sm h-auto rounded-lg shadow-md"
+              />
+            </div>
           </section>
 
           {/* Call to Action Button */}
@@ -263,6 +273,16 @@ export default function About() {
                 <dd className="font-medium">contact@avocatpenalbucuresti.ro</dd>
               </div>
             </dl>
+            
+            {/* Portrait image */}
+            <div className="flex justify-center my-6">
+              <img 
+                src="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" 
+                alt="Portret avocat drept penal Bogdan Lamatic" 
+                title="Avocat drept penal Bucuresti Bogdan Lamatic"
+                className="w-full max-w-sm h-auto rounded-lg shadow-md"
+              />
+            </div>
           </section>
 
           {/* Call to Action Button */}
