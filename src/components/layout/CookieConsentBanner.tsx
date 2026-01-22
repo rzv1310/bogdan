@@ -146,39 +146,46 @@ export default function CookieConsentBanner() {
             </AnimatePresence>
 
             {/* Buttons */}
-            <div className="mt-4 flex flex-wrap items-center gap-2">
+            <div className="mt-4 flex flex-col gap-2">
               {!showCustomize ? (
                 <>
+                  {/* Personalizează - full width on mobile, auto on desktop */}
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => setShowCustomize(true)}
-                    className="text-muted-foreground"
+                    className="text-muted-foreground w-full md:w-auto"
                   >
                     {t.customize}
                   </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={rejectAll}
-                  >
-                    {t.rejectAll}
-                  </Button>
-                  <Button
-                    variant="default"
-                    size="sm"
-                    onClick={acceptAll}
-                  >
-                    {t.acceptAll}
-                  </Button>
+                  
+                  {/* Refuză/Acceptă - side by side */}
+                  <div className="flex gap-2 w-full">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={rejectAll}
+                      className="flex-1 md:flex-none"
+                    >
+                      {t.rejectAll}
+                    </Button>
+                    <Button
+                      variant="default"
+                      size="sm"
+                      onClick={acceptAll}
+                      className="flex-1 md:flex-none"
+                    >
+                      {t.acceptAll}
+                    </Button>
+                  </div>
                 </>
               ) : (
-                <>
+                <div className="flex gap-2 w-full">
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => setShowCustomize(false)}
-                    className="text-muted-foreground"
+                    className="text-muted-foreground flex-1 md:flex-none"
                   >
                     <X className="h-4 w-4 mr-1" />
                     {t.rejectAll}
@@ -187,10 +194,11 @@ export default function CookieConsentBanner() {
                     variant="default"
                     size="sm"
                     onClick={handleSavePreferences}
+                    className="flex-1 md:flex-none"
                   >
                     {t.save}
                   </Button>
-                </>
+                </div>
               )}
             </div>
           </div>
