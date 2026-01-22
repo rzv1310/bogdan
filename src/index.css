@@ -108,6 +108,13 @@ All colors MUST be HSL.
   }
 
   body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     @apply bg-background text-foreground;
   }
+}
+
+/* Font display swap pentru fallback vizibil imediat */
+.font-signature {
+  font-family: 'Sacramento', cursive;
+  font-display: swap;
 }

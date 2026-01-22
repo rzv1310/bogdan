@@ -31,9 +31,31 @@
     <link rel="icon" href="/lovable-uploads/c40b182c-b51b-42af-b1d1-50bf623b2110.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png" fetchpriority="high">
+    
+    <!-- Sacramento font - async loading (non-blocking) -->
+    <link rel="preload" 
+          href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" 
+          as="style" 
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    </noscript>
+    
+    <!-- Inter font - async loading (non-blocking) -->
+    <link rel="preload" 
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" 
+          as="style" 
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap">
+    </noscript>
+    
+    <!-- Hero image preload -->
+    <link rel="preload" 
+          as="image" 
+          href="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" 
+          fetchpriority="high"
+          type="image/webp">
   </head>
 
   <body>
