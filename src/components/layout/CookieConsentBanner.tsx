@@ -75,7 +75,7 @@ export default function CookieConsentBanner() {
               </div>
               <div className="flex-1">
                 <h2 className="text-lg font-semibold text-foreground">{t.title}</h2>
-                <p className="mt-1 text-sm text-muted-foreground">
+                <p className="mt-1 text-sm text-foreground">
                   {t.description}{' '}
                   <a 
                     href={t.policyUrl} 
@@ -146,38 +146,39 @@ export default function CookieConsentBanner() {
             </AnimatePresence>
 
             {/* Buttons */}
-            <div className="mt-4 flex flex-col gap-2">
+            <div className="mt-4 grid grid-cols-2 gap-2">
               {!showCustomize ? (
                 <>
-                  {/* Personalizează - full width on mobile, auto on desktop */}
+                  {/* Personalizează - stânga sus */}
                   <Button
-                    variant="ghost"
+                    variant="outline"
                     size="sm"
                     onClick={() => setShowCustomize(true)}
-                    className="text-muted-foreground w-full md:w-auto"
+                    className="bg-white text-black border-gray-300 hover:bg-gray-100"
                   >
                     {t.customize}
                   </Button>
                   
-                  {/* Refuză/Acceptă - side by side */}
-                  <div className="flex gap-2 w-full">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={rejectAll}
-                      className="flex-1 md:flex-none"
-                    >
-                      {t.rejectAll}
-                    </Button>
-                    <Button
-                      variant="default"
-                      size="sm"
-                      onClick={acceptAll}
-                      className="flex-1 md:flex-none"
-                    >
-                      {t.acceptAll}
-                    </Button>
-                  </div>
+                  {/* Spațiu gol - dreapta sus */}
+                  <div></div>
+                  
+                  {/* Refuză toate - stânga jos */}
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={rejectAll}
+                  >
+                    {t.rejectAll}
+                  </Button>
+                  
+                  {/* Acceptă toate - dreapta jos */}
+                  <Button
+                    variant="default"
+                    size="sm"
+                    onClick={acceptAll}
+                  >
+                    {t.acceptAll}
+                  </Button>
                 </>
               ) : (
                 <div className="flex gap-2 w-full">
