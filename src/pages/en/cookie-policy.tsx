@@ -1,6 +1,11 @@
 import { useSEO } from "@/hooks/useSEO";
+import { Button } from "@/components/ui/button";
+import { useCookieConsent } from "@/context/cookie-consent";
+import { Settings } from "lucide-react";
 
 export default function CookiePolicyEn() {
+  const { openPreferences, consent } = useCookieConsent();
+  
   useSEO({
     title: "Cookie Policy | Bogdan Lamatic Law Office",
     description: "Details about the cookies we use, their purposes, and how you can manage your preferences.",
@@ -34,6 +39,29 @@ export default function CookiePolicyEn() {
       </header>
 
       <article className="prose prose-neutral max-w-none">
+        {/* Manage Preferences Section */}
+        <section className="not-prose mb-8 p-4 rounded-lg border border-border bg-muted/50">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold mb-1">Your Preferences</h2>
+              <p className="text-sm text-muted-foreground">
+                {consent ? (
+                  <>
+                    Analytics: <strong>{consent.analytics ? 'Allowed' : 'Denied'}</strong> | 
+                    Marketing: <strong>{consent.marketing ? 'Allowed' : 'Denied'}</strong>
+                  </>
+                ) : (
+                  'You have not set your cookie preferences yet.'
+                )}
+              </p>
+            </div>
+            <Button onClick={openPreferences} variant="outline" size="sm">
+              <Settings className="h-4 w-4 mr-2" />
+              Manage preferences
+            </Button>
+          </div>
+        </section>
+
         <section>
           <h2>What is a "cookie"?</h2>
           <p>
