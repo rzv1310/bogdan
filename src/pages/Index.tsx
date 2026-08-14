@@ -9,6 +9,27 @@ import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
+import badge2020 from "@/assets/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png.asset.json";
+import badge2021 from "@/assets/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png.asset.json";
+import badge2022 from "@/assets/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.png.asset.json";
+import badge2023 from "@/assets/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.png.asset.json";
+import badge2024 from "@/assets/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.png.asset.json";
+
+const legal500Badges = [
+  { src: badge2020.url, alt: "Legal 500 EMEA Rising Star 2020 – avocat Bogdan Lamatic" },
+  { src: badge2021.url, alt: "Legal 500 EMEA Next Generation Partner 2021 – avocat Bogdan Lamatic" },
+  { src: badge2022.url, alt: "Legal 500 EMEA Next Generation Partner 2022 – avocat Bogdan Lamatic" },
+  { src: badge2023.url, alt: "Legal 500 EMEA Next Generation Partner 2023 – avocat Bogdan Lamatic" },
+  { src: badge2024.url, alt: "Legal 500 EMEA Next Generation Partner 2024 – avocat Bogdan Lamatic" },
+];
+
+const Legal500BadgeStrip = () => (
+  <div className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 md:gap-2 z-10">
+    {legal500Badges.map((b, i) => (
+      <img key={i} src={b.src} alt={b.alt} loading="lazy" className="w-10 h-10 md:w-14 md:h-14 rounded-md shadow-md ring-1 ring-hero-foreground/80 object-contain" />
+    ))}
+  </div>
+);
 
 // PulseBeams animation config (extracted from demo)
 const beams: any[] = [
