@@ -14,6 +14,7 @@ export const translations = {
     },
     navServices: {
       "urmarire-penala": "Urmărire penală",
+      "masuri-preventive": "Măsuri preventive",
       "criminalitate-economica": "Criminalitate economică",
       "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
       "investigatii-privind-activele-cripto": "Investigații privind activele cripto",
@@ -49,6 +50,11 @@ export const translations = {
         title: "Avocat urmărire penală",
         body:
           "Intervin din prima oră a anchetei: asistență la audieri, în caz de reținere, arestare preventivă, percheziții și ridicări de bunuri. În faza de urmărire penală se construiesc probele, așa că apărarea începută imediat poate schimba decisiv soluția dosarului.",
+      },
+      {
+        title: "Avocat măsuri preventive",
+        body:
+          "Intervin imediat la reținere, control judiciar, control judiciar pe cauțiune, arest la domiciliu și arestare preventivă: formulez apărări în fața judecătorului de drepturi și libertăți, contest prelungirile și cer înlocuirea măsurii cu una mai ușoară atunci când există temei.",
       },
       {
         title: "Avocat Drept Penal",
