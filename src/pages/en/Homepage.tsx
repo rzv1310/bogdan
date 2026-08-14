@@ -17,7 +17,7 @@ const legal500Badges = [
 ];
 
 const Legal500BadgeStrip = () => (
-  <div className="absolute left-2.5 md:left-2.5 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 md:gap-2 z-10">
+  <div className="absolute -left-11 md:-left-[68px] top-1/2 -translate-y-1/2 flex flex-col gap-1.5 md:gap-2 z-10">
     {legal500Badges.map((b, i) => (
       <img key={i} src={b.src} alt={b.alt} loading="lazy" className="w-10 h-10 md:w-14 md:h-14 rounded-md shadow-md ring-1 ring-hero-foreground/80 object-contain" />
     ))}
