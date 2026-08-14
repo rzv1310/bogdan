@@ -683,9 +683,9 @@ const HomepageEN = () => {
                 </a>
               </div>
             </div>
-            <div className="md:order-2 hidden md:flex justify-center relative">
+            <div className="hidden md:block relative md:max-w-[76.5%] md:ml-auto">
               <Legal500BadgeStrip />
-              <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-2xl max-w-sm" />
+              <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
             </div>
           </div>
         </section>
