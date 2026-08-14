@@ -23,8 +23,8 @@ export default function CorruptionPublicOfficeEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Corruption offenses and acts related to the exercise of public office", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/corruption-and-public-office-offenses` : "/en/services/corruption-and-public-office-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Corruption offenses and acts related to the exercise of public office", item: "/en/services/corruption-and-public-office-offenses" },
             ],
           }),
         }}
@@ -36,7 +36,7 @@ export default function CorruptionPublicOfficeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/corruption-and-public-office-offenses` : "/en/services/corruption-and-public-office-offenses",
+            url: "/en/services/corruption-and-public-office-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

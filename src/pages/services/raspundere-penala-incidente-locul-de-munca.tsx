@@ -21,8 +21,8 @@ export default function RaspunderePenalaMunca() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: typeof window !== "undefined" ? `${window.location.origin}` : "/" },
-              { "@type": "ListItem", position: 2, name: "Răspundere penală pentru incidente la locul de muncă", item: typeof window !== "undefined" ? `${window.location.origin}/servicii/raspundere-penala-incidente-locul-de-munca` : "/servicii/raspundere-penala-incidente-locul-de-munca" },
+              { "@type": "ListItem", position: 1, name: "Acasă", item: "/" },
+              { "@type": "ListItem", position: 2, name: "Răspundere penală pentru incidente la locul de muncă", item: "/servicii/raspundere-penala-incidente-locul-de-munca" },
             ],
           }),
         }}
@@ -34,7 +34,7 @@ export default function RaspunderePenalaMunca() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Răspundere penală pentru incidente la locul de muncă",
-            url: typeof window !== "undefined" ? `${window.location.origin}/servicii/raspundere-penala-incidente-locul-de-munca` : "/servicii/raspundere-penala-incidente-locul-de-munca",
+            url: "/servicii/raspundere-penala-incidente-locul-de-munca",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
             address: {

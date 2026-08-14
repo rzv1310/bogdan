@@ -24,9 +24,9 @@ export default function SpalareDeBani() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: typeof window !== "undefined" ? `${window.location.origin}/` : "/" },
-              { "@type": "ListItem", position: 2, name: "Servicii", item: typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "/#servicii" },
-              { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: typeof window !== "undefined" ? `${window.location.origin}/servicii/spalare-de-bani-si-ascundere-de-bunuri` : "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+              { "@type": "ListItem", position: 1, name: "Acasă", item: "/" },
+              { "@type": "ListItem", position: 2, name: "Servicii", item: "/#servicii" },
+              { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
             ],
           }),
         }}
@@ -38,7 +38,7 @@ export default function SpalareDeBani() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Apărare în dosare de spălare de bani și ascundere de bunuri",
-            url: typeof window !== "undefined" ? `${window.location.origin}/servicii/spalare-de-bani-si-ascundere-de-bunuri` : "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
+            url: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
             address: {

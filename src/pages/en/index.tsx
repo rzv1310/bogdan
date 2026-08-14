@@ -23,9 +23,7 @@ export default function EnIndex() {
             "@type": "WebSite",
             name: "Criminal Defense Lawyer in Bucharest, Romania",
             url:
-              typeof window !== "undefined"
-                ? `${window.location.origin}/en`
-                : "/en",
+              "/en",
             inLanguage: "en-US",
           }),
         }}

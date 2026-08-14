@@ -28,16 +28,14 @@ export default function CryptoInvestigationsEn() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en",
+                item: "/en",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Investigations regarding crypto assets",
                 item:
-                  typeof window !== "undefined"
-                    ? `${window.location.origin}/en/services/crypto-asset-investigations`
-                    : "/en/services/crypto-asset-investigations",
+                  "/en/services/crypto-asset-investigations",
               },
             ],
           }),
@@ -51,9 +49,7 @@ export default function CryptoInvestigationsEn() {
             "@type": "LegalService",
             name: "Investigations regarding crypto assets",
             url:
-              typeof window !== "undefined"
-                ? `${window.location.origin}/en/services/crypto-asset-investigations`
-                : "/en/services/crypto-asset-investigations",
+              "/en/services/crypto-asset-investigations",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

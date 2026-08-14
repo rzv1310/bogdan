@@ -20,12 +20,12 @@ export default function TermeniSiConditii() {
           "@type": "ListItem",
           position: 1,
           name: "Acasă",
-          item: typeof window !== "undefined" ? `${window.location.origin}/` : "/"
+          item: "/"
         }, {
           "@type": "ListItem",
           position: 2,
           name: "Termeni și Condiții",
-          item: typeof window !== "undefined" ? `${window.location.origin}/termeni-si-conditii` : "/termeni-si-conditii"
+          item: "/termeni-si-conditii"
         }]
       })
     }} />

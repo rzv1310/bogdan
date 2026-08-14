@@ -19,7 +19,7 @@ export default function InvestigatiiCripto() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -32,19 +32,19 @@ export default function InvestigatiiCripto() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Investigații privind activele cripto",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/investigatii-privind-activele-cripto` : "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto"
+                    "item": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto"
                   }
                 ]
               })
@@ -58,7 +58,7 @@ export default function InvestigatiiCripto() {
                 "@type": "LegalService",
                 "name": "Servicii avocat investigații privind activele cripto",
                 "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/investigatii-privind-activele-cripto` : "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto",
+                "url": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto",
                 "areaServed": [
                   {
                     "@type": "Country",

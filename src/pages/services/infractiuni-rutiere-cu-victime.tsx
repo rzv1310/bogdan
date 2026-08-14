@@ -15,7 +15,7 @@ export default function InfractiuniRutiere() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -28,19 +28,19 @@ export default function InfractiuniRutiere() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni rutiere cu / fără victime",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/infractiuni-rutiere-cu-victime` : "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime"
+                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime"
                   }
                 ]
               })
@@ -54,7 +54,7 @@ export default function InfractiuniRutiere() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni rutiere cu / fără victime",
                 "description": "Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/infractiuni-rutiere-cu-victime` : "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime",
+                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime",
                 "areaServed": [
                   {
                     "@type": "Country",

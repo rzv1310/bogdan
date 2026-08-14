@@ -15,7 +15,7 @@ export default function ReprezentareaVictimelor() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -28,19 +28,19 @@ export default function ReprezentareaVictimelor() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Reprezentarea victimelor în procese penale",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/reprezentarea-victimelor-in-procese-penale` : "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale"
+                    "item": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale"
                   }
                 ]
               })
@@ -54,7 +54,7 @@ export default function ReprezentareaVictimelor() {
                 "@type": "LegalService",
                 "name": "Servicii avocat reprezentarea victimelor în procese penale",
                 "description": "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/reprezentarea-victimelor-in-procese-penale` : "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
+                "url": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
                 "areaServed": [
                   {
                     "@type": "Country",

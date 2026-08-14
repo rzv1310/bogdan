@@ -23,8 +23,8 @@ export default function DrugOffensesEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: "/en/services/drug-offenses" },
             ],
           }),
         }}
@@ -36,7 +36,7 @@ export default function DrugOffensesEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Drug trafficking lawyer – Bucharest",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/drug-offenses` : "/en/services/drug-offenses",
+            url: "/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

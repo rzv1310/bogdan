@@ -22,8 +22,8 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/money-laundering-and-asset-concealment` : "/en/services/money-laundering-and-asset-concealment" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "/en/services/money-laundering-and-asset-concealment" },
             ],
           }),
         }}
@@ -35,7 +35,7 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Defense in money laundering and asset concealment",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/money-laundering-and-asset-concealment` : "/en/services/money-laundering-and-asset-concealment",
+            url: "/en/services/money-laundering-and-asset-concealment",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

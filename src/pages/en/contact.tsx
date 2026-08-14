@@ -175,8 +175,8 @@ export default function ContactEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Contact", item: typeof window !== "undefined" ? `${window.location.origin}/en/contact` : "/en/contact" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Contact", item: "/en/contact" },
             ],
           }),
         }}

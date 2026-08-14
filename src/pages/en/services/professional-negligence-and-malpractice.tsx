@@ -22,8 +22,8 @@ export default function MalpracticeEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Professional negligence and malpractice", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/professional-negligence-and-malpractice` : "/en/services/professional-negligence-and-malpractice" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Professional negligence and malpractice", item: "/en/services/professional-negligence-and-malpractice" },
             ],
           }),
         }}
@@ -35,7 +35,7 @@ export default function MalpracticeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/professional-negligence-and-malpractice` : "/en/services/professional-negligence-and-malpractice",
+            url: "/en/services/professional-negligence-and-malpractice",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

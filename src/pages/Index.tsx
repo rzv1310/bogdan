@@ -355,7 +355,7 @@ const Index = () => {
   const t = translations[lang];
   
   const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro";
+  const origin = "https://avocatpenalbucuresti.ro";
   
   useSEO({
     title: "Avocat Penal București - Bogdan Lamatic | 18+ Ani Experiență în Drept Penal",

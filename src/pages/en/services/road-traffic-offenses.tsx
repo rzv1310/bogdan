@@ -23,8 +23,8 @@ export default function RoadTrafficEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Road traffic offenses with victims", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/road-traffic-offenses` : "/en/services/road-traffic-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Road traffic offenses with victims", item: "/en/services/road-traffic-offenses" },
             ],
           }),
         }}
@@ -36,7 +36,7 @@ export default function RoadTrafficEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Road traffic offenses with victims",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/road-traffic-offenses` : "/en/services/road-traffic-offenses",
+            url: "/en/services/road-traffic-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

@@ -28,18 +28,14 @@ export default function FinancialCrimeEn() {
                 position: 1,
                 name: "Home",
                 item:
-                  typeof window !== "undefined"
-                    ? `${window.location.origin}/en`
-                    : "/en",
+                  "/en",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Economic crime",
                 item:
-                  typeof window !== "undefined"
-                    ? `${window.location.origin}/en/services/financial-crime`
-                    : "/en/services/financial-crime",
+                  "/en/services/financial-crime",
               },
             ],
           }),
@@ -53,9 +49,7 @@ export default function FinancialCrimeEn() {
             "@type": "LegalService",
             name: "Economic crime lawyer | White-collar specialist",
             url:
-              typeof window !== "undefined"
-                ? `${window.location.origin}/en/services/financial-crime`
-                : "/en/services/financial-crime",
+              "/en/services/financial-crime",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

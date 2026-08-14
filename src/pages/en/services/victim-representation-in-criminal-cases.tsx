@@ -22,8 +22,8 @@ export default function VictimRepresentationEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Representation of victims in criminal proceedings", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/victim-representation-in-criminal-cases` : "/en/services/victim-representation-in-criminal-cases" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Representation of victims in criminal proceedings", item: "/en/services/victim-representation-in-criminal-cases" },
             ],
           }),
         }}
@@ -35,7 +35,7 @@ export default function VictimRepresentationEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Compensation for accident victims and bodily injury",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/victim-representation-in-criminal-cases` : "/en/services/victim-representation-in-criminal-cases",
+            url: "/en/services/victim-representation-in-criminal-cases",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

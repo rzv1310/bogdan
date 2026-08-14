@@ -15,7 +15,7 @@ export default function CoruptieSiFunctiePublica() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -28,19 +28,19 @@ export default function CoruptieSiFunctiePublica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice` : "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
+                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
                   }
                 ]
               })
@@ -54,7 +54,7 @@ export default function CoruptieSiFunctiePublica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni de corupție și fapte legate de exercitarea funcției publice",
                 "description": "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice` : "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
                 "areaServed": [
                   {
                     "@type": "Country",
