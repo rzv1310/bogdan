@@ -868,9 +868,23 @@ const Index = () => {
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-[17px] md:text-xl text-hero-foreground/90">
-                {t.heroQuote.split("\n").map((line, i) => (
-                  <p key={i} className="mb-2 last:mb-0">{line}</p>
-                ))}
+                <div className="hidden md:block">
+                  {t.heroQuote.split("\n").map((line, i) => (
+                    <p key={i} className="mb-2 last:mb-0">{line}</p>
+                  ))}
+                </div>
+                <div className="md:hidden">
+                  {(() => {
+                    const parts = t.heroQuote.split("\n");
+                    return (
+                      <>
+                        <p className="mb-2">{parts[0]}</p>
+                        <p className="mb-2">{[parts[1], parts[2]].filter(Boolean).join(" ")}</p>
+                        <p className="mb-0">{parts[3]}</p>
+                      </>
+                    );
+                  })()}
+                </div>
               </blockquote>
               <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
               {lang === "ro" && (
