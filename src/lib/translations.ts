@@ -32,7 +32,7 @@ export const translations = {
     reasons: [
       "experiență dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
       "apărare rapidă și eficientă, de la audieri până la instanță.",
-      "consiliere penală personalizată, bazată pe colaborare strânsă și transparență.",
+      "disponibilitate 16 ore pe zi.",
     ],
     ctaTitle: "Situația ta nu poate aștepta",
     ctaText:
@@ -128,7 +128,7 @@ export const translations = {
     reasons: [
       "proven track record of acquittals and sentence reductions in complex criminal cases.",
       "swift and effective defense, from hearings to trial.",
-      "tailored criminal counsel, built on close collaboration and transparency.",
+      "availability 16 hours a day.",
     ],
     ctaTitle: "Your situation can’t wait",
     ctaText:
