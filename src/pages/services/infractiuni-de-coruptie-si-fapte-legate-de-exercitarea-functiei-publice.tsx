@@ -7,11 +7,11 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 
 export default function CoruptieSiFunctiePublica() {
   useSEO({
-    keywords: "avocat coruptie, avocat luare de mita, avocat abuz in serviciu",
+    keywords: "avocat coruptie bucuresti",
     canonical: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     alternates: { ro: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice", en: "/en/services/corruption-and-public-office-offenses", xDefault: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
     locale: "ro_RO",
-    title: "Infracțiuni de corupție – Avocat Bogdan Lamatic, București",
+    title: "Avocat Infracțiuni de corupție și fapte legate de exercitarea funcției publice - Bogdan Lamatic | București",
     description:
       "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA. Avocat Bogdan Lamatic, București. Consultanță rapidă.",
   });
@@ -127,7 +127,7 @@ export default function CoruptieSiFunctiePublica() {
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-        Infracțiuni de corupție și fapte legate de exercitarea funcției publice – Avocat Bogdan Lamatic | București
+        Avocat Infracțiuni de corupție și fapte legate de exercitarea funcției publice - Bogdan Lamatic | București
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
