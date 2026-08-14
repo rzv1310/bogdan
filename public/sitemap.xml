@@ -43,6 +43,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/masuri-preventive</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://avocatpenalbucuresti.ro/servicii/criminalitate-economica</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/criminalitate-economica" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/financial-crime" />
