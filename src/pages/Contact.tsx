@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
+import { servedAreasSchema } from "@/lib/areaServed";
 import { toast } from "@/components/ui/use-toast";
 import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 const MAX_FILE_MB = 10;
