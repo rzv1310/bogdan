@@ -863,7 +863,7 @@ const Index = () => {
         <section id="hero" className="bg-hero text-hero-foreground">
           <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-[66px] grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div className="md:order-1">
-              <h1 className="text-2xl font-semibold mb-6">
+              <h1 className="text-[26px] md:text-4xl font-semibold leading-tight tracking-tight mb-6 py-0 whitespace-pre-line">
                 {t.heroTitle}
               </h1>
               {/* Mobile-only image right after H1 */}
