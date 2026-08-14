@@ -916,6 +916,7 @@ const Index = () => {
             </div>
 
             <div className="hidden md:block relative md:max-w-[76.5%] md:ml-auto">
+              <Legal500BadgeStrip />
               <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
             </div>
           </div>
