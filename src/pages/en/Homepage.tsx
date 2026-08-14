@@ -180,7 +180,7 @@ const HomepageEN = () => {
   const t = translations[lang];
   
   const currentReviews = reviewsEN;
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro";
+  const origin = "https://avocatpenalbucuresti.ro";
   
   useSEO({
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",

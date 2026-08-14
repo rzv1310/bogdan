@@ -10,27 +10,10 @@ export default function EnIndex() {
   useSEO({
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
     description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
-    alternates: { en: "/en", ro: "/" },
+    canonical: "/en",
+    alternates: { en: "/en", ro: "/", xDefault: "/" },
     locale: "en_US",
   });
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Criminal Defense Lawyer in Bucharest, Romania",
-            url:
-              typeof window !== "undefined"
-                ? `${window.location.origin}/en`
-                : "/en",
-            inLanguage: "en-US",
-          }),
-        }}
-      />
-      <Outlet />
-    </>
-  );
+
+  return <Outlet />;
 }

@@ -12,51 +12,15 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { ROUTES, SITE_ORIGIN } from "./routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const distDir = path.join(root, "dist");
 
-const SITE_ORIGIN = "https://avocatpenalbucuresti.ro";
-
 // Safety net for publish output limits — keep well below platform caps.
 const MAX_PRERENDER_PAGES = 200;
 
-const ROUTES = [
-  "/",
-  "/despre-mine",
-  "/blog",
-  "/calculator-despagubiri",
-  "/contact",
-  "/servicii/criminalitate-economica",
-  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
-  "/servicii/investigatii-privind-activele-cripto",
-  "/servicii/cauze-penale-privind-droguri",
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
-  "/servicii/neglijenta-profesionala-si-malpraxis",
-  "/servicii/infractiuni-rutiere-cu-victime",
-  "/servicii/raspundere-penala-incidente-locul-de-munca",
-  "/servicii/reprezentarea-victimelor-in-procese-penale",
-  "/termeni-si-conditii",
-  "/gdpr",
-  "/politica-cookies",
-  "/en",
-  "/en/about",
-  "/en/blog",
-  "/en/contact",
-  "/en/terms-and-conditions",
-  "/en/gdpr",
-  "/en/cookie-policy",
-  "/en/services/financial-crime",
-  "/en/services/corruption-and-public-office-offenses",
-  "/en/services/crypto-asset-investigations",
-  "/en/services/drug-offenses",
-  "/en/services/money-laundering-and-asset-concealment",
-  "/en/services/professional-negligence-and-malpractice",
-  "/en/services/road-traffic-offenses",
-  "/en/services/workplace-criminal-liability",
-  "/en/services/victim-representation-in-criminal-cases",
-];
 
 const escapeHtml = (value) =>
   String(value)

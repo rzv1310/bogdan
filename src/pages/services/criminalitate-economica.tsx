@@ -9,6 +9,9 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
+    canonical: "/servicii/criminalitate-economica",
+    alternates: { ro: "/servicii/criminalitate-economica", en: "/en/services/financial-crime", xDefault: "/servicii/criminalitate-economica" },
+    locale: "ro_RO",
     title: "Criminalitate economică | Servicii avocat penal Bucuresti | Bogdan Lamatic",
     description: "Asistență și reprezentare în cauze de criminalitate economică.",
   });
@@ -16,7 +19,7 @@ export default function CriminalitateEconomica() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -29,19 +32,19 @@ export default function CriminalitateEconomica() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Criminalitate economică",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/criminalitate-economica` : "https://avocatpenalbucuresti.ro/services/criminalitate-economica"
+                    "item": "https://avocatpenalbucuresti.ro/services/criminalitate-economica"
                   }
                 ]
               })
@@ -55,7 +58,7 @@ export default function CriminalitateEconomica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat criminalitate economică",
                 "description": "Asistență și reprezentare în cauze de criminalitate economică",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/criminalitate-economica` : "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
+                "url": "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
                 "areaServed": [
                   {
                     "@type": "Country",

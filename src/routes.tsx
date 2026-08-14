@@ -59,7 +59,7 @@ export default function AppRoutes() {
         <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
         <Route path="/gdpr" element={<GDPR />} />
         <Route path="/politica-cookies" element={<PoliticaCookies />} />
-        <Route path="/sitemap.xml" element={<Sitemap />} />
+        <Route path="/harta-site" element={<Sitemap />} />
 
         {/* EN routes */}
         <Route path="/en" element={<EnIndex />}>

@@ -8,6 +8,9 @@ import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistS
 
 export default function Malpraxis() {
   useSEO({
+    canonical: "/servicii/neglijenta-profesionala-si-malpraxis",
+    alternates: { ro: "/servicii/neglijenta-profesionala-si-malpraxis", en: "/en/services/professional-negligence-and-malpractice", xDefault: "/servicii/neglijenta-profesionala-si-malpraxis" },
+    locale: "ro_RO",
     title: "Avocat Malpraxis Medical | av. Bogdan Lamatic | București | Neglijență în serviciu",
     description:
       "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal.",
@@ -16,7 +19,7 @@ export default function Malpraxis() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {typeof window !== "undefined" && (
+      {(
         <>
           <script
             type="application/ld+json"
@@ -29,19 +32,19 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Acasă",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/` : "https://avocatpenalbucuresti.ro/"
+                    "item": "https://avocatpenalbucuresti.ro/"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/#servicii` : "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/#servicii"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Neglijență profesională și malpraxis",
-                    "item": typeof window !== "undefined" ? `${window.location.origin}/services/neglijenta-profesionala-si-malpraxis` : "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis"
+                    "item": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis"
                   }
                 ]
               })
@@ -55,7 +58,7 @@ export default function Malpraxis() {
                 "@type": "LegalService",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
-                "url": typeof window !== "undefined" ? `${window.location.origin}/services/neglijenta-profesionala-si-malpraxis` : "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
+                "url": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
                 "areaServed": [
                   {
                     "@type": "Country",

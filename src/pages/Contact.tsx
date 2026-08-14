@@ -40,6 +40,9 @@ type Errors = {
 
 export default function Contact() {
   useSEO({
+    canonical: "/contact",
+    alternates: { ro: "/contact", en: "/en/contact", xDefault: "/contact" },
+    locale: "ro_RO",
     title: "Contact - Cabinet Avocat Bogdan Lamatic",
     description: "Contactează Cabinet Avocat Bogdan Lamatic pentru consultanță juridică penală.",
   });

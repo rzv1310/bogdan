@@ -8,7 +8,7 @@ export default function WorkplaceLiabilityEn() {
   useSEO({
     title: "Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest",
     description: "Specialized assistance in criminal cases regarding workplace accidents and criminal liability for violating safety regulations.",
-    alternates: { en: "/en/services/workplace-criminal-liability", ro: "/servicii/raspundere-penala-incidente-locul-de-munca" },
+    alternates: { en: "/en/services/workplace-criminal-liability", ro: "/servicii/raspundere-penala-incidente-locul-de-munca" , xDefault: "/servicii/raspundere-penala-incidente-locul-de-munca"},
     locale: "en_US",
     canonical: "/en/services/workplace-criminal-liability",
   });
@@ -22,8 +22,8 @@ export default function WorkplaceLiabilityEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Criminal liability for incidents at the workplace", item: typeof window !== "undefined" ? `${window.location.origin}/en/services/workplace-criminal-liability` : "/en/services/workplace-criminal-liability" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Criminal liability for incidents at the workplace", item: "/en/services/workplace-criminal-liability" },
             ],
           }),
         }}
@@ -35,7 +35,7 @@ export default function WorkplaceLiabilityEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Criminal liability for incidents at the workplace",
-            url: typeof window !== "undefined" ? `${window.location.origin}/en/services/workplace-criminal-liability` : "/en/services/workplace-criminal-liability",
+            url: "/en/services/workplace-criminal-liability",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

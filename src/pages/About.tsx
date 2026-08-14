@@ -162,8 +162,12 @@ export default function About() {
       lang === "en"
         ? "About attorney Bogdan Lamatic: experience, recognitions, publications and professional background."
         : "Despre avocat Bogdan Lamatic - informații, experiență și prezentare profesională.",
+    canonical: lang === "en" ? "/en/about" : "/despre-mine",
+    alternates: { ro: "/despre-mine", en: "/en/about", xDefault: "/despre-mine" },
+    locale: lang === "en" ? "en_US" : "ro_RO",
     schemas: [unifiedSchema],
   });
+
 
 
   return (

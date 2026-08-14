@@ -9,7 +9,7 @@ export default function CookiePolicyEn() {
   useSEO({
     title: "Cookie Policy | Bogdan Lamatic Law Office",
     description: "Details about the cookies we use, their purposes, and how you can manage your preferences.",
-    alternates: { ro: "/politica-cookies", en: "/en/cookie-policy", xDefault: "/en/cookie-policy" },
+    alternates: { ro: "/politica-cookies", en: "/en/cookie-policy", xDefault: "/politica-cookies" },
     locale: "en_US",
   });
 

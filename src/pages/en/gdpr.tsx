@@ -4,7 +4,7 @@ export default function GDPRen() {
   useSEO({
     title: "GDPR - Data Protection | Bogdan Lamatic Law Office",
     description: "Learn how we collect, use, and protect your personal data in accordance with GDPR.",
-    alternates: { ro: "/gdpr", en: "/en/gdpr", xDefault: "/en/gdpr" },
+    alternates: { ro: "/gdpr", en: "/en/gdpr", xDefault: "/gdpr" },
     locale: "en_US",
   });
 

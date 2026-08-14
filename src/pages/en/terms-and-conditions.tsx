@@ -5,7 +5,7 @@ export default function TermsAndConditionsEn() {
   useSEO({
     title: "Terms and Conditions – Attorney Bogdan Lamatic",
     description: "Website terms of use and rules for the legal services offered.",
-    alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" },
+    alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" , xDefault: "/termeni-si-conditii"},
     locale: "en_US",
     canonical: "/en/terms-and-conditions",
   });
@@ -19,8 +19,8 @@ export default function TermsAndConditionsEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: typeof window !== "undefined" ? `${window.location.origin}/en` : "/en" },
-              { "@type": "ListItem", position: 2, name: "Terms and Conditions", item: typeof window !== "undefined" ? `${window.location.origin}/en/terms-and-conditions` : "/en/terms-and-conditions" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
+              { "@type": "ListItem", position: 2, name: "Terms and Conditions", item: "/en/terms-and-conditions" },
             ],
           }),
         }}
