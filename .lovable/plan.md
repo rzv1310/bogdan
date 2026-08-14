@@ -14,7 +14,7 @@ Desktop: the current layout stays exactly as it is. The 5 badges are overlaid on
                        [b]
 ```
 
-Mobile: the badges show as a compact horizontal row under the portrait (a vertical column would be too tall on small screens).
+Mobile: the current layout stays exactly as it is. The 5 badges are overlaid on top of the portrait, along its left edge, stacked vertically, at the same small size as desktop.
 
 ## Scope
 
