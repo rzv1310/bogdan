@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Blog() {
   useSEO({
+    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Blog", item: "https://avocatpenalbucuresti.ro/blog" }] }],
     canonical: "/blog",
     alternates: { ro: "/blog", en: "/en/blog", xDefault: "/blog" },
     locale: "ro_RO",
