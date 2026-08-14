@@ -651,9 +651,9 @@ const HomepageEN = () => {
       <main>
         {/* Hero Section */}
         <section id="hero" className="bg-hero text-hero-foreground">
-          <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+          <div className="mx-auto max-w-6xl px-4 md:px-6 pt-[30px] pb-16 md:pt-12 md:pb-[66px] grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div className="md:order-1">
-              <h1 className="text-[32px] md:text-5xl font-semibold leading-tight tracking-tight mb-6 py-0">
+              <h1 className="text-[28px] md:text-4xl font-semibold leading-tight tracking-tight mb-6 py-0">
                 Criminal Defense Lawyer in Bucharest, Romania
               </h1>
               {/* Mobile-only image right after H1 */}
@@ -683,9 +683,9 @@ const HomepageEN = () => {
                 </a>
               </div>
             </div>
-            <div className="md:order-2 hidden md:flex justify-center relative">
+            <div className="hidden md:block relative md:max-w-[76.5%] md:ml-auto">
               <Legal500BadgeStrip />
-              <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-2xl max-w-sm" />
+              <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
             </div>
           </div>
         </section>
