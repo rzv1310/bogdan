@@ -14,7 +14,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = path.join(root, "dist");
 
 /** Routes that intentionally exist only in Romanian (no hreflang pair). */
-const RO_ONLY = new Set(["/calculator-despagubiri", "/harta-site", "/servicii/urmarire-penala", "/servicii/masuri-preventive"]);
+const RO_ONLY = new Set([
+  "/calculator-despagubiri",
+  "/harta-site",
+  "/servicii/urmarire-penala",
+  "/servicii/masuri-preventive",
+  "/servicii/infractiuni-contra-persoanei",
+]);
 
 const errors = [];
 const warnings = [];
