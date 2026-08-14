@@ -100,9 +100,13 @@ export default function Footer() {
                 <Link to={mapPathToLang("/politica-cookies", lang)} className="hover:underline">{lang === "en" ? "Cookie Policy" : "Politica cookies"}</Link>
               </li>
               <li>
-                <Link to="/sitemap.xml" className="hover:underline">Sitemap</Link>
+                <Link to="/harta-site" className="hover:underline">{lang === "en" ? "Site map" : "Harta site"}</Link>
+              </li>
+              <li>
+                <a href="/sitemap.xml" className="hover:underline">Sitemap XML</a>
               </li>
             </ul>
+
 
             {/* Social Media Icons */}
             <div className="mt-6">
