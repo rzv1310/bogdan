@@ -886,13 +886,23 @@ const Index = () => {
                   })()}
                 </div>
               </blockquote>
-              <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
-              {lang === "ro" && (
-                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- de 18 ani lângă tine !</p>
-              )}
-              {lang === "en" && (
-                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
-              )}
+              {(() => {
+                const yearsText = lang === "ro" ? "- de 18 ani lângă tine !" : "- 18 years by your side !";
+                return (
+                  <>
+                    {/* Mobile: author and years on the same row */}
+                    <p className="md:hidden mt-2 text-[18px] italic font-light font-signature text-right whitespace-nowrap py-[11px] px-[22px]">
+                      {t.heroAuthor}{" "}
+                      <span className="text-base text-hero-foreground/80">{yearsText}</span>
+                    </p>
+                    {/* Tablet/Desktop: keep original two-row layout */}
+                    <div className="hidden md:block">
+                      <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
+                      <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">{yearsText}</p>
+                    </div>
+                  </>
+                );
+              })()}
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40316320183" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
