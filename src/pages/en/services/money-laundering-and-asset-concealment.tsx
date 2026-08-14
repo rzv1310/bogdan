@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
+import RelatedServices from "@/components/RelatedServices";
 export default function MoneyLaunderingEn() {
   useSEO({
     keywords: "money laundering lawyer romania, asset concealment defense, aml defense attorney",
@@ -139,4 +140,5 @@ export default function MoneyLaunderingEn() {
           </div>
                   <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
 
+         <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
         

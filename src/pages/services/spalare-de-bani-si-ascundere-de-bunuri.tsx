@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Phone, Mail } from "lucide-react";
 
 import RelatedServices from "@/components/RelatedServices";
+import RelatedServices from "@/components/RelatedServices";
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
@@ -143,4 +144,5 @@ export default function SpalareDeBani() {
           </p>
                   <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
 
+         <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
         

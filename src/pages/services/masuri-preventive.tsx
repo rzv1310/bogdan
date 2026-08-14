@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
+import RelatedServices from "@/components/RelatedServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/masuri-preventive";
 const TITLE = "Avocat Măsuri Preventive București – Intervenție Imediată | Bogdan Lamatic";
 const DESCRIPTION =
@@ -375,4 +376,5 @@ export default function MasuriPreventive() {
       </Card>
           <RelatedServices current="/servicii/masuri-preventive" />
 
+     <RelatedServices current="/servicii/masuri-preventive" />
     

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 import RelatedServices from "@/components/RelatedServices";
+import RelatedServices from "@/components/RelatedServices";
 export default function FinancialCrimeEn() {
   useSEO({
     keywords: "financial crime lawyer romania, tax evasion defense attorney, fraud lawyer bucharest",
@@ -120,4 +121,5 @@ export default function FinancialCrimeEn() {
           </p>
                   <RelatedServices current="/en/services/financial-crime" lang="en" />
 
+         <RelatedServices current="/en/services/financial-crime" lang="en" />
         
