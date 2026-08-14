@@ -43,6 +43,8 @@ function stripTemplateHead(template) {
     /\s*<meta\s+property="og:description"[^>]*>/i,
     /\s*<meta\s+property="og:type"[^>]*>/i,
     /\s*<meta\s+property="og:url"[^>]*>/i,
+    /\s*<meta\s+property="og:site_name"[^>]*>/i,
+    /\s*<meta\s+name="twitter:card"[^>]*>/i,
     /\s*<meta\s+name="twitter:title"[^>]*>/i,
     /\s*<meta\s+name="twitter:description"[^>]*>/i,
   ];
@@ -70,6 +72,12 @@ function buildHead(route, head) {
   tags.push(`<meta property="og:type" content="website" />`);
   tags.push(`<meta property="og:url" content="${escapeHtml(canonical)}" />`);
   tags.push(`<meta property="og:locale" content="${escapeHtml(locale)}" />`);
+  tags.push(
+    `<meta property="og:site_name" content="${escapeHtml(
+      head?.lang === "en" ? "Attorney Bogdan Lamatic" : "Avocat Bogdan Lamatic",
+    )}" />`,
+  );
+  tags.push(`<meta name="twitter:card" content="summary_large_image" />`);
   if (title) tags.push(`<meta name="twitter:title" content="${escapeHtml(title)}" />`);
   if (description) tags.push(`<meta name="twitter:description" content="${escapeHtml(description)}" />`);
 
@@ -112,6 +120,18 @@ async function main() {
     await mkdir(path.dirname(outFile), { recursive: true });
     await writeFile(outFile, page, "utf8");
     console.log(`[prerender] ${route} -> ${path.relative(distDir, outFile)}`);
+  }
+
+  // Prerendered 404 page (not indexable, not in the sitemap).
+  {
+    const { html, head } = render("/pagina-inexistenta-404");
+    const lang = head?.lang === "en" ? "en" : "ro";
+    const page = template
+      .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
+      .replace("</head>", `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
+      .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+    await writeFile(path.join(distDir, "404.html"), page, "utf8");
+    console.log("[prerender] 404 -> 404.html");
   }
 
   console.log(`[prerender] done: ${routes.length} pages`);
