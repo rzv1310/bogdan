@@ -264,8 +264,6 @@ export default function SpalareDeBani() {
             <p>
               În practică, o apărare eficientă presupune prezentarea documentelor care atestă proveniența licită a bunurilor și contestarea imediată a măsurilor disproporționate.
             </p>
-
-            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -286,8 +284,6 @@ export default function SpalareDeBani() {
             <p>
               Delimitarea exactă determină strategia de apărare, probele necesare și eventualele excepții procedurale. Rolul meu este să arăt când conduita calificată drept „spălare" este, de fapt, tăinuire sau bancrută, reducând astfel riscul unor sancțiuni disproporționate.
             </p>
-
-            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -327,8 +323,6 @@ export default function SpalareDeBani() {
             <p>
               <strong>Se pot ridica sechestrul și poprirea dacă paralizează activitatea?</strong> Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică.
             </p>
-
-            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
