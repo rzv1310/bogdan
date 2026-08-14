@@ -9,11 +9,11 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
-    keywords: "avocat criminalitate economica, avocat evaziune fiscala, avocat frauda financiara",
+    keywords: "avocat criminalitate economica, avocat evaziune fiscala bucuresti, avocat frauda financiara",
     canonical: "/servicii/criminalitate-economica",
     alternates: { ro: "/servicii/criminalitate-economica", en: "/en/services/financial-crime", xDefault: "/servicii/criminalitate-economica" },
     locale: "ro_RO",
-    title: "Criminalitate economică | Servicii avocat penal Bucuresti | Bogdan Lamatic",
+    title: "Avocat Infracțiuni Economice București | Specializat în \"White-Collar Crime\" | Bogdan Lamatic",
     description: "Asistență și reprezentare în cauze de criminalitate economică.",
   });
 
@@ -92,7 +92,7 @@ export default function CriminalitateEconomica() {
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="text-2xl font-semibold mb-2">Avocat Infracțiuni Economice | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
+      <h1 className="text-2xl font-semibold mb-2">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
