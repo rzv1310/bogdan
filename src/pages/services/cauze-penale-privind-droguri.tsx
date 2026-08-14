@@ -8,178 +8,110 @@ import { Phone } from "lucide-react";
 import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function CauzeDroguri() {
+  const SITE = "https://avocatpenalbucuresti.ro";
+  const pageUrl = `${SITE}/servicii/cauze-penale-privind-droguri`;
+  const pageTitle = "Avocat Trafic Droguri București - Bogdan Lamatic";
+  const pageDescription =
+    "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.";
+
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ce pedepse există pentru traficul de droguri în România?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "În funcție de tipul substanței, pedepsele sunt între 2 și 7 ani pentru droguri de risc și între 7 și 15 ani pentru droguri de mare risc, conform Legii nr. 143/2000.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Pot scăpa de închisoare dacă am asupra mea o cantitate mică?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "Dacă se dovedește că este pentru consum propriu, instanța poate dispune pedepse mai mici sau măsuri alternative.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ce trebuie să fac dacă DIICOT mă cheamă la audieri?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Contactează imediat avocatul și nu oferi declarații fără consultanță juridică.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Care sunt cele mai comune droguri în dosarele DIICOT?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "Canabis, ecstasy și amfetamine la droguri de risc, iar cocaina, heroina și LSD la droguri de mare risc.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Cât durează un proces de trafic de droguri?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "Durata poate varia de la câteva luni la câțiva ani, în funcție de complexitatea probelor și de etapele procedurale.",
+        },
+      },
+    ],
+  };
+
+  const legalServiceData = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    areaServed: "București, România",
+    telephone: "+40 (31) 632 01 83",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Strada Colonel Stefan Stoika 22",
+      addressLocality: "București",
+      addressRegion: "Bucuresti",
+      postalCode: "012244",
+      addressCountry: "RO",
+      url: "https://www.google.com/maps?cid=17818591254142574295",
+    },
+    hasMap: "https://www.google.com/maps?cid=17818591254142574295",
+    founder: {
+      "@type": "Person",
+      name: "Bogdan Lamatic",
+    },
+    sameAs: ["mailto:contact@avocatpenalbucuresti.ro"],
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Acasă", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Cauze penale privind droguri", item: pageUrl },
+    ],
+  };
+
   useSEO({
     canonical: "/servicii/cauze-penale-privind-droguri",
-    alternates: { ro: "/servicii/cauze-penale-privind-droguri", en: "/en/services/drug-offenses", xDefault: "/servicii/cauze-penale-privind-droguri" },
+    alternates: {
+      ro: "/servicii/cauze-penale-privind-droguri",
+      en: "/en/services/drug-offenses",
+      xDefault: "/servicii/cauze-penale-privind-droguri",
+    },
     locale: "ro_RO",
-    title: "Avocat Trafic Droguri București - Bogdan Lamatic",
-    description:
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.",
+    title: pageTitle,
+    description: pageDescription,
+    schemas: [breadcrumbData, legalServiceData, faqData],
   });
 
-  useEffect(() => {
-    const origin = window.location.origin;
-    const url = origin + window.location.pathname;
-    const imageUrl = origin + "/lovable-uploads/5a0690ed-7910-4259-948b-3d42e2fe9151.png";
-    const title = "Avocat Trafic Droguri București - Bogdan Lamatic";
-    const description =
-      "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.";
-
-    // FAQ JSON-LD
-    const faqData = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Ce pedepse există pentru traficul de droguri în România?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "În funcție de tipul substanței, pedepsele sunt între 2 și 7 ani pentru droguri de risc și între 7 și 15 ani pentru droguri de mare risc, conform Legii nr. 143/2000.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Pot scăpa de închisoare dacă am asupra mea o cantitate mică?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "Dacă se dovedește că este pentru consum propriu, instanța poate dispune pedepse mai mici sau măsuri alternative.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Ce trebuie să fac dacă DIICOT mă cheamă la audieri?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "Contactează imediat avocatul și nu oferi declarații fără consultanță juridică.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Care sunt cele mai comune droguri în dosarele DIICOT?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "Canabis, ecstasy și amfetamine la droguri de risc, iar cocaina, heroina și LSD la droguri de mare risc.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Cât durează un proces de trafic de droguri?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text:
-              "Durata poate varia de la câteva luni la câțiva ani, în funcție de complexitatea probelor și de etapele procedurale.",
-          },
-        },
-      ],
-    } as const;
-
-    // LegalService JSON-LD
-    const legalServiceData = {
-      "@context": "https://schema.org",
-      "@type": "LegalService",
-      name: title,
-      description,
-      url,
-      areaServed: "București, România",
-      telephone: "+40 (31) 632 01 83",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Strada Colonel Stefan Stoika 22",
-        addressLocality: "București",
-        addressRegion: "Bucuresti",
-        postalCode: "012244",
-        addressCountry: "RO",
-        url: "https://www.google.com/maps?cid=17818591254142574295"
-      },
-      hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-      founder: {
-        "@type": "Person",
-        name: "Bogdan Lamatic",
-      },
-      sameAs: ["mailto:contact@avocatpenalbucuresti.ro"],
-    } as const;
-
-    // BreadcrumbList JSON-LD
-    const breadcrumbData = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Acasă",
-          item: origin + "/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Cauze penale privind droguri",
-          item: url,
-        },
-      ],
-    } as const;
-
-    // Inject JSON-LD scripts
-    const faqScript = document.createElement("script");
-    faqScript.type = "application/ld+json";
-    faqScript.id = "faq-jsonld-droguri";
-    faqScript.text = JSON.stringify(faqData);
-    document.head.appendChild(faqScript);
-
-    const legalScript = document.createElement("script");
-    legalScript.type = "application/ld+json";
-    legalScript.id = "legalservice-jsonld-droguri";
-    legalScript.text = JSON.stringify(legalServiceData);
-    document.head.appendChild(legalScript);
-
-    const breadcrumbScript = document.createElement("script");
-    breadcrumbScript.type = "application/ld+json";
-    breadcrumbScript.id = "breadcrumb-jsonld-droguri";
-    breadcrumbScript.text = JSON.stringify(breadcrumbData);
-    document.head.appendChild(breadcrumbScript);
-
-    // Open Graph & Twitter meta
-    const createdMetaIds: string[] = [];
-    const setMeta = (
-      id: string,
-      attr: "property" | "name",
-      attrValue: string,
-      content: string
-    ) => {
-      let el = document.getElementById(id) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.id = id;
-        el.setAttribute(attr, attrValue);
-        document.head.appendChild(el);
-        createdMetaIds.push(id);
-      }
-      el.setAttribute("content", content);
-    };
-
-    setMeta("og-title-droguri", "property", "og:title", title);
-    setMeta("og-desc-droguri", "property", "og:description", description);
-    setMeta("og-type-droguri", "property", "og:type", "website");
-    setMeta("og-url-droguri", "property", "og:url", url);
-    setMeta("og-image-droguri", "property", "og:image", imageUrl);
-
-    setMeta("tw-card-droguri", "name", "twitter:card", "summary_large_image");
-    setMeta("tw-title-droguri", "name", "twitter:title", title);
-    setMeta("tw-desc-droguri", "name", "twitter:description", description);
-    setMeta("tw-image-droguri", "name", "twitter:image", imageUrl);
-
-    return () => {
-      faqScript.parentNode?.removeChild(faqScript);
-      legalScript.parentNode?.removeChild(legalScript);
-      breadcrumbScript.parentNode?.removeChild(breadcrumbScript);
-      createdMetaIds.forEach((id) => document.getElementById(id)?.remove());
-    };
-  }, []);
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
