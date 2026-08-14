@@ -147,7 +147,7 @@ export default function InvestigatiiCripto() {
           </BreadcrumbList>
         </Breadcrumb>
         <h1 className="mt-4 text-2xl font-semibold">
-          Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts
+          Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts
         </h1>
         <p className="mt-3 text-muted-foreground leading-relaxed">
           Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance.
