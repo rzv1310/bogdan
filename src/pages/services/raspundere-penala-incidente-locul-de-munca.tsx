@@ -8,7 +8,7 @@ export default function RaspunderePenalaMunca() {
   useSEO({
     title: "Răspundere penală pentru incidente la locul de muncă | Avocat drept penal Bogdan Lamatic | București",
     description: "Asistență specializată în cauze penale privind accidentele de muncă și răspunderea penală pentru nerespectarea normelor de securitate.",
-    alternates: { ro: "/servicii/raspundere-penala-incidente-locul-de-munca", en: "/en/services/workplace-criminal-liability" },
+    alternates: { ro: "/servicii/raspundere-penala-incidente-locul-de-munca", en: "/en/services/workplace-criminal-liability", xDefault: "/servicii/raspundere-penala-incidente-locul-de-munca"},
     canonical: "/servicii/raspundere-penala-incidente-locul-de-munca",
   });
 

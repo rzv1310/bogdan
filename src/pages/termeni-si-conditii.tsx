@@ -6,7 +6,7 @@ export default function TermeniSiConditii() {
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
     alternates: {
       ro: "/termeni-si-conditii",
-      en: "/en/terms-and-conditions"
+      en: "/en/terms-and-conditions", xDefault: "/termeni-si-conditii"
     },
     locale: "ro_RO",
     canonical: "/termeni-si-conditii"

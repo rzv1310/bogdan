@@ -10,7 +10,7 @@ export default function SpalareDeBani() {
     description: "Apărare în dosare de spălare de bani și ascundere de bunuri.",
     alternates: {
       ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
-      en: "/en/services/money-laundering-and-asset-concealment",
+      en: "/en/services/money-laundering-and-asset-concealment", xDefault: "/servicii/spalare-de-bani-si-ascundere-de-bunuri"
     },
     canonical: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
   });
