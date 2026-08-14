@@ -58,7 +58,7 @@ export default function DrugOffensesEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Drug trafficking lawyer – Bucharest | Strategy and defense – DIICOT cases</h1>
+        <h1 className="text-2xl font-semibold">Drug trafficking lawyer – Bucharest | Strategy and defense – DIICOT cases</h1>
         <p className="mt-2 text-muted-foreground">by Bogdan Lamatic, criminal defense and white-collar lawyer</p>
 
         <div className="mt-4">

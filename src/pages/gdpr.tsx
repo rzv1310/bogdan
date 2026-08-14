@@ -21,7 +21,7 @@ export default function GDPR() {
   return (
     <main className="mx-auto max-w-5xl px-4 md:px-6 py-10">
       <header className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight">GDPR – Protecția datelor</h1>
+        <h1 className="text-2xl font-semibold">GDPR – Protecția datelor</h1>
         <nav aria-label="breadcrumb" className="mt-2 text-sm opacity-80">
           <ol className="flex gap-2">
             <li>
