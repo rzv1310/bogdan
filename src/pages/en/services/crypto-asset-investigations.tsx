@@ -7,7 +7,6 @@ import EthereumCard from "@/components/crypto/EthereumCard";
 import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function CryptoInvestigationsEn() {
   useSEO({
     keywords: "crypto lawyer romania, cryptocurrency investigations, blockchain forensics attorney",
@@ -246,7 +245,6 @@ export default function CryptoInvestigationsEn() {
               </div>
             </CardContent>
         </Card>
-          <RelatedServices current="/en/services/crypto-asset-investigations" lang="en" />
         </section>
 
         <section className="mt-8">
@@ -275,6 +273,14 @@ export default function CryptoInvestigationsEn() {
               </div>
             </CardContent>
           </Card>
-                  <RelatedServices current="/en/services/crypto-asset-investigations" lang="en" />
+          <RelatedServices current="/en/services/crypto-asset-investigations" lang="en" />
 
-        
+        </section>
+
+        <div className="mt-8 flex justify-center">
+          <PhoneLoader />
+        </div>
+      </main>
+    </>
+  );
+}

@@ -8,7 +8,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function CriminalitateEconomica() {
   useSEO({
     keywords: "avocat criminalitate economica, avocat evaziune fiscala bucuresti, avocat frauda financiara",
@@ -1661,7 +1660,6 @@ export default function CriminalitateEconomica() {
                 <li>Raport activitate DIICOT 2024 - cauze economico-financiare și contrabandă (media.dcnews.ro)</li>
                 <li>Raport activitate DIICOT 2023 - cauze economico-financiare și contrabandă (ZIUA de Constanța)</li>
               </ul>
-              <RelatedServices current="/servicii/criminalitate-economica" />
             </section>
           </CardContent>
         </Card>
@@ -1669,6 +1667,9 @@ export default function CriminalitateEconomica() {
         <EconomicCrimesChart />
 
       </div>
-              <RelatedServices current="/servicii/criminalitate-economica" />
+        <RelatedServices current="/servicii/criminalitate-economica" />
 
-      
+      </section>
+    </>
+  );
+}

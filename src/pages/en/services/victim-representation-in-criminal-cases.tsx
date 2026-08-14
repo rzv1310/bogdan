@@ -5,7 +5,6 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function VictimRepresentationEn() {
   useSEO({
     keywords: "victim representation lawyer romania, civil party criminal case, injured party attorney",
@@ -247,7 +246,9 @@ export default function VictimRepresentationEn() {
             </div>
           </CardContent>
         </Card>
-              <RelatedServices current="/en/services/victim-representation-in-criminal-cases" lang="en" />
+        <RelatedServices current="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
-       <RelatedServices current="/en/services/victim-representation-in-criminal-cases" lang="en" />
-      
+      </section>
+    </>
+  );
+}

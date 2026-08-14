@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function RoadTrafficEn() {
   useSEO({
     keywords: "road traffic offenses lawyer romania, car accident criminal defense, negligent homicide attorney",
@@ -232,7 +231,9 @@ export default function RoadTrafficEn() {
         }}
       />
         </div>
-              <RelatedServices current="/en/services/road-traffic-offenses" lang="en" />
+        <RelatedServices current="/en/services/road-traffic-offenses" lang="en" />
 
-       <RelatedServices current="/en/services/road-traffic-offenses" lang="en" />
-      
+      </section>
+    </>
+  );
+}

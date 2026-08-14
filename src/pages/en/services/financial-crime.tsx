@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function FinancialCrimeEn() {
   useSEO({
     keywords: "financial crime lawyer romania, tax evasion defense attorney, fraud lawyer bucharest",
@@ -119,7 +118,79 @@ export default function FinancialCrimeEn() {
             Whether you are under investigation, indicted, or a victim in an economic crime case, my goal is to secure a
             solid, discreet, and result-oriented outcome.
           </p>
-                  <RelatedServices current="/en/services/financial-crime" lang="en" />
+          <RelatedServices current="/en/services/financial-crime" lang="en" />
 
-         <RelatedServices current="/en/services/financial-crime" lang="en" />
-        
+        </section>
+
+        {/* What cases I handle */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Areas of defense in economic crime</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed">
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Fraud, deceit, and fraudulent financial operations</li>
+              <li>Embezzlement, abuse of office, conflict of interest</li>
+              <li>Bribery, bribery offering, influence peddling, buying influence</li>
+              <li>Tax evasion and customs offenses</li>
+              <li>Money laundering and asset concealment</li>
+              <li>Banking, corporate, accounting and securities offenses</li>
+              <li>Manipulation of public tenders and misuse of EU funds</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Why a specialist matters */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Why you need a white-collar specialist</h2>
+          </CardHeader>
+          <CardContent className="space-y-3 text-base leading-relaxed">
+            <p>
+              Economic crime cases require not only advanced criminal law knowledge but also a deep understanding of
+              financial flows, accounting, tax, procurement rules and corporate governance. Defense hinges on correlating
+              technical documentation with the strict requirements of criminal procedure.
+            </p>
+            <p>
+              I protect your rights from the first procedural step, scrutinize every piece of evidence, raise procedural
+              objections where appropriate, and negotiate pragmatic outcomes when they serve your best interest.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Quick legal references */}
+        <Card className="mt-8 border-accent">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">Key legal references (Romania)</h2>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed">
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Criminal Code: bribery (art. 289-292), embezzlement (art. 295), abuse of office (art. 297), fraud (art. 244)</li>
+              <li>Law 241/2005 on tax evasion</li>
+              <li>Law 129/2019 (AML/CFT) and related guidance</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* DIICOT chart */}
+        <div className="mt-8">
+          <EconomicCrimesChart
+            title="Economic and financial crime and smuggling cases (DIICOT)"
+            subtitle="Public summary data from DIICOT reports - 2023 vs 2024"
+            legendLabels={{ Active: "Active cases", Pasive: "Passive cases", Total: "Total" }}
+            downloadAriaLabel="Download chart as PNG"
+            filename="diicot-economic-crimes-2023-2024-en.png"
+          />
+        </div>
+
+        <div className="mt-8">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+            <a href="tel:+40316320183" aria-label="Call now for a case review">
+              <Phone className="mr-2" /> Request a quick case review
+            </a>
+          </Button>
+        </div>
+      </main>
+    </>
+  );
+}

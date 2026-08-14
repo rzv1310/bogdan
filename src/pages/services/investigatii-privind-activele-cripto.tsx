@@ -10,7 +10,6 @@ import { isPrerender } from "@/lib/ssr-head";
 import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function InvestigatiiCripto() {
   useSEO({
     keywords: "avocat crypto, avocat criptomonede, investigatii blockchain",
@@ -462,7 +461,6 @@ export default function InvestigatiiCripto() {
             </div>
           </CardContent>
         </Card>
-        <RelatedServices current="/servicii/investigatii-privind-activele-cripto" />
       </section>
 
       {/* Checklist fiscal ANAF - PDF */}
@@ -487,6 +485,11 @@ export default function InvestigatiiCripto() {
             )}
           </CardContent>
         </Card>
-              <RelatedServices current="/servicii/investigatii-privind-activele-cripto" />
+        <RelatedServices current="/servicii/investigatii-privind-activele-cripto" />
 
-      
+      </section>
+
+      </main>
+    </>
+  );
+}

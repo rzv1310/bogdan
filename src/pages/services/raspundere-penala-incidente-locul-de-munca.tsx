@@ -5,7 +5,6 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function RaspunderePenalaMunca() {
   useSEO({
     keywords: "avocat accident de munca bucuresti, raspundere penala angajator, avocat protectia muncii, răspundere penală SSM, accident mortal de muncă",
@@ -459,7 +458,9 @@ export default function RaspunderePenalaMunca() {
             </p>
           </CardContent>
         </Card>
-              <RelatedServices current="/servicii/raspundere-penala-incidente-locul-de-munca" />
+        <RelatedServices current="/servicii/raspundere-penala-incidente-locul-de-munca" />
 
-       <RelatedServices current="/servicii/raspundere-penala-incidente-locul-de-munca" />
-      
+      </section>
+    </>
+  );
+}

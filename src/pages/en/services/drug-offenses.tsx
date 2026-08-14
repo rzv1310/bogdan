@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 export default function DrugOffensesEn() {
   useSEO({
     keywords: "drug offenses lawyer romania, drug trafficking defense attorney, narcotics lawyer bucharest",
@@ -230,7 +229,9 @@ export default function DrugOffensesEn() {
             </ul>
           </CardContent>
         </Card>
-              <RelatedServices current="/en/services/drug-offenses" lang="en" />
+        <RelatedServices current="/en/services/drug-offenses" lang="en" />
 
-       <RelatedServices current="/en/services/drug-offenses" lang="en" />
-      
+      </section>
+    </>
+  );
+}

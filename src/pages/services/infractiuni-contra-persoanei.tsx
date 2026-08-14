@@ -7,7 +7,6 @@ import { Phone } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
-import RelatedServices from "@/components/RelatedServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/infractiuni-contra-persoanei";
 const TITLE = "Avocat Infracțiuni Contra Persoanei București – Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
 const DESCRIPTION =
@@ -366,7 +365,8 @@ export default function InfractiuniContraPersoanei() {
           </ul>
         </CardContent>
       </Card>
-          <RelatedServices current="/servicii/infractiuni-contra-persoanei" />
+      <RelatedServices current="/servicii/infractiuni-contra-persoanei" />
 
-     <RelatedServices current="/servicii/infractiuni-contra-persoanei" />
-    
+    </section>
+  );
+}
