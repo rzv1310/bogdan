@@ -4,10 +4,25 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useSEO } from "@/hooks/useSEO";
 import { Phone, Mail } from "lucide-react";
 
+const CTA_CLASS =
+  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
+
+function CallCta({ label = "Sună acum" }: { label?: string }) {
+  return (
+    <div className="mt-6 flex flex-wrap items-center gap-3">
+      <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - avocat spălare de bani`}>
+        <a href="tel:+40316320183">
+          <Phone className="mr-2 h-4 w-4" /> {label}
+        </a>
+      </Button>
+    </div>
+  );
+}
+
 export default function SpalareDeBani() {
   useSEO({
-    keywords: "avocat spalare de bani, avocat ascundere de bunuri, avocat confiscare bunuri",
-    title: "Spălare de bani și ascundere de bunuri | Avocat drept penal Bogdan Lamatic - Bucuresti",
+    keywords: "avocat spalare de bani bucuresti, dosar spalare bani, ascundere bunuri, avocat confiscare bunuri",
+    title: "Infracțiune spălare de bani | Ascundere de bunuri - avocat Bogdan Lamatic, București",
     description: "Apărare în dosare de spălare de bani și ascundere de bunuri.",
     alternates: {
       ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
@@ -115,31 +130,23 @@ export default function SpalareDeBani() {
         </header>
 
         {/* Intro + CTA */}
-        <section className="mt-4 border border-accent rounded-md p-4">
-          <div className="flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40316320183" aria-label="Sună acum">
-                <Phone className="mr-2" /> Sună acum
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="mailto:contact@avocatpenalbucuresti.ro" aria-label="Trimite email">
-                <Mail className="mr-2" /> Trimite email
-              </a>
-            </Button>
-          </div>
-          <div className="mt-3 space-y-3 text-base leading-relaxed">
-            <p>
-              Am ales să practic dreptul penal al afacerilor pentru că este unul dintre puținele domenii în care faptele, banii și intențiile se împletesc într-un mod care afectează direct destinele oamenilor.
-            </p>
-            <p>
-              Fiecare dosar de „white‑collar crime” pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților morale ale celor implicați.
-            </p>
-            <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
-              În calitate de avocat în Baroul București, specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
-            </p>
-          </div>
+        <section className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            Am ales să practic dreptul penal al afacerilor pentru că este unul dintre puținele domenii în care faptele, banii și intențiile se împletesc într-un mod care afectează direct destinele oamenilor.
+          </p>
+          <p>
+            Fiecare dosar de „white‑collar crime" pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților morale ale celor implicați.
+          </p>
+          <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
+            În calitate de avocat în Baroul București, specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
+          </p>
         </section>
+
+        <CallCta />
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+        </p>
 
         {/* Ce reprezintă infracțiunea de spălare a banilor */}
         <Card className="mt-8 border-accent">
@@ -155,7 +162,7 @@ export default function SpalareDeBani() {
                 Schimbarea sau transferul bunurilor provenite din infracțiuni cu scopul de a ascunde originea ilicită sau de a ajuta făptuitorul să evite urmărirea penală.
               </li>
               <li>
-                Ascunderea ori disimularea naturii, provenienței, situației, circulației sau proprietății bunurilor, știind că provin din infracțiuni. Aceasta este componenta care, în limbaj obișnuit, apare sub denumirea de „ascundere de bunuri”.
+                Ascunderea ori disimularea naturii, provenienței, situației, circulației sau proprietății bunurilor, știind că provin din infracțiuni. Aceasta este componenta care, în limbaj obișnuit, apare sub denumirea de „ascundere de bunuri".
               </li>
               <li>
                 Dobândirea, deținerea ori folosirea bunurilor știind că provin din infracțiuni. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=cuprins%3A%281,entităților%20raportoare%20să%20aplice%20măsuri" target="_blank" rel="noopener noreferrer" className="underline">(art. 49 Legea 129/2019)</a>
@@ -189,13 +196,15 @@ export default function SpalareDeBani() {
                 Supravegherea asociațiilor și fundațiilor: ONPCSB supraveghează, pe bază de risc, activitatea acestor entități și poate solicita informații privind structura și conducerea lor. <a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/298293#:~:text=26,tipurile%20de%20asocia%C8%9Bii%20%C8%99i%20funda%C8%9Bii" target="_blank" rel="noopener noreferrer" className="underline">(art. 26)</a>
               </li>
             </ul>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
-        {/* „Ascunderea de bunuri” vs. alte infracțiuni */}
+        {/* „Ascunderea de bunuri" vs. alte infracțiuni */}
         <Card className="mt-8 border-accent">
           <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">„Ascunderea de bunuri” vs. alte infracțiuni</h2>
+            <h2 className="text-2xl font-semibold leading-none tracking-tight">„Ascunderea de bunuri" vs. alte infracțiuni</h2>
           </CardHeader>
           <CardContent className="space-y-4 text-base leading-relaxed">
             <h3 className="text-xl font-semibold">1. Tăinuirea (art. 270 Cod penal)</h3>
@@ -215,12 +224,14 @@ export default function SpalareDeBani() {
 
             <h3 className="text-xl font-semibold">4. Evaziunea fiscală (Legea nr. 241/2005)</h3>
             <p>
-              Frecvent „faptă‑sursă” pentru spălarea banilor. Art. 9 stabilește faptele și pedepsele (2–8 ani sau amendă), precum: ascunderea bunului ori a sursei impozabile, omisiunea evidențierii operațiunilor, evidențe duble sau cheltuieli fictive. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Legea 241/2005)</a> Pentru prejudicii peste 100.000/500.000 euro, limitele se majorează. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(majorări)</a>
+              Frecvent „faptă‑sursă" pentru spălarea banilor. Art. 9 stabilește faptele și pedepsele (2–8 ani sau amendă), precum: ascunderea bunului ori a sursei impozabile, omisiunea evidențierii operațiunilor, evidențe duble sau cheltuieli fictive. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Legea 241/2005)</a> Pentru prejudicii peste 100.000/500.000 euro, limitele se majorează. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(majorări)</a>
             </p>
 
             <p>
               Atunci când ascunderea bunului sau a sursei impozabile urmărește sustragerea de la plata taxelor, fapta poate constitui evaziune fiscală și, ulterior, predicate pentru spălarea banilor. Analiza detaliată a activităților economice și a documentelor contabile este esențială.
             </p>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -253,6 +264,8 @@ export default function SpalareDeBani() {
             <p>
               În practică, o apărare eficientă presupune prezentarea documentelor care atestă proveniența licită a bunurilor și contestarea imediată a măsurilor disproporționate.
             </p>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -271,8 +284,10 @@ export default function SpalareDeBani() {
               <li>Abuzul de încredere și bancruta frauduloasă privesc relația debitor‑creditor și insolvența.</li>
             </ul>
             <p>
-              Delimitarea exactă determină strategia de apărare, probele necesare și eventualele excepții procedurale. Rolul meu este să arăt când conduita calificată drept „spălare” este, de fapt, tăinuire sau bancrută, reducând astfel riscul unor sancțiuni disproporționate.
+              Delimitarea exactă determină strategia de apărare, probele necesare și eventualele excepții procedurale. Rolul meu este să arăt când conduita calificată drept „spălare" este, de fapt, tăinuire sau bancrută, reducând astfel riscul unor sancțiuni disproporționate.
             </p>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -283,15 +298,17 @@ export default function SpalareDeBani() {
           </CardHeader>
           <CardContent className="space-y-4 text-base leading-relaxed">
             <h3 className="text-xl font-semibold">1. Evaluarea faptelor și cartografierea fluxurilor</h3>
-            <p>Identific faptele‑sursă (fraudă, evaziune, corupție etc.) și analizez fluxurile financiare, inclusiv tranzacții pe blockchain/cripto. Un simplu transfer sau o schimbare formală nu înseamnă automat „spălare”.</p>
+            <p>Identific faptele‑sursă (fraudă, evaziune, corupție etc.) și analizez fluxurile financiare, inclusiv tranzacții pe blockchain/cripto. Un simplu transfer sau o schimbare formală nu înseamnă automat „spălare".</p>
             <h3 className="text-xl font-semibold">2. Strategia de apărare diferențiată</h3>
             <p>În funcție de încadrare: pentru spălare – standardul probator al cunoașterii originii ilicite și legătura cu fapta‑sursă; pentru tăinuire – lipsa disimulării; pentru bancrută/abuz – existența reală a insolvenței și a scopului fraudulos.</p>
             <h3 className="text-xl font-semibold">3. Gestionarea măsurilor asigurătorii</h3>
             <p>Atac proporționalitatea și obiectul sechestrului, oferind documentația patrimonială necesară; legea permite ridicarea/restrângerea când activitatea economică e paralizată. Noua procedură (Legea 70/2025) conferă părții civile un rol activ și drepturi de contestație.</p>
             <h3 className="text-xl font-semibold">4. Litigiul probelor și excepțiile procedurale</h3>
-            <p>Exclud probele obținute ilegal, verific lanțul de custodie și legalitatea interceptărilor; contest interpretările excesive privind „beneficiarul real” și KYC.</p>
+            <p>Exclud probele obținute ilegal, verific lanțul de custodie și legalitatea interceptărilor; contest interpretările excesive privind „beneficiarul real" și KYC.</p>
             <h3 className="text-xl font-semibold">5. Remedii și conformare</h3>
             <p>Pentru sectoare reglementate (finanțe, imobiliare, cripto), implementez conformarea cu Legea 129/2019 și normele ONPCSB: politici KYC, procese interne pentru beneficiarii reali, instruirea angajaților, auditul tranzacțiilor suspecte; negocieri cu autoritățile când este util.</p>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
@@ -310,27 +327,26 @@ export default function SpalareDeBani() {
             <p>
               <strong>Se pot ridica sechestrul și poprirea dacă paralizează activitatea?</strong> Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică.
             </p>
+
+            <CallCta label="Vreau avocat!" />
           </CardContent>
         </Card>
 
-        {/* Concluzie + CTA final */}
+        {/* Contact */}
         <Card className="mt-8 border-accent">
-          {/* Removed header as requested */}
-          <CardContent className="space-y-3 text-base leading-relaxed">
+          <CardHeader>
+            <h3 className="text-xl font-semibold leading-none tracking-tight">Contact | Evaluare inițială gratuită</h3>
+          </CardHeader>
+          <CardContent className="text-base leading-relaxed space-y-2">
             <p>
-              Dosarele de spălare de bani și ascundere de bunuri nu sunt simple ecuații financiare.
+              Dacă ești vizat de un dosar de spălare de bani sau ascundere de bunuri, timpul contează. Sună-mă acum pentru o evaluare inițială gratuită și află imediat care sunt pașii următori.
             </p>
-            <p>
-              O apărare eficientă combină analiza tehnică a fluxurilor financiare cu o strategie juridică adaptată fiecărui capăt de acuzare și o gestiune atentă a măsurilor asigurătorii.
-            </p>
-            <p>
-              Dacă sunteți vizat de o anchetă, acționați rapid: documentați proveniența bunurilor, consultați un specialist și pregătiți strategia încă din faza de urmărire penală.
-            </p>
-            <div className="pt-2 flex flex-wrap items-center gap-3">
-              <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                <a href="tel:+40316320183" aria-label="Sună acum pentru analiză confidențială">
-                  <Phone className="mr-2" /> Sună acum
-                </a>
+            <div className="flex flex-wrap gap-3 pt-1">
+              <Button asChild variant="premium" className={CTA_CLASS}>
+                <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              </Button>
+              <Button asChild variant="outline">
+                <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
               </Button>
             </div>
           </CardContent>
