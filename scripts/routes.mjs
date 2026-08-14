@@ -10,6 +10,7 @@ export const ROUTES = [
   "/blog",
   "/calculator-despagubiri",
   "/contact",
+  "/servicii/urmarire-penala",
   "/servicii/criminalitate-economica",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
   "/servicii/investigatii-privind-activele-cripto",

@@ -1,4 +1,5 @@
 export const services = [
+  { label: "Urmărire penală", to: "/servicii/urmarire-penala" },
   { label: "Criminalitate economică", to: "/servicii/criminalitate-economica" },
   { label: "Infracțiuni de corupție și fapte legate de exercitarea funcției publice", to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
   { label: "Investigații privind activele cripto", to: "/servicii/investigatii-privind-activele-cripto" },

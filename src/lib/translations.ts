@@ -13,6 +13,7 @@ export const translations = {
       menu: "Meniu",
     },
     navServices: {
+      "urmarire-penala": "Urmărire penală",
       "criminalitate-economica": "Criminalitate economică",
       "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
       "investigatii-privind-activele-cripto": "Investigații privind activele cripto",
