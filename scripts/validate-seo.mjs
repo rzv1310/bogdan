@@ -226,7 +226,7 @@ async function main() {
     ].map((m) => ({ hreflang: m[1], href: m[2] }));
 
     collectJsonLd(route, html);
-    pages.set(route, { alternates });
+    pages.set(route, { alternates, html });
 
     if (alternates.length === 0) {
       if (RO_ONLY.has(route)) warn(route, "no hreflang (Romanian-only page)");
@@ -258,6 +258,29 @@ async function main() {
         .get(target)
         .alternates.some((a) => (a.href.replace(SITE_ORIGIN, "") || "/") === route);
       if (!back) err(route, `hreflang is not reciprocal with ${target}`);
+    }
+  }
+
+  // Contextual internal links: every route needs >= 2 in-content inbound links
+  // from other pages (header/footer nav, /harta-site and 404 are excluded).
+  const CONTEXTUAL_MIN = 2;
+  const inbound = new Map(ROUTES.map((r) => [r, new Set()]));
+  for (const [route, page] of pages) {
+    if (route === "/harta-site") continue;
+    const main = page.html.match(/<main[^>]*>([\s\S]*?)<\/main>/i)?.[1];
+    if (!main) continue;
+    for (const match of main.matchAll(/<a[^>]+href="(\/[^"#?]*)"/g)) {
+      const target = match[1].replace(/\/$/, "") || "/";
+      if (target === route) continue;
+      if (inbound.has(target)) inbound.get(target).add(route);
+    }
+  }
+  for (const [route, sources] of inbound) {
+    if (sources.size < CONTEXTUAL_MIN) {
+      warn(
+        route,
+        `only ${sources.size} contextual internal link(s) (expected >= ${CONTEXTUAL_MIN})`,
+      );
     }
   }
 
