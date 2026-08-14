@@ -1,4 +1,5 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Menu, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,6 +32,16 @@ export default function Header() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const { handleMobileNavigation } = useMobileScrollTop();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const svcList = lang === "en" ? servicesEn : services;
 
@@ -47,7 +58,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+    <header className={`sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b transition-transform duration-300 ${scrolled ? "translate-y-0" : "-translate-y-full"} md:translate-y-0`}>
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
         <Link to={mapPathToLang("/", lang)} className="flex flex-col items-center leading-none text-center select-none">
           <span className="block ml-1 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
