@@ -6,6 +6,7 @@ import { Phone } from "lucide-react";
 import EthereumCard from "@/components/crypto/EthereumCard";
 import PhoneLoader from "@/components/crypto/PhoneLoader";
 import { PDFDownloadLink } from "@react-pdf/renderer";
+import { isPrerender } from "@/lib/ssr-head";
 import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
 export default function InvestigatiiCripto() {
