@@ -1,7 +1,7 @@
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle, Play } from "lucide-react";
+import { Phone, CheckCircle, Play, Star } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
@@ -909,6 +909,17 @@ const Index = () => {
                     <Phone /> {t.callNow}
                   </Button>
                 </a>
+              </div>
+              <div className="flex md:justify-start justify-center mx-[24px] px-0 -mt-2 mb-2">
+                <div className="flex items-center gap-1.5 text-sm text-hero-foreground/90">
+                  <span className="font-semibold">{t.googleRating}</span>
+                  <span className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                  </span>
+                  <span>{t.googleReviews}</span>
+                </div>
               </div>
             </div>
 
