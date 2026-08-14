@@ -414,8 +414,8 @@ export default function ContactEn() {
               </form>
             </CardContent>
           </Card>
-        <ServicesQuickLinks lang="en" />
         </div>
+        <ServicesQuickLinks lang="en" />
       </section>
     </>
   );

@@ -418,8 +418,8 @@ export default function Contact() {
             </form>
           </CardContent>
         </Card>
-      <ServicesQuickLinks />
       </div>
+      <ServicesQuickLinks />
     </section>
   );
 }
