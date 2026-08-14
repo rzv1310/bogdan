@@ -15,7 +15,7 @@ export default function InvestigatiiCripto() {
     canonical: "/servicii/investigatii-privind-activele-cripto",
     alternates: { ro: "/servicii/investigatii-privind-activele-cripto", en: "/en/services/crypto-asset-investigations", xDefault: "/servicii/investigatii-privind-activele-cripto" },
     locale: "ro_RO",
-    title: "Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts",
+    title: "Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts",
     description:
       "Avocat Bogdan Lamatic – investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate. Asistență pentru persoane fizice și companii.",
   });
@@ -147,7 +147,7 @@ export default function InvestigatiiCripto() {
           </BreadcrumbList>
         </Breadcrumb>
         <h1 className="mt-4 text-2xl font-semibold">
-          Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts
+          Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts
         </h1>
         <p className="mt-3 text-muted-foreground leading-relaxed">
           Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance.
