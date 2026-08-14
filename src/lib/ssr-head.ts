@@ -17,6 +17,7 @@ export interface CollectedHead {
   lang: string;
   title?: string;
   description?: string;
+  keywords?: string;
   canonical?: string;
   alternates?: { ro?: string; en?: string; xDefault?: string };
   locale?: string;
@@ -27,6 +28,7 @@ export interface CollectedHead {
 export interface CollectHeadInput {
   title?: string;
   description?: string;
+  keywords?: string;
   canonical?: string;
   alternates?: { ro?: string; en?: string; xDefault?: string };
   locale?: string;
@@ -57,6 +59,7 @@ export function collectHead(input: CollectHeadInput): void {
 
   if (current.title === undefined && input.title) current.title = input.title;
   if (current.description === undefined && input.description) current.description = input.description;
+  if (current.keywords === undefined && input.keywords) current.keywords = input.keywords;
   if (current.canonical === undefined && input.canonical) current.canonical = input.canonical;
   if (current.alternates === undefined && input.alternates) current.alternates = input.alternates;
   if (current.locale === undefined && input.locale) current.locale = input.locale;

@@ -18,6 +18,7 @@ export default function Sitemap() {
   ];
 
   const services = [
+    { url: "/servicii/urmarire-penala", title: "Urmărire Penală - Apărare din Prima Oră" },
     { url: "/servicii/criminalitate-economica", title: "Criminalitate Economică - Servicii Juridice" },
     { url: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice", title: "Infracțiuni de Corupție și Funcție Publică" },
     { url: "/servicii/investigatii-privind-activele-cripto", title: "Investigații Cripto - Active Digitale" },

@@ -115,6 +115,14 @@ async function main() {
       .replace("</head>", `${buildHead(route, head)}\n  </head>`)
       .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
 
+    // Per-page keywords override the sitewide default from index.html.
+    if (head?.keywords) {
+      page = page.replace(
+        /<meta\s+name="keywords"[^>]*>/i,
+        `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
+      );
+    }
+
     const outFile =
       route === "/" ? path.join(distDir, "index.html") : path.join(distDir, route, "index.html");
     await mkdir(path.dirname(outFile), { recursive: true });
