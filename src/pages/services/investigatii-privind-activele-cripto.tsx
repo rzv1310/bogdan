@@ -15,7 +15,7 @@ export default function InvestigatiiCripto() {
     canonical: "/servicii/investigatii-privind-activele-cripto",
     alternates: { ro: "/servicii/investigatii-privind-activele-cripto", en: "/en/services/crypto-asset-investigations", xDefault: "/servicii/investigatii-privind-activele-cripto" },
     locale: "ro_RO",
-    title: "Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts",
+    title: "Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts",
     description:
       "Avocat Bogdan Lamatic – investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate. Asistență pentru persoane fizice și companii.",
   });
