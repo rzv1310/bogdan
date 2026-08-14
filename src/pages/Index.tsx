@@ -864,7 +864,7 @@ const Index = () => {
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden relative max-w-[68%] mx-auto">
                 <Legal500BadgeStrip />
-                <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-[97%] h-auto rounded-lg shadow-md mx-auto" />
+                <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-[95%] h-auto rounded-lg shadow-md mx-auto" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-[17px] md:text-xl text-hero-foreground/90">
