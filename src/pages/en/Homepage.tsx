@@ -662,17 +662,11 @@ const HomepageEN = () => {
                 <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Criminal defense attorney in suit, studio portrait" title="Criminal defense attorney Bucharest Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
-              <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
-                {(() => {
-                  const parts = t.heroQuote.split("\n");
-                  const l1 = parts[0] || "";
-                  const l2 = parts[1] || "";
-                  return <div className="space-y-2">
-                          <p className="mb-0">{l1}</p>
-                          <p className="mb-0">{l2}</p>
-                        </div>;
-                })()}
-               </blockquote>
+              <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-[17px] md:text-xl text-hero-foreground/90">
+                {t.heroQuote.split("\n").map((line, i) => (
+                  <p key={i} className="mb-2 last:mb-0">{line}</p>
+                ))}
+              </blockquote>
                <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
                <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
