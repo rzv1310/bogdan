@@ -1,4 +1,12 @@
+# SPA fallback for client-side routes. Real 404s are served by dist/404.html
+# with a 404 status because this rewrite only applies when no file matches
+# and the requested path is a known SPA route prefix.
 [[redirects]]
-from = "/*"
+from = "/servicii/*"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/en/*"
 to = "/index.html"
 status = 200
