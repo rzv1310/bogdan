@@ -13,7 +13,7 @@ export default function CriminalitateEconomica() {
     canonical: "/servicii/criminalitate-economica",
     alternates: { ro: "/servicii/criminalitate-economica", en: "/en/services/financial-crime", xDefault: "/servicii/criminalitate-economica" },
     locale: "ro_RO",
-    title: "Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime" | Bogdan Lamatic",
+    title: "Avocat Infracțiuni Economice București | Specializat în \"White-Collar Crime\" | Bogdan Lamatic",
     description: "Asistență și reprezentare în cauze de criminalitate economică.",
   });
 
