@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { collectHead, isPrerender } from "@/lib/ssr-head";
 
 interface SEOOptions {
   title?: string;
