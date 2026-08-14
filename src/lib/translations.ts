@@ -26,7 +26,7 @@ export const translations = {
     heroTitle: "Avocat Drept Penal Bucuresti\nBogdan Lamatic",
     heroQuote: "„Încrederea reciprocă salvează!\nÎți ascult povestea.\nÎți înțeleg temerile.\nÎți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
-    valuesTitle: "Valorile mele:",
+    valuesTitle: "Vei primi:",
     values: ["implicare totală.", "respect.", "discreție absolută."],
     reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: [
