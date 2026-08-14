@@ -38,6 +38,8 @@ export const translations = {
     ctaText:
       "În drept penal, fiecare oră contează. Sună-mă Azi pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
     callNow: "Sună acum",
+    googleRating: "5,0",
+    googleReviews: "din 27 de recenzii Google",
     ctaLawyerButton: "Vreau avocat!",
     rightsReserved: "Toate drepturile rezervate.",
     servicesTitle: "Servicii | Arii de practică",
@@ -132,6 +134,8 @@ export const translations = {
     ctaText:
       "In criminal law, every hour counts. Call me today for a confidential consultation and learn how to protect your freedom and reputation.",
     callNow: "Call now",
+    googleRating: "5.0",
+    googleReviews: "from 27 Google reviews",
     ctaLawyerButton: "I need a lawyer!",
     rightsReserved: "All rights reserved.",
     servicesTitle: "CRIMINAL JUSTICE ATTORNEY PRACTICE AREAS",
