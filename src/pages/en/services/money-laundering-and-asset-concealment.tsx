@@ -23,8 +23,8 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "/en/services/money-laundering-and-asset-concealment" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment" },
             ],
           }),
         }}
@@ -36,7 +36,8 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Defense in money laundering and asset concealment",
-            url: "/en/services/money-laundering-and-asset-concealment",
+            description: "Defense in money laundering and asset concealment cases.",
+            url: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

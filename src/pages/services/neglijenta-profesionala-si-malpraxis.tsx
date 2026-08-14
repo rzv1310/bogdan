@@ -89,6 +89,49 @@ export default function Malpraxis() {
               })
             }}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Pot cere despăgubiri fără proces penal?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Răspunderea civilă se poate valorifica separat (Comisie + acțiune civilă), independent de penal. (Titlul XVI Legea 95/2006)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Care este termenul de prescripție?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "De regulă, 3 ani pentru malpraxis pe civil; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Ce se întâmplă dacă unitatea/medicul nu are asigurare?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct. (Art. 689, 690–691 Legea 95/2006; OMS 482/2007)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Când discutăm „neglijență în serviciu” penal?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Când încălcarea unei atribuții prevăzute de lege de către un funcționar public (ex. în unitate publică) cauzează pagubă/vătămare; pentru mediul privat funcționează extinderea din art. 308 CP."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">

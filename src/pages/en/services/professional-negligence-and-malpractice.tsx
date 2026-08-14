@@ -23,8 +23,8 @@ export default function MalpracticeEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Professional negligence and malpractice", item: "/en/services/professional-negligence-and-malpractice" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Professional negligence and malpractice", item: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice" },
             ],
           }),
         }}
@@ -36,7 +36,8 @@ export default function MalpracticeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
-            url: "/en/services/professional-negligence-and-malpractice",
+            description: "Defense and representation in medical malpractice cases.",
+            url: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -52,6 +53,49 @@ export default function MalpracticeEn() {
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Can I claim damages without a criminal trial?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings (Law 95/2006)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What is the limitation period?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Generally 3 years for civil malpractice; for criminal offenses (e.g., arts. 192/196 CP) criminal limitation periods apply."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What if the unit/doctor has no insurance?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "It is a sanctionable breach; civil liability remains and damages can be pursued directly."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "When does it become “negligence in service” (criminal)?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "When a public official breaches a legal duty causing damage/rights violation; for the private sector, art. 308 CP extends the rules with reduced limits."
+                                    }
+                        }
+            ]
+}),
         }}
       />
 

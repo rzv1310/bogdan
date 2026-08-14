@@ -88,6 +88,41 @@ export default function InfractiuniRutiere() {
               })
             }}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "0,80 g/l în sânge e întotdeauna penal?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da, peste prag e art. 336 alin. (1); sub prag discutăm contravențional (Codul rutier). În cazul drogurilor, contează influența/substanța depistată. (Portal Legislativ)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Dacă refuz recoltarea?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "E faptă separată (art. 337), chiar dacă alcoolemia ar fi ieșit sub prag. (Portal Legislativ)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Când nu e infracțiune părăsirea locului?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Legea prevede situații limitate (ex. transportul răniților cu reîntoarcere imediată). (Portal Legislativ)"
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">

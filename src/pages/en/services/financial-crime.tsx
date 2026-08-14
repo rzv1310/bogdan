@@ -49,6 +49,7 @@ export default function FinancialCrimeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Economic crime lawyer | White-collar specialist",
+            description: "Defense in fraud, embezzlement, tax evasion, AML cases.",
             url:
               "/en/services/financial-crime",
             areaServed: ["RO", "EU"],

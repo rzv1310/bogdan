@@ -23,8 +23,8 @@ export default function VictimRepresentationEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Representation of victims in criminal proceedings", item: "/en/services/victim-representation-in-criminal-cases" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Representation of victims in criminal proceedings", item: "https://avocatpenalbucuresti.ro/en/services/victim-representation-in-criminal-cases" },
             ],
           }),
         }}
@@ -36,7 +36,8 @@ export default function VictimRepresentationEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Compensation for accident victims and bodily injury",
-            url: "/en/services/victim-representation-in-criminal-cases",
+            description: "Compensation for traffic accidents and bodily harm.",
+            url: "https://avocatpenalbucuresti.ro/en/services/victim-representation-in-criminal-cases",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -52,6 +53,49 @@ export default function VictimRepresentationEn() {
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is a criminal trial mandatory to obtain compensation?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court – we choose the optimal strategy for time and result."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What deadlines apply?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Deadlines depend on the nature of the act (criminal/civil) and the applicable limitation periods; in road accidents we act quickly and notify the insurer promptly."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What does it mean that “the insurer pays”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "In road accidents, the RCA insurer covers the proven damage of third parties; the insurer has clear obligations for ascertainment and settlement of claims."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can I participate actively in the criminal investigation?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. As an injured person/civil party you can consult the file, make requests and question witnesses/experts (under the law)."
+                                    }
+                        }
+            ]
+}),
         }}
       />
 

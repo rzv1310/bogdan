@@ -22,8 +22,8 @@ export default function RaspunderePenalaMunca() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: "/" },
-              { "@type": "ListItem", position: 2, name: "Răspundere penală pentru incidente la locul de muncă", item: "/servicii/raspundere-penala-incidente-locul-de-munca" },
+              { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
+              { "@type": "ListItem", position: 2, name: "Răspundere penală pentru incidente la locul de muncă", item: "https://avocatpenalbucuresti.ro/servicii/raspundere-penala-incidente-locul-de-munca" },
             ],
           }),
         }}
@@ -35,7 +35,8 @@ export default function RaspunderePenalaMunca() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Răspundere penală pentru incidente la locul de muncă",
-            url: "/servicii/raspundere-penala-incidente-locul-de-munca",
+            description: "Asistență specializată în cauze penale privind accidentele de muncă și răspunderea penală pentru nerespectarea normelor de securitate.",
+            url: "https://avocatpenalbucuresti.ro/servicii/raspundere-penala-incidente-locul-de-munca",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
             address: {

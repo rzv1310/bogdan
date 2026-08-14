@@ -29,7 +29,7 @@ export default function CryptoInvestigationsEn() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "/en",
+                item: "https://avocatpenalbucuresti.ro/en",
               },
               {
                 "@type": "ListItem",
@@ -49,6 +49,7 @@ export default function CryptoInvestigationsEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Investigations regarding crypto assets",
+            description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
             url:
               "/en/services/crypto-asset-investigations",
             areaServed: ["RO", "EU"],
