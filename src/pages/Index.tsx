@@ -910,6 +910,17 @@ const Index = () => {
                   </Button>
                 </a>
               </div>
+              <div className="flex md:justify-start justify-center mx-[24px] px-0 -mt-2 mb-2">
+                <div className="flex items-center gap-1.5 text-sm text-hero-foreground/90">
+                  <span className="font-semibold">{t.googleRating}</span>
+                  <span className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                  </span>
+                  <span>{t.googleReviews}</span>
+                </div>
+              </div>
             </div>
 
             <div className="hidden md:block relative md:max-w-[76.5%] md:ml-auto">
