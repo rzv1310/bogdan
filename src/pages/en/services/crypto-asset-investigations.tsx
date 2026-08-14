@@ -126,7 +126,7 @@ export default function CryptoInvestigationsEn() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
+          <h1 className="mt-4 text-2xl font-semibold">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
           <p className="mt-3 text-muted-foreground leading-relaxed">
             I am Bogdan Lamatic, attorney at the Bucharest Bar (since 2007), with deep practice in white-collar crime,
             internal investigations and compliance. I have represented clients in complex, cross-border matters with

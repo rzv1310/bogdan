@@ -43,7 +43,7 @@ const NotFound = () => {
   return (
     <main className="mx-auto max-w-5xl px-4 md:px-6 py-12">
       <p className="text-sm font-semibold tracking-widest text-accent uppercase">404</p>
-      <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight">
+      <h1 className="mt-2 text-2xl font-semibold">
         {en ? "Page not found" : "Pagina nu a fost găsită"}
       </h1>
       <p className="mt-3 text-muted-foreground max-w-2xl">

@@ -61,7 +61,7 @@ export default function Sitemap() {
     <main className="min-h-screen bg-hero text-hero-foreground">
       <div className="mx-auto max-w-6xl px-4 md:px-6 py-12">
         <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sitemap</h1>
+          <h1 className="text-2xl font-semibold mb-4">Sitemap</h1>
           <p className="text-xl text-hero-foreground/90 max-w-3xl mx-auto">
             Harta completă website avocatpenalbucuresti.ro
           </p>

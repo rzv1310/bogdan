@@ -31,7 +31,7 @@ export default function TermeniSiConditii() {
       })
     }} />
 
-      <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Termeni și Condiții</h1>
+      <h1 className="text-2xl font-semibold mb-4">Termeni și Condiții</h1>
 
       <Breadcrumb className="mb-4">
         <BreadcrumbList>

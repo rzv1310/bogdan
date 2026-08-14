@@ -116,7 +116,7 @@ export default function InfractiuniContraPersoanei() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+      <h1 className="text-2xl font-semibold mb-4">
         Avocat Infracțiuni Contra Persoanei București – Apăr Libertatea și Reputația Ta | Bogdan Lamatic
       </h1>
 

@@ -100,7 +100,7 @@ export default function VictimRepresentationEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
+        <h1 className="text-2xl font-semibold mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>

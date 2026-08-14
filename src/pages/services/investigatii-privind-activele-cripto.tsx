@@ -146,7 +146,7 @@ export default function InvestigatiiCripto() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">
+        <h1 className="mt-4 text-2xl font-semibold">
           Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts
         </h1>
         <p className="mt-3 text-muted-foreground leading-relaxed">

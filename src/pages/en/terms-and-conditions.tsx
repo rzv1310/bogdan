@@ -27,7 +27,7 @@ export default function TermsAndConditionsEn() {
         }}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Terms and Conditions</h1>
+      <h1 className="text-2xl font-semibold mb-4">Terms and Conditions</h1>
 
       <Breadcrumb className="mb-4">
         <BreadcrumbList>
