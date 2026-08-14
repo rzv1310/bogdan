@@ -831,7 +831,7 @@ const HomepageEN = () => {
               <img
                 src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
                 alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
-                title="Avocat drept penal Bucuresti Bogdan Lamatic"
+                title="Criminal defense lawyer Bucharest Bogdan Lamatic"
                 loading="lazy"
                 className="w-full h-auto max-w-md md:max-w-sm rounded-lg shadow-md"
               />
