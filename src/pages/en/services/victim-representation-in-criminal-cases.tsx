@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function VictimRepresentationEn() {
   useSEO({
     keywords: "victim representation lawyer romania, civil party criminal case, injured party attorney",
@@ -245,7 +246,6 @@ export default function VictimRepresentationEn() {
             </div>
           </CardContent>
         </Card>
-      </section>
-    </>
-  );
-}
+              <RelatedServices current="/en/services/victim-representation-in-criminal-cases" lang="en" />
+
+      

@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function MalpracticeEn() {
   useSEO({
     keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
@@ -234,7 +235,6 @@ export default function MalpracticeEn() {
             </ol>
           </CardContent>
         </Card>
-      </section>
-    </>
-  );
-}
+              <RelatedServices current="/en/services/professional-negligence-and-malpractice" lang="en" />
+
+      

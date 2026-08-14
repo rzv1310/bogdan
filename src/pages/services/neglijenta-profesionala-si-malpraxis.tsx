@@ -6,6 +6,7 @@ import { Phone } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistSection";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function Malpraxis() {
   useSEO({
     keywords: "avocat malpraxis medical bucuresti, avocat neglijenta profesionala, avocat neglijenta in serviciu, raspundere penala medic",
@@ -378,7 +379,6 @@ export default function Malpraxis() {
         </CardContent>
       </Card>
       <MalpraxisChecklistSection />
-      </section>
-    </>
-  );
-}
+              <RelatedServices current="/servicii/neglijenta-profesionala-si-malpraxis" />
+
+      
