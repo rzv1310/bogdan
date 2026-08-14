@@ -88,6 +88,41 @@ export default function CoruptieSiFunctiePublica() {
               })
             }}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Mi s-a propus o „atenție”. Ce fac?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Nu accepta. Dacă ai oferit bani sub presiune, discutăm imediat despre oportunitatea denunțului (art. 290 alin. 3)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Dosarul meu e la DNA. Contează „valoarea”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Competența poate depinde de natura faptei și criteriile din OUG 43/2002; verificăm exact situația ta."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Am o funcție de conducere într-o companie de stat. Mă afectează art. 308?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da, norma extinde aplicarea la persoane asimilate – analizăm atribuțiile concrete."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">

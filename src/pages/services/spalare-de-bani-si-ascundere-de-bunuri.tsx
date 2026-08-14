@@ -58,6 +58,41 @@ export default function SpalareDeBani() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Trebuie să existe o condamnare pentru fapta‑sursă?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Nu neapărat. E suficient să se dovedească faptul că bunurile provin dintr‑o infracțiune și că inculpatul cunoștea această proveniență. (referință)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Autorul faptei‑sursă poate fi acuzat și de spălare a banilor?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Pentru art. 49 lit. a) și b) nu se cere ca făptuitorul să fie diferit; pentru lit. c) este necesar un terț."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Se pot ridica sechestrul și poprirea dacă paralizează activitatea?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">

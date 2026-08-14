@@ -55,6 +55,41 @@ export default function MoneyLaunderingEn() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is a conviction for the predicate offense required?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Not necessarily. It suffices to prove assets come from a criminal offense (not a contravention) and that the defendant knew this. (reference)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can the author of the predicate also be charged with laundering?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. For art. 49 (a) and (b), the offender need not be a different person; only for (c) (acquiring/using) must it be a third party."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can seizures and garnishments be lifted if they paralyze activity?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. Courts must respect proportionality; under the 2025 amendments, measures can be challenged and narrowed when they disproportionately affect economic activity."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">

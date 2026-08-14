@@ -92,6 +92,41 @@ export default function InvestigatiiCripto() {
               })
             }}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Este „crypto” legal în România?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da, nu este mijloc legal de plată, dar deținerea/tranzacționarea sunt permise; se aplică MiCA/TFR, Legea 129/2019, Codul penal și Codul fiscal; autoritățile (BNR/ASF/ONPCSB/ANAF) au roluri distincte."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Mă poate ajuta un avocat să recuperez fonduri?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da—acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Sunt antreprenor crypto—ce trebuie să fac „ieri”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări. ASF a indicat necesitatea cadrului național de competențe."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </>
       )}
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">

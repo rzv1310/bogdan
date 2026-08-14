@@ -73,6 +73,41 @@ export default function CryptoInvestigationsEn() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is “crypto” legal in Romania?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. It is not legal tender, but holding/trading is allowed; MiCA/TFR, Law 129/2019, the Criminal Code and the Tax Code apply; authorities (NBR/ASF/FIU/ANAF) have distinct roles."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can a lawyer help me recover funds?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes — I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "I’m a crypto entrepreneur — what should I have done “yesterday”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Do a MiCA/TFR gap assessment, risk-based KYC, sanctions screening, incident-response procedures, staff training, and prepare documentation for authorizations/registrations. The ASF has signaled the need for a national competence framework."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-6">
