@@ -17,6 +17,7 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/infractiuni-rutiere-cu-victime",
     "/servicii/reprezentarea-victimelor-in-procese-penale",
     "/servicii/masuri-preventive",
+      "/calculator-despagubiri",
   ],
   "/servicii/criminalitate-economica": [
     "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
@@ -47,16 +48,19 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/infractiuni-contra-persoanei",
     "/servicii/raspundere-penala-incidente-locul-de-munca",
     "/servicii/reprezentarea-victimelor-in-procese-penale",
+      "/calculator-despagubiri",
   ],
   "/servicii/infractiuni-rutiere-cu-victime": [
     "/servicii/reprezentarea-victimelor-in-procese-penale",
     "/servicii/infractiuni-contra-persoanei",
     "/servicii/masuri-preventive",
+      "/calculator-despagubiri",
   ],
   "/servicii/raspundere-penala-incidente-locul-de-munca": [
     "/servicii/neglijenta-profesionala-si-malpraxis",
     "/servicii/infractiuni-contra-persoanei",
     "/servicii/reprezentarea-victimelor-in-procese-penale",
+      "/calculator-despagubiri",
   ],
   "/servicii/reprezentarea-victimelor-in-procese-penale": [
     "/calculator-despagubiri",
@@ -101,6 +105,7 @@ export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"
   return targets
     .map((target) => {
       if (lang === "en") {
+        if (target === "/calculator-despagubiri") return null; // Romanian-only page
         const enTarget = roToEn[target] ?? target;
         const label = labelEn(enTarget) ?? labelEn(target);
         return label ? { to: enTarget, label } : null;
