@@ -122,8 +122,8 @@ export const translations = {
     heroQuote:
       "“In criminal law, trust can save lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
     heroAuthor: "attorney Bogdan Lamatic",
-    valuesTitle: "My values",
-    values: ["total commitment.", "respect.", "discretion."],
+    valuesTitle: "You will receive:",
+    values: ["total commitment.", "respect.", "absolute discretion."],
     reasonsTitle: "Why work with me",
     reasons: [
       "proven track record of acquittals and sentence reductions in complex criminal cases.",
