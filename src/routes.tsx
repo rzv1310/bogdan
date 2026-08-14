@@ -14,6 +14,7 @@ import Malpraxis from "./pages/services/neglijenta-profesionala-si-malpraxis";
 import InfractiuniRutiere from "./pages/services/infractiuni-rutiere-cu-victime";
 import RaspunderePenalaMunca from "./pages/services/raspundere-penala-incidente-locul-de-munca";
 import ReprezentareaVictimelor from "./pages/services/reprezentarea-victimelor-in-procese-penale";
+import UrmarirePenala from "./pages/services/urmarire-penala";
 import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
 
 // EN pages
@@ -47,6 +48,7 @@ export default function AppRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/servicii/urmarire-penala" element={<UrmarirePenala />} />
         <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
         <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
         <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
