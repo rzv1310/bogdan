@@ -36,7 +36,7 @@ export default function CryptoInvestigationsEn() {
                 position: 2,
                 name: "Investigations regarding crypto assets",
                 item:
-                  "/en/services/crypto-asset-investigations",
+                  "https://avocatpenalbucuresti.ro/en/services/crypto-asset-investigations",
               },
             ],
           }),
@@ -51,7 +51,7 @@ export default function CryptoInvestigationsEn() {
             name: "Investigations regarding crypto assets",
             description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
             url:
-              "/en/services/crypto-asset-investigations",
+              "https://avocatpenalbucuresti.ro/en/services/crypto-asset-investigations",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
