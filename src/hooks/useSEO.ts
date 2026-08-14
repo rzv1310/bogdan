@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { collectHead, isPrerender } from "@/lib/ssr-head";
 
 interface SEOOptions {
   title?: string;
@@ -15,6 +16,12 @@ interface SEOOptions {
 }
 
 export function useSEO({ title, description, canonical, alternates, locale, robotsDirectives, schemas }: SEOOptions) {
+  // Build-time prerender: report the metadata so it can be written into the
+  // static HTML head. No-op in the browser.
+  if (isPrerender) {
+    collectHead({ title, description, canonical, alternates, locale, robotsDirectives, schemas });
+  }
+
   useEffect(() => {
     if (title) {
       document.title = title;
