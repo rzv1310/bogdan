@@ -65,3 +65,8 @@ export function collectHead(input: CollectHeadInput): void {
   }
   if (input.schemas?.length) current.schemas.push(...input.schemas);
 }
+
+/** Language for the page currently being prerendered, derived from its path. */
+export function getPrerenderLang(): "ro" | "en" {
+  return current?.lang === "en" ? "en" : "ro";
+}
