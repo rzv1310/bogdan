@@ -240,10 +240,7 @@ const HomepageEN = () => {
                 "closes": "20:00"
               }
             ],
-            "areaServed": [
-              { "@type": "City", "name": "București" },
-              { "@type": "Country", "name": "România" }
-            ],
+            "areaServed": servedAreasSchema,
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Criminal law services",

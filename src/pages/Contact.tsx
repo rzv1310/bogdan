@@ -181,7 +181,7 @@ export default function Contact() {
             "@type": "Attorney",
             name: "Cabinet Avocat Bogdan Lamatic",
             url: "https://avocatpenalbucuresti.ro/contact",
-            areaServed: "România",
+            areaServed: servedAreasSchema,
             telephone: "+40 (31) 632 01 83",
             email: "contact@avocatpenalbucuresti.ro",
             address: {
