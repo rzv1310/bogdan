@@ -44,7 +44,7 @@ export default function CoruptieSiFunctiePublica() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
-                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"
                   }
                 ]
               })
@@ -58,7 +58,7 @@ export default function CoruptieSiFunctiePublica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni de corupție și fapte legate de exercitarea funcției publice",
                 "description": "Apărare în corupție și fapte de serviciu: mită, trafic de influență, abuz în serviciu, DNA",
-                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+                "url": "https://avocatpenalbucuresti.ro/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
                 "areaServed": [
                   {
                     "@type": "Country",

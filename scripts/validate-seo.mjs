@@ -89,9 +89,9 @@ function validateLegalService(route, node) {
   if (!node.url) err(route, "LegalService has no url");
   else if (!String(node.url).startsWith(SITE_ORIGIN)) err(route, "LegalService url is not absolute");
   if (!node.areaServed) err(route, "LegalService has no areaServed");
-  if (!node.telephone) err(route, "LegalService has no telephone");
   const person = node.provider ?? node.founder ?? node.employee;
   if (!person) err(route, "LegalService has no provider/founder reference");
+  if (!node.telephone && !person?.telephone) err(route, "LegalService has no telephone");
 }
 
 

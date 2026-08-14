@@ -45,7 +45,7 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Neglijență profesională și malpraxis",
-                    "item": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis"
                   }
                 ]
               })
@@ -59,7 +59,7 @@ export default function Malpraxis() {
                 "@type": "LegalService",
                 "name": "Servicii avocat neglijență profesională și malpraxis",
                 "description": "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
-                "url": "https://avocatpenalbucuresti.ro/services/neglijenta-profesionala-si-malpraxis",
+                "url": "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis",
                 "areaServed": [
                   {
                     "@type": "Country",

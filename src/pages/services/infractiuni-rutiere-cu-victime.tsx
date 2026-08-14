@@ -44,7 +44,7 @@ export default function InfractiuniRutiere() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Infracțiuni rutiere cu / fără victime",
-                    "item": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/infractiuni-rutiere-cu-victime"
                   }
                 ]
               })
@@ -58,7 +58,7 @@ export default function InfractiuniRutiere() {
                 "@type": "LegalService",
                 "name": "Servicii avocat infracțiuni rutiere cu / fără victime",
                 "description": "Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime",
-                "url": "https://avocatpenalbucuresti.ro/services/infractiuni-rutiere-cu-victime",
+                "url": "https://avocatpenalbucuresti.ro/servicii/infractiuni-rutiere-cu-victime",
                 "areaServed": [
                   {
                     "@type": "Country",

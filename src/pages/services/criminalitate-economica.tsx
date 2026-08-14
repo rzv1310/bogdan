@@ -45,7 +45,7 @@ export default function CriminalitateEconomica() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Criminalitate economică",
-                    "item": "https://avocatpenalbucuresti.ro/services/criminalitate-economica"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/criminalitate-economica"
                   }
                 ]
               })
@@ -59,7 +59,7 @@ export default function CriminalitateEconomica() {
                 "@type": "LegalService",
                 "name": "Servicii avocat criminalitate economică",
                 "description": "Asistență și reprezentare în cauze de criminalitate economică",
-                "url": "https://avocatpenalbucuresti.ro/services/criminalitate-economica",
+                "url": "https://avocatpenalbucuresti.ro/servicii/criminalitate-economica",
                 "areaServed": [
                   {
                     "@type": "Country",

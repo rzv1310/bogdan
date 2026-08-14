@@ -48,7 +48,7 @@ export default function InvestigatiiCripto() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Investigații privind activele cripto",
-                    "item": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/investigatii-privind-activele-cripto"
                   }
                 ]
               })
@@ -62,7 +62,7 @@ export default function InvestigatiiCripto() {
                 "@type": "LegalService",
                 "name": "Servicii avocat investigații privind activele cripto",
                 "description": "Investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate",
-                "url": "https://avocatpenalbucuresti.ro/services/investigatii-privind-activele-cripto",
+                "url": "https://avocatpenalbucuresti.ro/servicii/investigatii-privind-activele-cripto",
                 "areaServed": [
                   {
                     "@type": "Country",

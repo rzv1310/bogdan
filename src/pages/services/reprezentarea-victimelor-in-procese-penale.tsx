@@ -44,7 +44,7 @@ export default function ReprezentareaVictimelor() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Reprezentarea victimelor în procese penale",
-                    "item": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/reprezentarea-victimelor-in-procese-penale"
                   }
                 ]
               })
@@ -58,7 +58,7 @@ export default function ReprezentareaVictimelor() {
                 "@type": "LegalService",
                 "name": "Servicii avocat reprezentarea victimelor în procese penale",
                 "description": "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale",
-                "url": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
+                "url": "https://avocatpenalbucuresti.ro/servicii/reprezentarea-victimelor-in-procese-penale",
                 "areaServed": [
                   {
                     "@type": "Country",
