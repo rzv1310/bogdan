@@ -40,6 +40,7 @@ type Errors = {
 
 export default function Contact() {
   useSEO({
+    keywords: "contact avocat penal bucuresti, programare consultanta penala, cabinet avocat penal",
     canonical: "/contact",
     alternates: { ro: "/contact", en: "/en/contact", xDefault: "/contact" },
     locale: "ro_RO",

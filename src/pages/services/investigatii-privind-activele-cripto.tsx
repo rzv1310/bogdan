@@ -11,6 +11,7 @@ import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
 export default function InvestigatiiCripto() {
   useSEO({
+    keywords: "avocat crypto, avocat criptomonede, investigatii blockchain",
     canonical: "/servicii/investigatii-privind-activele-cripto",
     alternates: { ro: "/servicii/investigatii-privind-activele-cripto", en: "/en/services/crypto-asset-investigations", xDefault: "/servicii/investigatii-privind-activele-cripto" },
     locale: "ro_RO",

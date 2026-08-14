@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
   useSEO({
+    keywords: "avocat parte civila, reprezentare victime proces penal, avocat parte vatamata",
     canonical: "/servicii/reprezentarea-victimelor-in-procese-penale",
     alternates: { ro: "/servicii/reprezentarea-victimelor-in-procese-penale", en: "/en/services/victim-representation-in-criminal-cases", xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale" },
     locale: "ro_RO",

@@ -2,6 +2,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function GDPR() {
   useSEO({
+    keywords: "politica GDPR avocat, protectia datelor personale, confidentialitate date clienti",
     title: "GDPR – Protecția datelor | Cabinet Avocat Bogdan Lamatic",
     description: "Află cum colectăm, folosim și protejăm datele tale personale conform GDPR.",
     alternates: { ro: "/gdpr", en: "/en/gdpr", xDefault: "/gdpr" },

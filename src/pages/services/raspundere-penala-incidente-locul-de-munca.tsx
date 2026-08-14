@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function RaspunderePenalaMunca() {
   useSEO({
+    keywords: "avocat accident de munca, raspundere penala angajator, avocat protectia muncii",
     title: "Răspundere penală pentru incidente la locul de muncă | Avocat drept penal Bogdan Lamatic | București",
     description: "Asistență specializată în cauze penale privind accidentele de muncă și răspunderea penală pentru nerespectarea normelor de securitate.",
     alternates: { ro: "/servicii/raspundere-penala-incidente-locul-de-munca", en: "/en/services/workplace-criminal-liability", xDefault: "/servicii/raspundere-penala-incidente-locul-de-munca"},

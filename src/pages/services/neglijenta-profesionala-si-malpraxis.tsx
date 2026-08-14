@@ -8,6 +8,7 @@ import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistS
 
 export default function Malpraxis() {
   useSEO({
+    keywords: "avocat malpraxis medical, avocat neglijenta profesionala, avocat neglijenta in serviciu",
     canonical: "/servicii/neglijenta-profesionala-si-malpraxis",
     alternates: { ro: "/servicii/neglijenta-profesionala-si-malpraxis", en: "/en/services/professional-negligence-and-malpractice", xDefault: "/servicii/neglijenta-profesionala-si-malpraxis" },
     locale: "ro_RO",

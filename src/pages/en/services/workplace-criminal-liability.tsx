@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function WorkplaceLiabilityEn() {
   useSEO({
+    keywords: "workplace accident lawyer romania, employer criminal liability, occupational safety defense",
     title: "Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest",
     description: "Specialized assistance in criminal cases regarding workplace accidents and criminal liability for violating safety regulations.",
     alternates: { en: "/en/services/workplace-criminal-liability", ro: "/servicii/raspundere-penala-incidente-locul-de-munca" , xDefault: "/servicii/raspundere-penala-incidente-locul-de-munca"},

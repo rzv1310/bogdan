@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function MalpracticeEn() {
   useSEO({
+    keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
     title: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
     description: "Defense and representation in medical malpractice cases.",
     alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" , xDefault: "/servicii/neglijenta-profesionala-si-malpraxis"},

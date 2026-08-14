@@ -7,6 +7,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function DrugOffensesEn() {
   useSEO({
+    keywords: "drug offenses lawyer romania, drug trafficking defense attorney, narcotics lawyer bucharest",
     title: "Drug trafficking lawyer Bucharest – DIICOT defense | Bogdan Lamatic",
     description: "Defense in drug trafficking/possession cases across Romania.",
     alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" , xDefault: "/servicii/cauze-penale-privind-droguri"},

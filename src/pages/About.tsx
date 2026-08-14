@@ -157,6 +157,9 @@ export default function About() {
 
   // SEO
   useSEO({
+    keywords: lang === "en"
+      ? "criminal lawyer bucharest bogdan lamatic, attorney profile romania, criminal defense experience"
+      : "avocat bogdan lamatic, experienta avocat penal, cabinet avocat penal bucuresti",
     title: lang === "en" ? "About me | Attorney Bogdan Lamatic" : "Despre mine | Avocat Bogdan Lamatic | Bucuresti",
     description:
       lang === "en"

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogEn() {
   useSEO({
+    keywords: "criminal law blog, romanian criminal law articles, legal insights romania",
     schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" }, { "@type": "ListItem", position: 2, name: "Blog", item: "https://avocatpenalbucuresti.ro/en/blog" }] }],
     title: "Blog | Attorney Bogdan Lamatic",
     description: "Legal articles and updates published by attorney Bogdan Lamatic.",

@@ -7,6 +7,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 export default function InfractiuniRutiere() {
   useSEO({
+    keywords: "avocat accident rutier, avocat ucidere din culpa, avocat infractiuni rutiere",
     canonical: "/servicii/infractiuni-rutiere-cu-victime",
     alternates: { ro: "/servicii/infractiuni-rutiere-cu-victime", en: "/en/services/road-traffic-offenses", xDefault: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "ro_RO",

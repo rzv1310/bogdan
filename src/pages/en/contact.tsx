@@ -34,6 +34,7 @@ type Errors = {
 
 export default function ContactEn() {
   useSEO({
+    keywords: "contact criminal lawyer bucharest, criminal law consultation romania, law office bucharest",
     title: "Contact - Attorney Bogdan Lamatic",
     description: "Get in touch for criminal defense and compensation evaluation.",
     alternates: { en: "/en/contact", ro: "/contact", xDefault: "/contact" },

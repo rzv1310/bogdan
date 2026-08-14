@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function VictimRepresentationEn() {
   useSEO({
+    keywords: "victim representation lawyer romania, civil party criminal case, injured party attorney",
     title: "Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest",
     description: "Compensation for traffic accidents and bodily harm.",
     alternates: { en: "/en/services/victim-representation-in-criminal-cases", ro: "/servicii/reprezentarea-victimelor-in-procese-penale" , xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale"},

@@ -2,6 +2,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { useSEO } from "@/hooks/useSEO";
 export default function TermeniSiConditii() {
   useSEO({
+    keywords: "termeni si conditii, conditii utilizare site avocat, reguli servicii juridice",
     title: "Termeni și Condiții – Cabinet Avocat Bogdan Lamatic",
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
     alternates: {

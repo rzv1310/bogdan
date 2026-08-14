@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 export default function TermsAndConditionsEn() {
   useSEO({
+    keywords: "terms and conditions, website terms of use, legal services terms",
     title: "Terms and Conditions – Attorney Bogdan Lamatic",
     description: "Website terms of use and rules for the legal services offered.",
     alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" , xDefault: "/termeni-si-conditii"},
