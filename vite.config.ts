@@ -19,4 +19,9 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Build-time prerender: these packages ship CJS/ESM interop that breaks when
+  // externalized in the SSR bundle, so bundle them instead.
+  ssr: {
+    noExternal: ["styled-components", "@react-pdf/renderer", "recharts", "framer-motion"],
+  },
 }));
