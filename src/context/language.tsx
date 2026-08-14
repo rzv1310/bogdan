@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { getPrerenderLang, isPrerender } from "@/lib/ssr-head";
 
 export type Lang = "ro" | "en";
 
