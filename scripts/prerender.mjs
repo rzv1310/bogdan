@@ -37,7 +37,6 @@ function stripTemplateHead(template) {
   const patterns = [
     /\s*<title>[\s\S]*?<\/title>/i,
     /\s*<meta\s+name="description"[^>]*>/i,
-    /\s*<meta\s+name="keywords"[^>]*>/i,
     /\s*<link\s+rel="canonical"[^>]*>/i,
     /\s*<meta\s+name="robots"[^>]*>/i,
     /\s*<meta\s+property="og:title"[^>]*>/i,
