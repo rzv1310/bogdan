@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
+import { servedAreasSchema } from "@/lib/areaServed";
 import { toast } from "@/components/ui/use-toast";
 import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 const MAX_FILE_MB = 10;
@@ -180,7 +181,7 @@ export default function Contact() {
             "@type": "Attorney",
             name: "Cabinet Avocat Bogdan Lamatic",
             url: "https://avocatpenalbucuresti.ro/contact",
-            areaServed: "România",
+            areaServed: servedAreasSchema,
             telephone: "+40 (31) 632 01 83",
             email: "contact@avocatpenalbucuresti.ro",
             address: {

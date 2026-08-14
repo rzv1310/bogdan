@@ -8,6 +8,7 @@ import { PulseBeams } from "@/components/ui/pulse-beams";
 import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui/reviews-carousel-3d";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
+import { servedAreasSchema } from "@/lib/areaServed";
 const legal500Badges = [
   { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 – attorney Bogdan Lamatic" },
   { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 – attorney Bogdan Lamatic" },
@@ -239,10 +240,7 @@ const HomepageEN = () => {
                 "closes": "20:00"
               }
             ],
-            "areaServed": [
-              { "@type": "City", "name": "București" },
-              { "@type": "Country", "name": "România" }
-            ],
+            "areaServed": servedAreasSchema,
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Criminal law services",
