@@ -20,8 +20,8 @@ export default function TermsAndConditionsEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Terms and Conditions", item: "/en/terms-and-conditions" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Terms and Conditions", item: "https://avocatpenalbucuresti.ro/en/terms-and-conditions" },
             ],
           }),
         }}

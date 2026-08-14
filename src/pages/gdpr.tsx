@@ -13,8 +13,8 @@ export default function GDPR() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Acasă", item: "/" },
-      { "@type": "ListItem", position: 2, name: "GDPR", item: "/gdpr" },
+      { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
+      { "@type": "ListItem", position: 2, name: "GDPR", item: "https://avocatpenalbucuresti.ro/gdpr" },
     ],
   };
 

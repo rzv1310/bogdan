@@ -18,8 +18,8 @@ export default function CookiePolicyEn() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-      { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "/en/cookie-policy" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+      { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "https://avocatpenalbucuresti.ro/en/cookie-policy" },
     ],
   };
 
