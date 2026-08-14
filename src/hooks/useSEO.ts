@@ -4,6 +4,8 @@ import { collectHead, isPrerender } from "@/lib/ssr-head";
 interface SEOOptions {
   title?: string;
   description?: string;
+  // Page-specific meta keywords; overrides the sitewide default in index.html
+  keywords?: string;
   canonical?: string;
   // Absolute or path-only URLs; if path-only, origin will be prefixed automatically
   alternates?: { ro?: string; en?: string; xDefault?: string };
@@ -15,11 +17,11 @@ interface SEOOptions {
   schemas?: object[];
 }
 
-export function useSEO({ title, description, canonical, alternates, locale, robotsDirectives, schemas }: SEOOptions) {
+export function useSEO({ title, description, keywords, canonical, alternates, locale, robotsDirectives, schemas }: SEOOptions) {
   // Build-time prerender: report the metadata so it can be written into the
   // static HTML head. No-op in the browser.
   if (isPrerender) {
-    collectHead({ title, description, canonical, alternates, locale, robotsDirectives, schemas });
+    collectHead({ title, description, keywords, canonical, alternates, locale, robotsDirectives, schemas });
   }
 
   useEffect(() => {
@@ -35,6 +37,16 @@ export function useSEO({ title, description, canonical, alternates, locale, robo
         document.head.appendChild(meta);
       }
       meta.setAttribute('content', description);
+    }
+
+    if (keywords) {
+      let kw = document.querySelector('meta[name="keywords"]') as HTMLMetaElement | null;
+      if (!kw) {
+        kw = document.createElement('meta');
+        kw.setAttribute('name', 'keywords');
+        document.head.appendChild(kw);
+      }
+      kw.setAttribute('content', keywords);
     }
 
     const origin = window.location.origin;
