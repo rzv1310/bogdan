@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
   useSEO({
-    keywords: "avocat parte civila, reprezentare victime proces penal, avocat parte vatamata",
+    keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
     canonical: "/servicii/reprezentarea-victimelor-in-procese-penale",
     alternates: { ro: "/servicii/reprezentarea-victimelor-in-procese-penale", en: "/en/services/victim-representation-in-criminal-cases", xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale" },
     locale: "ro_RO",
-    title: "Avocat despăgubiri victime accidente / vătămări corporale | av. Bogdan Lamatic, București",
+    title: "Avocat victime infracțiuni București - Bogdan Lamatic",
     description:
       "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale. Evaluare rapidă și strategie completă!",
   });
@@ -135,7 +135,7 @@ export default function ReprezentareaVictimelor() {
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat despăgubiri victime accidente / vătămări corporale | av. Bogdan Lamatic, București
+        Avocat victime infracțiuni București - Bogdan Lamatic
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
