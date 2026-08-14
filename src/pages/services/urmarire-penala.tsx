@@ -71,6 +71,7 @@ export default function UrmarirePenala() {
     locale: "ro_RO",
     title: TITLE,
     description: DESCRIPTION,
+    keywords: "avocat urmărire penală, avocat dosar penal, avocat faza de urmărire penală",
     robotsDirectives: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
     schemas: [
       {

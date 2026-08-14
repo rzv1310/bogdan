@@ -176,6 +176,7 @@ const reviewsEN: Reviews3DItem[] = [
   { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
 const serviceRoutes: (string | null)[] = [
+  "/servicii/urmarire-penala",
   null,
   "/servicii/criminalitate-economica",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",

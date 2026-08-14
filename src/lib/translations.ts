@@ -46,6 +46,11 @@ export const translations = {
     servicesTitle: "Servicii | Arii de practică",
     services: [
       {
+        title: "Avocat urmărire penală",
+        body:
+          "Intervin din prima oră a anchetei: asistență la audieri, în caz de reținere, arestare preventivă, percheziții și ridicări de bunuri. În faza de urmărire penală se construiesc probele, așa că apărarea începută imediat poate schimba decisiv soluția dosarului.",
+      },
+      {
         title: "Avocat Drept Penal",
         body:
           "Am o vastă experiență în reprezentarea clienților în fața tuturor instanțelor de judecată, începând cu cele cu grad de jurisdicție inferior și până la Înalta Curte de Casație și Justiție, precum și la toate nivelurile unităților de parchet de pe lângă instanțele de judecată (de la instanțe ordinare până la Înalta Curte de Casație și Justiție, inclusiv structuri specializate - Direcția Națională Anticorupție, Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism și Parchetul European). Cele mai multe dintre cazurile mele prezintă un grad ridicat de complexitate, incluzând documentație voluminoasă și activități de cercetare pluridisciplinară.",
