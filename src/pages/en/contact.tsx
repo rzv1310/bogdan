@@ -176,8 +176,8 @@ export default function ContactEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Contact", item: "/en/contact" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Contact", item: "https://avocatpenalbucuresti.ro/en/contact" },
             ],
           }),
         }}

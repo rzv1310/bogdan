@@ -21,12 +21,12 @@ export default function TermeniSiConditii() {
           "@type": "ListItem",
           position: 1,
           name: "Acasă",
-          item: "/"
+          item: "https://avocatpenalbucuresti.ro/"
         }, {
           "@type": "ListItem",
           position: 2,
           name: "Termeni și Condiții",
-          item: "/termeni-si-conditii"
+          item: "https://avocatpenalbucuresti.ro/termeni-si-conditii"
         }]
       })
     }} />

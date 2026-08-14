@@ -57,6 +57,59 @@ const REQUIRED_SOCIAL = [
   ["name", "twitter:image"],
 ];
 
+/** Service pages must carry BreadcrumbList + LegalService (+ FAQPage where a FAQ exists). */
+const isServiceRoute = (route) => route.startsWith("/servicii/") || route.startsWith("/en/services/");
+
+function validateBreadcrumb(route, node) {
+  const items = node.itemListElement;
+  if (!Array.isArray(items) || items.length < 2) {
+    err(route, "BreadcrumbList needs at least 2 itemListElement entries");
+    return;
+  }
+  items.forEach((item, index) => {
+    if (item?.["@type"] !== "ListItem") err(route, `BreadcrumbList item ${index + 1} is not a ListItem`);
+    if (item?.position !== index + 1) err(route, `BreadcrumbList item ${index + 1} has wrong position`);
+    if (!item?.name) err(route, `BreadcrumbList item ${index + 1} has no name`);
+    const target = item?.item ?? item?.["@id"];
+    const isLast = index === items.length - 1;
+    if (!target && !isLast) err(route, `BreadcrumbList item ${index + 1} has no item URL`);
+    if (target && !String(target).startsWith(SITE_ORIGIN)) {
+      err(route, `BreadcrumbList item ${index + 1} URL is not absolute on ${SITE_ORIGIN}`);
+    }
+  });
+}
+
+function validateLegalService(route, node) {
+  // Reference-only stubs ({ "@type": ..., "@id": ... }) point at the full node elsewhere.
+  const keys = Object.keys(node).filter((key) => key !== "@type" && key !== "@context");
+  if (keys.length === 1 && keys[0] === "@id") return;
+
+  if (!node.name) err(route, "LegalService has no name");
+  if (!node.description) err(route, "LegalService has no description");
+  if (!node.url) err(route, "LegalService has no url");
+  else if (!String(node.url).startsWith(SITE_ORIGIN)) err(route, "LegalService url is not absolute");
+  if (!node.areaServed) err(route, "LegalService has no areaServed");
+  const person = node.provider ?? node.founder ?? node.employee;
+  if (!person) err(route, "LegalService has no provider/founder reference");
+  if (!node.telephone && !person?.telephone) err(route, "LegalService has no telephone");
+}
+
+
+function validateFaq(route, node) {
+  const entities = node.mainEntity;
+  if (!Array.isArray(entities) || entities.length === 0) {
+    err(route, "FAQPage has no mainEntity questions");
+    return;
+  }
+  entities.forEach((question, index) => {
+    if (question?.["@type"] !== "Question") err(route, `FAQPage entry ${index + 1} is not a Question`);
+    if (!question?.name) err(route, `FAQPage entry ${index + 1} has no question text (name)`);
+    const answer = question?.acceptedAnswer;
+    if (!answer || answer["@type"] !== "Answer") err(route, `FAQPage entry ${index + 1} has no Answer`);
+    else if (!answer.text?.trim()) err(route, `FAQPage entry ${index + 1} Answer has no text`);
+  });
+}
+
 function collectJsonLd(route, html) {
   const types = [];
   for (const match of html.matchAll(
@@ -77,6 +130,10 @@ function collectJsonLd(route, html) {
       }
       const type = Array.isArray(node["@type"]) ? node["@type"].join(",") : node["@type"];
       types.push(type);
+      const typeList = Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]];
+      if (typeList.includes("BreadcrumbList")) validateBreadcrumb(route, node);
+      if (typeList.includes("LegalService")) validateLegalService(route, node);
+      if (typeList.includes("FAQPage")) validateFaq(route, node);
     }
   }
   if (types.length === 0) warn(route, "no JSON-LD on this page");
@@ -85,8 +142,22 @@ function collectJsonLd(route, html) {
     if (seen.has(type)) err(route, `duplicate JSON-LD @type "${type}"`);
     seen.add(type);
   }
+
+  if (isServiceRoute(route)) {
+    const flat = types.flatMap((type) => type.split(","));
+    for (const required of ["BreadcrumbList", "LegalService"]) {
+      if (!flat.includes(required)) err(route, `service page is missing ${required} JSON-LD`);
+    }
+    // FAQPage is only valid when the page really renders a FAQ block.
+    const hasFaqContent = /Întrebări frecvente|Frequently asked|FAQ/i.test(html);
+    if (!flat.includes("FAQPage")) {
+      if (hasFaqContent) err(route, "service page renders a FAQ but has no FAQPage JSON-LD");
+      else warn(route, "service page has no FAQPage JSON-LD (no FAQ section on the page)");
+    }
+  }
   return types;
 }
+
 
 async function main() {
   const pages = new Map();

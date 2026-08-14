@@ -24,8 +24,8 @@ export default function CorruptionPublicOfficeEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Corruption offenses and acts related to the exercise of public office", item: "/en/services/corruption-and-public-office-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Corruption offenses and acts related to the exercise of public office", item: "https://avocatpenalbucuresti.ro/en/services/corruption-and-public-office-offenses" },
             ],
           }),
         }}
@@ -37,7 +37,8 @@ export default function CorruptionPublicOfficeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest",
-            url: "/en/services/corruption-and-public-office-offenses",
+            description: "Bribery, influence peddling, abuse of office. DNA cases.",
+            url: "https://avocatpenalbucuresti.ro/en/services/corruption-and-public-office-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -186,6 +187,41 @@ export default function CorruptionPublicOfficeEn() {
             downloadAriaLabel="Download chart as PNG"
             filename="bribery-defendants-2023-2024-en.png"
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "I was offered a \"tip\". What should I do?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Do not accept. If you have offered money under pressure, we immediately discuss the opportunity of self-reporting (art. 290(3))."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "My case is with the DNA. Does the \"amount\" matter?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Competence may depend on the nature of the offense and criteria in GEO 43/2002; we check your exact situation."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "I hold a management role in a state-owned company. Does art. 308 apply to me?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes, the rule extends to assimilated persons - we analyze your concrete duties."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </div>
       </section>
     </>

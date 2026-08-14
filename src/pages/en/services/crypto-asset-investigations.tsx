@@ -29,14 +29,14 @@ export default function CryptoInvestigationsEn() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "/en",
+                item: "https://avocatpenalbucuresti.ro/en",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Investigations regarding crypto assets",
                 item:
-                  "/en/services/crypto-asset-investigations",
+                  "https://avocatpenalbucuresti.ro/en/services/crypto-asset-investigations",
               },
             ],
           }),
@@ -49,8 +49,9 @@ export default function CryptoInvestigationsEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Investigations regarding crypto assets",
+            description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
             url:
-              "/en/services/crypto-asset-investigations",
+              "https://avocatpenalbucuresti.ro/en/services/crypto-asset-investigations",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -70,6 +71,41 @@ export default function CryptoInvestigationsEn() {
             },
             telephone: "+40 (31) 632 01 83",
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is “crypto” legal in Romania?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. It is not legal tender, but holding/trading is allowed; MiCA/TFR, Law 129/2019, the Criminal Code and the Tax Code apply; authorities (NBR/ASF/FIU/ANAF) have distinct roles."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can a lawyer help me recover funds?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes — I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES)."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "I’m a crypto entrepreneur — what should I have done “yesterday”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Do a MiCA/TFR gap assessment, risk-based KYC, sanctions screening, incident-response procedures, staff training, and prepare documentation for authorizations/registrations. The ASF has signaled the need for a national competence framework."
+                                    }
+                        }
+            ]
+}),
         }}
       />
 

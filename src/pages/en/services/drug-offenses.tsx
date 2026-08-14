@@ -24,8 +24,8 @@ export default function DrugOffensesEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: "/en/services/drug-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: "https://avocatpenalbucuresti.ro/en/services/drug-offenses" },
             ],
           }),
         }}
@@ -37,7 +37,8 @@ export default function DrugOffensesEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Drug trafficking lawyer – Bucharest",
-            url: "/en/services/drug-offenses",
+            description: "Defense in drug trafficking/possession cases across Romania.",
+            url: "https://avocatpenalbucuresti.ro/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -132,6 +133,41 @@ export default function DrugOffensesEn() {
             minLabel="Minimum"
             maxLabel="Maximum"
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Can I avoid prison if I had a small quantity?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "If it is proven to be for personal use, the penalty can be reduced or replaced with alternative measures."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What should I do if DIICOT summons me for a hearing?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Contact your lawyer immediately and do not give statements without legal advice."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can the legal qualification be changed from trafficking to possession?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes, if there is no proof of intent to commercialize."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </div>
 
         {/* High-risk vs risk drugs */}

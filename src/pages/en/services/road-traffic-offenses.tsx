@@ -24,8 +24,8 @@ export default function RoadTrafficEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Road traffic offenses with victims", item: "/en/services/road-traffic-offenses" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Road traffic offenses with victims", item: "https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses" },
             ],
           }),
         }}
@@ -37,7 +37,8 @@ export default function RoadTrafficEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Road traffic offenses with victims",
-            url: "/en/services/road-traffic-offenses",
+            description: "DUIs, no license, leaving the scene; accidents with/without victims.",
+            url: "https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -193,6 +194,41 @@ export default function RoadTrafficEn() {
               { categorie: "Slightly injured", an2022: 2076, an2023: 2172 },
             ]}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is 0.80 g/l alcohol in blood always a crime?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes, above the threshold it falls under art. 336(1); under the threshold we discuss contravention (Road Code). For drugs, the biologically/toxicologically confirmed influence matters."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "What if I refuse to provide biological samples?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "It is a separate offense (art. 337), even if the BAC would have been below the threshold."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "When is leaving the scene not an offense?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "The law provides limited situations (e.g., transporting the injured with immediate return)."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </div>
       </section>
     </>

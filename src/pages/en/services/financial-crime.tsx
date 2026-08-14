@@ -29,14 +29,14 @@ export default function FinancialCrimeEn() {
                 position: 1,
                 name: "Home",
                 item:
-                  "/en",
+                  "https://avocatpenalbucuresti.ro/en",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Economic crime",
                 item:
-                  "/en/services/financial-crime",
+                  "https://avocatpenalbucuresti.ro/en/services/financial-crime",
               },
             ],
           }),
@@ -49,8 +49,9 @@ export default function FinancialCrimeEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Economic crime lawyer | White-collar specialist",
+            description: "Defense in fraud, embezzlement, tax evasion, AML cases.",
             url:
-              "/en/services/financial-crime",
+              "https://avocatpenalbucuresti.ro/en/services/financial-crime",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {

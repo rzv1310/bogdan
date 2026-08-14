@@ -25,9 +25,9 @@ export default function SpalareDeBani() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: "/" },
-              { "@type": "ListItem", position: 2, name: "Servicii", item: "/#servicii" },
-              { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+              { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
+              { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/#servicii" },
+              { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: "https://avocatpenalbucuresti.ro/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
             ],
           }),
         }}
@@ -39,7 +39,8 @@ export default function SpalareDeBani() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Apărare în dosare de spălare de bani și ascundere de bunuri",
-            url: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
+            description: "Apărare în dosare de spălare de bani și ascundere de bunuri.",
+            url: "https://avocatpenalbucuresti.ro/servicii/spalare-de-bani-si-ascundere-de-bunuri",
             areaServed: ["RO", "EU"],
             availableLanguage: ["ro", "en"],
             address: {
@@ -55,6 +56,41 @@ export default function SpalareDeBani() {
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Trebuie să existe o condamnare pentru fapta‑sursă?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Nu neapărat. E suficient să se dovedească faptul că bunurile provin dintr‑o infracțiune și că inculpatul cunoștea această proveniență. (referință)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Autorul faptei‑sursă poate fi acuzat și de spălare a banilor?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Pentru art. 49 lit. a) și b) nu se cere ca făptuitorul să fie diferit; pentru lit. c) este necesar un terț."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Se pot ridica sechestrul și poprirea dacă paralizează activitatea?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică."
+                                    }
+                        }
+            ]
+}),
         }}
       />
 

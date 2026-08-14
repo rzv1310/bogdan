@@ -23,8 +23,8 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/en" },
-              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "/en/services/money-laundering-and-asset-concealment" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment" },
             ],
           }),
         }}
@@ -36,7 +36,8 @@ export default function MoneyLaunderingEn() {
             "@context": "https://schema.org",
             "@type": "LegalService",
             name: "Defense in money laundering and asset concealment",
-            url: "/en/services/money-laundering-and-asset-concealment",
+            description: "Defense in money laundering and asset concealment cases.",
+            url: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment",
             areaServed: ["RO", "EU"],
             availableLanguage: ["en", "ro"],
             address: {
@@ -52,6 +53,41 @@ export default function MoneyLaunderingEn() {
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
             telephone: "+40 (31) 632 01 83",
           }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "Is a conviction for the predicate offense required?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Not necessarily. It suffices to prove assets come from a criminal offense (not a contravention) and that the defendant knew this. (reference)"
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can the author of the predicate also be charged with laundering?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. For art. 49 (a) and (b), the offender need not be a different person; only for (c) (acquiring/using) must it be a third party."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Can seizures and garnishments be lifted if they paralyze activity?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. Courts must respect proportionality; under the 2025 amendments, measures can be challenged and narrowed when they disproportionately affect economic activity."
+                                    }
+                        }
+            ]
+}),
         }}
       />
 

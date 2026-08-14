@@ -44,7 +44,7 @@ export default function ReprezentareaVictimelor() {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Reprezentarea victimelor în procese penale",
-                    "item": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale"
+                    "item": "https://avocatpenalbucuresti.ro/servicii/reprezentarea-victimelor-in-procese-penale"
                   }
                 ]
               })
@@ -58,7 +58,7 @@ export default function ReprezentareaVictimelor() {
                 "@type": "LegalService",
                 "name": "Servicii avocat reprezentarea victimelor în procese penale",
                 "description": "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale",
-                "url": "https://avocatpenalbucuresti.ro/services/reprezentarea-victimelor-in-procese-penale",
+                "url": "https://avocatpenalbucuresti.ro/servicii/reprezentarea-victimelor-in-procese-penale",
                 "areaServed": [
                   {
                     "@type": "Country",
@@ -88,6 +88,49 @@ export default function ReprezentareaVictimelor() {
               })
             }}
           />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                        {
+                                    "@type": "Question",
+                                    "name": "E obligatoriu să merg în proces penal pentru despăgubiri?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Ce termen am pentru pretenții?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Ce înseamnă că „asigurătorul plătește”?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor."
+                                    }
+                        },
+                        {
+                                    "@type": "Question",
+                                    "name": "Pot participa activ la urmărirea penală?",
+                                    "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP)."
+                                    }
+                        }
+            ]
+}),
+        }}
+      />
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
