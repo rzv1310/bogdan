@@ -8,7 +8,7 @@ Adu pagina `/servicii/spalare-de-bani-si-ascundere-de-bunuri` la același standa
 1. **SEO – title și keywords**
    - `useSEO.title`: `Infracțiune spălare de bani | Ascundere de bunuri - avocat Bogdan Lamatic, București`
    - `useSEO.keywords`: `avocat spalare de bani bucuresti, dosar spalare bani, ascundere bunuri, avocat confiscare bunuri`
-   - Actualizează și `<h1>` pentru a coincide cu noul meta title (ca pe celelalte pagini de servicii).
+   
 
 2. **CTA-uri în stilul paginii /masuri-preventive**
    - Creează o componentă locală `CallCta` (buton telefon premium + variantă "Vreau avocat!").
