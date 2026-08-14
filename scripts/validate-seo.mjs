@@ -80,15 +80,20 @@ function validateBreadcrumb(route, node) {
 }
 
 function validateLegalService(route, node) {
+  // Reference-only stubs ({ "@type": ..., "@id": ... }) point at the full node elsewhere.
+  const keys = Object.keys(node).filter((key) => key !== "@type" && key !== "@context");
+  if (keys.length === 1 && keys[0] === "@id") return;
+
   if (!node.name) err(route, "LegalService has no name");
   if (!node.description) err(route, "LegalService has no description");
   if (!node.url) err(route, "LegalService has no url");
   else if (!String(node.url).startsWith(SITE_ORIGIN)) err(route, "LegalService url is not absolute");
   if (!node.areaServed) err(route, "LegalService has no areaServed");
-  const provider = node.provider ?? node.providerMobility;
-  if (!provider) err(route, "LegalService has no provider");
-  else if (!provider["@type"] || !provider.name) err(route, "LegalService provider needs @type and name");
+  if (!node.telephone) err(route, "LegalService has no telephone");
+  const person = node.provider ?? node.founder ?? node.employee;
+  if (!person) err(route, "LegalService has no provider/founder reference");
 }
+
 
 function validateFaq(route, node) {
   const entities = node.mainEntity;
