@@ -102,9 +102,6 @@ export default function Footer() {
               <li>
                 <Link to="/harta-site" className="hover:underline">{lang === "en" ? "Site map" : "Harta site"}</Link>
               </li>
-              <li>
-                <a href="/sitemap.xml" className="hover:underline">Sitemap XML</a>
-              </li>
             </ul>
 
 
