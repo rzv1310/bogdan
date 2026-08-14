@@ -8,11 +8,11 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 export default function InfractiuniRutiere() {
   useSEO({
-    keywords: "avocat accident rutier, avocat ucidere din culpa, avocat infractiuni rutiere",
+    keywords: "avocat accidente rutiere bucuresti, avocat infractiuni rutiere",
     canonical: "/servicii/infractiuni-rutiere-cu-victime",
     alternates: { ro: "/servicii/infractiuni-rutiere-cu-victime", en: "/en/services/road-traffic-offenses", xDefault: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "ro_RO",
-    title: "Avocat infracțiuni rutiere cu / fără victime | Avocat accidente rutiere | Bogdan Lamatic, București",
+    title: "Avocat accidente rutiere București, cu sau fără victime | Avocat infracțiuni rutiere – Bogdan Lamatic",
     description:
       "Avocat penal Bogdan Lamatic, București. Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime. Consultanță rapidă.",
   });
@@ -128,7 +128,7 @@ export default function InfractiuniRutiere() {
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-        Avocat infracțiuni rutiere cu / fără victime | Avocat accidente rutiere – Bogdan Lamatic, București
+        Avocat accidente rutiere București, cu sau fără victime | Avocat infracțiuni rutiere – Bogdan Lamatic
       </h1>
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
