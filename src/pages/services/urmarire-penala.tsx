@@ -200,7 +200,7 @@ export default function UrmarirePenala() {
               <strong>Apărare în caz de reținere sau arestare preventivă.</strong> Intervin imediat dacă ești reținut (art. 209–210 CPP) sau dacă procurorul propune arestarea preventivă (art. 223 și urm. CPP), formulând apărări încă din fața judecătorului de drepturi și libertăți.
             </li>
             <li>
-              <strong>Contestarea măsurilor preventive.</strong> Atac controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu sau arestarea preventivă (art. 211–222 CPP) și cer înlocuirea sau revocarea lor ori de câte ori condițiile legale o permit.
+              <strong>Contestarea măsurilor preventive.</strong> Atac controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu sau arestarea preventivă (art. 211–222 CPP) și cer înlocuirea sau revocarea lor ori de câte ori condițiile legale o permit. <a href="/servicii/masuri-preventive" className="text-primary underline underline-offset-2">Citește mai multe despre măsurile preventive</a>.
             </li>
             <li>
               <strong>Prezență la percheziții</strong> - domiciliare, informatice sau corporale (art. 157 și urm. CPP) - pentru a verifica legalitatea mandatului și a modului în care este efectuată percheziția.
