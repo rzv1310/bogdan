@@ -4,7 +4,7 @@ Add the 5 Legal 500 EMEA distinctions (Rising Star 2020, Next Generation Partner
 
 ## Layout
 
-Desktop: the portrait column becomes a two-part row — a narrow left rail with the 5 badges stacked vertically (small, ~56–64px each, chronological order, subtle rounded corners and hover lift), and the portrait to its right at its current size.
+Desktop: the current layout stays exactly as it is. The 5 badges are overlaid on top of the portrait, along its left edge, stacked vertically (small, ~56–64px each, chronological order, absolutely positioned inside the existing portrait container so nothing shifts).
 
 ```text
 [ H1 + quote + CTA ]   [b] [   portrait   ]
