@@ -6,6 +6,7 @@ import { Phone, Mail } from "lucide-react";
 
 export default function SpalareDeBani() {
   useSEO({
+    keywords: "avocat spalare de bani, avocat ascundere de bunuri, avocat confiscare bunuri",
     title: "Spălare de bani și ascundere de bunuri | Avocat drept penal Bogdan Lamatic - Bucuresti",
     description: "Apărare în dosare de spălare de bani și ascundere de bunuri.",
     alternates: {

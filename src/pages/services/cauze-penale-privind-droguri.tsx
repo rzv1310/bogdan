@@ -99,6 +99,7 @@ export default function CauzeDroguri() {
   };
 
   useSEO({
+    keywords: "avocat droguri, avocat trafic de droguri, avocat consum de droguri bucuresti",
     canonical: "/servicii/cauze-penale-privind-droguri",
     alternates: {
       ro: "/servicii/cauze-penale-privind-droguri",

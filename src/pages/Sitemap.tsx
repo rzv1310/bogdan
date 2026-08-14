@@ -4,6 +4,7 @@ import { Home, Briefcase, Phone, User, FileText, Globe, Shield, Cookie } from "l
 
 export default function Sitemap() {
   useSEO({
+    keywords: "harta site avocat penal, pagini cabinet avocat, index site avocat bucuresti",
     schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Harta site", item: "https://avocatpenalbucuresti.ro/harta-site" }] }],
     title: "Sitemap | Avocat Penal București - Toate Paginile Site-ului",
     description: "Harta completă a site-ului avocat penal București. Găsește rapid toate serviciile juridice, informațiile de contact și resursele disponibile.",

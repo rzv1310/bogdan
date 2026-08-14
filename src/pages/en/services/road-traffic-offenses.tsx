@@ -7,6 +7,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 export default function RoadTrafficEn() {
   useSEO({
+    keywords: "road traffic offenses lawyer romania, car accident criminal defense, negligent homicide attorney",
     title: "Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest",
     description: "DUIs, no license, leaving the scene; accidents with/without victims.",
     alternates: { en: "/en/services/road-traffic-offenses", ro: "/servicii/infractiuni-rutiere-cu-victime" , xDefault: "/servicii/infractiuni-rutiere-cu-victime"},

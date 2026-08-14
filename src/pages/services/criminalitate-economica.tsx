@@ -9,6 +9,7 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
+    keywords: "avocat criminalitate economica, avocat evaziune fiscala, avocat frauda financiara",
     canonical: "/servicii/criminalitate-economica",
     alternates: { ro: "/servicii/criminalitate-economica", en: "/en/services/financial-crime", xDefault: "/servicii/criminalitate-economica" },
     locale: "ro_RO",

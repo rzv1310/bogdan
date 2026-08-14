@@ -7,6 +7,7 @@ export default function PoliticaCookies() {
   const { openPreferences, consent } = useCookieConsent();
   
   useSEO({
+    keywords: "politica cookies, cookie-uri site avocat, gestionare cookie-uri",
     title: "Politica de Cookie-uri | Cabinet Avocat Bogdan Lamatic",
     description: "Informații despre cookie-urile utilizate, scopurile lor și cum îți poți gestiona preferințele.",
     alternates: { ro: "/politica-cookies", en: "/en/cookie-policy", xDefault: "/politica-cookies" },

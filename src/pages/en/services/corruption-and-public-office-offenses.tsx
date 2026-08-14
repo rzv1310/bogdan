@@ -7,6 +7,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 
 export default function CorruptionPublicOfficeEn() {
   useSEO({
+    keywords: "bribery lawyer romania, corruption defense attorney, public office offenses lawyer",
     title: "Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest",
     description: "Bribery, influence peddling, abuse of office. DNA cases.",
     alternates: { en: "/en/services/corruption-and-public-office-offenses", ro: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" , xDefault: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice"},

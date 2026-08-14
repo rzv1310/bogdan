@@ -7,6 +7,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 
 export default function CoruptieSiFunctiePublica() {
   useSEO({
+    keywords: "avocat corupzie, avocat luare de mita, avocat abuz in serviciu",
     canonical: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     alternates: { ro: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice", en: "/en/services/corruption-and-public-office-offenses", xDefault: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
     locale: "ro_RO",

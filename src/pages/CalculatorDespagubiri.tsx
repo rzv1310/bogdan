@@ -68,6 +68,7 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
 
 export default function CalculatorDespagubiri() {
   useSEO({
+    keywords: "calculator despagubiri, despagubiri accident rutier, daune morale si materiale",
     schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Calculator despăgubiri", item: "https://avocatpenalbucuresti.ro/calculator-despagubiri" }] }],
     title: "Calculator despăgubiri | Avocat Bogdan Lamatic",
     description: "Pagină calcul despăgubiri - în curând.",

@@ -7,6 +7,7 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function FinancialCrimeEn() {
   useSEO({
+    keywords: "financial crime lawyer romania, tax evasion defense attorney, fraud lawyer bucharest",
     title: "Economic crime lawyer | White-collar specialist | Bogdan Lamatic, Bucharest",
     description: "Defense in fraud, embezzlement, tax evasion, AML cases.",
     alternates: { en: "/en/services/financial-crime", ro: "/servicii/criminalitate-economica" , xDefault: "/servicii/criminalitate-economica"},

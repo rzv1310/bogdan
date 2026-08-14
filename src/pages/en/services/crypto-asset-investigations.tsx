@@ -8,6 +8,7 @@ import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 export default function CryptoInvestigationsEn() {
   useSEO({
+    keywords: "crypto lawyer romania, cryptocurrency investigations, blockchain forensics attorney",
     title: "Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts",
     description: "Blockchain, fraud, cybercrime, AML, MiCA/TFR compliance.",
     alternates: { en: "/en/services/crypto-asset-investigations", ro: "/servicii/investigatii-privind-activele-cripto" , xDefault: "/servicii/investigatii-privind-activele-cripto"},

@@ -183,6 +183,7 @@ const HomepageEN = () => {
   const origin = "https://avocatpenalbucuresti.ro";
   
   useSEO({
+    keywords: "criminal lawyer bucharest, criminal defense attorney romania, white collar crime lawyer",
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
     description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
     alternates: { en: "/en", ro: "/", xDefault: "/" },
