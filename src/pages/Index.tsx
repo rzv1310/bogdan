@@ -891,9 +891,9 @@ const Index = () => {
                 return (
                   <>
                     {/* Mobile: author and years on the same row */}
-                    <p className="md:hidden mt-2 text-[22px] italic font-light font-signature text-right py-[11px] px-[22px]">
+                    <p className="md:hidden mt-2 text-[18px] italic font-light font-signature text-right whitespace-nowrap py-[11px] px-[22px]">
                       {t.heroAuthor}{" "}
-                      <span className="text-lg text-hero-foreground/80">{yearsText}</span>
+                      <span className="text-base text-hero-foreground/80">{yearsText}</span>
                     </p>
                     {/* Tablet/Desktop: keep original two-row layout */}
                     <div className="hidden md:block">
