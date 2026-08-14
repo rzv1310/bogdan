@@ -178,6 +178,7 @@ const reviewsEN: Reviews3DItem[] = [
 const serviceRoutes: (string | null)[] = [
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",
+  "/servicii/infractiuni-contra-persoanei",
   null,
   "/servicii/criminalitate-economica",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",

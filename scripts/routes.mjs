@@ -12,6 +12,7 @@ export const ROUTES = [
   "/contact",
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",
+  "/servicii/infractiuni-contra-persoanei",
   "/servicii/criminalitate-economica",
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
   "/servicii/investigatii-privind-activele-cripto",

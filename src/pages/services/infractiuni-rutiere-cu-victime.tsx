@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -138,6 +139,13 @@ export default function InfractiuniRutiere() {
         </p>
         <p>
           În ultimii ani am primit recunoaștere constantă în ghidul Legal 500 (White-Collar Crime), statut relevant pentru rigoarea și strategia de apărare pe care le aplic și în dosarele rutiere.
+        </p>
+        <p>
+          Accidentele rutiere cu victime fac parte, ca încadrare juridică, din sfera mai largă a{" "}
+          <Link to="/servicii/infractiuni-contra-persoanei" className="text-primary underline underline-offset-2">
+            infracțiunilor contra persoanei
+          </Link>
+          .
         </p>
       </div>
 

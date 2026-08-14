@@ -15,6 +15,7 @@ export const translations = {
     navServices: {
       "urmarire-penala": "Urmărire penală",
       "masuri-preventive": "Măsuri preventive",
+      "infractiuni-contra-persoanei": "Infracțiuni contra persoanei",
       "criminalitate-economica": "Criminalitate economică",
       "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
       "investigatii-privind-activele-cripto": "Investigații privind activele cripto",
@@ -55,6 +56,11 @@ export const translations = {
         title: "Avocat măsuri preventive",
         body:
           "Intervin imediat la reținere, control judiciar, control judiciar pe cauțiune, arest la domiciliu și arestare preventivă: formulez apărări în fața judecătorului de drepturi și libertăți, contest prelungirile și cer înlocuirea măsurii cu una mai ușoară atunci când există temei.",
+      },
+      {
+        title: "Avocat infracțiuni contra persoanei",
+        body:
+          "Apăr persoane acuzate de infracțiuni contra persoanei: loviri și alte violențe, vătămare corporală, violență în familie, amenințare, șantaj, hărțuire, lipsire de libertate, precum și infracțiuni contra libertății și integrității sexuale. Intervin din prima fază a cauzei, cu discreție absolută.",
       },
       {
         title: "Avocat Drept Penal",
