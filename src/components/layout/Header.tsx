@@ -32,6 +32,16 @@ export default function Header() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const { handleMobileNavigation } = useMobileScrollTop();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const svcList = lang === "en" ? servicesEn : services;
 
