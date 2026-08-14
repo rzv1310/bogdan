@@ -431,13 +431,17 @@ export default function InvestigatiiCripto() {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
-              {({ loading }) => (
-                <Button disabled={loading} variant="light" size="lg">
-                  {loading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
-                </Button>
-              )}
-            </PDFDownloadLink>
+            {isPrerender ? (
+              <Button variant="light" size="lg">Descarcă PDF Gratuit</Button>
+            ) : (
+              <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
+                {({ loading }) => (
+                  <Button disabled={loading} variant="light" size="lg">
+                    {loading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
+                  </Button>
+                )}
+              </PDFDownloadLink>
+            )}
           </CardContent>
         </Card>
       </section>
