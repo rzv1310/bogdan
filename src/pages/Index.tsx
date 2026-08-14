@@ -867,31 +867,10 @@ const Index = () => {
                 <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-full h-auto rounded-lg shadow-md" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
-              <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-lg md:text-xl text-hero-foreground/90">
-                {lang === "ro" ? <>
-                    <div className="hidden md:block">
-                      {(() => {
-                    const parts = t.heroQuote.split("\n");
-                    const l1 = parts[0] || "";
-                    const l2 = parts[1] || "";
-                    const splitIdx = l2.indexOf("Îți apăr drepturile");
-                    const before = splitIdx >= 0 ? l2.slice(0, splitIdx).trim() : l2.trim();
-                    const third = splitIdx >= 0 ? l2.slice(splitIdx).trim() : "";
-                    return <div className="space-y-2">
-                            <p className="mb-0">{l1}</p>
-                            <p className="mb-0">{before}</p>
-                            {third && <p className="mb-0">{third}</p>}
-                          </div>;
-                  })()}
-                    </div>
-                    <div className="md:hidden">
-                      {t.heroQuote.split("\n").map((line, i) => <p key={i} className="mb-2 last:mb-0">
-                          {line}
-                        </p>)}
-                    </div>
-                  </> : t.heroQuote.split("\n").map((line, i) => <p key={i} className="mb-2 last:mb-0">
-                      {line}
-                    </p>)}
+              <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-[17px] md:text-xl text-hero-foreground/90">
+                {t.heroQuote.split("\n").map((line, i) => (
+                  <p key={i} className="mb-2 last:mb-0">{line}</p>
+                ))}
               </blockquote>
               <p className="mt-2 text-[22px] md:text-2xl italic font-light font-signature text-right py-[11px] px-[22px]">{t.heroAuthor}</p>
               {lang === "ro" && (
