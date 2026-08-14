@@ -176,6 +176,7 @@ export default function CookieConsentBanner() {
                     variant="default"
                     size="sm"
                     onClick={acceptAll}
+                    className="bg-green-700 text-white hover:bg-green-800"
                   >
                     {t.acceptAll}
                   </Button>

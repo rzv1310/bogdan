@@ -1,4 +1,10 @@
+import { useCookieConsent } from '@/context/cookie-consent';
+
 export default function WhatsAppButton() {
+  const { hasConsented } = useCookieConsent();
+
+  if (!hasConsented) return null;
+
   return (
     <a
       href="https://wa.me/+40745506443"
