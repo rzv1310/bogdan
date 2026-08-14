@@ -358,7 +358,7 @@ const Index = () => {
   const origin = typeof window !== "undefined" ? window.location.origin : "https://avocatpenalbucuresti.ro";
   
   useSEO({
-    title: "Avocat Drept Penal Bucuresti | Bogdan Lamatic | Evaziune | Droguri | Malpraxis | Coruptie | Accidente rutiere | Frauda | Mita | Criminalitate economica",
+    title: "Avocat Penal București - Bogdan Lamatic | 18+ Ani Experiență în Drept Penal",
     description: "Avocat drept penal Bucuresti > Bogdan Lamatic > Apărare în criminalitate economică, corupție, accidente rutiere, crypto, malpraxis., droguri ",
     alternates: { ro: "/", en: "/en", xDefault: "/" },
     locale: "ro_RO",
