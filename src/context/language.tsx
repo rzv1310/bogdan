@@ -12,6 +12,8 @@ const LanguageContext = createContext<LanguageContextValue | undefined>(undefine
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>(() => {
+    // Build-time prerender: the URL decides the language (/en/* -> en, else ro).
+    if (isPrerender) return getPrerenderLang();
     const stored = typeof window !== "undefined" ? localStorage.getItem("lang") : null;
     if (stored === "ro" || stored === "en") return stored;
     const nav = typeof navigator !== "undefined" ? navigator.language : "ro";
