@@ -36,7 +36,7 @@ export default function ContactEn() {
   useSEO({
     title: "Contact - Attorney Bogdan Lamatic",
     description: "Get in touch for criminal defense and compensation evaluation.",
-    alternates: { en: "/en/contact", ro: "/contact", xDefault: "/" },
+    alternates: { en: "/en/contact", ro: "/contact", xDefault: "/contact" },
     locale: "en_US",
     canonical: "/en/contact",
   });

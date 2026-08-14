@@ -8,7 +8,7 @@ export default function WorkplaceLiabilityEn() {
   useSEO({
     title: "Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest",
     description: "Specialized assistance in criminal cases regarding workplace accidents and criminal liability for violating safety regulations.",
-    alternates: { en: "/en/services/workplace-criminal-liability", ro: "/servicii/raspundere-penala-incidente-locul-de-munca" },
+    alternates: { en: "/en/services/workplace-criminal-liability", ro: "/servicii/raspundere-penala-incidente-locul-de-munca" , xDefault: "/servicii/raspundere-penala-incidente-locul-de-munca"},
     locale: "en_US",
     canonical: "/en/services/workplace-criminal-liability",
   });

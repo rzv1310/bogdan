@@ -9,6 +9,9 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 export default function CauzeDroguri() {
   useSEO({
+    canonical: "/servicii/cauze-penale-privind-droguri",
+    alternates: { ro: "/servicii/cauze-penale-privind-droguri", en: "/en/services/drug-offenses", xDefault: "/servicii/cauze-penale-privind-droguri" },
+    locale: "ro_RO",
     title: "Avocat Trafic Droguri București - Bogdan Lamatic",
     description:
       "Apărare profesionistă în dosare DIICOT de trafic de droguri. Avocat Bogdan Lamatic, București - 18 ani experiență în drept penal.",

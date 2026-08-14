@@ -9,7 +9,7 @@ export default function RoadTrafficEn() {
   useSEO({
     title: "Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest",
     description: "DUIs, no license, leaving the scene; accidents with/without victims.",
-    alternates: { en: "/en/services/road-traffic-offenses", ro: "/servicii/infractiuni-rutiere-cu-victime" },
+    alternates: { en: "/en/services/road-traffic-offenses", ro: "/servicii/infractiuni-rutiere-cu-victime" , xDefault: "/servicii/infractiuni-rutiere-cu-victime"},
     locale: "en_US",
     canonical: "/en/services/road-traffic-offenses",
   });

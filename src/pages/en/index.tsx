@@ -10,7 +10,7 @@ export default function EnIndex() {
   useSEO({
     title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
     description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
-    alternates: { en: "/en", ro: "/" },
+    alternates: { en: "/en", ro: "/" , xDefault: "/"},
     locale: "en_US",
   });
   return (

@@ -9,6 +9,9 @@ import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 export default function CriminalitateEconomica() {
   useSEO({
+    canonical: "/servicii/criminalitate-economica",
+    alternates: { ro: "/servicii/criminalitate-economica", en: "/en/services/financial-crime", xDefault: "/servicii/criminalitate-economica" },
+    locale: "ro_RO",
     title: "Criminalitate economică | Servicii avocat penal Bucuresti | Bogdan Lamatic",
     description: "Asistență și reprezentare în cauze de criminalitate economică.",
   });

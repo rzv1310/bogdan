@@ -11,6 +11,9 @@ import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
 export default function InvestigatiiCripto() {
   useSEO({
+    canonical: "/servicii/investigatii-privind-activele-cripto",
+    alternates: { ro: "/servicii/investigatii-privind-activele-cripto", en: "/en/services/crypto-asset-investigations", xDefault: "/servicii/investigatii-privind-activele-cripto" },
+    locale: "ro_RO",
     title: "Avocat Crypto | Investigații privind criptomonede și blockchain | Bogdan Lamatic, București | NFT | Smart Contracts",
     description:
       "Avocat Bogdan Lamatic – investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate. Asistență pentru persoane fizice și companii.",

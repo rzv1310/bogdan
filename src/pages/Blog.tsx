@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 export default function Blog() {
   useSEO({
+    canonical: "/blog",
+    alternates: { ro: "/blog", en: "/en/blog", xDefault: "/blog" },
+    locale: "ro_RO",
     title: "Blog | Avocat Bogdan Lamatic",
     description: "Articole și noutăți juridice publicate de avocat Bogdan Lamatic.",
   });

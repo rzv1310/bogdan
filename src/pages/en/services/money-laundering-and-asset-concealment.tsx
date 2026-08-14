@@ -8,7 +8,7 @@ export default function MoneyLaunderingEn() {
   useSEO({
     title: "Money laundering & asset concealment | Defense - Bogdan Lamatic",
     description: "Defense in money laundering and asset concealment cases.",
-    alternates: { en: "/en/services/money-laundering-and-asset-concealment", ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+    alternates: { en: "/en/services/money-laundering-and-asset-concealment", ro: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" , xDefault: "/servicii/spalare-de-bani-si-ascundere-de-bunuri"},
     locale: "en_US",
     canonical: "/en/services/money-laundering-and-asset-concealment",
   });

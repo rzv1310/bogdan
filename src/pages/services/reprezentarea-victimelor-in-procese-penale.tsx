@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 
 export default function ReprezentareaVictimelor() {
   useSEO({
+    canonical: "/servicii/reprezentarea-victimelor-in-procese-penale",
+    alternates: { ro: "/servicii/reprezentarea-victimelor-in-procese-penale", en: "/en/services/victim-representation-in-criminal-cases", xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale" },
+    locale: "ro_RO",
     title: "Avocat despăgubiri victime accidente / vătămări corporale | av. Bogdan Lamatic, București",
     description:
       "Reprezentare victime în procese penale. Despăgubiri pentru accidente rutiere și vătămări corporale. Evaluare rapidă și strategie completă!",

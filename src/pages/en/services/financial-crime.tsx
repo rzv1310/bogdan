@@ -9,7 +9,7 @@ export default function FinancialCrimeEn() {
   useSEO({
     title: "Economic crime lawyer | White-collar specialist | Bogdan Lamatic, Bucharest",
     description: "Defense in fraud, embezzlement, tax evasion, AML cases.",
-    alternates: { en: "/en/services/financial-crime", ro: "/servicii/criminalitate-economica" },
+    alternates: { en: "/en/services/financial-crime", ro: "/servicii/criminalitate-economica" , xDefault: "/servicii/criminalitate-economica"},
     locale: "en_US",
     canonical: "/en/services/financial-crime",
   });

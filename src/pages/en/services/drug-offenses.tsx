@@ -9,7 +9,7 @@ export default function DrugOffensesEn() {
   useSEO({
     title: "Drug trafficking lawyer Bucharest – DIICOT defense | Bogdan Lamatic",
     description: "Defense in drug trafficking/possession cases across Romania.",
-    alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" },
+    alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" , xDefault: "/servicii/cauze-penale-privind-droguri"},
     locale: "en_US",
     canonical: "/en/services/drug-offenses",
   });

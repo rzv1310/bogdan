@@ -8,7 +8,7 @@ export default function MalpracticeEn() {
   useSEO({
     title: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
     description: "Defense and representation in medical malpractice cases.",
-    alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" },
+    alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" , xDefault: "/servicii/neglijenta-profesionala-si-malpraxis"},
     locale: "en_US",
     canonical: "/en/services/professional-negligence-and-malpractice",
   });

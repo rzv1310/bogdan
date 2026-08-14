@@ -5,7 +5,7 @@ export default function TermsAndConditionsEn() {
   useSEO({
     title: "Terms and Conditions – Attorney Bogdan Lamatic",
     description: "Website terms of use and rules for the legal services offered.",
-    alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" },
+    alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" , xDefault: "/termeni-si-conditii"},
     locale: "en_US",
     canonical: "/en/terms-and-conditions",
   });

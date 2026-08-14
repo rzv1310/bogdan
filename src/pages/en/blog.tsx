@@ -8,7 +8,7 @@ export default function BlogEn() {
   useSEO({
     title: "Blog | Attorney Bogdan Lamatic",
     description: "Legal articles and updates published by attorney Bogdan Lamatic.",
-    alternates: { en: "/en/blog", ro: "/blog" },
+    alternates: { en: "/en/blog", ro: "/blog" , xDefault: "/blog"},
     locale: "en_US",
   });
 

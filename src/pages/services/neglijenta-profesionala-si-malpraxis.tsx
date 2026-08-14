@@ -8,6 +8,9 @@ import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistS
 
 export default function Malpraxis() {
   useSEO({
+    canonical: "/servicii/neglijenta-profesionala-si-malpraxis",
+    alternates: { ro: "/servicii/neglijenta-profesionala-si-malpraxis", en: "/en/services/professional-negligence-and-malpractice", xDefault: "/servicii/neglijenta-profesionala-si-malpraxis" },
+    locale: "ro_RO",
     title: "Avocat Malpraxis Medical | av. Bogdan Lamatic | București | Neglijență în serviciu",
     description:
       "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal.",

@@ -8,7 +8,7 @@ export default function VictimRepresentationEn() {
   useSEO({
     title: "Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest",
     description: "Compensation for traffic accidents and bodily harm.",
-    alternates: { en: "/en/services/victim-representation-in-criminal-cases", ro: "/servicii/reprezentarea-victimelor-in-procese-penale" },
+    alternates: { en: "/en/services/victim-representation-in-criminal-cases", ro: "/servicii/reprezentarea-victimelor-in-procese-penale" , xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale"},
     locale: "en_US",
     canonical: "/en/services/victim-representation-in-criminal-cases",
   });
