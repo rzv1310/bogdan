@@ -70,6 +70,8 @@ export default function CalculatorDespagubiri() {
   useSEO({
     title: "Calculator despăgubiri | Avocat Bogdan Lamatic",
     description: "Pagină calcul despăgubiri - în curând.",
+    canonical: "/calculator-despagubiri",
+    locale: "ro_RO",
   });
 
   const [eventType, setEventType] = useState("accident"); // accident | agresiune | altul
