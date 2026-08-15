@@ -238,7 +238,7 @@ export default function ContactEn() {
         <div className="mt-8 max-w-3xl">
           <Card>
             <CardHeader className="pb-0">
-              <CardTitle className="flex items-center gap-2 text-xl">
+              <CardTitle as="h2" className="flex items-center gap-2 text-xl">
                 <Send className="h-5 w-5" aria-hidden="true" /> Send me a request online
               </CardTitle>
             </CardHeader>

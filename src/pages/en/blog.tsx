@@ -34,7 +34,7 @@ export default function BlogEn() {
         <article>
           <Card className="transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
             <CardHeader>
-              <CardTitle>Compensation calculator</CardTitle>
+              <CardTitle as="h2">Compensation calculator</CardTitle>
               <CardDescription className="text-hero-foreground/90">Quick tool to estimate compensation.</CardDescription>
             </CardHeader>
             <CardContent>

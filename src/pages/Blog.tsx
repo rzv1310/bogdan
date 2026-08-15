@@ -35,7 +35,7 @@ export default function Blog() {
         <article>
           <Card className="transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
             <CardHeader>
-              <CardTitle>Calculator despăgubiri</CardTitle>
+              <CardTitle as="h2">Calculator despăgubiri</CardTitle>
               <CardDescription className="text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
             </CardHeader>
             <CardContent>
