@@ -175,21 +175,6 @@ const reviewsEN: Reviews3DItem[] = [
   { name: "Elena C.", text: "The best criminal lawyer in Bucharest!", stars: 5 },
   { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
-const serviceRoutes: (string | null)[] = [
-  "/servicii/urmarire-penala",
-  "/servicii/masuri-preventive",
-  "/servicii/infractiuni-contra-persoanei",
-  null,
-  "/servicii/criminalitate-economica",
-  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
-  "/servicii/investigatii-privind-activele-cripto",
-  "/servicii/cauze-penale-privind-droguri",
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
-  "/servicii/neglijenta-profesionala-si-malpraxis",
-  "/servicii/infractiuni-rutiere-cu-victime",
-  "/servicii/raspundere-penala-incidente-locul-de-munca",
-  "/servicii/reprezentarea-victimelor-in-procese-penale",
-] as const;
 
 const faqData = [
   {
