@@ -9,6 +9,7 @@ export default function Sitemap() {
     title: "Sitemap | Avocat Penal București - Toate Paginile Site-ului",
     description: "Harta completă a site-ului avocat penal București. Găsește rapid toate serviciile juridice, informațiile de contact și resursele disponibile.",
     canonical: "/harta-site",
+    alternates: { ro: "/harta-site", en: "/en/sitemap", xDefault: "/harta-site" },
   });
 
   const mainPages = [
