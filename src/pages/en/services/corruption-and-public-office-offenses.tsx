@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import MitaBarChart from "@/components/charts/MitaBarChart";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function CorruptionPublicOfficeEn() {
   useSEO({
     keywords: "bribery lawyer romania, corruption defense attorney, public office offenses lawyer",
@@ -79,6 +80,7 @@ export default function CorruptionPublicOfficeEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
         </p>
+        <ServiceSubServices path="/en/services/corruption-and-public-office-offenses" lang="en" />
 
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>

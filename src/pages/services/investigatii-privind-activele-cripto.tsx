@@ -9,6 +9,7 @@ import { isPrerender } from "@/lib/ssr-head";
 import { useState } from "react";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function InvestigatiiCripto() {
   const [pdfLoading, setPdfLoading] = useState(false);
 
@@ -171,6 +172,7 @@ export default function InvestigatiiCripto() {
         <p className="mt-3 text-sm text-muted-foreground">
           <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
         </p>
+        <ServiceSubServices path="/servicii/investigatii-privind-activele-cripto" />
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
             Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și practică aprofundată în white-collar crime, investigații corporative și compliance. Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).

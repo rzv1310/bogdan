@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function CauzeDroguri() {
   const SITE = "https://avocatpenalbucuresti.ro";
   const pageUrl = `${SITE}/servicii/cauze-penale-privind-droguri`;
@@ -138,6 +139,7 @@ export default function CauzeDroguri() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+      <ServiceSubServices path="/servicii/cauze-penale-privind-droguri" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>

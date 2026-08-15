@@ -6,6 +6,7 @@ import { Phone } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/criminal-investigation";
 const TITLE = "Criminal Investigation Lawyer Bucharest - Defense From the First Hour | Bogdan Lamatic";
 const DESCRIPTION =
@@ -142,6 +143,7 @@ export default function CriminalInvestigation() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
       </p>
+      <ServiceSubServices path="/en/services/criminal-investigation" lang="en" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>

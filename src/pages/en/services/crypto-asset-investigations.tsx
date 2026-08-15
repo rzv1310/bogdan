@@ -7,6 +7,7 @@ import EthereumCard from "@/components/crypto/EthereumCard";
 import PhoneLoader from "@/components/crypto/PhoneLoader";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function CryptoInvestigationsEn() {
   useSEO({
     keywords: "crypto lawyer romania, cryptocurrency investigations, blockchain forensics attorney",
@@ -128,6 +129,7 @@ export default function CryptoInvestigationsEn() {
           <p className="mt-3 text-sm text-muted-foreground">
             <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
           </p>
+          <ServiceSubServices path="/en/services/crypto-asset-investigations" lang="en" />
           <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
             <p>
               I am Bogdan Lamatic, attorney at the Bucharest Bar since 2007, with over 18 years of experience in criminal law and deep practice in white-collar crime, internal investigations and compliance. I have represented clients in complex, cross-border matters with digital evidence and inter-authority cooperation, including crypto cases (custody, transactions, KYC/AML, cyber fraud, money laundering).

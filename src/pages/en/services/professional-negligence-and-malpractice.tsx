@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function MalpracticeEn() {
   useSEO({
     keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
@@ -121,6 +122,7 @@ export default function MalpracticeEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
         </p>
+        <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>

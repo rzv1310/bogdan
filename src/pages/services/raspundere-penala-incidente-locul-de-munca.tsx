@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function RaspunderePenalaMunca() {
   useSEO({
     keywords: "avocat accident de munca bucuresti, raspundere penala angajator, avocat protectia muncii, răspundere penală SSM, accident mortal de muncă",
@@ -78,6 +79,7 @@ export default function RaspunderePenalaMunca() {
         <p className="mt-3 text-sm text-muted-foreground">
           <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
         </p>
+        <ServiceSubServices path="/servicii/raspundere-penala-incidente-locul-de-munca" />
 
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>

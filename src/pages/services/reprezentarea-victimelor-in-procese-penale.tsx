@@ -6,6 +6,7 @@ import { Phone, Calculator } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function ReprezentareaVictimelor() {
   useSEO({
     keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
@@ -157,6 +158,7 @@ export default function ReprezentareaVictimelor() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+      <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>

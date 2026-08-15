@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function FinancialCrimeEn() {
   useSEO({
     keywords: "financial crime lawyer romania, tax evasion defense attorney, fraud lawyer bucharest",
@@ -91,6 +92,7 @@ export default function FinancialCrimeEn() {
           <p className="mt-3 text-sm text-muted-foreground">
             <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
           </p>
+          <ServiceSubServices path="/en/services/financial-crime" lang="en" />
           <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
             <p>
               I am Bogdan Lamatic, attorney at the Bucharest Bar, with over 18 years of criminal law practice and a strong track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and abuse of office. I represent both individuals and companies in complex investigations and trials.

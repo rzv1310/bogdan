@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function CriminalitateEconomica() {
   useSEO({
     keywords: "avocat criminalitate economica, avocat evaziune fiscala bucuresti, avocat frauda financiara",
@@ -113,6 +114,7 @@ export default function CriminalitateEconomica() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+      <ServiceSubServices path="/servicii/criminalitate-economica" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
