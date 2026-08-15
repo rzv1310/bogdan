@@ -74,7 +74,7 @@ export default function InfractiuniContraPersoanei() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
-          { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/#servicii" },
+          { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/servicii" },
           { "@type": "ListItem", position: 3, name: "Infracțiuni contra persoanei", item: PAGE_URL },
         ],
       },
