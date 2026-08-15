@@ -42,7 +42,7 @@ Se creează și versiunile EN (`/en/services/police-prosecutor-questioning`, `/e
 - adăugate în `src/lib/services.ts` și `src/lib/serviceGroups.ts` ca să apară în meniu și în pagina `/servicii`
 - adăugate în pagina `Harta Site`; în `scripts/routes.mjs` prioritatea acestor 5 pagini noi va fi `0.8` (mai mică decât `0.9` a paginii `/servicii/urmarire-penala`)
 - adăugate în `public/llms.txt`
-- linkuri interne din `/servicii/urmarire-penala` și `/servicii/masuri-preventive` spre noile pagini
+- linkuri interne din `/servicii/urmarire-penala` spre noile pagini
 
 ## Verificare
 
