@@ -27,4 +27,9 @@ export const RO_TO_EN = {
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
   "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",
   "/servicii/reprezentarea-victimelor-in-procese-penale": "/en/services/victim-representation-in-criminal-cases",
+  "/servicii/audiere-politie-parchet": "/en/services/police-prosecutor-questioning",
+  "/servicii/perchezitie-domiciliara": "/en/services/home-search",
+  "/servicii/perchezitie-informatica": "/en/services/computer-search",
+  "/servicii/avocat-diicot": "/en/services/diicot-lawyer",
+  "/servicii/avocat-dna": "/en/services/dna-lawyer",
 };

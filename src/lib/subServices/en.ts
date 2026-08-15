@@ -1,0 +1,400 @@
+import type { SubServicePageData } from "@/components/services/SubServicePage";
+
+const CPP = "https://legislatie.just.ro/Public/DetaliiDocument/185907";
+const CP = "https://legislatie.just.ro/Public/DetaliiDocument/223635";
+const PARENT = { to: "/en/services/criminal-investigation", label: "criminal investigation" };
+const BIO_INTRO = "I am Bogdan Lamatic, attorney with the Bucharest Bar and more than 18 years of experience in criminal law.";
+const LEGAL500 = "I am recognised by Legal 500 as a Next Generation Partner (White-Collar Crime) 2021-2024.";
+const CONTACT =
+  "Tell me in a few sentences what happened and I will tell you concretely what the next steps are. The first assessment discussion is free.";
+
+export const policeProsecutorQuestioningEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/police-prosecutor-questioning",
+  altPath: "/servicii/audiere-politie-parchet",
+  roPath: "/servicii/audiere-politie-parchet",
+  title: "Police Questioning Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Police Questioning Lawyer Bucharest - Present at Your Statement | Bogdan Lamatic",
+  description:
+    "Police and prosecutor questioning lawyer in Bucharest - assistance with your statement, as suspect or defendant. 18+ years of experience. Call now!",
+  keywords:
+    "police questioning lawyer bucharest, prosecutor questioning lawyer, suspect statement lawyer, defendant questioning lawyer",
+  breadcrumbLabel: "Police and prosecutor questioning",
+  serviceName: "Police and prosecutor questioning lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you received a summons or a phone call for questioning?",
+    "What you say and how you say it at that moment matters more than it seems.",
+    "Do not go alone - call me before the hearing so we prepare your statement together.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist people summoned for questioning - as suspect, defendant or witness - at the Police, the Prosecutor's Office, the DNA or the DIICOT.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I prepare your statement together with you, before the hearing, based on the available documents and information.",
+        "I am physically present at the hearing, with the right to consult with you before and during it (Article 109 of the Criminal Procedure Code).",
+        "I advise you on the right to remain silent, which you may exercise at any time with no adverse consequences (Articles 78 and 83 of the Criminal Procedure Code).",
+        "I check how the statement is recorded before you sign it, so the written record reflects exactly what you said (Article 110 of the Criminal Procedure Code).",
+        "I raise objections or file requests if the hearing does not respect your procedural rights.",
+      ],
+      cta: "I need a lawyer!",
+    },
+    {
+      h2: "Why a lawyer matters from the very first hearing",
+      bullets: [
+        "Before the hearing, the judicial body must tell you in which capacity you are being questioned and what your rights are (Article 108 of the Criminal Procedure Code) - but few people know what that means in practice.",
+        "A statement given without preparation can be used against you throughout the whole case.",
+        "The difference between being questioned as a witness and as a suspect is essential - and the switch from one to the other can happen during the hearing itself.",
+      ],
+    },
+    {
+      h2: "Situations where I intervene most often",
+      paragraphs: [
+        "Questioning is often only the first step of a case that continues with searches, seizure of devices or proposals for preventive measures.",
+      ],
+      bullets: [
+        "Summons to the Police or the Prosecutor's Office, as suspect or witness.",
+        "Questioning after a home search or a computer search.",
+        "Questioning in cases handled by the DIICOT or the DNA.",
+        "Questioning followed by a proposal for a preventive measure.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Am I obliged to attend the hearing?",
+      a: "Yes, in principle attendance is mandatory. Call me before the set date so we can prepare your statement.",
+    },
+    {
+      q: "Can I refuse to give a statement?",
+      a: "Yes, the suspect and the defendant have the right to remain silent, with no adverse consequences (Articles 78 and 83 of the Criminal Procedure Code).",
+    },
+    {
+      q: "What is the difference between being questioned as a witness and as a suspect?",
+      a: "As a witness you are obliged to tell the truth; as a suspect or defendant you have the right to silence and to a lawyer. The capacity in which you are questioned must be clearly communicated to you at the start.",
+    },
+    {
+      q: "How much does assistance at a hearing cost?",
+      a: "It depends on urgency and complexity. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Procedure Code - questioning of persons, rights of the suspect and defendant (Articles 78, 83, 108-111).",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+  ],
+  contactText: CONTACT,
+  parent: PARENT,
+};
+
+export const homeSearchEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/home-search",
+  altPath: "/servicii/perchezitie-domiciliara",
+  roPath: "/servicii/perchezitie-domiciliara",
+  title: "Home Search Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Home Search Lawyer Bucharest - Beside You During the Search | Bogdan Lamatic",
+  description:
+    "Home search lawyer Bucharest - I check the legality of the warrant and assist you during the search itself. Call now!",
+  keywords: "home search lawyer, search warrant lawyer bucharest",
+  breadcrumbLabel: "Home search",
+  serviceName: "Home search lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Is a search about to happen, or has it already taken place?",
+    "Ask to see the search warrant and call me immediately.",
+    "I can be present or guide you by phone, step by step, while the search is being carried out.",
+  ],
+  bio: [
+    `${BIO_INTRO} I intervene quickly in the case of a home search - at your home or at your company premises - to check the legality of the warrant and to make sure the procedure is followed correctly.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I check the legality of the warrant issued by the judge for rights and liberties and the conditions under which the search was ordered (Articles 157-158 of the Criminal Procedure Code).",
+        "I am present or guide you by phone throughout the search, to protect your rights.",
+        "I verify compliance with the legal hours - a home search cannot start before 6:00 or after 20:00, with limited exceptions provided by law (Article 159 of the Criminal Procedure Code).",
+        "I analyse the search record and the items seized, in order to identify any irregularities.",
+        "Where appropriate, I file challenges or requests regarding the way the search was carried out.",
+      ],
+      cta: "I need a lawyer!",
+    },
+    {
+      h2: "What you should know during a search",
+      bullets: [
+        "You have the right to be present, or to have a representative or an adult family member present.",
+        "You can ask for your lawyer from this very moment - the judicial bodies must let you make contact.",
+        "A copy of the search record must be left with the searched person.",
+      ],
+    },
+    {
+      h2: "What happens after the search",
+      paragraphs: [
+        "A search is usually followed by questioning and, in more serious cases, by a proposal for a preventive measure. If your phone or laptop was seized, the procedure continues with a computer search of the data.",
+      ],
+    },
+  ],
+  faq: [
+    { q: "Can I ask to see the search warrant?", a: "Yes, you have this right - check who issued it and for what purpose." },
+    {
+      q: "At what time can a home search start?",
+      a: "Only between 6:00 and 20:00, except in cases of flagrant offense or premises open to the public at that hour (Article 159 of the Criminal Procedure Code).",
+    },
+    {
+      q: "Can I call a lawyer during the search itself?",
+      a: "Yes, call me immediately - I can guide you by phone or travel to the location, depending on the situation.",
+    },
+    {
+      q: "What happens if the search did not comply with the law?",
+      a: "I can file challenges and requests regarding the legality of the evidence obtained in this way.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Procedure Code - home search (Articles 157-159).",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+  ],
+  contactText: CONTACT,
+  parent: PARENT,
+};
+
+export const computerSearchEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/computer-search",
+  altPath: "/servicii/perchezitie-informatica",
+  roPath: "/servicii/perchezitie-informatica",
+  title: "Computer Search Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Computer Search Lawyer Bucharest - Phone, Laptop, Seized Data | Bogdan Lamatic",
+  description:
+    "Computer search lawyer Bucharest - phone, laptop or data seized in a criminal case. 18+ years of experience. Call now!",
+  keywords: "computer search lawyer, phone seizure lawyer, laptop seizure, digital data seizure",
+  breadcrumbLabel: "Computer search",
+  serviceName: "Computer search lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have your phone, laptop or other devices been seized?",
+    "Call me as soon as possible.",
+    "The moment of the seizure and the way the data is copied can be decisive for your case.",
+  ],
+  bio: [
+    `${BIO_INTRO} I intervene when your phone, laptop or other data storage devices are seized or searched in a criminal case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I check the legality of the computer search ordered by the judge for rights and liberties at the prosecutor's request (Article 168 of the Criminal Procedure Code).",
+        "I am present or assist you regarding the seizure of the phone, laptop or other data storage media.",
+        "I check whether the search was carried out by a specialist, in your presence as suspect or defendant, as required by law (Article 168 paragraphs 11-12 of the Criminal Procedure Code).",
+        "I analyse the computer search record - which data was copied, extracted or retained.",
+        "I file requests for the return of the devices or for limiting the extracted data, where the law allows it.",
+      ],
+      cta: "I need a lawyer!",
+    },
+    {
+      h2: "What you should know about a computer search",
+      bullets: [
+        "Under certain conditions the law allows copies of the data to be made instead of physically seizing the device, if the seizure would seriously affect the person's activity (Article 168 paragraph 10 of the Criminal Procedure Code).",
+        "The search of the data itself must be carried out by a specialist, not only by the investigating body.",
+        "You have the right to be present at the search of the computer system or storage medium.",
+      ],
+    },
+    {
+      h2: "Cases where it appears most often",
+      paragraphs: [
+        "Computer searches are frequent in economic crime cases, online fraud, and DIICOT or DNA files, where the data from a phone or laptop becomes the main evidence.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Can I get my phone or laptop back?",
+      a: "It depends on the stage of the case; I file requests for the return of the device when it is no longer needed as evidence.",
+    },
+    {
+      q: "What data can be copied from a phone or laptop?",
+      a: "Only data relevant to the case, and the search must be carried out by a specialist, under the conditions established by law.",
+    },
+    {
+      q: "Can I ask to be present when the data is extracted?",
+      a: "Yes, you have this right when the search is carried out on your device.",
+    },
+    {
+      q: "What should I do if my phone was seized without a warrant?",
+      a: "Call me immediately - I will check whether the seizure complied with the legal conditions.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Procedure Code - computer search and access to a computer system (Article 168).",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+  ],
+  contactText: CONTACT,
+  parent: PARENT,
+};
+
+export const diicotLawyerEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/diicot-lawyer",
+  altPath: "/servicii/avocat-diicot",
+  roPath: "/servicii/avocat-diicot",
+  title: "DIICOT Lawyer Bucharest | Bogdan Lamatic",
+  h1: "DIICOT Lawyer Bucharest - Defense in Organised Crime Cases | Bogdan Lamatic",
+  description:
+    "DIICOT lawyer Bucharest - defense in organised crime, terrorism and human trafficking cases. 18+ years of experience. Call now!",
+  keywords: "diicot lawyer bucharest, diicot case lawyer, diicot investigation lawyer",
+  breadcrumbLabel: "DIICOT lawyer",
+  serviceName: "DIICOT lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "A DIICOT case is not an ordinary criminal case.",
+    "DIICOT prosecutors work on complex cases, often with several defendants, wiretaps and simultaneous searches, and the preventive measures proposed are frequently the most severe ones.",
+    "That is why the intervention of a lawyer with specific experience before this structure matters enormously.",
+  ],
+  bio: [
+    `${BIO_INTRO} I represent people investigated by the DIICOT (Directorate for Investigating Organised Crime and Terrorism), regardless of the specific offense that is the subject of the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What the DIICOT is and what it investigates",
+      paragraphs: [
+        "The DIICOT is a specialised structure within the Prosecutor's Office attached to the High Court of Cassation and Justice, set up by Government Emergency Ordinance no. 78/2016, with competence in particular for:",
+      ],
+      bullets: [
+        "organised crime (acts committed within an organised criminal group, Article 367 of the Criminal Code);",
+        "terrorism and the financing of terrorist acts;",
+        "human trafficking (Articles 210-211 of the Criminal Code);",
+        "trafficking in high-risk and risk drugs, cybercrime, arms trafficking;",
+        "money laundering, when connected to an offense within the DIICOT's competence.",
+      ],
+      cta: "I need a lawyer!",
+    },
+    {
+      h2: "What I do for you in a DIICOT case",
+      bullets: [
+        "I analyse the case documents I have access to and check the legality of the evidence (wiretaps, searches, technical surveillance).",
+        "I defend you at hearings and, where necessary, before the judge for rights and liberties, where the DIICOT frequently proposes severe preventive measures.",
+        "I challenge preventive measures and file requests for their replacement, when there is a legal basis.",
+        "I coordinate the defense in cases with several defendants, where the strategy must be constantly adapted.",
+      ],
+      cta: "I need a lawyer!",
+    },
+  ],
+  faq: [
+    {
+      q: "Why are DIICOT cases different from ordinary ones?",
+      a: "Because they usually target organised criminal groups, involve several defendants and large volumes of evidence (wiretaps, searches), and the prosecutors are specialised in such cases.",
+    },
+    {
+      q: "Which offenses fall within the DIICOT's competence?",
+      a: "Organised crime, terrorism, human trafficking, drug trafficking, cybercrime and related money laundering, under Government Emergency Ordinance 78/2016.",
+    },
+    {
+      q: "Can the DIICOT's competence be challenged in a case?",
+      a: "Yes, if the offense does not fall within the material competence of the directorate, this can be challenged through the specific procedural remedies.",
+    },
+    {
+      q: "How much does defense in a DIICOT case cost?",
+      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+    },
+  ],
+  resources: [
+    {
+      text: "Government Emergency Ordinance no. 78/2016 on the organisation of the DIICOT, including its material competence.",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+    { text: "Criminal Code - organised criminal group (Article 367).", href: CP, linkLabel: "Legislative Portal" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT,
+};
+
+export const dnaLawyerEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/dna-lawyer",
+  altPath: "/servicii/avocat-dna",
+  roPath: "/servicii/avocat-dna",
+  title: "DNA Lawyer Bucharest | Bogdan Lamatic",
+  h1: "DNA Lawyer Bucharest - Defense in Corruption Cases | Bogdan Lamatic",
+  description:
+    "DNA lawyer Bucharest - defense in corruption cases handled by the National Anticorruption Directorate. 18+ years of experience. Call now!",
+  keywords: "dna lawyer, dna case lawyer bucharest",
+  breadcrumbLabel: "DNA lawyer",
+  serviceName: "DNA lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "A DNA case almost always carries professional and reputational stakes, besides the criminal ones.",
+    "Public officials, local elected representatives, business people or employees with decision-making roles frequently end up in such cases.",
+    "The reaction in the first stage, including at questioning or during a possible search, directly influences how the case develops.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend clients in cases handled by the National Anticorruption Directorate (DNA).`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What the DNA is and when it has competence",
+      paragraphs: [
+        "The DNA is the prosecutor's office specialised in fighting medium and high-level corruption, set up by Government Emergency Ordinance no. 43/2002. It has competence, among others, when:",
+      ],
+      bullets: [
+        "the value of the sum or asset forming the object of the corruption offense (bribery, influence peddling) exceeds the equivalent of 10,000 euro;",
+        "the material damage caused by an act assimilated to corruption exceeds the equivalent of 200,000 euro;",
+        "the act is committed by certain categories of persons (members of Parliament, members of the Government, judges, prosecutors, mayors, other officials with management or control duties), regardless of the value of the damage.",
+      ],
+      cta: "I need a lawyer!",
+    },
+    {
+      h2: "What I do for you in a DNA case",
+      bullets: [
+        "I analyse the case documents and check whether the DNA's competence conditions are met in your case.",
+        "I assist you at hearings, including at possible searches or seizures of documents from the institution's or company's premises.",
+        "I build defenses regarding the legal classification - many alleged acts of abuse of office or conflict of interest raise technical issues about competence and the elements of the offense.",
+        "I challenge preventive measures when they are proposed, as well as requests for precautionary seizure of assets.",
+      ],
+      cta: "I need a lawyer!",
+    },
+  ],
+  faq: [
+    {
+      q: "Which value thresholds trigger the DNA's competence?",
+      a: "10,000 euro for the object of corruption offenses (bribery, influence peddling) and 200,000 euro for the damage caused by assimilated acts, under Government Emergency Ordinance 43/2002.",
+    },
+    {
+      q: "Does the DNA only have competence over public officials?",
+      a: "No, it can also have competence regardless of the person's capacity, when the value thresholds above are exceeded.",
+    },
+    {
+      q: "What happens if I am accused of abuse of office?",
+      a: "I check whether the act falls within the DNA's competence (the threshold of 200,000 euro of damage, or 1,000,000 euro as the case may be) and build the defense around the concrete elements of the file.",
+    },
+    {
+      q: "How much does defense in a DNA case cost?",
+      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+    },
+  ],
+  resources: [
+    {
+      text: "Government Emergency Ordinance no. 43/2002 on the National Anticorruption Directorate, including material competence and value thresholds.",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+    {
+      text: "Law no. 78/2000 on preventing, discovering and sanctioning acts of corruption.",
+      href: CPP,
+      linkLabel: "Legislative Portal",
+    },
+  ],
+  contactText: CONTACT,
+  parent: PARENT,
+};

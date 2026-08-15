@@ -23,6 +23,11 @@ export const ROUTES = [
   "/servicii/infractiuni-rutiere-cu-victime",
   "/servicii/raspundere-penala-incidente-locul-de-munca",
   "/servicii/reprezentarea-victimelor-in-procese-penale",
+  "/servicii/audiere-politie-parchet",
+  "/servicii/perchezitie-domiciliara",
+  "/servicii/perchezitie-informatica",
+  "/servicii/avocat-diicot",
+  "/servicii/avocat-dna",
   "/harta-site",
   "/termeni-si-conditii",
   "/gdpr",
@@ -49,11 +54,31 @@ export const ROUTES = [
   "/en/services/road-traffic-offenses",
   "/en/services/workplace-criminal-liability",
   "/en/services/victim-representation-in-criminal-cases",
+  "/en/services/police-prosecutor-questioning",
+  "/en/services/home-search",
+  "/en/services/computer-search",
+  "/en/services/diicot-lawyer",
+  "/en/services/dna-lawyer",
 ];
+
+/** Sub-service (cluster) pages: lower sitemap priority than their pillar page. */
+export const SUB_SERVICE_ROUTES = new Set([
+  "/servicii/audiere-politie-parchet",
+  "/servicii/perchezitie-domiciliara",
+  "/servicii/perchezitie-informatica",
+  "/servicii/avocat-diicot",
+  "/servicii/avocat-dna",
+  "/en/services/police-prosecutor-questioning",
+  "/en/services/home-search",
+  "/en/services/computer-search",
+  "/en/services/diicot-lawyer",
+  "/en/services/dna-lawyer",
+]);
 
 /** Priority hints for the sitemap. */
 export function priorityFor(route) {
   if (route === "/" || route === "/en") return "1.0";
+  if (SUB_SERVICE_ROUTES.has(route)) return "0.8";
   if (route.startsWith("/servicii/") || route.startsWith("/en/services/")) return "0.9";
   if (["/despre-mine", "/contact", "/en/about", "/en/contact"].includes(route)) return "0.8";
   if (["/termeni-si-conditii", "/gdpr", "/politica-cookies", "/en/terms-and-conditions", "/en/gdpr", "/en/cookie-policy", "/harta-site", "/en/sitemap"].includes(route))

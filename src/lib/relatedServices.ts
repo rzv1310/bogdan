@@ -4,6 +4,11 @@ import { roToEn } from "./routeMap";
 /** Related-service map (RO paths). EN equivalents are derived via routeMap. */
 export const relatedServices: Record<string, string[]> = {
   "/servicii/urmarire-penala": [
+    "/servicii/audiere-politie-parchet",
+    "/servicii/perchezitie-domiciliara",
+    "/servicii/perchezitie-informatica",
+    "/servicii/avocat-diicot",
+    "/servicii/avocat-dna",
     "/servicii/masuri-preventive",
     "/servicii/cauze-penale-privind-droguri",
     "/servicii/criminalitate-economica",
@@ -63,6 +68,46 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/reprezentarea-victimelor-in-procese-penale",
       "/calculator-despagubiri",
   ],
+  "/servicii/audiere-politie-parchet": [
+    "/servicii/urmarire-penala",
+    "/servicii/perchezitie-domiciliara",
+    "/servicii/perchezitie-informatica",
+    "/servicii/avocat-diicot",
+    "/servicii/avocat-dna",
+    "/servicii/masuri-preventive",
+  ],
+  "/servicii/perchezitie-domiciliara": [
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/perchezitie-informatica",
+    "/servicii/avocat-diicot",
+    "/servicii/avocat-dna",
+    "/servicii/masuri-preventive",
+  ],
+  "/servicii/perchezitie-informatica": [
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/perchezitie-domiciliara",
+    "/servicii/avocat-diicot",
+    "/servicii/avocat-dna",
+    "/servicii/masuri-preventive",
+  ],
+  "/servicii/avocat-diicot": [
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/perchezitie-domiciliara",
+    "/servicii/perchezitie-informatica",
+    "/servicii/avocat-dna",
+    "/servicii/masuri-preventive",
+  ],
+  "/servicii/avocat-dna": [
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/perchezitie-domiciliara",
+    "/servicii/perchezitie-informatica",
+    "/servicii/avocat-diicot",
+    "/servicii/masuri-preventive",
+  ],
   "/servicii/reprezentarea-victimelor-in-procese-penale": [
     "/calculator-despagubiri",
     "/servicii/infractiuni-rutiere-cu-victime",
@@ -71,12 +116,22 @@ export const relatedServices: Record<string, string[]> = {
 };
 
 const extraLabelsRo: Record<string, string> = {
+  "/servicii/audiere-politie-parchet": "Audiere Poliție și Parchet",
+  "/servicii/perchezitie-domiciliara": "Percheziție domiciliară",
+  "/servicii/perchezitie-informatica": "Percheziție informatică",
+  "/servicii/avocat-diicot": "Avocat DIICOT",
+  "/servicii/avocat-dna": "Avocat DNA",
   "/calculator-despagubiri": "Calculator despăgubiri",
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
 };
 
 const extraLabelsEn: Record<string, string> = {
+  "/en/services/police-prosecutor-questioning": "Police and prosecutor questioning",
+  "/en/services/home-search": "Home search",
+  "/en/services/computer-search": "Computer search",
+  "/en/services/diicot-lawyer": "DIICOT lawyer",
+  "/en/services/dna-lawyer": "DNA lawyer",
   "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
