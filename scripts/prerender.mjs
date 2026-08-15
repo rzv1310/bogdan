@@ -105,7 +105,9 @@ function stripFancyDashes(text) {
 
 async function main() {
   const template = stripTemplateHead(await readFile(path.join(distDir, "index.html"), "utf8"));
-  const { render } = await import(path.join(root, "dist-ssr", "entry-server.js"));
+  const { render, preload } = await import(path.join(root, "dist-ssr", "entry-server.js"));
+  // Code-split routes must be resolved before synchronous SSR rendering.
+  await preload();
 
   const routes = ROUTES.slice(0, MAX_PRERENDER_PAGES);
   if (ROUTES.length > MAX_PRERENDER_PAGES) {
