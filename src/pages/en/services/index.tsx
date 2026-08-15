@@ -1,4 +1,4 @@
-import type { FC } from "react";
+
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
