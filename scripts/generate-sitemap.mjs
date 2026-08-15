@@ -8,27 +8,8 @@
 import { writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { ROUTES, SITE_ORIGIN, priorityFor } from "./routes.mjs";
+import { RO_TO_EN as PAIRS } from "./langPairs.mjs";
 
-/** RO route -> EN route pairs. Routes missing here get no hreflang links. */
-const PAIRS = {
-  "/": "/en",
-  "/despre-mine": "/en/about",
-  "/blog": "/en/blog",
-  "/contact": "/en/contact",
-  "/termeni-si-conditii": "/en/terms-and-conditions",
-  "/gdpr": "/en/gdpr",
-  "/politica-cookies": "/en/cookie-policy",
-  "/servicii/criminalitate-economica": "/en/services/financial-crime",
-  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice":
-    "/en/services/corruption-and-public-office-offenses",
-  "/servicii/investigatii-privind-activele-cripto": "/en/services/crypto-asset-investigations",
-  "/servicii/cauze-penale-privind-droguri": "/en/services/drug-offenses",
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri": "/en/services/money-laundering-and-asset-concealment",
-  "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
-  "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
-  "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",
-  "/servicii/reprezentarea-victimelor-in-procese-penale": "/en/services/victim-representation-in-criminal-cases",
-};
 
 const enToRo = Object.fromEntries(Object.entries(PAIRS).map(([ro, en]) => [en, ro]));
 
