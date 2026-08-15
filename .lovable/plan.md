@@ -22,10 +22,11 @@ Avocat DNA                  -> /servicii/avocat-dna
 Echivalent EN în „Questioning and criminal investigation”:
 
 ```text
-Police questioning              -> /en/services/police-prosecutor-questioning
-Prosecutor's office questioning -> /en/services/police-prosecutor-questioning
-Search                          -> /en/services/home-search
-DIICOT lawyer                   -> /en/services/diicot-lawyer
+Police or prosecutor questioning -> /en/services/police-prosecutor-questioning
+Home search                      -> /en/services/home-search
+Computer search                  -> /en/services/computer-search
+DIICOT lawyer                    -> /en/services/diicot-lawyer
+DNA lawyer                       -> /en/services/dna-lawyer
 ```
 
 Restul casetelor (criminalitate economică, corupție, spălare de bani, crypto, droguri, rutiere, contra persoanei, malpraxis, accidente de muncă, victime, precum și casetele care sunt ele însele subservicii: percheziție domiciliară, percheziție informatică, DIICOT, DNA, audiere) au bullet-uri fără pagini dedicate, deci acolo linkul rămâne doar pe textul final.
