@@ -25,6 +25,11 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks(id) {
+          // Rollup's CJS interop helpers are shared by many packages; keeping
+          // them in the always-loaded vendor chunk avoids dragging a heavy
+          // chunk (charts/pdf) into the initial payload just for a helper.
+          if (id.includes("commonjsHelpers") || id.includes("commonjs-dynamic-modules"))
+            return "react-vendor";
           if (!id.includes("node_modules")) return;
           if (/[\\/]node_modules[\\/](react|react-dom|scheduler|react-router|react-router-dom)[\\/]/.test(id))
             return "react-vendor";
