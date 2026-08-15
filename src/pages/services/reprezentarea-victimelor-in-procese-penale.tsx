@@ -131,8 +131,6 @@ export default function ReprezentareaVictimelor() {
 }),
         }}
       />
-        </>
-      )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
         Avocat victime infracțiuni București - Bogdan Lamatic
