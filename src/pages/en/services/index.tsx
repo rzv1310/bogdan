@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { GlowCard } from "@/components/ui/spotlight-card";
 import { Phone, ArrowRight, Briefcase } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { enServiceGroups } from "@/lib/serviceGroups";
@@ -111,27 +111,25 @@ export default function EnServicesPage() {
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">
           {enServiceGroups.map((group) => (
-            <section key={group.id} className={group.id === "economic" ? "rounded-2xl border border-primary/10 bg-primary/5 p-5 md:p-8" : undefined}>
+            <section key={group.id} className={group.id === "economic" ? "rounded-2xl border border-primary/20 p-5 md:p-8" : undefined}>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2">
                 {group.id === "economic" && <Briefcase className="h-5 w-5 text-primary" />}
                 {group.title}
               </h2>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {group.cards.map((card) => (
-                  <Card key={card.to} className="flex flex-col h-full border-border bg-card">
-                    <CardHeader className="pb-3">
-                      <h3 className="text-lg font-semibold leading-snug">
-                        <Link to={card.to} className="hover:text-primary hover:underline underline-offset-2">
+                  <GlowCard key={card.to} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full h-full">
+                    <article className="flex flex-col h-full text-hero-foreground">
+                      <h3 className="text-lg font-semibold leading-snug mb-3">
+                        <Link to={card.to} className="hover:text-accent hover:underline underline-offset-2">
                           {card.title}
                         </Link>
                       </h3>
-                    </CardHeader>
-                    <CardContent className="flex-1 flex flex-col">
-                      <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
-                      <ul className="mt-4 space-y-1.5 text-sm">
+                      <p className="text-sm text-hero-foreground/80 leading-relaxed">{card.description}</p>
+                      <ul className="mt-4 space-y-1.5 text-sm text-hero-foreground/90">
                         {card.subServices.map((sub) => (
                           <li key={sub} className="flex items-start gap-2">
-                            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
                             <span>{sub}</span>
                           </li>
                         ))}
@@ -139,13 +137,13 @@ export default function EnServicesPage() {
                       <div className="mt-auto pt-5">
                         <Link
                           to={card.to}
-                          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline underline-offset-2"
+                          className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline underline-offset-2"
                         >
                           {card.cta} <ArrowRight className="h-3.5 w-3.5" />
                         </Link>
                       </div>
-                    </CardContent>
-                  </Card>
+                    </article>
+                  </GlowCard>
                 ))}
               </div>
             </section>
@@ -158,7 +156,9 @@ export default function EnServicesPage() {
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             Every case is different. Call me directly and I will tell you in a few minutes how I can help and what the best strategy is for you.
           </p>
-          <CallCta label="Call the attorney" />
+          <div className="flex justify-center">
+            <CallCta label="Call the attorney" />
+          </div>
         </section>
       </div>
     </main>
