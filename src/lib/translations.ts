@@ -37,6 +37,11 @@ export const translations = {
       "apărare rapidă și eficientă, de la audieri până la instanță.",
       "disponibilitate 16 ore pe zi.",
     ],
+    homeBio: {
+      name: "Avocat Bogdan Lamatic",
+      line1: "Baroul București · 18+ ani experiență",
+      line2: "Legal 500 · White-Collar Crime",
+    },
     ctaTitle: "Situația ta nu poate aștepta",
     ctaText:
       "În drept penal, fiecare oră contează. Sună-mă Azi pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
