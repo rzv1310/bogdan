@@ -49,4 +49,4 @@ O căutare în cod (`rg -n "2021-2024" .`) a identificat 27 de apariții în 27 
 
 ## Ce NU se schimbă
 - Referințele individuale pe ani din `About.tsx`, `Index.tsx`, `Homepage.tsx` și denumirile fișierelor imagine cu anii 2021–2024 rămân neschimbate.
-- Textul `2020-2024` de pe pagina de infracțiuni rutiere nu este modificat, deoarece utilizatorul a cerut doar contextul `2021-2024`.
+- Se elimină și `2020-2024` din `infractiuni-rutiere-cu-victime.tsx` (`Rising Star / Next Generation Partner - 2020-2024` → `Rising Star / Next Generation Partner`), precum și mențiunea anului `2020` unde apare în același context Legal 500 (ex. `și Rising Star în 2020,` → `și Rising Star,` în pagina de corupție).
