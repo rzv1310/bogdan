@@ -1,26 +1,11 @@
-export const roToEn: Record<string, string> = {
-  "/contact": "/en/contact",
-  "/termeni-si-conditii": "/en/terms-and-conditions",
-  "/gdpr": "/en/gdpr",
-  "/politica-cookies": "/en/cookie-policy",
-  "/blog": "/en/blog",
-  "/despre-mine": "/en/about",
-  "/servicii": "/en/services",
-  "/harta-site": "/en/sitemap",
-  "/calculator-despagubiri": "/en/compensation-calculator",
-  "/servicii/urmarire-penala": "/en/services/criminal-investigation",
-  "/servicii/masuri-preventive": "/en/services/preventive-measures",
-  "/servicii/infractiuni-contra-persoanei": "/en/services/offenses-against-persons",
-  "/servicii/criminalitate-economica": "/en/services/financial-crime",
-  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "/en/services/corruption-and-public-office-offenses",
-  "/servicii/investigatii-privind-activele-cripto": "/en/services/crypto-asset-investigations",
-  "/servicii/cauze-penale-privind-droguri": "/en/services/drug-offenses",
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri": "/en/services/money-laundering-and-asset-concealment",
-  "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
-  "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
-  "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",
-  "/servicii/reprezentarea-victimelor-in-procese-penale": "/en/services/victim-representation-in-criminal-cases",
-};
+import { RO_TO_EN } from "../../scripts/langPairs.mjs";
+
+// The homepage pair is handled by the fallbacks below, so it is excluded here
+// to keep the previous behaviour of the language switcher.
+export const roToEn: Record<string, string> = Object.fromEntries(
+  Object.entries(RO_TO_EN as Record<string, string>).filter(([ro]) => ro !== "/")
+);
+
 
 export const enToRo: Record<string, string> = Object.fromEntries(
   Object.entries(roToEn).map(([ro, en]) => [en, ro])
