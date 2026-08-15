@@ -880,10 +880,9 @@ const Index = () => {
                 const yearsText = lang === "ro" ? "- de 18 ani lângă tine !" : "- 18 years by your side !";
                 return (
                   <>
-                    {/* Mobile: author and years on the same row */}
+                    {/* Mobile: author only */}
                     <p className="md:hidden mt-2 text-[18px] italic font-light font-signature text-right whitespace-nowrap py-[11px] px-[22px]">
-                      {t.heroAuthor}{" "}
-                      <span className="text-base text-hero-foreground/80">{yearsText}</span>
+                      {t.heroAuthor}
                     </p>
                     {/* Tablet/Desktop: keep original two-row layout */}
                     <div className="hidden md:block">
