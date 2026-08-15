@@ -112,36 +112,47 @@ export default function CryptoInvestigationsEn() {
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-6">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Investigations regarding crypto assets</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl font-semibold">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
-          <p className="mt-3 text-muted-foreground leading-relaxed">
-            I am Bogdan Lamatic, attorney at the Bucharest Bar (since 2007), with deep practice in white-collar crime,
-            internal investigations and compliance. I have represented clients in complex, cross-border matters with
-            digital evidence and inter-authority cooperation, including crypto cases (custody, transactions, KYC/AML,
-            cyber fraud, money laundering).
+          <h1 className="text-2xl font-semibold">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            <strong>In crypto investigations, the first hours matter most.</strong> Wallets can be frozen, exchange accounts blocked and digital evidence seized before you are even formally notified. How you react from day one can decide whether the case is closed or turns into a lengthy money laundering trial.
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-3">
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40316320183" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
             </Button>
           </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+          </p>
+          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+            <p>
+              I am Bogdan Lamatic, attorney at the Bucharest Bar since 2007, with over 18 years of experience in criminal law and deep practice in white-collar crime, internal investigations and compliance. I have represented clients in complex, cross-border matters with digital evidence and inter-authority cooperation, including crypto cases (custody, transactions, KYC/AML, cyber fraud, money laundering).
+            </p>
+            <p>
+              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Services</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Investigations regarding crypto assets</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
         </header>
+
 
         {/* What types of crypto matters I handle */}
         <section className="mt-8">
