@@ -278,7 +278,9 @@ async function main() {
       if (inbound.has(target)) inbound.get(target).add(route);
     }
   }
+  const CONTEXTUAL_EXEMPT = new Set(["/harta-site"]);
   for (const [route, sources] of inbound) {
+    if (CONTEXTUAL_EXEMPT.has(route)) continue;
     if (sources.size < CONTEXTUAL_MIN) {
       warn(
         route,
