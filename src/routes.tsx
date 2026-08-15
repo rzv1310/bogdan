@@ -2,7 +2,10 @@ import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Layout from "./components/layout/Layout";
+import RouteErrorBoundary from "./components/RouteErrorBoundary";
+import RouteFallback from "./components/RouteFallback";
 import { lazyRoute } from "./lib/lazyRoute";
+
 
 // Everything except the homepage is code-split, so the initial JS payload only
 // carries the code needed for the landing page.
@@ -79,7 +82,9 @@ const CompensationCalculatorEn = lazyRoute(() => import("./pages/en/compensation
 
 export default function AppRoutes() {
   return (
-    <Suspense fallback={null}>
+    <RouteErrorBoundary>
+    <Suspense fallback={<RouteFallback />}>
+
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Index />} />
@@ -146,5 +151,7 @@ export default function AppRoutes() {
         </Route>
       </Routes>
     </Suspense>
+    </RouteErrorBoundary>
+
   );
 }
