@@ -19,6 +19,25 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Keep heavy libraries in their own chunks so they never land in the
+    // initial payload of the landing page.
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+          if (/[\\/]node_modules[\\/](react|react-dom|scheduler|react-router|react-router-dom)[\\/]/.test(id))
+            return "react-vendor";
+          if (id.includes("@react-pdf") || id.includes("pdfkit") || id.includes("fontkit")) return "pdf";
+          if (id.includes("/docx/")) return "docx";
+          if (id.includes("recharts") || id.includes("d3-") || id.includes("victory-vendor")) return "charts";
+          if (id.includes("html-to-image")) return "html-to-image";
+          if (id.includes("framer-motion")) return "motion";
+          if (id.includes("styled-components")) return "styled";
+        },
+      },
+    },
+  },
   // Build-time prerender: these packages ship CJS/ESM interop that breaks when
   // externalized in the SSR bundle, so bundle them instead.
   ssr: {
