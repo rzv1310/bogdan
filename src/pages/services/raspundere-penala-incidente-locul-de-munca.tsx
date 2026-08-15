@@ -86,7 +86,7 @@ export default function RaspunderePenalaMunca() {
             Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white-collar crime. Asist angajatori, administratori și persoane cu atribuții SSM în investigații penale privind accidentele de muncă și nerespectarea normelor de securitate.
           </p>
           <p>
-            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
           </p>
         </div>
 

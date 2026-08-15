@@ -88,7 +88,7 @@ export default function DrugOffensesEn() {
             I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I have defended clients in DIICOT investigations and court trials involving drug trafficking, possession for personal use and organized criminal groups.
           </p>
           <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
           </p>
         </div>
 

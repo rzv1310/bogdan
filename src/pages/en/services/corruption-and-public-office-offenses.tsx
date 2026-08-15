@@ -87,7 +87,7 @@ export default function CorruptionPublicOfficeEn() {
             I am Bogdan Lamatic, a pleading lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I coordinate the defense in corruption and service-related cases, from internal investigation to final verdict.
           </p>
           <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
           </p>
         </div>
 

@@ -135,7 +135,7 @@ export default function CryptoInvestigationsEn() {
               I am Bogdan Lamatic, attorney at the Bucharest Bar since 2007, with over 18 years of experience in criminal law and deep practice in white-collar crime, internal investigations and compliance. I have represented clients in complex, cross-border matters with digital evidence and inter-authority cooperation, including crypto cases (custody, transactions, KYC/AML, cyber fraud, money laundering).
             </p>
             <p>
-              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
             </p>
           </div>
           <div className="mt-6">

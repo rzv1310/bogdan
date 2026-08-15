@@ -178,7 +178,7 @@ export default function InvestigatiiCripto() {
             Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și practică aprofundată în white-collar crime, investigații corporative și compliance. Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).
           </p>
           <p>
-            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
           </p>
         </div>
         <div className="mt-6">

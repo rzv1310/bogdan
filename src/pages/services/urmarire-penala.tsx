@@ -152,7 +152,7 @@ export default function UrmarirePenala() {
           Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Asist persoane citate, reținute, percheziționate sau aflate în orice etapă a fazei de urmărire penală - de la primul telefon primit de la poliție sau parchet, până la soluția procurorului.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
         </p>
       </div>
 
