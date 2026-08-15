@@ -780,7 +780,7 @@ const HomepageEN = () => {
             </div>
             <div className="mt-12 flex justify-center">
               <img
-                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.webp"
                 alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
                 title="Criminal defense lawyer Bucharest Bogdan Lamatic"
                 loading="lazy"
