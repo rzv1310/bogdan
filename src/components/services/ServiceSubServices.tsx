@@ -16,7 +16,7 @@ const ServiceSubServices = ({ path, lang = "ro" }: ServiceSubServicesProps) => {
   if (!card || card.subServices.length === 0) return null;
 
   return (
-    <ul className="mt-4 space-y-3">
+    <ul className="mt-8 space-y-3">
       {card.subServices.map((sub) =>
         sub.to ? (
           <li key={sub.label} className={ITEM_CLASS}>
