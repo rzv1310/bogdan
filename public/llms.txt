@@ -19,6 +19,16 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 
 ## Services
 
+- [Audiere Poliție și Parchet](/servicii/audiere-politie-parchet): Asistență la audiere ca suspect, inculpat sau martor.
+- [Police and Prosecutor Questioning](/en/services/police-prosecutor-questioning): Assistance during questioning.
+- [Percheziție domiciliară](/servicii/perchezitie-domiciliara): Asistență în timpul percheziției la domiciliu sau la firmă.
+- [Home Search](/en/services/home-search): Assistance during a home or company search.
+- [Percheziție informatică](/servicii/perchezitie-informatica): Ridicare telefon, laptop, date informatice.
+- [Computer Search](/en/services/computer-search): Phone, laptop and digital data seizure.
+- [Avocat DIICOT](/servicii/avocat-diicot): Apărare în anchete DIICOT - criminalitate organizată, terorism, trafic de persoane.
+- [DIICOT Lawyer](/en/services/diicot-lawyer): Defense in DIICOT investigations.
+- [Avocat DNA](/servicii/avocat-dna): Apărare în dosare de corupție instrumentate de DNA.
+- [DNA Lawyer](/en/services/dna-lawyer): Defense in DNA corruption cases.
 - [Avocat Drept Penal](/servicii/criminalitate-economica): Criminalitate economică - fraude, delapidare, fals, evaziune fiscală.
 - [Economic Crime](/en/services/financial-crime): Financial crime defense.
 - [Infracțiuni de corupție](/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice): Mită, abuz în serviciu, trafic de influență.
