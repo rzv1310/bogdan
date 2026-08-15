@@ -231,6 +231,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             {section.paragraphs?.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+            {section.callout && (
+              <p className="border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md">
+                {section.callout}
+              </p>
+            )}
             {section.bullets && section.bullets.length > 0 && (
               <ul className="list-disc pl-6 space-y-2">
                 {section.bullets.map((bullet, idx) => (
