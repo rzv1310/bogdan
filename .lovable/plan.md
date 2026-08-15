@@ -8,7 +8,7 @@
    Pagini afectate: cele 24 de pagini de servicii principale (RO + EN), unde breadcrumbs sunt acum sub hero, plus paginile de subservicii (10, prin componenta comună) și paginile unde ordinea diferă (Blog RO/EN, Sitemap/Harta site, Calculator, GDPR, Cookies, Termeni, Contact, Despre) - acolo unde breadcrumb-ul este deja primul, rămâne neschimbat.
 
 2. **Eliminare frază din paginile de subservicii**
-   Se șterge complet rândul „Această pagină face parte din serviciile de ...” / „This page is part of my ... services.” din componenta comună de subservicii, deci dispare din toate paginile actuale și viitoare. Linkul către pagina-părinte rămâne disponibil prin breadcrumbs și prin secțiunea Servicii conexe.
+   Se șterge complet rândul „Această pagină face parte din serviciile de ...” / „This page is part of my ... services.” din componenta comună de subservicii, deci dispare din toate paginile actuale și viitoare. Linkul către pagina-părinte rămâne clickable în breadcrumbs și prin secțiunea Servicii conexe.
 
 3. **Padding mai generos sub hero**
    Spațiul dintre blocul hero (bio / bullets subservicii) și prima secțiune de conținut crește (de la `mt-8` la `mt-12` pe mobil, ceva mai mult pe desktop), consecvent pe paginile de servicii și subservicii.
