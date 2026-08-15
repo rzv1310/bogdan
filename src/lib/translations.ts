@@ -45,72 +45,47 @@ export const translations = {
     googleReviews: "din 27 de recenzii Google",
     ctaLawyerButton: "Vreau avocat!",
     rightsReserved: "Toate drepturile rezervate.",
-    servicesTitle: "Servicii | Arii de practică",
+    servicesTitle: "Cum te pot ajuta",
     services: [
       {
-        title: "Avocat urmărire penală",
-        body:
-          "Intervin din prima oră a anchetei: asistență la audieri, în caz de reținere, arestare preventivă, percheziții și ridicări de bunuri. În faza de urmărire penală se construiesc probele, așa că apărarea începută imediat poate schimba decisiv soluția dosarului.",
+        title: "Urgențe penale",
+        body: "Asistență imediată la audieri, reținere, percheziții sau ridicări de bunuri. Intervin rapid, inclusiv în afara programului.",
+        to: "/servicii/urmarire-penala",
       },
       {
-        title: "Avocat măsuri preventive",
-        body:
-          "Intervin imediat la reținere, control judiciar, control judiciar pe cauțiune, arest la domiciliu și arestare preventivă: formulez apărări în fața judecătorului de drepturi și libertăți, contest prelungirile și cer înlocuirea măsurii cu una mai ușoară atunci când există temei.",
+        title: "Criminalitate economică",
+        body: "Apărare în dosare de evaziune fiscală, fraudă, delapidare, fals sau fonduri europene.",
+        to: "/servicii/criminalitate-economica",
       },
       {
-        title: "Avocat infracțiuni contra persoanei",
-        body:
-          "Apăr persoane acuzate de infracțiuni contra persoanei: loviri și alte violențe, vătămare corporală, violență în familie, amenințare, șantaj, hărțuire, lipsire de libertate, precum și infracțiuni contra libertății și integrității sexuale. Intervin din prima fază a cauzei, cu discreție absolută.",
+        title: "Droguri și DIICOT",
+        body: "Reprezentare în cauze de trafic sau deținere de droguri, grup infracțional organizat și anchete DIICOT.",
+        to: "/servicii/cauze-penale-privind-droguri",
       },
       {
-        title: "Avocat Drept Penal",
-        body:
-          "Am o vastă experiență în reprezentarea clienților în fața tuturor instanțelor de judecată, începând cu cele cu grad de jurisdicție inferior și până la Înalta Curte de Casație și Justiție, precum și la toate nivelurile unităților de parchet de pe lângă instanțele de judecată (de la instanțe ordinare până la Înalta Curte de Casație și Justiție, inclusiv structuri specializate - Direcția Națională Anticorupție, Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism și Parchetul European). Cele mai multe dintre cazurile mele prezintă un grad ridicat de complexitate, incluzând documentație voluminoasă și activități de cercetare pluridisciplinară.",
+        title: "Corupție",
+        body: "Consultanță și apărare în dosare de mită, trafic de influență, abuz în serviciu sau conflict de interese.",
+        to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
       },
       {
-        title: "Apărare în cauze de criminalitate economică",
-        body:
-          "Reprezint persoane fizice și juridice în dosare privind fraude, delapidare, fals și evaziune fiscală. Abordarea mea îmbină cunoștințe aprofundate despre mecanismele economice cu o solidă expertiză juridică.",
+        title: "Spălare de bani",
+        body: "Apărare în investigații de spălare a banilor, sechestru, confiscare extinsă sau ascundere de bunuri.",
+        to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
       },
       {
-        title: "Reprezentare în infracțiuni de corupție și fapte legate de exercitarea funcției publice",
-        body:
-          "Acord consultanță și apăr clienți acuzați de dare sau luare de mită, abuz în serviciu, trafic de influență, obținere nelegală de foloase și conflict de interese, asigurând o abordare discretă și strategică pe tot parcursul procedurii.",
+        title: "Infracțiuni rutiere",
+        body: "Apărare în cazuri de alcool sau droguri la volan, accidente cu victime sau refuz de probe.",
+        to: "/servicii/infractiuni-rutiere-cu-victime",
       },
       {
-        title: "Asistență juridică în investigații privind activele cripto",
-        body:
-          "Gestionez cauze ce implică tranzacții ilicite cu criptomonede, dețineri nedeclarate de active digitale și fraude asociate tehnologiilor blockchain - un domeniu în continuă evoluție, ce necesită atât claritate juridică, cât și înțelegere tehnică.",
+        title: "Crypto",
+        body: "Investigații și apărare în cauze cu criptomonede, blockchain, NFT sau smart contracts.",
+        to: "/servicii/investigatii-privind-activele-cripto",
       },
       {
-        title: "Reprezentare în cauze penale legate de droguri",
-        body:
-          "Apăr clienți acuzați de deținere, trafic de droguri sau conducere sub influența substanțelor psihoactive, asigurând respectarea deplină a garanțiilor procedurale și a standardelor probatorii.",
-      },
-      {
-        title: "Apărare în dosare de spălare de bani și ascundere de bunuri",
-        body:
-          "Reprezint clienți în investigații și procese privind ascunderea sau spălarea produselor provenite din activități infracționale, oferind o apărare solidă în contexte financiare complexe.",
-      },
-      {
-        title: "Gestionarea cazurilor de neglijență profesională și malpraxis",
-        body:
-          "Acord asistență profesioniștilor (din domeniul medical, juridic sau tehnic) acuzați de răspundere penală ca urmare a unor erori sau încălcări ale îndatoririlor de serviciu, construind apărări bine documentate și fundamentate tehnic.",
-      },
-      {
-        title: "Reprezentare în infracțiuni rutiere cu victime",
-        body:
-          "Reprezint clienți în cazuri de accidente rutiere grave, inclusiv cele soldate cu vătămări corporale sau deces, tratând cauza cu rigoare juridică și înțelegere umană.",
-      },
-      {
-        title: "Răspundere penală pentru incidente la locul de muncă",
-        body:
-          "Acord consultanță și apăr persoane fizice sau juridice acuzate în legătură cu accidente de muncă, încălcări ale normelor de securitate sau neglijență a angajatorului, mai ales în cazurile cu consecințe penale.",
-      },
-      {
-        title: "Reprezentarea victimelor în procese penale",
-        body:
-          "Ofer asistență persoanelor vătămate în vederea obținerii despăgubirilor pentru prejudicii cauzate prin fapte penale, inclusiv accidente rutiere, malpraxis medical și alte daune personale sau materiale. Aceasta include reprezentare juridică în fața organelor de urmărire penală și a instanțelor, precum și asistență în negocieri pentru soluționări amiabile și despăgubiri echitabile.",
+        title: "Victime și despăgubiri",
+        body: "Reprezentarea persoanelor vătămate pentru recuperarea prejudiciului și constituirea ca parte civilă.",
+        to: "/servicii/reprezentarea-victimelor-in-procese-penale",
       },
     ],
   },
@@ -156,57 +131,47 @@ export const translations = {
     googleReviews: "from 27 Google reviews",
     ctaLawyerButton: "I need a lawyer!",
     rightsReserved: "All rights reserved.",
-    servicesTitle: "CRIMINAL JUSTICE ATTORNEY PRACTICE AREAS",
+    servicesTitle: "How I can help",
     services: [
       {
-        title: "CRIMINAL LAW",
-        body:
-          "I have extensive experience representing clients before all courts of law, from lower jurisdiction courts to the High Court of Cassation and Justice, as well as before all levels of the prosecutor’s offices attached to the courts (including specialized structures - the National Anticorruption Directorate, the Directorate for Investigating Organized Crime and Terrorism, and the European Public Prosecutor’s Office). Most of my cases are highly complex, involving extensive documentation and multidisciplinary research.",
+        title: "Urgent criminal matters",
+        body: "Immediate assistance during questioning, detention, searches or asset seizures. I act quickly, even outside office hours.",
+        to: "/en/services/criminal-investigation",
       },
       {
-        title: "Defense in financial crime cases",
-        body:
-          "I represent individuals and companies in cases involving fraud, embezzlement, forgery, and tax evasion. My approach combines deep knowledge of economic mechanisms with strong legal insight.",
+        title: "Economic crime",
+        body: "Defense in tax evasion, fraud, embezzlement, forgery and EU funds cases.",
+        to: "/en/services/financial-crime",
       },
       {
-        title: "Representation in corruption and public office-related offenses",
-        body:
-          "I advise and defend clients facing allegations such as bribery, abuse of office, influence peddling, unlawful financial benefits, and conflict of interest, ensuring a discreet and strategic approach throughout.",
+        title: "Drugs and DIICOT",
+        body: "Representation in drug trafficking, possession, organized crime and DIICOT investigations.",
+        to: "/en/services/drug-offenses",
       },
       {
-        title: "Legal support in crypto-asset-related investigations",
-        body:
-          "I handle cases involving illicit crypto transactions, undeclared digital asset holdings, and fraud involving blockchain technologies - a fast-evolving field that requires both legal clarity and technical understanding.",
+        title: "Corruption",
+        body: "Advice and defense in bribery, influence peddling, abuse of office and conflict-of-interest cases.",
+        to: "/en/services/corruption-and-public-office-offenses",
       },
       {
-        title: "Representation in drug-related criminal cases",
-        body:
-          "I defend clients accused of drug possession, trafficking, and driving under the influence of psychoactive substances, ensuring full respect of procedural safeguards and evidentiary standards.",
+        title: "Money laundering",
+        body: "Defense in money laundering, asset seizure, extended confiscation and concealment of assets cases.",
+        to: "/en/services/money-laundering-and-asset-concealment",
       },
       {
-        title: "Defense in money laundering and asset concealment proceedings",
-        body:
-          "I represent clients in investigations and trials concerning the concealment or laundering of proceeds derived from criminal activity, offering a robust defense in complex financial contexts.",
+        title: "Road traffic offenses",
+        body: "Defense in drunk or drug driving, accidents with victims and refusal of tests.",
+        to: "/en/services/road-traffic-offenses",
       },
       {
-        title: "Handling cases of professional negligence and malpractice",
-        body:
-          "I assist professionals (medical, legal, or technical) charged with criminal liability arising from errors or breaches of duty, building well-documented and technically grounded defenses.",
+        title: "Crypto",
+        body: "Investigations and defense in cases involving cryptocurrencies, blockchain, NFTs and smart contracts.",
+        to: "/en/services/crypto-asset-investigations",
       },
       {
-        title: "Representation in road traffic offenses resulting in injury or death",
-        body:
-          "I represent clients in cases involving serious traffic accidents, including those leading to bodily harm or fatality, ensuring that the case is addressed with both legal precision and human understanding.",
-      },
-      {
-        title: "Criminal liability in workplace-related incidents",
-        body:
-          "I advise and defend individuals or legal entities charged in relation to work accidents, safety breaches, or employer negligence, particularly where criminal consequences are pursued.",
-      },
-      {
-        title: "Representation of victims in criminal proceedings",
-        body:
-          "I also assist injured parties in seeking compensation for harm caused by criminal acts, including traffic accidents, medical malpractice, and other personal or material damage. This includes legal representation before investigative and judicial authorities, as well as assistance during negotiations aimed at amicable settlements and fair compensation.",
+        title: "Victims and compensation",
+        body: "Representation of injured parties to recover damages and establish civil-party status.",
+        to: "/en/services/victim-representation-in-criminal-cases",
       },
     ],
   },
