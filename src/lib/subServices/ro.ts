@@ -265,10 +265,22 @@ export const perchezitieInformaticaRo: SubServicePageData = {
     {
       h2: "Ce trebuie să știi despre telefonul sau laptopul ridicat",
       bullets: [
-        "Ridicarea dispozitivului nu este același lucru cu percheziția datelor. În cursul urmăririi penale, cercetarea sistemului sau a suportului în condițiile art. 168 este supusă autorizării judiciare prevăzute de Cod.",
-        "Mandatul trebuie să identifice sistemul sau suportul vizat. Încheierea prin care este autorizată percheziția trebuie să precizeze, între altele, scopul și sistemul informatic sau suportul de stocare care urmează să fie percheziționat.",
-        "Pot fi realizate copii ale datelor. Dacă ridicarea obiectelor ar afecta grav desfășurarea activității persoanei care le deține, procurorul poate dispune, în condițiile legii, efectuarea unor copii care să servească drept mijloc de probă.",
-        "Operațiunile trebuie consemnate. Procesul-verbal trebuie să descrie sistemele sau suporturile vizate, activitățile efectuate și datele informatice descoperite cu ocazia percheziției.",
+        {
+          bold: "Ridicarea dispozitivului nu este același lucru cu percheziția datelor.",
+          rest: "În cursul urmăririi penale, cercetarea sistemului sau a suportului în condițiile art. 168 este supusă autorizării judiciare prevăzute de Cod.",
+        },
+        {
+          bold: "Mandatul trebuie să identifice sistemul sau suportul vizat.",
+          rest: "Încheierea prin care este autorizată percheziția trebuie să precizeze, între altele, scopul și sistemul informatic sau suportul de stocare care urmează să fie percheziționat.",
+        },
+        {
+          bold: "Pot fi realizate copii ale datelor.",
+          rest: "Dacă ridicarea obiectelor ar afecta grav desfășurarea activității persoanei care le deține, procurorul poate dispune, în condițiile legii, efectuarea unor copii care să servească drept mijloc de probă.",
+        },
+        {
+          bold: "Operațiunile trebuie consemnate.",
+          rest: "Procesul-verbal trebuie să descrie sistemele sau suporturile vizate, activitățile efectuate și datele informatice descoperite cu ocazia percheziției.",
+        },
       ],
       paragraphs: [
         "Această documentare este importantă atunci când analizăm ulterior ce s-a făcut efectiv și dacă operațiunile au rămas în limitele procedurale aplicabile.",

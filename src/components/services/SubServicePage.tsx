@@ -11,7 +11,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 export interface SubServiceSection {
   h2: string;
   paragraphs?: string[];
-  bullets?: string[];
+  bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
   /** Optional list of inline service links (text-only when `to` is missing). */
@@ -231,8 +231,17 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             ))}
             {section.bullets && section.bullets.length > 0 && (
               <ul className="list-disc pl-6 space-y-2">
-                {section.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
+                {section.bullets.map((bullet, idx) => (
+                  <li key={idx}>
+                    {typeof bullet === "string" ? (
+                      bullet
+                    ) : (
+                      <>
+                        <span className="font-semibold text-foreground">{bullet.bold}</span>{" "}
+                        {bullet.rest}
+                      </>
+                    )}
+                  </li>
                 ))}
               </ul>
             )}
