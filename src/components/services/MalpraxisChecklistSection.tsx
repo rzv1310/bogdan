@@ -1,12 +1,15 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { pdf } from "@react-pdf/renderer";
-import MalpraxisChecklistPDF from "@/components/pdf/MalpraxisChecklistPDF";
 
 export default function MalpraxisChecklistSection() {
 
   const handleDownload = async () => {
     const win = window.open("about:blank");
+    // Heavy PDF renderer loaded on demand, not with the page.
+    const [{ pdf }, { default: MalpraxisChecklistPDF }] = await Promise.all([
+      import("@react-pdf/renderer"),
+      import("@/components/pdf/MalpraxisChecklistPDF"),
+    ]);
     const blob = await pdf(<MalpraxisChecklistPDF />).toBlob();
     const url = URL.createObjectURL(blob);
     if (win) {

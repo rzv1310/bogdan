@@ -5,12 +5,32 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import EthereumCard from "@/components/crypto/EthereumCard";
 import PhoneLoader from "@/components/crypto/PhoneLoader";
-import { PDFDownloadLink } from "@react-pdf/renderer";
 import { isPrerender } from "@/lib/ssr-head";
-import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
+import { useState } from "react";
 
 import RelatedServices from "@/components/RelatedServices";
 export default function InvestigatiiCripto() {
+  const [pdfLoading, setPdfLoading] = useState(false);
+
+  // The PDF renderer (~heavy) is only downloaded when the visitor asks for the file.
+  const handleChecklistDownload = async () => {
+    setPdfLoading(true);
+    try {
+      const [{ pdf }, { default: AnafCryptoChecklist }] = await Promise.all([
+        import("@react-pdf/renderer"),
+        import("@/components/pdf/AnafCryptoChecklist"),
+      ]);
+      const blob = await pdf(<AnafCryptoChecklist />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "checklist-anaf-cripto-2025.pdf";
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 30000);
+    } finally {
+      setPdfLoading(false);
+    }
+  };
   useSEO({
     keywords: "avocat crypto, avocat criptomonede, investigatii blockchain",
     canonical: "/servicii/investigatii-privind-activele-cripto",
@@ -490,13 +510,9 @@ export default function InvestigatiiCripto() {
             {isPrerender ? (
               <Button variant="light" size="lg">Descarcă PDF Gratuit</Button>
             ) : (
-              <PDFDownloadLink document={<AnafCryptoChecklist />} fileName="checklist-anaf-cripto-2025.pdf">
-                {({ loading }) => (
-                  <Button disabled={loading} variant="light" size="lg">
-                    {loading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
-                  </Button>
-                )}
-              </PDFDownloadLink>
+              <Button disabled={pdfLoading} variant="light" size="lg" onClick={handleChecklistDownload}>
+                {pdfLoading ? "Pregătesc PDF..." : "Descarcă PDF Gratuit"}
+              </Button>
             )}
           </CardContent>
         </Card>
