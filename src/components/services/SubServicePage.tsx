@@ -161,10 +161,28 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         {isEn ? "5.0 from 27 Google reviews" : "5,0 din 27 de recenzii Google"}
       </p>
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        {data.bio.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
+      <div className="mt-6 flex items-center gap-4">
+        <img
+          src="/lovable-uploads/avocat_bogdan_lamatic_headshot.webp"
+          alt={isEn ? "Bogdan Lamatic, criminal defence lawyer in Bucharest" : "Avocat Bogdan Lamatic, drept penal București"}
+          width={72}
+          height={72}
+          loading="lazy"
+          decoding="async"
+          className="h-[72px] w-[72px] rounded-full object-cover border border-accent"
+        />
+        <div className="text-sm leading-relaxed">
+          <span className="block text-base font-semibold text-foreground">
+            {isEn ? "Lawyer Bogdan Lamatic" : "Avocat Bogdan Lamatic"}
+          </span>
+          <span className="block text-muted-foreground">
+            {isEn ? "Bucharest Bar · 18+ years of experience" : "Baroul București · 18+ ani experiență"}
+          </span>
+          <span className="block text-muted-foreground">Legal 500 · White-Collar Crime</span>
+        </div>
+      </div>
+
+      <div className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
           {isEn ? "This page is part of my " : "Această pagină face parte din serviciile de "}
           <Link to={data.parent.to} className="text-primary underline underline-offset-2">
@@ -173,6 +191,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           {isEn ? " services." : "."}
         </p>
       </div>
+
 
       <div className="mt-6">
         <Breadcrumb>
