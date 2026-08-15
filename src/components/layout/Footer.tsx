@@ -11,12 +11,57 @@ import { useState } from "react";
 export default function Footer() {
   const { lang } = useLanguage();
   const { openPreferences } = useCookieConsent();
+  const isMobile = useIsMobile();
   const t = translations[lang];
+  const [open, setOpen] = useState<{ services: boolean; useful: boolean }>({
+    services: false,
+    useful: false,
+  });
+  const toggle = (key: keyof typeof open) =>
+    setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
   const labelFor = (path: string, fallback: string) => {
     const slug = path.split("/").pop() || "";
     return (t as any).navServices?.[slug] ?? fallback;
   };
   const svcList = lang === "en" ? servicesEn : services;
+
+  const AccordionHeading = ({
+    id,
+    isOpen,
+    onClick,
+    children,
+  }: {
+    id: string;
+    isOpen: boolean;
+    onClick?: () => void;
+    children: React.ReactNode;
+  }) => {
+    const baseClasses = "text-sm font-semibold tracking-wide uppercase flex items-center justify-between";
+    if (isMobile) {
+      return (
+        <button
+          id={id}
+          type="button"
+          onClick={onClick}
+          className={`${baseClasses} w-full py-2`}
+          aria-expanded={isOpen}
+        >
+          {children}
+          <ChevronDown
+            size={18}
+            className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+            aria-hidden="true"
+          />
+        </button>
+      );
+    }
+    return (
+      <h2 id={id} className={baseClasses}>
+        {children}
+      </h2>
+    );
+  };
+
   return (
     <footer className="relative border-t overflow-hidden bg-black text-white font-extralight font-inter">
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
