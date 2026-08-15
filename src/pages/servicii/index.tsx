@@ -132,7 +132,7 @@ export default function ServiciiPage() {
               </h2>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {group.cards.map((card) => (
-                  <GlowCard key={card.to} to={card.to} customSize borderPx={1} blackBg borderRunner noShadow className="w-full h-full hover:border-accent transition-colors">
+                  <GlowCard key={card.to} customSize borderPx={1} blackBg borderRunner noShadow className="w-full h-full hover:border-accent transition-colors">
                     <article className="flex flex-col h-full text-hero-foreground">
                       <h3 className="text-lg font-semibold leading-snug mb-3">
                         {card.title}
@@ -140,15 +140,28 @@ export default function ServiciiPage() {
                       <p className="text-sm text-hero-foreground/80 leading-relaxed">{card.description}</p>
                       <ul className="mt-4 space-y-1.5 text-sm text-hero-foreground/90">
                         {card.subServices.map((sub) => (
-                          <li key={sub} className="flex items-start gap-2">
+                          <li key={sub.label} className="flex items-start gap-2">
                             <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                            <span>{sub}</span>
+                            {sub.to ? (
+                              <Link
+                                to={sub.to}
+                                className="group inline-flex items-center gap-1 text-hero-foreground underline underline-offset-2 transition-colors hover:text-accent"
+                              >
+                                {sub.label}
+                                <ArrowRight className="h-3 w-3 shrink-0 opacity-70 transition-transform group-hover:translate-x-0.5" />
+                              </Link>
+                            ) : (
+                              <span>{sub.label}</span>
+                            )}
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-auto pt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+                      <Link
+                        to={card.to}
+                        className="mt-auto pt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:underline hover:underline-offset-2"
+                      >
                         {card.cta} <ArrowRight className="h-3.5 w-3.5" />
-                      </div>
+                      </Link>
                     </article>
                   </GlowCard>
                 ))}
