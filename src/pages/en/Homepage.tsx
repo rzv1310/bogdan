@@ -757,7 +757,7 @@ const HomepageEN = () => {
             <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {t.services.map((s) => (
-                <GlowCard key={s.to} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
+                <GlowCard key={s.to} customSize borderPx={1} blackBg borderRunner noShadow className="relative w-full">
                   <article className="text-hero-foreground flex flex-col h-full">
                     <h3 className="text-base md:text-lg font-semibold mb-2 leading-snug">
                       <Link to={s.to} className="hover:text-accent hover:underline underline-offset-2">
