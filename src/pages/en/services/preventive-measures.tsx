@@ -132,17 +132,7 @@ export default function PreventiveMeasuresEn() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I act as a preventive measures lawyer in Bucharest in cases of detention, judicial control, judicial control on bail, house arrest and pre-trial detention, from the first hour a measure is proposed or ordered, usually as a result of a{" "}
-          <Link to="/en/services/criminal-investigation" className="text-primary underline underline-offset-2">
-            measure arising during the criminal investigation phase
-          </Link>
-          .
-        </p>
-        <p>
           <strong>A preventive measure can restrict your liberty, movement or professional activity as early as the criminal investigation phase, before any conviction.</strong> That is why the presence of a lawyer exactly at the moment the measure is proposed - not afterwards - can make the difference between rejection of the proposal, a lighter measure, or upholding the most severe option.
-        </p>
-        <p>
-          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before judges for rights and liberties, pre-trial chamber judges and trial courts, in cases involving judicial control, house arrest or pre-trial detention.
         </p>
       </div>
 
@@ -151,6 +141,20 @@ export default function PreventiveMeasuresEn() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I act as a preventive measures lawyer in Bucharest in cases of detention, judicial control, judicial control on bail, house arrest and pre-trial detention, from the first hour a measure is proposed or ordered, usually as a result of a{" "}
+          <Link to="/en/services/criminal-investigation" className="text-primary underline underline-offset-2">
+            measure arising during the criminal investigation phase
+          </Link>
+          .
+        </p>
+        <p>
+          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before judges for rights and liberties, pre-trial chamber judges and trial courts, in cases involving judicial control, house arrest or pre-trial detention.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>
