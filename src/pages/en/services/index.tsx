@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Phone, ArrowRight, Briefcase } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { enServiceGroups } from "@/lib/serviceGroups";
@@ -97,8 +98,21 @@ export default function EnServicesPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-14">
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Services</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         {/* Hero */}
         <section className="mb-12 md:mb-16">
+
           <h1 className="text-2xl font-semibold mb-4">Criminal law services in Bucharest</h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
             Assistance and representation in complex criminal cases, from hearings, detention and preventive arrest to DIICOT cases, economic crime, corruption, road traffic offenses and victim representation.
