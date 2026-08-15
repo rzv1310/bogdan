@@ -58,42 +58,52 @@ export default function RaspunderePenalaMunca() {
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <h1 className="text-2xl font-semibold mb-4">Avocat accidente de muncă București și răspundere penală SSM | av. Bogdan Lamatic</h1>
-        
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Servicii</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Răspundere penală pentru incidente la locul de muncă</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            <strong>După un accident de muncă, primele ore contează cel mai mult.</strong> Cercetarea ITM, declarațiile date de angajați și documentele de securitate a muncii predate în primele zile pot decide dacă răspunderea penală este reținută sau nu. Nu aștepta trimiterea în judecată ca să ceri ajutor.
+          </p>
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat accidente de muncă">
+            <a href="tel:+40316320183">
+              <Phone className="mr-2 h-4 w-4" /> Sună acum
+            </a>
+          </Button>
+        </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+        </p>
 
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            În cariera mea de avocat de drept penal, am văzut ce înseamnă să trăiești pe marginea prăpastiei dintre ordine şi haos.
+            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white-collar crime. Asist angajatori, administratori și persoane cu atribuții SSM în investigații penale privind accidentele de muncă și nerespectarea normelor de securitate.
           </p>
           <p>
-            În fiecare accident de muncă, în fiecare investigație penală pentru nerespectarea normelor de securitate, există un amestec de responsabilitate, neglijență şi tragedie.
-          </p>
-          <p>
-            Îmi desfășor activitatea în București și mă numesc Bogdan Lamatic - am 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white‑collar crime.
+            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
           </p>
         </div>
 
         <div className="mt-6">
-          <a href="tel:+40316320183" aria-label="Sună acum">
-            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <Phone /> Sună acum
-            </Button>
-          </a>
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Servicii</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Răspundere penală pentru incidente la locul de muncă</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
+
 
         {/* Cadrul general */}
         <Card className="mt-8 border-accent">
