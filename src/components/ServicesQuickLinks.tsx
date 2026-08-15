@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 interface ServicesQuickLinksProps {
   lang?: "ro" | "en";
   className?: string;
 }
+
 
 const linksRo = [
   { to: "/servicii/urmarire-penala", label: "Avocat urmărire penală" },
