@@ -82,7 +82,9 @@ const CompensationCalculatorEn = lazyRoute(() => import("./pages/en/compensation
 
 export default function AppRoutes() {
   return (
-    <Suspense fallback={null}>
+    <RouteErrorBoundary>
+    <Suspense fallback={<RouteFallback />}>
+
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Index />} />
