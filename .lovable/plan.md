@@ -33,7 +33,7 @@ Fără em dash: doar cratimă „-".
 
 Pentru fiecare pagină: title, meta description, keywords (principal + secundare din tabel), canonical propriu, `og:*` / `twitter:*`, robots directives, și JSON-LD: `BreadcrumbList`, `LegalService` (cu `areaServed` din `src/lib/areaServed.ts`) și `FAQPage`.
 
-Notă: nu se creează versiuni EN acum, deci aceste 5 rute nu vor avea `hreflang` alternate (ca alte rute RO-only existente). Le pot adăuga ulterior când vrei versiunile EN.
+Se creează și versiunile EN (`/en/services/police-prosecutor-questioning`, `/en/services/home-search`, `/en/services/digital-device-search`, `/en/services/diicot-lawyer`, `/en/services/dna-lawyer`), traduse din conținutul RO, cu perechile adăugate în `scripts/langPairs.mjs` ca să aibă `hreflang` ro / en / x-default în head și în sitemap.
 
 ## Integrare în site
 
