@@ -158,18 +158,20 @@ export default function Header() {
               <Menu size={22} strokeWidth={2} />
             </button>
           </DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader>
-              <DrawerTitle>{t.nav.menu}</DrawerTitle>
+          <DrawerContent className="h-[50vh] max-h-[50vh] flex flex-col">
+            <DrawerHeader className="pb-2 shrink-0">
+              <DrawerTitle className="text-base uppercase tracking-wide text-muted-foreground font-inter font-light">
+                {t.nav.menu}
+              </DrawerTitle>
             </DrawerHeader>
-            <div className="px-4 pb-6">
-              <ul className="space-y-1">
+            <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 pb-8 [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-muted/40 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
+              <ul className="divide-y divide-border/60">
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
+                    <Button
+                      asChild
+                      variant="ghost"
+                      className="w-full justify-start text-base h-12 px-2"
                       onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/despre-mine", lang)))}
                     >
                       <span>{t.nav.about}</span>
@@ -179,20 +181,32 @@ export default function Header() {
                 <li>
                   <Collapsible>
                     <CollapsibleTrigger asChild>
-                      <Button variant="ghost" className="w-full justify-between">
+                      <Button variant="ghost" className="w-full justify-between text-base h-12 px-2 [&[data-state=open]>svg]:rotate-90">
                         <span>{t.nav.services}</span>
-                        <ChevronRight className="h-4 w-4" />
+                        <ChevronRight className="h-4 w-4 shrink-0 transition-transform duration-200" />
                       </Button>
                     </CollapsibleTrigger>
                     <CollapsibleContent>
-                      <ul className="mt-1 space-y-1 pl-3 border-l">
+                      <ul className="mb-2 mt-1 space-y-1 pl-3 border-l border-border">
+                        <li>
+                          <DrawerClose asChild>
+                            <Button
+                              asChild
+                              variant="ghost"
+                              className="w-full justify-start text-[15px] font-semibold h-11 px-2"
+                              onClick={() => handleMobileNavigation(() => navigate(lang === "en" ? "/en/services" : "/servicii"))}
+                            >
+                              <span>{lang === "en" ? "All services" : "Toate serviciile"}</span>
+                            </Button>
+                          </DrawerClose>
+                        </li>
                         {svcList.map((s) => (
                           <li key={s.to}>
                             <DrawerClose asChild>
-                              <Button 
-                                asChild 
-                                variant="ghost" 
-                                className="w-full justify-start text-left whitespace-normal break-words leading-snug"
+                              <Button
+                                asChild
+                                variant="ghost"
+                                className="w-full justify-start text-[15px] h-auto min-h-11 py-2 px-2 text-left whitespace-normal break-words leading-snug"
                                 onClick={() => handleMobileNavigation(() => navigate(s.to))}
                               >
                                 <span>{labelFor(s.to, s.label)}</span>
@@ -206,10 +220,10 @@ export default function Header() {
                 </li>
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
+                    <Button
+                      asChild
+                      variant="ghost"
+                      className="w-full justify-start text-base h-12 px-2"
                       onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/blog", lang)))}
                     >
                       <span>{t.nav.blog}</span>
@@ -218,10 +232,10 @@ export default function Header() {
                 </li>
                 <li>
                   <DrawerClose asChild>
-                    <Button 
-                      asChild 
-                      variant="ghost" 
-                      className="w-full justify-start"
+                    <Button
+                      asChild
+                      variant="ghost"
+                      className="w-full justify-start text-base h-12 px-2"
                       onClick={() => handleMobileNavigation(() => navigate(mapPathToLang("/contact", lang)))}
                     >
                       <span>{t.nav.contact}</span>
