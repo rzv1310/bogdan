@@ -28,6 +28,11 @@ const ReprezentareaVictimelor = lazyRoute(
 const UrmarirePenala = lazyRoute(() => import("./pages/services/urmarire-penala"));
 const MasuriPreventive = lazyRoute(() => import("./pages/services/masuri-preventive"));
 const InfractiuniContraPersoanei = lazyRoute(() => import("./pages/services/infractiuni-contra-persoanei"));
+const AudierePolitieParchet = lazyRoute(() => import("./pages/services/audiere-politie-parchet"));
+const PerchezitieDomiciliara = lazyRoute(() => import("./pages/services/perchezitie-domiciliara"));
+const PerchezitieInformatica = lazyRoute(() => import("./pages/services/perchezitie-informatica"));
+const AvocatDiicot = lazyRoute(() => import("./pages/services/avocat-diicot"));
+const AvocatDna = lazyRoute(() => import("./pages/services/avocat-dna"));
 const CalculatorDespagubiri = lazyRoute(() => import("./pages/CalculatorDespagubiri"));
 const ServiciiPage = lazyRoute(() => import("./pages/servicii"));
 const TermeniSiConditii = lazyRoute(() => import("./pages/termeni-si-conditii"));
@@ -65,6 +70,11 @@ const SitemapEn = lazyRoute(() => import("./pages/en/sitemap"));
 const CriminalInvestigationEn = lazyRoute(() => import("./pages/en/services/criminal-investigation"));
 const PreventiveMeasuresEn = lazyRoute(() => import("./pages/en/services/preventive-measures"));
 const OffensesAgainstPersonsEn = lazyRoute(() => import("./pages/en/services/offenses-against-persons"));
+const PoliceQuestioningEn = lazyRoute(() => import("./pages/en/services/police-prosecutor-questioning"));
+const HomeSearchEn = lazyRoute(() => import("./pages/en/services/home-search"));
+const ComputerSearchEn = lazyRoute(() => import("./pages/en/services/computer-search"));
+const DiicotLawyerEn = lazyRoute(() => import("./pages/en/services/diicot-lawyer"));
+const DnaLawyerEn = lazyRoute(() => import("./pages/en/services/dna-lawyer"));
 const CompensationCalculatorEn = lazyRoute(() => import("./pages/en/compensation-calculator"));
 
 export default function AppRoutes() {
@@ -81,6 +91,11 @@ export default function AppRoutes() {
           <Route path="/servicii/urmarire-penala" element={<UrmarirePenala />} />
           <Route path="/servicii/masuri-preventive" element={<MasuriPreventive />} />
           <Route path="/servicii/infractiuni-contra-persoanei" element={<InfractiuniContraPersoanei />} />
+          <Route path="/servicii/audiere-politie-parchet" element={<AudierePolitieParchet />} />
+          <Route path="/servicii/perchezitie-domiciliara" element={<PerchezitieDomiciliara />} />
+          <Route path="/servicii/perchezitie-informatica" element={<PerchezitieInformatica />} />
+          <Route path="/servicii/avocat-diicot" element={<AvocatDiicot />} />
+          <Route path="/servicii/avocat-dna" element={<AvocatDna />} />
           <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
           <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
           <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
@@ -111,6 +126,11 @@ export default function AppRoutes() {
           <Route path="/en/services/criminal-investigation" element={<CriminalInvestigationEn />} />
           <Route path="/en/services/preventive-measures" element={<PreventiveMeasuresEn />} />
           <Route path="/en/services/offenses-against-persons" element={<OffensesAgainstPersonsEn />} />
+          <Route path="/en/services/police-prosecutor-questioning" element={<PoliceQuestioningEn />} />
+          <Route path="/en/services/home-search" element={<HomeSearchEn />} />
+          <Route path="/en/services/computer-search" element={<ComputerSearchEn />} />
+          <Route path="/en/services/diicot-lawyer" element={<DiicotLawyerEn />} />
+          <Route path="/en/services/dna-lawyer" element={<DnaLawyerEn />} />
           <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
           <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
           <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
