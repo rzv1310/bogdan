@@ -24,7 +24,7 @@ Identică cu paginile existente de servicii (ex. `/servicii/masuri-preventive`):
 6. Breadcrumbs
 7. Secțiunile de conținut din fișierele încărcate (Ce fac pentru tine, etapele procedurii etc.)
 8. FAQ (acordeon)
-9. `RelatedServices` cu linkuri interne relevante (audiere <-> percheziții <-> DIICOT/DNA, plus urmărire penală și măsuri preventive)
+9. `RelatedServices` cu link către pagina mamă `/servicii/urmarire-penala` și linkuri interne către celelalte 4 pagini din cluster
 10. CTA final
 
 Fără em dash: doar cratimă „-".
