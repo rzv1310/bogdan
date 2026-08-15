@@ -486,20 +486,6 @@ export const avocatDnaRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce este DNA și când poate avea competență într-un dosar",
-      paragraphs: [
-        "Direcția Națională Anticorupție este structura specializată de parchet cu competențe stabilite prin OUG nr. 43/2002 și legislația în materia faptelor de corupție.",
-        "Competența DNA nu se stabilește doar după denumirea infracțiunii. Pot conta tipul faptei, valoarea implicată, prejudiciul, calitatea persoanei investigate și alte condiții prevăzute de lege.",
-        "Printre criteriile prevăzute de art. 13 din OUG nr. 43/2002 se află:",
-      ],
-      bullets: [
-        "o pagubă materială mai mare decât echivalentul în lei a 200.000 euro, în situațiile reglementate de text;",
-        "o sumă sau un bun care formează obiectul infracțiunii de corupție cu o valoare mai mare decât echivalentul în lei a 10.000 euro;",
-        "anumite categorii de persoane enumerate expres de lege, indiferent de valoarea implicată;",
-        "pentru anumite infracțiuni expres prevăzute de art. 13 alin. (3), o pagubă mai mare decât echivalentul în lei a 1.000.000 euro.",
-      ],
-    },
-    {
       h2: "Ce fac pentru tine într-un dosar DNA",
       paragraphs: [
         "Întrebarea „este sau nu dosarul de competența DNA?” trebuie analizată pe actele și acuzațiile concrete, nu doar după titulatura infracțiunii.",
@@ -514,7 +500,6 @@ export const avocatDnaRo: SubServicePageData = {
         "Contest măsurile preventive și măsurile asigurătorii, atunci când există temei legal.",
         "Asigur reprezentarea în camera preliminară și în judecată, dacă dosarul ajunge în instanță.",
       ],
-      cta: "Discută cu avocatul",
     },
     {
       h2: "Situații în care mă poți contacta",
@@ -528,6 +513,7 @@ export const avocatDnaRo: SubServicePageData = {
         "procurorul solicită o măsură preventivă;",
         "ești funcționar public, manager, antreprenor sau persoană cu funcție de decizie vizată într-un dosar de corupție.",
       ],
+      cta: "Discută cu avocatul",
     },
     {
       h2: "De ce primele etape ale dosarului sunt importante",
@@ -535,6 +521,20 @@ export const avocatDnaRo: SubServicePageData = {
         "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, măsuri preventive ori asigurătorii.",
         "Fiecare dintre aceste acte trebuie analizat separat, dar și în contextul întregii strategii de apărare.",
         "Un răspuns dat la audiere, un document predat sau o poziție exprimată la începutul dosarului poate avea relevanță și în etapele ulterioare. Din acest motiv, recomand ca strategia să fie stabilită înainte de primul act procedural la care participi, atunci când acest lucru este posibil.",
+      ],
+    },
+    {
+      h2: "Ce este DNA și când poate avea competență într-un dosar",
+      paragraphs: [
+        "Direcția Națională Anticorupție este structura specializată de parchet cu competențe stabilite prin OUG nr. 43/2002 și legislația în materia faptelor de corupție.",
+        "Competența DNA nu se stabilește doar după denumirea infracțiunii. Pot conta tipul faptei, valoarea implicată, prejudiciul, calitatea persoanei investigate și alte condiții prevăzute de lege.",
+        "Printre criteriile prevăzute de art. 13 din OUG nr. 43/2002 se află:",
+      ],
+      bullets: [
+        "o pagubă materială mai mare decât echivalentul în lei a 200.000 euro, în situațiile reglementate de text;",
+        "o sumă sau un bun care formează obiectul infracțiunii de corupție cu o valoare mai mare decât echivalentul în lei a 10.000 euro;",
+        "anumite categorii de persoane enumerate expres de lege, indiferent de valoarea implicată;",
+        "pentru anumite infracțiuni expres prevăzute de art. 13 alin. (3), o pagubă mai mare decât echivalentul în lei a 1.000.000 euro.",
       ],
     },
   ],
