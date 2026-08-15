@@ -59,42 +59,51 @@ export default function WorkplaceLiabilityEn() {
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <h1 className="text-2xl font-semibold mb-4">Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest</h1>
-        
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Criminal liability for incidents at the workplace</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            <strong>After a workplace accident, the first hours matter most.</strong> The labour inspectorate investigation, the statements given by employees and the health and safety documents handed over in the first days can decide whether criminal liability is established or not.
+          </p>
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+            <a href="tel:+40316320183" aria-label="Call now">
+              <Phone className="mr-2 h-4 w-4" /> Call now
+            </a>
+          </Button>
+        </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+        </p>
 
         <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            In my career as a criminal lawyer, I have seen what it means to live on the edge of the abyss between order and chaos.
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law and numerous successful cases in white-collar crime. I assist employers, managers and health and safety officers in criminal investigations regarding workplace accidents and breaches of safety regulations.
           </p>
           <p>
-            In every workplace accident, in every criminal investigation for violating safety regulations, there is a mixture of responsibility, negligence and tragedy.
-          </p>
-          <p>
-            I practice in Bucharest and my name is Bogdan Lamatic - I have 18 years of experience in criminal law and numerous successful cases in white-collar crime.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
           </p>
         </div>
 
         <div className="mt-6">
-          <a href="tel:+40316320183" aria-label="Call now">
-            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <Phone /> Call now
-            </Button>
-          </a>
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Services</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Criminal liability for incidents at the workplace</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
+
 
         {/* General framework */}
         <Card className="mt-8 border-accent">

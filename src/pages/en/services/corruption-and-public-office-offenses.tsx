@@ -60,30 +60,9 @@ export default function CorruptionPublicOfficeEn() {
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <h1 className="text-2xl font-semibold mb-4">Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest</h1>
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Corruption offenses and acts related to the exercise of public office</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am a pleading lawyer in Bucharest since 2007, coordinating defense in corruption and service-related cases -
-            from internal investigation to final verdict.
-          </p>
-          <p>
-            Recommended by Legal 500 as a Next Generation Partner (White-Collar Crime) 2021-2024, my work focuses on
-            rigorous defense and measurable results in high-stakes matters.
+            <strong>In corruption and public office cases, the first hours matter most.</strong> What you state, what you sign and how you react from the very first summons can decide whether the file is closed or turns into a lengthy trial with a reputational cost. Do not wait for the indictment to ask for help.
           </p>
         </div>
 
@@ -94,6 +73,38 @@ export default function CorruptionPublicOfficeEn() {
             </a>
           </Button>
         </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+        </p>
+
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a pleading lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I coordinate the defense in corruption and service-related cases, from internal investigation to final verdict.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        <div className="mt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Services</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Corruption offenses and acts related to the exercise of public office</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
 
         {/* Definitions & framework */}
         <Card className="mt-8 border-accent">

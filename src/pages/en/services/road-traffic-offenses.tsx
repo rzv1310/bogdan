@@ -62,12 +62,7 @@ export default function RoadTrafficEn() {
         <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am attorney Bogdan Lamatic (Bucharest Bar, since 2007). I defend clients in traffic offenses - from matters
-            without victims to accidents with bodily injury or death.
-          </p>
-          <p>
-            I have represented clients before all courts and prosecutors’ offices and received repeated recognition in the
-            Legal 500 guide (White-Collar Crime) for rigorous strategy and defense.
+            <strong>After a road accident, the first hours matter most.</strong> Blood alcohol testing, the on-site report and the first statements you give can decide whether the case is closed or turns into a lengthy trial. Do not wait for the first court hearing to ask for help.
           </p>
         </div>
 
@@ -78,6 +73,20 @@ export default function RoadTrafficEn() {
             </a>
           </Button>
         </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+        </p>
+
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I defend clients in traffic offenses, from matters without victims to accidents with bodily injury or death.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before all prosecutors' offices and courts of all levels, including the High Court of Cassation and Justice.
+          </p>
+        </div>
+
 
         <div className="mt-6">
           <Breadcrumb>

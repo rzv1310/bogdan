@@ -77,43 +77,47 @@ export default function FinancialCrimeEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold mb-4">Economic crime lawyer | White-collar specialist | Bogdan Lamatic</h1>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Economic crime</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <div className="mt-4 flex flex-wrap items-center gap-3">
+          <p className="text-base leading-relaxed text-muted-foreground">
+            <strong>In economic crime cases, the first hours matter most.</strong> Documents handed over, statements given and accounts frozen at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with seizures and reputational damage.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40316320183" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
             </Button>
           </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+          </p>
+          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+            <p>
+              I am Bogdan Lamatic, attorney at the Bucharest Bar, with over 18 years of criminal law practice and a strong track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and abuse of office. I represent both individuals and companies in complex investigations and trials.
+            </p>
+            <p>
+              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Services</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Economic crime</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
         </header>
 
-        {/* Intro */}
         <section className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, attorney at the Bucharest Bar, with 18+ years of criminal law practice and a strong
-            track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and
-            abuse of office. I represent both individuals and companies in complex investigations and trials, including
-            before the High Court of Cassation and Justice.
-          </p>
-          <p>
-            Recognized by Legal 500 for five consecutive years as a Next Generation Partner (White-Collar Crime), I build
-            tailored, evidence-driven strategies that focus on procedural fairness, challenging unlawful evidence, and
-            minimizing reputational impact.
-          </p>
           <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
             Whether you are under investigation, indicted, or a victim in an economic crime case, my goal is to secure a
             solid, discreet, and result-oriented outcome.
@@ -121,6 +125,7 @@ export default function FinancialCrimeEn() {
           <RelatedServices current="/en/services/financial-crime" lang="en" />
 
         </section>
+
 
         {/* What cases I handle */}
         <Card className="mt-8 border-accent">

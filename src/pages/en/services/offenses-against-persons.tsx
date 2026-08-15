@@ -128,13 +128,7 @@ export default function OffensesAgainstPersons() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent people accused of offenses against persons - from assault and threats to domestic violence or offenses against sexual freedom and integrity - before the Police, the Prosecutor's Office and the courts.
-        </p>
-        <p>
           <strong>Accusations of offenses against persons directly affect your freedom, but also your reputation and family life.</strong> Many of these cases start from a conflict, a complaint filed in anger, or a misinterpretation of events - and how you react from day one can decisively influence the final outcome.
-        </p>
-        <p>
-          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
         </p>
       </div>
 
@@ -143,6 +137,16 @@ export default function OffensesAgainstPersons() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent people accused of offenses against persons - from assault and threats to domestic violence or offenses against sexual freedom and integrity - before the Police, the Prosecutor's Office and the courts.
+        </p>
+        <p>
+          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

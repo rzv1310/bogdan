@@ -132,37 +132,51 @@ export default function InvestigatiiCripto() {
       )}
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <header className="mb-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Servicii</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Investigații privind activele cripto</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-        <h1 className="mt-4 text-2xl font-semibold">
+        <h1 className="text-2xl font-semibold">
           Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts
         </h1>
-        <p className="mt-3 text-muted-foreground leading-relaxed">
-          Sunt Bogdan Lamatic, avocat în Baroul București (din 2007), cu practică aprofundată în white-collar crime, investigații corporative și compliance.
-          <br />
-          Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).
-        </p>
-        <div className="mt-5 flex flex-wrap items-center gap-3">
-          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-            <a href="tel:+40316320183" aria-label="Sună acum">
-              <Phone className="mr-2" /> Sună acum
+        <div className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            <strong>În dosarele cu criptoactive, primele decizii contează cel mai mult.</strong> Blocarea conturilor, conservarea probatoriului digital și trasabilitatea tranzacțiilor se decid în primele zile - iar ce declari sau ce documente predai la început poate influența decisiv rezultatul anchetei.
+          </p>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat investigații active cripto">
+            <a href="tel:+40316320183">
+              <Phone className="mr-2 h-4 w-4" /> Sună acum
             </a>
           </Button>
         </div>
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+        </p>
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și practică aprofundată în white-collar crime, investigații corporative și compliance. Am reprezentat clienți în dosare complexe, cu elemente transfrontaliere, cooperare inter-autorități și probatoriu digital, inclusiv în investigații privind criptoactive (custodie, tranzacții, KYC/AML, fraudă informatică, spălare a banilor).
+          </p>
+          <p>
+            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          </p>
+        </div>
+        <div className="mt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Servicii</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Investigații privind activele cripto</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
       </header>
+
 
       {/* Ce tipuri de spețe crypto gestionez */}
       <section className="mt-8">

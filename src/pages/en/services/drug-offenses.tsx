@@ -59,19 +59,36 @@ export default function DrugOffensesEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-2xl font-semibold">Drug trafficking lawyer - Bucharest | Strategy and defense - DIICOT cases</h1>
-        <p className="mt-2 text-muted-foreground">by Bogdan Lamatic, criminal defense and white-collar lawyer</p>
+        <h1 className="text-2xl font-semibold mb-4">Drug trafficking lawyer - Bucharest | Strategy and defense - DIICOT cases</h1>
 
-        <div className="mt-4">
-          <a href="tel:+40316320183" aria-label="Call now">
-            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-              Call now: +40 (31) 632 01 83
-            </Button>
-          </a>
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            <strong>In drug cases, the first hours matter most.</strong> What you state at the hearing, how the search is carried out and how the substances are sampled and weighed can decide whether the case is closed or turns into a lengthy DIICOT trial. Do not wait for the pre-trial arrest hearing to ask for help.
+          </p>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
+            <a href="tel:+40316320183" aria-label="Call now">
+              <Phone className="mr-2 h-4 w-4" aria-hidden="true" /> Call now
+            </a>
+          </Button>
+        </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+        </p>
+
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I have defended clients in DIICOT investigations and court trials involving drug trafficking, possession for personal use and organized criminal groups.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        <div className="mt-6">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -88,6 +105,7 @@ export default function DrugOffensesEn() {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
+
 
         {/* Why acting fast matters */}
         <Card className="mt-8 border-accent">

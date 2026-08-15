@@ -141,23 +141,31 @@ export default function ReprezentareaVictimelor() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt avocatul Bogdan Lamatic, din Baroul București. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale, accidente de muncă sau alte fapte penale.
-        </p>
-        <p>
-          Am pledat la toate nivelurile - de la parchete până la Înalta Curte - inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
-        </p>
-        <p>
-          Sunt recomandat de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024, distincție care reflectă rigoarea și rezultatele în dosare dificile.
+          <strong>Ca victimă a unei infracțiuni, primele zile contează cel mai mult.</strong> Plângerea penală, constituirea ca parte civilă la termen și probele medicale strânse din start pot decide dacă obții despăgubiri integrale sau pierzi definitiv dreptul la ele.
         </p>
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță victime">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat victime infracțiuni">
           <a href="tel:+40316320183">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
       </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale, accidente de muncă sau alte fapte penale, inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

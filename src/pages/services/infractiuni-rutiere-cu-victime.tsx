@@ -133,16 +133,28 @@ export default function InfractiuniRutiere() {
       </h1>
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt avocat Bogdan Lamatic, membru al Baroului București din 2007, cu practică predominant penală și experiență solidă în dosare rutiere - de la fapte fără victime până la accidente cu vătămare sau deces.
+          <strong>Într-un dosar rutier, primele ore după accident contează cel mai mult.</strong> Testarea alcoolscopică, recoltarea probelor biologice, declarațiile date la fața locului și primele acte de urmărire penală pot decide încadrarea juridică și rezultatul final. Nu aștepta trimiterea în judecată ca să ceri ajutor.
+        </p>
+      </div>
+
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat infracțiuni rutiere">
+          <a href="tel:+40316320183">
+            <Phone className="mr-2 h-4 w-4" /> Sună acum
+          </a>
+        </Button>
+      </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și dosare rutiere - de la fapte fără victime până la accidente cu vătămare sau deces, în fața tuturor instanțelor și organelor de urmărire penală.
         </p>
         <p>
-          Am reprezentat clienți în cauze complexe, inclusiv accidente rutiere cu urmări grave, în fața tuturor instanțelor și organelor de urmărire penală.
-        </p>
-        <p>
-          În ultimii ani am primit recunoaștere constantă în ghidul Legal 500 (White-Collar Crime), statut relevant pentru rigoarea și strategia de apărare pe care le aplic și în dosarele rutiere.
-        </p>
-        <p>
-          Accidentele rutiere cu victime fac parte, ca încadrare juridică, din sfera mai largă a{" "}
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024, statut relevant pentru rigoarea și strategia de apărare pe care le aplic și în dosarele rutiere. Accidentele rutiere cu victime fac parte, ca încadrare juridică, din sfera mai largă a{" "}
           <Link to="/servicii/infractiuni-contra-persoanei" className="text-primary underline underline-offset-2">
             infracțiunilor contra persoanei
           </Link>
@@ -150,13 +162,6 @@ export default function InfractiuniRutiere() {
         </p>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță rutieră">
-          <a href="tel:+40316320183">
-            <Phone className="mr-2 h-4 w-4" /> Apelează acum
-          </a>
-        </Button>
-      </div>
 
       <div className="mt-6">
         <Breadcrumb>

@@ -124,13 +124,7 @@ export default function InfractiuniContraPersoanei() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint persoane acuzate de infracțiuni contra persoanei - de la loviri și amenințări, la violență în familie sau infracțiuni contra libertății și integrității sexuale - în fața Poliției, Parchetului și instanțelor de judecată.
-        </p>
-        <p>
           <strong>Acuzațiile privind infracțiuni contra persoanei afectează direct libertatea, dar și reputația și viața de familie.</strong> Multe dintre aceste cauze pornesc dintr-un conflict, o plângere depusă la furie sau o interpretare greșită a unor fapte - iar modul în care reacționezi din prima zi poate influența decisiv rezultatul final.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
         </p>
       </div>
 
@@ -139,6 +133,16 @@ export default function InfractiuniContraPersoanei() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint persoane acuzate de infracțiuni contra persoanei - de la loviri și amenințări, la violență în familie sau infracțiuni contra libertății și integrității sexuale - în fața Poliției, Parchetului și instanțelor de judecată.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

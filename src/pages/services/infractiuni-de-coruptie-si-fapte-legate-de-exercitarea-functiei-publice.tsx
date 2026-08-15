@@ -133,20 +133,31 @@ export default function CoruptieSiFunctiePublica() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt avocat în Baroul București din 2007 și coordonez apărarea în dosare de corupție și conexe funcției publice - de la investigație internă, până la verdict definitiv.
-        </p>
-        <p>
-          Am fost recomandat de Legal 500 ca Next Generation Partner (White-Collar Crime) în edițiile 2021-2024 și Rising Star în 2020.
+          <strong>În dosarele de corupție și de serviciu, primele decizii contează cel mai mult.</strong> Ce declari la prima audiere, ce documente predai și cum răspunzi unei percheziții pot decide dacă ancheta se închide sau ajunge în instanță. Nu aștepta trimiterea în judecată ca să ceri ajutor - apărarea începe de la primul contact cu DNA, parchet sau poliție.
         </p>
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță anticorupție">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat infracțiuni de corupție">
           <a href="tel:+40316320183">
-            <Phone className="mr-2 h-4 w-4" /> Apelează acum
+            <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
       </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal. Coordonez apărarea în dosare de corupție și fapte legate de exercitarea funcției publice - de la investigație internă, până la verdict definitiv.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și Rising Star în 2020, și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

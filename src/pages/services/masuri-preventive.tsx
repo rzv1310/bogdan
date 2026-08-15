@@ -132,17 +132,7 @@ export default function MasuriPreventive() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Intervin ca avocat de măsuri preventive în București în cazuri de reținere, control judiciar, control judiciar pe cauțiune, arest la domiciliu și arestare preventivă, din prima oră în care măsura este propusă sau dispusă, de regulă ca urmare a unei{" "}
-          <Link to="/servicii/urmarire-penala" className="text-primary underline underline-offset-2">
-            măsuri apărute în faza de urmărire penală
-          </Link>
-          .
-        </p>
-        <p>
           <strong>O măsură preventivă îți poate limita libertatea, mișcarea sau activitatea profesională încă din faza de urmărire penală, înainte de orice condamnare.</strong> De aceea, prezența unui avocat exact în momentul în care măsura este propusă - nu ulterior - poate face diferența între respingerea propunerii, o măsură mai ușoară sau menținerea celei mai severe variante.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
         </p>
       </div>
 
@@ -151,6 +141,20 @@ export default function MasuriPreventive() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Intervin ca avocat de măsuri preventive în București în cazuri de reținere, control judiciar, control judiciar pe cauțiune, arest la domiciliu și arestare preventivă, din prima oră în care măsura este propusă sau dispusă, de regulă ca urmare a unei{" "}
+          <Link to="/servicii/urmarire-penala" className="text-primary underline underline-offset-2">
+            măsuri apărute în faza de urmărire penală
+          </Link>
+          .
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

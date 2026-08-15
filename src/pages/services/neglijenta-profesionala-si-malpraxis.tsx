@@ -142,23 +142,31 @@ export default function Malpraxis() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Salut! Sunt avocatul Bogdan Lamatic, din Baroul București, cu practică solidă în drept penal (white-collar, infracțiuni de serviciu) și litigii cu componentă medicală (malpraxis, răspundere civilă și penală).
-        </p>
-        <p>
-          Am reprezentat atât inculpați, cât și părți vătămate, inclusiv în dosare complexe cu expertize medico-legale, investigații interne și comisii de malpraxis.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 drept “Next Generation Partner” (White-Collar Crime) în edițiile 2021-2024, distincție care reflectă munca mea strategică și rezultatele în cauze dificile.
+          <strong>În dosarele de malpraxis, primele zile contează cel mai mult.</strong> Documentația medicală, expertizele medico-legale și declarațiile date la începutul anchetei pot decide dacă răspunderea penală este reținută sau nu. Nu aștepta trimiterea în judecată ca să ceri ajutor.
         </p>
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum pentru consultanță malpraxis">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat malpraxis">
           <a href="tel:+40316320183">
             <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
         </Button>
       </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal (white-collar, infracțiuni de serviciu) și litigii cu componentă medicală. Am reprezentat atât inculpați, cât și părți vătămate, inclusiv în dosare complexe cu expertize medico-legale, investigații interne și comisii de malpraxis.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>

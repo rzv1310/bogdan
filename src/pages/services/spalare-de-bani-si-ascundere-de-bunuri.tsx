@@ -113,43 +113,54 @@ export default function SpalareDeBani() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold mb-4">Infracțiune spălare de bani | Ascundere de bunuri - experiența mea ca avocat (Bogdan Lamatic, București)</h1>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <span className="text-muted-foreground">Servicii</span>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Dosare de spălare de bani și ascundere de bunuri</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
+
+          <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+            <p>
+              <strong>În dosarele de spălare de bani, primele decizii contează cel mai mult.</strong> Blocarea conturilor, sechestrul asigurător și explicațiile date la prima audiere pot decide dacă ancheta se închide sau se transformă într-un proces lung, cu confiscare extinsă.
+            </p>
+          </div>
+
+          <CallCta />
+
+          <p className="mt-3 text-sm text-muted-foreground">
+            <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+          </p>
+
+          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+            <p>
+              Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal, specializat în spălare de bani și ascunderea de bunuri. Fiecare dosar de „white-collar crime" pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților celor implicați.
+            </p>
+            <p>
+              Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+            </p>
+          </div>
+
+          <div className="mt-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Servicii</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Dosare de spălare de bani și ascundere de bunuri</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
         </header>
 
-        {/* Intro + CTA */}
-        <section className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            Am ales să practic dreptul penal al afacerilor pentru că este unul dintre puținele domenii în care faptele, banii și intențiile se împletesc într-un mod care afectează direct destinele oamenilor.
-          </p>
-          <p>
-            Fiecare dosar de „white‑collar crime" pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților morale ale celor implicați.
-          </p>
+        <section className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
-            În calitate de avocat în Baroul București, specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
+            În calitate de avocat specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
           </p>
           <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
-
         </section>
 
-        <CallCta />
-
-        <p className="mt-3 text-sm text-muted-foreground">
-          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
-        </p>
 
         {/* Ce reprezintă infracțiunea de spălare a banilor */}
         <Card className="mt-8 border-accent">
