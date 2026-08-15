@@ -106,7 +106,7 @@ export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"
   return targets
     .map((target) => {
       if (lang === "en") {
-        if (target === "/calculator-despagubiri") return null; // Romanian-only page
+        
         const enTarget = roToEn[target] ?? target;
         const label = labelEn(enTarget) ?? labelEn(target);
         return label ? { to: enTarget, label } : null;
