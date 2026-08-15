@@ -11,7 +11,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 export interface SubServiceSection {
   h2: string;
   paragraphs?: string[];
-  bullets?: string[];
+  bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
   /** Optional list of inline service links (text-only when `to` is missing). */
