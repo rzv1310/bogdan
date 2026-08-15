@@ -16,6 +16,8 @@ export interface SubServiceSection {
   cta?: string;
   /** Optional list of inline service links (text-only when `to` is missing). */
   links?: { label: string; to?: string }[];
+  /** Optional small highlighted callout inside the section. */
+  callout?: string;
 }
 
 export interface SubServiceFaqItem {
