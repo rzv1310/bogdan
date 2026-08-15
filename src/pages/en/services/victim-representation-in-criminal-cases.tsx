@@ -105,10 +105,7 @@ export default function VictimRepresentationEn() {
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries,
-            workplace accidents and other criminal acts. I have pleaded at all levels - from prosecutors to the High
-            Court of Cassation and Justice - including complex cases with medico-legal expertise and negotiation with
-            insurers.
+            <strong>As the victim of a crime, the first days matter most.</strong> The criminal complaint, joining the case as a civil party in time and the medical evidence gathered from the start can decide whether you obtain full compensation or lose that right for good.
           </p>
         </div>
 
@@ -119,6 +116,20 @@ export default function VictimRepresentationEn() {
             </a>
           </Button>
         </div>
+
+        <p className="mt-3 text-sm text-muted-foreground">
+          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+        </p>
+
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries, workplace accidents and other criminal acts, including complex cases with medico-legal expertise and negotiation with insurers.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have pleaded at all levels of jurisdiction, from prosecutors' offices to the High Court of Cassation and Justice.
+          </p>
+        </div>
+
 
         <div className="mt-6">
           <Breadcrumb>
