@@ -78,6 +78,21 @@ export default function FinancialCrimeEn() {
       />
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
+          <Breadcrumb className="mb-4">
+                      <BreadcrumbList>
+                        <BreadcrumbItem>
+                          <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                          <span className="text-muted-foreground">Services</span>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                          <BreadcrumbPage>Economic crime</BreadcrumbPage>
+                        </BreadcrumbItem>
+                      </BreadcrumbList>
+                    </Breadcrumb>
           <h1 className="text-2xl font-semibold mb-4">Economic crime lawyer | White-collar specialist | Bogdan Lamatic</h1>
           <p className="text-base leading-relaxed text-foreground">
             <span className="block"><strong>In economic crime cases, the first hours matter most.</strong></span>
@@ -95,23 +110,6 @@ export default function FinancialCrimeEn() {
             <p>
               I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
             </p>
-          </div>
-          <div className="mt-6">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <span className="text-muted-foreground">Services</span>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Economic crime</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
           </div>
         </header>
 

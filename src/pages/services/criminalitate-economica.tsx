@@ -95,6 +95,21 @@ export default function CriminalitateEconomica() {
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Servicii</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Criminalitate economică</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
       <h1 className="text-2xl font-semibold mb-4">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -120,23 +135,6 @@ export default function CriminalitateEconomica() {
         </p>
       </div>
 
-      <div className="mt-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Servicii</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Criminalitate economică</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
 
       <p className="mt-6 bg-accent text-accent-foreground rounded-md px-3 py-2 text-base leading-relaxed">
         Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.

@@ -60,6 +60,21 @@ export default function WorkplaceLiabilityEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+        <Breadcrumb className="mb-4">
+                  <BreadcrumbList>
+                    <BreadcrumbItem>
+                      <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      <span className="text-muted-foreground">Services</span>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      <BreadcrumbPage>Criminal liability for incidents at the workplace</BreadcrumbPage>
+                    </BreadcrumbItem>
+                  </BreadcrumbList>
+                </Breadcrumb>
         <h1 className="text-2xl font-semibold mb-4">Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="text-foreground">
@@ -84,23 +99,6 @@ export default function WorkplaceLiabilityEn() {
           </p>
         </div>
 
-        <div className="mt-6">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Criminal liability for incidents at the workplace</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </div>
 
 
         {/* General framework */}

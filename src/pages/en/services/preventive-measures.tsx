@@ -128,6 +128,21 @@ export default function PreventiveMeasuresEn() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Preventive measures</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
       <h1 className="text-2xl font-semibold mb-4">
         Preventive Measures Lawyer Bucharest - Immediate Intervention | Bogdan Lamatic
       </h1>
@@ -160,23 +175,6 @@ export default function PreventiveMeasuresEn() {
       </div>
 
 
-      <div className="mt-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Preventive measures</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
 
       {/* What preventive measures are */}
       <Card className="mt-8 border-accent">

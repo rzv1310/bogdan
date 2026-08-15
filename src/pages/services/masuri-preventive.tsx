@@ -128,6 +128,21 @@ export default function MasuriPreventive() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/servicii">Servicii</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Măsuri preventive</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
       <h1 className="text-2xl font-semibold mb-4">
         Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic
       </h1>
@@ -160,23 +175,6 @@ export default function MasuriPreventive() {
       </div>
 
 
-      <div className="mt-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/servicii">Servicii</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Măsuri preventive</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
 
       {/* Ce sunt măsurile preventive */}
       <Card className="mt-8 border-accent">

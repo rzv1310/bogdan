@@ -124,6 +124,21 @@ export default function OffensesAgainstPersons() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Services</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Offenses Against Persons</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
       <h1 className="text-2xl font-semibold mb-4">
         Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic
       </h1>
@@ -152,23 +167,6 @@ export default function OffensesAgainstPersons() {
       </div>
 
 
-      <div className="mt-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Offenses Against Persons</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
 
       {/* What offenses against persons means */}
       <Card className="mt-8 border-accent">
