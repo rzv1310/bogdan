@@ -19,7 +19,7 @@ export default function Sitemap() {
   ];
 
   const services = [
-    { url: "/servicii", title: "Servicii - Avocat Penal București" },
+    { url: "/servicii", title: "Toate serviciile" },
     { url: "/servicii/urmarire-penala", title: "Urmărire Penală - Apărare din Prima Oră" },
     { url: "/servicii/masuri-preventive", title: "Măsuri Preventive - Intervenție Imediată" },
     { url: "/servicii/infractiuni-contra-persoanei", title: "Infracțiuni Contra Persoanei - Apărare Penală" },
