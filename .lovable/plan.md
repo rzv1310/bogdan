@@ -1,7 +1,7 @@
 # Homepage: secțiune „Cum te pot ajuta” - teaser servicii
 
 ## Obiectiv
-Înlocuim pe homepage blocul actual „Servicii | Arii de practică” (13 carduri lungi, CTA telefon, PulseBeams, portret) cu un teaser compact: titlu nou, 8 carduri scurte și un CTA central către pagina de servicii.
+Înlocuim pe homepage blocul actual „Servicii | Arii de practică” (13 carduri lungi) cu un teaser compact: titlu nou, 8 carduri scurte și un CTA central către pagina de servicii. Păstrăm CTA-ul telefon, animația PulseBeams și portretul de la final.
 
 ## Ce se schimbă
 
@@ -27,7 +27,7 @@
   - grid 8 carduri cu `GlowCard customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full"`
   - fiecare card: titlu ca link, descriere scurtă, iconiță săgeată
   - CTA central: buton/link text `Vezi toate serviciile →` către `/servicii/`
-- Se elimină din această secțiune: lista exhaustivă de 13 servicii, CTA telefon din mijloc, animația PulseBeams și imaginea portretului de la final.
+- Se elimină din această secțiune doar lista exhaustivă de 13 servicii (înlocuită cu grid-ul de 8 carduri scurte). CTA-ul telefon, animația PulseBeams și imaginea portretului de la final se păstrează.
 
 ### 3. Secțiunea homepage EN (`src/pages/en/Homepage.tsx`)
 - Același refactor ca la RO, cu textele și rutele din `translations.en`.
