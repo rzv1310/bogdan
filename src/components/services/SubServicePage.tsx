@@ -59,7 +59,7 @@ const SITE = "https://avocatpenalbucuresti.ro";
 
 export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const isEn = data.lang === "en";
-  const callLabel = isEn ? "Call now" : "Sună acum";
+  const callLabel = isEn ? "Call now" : "Sună-mă acum";
   const pageUrl = SITE + data.path;
 
   useSEO({

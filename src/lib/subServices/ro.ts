@@ -116,8 +116,9 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
   serviceName: "Avocat percheziție domiciliară București - Bogdan Lamatic",
   urgency: [
     "Poliția sau procurorii sunt la ușă cu un mandat de percheziție?",
-    "Cere să vezi documentul care îți este înmânat și contactează imediat un avocat.",
-    "Nu încerca să împiedici fizic efectuarea percheziției și nu semna documente pe care nu le-ai verificat.",
+    "- Citește cu atenție documentele înainte de semnare.",
+    "- Nu încerca să împiedici fizic efectuarea percheziției.",
+    "- Contactează imediat un avocat!",
   ],
   bio: [
     `${BIO_INTRO} Asist persoane fizice și reprezentanți ai companiilor atunci când are loc o percheziție la domiciliu sau la sediul unei firme.`,
@@ -127,9 +128,9 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
       h2: "Percheziția are loc chiar acum?",
       paragraphs: [
         "Codul de procedură penală prevede că persoanei la care se efectuează percheziția trebuie să i se aducă la cunoștință dreptul ca la efectuarea percheziției să participe un avocat.",
-        "Dacă este solicitat avocatul, începerea percheziției se amână până la sosirea acestuia, însă nu mai mult de două ore, cu excepțiile prevăzute de lege pentru situații urgente sau atunci când avocatul nu poate fi contactat.",
+        "Dacă este solicitat avocatul, începerea percheziției se amână până la sosirea acestuia, însă nu mai mult de 2 ore, cu excepțiile prevăzute de lege pentru situații urgente sau atunci când avocatul nu poate fi contactat.",
       ],
-      cta: "Sună acum",
+      cta: "Sună-mă acum",
     },
     {
       h2: "Ce fac pentru tine în cazul unei percheziții",
