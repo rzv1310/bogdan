@@ -131,20 +131,21 @@ export default function InfractiuniRutiere() {
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <Breadcrumb className="mb-4">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <span className="text-muted-foreground">Servicii</span>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Infracțiuni rutiere cu / fără victime</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <span className="text-muted-foreground">Servicii</span>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Infracțiuni rutiere cu / fără victime</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <h1 className="text-2xl font-semibold mb-4">
         Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic
       </h1>
@@ -176,10 +177,8 @@ export default function InfractiuniRutiere() {
         </p>
       </div>
 
-
-
       {/* De ce să apelezi la mine */}
-      <Card className="mt-8 border-accent">
+      <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">De ce să apelezi la mine pentru un dosar rutier?</h2>
         </CardHeader>

@@ -121,20 +121,21 @@ export default function InfractiuniContraPersoanei() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <Breadcrumb className="mb-4">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <span className="text-muted-foreground">Servicii</span>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Infracțiuni contra persoanei</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <span className="text-muted-foreground">Servicii</span>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Infracțiuni contra persoanei</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <h1 className="text-2xl font-semibold mb-4">
         Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic
       </h1>
@@ -162,10 +163,8 @@ export default function InfractiuniContraPersoanei() {
         </p>
       </div>
 
-
-
       {/* Ce înseamnă infracțiuni contra persoanei */}
-      <Card className="mt-8 border-accent">
+      <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce înseamnă infracțiuni contra persoanei</h2>
         </CardHeader>

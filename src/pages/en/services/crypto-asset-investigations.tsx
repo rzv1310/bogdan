@@ -115,20 +115,21 @@ export default function CryptoInvestigationsEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-6">
           <Breadcrumb className="mb-4">
-                      <BreadcrumbList>
-                        <BreadcrumbItem>
-                          <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                          <span className="text-muted-foreground">Services</span>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                          <BreadcrumbPage>Investigations regarding crypto assets</BreadcrumbPage>
-                        </BreadcrumbItem>
-                      </BreadcrumbList>
-                    </Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Services</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Investigations regarding crypto assets</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
           <h1 className="text-2xl font-semibold">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
           <p className="mt-4 text-base leading-relaxed text-foreground">
             <span className="block"><strong>In crypto investigations, the first hours matter most.</strong></span>
@@ -149,7 +150,6 @@ export default function CryptoInvestigationsEn() {
             </p>
           </div>
         </header>
-
 
         {/* What types of crypto matters I handle */}
         <section className="mt-8">

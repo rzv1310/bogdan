@@ -60,20 +60,21 @@ export default function RaspunderePenalaMunca() {
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <Breadcrumb className="mb-4">
-                  <BreadcrumbList>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <span className="text-muted-foreground">Servicii</span>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <BreadcrumbPage>Răspundere penală pentru incidente la locul de muncă</BreadcrumbPage>
-                    </BreadcrumbItem>
-                  </BreadcrumbList>
-                </Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <span className="text-muted-foreground">Servicii</span>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Răspundere penală pentru incidente la locul de muncă</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <h1 className="text-2xl font-semibold mb-4">Avocat accidente de muncă București și răspundere penală SSM | av. Bogdan Lamatic</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -100,10 +101,8 @@ export default function RaspunderePenalaMunca() {
           </p>
         </div>
 
-
-
         {/* Cadrul general */}
-        <Card className="mt-8 border-accent">
+        <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Cadrul general al securității şi sănătății în muncă</h2>
           </CardHeader>

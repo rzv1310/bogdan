@@ -79,20 +79,21 @@ export default function FinancialCrimeEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <Breadcrumb className="mb-4">
-                      <BreadcrumbList>
-                        <BreadcrumbItem>
-                          <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                          <span className="text-muted-foreground">Services</span>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                          <BreadcrumbPage>Economic crime</BreadcrumbPage>
-                        </BreadcrumbItem>
-                      </BreadcrumbList>
-                    </Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Services</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Economic crime</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
           <h1 className="text-2xl font-semibold mb-4">Economic crime lawyer | White-collar specialist | Bogdan Lamatic</h1>
           <p className="text-base leading-relaxed text-foreground">
             <span className="block"><strong>In economic crime cases, the first hours matter most.</strong></span>
@@ -122,9 +123,8 @@ export default function FinancialCrimeEn() {
 
         </section>
 
-
         {/* What cases I handle */}
-        <Card className="mt-8 border-accent">
+        <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Areas of defense in economic crime</h2>
           </CardHeader>

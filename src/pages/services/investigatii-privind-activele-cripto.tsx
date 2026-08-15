@@ -155,20 +155,21 @@ export default function InvestigatiiCripto() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <header className="mb-6">
         <Breadcrumb className="mb-4">
-                  <BreadcrumbList>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <span className="text-muted-foreground">Servicii</span>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <BreadcrumbPage>Investigații privind activele cripto</BreadcrumbPage>
-                    </BreadcrumbItem>
-                  </BreadcrumbList>
-                </Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <span className="text-muted-foreground">Servicii</span>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Investigații privind activele cripto</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <h1 className="text-2xl font-semibold">
           Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts
         </h1>
@@ -192,7 +193,6 @@ export default function InvestigatiiCripto() {
           </p>
         </div>
       </header>
-
 
       {/* Ce tipuri de spețe crypto gestionez */}
       <section className="mt-8">

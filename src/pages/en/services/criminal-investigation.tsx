@@ -128,20 +128,21 @@ export default function CriminalInvestigation() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <Breadcrumb className="mb-4">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <span className="text-muted-foreground">Services</span>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Criminal Investigation</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <span className="text-muted-foreground">Services</span>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Criminal Investigation</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <h1 className="text-2xl font-semibold mb-4">
         Criminal Investigation Lawyer Bucharest - Defense From the First Hour of the Investigation | Bogdan Lamatic
       </h1>
@@ -170,10 +171,8 @@ export default function CriminalInvestigation() {
         </p>
       </div>
 
-
-
       {/* What is a criminal investigation */}
-      <Card className="mt-8 border-accent">
+      <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">
             What is a criminal investigation and why you need a lawyer from the first phase

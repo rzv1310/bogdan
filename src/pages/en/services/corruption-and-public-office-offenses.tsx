@@ -62,20 +62,21 @@ export default function CorruptionPublicOfficeEn() {
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <Breadcrumb className="mb-4">
-                  <BreadcrumbList>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <span className="text-muted-foreground">Services</span>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                      <BreadcrumbPage>Corruption offenses and acts related to the exercise of public office</BreadcrumbPage>
-                    </BreadcrumbItem>
-                  </BreadcrumbList>
-                </Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <span className="text-muted-foreground">Services</span>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Corruption offenses and acts related to the exercise of public office</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <h1 className="text-2xl font-semibold mb-4">Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="text-foreground">
@@ -101,10 +102,8 @@ export default function CorruptionPublicOfficeEn() {
           </p>
         </div>
 
-
-
         {/* Definitions & framework */}
-        <Card className="mt-8 border-accent">
+        <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">What counts as corruption vs service offenses</h2>
           </CardHeader>
