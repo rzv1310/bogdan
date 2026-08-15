@@ -40,7 +40,7 @@ export const roServiceGroups: ServiceGroup[] = [
       {
         title: "Criminalitate economică",
         description: "Asistență în cauze privind evaziunea fiscală, frauda, delapidarea, falsul și alte infracțiuni economice.",
-        subServices: ["Evaziune fiscală", "Fraudă și înșelăciune", "Delapidare", "Fals și uz de fals"],
+        subServices: ["Evaziune fiscală", "Fraudă și înșelăciune", "Delapidare", "Fals și uz de fals", "Fonduri europene"],
         to: "/servicii/criminalitate-economica",
         cta: "Vezi toate serviciile de criminalitate economică",
       },
@@ -151,7 +151,7 @@ export const enServiceGroups: ServiceGroup[] = [
       {
         title: "Financial crime",
         description: "Defense in cases involving tax evasion, fraud, embezzlement, forgery and other economic offenses.",
-        subServices: ["Tax evasion", "Fraud and deception", "Embezzlement", "Forgery and use of forgery"],
+        subServices: ["Tax evasion", "Fraud and deception", "Embezzlement", "Forgery and use of forgery", "EU funds"],
         to: "/en/services/financial-crime",
         cta: "See all financial crime services",
       },
