@@ -132,8 +132,14 @@ export default function Footer() {
 
           {/* Col 3: Utile */}
           <nav aria-labelledby="footer-utile">
-            <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase">{lang === "en" ? "Useful" : "Utile"}</h2>
-            <ul className="mt-4 space-y-2 text-sm">
+            <AccordionHeading
+              id="footer-utile"
+              isOpen={open.useful}
+              onClick={() => toggle("useful")}
+            >
+              {lang === "en" ? "Useful" : "Utile"}
+            </AccordionHeading>
+            <ul className={`mt-4 space-y-2 text-sm ${isMobile && !open.useful ? "hidden" : "block"}`}>
               <li>
                 <Link to={mapPathToLang("/contact", lang)} className="hover:underline">{t.nav.contact}</Link>
               </li>
