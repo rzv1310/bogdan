@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 interface GlowCardProps {
   children?: ReactNode;
@@ -15,6 +16,7 @@ interface GlowCardProps {
   borderRunner?: boolean; // Animate a small orange segment around the border continuously
   runnerSpeedFactor?: number; // Multiply runner duration (1 = default, 2 = 50% slower)
   noShadow?: boolean; // Disable outer shadow entirely
+  to?: string; // When provided, the whole card becomes a single link
 }
 
 const glowColorMap = {
@@ -46,8 +48,9 @@ const GlowCard: React.FC<GlowCardProps> = ({
   borderRunner = false,
   runnerSpeedFactor = 4,
   noShadow = false,
+  to,
 }) => {
-  const cardRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const runnerRef = useRef<SVGPathElement>(null);
   const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
@@ -231,56 +234,70 @@ const GlowCard: React.FC<GlowCardProps> = ({
     }
   `;
 
+  const cardContent = (
+    <>
+      <div ref={innerRef} data-glow></div>
+      {children}
+      {borderRunner && (
+        <svg
+          className="pointer-events-none absolute overflow-visible"
+          aria-hidden="true"
+          style={{
+            top: "var(--border-size)",
+            right: "var(--border-size)",
+            bottom: "var(--border-size)",
+            left: "var(--border-size)",
+          }}
+        >
+          <path ref={runnerRef} id={pathIdRef.current} d={pathD} fill="none" />
+          <circle r={2} fill="hsl(var(--accent))">
+            <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
+              <mpath xlinkHref={`#${pathIdRef.current}`} />
+            </animateMotion>
+          </circle>
+          <circle r={4} fill="hsl(var(--accent) / 0.5)" style={{ filter: "blur(3px)" }}>
+            <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
+              <mpath xlinkHref={`#${pathIdRef.current}`} />
+            </animateMotion>
+          </circle>
+        </svg>
+      )}
+    </>
+  );
+
+  const commonProps = {
+    ref: cardRef as any,
+    "data-glow": true,
+    ...(flatOrange ? { "data-flat-orange": true } : {}),
+    ...(borderRunner ? { "data-border-runner": true } : {}),
+    style: getInlineStyles(),
+    className: `
+      ${getSizeClasses()}
+      ${!customSize ? "aspect-[3/4]" : ""}
+      rounded-2xl 
+      relative 
+      grid 
+      grid-rows-[auto] 
+      ${noShadow ? "" : "shadow-[0_1rem_2rem_-1rem_rgb(0_0_0_/_0.6)]"}
+      p-6 
+      gap-4 
+      backdrop-blur-[5px]
+      ${className}
+    `,
+  };
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: beforeAfterStyles }} />
-      <div
-        ref={cardRef}
-        data-glow
-        {...(flatOrange ? { "data-flat-orange": true } : {})}
-        {...(borderRunner ? { "data-border-runner": true } : {})}
-        style={getInlineStyles()}
-        className={`
-          ${getSizeClasses()}
-          ${!customSize ? "aspect-[3/4]" : ""}
-          rounded-2xl 
-          relative 
-          grid 
-          grid-rows-[auto] 
-          ${noShadow ? "" : "shadow-[0_1rem_2rem_-1rem_rgb(0_0_0_/_0.6)]"}
-          p-6 
-          gap-4 
-          backdrop-blur-[5px]
-          ${className}
-        `}
-      >
-        <div ref={innerRef} data-glow></div>
-        {children}
-        {borderRunner && (
-          <svg
-            className="pointer-events-none absolute overflow-visible"
-            aria-hidden="true"
-            style={{
-              top: "var(--border-size)",
-              right: "var(--border-size)",
-              bottom: "var(--border-size)",
-              left: "var(--border-size)",
-            }}
-          >
-            <path ref={runnerRef} id={pathIdRef.current} d={pathD} fill="none" />
-            <circle r={2} fill="hsl(var(--accent))">
-              <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
-                <mpath xlinkHref={`#${pathIdRef.current}`} />
-              </animateMotion>
-            </circle>
-            <circle r={4} fill="hsl(var(--accent) / 0.5)" style={{ filter: "blur(3px)" }}>
-              <animateMotion dur={runnerDur} repeatCount="indefinite" rotate="auto">
-                <mpath xlinkHref={`#${pathIdRef.current}`} />
-              </animateMotion>
-            </circle>
-          </svg>
-        )}
-      </div>
+      {to ? (
+        <Link to={to} {...commonProps}>
+          {cardContent}
+        </Link>
+      ) : (
+        <div {...commonProps}>
+          {cardContent}
+        </div>
+      )}
     </>
   );
 };

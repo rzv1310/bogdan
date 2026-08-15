@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
@@ -132,12 +132,10 @@ export default function EnServicesPage() {
               </h2>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {group.cards.map((card) => (
-                  <GlowCard key={card.to} customSize borderPx={1} blackBg borderRunner noShadow className="w-full h-full">
+                  <GlowCard key={card.to} to={card.to} customSize borderPx={1} blackBg borderRunner noShadow className="w-full h-full hover:border-accent transition-colors">
                     <article className="flex flex-col h-full text-hero-foreground">
                       <h3 className="text-lg font-semibold leading-snug mb-3">
-                        <Link to={card.to} className="hover:text-accent hover:underline underline-offset-2">
-                          {card.title}
-                        </Link>
+                        {card.title}
                       </h3>
                       <p className="text-sm text-hero-foreground/80 leading-relaxed">{card.description}</p>
                       <ul className="mt-4 space-y-1.5 text-sm text-hero-foreground/90">
@@ -148,13 +146,8 @@ export default function EnServicesPage() {
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-auto pt-5">
-                        <Link
-                          to={card.to}
-                          className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline underline-offset-2"
-                        >
-                          {card.cta} <ArrowRight className="h-3.5 w-3.5" />
-                        </Link>
+                      <div className="mt-auto pt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+                        {card.cta} <ArrowRight className="h-3.5 w-3.5" />
                       </div>
                     </article>
                   </GlowCard>
