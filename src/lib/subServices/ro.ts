@@ -127,9 +127,11 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
     {
       h2: "Percheziția are loc chiar acum?",
       paragraphs: [
-        "Codul de procedură penală prevede că persoanei la care se efectuează percheziția trebuie să i se aducă la cunoștință dreptul ca la efectuarea percheziției să participe un avocat.",
         "Dacă este solicitat avocatul, începerea percheziției se amână până la sosirea acestuia, însă nu mai mult de 2 ore, cu excepțiile prevăzute de lege pentru situații urgente sau atunci când avocatul nu poate fi contactat.",
       ],
+      callout: "Ai dreptul să contactezi un avocat !",
+      calloutClassName: "font-semibold",
+      cardClassName: "bg-[#faf0e6]",
       cta: "Sună-mă acum",
     },
     {
