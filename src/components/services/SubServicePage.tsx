@@ -2,7 +2,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
@@ -13,6 +13,8 @@ export interface SubServiceSection {
   bullets?: string[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
+  /** Optional list of inline service links (text-only when `to` is missing). */
+  links?: { label: string; to?: string }[];
 }
 
 export interface SubServiceFaqItem {
@@ -201,6 +203,28 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               <ul className="list-disc pl-6 space-y-2">
                 {section.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            )}
+            {section.links && section.links.length > 0 && (
+              <ul className="space-y-2">
+                {section.links.map((link) => (
+                  <li key={link.label}>
+                    {link.to ? (
+                      <Link
+                        to={link.to}
+                        className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
+                      >
+                        <span>{link.label}</span>
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                    ) : (
+                      <span className="inline-flex items-start gap-2 text-base text-foreground">
+                        <span>{link.label}</span>
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60" />
+                      </span>
+                    )}
+                  </li>
                 ))}
               </ul>
             )}

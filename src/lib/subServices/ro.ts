@@ -356,22 +356,6 @@ export const avocatDiicotRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce este DIICOT și ce tipuri de dosare instrumentează",
-      paragraphs: [
-        "DIICOT este structura specializată din cadrul Parchetului de pe lângă Înalta Curte de Casație și Justiție care investighează infracțiunile atribuite prin lege competenței sale în zona criminalității organizate și terorismului.",
-        "În funcție de faptele investigate și de condițiile prevăzute de lege, dosarele DIICOT pot privi, printre altele:",
-      ],
-      bullets: [
-        "grupuri infracționale organizate;",
-        "trafic de droguri;",
-        "trafic de persoane;",
-        "criminalitate informatică;",
-        "terorism;",
-        "trafic de arme;",
-        "spălarea banilor atunci când există condițiile legale pentru competența DIICOT.",
-      ],
-    },
-    {
       h2: "Ce fac pentru tine într-un dosar DIICOT",
       paragraphs: [
         "Un astfel de dosar poate cuprinde volume mari de probe, interceptări, date informatice, percheziții sau mai multe persoane cercetate în aceeași cauză.",
@@ -404,11 +388,36 @@ export const avocatDiicotRo: SubServicePageData = {
       ],
     },
     {
+      h2: "Ce este DIICOT și ce tipuri de dosare instrumentează",
+      paragraphs: [
+        "DIICOT este structura specializată din cadrul Parchetului de pe lângă Înalta Curte de Casație și Justiție care investighează infracțiunile atribuite prin lege competenței sale în zona criminalității organizate și terorismului.",
+        "În funcție de faptele investigate și de condițiile prevăzute de lege, dosarele DIICOT pot privi, printre altele:",
+      ],
+      bullets: [
+        "grupuri infracționale organizate;",
+        "trafic de droguri;",
+        "trafic de persoane;",
+        "criminalitate informatică;",
+        "terorism;",
+        "trafic de arme;",
+        "spălarea banilor atunci când există condițiile legale pentru competența DIICOT.",
+      ],
+    },
+    {
       h2: "De ce un dosar DIICOT necesită o strategie construită de la început",
       paragraphs: [
         "DIICOT are o competență specializată stabilită prin OUG nr. 78/2016 și prin alte dispoziții legale.",
         "În practică, într-un astfel de dosar pot exista simultan declarații ale mai multor persoane, date informatice, supraveghere tehnică, percheziții și probe financiare. Din acest motiv, o apărare eficientă nu înseamnă doar prezența avocatului la o audiere, ci evaluarea modului în care toate aceste elemente se leagă între ele.",
         "Strategia trebuie adaptată dosarului concret, probelor existente și etapei procedurale.",
+      ],
+    },
+    {
+      h2: "Dosarul tău implică",
+      links: [
+        { label: "Trafic de droguri", to: "/servicii/cauze-penale-privind-droguri" },
+        { label: "Spălare de bani", to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+        { label: "Percheziție informatică", to: "/servicii/perchezitie-informatica" },
+        { label: "Grup infracțional" },
       ],
     },
   ],
