@@ -25,8 +25,11 @@ const RELOAD_FLAG = "lovable:chunk-reloaded";
  */
 async function loadWithRetry(loader: Loader) {
   try {
-    return await loader();
+    const mod = await loader();
+    if (typeof window !== "undefined") sessionStorage.removeItem(RELOAD_FLAG);
+    return mod;
   } catch (error) {
+
     try {
       return await loader();
     } catch (secondError) {
