@@ -202,7 +202,7 @@ export default function OffensesAgainstPersons() {
           <ol className="list-decimal pl-6 space-y-2">
             <li><strong>Assault and other acts of violence, bodily harm (art. 193-195 Criminal Code).</strong> I defend people accused of acts of violence, analyzing the proportionality of the alleged act, the forensic medical certificates and the real circumstances of the conflict.</li>
             <li><strong>Bodily harm caused by negligence (art. 196 Criminal Code).</strong> Frequently encountered in accidents, negligence or conflicts without intent to harm - I challenge the legal classification when the elements of negligence are not clearly proven. For cases arising from traffic accidents, see also the{" "}
-              <Link to="/en/services/traffic-offenses-with-victims" className="text-primary underline underline-offset-2">
+              <Link to="/en/services/road-traffic-offenses" className="text-primary underline underline-offset-2">
                 Traffic Offenses with Victims
               </Link> page.
             </li>
