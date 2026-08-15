@@ -133,13 +133,7 @@ export default function UrmarirePenala() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Asist persoane citate, reținute, percheziționate sau aflate în orice etapă a fazei de urmărire penală - de la primul telefon primit de la poliție sau parchet, până la soluția procurorului.
-        </p>
-        <p>
           <strong>În urmărirea penală, primele ore contează cel mai mult.</strong> Ce declari, ce semnezi și cum reacționezi în primele 24 de ore pot decide dacă dosarul se închide rapid sau se transformă într-un proces lung. Nu aștepta prima înfățișare în instanță ca să ceri ajutor - un avocat de urmărire penală te apără chiar de la audiere, percheziție sau reținere.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
         </p>
       </div>
 
@@ -148,6 +142,16 @@ export default function UrmarirePenala() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Asist persoane citate, reținute, percheziționate sau aflate în orice etapă a fazei de urmărire penală - de la primul telefon primit de la poliție sau parchet, până la soluția procurorului.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>
