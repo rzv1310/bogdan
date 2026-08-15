@@ -787,6 +787,11 @@ const HomepageEN = () => {
                 className="w-full h-auto max-w-md md:max-w-sm rounded-lg shadow-md"
               />
             </div>
+            <div className="mt-6 text-center text-hero-foreground">
+              <p className="text-lg font-semibold">{t.homeBio.name}</p>
+              <p className="text-sm text-hero-foreground/80">{t.homeBio.line1}</p>
+              <p className="text-sm text-hero-foreground/80">{t.homeBio.line2}</p>
+            </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="mt-10">
               <PulseBeams
