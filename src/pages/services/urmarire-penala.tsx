@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
@@ -53,7 +54,7 @@ const FAQ = [
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
-function CallCta({ label = "Sună acum" }: { label?: string }) {
+function CallCta({ label = "Sună-mă acum!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - avocat urmărire penală`}>
@@ -140,7 +141,7 @@ export default function UrmarirePenala() {
         </p>
       </div>
 
-      <CallCta />
+      <ServiceHeroCta lang="ro" ariaLabel="Sună-mă acum! - avocat urmărire penală" />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google

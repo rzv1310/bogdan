@@ -1,6 +1,7 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import EthereumCard from "@/components/crypto/EthereumCard";
@@ -119,13 +120,7 @@ export default function CryptoInvestigationsEn() {
             <span className="block">Wallets can be frozen, exchange accounts blocked and digital evidence seized before you are even formally notified.</span>
             <span className="block">How you react from day one can decide whether the case is closed or turns into a lengthy money laundering trial.</span>
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40316320183" aria-label="Call now">
-                <Phone className="mr-2" /> Call now
-              </a>
-            </Button>
-          </div>
+          <ServiceHeroCta lang="en" ariaLabel="Call now" />
           <p className="mt-3 text-sm text-muted-foreground">
             <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
           </p>
