@@ -167,7 +167,7 @@ export default function Malpraxis() {
           Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal (white-collar, infracțiuni de serviciu) și litigii cu componentă medicală. Am reprezentat atât inculpați, cât și părți vătămate, inclusiv în dosare complexe cu expertize medico-legale, investigații interne și comisii de malpraxis.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
         </p>
       </div>
 

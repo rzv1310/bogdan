@@ -87,7 +87,7 @@ export default function RoadTrafficEn() {
             I am Bogdan Lamatic, a lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I defend clients in traffic offenses, from matters without victims to accidents with bodily injury or death.
           </p>
           <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before all prosecutors' offices and courts of all levels, including the High Court of Cassation and Justice.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before all prosecutors' offices and courts of all levels, including the High Court of Cassation and Justice.
           </p>
         </div>
 

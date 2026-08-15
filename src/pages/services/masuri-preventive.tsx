@@ -154,7 +154,7 @@ export default function MasuriPreventive() {
           .
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
         </p>
       </div>
 

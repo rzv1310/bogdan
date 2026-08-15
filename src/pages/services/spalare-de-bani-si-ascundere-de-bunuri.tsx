@@ -134,7 +134,7 @@ export default function SpalareDeBani() {
               Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal, specializat în spălare de bani și ascunderea de bunuri. Fiecare dosar de „white-collar crime" pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților celor implicați.
             </p>
             <p>
-              Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+              Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
             </p>
           </div>
 

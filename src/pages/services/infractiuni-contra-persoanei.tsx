@@ -142,7 +142,7 @@ export default function InfractiuniContraPersoanei() {
           Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint persoane acuzate de infracțiuni contra persoanei - de la loviri și amenințări, la violență în familie sau infracțiuni contra libertății și integrității sexuale - în fața Poliției, Parchetului și instanțelor de judecată.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
         </p>
       </div>
 

@@ -98,7 +98,7 @@ export default function FinancialCrimeEn() {
               I am Bogdan Lamatic, attorney at the Bucharest Bar, with over 18 years of criminal law practice and a strong track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and abuse of office. I represent both individuals and companies in complex investigations and trials.
             </p>
             <p>
-              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
             </p>
           </div>
           <div className="mt-6">

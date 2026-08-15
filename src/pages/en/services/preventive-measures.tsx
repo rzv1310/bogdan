@@ -154,7 +154,7 @@ export default function PreventiveMeasuresEn() {
           .
         </p>
         <p>
-          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before judges for rights and liberties, pre-trial chamber judges and trial courts, in cases involving judicial control, house arrest or pre-trial detention.
+          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before judges for rights and liberties, pre-trial chamber judges and trial courts, in cases involving judicial control, house arrest or pre-trial detention.
         </p>
       </div>
 

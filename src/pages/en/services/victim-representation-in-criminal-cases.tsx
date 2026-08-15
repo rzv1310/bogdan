@@ -129,7 +129,7 @@ export default function VictimRepresentationEn() {
             I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries, workplace accidents and other criminal acts, including complex cases with medico-legal expertise and negotiation with insurers.
           </p>
           <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have pleaded at all levels of jurisdiction, from prosecutors' offices to the High Court of Cassation and Justice.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have pleaded at all levels of jurisdiction, from prosecutors' offices to the High Court of Cassation and Justice.
           </p>
         </div>
 

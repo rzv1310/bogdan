@@ -129,7 +129,7 @@ export default function MalpracticeEn() {
             I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law (white-collar, service offenses) and litigation with medical components. I represent both defendants and injured parties, including complex files with medico-legal expertise and malpractice committees.
           </p>
           <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
           </p>
         </div>
 

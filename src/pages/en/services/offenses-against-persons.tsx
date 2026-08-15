@@ -146,7 +146,7 @@ export default function OffensesAgainstPersons() {
           I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent people accused of offenses against persons - from assault and threats to domestic violence or offenses against sexual freedom and integrity - before the Police, the Prosecutor's Office and the courts.
         </p>
         <p>
-          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
+          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
         </p>
       </div>
 
