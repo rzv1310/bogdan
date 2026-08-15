@@ -1,7 +1,7 @@
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle, Play, Star } from "lucide-react";
+import { Phone, CheckCircle, Star, ArrowRight } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
@@ -162,18 +162,6 @@ const reviewsEN: Reviews3DItem[] = [
   { name: "Ana-Maria A.", text: "I had Bogdan Lamatic as my lawyer. He defended me in a criminal law case in Bucharest and I was acquitted!", stars: 5 },
 ];
 
-const serviceRoutes: (string | null)[] = [
-  null,
-  "/en/services/financial-crime",
-  "/en/services/corruption-and-public-office-offenses",
-  "/en/services/crypto-asset-investigations",
-  "/en/services/drug-offenses",
-  "/en/services/money-laundering-and-asset-concealment",
-  "/en/services/professional-negligence-and-malpractice",
-  "/en/services/road-traffic-offenses",
-  "/en/services/workplace-criminal-liability",
-  "/en/services/victim-representation-in-criminal-cases",
-] as const;
 
 const HomepageEN = () => {
   const { lang } = useLanguage();
@@ -767,50 +755,38 @@ const HomepageEN = () => {
         <section className="w-full bg-hero text-hero-foreground">
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
             <h2 className="text-3xl font-semibold mb-8">{t.servicesTitle}</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {t.services.slice(0, 4).map((s, i) => (
-                <GlowCard key={i} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
-                  <article className="text-hero-foreground">
-                    <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-                    <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              {t.services.map((s) => (
+                <GlowCard key={s.to} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
+                  <article className="text-hero-foreground flex flex-col h-full">
+                    <h3 className="text-base md:text-lg font-semibold mb-2 leading-snug">
+                      <Link to={s.to} className="hover:text-accent hover:underline underline-offset-2">
+                        {s.title}
+                      </Link>
+                    </h3>
+                    <p className="text-sm text-hero-foreground/80 leading-relaxed">{s.body}</p>
+                    <div className="mt-auto pt-4">
+                      <Link
+                        to={s.to}
+                        className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline underline-offset-2"
+                        aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
+                      >
+                        {lang === "ro" ? "Detalii" : "Details"} <ArrowRight className="h-3.5 w-3.5" />
+                      </Link>
+                    </div>
                   </article>
-                  {serviceRoutes[i] && (
-                    <Link
-                      to={serviceRoutes[i]!}
-                      aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
-                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
-                    >
-                      <Play className="h-4 w-4" aria-hidden="true" />
-                    </Link>
-                  )}
-                </GlowCard>
-              ))}
-              <div className="col-span-full flex justify-center">
-                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
-                  <Button variant="premium" size="lg" className="border border-hero-foreground">
-                    <Phone /> (31) 632 01 83
-                  </Button>
-                </a>
-              </div>
-              {t.services.slice(4).map((s, i) => (
-                <GlowCard key={i + 4} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="relative w-full">
-                  <article className="text-hero-foreground">
-                    <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-                    <p className="text-hero-foreground whitespace-pre-line">{s.body}</p>
-                  </article>
-                  {serviceRoutes[i + 4] && (
-                    <Link
-                      to={serviceRoutes[i + 4]!}
-                      aria-label={`${lang === "ro" ? "Deschide pagina" : "Open page"}: ${s.title}`}
-                      className="absolute bottom-3 right-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground shadow-md hover-scale focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
-                    >
-                      <Play className="h-4 w-4" aria-hidden="true" />
-                    </Link>
-                  )}
                 </GlowCard>
               ))}
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center">
+              <Link
+                to="/en/services"
+                className="inline-flex items-center gap-2 text-base md:text-lg font-medium text-accent hover:underline underline-offset-2"
+              >
+                {lang === "ro" ? "Vezi toate serviciile" : "See all services"} <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            <div className="mt-10">
               <PulseBeams
                 beams={beams}
                 gradientStops={gradientStops}
