@@ -36,9 +36,14 @@ export default function Sitemap() {
 
   const englishPages = [
     { url: "/en", title: "Homepage - Criminal Lawyer Bucharest" },
-    { url: "/en/services", title: "Services - Criminal Lawyer Bucharest" },
+    { url: "/en/services", title: "All services" },
     { url: "/en/contact", title: "Contact - Legal Consultations" },
     { url: "/en/blog", title: "Blog - Legal Articles" },
+    { url: "/en/sitemap", title: "Sitemap - All Pages" },
+    { url: "/en/compensation-calculator", title: "Compensation Calculator" },
+    { url: "/en/services/criminal-investigation", title: "Criminal Investigation - Defense from the First Hour" },
+    { url: "/en/services/preventive-measures", title: "Preventive Measures - Immediate Intervention" },
+    { url: "/en/services/offenses-against-persons", title: "Offenses Against Persons - Criminal Defense" },
     { url: "/en/services/financial-crime", title: "Financial Crime - Legal Services" },
     { url: "/en/services/corruption-and-public-office-offenses", title: "Corruption and Public Office Offenses" },
     { url: "/en/services/crypto-asset-investigations", title: "Crypto Asset Investigations" },
