@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { GlowCard } from "@/components/ui/spotlight-card";
 import { Phone, ArrowRight, Briefcase } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { roServiceGroups } from "@/lib/serviceGroups";
