@@ -14,6 +14,9 @@ export const services = [
 ] as const;
 
 export const servicesEn = [
+  { label: "Criminal investigation", to: "/en/services/criminal-investigation" },
+  { label: "Preventive measures", to: "/en/services/preventive-measures" },
+  { label: "Offenses against persons", to: "/en/services/offenses-against-persons" },
   { label: "Economic crime", to: "/en/services/financial-crime" },
   { label: "Corruption offenses and acts related to the exercise of public office", to: "/en/services/corruption-and-public-office-offenses" },
   { label: "Investigations regarding crypto assets", to: "/en/services/crypto-asset-investigations" },

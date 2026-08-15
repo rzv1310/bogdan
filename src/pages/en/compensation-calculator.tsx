@@ -31,7 +31,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
-  new Intl.NumberFormat("ro-RO", {
+  new Intl.NumberFormat("en-GB", {
     style: "currency",
     currency: "RON",
     maximumFractionDigits: 0,
@@ -67,21 +67,30 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   <div {...props} className={`rounded-2xl shadow-lg bg-white p-5 md:p-7 ${className}`}>{children}</div>
 );
 
-export default function CalculatorDespagubiri() {
+export default function CompensationCalculator() {
   useSEO({
-    keywords: "calculator despagubiri, despagubiri accident rutier, daune morale si materiale",
-    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Calculator despăgubiri", item: "https://avocatpenalbucuresti.ro/calculator-despagubiri" }] }],
-    title: "Calculator despăgubiri | Avocat Bogdan Lamatic",
-    description: "Pagină calcul despăgubiri - în curând.",
-    canonical: "/calculator-despagubiri",
-    locale: "ro_RO",
+    keywords: "compensation calculator romania, damages calculator criminal case",
+    schemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+          { "@type": "ListItem", position: 2, name: "Compensation Calculator", item: "https://avocatpenalbucuresti.ro/en/compensation-calculator" },
+        ],
+      },
+    ],
+    title: "Compensation Calculator | Attorney Bogdan Lamatic",
+    description: "Estimate compensation for accidents and injuries. Informative, non-official calculator by attorney Bogdan Lamatic, representing victims in criminal cases.",
+    canonical: "/en/compensation-calculator",
     alternates: { ro: "/calculator-despagubiri", en: "/en/compensation-calculator", xDefault: "/calculator-despagubiri" },
+    locale: "en_GB",
   });
 
-  const [eventType, setEventType] = useState("accident"); // accident | agresiune | altul
-  const [ittDays, setIttDays] = useState(0); // zile îngrijiri medicale/ITT
-  const [hospDays, setHospDays] = useState(0); // zile spitalizare
-  const [disability, setDisability] = useState(0); // % invaliditate permanentă
+  const [eventType, setEventType] = useState("accident"); // accident | assault | other
+  const [ittDays, setIttDays] = useState(0); // days of medical care
+  const [hospDays, setHospDays] = useState(0); // hospitalization days
+  const [disability, setDisability] = useState(0); // permanent disability %
   const [age, setAge] = useState(35);
   const [psych, setPsych] = useState(3); // 1..5
   const [netIncome, setNetIncome] = useState(5000);
@@ -90,7 +99,7 @@ export default function CalculatorDespagubiri() {
   const [travelCare, setTravelCare] = useState(0);
   const [otherCosts, setOtherCosts] = useState(0);
   const [victimFault, setVictimFault] = useState(0); // %
-  const [cap, setCap] = useState(0); // opțional, plafon poliță (RON)
+  const [cap, setCap] = useState(0); // optional insurance policy cap (RON)
   const [showResults, setShowResults] = useState(false); // control results visibility
   const isMobile = useIsMobile();
 
@@ -123,14 +132,14 @@ export default function CalculatorDespagubiri() {
 
     const material = _med + _travel + _other + _lost;
 
-    // Morale (orientativ, NON-oficial). Formula euristică cu factori de severitate.
+    // Non-pecuniary damages (indicative, NON-official). Heuristic formula with severity factors.
     let morale = 3000;
-    morale += 200 * clampNum(ittDays, 0, 3650); // 200 RON / zi ITT
-    morale += 500 * clampNum(hospDays, 0, 365); // 500 RON / zi spital
-    morale += 80000 * (clampNum(disability, 0, 100) / 100); // până la ~80.000 RON pt. 100%
-    morale += 3000 * clampNum(psych, 1, 5); // impact psihologic 1..5
+    morale += 200 * clampNum(ittDays, 0, 3650); // RON 200 / day of medical care
+    morale += 500 * clampNum(hospDays, 0, 365); // RON 500 / hospitalization day
+    morale += 80000 * (clampNum(disability, 0, 100) / 100); // up to ~RON 80,000 for 100%
+    morale += 3000 * clampNum(psych, 1, 5); // psychological impact 1..5
 
-    const typeFactor = eventType === "agresiune" ? 1.1 : eventType === "accident" ? 1.0 : 1.0;
+    const typeFactor = eventType === "assault" ? 1.1 : eventType === "accident" ? 1.0 : 1.0;
     const ageFactor = age < 18 ? 1.2 : age <= 35 ? 1.1 : age <= 60 ? 1.0 : 0.9;
     morale *= typeFactor * ageFactor;
 
@@ -171,15 +180,15 @@ export default function CalculatorDespagubiri() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+                <BreadcrumbLink href="/en/blog">Blog</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Calculator despăgubiri</BreadcrumbPage>
+                <BreadcrumbPage>Compensation Calculator</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -190,26 +199,26 @@ export default function CalculatorDespagubiri() {
           <div>
             <div className="h-[30px]" aria-hidden="true" />
             <h1 className="text-2xl font-semibold">
-              Calculator despăgubiri victime accidente
+              Compensation Calculator for Accident Victims
             </h1>
             <p className="mt-3 text-zinc-700">
-              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și <Link to="/servicii/reprezentarea-victimelor-in-procese-penale" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obțin despăgubiri pentru accidente rutiere</Link>, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime, 2021-2024).
+              I am <strong>Bogdan Lamatic</strong>, attorney with the Bucharest Bar. I represent victims in criminal proceedings and <Link to="/en/services/victim-representation-in-criminal-cases" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obtain compensation for road accidents</Link>, bodily harm and workplace accidents. Recognized by Legal 500 as a <em>Next Generation Partner</em> (White-Collar Crime, 2021-2024).
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Strategie penal + civil (parte vătămată / parte civilă)
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Combined criminal and civil strategy (injured party / civil party)
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Negociere și litigii cu asiguratorii (RCA)
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Negotiation and litigation with insurers (motor liability insurance)
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Expertize medico-legale și accidentologice
+                <CheckCircle2 className="w-5 h-5 mt-0.5 text-accent" /> Forensic and accident reconstruction expertise
               </li>
             </ul>
             <div className="mt-4">
-              <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum">
+              <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call now">
                 <a href="tel:+40316320183">
-                  <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
+                  <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Call now</span>
                 </a>
               </Button>
             </div>
@@ -218,21 +227,21 @@ export default function CalculatorDespagubiri() {
             <Card>
               <div className="flex items-center gap-2 mb-3">
                 <Calculator className="w-5 h-5" />
-                <h2 className="text-xl font-semibold">Calculator despăgubiri</h2>
+                <h2 className="text-xl font-semibold">Compensation Calculator</h2>
               </div>
               <p className="text-sm text-zinc-600 mb-4 flex items-start gap-2">
-                <BadgeInfo className="w-4 h-4 mt-0.5" /> Estimare neoficială, în scop informativ. Sumele reale depind de probe, încadrare juridică și practică judiciară.
+                <BadgeInfo className="w-4 h-4 mt-0.5" /> Non-official estimate, for informational purposes only. Actual amounts depend on evidence, legal classification and case law.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="p-0 shadow-none bg-transparent">
                   <div className="divide-y">
-                    <InputRow label="Tip eveniment" hint="Alege scenariul cel mai apropiat">
+                    <InputRow label="Type of event" hint="Choose the closest scenario">
                       <div className="flex gap-2">
                         {[
-                          { id: "accident", label: "Accident rutier", icon: <Car className="w-4 h-4" /> },
-                          { id: "agresiune", label: "Agresiune", icon: <Gavel className="w-4 h-4" /> },
-                          { id: "altul", label: "Altul" },
+                          { id: "accident", label: "Road accident", icon: <Car className="w-4 h-4" /> },
+                          { id: "assault", label: "Assault", icon: <Gavel className="w-4 h-4" /> },
+                          { id: "other", label: "Other" },
                         ].map((opt) => (
                           <button
                             key={opt.id}
@@ -249,7 +258,7 @@ export default function CalculatorDespagubiri() {
                       </div>
                     </InputRow>
 
-                    <InputRow label="Zile îngrijiri medicale (ITT)">
+                    <InputRow label="Days of medical care">
                       <input
                         type="number"
                         min={0}
@@ -258,7 +267,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setIttDays(clampNum(e.target.value, 0, 3650))}
                       />
                     </InputRow>
-                    <InputRow label="Zile spitalizare">
+                    <InputRow label="Hospitalization days">
                       <input
                         type="number"
                         min={0}
@@ -267,7 +276,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setHospDays(clampNum(e.target.value, 0, 365))}
                       />
                     </InputRow>
-                    <InputRow label="Invaliditate permanentă (%)">
+                    <InputRow label="Permanent disability (%)">
                       <input
                         type="number"
                         min={0}
@@ -277,7 +286,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setDisability(clampNum(e.target.value, 0, 100))}
                       />
                     </InputRow>
-                    <InputRow label="Vârsta victimei">
+                    <InputRow label="Victim's age">
                       <input
                         type="number"
                         min={1}
@@ -286,7 +295,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setAge(clampNum(e.target.value, 1, 120))}
                       />
                     </InputRow>
-                    <InputRow label="Impact psihologic (1=mic · 5=major)">
+                    <InputRow label="Psychological impact (1=low . 5=major)">
                       <input
                         type="range"
                         min={1}
@@ -296,14 +305,14 @@ export default function CalculatorDespagubiri() {
                         value={psych}
                         onChange={(e) => setPsych(clampNum(e.target.value, 1, 5))}
                       />
-                      <div className="text-xs text-zinc-600">Nivel selectat: {psych}</div>
+                      <div className="text-xs text-zinc-600">Selected level: {psych}</div>
                     </InputRow>
                   </div>
                 </Card>
 
                 <Card className="p-0 shadow-none bg-transparent">
                   <div className="divide-y">
-                    <InputRow label="Venit net lunar (RON)">
+                    <InputRow label="Monthly net income (RON)">
                       <input
                         type="number"
                         min={0}
@@ -312,7 +321,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setNetIncome(clampNum(e.target.value, 0, 1e7))}
                       />
                     </InputRow>
-                    <InputRow label="Luni incapacitate muncă">
+                    <InputRow label="Months unable to work">
                       <input
                         type="number"
                         min={0}
@@ -321,7 +330,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setMonthsOff(clampNum(e.target.value, 0, 120))}
                       />
                     </InputRow>
-                    <InputRow label="Cheltuieli medicale (RON)">
+                    <InputRow label="Medical expenses (RON)">
                       <input
                         type="number"
                         min={0}
@@ -330,7 +339,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setMedCosts(clampNum(e.target.value, 0, 1e9))}
                       />
                     </InputRow>
-                    <InputRow label="Transport & îngrijire (RON)">
+                    <InputRow label="Transport & care (RON)">
                       <input
                         type="number"
                         min={0}
@@ -339,7 +348,7 @@ export default function CalculatorDespagubiri() {
                         onChange={(e) => setTravelCare(clampNum(e.target.value, 0, 1e9))}
                       />
                     </InputRow>
-                    <InputRow label="Alte cheltuieli (RON)">
+                    <InputRow label="Other expenses (RON)">
                       <input
                         type="number"
                         min={0}
@@ -349,8 +358,8 @@ export default function CalculatorDespagubiri() {
                       />
                     </InputRow>
                     <InputRow
-                      label="Cota de vinovăție a victimei (%)"
-                      hint="Dacă există o culpă concurentă a victimei"
+                      label="Victim's share of fault (%)"
+                      hint="If there is contributory negligence by the victim"
                     >
                       <input
                         type="number"
@@ -362,8 +371,8 @@ export default function CalculatorDespagubiri() {
                       />
                     </InputRow>
                     <InputRow
-                      label="Plafon poliță (RON) - opțional"
-                      hint="Dacă îl cunoști, introdu limita RCA; estimarea va fi plafonată"
+                      label="Policy cap (RON) - optional"
+                      hint="If you know it, enter the insurance limit; the estimate will be capped"
                     >
                       <input
                         type="number"
@@ -382,13 +391,13 @@ export default function CalculatorDespagubiri() {
                   onClick={reset}
                   className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 border"
                 >
-                  <RefreshCw className="w-4 h-4" /> Resetează
+                  <RefreshCw className="w-4 h-4" /> Reset
                 </button>
                 <button
                   onClick={calculate}
                   className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 >
-                  Calculează <ArrowRight className="w-4 h-4" />
+                  Calculate <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </Card>
@@ -397,41 +406,41 @@ export default function CalculatorDespagubiri() {
 
         {/* Results */}
         {showResults && (
-          <section id="rezultat" className="grid md:grid-cols-3 gap-6 mb-12">
+          <section id="result" className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="md:col-span-2">
               <div className="flex items-center gap-2 mb-2">
                 <ShieldCheck className="w-5 h-5" />
-                <h3 className="text-lg font-semibold">Rezultat estimativ</h3>
+                <h3 className="text-lg font-semibold">Estimated result</h3>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="rounded-xl bg-zinc-50 p-4">
-                  <div className="text-sm text-zinc-600">Total despăgubiri (interval)</div>
+                  <div className="text-sm text-zinc-600">Total compensation (range)</div>
                   <div className="text-2xl font-bold">
                     {fmtRON(low)} - {fmtRON(high)}
                   </div>
                 </div>
                 <div className="rounded-xl bg-zinc-50 p-4">
                   <div className="text-sm text-zinc-600 flex items-center gap-2">
-                    Estimare
+                    Estimate
                     {isMobile ? (
                       <Popover>
                         <PopoverTrigger asChild>
-                          <button type="button" aria-label="Informații estimare" className="inline-flex">
+                          <button type="button" aria-label="Estimate information" className="inline-flex">
                             <BadgeInfo className="w-4 h-4 text-accent" />
                           </button>
                         </PopoverTrigger>
                         <PopoverContent className="max-w-xs text-sm">
-                          Daune materiale + morale, ajustate cu procentul de vinovăție și plafonate la limita poliței (dacă există).
+                          Material and non-pecuniary damages, adjusted for the fault percentage and capped at the policy limit (if any).
                         </PopoverContent>
                       </Popover>
                     ) : (
                       <TooltipProvider delayDuration={300}>
                         <Tooltip>
                           <TooltipTrigger asChild>
-                            <BadgeInfo className="w-4 h-4 text-accent" aria-label="Informații estimare" />
+                            <BadgeInfo className="w-4 h-4 text-accent" aria-label="Estimate information" />
                           </TooltipTrigger>
                           <TooltipContent>
-                            Daune materiale + morale, ajustate cu procentul de vinovăție și plafonate la limita poliței (dacă există).
+                            Material and non-pecuniary damages, adjusted for the fault percentage and capped at the policy limit (if any).
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
@@ -439,20 +448,20 @@ export default function CalculatorDespagubiri() {
                   </div>
                   <div className="text-2xl font-bold">{fmtRON(net)}</div>
                   {!isMobile && (
-                    <div className="text-xs text-zinc-500 mt-1">Valoare de referință; intervalul din stânga este ±20% față de aceasta.</div>
+                    <div className="text-xs text-zinc-500 mt-1">Reference value; the range on the left is +/-20% around it.</div>
                   )}
                 </div>
               </div>
 
               <div className="mt-4 grid md:grid-cols-3 gap-4 text-sm">
                 <div className="rounded-xl border p-3">
-                  <div className="font-semibold mb-1">Daune materiale</div>
+                  <div className="font-semibold mb-1">Material damages</div>
                   <ul className="space-y-1 text-zinc-700">
                     <li>
-                      Cheltuieli medicale + transport + alte: <strong>{fmtRON(medCosts + travelCare + otherCosts)}</strong>
+                      Medical + transport + other expenses: <strong>{fmtRON(medCosts + travelCare + otherCosts)}</strong>
                     </li>
                     <li>
-                      Venituri pierdute: <strong>{fmtRON(lostWages)}</strong>
+                      Lost income: <strong>{fmtRON(lostWages)}</strong>
                     </li>
                     <li>
                       Subtotal: <strong>{fmtRON(material)}</strong>
@@ -460,20 +469,20 @@ export default function CalculatorDespagubiri() {
                   </ul>
                 </div>
                 <div className="rounded-xl border p-3">
-                  <div className="font-semibold mb-1">Daune morale (orientativ)</div>
+                  <div className="font-semibold mb-1">Non-pecuniary damages (indicative)</div>
                   <ul className="space-y-1 text-zinc-700">
-                    <li>ITT: {ittDays} zile · Spital: {hospDays} zile</li>
-                    <li>Invaliditate: {disability}% · Impact: {psych}/5</li>
+                    <li>Medical care: {ittDays} days . Hospital: {hospDays} days</li>
+                    <li>Disability: {disability}% . Impact: {psych}/5</li>
                     <li>
-                      Estimare: <strong>{fmtRON(morale)}</strong>
+                      Estimate: <strong>{fmtRON(morale)}</strong>
                     </li>
                   </ul>
                 </div>
                 <div className="rounded-xl border p-3">
-                  <div className="font-semibold mb-1">Ajustări</div>
+                  <div className="font-semibold mb-1">Adjustments</div>
                   <ul className="space-y-1 text-zinc-700">
-                    <li>Culpă victimă: {victimFault}%</li>
-                    <li>Plafon poliță: {cap > 0 ? fmtRON(cap) : "-"}</li>
+                    <li>Victim's fault: {victimFault}%</li>
+                    <li>Policy cap: {cap > 0 ? fmtRON(cap) : "-"}</li>
                   </ul>
                 </div>
               </div>
@@ -483,44 +492,44 @@ export default function CalculatorDespagubiri() {
                   onClick={() => window.print()}
                   className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 border"
                 >
-                  <Download className="w-4 h-4" /> Descarcă estimarea (PDF)
+                  <Download className="w-4 h-4" /> Download the estimate (PDF)
                 </button>
                 <a
                   href="mailto:contact@avocatpenalbucuresti.ro"
                   className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 >
-                  Trimite-mi pentru evaluare <ArrowRight className="w-4 h-4" />
+                  Send it to me for evaluation <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
               <p className="mt-4 text-xs text-zinc-500">
-                Disclaimer: Acest calculator oferă o estimare orientativă, neavând caracter oficial sau de consultanță juridică. Sumele reale depind de probe (acte medicale, expertize), încadrări juridice, culpa părților, limite de răspundere ale asiguratorului și practica instanțelor/ASF. Pentru un calcul exact este necesară analiză individuală.
+                Disclaimer: This calculator provides an indicative estimate and does not constitute an official assessment or legal advice. Actual amounts depend on evidence (medical records, expert reports), legal classification, the parties' fault, the insurer's liability limits, and court/regulator practice. An individual analysis is required for an accurate calculation.
               </p>
             </Card>
             <div className="space-y-4">
               <Card>
                 <div className="flex items-center gap-2 mb-1">
                   <FileText className="w-5 h-5" />
-                  <h3 className="font-semibold">Documente utile</h3>
+                  <h3 className="font-semibold">Useful documents</h3>
                 </div>
                 <ul className="text-sm text-zinc-700 space-y-1">
-                  <li>Acte medicale (cronologic, PDF)</li>
-                  <li>Certificat medico-legal (dacă există)</li>
-                  <li>Constatare poliție / proces-verbal</li>
-                  <li>Poliță RCA și date asigurator</li>
-                  <li>Dovezi cheltuieli / venituri pierdute</li>
+                  <li>Medical records (chronological, PDF)</li>
+                  <li>Forensic medical certificate (if any)</li>
+                  <li>Police report / incident report</li>
+                  <li>Motor liability policy and insurer details</li>
+                  <li>Proof of expenses / lost income</li>
                 </ul>
               </Card>
               <Card>
                 <div className="flex items-center gap-2 mb-1">
                   <HeartPulse className="w-5 h-5" />
-                  <h3 className="font-semibold">Cazuri acoperite</h3>
+                  <h3 className="font-semibold">Cases covered</h3>
                 </div>
                 <ul className="text-sm text-zinc-700 space-y-1">
-                  <li>Accidente rutiere (RCA/CASCO)</li>
-                  <li>Vătămări corporale (art. 193-196 CP)</li>
-                  <li>Ucidere din culpă (art. 192 CP)</li>
-                  <li>Accidente de muncă</li>
+                  <li>Road accidents (motor liability/CASCO)</li>
+                  <li>Bodily harm (Criminal Code art. 193-196)</li>
+                  <li>Manslaughter (Criminal Code art. 192)</li>
+                  <li>Workplace accidents</li>
                 </ul>
               </Card>
             </div>
@@ -530,26 +539,26 @@ export default function CalculatorDespagubiri() {
         {/* Contact (FAQ removed) */}
         <section className="mb-12">
           <Card id="contact" className="border border-accent">
-            <h2 className="text-xl font-semibold mb-2">Contact rapid</h2>
+            <h2 className="text-xl font-semibold mb-2">Quick contact</h2>
             <p className="text-sm text-zinc-700 mb-3">
-              Trimite-mi detaliile esențiale și îți ofer o evaluare inițială.
+              Send me the essential details and I will provide an initial assessment.
             </p>
             <div className="grid gap-3">
-              <input className="rounded-xl border p-2" placeholder="Nume" />
-              <input className="rounded-xl border p-2" placeholder="Email / Telefon" />
+              <input className="rounded-xl border p-2" placeholder="Name" />
+              <input className="rounded-xl border p-2" placeholder="Email / Phone" />
               <textarea
                 className="rounded-xl border p-2"
                 rows={4}
-                placeholder="Descrie pe scurt evenimentul (data, locul, ce s-a întâmplat, leziuni)"
+                placeholder="Briefly describe the event (date, place, what happened, injuries)"
               ></textarea>
               <a
                 href="mailto:contact@avocatpenalbucuresti.ro"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                Trimite solicitarea <ArrowRight className="w-4 h-4" />
+                Send the request <ArrowRight className="w-4 h-4" />
               </a>
               <p className="text-xs text-zinc-500">
-                Prin trimitere, confirmi că ai citit informarea privind prelucrarea datelor.
+                By submitting, you confirm that you have read the data processing notice.
               </p>
             </div>
           </Card>
@@ -560,37 +569,37 @@ export default function CalculatorDespagubiri() {
           <Card className="bg-zinc-900 text-white">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div>
-                <div className="text-lg font-semibold">Ai nevoie de o estimare profesionistă?</div>
+                <div className="text-lg font-semibold">Need a professional estimate?</div>
                 <div className="text-sm text-zinc-200">
-                  Trimit-mi actele - revin cu un plan și un buget clar.
+                  Send me the documents - I will come back with a clear plan and budget.
                 </div>
               </div>
               <a
                 href="mailto:contact@avocatpenalbucuresti.ro"
                 className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-white text-zinc-900"
               >
-                Programează o consultanță <ArrowRight className="w-4 h-4" />
+                Schedule a consultation <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </Card>
         </section>
 
-        {/* Metodă de lucru - mutată la final */}
+        {/* Working method - moved to the end */}
         <section className="mb-16">
           <Card className="border border-accent">
-            <h2 className="text-xl font-semibold mb-3">Metoda mea de lucru este următoarea:</h2>
+            <h2 className="text-xl font-semibold mb-3">My working method is as follows:</h2>
             <ol className="list-decimal pl-5 space-y-2 text-zinc-700">
               <li>
-                Realizez o evaluare rapidă a dosarului pentru a stabili încadrările legale și legătura de cauzalitate.
+                I carry out a quick assessment of the file to establish the legal classification and the causal link.
               </li>
               <li>
-                Aplic o strategie duală, depunând atât plângere penală, cât și constituindu-mă parte civilă sau acționând separat pe cale civilă.
+                I apply a dual strategy, filing a criminal complaint while also joining as a civil party or acting separately through civil proceedings.
               </li>
               <li>
-                Negociez cu asiguratorul, deschid dosarul de daună și urmăresc lichidarea acestuia.
+                I negotiate with the insurer, open the claim file and follow up on its settlement.
               </li>
               <li>
-                Reprezint clientul în instanță, aducând probe medico-legale, accidentologice și audiind martori.
+                I represent the client in court, bringing forensic and accident reconstruction evidence and examining witnesses.
               </li>
             </ol>
           </Card>
@@ -598,12 +607,12 @@ export default function CalculatorDespagubiri() {
 
         {/* Call to Action */}
         <section className="text-center mb-12">
-          <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună acum">
+          <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call now">
             <a href="tel:+40316320183">
-              <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
+              <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Call now</span>
             </a>
           </Button>
-              <ServicesQuickLinks />
+              <ServicesQuickLinks lang="en" />
 </section>
       </main>
     </div>

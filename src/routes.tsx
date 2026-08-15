@@ -42,6 +42,11 @@ import PoliticaCookies from "./pages/politica-cookies";
 import GDPRen from "./pages/en/gdpr";
 import CookiePolicyEn from "./pages/en/cookie-policy";
 import Sitemap from "./pages/Sitemap";
+import SitemapEn from "./pages/en/sitemap";
+import CriminalInvestigationEn from "./pages/en/services/criminal-investigation";
+import PreventiveMeasuresEn from "./pages/en/services/preventive-measures";
+import OffensesAgainstPersonsEn from "./pages/en/services/offenses-against-persons";
+import CompensationCalculatorEn from "./pages/en/compensation-calculator";
 
 export default function AppRoutes() {
   return (
@@ -80,7 +85,12 @@ export default function AppRoutes() {
         <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
         <Route path="/en/gdpr" element={<GDPRen />} />
         <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
+        <Route path="/en/sitemap" element={<SitemapEn />} />
+        <Route path="/en/compensation-calculator" element={<CompensationCalculatorEn />} />
         <Route path="/en/services" element={<EnServicesPage />} />
+        <Route path="/en/services/criminal-investigation" element={<CriminalInvestigationEn />} />
+        <Route path="/en/services/preventive-measures" element={<PreventiveMeasuresEn />} />
+        <Route path="/en/services/offenses-against-persons" element={<OffensesAgainstPersonsEn />} />
         <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
         <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
         <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />

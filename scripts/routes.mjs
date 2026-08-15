@@ -34,7 +34,12 @@ export const ROUTES = [
   "/en/terms-and-conditions",
   "/en/gdpr",
   "/en/cookie-policy",
+  "/en/sitemap",
+  "/en/compensation-calculator",
   "/en/services",
+  "/en/services/criminal-investigation",
+  "/en/services/preventive-measures",
+  "/en/services/offenses-against-persons",
   "/en/services/financial-crime",
   "/en/services/corruption-and-public-office-offenses",
   "/en/services/crypto-asset-investigations",
@@ -51,7 +56,7 @@ export function priorityFor(route) {
   if (route === "/" || route === "/en") return "1.0";
   if (route.startsWith("/servicii/") || route.startsWith("/en/services/")) return "0.9";
   if (["/despre-mine", "/contact", "/en/about", "/en/contact"].includes(route)) return "0.8";
-  if (["/termeni-si-conditii", "/gdpr", "/politica-cookies", "/en/terms-and-conditions", "/en/gdpr", "/en/cookie-policy", "/harta-site"].includes(route))
+  if (["/termeni-si-conditii", "/gdpr", "/politica-cookies", "/en/terms-and-conditions", "/en/gdpr", "/en/cookie-policy", "/harta-site", "/en/sitemap"].includes(route))
     return "0.3";
   return "0.6";
 }

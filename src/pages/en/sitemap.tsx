@@ -2,46 +2,37 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Home, Briefcase, Phone, User, FileText, Globe, Shield, Cookie } from "lucide-react";
 
-export default function Sitemap() {
+export default function SitemapEn() {
   useSEO({
-    keywords: "harta site avocat penal, pagini cabinet avocat, index site avocat bucuresti",
-    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Harta site", item: "https://avocatpenalbucuresti.ro/harta-site" }] }],
-    title: "Sitemap | Avocat Penal București - Toate Paginile Site-ului",
-    description: "Harta completă a site-ului avocat penal București. Găsește rapid toate serviciile juridice, informațiile de contact și resursele disponibile.",
-    canonical: "/harta-site",
+    keywords: "sitemap criminal lawyer bucharest",
+    locale: "en_GB",
+    schemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
+          { "@type": "ListItem", position: 2, name: "Sitemap", item: "https://avocatpenalbucuresti.ro/en/sitemap" },
+        ],
+      },
+    ],
+    title: "Sitemap | Criminal Lawyer Bucharest - All Website Pages",
+    description:
+      "Complete sitemap of the criminal lawyer Bucharest website. Quickly find all legal services, contact details and available resources.",
+    canonical: "/en/sitemap",
     alternates: { ro: "/harta-site", en: "/en/sitemap", xDefault: "/harta-site" },
   });
 
   const mainPages = [
-    { url: "/", title: "Pagina Principală - Avocat Penal București", icon: Home },
-    { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic", icon: User },
-    { url: "/contact", title: "Contact - Consultații Juridice", icon: Phone },
-    { url: "/blog", title: "Blog - Articole Juridice", icon: FileText },
+    { url: "/en", title: "Homepage - Criminal Lawyer Bucharest", icon: Home },
+    { url: "/en/about", title: "About - Attorney Bogdan Lamatic", icon: User },
+    { url: "/en/contact", title: "Contact - Legal Consultations", icon: Phone },
+    { url: "/en/blog", title: "Blog - Legal Articles", icon: FileText },
+    { url: "/en/compensation-calculator", title: "Compensation Calculator", icon: FileText },
   ];
 
   const services = [
-    { url: "/servicii", title: "Toate serviciile" },
-    { url: "/servicii/urmarire-penala", title: "Urmărire Penală - Apărare din Prima Oră" },
-    { url: "/servicii/masuri-preventive", title: "Măsuri Preventive - Intervenție Imediată" },
-    { url: "/servicii/infractiuni-contra-persoanei", title: "Infracțiuni Contra Persoanei - Apărare Penală" },
-    { url: "/servicii/criminalitate-economica", title: "Criminalitate Economică - Servicii Juridice" },
-    { url: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice", title: "Infracțiuni de Corupție și Funcție Publică" },
-    { url: "/servicii/investigatii-privind-activele-cripto", title: "Investigații Cripto - Active Digitale" },
-    { url: "/servicii/cauze-penale-privind-droguri", title: "Cauze Penale Droguri - Apărare Juridică" },
-    { url: "/servicii/spalare-de-bani-si-ascundere-de-bunuri", title: "Spălare de Bani și Ascundere Bunuri" },
-    { url: "/servicii/neglijenta-profesionala-si-malpraxis", title: "Neglijență Profesională și Malpraxis" },
-    { url: "/servicii/infractiuni-rutiere-cu-victime", title: "Infracțiuni Rutiere cu Victime" },
-    { url: "/servicii/raspundere-penala-incidente-locul-de-munca", title: "Răspundere Penală Locul de Muncă" },
-    { url: "/servicii/reprezentarea-victimelor-in-procese-penale", title: "Reprezentarea Victimelor în Procese Penale" },
-  ];
-
-  const englishPages = [
-    { url: "/en", title: "Homepage - Criminal Lawyer Bucharest" },
     { url: "/en/services", title: "All services" },
-    { url: "/en/contact", title: "Contact - Legal Consultations" },
-    { url: "/en/blog", title: "Blog - Legal Articles" },
-    { url: "/en/sitemap", title: "Sitemap - All Pages" },
-    { url: "/en/compensation-calculator", title: "Compensation Calculator" },
     { url: "/en/services/criminal-investigation", title: "Criminal Investigation - Defense from the First Hour" },
     { url: "/en/services/preventive-measures", title: "Preventive Measures - Immediate Intervention" },
     { url: "/en/services/offenses-against-persons", title: "Offenses Against Persons - Criminal Defense" },
@@ -56,13 +47,23 @@ export default function Sitemap() {
     { url: "/en/services/victim-representation-in-criminal-cases", title: "Victim Representation in Criminal Cases" },
   ];
 
+  const romanianPages = [
+    { url: "/", title: "Pagina Principală - Avocat Penal București" },
+    { url: "/servicii", title: "Toate serviciile" },
+    { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic" },
+    { url: "/contact", title: "Contact - Consultații Juridice" },
+    { url: "/blog", title: "Blog - Articole Juridice" },
+    { url: "/calculator-despagubiri", title: "Calculator Despăgubiri" },
+    { url: "/harta-site", title: "Harta site" },
+  ];
+
   const legalPages = [
-    { url: "/termeni-si-conditii", title: "Termeni și Condiții", icon: FileText },
-    { url: "/gdpr", title: "GDPR - Protecția Datelor", icon: Shield },
-    { url: "/politica-cookies", title: "Politica de Cookies", icon: Cookie },
     { url: "/en/terms-and-conditions", title: "Terms and Conditions", icon: FileText },
     { url: "/en/gdpr", title: "GDPR - Data Protection", icon: Shield },
     { url: "/en/cookie-policy", title: "Cookie Policy", icon: Cookie },
+    { url: "/termeni-si-conditii", title: "Termeni și Condiții", icon: FileText },
+    { url: "/gdpr", title: "GDPR - Protecția Datelor", icon: Shield },
+    { url: "/politica-cookies", title: "Politica de Cookies", icon: Cookie },
   ];
 
   return (
@@ -71,27 +72,25 @@ export default function Sitemap() {
         <header className="text-center mb-12">
           <h1 className="text-2xl font-semibold mb-4">Sitemap</h1>
           <p className="text-xl text-hero-foreground/90 max-w-3xl mx-auto">
-            Harta completă website avocatpenalbucuresti.ro
+            Complete map of the avocatpenalbucuresti.ro website
           </p>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* High Priority - Romanian Pages */}
           <section className="space-y-8">
-            {/* Main Pages */}
             <div className="bg-hero-foreground/5 rounded-lg p-6 border border-hero-foreground/10">
               <div className="flex items-center gap-3 mb-6">
                 <Home className="h-6 w-6 text-accent" />
-                <h2 className="text-2xl font-semibold">Pagini Principale</h2>
-                <span className="bg-accent text-accent-foreground px-2 py-1 rounded text-sm font-medium">Prioritate Maximă</span>
+                <h2 className="text-2xl font-semibold">Main Pages</h2>
+                <span className="bg-accent text-accent-foreground px-2 py-1 rounded text-sm font-medium">Top Priority</span>
               </div>
               <ul className="space-y-3">
                 {mainPages.map((page) => {
                   const IconComponent = page.icon;
                   return (
                     <li key={page.url}>
-                      <Link 
-                        to={page.url} 
+                      <Link
+                        to={page.url}
                         className="flex items-center gap-3 text-hero-foreground/90 hover:text-accent transition-colors duration-200 group"
                       >
                         <IconComponent className="h-4 w-4 group-hover:text-accent" />
@@ -103,18 +102,17 @@ export default function Sitemap() {
               </ul>
             </div>
 
-            {/* Services */}
             <div className="bg-hero-foreground/5 rounded-lg p-6 border border-hero-foreground/10">
               <div className="flex items-center gap-3 mb-6">
                 <Briefcase className="h-6 w-6 text-accent" />
-                <h2 className="text-2xl font-semibold">Servicii Avocat Penal</h2>
-                <span className="bg-accent text-accent-foreground px-2 py-1 rounded text-sm font-medium">Prioritate Maximă</span>
+                <h2 className="text-2xl font-semibold">Criminal Law Services</h2>
+                <span className="bg-accent text-accent-foreground px-2 py-1 rounded text-sm font-medium">Top Priority</span>
               </div>
               <ul className="space-y-3">
                 {services.map((service) => (
                   <li key={service.url}>
-                    <Link 
-                      to={service.url} 
+                    <Link
+                      to={service.url}
                       className="text-hero-foreground/90 hover:text-accent transition-colors duration-200 hover:underline block"
                     >
                       {service.title}
@@ -125,20 +123,18 @@ export default function Sitemap() {
             </div>
           </section>
 
-          {/* Medium & Low Priority */}
           <section className="space-y-8">
-            {/* English Pages */}
             <div className="bg-hero-foreground/3 rounded-lg p-6 border border-hero-foreground/10">
               <div className="flex items-center gap-3 mb-6">
                 <Globe className="h-6 w-6 text-accent/80" />
-                <h2 className="text-2xl font-semibold">English Pages</h2>
-                <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded text-sm font-medium">Prioritate Medie</span>
+                <h2 className="text-2xl font-semibold">Pagini în română</h2>
+                <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded text-sm font-medium">Medium Priority</span>
               </div>
               <ul className="space-y-2">
-                {englishPages.map((page) => (
+                {romanianPages.map((page) => (
                   <li key={page.url}>
-                    <Link 
-                      to={page.url} 
+                    <Link
+                      to={page.url}
                       className="text-hero-foreground/80 hover:text-accent/80 transition-colors duration-200 hover:underline block text-sm"
                     >
                       {page.title}
@@ -148,20 +144,19 @@ export default function Sitemap() {
               </ul>
             </div>
 
-            {/* Legal Pages */}
             <div className="bg-hero-foreground/2 rounded-lg p-6 border border-hero-foreground/10">
               <div className="flex items-center gap-3 mb-6">
                 <Shield className="h-6 w-6 text-muted-foreground" />
-                <h2 className="text-2xl font-semibold">Informații Legale</h2>
-                <span className="bg-muted text-muted-foreground px-2 py-1 rounded text-sm font-medium">Prioritate Mică</span>
+                <h2 className="text-2xl font-semibold">Legal Information</h2>
+                <span className="bg-muted text-muted-foreground px-2 py-1 rounded text-sm font-medium">Low Priority</span>
               </div>
               <ul className="space-y-2">
                 {legalPages.map((page) => {
                   const IconComponent = page.icon;
                   return (
                     <li key={page.url}>
-                      <Link 
-                        to={page.url} 
+                      <Link
+                        to={page.url}
                         className="flex items-center gap-2 text-hero-foreground/70 hover:text-accent/70 transition-colors duration-200 group text-sm"
                       >
                         <IconComponent className="h-3 w-3 group-hover:text-accent/70" />
@@ -177,13 +172,12 @@ export default function Sitemap() {
 
         <footer className="mt-16 pt-8 border-t border-hero-foreground/10 text-center">
           <p className="text-hero-foreground/60">
-            Ultima actualizare: {new Date().toLocaleDateString('ro-RO')} | 
-            Total pagini: {mainPages.length + services.length + englishPages.length + legalPages.length}
+            Total pages: {mainPages.length + services.length + romanianPages.length + legalPages.length}
           </p>
           <p className="text-hero-foreground/60 mt-2">
-            Pentru consultații juridice, contactați{" "}
-            <Link to="/contact" className="text-accent hover:underline">
-              Avocat Bogdan Lamatic
+            For legal consultations, contact{" "}
+            <Link to="/en/contact" className="text-accent hover:underline">
+              Attorney Bogdan Lamatic
             </Link>
           </p>
         </footer>

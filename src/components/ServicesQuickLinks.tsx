@@ -20,11 +20,12 @@ const linksRo = [
 ];
 
 const linksEn = [
+  { to: "/en/services/criminal-investigation", label: "Criminal investigation lawyer" },
+  { to: "/en/services/preventive-measures", label: "Preventive measures lawyer (detention, arrest)" },
   { to: "/en/services/financial-crime", label: "Economic crime defense" },
-  { to: "/en/services/corruption-and-public-office-offenses", label: "Corruption and public office offenses" },
-  { to: "/en/services/money-laundering-and-asset-concealment", label: "Money laundering and asset concealment" },
-  { to: "/en/services/crypto-asset-investigations", label: "Crypto asset investigations" },
+  { to: "/en/services/offenses-against-persons", label: "Offenses against persons lawyer" },
   { to: "/en/services/victim-representation-in-criminal-cases", label: "Representation of victims in criminal proceedings" },
+  { to: "/en/compensation-calculator", label: "Compensation calculator" },
   { to: "/en/about", label: "About attorney Bogdan Lamatic" },
   { to: "/en/blog", label: "Blog - criminal law articles" },
   { to: "/en/contact", label: "Contact - book an assessment" },

@@ -77,7 +77,7 @@ const extraLabelsRo: Record<string, string> = {
 };
 
 const extraLabelsEn: Record<string, string> = {
-  "/calculator-despagubiri": "Compensation calculator",
+  "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
 };
@@ -106,7 +106,7 @@ export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"
   return targets
     .map((target) => {
       if (lang === "en") {
-        if (target === "/calculator-despagubiri") return null; // Romanian-only page
+        
         const enTarget = roToEn[target] ?? target;
         const label = labelEn(enTarget) ?? labelEn(target);
         return label ? { to: enTarget, label } : null;
