@@ -314,7 +314,7 @@ async function main() {
   const CONTEXTUAL_MIN = 2;
   const inbound = new Map(ROUTES.map((r) => [r, new Set()]));
   for (const [route, page] of pages) {
-    if (route === "/harta-site") continue;
+    if (route === "/harta-site" || route === "/en/sitemap") continue;
     const body = (page.html.split(/<body[^>]*>/i)[1] ?? "")
       .replace(/<header[\s\S]*?<\/header>/gi, "")
       .replace(/<footer[\s\S]*?<\/footer>/gi, "");
@@ -326,7 +326,7 @@ async function main() {
       if (inbound.has(target)) inbound.get(target).add(route);
     }
   }
-  const CONTEXTUAL_EXEMPT = new Set(["/harta-site"]);
+  const CONTEXTUAL_EXEMPT = new Set(["/harta-site", "/en/sitemap"]);
   for (const [route, sources] of inbound) {
     if (CONTEXTUAL_EXEMPT.has(route)) continue;
     if (sources.size < CONTEXTUAL_MIN) {
