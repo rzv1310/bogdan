@@ -19,6 +19,7 @@ export default function Sitemap() {
   ];
 
   const services = [
+    { url: "/servicii", title: "Servicii - Avocat Penal București" },
     { url: "/servicii/urmarire-penala", title: "Urmărire Penală - Apărare din Prima Oră" },
     { url: "/servicii/masuri-preventive", title: "Măsuri Preventive - Intervenție Imediată" },
     { url: "/servicii/infractiuni-contra-persoanei", title: "Infracțiuni Contra Persoanei - Apărare Penală" },
@@ -35,6 +36,7 @@ export default function Sitemap() {
 
   const englishPages = [
     { url: "/en", title: "Homepage - Criminal Lawyer Bucharest" },
+    { url: "/en/services", title: "Services - Criminal Lawyer Bucharest" },
     { url: "/en/contact", title: "Contact - Legal Consultations" },
     { url: "/en/blog", title: "Blog - Legal Articles" },
     { url: "/en/services/financial-crime", title: "Financial Crime - Legal Services" },
