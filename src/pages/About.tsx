@@ -326,36 +326,36 @@ export default function About() {
           <section aria-labelledby="employment-ro" className="grid gap-4">
             <h2 id="employment-ro" className="text-xl font-medium">Experiență profesională</h2>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">Wolf Theiss - Societate civilă de avocați, București, România</h4>
+              <h3 className="font-semibold">Wolf Theiss - Societate civilă de avocați, București, România</h3>
               <p className="text-sm text-muted-foreground">Casă de avocatură, infracțiuni economice, conformitate, investigații corporative, drept civil și comercial, litigii</p>
               <p className="mt-1">Perioadă: 2022 - 2025</p>
             </article>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">„Enache Pirtea & Asociații” S.p.a.r.l., Str. Ion Negulici nr. 32, Sector 1, București, România</h4>
+              <h3 className="font-semibold">„Enache Pirtea & Asociații” S.p.a.r.l., Str. Ion Negulici nr. 32, Sector 1, București, România</h3>
               <p className="text-sm text-muted-foreground">Casă de avocatură, criminalitate economică, drept civil și comercial, litigii</p>
               <p className="mt-1">Perioadă: 2020 - 2022</p>
               <p>Funcție: Partener</p>
             </article>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">„Mușat & Asociații” S.p.a.r.l., Bd. Aviatorilor nr. 43, Sector 1, București, România</h4>
+              <h3 className="font-semibold">„Mușat & Asociații” S.p.a.r.l., Bd. Aviatorilor nr. 43, Sector 1, București, România</h3>
               <p className="text-sm text-muted-foreground">Casă de avocatură, criminalitate economică, drept civil și comercial, litigii</p>
               <p className="mt-1">Perioadă: 2013 - 2020</p>
               <p>Funcție: 2013 - 2015: Avocat Senior; 2016 - 2020: Managing Associate</p>
             </article>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">Șerban & Asociații - Societate de Avocați, București</h4>
+              <h3 className="font-semibold">Șerban & Asociații - Societate de Avocați, București</h3>
               <p className="text-sm text-muted-foreground">Casă de avocatură, criminalitate economică</p>
               <p className="mt-1">Perioadă: 2010 - 2013</p>
               <p>Funcție: Avocat Senior</p>
             </article>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">Cabinet de avocat Cristina Trelea, București</h4>
+              <h3 className="font-semibold">Cabinet de avocat Cristina Trelea, București</h3>
               <p className="text-sm text-muted-foreground">Cabinet de Avocat</p>
               <p className="mt-1">Perioadă: 2007 - 2010</p>
               <p>Funcție: Avocat</p>
             </article>
             <article className="rounded-md border p-4">
-              <h4 className="font-semibold">Sova & Asociații - Societate de Avocați, București</h4>
+              <h3 className="font-semibold">Sova & Asociații - Societate de Avocați, București</h3>
               <p className="text-sm text-muted-foreground">Casă de avocatură</p>
               <p className="mt-1">Perioadă: ianuarie 2007 - noiembrie 2007</p>
               <p>Funcție: Avocat</p>
