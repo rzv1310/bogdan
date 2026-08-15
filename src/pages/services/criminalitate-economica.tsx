@@ -93,43 +93,57 @@ export default function CriminalitateEconomica() {
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="text-2xl font-semibold mb-2">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <span className="text-muted-foreground">Servicii</span>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Criminalitate economică</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+      <h1 className="text-2xl font-semibold mb-4">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
 
-      <section className="mt-4 border border-accent rounded-md p-4">
-        <div className="flex flex-wrap items-center gap-3">
-          <a href="tel:+40316320183" aria-label="Sună acum">
-            <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <Phone /> Sună acum
-            </Button>
+      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          <strong>În dosarele economice, primele decizii contează cel mai mult.</strong> Documentele pe care le predai, declarațiile date la prima audiere și modul în care reacționezi la o percheziție sau la un control pot decide dacă ancheta se închide sau se transformă într-un proces lung.
+        </p>
+      </div>
+
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat criminalitate economică">
+          <a href="tel:+40316320183">
+            <Phone className="mr-2 h-4 w-4" /> Sună acum
           </a>
-        </div>
-        <div className="mt-3 space-y-3 text-base leading-relaxed">
-          <p>
-            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-          </p>
-          <p>
-            Recunoscut de Legal500 timp de cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor economice și de corupție, abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
-          </p>
-          <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
-            Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.
-          </p>
-        </div>
-      </section>
+        </Button>
+      </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
+        </p>
+      </div>
+
+      <div className="mt-6">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <span className="text-muted-foreground">Servicii</span>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Criminalitate economică</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+
+      <p className="mt-6 bg-accent text-accent-foreground rounded-md px-3 py-2 text-base leading-relaxed">
+        Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.
+      </p>
+
 
       <div className="mt-6 space-y-8">
         <section className="space-y-4">
