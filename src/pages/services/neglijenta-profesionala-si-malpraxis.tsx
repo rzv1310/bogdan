@@ -7,6 +7,7 @@ import { toast } from "@/hooks/use-toast";
 import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistSection";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 export default function Malpraxis() {
   useSEO({
     keywords: "avocat malpraxis medical bucuresti, avocat neglijenta profesionala, avocat neglijenta in serviciu, raspundere penala medic",
@@ -159,6 +160,7 @@ export default function Malpraxis() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+      <ServiceSubServices path="/servicii/neglijenta-profesionala-si-malpraxis" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>

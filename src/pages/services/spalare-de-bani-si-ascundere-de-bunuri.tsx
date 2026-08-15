@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Phone, Mail } from "lucide-react";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
@@ -126,6 +127,7 @@ export default function SpalareDeBani() {
           <p className="mt-3 text-sm text-muted-foreground">
             <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
           </p>
+          <ServiceSubServices path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
 
           <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
             <p>

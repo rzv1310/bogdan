@@ -4,69 +4,76 @@ import { roToEn } from "./routeMap";
 /** Related-service map (RO paths). EN equivalents are derived via routeMap. */
 export const relatedServices: Record<string, string[]> = {
   "/servicii/urmarire-penala": [
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
     "/servicii/masuri-preventive",
-    "/servicii/cauze-penale-privind-droguri",
     "/servicii/criminalitate-economica",
+    "/servicii/cauze-penale-privind-droguri",
+    "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
   ],
   "/servicii/masuri-preventive": [
     "/servicii/urmarire-penala",
     "/servicii/cauze-penale-privind-droguri",
     "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
-  ],
-  "/servicii/infractiuni-contra-persoanei": [
-    "/servicii/infractiuni-rutiere-cu-victime",
-    "/servicii/reprezentarea-victimelor-in-procese-penale",
-    "/servicii/masuri-preventive",
-      "/calculator-despagubiri",
+    "/servicii/criminalitate-economica",
   ],
   "/servicii/criminalitate-economica": [
     "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
     "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     "/servicii/investigatii-privind-activele-cripto",
+    "/servicii/urmarire-penala",
   ],
   "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": [
     "/servicii/criminalitate-economica",
     "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
     "/servicii/urmarire-penala",
+    "/servicii/investigatii-privind-activele-cripto",
+  ],
+  "/servicii/spalare-de-bani-si-ascundere-de-bunuri": [
+    "/servicii/criminalitate-economica",
+    "/servicii/investigatii-privind-activele-cripto",
+    "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+    "/servicii/masuri-preventive",
   ],
   "/servicii/investigatii-privind-activele-cripto": [
     "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
     "/servicii/criminalitate-economica",
+    "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     "/servicii/urmarire-penala",
   ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/masuri-preventive",
     "/servicii/urmarire-penala",
     "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/spalare-de-bani-si-ascundere-de-bunuri": [
     "/servicii/criminalitate-economica",
-    "/servicii/investigatii-privind-activele-cripto",
-    "/servicii/masuri-preventive",
-      "/servicii/cauze-penale-privind-droguri",
-  ],
-  "/servicii/neglijenta-profesionala-si-malpraxis": [
-    "/servicii/infractiuni-contra-persoanei",
-    "/servicii/raspundere-penala-incidente-locul-de-munca",
-    "/servicii/reprezentarea-victimelor-in-procese-penale",
-      "/calculator-despagubiri",
   ],
   "/servicii/infractiuni-rutiere-cu-victime": [
     "/servicii/reprezentarea-victimelor-in-procese-penale",
     "/servicii/infractiuni-contra-persoanei",
     "/servicii/masuri-preventive",
-      "/calculator-despagubiri",
+    "/servicii/neglijenta-profesionala-si-malpraxis",
+  ],
+  "/servicii/infractiuni-contra-persoanei": [
+    "/servicii/infractiuni-rutiere-cu-victime",
+    "/servicii/reprezentarea-victimelor-in-procese-penale",
+    "/servicii/masuri-preventive",
+    "/servicii/neglijenta-profesionala-si-malpraxis",
+  ],
+  "/servicii/neglijenta-profesionala-si-malpraxis": [
+    "/servicii/raspundere-penala-incidente-locul-de-munca",
+    "/servicii/infractiuni-contra-persoanei",
+    "/servicii/reprezentarea-victimelor-in-procese-penale",
+    "/servicii/infractiuni-rutiere-cu-victime",
   ],
   "/servicii/raspundere-penala-incidente-locul-de-munca": [
     "/servicii/neglijenta-profesionala-si-malpraxis",
     "/servicii/infractiuni-contra-persoanei",
     "/servicii/reprezentarea-victimelor-in-procese-penale",
-      "/calculator-despagubiri",
+    "/servicii/infractiuni-rutiere-cu-victime",
+  ],
+  "/servicii/reprezentarea-victimelor-in-procese-penale": [
+    "/servicii/infractiuni-rutiere-cu-victime",
+    "/servicii/infractiuni-contra-persoanei",
+    "/servicii/neglijenta-profesionala-si-malpraxis",
+    "/servicii/raspundere-penala-incidente-locul-de-munca",
   ],
   "/servicii/audiere-politie-parchet": [
     "/servicii/urmarire-penala",
@@ -107,11 +114,6 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/perchezitie-informatica",
     "/servicii/avocat-diicot",
     "/servicii/masuri-preventive",
-  ],
-  "/servicii/reprezentarea-victimelor-in-procese-penale": [
-    "/calculator-despagubiri",
-    "/servicii/infractiuni-rutiere-cu-victime",
-    "/servicii/infractiuni-contra-persoanei",
   ],
 };
 

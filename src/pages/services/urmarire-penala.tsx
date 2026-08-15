@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 
 import RelatedServices from "@/components/RelatedServices";
+import ServiceSubServices from "@/components/services/ServiceSubServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/urmarire-penala";
 const TITLE = "Avocat Urmărire Penală București - Apărare din Prima Oră | Bogdan Lamatic";
 const DESCRIPTION =
@@ -144,6 +145,7 @@ export default function UrmarirePenala() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
       </p>
+      <ServiceSubServices path="/servicii/urmarire-penala" />
 
       <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
