@@ -16,6 +16,7 @@ interface GlowCardProps {
   borderRunner?: boolean; // Animate a small orange segment around the border continuously
   runnerSpeedFactor?: number; // Multiply runner duration (1 = default, 2 = 50% slower)
   noShadow?: boolean; // Disable outer shadow entirely
+  to?: string; // When provided, the whole card becomes a single link
 }
 
 const glowColorMap = {
