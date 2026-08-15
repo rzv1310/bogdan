@@ -62,8 +62,10 @@ export default function DrugOffensesEn() {
         <h1 className="text-2xl font-semibold mb-4">Drug trafficking lawyer - Bucharest | Strategy and defense - DIICOT cases</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>In drug cases, the first hours matter most.</strong> What you state at the hearing, how the search is carried out and how the substances are sampled and weighed can decide whether the case is closed or turns into a lengthy DIICOT trial. Do not wait for the pre-trial arrest hearing to ask for help.
+          <p className="text-foreground">
+            <span className="block"><strong>In drug cases, the first hours matter most.</strong></span>
+            <span className="block">What you state at the hearing, how the search is carried out and how the substances are sampled and weighed can decide whether the case is closed or turns into a lengthy DIICOT trial.</span>
+            <span className="block">Do not wait for the pre-trial arrest hearing to ask for help.</span>
           </p>
         </div>
 

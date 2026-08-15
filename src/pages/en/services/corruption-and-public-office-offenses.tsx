@@ -61,8 +61,10 @@ export default function CorruptionPublicOfficeEn() {
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <h1 className="text-2xl font-semibold mb-4">Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>In corruption and public office cases, the first hours matter most.</strong> What you state, what you sign and how you react from the very first summons can decide whether the file is closed or turns into a lengthy trial with a reputational cost. Do not wait for the indictment to ask for help.
+          <p className="text-foreground">
+            <span className="block"><strong>In corruption and public office cases, the first hours matter most.</strong></span>
+            <span className="block">What you state, what you sign and how you react from the very first summons can decide whether the file is closed or turns into a lengthy trial with a reputational cost.</span>
+            <span className="block">Do not wait for the indictment to ask for help.</span>
           </p>
         </div>
 

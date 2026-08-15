@@ -60,8 +60,10 @@ export default function RaspunderePenalaMunca() {
         <h1 className="text-2xl font-semibold mb-4">Avocat accidente de muncă București și răspundere penală SSM | av. Bogdan Lamatic</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>După un accident de muncă, primele ore contează cel mai mult.</strong> Cercetarea ITM, declarațiile date de angajați și documentele de securitate a muncii predate în primele zile pot decide dacă răspunderea penală este reținută sau nu. Nu aștepta trimiterea în judecată ca să ceri ajutor.
+          <p className="text-foreground">
+            <span className="block"><strong>După un accident de muncă, primele ore contează cel mai mult.</strong></span>
+            <span className="block">Cercetarea ITM, declarațiile date de angajați și documentele de securitate a muncii predate în primele zile pot decide dacă răspunderea penală este reținută sau nu.</span>
+            <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
           </p>
         </div>
 

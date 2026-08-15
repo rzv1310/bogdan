@@ -113,8 +113,10 @@ export default function CryptoInvestigationsEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-6">
           <h1 className="text-2xl font-semibold">Crypto lawyer | Investigations into cryptocurrencies and blockchain | Bogdan Lamatic, Bucharest | NFT | Smart contracts</h1>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            <strong>In crypto investigations, the first hours matter most.</strong> Wallets can be frozen, exchange accounts blocked and digital evidence seized before you are even formally notified. How you react from day one can decide whether the case is closed or turns into a lengthy money laundering trial.
+          <p className="mt-4 text-base leading-relaxed text-foreground">
+            <span className="block"><strong>In crypto investigations, the first hours matter most.</strong></span>
+            <span className="block">Wallets can be frozen, exchange accounts blocked and digital evidence seized before you are even formally notified.</span>
+            <span className="block">How you react from day one can decide whether the case is closed or turns into a lengthy money laundering trial.</span>
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">

@@ -136,8 +136,9 @@ export default function InvestigatiiCripto() {
           Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts
         </h1>
         <div className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>În dosarele cu criptoactive, primele decizii contează cel mai mult.</strong> Blocarea conturilor, conservarea probatoriului digital și trasabilitatea tranzacțiilor se decid în primele zile - iar ce declari sau ce documente predai la început poate influența decisiv rezultatul anchetei.
+          <p className="text-foreground">
+            <span className="block"><strong>În dosarele cu criptoactive, primele decizii contează cel mai mult.</strong></span>
+            <span className="block">Blocarea conturilor, conservarea probatoriului digital și trasabilitatea tranzacțiilor se decid în primele zile - iar ce declari sau ce documente predai la început poate influența decisiv rezultatul anchetei.</span>
           </p>
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">

@@ -132,8 +132,10 @@ export default function InfractiuniRutiere() {
         Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic
       </h1>
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>Într-un dosar rutier, primele ore după accident contează cel mai mult.</strong> Testarea alcoolscopică, recoltarea probelor biologice, declarațiile date la fața locului și primele acte de urmărire penală pot decide încadrarea juridică și rezultatul final. Nu aștepta trimiterea în judecată ca să ceri ajutor.
+        <p className="text-foreground">
+          <span className="block"><strong>Într-un dosar rutier, primele ore după accident contează cel mai mult.</strong></span>
+          <span className="block">Testarea alcoolscopică, recoltarea probelor biologice, declarațiile date la fața locului și primele acte de urmărire penală pot decide încadrarea juridică și rezultatul final.</span>
+          <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
         </p>
       </div>
 
