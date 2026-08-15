@@ -264,6 +264,8 @@ export const perchezitieInformaticaRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să știi despre telefonul sau laptopul ridicat",
+      callout:
+        "Faptul că ți-au ridicat un dispozitiv nu este același lucru cu percheziționarea datelor din el.",
       bullets: [
         {
           bold: "Ridicarea dispozitivului nu este același lucru cu percheziția datelor.",
