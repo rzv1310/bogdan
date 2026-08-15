@@ -79,6 +79,8 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const callLabel = isEn ? "Call now" : "Sună-mă acum";
   const heroCallLabel = isEn ? "Call now!" : "Sună-mă acum!";
   const pageUrl = SITE + data.path;
+  const headshotSrc = pickHeadshot(data.path);
+
 
   useSEO({
     canonical: data.path,
