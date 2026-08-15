@@ -4,7 +4,7 @@ import { useCookieConsent } from "@/context/cookie-consent";
 import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
-import { useMobile } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
