@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 interface ServicesQuickLinksProps {
   lang?: "ro" | "en";
   className?: string;
 }
+
 
 const linksRo = [
   { to: "/servicii/urmarire-penala", label: "Avocat urmărire penală" },
@@ -30,9 +31,14 @@ const linksEn = [
 ];
 
 const ServicesQuickLinks = ({ lang = "ro", className = "" }: ServicesQuickLinksProps) => {
-  const links = lang === "en" ? linksEn : linksRo;
+  const { pathname } = useLocation();
+  const currentPath = pathname.replace(/\/$/, "") || "/";
+  const links = (lang === "en" ? linksEn : linksRo).filter(
+    (link) => link.to !== currentPath
+  );
 
   return (
+
     <nav
       aria-label={lang === "en" ? "Useful pages" : "Pagini utile"}
       className={`mt-10 rounded-lg border border-border bg-muted/30 p-6 ${className}`}
