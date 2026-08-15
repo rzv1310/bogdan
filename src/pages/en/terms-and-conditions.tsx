@@ -27,8 +27,6 @@ export default function TermsAndConditionsEn() {
         }}
       />
 
-      <h1 className="text-2xl font-semibold mb-4">Terms and Conditions</h1>
-
       <Breadcrumb className="mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -40,6 +38,8 @@ export default function TermsAndConditionsEn() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
+
+      <h1 className="text-2xl font-semibold mb-4">Terms and Conditions</h1>
 
       <div className="prose prose-neutral dark:prose-invert max-w-none text-base leading-relaxed">
         <p>

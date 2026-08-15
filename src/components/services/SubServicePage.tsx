@@ -158,7 +158,24 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <h1 className="text-2xl font-semibold mb-4">{data.h1}</h1>
+
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p className="text-foreground">
@@ -199,37 +216,9 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </div>
       </div>
 
-      <div className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          {isEn ? "This page is part of my " : "Această pagină face parte din serviciile de "}
-          <Link to={data.parent.to} className="text-primary underline underline-offset-2">
-            {data.parent.label}
-          </Link>
-          {isEn ? " services." : "."}
-        </p>
-      </div>
+      {data.sections.map((section, sectionIndex) => (
+        <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent`} key={section.h2}>
 
-
-      <div className="mt-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
-
-      {data.sections.map((section) => (
-        <Card className="mt-8 border-accent" key={section.h2}>
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>

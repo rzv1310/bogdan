@@ -114,6 +114,22 @@ export default function SpalareDeBani() {
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
+          <Breadcrumb className="mb-4">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <span className="text-muted-foreground">Servicii</span>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Dosare de spălare de bani și ascundere de bunuri</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
           <h1 className="text-2xl font-semibold mb-4">Infracțiune spălare de bani | Ascundere de bunuri - experiența mea ca avocat (Bogdan Lamatic, București)</h1>
 
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -139,23 +155,6 @@ export default function SpalareDeBani() {
             </p>
           </div>
 
-          <div className="mt-6">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <span className="text-muted-foreground">Servicii</span>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Dosare de spălare de bani și ascundere de bunuri</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
         </header>
 
         <section className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -165,9 +164,8 @@ export default function SpalareDeBani() {
           <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
         </section>
 
-
         {/* Ce reprezintă infracțiunea de spălare a banilor */}
-        <Card className="mt-8 border-accent">
+        <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce reprezintă infracțiunea de spălare a banilor</h2>
           </CardHeader>

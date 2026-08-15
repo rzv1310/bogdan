@@ -212,7 +212,6 @@ export default function ContactEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-2xl font-semibold mb-4">Contact - Attorney Bogdan Lamatic</h1>
         <Breadcrumb className="mb-4">
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -224,6 +223,8 @@ export default function ContactEn() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
+
+        <h1 className="text-2xl font-semibold mb-4">Contact - Attorney Bogdan Lamatic</h1>
 
         <p className="text-muted-foreground max-w-3xl">Need urgent help or a case assessment? Call me directly.</p>
         <div className="mt-4">
