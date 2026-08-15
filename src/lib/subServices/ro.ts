@@ -130,7 +130,7 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
         "Dacă este solicitat avocatul, începerea percheziției se amână până la sosirea acestuia, însă nu mai mult de 2 ore, cu excepțiile prevăzute de lege pentru situații urgente sau atunci când avocatul nu poate fi contactat.",
       ],
       callout: "Ai dreptul să contactezi un avocat !",
-      calloutClassName: "font-semibold",
+      calloutClassName: "font-semibold bg-white",
       cardClassName: "bg-[#faf0e6]",
       cta: "Sună-mă acum",
     },
