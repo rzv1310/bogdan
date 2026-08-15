@@ -237,9 +237,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 {typeof paragraph === "string" ? (
                   paragraph
                 ) : (
-                  <>
-                    {paragraph.bold ? <strong>{paragraph.text}</strong> : paragraph.text}
-                  </>
+                  paragraph.map((segment, sIdx) =>
+                    segment.bold ? (
+                      <strong key={sIdx}>{segment.text}</strong>
+                    ) : (
+                      <span key={sIdx}>{segment.text}</span>
+                    )
+                  )
                 )}
               </p>
             ))}
