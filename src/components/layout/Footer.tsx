@@ -4,7 +4,9 @@ import { useCookieConsent } from "@/context/cookie-consent";
 import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
-import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie } from "lucide-react";
+import { useMobile } from "@/hooks/use-mobile";
+import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 export default function Footer() {
   const { lang } = useLanguage();
