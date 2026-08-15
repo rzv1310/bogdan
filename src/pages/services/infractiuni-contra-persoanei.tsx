@@ -64,6 +64,7 @@ export default function InfractiuniContraPersoanei() {
   useSEO({
     canonical: "/servicii/infractiuni-contra-persoanei",
     locale: "ro_RO",
+    alternates: { ro: "/servicii/infractiuni-contra-persoanei", en: "/en/services/offenses-against-persons", xDefault: "/servicii/infractiuni-contra-persoanei" },
     title: TITLE,
     description: DESCRIPTION,
     keywords: "avocat infracțiuni contra persoanei, avocat infracțiuni contra persoanei bucuresti",

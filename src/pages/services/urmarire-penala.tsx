@@ -70,6 +70,7 @@ export default function UrmarirePenala() {
   useSEO({
     canonical: "/servicii/urmarire-penala",
     locale: "ro_RO",
+    alternates: { ro: "/servicii/urmarire-penala", en: "/en/services/criminal-investigation", xDefault: "/servicii/urmarire-penala" },
     title: TITLE,
     description: DESCRIPTION,
     keywords: "avocat urmărire penală, avocat dosar penal, avocat faza de urmărire penală",

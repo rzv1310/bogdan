@@ -72,6 +72,7 @@ export default function MasuriPreventive() {
   useSEO({
     canonical: "/servicii/masuri-preventive",
     locale: "ro_RO",
+    alternates: { ro: "/servicii/masuri-preventive", en: "/en/services/preventive-measures", xDefault: "/servicii/masuri-preventive" },
     title: TITLE,
     description: DESCRIPTION,
     keywords: "avocat măsuri preventive, avocat măsuri preventive București",
