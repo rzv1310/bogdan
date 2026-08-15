@@ -17,7 +17,7 @@ export function ServiceHeroCta({ lang, ariaLabel }: ServiceHeroCtaProps) {
         asChild
         variant="premium"
         size="lg"
-        className={`${CTA_CLASS} h-13 px-6 text-base md:h-11 md:px-8 md:text-sm`}
+        className={`${CTA_CLASS} h-14 px-6 text-base md:h-11 md:px-8 md:text-sm`}
         aria-label={ariaLabel || label}
       >
         <a href="tel:+40316320183">
