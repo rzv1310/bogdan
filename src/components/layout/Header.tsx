@@ -33,6 +33,7 @@ export default function Header() {
   const { pathname } = useLocation();
   const { handleMobileNavigation } = useMobileScrollTop();
   const [scrolled, setScrolled] = useState(false);
+  const isHomepage = pathname === "/" || pathname === "/en" || pathname === "/en/";
 
   useEffect(() => {
     const handleScroll = () => {
