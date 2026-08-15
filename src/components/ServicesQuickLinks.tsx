@@ -15,6 +15,7 @@ const linksRo = [
   { to: "/calculator-despagubiri", label: "Calculator despăgubiri" },
   { to: "/despre-mine", label: "Despre mine - av. Bogdan Lamatic" },
   { to: "/blog", label: "Blog - articole de drept penal" },
+  { to: "/contact", label: "Contact - programează o evaluare" },
 ];
 
 const linksEn = [
@@ -25,6 +26,7 @@ const linksEn = [
   { to: "/en/services/victim-representation-in-criminal-cases", label: "Representation of victims in criminal proceedings" },
   { to: "/en/about", label: "About attorney Bogdan Lamatic" },
   { to: "/en/blog", label: "Blog - criminal law articles" },
+  { to: "/en/contact", label: "Contact - book an assessment" },
 ];
 
 const ServicesQuickLinks = ({ lang = "ro", className = "" }: ServicesQuickLinksProps) => {

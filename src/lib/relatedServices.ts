@@ -43,6 +43,7 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/criminalitate-economica",
     "/servicii/investigatii-privind-activele-cripto",
     "/servicii/masuri-preventive",
+      "/servicii/cauze-penale-privind-droguri",
   ],
   "/servicii/neglijenta-profesionala-si-malpraxis": [
     "/servicii/infractiuni-contra-persoanei",

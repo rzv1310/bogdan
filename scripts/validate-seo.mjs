@@ -267,7 +267,10 @@ async function main() {
   const inbound = new Map(ROUTES.map((r) => [r, new Set()]));
   for (const [route, page] of pages) {
     if (route === "/harta-site") continue;
-    const main = page.html.match(/<main[^>]*>([\s\S]*?)<\/main>/i)?.[1];
+    const body = (page.html.split(/<body[^>]*>/i)[1] ?? "")
+      .replace(/<header[\s\S]*?<\/header>/gi, "")
+      .replace(/<footer[\s\S]*?<\/footer>/gi, "");
+    const main = body;
     if (!main) continue;
     for (const match of main.matchAll(/<a[^>]+href="(\/[^"#?]*)"/g)) {
       const target = match[1].replace(/\/$/, "") || "/";
