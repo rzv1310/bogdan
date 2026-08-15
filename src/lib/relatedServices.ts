@@ -115,11 +115,6 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/avocat-diicot",
     "/servicii/masuri-preventive",
   ],
-  "/servicii/reprezentarea-victimelor-in-procese-penale": [
-    "/calculator-despagubiri",
-    "/servicii/infractiuni-rutiere-cu-victime",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
 };
 
 const extraLabelsRo: Record<string, string> = {
