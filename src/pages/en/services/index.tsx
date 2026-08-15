@@ -139,7 +139,7 @@ export default function EnServicesPage() {
                         {card.title}
                       </h3>
                       <p className="text-sm text-hero-foreground/80 leading-relaxed">{card.description}</p>
-                      <ul className="mt-4 space-y-1.5 text-sm text-hero-foreground/90">
+                      <ul className="mt-4 space-y-2.5 text-sm text-hero-foreground/90">
                         {card.subServices.map((sub) => (
                           <li key={sub.label} className="flex items-start gap-2">
                             <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
