@@ -60,11 +60,27 @@ const CTA_CLASS =
 
 const SITE = "https://avocatpenalbucuresti.ro";
 
+/** Headshots alternate page by page across sub-service pages. */
+const HEADSHOTS = [
+  "/lovable-uploads/avocat_bogdan_lamatic_headshot.webp",
+  "/lovable-uploads/avocat_bogdan_lamatic_headshot_2.webp",
+];
+
+function pickHeadshot(path: string) {
+  const slug = path.replace(/\/+$/, "").split("/").pop() ?? "";
+  let sum = 0;
+  for (const char of slug) sum += char.charCodeAt(0);
+  return HEADSHOTS[sum % HEADSHOTS.length];
+}
+
+
 export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const isEn = data.lang === "en";
   const callLabel = isEn ? "Call now" : "Sună-mă acum";
   const heroCallLabel = isEn ? "Call now!" : "Sună-mă acum!";
   const pageUrl = SITE + data.path;
+  const headshotSrc = pickHeadshot(data.path);
+
 
   useSEO({
     canonical: data.path,
@@ -163,7 +179,8 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
       <div className="mt-6 flex items-center gap-4">
         <img
-          src="/lovable-uploads/avocat_bogdan_lamatic_headshot.webp"
+          src={headshotSrc}
+
           alt={isEn ? "Bogdan Lamatic, criminal defence lawyer in Bucharest" : "Avocat Bogdan Lamatic, drept penal București"}
           width={72}
           height={72}
