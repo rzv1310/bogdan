@@ -63,8 +63,15 @@ export const audierePolitieParchetRo: SubServicePageData = {
     {
       h2: "De ce contează ce se întâmplă la prima audiere",
       paragraphs: [
-        "Prima declarație poate deveni o piesă importantă a dosarului. De aceea, înainte să răspunzi la întrebări, trebuie să înțelegi ce faptă este investigată, ce probe sunt cunoscute la acel moment și care este poziția ta procesuală.",
-        "Pentru suspect și inculpat, legea recunoaște dreptul de a nu da declarații și dreptul de a se consulta cu avocatul înainte și în cursul audierii. Declarația este consemnată în scris, iar completările sau rectificările pot fi menționate înainte de semnare.",
+        [
+          { text: "Prima declarație", bold: true },
+          { text: " poate deveni o piesă importantă a dosarului. De aceea, înainte să răspunzi la întrebări, trebuie să înțelegi ce faptă este investigată, ce probe sunt cunoscute la acel moment și care este poziția ta procesuală." },
+        ],
+        [
+          { text: "Pentru suspect și inculpat, legea recunoaște " },
+          { text: "dreptul de a nu da declarații", bold: true },
+          { text: " și dreptul de a se consulta cu avocatul înainte și în cursul audierii. Declarația este consemnată în scris, iar completările sau rectificările pot fi menționate înainte de semnare." },
+        ],
         "Situația este diferită atunci când o persoană este audiată ca martor. Tocmai de aceea, nu tratez toate audierile după același șablon: mai întâi stabilim calitatea procesuală și abia apoi discutăm strategia potrivită situației concrete.",
       ],
     },
