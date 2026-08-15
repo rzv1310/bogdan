@@ -131,13 +131,7 @@ export default function CriminalInvestigation() {
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I assist persons who have been summoned, detained, searched, or who are otherwise at any stage of the criminal investigation - from the very first call received from the police or the prosecutor's office, until the prosecutor's final decision.
-        </p>
-        <p>
           <strong>In a criminal investigation, the first hours matter most.</strong> What you state, what you sign and how you react in the first 24 hours can decide whether the case closes quickly or turns into a lengthy trial. Do not wait for the first court hearing to ask for help - a criminal investigation lawyer defends you from the moment of the hearing, the search, or the detention itself.
-        </p>
-        <p>
-          I have been recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, the National Anticorruption Directorate (DNA), the Directorate for Investigating Organized Crime and Terrorism (DIICOT), the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
         </p>
       </div>
 
@@ -146,6 +140,16 @@ export default function CriminalInvestigation() {
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
       </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I assist persons who have been summoned, detained, searched, or who are otherwise at any stage of the criminal investigation - from the very first call received from the police or the prosecutor's office, until the prosecutor's final decision.
+        </p>
+        <p>
+          I have been recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, the National Anticorruption Directorate (DNA), the Directorate for Investigating Organized Crime and Terrorism (DIICOT), the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+        </p>
+      </div>
+
 
       <div className="mt-6">
         <Breadcrumb>
