@@ -163,7 +163,8 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
       <div className="mt-6 flex items-center gap-4">
         <img
-          src="/lovable-uploads/avocat_bogdan_lamatic_headshot.webp"
+          src={headshotSrc}
+
           alt={isEn ? "Bogdan Lamatic, criminal defence lawyer in Bucharest" : "Avocat Bogdan Lamatic, drept penal București"}
           width={72}
           height={72}
