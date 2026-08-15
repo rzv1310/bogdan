@@ -892,7 +892,7 @@ const Index = () => {
                   </>
                 );
               })()}
-              <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
+              <div className="mt-[21px] md:mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40316320183" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
