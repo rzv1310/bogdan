@@ -788,7 +788,7 @@ const HomepageEN = () => {
               />
             </div>
             <div className="mt-6 text-center text-hero-foreground">
-              <p className="text-lg font-semibold">{t.homeBio.name}</p>
+              <h2 className="text-lg font-semibold">{t.homeBio.name}</h2>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line1}</p>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line2}</p>
             </div>
