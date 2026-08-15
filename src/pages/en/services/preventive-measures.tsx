@@ -131,8 +131,9 @@ export default function PreventiveMeasuresEn() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>A preventive measure can restrict your liberty, movement or professional activity as early as the criminal investigation phase, before any conviction.</strong> That is why the presence of a lawyer exactly at the moment the measure is proposed - not afterwards - can make the difference between rejection of the proposal, a lighter measure, or upholding the most severe option.
+        <p className="text-foreground">
+          <span className="block"><strong>A preventive measure can restrict your liberty, movement or professional activity as early as the criminal investigation phase, before any conviction.</strong></span>
+          <span className="block">That is why the presence of a lawyer exactly at the moment the measure is proposed - not afterwards - can make the difference between rejection of the proposal, a lighter measure, or upholding the most severe option.</span>
         </p>
       </div>
 

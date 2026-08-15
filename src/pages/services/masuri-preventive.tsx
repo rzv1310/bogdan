@@ -131,8 +131,9 @@ export default function MasuriPreventive() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>O măsură preventivă îți poate limita libertatea, mișcarea sau activitatea profesională încă din faza de urmărire penală, înainte de orice condamnare.</strong> De aceea, prezența unui avocat exact în momentul în care măsura este propusă - nu ulterior - poate face diferența între respingerea propunerii, o măsură mai ușoară sau menținerea celei mai severe variante.
+        <p className="text-foreground">
+          <span className="block"><strong>O măsură preventivă îți poate limita libertatea, mișcarea sau activitatea profesională încă din faza de urmărire penală, înainte de orice condamnare.</strong></span>
+          <span className="block">De aceea, prezența unui avocat exact în momentul în care măsura este propusă - nu ulterior - poate face diferența între respingerea propunerii, o măsură mai ușoară sau menținerea celei mai severe variante.</span>
         </p>
       </div>
 

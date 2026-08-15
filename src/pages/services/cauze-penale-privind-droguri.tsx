@@ -121,8 +121,9 @@ export default function CauzeDroguri() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>În dosarele de droguri, primele ore după reținere sunt decisive.</strong> Fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
+        <p className="text-foreground">
+          <span className="block"><strong>În dosarele de droguri, primele ore după reținere sunt decisive.</strong></span>
+          <span className="block">Fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.</span>
         </p>
       </div>
 
