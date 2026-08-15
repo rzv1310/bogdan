@@ -5,7 +5,7 @@
  * canonical, hreflang reciprocity, JSON-LD validity and the Open Graph /
  * Twitter Card set. Any error fails the build.
  */
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROUTES, SITE_ORIGIN } from "./routes.mjs";
