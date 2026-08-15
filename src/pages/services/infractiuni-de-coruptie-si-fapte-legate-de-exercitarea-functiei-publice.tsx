@@ -3,6 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import MitaBarChart from "@/components/charts/MitaBarChart";
 
 import RelatedServices from "@/components/RelatedServices";
@@ -140,13 +141,7 @@ export default function CoruptieSiFunctiePublica() {
         </p>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat infracțiuni de corupție">
-          <a href="tel:+40316320183">
-            <Phone className="mr-2 h-4 w-4" /> Sună acum
-          </a>
-        </Button>
-      </div>
+      <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat infracțiuni de corupție" />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
