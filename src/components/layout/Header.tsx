@@ -164,7 +164,7 @@ export default function Header() {
                 {t.nav.menu}
               </DrawerTitle>
             </DrawerHeader>
-            <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 pb-8 [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-muted/40 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
+            <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 pb-8 [scrollbar-width:thin] [scrollbar-color:hsl(var(--primary))_transparent] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-primary">
               <ul className="divide-y divide-border/60">
                 <li>
                   <DrawerClose asChild>
