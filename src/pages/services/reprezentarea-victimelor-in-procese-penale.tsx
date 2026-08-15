@@ -21,8 +21,6 @@ export default function ReprezentareaVictimelor() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {(
-        <>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
