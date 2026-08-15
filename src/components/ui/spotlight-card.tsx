@@ -247,7 +247,10 @@ const GlowCard: React.FC<GlowCardProps> = ({
             right: "var(--border-size)",
             bottom: "var(--border-size)",
             left: "var(--border-size)",
+            width: "auto",
+            height: "auto",
           }}
+
         >
           <path ref={runnerRef} id={pathIdRef.current} d={pathD} fill="none" />
           <circle r={2} fill="hsl(var(--accent))">
