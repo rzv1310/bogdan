@@ -48,8 +48,9 @@ const GlowCard: React.FC<GlowCardProps> = ({
   borderRunner = false,
   runnerSpeedFactor = 4,
   noShadow = false,
+  to,
 }) => {
-  const cardRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement | HTMLAnchorElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const runnerRef = useRef<SVGPathElement>(null);
   const pathIdRef = useRef(`runnerPath-${Math.random().toString(36).slice(2)}`);
