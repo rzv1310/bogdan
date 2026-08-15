@@ -232,8 +232,16 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
-            {section.paragraphs?.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+            {section.paragraphs?.map((paragraph, pIdx) => (
+              <p key={pIdx}>
+                {typeof paragraph === "string" ? (
+                  paragraph
+                ) : (
+                  <>
+                    {paragraph.bold ? <strong>{paragraph.text}</strong> : paragraph.text}
+                  </>
+                )}
+              </p>
             ))}
             {section.callout && (
               <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${section.calloutClassName ?? ""}`}>
