@@ -1,7 +1,7 @@
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle, Play, Star } from "lucide-react";
+import { Phone, CheckCircle, Star, ArrowRight } from "lucide-react";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import GeminiButtonEffect from "@/components/ui/gemini-button-effect";
 import { PulseBeams } from "@/components/ui/pulse-beams";
