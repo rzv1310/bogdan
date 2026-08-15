@@ -244,12 +244,11 @@ const GlowCard: React.FC<GlowCardProps> = ({
           aria-hidden="true"
           style={{
             top: "var(--border-size)",
-            right: "var(--border-size)",
-            bottom: "var(--border-size)",
             left: "var(--border-size)",
-            width: "auto",
-            height: "auto",
+            width: "calc(100% - 2 * var(--border-size))",
+            height: "calc(100% - 2 * var(--border-size))",
           }}
+
 
         >
           <path ref={runnerRef} id={pathIdRef.current} d={pathD} fill="none" />
