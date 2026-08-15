@@ -64,6 +64,11 @@ export default function Footer() {
               {lang === "en" ? "Criminal Defense Attorney Services" : "Arii de practică"}
             </h2>
             <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link to={lang === "en" ? "/en/services" : "/servicii"} className="hover:underline font-medium">
+                  {lang === "en" ? "All services" : "Toate serviciile"}
+                </Link>
+              </li>
               {svcList.map((s) => (
                 <li key={s.to}>
                   <Link to={s.to} className="hover:underline">

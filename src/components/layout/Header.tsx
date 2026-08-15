@@ -75,6 +75,14 @@ export default function Header() {
                 <NavigationMenuTrigger className="px-3 py-2 text-base">{t.nav.services}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-1 p-3 w-[480px] sm:w-[560px] bg-popover text-popover-foreground shadow-md rounded-md relative z-50">
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link to={lang === "en" ? "/en/services" : "/servicii"} className="block rounded-md px-3 py-2 hover:bg-muted text-sm font-semibold leading-snug">
+                          {lang === "en" ? "All services" : "Toate serviciile"}
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li aria-hidden="true" className="border-t border-border my-1" />
                     {svcList.map((s) => (
                       <li key={s.to}>
                         <NavigationMenuLink asChild>

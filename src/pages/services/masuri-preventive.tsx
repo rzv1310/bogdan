@@ -82,7 +82,7 @@ export default function MasuriPreventive() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
-          { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/#servicii" },
+          { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/servicii" },
           { "@type": "ListItem", position: 3, name: "Măsuri preventive", item: PAGE_URL },
         ],
       },
@@ -159,7 +159,7 @@ export default function MasuriPreventive() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <span className="text-muted-foreground">Servicii</span>
+              <BreadcrumbLink href="/servicii">Servicii</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

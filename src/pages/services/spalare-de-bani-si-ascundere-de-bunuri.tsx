@@ -41,10 +41,10 @@ export default function SpalareDeBani() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
-              { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/#servicii" },
-              { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: "https://avocatpenalbucuresti.ro/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
-            ],
+            { "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" },
+            { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/servicii" },
+            { "@type": "ListItem", position: 3, name: "Spălare de bani și ascundere de bunuri", item: "https://avocatpenalbucuresti.ro/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+          ],
           }),
         }}
       />

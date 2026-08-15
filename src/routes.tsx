@@ -18,6 +18,7 @@ import UrmarirePenala from "./pages/services/urmarire-penala";
 import MasuriPreventive from "./pages/services/masuri-preventive";
 import InfractiuniContraPersoanei from "./pages/services/infractiuni-contra-persoanei";
 import CalculatorDespagubiri from "./pages/CalculatorDespagubiri";
+import ServiciiPage from "./pages/servicii";
 
 // EN pages
 import EnIndex from "./pages/en";
@@ -33,6 +34,7 @@ import MalpracticeEn from "./pages/en/services/professional-negligence-and-malpr
 import RoadTrafficEn from "./pages/en/services/road-traffic-offenses";
 import WorkplaceLiabilityEn from "./pages/en/services/workplace-criminal-liability";
 import VictimRepresentationEn from "./pages/en/services/victim-representation-in-criminal-cases";
+import EnServicesPage from "./pages/en/services";
 import TermsAndConditionsEn from "./pages/en/terms-and-conditions";
 import TermeniSiConditii from "./pages/termeni-si-conditii";
 import GDPR from "./pages/gdpr";
@@ -50,6 +52,7 @@ export default function AppRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/servicii" element={<ServiciiPage />} />
         <Route path="/servicii/urmarire-penala" element={<UrmarirePenala />} />
         <Route path="/servicii/masuri-preventive" element={<MasuriPreventive />} />
         <Route path="/servicii/infractiuni-contra-persoanei" element={<InfractiuniContraPersoanei />} />
@@ -77,6 +80,7 @@ export default function AppRoutes() {
         <Route path="/en/terms-and-conditions" element={<TermsAndConditionsEn />} />
         <Route path="/en/gdpr" element={<GDPRen />} />
         <Route path="/en/cookie-policy" element={<CookiePolicyEn />} />
+        <Route path="/en/services" element={<EnServicesPage />} />
         <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
         <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
         <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
