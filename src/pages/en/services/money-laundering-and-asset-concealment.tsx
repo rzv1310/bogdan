@@ -95,26 +95,10 @@ export default function MoneyLaunderingEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold mb-4">Money laundering offense | Asset concealment - my experience as a lawyer (Bogdan Lamatic, Bucharest)</h1>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Money laundering and asset concealment</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </header>
-
-        {/* Intro + CTA */}
-        <section className="mt-4 border border-accent rounded-md p-4">
-          <div className="flex flex-wrap items-center gap-3">
+          <p className="text-base leading-relaxed text-muted-foreground">
+            <strong>In money laundering cases, the first hours matter most.</strong> Accounts can be frozen and assets seized before any conviction, and the statements or documents you provide at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with extended confiscation.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <a href="tel:+40316320183" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
@@ -126,13 +110,38 @@ export default function MoneyLaunderingEn() {
               </a>
             </Button>
           </div>
-          <div className="mt-3 space-y-3 text-base leading-relaxed">
+          <p className="mt-3 text-sm text-muted-foreground">
+            <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+          </p>
+          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
             <p>
-              I chose to practice business criminal law because it is one of the few fields where facts, money and intent intertwine in a way that directly shapes people’s lives.
+              I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law, specialized in money laundering and asset concealment cases, where facts, money and intent intertwine in a way that directly shapes people's lives.
             </p>
             <p>
-              Every white‑collar crime case I take confirms that no two stories are alike, and the path to a fair outcome starts with understanding the legal context and the moral responsibilities of those involved.
+              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) 2021-2024 and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
             </p>
+          </div>
+          <div className="mt-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <span className="text-muted-foreground">Services</span>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>Money laundering and asset concealment</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </header>
+
+        <section className="mt-4 border border-accent rounded-md p-4">
+          <div className="space-y-3 text-base leading-relaxed">
             <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
               As a lawyer with the Bucharest Bar, specialized in money laundering and asset concealment, I share key landmarks to navigate the current legislation and prepare your defense.
             </p>
@@ -140,6 +149,7 @@ export default function MoneyLaunderingEn() {
           <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
 
         </section>
+
 
         {/* What constitutes money laundering */}
         <Card className="mt-8 border-accent">
