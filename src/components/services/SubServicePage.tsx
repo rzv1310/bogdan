@@ -218,10 +218,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           <span className="block text-base font-semibold text-foreground">
             {isEn ? "Lawyer Bogdan Lamatic" : "Avocat Bogdan Lamatic"}
           </span>
-          <span className="block text-muted-foreground">
+          <span className="block text-foreground">
             {isEn ? "Bucharest Bar · 18+ years of experience" : "Baroul București · 18+ ani experiență"}
           </span>
-          <span className="block text-muted-foreground">Legal 500 · White-Collar Crime</span>
+          <span className="block text-foreground">Legal 500 · White-Collar Crime</span>
         </div>
       </div>
 
