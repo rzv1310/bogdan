@@ -4,17 +4,64 @@ import { useCookieConsent } from "@/context/cookie-consent";
 import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
-import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 export default function Footer() {
   const { lang } = useLanguage();
   const { openPreferences } = useCookieConsent();
+  const isMobile = useIsMobile();
   const t = translations[lang];
+  const [open, setOpen] = useState<{ services: boolean; useful: boolean }>({
+    services: false,
+    useful: false,
+  });
+  const toggle = (key: keyof typeof open) =>
+    setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
   const labelFor = (path: string, fallback: string) => {
     const slug = path.split("/").pop() || "";
     return (t as any).navServices?.[slug] ?? fallback;
   };
   const svcList = lang === "en" ? servicesEn : services;
+
+  const AccordionHeading = ({
+    id,
+    isOpen,
+    onClick,
+    children,
+  }: {
+    id: string;
+    isOpen: boolean;
+    onClick?: () => void;
+    children: React.ReactNode;
+  }) => {
+    const baseClasses = "text-sm font-semibold tracking-wide uppercase flex items-center justify-between";
+    if (isMobile) {
+      return (
+        <button
+          id={id}
+          type="button"
+          onClick={onClick}
+          className={`${baseClasses} w-full py-2`}
+          aria-expanded={isOpen}
+        >
+          {children}
+          <ChevronDown
+            size={18}
+            className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+            aria-hidden="true"
+          />
+        </button>
+      );
+    }
+    return (
+      <h2 id={id} className={baseClasses}>
+        {children}
+      </h2>
+    );
+  };
+
   return (
     <footer className="relative border-t overflow-hidden bg-black text-white font-extralight font-inter">
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6 py-10">
@@ -60,10 +107,14 @@ export default function Footer() {
 
           {/* Col 2: Servicii */}
           <nav aria-labelledby="footer-services">
-            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">
+            <AccordionHeading
+              id="footer-services"
+              isOpen={open.services}
+              onClick={() => toggle("services")}
+            >
               {lang === "en" ? "Criminal Defense Attorney Services" : "Arii de practică"}
-            </h2>
-            <ul className="mt-4 space-y-2 text-sm">
+            </AccordionHeading>
+            <ul className={`mt-4 space-y-2 text-sm ${isMobile && !open.services ? "hidden" : "block"}`}>
               <li>
                 <Link to={lang === "en" ? "/en/services" : "/servicii"} className="hover:underline font-medium">
                   {lang === "en" ? "All services" : "Toate serviciile"}
@@ -81,8 +132,14 @@ export default function Footer() {
 
           {/* Col 3: Utile */}
           <nav aria-labelledby="footer-utile">
-            <h2 id="footer-utile" className="text-sm font-semibold tracking-wide uppercase">{lang === "en" ? "Useful" : "Utile"}</h2>
-            <ul className="mt-4 space-y-2 text-sm">
+            <AccordionHeading
+              id="footer-utile"
+              isOpen={open.useful}
+              onClick={() => toggle("useful")}
+            >
+              {lang === "en" ? "Useful" : "Utile"}
+            </AccordionHeading>
+            <ul className={`mt-4 space-y-2 text-sm ${isMobile && !open.useful ? "hidden" : "block"}`}>
               <li>
                 <Link to={mapPathToLang("/contact", lang)} className="hover:underline">{t.nav.contact}</Link>
               </li>
