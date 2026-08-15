@@ -163,7 +163,7 @@ export default function ReprezentareaVictimelor() {
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat victime infracțiuni" />
 
       <p className="mt-3 text-sm text-muted-foreground">
-        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+        5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
       <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 

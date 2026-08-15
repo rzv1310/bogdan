@@ -129,7 +129,7 @@ export default function MoneyLaunderingEn() {
             </Button>
           </div>
           <p className="mt-3 text-sm text-muted-foreground">
-            <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+            5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
           <ServiceSubServices path="/en/services/money-laundering-and-asset-concealment" lang="en" />
           <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
