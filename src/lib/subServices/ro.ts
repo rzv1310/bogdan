@@ -36,7 +36,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
       bullets: [
         "Clarific situația procesuală și informațiile disponibile înainte de prezentarea la organul judiciar.",
         "Pregătesc audierea împreună cu tine, astfel încât să înțelegi procedura, întrebările care pot apărea și drepturile pe care le ai.",
-        "Te asist la audiere, dacă ai calitatea procesuală care permite exercitarea acestui drept.",
+        "Te asist la audiere și îți protejez drepturile pe parcursul procedurii, în funcție de calitatea în care ești chemat.",
         "Te consiliez cu privire la dreptul la tăcere, atunci când ești suspect sau inculpat.",
         "Mă consult cu tine înainte și în cursul audierii, în condițiile prevăzute de lege.",
         "Verific modul în care este consemnată declarația și solicit rectificarea sau completarea acesteia atunci când ceea ce este scris nu reflectă corect cele declarate.",
@@ -45,7 +45,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
       paragraphs: [
         "Codul de procedură penală prevede că suspectului sau inculpatului trebuie să îi fie comunicată calitatea procesuală, fapta și încadrarea juridică, iar acesta se poate consulta cu avocatul înainte și în timpul audierii și își poate exercita dreptul la tăcere.",
       ],
-      cta: "Discută cu avocatul",
+      cta: "Am primit o citație - vreau să discut",
     },
     {
       h2: "Situații în care mă poți contacta",
