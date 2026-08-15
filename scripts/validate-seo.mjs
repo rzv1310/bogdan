@@ -299,6 +299,11 @@ async function main() {
     err("/404", "dist/404.html is missing");
   }
 
+  // Style rule: no em dash / en dash anywhere in source content. Use "-".
+  await checkNoFancyDashes();
+
+
+
   for (const message of warnings) console.warn(`[seo] warning ${message}`);
   for (const message of errors) console.error(`[seo] ERROR ${message}`);
 
