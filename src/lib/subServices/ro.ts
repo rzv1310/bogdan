@@ -224,8 +224,9 @@ export const perchezitieInformaticaRo: SubServicePageData = {
   breadcrumbLabel: "Percheziție informatică",
   serviceName: "Avocat percheziție informatică București - Bogdan Lamatic",
   urgency: [
-    "Ți-au ridicat telefonul, laptopul, hard disk-ul sau alte dispozitive într-un dosar penal?",
-    "Ridicarea fizică a unui dispozitiv și percheziționarea datelor pe care le conține sunt proceduri care trebuie analizate separat.",
+    "Ți-au ridicat telefonul sau laptopul?",
+    "- Faptul că ți-au ridicat un dispozitiv nu este același lucru cu percheziționarea datelor din el.",
+    "- Cele două proceduri au reguli distincte.",
   ],
   bio: [
     `${BIO_INTRO} Asist persoane vizate de percheziții informatice și analizez legalitatea modului în care dispozitivele și datele sunt ridicate, copiate și examinate.`,
