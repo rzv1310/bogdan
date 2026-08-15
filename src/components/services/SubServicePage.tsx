@@ -10,7 +10,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 export interface SubServiceSection {
   h2: string;
-  paragraphs?: string[];
+  paragraphs?: (string | { text: string; bold?: boolean }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
@@ -232,8 +232,20 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
-            {section.paragraphs?.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+            {section.paragraphs?.map((paragraph, pIdx) => (
+              <p key={pIdx}>
+                {typeof paragraph === "string" ? (
+                  paragraph
+                ) : (
+                  paragraph.map((segment, sIdx) =>
+                    segment.bold ? (
+                      <strong key={sIdx}>{segment.text}</strong>
+                    ) : (
+                      <span key={sIdx}>{segment.text}</span>
+                    )
+                  )
+                )}
+              </p>
             ))}
             {section.callout && (
               <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${section.calloutClassName ?? ""}`}>
