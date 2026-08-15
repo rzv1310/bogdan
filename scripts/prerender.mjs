@@ -97,6 +97,12 @@ function buildHead(route, head) {
   return tags.map((tag) => `    ${tag}`).join("\n");
 }
 
+// Site style rule: no em/en dashes anywhere in the output (HTML text or JSON-LD).
+// Any that slip into source content get normalized to a plain hyphen here.
+function stripFancyDashes(text) {
+  return text.replace(/\s*[\u2014\u2013]\s*/g, (m) => (/\s/.test(m) ? " - " : "-"));
+}
+
 async function main() {
   const template = stripTemplateHead(await readFile(path.join(distDir, "index.html"), "utf8"));
   const { render } = await import(path.join(root, "dist-ssr", "entry-server.js"));
