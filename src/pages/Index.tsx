@@ -1013,6 +1013,16 @@ const Index = () => {
                 {lang === "ro" ? "Vezi toate serviciile" : "See all services"} <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
+                alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
+                title="Avocat drept penal Bucuresti Bogdan Lamatic"
+                loading="lazy"
+                className="w-full h-auto max-w-md md:max-w-sm rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-[30px]" aria-hidden="true"></div>
             <div className="mt-10">
               <PulseBeams
                 beams={beams}
@@ -1029,16 +1039,6 @@ const Index = () => {
                   </a>
                 </div>
               </PulseBeams>
-            </div>
-            <div className="h-[30px]" aria-hidden="true"></div>
-            <div className="flex justify-center">
-              <img
-                src="/lovable-uploads/e6b30f85-12f8-4f74-b39f-a1f4eda76d6a.png"
-                alt={lang === "ro" ? "Portret avocat drept penal București, fundal alb" : "Criminal defense attorney portrait, white background"}
-                title="Avocat drept penal Bucuresti Bogdan Lamatic"
-                loading="lazy"
-                className="w-full h-auto max-w-md md:max-w-sm rounded-lg shadow-md"
-              />
             </div>
           </div>
         </section>
