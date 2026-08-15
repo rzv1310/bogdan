@@ -30,7 +30,8 @@ export default defineConfig(({ mode }) => ({
             return "react-vendor";
           if (id.includes("@react-pdf") || id.includes("pdfkit") || id.includes("fontkit")) return "pdf";
           if (id.includes("/docx/")) return "docx";
-          if (id.includes("recharts") || id.includes("d3-") || id.includes("victory-vendor")) return "charts";
+          if (/[\\/]node_modules[\\/](recharts|victory-vendor|react-smooth|d3-[a-z-]+|decimal\.js-light)[\\/]/.test(id))
+            return "charts";
           if (id.includes("html-to-image")) return "html-to-image";
           if (id.includes("framer-motion")) return "motion";
           if (id.includes("styled-components")) return "styled";
