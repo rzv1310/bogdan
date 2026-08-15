@@ -132,7 +132,7 @@ async function main() {
     const outFile =
       route === "/" ? path.join(distDir, "index.html") : path.join(distDir, route, "index.html");
     await mkdir(path.dirname(outFile), { recursive: true });
-    await writeFile(outFile, page, "utf8");
+    await writeFile(outFile, stripFancyDashes(page), "utf8");
     console.log(`[prerender] ${route} -> ${path.relative(distDir, outFile)}`);
   }
 
@@ -144,7 +144,7 @@ async function main() {
       .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
       .replace("</head>", `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
       .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
-    await writeFile(path.join(distDir, "404.html"), page, "utf8");
+    await writeFile(path.join(distDir, "404.html"), stripFancyDashes(page), "utf8");
     console.log("[prerender] 404 -> 404.html");
   }
 
