@@ -6,6 +6,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 export interface SubServiceSection {
   h2: string;
