@@ -12,10 +12,11 @@
 Doar caseta „Audieri și urmărire penală” are bullet-uri cu pagini existente:
 
 ```text
-Audiere poliție   -> /servicii/audiere-politie-parchet
-Audiere parchet   -> /servicii/audiere-politie-parchet
-Percheziție       -> /servicii/perchezitie-domiciliara
-Avocat DIICOT     -> /servicii/avocat-diicot
+Audiere poliție sau parchet -> /servicii/audiere-politie-parchet
+Percheziție domiciliară     -> /servicii/perchezitie-domiciliara
+Percheziție informatică     -> /servicii/perchezitie-informatica
+Avocat DIICOT               -> /servicii/avocat-diicot
+Avocat DNA                  -> /servicii/avocat-dna
 ```
 
 Echivalent EN în „Questioning and criminal investigation”:
