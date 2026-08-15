@@ -104,8 +104,9 @@ export default function VictimRepresentationEn() {
         <h1 className="text-2xl font-semibold mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>As the victim of a crime, the first days matter most.</strong> The criminal complaint, joining the case as a civil party in time and the medical evidence gathered from the start can decide whether you obtain full compensation or lose that right for good.
+          <p className="text-foreground">
+            <span className="block"><strong>As the victim of a crime, the first days matter most.</strong></span>
+            <span className="block">The criminal complaint, joining the case as a civil party in time and the medical evidence gathered from the start can decide whether you obtain full compensation or lose that right for good.</span>
           </p>
         </div>
 

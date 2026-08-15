@@ -61,8 +61,10 @@ export default function RoadTrafficEn() {
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            <strong>After a road accident, the first hours matter most.</strong> Blood alcohol testing, the on-site report and the first statements you give can decide whether the case is closed or turns into a lengthy trial. Do not wait for the first court hearing to ask for help.
+          <p className="text-foreground">
+            <span className="block"><strong>After a road accident, the first hours matter most.</strong></span>
+            <span className="block">Blood alcohol testing, the on-site report and the first statements you give can decide whether the case is closed or turns into a lengthy trial.</span>
+            <span className="block">Do not wait for the first court hearing to ask for help.</span>
           </p>
         </div>
 

@@ -130,8 +130,10 @@ export default function CriminalInvestigation() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>In a criminal investigation, the first hours matter most.</strong> What you state, what you sign and how you react in the first 24 hours can decide whether the case closes quickly or turns into a lengthy trial. Do not wait for the first court hearing to ask for help - a criminal investigation lawyer defends you from the moment of the hearing, the search, or the detention itself.
+        <p className="text-foreground">
+          <span className="block"><strong>In a criminal investigation, the first hours matter most.</strong></span>
+          <span className="block">What you state, what you sign and how you react in the first 24 hours can decide whether the case closes quickly or turns into a lengthy trial.</span>
+          <span className="block">Do not wait for the first court hearing to ask for help - a criminal investigation lawyer defends you from the moment of the hearing, the search, or the detention itself.</span>
         </p>
       </div>
 

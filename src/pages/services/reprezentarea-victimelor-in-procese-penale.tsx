@@ -140,8 +140,9 @@ export default function ReprezentareaVictimelor() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>Ca victimă a unei infracțiuni, primele zile contează cel mai mult.</strong> Plângerea penală, constituirea ca parte civilă la termen și probele medicale strânse din start pot decide dacă obții despăgubiri integrale sau pierzi definitiv dreptul la ele.
+        <p className="text-foreground">
+          <span className="block"><strong>Ca victimă a unei infracțiuni, primele zile contează cel mai mult.</strong></span>
+          <span className="block">Plângerea penală, constituirea ca parte civilă la termen și probele medicale strânse din start pot decide dacă obții despăgubiri integrale sau pierzi definitiv dreptul la ele.</span>
         </p>
       </div>
 

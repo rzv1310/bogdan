@@ -132,8 +132,10 @@ export default function CoruptieSiFunctiePublica() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>În dosarele de corupție și de serviciu, primele decizii contează cel mai mult.</strong> Ce declari la prima audiere, ce documente predai și cum răspunzi unei percheziții pot decide dacă ancheta se închide sau ajunge în instanță. Nu aștepta trimiterea în judecată ca să ceri ajutor - apărarea începe de la primul contact cu DNA, parchet sau poliție.
+        <p className="text-foreground">
+          <span className="block"><strong>În dosarele de corupție și de serviciu, primele decizii contează cel mai mult.</strong></span>
+          <span className="block">Ce declari la prima audiere, ce documente predai și cum răspunzi unei percheziții pot decide dacă ancheta se închide sau ajunge în instanță.</span>
+          <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor - apărarea începe de la primul contact cu DNA, parchet sau poliție.</span>
         </p>
       </div>
 

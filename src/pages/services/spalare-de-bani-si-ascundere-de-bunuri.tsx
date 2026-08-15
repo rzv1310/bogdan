@@ -115,8 +115,9 @@ export default function SpalareDeBani() {
           <h1 className="text-2xl font-semibold mb-4">Infracțiune spălare de bani | Ascundere de bunuri - experiența mea ca avocat (Bogdan Lamatic, București)</h1>
 
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-            <p>
-              <strong>În dosarele de spălare de bani, primele decizii contează cel mai mult.</strong> Blocarea conturilor, sechestrul asigurător și explicațiile date la prima audiere pot decide dacă ancheta se închide sau se transformă într-un proces lung, cu confiscare extinsă.
+            <p className="text-foreground">
+              <span className="block"><strong>În dosarele de spălare de bani, primele decizii contează cel mai mult.</strong></span>
+              <span className="block">Blocarea conturilor, sechestrul asigurător și explicațiile date la prima audiere pot decide dacă ancheta se închide sau se transformă într-un proces lung, cu confiscare extinsă.</span>
             </p>
           </div>
 

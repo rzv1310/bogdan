@@ -141,8 +141,10 @@ export default function Malpraxis() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>În dosarele de malpraxis, primele zile contează cel mai mult.</strong> Documentația medicală, expertizele medico-legale și declarațiile date la începutul anchetei pot decide dacă răspunderea penală este reținută sau nu. Nu aștepta trimiterea în judecată ca să ceri ajutor.
+        <p className="text-foreground">
+          <span className="block"><strong>În dosarele de malpraxis, primele zile contează cel mai mult.</strong></span>
+          <span className="block">Documentația medicală, expertizele medico-legale și declarațiile date la începutul anchetei pot decide dacă răspunderea penală este reținută sau nu.</span>
+          <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
         </p>
       </div>
 

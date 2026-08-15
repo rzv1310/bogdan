@@ -127,8 +127,9 @@ export default function OffensesAgainstPersons() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>Accusations of offenses against persons directly affect your freedom, but also your reputation and family life.</strong> Many of these cases start from a conflict, a complaint filed in anger, or a misinterpretation of events - and how you react from day one can decisively influence the final outcome.
+        <p className="text-foreground">
+          <span className="block"><strong>Accusations of offenses against persons directly affect your freedom, but also your reputation and family life.</strong></span>
+          <span className="block">Many of these cases start from a conflict, a complaint filed in anger, or a misinterpretation of events - and how you react from day one can decisively influence the final outcome.</span>
         </p>
       </div>
 

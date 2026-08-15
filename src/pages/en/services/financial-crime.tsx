@@ -77,8 +77,9 @@ export default function FinancialCrimeEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold mb-4">Economic crime lawyer | White-collar specialist | Bogdan Lamatic</h1>
-          <p className="text-base leading-relaxed text-muted-foreground">
-            <strong>In economic crime cases, the first hours matter most.</strong> Documents handed over, statements given and accounts frozen at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with seizures and reputational damage.
+          <p className="text-base leading-relaxed text-foreground">
+            <span className="block"><strong>In economic crime cases, the first hours matter most.</strong></span>
+            <span className="block">Documents handed over, statements given and accounts frozen at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with seizures and reputational damage.</span>
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">

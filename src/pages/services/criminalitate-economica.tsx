@@ -96,8 +96,9 @@ export default function CriminalitateEconomica() {
       <h1 className="text-2xl font-semibold mb-4">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>În dosarele economice, primele decizii contează cel mai mult.</strong> Documentele pe care le predai, declarațiile date la prima audiere și modul în care reacționezi la o percheziție sau la un control pot decide dacă ancheta se închide sau se transformă într-un proces lung.
+        <p className="text-foreground">
+          <span className="block"><strong>În dosarele economice, primele decizii contează cel mai mult.</strong></span>
+          <span className="block">Documentele pe care le predai, declarațiile date la prima audiere și modul în care reacționezi la o percheziție sau la un control pot decide dacă ancheta se închide sau se transformă într-un proces lung.</span>
         </p>
       </div>
 

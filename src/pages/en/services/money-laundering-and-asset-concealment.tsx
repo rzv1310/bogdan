@@ -95,8 +95,9 @@ export default function MoneyLaunderingEn() {
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold mb-4">Money laundering offense | Asset concealment - my experience as a lawyer (Bogdan Lamatic, Bucharest)</h1>
-          <p className="text-base leading-relaxed text-muted-foreground">
-            <strong>In money laundering cases, the first hours matter most.</strong> Accounts can be frozen and assets seized before any conviction, and the statements or documents you provide at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with extended confiscation.
+          <p className="text-base leading-relaxed text-foreground">
+            <span className="block"><strong>In money laundering cases, the first hours matter most.</strong></span>
+            <span className="block">Accounts can be frozen and assets seized before any conviction, and the statements or documents you provide at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with extended confiscation.</span>
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
