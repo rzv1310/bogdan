@@ -964,7 +964,7 @@ const Index = () => {
         <section className="mx-auto max-w-6xl px-4 md:px-6 pb-4 md:pb-8">
           <div className="rounded-xl border p-6 md:p-8 bg-accent/10 overflow-hidden">
             <h2 className="text-2xl font-semibold mb-2">{t.ctaTitle}</h2>
-            <p className="text-muted-foreground mb-6 max-w-3xl">{t.ctaText}</p>
+            <p className="text-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
               <GeminiButtonEffect>
                 <a href="tel:+40316320183" aria-label={t.ctaLawyerButton}>

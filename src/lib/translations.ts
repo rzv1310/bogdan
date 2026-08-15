@@ -44,7 +44,7 @@ export const translations = {
     },
     ctaTitle: "Situația ta nu poate aștepta",
     ctaText:
-      "În drept penal, fiecare oră contează. Sună-mă Azi pentru consultanță confidențială și află cum îți poți apăra libertatea și reputația.",
+      "În drept penal, fiecare oră contează. Sună-mă Azi pentru o evaluare gratuită și confidențială și află cum îți poți apăra libertatea și reputația.",
     callNow: "Sună acum",
     googleRating: "5,0",
     googleReviews: "din 27 de recenzii Google",
@@ -135,7 +135,7 @@ export const translations = {
     },
     ctaTitle: "Your situation can’t wait",
     ctaText:
-      "In criminal law, every hour counts. Call me today for a confidential consultation and learn how to protect your freedom and reputation.",
+      "In criminal law, every hour counts. Call me today for a free and confidential evaluation and learn how to protect your freedom and reputation.",
     callNow: "Call now",
     googleRating: "5.0",
     googleReviews: "from 27 Google reviews",
