@@ -228,13 +228,13 @@ export default function CriminalitateEconomica() {
         </section>
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Penal</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Codul Penal</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="art-207">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 207 – Șantajul</h3>
+                  <h3 className="text-lg font-semibold">Articolul 207 - Șantajul</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -244,7 +244,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Dacă faptele prevăzute în alin. (1) și alin. (2) au fost comise în scopul de a dobândi în mod injust un folos patrimonial, pentru sine sau pentru altul, pedeapsa este închisoarea de la 2 la 7 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul pas este să contest existența scopului injust. Dacă se poate demonstra că acțiunea a fost motivată de un drept legitim – de exemplu, solicitarea unei plăți datorate sau avertizarea privind o situație reală – nu mai vorbim despre șantaj penal. De asemenea, voi analiza contextul relației dintre părți: dacă există un raport comercial, juridic sau personal în care discuțiile au fost tensionate, pot argumenta că ceea ce acuzarea numește „constrângere” a fost de fapt o negociere dură. Orice lipsă de probe directe asupra elementului intențional este în favoarea clientului.</p>
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul pas este să contest existența scopului injust. Dacă se poate demonstra că acțiunea a fost motivată de un drept legitim - de exemplu, solicitarea unei plăți datorate sau avertizarea privind o situație reală - nu mai vorbim despre șantaj penal. De asemenea, voi analiza contextul relației dintre părți: dacă există un raport comercial, juridic sau personal în care discuțiile au fost tensionate, pot argumenta că ceea ce acuzarea numește „constrângere” a fost de fapt o negociere dură. Orice lipsă de probe directe asupra elementului intențional este în favoarea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -252,7 +252,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-239">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 239 – Abuzul de încredere prin fraudarea creditorilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 239 - Abuzul de încredere prin fraudarea creditorilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -262,7 +262,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Voi verifica dacă există dovezi clare că bunurile au fost ascunse sau înstrăinate cu intenția directă de a frauda creditorii. Dacă acțiunile clientului au fost determinate de necesitatea plății altor datorii sau de menținerea activității economice, putem argumenta lipsa intenției frauduloase. În plus, această infracțiune se judecă doar dacă există plângere prealabilă din partea creditorului – lipsa acesteia sau formularea sa tardivă poate duce la încetarea procesului penal. De asemenea, pot invoca circumstanța că evaluarea prejudiciului nu este certă sau nu se poate dovedi că a fost produs direct de acțiunea clientului.</p>
+                      <p><strong>Comentariul meu:</strong> Voi verifica dacă există dovezi clare că bunurile au fost ascunse sau înstrăinate cu intenția directă de a frauda creditorii. Dacă acțiunile clientului au fost determinate de necesitatea plății altor datorii sau de menținerea activității economice, putem argumenta lipsa intenției frauduloase. În plus, această infracțiune se judecă doar dacă există plângere prealabilă din partea creditorului - lipsa acesteia sau formularea sa tardivă poate duce la încetarea procesului penal. De asemenea, pot invoca circumstanța că evaluarea prejudiciului nu este certă sau nu se poate dovedi că a fost produs direct de acțiunea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -270,7 +270,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-240">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 240 – Bancruta simplă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 240 - Bancruta simplă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -287,7 +287,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-241">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 241 – Bancruta frauduloasă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 241 - Bancruta frauduloasă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -296,7 +296,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În acest caz, apărarea trebuie să demonstreze lipsa intenției de fraudă și existența unor explicații legitime pentru tranzacțiile contestate. De exemplu, dacă activele au fost înstrăinate pentru a acoperi datorii curente sau pentru a obține lichidități, nu se poate vorbi de scop fraudulos. Voi contesta de asemenea calitatea și validitatea probelor contabile aduse de acuzare – un simplu dezechilibru în documente nu înseamnă automat bancrută frauduloasă. Condiția plângerii prealabile rămâne o barieră procedurală importantă în favoarea clientului.</p>
+                      <p><strong>Comentariul meu:</strong> În acest caz, apărarea trebuie să demonstreze lipsa intenției de fraudă și existența unor explicații legitime pentru tranzacțiile contestate. De exemplu, dacă activele au fost înstrăinate pentru a acoperi datorii curente sau pentru a obține lichidități, nu se poate vorbi de scop fraudulos. Voi contesta de asemenea calitatea și validitatea probelor contabile aduse de acuzare - un simplu dezechilibru în documente nu înseamnă automat bancrută frauduloasă. Condiția plângerii prealabile rămâne o barieră procedurală importantă în favoarea clientului.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -304,7 +304,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-242">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 242 – Gestiunea frauduloasă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 242 - Gestiunea frauduloasă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -323,7 +323,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-244">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 244 – Înșelăciunea</h3>
+                  <h3 className="text-lg font-semibold">Articolul 244 - Înșelăciunea</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -341,7 +341,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-245">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 245 – Înșelăciunea privind asigurările</h3>
+                  <h3 className="text-lg font-semibold">Articolul 245 - Înșelăciunea privind asigurările</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -359,7 +359,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-246">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 246 – Deturnarea licitațiilor publice</h3>
+                  <h3 className="text-lg font-semibold">Articolul 246 - Deturnarea licitațiilor publice</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -375,7 +375,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-247">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 247 – Exploatarea patrimonială a unei persoane vulnerabile</h3>
+                  <h3 className="text-lg font-semibold">Articolul 247 - Exploatarea patrimonială a unei persoane vulnerabile</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -392,7 +392,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-248">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 248 – Sancționarea tentativei</h3>
+                  <h3 className="text-lg font-semibold">Articolul 248 - Sancționarea tentativei</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -408,7 +408,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-249">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 249 – Frauda informatică</h3>
+                  <h3 className="text-lg font-semibold">Articolul 249 - Frauda informatică</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -424,7 +424,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-250">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 250 – Efectuarea de operațiuni financiare în mod fraudulos</h3>
+                  <h3 className="text-lg font-semibold">Articolul 250 - Efectuarea de operațiuni financiare în mod fraudulos</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -442,7 +442,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-251">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 251 – Acceptarea operațiunilor financiare efectuate în mod fraudulos</h3>
+                  <h3 className="text-lg font-semibold">Articolul 251 - Acceptarea operațiunilor financiare efectuate în mod fraudulos</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -459,7 +459,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-252">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 252 – Sancționarea tentativei</h3>
+                  <h3 className="text-lg font-semibold">Articolul 252 - Sancționarea tentativei</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -475,7 +475,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-256-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 256¹ – Faptele care au produs consecințe deosebit de grave</h3>
+                  <h3 className="text-lg font-semibold">Articolul 256¹ - Faptele care au produs consecințe deosebit de grave</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -491,7 +491,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-289">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 289 – Luarea de mită</h3>
+                  <h3 className="text-lg font-semibold">Articolul 289 - Luarea de mită</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -509,7 +509,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-290">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 290 – Darea de mită</h3>
+                  <h3 className="text-lg font-semibold">Articolul 290 - Darea de mită</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -521,7 +521,7 @@ export default function CriminalitateEconomica() {
                       <p>(5) Banii, valorile sau orice alte bunuri oferite sau date sunt supuse confiscării, iar când acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul aspect pe care îl explorez este constrângerea – dacă există dovezi că plata a fost făcută sub presiune, atunci fapta nu este incriminată. De asemenea, pot analiza dacă există oportunitatea de a invoca denunțul anterior sesizării oficiale, ceea ce ar înlătura răspunderea penală. Este important să demonstrez că banii nu au fost destinați influențării unui act de serviciu, ci aveau o altă natură (ex.: datorie personală, avans comercial).</p>
+                      <p><strong>Comentariul meu:</strong> În apărarea clientului, primul aspect pe care îl explorez este constrângerea - dacă există dovezi că plata a fost făcută sub presiune, atunci fapta nu este incriminată. De asemenea, pot analiza dacă există oportunitatea de a invoca denunțul anterior sesizării oficiale, ceea ce ar înlătura răspunderea penală. Este important să demonstrez că banii nu au fost destinați influențării unui act de serviciu, ci aveau o altă natură (ex.: datorie personală, avans comercial).</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -529,7 +529,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-291">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 291 – Traficul de influență</h3>
+                  <h3 className="text-lg font-semibold">Articolul 291 - Traficul de influență</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -546,7 +546,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-292">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 292 – Cumpărarea de influență</h3>
+                  <h3 className="text-lg font-semibold">Articolul 292 - Cumpărarea de influență</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -557,7 +557,7 @@ export default function CriminalitateEconomica() {
                       <p>(4) Banii, valorile sau orice alte bunuri date sau oferite sunt supuse confiscării, iar dacă acestea nu se mai găsesc, se dispune confiscarea prin echivalent.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia principală este să subliniez lipsa intenției clientului de a influența efectiv actul funcționarului – pot demonstra că plățile erau pentru alt scop sau în cadrul unei relații comerciale. Invocarea denunțului anterior sesizării este o soluție directă pentru înlăturarea răspunderii. Voi analiza și dacă persoana „influentă” nu avea în realitate acces la funcționar.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia principală este să subliniez lipsa intenției clientului de a influența efectiv actul funcționarului - pot demonstra că plățile erau pentru alt scop sau în cadrul unei relații comerciale. Invocarea denunțului anterior sesizării este o soluție directă pentru înlăturarea răspunderii. Voi analiza și dacă persoana „influentă” nu avea în realitate acces la funcționar.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -565,7 +565,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-295">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 295 – Delapidarea</h3>
+                  <h3 className="text-lg font-semibold">Articolul 295 - Delapidarea</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -582,7 +582,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-297">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 297 – Abuzul în serviciu</h3>
+                  <h3 className="text-lg font-semibold">Articolul 297 - Abuzul în serviciu</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -591,7 +591,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Cu aceeași pedeapsă se sancționează și fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, îngrădește exercitarea unui drept al unei persoane ori creează pentru aceasta o situație de inferioritate pe temei de rasă, naționalitate, origine etnică, limbă, religie, sex, orientare sexuală, apartenență politică, avere, vârstă, dizabilitate, boală cronică necontagioasă sau infecție HIV/SIDA.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia de apărare vizează demonstrarea lipsei intenției directe sau a inexistenței unei pagube concrete. Pot arăta că actul a fost îndeplinit conform procedurilor interne sau că deficiențele invocate au fost minore. Este importantă și verificarea legalității dispozițiilor pe care clientul trebuia să le respecte – dacă norma era neclară, se poate invoca eroarea de drept.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia de apărare vizează demonstrarea lipsei intenției directe sau a inexistenței unei pagube concrete. Pot arăta că actul a fost îndeplinit conform procedurilor interne sau că deficiențele invocate au fost minore. Este importantă și verificarea legalității dispozițiilor pe care clientul trebuia să le respecte - dacă norma era neclară, se poate invoca eroarea de drept.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -599,7 +599,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-298">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 298 – Neglijența în serviciu</h3>
+                  <h3 className="text-lg font-semibold">Articolul 298 - Neglijența în serviciu</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -607,7 +607,7 @@ export default function CriminalitateEconomica() {
                       <p>Încălcarea din culpă de către un funcționar public a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau prin îndeplinirea ei defectuoasă, dacă prin aceasta se cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane fizice sau ale unei persoane juridice, se pedepsește cu închisoarea de la 3 luni la 3 ani sau cu amendă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Aici mă concentrez pe lipsa culpei – trebuie dovedit că clientul nu putea anticipa consecințele faptei. Dacă sarcina de serviciu era neclară sau nu îi revenea efectiv, răspunderea penală poate fi exclusă. De asemenea, o pagubă minoră sau lipsa unui prejudiciu cert este un argument puternic.</p>
+                      <p><strong>Comentariul meu:</strong> Aici mă concentrez pe lipsa culpei - trebuie dovedit că clientul nu putea anticipa consecințele faptei. Dacă sarcina de serviciu era neclară sau nu îi revenea efectiv, răspunderea penală poate fi exclusă. De asemenea, o pagubă minoră sau lipsa unui prejudiciu cert este un argument puternic.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -615,7 +615,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-300">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 300 – Obstrucționarea justiției</h3>
+                  <h3 className="text-lg font-semibold">Articolul 300 - Obstrucționarea justiției</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -632,7 +632,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-306">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 306 – Nedenunțarea</h3>
+                  <h3 className="text-lg font-semibold">Articolul 306 - Nedenunțarea</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -649,12 +649,12 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-308">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 308 – Infracțiuni de serviciu comise de alte persoane</h3>
+                  <h3 className="text-lg font-semibold">Articolul 308 - Infracțiuni de serviciu comise de alte persoane</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
                     <div className="rounded-md border border-accent bg-background p-4">
-                      <p>(1) Dispozițiile art. 289–292 și art. 295–297 privind funcționarii publici se aplică în mod corespunzător și faptelor săvârșite de către alte persoane care exercită, permanent sau temporar, cu orice titlu, o însărcinare de orice natură, retribuită sau nu, în serviciul unei persoane fizice dintre cele prevăzute la art. 175 alin. (2), precum și în cadrul oricărei persoane juridice.</p>
+                      <p>(1) Dispozițiile art. 289-292 și art. 295-297 privind funcționarii publici se aplică în mod corespunzător și faptelor săvârșite de către alte persoane care exercită, permanent sau temporar, cu orice titlu, o însărcinare de orice natură, retribuită sau nu, în serviciul unei persoane fizice dintre cele prevăzute la art. 175 alin. (2), precum și în cadrul oricărei persoane juridice.</p>
                       <p>(2) Limitele speciale ale pedepsei se reduc cu o treime.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
@@ -666,7 +666,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-312">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 312 – Spălarea banilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 312 - Spălarea banilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -676,7 +676,7 @@ export default function CriminalitateEconomica() {
                       <p>(3) Dobândirea, deținerea sau folosirea de bunuri, cunoscând că acestea provin din săvârșirea de infracțiuni, se pedepsește cu închisoare de la 3 la 10 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul esențial al faptei – cunoașterea originii ilicite. Dacă clientul poate arăta că a primit bunurile în cadrul unei tranzacții obișnuite și fără suspiciuni rezonabile, atunci lipsesc elementele constitutive. În plus, trebuie verificată infracțiunea-sursă: dacă aceasta nu este dovedită, spălarea banilor nu poate fi reținută.</p>
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul esențial al faptei - cunoașterea originii ilicite. Dacă clientul poate arăta că a primit bunurile în cadrul unei tranzacții obișnuite și fără suspiciuni rezonabile, atunci lipsesc elementele constitutive. În plus, trebuie verificată infracțiunea-sursă: dacă aceasta nu este dovedită, spălarea banilor nu poate fi reținută.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -684,7 +684,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-323">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 323 – Falsul material în înscrisuri oficiale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 323 - Falsul material în înscrisuri oficiale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -701,7 +701,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-326">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 326 – Falsul în declarații</h3>
+                  <h3 className="text-lg font-semibold">Articolul 326 - Falsul în declarații</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -717,7 +717,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="art-328">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 328 – Uzurparea de calități oficiale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 328 - Uzurparea de calități oficiale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -743,13 +743,13 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 241/2005 pentru prevenirea și combaterea evaziunii fiscale</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Legea nr. 241/2005 pentru prevenirea și combaterea evaziunii fiscale</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l241-art-3">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 3 – Reținerea și neplata impozitelor și contribuțiilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 3 - Reținerea și neplata impozitelor și contribuțiilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -765,7 +765,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-4">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 4 – Reținerea și utilizarea sumelor cu altă destinație</h3>
+                  <h3 className="text-lg font-semibold">Articolul 4 - Reținerea și utilizarea sumelor cu altă destinație</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -781,7 +781,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-5">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 5 – Împiedicarea verificărilor financiare, fiscale sau vamale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 5 - Împiedicarea verificărilor financiare, fiscale sau vamale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -789,7 +789,7 @@ export default function CriminalitateEconomica() {
                       <p>Constituie infracţiune şi se pedepseşte cu închisoare de la un an la 6 ani împiedicarea, sub orice formă, a organelor competente de a intra, în condiţiile prevăzute de lege, în sedii, incinte ori pe terenuri, cu scopul efectuării verificărilor financiare, fiscale sau vamale.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv” – este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „fictiv” - este esențial să demonstrez că operațiunile reflectă tranzacții reale, chiar dacă ulterior acestea au fost contestate fiscal. Lipsa probelor clare din partea acuzării și existența unor documente justificative, chiar imperfecte, pot înclina balanța în favoarea clientului. În plus, dacă diferențele provin din interpretări fiscale diferite, pot invoca lipsa vinovăției penale.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -797,7 +797,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-6">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 6 – Reţinerea şi nevărsarea impozitelor cu reţinere la sursă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 6 - Reţinerea şi nevărsarea impozitelor cu reţinere la sursă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -813,7 +813,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-6-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 6¹ – Reținerea, neplata și nereținerea impozitelor și contribuțiilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 6¹ - Reținerea, neplata și nereținerea impozitelor și contribuțiilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -831,7 +831,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-7">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 7 – Deținerea și circulația timbrelor și formularelor cu regim special</h3>
+                  <h3 className="text-lg font-semibold">Articolul 7 - Deținerea și circulația timbrelor și formularelor cu regim special</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -848,7 +848,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-8">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 8 – Stabilirea cu rea-credință a impozitelor pentru obținerea de restituiri</h3>
+                  <h3 className="text-lg font-semibold">Articolul 8 - Stabilirea cu rea-credință a impozitelor pentru obținerea de restituiri</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -866,7 +866,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-9">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 9 – Evaziunea fiscală</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9 - Evaziunea fiscală</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -893,7 +893,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-9-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 9¹ – Infracțiuni în cadrul schemelor frauduloase transfrontaliere UE</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9¹ - Infracțiuni în cadrul schemelor frauduloase transfrontaliere UE</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -913,7 +913,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-9-2">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 9² – Infracțiuni în cadrul schemelor frauduloase naționale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9² - Infracțiuni în cadrul schemelor frauduloase naționale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -933,7 +933,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-9-3">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 9³ – Operațiuni de creditare frauduloase</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9³ - Operațiuni de creditare frauduloase</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -949,7 +949,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-10">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10 – Cauze de nepedepsire și reducerea pedepsei</h3>
+                  <h3 className="text-lg font-semibold">Articolul 10 - Cauze de nepedepsire și reducerea pedepsei</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -970,7 +970,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-10-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10¹ – Prescripția răspunderii penale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 10¹ - Prescripția răspunderii penale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -986,7 +986,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-11">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 11 – Măsuri asigurătorii obligatorii</h3>
+                  <h3 className="text-lg font-semibold">Articolul 11 - Măsuri asigurătorii obligatorii</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1002,7 +1002,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l241-art-12">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 12 – Interdicții pentru condamnați</h3>
+                  <h3 className="text-lg font-semibold">Articolul 12 - Interdicții pentru condamnați</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1029,13 +1029,13 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 129/2019 pentru prevenirea și combaterea spălării banilor</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Legea nr. 129/2019 pentru prevenirea și combaterea spălării banilor</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l129-art-49">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 49 – Infracțiunea de spălare a banilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 49 - Infracțiunea de spălare a banilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1060,7 +1060,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l129-art-50">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 50 – Măsuri asigurătorii obligatorii</h3>
+                  <h3 className="text-lg font-semibold">Articolul 50 - Măsuri asigurătorii obligatorii</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1076,7 +1076,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l129-art-51">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 51 – Confiscarea bunurilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 51 - Confiscarea bunurilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1106,13 +1106,13 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 31/1990 privind societățile</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Legea nr. 31/1990 privind societățile</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l31-art-271">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 271 – Declararea necorespunzătoare a capitalului social</h3>
+                  <h3 className="text-lg font-semibold">Articolul 271 - Declararea necorespunzătoare a capitalului social</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1120,7 +1120,7 @@ export default function CriminalitateEconomica() {
                       <p>Fondatorii, administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care, în prospectele, rapoartele sau comunicările privind constituirea ori funcționarea societății, fac declarații neadevărate sau ascund, cu rea-credință, date esențiale referitoare la situația societății, se pedepsesc cu închisoare de la 6 luni la 3 ani sau cu amendă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac ideea de rea-credință – este esențial să demonstrez că eventualele erori din documente provin din neglijență sau interpretări diferite, nu din intenția de a induce în eroare. De asemenea, pot solicita o expertiză contabilă pentru a arăta că datele reflectau realitatea la momentul întocmirii actelor, chiar dacă ulterior situația societății s-a modificat.</p>
+                      <p><strong>Comentariul meu:</strong> În apărare, atac ideea de rea-credință - este esențial să demonstrez că eventualele erori din documente provin din neglijență sau interpretări diferite, nu din intenția de a induce în eroare. De asemenea, pot solicita o expertiză contabilă pentru a arăta că datele reflectau realitatea la momentul întocmirii actelor, chiar dacă ulterior situația societății s-a modificat.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1128,7 +1128,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-272">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 272 – Prezentarea de date false autorităților</h3>
+                  <h3 className="text-lg font-semibold">Articolul 272 - Prezentarea de date false autorităților</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1144,7 +1144,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-273">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 273 – Falsificarea documentelor societății</h3>
+                  <h3 className="text-lg font-semibold">Articolul 273 - Falsificarea documentelor societății</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1160,7 +1160,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-274">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 274 – Folosirea cu rea-credință a bunurilor societății</h3>
+                  <h3 className="text-lg font-semibold">Articolul 274 - Folosirea cu rea-credință a bunurilor societății</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1168,7 +1168,7 @@ export default function CriminalitateEconomica() {
                       <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care folosesc cu rea-credință bunurile sau creditul societății într-un scop contrar intereselor acesteia ori în folos propriu sau al altuia, se pedepsesc cu închisoare de la 2 la 7 ani.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei caracterului contrar interesului societății – de multe ori, deciziile de afaceri implică riscuri asumate care nu constituie abuz dacă erau justificate economic. Pot arăta că utilizarea bunurilor a urmărit un beneficiu pentru societate, chiar dacă rezultatul nu a fost cel scontat.</p>
+                      <p><strong>Comentariul meu:</strong> Apărarea se axează pe demonstrarea lipsei caracterului contrar interesului societății - de multe ori, deciziile de afaceri implică riscuri asumate care nu constituie abuz dacă erau justificate economic. Pot arăta că utilizarea bunurilor a urmărit un beneficiu pentru societate, chiar dacă rezultatul nu a fost cel scontat.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1176,7 +1176,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-275">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 275 – Împrumuturi sau garanții ilegale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 275 - Împrumuturi sau garanții ilegale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1192,7 +1192,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-276">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 276 – Distribuirea de dividende fictive</h3>
+                  <h3 className="text-lg font-semibold">Articolul 276 - Distribuirea de dividende fictive</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1208,7 +1208,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-277">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 277 – Nerespectarea hotărârilor adunării generale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 277 - Nerespectarea hotărârilor adunării generale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1216,7 +1216,7 @@ export default function CriminalitateEconomica() {
                       <p>Administratorii, directorii, membrii directoratului sau ai consiliului de supraveghere care nu pun în aplicare hotărârile adunării generale a asociaților/acționarilor se pedepsesc cu închisoare de la o lună la un an sau cu amendă.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> Strategia mea este să arăt că neexecutarea hotărârii a fost justificată de circumstanțe obiective – de exemplu, imposibilitatea tehnică sau juridică de a pune în aplicare decizia. De asemenea, dacă hotărârea era nelegală sau ar fi produs un prejudiciu, administratorul putea fi chiar obligat să nu o execute.</p>
+                      <p><strong>Comentariul meu:</strong> Strategia mea este să arăt că neexecutarea hotărârii a fost justificată de circumstanțe obiective - de exemplu, imposibilitatea tehnică sau juridică de a pune în aplicare decizia. De asemenea, dacă hotărârea era nelegală sau ar fi produs un prejudiciu, administratorul putea fi chiar obligat să nu o execute.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1224,7 +1224,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-278">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 278 – Împiedicarea controlului</h3>
+                  <h3 className="text-lg font-semibold">Articolul 278 - Împiedicarea controlului</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1240,7 +1240,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-279">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 279 – Divulgarea de informații confidențiale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 279 - Divulgarea de informații confidențiale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1256,7 +1256,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l31-art-280">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 280 – Falsul în documentele societății</h3>
+                  <h3 className="text-lg font-semibold">Articolul 280 - Falsul în documentele societății</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1282,13 +1282,13 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Legea nr. 78/2000</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Legea nr. 78/2000</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="l78-art-9">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 9 – Infracțiuni asimilate infracțiunilor de corupție</h3>
+                  <h3 className="text-lg font-semibold">Articolul 9 - Infracțiuni asimilate infracțiunilor de corupție</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1296,7 +1296,7 @@ export default function CriminalitateEconomica() {
                       <p>Fapta persoanei care, în scopul obținerii pentru sine sau pentru altul de bani, bunuri ori alte foloase necuvenite, pretinde, primește ori acceptă promisiunea acestora, direct sau indirect, săvârșită de o persoană care exercită atribuții în cadrul unei persoane juridice, se pedepsește cu închisoare de la 2 la 7 ani și interzicerea exercitării unor drepturi.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „foloase necuvenite” – dacă beneficiul primit este justificat printr-un contract sau printr-o relație comercială legală, fapta nu mai are caracter penal. De asemenea, voi arăta că discuțiile ori promisiunile invocate nu au produs consecințe concrete și pot fi încadrate ca simple negocieri.</p>
+                      <p><strong>Comentariul meu:</strong> În apărare, atac elementul „foloase necuvenite” - dacă beneficiul primit este justificat printr-un contract sau printr-o relație comercială legală, fapta nu mai are caracter penal. De asemenea, voi arăta că discuțiile ori promisiunile invocate nu au produs consecințe concrete și pot fi încadrate ca simple negocieri.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1304,7 +1304,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-10">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 10 – Infracțiuni economice în cadrul privatizării și subvențiilor</h3>
+                  <h3 className="text-lg font-semibold">Articolul 10 - Infracțiuni economice în cadrul privatizării și subvențiilor</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1323,7 +1323,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-11">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 11 – Conflictul de interese în activitatea economică</h3>
+                  <h3 className="text-lg font-semibold">Articolul 11 - Conflictul de interese în activitatea economică</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1340,7 +1340,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-12">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 12 – Operațiuni financiare incompatibile și folosirea informațiilor privilegiate</h3>
+                  <h3 className="text-lg font-semibold">Articolul 12 - Operațiuni financiare incompatibile și folosirea informațiilor privilegiate</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1359,7 +1359,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-13">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13 – Folosirea influenței în organizații</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13 - Folosirea influenței în organizații</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1375,7 +1375,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-13-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13¹ – Șantajul cu circumstanțe agravante</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13¹ - Șantajul cu circumstanțe agravante</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1391,7 +1391,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-13-2">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 13² – Abuzul în serviciu cu circumstanțe agravante</h3>
+                  <h3 className="text-lg font-semibold">Articolul 13² - Abuzul în serviciu cu circumstanțe agravante</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1407,7 +1407,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-15">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 15 – Tentativa</h3>
+                  <h3 className="text-lg font-semibold">Articolul 15 - Tentativa</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1423,7 +1423,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-16">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 16 – Concursul de norme</h3>
+                  <h3 className="text-lg font-semibold">Articolul 16 - Concursul de norme</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1439,7 +1439,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-18-1">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 18¹ – Infracțiuni privind fondurile europene - obținere frauduloasă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18¹ - Infracțiuni privind fondurile europene - obținere frauduloasă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1457,7 +1457,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-18-2">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 18² – Schimbarea destinației fondurilor europene</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18² - Schimbarea destinației fondurilor europene</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1475,7 +1475,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-18-3">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 18³ – Diminuarea ilegală a resurselor UE</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18³ - Diminuarea ilegală a resurselor UE</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1493,7 +1493,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-18-4">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 18⁴ – Tentativa pentru infracțiunile cu fonduri europene</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18⁴ - Tentativa pentru infracțiunile cu fonduri europene</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1509,7 +1509,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="l78-art-18-5">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 18⁵ – Răspunderea conducătorilor de entități</h3>
+                  <h3 className="text-lg font-semibold">Articolul 18⁵ - Răspunderea conducătorilor de entități</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1535,13 +1535,13 @@ export default function CriminalitateEconomica() {
 
         <Card>
           <CardHeader className="p-6">
-            <h2 className="text-xl font-medium">Infracțiuni Economice – Codul Vamal</h2>
+            <h2 className="text-xl font-medium">Infracțiuni Economice - Codul Vamal</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <Accordion type="single" collapsible className="w-full [&_p]:text-base [&_li]:text-base">
               <AccordionItem value="cv-art-270">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 270 – Contrabanda</h3>
+                  <h3 className="text-lg font-semibold">Articolul 270 - Contrabanda</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1550,7 +1550,7 @@ export default function CriminalitateEconomica() {
                       <p>(2) Constituie, de asemenea, infracțiune introducerea sau scoaterea din țară, prin locurile stabilite pentru control, fără declararea acestora în documentele vamale, dacă valoarea bunurilor depășește limita prevăzută de lege.</p>
                     </div>
                     <div className="rounded-md bg-accent text-accent-foreground p-4">
-                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea lipsei intenției directe – dacă bunurile au fost trecute din eroare, fără scop de fraudă, sau dacă valoarea este sub pragul legal, fapta poate fi reîncadrată ca contravenție. De asemenea, dacă locul de trecere a frontierei era unul folosit din cauza unei situații de urgență sau a indicațiilor autorităților, elementul material poate fi contestat.</p>
+                      <p><strong>Comentariul meu:</strong> În apărare, mă concentrez pe demonstrarea lipsei intenției directe - dacă bunurile au fost trecute din eroare, fără scop de fraudă, sau dacă valoarea este sub pragul legal, fapta poate fi reîncadrată ca contravenție. De asemenea, dacă locul de trecere a frontierei era unul folosit din cauza unei situații de urgență sau a indicațiilor autorităților, elementul material poate fi contestat.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -1558,7 +1558,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="cv-art-271">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 271 – Tentativa de contrabandă</h3>
+                  <h3 className="text-lg font-semibold">Articolul 271 - Tentativa de contrabandă</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1574,7 +1574,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="cv-art-272">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 272 – Folosirea documentelor vamale falsificate</h3>
+                  <h3 className="text-lg font-semibold">Articolul 272 - Folosirea documentelor vamale falsificate</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1590,7 +1590,7 @@ export default function CriminalitateEconomica() {
 
               <AccordionItem value="cv-art-273">
                 <AccordionTrigger className="text-left">
-                  <h3 className="text-lg font-semibold">Articolul 273 – Sustragerea de la plata taxelor vamale</h3>
+                  <h3 className="text-lg font-semibold">Articolul 273 - Sustragerea de la plata taxelor vamale</h3>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-3">
@@ -1655,7 +1655,7 @@ export default function CriminalitateEconomica() {
             <section className="space-y-3">
               <h3 className="text-lg font-semibold">Surse oficiale:</h3>
               <ul className="list-disc pl-6 space-y-1">
-                <li>România în cifre 2023 - INS – referințe agregate infracțiuni economice</li>
+                <li>România în cifre 2023 - INS - referințe agregate infracțiuni economice</li>
                 <li>Raport activitate DIICOT 2024 - total cauze soluționate (diicot.ro)</li>
                 <li>Raport activitate DIICOT 2024 - cauze economico-financiare și contrabandă (media.dcnews.ro)</li>
                 <li>Raport activitate DIICOT 2023 - cauze economico-financiare și contrabandă (ZIUA de Constanța)</li>

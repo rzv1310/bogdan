@@ -5,7 +5,7 @@
  * canonical, hreflang reciprocity, JSON-LD validity and the Open Graph /
  * Twitter Card set. Any error fails the build.
  */
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROUTES, SITE_ORIGIN } from "./routes.mjs";
@@ -164,6 +164,54 @@ function collectJsonLd(route, html) {
   return types;
 }
 
+/**
+ * Style rule (no-em-dash): em dashes and en dashes must never appear in the
+ * site's source content. Prerender normalizes the HTML output, but source files
+ * are flagged here so the text stays consistent everywhere (schema included).
+ */
+const DASH_SCAN_DIRS = [path.join(root, "src"), path.join(root, "scripts")];
+const DASH_SCAN_FILES = [path.join(root, "index.html"), path.join(root, "public", "llms.txt")];
+const DASH_SCAN_EXT = new Set([".ts", ".tsx", ".js", ".jsx", ".mjs", ".css", ".html", ".txt", ".md"]);
+
+async function checkNoFancyDashes() {
+  const targets = [...DASH_SCAN_FILES];
+  for (const dir of DASH_SCAN_DIRS) {
+    const stack = [dir];
+    while (stack.length) {
+      const current = stack.pop();
+      let entries;
+      try {
+        entries = await readdir(current, { withFileTypes: true });
+      } catch {
+        continue;
+      }
+      for (const entry of entries) {
+        const full = path.join(current, entry.name);
+        if (entry.isDirectory()) {
+          if (entry.name !== "node_modules" && entry.name !== "dist") stack.push(full);
+        } else if (DASH_SCAN_EXT.has(path.extname(entry.name))) {
+          targets.push(full);
+        }
+      }
+    }
+  }
+
+  for (const file of targets) {
+    let content;
+    try {
+      content = await readFile(file, "utf8");
+    } catch {
+      continue;
+    }
+    if (!/[\u2014\u2013]/.test(content)) continue;
+    const rel = path.relative(root, file);
+    content.split("\n").forEach((line, index) => {
+      if (/[\u2014\u2013]/.test(line)) {
+        errors.push(`${rel}:${index + 1}: em/en dash found - replace it with "-"`);
+      }
+    });
+  }
+}
 
 async function main() {
   const pages = new Map();
@@ -299,11 +347,16 @@ async function main() {
     err("/404", "dist/404.html is missing");
   }
 
+  // Style rule: no em dash / en dash anywhere in source content. Use "-".
+  await checkNoFancyDashes();
+
+
+
   for (const message of warnings) console.warn(`[seo] warning ${message}`);
   for (const message of errors) console.error(`[seo] ERROR ${message}`);
 
   console.log(
-    `[seo] validated ${pages.size} routes + 404 — ${errors.length} error(s), ${warnings.length} warning(s)`,
+    `[seo] validated ${pages.size} routes + 404 - ${errors.length} error(s), ${warnings.length} warning(s)`,
   );
   if (errors.length > 0) process.exit(1);
 }

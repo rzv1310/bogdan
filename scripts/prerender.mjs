@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const distDir = path.join(root, "dist");
 
-// Safety net for publish output limits — keep well below platform caps.
+// Safety net for publish output limits - keep well below platform caps.
 const MAX_PRERENDER_PAGES = 200;
 
 
@@ -97,6 +97,12 @@ function buildHead(route, head) {
   return tags.map((tag) => `    ${tag}`).join("\n");
 }
 
+// Site style rule: no em/en dashes anywhere in the output (HTML text or JSON-LD).
+// Any that slip into source content get normalized to a plain hyphen here.
+function stripFancyDashes(text) {
+  return text.replace(/\s*[\u2014\u2013]\s*/g, (m) => (/\s/.test(m) ? " - " : "-"));
+}
+
 async function main() {
   const template = stripTemplateHead(await readFile(path.join(distDir, "index.html"), "utf8"));
   const { render } = await import(path.join(root, "dist-ssr", "entry-server.js"));
@@ -126,7 +132,7 @@ async function main() {
     const outFile =
       route === "/" ? path.join(distDir, "index.html") : path.join(distDir, route, "index.html");
     await mkdir(path.dirname(outFile), { recursive: true });
-    await writeFile(outFile, page, "utf8");
+    await writeFile(outFile, stripFancyDashes(page), "utf8");
     console.log(`[prerender] ${route} -> ${path.relative(distDir, outFile)}`);
   }
 
@@ -138,7 +144,7 @@ async function main() {
       .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
       .replace("</head>", `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
       .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
-    await writeFile(path.join(distDir, "404.html"), page, "utf8");
+    await writeFile(path.join(distDir, "404.html"), stripFancyDashes(page), "utf8");
     console.log("[prerender] 404 -> 404.html");
   }
 

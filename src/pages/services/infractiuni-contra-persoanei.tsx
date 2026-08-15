@@ -8,9 +8,9 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/infractiuni-contra-persoanei";
-const TITLE = "Avocat Infracțiuni Contra Persoanei București – Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
+const TITLE = "Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
 const DESCRIPTION =
-  "Avocat infracțiuni contra persoanei București – violență, amenințare, vătămare corporală, infracțiuni sexuale. Experiență 18+ ani. Sună acum!";
+  "Avocat infracțiuni contra persoanei București - violență, amenințare, vătămare corporală, infracțiuni sexuale. Experiență 18+ ani. Sună acum!";
 
 const FAQ = [
   {
@@ -118,7 +118,7 @@ export default function InfractiuniContraPersoanei() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Infracțiuni Contra Persoanei București – Apăr Libertatea și Reputația Ta | Bogdan Lamatic
+        Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -129,7 +129,7 @@ export default function InfractiuniContraPersoanei() {
           <strong>Acuzațiile privind infracțiuni contra persoanei afectează direct libertatea, dar și reputația și viața de familie.</strong> Multe dintre aceste cauze pornesc dintr-un conflict, o plângere depusă la furie sau o interpretare greșită a unor fapte - iar modul în care reacționezi din prima zi poate influența decisiv rezultatul final.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021–2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
         </p>
       </div>
 
@@ -164,18 +164,18 @@ export default function InfractiuniContraPersoanei() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-3">
           <p>
-            Infracțiunile contra persoanei sunt reglementate de Titlul I al Părții speciale a Codului penal (art. 188–227) și cuprind faptele care aduc atingere vieții, integrității corporale, libertății, vieții private sau libertății și integrității sexuale a unei persoane. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>) Codul penal le grupează în nouă capitole:
+            Infracțiunile contra persoanei sunt reglementate de Titlul I al Părții speciale a Codului penal (art. 188-227) și cuprind faptele care aduc atingere vieții, integrității corporale, libertății, vieții private sau libertății și integrității sexuale a unei persoane. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>) Codul penal le grupează în nouă capitole:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Infracțiuni contra vieții (omor, ucidere din culpă) - art. 188–192</li>
-            <li>Infracțiuni contra integrității corporale sau sănătății (loviri, vătămare corporală) - art. 193–198</li>
-            <li>Infracțiuni săvârșite asupra unui membru de familie (violență în familie) - art. 199–200</li>
-            <li>Agresiuni asupra fătului - art. 201–202</li>
-            <li>Infracțiuni privind obligația de asistență a celor în primejdie - art. 203–204</li>
-            <li>Infracțiuni contra libertății persoanei (lipsire de libertate, amenințare, șantaj, hărțuire) - art. 205–208</li>
-            <li>Traficul și exploatarea persoanelor vulnerabile - art. 209–217</li>
-            <li>Infracțiuni contra libertății și integrității sexuale (viol, agresiune sexuală) - art. 218–223</li>
-            <li>Infracțiuni ce aduc atingere domiciliului și vieții private - art. 224–227</li>
+            <li>Infracțiuni contra vieții (omor, ucidere din culpă) - art. 188-192</li>
+            <li>Infracțiuni contra integrității corporale sau sănătății (loviri, vătămare corporală) - art. 193-198</li>
+            <li>Infracțiuni săvârșite asupra unui membru de familie (violență în familie) - art. 199-200</li>
+            <li>Agresiuni asupra fătului - art. 201-202</li>
+            <li>Infracțiuni privind obligația de asistență a celor în primejdie - art. 203-204</li>
+            <li>Infracțiuni contra libertății persoanei (lipsire de libertate, amenințare, șantaj, hărțuire) - art. 205-208</li>
+            <li>Traficul și exploatarea persoanelor vulnerabile - art. 209-217</li>
+            <li>Infracțiuni contra libertății și integrității sexuale (viol, agresiune sexuală) - art. 218-223</li>
+            <li>Infracțiuni ce aduc atingere domiciliului și vieții private - art. 224-227</li>
           </ul>
           <p>
             <strong>Notă:</strong> dacă ești persoana vătămată și cauți despăgubiri sau reprezentare ca parte civilă, informațiile potrivite pentru tine sunt pe pagina{" "}
@@ -195,18 +195,18 @@ export default function InfractiuniContraPersoanei() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-3">
           <ol className="list-decimal pl-6 space-y-2">
-            <li><strong>Loviri și alte violențe, vătămare corporală (art. 193–195 CP).</strong> Apăr persoane acuzate de acte de violență, analizând proporționalitatea faptei reținute, certificatele medico-legale și circumstanțele reale ale conflictului.</li>
+            <li><strong>Loviri și alte violențe, vătămare corporală (art. 193-195 CP).</strong> Apăr persoane acuzate de acte de violență, analizând proporționalitatea faptei reținute, certificatele medico-legale și circumstanțele reale ale conflictului.</li>
             <li><strong>Vătămare corporală din culpă (art. 196 CP).</strong> Frecvent întâlnită în contexte de accidente, neglijențe sau conflicte fără intenție de vătămare - contest încadrarea juridică atunci când elementele de culpă nu sunt clar dovedite. Pentru cauzele rezultate din accidente de circulație, vezi și pagina{" "}
               <Link to="/servicii/infractiuni-rutiere-cu-victime" className="text-primary underline underline-offset-2">
                 Infracțiuni rutiere cu victime
               </Link>.
             </li>
             <li><strong>Violență în familie (art. 199 CP).</strong> Construiesc apărarea ținând cont de particularitățile acestor cauze - deseori cu probe contradictorii, martori din familie și, uneori, ordine de protecție deja emise.</li>
-            <li><strong>Amenințare și șantaj (art. 206–207 CP).</strong> Analizez dacă fapta reclamată întrunește efectiv elementele de tipicitate ale infracțiunii sau reprezintă un conflict verbal fără relevanță penală.</li>
+            <li><strong>Amenințare și șantaj (art. 206-207 CP).</strong> Analizez dacă fapta reclamată întrunește efectiv elementele de tipicitate ale infracțiunii sau reprezintă un conflict verbal fără relevanță penală.</li>
             <li><strong>Hărțuire și hărțuire sexuală (art. 208, art. 223 CP).</strong> Apăr persoane acuzate în astfel de cauze, verificând cu atenție probele și contextul comunicărilor invocate.</li>
             <li><strong>Lipsirea de libertate în mod ilegal (art. 205 CP).</strong> Reprezint persoane acuzate în situații deseori legate de conflicte familiale sau de proprietate, unde încadrarea juridică trebuie analizată cu rigoare.</li>
-            <li><strong>Infracțiuni contra libertății și integrității sexuale - viol, agresiune sexuală (art. 218–219 CP).</strong> Cauze cu miză extrem de ridicată pentru libertatea și reputația clientului, în care construiesc apărarea pe baza probelor medico-legale, martorilor și cronologiei faptelor.</li>
-            <li><strong>Violare de domiciliu și violarea vieții private (art. 224–227 CP).</strong> Apăr persoane acuzate de pătrundere fără drept sau de încălcarea vieții private a altei persoane.</li>
+            <li><strong>Infracțiuni contra libertății și integrității sexuale - viol, agresiune sexuală (art. 218-219 CP).</strong> Cauze cu miză extrem de ridicată pentru libertatea și reputația clientului, în care construiesc apărarea pe baza probelor medico-legale, martorilor și cronologiei faptelor.</li>
+            <li><strong>Violare de domiciliu și violarea vieții private (art. 224-227 CP).</strong> Apăr persoane acuzate de pătrundere fără drept sau de încălcarea vieții private a altei persoane.</li>
           </ol>
           <CallCta />
         </CardContent>
@@ -357,7 +357,7 @@ export default function InfractiuniContraPersoanei() {
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Codul penal - Titlul I, Infracțiuni contra persoanei (art. 188–227), inclusiv loviri, vătămare corporală, violență în familie, amenințare, șantaj și infracțiuni contra libertății și integrității sexuale. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul penal - Titlul I, Infracțiuni contra persoanei (art. 188-227), inclusiv loviri, vătămare corporală, violență în familie, amenințare, șantaj și infracțiuni contra libertății și integrității sexuale. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               Legea nr. 217/2003 pentru prevenirea și combaterea violenței domestice, inclusiv dispozițiile privind ordinul de protecție. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)

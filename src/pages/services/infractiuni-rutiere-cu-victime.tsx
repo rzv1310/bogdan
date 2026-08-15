@@ -13,7 +13,7 @@ export default function InfractiuniRutiere() {
     canonical: "/servicii/infractiuni-rutiere-cu-victime",
     alternates: { ro: "/servicii/infractiuni-rutiere-cu-victime", en: "/en/services/road-traffic-offenses", xDefault: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "ro_RO",
-    title: "Avocat accidente rutiere București | Avocat infracțiuni rutiere – Bogdan Lamatic",
+    title: "Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic",
     description:
       "Avocat penal Bogdan Lamatic, București. Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime. Consultanță rapidă.",
   });
@@ -129,11 +129,11 @@ export default function InfractiuniRutiere() {
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat accidente rutiere București | Avocat infracțiuni rutiere – Bogdan Lamatic
+        Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic
       </h1>
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p>
-          Sunt avocat Bogdan Lamatic, membru al Baroului București din 2007, cu practică predominant penală și experiență solidă în dosare rutiere – de la fapte fără victime până la accidente cu vătămare sau deces.
+          Sunt avocat Bogdan Lamatic, membru al Baroului București din 2007, cu practică predominant penală și experiență solidă în dosare rutiere - de la fapte fără victime până la accidente cu vătămare sau deces.
         </p>
         <p>
           Am reprezentat clienți în cauze complexe, inclusiv accidente rutiere cu urmări grave, în fața tuturor instanțelor și organelor de urmărire penală.
@@ -199,19 +199,19 @@ export default function InfractiuniRutiere() {
         <CardContent className="text-base leading-relaxed space-y-3">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Conducere fără permis – art. 335 Cod penal. Apărarea vizează situații de necorespundere categorie, permis anulat/suspendat sau lipsă drept de a conduce în România. (Portal Legislativ)
+              Conducere fără permis - art. 335 Cod penal. Apărarea vizează situații de necorespundere categorie, permis anulat/suspendat sau lipsă drept de a conduce în România. (Portal Legislativ)
             </li>
             <li>
-              Conducere sub influența alcoolului sau a substanțelor psihoactive – art. 336. Pragul penal pentru alcool este peste 0,80 g/l alcool pur în sânge; pentru droguri contează starea de influență confirmată biologic/toxicologic. (Portal Legislativ)
+              Conducere sub influența alcoolului sau a substanțelor psihoactive - art. 336. Pragul penal pentru alcool este peste 0,80 g/l alcool pur în sânge; pentru droguri contează starea de influență confirmată biologic/toxicologic. (Portal Legislativ)
             </li>
             <li>
-              Refuz/sustragere de la prelevare mostre biologice – art. 337. E o infracțiune distinctă, indiferent dacă ulterior s-ar dovedi alcoolemie sub prag. Strategia se concentrează pe legalitatea solicitării, informarea corectă și condițiile recoltării. (Portal Legislativ)
+              Refuz/sustragere de la prelevare mostre biologice - art. 337. E o infracțiune distinctă, indiferent dacă ulterior s-ar dovedi alcoolemie sub prag. Strategia se concentrează pe legalitatea solicitării, informarea corectă și condițiile recoltării. (Portal Legislativ)
             </li>
             <li>
-              Vehicul neînmatriculat/număr fals – art. 334. Analizăm statutul vehiculului, eroarea scuzabilă, situațiile speciale (de ex., tractoare agricole/forestiere și efectele deciziilor recente). (Portal Legislativ)
+              Vehicul neînmatriculat/număr fals - art. 334. Analizăm statutul vehiculului, eroarea scuzabilă, situațiile speciale (de ex., tractoare agricole/forestiere și efectele deciziilor recente). (Portal Legislativ)
             </li>
             <li>
-              Împiedicarea/îngreunarea circulației, întreceri neautorizate – art. 339. Vizat inclusiv racing pe drum public, semnalizare montată/modificată fără autorizație. (sintact.ro, ugb.ro)
+              Împiedicarea/îngreunarea circulației, întreceri neautorizate - art. 339. Vizat inclusiv racing pe drum public, semnalizare montată/modificată fără autorizație. (sintact.ro, ugb.ro)
             </li>
           </ul>
         </CardContent>
@@ -225,23 +225,23 @@ export default function InfractiuniRutiere() {
         <CardContent className="text-base leading-relaxed space-y-3">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Părăsirea locului accidentului – art. 338. Excepțiile legale (transportul răniților, autospeciale în misiune etc.) trebuie încadrate strict; discutăm despre definiția „accidentului” și condițiile exoneratoare. (Portal Legislativ)
+              Părăsirea locului accidentului - art. 338. Excepțiile legale (transportul răniților, autospeciale în misiune etc.) trebuie încadrate strict; discutăm despre definiția „accidentului” și condițiile exoneratoare. (Portal Legislativ)
             </li>
             <li>
-              Vătămare corporală din culpă – art. 196. Cheia e delimitarea medical-legală a leziunilor și a culpei în raport cu regulile de circulație; posibil cumul cu alte fapte rutiere. (Portal Legislativ, Lege5)
+              Vătămare corporală din culpă - art. 196. Cheia e delimitarea medical-legală a leziunilor și a culpei în raport cu regulile de circulație; posibil cumul cu alte fapte rutiere. (Portal Legislativ, Lege5)
             </li>
             <li>
-              Ucidere din culpă – art. 192. Analizăm situațiile agravate (nerespectarea dispozițiilor legale/măsurilor de prevedere) și raportul cu alte infracțiuni rutier-conexe. (Portal Legislativ)
+              Ucidere din culpă - art. 192. Analizăm situațiile agravate (nerespectarea dispozițiilor legale/măsurilor de prevedere) și raportul cu alte infracțiuni rutier-conexe. (Portal Legislativ)
             </li>
           </ul>
           <div className="mt-4">
             <h3 className="font-semibold">Fapte corelate care pot atrage răspundere</h3>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>
-                Nerespectarea atribuțiilor privind verificarea tehnică/ITP sau reparații – art. 340. Vizează persoane cu atribuții tehnice; în forma agravată când există victime. (Portal Legislativ)
+                Nerespectarea atribuțiilor privind verificarea tehnică/ITP sau reparații - art. 340. Vizează persoane cu atribuții tehnice; în forma agravată când există victime. (Portal Legislativ)
               </li>
               <li>
-                Lucrări neautorizate în zona drumului public – art. 341. Răspunderea celor care creează pericole pe drum. (Portal Legislativ)
+                Lucrări neautorizate în zona drumului public - art. 341. Răspunderea celor care creează pericole pe drum. (Portal Legislativ)
               </li>
             </ul>
             <p className="text-muted-foreground mt-2">
@@ -259,7 +259,7 @@ export default function InfractiuniRutiere() {
         <CardContent className="text-base leading-relaxed space-y-4">
           <ol className="list-decimal pl-6 space-y-3">
             <li>
-              <strong>Audit juridic & tehnic (T0–T14 zile).</strong> Verific invitații/citații, ordonanțe, buletine toxicologice, lanțul de custodie, fișe aparate, body-cam, GPS, camere trafic, martori. Cer probe utile (expertiză criminalistică auto, reconstituire, audiere martori cheie).
+              <strong>Audit juridic & tehnic (T0-T14 zile).</strong> Verific invitații/citații, ordonanțe, buletine toxicologice, lanțul de custodie, fișe aparate, body-cam, GPS, camere trafic, martori. Cer probe utile (expertiză criminalistică auto, reconstituire, audiere martori cheie).
             </li>
             <li>
               <strong>Măsuri urgente.</strong> Plângeri împotriva actelor de urmărire penală, cereri de ridicare restricții, solicitări pentru restituirea permisului când e posibil, protecția patrimoniului.
@@ -286,7 +286,7 @@ export default function InfractiuniRutiere() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2">
           <p>
-            Am asistat grupuri din energie, logistică, transport, retail – proiecte care cer coordonare multi-disciplinară (compliance, investigații, date, muncă).
+            Am asistat grupuri din energie, logistică, transport, retail - proiecte care cer coordonare multi-disciplinară (compliance, investigații, date, muncă).
           </p>
           <p>Procedurile interne și training-ul șoferilor reduc masiv riscul penal.</p>
         </CardContent>
@@ -336,14 +336,14 @@ export default function InfractiuniRutiere() {
           <p>
             Avocat în Baroul București de 18 ani; practică penală, inclusiv accidente rutiere cu vătămare sau deces; pledoarii la toate nivelurile de jurisdicție.
           </p>
-          <p>Recunoaștere Legal 500 (Rising Star / Next Generation Partner – 2020–2024).</p>
+          <p>Recunoaștere Legal 500 (Rising Star / Next Generation Partner - 2020-2024).</p>
         </CardContent>
       </Card>
 
       {/* Contact rapid */}
       <Card className="mt-8 border-accent">
         <CardHeader>
-          <h3 className="text-xl font-semibold leading-none tracking-tight">Contact rapid – consultanță inițială</h3>
+          <h3 className="text-xl font-semibold leading-none tracking-tight">Contact rapid - consultanță inițială</h3>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2">
           <p>
@@ -368,16 +368,16 @@ export default function InfractiuniRutiere() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-1">
-            <li>Art. 334 – Vehicul neînmatriculat/număr fals.</li>
-            <li>Art. 335 – Conducerea fără permis.</li>
-            <li>Art. 336 – Conducerea sub influența alcoolului/drogurilor.</li>
-            <li>Art. 337 – Refuz/sustragere la prelevare.</li>
-            <li>Art. 338 – Părăsirea locului accidentului.</li>
-            <li>Art. 339 – Împiedicarea/îngreunarea circulației, întreceri neautorizate. (sintact.ro)</li>
-            <li>Art. 340 – Verificare tehnică/ITP & reparații.</li>
-            <li>Art. 341 – Lucrări neautorizate în zona drumului public.</li>
-            <li>Art. 196 – Vătămare corporală din culpă.</li>
-            <li>Art. 192 – Ucidere din culpă.</li>
+            <li>Art. 334 - Vehicul neînmatriculat/număr fals.</li>
+            <li>Art. 335 - Conducerea fără permis.</li>
+            <li>Art. 336 - Conducerea sub influența alcoolului/drogurilor.</li>
+            <li>Art. 337 - Refuz/sustragere la prelevare.</li>
+            <li>Art. 338 - Părăsirea locului accidentului.</li>
+            <li>Art. 339 - Împiedicarea/îngreunarea circulației, întreceri neautorizate. (sintact.ro)</li>
+            <li>Art. 340 - Verificare tehnică/ITP & reparații.</li>
+            <li>Art. 341 - Lucrări neautorizate în zona drumului public.</li>
+            <li>Art. 196 - Vătămare corporală din culpă.</li>
+            <li>Art. 192 - Ucidere din culpă.</li>
           </ul>
         </CardContent>
       </Card>

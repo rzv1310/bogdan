@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 export default function TermeniSiConditii() {
   useSEO({
     keywords: "termeni si conditii, conditii utilizare site avocat, reguli servicii juridice",
-    title: "Termeni și Condiții – Cabinet Avocat Bogdan Lamatic",
+    title: "Termeni și Condiții - Cabinet Avocat Bogdan Lamatic",
     description: "Termenii și condițiile de utilizare ale site‑ului și regulile serviciilor juridice oferite.",
     alternates: {
       ro: "/termeni-si-conditii",
@@ -70,7 +70,7 @@ export default function TermeniSiConditii() {
         <p className="font-semibold">DECLINAREA RESPONSABILITĂȚII</p>
         <p>Informațiile publicate au scop informativ și pot deveni neactuale. Cabinetul nu garantează acuratețea absolută a conținutului și nu răspunde pentru decizii luate exclusiv pe baza acestuia fără consultanță specifică. Website-ul poate conține legături către website-uri și resurse care nu sunt proprietatea noastră. Site-ul și Cabinetul Avocatului Bogdan Lamatic nu au control asupra acestor website-uri și resurselor găsite în acestea și, prin urmare, nu vor fi răspunzători pentru disponibilitatea acestor website-uri, nici pentru conținutul, publicitatea, bunurile, serviciile, informațiile sau alte materiale disponibile pe sau prin aceste website-uri, pentru funcționalitatea sau performanțele acestor website-uri sau pentru încălcarea oricăror drepturi de proprietate intelectuală sau alte drepturi, care survine prin aceste website-uri. Prin accesarea website-urilor indicate confirmați că înțelegeți posibilele consecințe ale intrării pe website-urile indicate și sunteți de acord și acceptați termenii și condițiile menționate mai sus.</p>
         <p>
-          Acest Website este furnizat în scopuri informative și nu constituie consiliere juridică și/sau fiscală. Informațiile nu sunt destinate să înlocuiască consilierea juridică din partea unui avocat autorizat în domeniul de practică implicat în cazul dumneavoastră. Relația avocat–client se naște doar după acceptarea expresă a solicitării și semnarea împuternicirii avocațiale/contractului de asistență juridică.
+          Acest Website este furnizat în scopuri informative și nu constituie consiliere juridică și/sau fiscală. Informațiile nu sunt destinate să înlocuiască consilierea juridică din partea unui avocat autorizat în domeniul de practică implicat în cazul dumneavoastră. Relația avocat-client se naște doar după acceptarea expresă a solicitării și semnarea împuternicirii avocațiale/contractului de asistență juridică.
         </p>
         <p className="font-semibold">Servicii și limitări</p>
         <p>
@@ -78,7 +78,7 @@ export default function TermeniSiConditii() {
         </p>
         <p className="font-semibold">Programări și comunicare</p>
         <p>
-          Pentru programări și comunicare, utilizați datele publicate în secțiunea Contact sau formularul de contact. Răspunsul este, de regulă, în 24–48h lucrătoare, în funcție de urgență.
+          Pentru programări și comunicare, utilizați datele publicate în secțiunea Contact sau formularul de contact. Răspunsul este, de regulă, în 24-48h lucrătoare, în funcție de urgență.
         </p>
         <p className="font-semibold">Onorarii și plăți</p>
         <p>
@@ -109,7 +109,7 @@ export default function TermeniSiConditii() {
       <section aria-label="Politici conexe" className="mt-10">
         <p className="font-semibold">Politici conexe</p>
         <ul className="list-disc pl-5">
-          <li><a href="/gdpr" className="underline hover:no-underline">GDPR – Protecția datelor</a></li>
+          <li><a href="/gdpr" className="underline hover:no-underline">GDPR - Protecția datelor</a></li>
           <li><a href="/politica-cookies" className="underline hover:no-underline">Politica de Cookie-uri</a></li>
         </ul>
       </section>

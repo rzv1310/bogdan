@@ -109,7 +109,7 @@ export default function MalpracticeEn() {
             and injured parties, including complex files with medico-legal expertise and malpractice committees.
           </p>
           <p>
-            Recognized by Legal 500 as “Next Generation Partner” (White-Collar Crime) 2021–2024.
+            Recognized by Legal 500 as “Next Generation Partner” (White-Collar Crime) 2021-2024.
           </p>
         </div>
 
@@ -153,11 +153,11 @@ export default function MalpracticeEn() {
               <h3 className="text-xl font-semibold">Who is liable?</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  <strong>Medical staff</strong> – negligence, imprudence or insufficient knowledge, including breach of
+                  <strong>Medical staff</strong> - negligence, imprudence or insufficient knowledge, including breach of
                   confidentiality/consent.
                 </li>
                 <li>
-                  <strong>Healthcare unit</strong> – nosocomial infections, non-compliant devices/materials, lack of insurance, etc.
+                  <strong>Healthcare unit</strong> - nosocomial infections, non-compliant devices/materials, lack of insurance, etc.
                 </li>
               </ul>
             </div>
@@ -172,13 +172,13 @@ export default function MalpracticeEn() {
           <CardContent className="text-base leading-relaxed space-y-3">
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong>Bodily injury by negligence – art. 196 CP</strong>
+                <strong>Bodily injury by negligence - art. 196 CP</strong>
               </li>
               <li>
-                <strong>Manslaughter by negligence – art. 192 CP</strong>
+                <strong>Manslaughter by negligence - art. 192 CP</strong>
               </li>
               <li>
-                <strong>Negligence in service – art. 298 CP</strong>; extension to private sector via art. 308 CP.
+                <strong>Negligence in service - art. 298 CP</strong>; extension to private sector via art. 308 CP.
               </li>
             </ul>
           </CardContent>
@@ -202,8 +202,8 @@ export default function MalpracticeEn() {
               <h3 className="text-xl font-semibold">If you are a doctor/clinic (defense)</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li><strong>Standard of care & competence</strong> delimitation</li>
-                <li><strong>Managing investigations</strong> – responses to committees/inspectorates, coherent positions, confidentiality</li>
-                <li><strong>Criminal strategy</strong> – delimiting professional fault from inherent medical risks</li>
+                <li><strong>Managing investigations</strong> - responses to committees/inspectorates, coherent positions, confidentiality</li>
+                <li><strong>Criminal strategy</strong> - delimiting professional fault from inherent medical risks</li>
               </ul>
             </div>
             <div className="pt-2">

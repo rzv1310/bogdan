@@ -4,7 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 export default function TermsAndConditionsEn() {
   useSEO({
     keywords: "terms and conditions, website terms of use, legal services terms",
-    title: "Terms and Conditions – Attorney Bogdan Lamatic",
+    title: "Terms and Conditions - Attorney Bogdan Lamatic",
     description: "Website terms of use and rules for the legal services offered.",
     alternates: { en: "/en/terms-and-conditions", ro: "/termeni-si-conditii" , xDefault: "/termeni-si-conditii"},
     locale: "en_US",
@@ -78,7 +78,7 @@ export default function TermsAndConditionsEn() {
           Information published is for informational purposes and may become outdated. The Law Office does not guarantee the absolute accuracy of the content and is not responsible for decisions made exclusively on its basis without specific consultation. The Website may contain links to websites and resources that are not our property. https://avocatpenalbucuresti.ro/ and the Bogdan Lamatic Law Office have no control over these websites and the resources found in them and, therefore, will not be responsible for the availability of these websites, nor for the content, advertising, goods, services, information or other materials available on or through these websites, for the functionality or performance of these websites or for the violation of any intellectual property rights or other rights, which arise through these websites. By accessing the indicated websites you confirm that you understand the possible consequences of entering the indicated websites and agree and accept the terms and conditions mentioned above.
         </p>
         <p>
-          This Website is provided for informational purposes and does not constitute legal and/or tax advice. The information is not intended to replace legal advice from a licensed attorney in the field of practice involved in your case. The attorney–client relationship is created only after express acceptance of the request and signing of the power of attorney/legal assistance contract.
+          This Website is provided for informational purposes and does not constitute legal and/or tax advice. The information is not intended to replace legal advice from a licensed attorney in the field of practice involved in your case. The attorney-client relationship is created only after express acceptance of the request and signing of the power of attorney/legal assistance contract.
         </p>
         <p className="font-semibold">Services and limitations</p>
         <p>
@@ -86,7 +86,7 @@ export default function TermsAndConditionsEn() {
         </p>
         <p className="font-semibold">Appointments and communication</p>
         <p>
-          For appointments and communication, use the data published in the Contact section or the contact form. The response is, as a rule, within 24–48 working hours, depending on urgency.
+          For appointments and communication, use the data published in the Contact section or the contact form. The response is, as a rule, within 24-48 working hours, depending on urgency.
         </p>
         <p className="font-semibold">Fees and payments</p>
         <p>
@@ -115,7 +115,7 @@ export default function TermsAndConditionsEn() {
 
         <p className="font-semibold mt-6">Related policies</p>
         <ul className="list-disc pl-5 mt-2">
-          <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR – Data Protection</a></li>
+          <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR - Data Protection</a></li>
           <li><a href="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</a></li>
         </ul>
       </div>

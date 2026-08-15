@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 const legal500Badges = [
-  { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 – avocat Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 – avocat Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2022 – avocat Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2023 – avocat Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2024 – avocat Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 - avocat Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 - avocat Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2022 - avocat Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2023 - avocat Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2024 - avocat Bogdan Lamatic" },
 ];
 
 const Legal500BadgeStrip = () => (
@@ -202,7 +202,7 @@ const faqData = [
   },
   {
     question: "3. Aveți experiență în dosare penale legate de droguri?",
-    answer: "Da, am reprezentat clienți în cauze variate – de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri – cu rezultate favorabile."
+    answer: "Da, am reprezentat clienți în cauze variate - de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri - cu rezultate favorabile."
   },
   {
     question: "4. Cât durează un proces penal?",
@@ -556,7 +556,7 @@ const Index = () => {
               { "@type": "Organization", "name": "Wolf Theiss" },
               { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
               { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
-              { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
+              { "@type": "Organization", "name": "Șerban & Asociații - Societate de Avocați" }
             ],
             "memberOf": [
               {
@@ -591,11 +591,11 @@ const Index = () => {
               }
             ],
             "award": [
-              "Legal 500 – Rising Star (White-Collar Crime) 2020",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
+              "Legal 500 - Rising Star (White-Collar Crime) 2020",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2021",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2022",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2023",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2024"
             ],
             "knowsAbout": {
               "@type": "ItemList",
@@ -679,7 +679,7 @@ const Index = () => {
                 "name": "Aveți experiență în dosare penale legate de droguri?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Da, am reprezentat clienți în cauze variate – de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri – cu rezultate favorabile."
+                  "text": "Da, am reprezentat clienți în cauze variate - de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri - cu rezultate favorabile."
                 }
               },
               {

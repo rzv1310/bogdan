@@ -80,7 +80,7 @@ export const translations = {
       {
         title: "Asistență juridică în investigații privind activele cripto",
         body:
-          "Gestionez cauze ce implică tranzacții ilicite cu criptomonede, dețineri nedeclarate de active digitale și fraude asociate tehnologiilor blockchain — un domeniu în continuă evoluție, ce necesită atât claritate juridică, cât și înțelegere tehnică.",
+          "Gestionez cauze ce implică tranzacții ilicite cu criptomonede, dețineri nedeclarate de active digitale și fraude asociate tehnologiilor blockchain - un domeniu în continuă evoluție, ce necesită atât claritate juridică, cât și înțelegere tehnică.",
       },
       {
         title: "Reprezentare în cauze penale legate de droguri",
@@ -176,7 +176,7 @@ export const translations = {
       {
         title: "Legal support in crypto-asset-related investigations",
         body:
-          "I handle cases involving illicit crypto transactions, undeclared digital asset holdings, and fraud involving blockchain technologies — a fast-evolving field that requires both legal clarity and technical understanding.",
+          "I handle cases involving illicit crypto transactions, undeclared digital asset holdings, and fraud involving blockchain technologies - a fast-evolving field that requires both legal clarity and technical understanding.",
       },
       {
         title: "Representation in drug-related criminal cases",

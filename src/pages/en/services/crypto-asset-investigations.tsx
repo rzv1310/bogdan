@@ -94,12 +94,12 @@ export default function CryptoInvestigationsEn() {
                                     "name": "Can a lawyer help me recover funds?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "Yes — I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES)."
+                                                "text": "Yes - I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES)."
                                     }
                         },
                         {
                                     "@type": "Question",
-                                    "name": "I’m a crypto entrepreneur — what should I have done “yesterday”?",
+                                    "name": "I’m a crypto entrepreneur - what should I have done “yesterday”?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
                                                 "text": "Do a MiCA/TFR gap assessment, risk-based KYC, sanctions screening, incident-response procedures, staff training, and prepare documentation for authorizations/registrations. The ASF has signaled the need for a national competence framework."
@@ -155,11 +155,11 @@ export default function CryptoInvestigationsEn() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   <strong>Fraud & deceit with crypto assets</strong>: rug pulls, false investment promises, guaranteed trader schemes,
-                  phishing, mule accounts. (Art. 244 – deceit; Art. 249 – computer fraud)
+                  phishing, mule accounts. (Art. 244 - deceit; Art. 249 - computer fraud)
                 </li>
                 <li>
                   <strong>Cybercrime & unauthorized access</strong>: compromised exchange/wallet accounts, malware or devices used to
-                  steal private keys. (Art. 360–365 CP)
+                  steal private keys. (Art. 360-365 CP)
                 </li>
                 <li>
                   <strong>Money laundering/AML</strong>: crypto-fiat conversions, mixers, off-shore structures; reports to FIU, account
@@ -167,7 +167,7 @@ export default function CryptoInvestigationsEn() {
                 </li>
                 <li>
                   <strong>MiCA & Travel Rule (TFR) compliance for companies</strong>: white paper, CASP authorization, KYC/Tx-monitoring,
-                  information requirements for transfers. (EU Reg. 2023/1114 – MiCA; EU Reg. 2023/1113 – TFR)
+                  information requirements for transfers. (EU Reg. 2023/1114 - MiCA; EU Reg. 2023/1113 - TFR)
                 </li>
                 <li>
                   <strong>Tax for individuals</strong>: declaring income from virtual currency transfers; thresholds and CASS rules (ANAF guide).
@@ -204,7 +204,7 @@ export default function CryptoInvestigationsEn() {
                   device forensics; integrity verification (Art. 362 CP).
                 </li>
                 <li>
-                  <strong>International cooperation</strong>: MLA, e-CODEX, JIT – tools often used by prosecutors.
+                  <strong>International cooperation</strong>: MLA, e-CODEX, JIT - tools often used by prosecutors.
                 </li>
                 <li>
                   <strong>Recovering damages</strong>: parallel civil action, asset recovery/seizure and enforcement.
@@ -262,11 +262,11 @@ export default function CryptoInvestigationsEn() {
               <div>
                 <p className="font-semibold">Can a lawyer help me recover funds?</p>
                 <p className="text-muted-foreground">
-                  Yes — I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES).
+                  Yes - I act both criminally (complaint, precautionary measures) and civilly (claims), use requests to exchanges, chain analytics and international cooperation (e-CODEX/e-EDES).
                 </p>
               </div>
               <div>
-                <p className="font-semibold">I’m a crypto entrepreneur — what should I have done “yesterday”?</p>
+                <p className="font-semibold">I’m a crypto entrepreneur - what should I have done “yesterday”?</p>
                 <p className="text-muted-foreground">
                   Do a MiCA/TFR gap assessment, risk-based KYC, sanctions screening, incident-response procedures, staff training, and prepare documentation for authorizations/registrations. The ASF has signaled the need for a national competence framework.
                 </p>

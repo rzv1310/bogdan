@@ -472,7 +472,7 @@ export default function CalculatorDespagubiri() {
                   <div className="font-semibold mb-1">Ajustări</div>
                   <ul className="space-y-1 text-zinc-700">
                     <li>Culpă victimă: {victimFault}%</li>
-                    <li>Plafon poliță: {cap > 0 ? fmtRON(cap) : "—"}</li>
+                    <li>Plafon poliță: {cap > 0 ? fmtRON(cap) : "-"}</li>
                   </ul>
                 </div>
               </div>

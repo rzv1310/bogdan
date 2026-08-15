@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 
 import RelatedServices from "@/components/RelatedServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/urmarire-penala";
-const TITLE = "Avocat Urmărire Penală București – Apărare din Prima Oră | Bogdan Lamatic";
+const TITLE = "Avocat Urmărire Penală București - Apărare din Prima Oră | Bogdan Lamatic";
 const DESCRIPTION =
   "Avocat urmărire penală București - apărare din prima oră: audieri, reținere, arestare preventivă, percheziții. 18+ ani experiență. Sună acum!";
 
@@ -127,7 +127,7 @@ export default function UrmarirePenala() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Urmărire Penală București – Apărare din Prima Oră a Anchetei | Bogdan Lamatic
+        Avocat Urmărire Penală București - Apărare din Prima Oră a Anchetei | Bogdan Lamatic
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -138,7 +138,7 @@ export default function UrmarirePenala() {
           <strong>În urmărirea penală, primele ore contează cel mai mult.</strong> Ce declari, ce semnezi și cum reacționezi în primele 24 de ore pot decide dacă dosarul se închide rapid sau se transformă într-un proces lung. Nu aștepta prima înfățișare în instanță ca să ceri ajutor - un avocat de urmărire penală te apără chiar de la audiere, percheziție sau reținere.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021–2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
         </p>
       </div>
 
@@ -198,10 +198,10 @@ export default function UrmarirePenala() {
               <strong>Asistență și reprezentare la audieri</strong> - la Poliție, Parchet, DNA, DIICOT sau Parchetul European, ca avocat al suspectului sau al inculpatului (art. 78, art. 83 CPP). Te pregătesc înainte de audiere și sunt prezent efectiv, pentru ca nicio declarație să nu fie dată fără o strategie clară în spate.
             </li>
             <li>
-              <strong>Apărare în caz de reținere sau arestare preventivă.</strong> Intervin imediat dacă ești reținut (art. 209–210 CPP) sau dacă procurorul propune arestarea preventivă (art. 223 și urm. CPP), formulând apărări încă din fața judecătorului de drepturi și libertăți.
+              <strong>Apărare în caz de reținere sau arestare preventivă.</strong> Intervin imediat dacă ești reținut (art. 209-210 CPP) sau dacă procurorul propune arestarea preventivă (art. 223 și urm. CPP), formulând apărări încă din fața judecătorului de drepturi și libertăți.
             </li>
             <li>
-              <strong>Contestarea măsurilor preventive.</strong> Atac controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu sau arestarea preventivă (art. 211–222 CPP) și cer înlocuirea sau revocarea lor ori de câte ori condițiile legale o permit. <a href="/servicii/masuri-preventive" className="text-primary underline underline-offset-2">Citește mai multe despre măsurile preventive</a>.
+              <strong>Contestarea măsurilor preventive.</strong> Atac controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu sau arestarea preventivă (art. 211-222 CPP) și cer înlocuirea sau revocarea lor ori de câte ori condițiile legale o permit. <a href="/servicii/masuri-preventive" className="text-primary underline underline-offset-2">Citește mai multe despre măsurile preventive</a>.
             </li>
             <li>
               <strong>Prezență la percheziții</strong> - domiciliare, informatice sau corporale (art. 157 și urm. CPP) - pentru a verifica legalitatea mandatului și a modului în care este efectuată percheziția.
@@ -210,7 +210,7 @@ export default function UrmarirePenala() {
               <strong>Acces la dosar și formulare de cereri, plângeri, excepții.</strong> Consult dosarul de urmărire penală (art. 94 CPP), formulez cereri de probe, excepții de nelegalitate și plângeri împotriva actelor procurorului atunci când este cazul.
             </li>
             <li>
-              <strong>Negociere cu procurorul și soluții alternative.</strong> Analizez, în funcție de caz, posibilitatea unei renunțări la urmărirea penală (art. 318 CPP), a unei clasări (art. 314–315 CPP) sau a unui acord de recunoaștere a vinovăției (art. 478–488 CPP), atunci când servesc interesul tău.
+              <strong>Negociere cu procurorul și soluții alternative.</strong> Analizez, în funcție de caz, posibilitatea unei renunțări la urmărirea penală (art. 318 CPP), a unei clasări (art. 314-315 CPP) sau a unui acord de recunoaștere a vinovăției (art. 478-488 CPP), atunci când servesc interesul tău.
             </li>
           </ol>
           <CallCta />
@@ -360,13 +360,13 @@ export default function UrmarirePenala() {
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Codul de procedură penală - Titlul I, Urmărirea penală (art. 285–341), inclusiv dispozițiile privind drepturile suspectului și inculpatului (art. 78, art. 83). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul de procedură penală - Titlul I, Urmărirea penală (art. 285-341), inclusiv dispozițiile privind drepturile suspectului și inculpatului (art. 78, art. 83). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Codul de procedură penală - măsurile preventive: reținerea, controlul judiciar, arestul la domiciliu, arestarea preventivă (art. 202–241 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul de procedură penală - măsurile preventive: reținerea, controlul judiciar, arestul la domiciliu, arestarea preventivă (art. 202-241 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Codul de procedură penală - acordul de recunoaștere a vinovăției (art. 478–488 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul de procedură penală - acordul de recunoaștere a vinovăției (art. 478-488 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>

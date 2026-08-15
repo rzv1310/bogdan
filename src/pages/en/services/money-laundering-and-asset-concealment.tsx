@@ -94,7 +94,7 @@ export default function MoneyLaunderingEn() {
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
-          <h1 className="text-2xl font-semibold mb-4">Money laundering offense | Asset concealment – my experience as a lawyer (Bogdan Lamatic, Bucharest)</h1>
+          <h1 className="text-2xl font-semibold mb-4">Money laundering offense | Asset concealment - my experience as a lawyer (Bogdan Lamatic, Bucharest)</h1>
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -192,7 +192,7 @@ export default function MoneyLaunderingEn() {
           <CardContent className="space-y-4 text-base leading-relaxed">
             <h3 className="text-xl font-semibold">1) Handling/receiving stolen goods (art. 270 Criminal Code)</h3>
             <p>
-              Receiving, acquiring, transforming or selling an asset known to originate from a crime. Punished with 1–5 years or a fine; the accessory’s sentence cannot exceed the author’s, and acts by family members are not punished. <a href="https://www.dreptonline.ro/legislatie/codul_penal_2009.php#:~:text=Art,de%20familie%20nu%20se%20pedepseste" target="_blank" rel="noopener noreferrer" className="underline">(art. 270 CC)</a> Unlike laundering, it does not require concealment.
+              Receiving, acquiring, transforming or selling an asset known to originate from a crime. Punished with 1-5 years or a fine; the accessory’s sentence cannot exceed the author’s, and acts by family members are not punished. <a href="https://www.dreptonline.ro/legislatie/codul_penal_2009.php#:~:text=Art,de%20familie%20nu%20se%20pedepseste" target="_blank" rel="noopener noreferrer" className="underline">(art. 270 CC)</a> Unlike laundering, it does not require concealment.
             </p>
 
             <h3 className="text-xl font-semibold">2) Abuse of trust by defrauding creditors (art. 239 CC)</h3>
@@ -202,12 +202,12 @@ export default function MoneyLaunderingEn() {
 
             <h3 className="text-xl font-semibold">3) Fraudulent bankruptcy (art. 241 CC)</h3>
             <p>
-              In fraud of creditors: falsifying, removing or destroying records; hiding assets; inventing debts; or alienating assets in insolvency. Punished with 6 months–5 years, initiated upon prior complaint.
+              In fraud of creditors: falsifying, removing or destroying records; hiding assets; inventing debts; or alienating assets in insolvency. Punished with 6 months-5 years, initiated upon prior complaint.
             </p>
 
             <h3 className="text-xl font-semibold">4) Tax evasion (Law 241/2005)</h3>
             <p>
-              Frequently a predicate to laundering. Art. 9 lists offenses and penalties (2–8 years or fine): concealing taxable goods/sources, omitting commercial entries, double bookkeeping, fictitious expenses. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Law 241/2005)</a> If the damage exceeds 100,000/500,000 EUR, limits increase. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(increases)</a>
+              Frequently a predicate to laundering. Art. 9 lists offenses and penalties (2-8 years or fine): concealing taxable goods/sources, omitting commercial entries, double bookkeeping, fictitious expenses. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Law 241/2005)</a> If the damage exceeds 100,000/500,000 EUR, limits increase. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(increases)</a>
             </p>
 
             <p>
@@ -233,7 +233,7 @@ export default function MoneyLaunderingEn() {
                 Prosecutor, preliminary chamber judge or court may order measures to prevent hiding, destruction or alienation of assets subject to special/extended confiscation. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=,a%20reparării%20pagubei%20produse%20prin" target="_blank" rel="noopener noreferrer" className="underline">(Law 70/2025)</a>
               </li>
               <li>
-                New paragraphs (6^1 – 6^4): during the investigation, measures are ordered by the prosecutor; notified immediately to the suspect and civil party; if the civil party’s request is rejected, the decision is communicated without delay. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=patru%20noi%20alineate%2C%20alin.%20%286%5E1%29,cu%20următorul%20cuprins" target="_blank" rel="noopener noreferrer" className="underline">(paras. 6^1–6^4)</a>
+                New paragraphs (6^1 - 6^4): during the investigation, measures are ordered by the prosecutor; notified immediately to the suspect and civil party; if the civil party’s request is rejected, the decision is communicated without delay. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=patru%20noi%20alineate%2C%20alin.%20%286%5E1%29,cu%20următorul%20cuprins" target="_blank" rel="noopener noreferrer" className="underline">(paras. 6^1-6^4)</a>
               </li>
               <li>
                 The decision is pronounced in chambers, without summoning the parties; proceedings are urgent and the prosecutor’s participation is mandatory. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=%286,Participarea%20procurorului%20este%20obligatorie" target="_blank" rel="noopener noreferrer" className="underline">(procedure)</a>
@@ -275,7 +275,7 @@ export default function MoneyLaunderingEn() {
             <h3 className="text-xl font-semibold">1) Fact assessment and flow mapping</h3>
             <p>Identify predicate offenses (fraud, tax evasion, corruption etc.) and analyze financial flows, including blockchain/virtual asset transactions. A mere transfer or formal change is not automatically “laundering.”</p>
             <h3 className="text-xl font-semibold">2) Differentiated defense strategy</h3>
-            <p>By legal qualification: for laundering – focus on knowledge of illicit origin and link to the predicate; for handling – lack of concealment; for bankruptcy/abuse – real insolvency and actual fraud.</p>
+            <p>By legal qualification: for laundering - focus on knowledge of illicit origin and link to the predicate; for handling - lack of concealment; for bankruptcy/abuse - real insolvency and actual fraud.</p>
             <h3 className="text-xl font-semibold">3) Managing precautionary measures</h3>
             <p>Challenge grounds, proportionality and scope of seizure; provide asset documentation. The law allows lifting/narrowing measures where they paralyze economic activity. The 2025 procedure gives the civil party an active role and rights to challenge.</p>
             <h3 className="text-xl font-semibold">4) Evidence litigation and procedural exceptions</h3>

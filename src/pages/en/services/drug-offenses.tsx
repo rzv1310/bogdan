@@ -9,7 +9,7 @@ import RelatedServices from "@/components/RelatedServices";
 export default function DrugOffensesEn() {
   useSEO({
     keywords: "drug offenses lawyer romania, drug trafficking defense attorney, narcotics lawyer bucharest",
-    title: "Drug trafficking lawyer Bucharest – DIICOT defense | Bogdan Lamatic",
+    title: "Drug trafficking lawyer Bucharest - DIICOT defense | Bogdan Lamatic",
     description: "Defense in drug trafficking/possession cases across Romania.",
     alternates: { en: "/en/services/drug-offenses", ro: "/servicii/cauze-penale-privind-droguri" , xDefault: "/servicii/cauze-penale-privind-droguri"},
     locale: "en_US",
@@ -37,7 +37,7 @@ export default function DrugOffensesEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Drug trafficking lawyer – Bucharest",
+            name: "Drug trafficking lawyer - Bucharest",
             description: "Defense in drug trafficking/possession cases across Romania.",
             url: "https://avocatpenalbucuresti.ro/en/services/drug-offenses",
             areaServed: ["RO", "EU"],
@@ -59,7 +59,7 @@ export default function DrugOffensesEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-2xl font-semibold">Drug trafficking lawyer – Bucharest | Strategy and defense – DIICOT cases</h1>
+        <h1 className="text-2xl font-semibold">Drug trafficking lawyer - Bucharest | Strategy and defense - DIICOT cases</h1>
         <p className="mt-2 text-muted-foreground">by Bogdan Lamatic, criminal defense and white-collar lawyer</p>
 
         <div className="mt-4">
@@ -97,7 +97,7 @@ export default function DrugOffensesEn() {
           <CardContent className="space-y-4 text-base leading-relaxed">
             <p>
               I have defended clients in DIICOT investigations and court trials involving drug trafficking. Early defense
-              can change the course of a case – from challenging unlawfully obtained evidence to negotiating favorable
+              can change the course of a case - from challenging unlawfully obtained evidence to negotiating favorable
               outcomes.
             </p>
           </CardContent>
@@ -115,10 +115,10 @@ export default function DrugOffensesEn() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong>Trafficking</strong> – organized activity aimed at distribution.
+                <strong>Trafficking</strong> - organized activity aimed at distribution.
               </li>
               <li>
-                <strong>Possession for personal use</strong> – a distinct offense, generally with lower penalties.
+                <strong>Possession for personal use</strong> - a distinct offense, generally with lower penalties.
               </li>
             </ul>
           </CardContent>
@@ -179,10 +179,10 @@ export default function DrugOffensesEn() {
           <CardContent className="space-y-4 text-base leading-relaxed">
             <ul className="list-disc pl-6 space-y-1">
               <li>
-                <strong>High-risk</strong>: heroin, cocaine, LSD, methamphetamine – typically attract severe penalties (7–15 years).
+                <strong>High-risk</strong>: heroin, cocaine, LSD, methamphetamine - typically attract severe penalties (7-15 years).
               </li>
               <li>
-                <strong>Risk</strong>: cannabis, ecstasy (MDMA), amphetamines – penalties usually 2–7 years.
+                <strong>Risk</strong>: cannabis, ecstasy (MDMA), amphetamines - penalties usually 2-7 years.
               </li>
             </ul>
           </CardContent>
