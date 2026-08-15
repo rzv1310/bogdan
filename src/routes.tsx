@@ -151,5 +151,7 @@ export default function AppRoutes() {
         </Route>
       </Routes>
     </Suspense>
+    </RouteErrorBoundary>
+
   );
 }
