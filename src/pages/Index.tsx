@@ -854,7 +854,7 @@ const Index = () => {
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden relative max-w-[68%] mx-auto">
                 <Legal500BadgeStrip />
-                <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-[95%] h-auto rounded-lg shadow-md mx-auto" />
+                <img src="/lovable-uploads/avocat_drept_penal_Bucuresti_Bogdan_Lamatic.webp" alt="Portret avocat drept penal în costum, studio" title="Avocat drept penal Bucuresti Bogdan Lamatic" fetchPriority="high" className="w-[90%] h-auto rounded-lg shadow-md mx-auto" />
               </div>
               <div className="h-[25px] md:hidden" aria-hidden="true"></div>
               <blockquote className="border-l-4 border-accent pl-4 md:pl-6 italic text-[17px] md:text-xl text-hero-foreground/90">
@@ -880,10 +880,9 @@ const Index = () => {
                 const yearsText = lang === "ro" ? "- de 18 ani lângă tine !" : "- 18 years by your side !";
                 return (
                   <>
-                    {/* Mobile: author and years on the same row */}
+                    {/* Mobile: author only */}
                     <p className="md:hidden mt-2 text-[18px] italic font-light font-signature text-right whitespace-nowrap py-[11px] px-[22px]">
-                      {t.heroAuthor}{" "}
-                      <span className="text-base text-hero-foreground/80">{yearsText}</span>
+                      {t.heroAuthor}
                     </p>
                     {/* Tablet/Desktop: keep original two-row layout */}
                     <div className="hidden md:block">
