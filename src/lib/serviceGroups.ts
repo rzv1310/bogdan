@@ -197,6 +197,13 @@ export const enServiceGroups: ServiceGroup[] = [
         cta: "See all road traffic offense services",
       },
       {
+        title: "Offenses against persons",
+        description: "Defense in cases of assault, bodily harm, domestic violence, threats, blackmail, harassment and unlawful deprivation of liberty.",
+        subServices: ["Assault and other violence", "Bodily harm", "Domestic violence", "Threats and blackmail"],
+        to: "/en/services/offenses-against-persons",
+        cta: "See all services on offenses against persons",
+      },
+      {
         title: "Professional negligence and malpractice",
         description: "Representation in professional negligence and medical malpractice cases, including criminal liability of medical staff.",
         subServices: ["Medical malpractice", "Professional negligence", "Negligence in service", "Criminal liability of doctors"],
