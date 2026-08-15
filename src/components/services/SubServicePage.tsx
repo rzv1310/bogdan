@@ -18,6 +18,10 @@ export interface SubServiceSection {
   links?: { label: string; to?: string }[];
   /** Optional small highlighted callout inside the section. */
   callout?: string;
+  /** Optional extra className for the callout paragraph. */
+  calloutClassName?: string;
+  /** Optional extra className applied to the section Card. */
+  cardClassName?: string;
 }
 
 export interface SubServiceFaqItem {
@@ -222,7 +226,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
       </div>
 
       {data.sections.map((section, sectionIndex) => (
-        <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent`} key={section.h2}>
+        <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent ${section.cardClassName ?? ""}`} key={section.h2}>
 
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
@@ -232,7 +236,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               <p key={paragraph}>{paragraph}</p>
             ))}
             {section.callout && (
-              <p className="border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md">
+              <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${section.calloutClassName ?? ""}`}>
                 {section.callout}
               </p>
             )}
