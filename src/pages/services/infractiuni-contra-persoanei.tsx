@@ -123,8 +123,9 @@ export default function InfractiuniContraPersoanei() {
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          <strong>Acuzațiile privind infracțiuni contra persoanei afectează direct libertatea, dar și reputația și viața de familie.</strong> Multe dintre aceste cauze pornesc dintr-un conflict, o plângere depusă la furie sau o interpretare greșită a unor fapte - iar modul în care reacționezi din prima zi poate influența decisiv rezultatul final.
+        <p className="text-foreground">
+          <span className="block"><strong>Acuzațiile privind infracțiuni contra persoanei afectează direct libertatea, dar și reputația și viața de familie.</strong></span>
+          <span className="block">Multe dintre aceste cauze pornesc dintr-un conflict, o plângere depusă la furie sau o interpretare greșită a unor fapte - iar modul în care reacționezi din prima zi poate influența decisiv rezultatul final.</span>
         </p>
       </div>
 
