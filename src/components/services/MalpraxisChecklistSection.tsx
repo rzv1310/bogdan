@@ -131,7 +131,7 @@ export default function MalpraxisChecklistSection() {
         </CardHeader>
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
-            <li>Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic („2025-08-10 – externare.pdf”).</li>
+            <li>Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic („2025-08-10 - externare.pdf”).</li>
             <li>Nu trimiți originale; aduci originalele doar la solicitarea expresă.</li>
             <li>Pune un index al probelor și numerotează paginile.</li>
             <li>Respectă GDPR: acoperă CNP-urile altor pacienți; nu publica date sensibile pe email nesecurizat.</li>

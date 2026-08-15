@@ -84,7 +84,7 @@ export default function WorkplaceLiabilityEn() {
             In every workplace accident, in every criminal investigation for violating safety regulations, there is a mixture of responsibility, negligence and tragedy.
           </p>
           <p>
-            I practice in Bucharest and my name is Bogdan Lamatic – I have 18 years of experience in criminal law and numerous successful cases in white-collar crime.
+            I practice in Bucharest and my name is Bogdan Lamatic - I have 18 years of experience in criminal law and numerous successful cases in white-collar crime.
           </p>
         </div>
 
@@ -148,10 +148,10 @@ export default function WorkplaceLiabilityEn() {
             </p>
             <p>As a lawyer, I always analyze the entire spectrum of legal risks:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Disciplinary liability</strong> – applying internal sanctions to employees or managers for violating OSH rules. This does not exempt the employer from other liabilities.</li>
-              <li><strong>Civil liability</strong> – the employer's obligation to compensate the victim for damage not covered by social or health insurance. Law 319/2006 and the Labor Code provide that the employer remains responsible even if using external services.</li>
-              <li><strong>Contraventional liability</strong> – territorial labor inspectorates can apply fines for non-compliance with safety and health standards, even if no accident occurred. In case of serious accident, the fine can be doubled and combined with activity suspension.</li>
-              <li><strong>Criminal liability</strong> – intervenes when non-compliance with safety standards produces or creates imminent danger of accident or occupational disease. This is the most severe form of liability and will be detailed below.</li>
+              <li><strong>Disciplinary liability</strong> - applying internal sanctions to employees or managers for violating OSH rules. This does not exempt the employer from other liabilities.</li>
+              <li><strong>Civil liability</strong> - the employer's obligation to compensate the victim for damage not covered by social or health insurance. Law 319/2006 and the Labor Code provide that the employer remains responsible even if using external services.</li>
+              <li><strong>Contraventional liability</strong> - territorial labor inspectorates can apply fines for non-compliance with safety and health standards, even if no accident occurred. In case of serious accident, the fine can be doubled and combined with activity suspension.</li>
+              <li><strong>Criminal liability</strong> - intervenes when non-compliance with safety standards produces or creates imminent danger of accident or occupational disease. This is the most severe form of liability and will be detailed below.</li>
             </ul>
           </CardContent>
         </Card>
@@ -176,16 +176,16 @@ export default function WorkplaceLiabilityEn() {
             
             <h3 className="text-xl font-semibold mt-6">Failure to take legal safety and health measures (art. 349 Criminal Code)</h3>
             <p>
-              This article sanctions the omission of the responsible person to adopt legal safety and health measures if an imminent danger of an accident or occupational illness is created. The punishment is imprisonment from 6 months to 3 years or fine, and in the negligent variant it is reduced to 3 months – 1 year. The particularity of this offense is that it is consummated by simple omission – it is not necessary for an accident to have occurred for criminal liability to be engaged.
+              This article sanctions the omission of the responsible person to adopt legal safety and health measures if an imminent danger of an accident or occupational illness is created. The punishment is imprisonment from 6 months to 3 years or fine, and in the negligent variant it is reduced to 3 months - 1 year. The particularity of this offense is that it is consummated by simple omission - it is not necessary for an accident to have occurred for criminal liability to be engaged.
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Non-compliance with legal safety and health measures (art. 350 Criminal Code)</h3>
             <p>
-              Article 350 criminalizes the act of any person to violate legal obligations regarding occupational safety and health, if this creates an imminent danger of accident or illness. The punishment is similar: 6 months – 3 years imprisonment or fine. Putting back into operation machinery or installations without eliminating the deficiencies for which they were stopped constitutes an offense. As with art. 349, if the act is committed through negligence, the limits are reduced to 3 months – 1 year.
+              Article 350 criminalizes the act of any person to violate legal obligations regarding occupational safety and health, if this creates an imminent danger of accident or illness. The punishment is similar: 6 months - 3 years imprisonment or fine. Putting back into operation machinery or installations without eliminating the deficiencies for which they were stopped constitutes an offense. As with art. 349, if the act is committed through negligence, the limits are reduced to 3 months - 1 year.
             </p>
 
             <p>
-              These offenses are called "danger offenses" – the law protects the life and integrity of workers even if the accident did not occur. As a result, prosecutors can open criminal proceedings as soon as an inspection finds serious OSH omissions.
+              These offenses are called "danger offenses" - the law protects the life and integrity of workers even if the accident did not occur. As a result, prosecutors can open criminal proceedings as soon as an inspection finds serious OSH omissions.
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Liability for manslaughter or bodily harm through negligence (art. 192 and art. 196 Criminal Code)</h3>
@@ -278,7 +278,7 @@ export default function WorkplaceLiabilityEn() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <p>
-              In case of an accident, the first step is immediate communication. Any incident defined by law – from accidents causing death or injury, to dangerous incidents or commuting accidents – must be immediately communicated to the employer.
+              In case of an accident, the first step is immediate communication. Any incident defined by law - from accidents causing death or injury, to dangerous incidents or commuting accidents - must be immediately communicated to the employer.
             </p>
             <p>
               If workers from other employers are among the victims, the event must also be communicated to them.
@@ -290,7 +290,7 @@ export default function WorkplaceLiabilityEn() {
               The employer must preserve the scene until investigation authorities arrive, except when maintaining this state would generate new dangers; then photographs are taken and a report is drawn up with the modifications.
             </p>
             <p>
-              Accident investigation aims to establish circumstances, causes, violated regulations and responsibilities. For accidents with temporary work incapacity, investigation is conducted by a commission appointed by the employer, consisting of at least 3 people – a designated worker, a representative of the internal or external prevention service.
+              Accident investigation aims to establish circumstances, causes, violated regulations and responsibilities. For accidents with temporary work incapacity, investigation is conducted by a commission appointed by the employer, consisting of at least 3 people - a designated worker, a representative of the internal or external prevention service.
             </p>
             <p>
               Persons involved in the accident or the OSH responsible cannot be part of the commission.
@@ -323,7 +323,7 @@ export default function WorkplaceLiabilityEn() {
               In case of death, entitled persons (surviving spouse, child, parent, guardian or heirs) receive a lump sum compensation of 4 average gross salaries.
             </p>
             <p>
-              Victims can apply for disability pension, and survivors – for survivor's pension, according to Law no. 360/2023.
+              Victims can apply for disability pension, and survivors - for survivor's pension, according to Law no. 360/2023.
             </p>
             <p>
               For accidents occurring abroad, medical costs and transportation are reimbursed by the Romanian institution when the employee remains subject to Romanian legislation.
@@ -363,7 +363,7 @@ export default function WorkplaceLiabilityEn() {
               Prosecutors can hold the employer criminally liable alongside the external specialist when lack or non-implementation of OSH measures is found.
             </p>
             <p>
-              I have argued in court that criminal liability is individual – a concrete conduct must be imputed, not mere delegation; therefore, in defense, we analyze in detail the contract with the external service and the level of control exercised by the employer.
+              I have argued in court that criminal liability is individual - a concrete conduct must be imputed, not mere delegation; therefore, in defense, we analyze in detail the contract with the external service and the level of control exercised by the employer.
             </p>
             <p>
               Referring the matter to the High Court for legal clarification could clarify jurisprudence.
@@ -393,7 +393,7 @@ export default function WorkplaceLiabilityEn() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <p>
-              Certain fields – construction, agriculture, extractive industry, transport – present increased risks. Methodological norms define high-risk areas where additional measures are required.
+              Certain fields - construction, agriculture, extractive industry, transport - present increased risks. Methodological norms define high-risk areas where additional measures are required.
             </p>
             <p>
               Employers with over 50 employees must establish occupational safety and health committees. Periodic updating of risk assessments and adaptation to technical progress are essential.

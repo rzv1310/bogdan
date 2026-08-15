@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 const legal500Badges = [
-  { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 – attorney Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 – attorney Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2022 – attorney Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2023 – attorney Bogdan Lamatic" },
-  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2024 – attorney Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 - attorney Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 - attorney Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2022_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2022 - attorney Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2023_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2023 - attorney Bogdan Lamatic" },
+  { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2024_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2024 - attorney Bogdan Lamatic" },
 ];
 
 const Legal500BadgeStrip = () => (
@@ -198,8 +198,8 @@ const HomepageEN = () => {
             "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
             "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
-            "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
-            "description": "Criminal law firm in Bucharest — defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
+            "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
+            "description": "Criminal law firm in Bucharest - defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
             "url": "https://avocatpenalbucuresti.ro/en",
             "telephone": "+40316320183",
             "email": "contact@avocatpenalbucuresti.ro",
@@ -348,7 +348,7 @@ const HomepageEN = () => {
               { "@type": "Organization", "name": "Wolf Theiss" },
               { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
               { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
-              { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
+              { "@type": "Organization", "name": "Șerban & Asociații - Societate de Avocați" }
             ],
             "memberOf": [
               {
@@ -383,11 +383,11 @@ const HomepageEN = () => {
               }
             ],
             "award": [
-              "Legal 500 – Rising Star (White-Collar Crime) 2020",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
-              "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
+              "Legal 500 - Rising Star (White-Collar Crime) 2020",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2021",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2022",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2023",
+              "Legal 500 - Next Generation Partner (White-Collar Crime) 2024"
             ],
             "knowsAbout": {
               "@type": "ItemList",
@@ -438,9 +438,9 @@ const HomepageEN = () => {
           },
           {
             "@type": "WebSite",
-            "name": "Criminal Defense Lawyer Bucharest — Bogdan Lamatic",
+            "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
             "url": "https://avocatpenalbucuresti.ro/en",
-            "description": "Official website of lawyer Bogdan Lamatic — criminal defense, white-collar crime, and crypto investigations in Bucharest.",
+            "description": "Official website of lawyer Bogdan Lamatic - criminal defense, white-collar crime, and crypto investigations in Bucharest.",
             "inLanguage": "en-US",
             "publisher": {
               "@type": "LegalService",
@@ -471,7 +471,7 @@ const HomepageEN = () => {
                 "name": "Do you have experience with drug-related criminal cases?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, I have represented clients in a wide range of cases — from economic crimes to offenses against the person or drug trafficking — with favorable outcomes."
+                  "text": "Yes, I have represented clients in a wide range of cases - from economic crimes to offenses against the person or drug trafficking - with favorable outcomes."
                 }
               },
               {
@@ -503,7 +503,7 @@ const HomepageEN = () => {
                 "name": "What options do I have if the court decision is unfavorable?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We can use remedies — appeal or extraordinary remedies — depending on the legal situation and deadlines."
+                  "text": "We can use remedies - appeal or extraordinary remedies - depending on the legal situation and deadlines."
                 }
               },
               {

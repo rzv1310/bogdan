@@ -319,7 +319,7 @@ export default function Contact() {
                   autoComplete="off"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  placeholder={'de ex. „Plângere penală – parte vătămată” sau de ex. „Urmărire penală – apărare”'}
+                  placeholder={'de ex. „Plângere penală - parte vătămată” sau de ex. „Urmărire penală - apărare”'}
                   ref={subjectRef}
                   aria-invalid={!!errors.subject}
                   aria-describedby={errors.subject ? "error-subject" : undefined}

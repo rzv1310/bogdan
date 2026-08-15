@@ -101,7 +101,7 @@ export default function ReprezentareaVictimelor() {
                                     "name": "E obligatoriu să merg în proces penal pentru despăgubiri?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat."
+                                                "text": "Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil - aleg strategia optimă pentru timp și rezultat."
                                     }
                         },
                         {
@@ -125,7 +125,7 @@ export default function ReprezentareaVictimelor() {
                                     "name": "Pot participa activ la urmărirea penală?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP)."
+                                                "text": "Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84-85 CPP)."
                                     }
                         }
             ]
@@ -144,10 +144,10 @@ export default function ReprezentareaVictimelor() {
           Sunt avocatul Bogdan Lamatic, din Baroul București. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale, accidente de muncă sau alte fapte penale.
         </p>
         <p>
-          Am pledat la toate nivelurile – de la parchete până la Înalta Curte - inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
+          Am pledat la toate nivelurile - de la parchete până la Înalta Curte - inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
         </p>
         <p>
-          Sunt recomandat de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021–2024, distincție care reflectă rigoarea și rezultatele în dosare dificile.
+          Sunt recomandat de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024, distincție care reflectă rigoarea și rezultatele în dosare dificile.
         </p>
       </div>
 
@@ -188,16 +188,16 @@ export default function ReprezentareaVictimelor() {
               <strong>Accidente rutiere (RCA/CASCO, vătămări, deces).</strong> Coordonez investigația penală și acțiunea civilă pentru victime și familii: stabilire vinovăție, constituire ca parte civilă, calculul despăgubirilor materiale și morale, negocieri cu asigurătorul RCA conform Legii 132/2017 și normelor ASF. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/ro/a/153/legisla%C8%9Bie-rca" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
             </li>
             <li>
-              <strong>Vătămări corporale și loviri.</strong> Intervin în dosare ce privesc loviri/violențe (art. 193 CP) și vătămare corporală (art. 194 CP) – inclusiv forme agravate sau situațiile în care acțiunea penală se pornește din oficiu potrivit modificărilor legislative recente. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/275633" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Vătămări corporale și loviri.</strong> Intervin în dosare ce privesc loviri/violențe (art. 193 CP) și vătămare corporală (art. 194 CP) - inclusiv forme agravate sau situațiile în care acțiunea penală se pornește din oficiu potrivit modificărilor legislative recente. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/275633" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              <strong>Vătămare/ucidere din culpă.</strong> Reprezint victimele (ori familiile) în cazuri de vătămare din culpă (art. 196 CP) și ucidere din culpă (art. 192 CP) – deseori corelate cu încălcări ale regulilor de circulație (OUG 195/2002; HG 1391/2006). (<a href="https://lege5.ro/gratuit/gezdmnrzgi/art-196-vatamarea-corporala-din-culpa-codul-penal?dp=gqytsojugyzte" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>, <a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Vătămare/ucidere din culpă.</strong> Reprezint victimele (ori familiile) în cazuri de vătămare din culpă (art. 196 CP) și ucidere din culpă (art. 192 CP) - deseori corelate cu încălcări ale regulilor de circulație (OUG 195/2002; HG 1391/2006). (<a href="https://lege5.ro/gratuit/gezdmnrzgi/art-196-vatamarea-corporala-din-culpa-codul-penal?dp=gqytsojugyzte" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>, <a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               <strong>Accidente de muncă / răspundere angajator.</strong> Acopăr latura penală și civilă (despăgubiri, venituri pierdute, îngrijire, reparația integrală). Experiența mea include litigii penale cu componentă tehnică și probatoriu amplu.
             </li>
             <li>
-              <strong>Asistență pentru drepturile victimei.</strong> Configurez strategia de parte vătămată / parte civilă, valorificând drepturile prevăzute de Codul de procedură penală (art. 84–85 CPP – consultarea dosarului, formularea de cereri/excepții, adresarea de întrebări, administrarea probelor). (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Asistență pentru drepturile victimei.</strong> Configurez strategia de parte vătămată / parte civilă, valorificând drepturile prevăzute de Codul de procedură penală (art. 84-85 CPP - consultarea dosarului, formularea de cereri/excepții, adresarea de întrebări, administrarea probelor). (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ol>
         </CardContent>
@@ -251,7 +251,7 @@ export default function ReprezentareaVictimelor() {
               <strong>Daune materiale:</strong> tratamente, recuperare, dispozitive medicale, transport, îngrijire, venituri pierdute/capacitate de muncă, adaptare locuință/auto.
             </li>
             <li>
-              <strong>Daune morale:</strong> suferință, afectarea vieții personale/familiale; în caz de deces – pentru aparținători.
+              <strong>Daune morale:</strong> suferință, afectarea vieții personale/familiale; în caz de deces - pentru aparținători.
             </li>
             <li>
               <strong>Dobânzi/actualizări:</strong> conform normelor aplicabile și jurisprudenței; pot negocia plăți în tranșe sau tranzacții prealabile.
@@ -284,7 +284,7 @@ export default function ReprezentareaVictimelor() {
               <strong>Asistență medicală & documente:</strong> ia toate actele medicale +, la nevoie, certificat medico-legal.
             </li>
             <li>
-              <strong>Sesizează autoritățile:</strong> Poliție/Parchet; în accidente – reguli din OUG 195/2002 + HG 1391/2006. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              <strong>Sesizează autoritățile:</strong> Poliție/Parchet; în accidente - reguli din OUG 195/2002 + HG 1391/2006. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               <strong>Deschide dosar RCA:</strong> avizare promptă, acte doveditoare (constatare, devize, dovezi cheltuieli). (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
@@ -320,7 +320,7 @@ export default function ReprezentareaVictimelor() {
           <ol className="list-decimal pl-6 space-y-3">
             <li>
               <strong>E obligatoriu să merg în proces penal pentru despăgubiri?</strong>
-              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil – aleg strategia optimă pentru timp și rezultat.</p>
+              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil - aleg strategia optimă pentru timp și rezultat.</p>
             </li>
             <li>
               <strong>Ce termen am pentru pretenții?</strong>
@@ -332,7 +332,7 @@ export default function ReprezentareaVictimelor() {
             </li>
             <li>
               <strong>Pot participa activ la urmărirea penală?</strong>
-              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84–85 CPP).</p>
+              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84-85 CPP).</p>
             </li>
           </ol>
         </CardContent>
@@ -366,16 +366,16 @@ export default function ReprezentareaVictimelor() {
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Cod penal – art. 192, 193, 194, 196. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://lege5.ro/gratuit/gezdmnrzgi/art-196-vatamarea-corporala-din-culpa-codul-penal?dp=gqytsojugyzte" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>)
+              Cod penal - art. 192, 193, 194, 196. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://lege5.ro/gratuit/gezdmnrzgi/art-196-vatamarea-corporala-din-culpa-codul-penal?dp=gqytsojugyzte" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Lege5</a>)
             </li>
             <li>
-              Cod procedură penală – art. 84–85; drepturile persoanei vătămate/partii civile; jurisprudență CCR pe art. 81. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Cod procedură penală - art. 84-85; drepturile persoanei vătămate/partii civile; jurisprudență CCR pe art. 81. (<a href="https://legislatie.just.ro/Public/DetaliiDocument/185907" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              OUG 195/2002 + HG 1391/2006 – circulație rutieră și regulament. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              OUG 195/2002 + HG 1391/2006 - circulație rutieră și regulament. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/74028" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Legea 132/2017 + Norma ASF 20/2017 – RCA, dosar daună, limite și proceduri. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/ro/a/153/legisla%C8%9Bie-rca" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
+              Legea 132/2017 + Norma ASF 20/2017 - RCA, dosar daună, limite și proceduri. (<a href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/190029" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>, <a href="https://asfromania.ro/ro/a/153/legisla%C8%9Bie-rca" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ASF</a>)
             </li>
             <li>
               Legea 211/2004 (protecția victimelor infracțiunilor). (<a href="https://legislatie.just.ro/Public/DetaliiDocument/52468" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)

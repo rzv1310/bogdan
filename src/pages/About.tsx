@@ -37,7 +37,7 @@ export default function About() {
           { "@type": "Organization", "name": "Wolf Theiss" },
           { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
           { "@type": "Organization", "name": "Mușat & Asociații S.p.a.r.l." },
-          { "@type": "Organization", "name": "Șerban & Asociații – Societate de Avocați" }
+          { "@type": "Organization", "name": "Șerban & Asociații - Societate de Avocați" }
         ],
         "memberOf": [
           {
@@ -72,11 +72,11 @@ export default function About() {
           }
         ],
         "award": [
-          "Legal 500 – Rising Star (White-Collar Crime) 2020",
-          "Legal 500 – Next Generation Partner (White-Collar Crime) 2021",
-          "Legal 500 – Next Generation Partner (White-Collar Crime) 2022",
-          "Legal 500 – Next Generation Partner (White-Collar Crime) 2023",
-          "Legal 500 – Next Generation Partner (White-Collar Crime) 2024"
+          "Legal 500 - Rising Star (White-Collar Crime) 2020",
+          "Legal 500 - Next Generation Partner (White-Collar Crime) 2021",
+          "Legal 500 - Next Generation Partner (White-Collar Crime) 2022",
+          "Legal 500 - Next Generation Partner (White-Collar Crime) 2023",
+          "Legal 500 - Next Generation Partner (White-Collar Crime) 2024"
         ],
         "knowsAbout": {
           "@type": "ItemList",
@@ -129,7 +129,7 @@ export default function About() {
         "@type": "WebPage",
         "@id": "https://avocatpenalbucuresti.ro/despre-mine#webpage",
         "url": "https://avocatpenalbucuresti.ro/despre-mine",
-        "name": "Despre mine – Bogdan-Constantin Lamatic",
+        "name": "Despre mine - Bogdan-Constantin Lamatic",
         "inLanguage": "ro-RO",
         "about": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
         "mainEntity": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },

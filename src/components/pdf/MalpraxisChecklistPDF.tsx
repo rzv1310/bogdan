@@ -33,7 +33,7 @@ const strip = (input: string) => {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[“”„]/g, '"')
     .replace(/[’]/g, "'")
-    .replace(/–|—/g, '-');
+    .replace(/-|-/g, '-');
 };
 
 function Bullet({ children }: { children: string }) {

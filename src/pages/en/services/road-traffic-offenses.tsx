@@ -9,7 +9,7 @@ import RelatedServices from "@/components/RelatedServices";
 export default function RoadTrafficEn() {
   useSEO({
     keywords: "road traffic offenses lawyer romania, car accident criminal defense, negligent homicide attorney",
-    title: "Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest",
+    title: "Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest",
     description: "DUIs, no license, leaving the scene; accidents with/without victims.",
     alternates: { en: "/en/services/road-traffic-offenses", ro: "/servicii/infractiuni-rutiere-cu-victime" , xDefault: "/servicii/infractiuni-rutiere-cu-victime"},
     locale: "en_US",
@@ -59,10 +59,10 @@ export default function RoadTrafficEn() {
       />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer – Bogdan Lamatic, Bucharest</h1>
+        <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am attorney Bogdan Lamatic (Bucharest Bar, since 2007). I defend clients in traffic offenses – from matters
+            I am attorney Bogdan Lamatic (Bucharest Bar, since 2007). I defend clients in traffic offenses - from matters
             without victims to accidents with bodily injury or death.
           </p>
           <p>
@@ -119,10 +119,10 @@ export default function RoadTrafficEn() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <ul className="list-disc pl-6 space-y-2">
-              <li>Driving without license – art. 335 CP</li>
-              <li>Driving under the influence of alcohol or drugs – art. 336 CP</li>
-              <li>Refusal to provide biological samples – art. 337 CP</li>
-              <li>Unregistered vehicle/false plate – art. 334 CP</li>
+              <li>Driving without license - art. 335 CP</li>
+              <li>Driving under the influence of alcohol or drugs - art. 336 CP</li>
+              <li>Refusal to provide biological samples - art. 337 CP</li>
+              <li>Unregistered vehicle/false plate - art. 334 CP</li>
             </ul>
           </CardContent>
         </Card>
@@ -134,9 +134,9 @@ export default function RoadTrafficEn() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <ul className="list-disc pl-6 space-y-2">
-              <li>Leaving the scene of an accident – art. 338 CP</li>
-              <li>Bodily injury by negligence – art. 196 CP</li>
-              <li>Manslaughter by negligence – art. 192 CP</li>
+              <li>Leaving the scene of an accident - art. 338 CP</li>
+              <li>Bodily injury by negligence - art. 196 CP</li>
+              <li>Manslaughter by negligence - art. 192 CP</li>
             </ul>
           </CardContent>
         </Card>
@@ -149,18 +149,18 @@ export default function RoadTrafficEn() {
           <CardContent className="text-base leading-relaxed space-y-4">
             <ol className="list-decimal pl-6 space-y-3">
               <li>
-                <strong>Legal & technical audit</strong> – reviewing warrants, toxicology, chain of custody, devices, video
+                <strong>Legal & technical audit</strong> - reviewing warrants, toxicology, chain of custody, devices, video
                 evidence; requesting expert reports.
               </li>
               <li>
-                <strong>Urgent measures</strong> – complaints against unlawful acts, lifting restrictions where possible, protecting
+                <strong>Urgent measures</strong> - complaints against unlawful acts, lifting restrictions where possible, protecting
                 assets.
               </li>
               <li>
-                <strong>Active defense</strong> – procedural challenges, defensive evidence; plea agreement when advantageous.
+                <strong>Active defense</strong> - procedural challenges, defensive evidence; plea agreement when advantageous.
               </li>
               <li>
-                <strong>Civil component</strong> – when representing victims, we quantify damages rigorously; when defending suspects,
+                <strong>Civil component</strong> - when representing victims, we quantify damages rigorously; when defending suspects,
                 we limit liability and seek amicable repair where appropriate.
               </li>
             </ol>

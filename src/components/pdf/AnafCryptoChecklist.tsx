@@ -123,7 +123,7 @@ const AnafCryptoChecklist: React.FC = () => (
 
         <View style={styles.section}>
           <Bullet>
-            Strânge documentele — istoricul tranzacțiilor (CSV/raport din exchange), curs RON la data vânzării, comisioane directe (trading/withdrawal).
+            Strânge documentele - istoricul tranzacțiilor (CSV/raport din exchange), curs RON la data vânzării, comisioane directe (trading/withdrawal).
           </Bullet>
           <Bullet>
             Identifică tranzacțiile care generează venit: vânzare în fiat sau plată în bunuri/servicii. Câștigul = preț vânzare - preț achiziție - costuri directe; impozit 10% pe câștigul impozabil.

@@ -8,7 +8,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/masuri-preventive";
-const TITLE = "Avocat Măsuri Preventive București – Intervenție Imediată | Bogdan Lamatic";
+const TITLE = "Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic";
 const DESCRIPTION =
   "Avocat măsuri preventive București - reținere, control judiciar, arest la domiciliu, arestare preventivă. 18+ ani experiență. Sună acum!";
 
@@ -126,7 +126,7 @@ export default function MasuriPreventive() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Măsuri Preventive București – Intervenție Imediată | Bogdan Lamatic
+        Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -141,7 +141,7 @@ export default function MasuriPreventive() {
           <strong>O măsură preventivă îți poate limita libertatea, mișcarea sau activitatea profesională încă din faza de urmărire penală, înainte de orice condamnare.</strong> De aceea, prezența unui avocat exact în momentul în care măsura este propusă - nu ulterior - poate face diferența între respingerea propunerii, o măsură mai ușoară sau menținerea celei mai severe variante.
         </p>
         <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021–2024 și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața judecătorilor de drepturi și libertăți, a judecătorilor de cameră preliminară și a instanțelor de judecată, în dosare aflate sub control judiciar, arest la domiciliu sau arestare preventivă.
         </p>
       </div>
 
@@ -362,13 +362,13 @@ export default function MasuriPreventive() {
         <CardContent className="text-base leading-relaxed">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Codul de procedură penală - Titlul V, Măsurile preventive și alte măsuri procesuale (art. 202–242 CPP), inclusiv reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul de procedură penală - Titlul V, Măsurile preventive și alte măsuri procesuale (art. 202-242 CPP), inclusiv reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
               Codul de procedură penală - calea de atac împotriva încheierilor privind măsurile preventive (art. 204 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
             <li>
-              Codul de procedură penală - încetarea de drept, revocarea și înlocuirea măsurilor preventive (art. 241–242 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
+              Codul de procedură penală - încetarea de drept, revocarea și înlocuirea măsurilor preventive (art. 241-242 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
             </li>
           </ul>
         </CardContent>

@@ -303,7 +303,7 @@ async function main() {
   for (const message of errors) console.error(`[seo] ERROR ${message}`);
 
   console.log(
-    `[seo] validated ${pages.size} routes + 404 — ${errors.length} error(s), ${warnings.length} warning(s)`,
+    `[seo] validated ${pages.size} routes + 404 - ${errors.length} error(s), ${warnings.length} warning(s)`,
   );
   if (errors.length > 0) process.exit(1);
 }

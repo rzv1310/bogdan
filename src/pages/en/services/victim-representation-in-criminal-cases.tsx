@@ -68,7 +68,7 @@ export default function VictimRepresentationEn() {
                                     "name": "Is a criminal trial mandatory to obtain compensation?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court – we choose the optimal strategy for time and result."
+                                                "text": "Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court - we choose the optimal strategy for time and result."
                                     }
                         },
                         {
@@ -106,8 +106,8 @@ export default function VictimRepresentationEn() {
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p>
             I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries,
-            workplace accidents and other criminal acts. I have pleaded at all levels – from prosecutors to the High
-            Court of Cassation and Justice – including complex cases with medico-legal expertise and negotiation with
+            workplace accidents and other criminal acts. I have pleaded at all levels - from prosecutors to the High
+            Court of Cassation and Justice - including complex cases with medico-legal expertise and negotiation with
             insurers.
           </p>
         </div>
@@ -151,11 +151,11 @@ export default function VictimRepresentationEn() {
                 insurer under Romanian law.
               </li>
               <li>
-                <strong>Bodily injury and assault.</strong> Cases concerning assault and battery and bodily injury – including aggravated
+                <strong>Bodily injury and assault.</strong> Cases concerning assault and battery and bodily injury - including aggravated
                 forms or situations where prosecution is ex officio under recent amendments.
               </li>
               <li>
-                <strong>Negligent injury / negligent homicide.</strong> Representation of victims (or families) – often related to traffic
+                <strong>Negligent injury / negligent homicide.</strong> Representation of victims (or families) - often related to traffic
                 rules; careful medico-legal assessment and correlation with evidence.
               </li>
               <li>
@@ -214,7 +214,7 @@ export default function VictimRepresentationEn() {
           <CardContent className="text-base leading-relaxed space-y-3">
             <ol className="list-decimal pl-6 space-y-3">
               <li>
-                <strong>Is a criminal trial mandatory to obtain compensation?</strong> Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court – we choose the optimal strategy for time and result.
+                <strong>Is a criminal trial mandatory to obtain compensation?</strong> Not necessarily. You can seek compensation as a civil party in the criminal trial or separately, in civil court - we choose the optimal strategy for time and result.
               </li>
               <li>
                 <strong>What deadlines apply?</strong> Deadlines depend on the nature of the act (criminal/civil) and the applicable limitation periods; in road accidents we act quickly and notify the insurer promptly.

@@ -83,7 +83,7 @@ export default function RaspunderePenalaMunca() {
             În fiecare accident de muncă, în fiecare investigație penală pentru nerespectarea normelor de securitate, există un amestec de responsabilitate, neglijență şi tragedie.
           </p>
           <p>
-            Îmi desfășor activitatea în București și mă numesc Bogdan Lamatic – am 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white‑collar crime.
+            Îmi desfășor activitatea în București și mă numesc Bogdan Lamatic - am 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white‑collar crime.
           </p>
         </div>
 
@@ -147,10 +147,10 @@ export default function RaspunderePenalaMunca() {
             </p>
             <p>În calitate de avocat, analizez întotdeauna întregul spectru de riscuri juridice:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Răspunderea disciplinară</strong> – aplicarea de sancțiuni interne salariaților sau managerilor pentru încălcarea regulilor de SSM. Aceasta nu scuteşte angajatorul de celelalte răspunderi.</li>
-              <li><strong>Răspunderea civilă</strong> – obligația angajatorului de a despăgubi victima pentru prejudiciul neacoperit prin asigurările sociale sau de sănătate. Legea 319/2006 şi Codul Muncii prevăd că angajatorul rămâne responsabil chiar dacă folosește servicii externe.</li>
-              <li><strong>Răspunderea contravențională</strong> – inspectoratele teritoriale de muncă pot aplica amenzi pentru nerespectarea normelor de securitate şi sănătate, chiar dacă nu s‑a produs un accident. În caz de accident grav, amenda poate fi dublată şi combinată cu oprirea activității.</li>
-              <li><strong>Răspunderea penală</strong> – intervine atunci când nerespectarea normelor de securitate produce sau creează un pericol iminent de accident ori de boală profesională. Aceasta este cea mai severă formă de răspundere şi va fi detaliată în continuare.</li>
+              <li><strong>Răspunderea disciplinară</strong> - aplicarea de sancțiuni interne salariaților sau managerilor pentru încălcarea regulilor de SSM. Aceasta nu scuteşte angajatorul de celelalte răspunderi.</li>
+              <li><strong>Răspunderea civilă</strong> - obligația angajatorului de a despăgubi victima pentru prejudiciul neacoperit prin asigurările sociale sau de sănătate. Legea 319/2006 şi Codul Muncii prevăd că angajatorul rămâne responsabil chiar dacă folosește servicii externe.</li>
+              <li><strong>Răspunderea contravențională</strong> - inspectoratele teritoriale de muncă pot aplica amenzi pentru nerespectarea normelor de securitate şi sănătate, chiar dacă nu s‑a produs un accident. În caz de accident grav, amenda poate fi dublată şi combinată cu oprirea activității.</li>
+              <li><strong>Răspunderea penală</strong> - intervine atunci când nerespectarea normelor de securitate produce sau creează un pericol iminent de accident ori de boală profesională. Aceasta este cea mai severă formă de răspundere şi va fi detaliată în continuare.</li>
             </ul>
           </CardContent>
         </Card>
@@ -175,16 +175,16 @@ export default function RaspunderePenalaMunca() {
             
             <h3 className="text-xl font-semibold mt-6">Neluarea măsurilor legale de securitate şi sănătate (art. 349 Cod penal)</h3>
             <p>
-              Acest articol sancţionează omisiunea persoanei responsabile de a adopta măsurile legale de securitate şi sănătate dacă se creează un pericol iminent de producere a unui accident sau de îmbolnăvire profesională. Pedeapsa este închisoarea de la 6 luni la 3 ani sau amenda, iar în varianta din culpă se reduce la 3 luni – 1 an. Particularitatea acestei infracțiuni este că se consumă prin simpla omisiune – nu este necesar să se fi produs un accident pentru a fi angajată răspunderea penală.
+              Acest articol sancţionează omisiunea persoanei responsabile de a adopta măsurile legale de securitate şi sănătate dacă se creează un pericol iminent de producere a unui accident sau de îmbolnăvire profesională. Pedeapsa este închisoarea de la 6 luni la 3 ani sau amenda, iar în varianta din culpă se reduce la 3 luni - 1 an. Particularitatea acestei infracțiuni este că se consumă prin simpla omisiune - nu este necesar să se fi produs un accident pentru a fi angajată răspunderea penală.
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Nerespectarea măsurilor legale de securitate şi sănătate (art. 350 Cod penal)</h3>
             <p>
-              Articolul 350 incriminează fapta oricărei persoane de a încălca obligațiile legale privind securitatea şi sănătatea în muncă, dacă prin aceasta se creează un pericol iminent de accident sau de îmbolnăvire. Pedeapsa este similară: 6 luni – 3 ani de închisoare sau amenda. Repunerea în funcțiune a utilajelor sau instalaţiilor fără a elimina deficiențele pentru care s‑au oprit constituie infracțiune. Ca şi la art. 349, dacă fapta este săvârşită din culpă, limitele se reduc la 3 luni – 1 an.
+              Articolul 350 incriminează fapta oricărei persoane de a încălca obligațiile legale privind securitatea şi sănătatea în muncă, dacă prin aceasta se creează un pericol iminent de accident sau de îmbolnăvire. Pedeapsa este similară: 6 luni - 3 ani de închisoare sau amenda. Repunerea în funcțiune a utilajelor sau instalaţiilor fără a elimina deficiențele pentru care s‑au oprit constituie infracțiune. Ca şi la art. 349, dacă fapta este săvârşită din culpă, limitele se reduc la 3 luni - 1 an.
             </p>
 
             <p>
-              Aceste infracţiuni se numesc „de pericol" – legea protejează viaţa şi integritatea lucrătorilor chiar dacă accidentul nu s‑a produs. Ca urmare, procurorii pot deschide dosar penal imediat ce un control constată omisiuni grave de SSM.
+              Aceste infracţiuni se numesc „de pericol" - legea protejează viaţa şi integritatea lucrătorilor chiar dacă accidentul nu s‑a produs. Ca urmare, procurorii pot deschide dosar penal imediat ce un control constată omisiuni grave de SSM.
             </p>
 
             <h3 className="text-xl font-semibold mt-6">Răspunderea pentru uciderea sau vătămarea din culpă (art. 192 şi art. 196 Cod penal)</h3>
@@ -282,7 +282,7 @@ export default function RaspunderePenalaMunca() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <p>
-              În cazul unui accident, primul pas este comunicarea imediată. Orice incident definit de lege – de la accidentul care a produs deces sau vătămări, la incidentul periculos ori accidentul de traseu – trebuie comunicat de îndată angajatorului.
+              În cazul unui accident, primul pas este comunicarea imediată. Orice incident definit de lege - de la accidentul care a produs deces sau vătămări, la incidentul periculos ori accidentul de traseu - trebuie comunicat de îndată angajatorului.
             </p>
             <p>
               Dacă printre victime se află lucrători ai altor angajatori, evenimentul trebuie comunicat şi acestora.
@@ -294,7 +294,7 @@ export default function RaspunderePenalaMunca() {
               Angajatorul trebuie să păstreze starea locului până la sosirea organelor de cercetare, cu excepţia situaţiilor în care menţinerea acestei stări ar genera noi pericole; atunci se fac fotografii şi se întocmeşte un proces‑verbal cu modificările.
             </p>
             <p>
-              Cercetarea accidentului are ca scop stabilirea împrejurărilor, cauzelor, reglementărilor încălcate şi a răspunderilor. Pentru accidentele cu incapacitate temporară de muncă, cercetarea este efectuată de o comisie desemnată de angajator, formată din cel puţin 3 persoane – un lucrător desemnat, un reprezentant al serviciului intern sau extern de prevenire.
+              Cercetarea accidentului are ca scop stabilirea împrejurărilor, cauzelor, reglementărilor încălcate şi a răspunderilor. Pentru accidentele cu incapacitate temporară de muncă, cercetarea este efectuată de o comisie desemnată de angajator, formată din cel puţin 3 persoane - un lucrător desemnat, un reprezentant al serviciului intern sau extern de prevenire.
             </p>
             <p>
               Persoanele implicate în producerea accidentului sau responsabilul SSM nu pot face parte din comisie.
@@ -337,7 +337,7 @@ export default function RaspunderePenalaMunca() {
               În caz de deces, persoanele îndreptăţite (soţul supravieţuitor, copilul, părintele, tutorele sau moştenitorii) primesc o despăgubire unică de 4 salarii medii brute.
             </p>
             <p>
-              Victimele pot solicita pensie de invaliditate, iar urmaşii – pensie de urmaş, conform Legii nr. 360/2023.
+              Victimele pot solicita pensie de invaliditate, iar urmaşii - pensie de urmaş, conform Legii nr. 360/2023.
             </p>
             <p>
               Pentru accidentele produse în străinătate, costurile medicale şi transportul sunt rambursate de instituţia din România atunci când salariatul rămâne supus legislaţiei române.
@@ -367,7 +367,7 @@ export default function RaspunderePenalaMunca() {
               Procurorii pot atrage răspunderea penală a angajatorului alături de specialistul extern atunci când se constată lipsa sau nepunerea în aplicare a măsurilor SSM.
             </p>
             <p>
-              Eu am argumentat în instanță că răspunderea penală este individuală – trebuie imputată o conduită concretă, nu simpla delegare; de aceea, în apărare, analizăm detaliat contractul cu serviciul extern şi nivelul de control exercitat de angajator.
+              Eu am argumentat în instanță că răspunderea penală este individuală - trebuie imputată o conduită concretă, nu simpla delegare; de aceea, în apărare, analizăm detaliat contractul cu serviciul extern şi nivelul de control exercitat de angajator.
             </p>
             <p>
               Sesizarea Înaltei Curţi pentru dezlegarea chestiunii de drept ar putea clarifica jurisprudenţa.
@@ -407,7 +407,7 @@ export default function RaspunderePenalaMunca() {
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
             <p>
-              Anumite domenii – construcţii, agricultură, industria extractivă, transporturi – prezintă riscuri sporite. Normele metodologice definesc zone cu risc ridicat, în care se impun măsuri suplimentare.
+              Anumite domenii - construcţii, agricultură, industria extractivă, transporturi - prezintă riscuri sporite. Normele metodologice definesc zone cu risc ridicat, în care se impun măsuri suplimentare.
             </p>
             <p>
               Angajatorii cu peste 50 de salariaţi trebuie să constituie comitete de securitate şi sănătate în muncă. Actualizarea periodică a evaluărilor de risc şi adaptarea la progresul tehnic sunt esenţiale.

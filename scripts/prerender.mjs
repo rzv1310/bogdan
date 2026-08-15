@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const distDir = path.join(root, "dist");
 
-// Safety net for publish output limits — keep well below platform caps.
+// Safety net for publish output limits - keep well below platform caps.
 const MAX_PRERENDER_PAGES = 200;
 
 

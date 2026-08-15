@@ -18,7 +18,7 @@ export default function InvestigatiiCripto() {
     locale: "ro_RO",
     title: "Avocat Crypto București Bogdan Lamatic | Investigații privind criptomonede și blockchain | NFT | Smart Contracts",
     description:
-      "Avocat Bogdan Lamatic – investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate. Asistență pentru persoane fizice și companii.",
+      "Avocat Bogdan Lamatic - investigații criptoactive și blockchain: fraudă, cybercrime, AML, MiCA/TFR, fiscalitate. Asistență pentru persoane fizice și companii.",
   });
 
   return (
@@ -113,12 +113,12 @@ export default function InvestigatiiCripto() {
                                     "name": "Mă poate ajuta un avocat să recuperez fonduri?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
-                                                "text": "Da—acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES)."
+                                                "text": "Da-acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES)."
                                     }
                         },
                         {
                                     "@type": "Question",
-                                    "name": "Sunt antreprenor crypto—ce trebuie să fac „ieri”?",
+                                    "name": "Sunt antreprenor crypto-ce trebuie să fac „ieri”?",
                                     "acceptedAnswer": {
                                                 "@type": "Answer",
                                                 "text": "Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări. ASF a indicat necesitatea cadrului național de competențe."
@@ -175,19 +175,19 @@ export default function InvestigatiiCripto() {
           <CardContent className="space-y-3 text-base leading-relaxed">
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong>Fraudă & înșelăciune cu criptoactive</strong>: rug-pulls, promisiuni investiționale mincinoase, scheme de tip „trader garantat”, phishing, conturi/clienți „mule”. (art. 244 CP – înșelăciunea; art. 249 CP – frauda informatică).
+                <strong>Fraudă & înșelăciune cu criptoactive</strong>: rug-pulls, promisiuni investiționale mincinoase, scheme de tip „trader garantat”, phishing, conturi/clienți „mule”. (art. 244 CP - înșelăciunea; art. 249 CP - frauda informatică).
               </li>
               <li>
-                <strong>Cybercrime & acces neautorizat</strong>: compromitere conturi exchange/wallet, folosirea de malware sau dispozitive pentru a fura chei private. (art. 360–365 CP – acces ilegal, interceptare, alterarea datelor, operațiuni ilegale cu dispozitive).
+                <strong>Cybercrime & acces neautorizat</strong>: compromitere conturi exchange/wallet, folosirea de malware sau dispozitive pentru a fura chei private. (art. 360-365 CP - acces ilegal, interceptare, alterarea datelor, operațiuni ilegale cu dispozitive).
               </li>
               <li>
                 <strong>Spălare a banilor/AML</strong>: conversii cripto-fiat, layering prin mixere, structuri cu companii off-shore; raportări către ONPCSB, blocări de conturi, înghețări de active. (Legea 129/2019, ghidurile ONPCSB).
               </li>
               <li>
-                <strong>Conformare MiCA & Travel Rule (TFR) pentru companii</strong>: white paper, autorizare CASP, proceduri KYC/Tx-monitoring, cerințe de informații la transferuri. (Reg. (UE) 2023/1114 – MiCA; Reg. (UE) 2023/1113 – TFR).
+                <strong>Conformare MiCA & Travel Rule (TFR) pentru companii</strong>: white paper, autorizare CASP, proceduri KYC/Tx-monitoring, cerințe de informații la transferuri. (Reg. (UE) 2023/1114 - MiCA; Reg. (UE) 2023/1113 - TFR).
               </li>
               <li>
-                <strong>Fiscalitate persoane fizice</strong>: declararea câștigurilor din „transfer de monedă virtuală”, impozit 10%, prag neimpozabil anual 600 lei, CASS la praguri—conform ANAF (broșură/ghid).
+                <strong>Fiscalitate persoane fizice</strong>: declararea câștigurilor din „transfer de monedă virtuală”, impozit 10%, prag neimpozabil anual 600 lei, CASS la praguri-conform ANAF (broșură/ghid).
               </li>
             </ul>
           </CardContent>
@@ -218,7 +218,7 @@ export default function InvestigatiiCripto() {
                 <strong>Probațiune digitală</strong>: extrag dovezi cu chain of custody din exchange-uri, blockchain explorers, device forensics; verific integritatea datelor (art. 362 CP).
               </li>
               <li>
-                <strong>Cooperare internațională</strong>: rogatorii, e-CODEX, e-EDES, echipe comune de anchetă (JIT) – instrumente folosite curent de parchete (MP).
+                <strong>Cooperare internațională</strong>: rogatorii, e-CODEX, e-EDES, echipe comune de anchetă (JIT) - instrumente folosite curent de parchete (MP).
               </li>
               <li>
                 <strong>Reparația prejudiciului</strong>: acțiuni civile paralele, asset recovery/sechestru și executare.
@@ -299,44 +299,44 @@ export default function InvestigatiiCripto() {
               <p className="font-semibold">Codul penal (infracțiuni utile în context crypto)</p>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  Art. 244 – Înșelăciunea (util la promisiuni mincinoase/ICO frauduloase).{" "}
+                  Art. 244 - Înșelăciunea (util la promisiuni mincinoase/ICO frauduloase).{" "}
                   <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocument/244415" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
                 <li>
-                  Art. 249 – Frauda informatică (modificarea/ștergerea datelor, blocarea accesului, împiedicarea funcționării unui sistem pentru obținerea de folos).{" "}
+                  Art. 249 - Frauda informatică (modificarea/ștergerea datelor, blocarea accesului, împiedicarea funcționării unui sistem pentru obținerea de folos).{" "}
                   <a className="underline underline-offset-4" href="https://lege5.ro/Gratuit/gezdmnrzgi/art-249-frauda-informatica-codul-penal" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
                 <li>
-                  Art. 360–365 – Infracțiuni contra siguranței și integrității sistemelor și datelor informatice (acces ilegal, interceptare, alterare date, operațiuni cu dispozitive).{" "}
+                  Art. 360-365 - Infracțiuni contra siguranței și integrității sistemelor și datelor informatice (acces ilegal, interceptare, alterare date, operațiuni cu dispozitive).{" "}
                   <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
               </ul>
             </div>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                Legea 129/2019 (AML/CFT) – obligații KYC, raportare, măsuri pe risc; ONPCSB publică ghiduri pentru criptoactive și Travel Rule. {" "}
+                Legea 129/2019 (AML/CFT) - obligații KYC, raportare, măsuri pe risc; ONPCSB publică ghiduri pentru criptoactive și Travel Rule. {" "}
                 <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/216157" target="_blank" rel="noopener noreferrer">lege</a>{" "}
                 | {" "}
                 <a className="underline underline-offset-4" href="https://www.onpcsb.ro/ro/a/157/ghiduri/manuale" target="_blank" rel="noopener noreferrer">ghiduri</a>
               </li>
               <li>
-                MiCA – Regulamentul (UE) 2023/1114: cadru uniform pentru emitenți și CASP; aplicabil integral din 30 decembrie 2024. {" "}
+                MiCA - Regulamentul (UE) 2023/1114: cadru uniform pentru emitenți și CASP; aplicabil integral din 30 decembrie 2024. {" "}
                 <a className="underline underline-offset-4" href="https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng" target="_blank" rel="noopener noreferrer">EUR-Lex</a>{" "}
                 | {" "}
                 <a className="underline underline-offset-4" href="https://asfromania.ro/ro/a/2795/informare-de-presa:-reglementarea-pietelor-criptoactivelor" target="_blank" rel="noopener noreferrer">Informare ASF</a>
               </li>
               <li>
-                TFR – Travel Rule: Reg. (UE) 2023/1113 – transferuri însoțite de info plătitor/beneficiar; ghid ONPCSB. {" "}
+                TFR - Travel Rule: Reg. (UE) 2023/1113 - transferuri însoțite de info plătitor/beneficiar; ghid ONPCSB. {" "}
                 <a className="underline underline-offset-4" href="https://eur-lex.europa.eu/legal-content/RO/TXT/PDF/?uri=CELEX:32023R1113" target="_blank" rel="noopener noreferrer">EUR-Lex</a>{" "}
                 | {" "}
                 <a className="underline underline-offset-4" href="https://www.onpcsb.ro/ro/a/157/ghiduri/manuale" target="_blank" rel="noopener noreferrer">Ghid ONPCSB</a>
               </li>
               <li>
-                Poziții instituționale: BNR – riscuri privind „monedele virtuale”; ASF – comunicări MiCA / FinTech. {" "}
+                Poziții instituționale: BNR - riscuri privind „monedele virtuale”; ASF - comunicări MiCA / FinTech. {" "}
                 <a className="underline underline-offset-4" href="https://asfromania.ro/ro/a/2795/informare-de-presa:-reglementarea-pietelor-criptoactivelor" target="_blank" rel="noopener noreferrer">ASF</a>
               </li>
               <li>
-                Fiscalitate – ANAF: broșură oficială privind veniturile din criptomonede. {" "}
+                Fiscalitate - ANAF: broșură oficială privind veniturile din criptomonede. {" "}
                 <a className="underline underline-offset-4" href="https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Brosusa_Criptomonede_2023.pdf" target="_blank" rel="noopener noreferrer">Broșură ANAF</a>
               </li>
             </ul>
@@ -352,31 +352,31 @@ export default function InvestigatiiCripto() {
           </CardHeader>
           <CardContent className="space-y-6 text-base leading-relaxed">
             <div>
-              <h3 className="text-xl font-semibold">Codul penal – articole relevante</h3>
+              <h3 className="text-xl font-semibold">Codul penal - articole relevante</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  Art. 244 – Înșelăciunea (site oficial). {" "}
+                  Art. 244 - Înșelăciunea (site oficial). {" "}
                   <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocument/244415" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
                 <li>
-                  Art. 249 – Frauda informatică (text actualizat). {" "}
+                  Art. 249 - Frauda informatică (text actualizat). {" "}
                   <a className="underline underline-offset-4" href="https://lege5.ro/Gratuit/gezdmnrzgi/art-249-frauda-informatica-codul-penal?dp=gqytsojvga3tc" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
                 <li>
-                  Art. 360–365 – Infracțiuni informatice (acces ilegal, interceptare, alterarea datelor, operațiuni cu dispozitive). {" "}
+                  Art. 360-365 - Infracțiuni informatice (acces ilegal, interceptare, alterarea datelor, operațiuni cu dispozitive). {" "}
                   <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocument/223635" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">AML – România</h3>
+              <h3 className="text-xl font-semibold">AML - România</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  Legea 129/2019 – prevenirea și combaterea spălării banilor și finanțării terorismului (Portal legislativ). {" "}
+                  Legea 129/2019 - prevenirea și combaterea spălării banilor și finanțării terorismului (Portal legislativ). {" "}
                   <a className="underline underline-offset-4" href="https://legislatie.just.ro/Public/DetaliiDocumentAfis/216157" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
                 <li>
-                  ONPCSB – Ghid criptoactive (indicatori de suspiciune & tipologii) + Ghid Travel Rule (Reg. 2023/1113). {" "}
+                  ONPCSB - Ghid criptoactive (indicatori de suspiciune & tipologii) + Ghid Travel Rule (Reg. 2023/1113). {" "}
                   <a className="underline underline-offset-4" href="https://www.onpcsb.ro/uploads/articole/attachments/67eb8f930d612007345948.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
                 </li>
               </ul>
@@ -385,22 +385,22 @@ export default function InvestigatiiCripto() {
               <h3 className="text-xl font-semibold">Reglementări UE aplicabile în România</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  MiCA – Reg. (UE) 2023/1114 (EUR-Lex) & Informare ASF. {" "}
+                  MiCA - Reg. (UE) 2023/1114 (EUR-Lex) & Informare ASF. {" "}
                   <a className="underline underline-offset-4" href="https://www.onpcsb.ro/uploads/articole/attachments/67eb8f930d612007345948.pdf" target="_blank" rel="noopener noreferrer">ONPCSB</a>{" "}
                   | {" "}
                   <a className="underline underline-offset-4" href="https://asfromania.ro/ro/a/2795/informare-de-presa:-reglementarea-pietelor-criptoactivelor" target="_blank" rel="noopener noreferrer">ASF</a>
                 </li>
                 <li>
-                  TFR – Reg. (UE) 2023/1113 („Travel Rule”) – text oficial. {" "}
+                  TFR - Reg. (UE) 2023/1113 („Travel Rule”) - text oficial. {" "}
                   <a className="underline underline-offset-4" href="https://eur-lex.europa.eu/legal-content/RO/TXT/PDF/?uri=CELEX:32023R1113" target="_blank" rel="noopener noreferrer">EUR-Lex</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Fiscalitate – ANAF</h3>
+              <h3 className="text-xl font-semibold">Fiscalitate - ANAF</h3>
               <ul className="mt-2 list-disc pl-6 space-y-2">
                 <li>
-                  Broșură ANAF – Venituri din criptomonede (impozit 10%, prag 600 lei/an, exemple, declarația unică). {" "}
+                  Broșură ANAF - Venituri din criptomonede (impozit 10%, prag 600 lei/an, exemple, declarația unică). {" "}
                   <a className="underline underline-offset-4" href="https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Brosusa_Criptomonede_2023.pdf" target="_blank" rel="noopener noreferrer">link</a>
                 </li>
               </ul>
@@ -425,11 +425,11 @@ export default function InvestigatiiCripto() {
             <div>
               <p className="font-semibold">Mă poate ajuta un avocat să recuperez fonduri?</p>
               <p className="text-muted-foreground">
-                Da—acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES).
+                Da-acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES).
               </p>
             </div>
             <div>
-              <p className="font-semibold">Sunt antreprenor crypto—ce trebuie să fac „ieri”?</p>
+              <p className="font-semibold">Sunt antreprenor crypto-ce trebuie să fac „ieri”?</p>
             <p className="text-muted-foreground">
               Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări.
               <br />
@@ -444,7 +444,7 @@ export default function InvestigatiiCripto() {
       <section className="mt-8">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Contact rapid – consultanță inițială</CardTitle>
+            <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Contact rapid - consultanță inițială</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <p>

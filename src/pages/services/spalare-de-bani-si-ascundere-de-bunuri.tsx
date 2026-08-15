@@ -227,7 +227,7 @@ export default function SpalareDeBani() {
 
             <h3 className="text-xl font-semibold">4. Evaziunea fiscală (Legea nr. 241/2005)</h3>
             <p>
-              Frecvent „faptă‑sursă" pentru spălarea banilor. Art. 9 stabilește faptele și pedepsele (2–8 ani sau amendă), precum: ascunderea bunului ori a sursei impozabile, omisiunea evidențierii operațiunilor, evidențe duble sau cheltuieli fictive. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Legea 241/2005)</a> Pentru prejudicii peste 100.000/500.000 euro, limitele se majorează. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(majorări)</a>
+              Frecvent „faptă‑sursă" pentru spălarea banilor. Art. 9 stabilește faptele și pedepsele (2-8 ani sau amendă), precum: ascunderea bunului ori a sursei impozabile, omisiunea evidențierii operațiunilor, evidențe duble sau cheltuieli fictive. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(Legea 241/2005)</a> Pentru prejudicii peste 100.000/500.000 euro, limitele se majorează. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=la%20alin.%20%281%29%20s,8%20alin" target="_blank" rel="noopener noreferrer" className="underline">(majorări)</a>
             </p>
 
             <p>
@@ -255,7 +255,7 @@ export default function SpalareDeBani() {
                 Procurorul, judecătorul de cameră preliminară sau instanța pot lua măsuri asigurătorii pentru a evita ascunderea, distrugerea sau înstrăinarea bunurilor ce pot face obiectul confiscării speciale ori extinse. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=,a%20reparării%20pagubei%20produse%20prin" target="_blank" rel="noopener noreferrer" className="underline">(Legea 70/2025)</a>
               </li>
               <li>
-                Noi alineate (6^1 – 6^4): în cursul urmăririi penale măsurile se dispun de procuror prin ordonanță; se comunică imediat suspectului și părții civile; dacă cererea părții civile e respinsă, decizia se comunică de îndată. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=patru%20noi%20alineate%2C%20alin.%20%286%5E1%29,cu%20următorul%20cuprins" target="_blank" rel="noopener noreferrer" className="underline">(alin. 6^1–6^4)</a>
+                Noi alineate (6^1 - 6^4): în cursul urmăririi penale măsurile se dispun de procuror prin ordonanță; se comunică imediat suspectului și părții civile; dacă cererea părții civile e respinsă, decizia se comunică de îndată. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=patru%20noi%20alineate%2C%20alin.%20%286%5E1%29,cu%20următorul%20cuprins" target="_blank" rel="noopener noreferrer" className="underline">(alin. 6^1-6^4)</a>
               </li>
               <li>
                 Hotărârea se pronunță în camera de consiliu, fără citarea părților; judecata este de urgență, iar participarea procurorului este obligatorie. <a href="https://www.universuljuridic.ro/cod-de-procedura-penala-modificari-legea-nr-70-2025/#:~:text=%286,Participarea%20procurorului%20este%20obligatorie" target="_blank" rel="noopener noreferrer" className="underline">(procedură)</a>
@@ -299,7 +299,7 @@ export default function SpalareDeBani() {
             <h3 className="text-xl font-semibold">1. Evaluarea faptelor și cartografierea fluxurilor</h3>
             <p>Identific faptele‑sursă (fraudă, evaziune, corupție etc.) și analizez fluxurile financiare, inclusiv tranzacții pe blockchain/cripto. Un simplu transfer sau o schimbare formală nu înseamnă automat „spălare".</p>
             <h3 className="text-xl font-semibold">2. Strategia de apărare diferențiată</h3>
-            <p>În funcție de încadrare: pentru spălare – standardul probator al cunoașterii originii ilicite și legătura cu fapta‑sursă; pentru tăinuire – lipsa disimulării; pentru bancrută/abuz – existența reală a insolvenței și a scopului fraudulos.</p>
+            <p>În funcție de încadrare: pentru spălare - standardul probator al cunoașterii originii ilicite și legătura cu fapta‑sursă; pentru tăinuire - lipsa disimulării; pentru bancrută/abuz - existența reală a insolvenței și a scopului fraudulos.</p>
             <h3 className="text-xl font-semibold">3. Gestionarea măsurilor asigurătorii</h3>
             <p>Atac proporționalitatea și obiectul sechestrului, oferind documentația patrimonială necesară; legea permite ridicarea/restrângerea când activitatea economică e paralizată. Noua procedură (Legea 70/2025) conferă părții civile un rol activ și drepturi de contestație.</p>
             <h3 className="text-xl font-semibold">4. Litigiul probelor și excepțiile procedurale</h3>

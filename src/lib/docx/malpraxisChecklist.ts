@@ -269,7 +269,7 @@ export async function generateMalpraxisChecklistDocx(): Promise<Blob> {
           // C. Bune practici
           ...box("C. Formatare & bune practici (ambele părți)", [
             bullet(
-              "Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic (\"2025-08-10 – externare.pdf\")."
+              "Folosește PDF clare, scanate la min. 300 dpi; denumește fișierele cronologic (\"2025-08-10 - externare.pdf\")."
             ),
             bullet("Nu trimiți originale; aduci originalele doar la solicitarea expresă."),
             bullet("Pune un index al probelor și numerotează paginile."),
