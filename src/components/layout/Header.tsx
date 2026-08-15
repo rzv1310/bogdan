@@ -59,7 +59,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed md:sticky top-0 left-0 w-full z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b transition-transform duration-300 ${scrolled ? "translate-y-0" : "-translate-y-full"} md:translate-y-0`}>
+    <header className={`fixed md:sticky top-0 left-0 w-full z-20 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b transition-transform duration-300 ${isHomepage ? (scrolled ? "translate-y-0" : "-translate-y-full") : "translate-y-0"} md:translate-y-0`}>
       <nav className="relative mx-auto max-w-6xl px-4 md:px-6 h-16 flex items-center justify-between">
         <Link to={mapPathToLang("/", lang)} className="flex flex-col items-center leading-none text-center select-none">
           <span className="block ml-1 font-inter font-light text-[10px] md:text-xs uppercase tracking-wide text-muted-foreground">
