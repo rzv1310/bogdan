@@ -145,6 +145,46 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/audiere-politie-parchet</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/audiere-politie-parchet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/police-prosecutor-questioning" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/audiere-politie-parchet" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/perchezitie-domiciliara</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-domiciliara" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/home-search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-domiciliara" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/perchezitie-informatica</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-informatica" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/computer-search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-informatica" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/avocat-diicot</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/avocat-diicot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/diicot-lawyer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/avocat-diicot" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/avocat-dna</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/dna-lawyer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://avocatpenalbucuresti.ro/harta-site</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/harta-site" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/sitemap" />
@@ -351,5 +391,45 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/reprezentarea-victimelor-in-procese-penale" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/police-prosecutor-questioning</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/audiere-politie-parchet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/police-prosecutor-questioning" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/audiere-politie-parchet" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/home-search</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-domiciliara" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/home-search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-domiciliara" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/computer-search</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-informatica" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/computer-search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/perchezitie-informatica" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/diicot-lawyer</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/avocat-diicot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/diicot-lawyer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/avocat-diicot" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/dna-lawyer</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/dna-lawyer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
