@@ -87,7 +87,7 @@ export default function WorkplaceLiabilityEn() {
         <ServiceHeroCta lang="en" ariaLabel="Call now" />
 
         <p className="mt-3 text-sm text-muted-foreground">
-          <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
+          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
         <ServiceSubServices path="/en/services/workplace-criminal-liability" lang="en" />
 

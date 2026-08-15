@@ -191,7 +191,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span>{" "}
-        {isEn ? "5.0 from 27 Google reviews" : "5,0 din 27 de recenzii Google"}
+        {isEn ? "5.0 ★★★★★ from 27 Google reviews" : "5,0 ★★★★★ din 27 de recenzii Google"}
       </p>
 
       <div className="mt-6 flex items-center gap-4">
