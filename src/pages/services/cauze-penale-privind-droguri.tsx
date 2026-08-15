@@ -116,23 +116,38 @@ export default function CauzeDroguri() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <h1 className="text-2xl font-semibold">
+      <h1 className="text-2xl font-semibold mb-4">
         Avocat Trafic Droguri București - Experiența mea în apărarea clienților în dosare DIICOT
       </h1>
-      <p className="mt-2 text-muted-foreground">
-        de Bogdan Lamatic, avocat specializat în drept penal și white-collar crime
-      </p>
 
-      <div className="mt-4">
-        <a href="tel:+40316320183" aria-label="Apelează acum">
-          <Button size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none bg-accent text-accent-foreground hover:opacity-90">
-            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-            Apelează acum: +40 (31) 632 01 83
-          </Button>
-        </a>
+      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          <strong>În dosarele de droguri, primele ore după reținere sunt decisive.</strong> Fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
+        </p>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat cauze penale privind droguri">
+          <a href="tel:+40316320183">
+            <Phone className="mr-2 h-4 w-4" /> Sună acum
+          </a>
+        </Button>
+      </div>
+
+      <p className="mt-3 text-sm text-muted-foreground">
+        <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google
+      </p>
+
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații DIICOT până la procese în fața Înaltei Curți de Casație și Justiție.
+        </p>
+        <p>
+          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) 2021-2024 și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+        </p>
+      </div>
+
+      <div className="mt-6">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -149,6 +164,7 @@ export default function CauzeDroguri() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
+
 
       {/* H2: Introducere */}
       <Card className="mt-8 border-accent">
