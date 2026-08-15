@@ -1,6 +1,7 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
@@ -82,13 +83,7 @@ export default function FinancialCrimeEn() {
             <span className="block"><strong>In economic crime cases, the first hours matter most.</strong></span>
             <span className="block">Documents handed over, statements given and accounts frozen at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with seizures and reputational damage.</span>
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40316320183" aria-label="Call now">
-                <Phone className="mr-2" /> Call now
-              </a>
-            </Button>
-          </div>
+          <ServiceHeroCta lang="en" ariaLabel="Call now" />
           <p className="mt-3 text-sm text-muted-foreground">
             <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews
           </p>

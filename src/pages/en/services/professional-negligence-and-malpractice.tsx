@@ -1,6 +1,7 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
@@ -111,13 +112,7 @@ export default function MalpracticeEn() {
           </p>
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call now for malpractice advice">
-            <a href="tel:+40316320183">
-              <Phone className="mr-2 h-4 w-4" /> Call now
-            </a>
-          </Button>
-        </div>
+        <ServiceHeroCta lang="en" ariaLabel="Call now for malpractice advice" />
 
         <p className="mt-3 text-sm text-muted-foreground">
           <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews

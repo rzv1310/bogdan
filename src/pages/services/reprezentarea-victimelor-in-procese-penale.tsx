@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 export default function ReprezentareaVictimelor() {
   useSEO({
     keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
@@ -21,8 +22,6 @@ export default function ReprezentareaVictimelor() {
   return (
     <>
       {/* JSON-LD Structured Data */}
-      {(
-        <>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -133,8 +132,6 @@ export default function ReprezentareaVictimelor() {
 }),
         }}
       />
-        </>
-      )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <h1 className="text-2xl font-semibold mb-4">
         Avocat victime infracțiuni București - Bogdan Lamatic
@@ -147,13 +144,7 @@ export default function ReprezentareaVictimelor() {
         </p>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Sună acum - avocat victime infracțiuni">
-          <a href="tel:+40316320183">
-            <Phone className="mr-2 h-4 w-4" /> Sună acum
-          </a>
-        </Button>
-      </div>
+      <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat victime infracțiuni" />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5,0 din 27 de recenzii Google

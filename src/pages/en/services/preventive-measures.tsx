@@ -4,6 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
@@ -55,7 +56,7 @@ const FAQ = [
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
-function CallCta({ label = "Call now" }: { label?: string }) {
+function CallCta({ label = "Call now!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - preventive measures lawyer`}>
@@ -138,7 +139,7 @@ export default function PreventiveMeasuresEn() {
         </p>
       </div>
 
-      <CallCta />
+      <ServiceHeroCta lang="en" ariaLabel="Call now! - preventive measures lawyer" />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span> 5.0 out of 27 Google reviews

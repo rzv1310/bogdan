@@ -6,6 +6,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
+import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 export interface SubServiceSection {
   h2: string;
@@ -62,6 +63,7 @@ const SITE = "https://avocatpenalbucuresti.ro";
 export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const isEn = data.lang === "en";
   const callLabel = isEn ? "Call now" : "Sună-mă acum";
+  const heroCallLabel = isEn ? "Call now!" : "Sună-mă acum!";
   const pageUrl = SITE + data.path;
 
   useSEO({
@@ -152,7 +154,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </p>
       </div>
 
-      <CallCta />
+      <ServiceHeroCta lang={data.lang} ariaLabel={`${heroCallLabel} - ${data.serviceName}`} />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span>{" "}
