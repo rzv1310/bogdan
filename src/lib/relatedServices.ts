@@ -77,7 +77,7 @@ const extraLabelsRo: Record<string, string> = {
 };
 
 const extraLabelsEn: Record<string, string> = {
-  "/calculator-despagubiri": "Compensation calculator",
+  "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
 };
