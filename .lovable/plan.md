@@ -52,7 +52,7 @@ Fără secțiunea „urgent” (nu există pagini EN pentru urmărire penală / 
 ## SEO
 
 - RO: title „Servicii avocat penal București - av. Bogdan Lamatic”, meta description dedicată, keywords: `servicii avocat penal`
-- EN: title și description în engleză, keywords: `criminal defense lawyer bucharest, criminal law services romania`
+- EN: title și description în engleză, keywords: `criminal law services romania`
 - Canonical + hreflang încrucișat RO/EN (self + x-default), prin `useSEO`
 - JSON-LD: `BreadcrumbList` (Acasă > Servicii), `CollectionPage`/`ItemList` cu toate serviciile listate, plus `LegalService` + `areaServed` din `src/lib/areaServed.ts`, cu aceleași @id-uri ca restul site-ului
 - Fără em dash (regula existentă `no-em-dash` din validarea de build)
