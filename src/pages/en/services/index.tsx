@@ -132,7 +132,7 @@ export default function EnServicesPage() {
               </h2>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {group.cards.map((card) => (
-                  <GlowCard key={card.to} customSize borderPx={1} blackBg borderRunner runnerSpeedFactor={2} noShadow className="w-full h-full">
+                  <GlowCard key={card.to} customSize borderPx={1} blackBg borderRunner noShadow className="w-full h-full">
                     <article className="flex flex-col h-full text-hero-foreground">
                       <h3 className="text-lg font-semibold leading-snug mb-3">
                         <Link to={card.to} className="hover:text-accent hover:underline underline-offset-2">
