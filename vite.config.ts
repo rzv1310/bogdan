@@ -33,6 +33,10 @@ export default defineConfig(({ mode }) => ({
           if (!id.includes("node_modules")) return;
           if (/[\\/]node_modules[\\/](react|react-dom|scheduler|react-router|react-router-dom)[\\/]/.test(id))
             return "react-vendor";
+          // Tiny shared utilities used by every page: keep them next to React
+          // so they never end up inside a heavy lazy chunk.
+          if (/[\\/]node_modules[\\/](clsx|tailwind-merge|class-variance-authority)[\\/]/.test(id))
+            return "react-vendor";
           if (id.includes("@react-pdf") || id.includes("pdfkit") || id.includes("fontkit")) return "pdf";
           if (id.includes("/docx/")) return "docx";
           if (/[\\/]node_modules[\\/](recharts|victory-vendor|react-smooth|d3-[a-z-]+|decimal\.js-light)[\\/]/.test(id))
