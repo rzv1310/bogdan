@@ -158,7 +158,24 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+      <Breadcrumb className="mb-4">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <h1 className="text-2xl font-semibold mb-4">{data.h1}</h1>
+
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p className="text-foreground">
