@@ -75,6 +75,7 @@ export default function CalculatorDespagubiri() {
     description: "Pagină calcul despăgubiri - în curând.",
     canonical: "/calculator-despagubiri",
     locale: "ro_RO",
+    alternates: { ro: "/calculator-despagubiri", en: "/en/compensation-calculator", xDefault: "/calculator-despagubiri" },
   });
 
   const [eventType, setEventType] = useState("accident"); // accident | agresiune | altul
