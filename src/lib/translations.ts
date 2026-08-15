@@ -33,7 +33,7 @@ export const translations = {
     values: ["implicare totală.", "respect.", "discreție absolută."],
     reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: [
-      "experiență dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
+      "experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
       "apărare rapidă și eficientă, de la audieri până la instanță.",
       "disponibilitate 16 ore pe zi.",
     ],
@@ -119,7 +119,7 @@ export const translations = {
     values: ["total commitment.", "respect.", "absolute discretion."],
     reasonsTitle: "Why work with me",
     reasons: [
-      "proven track record of acquittals and sentence reductions in complex criminal cases.",
+      "proven track record of over 18 years in acquittals and sentence reductions in complex criminal cases.",
       "swift and effective defense, from hearings to trial.",
       "availability 16 hours a day.",
     ],
