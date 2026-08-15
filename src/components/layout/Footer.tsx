@@ -107,10 +107,14 @@ export default function Footer() {
 
           {/* Col 2: Servicii */}
           <nav aria-labelledby="footer-services">
-            <h2 id="footer-services" className="text-sm font-semibold tracking-wide uppercase">
+            <AccordionHeading
+              id="footer-services"
+              isOpen={open.services}
+              onClick={() => toggle("services")}
+            >
               {lang === "en" ? "Criminal Defense Attorney Services" : "Arii de practică"}
-            </h2>
-            <ul className="mt-4 space-y-2 text-sm">
+            </AccordionHeading>
+            <ul className={`mt-4 space-y-2 text-sm ${isMobile && !open.services ? "hidden" : "block"}`}>
               <li>
                 <Link to={lang === "en" ? "/en/services" : "/servicii"} className="hover:underline font-medium">
                   {lang === "en" ? "All services" : "Toate serviciile"}
