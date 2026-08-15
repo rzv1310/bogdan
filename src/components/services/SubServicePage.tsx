@@ -10,7 +10,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 export interface SubServiceSection {
   h2: string;
-  paragraphs?: (string | { text: string; bold?: boolean })[];
+  paragraphs?: (string | { text: string; bold?: boolean }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
