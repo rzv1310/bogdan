@@ -125,6 +125,26 @@ export const roServiceGroups: ServiceGroup[] = [
 
 export const enServiceGroups: ServiceGroup[] = [
   {
+    id: "urgent",
+    title: "Do you urgently need a lawyer?",
+    cards: [
+      {
+        title: "Questioning and criminal investigation",
+        description: "Immediate legal assistance during the criminal investigation phase, from questioning and searches to challenging measures.",
+        subServices: ["Police questioning", "Prosecutor's office questioning", "Search", "DIICOT lawyer"],
+        to: "/en/services/criminal-investigation",
+        cta: "See all criminal investigation services",
+      },
+      {
+        title: "Detention, arrest and preventive measures",
+        description: "Rapid intervention in detention, judicial control, house arrest and pre-trial detention.",
+        subServices: ["24-hour detention", "Pre-trial detention", "Judicial control", "House arrest"],
+        to: "/en/services/preventive-measures",
+        cta: "See all preventive measures services",
+      },
+    ],
+  },
+  {
     id: "economic",
     title: "Economic crime and complex cases",
     cards: [
@@ -175,6 +195,13 @@ export const enServiceGroups: ServiceGroup[] = [
         subServices: ["Drunk driving", "Drug driving", "Hit-and-run", "Refusal of tests", "Accident with victims"],
         to: "/en/services/road-traffic-offenses",
         cta: "See all road traffic offense services",
+      },
+      {
+        title: "Offenses against persons",
+        description: "Defense in cases of assault, bodily harm, domestic violence, threats, blackmail, harassment and unlawful deprivation of liberty.",
+        subServices: ["Assault and other violence", "Bodily harm", "Domestic violence", "Threats and blackmail"],
+        to: "/en/services/offenses-against-persons",
+        cta: "See all services on offenses against persons",
       },
       {
         title: "Professional negligence and malpractice",
