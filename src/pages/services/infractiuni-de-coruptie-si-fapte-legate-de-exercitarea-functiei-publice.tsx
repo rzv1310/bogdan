@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import MitaBarChart from "@/components/charts/MitaBarChart";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function CoruptieSiFunctiePublica() {
   useSEO({
     keywords: "avocat coruptie bucuresti",
@@ -438,6 +439,8 @@ export default function CoruptieSiFunctiePublica() {
       <div className="mt-8">
         <MitaBarChart />
       </div>
+        <RelatedServices current="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" />
+
       </section>
     </>
   );

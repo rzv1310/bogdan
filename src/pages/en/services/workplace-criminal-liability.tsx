@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function WorkplaceLiabilityEn() {
   useSEO({
     keywords: "workplace accident lawyer romania, employer criminal liability, occupational safety defense",
@@ -453,6 +454,8 @@ export default function WorkplaceLiabilityEn() {
             </p>
           </CardContent>
         </Card>
+        <RelatedServices current="/en/services/workplace-criminal-liability" lang="en" />
+
       </section>
     </>
   );

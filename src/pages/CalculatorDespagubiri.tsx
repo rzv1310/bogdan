@@ -28,6 +28,7 @@ import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/comp
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
+import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
   new Intl.NumberFormat("ro-RO", {
@@ -601,7 +602,8 @@ export default function CalculatorDespagubiri() {
               <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
             </a>
           </Button>
-        </section>
+              <ServicesQuickLinks />
+</section>
       </main>
     </div>
   );

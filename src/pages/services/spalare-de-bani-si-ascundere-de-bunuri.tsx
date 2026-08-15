@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useSEO } from "@/hooks/useSEO";
 import { Phone, Mail } from "lucide-react";
 
+import RelatedServices from "@/components/RelatedServices";
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
@@ -140,6 +141,8 @@ export default function SpalareDeBani() {
           <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
             În calitate de avocat în Baroul București, specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
           </p>
+          <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
+
         </section>
 
         <CallCta />

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function InfractiuniRutiere() {
   useSEO({
     keywords: "avocat accidente rutiere bucuresti, avocat infractiuni rutiere",
@@ -382,6 +383,8 @@ export default function InfractiuniRutiere() {
       </Card>
 
       <RoadAccidentsChart />
+        <RelatedServices current="/servicii/infractiuni-rutiere-cu-victime" />
+
       </section>
     </>
   );

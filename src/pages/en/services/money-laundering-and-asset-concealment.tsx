@@ -4,6 +4,7 @@ import { Phone, Mail } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function MoneyLaunderingEn() {
   useSEO({
     keywords: "money laundering lawyer romania, asset concealment defense, aml defense attorney",
@@ -136,6 +137,8 @@ export default function MoneyLaunderingEn() {
               As a lawyer with the Bucharest Bar, specialized in money laundering and asset concealment, I share key landmarks to navigate the current legislation and prepare your defense.
             </p>
           </div>
+          <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
+
         </section>
 
         {/* What constitutes money laundering */}

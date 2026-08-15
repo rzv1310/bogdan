@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
+import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 
 export default function About() {
   const { lang } = useLanguage();
@@ -444,6 +445,7 @@ export default function About() {
           </section>
         </main>
       )}
+      <ServicesQuickLinks lang={lang === "en" ? "en" : "ro"} />
     </section>
   );
 }

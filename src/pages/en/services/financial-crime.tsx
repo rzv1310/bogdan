@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function FinancialCrimeEn() {
   useSEO({
     keywords: "financial crime lawyer romania, tax evasion defense attorney, fraud lawyer bucharest",
@@ -117,6 +118,8 @@ export default function FinancialCrimeEn() {
             Whether you are under investigation, indicted, or a victim in an economic crime case, my goal is to secure a
             solid, discreet, and result-oriented outcome.
           </p>
+          <RelatedServices current="/en/services/financial-crime" lang="en" />
+
         </section>
 
         {/* What cases I handle */}

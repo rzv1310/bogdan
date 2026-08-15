@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 export default function Blog() {
   useSEO({
     keywords: "blog drept penal, articole juridice penale, noutati drept penal",
@@ -45,6 +46,7 @@ export default function Blog() {
           </Card>
         </article>
       </div>
-    </section>
+          <ServicesQuickLinks />
+</section>
   );
 }

@@ -5,6 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import MitaBarChart from "@/components/charts/MitaBarChart";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function CorruptionPublicOfficeEn() {
   useSEO({
     keywords: "bribery lawyer romania, corruption defense attorney, public office offenses lawyer",
@@ -223,6 +224,8 @@ export default function CorruptionPublicOfficeEn() {
         }}
       />
         </div>
+        <RelatedServices current="/en/services/corruption-and-public-office-offenses" lang="en" />
+
       </section>
     </>
   );

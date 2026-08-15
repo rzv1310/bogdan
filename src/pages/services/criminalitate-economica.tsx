@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import EconomicCrimesChart from "@/components/charts/EconomicCrimesChart";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function CriminalitateEconomica() {
   useSEO({
     keywords: "avocat criminalitate economica, avocat evaziune fiscala bucuresti, avocat frauda financiara",
@@ -1666,6 +1667,8 @@ export default function CriminalitateEconomica() {
         <EconomicCrimesChart />
 
       </div>
+        <RelatedServices current="/servicii/criminalitate-economica" />
+
       </section>
     </>
   );

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Calculator } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function ReprezentareaVictimelor() {
   useSEO({
     keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
@@ -382,6 +383,8 @@ export default function ReprezentareaVictimelor() {
           </ul>
         </CardContent>
       </Card>
+        <RelatedServices current="/servicii/reprezentarea-victimelor-in-procese-penale" />
+
       </section>
     </>
   );

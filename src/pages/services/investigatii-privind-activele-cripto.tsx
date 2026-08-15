@@ -9,6 +9,7 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { isPrerender } from "@/lib/ssr-head";
 import AnafCryptoChecklist from "@/components/pdf/AnafCryptoChecklist";
 
+import RelatedServices from "@/components/RelatedServices";
 export default function InvestigatiiCripto() {
   useSEO({
     keywords: "avocat crypto, avocat criptomonede, investigatii blockchain",
@@ -484,6 +485,8 @@ export default function InvestigatiiCripto() {
             )}
           </CardContent>
         </Card>
+        <RelatedServices current="/servicii/investigatii-privind-activele-cripto" />
+
       </section>
 
       </main>
