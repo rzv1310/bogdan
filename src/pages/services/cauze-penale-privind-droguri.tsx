@@ -166,28 +166,7 @@ export default function CauzeDroguri() {
       </div>
 
 
-      {/* H2: Introducere */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold">
-            De ce este esențial să acționezi rapid în cazurile de trafic de droguri
-          </h2>
-        </CardHeader>
-        <CardContent className="space-y-4 text-base leading-relaxed">
-          <p>
-            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal,
-            recunoscut de Legal500 cinci ani consecutiv ca Next Generation Partner în domeniul infracțiunilor
-            economice și de corupție.
-          </p>
-          <p>
-            În toată cariera mea, am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații DIICOT până la procese în fața Înaltei Curți de Casație și Justiție.
-          </p>
-          <p>Știu din practică un adevăr simplu: primele ore după reținere sunt decisive.</p>
-          <p>
-            În astfel de dosare, fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.
-          </p>
-        </CardContent>
-      </Card>
+
 
       {/* H2: Ce înseamnă traficul de droguri */}
       <Card className="mt-8 border-accent">
