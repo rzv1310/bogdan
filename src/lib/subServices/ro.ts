@@ -233,22 +233,6 @@ export const perchezitieInformaticaRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce este o percheziție informatică",
-      paragraphs: [
-        "Codul de procedură penală definește percheziția informatică drept procedeul prin care sunt cercetate, descoperite, identificate și strânse probe stocate într-un sistem informatic sau pe un suport de stocare, prin mijloace tehnice și proceduri care trebuie să asigure integritatea informațiilor.",
-        "În cursul urmăririi penale, percheziția informatică este dispusă de judecătorul de drepturi și libertăți, la cererea procurorului, atunci când sunt îndeplinite condițiile prevăzute de art. 168 CPP.",
-        "Această procedură poate viza, de exemplu:",
-      ],
-      bullets: [
-        "telefoane;",
-        "laptopuri și calculatoare;",
-        "hard disk-uri;",
-        "stick-uri USB;",
-        "servere;",
-        "alte suporturi care conțin date informatice.",
-      ],
-    },
-    {
       h2: "Ce fac pentru tine",
       bullets: [
         "Analizez mandatul de percheziție informatică, inclusiv sistemul sau suportul vizat și scopul pentru care a fost autorizată procedura.",
@@ -263,7 +247,7 @@ export const perchezitieInformaticaRo: SubServicePageData = {
       paragraphs: [
         "Codul prevede că percheziția informatică este efectuată de un specialist, în prezența procurorului sau a organului de cercetare penală, iar atunci când persoana are calitatea de suspect sau inculpat, art. 168 prevede efectuarea percheziției în prezența acesteia, cu aplicarea regulilor indicate de text.",
       ],
-      cta: "Discută cu avocatul",
+      cta: "Mi-au ridicat telefonul - vreau o evaluare",
     },
     {
       h2: "Situații în care mă poți contacta",
@@ -288,6 +272,22 @@ export const perchezitieInformaticaRo: SubServicePageData = {
       ],
       paragraphs: [
         "Această documentare este importantă atunci când analizăm ulterior ce s-a făcut efectiv și dacă operațiunile au rămas în limitele procedurale aplicabile.",
+      ],
+    },
+    {
+      h2: "Ce este o percheziție informatică",
+      paragraphs: [
+        "Codul de procedură penală definește percheziția informatică drept procedeul prin care sunt cercetate, descoperite, identificate și strânse probe stocate într-un sistem informatic sau pe un suport de stocare, prin mijloace tehnice și proceduri care trebuie să asigure integritatea informațiilor.",
+        "În cursul urmăririi penale, percheziția informatică este dispusă de judecătorul de drepturi și libertăți, la cererea procurorului, atunci când sunt îndeplinite condițiile prevăzute de art. 168 CPP.",
+        "Această procedură poate viza, de exemplu:",
+      ],
+      bullets: [
+        "telefoane;",
+        "laptopuri și calculatoare;",
+        "hard disk-uri;",
+        "stick-uri USB;",
+        "servere;",
+        "alte suporturi care conțin date informatice.",
       ],
     },
   ],
