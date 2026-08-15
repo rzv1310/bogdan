@@ -154,7 +154,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </p>
       </div>
 
-      <CallCta />
+      <ServiceHeroCta lang={data.lang} ariaLabel={`${heroCallLabel} - ${data.serviceName}`} />
 
       <p className="mt-3 text-sm text-muted-foreground">
         <span className="text-yellow-400" aria-hidden="true">★★★★★</span>{" "}
