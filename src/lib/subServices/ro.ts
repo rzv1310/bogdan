@@ -897,7 +897,6 @@ export const arestPreventivRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.",
       ],
-      cta: "Urmează propunerea de arestare - Sună-mă acum",
     },
     {
       h2: "Ce trebuie să-mi spui când mă suni",
@@ -908,7 +907,8 @@ export const arestPreventivRo: SubServicePageData = {
         "ce Parchet sau instanță are dosarul?",
         "ai încheierea, citația sau alte acte?",
       ],
-      paragraphsAfterBullets: [[{ text: "Nu ai toate actele? Sună oricum.", bold: true }]],
+      calloutAfterBullets: "Nu ai toate actele?",
+      calloutAfterBulletsCta: "Sună oricum.",
       ctaWhatsApp: true,
     },
     {
@@ -1032,14 +1032,6 @@ export const arestPreventivRo: SubServicePageData = {
       a: "Da. Judecătorul de drepturi și libertăți poate respinge propunerea procurorului dacă nu sunt îndeplinite condițiile prevăzute de art. 202 și art. 223 CPP sau dacă măsura nu este proporțională, și poate dispune, după caz, o măsură mai puțin severă. Nicio soluție nu poate fi garantată.",
     },
     {
-      q: "Poate fi dispus control judiciar în locul arestării preventive?",
-      a: "Da, atunci când riscurile procesuale invocate pot fi controlate prin obligațiile specifice controlului judiciar. Este una dintre soluțiile pe care apărarea le poate susține la termenul pentru propunerea de arestare sau ulterior, printr-o cerere de înlocuire.",
-    },
-    {
-      q: "Poate fi dispus arest la domiciliu în locul arestării preventive?",
-      a: "Da. Arestul la domiciliu este o măsură privativă de libertate mai puțin severă și poate fi dispus sau obținut prin înlocuire, în condițiile art. 242 CPP, dacă este suficient pentru scopul procesual.",
-    },
-    {
       q: "Cât durează soluționarea contestației?",
       a: "Contestațiile în materia măsurilor preventive se soluționează cu celeritate, în termenele scurte prevăzute de art. 204-206 CPP. Durata concretă depinde de instanță și de etapa procesuală, dar aceste cauze au regim de urgență.",
     },
@@ -1054,10 +1046,6 @@ export const arestPreventivRo: SubServicePageData = {
     {
       q: "Când poate fi revocat arestul preventiv?",
       a: "Atunci când au încetat temeiurile care au determinat luarea măsurii sau au apărut împrejurări noi din care rezultă că măsura nu mai este legală ori necesară, în condițiile art. 242 CPP.",
-    },
-    {
-      q: "Care este diferența dintre revocare și înlocuire?",
-      a: "Revocarea urmărește încetarea măsurii preventive și punerea în libertate. Înlocuirea păstrează o măsură preventivă, dar una mai puțin severă, cum sunt arestul la domiciliu sau controlul judiciar.",
     },
     {
       q: "Cine poate dispune arestarea preventivă?",
