@@ -261,7 +261,6 @@ export default function UrmarirePenala() {
           <p>
             <strong>Ai aflat că ești vizat într-un dosar penal, dar nu ai fost încă citat oficial.</strong> Nu aștepta citația. O evaluare preventivă a situației tale îmi permite să pregătesc apărarea din timp, nu în ultimul moment.
           </p>
-          <CallCta />
         </CardContent>
       </Card>
 
@@ -280,7 +279,7 @@ export default function UrmarirePenala() {
           <p>
             <strong>Sunt disponibil aproape non-stop.</strong> Situațiile de urmărire penală nu respectă un program de birou, de aceea pot fi contactat de la ora 6 dimineața până seara târziu, inclusiv în weekend.
           </p>
-          <CallCta label="Vreau avocat!" />
+          <CallCta />
         </CardContent>
       </Card>
 
@@ -301,7 +300,6 @@ export default function UrmarirePenala() {
           <p>
             Ca avocat de urmărire penală, intervin din prima etapă pentru a-ți proteja drepturile, a verifica legalitatea probelor și a construi o strategie coerentă înainte ca dosarul să avanseze.
           </p>
-          <CallCta label="Vreau avocat!" />
         </CardContent>
       </Card>
 
