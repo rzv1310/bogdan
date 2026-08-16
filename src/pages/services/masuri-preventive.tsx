@@ -213,53 +213,29 @@ export default function MasuriPreventive() {
         <p className="mt-1 text-base leading-relaxed text-foreground">Nu ești preluat și apoi trimis automat la alt avocat. Mă ocup personal de strategie și de momentele esențiale ale mandatului.</p>
       </div>
 
-      {/* Ce fac imediat după ce mă contactezi - 4 pași vizuali */}
+      {/* Ce fac imediat după ce mă contactezi - 4 pași */}
       <Card className="mt-12 md:mt-16 border-accent">
         <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce fac imediat după ce mă contactezi</h2>
         </CardHeader>
         <CardContent className="pb-5">
-          <p className="text-base leading-relaxed text-muted-foreground mb-5">
+          <p className="text-base leading-relaxed text-black mb-5">
             Nu trebuie să cunoști Codul de procedură penală. Spune-mi ce s-a întâmplat.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">1</span>
-                <h3 className="text-base font-semibold leading-tight">Clarific situația</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Ce s-a întâmplat, unde este persoana, ce termen urmează.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">2</span>
-                <h3 className="text-base font-semibold leading-tight">Verific actele</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Ordonanță, încheiere, citație și documentele disponibile.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">3</span>
-                <h3 className="text-base font-semibold leading-tight">Evaluez riscul</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Ce măsură poate fi dispusă și ce argumente există.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">4</span>
-                <h3 className="text-base font-semibold leading-tight">Pregătesc apărarea</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Contestare, respingere, revocare sau măsură mai ușoară.
-              </p>
-            </div>
-          </div>
+          <ol className="list-decimal pl-5 space-y-3 text-black">
+            <li>
+              <strong>Clarific situația</strong> – ce s-a întâmplat, unde este persoana, ce termen urmează.
+            </li>
+            <li>
+              <strong>Verific actele</strong> – ordonanță, încheiere, citație și documentele disponibile.
+            </li>
+            <li>
+              <strong>Evaluez riscul</strong> – ce măsură poate fi dispusă și ce argumente există.
+            </li>
+            <li>
+              <strong>Pregătesc apărarea</strong> – contestare, respingere, revocare sau măsură mai ușoară.
+            </li>
+          </ol>
           <CallCta label="Sună acum - 031 632 01 83" />
         </CardContent>
       </Card>
