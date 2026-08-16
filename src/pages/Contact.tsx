@@ -219,7 +219,7 @@ export default function Contact() {
         <span className="text-sm md:text-base font-medium">Sună-mă acum:</span>
         <div className="h-5"></div>
         <a href="tel:+40316320183" aria-label="Sună-mă acum">
-          <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white border border-white">
+          <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black border border-white">
             <Phone /> +40 (31) 632 01 83
           </Button>
         </a>
