@@ -640,17 +640,15 @@ export const retinere24OreRo: SubServicePageData = {
     {
       h2: "Ce fac pentru tine în cazul reținerii",
       bullets: [
-        "Ofer consultanță juridică imediată, în raport cu informațiile disponibile.",
-        "Te asist la audieri și pregătesc împreună cu tine poziția procesuală.",
-        "Analizez situația procesuală și documentele la care apărarea are acces.",
-        "Verific legalitatea măsurii și modul în care sunt consemnate declarațiile.",
-        "Pregătesc apărarea pentru eventuala propunere de arestare preventivă, control judiciar sau arest la domiciliu.",
-        "Comunic cu familia, în limitele mandatului și ale confidențialității.",
+        "Intervin înainte de următoarea audiere.",
+        "Verific legalitatea reținerii și actele disponibile.",
+        "Stabilesc dacă și ce declarație este oportună procedural.",
+        "Pregătesc din timp apărarea dacă urmează o propunere de arestare.",
       ],
       paragraphs: [
         "Un aspect important este anticiparea pasului următor. Dacă există riscul unei propuneri de arestare preventivă, apărarea trebuie pregătită înainte de termenul respectiv, nu după pronunțarea soluției.",
       ],
-      cta: "A fost dispusă reținerea - Sună-mă acum",
+      cta: "A fost dispusă reținerea? - Sună-mă acum!",
     },
     {
       h2: "Ce îmi spui când mă contactezi pentru o reținere",
