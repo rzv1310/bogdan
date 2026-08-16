@@ -1,4 +1,6 @@
-« 
+# Netlify serves the no-trailing-slash form by default (pretty URLs), so no
+# explicit trailing-slash redirect is needed here.
+
 
 # SPA fallback for client-side routes. Real 404s are served by dist/404.html
 # with a 404 status because this rewrite only applies when no file matches
