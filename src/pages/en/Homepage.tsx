@@ -312,7 +312,7 @@ const HomepageEN = () => {
               "@type": "AggregateRating",
               "ratingValue": "5",
               "bestRating": "5",
-              "reviewCount": "10"
+              "reviewCount": "28"
             },
             "review": currentReviews.slice(0, 5).map((review, index) => ({
               "@type": "Review",
