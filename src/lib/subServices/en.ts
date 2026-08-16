@@ -782,8 +782,8 @@ export const houseArrestEn: SubServicePageData = {
       paragraphs: [
         [
           { text: "House arrest is one of the " },
-          { text: "preventive measures", to: "/en/services/preventive-measures" },
-          { text: " involving deprivation of liberty." },
+          { text: "preventive measures involving deprivation of liberty", to: "/en/services/preventive-measures" },
+          { text: "." },
         ],
         "During the criminal investigation it can be ordered for no more than 30 days, with the possibility of extension under the conditions of the law, and the maximum duration in this phase is 180 days.",
         "The person must remain in the premises where the measure is executed and comply with the obligations imposed, with the exceptions permitted by law or approved by the competent judicial body.",
