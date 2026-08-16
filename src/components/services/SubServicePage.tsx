@@ -8,6 +8,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 
 export interface SubServiceSection {
   h2: string;
