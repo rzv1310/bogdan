@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CTA_CLASS } from "@/lib/cta";
+import { HERO_CTA_CLASS } from "@/lib/cta";
 
 interface ServiceHeroCtaProps {
   lang: "ro" | "en";
