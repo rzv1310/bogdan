@@ -42,6 +42,8 @@ export interface SubServiceSection {
   callout?: string;
   /** Optional extra className for the callout paragraph. */
   calloutClassName?: string;
+  /** Optional inline CTA button rendered inside the callout. */
+  calloutCta?: string;
   /** Optional extra className applied to the section Card. */
   cardClassName?: string;
   /** Optional subsections rendered as h3 blocks inside the section. */
