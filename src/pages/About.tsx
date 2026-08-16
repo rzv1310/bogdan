@@ -175,9 +175,9 @@ export default function About() {
 
 
   return (
-    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8 flex flex-col">
       <p className="sr-only">{lang === "en" ? "About me" : t.nav.about}</p>
-      <Breadcrumb>
+      <Breadcrumb className="order-last mt-5 md:order-first md:mt-0">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">{lang === "en" ? "Home" : "Acasă"}</BreadcrumbLink>

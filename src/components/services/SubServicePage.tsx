@@ -337,43 +337,44 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <Breadcrumb className="mb-4 mt-3 md:mt-0">
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href={data.parent.to}>{data.parent.breadcrumbLabel}</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+      <div className="flex flex-col">
+        <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href={data.parent.to}>{data.parent.breadcrumbLabel}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
 
-      <h1 className="text-2xl font-semibold mb-4">{data.h1}</h1>
+        <h1 className="text-2xl font-semibold mb-4">{data.h1}</h1>
 
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            {data.urgency.map((line, index) => (
+              <span className="block" key={line}>
+                {index === 0 ? <strong>{line}</strong> : line}
+              </span>
+            ))}
+          </p>
+        </div>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          {data.urgency.map((line, index) => (
-            <span className="block" key={line}>
-              {index === 0 ? <strong>{line}</strong> : line}
-            </span>
-          ))}
-        </p>
+        <ServiceHeroCta lang={data.lang} ariaLabel={`${heroCallLabel} - ${data.serviceName}`} />
+
+        <LawyerBioBlock path={data.path} lang={data.lang} />
       </div>
 
-      <ServiceHeroCta lang={data.lang} ariaLabel={`${heroCallLabel} - ${data.serviceName}`} />
-
-
-      <LawyerBioBlock path={data.path} lang={data.lang} />
 
       {data.sections.map((section, sectionIndex) => (
         <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent ${section.cardClassName ?? ""}`} key={section.h2}>

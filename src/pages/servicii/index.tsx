@@ -96,7 +96,8 @@ export default function ServiciiPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-14">
-        <Breadcrumb className="mb-6">
+        <div className="flex flex-col">
+        <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
@@ -119,6 +120,7 @@ export default function ServiciiPage() {
             <CallCta />
           </div>
         </section>
+        </div>
 
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">

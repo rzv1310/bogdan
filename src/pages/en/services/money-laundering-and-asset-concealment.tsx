@@ -97,7 +97,8 @@ export default function MoneyLaunderingEn() {
 
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
         <header className="mb-4">
-          <Breadcrumb className="mb-4">
+      <div className="flex flex-col">
+          <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink href="/en">Home</BreadcrumbLink>
@@ -131,6 +132,7 @@ export default function MoneyLaunderingEn() {
             </Button>
           </div>
           <LawyerBioBlock path="/en/services/money-laundering-and-asset-concealment" lang="en" />
+      </div>
           <ServiceSubServices path="/en/services/money-laundering-and-asset-concealment" lang="en" />
         </header>
 
