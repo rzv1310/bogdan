@@ -705,7 +705,11 @@ export const judicialControlEn: SubServicePageData = {
       h2: "Judicial control on bail",
       paragraphs: [
         "Judicial control on bail is regulated separately by the Criminal Procedure Code and requires, in addition to the obligations of judicial control, the payment of bail under the conditions set by law.",
-        "In such a situation I analyse, as the case may be, the conditions of the measure, its suitability compared with other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using a non-custodial measure instead of a more severe one, where the legal framework and the facts support that argument.",
+        [
+          { text: "In such a situation I analyse, as the case may be, the conditions of the measure, its suitability compared with other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using " },
+          { text: "a non-custodial measure", to: "/en/services/preventive-measures" },
+          { text: " instead of a more severe one, where the legal framework and the facts support that argument." },
+        ],
       ],
     },
     {
