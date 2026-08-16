@@ -18,6 +18,8 @@ export interface SubServiceSubsection {
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
+  /** When false, hides the phone icon inside the CTA button. Defaults to true. */
+  ctaIcon?: boolean;
   /** Optional small highlighted callout inside the subsection. */
   callout?: string;
   /** Optional extra className for the callout paragraph. */
