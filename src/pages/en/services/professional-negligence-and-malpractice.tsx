@@ -131,9 +131,6 @@ export default function MalpracticeEn() {
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for malpractice advice" />
 
-        <p className="mt-3 text-sm text-muted-foreground">
-          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
-        </p>
         <LawyerBioBlock path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
         <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />

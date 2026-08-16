@@ -90,9 +90,6 @@ export default function DrugOffensesEn() {
 
         <ServiceHeroCta lang="en" ariaLabel="Call now" />
 
-        <p className="mt-3 text-sm text-muted-foreground">
-          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
-        </p>
         <LawyerBioBlock path="/en/services/drug-offenses" lang="en" />
 
         <ServiceSubServices path="/en/services/drug-offenses" lang="en" />
