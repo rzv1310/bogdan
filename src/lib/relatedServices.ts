@@ -75,71 +75,38 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/neglijenta-profesionala-si-malpraxis",
     "/servicii/raspundere-penala-incidente-locul-de-munca",
   ],
-  "/servicii/audiere-politie-parchet": [
-    "/servicii/urmarire-penala",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/perchezitie-domiciliara": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/perchezitie-informatica": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/avocat-diicot": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/avocat-dna": [
-    "/servicii/urmarire-penala",
+};
+
+/**
+ * Sub-service groups: parent pillar page -> its sub-service pages (RO paths).
+ * For sub-service pages the related list is derived automatically as
+ * parent page + sibling sub-services.
+ */
+export const subServiceGroups: Record<string, string[]> = {
+  "/servicii/urmarire-penala": [
     "/servicii/audiere-politie-parchet",
     "/servicii/perchezitie-domiciliara",
     "/servicii/perchezitie-informatica",
     "/servicii/avocat-diicot",
-    "/servicii/masuri-preventive",
+    "/servicii/avocat-dna",
   ],
-  "/servicii/retinere-24-ore": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/arest-preventiv": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/control-judiciar": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/arest-la-domiciliu": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
+  "/servicii/masuri-preventive": [
+    "/servicii/retinere-24-ore",
+    "/servicii/arest-preventiv",
+    "/servicii/control-judiciar",
+    "/servicii/arest-la-domiciliu",
   ],
 };
+
+function subServiceTargets(roPath: string): string[] {
+  for (const [parent, children] of Object.entries(subServiceGroups)) {
+    if (children.includes(roPath)) {
+      return [parent, ...children.filter((child) => child !== roPath)];
+    }
+  }
+  return [];
+}
+
 
 const extraLabelsRo: Record<string, string> = {
   "/servicii/audiere-politie-parchet": "Audiere Poliție și Parchet",
