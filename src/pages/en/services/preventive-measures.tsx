@@ -213,25 +213,53 @@ export default function PreventiveMeasures() {
         <p className="mt-1 text-base leading-relaxed text-foreground">You are not taken on and then automatically passed to another lawyer. I personally handle the strategy and the essential moments of the mandate.</p>
       </div>
 
-      {/* What I do immediately */}
+      {/* What I do immediately - 4 visual steps */}
       <Card className="mt-12 md:mt-16 border-accent">
         <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">What I do immediately after you contact me</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>You do not need to know the Criminal Procedure Code, nor which request should be filed. Just tell me what happened.</p>
-          <p>
-            <strong>1. I clarify the situation.</strong> I establish where the person is, whether they are a suspect or a defendant, which measure was discussed, proposed or ordered, who ordered it or who is requesting it, at what stage the case is, when the next hearing or term is, and whether a procedural deadline is running.
+        <CardContent className="pb-5">
+          <p className="text-base leading-relaxed text-muted-foreground mb-5">
+            You do not need to know the Criminal Procedure Code. Just tell me what happened.
           </p>
-          <p>
-            <strong>2. I analyse the available documents.</strong> I review the documents you have and, within the limits of the access allowed by law, the relevant documents in the file. I identify the accusation, the grounds of the measure, the prosecutor's arguments, the procedural situation and the elements that can be used in the defence.
-          </p>
-          <p>
-            <strong>3. I assess the procedural risk.</strong> I analyse the legal conditions applicable to the measure and the client's concrete circumstances. What matters includes the nature of the accusation, the evidence, procedural conduct, relevant records, family and professional situation, ties to the community, the development of the investigation and the risks invoked by the prosecution.
-          </p>
-          <p>
-            <strong>4. I build the defence.</strong> Depending on the situation, the strategy may aim at avoiding a preventive measure, rejecting the detention proposal, keeping the person at liberty, applying a less severe measure, challenging the measure ordered, modifying certain obligations, revoking or replacing it. No outcome can be guaranteed.
-          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
+              <div className="flex items-center gap-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">1</span>
+                <h3 className="text-base font-semibold leading-tight">I clarify the situation</h3>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                What happened, where the person is, what deadline is next.
+              </p>
+            </div>
+            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
+              <div className="flex items-center gap-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">2</span>
+                <h3 className="text-base font-semibold leading-tight">I check the documents</h3>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Ordinance, court ruling, summons and any available documents.
+              </p>
+            </div>
+            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
+              <div className="flex items-center gap-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">3</span>
+                <h3 className="text-base font-semibold leading-tight">I assess the risk</h3>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                What measure may be ordered and what arguments exist.
+              </p>
+            </div>
+            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
+              <div className="flex items-center gap-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">4</span>
+                <h3 className="text-base font-semibold leading-tight">I prepare the defence</h3>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Challenge, rejection, revocation or a lighter measure.
+              </p>
+            </div>
+          </div>
           <CallCta label="Call now - 031 632 01 83" />
         </CardContent>
       </Card>
