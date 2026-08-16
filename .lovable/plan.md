@@ -5,7 +5,7 @@
 1. **Pagini de servicii și subservicii (RO + EN, existente și viitoare)**
    Pe mobil ordinea devine:
    H1 -> paragraf de urgență -> CTA „Sună-mă acum” -> recenzii -> LawyerBioBlock -> **20px spațiu** -> breadcrumbs -> **20px spațiu** -> restul paginii.
-   Pe desktop breadcrumbs rămân deasupra H1, exact ca acum.
+   Pe tablete și desktop breadcrumbs rămân deasupra H1, exact ca acum.
 
 2. **Restul paginilor** (Acasă, Despre, Contact, Blog, Servicii hub, Harta site, Calculator, GDPR, Cookies, Termeni - RO + EN)
    Pe mobil breadcrumbs coboară sub zona vizibilă inițial (sub blocul hero / primul bloc de conținut), în loc să apară imediat sub header. Desktop neschimbat.
