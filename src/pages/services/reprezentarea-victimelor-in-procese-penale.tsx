@@ -9,6 +9,7 @@ import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function ReprezentareaVictimelor() {
   useSEO({
     keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
@@ -302,31 +303,28 @@ export default function ReprezentareaVictimelor() {
       </Card>
 
       {/* Întrebări frecvente */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <ol className="list-decimal pl-6 space-y-3">
-            <li>
-              <strong>E obligatoriu să merg în proces penal pentru despăgubiri?</strong>
-              <p className="mt-1">Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil - aleg strategia optimă pentru timp și rezultat.</p>
-            </li>
-            <li>
-              <strong>Ce termen am pentru pretenții?</strong>
-              <p className="mt-1">Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri.</p>
-            </li>
-            <li>
-              <strong>Ce înseamnă că „asigurătorul plătește”?</strong>
-              <p className="mt-1">La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor.</p>
-            </li>
-            <li>
-              <strong>Pot participa activ la urmărirea penală?</strong>
-              <p className="mt-1">Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84-85 CPP).</p>
-            </li>
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente"
+        ordered
+        items={[
+          {
+            q: "E obligatoriu să merg în proces penal pentru despăgubiri?",
+            a: "Nu neapărat. Pot cere despăgubiri în procesul penal ca parte civilă sau separat, pe civil - aleg strategia optimă pentru timp și rezultat.",
+          },
+          {
+            q: "Ce termen am pentru pretenții?",
+            a: "Termenele decurg din natura faptei (penal/civil) și din prescripțiile incidente; în accidente rutiere acționăm rapid și avizăm RCA fără întârzieri.",
+          },
+          {
+            q: "Ce înseamnă că \"asigurătorul plătește\"?",
+            a: "La accidente rutiere, RCA acoperă prejudiciul dovedit al terților; asigurătorul are obligații clare de constatare și lichidare a daunelor.",
+          },
+          {
+            q: "Pot participa activ la urmărirea penală?",
+            a: "Da. Ca persoană vătămată/parte civilă ai dreptul să consulți dosarul, să formulezi cereri și să pui întrebări martorilor/expertului (art. 81, 84-85 CPP).",
+          },
+        ]}
+      />
 
       {/* Contact | Evaluare inițială */}
       <Card className="mt-8 border-accent">

@@ -13,6 +13,7 @@ import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 import SubServiceLinkButton from "@/components/services/SubServiceLinkButton";
+import ServiceFaq from "@/components/services/ServiceFaq";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/masuri-preventive";
 const TITLE = "Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic";
@@ -387,21 +388,11 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-12 md:mt-16 border-accent">
-        <CardHeader className="pb-3">
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente despre măsurile preventive</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed">
-          <ol className="list-decimal pl-6 space-y-3">
-            {FAQ.map((item) => (
-              <li key={item.q}>
-                <strong>{item.q}</strong>
-                <p className="mt-1">{item.a}</p>
-              </li>
-            ))}
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente despre măsurile preventive"
+        ordered
+        items={FAQ.map((item) => ({ q: item.q, a: item.a }))}
+      />
 
       {/* Ai nevoie de ajutor acum */}
       <Card className="mt-12 md:mt-16 border-accent">

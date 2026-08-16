@@ -9,6 +9,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function CorruptionPublicOfficeEn() {
   useSEO({
     keywords: "bribery lawyer romania, corruption defense attorney, public office offenses lawyer",
@@ -159,24 +160,23 @@ export default function CorruptionPublicOfficeEn() {
           </CardContent>
         </Card>
 
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
-          </CardHeader>
-          <CardContent className="text-base leading-relaxed space-y-3">
-            <ul className="space-y-2">
-              <li>
-                <strong>I was offered a "tip". What should I do?</strong> Do not accept. If you have offered money under pressure, we immediately discuss the opportunity of self-reporting (art. 290(3)).
-              </li>
-              <li>
-                <strong>My case is with the DNA. Does the "amount" matter?</strong> Competence may depend on the nature of the offense and criteria in GEO 43/2002; we check your exact situation.
-              </li>
-              <li>
-                <strong>I hold a management role in a state-owned company. Does art. 308 apply to me?</strong> Yes, the rule extends to assimilated persons - we analyze your concrete duties.
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+        <ServiceFaq
+          title="Frequently asked questions"
+          items={[
+            {
+              q: "I was offered a \"tip\". What should I do?",
+              a: "Do not accept. If you have offered money under pressure, we immediately discuss the opportunity of self-reporting (art. 290(3)).",
+            },
+            {
+              q: "My case is with the DNA. Does the \"amount\" matter?",
+              a: "Competence may depend on the nature of the offense and criteria in GEO 43/2002; we check your exact situation.",
+            },
+            {
+              q: "I hold a management role in a state-owned company. Does art. 308 apply to me?",
+              a: "Yes, the rule extends to assimilated persons - we analyze your concrete duties.",
+            },
+          ]}
+        />
 
         <div className="mt-8">
           <MitaBarChart

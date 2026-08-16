@@ -9,6 +9,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/criminal-investigation";
 const TITLE = "Criminal Investigation Lawyer Bucharest - Defense From the First Hour | Bogdan Lamatic";
 const DESCRIPTION =
@@ -303,30 +304,21 @@ export default function CriminalInvestigation() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions about criminal investigation</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed">
-          <ol className="list-decimal pl-6 space-y-3">
-            {FAQ.map((item) => (
-              <li key={item.q}>
-                <strong>{item.q}</strong>
-                <p className="mt-1">
-                  {item.q.startsWith("How much does") ? (
-                    <>
-                      The fee depends on the complexity of the case and the stage at which I get involved. I offer a free initial consultation, after which we agree on a transparent estimated fee, set out in full in the contract. Call me at{" "}
-                      <a href="tel:+40316320183" className="text-primary underline underline-offset-2">+40 (31) 632 01 83</a>.
-                    </>
-                  ) : (
-                    item.a
-                  )}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Frequently asked questions about criminal investigation"
+        ordered
+        items={FAQ.map((item) => ({
+          q: item.q,
+          a: item.q.startsWith("How much does") ? (
+            <>
+              The fee depends on the complexity of the case and the stage at which I get involved. I offer a free initial consultation, after which we agree on a transparent estimated fee, set out in full in the contract. Call me at{" "}
+              <a href="tel:+40316320183" className="text-primary underline underline-offset-2">+40 (31) 632 01 83</a>.
+            </>
+          ) : (
+            item.a
+          ),
+        }))}
+      />
 
       {/* Contact */}
       <Card className="mt-8 border-accent">

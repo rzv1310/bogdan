@@ -12,6 +12,7 @@ import { useState } from "react";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function InvestigatiiCripto() {
   const [pdfLoading, setPdfLoading] = useState(false);
 
@@ -431,35 +432,29 @@ export default function InvestigatiiCripto() {
       </section>
 
       {/* Întrebări frecvente */}
-      <section className="mt-8">
-        <Card className="border-accent">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-base leading-relaxed">
-            <div>
-              <p className="font-semibold">Este „crypto” legal în România?</p>
-              <p className="text-muted-foreground">
-                Da, nu este mijloc legal de plată, dar deținerea/tranzacționarea sunt permise; se aplică MiCA/TFR, Legea 129/2019, Codul penal și Codul fiscal; autoritățile (BNR/ASF/ONPCSB/ANAF) au roluri distincte.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold">Mă poate ajuta un avocat să recuperez fonduri?</p>
-              <p className="text-muted-foreground">
-                Da-acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES).
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold">Sunt antreprenor crypto-ce trebuie să fac „ieri”?</p>
-            <p className="text-muted-foreground">
-              Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări.
-              <br />
-              ASF a indicat necesitatea cadrului național de competențe.
-            </p>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
+      <ServiceFaq
+        title="Întrebări frecvente"
+        items={[
+          {
+            q: "Este \"crypto\" legal în România?",
+            a: "Da, nu este mijloc legal de plată, dar deținerea/tranzacționarea sunt permise; se aplică MiCA/TFR, Legea 129/2019, Codul penal și Codul fiscal; autoritățile (BNR/ASF/ONPCSB/ANAF) au roluri distincte.",
+          },
+          {
+            q: "Mă poate ajuta un avocat să recuperez fonduri?",
+            a: "Da - acționez simultan pe penal (plângere, măsuri asiguratorii) și civil (pretenții), folosesc cereri către exchange-uri, chain analytics și cooperare internațională (e-CODEX/e-EDES).",
+          },
+          {
+            q: "Sunt antreprenor crypto - ce trebuie să fac \"ieri\"?",
+            a: (
+              <>
+                Faceți gap-assessment MiCA/TFR, KYC pe risc, verificare sancțiuni, proceduri incident-response, training personal, și pregătirea documentației pentru autorizații/înregistrări.
+                <br />
+                ASF a indicat necesitatea cadrului național de competențe.
+              </>
+            ),
+          },
+        ]}
+      />
 
       {/* Contact rapid */}
       <section className="mt-8">

@@ -116,6 +116,29 @@ function validateFaq(route, node) {
   });
 }
 
+function validateFaqHeadings(route, html) {
+  const hasFaqContent = /Întrebări frecvente|Frequently asked/i.test(html);
+  if (!hasFaqContent) return;
+
+  const h2Matches = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)];
+  for (const match of h2Matches) {
+    const text = match[1].replace(/<[^>]+>/g, "");
+    if (!/Întrebări frecvente|Frequently asked/i.test(text)) continue;
+
+    const start = match.index + match[0].length;
+    const nextClose = html.indexOf("</section>", start) !== -1
+      ? html.indexOf("</section>", start)
+      : html.indexOf("</main>", start) !== -1
+        ? html.indexOf("</main>", start)
+        : html.length;
+    const snippet = html.slice(start, nextClose);
+    const h3Count = (snippet.match(/<h3[^>]*>/gi) || []).length;
+    if (h3Count === 0) {
+      err(route, "FAQ section found but questions are not marked as <h3>");
+    }
+  }
+}
+
 function collectJsonLd(route, html) {
   const types = [];
   for (const match of html.matchAll(
@@ -274,6 +297,7 @@ async function main() {
     ].map((m) => ({ hreflang: m[1], href: m[2] }));
 
     collectJsonLd(route, html);
+    validateFaqHeadings(route, html);
     pages.set(route, { alternates, html });
 
     if (alternates.length === 0) {

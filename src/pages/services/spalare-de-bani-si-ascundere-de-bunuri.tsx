@@ -8,6 +8,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
@@ -315,23 +316,29 @@ export default function SpalareDeBani() {
           </CardContent>
         </Card>
 
-        {/* Întrebări frecvente */}
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
-          </CardHeader>
-          <CardContent className="space-y-3 text-base leading-relaxed">
-            <p>
-              <strong>Trebuie să existe o condamnare pentru fapta‑sursă?</strong> Nu neapărat. E suficient să se dovedească faptul că bunurile provin dintr‑o infracțiune și că inculpatul cunoștea această proveniență. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(referință)</a>
-            </p>
-            <p>
-              <strong>Autorul faptei‑sursă poate fi acuzat și de spălare a banilor?</strong> Da. Pentru art. 49 lit. a) și b) nu se cere ca făptuitorul să fie diferit; pentru lit. c) este necesar un terț.
-            </p>
-            <p>
-              <strong>Se pot ridica sechestrul și poprirea dacă paralizează activitatea?</strong> Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică.
-            </p>
-          </CardContent>
-        </Card>
+      {/* Întrebări frecvente */}
+      <ServiceFaq
+        title="Întrebări frecvente"
+        items={[
+          {
+            q: "Trebuie să existe o condamnare pentru fapta-sursă?",
+            a: (
+              <>
+                Nu neapărat. E suficient să se dovedească faptul că bunurile provin dintr-o infracțiune și că inculpatul cunoștea această proveniență.{" "}
+                <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(referință)</a>
+              </>
+            ),
+          },
+          {
+            q: "Autorul faptei-sursă poate fi acuzat și de spălare a banilor?",
+            a: "Da. Pentru art. 49 lit. a) și b) nu se cere ca făptuitorul să fie diferit; pentru lit. c) este necesar un terț.",
+          },
+          {
+            q: "Se pot ridica sechestrul și poprirea dacă paralizează activitatea?",
+            a: "Da. Instanța trebuie să respecte principiul proporționalității; potrivit modificărilor din 2025, măsurile pot fi contestate și restrânse dacă afectează disproporționat activitatea economică.",
+          },
+        ]}
+      />
 
         {/* Contact */}
         <Card className="mt-8 border-accent">

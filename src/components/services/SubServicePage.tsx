@@ -8,6 +8,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 
 export interface SubServiceSection {
   h2: string;
@@ -256,23 +257,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </Card>
       ))}
 
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">
-            {isEn ? "Frequently asked questions" : "Întrebări frecvente"}
-          </h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed">
-          <ol className="list-decimal pl-6 space-y-3">
-            {data.faq.map((item) => (
-              <li key={item.q}>
-                <strong>{item.q}</strong>
-                <p className="mt-1">{item.a}</p>
-              </li>
-            ))}
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title={isEn ? "Frequently asked questions" : "Întrebări frecvente"}
+        items={data.faq.map((item) => ({ q: item.q, a: item.a }))}
+        ordered
+      />
 
       <Card className="mt-8 border-accent">
         <CardHeader>
