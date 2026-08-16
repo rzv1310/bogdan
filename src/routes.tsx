@@ -36,6 +36,10 @@ const PerchezitieDomiciliara = lazyRoute(() => import("./pages/services/perchezi
 const PerchezitieInformatica = lazyRoute(() => import("./pages/services/perchezitie-informatica"));
 const AvocatDiicot = lazyRoute(() => import("./pages/services/avocat-diicot"));
 const AvocatDna = lazyRoute(() => import("./pages/services/avocat-dna"));
+const Retinere24Ore = lazyRoute(() => import("./pages/services/retinere-24-ore"));
+const ArestPreventiv = lazyRoute(() => import("./pages/services/arest-preventiv"));
+const ControlJudiciar = lazyRoute(() => import("./pages/services/control-judiciar"));
+const ArestLaDomiciliu = lazyRoute(() => import("./pages/services/arest-la-domiciliu"));
 const CalculatorDespagubiri = lazyRoute(() => import("./pages/CalculatorDespagubiri"));
 const ServiciiPage = lazyRoute(() => import("./pages/servicii"));
 const TermeniSiConditii = lazyRoute(() => import("./pages/termeni-si-conditii"));
@@ -78,6 +82,10 @@ const HomeSearchEn = lazyRoute(() => import("./pages/en/services/home-search"));
 const ComputerSearchEn = lazyRoute(() => import("./pages/en/services/computer-search"));
 const DiicotLawyerEn = lazyRoute(() => import("./pages/en/services/diicot-lawyer"));
 const DnaLawyerEn = lazyRoute(() => import("./pages/en/services/dna-lawyer"));
+const PoliceCustody24HoursEn = lazyRoute(() => import("./pages/en/services/police-custody-24-hours"));
+const PreTrialDetentionEn = lazyRoute(() => import("./pages/en/services/pre-trial-detention"));
+const JudicialControlEn = lazyRoute(() => import("./pages/en/services/judicial-control"));
+const HouseArrestEn = lazyRoute(() => import("./pages/en/services/house-arrest"));
 const CompensationCalculatorEn = lazyRoute(() => import("./pages/en/compensation-calculator"));
 
 export default function AppRoutes() {
@@ -101,6 +109,10 @@ export default function AppRoutes() {
           <Route path="/servicii/perchezitie-informatica" element={<PerchezitieInformatica />} />
           <Route path="/servicii/avocat-diicot" element={<AvocatDiicot />} />
           <Route path="/servicii/avocat-dna" element={<AvocatDna />} />
+          <Route path="/servicii/retinere-24-ore" element={<Retinere24Ore />} />
+          <Route path="/servicii/arest-preventiv" element={<ArestPreventiv />} />
+          <Route path="/servicii/control-judiciar" element={<ControlJudiciar />} />
+          <Route path="/servicii/arest-la-domiciliu" element={<ArestLaDomiciliu />} />
           <Route path="/servicii/criminalitate-economica" element={<CriminalitateEconomica />} />
           <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
           <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
@@ -136,6 +148,10 @@ export default function AppRoutes() {
           <Route path="/en/services/computer-search" element={<ComputerSearchEn />} />
           <Route path="/en/services/diicot-lawyer" element={<DiicotLawyerEn />} />
           <Route path="/en/services/dna-lawyer" element={<DnaLawyerEn />} />
+          <Route path="/en/services/police-custody-24-hours" element={<PoliceCustody24HoursEn />} />
+          <Route path="/en/services/pre-trial-detention" element={<PreTrialDetentionEn />} />
+          <Route path="/en/services/judicial-control" element={<JudicialControlEn />} />
+          <Route path="/en/services/house-arrest" element={<HouseArrestEn />} />
           <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
           <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
           <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />

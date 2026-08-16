@@ -28,6 +28,10 @@ export const ROUTES = [
   "/servicii/perchezitie-informatica",
   "/servicii/avocat-diicot",
   "/servicii/avocat-dna",
+  "/servicii/retinere-24-ore",
+  "/servicii/arest-preventiv",
+  "/servicii/control-judiciar",
+  "/servicii/arest-la-domiciliu",
   "/harta-site",
   "/termeni-si-conditii",
   "/gdpr",
@@ -59,6 +63,10 @@ export const ROUTES = [
   "/en/services/computer-search",
   "/en/services/diicot-lawyer",
   "/en/services/dna-lawyer",
+  "/en/services/police-custody-24-hours",
+  "/en/services/pre-trial-detention",
+  "/en/services/judicial-control",
+  "/en/services/house-arrest",
 ];
 
 /** Sub-service (cluster) pages: lower sitemap priority than their pillar page. */
@@ -73,6 +81,14 @@ export const SUB_SERVICE_ROUTES = new Set([
   "/en/services/computer-search",
   "/en/services/diicot-lawyer",
   "/en/services/dna-lawyer",
+  "/servicii/retinere-24-ore",
+  "/servicii/arest-preventiv",
+  "/servicii/control-judiciar",
+  "/servicii/arest-la-domiciliu",
+  "/en/services/police-custody-24-hours",
+  "/en/services/pre-trial-detention",
+  "/en/services/judicial-control",
+  "/en/services/house-arrest",
 ]);
 
 /** Priority hints for the sitemap. */

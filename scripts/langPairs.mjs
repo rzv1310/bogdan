@@ -32,4 +32,8 @@ export const RO_TO_EN = {
   "/servicii/perchezitie-informatica": "/en/services/computer-search",
   "/servicii/avocat-diicot": "/en/services/diicot-lawyer",
   "/servicii/avocat-dna": "/en/services/dna-lawyer",
+  "/servicii/retinere-24-ore": "/en/services/police-custody-24-hours",
+  "/servicii/arest-preventiv": "/en/services/pre-trial-detention",
+  "/servicii/control-judiciar": "/en/services/judicial-control",
+  "/servicii/arest-la-domiciliu": "/en/services/house-arrest",
 };
