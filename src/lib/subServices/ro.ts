@@ -653,17 +653,17 @@ export const retinere24OreRo: SubServicePageData = {
     {
       h2: "Ce îmi spui când mă contactezi pentru o reținere",
       paragraphs: [
-        "Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu. Spune-mi:",
+        "Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu.",
+        "Spune-mi 3 lucruri:",
       ],
       bullets: [
-        "numele persoanei;",
-        "unde se află;",
-        "la ce secție de Poliție, Parchet sau structură a fost dusă;",
-        "când a avut loc reținerea;",
-        "ce informații ai primit până acum;",
-        "dacă știi când urmează audierea sau prezentarea în fața judecătorului.",
+        "Unde este persoana",
+        "Când a fost reținută",
+        "Ce urmează / ce informații ai primit",
       ],
-      callout: "Nu este necesar să ai toate documentele pentru a mă contacta.",
+      paragraphsAfterBullets: ["apoi:"],
+      calloutAfterBullets: "Nu ai ordonanța sau toate actele?",
+      calloutAfterBulletsCta: "Sună oricum.",
     },
     {
       h2: "Ce drepturi ai dacă ești reținut 24 de ore?",
