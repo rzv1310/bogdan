@@ -31,7 +31,8 @@ export default function TermeniSiConditii() {
       })
     }} />
 
-      <Breadcrumb className="mb-4">
+      <div className="flex flex-col">
+      <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
@@ -104,6 +105,7 @@ export default function TermeniSiConditii() {
         <p>
           Pentru întrebări privind acești Termeni: București, Sector 1, Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 (31) 632 01 83 • E‑mail: contact@avocatpenalbucuresti.ro
         </p>
+      </div>
       </div>
 
       <section aria-label="Politici conexe" className="mt-10">

@@ -207,7 +207,8 @@ export default function Contact() {
       />
 
       {/* Breadcrumb */}
-      <Breadcrumb className="mb-4">
+      <div className="flex flex-col">
+      <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
@@ -236,6 +237,7 @@ export default function Contact() {
         </a>
         <div className="h-5"></div>
         <div className="text-left text-sm text-muted-foreground font-medium">SAU</div>
+      </div>
       </div>
 
       {/* Form Card */}

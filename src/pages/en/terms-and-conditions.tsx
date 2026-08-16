@@ -27,7 +27,8 @@ export default function TermsAndConditionsEn() {
         }}
       />
 
-      <Breadcrumb className="mb-4">
+      <div className="flex flex-col">
+      <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/en">Home</BreadcrumbLink>
@@ -118,6 +119,7 @@ export default function TermsAndConditionsEn() {
           <li><a href="/en/gdpr" className="underline hover:no-underline">GDPR - Data Protection</a></li>
           <li><a href="/en/cookie-policy" className="underline hover:no-underline">Cookie Policy</a></li>
         </ul>
+      </div>
       </div>
     </section>
   );
