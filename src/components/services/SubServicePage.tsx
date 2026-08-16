@@ -111,6 +111,39 @@ export interface SubServicePageData {
 
 const SITE = "https://avocatpenalbucuresti.ro";
 
+/** Collects every internal service path already linked in the page body or FAQ. */
+function collectContextualPaths(data: SubServicePageData): string[] {
+  const paths = new Set<string>();
+
+  const fromParagraphs = (
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[]
+  ) => {
+    paragraphs?.forEach((paragraph) => {
+      if (typeof paragraph === "string") return;
+      paragraph.forEach((segment) => {
+        if (segment.to) paths.add(segment.to);
+      });
+    });
+  };
+
+  data.sections.forEach((section) => {
+    fromParagraphs(section.paragraphs);
+    fromParagraphs(section.paragraphsAfterBullets);
+    section.links?.forEach((link) => {
+      if (link.to) paths.add(link.to);
+    });
+    section.subsections?.forEach((sub) => fromParagraphs(sub.paragraphs));
+  });
+
+  const hrefPattern = /href="((?:\/en)?\/serv[^"]+)"/g;
+  data.faq.forEach((item) => {
+    for (const match of item.a.matchAll(hrefPattern)) paths.add(match[1]);
+  });
+
+  return [...paths];
+}
+
+
 
 
 export default function SubServicePage({ data }: { data: SubServicePageData }) {
