@@ -1032,14 +1032,6 @@ export const arestPreventivRo: SubServicePageData = {
       a: "Da. Judecătorul de drepturi și libertăți poate respinge propunerea procurorului dacă nu sunt îndeplinite condițiile prevăzute de art. 202 și art. 223 CPP sau dacă măsura nu este proporțională, și poate dispune, după caz, o măsură mai puțin severă. Nicio soluție nu poate fi garantată.",
     },
     {
-      q: "Poate fi dispus control judiciar în locul arestării preventive?",
-      a: "Da, atunci când riscurile procesuale invocate pot fi controlate prin obligațiile specifice controlului judiciar. Este una dintre soluțiile pe care apărarea le poate susține la termenul pentru propunerea de arestare sau ulterior, printr-o cerere de înlocuire.",
-    },
-    {
-      q: "Poate fi dispus arest la domiciliu în locul arestării preventive?",
-      a: "Da. Arestul la domiciliu este o măsură privativă de libertate mai puțin severă și poate fi dispus sau obținut prin înlocuire, în condițiile art. 242 CPP, dacă este suficient pentru scopul procesual.",
-    },
-    {
       q: "Cât durează soluționarea contestației?",
       a: "Contestațiile în materia măsurilor preventive se soluționează cu celeritate, în termenele scurte prevăzute de art. 204-206 CPP. Durata concretă depinde de instanță și de etapa procesuală, dar aceste cauze au regim de urgență.",
     },
