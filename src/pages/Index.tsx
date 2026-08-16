@@ -490,43 +490,24 @@ const Index = () => {
               "bestRating": "5",
               "reviewCount": "28"
             },
-            "review": [
-              {
-                "@type": "Review",
-                "inLanguage": "ro-RO",
-                "author": { "@type": "Person", "name": "Ștefan G." },
-                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "reviewBody": "Am avut un accident rutier și nu știam ce să fac. Domnul Lamatic m-a ghidat pas cu pas, iar rezultatul a fost peste așteptări. Mulțumesc!"
-              },
-              {
-                "@type": "Review",
-                "inLanguage": "ro-RO",
-                "author": { "@type": "Person", "name": "Costică C." },
-                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "reviewBody": "Avocatul Bogdan Lamatic nu doar că știe legea, dar o explică pe înțelesul tuturor. Îți dă încredere pe tot parcursul procesului. Recomand cu toată încrederea!"
-              },
-              {
-                "@type": "Review",
-                "inLanguage": "ro-RO",
-                "author": { "@type": "Person", "name": "Mihai C." },
-                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "reviewBody": "Ca avocat, pot spune că Bogdan este generos cu timpul și cunoștințele sale, mereu dispus să ajute."
-              },
-              {
-                "@type": "Review",
-                "inLanguage": "ro-RO",
-                "author": { "@type": "Person", "name": "Crina A." },
-                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "reviewBody": "Am apelat la domnul Lamatic pentru o executare silită. Soluția propusă a funcționat perfect."
-              },
-              {
-                "@type": "Review",
-                "inLanguage": "ro-RO",
-                "author": { "@type": "Person", "name": "Matei R." },
-                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "reviewBody": "Într-un dosar penal foarte dificil, Bogdan a obținut un rezultat pe care îl credeam imposibil. 100% recomand!"
-              }
-            ]
+            "review": googleReviews.map((review) => ({
+              "@type": "Review",
+              "inLanguage": "ro-RO",
+              "author": { "@type": "Person", "name": review.author },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": review.reviewBody,
+              "itemReviewed": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+              "publisher": { "@type": "Organization", "name": "Google" },
+              ...(review.ownerReply
+                ? {
+                    "comment": {
+                      "@type": "Answer",
+                      "author": { "@type": "Person", "name": "Avocat Bogdan Lamatic" },
+                      "text": review.ownerReply,
+                    },
+                  }
+                : {}),
+            }))
           },
           {
             "@type": "Person",
