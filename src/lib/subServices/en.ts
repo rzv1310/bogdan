@@ -48,6 +48,13 @@ export const policeProsecutorQuestioningEn: SubServicePageData = {
     },
     {
       h2: "Why a lawyer matters from the very first hearing",
+      paragraphs: [
+        [
+          { text: "Questioning is an act of the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " phase, and the statement you give now stays in the file." },
+        ],
+      ],
       bullets: [
         "Before the hearing, the judicial body must tell you in which capacity you are being questioned and what your rights are (Article 108 of the Criminal Procedure Code) - but few people know what that means in practice.",
         "A statement given without preparation can be used against you throughout the whole case.",
@@ -140,6 +147,11 @@ export const homeSearchEn: SubServicePageData = {
     {
       h2: "What happens after the search",
       paragraphs: [
+        [
+          { text: "A home search is ordered during the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " phase." },
+        ],
         "A search is usually followed by questioning and, in more serious cases, by a proposal for a preventive measure. If your phone or laptop was seized, the procedure continues with a computer search of the data.",
       ],
     },
@@ -205,6 +217,13 @@ export const computerSearchEn: SubServicePageData = {
     },
     {
       h2: "What you should know about a computer search",
+      paragraphs: [
+        [
+          { text: "A computer search is an evidence-gathering procedure used during the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: "." },
+        ],
+      ],
       bullets: [
         "Under certain conditions the law allows copies of the data to be made instead of physically seizing the device, if the seizure would seriously affect the person's activity (Article 168 paragraph 10 of the Criminal Procedure Code).",
         "The search of the data itself must be carried out by a specialist, not only by the investigating body.",
@@ -272,6 +291,11 @@ export const diicotLawyerEn: SubServicePageData = {
     {
       h2: "What the DIICOT is and what it investigates",
       paragraphs: [
+        [
+          { text: "A DIICOT file follows the same stages of the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: ", with a much larger volume of evidence." },
+        ],
         "The DIICOT is a specialised structure within the Prosecutor's Office attached to the High Court of Cassation and Justice, set up by Government Emergency Ordinance no. 78/2016, with competence in particular for:",
       ],
       bullets: [
@@ -349,6 +373,11 @@ export const dnaLawyerEn: SubServicePageData = {
     {
       h2: "What the DNA is and when it has competence",
       paragraphs: [
+        [
+          { text: "DNA files follow the general rules of the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: "." },
+        ],
         "The DNA is the prosecutor's office specialised in fighting medium and high-level corruption, set up by Government Emergency Ordinance no. 43/2002. It has competence, among others, when:",
       ],
       bullets: [
@@ -462,6 +491,11 @@ export const policeCustody24HoursEn: SubServicePageData = {
     {
       h2: "What happens after the 24 hours",
       paragraphs: [
+        [
+          { text: "Police custody is one of the " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: " provided by the Criminal Procedure Code." },
+        ],
         "Once the 24 hours expire, the person cannot be held further on the basis of the same custody measure.",
         "Depending on the case, another preventive measure may come into discussion, which is why the defence strategy should be analysed before the next decision.",
       ],
@@ -546,6 +580,11 @@ export const preTrialDetentionEn: SubServicePageData = {
     {
       h2: "How long pre-trial detention can last",
       paragraphs: [
+        [
+          { text: "Pre-trial detention is the most severe of the " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: " regulated by the Criminal Procedure Code." },
+        ],
         "During the criminal investigation the measure can be ordered initially for no more than 30 days, and extensions are subject to the conditions and limits set by law. The total duration in this phase cannot exceed 180 days.",
         "The regime applicable in the preliminary chamber and during trial is distinct and involves periodic verification of the measure.",
       ],
@@ -647,6 +686,13 @@ export const judicialControlEn: SubServicePageData = {
     },
     {
       h2: "What I analyse in a judicial control case",
+      paragraphs: [
+        [
+          { text: "Judicial control is one of the " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: " that do not involve deprivation of liberty." },
+        ],
+      ],
       paragraphs: ["The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:"],
       bullets: [
         "the measure is still necessary;",
@@ -734,6 +780,11 @@ export const houseArrestEn: SubServicePageData = {
     {
       h2: "How long house arrest can last",
       paragraphs: [
+        [
+          { text: "House arrest is one of the " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: " involving deprivation of liberty." },
+        ],
         "During the criminal investigation it can be ordered for no more than 30 days, with the possibility of extension under the conditions of the law, and the maximum duration in this phase is 180 days.",
         "The person must remain in the premises where the measure is executed and comply with the obligations imposed, with the exceptions permitted by law or approved by the competent judicial body.",
       ],
