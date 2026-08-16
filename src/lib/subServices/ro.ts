@@ -863,6 +863,26 @@ export const arestPreventivRo: SubServicePageData = {
   ],
   sections: [
     {
+      h2: "În ce situație ești acum?",
+      subsections: [
+        {
+          h3: "Urmează propunerea de arestare?",
+          paragraphs: [
+            "Apărarea trebuie pregătită înainte de termen: motivele invocate de procuror, probele de la dosar și argumentele pentru o măsură mai puțin severă se analizează acum, nu după pronunțare.",
+          ],
+        },
+        {
+          h3: "Arestarea a fost deja dispusă?",
+          paragraphs: [
+            "Verificăm ce cale procedurală mai este deschisă: contestația, apărarea împotriva prelungirii, verificarea periodică a măsurii, revocarea sau înlocuirea cu o măsură mai ușoară.",
+          ],
+        },
+      ],
+      calloutAfterSubsections:
+        "O persoană apropiată este reținută și urmează propunerea de arestare? Mă poți contacta tu chiar dacă nu ai toate actele dosarului.",
+      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
+    },
+    {
       h2: "Ce analizez la o propunere de arestare preventivă",
       bullets: [
         "motivele concrete invocate pentru arestare;",
@@ -874,39 +894,130 @@ export const arestPreventivRo: SubServicePageData = {
         "proporționalitatea măsurii;",
         "posibilitatea aplicării unei măsuri mai puțin severe.",
       ],
-      paragraphs: [
+      paragraphsAfterBullets: [
         "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.",
       ],
       cta: "Urmează propunerea de arestare - Sună-mă acum",
     },
     {
-      h2: "Cât poate dura arestarea preventivă",
+      h2: "Ce trebuie să-mi spui când mă suni",
+      paragraphs: ["Spune-mi 4 lucruri:"],
+      bullets: [
+        "persoana este reținută sau deja arestată?",
+        "când este termenul?",
+        "ce Parchet sau instanță are dosarul?",
+        "ai încheierea, citația sau alte acte?",
+      ],
+      paragraphsAfterBullets: [[{ text: "Nu ai toate actele? Sună oricum.", bold: true }]],
+      ctaWhatsApp: true,
+    },
+    {
+      h2: "În ce condiții poate fi dispusă arestarea preventivă?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Pe lângă condițiile generale ale măsurilor preventive prevăzute de art. 202 CPP, art. 223 CPP cere să existe probe din care rezultă suspiciunea rezonabilă că persoana a săvârșit o infracțiune și unul dintre cazurile de mai jos:",
+      ],
+      bullets: [
+        {
+          bold: "Sustragerea de la urmărirea penală sau de la judecată.",
+          rest: "Se invocă riscul ca inculpatul să fugă, să se ascundă ori să nu se prezinte la chemările organelor judiciare. Apărarea arată legăturile stabile cu locuința, familia și activitatea profesională.",
+        },
+        {
+          bold: "Influențarea probelor sau a martorilor.",
+          rest: "Se susține riscul de a ascunde, distruge sau altera mijloace de probă ori de a determina un martor să nu spună adevărul. Contează dacă probele au fost deja administrate sau ridicate.",
+        },
+        {
+          bold: "Presiuni asupra persoanei vătămate.",
+          rest: "Se invocă riscul de a exercita presiuni asupra persoanei vătămate sau asupra membrilor familiei acesteia. Trebuie verificat dacă acest risc este susținut de date concrete din dosar.",
+        },
+        {
+          bold: "Riscul săvârșirii unei noi infracțiuni.",
+          rest: "Se ia în calcul pregătirea sau săvârșirea unei alte infracțiuni. Antecedentele și conduita procesuală au aici un rol determinant.",
+        },
+        {
+          bold: "Pericolul pentru ordinea publică.",
+          rest: "Se aplică în cazurile prevăzute de lege, prin raportare la gravitatea faptei, modul de comitere și circumstanțele personale. Nu este suficientă gravitatea abstractă a infracțiunii.",
+        },
+      ],
+      calloutAfterBullets:
+        "Chiar dacă un caz din art. 223 CPP este invocat, măsura trebuie să fie necesară și proporțională. Dacă scopul procesual poate fi atins prin control judiciar sau arest la domiciliu, arestarea preventivă nu se justifică.",
+    },
+    {
+      h2: "Ce se întâmplă la termenul pentru propunerea de arestare preventivă?",
+      cardClassName: "bg-[#faf0e6]",
+      bullets: [
+        "procurorul formulează propunerea de arestare preventivă;",
+        "dosarul ajunge la judecătorul de drepturi și libertăți competent;",
+        "inculpatul este adus în fața judecătorului și este asistat de avocat;",
+        "se discută în contradictoriu argumentele procurorului și ale apărării;",
+        "judecătorul poate respinge propunerea sau poate dispune arestarea preventivă ori o măsură alternativă permisă de lege.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă persoana este reținută, sesizarea judecătorului cu propunerea de arestare preventivă trebuie făcută cu cel puțin 6 ore înainte de expirarea duratei reținerii. În practică, asta înseamnă că apărarea se pregătește în câteva ore.",
+      ],
+      cta: "Am termen pentru propunerea de arestare - Sună-mă acum",
+    },
+    {
+      h2: "Cum contești arestarea preventivă și ce se poate obține?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Împotriva încheierii prin care s-a dispus, s-a prelungit sau s-a menținut arestarea preventivă se poate formula contestație, în condițiile art. 204-206 CPP.",
+      ],
+      bullets: [
+        { bold: "Termenul este de 48 de ore.", rest: "Este un termen foarte scurt, iar depășirea lui închide această cale de atac." },
+        {
+          bold: "De când curge.",
+          rest: "De la pronunțare, pentru cei prezenți, și de la comunicare, pentru cei care au lipsit la pronunțarea încheierii.",
+        },
+        {
+          bold: "Cine soluționează.",
+          rest: "Contestația se judecă de judecătorul de drepturi și libertăți sau de instanța ierarhic superioară, în funcție de etapa procesuală.",
+        },
+        {
+          bold: "Ce poate decide instanța.",
+          rest: "Poate respinge contestația și menține măsura sau o poate admite.",
+        },
+        {
+          bold: "Ce poate însemna admiterea.",
+          rest: "Poate duce la respingerea propunerii de arestare, la înlocuirea măsurii cu una mai ușoară și, după caz, la punerea în libertate.",
+        },
+      ],
+      calloutAfterBullets:
+        "Dacă ai primit deja încheierea, spune-mi cât mai exact data și ora pronunțării sau comunicării. Niciun rezultat nu poate fi garantat, dar termenul trebuie respectat.",
+      calloutAfterBulletsCta: "Verifică termenul de 48 de ore",
+    },
+    {
+      h2: "Cât poate dura arestarea preventivă și prelungirea",
       paragraphs: [
         "În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.",
         "Regimul aplicabil în camera preliminară și în cursul judecății este distinct și presupune verificări periodice ale măsurii.",
+        "Când procurorul cere prelungirea, apărarea se pregătește înainte de termen: se analizează dacă temeiurile inițiale subzistă, ce probe s-au administrat între timp și dacă au apărut împrejurări noi.",
       ],
     },
     {
-      h2: "Ești deja arestat preventiv",
-      paragraphs: [
-        "Faptul că arestarea preventivă a fost dispusă nu înseamnă că analiza apărării s-a încheiat. În funcție de etapa dosarului pot deveni relevante:",
+      h2: "Revocare și înlocuire - două lucruri diferite",
+      subsections: [
+        {
+          h3: "Revocarea",
+          paragraphs: [
+            "Se cere încetarea măsurii. Se invocă faptul că temeiurile care au determinat arestarea au încetat sau că au apărut împrejurări noi relevante pentru legalitatea ori necesitatea măsurii. Dacă cererea este admisă, persoana este pusă în libertate.",
+          ],
+        },
+        {
+          h3: "Înlocuirea",
+          paragraphs: [
+            "Nu se cere încetarea oricărei măsuri preventive. Se cere ca arestarea preventivă să fie înlocuită cu o măsură mai puțin severă, cum sunt arestul la domiciliu sau controlul judiciar, atunci când aceasta este suficientă pentru scopul procesual.",
+          ],
+        },
       ],
-      bullets: [
-        "contestația;",
-        "apărarea împotriva prelungirii măsurii;",
-        "verificarea periodică a măsurii;",
-        "revocarea;",
-        "înlocuirea cu o măsură preventivă mai puțin severă.",
-      ],
-      callout:
-        "Codul de procedură penală permite revocarea măsurii atunci când au încetat temeiurile care au determinat-o sau au apărut împrejurări noi și reglementează înlocuirea cu o măsură mai ușoară atunci când condițiile legale sunt îndeplinite.",
-      cta: "Măsura a fost deja dispusă - Verifică opțiunile",
+      calloutAfterSubsections:
+        "Art. 242 CPP reglementează distinct revocarea și înlocuirea. Alegerea cererii potrivite depinde de etapa dosarului și de ce se poate demonstra concret.",
     },
     {
-      h2: "Termenele pentru contestație",
+      h2: "Când poate fi înlocuit arestul preventiv cu arest la domiciliu sau control judiciar?",
       paragraphs: [
-        "În materia măsurilor preventive există termene procedurale foarte scurte. Pentru contestațiile reglementate de art. 204-206 CPP, termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
-        "Dacă ai primit deja încheierea, spune-mi data și ora pronunțării sau comunicării cât mai exact.",
+        "Art. 242 CPP permite înlocuirea arestării preventive cu o măsură mai ușoară dacă, după evaluarea împrejurărilor cauzei și a conduitei procesuale a inculpatului, această măsură este suficientă pentru realizarea scopului urmărit.",
+        "În practică se argumentează pe conduita din dosar, pe probele deja administrate, pe stabilitatea locuinței și a familiei, pe starea de sănătate și pe orice element care arată că riscurile procesuale pot fi controlate fără detenție.",
       ],
       links: [
         { label: "Control judiciar - obligații, contestare și revocare", to: "/servicii/control-judiciar" },
@@ -917,24 +1028,40 @@ export const arestPreventivRo: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Cât poate dura arestarea preventivă?",
-      a: "În cursul urmăririi penale poate fi dispusă inițial pentru maximum 30 de zile și poate fi prelungită în condițiile legii, fără ca durata totală în această etapă să depășească 180 de zile. Regimul aplicabil în celelalte etape ale procesului penal este distinct.",
+      q: "Poate fi respinsă propunerea de arestare preventivă?",
+      a: "Da. Judecătorul de drepturi și libertăți poate respinge propunerea procurorului dacă nu sunt îndeplinite condițiile prevăzute de art. 202 și art. 223 CPP sau dacă măsura nu este proporțională, și poate dispune, după caz, o măsură mai puțin severă. Nicio soluție nu poate fi garantată.",
+    },
+    {
+      q: "Poate fi dispus control judiciar în locul arestării preventive?",
+      a: "Da, atunci când riscurile procesuale invocate pot fi controlate prin obligațiile specifice controlului judiciar. Este una dintre soluțiile pe care apărarea le poate susține la termenul pentru propunerea de arestare sau ulterior, printr-o cerere de înlocuire.",
+    },
+    {
+      q: "Poate fi dispus arest la domiciliu în locul arestării preventive?",
+      a: "Da. Arestul la domiciliu este o măsură privativă de libertate mai puțin severă și poate fi dispus sau obținut prin înlocuire, în condițiile art. 242 CPP, dacă este suficient pentru scopul procesual.",
+    },
+    {
+      q: "Cât durează soluționarea contestației?",
+      a: "Contestațiile în materia măsurilor preventive se soluționează cu celeritate, în termenele scurte prevăzute de art. 204-206 CPP. Durata concretă depinde de instanță și de etapa procesuală, dar aceste cauze au regim de urgență.",
+    },
+    {
+      q: "Poate familia angaja avocatul pentru persoana arestată?",
+      a: "Da. Un membru al familiei sau o persoană apropiată poate contacta avocatul și poate încheia contractul de asistență juridică. Mandatul se confirmă ulterior de persoana arestată, la primul contact.",
+    },
+    {
+      q: "Ce se întâmplă dacă procurorul cere prelungirea arestării?",
+      a: "Cererea se judecă înainte de expirarea duratei măsurii. Apărarea poate arăta că temeiurile inițiale nu mai subzistă, că probele au fost deja administrate sau că o măsură mai ușoară este suficientă.",
+    },
+    {
+      q: "Când poate fi revocat arestul preventiv?",
+      a: "Atunci când au încetat temeiurile care au determinat luarea măsurii sau au apărut împrejurări noi din care rezultă că măsura nu mai este legală ori necesară, în condițiile art. 242 CPP.",
+    },
+    {
+      q: "Care este diferența dintre revocare și înlocuire?",
+      a: "Revocarea urmărește încetarea măsurii preventive și punerea în libertate. Înlocuirea păstrează o măsură preventivă, dar una mai puțin severă, cum sunt arestul la domiciliu sau controlul judiciar.",
     },
     {
       q: "Cine poate dispune arestarea preventivă?",
       a: "Arestarea preventivă este în competența judecătorului sau a instanței, în funcție de etapa procesuală. Procurorul poate formula propunerea, însă nu poate dispune el însuși măsura.",
-    },
-    {
-      q: "Cum se contestă arestarea preventivă?",
-      a: "Prin contestație împotriva încheierii prin care a fost luată, prelungită sau menținută măsura, în condițiile art. 204-206 CPP, în termenul de 48 de ore prevăzut de lege.",
-    },
-    {
-      q: "Poate fi înlocuită arestarea preventivă cu o măsură mai ușoară?",
-      a: "Da, dacă sunt îndeplinite condițiile prevăzute de art. 242 CPP. Trebuie analizate concret temeiurile măsurii, evoluția cauzei și conduita procesuală. Nicio soluție nu poate fi garantată.",
-    },
-    {
-      q: "Ce pot face dacă urmează prelungirea măsurii?",
-      a: "Apărarea poate fi pregătită înainte de termen, prin analiza temeiurilor invocate, a probelor administrate între timp și a eventualelor împrejurări noi relevante.",
     },
   ],
   resources: [
@@ -944,6 +1071,7 @@ export const arestPreventivRo: SubServicePageData = {
     { text: "Art. 241-242 CPP - încetarea de drept, revocarea și înlocuirea măsurilor.", href: CPP, linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
+  contactWhatsApp: true,
   parent: PARENT_MP,
 };
 

@@ -64,6 +64,10 @@ export interface SubServiceSection {
   ctaWhatsApp?: boolean;
   /** Custom label for the secondary WhatsApp CTA. */
   ctaWhatsAppLabel?: string;
+  /** Optional callout rendered after the subsections block. */
+  calloutAfterSubsections?: string;
+  /** Optional main CTA rendered after the subsections block. */
+  ctaAfterSubsections?: string;
 }
 
 export interface SubServiceFaqItem {
@@ -99,6 +103,8 @@ export interface SubServicePageData {
   faq: SubServiceFaqItem[];
   resources: SubServiceResource[];
   contactText: string;
+  /** Replaces the email button in the final contact card with a WhatsApp CTA. */
+  contactWhatsApp?: boolean;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 }
@@ -419,6 +425,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 ))}
               </div>
             )}
+            {(section.calloutAfterSubsections || section.ctaAfterSubsections) && (
+              <SectionContent
+                calloutAfterBullets={section.calloutAfterSubsections}
+                cta={section.ctaAfterSubsections}
+                ctaIcon={false}
+              />
+            )}
           </CardContent>
         </Card>
       ))}
@@ -443,9 +456,17 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 <Phone className="mr-2 h-4 w-4" /> {callLabel}
               </a>
             </Button>
-            <Button asChild variant="outline">
-              <a href="mailto:contact@avocatpenalbucuresti.ro">{isEn ? "Send email" : "Trimite email"}</a>
-            </Button>
+            {data.contactWhatsApp ? (
+              <WhatsAppDocsCta
+                lang={data.lang}
+                variant="green"
+                label={isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele"}
+              />
+            ) : (
+              <Button asChild variant="outline">
+                <a href="mailto:contact@avocatpenalbucuresti.ro">{isEn ? "Send email" : "Trimite email"}</a>
+              </Button>
+            )}
           </div>
         </CardContent>
       </Card>
