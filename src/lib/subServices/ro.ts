@@ -1168,7 +1168,11 @@ export const controlJudiciarRo: SubServicePageData = {
       h2: "Controlul judiciar pe cauțiune",
       paragraphs: [
         "Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
-        "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei măsuri neprivative de libertate în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație.",
+        [
+          { text: "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii " },
+          { text: "unei măsuri neprivative de libertate", to: "/servicii/masuri-preventive" },
+          { text: " în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație." },
+        ],
       ],
     },
     {
