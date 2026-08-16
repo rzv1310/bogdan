@@ -406,7 +406,7 @@ export default function ContactEn() {
           </Card>
         </div>
         <ServicesQuickLinks lang="en" />
-        <Breadcrumb className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
+        <Breadcrumb className="mt-8">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/en">Home</BreadcrumbLink>
