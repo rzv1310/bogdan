@@ -103,6 +103,8 @@ export interface SubServicePageData {
   faq: SubServiceFaqItem[];
   resources: SubServiceResource[];
   contactText: string;
+  /** Replaces the email button in the final contact card with a WhatsApp CTA. */
+  contactWhatsApp?: boolean;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 }
