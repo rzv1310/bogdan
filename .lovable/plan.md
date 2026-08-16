@@ -2,7 +2,7 @@
 
 ## 1. Breadcrumbs la finalul paginii
 
-- **Calculator despăgubiri** (RO `/calculator-despagubiri` + EN `/en/compensation-calculator`): blocul de breadcrumbs se mută la sfârșitul conținutului, pe toate dispozitivele.
+- **Calculator despăgubiri** (RO `/calculator-despagubiri` + EN `/en/compensation-calculator`): blocul de breadcrumbs se mută la sfârșitul conținutului, numai pe mobil (desktop și tablete rămân ca acum).
 - **Contact** (RO `/contact` + EN `/en/contact`): la fel, breadcrumbs la finalul paginii.
 - JSON-LD `BreadcrumbList` rămâne neschimbat (nu afectează SEO).
 
