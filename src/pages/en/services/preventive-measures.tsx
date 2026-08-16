@@ -336,53 +336,6 @@ export default function PreventiveMeasures() {
         </CardContent>
       </Card>
 
-      {/* The 5 preventive measures */}
-      <Card className="mt-12 md:mt-16 border-accent">
-        <CardHeader className="pb-3">
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">What are the 5 preventive measures</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
-          <div className="space-y-2">
-            <p>The Criminal Procedure Code provides five preventive measures: police custody, judicial control, judicial control on bail, house arrest and pre-trial detention.</p>
-            <p>Three are custodial - police custody, house arrest and pre-trial detention - and two are restrictive of rights - judicial control and judicial control on bail.</p>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">1. Police custody - maximum 24 hours</h3>
-            <p>Police custody is a custodial preventive measure. During the criminal investigation it may be ordered for no more than 24 hours. The short duration does not mean this stage is unimportant, because procedural acts that influence what follows may take place within this interval.</p>
-            <p>Depending on the concrete situation, I can intervene for immediate legal advice, assistance at hearings, analysis of the procedural situation, review of the available documents, preparation of the procedural position and preparation of the defence for a possible request for another preventive measure.</p>
-            <SubServiceLinkButton to="/en/services/police-custody-24-hours">24-hour police custody - rights, lawyer assistance and what follows</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">2. Judicial control</h3>
-            <p>Judicial control is a non-custodial preventive measure. The person remains at liberty but must comply with the obligations set by the competent judicial authority. Article 215 of the Criminal Procedure Code governs the content of judicial control and the obligations that may be imposed.</p>
-            <p>I analyse the reasons why the measure was ordered, the obligations established, their concrete impact, the proportionality of the restrictions, the development of the case and any new circumstances. Depending on the situation, the remedy, the modification of obligations, the removal of certain restrictions, revocation or replacement of the measure may be considered.</p>
-            <SubServiceLinkButton to="/en/services/judicial-control">Judicial control - obligations, complaint, modification and revocation</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">3. Judicial control on bail</h3>
-            <p>Judicial control on bail is governed separately by the Criminal Procedure Code and involves, in addition to the obligations specific to judicial control, the payment of bail under the conditions established by law. Information about this procedure is included in the page dedicated to judicial control.</p>
-            <p>In such a situation I analyse, as the case may be: the conditions of the measure, its appropriateness compared to other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using a non-custodial measure instead of a more severe one, when the legal framework and the concrete situation allow this argument.</p>
-            <SubServiceLinkButton to="/en/services/judicial-control">Judicial control and judicial control on bail</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">4. House arrest</h3>
-            <p>House arrest is a custodial preventive measure. The person must remain in the premises where the measure is served and comply with the obligations established, with the exceptions allowed by law or approved by the competent judicial authority. During the criminal investigation it may be ordered for no more than 30 days, and the maximum duration at this stage may reach, through successive extensions under the conditions of the law, 180 days.</p>
-            <p>Depending on when you contact me, I prepare the defence against the measure being taken, analyse the available remedy, request replacement with a less severe measure where there are grounds, analyse the possibility of revocation and file requests concerning leaving the premises where there is a justified reason.</p>
-            <SubServiceLinkButton to="/en/services/house-arrest">House arrest - appeal, permissions, revocation and replacement</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">5. Pre-trial detention</h3>
-            <p>Pre-trial detention is the most severe preventive measure provided by the Criminal Procedure Code. During the criminal investigation it may be ordered by a judge for a period of no more than 30 days and may be extended under the conditions of the law, the total duration at this stage not being able to exceed 180 days.</p>
-            <p>Intervention can begin from the moment a detention proposal exists. Once the measure has been ordered, the appeal, opposition to the extension, periodic reviews, revocation or replacement of the measure may become relevant.</p>
-            <SubServiceLinkButton to="/en/services/pre-trial-detention">Pre-trial detention - proposal, appeal, extension and replacement</SubServiceLinkButton>
-          </div>
-        </CardContent>
-      </Card>
 
       {/* Working method */}
       <Card className="mt-12 md:mt-16 border-accent">

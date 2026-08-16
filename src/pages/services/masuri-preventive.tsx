@@ -336,53 +336,6 @@ export default function MasuriPreventive() {
         </CardContent>
       </Card>
 
-      {/* Cele 5 măsuri preventive */}
-      <Card className="mt-12 md:mt-16 border-accent">
-        <CardHeader className="pb-3">
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Care sunt cele 5 măsuri preventive</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
-          <div className="space-y-2">
-            <p>Codul de procedură penală prevede cinci măsuri preventive: reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă.</p>
-            <p>Trei sunt privative de libertate - reținerea, arestul la domiciliu și arestarea preventivă - iar două sunt restrictive de drepturi - controlul judiciar și controlul judiciar pe cauțiune.</p>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">1. Reținerea - maximum 24 de ore</h3>
-            <p>Reținerea este o măsură preventivă privativă de libertate. În cursul urmăririi penale, aceasta poate fi dispusă pentru cel mult 24 de ore. Durata redusă nu înseamnă însă că această etapă este lipsită de importanță, pentru că în acest interval pot avea loc acte procedurale care influențează ceea ce urmează.</p>
-            <p>În funcție de situația concretă, pot interveni pentru consultanță juridică imediată, asistență la audieri, analiza situației procesuale, verificarea documentelor disponibile, pregătirea poziției procesuale și pregătirea apărării pentru eventuala solicitare a unei alte măsuri preventive.</p>
-            <SubServiceLinkButton to="/servicii/retinere-24-ore">Reținere 24 ore - drepturi, asistență avocat și ce urmează</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">2. Controlul judiciar</h3>
-            <p>Controlul judiciar este o măsură preventivă neprivativă de libertate. Persoana rămâne în libertate, dar trebuie să respecte obligațiile stabilite de organul judiciar competent. Art. 215 CPP reglementează conținutul controlului judiciar și obligațiile care pot fi impuse.</p>
-            <p>Analizez motivele pentru care a fost dispusă măsura, obligațiile stabilite, impactul lor concret, proporționalitatea restricțiilor, evoluția dosarului și eventualele împrejurări noi. În funcție de situație, pot fi analizate calea de atac, modificarea obligațiilor, eliminarea anumitor restricții, revocarea sau înlocuirea măsurii.</p>
-            <SubServiceLinkButton to="/servicii/control-judiciar">Control judiciar - obligații, plângere, modificare și revocare</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">3. Controlul judiciar pe cauțiune</h3>
-            <p>Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege. Informațiile despre această procedură sunt integrate în pagina dedicată controlului judiciar.</p>
-            <p>Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei măsuri neprivative de libertate în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație.</p>
-            <SubServiceLinkButton to="/servicii/control-judiciar">Control judiciar și control judiciar pe cauțiune</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">4. Arestul la domiciliu</h3>
-            <p>Arestul la domiciliu este o măsură preventivă privativă de libertate. Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent. În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, iar durata maximă în această etapă poate ajunge, prin prelungiri succesive în condițiile legii, la 180 de zile.</p>
-            <p>În funcție de momentul în care mă contactezi, pregătesc apărarea împotriva luării măsurii, analizez calea de atac disponibilă, solicit înlocuirea cu o măsură mai puțin severă atunci când există temei, analizez posibilitatea revocării și formulez cereri privind părăsirea imobilului atunci când există un motiv justificat.</p>
-            <SubServiceLinkButton to="/servicii/arest-la-domiciliu">Arest la domiciliu - contestație, permisiuni, revocare și înlocuire</SubServiceLinkButton>
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">5. Arestarea preventivă</h3>
-            <p>Arestarea preventivă este cea mai severă măsură preventivă prevăzută de Codul de procedură penală. În cursul urmăririi penale poate fi dispusă de judecător pentru o perioadă de cel mult 30 de zile și poate fi prelungită în condițiile legii, durata totală în această fază neputând depăși 180 de zile.</p>
-            <p>Intervenția poate începe încă din momentul în care există o propunere de arestare. După dispunerea măsurii pot deveni relevante contestația, opoziția la prelungire, verificările periodice, revocarea sau înlocuirea măsurii.</p>
-            <SubServiceLinkButton to="/servicii/arest-preventiv">Arest preventiv - propunere, contestație, prelungire și înlocuire</SubServiceLinkButton>
-          </div>
-        </CardContent>
-      </Card>
 
       {/* Metodă de lucru */}
       <Card className="mt-12 md:mt-16 border-accent">
