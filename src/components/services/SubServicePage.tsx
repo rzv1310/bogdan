@@ -383,6 +383,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               callout={section.callout}
               calloutClassName={section.calloutClassName}
               calloutCta={section.calloutCta}
+              paragraphsAfterBullets={section.paragraphsAfterBullets}
+              calloutAfterBullets={section.calloutAfterBullets}
+              calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
+              calloutAfterBulletsCta={section.calloutAfterBulletsCta}
               cta={section.cta}
               ctaWhatsApp={section.ctaWhatsApp}
               ctaWhatsAppLabel={section.ctaWhatsAppLabel}
