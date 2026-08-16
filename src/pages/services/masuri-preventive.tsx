@@ -237,7 +237,10 @@ export default function MasuriPreventive() {
         </CardContent>
       </Card>
 
-      <GoogleReviewCard lang="ro" />
+      <GoogleReviewCard
+        lang="ro"
+        reviewText={`Dosar penal complicat, cu acuzații serioase. Domnul avocat Lamatic a identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar, calm și realist, fără promisiuni false.\nRezultatul a fost mult peste ce speram.`}
+      />
 
       {/* În ce situație te afli acum */}
       <Card className="mt-12 md:mt-16 border-accent">
