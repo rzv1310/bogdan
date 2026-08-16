@@ -1,27 +1,14 @@
-Fix hero CTA button text on Percheziție domiciliară
+Revenire la textul anterior al butonului din secțiunea "Percheziția are loc chiar acum?"
 
-Problem
-- The previous edit changed the CTA inside the first content card ("Percheziția are loc chiar acum?"), not the hero CTA button that appears directly under the H1/urgency block.
-- `ServiceHeroCta.tsx` currently hardcodes the hero button label as "☎ Sună-mă acum - 031 632 01 83" for every service/sub-service page, so the requested text "Și sună-mă imediat - 031 632 01 83" cannot be applied per-page.
+Problemă
+- În ultima modificare, textul butonului CTA din secțiunea "Percheziția are loc chiar acum?" a fost schimbat din "Sună-mă acum" în "Și sună-mă imediat - 031 632 01 83".
+- Utilizatorul dorește revenirea la textul anterior.
 
-Goal
-- Allow the hero CTA label to be overridden per sub-service page.
-- Set the override only for `/servicii/perchezitie-domiciliara` (RO) and its EN counterpart `/en/services/home-search`.
+Modificări
 
-Changes
+1. Actualizare date pagină
+   - În `src/lib/subServices/ro.ts`, în obiectul `perchezitieDomiciliaraRo`, la `sections[0].cta`, se schimbă valoarea înapoi la `"Sună-mă acum"`.
 
-1. Type update
-   - Add optional `heroCta?: string` to `SubServicePageData` in `src/components/services/SubServicePage.tsx`.
-
-2. Component update
-   - Update `ServiceHeroCta.tsx` to accept an optional `label?: string` prop and use it when provided, otherwise fall back to the current default.
-   - Update `SubServicePage.tsx` to pass `data.heroCta` into `<ServiceHeroCta>`.
-
-3. Data update
-   - In `src/lib/subServices/ro.ts`, set `heroCta: "Și sună-mă imediat - 031 632 01 83"` for `perchezitieDomiciliaraRo`.
-   - In `src/lib/subServices/en.ts`, set the equivalent override for `homeSearchEn`, e.g. `heroCta: "And call me immediately - 031 632 01 83"`.
-
-4. Verification
-   - Build the project.
-   - Check the rendered hero button on `/servicii/perchezitie-domiciliara` shows the new text without the phone emoji.
-   - Confirm other service pages still show the default hero CTA.
+2. Verificare
+   - Se rulează build-ul pentru a confirma absența erorilor.
+   - Se verifică în preview că butonul din secțiunea "Percheziția are loc chiar acum?" afișează din nou "Sună-mă acum".
