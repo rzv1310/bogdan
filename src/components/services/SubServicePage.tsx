@@ -180,6 +180,101 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     </div>
   );
 
+  const SectionContent = ({
+    paragraphs,
+    bullets,
+    links,
+    callout,
+    calloutClassName,
+    cta,
+    ctaWhatsApp,
+    ctaWhatsAppLabel,
+  }: {
+    paragraphs?: (string | { text: string; bold?: boolean }[])[];
+    bullets?: (string | { bold: string; rest: string })[];
+    links?: { label: string; to?: string }[];
+    callout?: string;
+    calloutClassName?: string;
+    cta?: string;
+    ctaWhatsApp?: boolean;
+    ctaWhatsAppLabel?: string;
+  }) => (
+    <>
+      {paragraphs?.map((paragraph, pIdx) => (
+        <p key={pIdx}>
+          {typeof paragraph === "string" ? (
+            paragraph
+          ) : (
+            paragraph.map((segment, sIdx) =>
+              segment.bold ? (
+                <strong key={sIdx}>{segment.text}</strong>
+              ) : (
+                <span key={sIdx}>{segment.text}</span>
+              )
+            )
+          )}
+        </p>
+      ))}
+      {callout && (
+        <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${calloutClassName ?? ""}`}>
+          {callout}
+        </p>
+      )}
+      {bullets && bullets.length > 0 && (
+        <ul className="list-disc pl-6 space-y-2">
+          {bullets.map((bullet, idx) => (
+            <li key={idx}>
+              {typeof bullet === "string" ? (
+                bullet
+              ) : (
+                <>
+                  <span className="font-semibold text-foreground">{bullet.bold}</span>{" "}
+                  {bullet.rest}
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+      {links && links.length > 0 && (
+        <ul className="space-y-2">
+          {links.map((link) => (
+            <li key={link.label}>
+              {link.to ? (
+                <Link
+                  to={link.to}
+                  className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
+                >
+                  <span>{link.label}</span>
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              ) : (
+                <span className="inline-flex items-start gap-2 text-base text-foreground">
+                  <span>{link.label}</span>
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60" />
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+      {(cta || ctaWhatsApp) && (
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          {cta && (
+            <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${cta} - ${data.serviceName}`}>
+              <a href="tel:+40316320183">
+                <Phone className="mr-2 h-4 w-4" /> {cta}
+              </a>
+            </Button>
+          )}
+          {ctaWhatsApp && (
+            <WhatsAppDocsCta lang={data.lang} variant="green" label={ctaWhatsAppLabel} />
+          )}
+        </div>
+      )}
+    </>
+  );
+
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <Breadcrumb className="mb-4">
