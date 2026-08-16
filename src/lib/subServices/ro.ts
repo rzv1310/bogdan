@@ -68,8 +68,8 @@ export const audierePolitieParchetRo: SubServicePageData = {
       h2: "De ce contează ce se întâmplă la prima audiere",
       paragraphs: [
         [
-          { text: "Audierea este un act din faza de " },
-          { text: "urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "Audierea este un act din " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
           { text: ", iar declarația dată acum rămâne la dosar pe tot parcursul procesului." },
         ],
         [
@@ -185,8 +185,8 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
       h2: "Ce trebuie să știi în timpul unei percheziții domiciliare",
       paragraphs: [
         [
-          { text: "Percheziția domiciliară se dispune în cadrul " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Percheziția domiciliară se dispune în " },
+          { text: "cadrul urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: ", iar ceea ce se ridică acum poate influența întregul dosar." },
         ],
       ],
@@ -318,8 +318,8 @@ export const perchezitieInformaticaRo: SubServicePageData = {
       h2: "Ce este o percheziție informatică",
       paragraphs: [
         [
-          { text: "Percheziția informatică este un procedeu probatoriu folosit în faza de " },
-          { text: "urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "Percheziția informatică este un procedeu probatoriu folosit în " },
+          { text: "etapele urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
         "Codul de procedură penală definește percheziția informatică drept procedeul prin care sunt cercetate, descoperite, identificate și strânse probe stocate într-un sistem informatic sau pe un suport de stocare, prin mijloace tehnice și proceduri care trebuie să asigure integritatea informațiilor.",
@@ -452,8 +452,8 @@ export const avocatDiicotRo: SubServicePageData = {
       h2: "De ce un dosar DIICOT necesită o strategie construită de la început",
       paragraphs: [
         [
-          { text: "Un dosar DIICOT parcurge aceleași etape ale " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Un dosar DIICOT parcurge " },
+          { text: "aceleași etape ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: ", însă cu un volum de probe mult mai mare." },
         ],
         "DIICOT are o competență specializată stabilită prin OUG nr. 78/2016 și prin alte dispoziții legale.",
@@ -569,8 +569,8 @@ export const avocatDnaRo: SubServicePageData = {
       h2: "De ce primele etape ale dosarului sunt importante",
       paragraphs: [
         [
-          { text: "Dosarele DNA urmează regulile generale ale " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Dosarele DNA urmează " },
+          { text: "regulile generale ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
         "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, măsuri preventive ori asigurătorii.",
@@ -814,8 +814,8 @@ export const retinere24OreRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Reținerea este una dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " prevăzute de Codul de procedură penală." },
+          { text: "măsurile preventive prevăzute de Codul de procedură penală", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
         "În funcție de dosar, poate intra în discuție o altă măsură preventivă. De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii.",
@@ -928,10 +928,10 @@ export const arestPreventivRo: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         [
-          { text: "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea " },
-          { text: "controlului judiciar", to: "/servicii/control-judiciar" },
-          { text: ", aplicarea " },
-          { text: "arestului la domiciliu", to: "/servicii/arest-la-domiciliu" },
+          { text: "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, " },
+          { text: "aplicarea controlului judiciar", to: "/servicii/control-judiciar" },
+          { text: ", " },
+          { text: "măsura arestului la domiciliu", to: "/servicii/arest-la-domiciliu" },
           { text: " sau o altă soluție permisă de lege." },
         ],
       ],
@@ -1032,8 +1032,8 @@ export const arestPreventivRo: SubServicePageData = {
       h2: "Cât poate dura arestarea preventivă și prelungirea",
       paragraphs: [
         [
-          { text: "Arestarea preventivă este cea mai severă dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "Arestarea preventivă este " },
+          { text: "cea mai severă dintre măsurile preventive", to: "/servicii/masuri-preventive" },
           { text: " reglementate de Codul de procedură penală." },
         ],
         "În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.",
@@ -1154,8 +1154,8 @@ export const controlJudiciarRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Controlul judiciar face parte dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " neprivative de libertate." },
+          { text: "măsurile preventive neprivative de libertate", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului. Analizez dacă:",
       ],
@@ -1248,8 +1248,8 @@ export const arestLaDomiciliuRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Arestul la domiciliu este una dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " privative de libertate." },
+          { text: "măsurile preventive privative de libertate", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.",
         "Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent.",
