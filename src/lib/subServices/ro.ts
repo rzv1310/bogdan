@@ -603,3 +603,408 @@ export const avocatDnaRo: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT,
 };
+
+const PARENT_MP = { to: "/servicii/masuri-preventive", label: "măsuri preventive" };
+
+export const retinere24OreRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/retinere-24-ore",
+  altPath: "/en/services/police-custody-24-hours",
+  roPath: "/servicii/retinere-24-ore",
+  title: "Avocat Reținere 24 Ore București | Bogdan Lamatic",
+  h1: "Avocat pentru reținere 24 de ore în București",
+  description:
+    "Avocat pentru reținere 24 de ore în București. Asistență imediată la audieri și pregătirea apărării pentru măsura care urmează. 18+ ani experiență.",
+  keywords:
+    "avocat retinere 24 ore, avocat retinere bucuresti, asistenta avocat retinere, avocat urgent retinere",
+  breadcrumbLabel: "Reținere 24 ore",
+  serviceName: "Avocat reținere 24 ore București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost reținut sau o persoană apropiată se află la Poliție ori Parchet?",
+    "Reținerea este o măsură preventivă privativă de libertate care poate fi dispusă pentru cel mult 24 de ore.",
+    "În acest interval pot avea loc audieri și acte procedurale care influențează măsura preventivă care urmează.",
+  ],
+  bio: [
+    `${BIO_INTRO} Intervin în situații de reținere, atât la solicitarea persoanei reținute, cât și a familiei acesteia.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce fac pentru tine în cazul reținerii",
+      bullets: [
+        "Ofer consultanță juridică imediată, în raport cu informațiile disponibile.",
+        "Te asist la audieri și pregătesc împreună cu tine poziția procesuală.",
+        "Analizez situația procesuală și documentele la care apărarea are acces.",
+        "Verific legalitatea măsurii și modul în care sunt consemnate declarațiile.",
+        "Pregătesc apărarea pentru eventuala propunere de arestare preventivă, control judiciar sau arest la domiciliu.",
+        "Comunic cu familia, în limitele mandatului și ale confidențialității.",
+      ],
+      paragraphs: [
+        "Un aspect important este anticiparea pasului următor. Dacă există riscul unei propuneri de arestare preventivă, apărarea trebuie pregătită înainte de termenul respectiv, nu după pronunțarea soluției.",
+      ],
+      cta: "A fost dispusă reținerea - Sună-mă acum",
+    },
+    {
+      h2: "Ce îmi spui când mă contactezi pentru o reținere",
+      paragraphs: [
+        "Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu. Spune-mi:",
+      ],
+      bullets: [
+        "numele persoanei;",
+        "unde se află;",
+        "la ce secție de Poliție, Parchet sau structură a fost dusă;",
+        "când a avut loc reținerea;",
+        "ce informații ai primit până acum;",
+        "dacă știi când urmează audierea sau prezentarea în fața judecătorului.",
+      ],
+      callout: "Nu este necesar să ai toate documentele pentru a mă contacta.",
+    },
+    {
+      h2: "Ce urmează după reținere",
+      paragraphs: [
+        "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
+        "În funcție de dosar, poate intra în discuție o altă măsură preventivă. De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii.",
+      ],
+      links: [
+        { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
+        { label: "Control judiciar - obligații, contestare și revocare", to: "/servicii/control-judiciar" },
+        { label: "Arest la domiciliu - contestație, permisiuni și înlocuire", to: "/servicii/arest-la-domiciliu" },
+        { label: "Avocat audiere Poliție sau Parchet", to: "/servicii/audiere-politie-parchet" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât poate dura reținerea?",
+      a: "Reținerea poate fi dispusă pentru cel mult 24 de ore. După expirarea acestui interval, persoana nu poate fi ținută în continuare în baza aceleiași măsuri. Dacă se urmărește o altă măsură preventivă, trebuie respectată procedura prevăzută pentru acea măsură.",
+    },
+    {
+      q: "Cine poate dispune reținerea?",
+      a: "Reținerea poate fi dispusă, în cursul urmăririi penale, de organul de cercetare penală sau de procuror, în condițiile prevăzute de Codul de procedură penală.",
+    },
+    {
+      q: "Am dreptul la avocat în timpul reținerii?",
+      a: "Da. Suspectul sau inculpatul are dreptul la asistența unui avocat și se poate consulta cu acesta înainte și în cursul audierii, în condițiile legii.",
+    },
+    {
+      q: "Poate familia să contacteze avocatul pentru persoana reținută?",
+      a: "Da. Foarte des prima persoană care caută avocatul este un membru al familiei. Este util să știu cine a fost reținut, unde se află, când s-a întâmplat și ce structură instrumentează dosarul.",
+    },
+    {
+      q: "Ce se întâmplă dacă nu reacționez în primele ore?",
+      a: "Actele efectuate în acest interval, inclusiv declarațiile, pot avea relevanță în etapele ulterioare, iar apărarea privind următoarea măsură preventivă se pregătește mai bine înainte de termen decât după pronunțarea soluției.",
+    },
+  ],
+  resources: [
+    { text: "Art. 202 CPP - scopul, condițiile generale și categoriile măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 209 CPP - reținerea.", href: CPP, linkLabel: "Legislație" },
+    { text: "Codul de procedură penală.", href: CPP, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP,
+};
+
+export const arestPreventivRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/arest-preventiv",
+  altPath: "/en/services/pre-trial-detention",
+  roPath: "/servicii/arest-preventiv",
+  title: "Avocat Arest Preventiv București | Bogdan Lamatic",
+  h1: "Avocat pentru arest preventiv în București",
+  description:
+    "Avocat arest preventiv București - apărare la propunerea de arestare, contestație, prelungire și înlocuirea măsurii. 18+ ani experiență.",
+  keywords:
+    "avocat arest preventiv, avocat arestare preventiva bucuresti, contestatie arest preventiv, inlocuire arest preventiv",
+  breadcrumbLabel: "Arest preventiv",
+  serviceName: "Avocat arest preventiv București - Bogdan Lamatic",
+  urgency: [
+    "Procurorul solicită arestarea preventivă sau măsura a fost deja dispusă?",
+    "Arestarea preventivă este cea mai severă dintre măsurile preventive prevăzute de Codul de procedură penală.",
+    "Apărarea trebuie pregătită în raport cu motivele concrete invocate, situația probatorie și posibilitatea aplicării unei măsuri mai puțin severe.",
+  ],
+  bio: [
+    `${BIO_INTRO} Am reprezentat clienți în fața judecătorului de drepturi și libertăți, a judecătorului de cameră preliminară și a instanțelor de judecată în cauze privind privarea de libertate.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez la o propunere de arestare preventivă",
+      bullets: [
+        "motivele concrete invocate pentru arestare;",
+        "condițiile generale ale măsurilor preventive;",
+        "condițiile speciale ale arestării preventive;",
+        "probele relevante disponibile;",
+        "existența riscurilor procesuale invocate;",
+        "circumstanțele personale, familiale și profesionale;",
+        "proporționalitatea măsurii;",
+        "posibilitatea aplicării unei măsuri mai puțin severe.",
+      ],
+      paragraphs: [
+        "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.",
+      ],
+      cta: "Urmează propunerea de arestare - Sună-mă acum",
+    },
+    {
+      h2: "Cât poate dura arestarea preventivă",
+      paragraphs: [
+        "În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.",
+        "Regimul aplicabil în camera preliminară și în cursul judecății este distinct și presupune verificări periodice ale măsurii.",
+      ],
+    },
+    {
+      h2: "Ești deja arestat preventiv",
+      paragraphs: [
+        "Faptul că arestarea preventivă a fost dispusă nu înseamnă că analiza apărării s-a încheiat. În funcție de etapa dosarului pot deveni relevante:",
+      ],
+      bullets: [
+        "contestația;",
+        "apărarea împotriva prelungirii măsurii;",
+        "verificarea periodică a măsurii;",
+        "revocarea;",
+        "înlocuirea cu o măsură preventivă mai puțin severă.",
+      ],
+      callout:
+        "Codul de procedură penală permite revocarea măsurii atunci când au încetat temeiurile care au determinat-o sau au apărut împrejurări noi și reglementează înlocuirea cu o măsură mai ușoară atunci când condițiile legale sunt îndeplinite.",
+      cta: "Măsura a fost deja dispusă - Verifică opțiunile",
+    },
+    {
+      h2: "Termenele pentru contestație",
+      paragraphs: [
+        "În materia măsurilor preventive există termene procedurale foarte scurte. Pentru contestațiile reglementate de art. 204-206 CPP, termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
+        "Dacă ai primit deja încheierea, spune-mi data și ora pronunțării sau comunicării cât mai exact.",
+      ],
+      links: [
+        { label: "Control judiciar - obligații, contestare și revocare", to: "/servicii/control-judiciar" },
+        { label: "Arest la domiciliu - contestație, permisiuni și înlocuire", to: "/servicii/arest-la-domiciliu" },
+        { label: "Reținere 24 ore - ce trebuie făcut imediat", to: "/servicii/retinere-24-ore" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât poate dura arestarea preventivă?",
+      a: "În cursul urmăririi penale poate fi dispusă inițial pentru maximum 30 de zile și poate fi prelungită în condițiile legii, fără ca durata totală în această etapă să depășească 180 de zile. Regimul aplicabil în celelalte etape ale procesului penal este distinct.",
+    },
+    {
+      q: "Cine poate dispune arestarea preventivă?",
+      a: "Arestarea preventivă este în competența judecătorului sau a instanței, în funcție de etapa procesuală. Procurorul poate formula propunerea, însă nu poate dispune el însuși măsura.",
+    },
+    {
+      q: "Cum se contestă arestarea preventivă?",
+      a: "Prin contestație împotriva încheierii prin care a fost luată, prelungită sau menținută măsura, în condițiile art. 204-206 CPP, în termenul de 48 de ore prevăzut de lege.",
+    },
+    {
+      q: "Poate fi înlocuită arestarea preventivă cu o măsură mai ușoară?",
+      a: "Da, dacă sunt îndeplinite condițiile prevăzute de art. 242 CPP. Trebuie analizate concret temeiurile măsurii, evoluția cauzei și conduita procesuală. Nicio soluție nu poate fi garantată.",
+    },
+    {
+      q: "Ce pot face dacă urmează prelungirea măsurii?",
+      a: "Apărarea poate fi pregătită înainte de termen, prin analiza temeiurilor invocate, a probelor administrate între timp și a eventualelor împrejurări noi relevante.",
+    },
+  ],
+  resources: [
+    { text: "Art. 202 CPP - condițiile generale ale măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 223 și urm. CPP - arestarea preventivă.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 204-206 CPP - căile de atac privind măsurile preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 241-242 CPP - încetarea de drept, revocarea și înlocuirea măsurilor.", href: CPP, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP,
+};
+
+export const controlJudiciarRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/control-judiciar",
+  altPath: "/en/services/judicial-control",
+  roPath: "/servicii/control-judiciar",
+  title: "Avocat Control Judiciar București | Bogdan Lamatic",
+  h1: "Avocat pentru control judiciar în București",
+  description:
+    "Avocat control judiciar București - obligații, plângere, modificarea restricțiilor, revocare și înlocuirea măsurii. Inclusiv control judiciar pe cauțiune.",
+  keywords:
+    "avocat control judiciar, control judiciar bucuresti, contestatie control judiciar, control judiciar pe cautiune",
+  breadcrumbLabel: "Control judiciar",
+  serviceName: "Avocat control judiciar București - Bogdan Lamatic",
+  urgency: [
+    "Ai restricții privind deplasările, contactul cu anumite persoane sau activitatea profesională?",
+    "Controlul judiciar nu presupune detenția, dar poate avea un impact real asupra vieții de zi cu zi.",
+    "Trebuie analizat dacă obligațiile sunt necesare și proporționale și dacă există motive pentru modificarea, revocarea sau înlocuirea măsurii.",
+  ],
+  bio: [
+    `${BIO_INTRO} Analizez obligațiile impuse prin controlul judiciar și posibilitățile procedurale de modificare a acestora.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce obligații pot fi impuse prin control judiciar",
+      paragraphs: [
+        "Conținutul controlului judiciar este reglementat de art. 215 CPP. Obligațiile pot privi, în funcție de situație:",
+      ],
+      bullets: [
+        "prezentarea în fața organului judiciar;",
+        "prezentarea la organul de poliție desemnat cu supravegherea;",
+        "comunicarea schimbării locuinței;",
+        "deplasarea în anumite limite teritoriale;",
+        "contactul cu anumite persoane;",
+        "exercitarea anumitor activități, atunci când o asemenea obligație este stabilită în condițiile legii;",
+        "alte obligații permise de lege.",
+      ],
+      callout: "Obligațiile exacte trebuie verificate în actul prin care măsura a fost dispusă.",
+    },
+    {
+      h2: "Ce analizez în cazul controlului judiciar",
+      paragraphs: [
+        "Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului. Analizez dacă:",
+      ],
+      bullets: [
+        "măsura mai este necesară;",
+        "obligațiile sunt proporționale;",
+        "au apărut împrejurări noi;",
+        "anumite restricții pot fi modificate;",
+        "există temei pentru revocarea sau înlocuirea măsurii.",
+      ],
+      cta: "Analizează obligațiile din controlul judiciar",
+    },
+    {
+      h2: "Controlul judiciar pe cauțiune",
+      paragraphs: [
+        "Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
+        "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei măsuri neprivative de libertate în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație.",
+      ],
+    },
+    {
+      h2: "Contestarea măsurii și termenele",
+      paragraphs: [
+        "Împotriva ordonanței procurorului prin care se dispune controlul judiciar există o cale specifică de atac, reglementată de art. 213 CPP. Pentru încheierile privind măsurile preventive se aplică art. 204-206 CPP, cu termenul de 48 de ore.",
+        "Trimite-mi ordonanța sau încheierea, obligațiile stabilite, data la care măsura a fost luată sau prelungită și problema concretă pe care una dintre obligații ți-o creează.",
+      ],
+      links: [
+        { label: "Arest la domiciliu - contestație, permisiuni și înlocuire", to: "/servicii/arest-la-domiciliu" },
+        { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
+        { label: "Reținere 24 ore - ce trebuie făcut imediat", to: "/servicii/retinere-24-ore" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Ce obligații pot fi impuse prin control judiciar?",
+      a: "Obligațiile prevăzute de art. 215 CPP, care pot include prezentarea la organul judiciar sau la poliție, comunicarea schimbării locuinței, restricții teritoriale, restricții privind contactul cu anumite persoane și, în condițiile legii, restricții privind anumite activități.",
+    },
+    {
+      q: "Controlul judiciar înseamnă privare de libertate?",
+      a: "Nu. Persoana rămâne în libertate, dar trebuie să respecte obligațiile stabilite de organul judiciar competent.",
+    },
+    {
+      q: "Cum contest controlul judiciar dispus de procuror?",
+      a: "Prin calea de atac specifică reglementată de art. 213 CPP. Termenele sunt scurte, așa că este util să îmi spui exact când ți-a fost comunicată ordonanța.",
+    },
+    {
+      q: "Pot fi modificate obligațiile pe parcursul dosarului?",
+      a: "Da, atunci când există temei legal. Se poate solicita modificarea obligațiilor, revocarea sau înlocuirea măsurii, în funcție de evoluția cauzei și de împrejurările noi apărute.",
+    },
+    {
+      q: "Ce este controlul judiciar pe cauțiune?",
+      a: "Este o măsură preventivă distinctă, care presupune, pe lângă obligațiile controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
+    },
+  ],
+  resources: [
+    { text: "Art. 211-215¹ CPP - controlul judiciar.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 216-217 CPP - controlul judiciar pe cauțiune.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 213 CPP - calea de atac împotriva controlului judiciar dispus de procuror.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 242 CPP - revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP,
+};
+
+export const arestLaDomiciliuRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/arest-la-domiciliu",
+  altPath: "/en/services/house-arrest",
+  roPath: "/servicii/arest-la-domiciliu",
+  title: "Avocat Arest la Domiciliu București | Bogdan Lamatic",
+  h1: "Avocat pentru arest la domiciliu în București",
+  description:
+    "Avocat arest la domiciliu București - contestație, cereri de părăsire a imobilului, revocare și înlocuirea măsurii. 18+ ani experiență.",
+  keywords:
+    "avocat arest la domiciliu, arest la domiciliu bucuresti, contestatie arest la domiciliu, inlocuire arest la domiciliu",
+  breadcrumbLabel: "Arest la domiciliu",
+  serviceName: "Avocat arest la domiciliu București - Bogdan Lamatic",
+  urgency: [
+    "Ești în arest la domiciliu sau această măsură urmează să fie discutată?",
+    "Arestul la domiciliu este o măsură preventivă privativă de libertate, executată în imobilul stabilit de organul judiciar.",
+    "În funcție de situație, pot fi analizate contestarea măsurii, înlocuirea cu una mai puțin severă sau cererile privind părăsirea imobilului în cazurile permise de lege.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist clienți atât înainte de luarea măsurii, cât și după dispunerea acesteia.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Cât poate dura arestul la domiciliu",
+      paragraphs: [
+        "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.",
+        "Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent.",
+      ],
+    },
+    {
+      h2: "Ce fac pentru tine în cazul arestului la domiciliu",
+      bullets: [
+        "pregătesc apărarea împotriva luării măsurii, atunci când mă contactezi înainte de termen;",
+        "analizez calea de atac disponibilă;",
+        "solicit înlocuirea cu o măsură mai puțin severă atunci când există temei;",
+        "analizez posibilitatea revocării;",
+        "formulez cereri privind părăsirea imobilului atunci când există un motiv justificat și condițiile legale sunt îndeplinite.",
+      ],
+      paragraphs: [
+        "Pot deveni relevante inclusiv situații privind activitatea profesională, tratamentul medical sau alte împrejurări personale temeinic justificate. Fiecare cerere trebuie analizată individual.",
+      ],
+      cta: "Sunt în arest la domiciliu - Vreau să verific opțiunile",
+    },
+    {
+      h2: "Ce verific dacă măsura este deja dispusă",
+      bullets: [
+        "dacă există o cale de atac disponibilă;",
+        "dacă măsura mai este necesară;",
+        "dacă poate fi înlocuită cu una mai puțin severă;",
+        "dacă au apărut împrejurări noi;",
+        "dacă este necesară o cerere pentru părăsirea temporară a imobilului într-o situație permisă de lege.",
+      ],
+      callout: "Trimite-mi încheierea și explică-mi problema concretă pe care măsura ți-o creează.",
+      links: [
+        { label: "Control judiciar - obligații, contestare și revocare", to: "/servicii/control-judiciar" },
+        { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
+        { label: "Reținere 24 ore - ce trebuie făcut imediat", to: "/servicii/retinere-24-ore" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât poate dura arestul la domiciliu?",
+      a: "În cursul urmăririi penale poate fi luat pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile legii, iar durata maximă în această etapă este de 180 de zile.",
+    },
+    {
+      q: "Cine poate dispune arestul la domiciliu?",
+      a: "Măsura este în competența judecătorului sau a instanței, în funcție de etapa procesuală și de procedura aplicabilă.",
+    },
+    {
+      q: "Pot ieși din imobil pentru muncă sau tratament medical?",
+      a: "În situațiile și condițiile prevăzute de lege poate fi solicitată permisiunea de a părăsi imobilul pentru o perioadă determinată și într-un scop justificat. Nu există o aprobare automată, iar cererea trebuie argumentată.",
+    },
+    {
+      q: "Se poate înlocui arestul la domiciliu cu controlul judiciar?",
+      a: "Da, atunci când sunt îndeplinite condițiile prevăzute de art. 242 CPP privind înlocuirea măsurii cu una mai ușoară.",
+    },
+    {
+      q: "Cum contest arestul la domiciliu?",
+      a: "Prin contestație împotriva încheierii, în condițiile art. 204-206 CPP. Termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
+    },
+  ],
+  resources: [
+    { text: "Art. 218-222 CPP - arestul la domiciliu.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 204-206 CPP - căile de atac privind măsurile preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 242 CPP - revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP,
+};
