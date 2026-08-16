@@ -394,6 +394,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
               calloutAfterBulletsCta={section.calloutAfterBulletsCta}
               cta={section.cta}
+              ctaIcon={section.ctaIcon}
               ctaWhatsApp={section.ctaWhatsApp}
               ctaWhatsAppLabel={section.ctaWhatsAppLabel}
             />
