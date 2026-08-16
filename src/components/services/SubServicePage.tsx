@@ -456,9 +456,17 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 <Phone className="mr-2 h-4 w-4" /> {callLabel}
               </a>
             </Button>
-            <Button asChild variant="outline">
-              <a href="mailto:contact@avocatpenalbucuresti.ro">{isEn ? "Send email" : "Trimite email"}</a>
-            </Button>
+            {data.contactWhatsApp ? (
+              <WhatsAppDocsCta
+                lang={data.lang}
+                variant="green"
+                label={isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele"}
+              />
+            ) : (
+              <Button asChild variant="outline">
+                <a href="mailto:contact@avocatpenalbucuresti.ro">{isEn ? "Send email" : "Trimite email"}</a>
+              </Button>
+            )}
           </div>
         </CardContent>
       </Card>
