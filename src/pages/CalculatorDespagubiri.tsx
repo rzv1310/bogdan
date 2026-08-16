@@ -395,6 +395,7 @@ export default function CalculatorDespagubiri() {
             </Card>
           </div>
         </section>
+        </div>
 
         {/* Results */}
         {showResults && (
