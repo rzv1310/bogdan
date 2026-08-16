@@ -331,7 +331,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <Breadcrumb className="mb-4">
+      <Breadcrumb className="mb-4 mt-3 md:mt-0">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href={isEn ? "/en" : "/"}>{isEn ? "Home" : "Acasă"}</BreadcrumbLink>

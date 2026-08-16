@@ -156,7 +156,7 @@ export default function InvestigatiiCripto() {
       )}
       <main className="mx-auto max-w-6xl px-4 md:px-6 py-8">
       <header className="mb-6">
-        <Breadcrumb className="mb-4">
+        <Breadcrumb className="mb-4 mt-3 md:mt-0">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
