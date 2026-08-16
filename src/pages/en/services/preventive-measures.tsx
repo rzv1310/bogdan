@@ -481,17 +481,15 @@ export default function PreventiveMeasures() {
         <CardHeader className="pb-3">
           <h3 className="text-xl font-semibold leading-none tracking-tight">Contact - free initial assessment</h3>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>Bogdan Lamatic - criminal law attorney, Bucharest. Phone: 031 632 01 83.</p>
-          <p>Hours: Monday - Friday: 06:00 - 22:00; Saturday - Sunday: 09:00 - 20:00.</p>
-          <p>If it is an urgent situation, say from the start: „It is about a preventive measure.”</p>
+        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
+          <p className="font-semibold">If it is an urgent situation, say from the start: „It is about a preventive measure."</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
               <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now - 031 632 01 83</a>
             </Button>
             <WhatsAppDocsCta lang="en" />
             <Button asChild variant="outline">
-              <Link to="/en/contact">Send your request and documents</Link>
+              <Link to="/en/contact">Send me the documents by email</Link>
             </Button>
           </div>
         </CardContent>
