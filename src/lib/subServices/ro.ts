@@ -318,8 +318,8 @@ export const perchezitieInformaticaRo: SubServicePageData = {
       h2: "Ce este o percheziție informatică",
       paragraphs: [
         [
-          { text: "Percheziția informatică este un procedeu probatoriu folosit în faza de " },
-          { text: "urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "Percheziția informatică este un procedeu probatoriu folosit în " },
+          { text: "etapele urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
         "Codul de procedură penală definește percheziția informatică drept procedeul prin care sunt cercetate, descoperite, identificate și strânse probe stocate într-un sistem informatic sau pe un suport de stocare, prin mijloace tehnice și proceduri care trebuie să asigure integritatea informațiilor.",
