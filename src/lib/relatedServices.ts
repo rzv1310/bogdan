@@ -75,71 +75,38 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/neglijenta-profesionala-si-malpraxis",
     "/servicii/raspundere-penala-incidente-locul-de-munca",
   ],
-  "/servicii/audiere-politie-parchet": [
-    "/servicii/urmarire-penala",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/perchezitie-domiciliara": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/perchezitie-informatica": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/avocat-diicot",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/avocat-diicot": [
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/perchezitie-domiciliara",
-    "/servicii/perchezitie-informatica",
-    "/servicii/avocat-dna",
-    "/servicii/masuri-preventive",
-  ],
-  "/servicii/avocat-dna": [
-    "/servicii/urmarire-penala",
+};
+
+/**
+ * Sub-service groups: parent pillar page -> its sub-service pages (RO paths).
+ * For sub-service pages the related list is derived automatically as
+ * parent page + sibling sub-services.
+ */
+export const subServiceGroups: Record<string, string[]> = {
+  "/servicii/urmarire-penala": [
     "/servicii/audiere-politie-parchet",
     "/servicii/perchezitie-domiciliara",
     "/servicii/perchezitie-informatica",
     "/servicii/avocat-diicot",
-    "/servicii/masuri-preventive",
+    "/servicii/avocat-dna",
   ],
-  "/servicii/retinere-24-ore": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/arest-preventiv": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/control-judiciar": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
-  ],
-  "/servicii/arest-la-domiciliu": [
-    "/servicii/masuri-preventive",
-    "/servicii/urmarire-penala",
-    "/servicii/audiere-politie-parchet",
-    "/servicii/infractiuni-contra-persoanei",
+  "/servicii/masuri-preventive": [
+    "/servicii/retinere-24-ore",
+    "/servicii/arest-preventiv",
+    "/servicii/control-judiciar",
+    "/servicii/arest-la-domiciliu",
   ],
 };
+
+function subServiceTargets(roPath: string): string[] {
+  for (const [parent, children] of Object.entries(subServiceGroups)) {
+    if (children.includes(roPath)) {
+      return [parent, ...children.filter((child) => child !== roPath)];
+    }
+  }
+  return [];
+}
+
 
 const extraLabelsRo: Record<string, string> = {
   "/servicii/audiere-politie-parchet": "Audiere Poliție și Parchet",
@@ -184,18 +151,23 @@ function labelEn(path: string): string | undefined {
 /**
  * Returns related internal links for a given page path.
  * Accepts either a RO service path or an EN service path.
+ * `exclude` removes paths that are already linked contextually on the page.
  */
-export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"): RelatedLink[] {
+export function getRelatedServices(
+  currentPath: string,
+  lang: "ro" | "en" = "ro",
+  exclude: string[] = []
+): RelatedLink[] {
   const roPath = currentPath.startsWith("/en")
     ? Object.entries(roToEn).find(([, en]) => en === currentPath)?.[0] ?? currentPath
     : currentPath;
 
-  const targets = relatedServices[roPath] ?? [];
+  const targets = relatedServices[roPath] ?? subServiceTargets(roPath);
+  const excluded = new Set(exclude);
 
   return targets
     .map((target) => {
       if (lang === "en") {
-        
         const enTarget = roToEn[target] ?? target;
         const label = labelEn(enTarget) ?? labelEn(target);
         return label ? { to: enTarget, label } : null;
@@ -203,5 +175,7 @@ export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"
       const label = labelRo(target);
       return label ? { to: target, label } : null;
     })
-    .filter((x): x is RelatedLink => Boolean(x));
+    .filter((x): x is RelatedLink => Boolean(x))
+    .filter((link) => !excluded.has(link.to));
 }
+

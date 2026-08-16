@@ -7,11 +7,14 @@ interface RelatedServicesProps {
   /** Current page path, e.g. "/servicii/masuri-preventive" or "/en/services/drug-offenses" */
   current: string;
   lang?: "ro" | "en";
+  /** Paths already linked contextually on the page; they are not repeated here. */
+  exclude?: string[];
 }
 
-const RelatedServices = ({ current, lang = "ro" }: RelatedServicesProps) => {
-  const links = getRelatedServices(current, lang);
+const RelatedServices = ({ current, lang = "ro", exclude }: RelatedServicesProps) => {
+  const links = getRelatedServices(current, lang, exclude);
   if (links.length === 0) return null;
+
 
   return (
     <Card className="mt-8 border-accent">
