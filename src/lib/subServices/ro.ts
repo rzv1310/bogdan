@@ -452,8 +452,8 @@ export const avocatDiicotRo: SubServicePageData = {
       h2: "De ce un dosar DIICOT necesită o strategie construită de la început",
       paragraphs: [
         [
-          { text: "Un dosar DIICOT parcurge aceleași etape ale " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Un dosar DIICOT parcurge " },
+          { text: "aceleași etape ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: ", însă cu un volum de probe mult mai mare." },
         ],
         "DIICOT are o competență specializată stabilită prin OUG nr. 78/2016 și prin alte dispoziții legale.",
