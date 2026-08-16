@@ -134,9 +134,9 @@ export default function VictimRepresentationEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
-        <ServiceSubServices path="/en/services/victim-representation-in-criminal-cases" lang="en" />
-
         <LawyerBioBlock path="/en/services/victim-representation-in-criminal-cases" lang="en" />
+
+        <ServiceSubServices path="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
         {/* Cases I take */}
         <Card className="mt-12 md:mt-14 border-accent">

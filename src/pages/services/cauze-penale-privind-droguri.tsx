@@ -150,9 +150,9 @@ export default function CauzeDroguri() {
       <p className="mt-3 text-sm text-muted-foreground">
         5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
-      <ServiceSubServices path="/servicii/cauze-penale-privind-droguri" />
-
       <LawyerBioBlock path="/servicii/cauze-penale-privind-droguri" lang="ro" />
+
+      <ServiceSubServices path="/servicii/cauze-penale-privind-droguri" />
 
       {/* H2: Ce înseamnă traficul de droguri */}
       <Card className="mt-12 md:mt-14 border-accent">

@@ -184,8 +184,8 @@ export default function InvestigatiiCripto() {
         <p className="mt-3 text-sm text-muted-foreground">
           5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
         </p>
-        <ServiceSubServices path="/servicii/investigatii-privind-activele-cripto" />
         <LawyerBioBlock path="/servicii/investigatii-privind-activele-cripto" lang="ro" />
+        <ServiceSubServices path="/servicii/investigatii-privind-activele-cripto" />
       </header>
 
       {/* Ce tipuri de spețe crypto gestionez */}

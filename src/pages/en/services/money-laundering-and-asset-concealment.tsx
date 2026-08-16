@@ -132,8 +132,8 @@ export default function MoneyLaunderingEn() {
           <p className="mt-3 text-sm text-muted-foreground">
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
-          <ServiceSubServices path="/en/services/money-laundering-and-asset-concealment" lang="en" />
           <LawyerBioBlock path="/en/services/money-laundering-and-asset-concealment" lang="en" />
+          <ServiceSubServices path="/en/services/money-laundering-and-asset-concealment" lang="en" />
         </header>
 
         <section className="mt-4 border border-accent rounded-md p-4">

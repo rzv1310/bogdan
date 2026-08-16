@@ -92,9 +92,9 @@ export default function RoadTrafficEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
-        <ServiceSubServices path="/en/services/road-traffic-offenses" lang="en" />
-
         <LawyerBioBlock path="/en/services/road-traffic-offenses" lang="en" />
+
+        <ServiceSubServices path="/en/services/road-traffic-offenses" lang="en" />
 
         {/* Why choose me */}
         <Card className="mt-12 md:mt-14 border-accent">

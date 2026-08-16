@@ -153,9 +153,9 @@ export default function InfractiuniContraPersoanei() {
       <p className="mt-3 text-sm text-muted-foreground">
         5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
-      <ServiceSubServices path="/servicii/infractiuni-contra-persoanei" />
-
       <LawyerBioBlock path="/servicii/infractiuni-contra-persoanei" lang="ro" />
+
+      <ServiceSubServices path="/servicii/infractiuni-contra-persoanei" />
 
       {/* Ce înseamnă infracțiuni contra persoanei */}
       <Card className="mt-12 md:mt-14 border-accent">

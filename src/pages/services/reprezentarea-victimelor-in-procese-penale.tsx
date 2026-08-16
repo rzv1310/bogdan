@@ -166,9 +166,9 @@ export default function ReprezentareaVictimelor() {
       <p className="mt-3 text-sm text-muted-foreground">
         5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
-      <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
-
       <LawyerBioBlock path="/servicii/reprezentarea-victimelor-in-procese-penale" lang="ro" />
+
+      <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 
       {/* Ce cazuri preiau */}
       <Card className="mt-12 md:mt-14 border-accent">

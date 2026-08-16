@@ -141,8 +141,8 @@ export default function CryptoInvestigationsEn() {
           <p className="mt-3 text-sm text-muted-foreground">
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
-          <ServiceSubServices path="/en/services/crypto-asset-investigations" lang="en" />
           <LawyerBioBlock path="/en/services/crypto-asset-investigations" lang="en" />
+          <ServiceSubServices path="/en/services/crypto-asset-investigations" lang="en" />
         </header>
 
         {/* What types of crypto matters I handle */}

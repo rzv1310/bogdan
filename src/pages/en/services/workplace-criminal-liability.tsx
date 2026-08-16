@@ -90,9 +90,9 @@ export default function WorkplaceLiabilityEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
-        <ServiceSubServices path="/en/services/workplace-criminal-liability" lang="en" />
-
         <LawyerBioBlock path="/en/services/workplace-criminal-liability" lang="en" />
+
+        <ServiceSubServices path="/en/services/workplace-criminal-liability" lang="en" />
 
         {/* General framework */}
         <Card className="mt-12 md:mt-14 border-accent">
