@@ -315,12 +315,23 @@ const HomepageEN = () => {
               "bestRating": "5",
               "reviewCount": "28"
             },
-            "review": currentReviews.slice(0, 5).map((review, index) => ({
+            "review": googleReviews.map((review) => ({
               "@type": "Review",
-              "inLanguage": "en-US",
-              "author": { "@type": "Person", "name": review.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": review.stars.toString(), "bestRating": "5" },
-              "reviewBody": review.text
+              "inLanguage": "ro-RO",
+              "author": { "@type": "Person", "name": review.author },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": review.reviewBody,
+              "itemReviewed": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+              "publisher": { "@type": "Organization", "name": "Google" },
+              ...(review.ownerReply
+                ? {
+                    "comment": {
+                      "@type": "Answer",
+                      "author": { "@type": "Person", "name": "Avocat Bogdan Lamatic" },
+                      "text": review.ownerReply,
+                    },
+                  }
+                : {}),
             }))
           },
           {
