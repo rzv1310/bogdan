@@ -306,30 +306,21 @@ export default function OffensesAgainstPersons() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions about offenses against persons</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed">
-          <ol className="list-decimal pl-6 space-y-3">
-            {FAQ.map((item) => (
-              <li key={item.q}>
-                <strong>{item.q}</strong>
-                <p className="mt-1">
-                  {item.q.startsWith("How much does") ? (
-                    <>
-                      The fee depends on the complexity of the case and the procedural stage. I offer a free initial discussion to assess your situation and a transparent estimated fee, fully set out in the contract. Call me at{" "}
-                      <a href="tel:+40316320183" className="text-primary underline underline-offset-2">+40 (31) 632 01 83</a>.
-                    </>
-                  ) : (
-                    item.a
-                  )}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Frequently asked questions about offenses against persons"
+        ordered
+        items={FAQ.map((item) => ({
+          q: item.q,
+          a: item.q.startsWith("How much does") ? (
+            <>
+              The fee depends on the complexity of the case and the procedural stage. I offer a free initial discussion to assess your situation and a transparent estimated fee, fully set out in the contract. Call me at{" "}
+              <a href="tel:+40316320183" className="text-primary underline underline-offset-2">+40 (31) 632 01 83</a>.
+            </>
+          ) : (
+            item.a
+          ),
+        }))}
+      />
 
       {/* Contact */}
       <Card className="mt-8 border-accent">
