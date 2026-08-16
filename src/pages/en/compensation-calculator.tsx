@@ -176,7 +176,8 @@ export default function CompensationCalculator() {
     <div className="min-h-screen bg-zinc-50">
       <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
         {/* Breadcrumb */}
-        <section className="mb-4">
+        <div className="flex flex-col">
+        <section className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -403,6 +404,7 @@ export default function CompensationCalculator() {
             </Card>
           </div>
         </section>
+        </div>
 
         {/* Results */}
         {showResults && (
