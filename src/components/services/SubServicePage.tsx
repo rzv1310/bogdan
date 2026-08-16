@@ -263,6 +263,33 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           ))}
         </ul>
       )}
+      {paragraphsAfterBullets?.map((paragraph, pIdx) => (
+        <p key={`after-${pIdx}`}>
+          {typeof paragraph === "string" ? (
+            paragraph
+          ) : (
+            paragraph.map((segment, sIdx) =>
+              segment.bold ? (
+                <strong key={sIdx}>{segment.text}</strong>
+              ) : (
+                <span key={sIdx}>{segment.text}</span>
+              )
+            )
+          )}
+        </p>
+      ))}
+      {calloutAfterBullets && (
+        <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutAfterBulletsClassName ?? ""}`}>
+          <span>{calloutAfterBullets}</span>
+          {calloutAfterBulletsCta && (
+            <Button asChild variant="warning" size="sm" aria-label={`${calloutAfterBulletsCta} - ${data.serviceName}`}>
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> {calloutAfterBulletsCta}
+              </a>
+            </Button>
+          )}
+        </div>
+      )}
       {links && links.length > 0 && (
         <ul className="space-y-2">
           {links.map((link) => (
