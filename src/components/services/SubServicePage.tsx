@@ -238,7 +238,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             paragraph
           ) : (
             paragraph.map((segment, sIdx) =>
-              segment.bold ? (
+              segment.to ? (
+                <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </Link>
+              ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (
                 <span key={sIdx}>{segment.text}</span>
