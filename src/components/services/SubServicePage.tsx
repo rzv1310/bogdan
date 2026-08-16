@@ -60,7 +60,7 @@ export interface SubServicePageData {
   resources: SubServiceResource[];
   contactText: string;
   /** Link to the parent pillar page */
-  parent: { to: string; label: string };
+  parent: { to: string; label: string; breadcrumbLabel: string };
 }
 
 const CTA_CLASS =
