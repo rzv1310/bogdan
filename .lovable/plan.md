@@ -13,7 +13,7 @@ Secțiunea „Ce se întâmplă la termenul pentru propunerea de arestare preven
 Se va transforma fraza „persoana este reținută" într-un link către `/servicii/retinere-24-ore`, folosind structura segmentată de text (suportată deja după ultima actualizare).
 
 ## Modificări tehnice
-1. `src/lib/subServices/ro.ts` — convertește paragraful `paragraphsAfterBullets` din string simplu în array de segmente, unde segmentul `reținută` primește `to: "/servicii/retinere-24-ore"`.
+1. `src/lib/subServices/ro.ts` — convertește paragraful `paragraphsAfterBullets` din string simplu în array de segmente, unde segmentul `persoana este reținută` primește `to: "/servicii/retinere-24-ore"`.
 2. Verificare build + SEO validation pentru a confirma că nu apar erori de tip sau de structură.
 
 ## Rezultat așteptat
