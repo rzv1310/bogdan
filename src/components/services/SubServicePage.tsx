@@ -14,7 +14,7 @@ import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 
 export interface SubServiceSubsection {
   h3: string;
-  paragraphs?: (string | { text: string; bold?: boolean }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
@@ -34,7 +34,7 @@ export interface SubServiceSubsection {
 
 export interface SubServiceSection {
   h2: string;
-  paragraphs?: (string | { text: string; bold?: boolean }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
@@ -49,7 +49,7 @@ export interface SubServiceSection {
   /** Optional inline CTA button rendered inside the callout. */
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
-  paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
   /** Optional small highlighted callout rendered after the bullets. */
   calloutAfterBullets?: string;
   /** Optional extra className for the after-bullets callout. */
@@ -216,13 +216,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
-    paragraphs?: (string | { text: string; bold?: boolean }[])[];
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
     bullets?: (string | { bold: string; rest: string })[];
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
     calloutCta?: string;
-    paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
@@ -238,7 +238,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             paragraph
           ) : (
             paragraph.map((segment, sIdx) =>
-              segment.bold ? (
+              segment.to ? (
+                <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </Link>
+              ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (
                 <span key={sIdx}>{segment.text}</span>
@@ -281,7 +285,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             paragraph
           ) : (
             paragraph.map((segment, sIdx) =>
-              segment.bold ? (
+              segment.to ? (
+                <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </Link>
+              ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (
                 <span key={sIdx}>{segment.text}</span>
