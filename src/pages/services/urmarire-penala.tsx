@@ -153,7 +153,7 @@ export default function UrmarirePenala() {
         <p className="text-foreground">
           <span className="block"><strong>În faza de urmărire penală, primele ore contează cel mai mult!</strong></span>
           <span className="block">Ce declari, ce semnezi și cum reacționezi în primele 24 de ore pot decide dacă dosarul se închide rapid sau se transformă într-un proces lung.</span>
-          <span className="block">Nu aștepta prima înfățișare în instanță ca să ceri ajutor - te apăr chiar de la audiere, percheziție sau reținere.</span>
+          <span className="block">Nu aștepta prima chemare a organelor de urmarire penală ca să ceri ajutor.</span>
         </p>
       </div>
 
