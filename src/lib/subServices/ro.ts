@@ -1154,8 +1154,8 @@ export const controlJudiciarRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Controlul judiciar face parte dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " neprivative de libertate." },
+          { text: "măsurile preventive neprivative de libertate", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului. Analizez dacă:",
       ],
