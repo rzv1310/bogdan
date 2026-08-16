@@ -219,8 +219,8 @@ export const computerSearchEn: SubServicePageData = {
       h2: "What you should know about a computer search",
       paragraphs: [
         [
-          { text: "A computer search is an evidence-gathering procedure used during the " },
-          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: "A computer search is an evidence-gathering procedure used in " },
+          { text: "the stages of the criminal investigation", to: "/en/services/criminal-investigation" },
           { text: "." },
         ],
       ],
