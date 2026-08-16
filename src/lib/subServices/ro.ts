@@ -959,7 +959,11 @@ export const arestPreventivRo: SubServicePageData = {
         "judecătorul poate respinge propunerea sau poate dispune arestarea preventivă ori o măsură alternativă permisă de lege.",
       ],
       paragraphsAfterBullets: [
-        "Dacă persoana este reținută, sesizarea judecătorului cu propunerea de arestare preventivă trebuie făcută cu cel puțin 6 ore înainte de expirarea duratei reținerii. În practică, asta înseamnă că apărarea se pregătește în câteva ore.",
+        [
+          { text: "Dacă " },
+          { text: "persoana este reținută", to: "/servicii/retinere-24-ore" },
+          { text: ", sesizarea judecătorului cu propunerea de arestare preventivă trebuie făcută cu cel puțin 6 ore înainte de expirarea duratei reținerii. În practică, asta înseamnă că apărarea se pregătește în câteva ore." },
+        ],
       ],
       cta: "Am termen pentru propunerea de arestare - Sună-mă acum",
     },
