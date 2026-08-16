@@ -2,7 +2,11 @@ import type { SubServicePageData } from "@/components/services/SubServicePage";
 
 const CPP = "https://legislatie.just.ro/Public/DetaliiDocument/185907";
 const CP = "https://legislatie.just.ro/Public/DetaliiDocument/223635";
-const PARENT = { to: "/en/services/criminal-investigation", label: "criminal investigation" };
+const PARENT = {
+  to: "/en/services/criminal-investigation",
+  label: "criminal investigation",
+  breadcrumbLabel: "Criminal investigation",
+};
 const BIO_INTRO = "I am Bogdan Lamatic, attorney with the Bucharest Bar and more than 18 years of experience in criminal law.";
 const LEGAL500 = "I am recognised by Legal 500 as a Next Generation Partner (White-Collar Crime).";
 const CONTACT =
@@ -399,7 +403,11 @@ export const dnaLawyerEn: SubServicePageData = {
   parent: PARENT,
 };
 
-const PARENT_MP_EN = { to: "/en/services/preventive-measures", label: "preventive measures" };
+const PARENT_MP_EN = {
+  to: "/en/services/preventive-measures",
+  label: "preventive measures",
+  breadcrumbLabel: "Preventive measures",
+};
 
 export const policeCustody24HoursEn: SubServicePageData = {
   lang: "en",

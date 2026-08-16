@@ -608,7 +608,11 @@ export const avocatDnaRo: SubServicePageData = {
   parent: PARENT,
 };
 
-const PARENT_MP = { to: "/servicii/masuri-preventive", label: "măsuri preventive" };
+const PARENT_MP = {
+  to: "/servicii/masuri-preventive",
+  label: "măsuri preventive",
+  breadcrumbLabel: "Măsuri preventive",
+};
 
 export const retinere24OreRo: SubServicePageData = {
   lang: "ro",
