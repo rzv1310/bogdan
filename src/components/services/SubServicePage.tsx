@@ -49,7 +49,7 @@ export interface SubServiceSection {
   /** Optional inline CTA button rendered inside the callout. */
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
-  paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
   /** Optional small highlighted callout rendered after the bullets. */
   calloutAfterBullets?: string;
   /** Optional extra className for the after-bullets callout. */
