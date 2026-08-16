@@ -185,6 +185,38 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/retinere-24-ore</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/retinere-24-ore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/police-custody-24-hours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/retinere-24-ore" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/arest-preventiv</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/arest-preventiv" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/pre-trial-detention" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/arest-preventiv" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/control-judiciar</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/control-judiciar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/judicial-control" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/control-judiciar" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/arest-la-domiciliu</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/arest-la-domiciliu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/house-arrest" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/arest-la-domiciliu" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://avocatpenalbucuresti.ro/harta-site</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/harta-site" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/sitemap" />
@@ -429,6 +461,38 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/dna-lawyer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/avocat-dna" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/police-custody-24-hours</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/retinere-24-ore" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/police-custody-24-hours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/retinere-24-ore" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/pre-trial-detention</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/arest-preventiv" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/pre-trial-detention" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/arest-preventiv" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/judicial-control</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/control-judiciar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/judicial-control" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/control-judiciar" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/house-arrest</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/arest-la-domiciliu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/house-arrest" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/arest-la-domiciliu" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
