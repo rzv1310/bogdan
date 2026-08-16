@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -153,12 +154,7 @@ export default function ReprezentareaVictimelor() {
         Avocat victime infracțiuni București - Bogdan Lamatic
       </h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>Ca victimă a unei infracțiuni, primele zile contează cel mai mult.</strong></span>
-          <span className="block">Plângerea penală, constituirea ca parte civilă la termen și probele medicale strânse din start pot decide dacă obții despăgubiri integrale sau pierzi definitiv dreptul la ele.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat victime infracțiuni" />
 
@@ -167,16 +163,7 @@ export default function ReprezentareaVictimelor() {
       </p>
       <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale, accidente de muncă sau alte fapte penale, inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
-
-      {/* Ce cazuri preiau */}
+            {/* Ce cazuri preiau */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce cazuri preiau</h2>

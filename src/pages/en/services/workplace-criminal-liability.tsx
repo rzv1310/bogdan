@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -77,12 +78,7 @@ export default function WorkplaceLiabilityEn() {
         </Breadcrumb>
 
         <h1 className="text-2xl font-semibold mb-4">Criminal liability for incidents at the workplace | Criminal lawyer Bogdan Lamatic | Bucharest</h1>
-        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p className="text-foreground">
-            <span className="block"><strong>After a workplace accident, the first hours matter most.</strong></span>
-            <span className="block">The labour inspectorate investigation, the statements given by employees and the health and safety documents handed over in the first days can decide whether criminal liability is established or not.</span>
-          </p>
-        </div>
+        <ServiceAuthorBio lang="en" path="/en/services/workplace-criminal-liability" />
 
         <ServiceHeroCta lang="en" ariaLabel="Call now" />
 
@@ -91,16 +87,7 @@ export default function WorkplaceLiabilityEn() {
         </p>
         <ServiceSubServices path="/en/services/workplace-criminal-liability" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law and numerous successful cases in white-collar crime. I assist employers, managers and health and safety officers in criminal investigations regarding workplace accidents and breaches of safety regulations.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
-
-        {/* General framework */}
+                {/* General framework */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">General framework of occupational health and safety</h2>

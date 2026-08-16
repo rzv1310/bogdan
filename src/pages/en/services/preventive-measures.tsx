@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
@@ -186,13 +187,7 @@ export default function PreventiveMeasures() {
 
       <h1 className="text-2xl font-semibold mb-4">Preventive measures lawyer in Bucharest</h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>Have you been taken into police custody, are you under judicial control, or is a pre-trial detention proposal coming?</strong></span>
-          <span className="block">A preventive measure can limit your liberty, your travel, your professional activity and your family life before any conviction exists.</span>
-          <span className="block">If you or someone close to you has been told that a preventive measure is coming, or the measure has already been ordered, the time available to prepare the defence can be very short.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="en" path="/en/services/preventive-measures" />
 
       <ServiceHeroCta lang="en" ariaLabel="Call me now! - preventive measures lawyer" />
 
@@ -201,20 +196,7 @@ export default function PreventiveMeasures() {
       </p>
       <ServiceSubServices path="/en/services/preventive-measures" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I intervene in situations involving custody of up to 24 hours, pre-trial detention, judicial control, judicial control on bail, house arrest, the extension or maintenance of a measure, challenging it, revoking it or replacing it with a less severe one, usually in the context of a{" "}
-          <Link to="/en/services/criminal-investigation" className="text-primary underline underline-offset-2">
-            criminal investigation stage
-          </Link>
-          .
-        </p>
-        <p>
-          I am currently listed by Legal 500 in the Next Generation Partners category - White-Collar Crime. I have represented clients before the judge for rights and liberties, the pre-trial chamber judge and the trial courts.
-        </p>
-      </div>
-
-      {/* Do you have one of these problems */}
+            {/* Do you have one of these problems */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Do you have one of these problems?</h2>

@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -147,13 +148,7 @@ export default function CriminalInvestigation() {
         Criminal Investigation Lawyer Bucharest - Defense From the First Hour of the Investigation | Bogdan Lamatic
       </h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>In a criminal investigation, the first hours matter most.</strong></span>
-          <span className="block">What you state, what you sign and how you react in the first 24 hours can decide whether the case closes quickly or turns into a lengthy trial.</span>
-          <span className="block">Do not wait for the first court hearing to ask for help - a criminal investigation lawyer defends you from the moment of the hearing, the search, or the detention itself.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="en" path="/en/services/criminal-investigation" />
 
       <ServiceHeroCta lang="en" ariaLabel="Call now! - criminal investigation lawyer" />
 
@@ -162,16 +157,7 @@ export default function CriminalInvestigation() {
       </p>
       <ServiceSubServices path="/en/services/criminal-investigation" lang="en" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I assist persons who have been summoned, detained, searched, or who are otherwise at any stage of the criminal investigation - from the very first call received from the police or the prosecutor's office, until the prosecutor's final decision.
-        </p>
-        <p>
-          I have been recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, the National Anticorruption Directorate (DNA), the Directorate for Investigating Organized Crime and Terrorism (DIICOT), the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-        </p>
-      </div>
-
-      {/* What is a criminal investigation */}
+            {/* What is a criminal investigation */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">

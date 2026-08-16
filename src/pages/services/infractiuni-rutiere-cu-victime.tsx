@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
@@ -149,13 +150,7 @@ export default function InfractiuniRutiere() {
       <h1 className="text-2xl font-semibold mb-4">
         Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic
       </h1>
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>Într-un dosar rutier, primele ore după accident contează cel mai mult.</strong></span>
-          <span className="block">Testarea alcoolscopică, recoltarea probelor biologice, declarațiile date la fața locului și primele acte de urmărire penală pot decide încadrarea juridică și rezultatul final.</span>
-          <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/infractiuni-rutiere-cu-victime" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat infracțiuni rutiere" />
 
@@ -164,20 +159,7 @@ export default function InfractiuniRutiere() {
       </p>
       <ServiceSubServices path="/servicii/infractiuni-rutiere-cu-victime" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și dosare rutiere - de la fapte fără victime până la accidente cu vătămare sau deces, în fața tuturor instanțelor și organelor de urmărire penală.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime), statut relevant pentru rigoarea și strategia de apărare pe care le aplic și în dosarele rutiere. Accidentele rutiere cu victime fac parte, ca încadrare juridică, din sfera mai largă a{" "}
-          <Link to="/servicii/infractiuni-contra-persoanei" className="text-primary underline underline-offset-2">
-            infracțiunilor contra persoanei
-          </Link>
-          .
-        </p>
-      </div>
-
-      {/* De ce să apelezi la mine */}
+            {/* De ce să apelezi la mine */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">De ce să apelezi la mine pentru un dosar rutier?</h2>
