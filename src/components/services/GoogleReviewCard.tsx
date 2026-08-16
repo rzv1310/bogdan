@@ -1,3 +1,5 @@
+import { Heart, MoreVertical } from "lucide-react";
+
 interface GoogleReviewCardProps {
   lang?: "ro" | "en";
   className?: string;
@@ -31,32 +33,48 @@ function GoogleGlyph() {
 /** Single social-proof review, styled like a Google Business Profile review. */
 export default function GoogleReviewCard({ lang = "ro", className = "" }: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
+  const reviewCount = lang === "en" ? "3 reviews" : "3 recenzii";
+  const timestamp = lang === "en" ? "2 months ago" : "acum 2 luni";
+
   return (
     <figure className={`mt-12 md:mt-16 rounded-lg border border-slate-700 bg-slate-900 p-5 shadow-sm ${className}`}>
-      <div className="flex items-center gap-3">
-        <span
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-base font-semibold text-accent-foreground"
-          aria-hidden="true"
-        >
-          R
-        </span>
-        <div className="min-w-0">
-          <p className="text-sm font-semibold text-slate-100">{AUTHOR}</p>
-          <div className="flex items-center gap-2">
-            <span className="text-yellow-400 text-sm" aria-hidden="true">
-              ★★★★★
-            </span>
-            <span className="inline-flex items-center gap-1 text-xs text-slate-300">
-              <GoogleGlyph />
-              {badge}
-            </span>
+      <div className="flex items-start justify-between gap-2">
+        <div className="flex items-center gap-3">
+          <span
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-base font-semibold text-accent-foreground"
+            aria-hidden="true"
+          >
+            R
+          </span>
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-slate-100">{AUTHOR}</p>
+            <p className="text-xs text-slate-400">{reviewCount}</p>
           </div>
         </div>
+        <MoreVertical className="h-4 w-4 shrink-0 text-slate-400" aria-hidden="true" />
       </div>
+
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <span className="text-sm text-yellow-400" aria-hidden="true">
+          ★★★★★
+        </span>
+        <span className="text-xs text-slate-400">{timestamp}</span>
+      </div>
+
       <blockquote className="mt-3 text-base leading-relaxed text-slate-200">{REVIEW_TEXT}</blockquote>
+
+      <div className="mt-4 flex items-center justify-between">
+        <Heart className="h-5 w-5 text-slate-400" aria-hidden="true" />
+        <span className="inline-flex items-center gap-1 text-xs text-slate-300">
+          <GoogleGlyph />
+          {badge}
+        </span>
+      </div>
+
       <figcaption className="sr-only">
         {AUTHOR} - {badge}
       </figcaption>
     </figure>
   );
 }
+
