@@ -493,8 +493,8 @@ export const policeCustody24HoursEn: SubServicePageData = {
       paragraphs: [
         [
           { text: "Police custody is one of the " },
-          { text: "preventive measures", to: "/en/services/preventive-measures" },
-          { text: " provided by the Criminal Procedure Code." },
+          { text: "preventive measures provided by the Criminal Procedure Code", to: "/en/services/preventive-measures" },
+          { text: "." },
         ],
         "Once the 24 hours expire, the person cannot be held further on the basis of the same custody measure.",
         "Depending on the case, another preventive measure may come into discussion, which is why the defence strategy should be analysed before the next decision.",
