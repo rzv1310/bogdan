@@ -332,6 +332,7 @@ export default function MasuriPreventive() {
             Art. 202 CPP stabilește cadrul general, inclusiv necesitatea existenței unei suspiciuni rezonabile și cerința ca măsura să fie necesară pentru scopurile procesuale prevăzute de lege și proporțională cu gravitatea acuzației. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
           </p>
           <p>În esență, măsurile preventive urmăresc buna desfășurare a procesului penal, împiedicarea sustragerii de la urmărire penală sau judecată și prevenirea săvârșirii unei alte infracțiuni. Măsura concretă trebuie analizată prin raportare la situația individuală a cauzei.</p>
+          <p>Codul de procedură penală prevede 5 măsuri preventive: reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă.</p>
         </CardContent>
       </Card>
 
@@ -380,8 +381,6 @@ export default function MasuriPreventive() {
             <p>Intervenția poate începe încă din momentul în care există o propunere de arestare. După dispunerea măsurii pot deveni relevante contestația, opoziția la prelungire, verificările periodice, revocarea sau înlocuirea măsurii.</p>
             <SubServiceLinkButton to="/servicii/arest-preventiv">Arest preventiv - propunere, contestație, prelungire și înlocuire</SubServiceLinkButton>
           </div>
-
-          <p>Codul de procedură penală prevede 5 măsuri preventive: reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă.</p>
         </CardContent>
       </Card>
 
