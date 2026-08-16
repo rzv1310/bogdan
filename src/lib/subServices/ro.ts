@@ -573,7 +573,11 @@ export const avocatDnaRo: SubServicePageData = {
           { text: "regulile generale ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
-        "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, măsuri preventive ori asigurătorii.",
+        [
+          { text: "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, " },
+          { text: "măsuri preventive ori asigurătorii", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
         "Fiecare dintre aceste acte trebuie analizat separat, dar și în contextul întregii strategii de apărare.",
         "Un răspuns dat la audiere, un document predat sau o poziție exprimată la începutul dosarului poate avea relevanță și în etapele ulterioare. Din acest motiv, recomand ca strategia să fie stabilită înainte de primul act procedural la care participi, atunci când acest lucru este posibil.",
       ],
