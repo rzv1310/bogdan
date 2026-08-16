@@ -1,5 +1,16 @@
 import { useEffect } from "react";
-import { collectHead, isPrerender } from "@/lib/ssr-head";
+import { collectHead, isPrerender, SITE_ORIGIN } from "@/lib/ssr-head";
+
+/**
+ * Canonical / og:url must be absolute URLs on the production origin, with no
+ * trailing slash (except the homepage) so they stay consistent with sitemap.xml.
+ */
+function toAbsoluteUrl(value: string) {
+  if (/^https?:\/\//i.test(value)) return value;
+  const path = value.startsWith("/") ? value : `/${value}`;
+  const normalized = path.length > 1 ? path.replace(/\/+$/, "") : "/";
+  return SITE_ORIGIN + normalized;
+}
 
 interface SEOOptions {
   title?: string;
@@ -50,7 +61,7 @@ export function useSEO({ title, description, keywords, canonical, alternates, lo
     }
 
     const origin = window.location.origin;
-    const url = canonical || origin + window.location.pathname;
+    const url = toAbsoluteUrl(canonical || window.location.pathname);
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement('link');
