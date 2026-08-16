@@ -1,26 +1,26 @@
-# Regulă nouă: subserviciile linkuiesc doar către pagina-părinte
+# Regulă de linkuire internă pentru subservicii
 
-## Regula (se adaugă în memoria de proiect)
+## Regula (se salvează în memoria de proiect)
 
-O pagină de subserviciu poate avea linkuri interne doar către:
+Un subserviciu linkuiește **în mod prioritar** către:
 - pagina-părinte (serviciul pilon din care face parte);
-- subserviciile-frați din același grup;
+- subserviciile-frate din același grup;
 - pagini non-serviciu (contact, despre mine, calculator, resurse).
 
-Niciun subserviciu nu va avea link (contextual sau în "Servicii conexe") către un alt serviciu din cele 12 pagini pilon, în afară de pagina-părinte. Regula se aplică și paginilor viitoare.
+Linkurile către **alte servicii-pilon** sunt permise doar când există o relație contextuală clară și utilă pentru utilizator (menționate în corpul textului sau în FAQ, cu anchor text natural). Nu se adaugă astfel de linkuri doar pentru volum sau în secțiunea "Servicii conexe".
 
-## Ce se corectează acum (încălcări găsite)
+Se combină cu regulile existente de anchor text (2-5 cuvinte, diversificat, anchor semantic/parțial permis) și cu regula: dacă un link există deja contextual, nu se repetă în "Servicii conexe".
 
-RO (`src/lib/subServices/ro.ts`):
-- Avocat DIICOT: linkuri către "Trafic de droguri" și "Spălare de bani" (alte servicii pilon) - se elimină; rămân linkul către urmărire penală (părinte) și cel către percheziție informatică (frate).
-- Avocat DNA: link contextual "măsuri preventive ori asigurătorii" către `/servicii/masuri-preventive` - se elimină linkul (textul rămâne), părintele fiind urmărirea penală.
-- Reținere 24 ore: link către "Avocat audiere Poliție sau Parchet" (subserviciu din alt grup) - se elimină.
+## Ce rămâne / ce se ajustează
 
-EN (`src/lib/subServices/en.ts`): aceleași corecții pe echivalentele engleze (DIICOT lawyer, DNA lawyer, Police custody 24 hours).
+Linkurile contextuale existente respectă regula și rămân:
+- Avocat DIICOT: trafic de droguri, spălare de bani (relație contextuală directă cu specializarea DIICOT).
+- Avocat DNA: măsuri preventive ori asigurătorii (context procedural relevant).
+
+Singura ajustare: la Reținere 24 ore, linkul "Avocat audiere Poliție sau Parchet" din lista de subservicii se păstrează doar dacă apare contextual; în secțiunea "Servicii conexe" prioritatea rămâne părintele plus frații din grupul măsurilor preventive.
 
 ## Detalii tehnice
 
-- `src/lib/relatedServices.ts` deja generează corect lista pentru subservicii (părinte + frați), deci nu necesită modificări.
-- Corecțiile se fac doar în datele de conținut RO/EN.
-- Se adaugă o verificare în `scripts/validate-seo.mjs`: pentru fiecare subserviciu, orice link intern către `/servicii/*` (sau `/en/services/*`) trebuie să fie părintele sau un frate din același grup; altfel build-ul semnalează eroare.
-- Regula se salvează în memoria de proiect, lângă regulile existente de anchor text.
+- `src/lib/relatedServices.ts` generează deja părinte + frați pentru subservicii; fără modificări structurale.
+- Ajustările de conținut se fac în `src/lib/subServices/ro.ts` și `en.ts`.
+- Regula se scrie în memorie (`mem://seo/anchor-text-rules`) ca extensie a regulilor de linkuire internă, pentru a fi aplicată și paginilor viitoare.
