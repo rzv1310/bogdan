@@ -5,7 +5,7 @@ const CP = "https://legislatie.just.ro/Public/DetaliiDocument/223635";
 const PARENT = { to: "/servicii/urmarire-penala", label: "urmărire penală" };
 const BIO_INTRO = "Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal.";
 const LEGAL500 =
-  "Bogdan Lamatic este listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime.";
+  "Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime.";
 const CONTACT =
   "Spune-mi în câteva propoziții ce s-a întâmplat și îți răspund concret care sunt pașii următori. Ofer o primă discuție pentru evaluarea situației.";
 
