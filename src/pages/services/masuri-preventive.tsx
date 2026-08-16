@@ -481,17 +481,15 @@ export default function MasuriPreventive() {
         <CardHeader className="pb-3">
           <h3 className="text-xl font-semibold leading-none tracking-tight">Contact - evaluare inițială gratuită</h3>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>Bogdan Lamatic - avocat drept penal, București. Telefon: 031 632 01 83.</p>
-          <p>Program: Luni - Vineri: 06:00 - 22:00; Sâmbătă - Duminică: 09:00 - 20:00.</p>
-          <p>Dacă este o situație urgentă, spune de la început: „Este vorba despre o măsură preventivă.”</p>
+        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
+          <p className="font-semibold">Dacă este o situație urgentă, spune de la început: „Este vorba despre o măsură preventivă.”</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
               <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum - 031 632 01 83</a>
             </Button>
             <WhatsAppDocsCta lang="ro" />
             <Button asChild variant="outline">
-              <Link to="/contact">Trimite solicitarea și actele</Link>
+              <Link to="/contact">Trimite-mi actele pe email</Link>
             </Button>
           </div>
         </CardContent>
