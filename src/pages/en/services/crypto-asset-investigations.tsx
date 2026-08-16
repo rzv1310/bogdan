@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -141,15 +142,7 @@ export default function CryptoInvestigationsEn() {
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
           <ServiceSubServices path="/en/services/crypto-asset-investigations" lang="en" />
-          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-            <p>
-              I am Bogdan Lamatic, attorney at the Bucharest Bar since 2007, with over 18 years of experience in criminal law and deep practice in white-collar crime, internal investigations and compliance. I have represented clients in complex, cross-border matters with digital evidence and inter-authority cooperation, including crypto cases (custody, transactions, KYC/AML, cyber fraud, money laundering).
-            </p>
-            <p>
-              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-            </p>
-          </div>
-        </header>
+                  </header>
 
         {/* What types of crypto matters I handle */}
         <section className="mt-8">

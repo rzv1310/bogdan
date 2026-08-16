@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -149,13 +150,7 @@ export default function CoruptieSiFunctiePublica() {
         Avocat Infracțiuni de corupție și fapte legate de exercitarea funcției publice - Bogdan Lamatic | București
       </h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>În dosarele de corupție și de serviciu, primele decizii contează cel mai mult.</strong></span>
-          <span className="block">Ce declari la prima audiere, ce documente predai și cum răspunzi unei percheziții pot decide dacă ancheta se închide sau ajunge în instanță.</span>
-          <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor - apărarea începe de la primul contact cu DNA, parchet sau poliție.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat infracțiuni de corupție" />
 
@@ -164,16 +159,7 @@ export default function CoruptieSiFunctiePublica() {
       </p>
       <ServiceSubServices path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal. Coordonez apărarea în dosare de corupție și fapte legate de exercitarea funcției publice - de la investigație internă, până la verdict definitiv.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și Rising Star, și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
-
-      {/* Definiții și cadru */}
+            {/* Definiții și cadru */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce înțelegem prin „corupție” vs. „fapte de serviciu”</h2>

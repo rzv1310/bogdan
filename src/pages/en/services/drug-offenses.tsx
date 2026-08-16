@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -79,13 +80,7 @@ export default function DrugOffensesEn() {
 
         <h1 className="text-2xl font-semibold mb-4">Drug trafficking lawyer - Bucharest | Strategy and defense - DIICOT cases</h1>
 
-        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p className="text-foreground">
-            <span className="block"><strong>In drug cases, the first hours matter most.</strong></span>
-            <span className="block">What you state at the hearing, how the search is carried out and how the substances are sampled and weighed can decide whether the case is closed or turns into a lengthy DIICOT trial.</span>
-            <span className="block">Do not wait for the pre-trial arrest hearing to ask for help.</span>
-          </p>
-        </div>
+        <ServiceAuthorBio lang="en" path="/en/services/drug-offenses" />
 
         <ServiceHeroCta lang="en" ariaLabel="Call now" />
 
@@ -94,16 +89,7 @@ export default function DrugOffensesEn() {
         </p>
         <ServiceSubServices path="/en/services/drug-offenses" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I have defended clients in DIICOT investigations and court trials involving drug trafficking, possession for personal use and organized criminal groups.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
-
-        {/* Why acting fast matters */}
+                {/* Why acting fast matters */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold">Why it’s essential to act fast</h2>

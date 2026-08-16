@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
@@ -186,13 +187,7 @@ export default function MasuriPreventive() {
 
       <h1 className="text-2xl font-semibold mb-4">Avocat pentru măsuri preventive în București</h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>Ai fost reținut, ești sub control judiciar sau urmează o propunere de arestare preventivă?</strong></span>
-          <span className="block">O măsură preventivă îți poate limita libertatea, deplasările, activitatea profesională și viața de familie înainte de existența unei condamnări.</span>
-          <span className="block font-semibold mt-2">Dacă ție sau unei persoane apropiate vi s-a comunicat că urmează o măsură preventivă sau măsura a fost deja dispusă, timpul disponibil pentru pregătirea apărării poate fi foarte scurt.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/masuri-preventive" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună-mă acum! - avocat măsuri preventive" />
 
@@ -201,20 +196,7 @@ export default function MasuriPreventive() {
       </p>
       <ServiceSubServices path="/servicii/masuri-preventive" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Intervin în situații privind reținerea pentru maximum 24 de ore, arestarea preventivă, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu, prelungirea sau menținerea unei măsuri, contestarea acesteia, revocarea sau înlocuirea ei cu una mai puțin severă, de regulă în contextul unei{" "}
-          <Link to="/servicii/urmarire-penala" className="text-primary underline underline-offset-2">
-            faze de urmărire penală
-          </Link>
-          .
-        </p>
-        <p>
-          Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime. Am reprezentat clienți în fața judecătorului de drepturi și libertăți, a judecătorului de cameră preliminară și a instanțelor de judecată.
-        </p>
-      </div>
-
-      {/* Ai una dintre aceste probleme */}
+            {/* Ai una dintre aceste probleme */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ai una dintre aceste probleme?</h2>

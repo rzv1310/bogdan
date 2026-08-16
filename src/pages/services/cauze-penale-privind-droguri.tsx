@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -137,12 +138,7 @@ export default function CauzeDroguri() {
         Avocat Trafic Droguri București - Experiența mea în apărarea clienților în dosare DIICOT
       </h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>În dosarele de droguri, primele ore după reținere sunt decisive.</strong></span>
-          <span className="block">Fiecare detaliu contează - o interceptare contestată, un mandat de percheziție emis incorect sau lipsa legăturii directe între client și substanțele incriminate pot schimba radical soarta unui proces.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/cauze-penale-privind-droguri" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat cauze penale privind droguri" />
 
@@ -151,16 +147,7 @@ export default function CauzeDroguri() {
       </p>
       <ServiceSubServices path="/servicii/cauze-penale-privind-droguri" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații DIICOT până la procese în fața Înaltei Curți de Casație și Justiție.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
-
-      {/* H2: Ce înseamnă traficul de droguri */}
+            {/* H2: Ce înseamnă traficul de droguri */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold">Ce înseamnă traficul de droguri în legislația românească</h2>

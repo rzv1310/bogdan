@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
@@ -113,12 +114,7 @@ export default function CriminalitateEconomica() {
 
       <h1 className="text-2xl font-semibold mb-4">Avocat Infracțiuni Economice București | Specializat în „White-Collar Crime” | Bogdan Lamatic</h1>
 
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p className="text-foreground">
-          <span className="block"><strong>În dosarele economice, primele decizii contează cel mai mult.</strong></span>
-          <span className="block">Documentele pe care le predai, declarațiile date la prima audiere și modul în care reacționezi la o percheziție sau la un control pot decide dacă ancheta se închide sau se transformă într-un proces lung.</span>
-        </p>
-      </div>
+      <ServiceAuthorBio lang="ro" path="/servicii/criminalitate-economica" />
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat criminalitate economică" />
 
@@ -127,16 +123,7 @@ export default function CriminalitateEconomica() {
       </p>
       <ServiceSubServices path="/servicii/criminalitate-economica" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și specializare recunoscută în white-collar crime - infracțiuni economice comise în mediul profesional sau corporativ. Am reprezentat clienți în dosare complexe de evaziune fiscală, spălare de bani, fraudă, delapidare, corupție și abuz de încredere, atât în fața parchetelor specializate, cât și în instanțele de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și abordez fiecare caz cu o strategie personalizată, bazată pe analiza detaliată a probelor și pe identificarea vulnerabilităților acuzării. Am experiență în reprezentarea atât a persoanelor fizice, cât și a companiilor multinaționale în anchete transfrontaliere și proceduri complexe.
-        </p>
-      </div>
-
-      <p className="mt-6 bg-accent text-accent-foreground rounded-md px-3 py-2 text-base leading-relaxed">
+            <p className="mt-6 bg-accent text-accent-foreground rounded-md px-3 py-2 text-base leading-relaxed">
         Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.
       </p>
 

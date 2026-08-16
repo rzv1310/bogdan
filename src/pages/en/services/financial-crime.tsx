@@ -1,3 +1,4 @@
+import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -104,15 +105,7 @@ export default function FinancialCrimeEn() {
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
           <ServiceSubServices path="/en/services/financial-crime" lang="en" />
-          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-            <p>
-              I am Bogdan Lamatic, attorney at the Bucharest Bar, with over 18 years of criminal law practice and a strong track record in white-collar crime: tax evasion, money laundering, fraud, embezzlement, corruption and abuse of office. I represent both individuals and companies in complex investigations and trials.
-            </p>
-            <p>
-              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-            </p>
-          </div>
-        </header>
+                  </header>
 
         <section className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
