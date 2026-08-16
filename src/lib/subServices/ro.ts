@@ -668,6 +668,133 @@ export const retinere24OreRo: SubServicePageData = {
       callout: "Nu este necesar să ai toate documentele pentru a mă contacta.",
     },
     {
+      h2: "Ce drepturi ai dacă ești reținut 24 de ore?",
+      paragraphs: [
+        "Faptul că ai fost reținut nu înseamnă că trebuie să răspunzi imediat la toate întrebările sau să iei singur decizii privind poziția ta în dosar.",
+        "În cazul reținerii, Codul de procedură penală îți recunoaște mai multe drepturi importante.",
+      ],
+      subsections: [
+        {
+          h3: "Ai dreptul să știi de ce ai fost reținut",
+          paragraphs: [
+            "Trebuie să ți se comunice, de îndată și într-o limbă pe care o înțelegi, infracțiunea de care ești suspectat și motivele pentru care a fost dispusă reținerea.",
+          ],
+        },
+        {
+          h3: "Ai dreptul să nu dai declarații",
+          paragraphs: [
+            "Înainte de audiere trebuie să fii informat că ai dreptul să nu faci nicio declarație, cu excepția informațiilor privind identitatea ta.",
+            "Dacă alegi să dai declarații, ceea ce spui poate fi folosit ca probă împotriva ta.",
+            "Decizia de a da sau nu o declarație trebuie analizată în funcție de situația concretă și de informațiile disponibile în acel moment.",
+          ],
+        },
+        {
+          h3: "Ai dreptul la avocat",
+          paragraphs: [
+            "Măsura reținerii poate fi luată numai după audierea suspectului sau inculpatului, în prezența unui avocat ales sau desemnat din oficiu.",
+            "Dacă ai un avocat ales, ai dreptul să îl încunoștințezi personal sau să soliciți organului judiciar să îl contacteze. Avocatul are dreptul să comunice direct cu tine în condiții care să asigure confidențialitatea.",
+          ],
+        },
+        {
+          h3: "Ai dreptul să primești ordonanța de reținere",
+          paragraphs: [
+            "Reținerea se dispune prin ordonanță.",
+            "Documentul trebuie să indice, printre altele, motivele reținerii, ziua și ora la care începe măsura și ziua și ora la care aceasta se termină, iar persoanei reținute trebuie să i se înmâneze un exemplar.",
+          ],
+        },
+        {
+          h3: "Ai dreptul să anunți o persoană apropiată",
+          paragraphs: [
+            "Imediat după reținere, persoana reținută are dreptul, în condițiile legii, să informeze personal sau să solicite informarea unui membru al familiei ori a unei alte persoane desemnate despre reținere și despre locul în care se află.",
+          ],
+        },
+        {
+          h3: "Dacă nu înțelegi limba română, ai dreptul la interpret",
+          paragraphs: [
+            "Persoanei care nu înțelege, nu se exprimă bine sau nu poate comunica în limba română trebuie să îi fie asigurată, în condițiile legii, posibilitatea de a beneficia gratuit de interpret.",
+          ],
+        },
+      ],
+      paragraphs: [
+        { text: "Dacă tu sau o persoană apropiată ați fost reținuți, nu este nevoie să așteptați următoarea audiere pentru a contacta un avocat.", bold: true },
+      ],
+      cta: "Sună acum - 031 632 01 83",
+    },
+    {
+      h2: "Poți contesta reținerea de 24 de ore?",
+      paragraphs: [
+        "Da. Din punct de vedere juridic, împotriva ordonanței de reținere se formulează o plângere, iar aceasta trebuie făcută înainte de expirarea măsurii.",
+        "Procedura depinde de cine a dispus reținerea.",
+      ],
+      subsections: [
+        {
+          h3: "Dacă reținerea a fost dispusă de organul de cercetare penală",
+          paragraphs: [
+            "Suspectul sau inculpatul poate formula plângere la procurorul care supraveghează urmărirea penală, înainte de expirarea reținerii.",
+            "Procurorul trebuie să se pronunțe de îndată. Dacă constată că au fost încălcate dispozițiile legale privind luarea măsurii, dispune revocarea reținerii și punerea de îndată în libertate.",
+          ],
+        },
+        {
+          h3: "Dacă reținerea a fost dispusă de procuror",
+          paragraphs: [
+            "Plângerea se formulează, înainte de expirarea măsurii, la prim-procurorul parchetului sau, după caz, la procurorul ierarhic superior.",
+          ],
+        },
+        {
+          h3: "Ce trebuie verificat rapid",
+          paragraphs: [
+            "Într-o asemenea situație analizez:",
+          ],
+          bullets: [
+            "ordonanța prin care a fost dispusă reținerea;",
+            "motivele concrete invocate;",
+            "condițiile legale pentru luarea măsurii;",
+            "ora la care reținerea a început;",
+            "timpul rămas până la expirarea măsurii;",
+            "actele și informațiile disponibile în acel moment.",
+          ],
+          paragraphs: [
+            "Pentru că reținerea poate dura maximum 24 de ore, utilitatea practică a plângerii depinde și de cât timp mai este disponibil până la expirarea măsurii.",
+          ],
+        },
+      ],
+      paragraphs: [
+        { text: "Ai primit ordonanța de reținere? Trimite-mi documentul sau spune-mi exact când a început măsura.", bold: true },
+      ],
+      cta: "Sună acum - 031 632 01 83",
+    },
+    {
+      h2: "Cum se calculează cele 24 de ore de reținere?",
+      paragraphs: [
+        "Reținerea poate fi dispusă pentru cel mult 24 de ore, însă calculul nu trebuie făcut pur și simplu de la primul moment în care persoana a intrat în contact cu Poliția.",
+        "Ordonanța de reținere trebuie să precizeze ziua și ora la care reținerea începe și ziua și ora la care se termină.",
+        "În durata reținerii nu se include timpul strict necesar conducerii suspectului sau inculpatului la sediul organului judiciar.",
+        "De asemenea, dacă persoana a fost adusă pentru audiere în baza unui mandat de aducere legal emis, perioada în care s-a aflat sub puterea mandatului de aducere nu se include în cele 24 de ore ale reținerii.",
+      ],
+      subsections: [
+        {
+          h3: "Unde verifici când expiră reținerea?",
+          paragraphs: [
+            "Primul document care trebuie verificat este ordonanța de reținere.",
+            "Aceasta trebuie să cuprindă:",
+          ],
+          bullets: [
+            "ziua și ora începerii reținerii;",
+            "ziua și ora încetării reținerii;",
+            "motivele pentru care măsura a fost dispusă.",
+          ],
+          paragraphs: [
+            "Persoana reținută trebuie să primească un exemplar al ordonanței.",
+          ],
+        },
+      ],
+      paragraphs: [
+        { text: "Dacă nu știi când expiră cele 24 de ore, trimite-mi ordonanța și verificăm exact situația procedurală.", bold: true },
+      ],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite ordonanța pe WhatsApp",
+    },
+    {
       h2: "Ce urmează după reținere",
       paragraphs: [
         "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
