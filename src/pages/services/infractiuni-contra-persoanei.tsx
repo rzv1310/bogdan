@@ -10,6 +10,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/infractiuni-contra-persoanei";
 const TITLE = "Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
 const DESCRIPTION =

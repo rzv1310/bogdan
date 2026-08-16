@@ -13,6 +13,7 @@ import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 import SubServiceLinkButton from "@/components/services/SubServiceLinkButton";
+import ServiceFaq from "@/components/services/ServiceFaq";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/preventive-measures";
 const TITLE = "Preventive Measures Lawyer Bucharest - Immediate Intervention | Bogdan Lamatic";

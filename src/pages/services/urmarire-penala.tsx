@@ -8,6 +8,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/urmarire-penala";
 const TITLE = "Avocat Urmărire Penală București - Apărare din Prima Oră | Bogdan Lamatic";
 const DESCRIPTION =

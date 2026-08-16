@@ -10,6 +10,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/offenses-against-persons";
 const TITLE = "Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic";
 const DESCRIPTION =
