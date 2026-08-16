@@ -661,7 +661,6 @@ export const retinere24OreRo: SubServicePageData = {
         "Când a fost reținută",
         "Ce urmează / ce informații ai primit",
       ],
-      paragraphsAfterBullets: ["apoi:"],
       calloutAfterBullets: "Nu ai ordonanța sau toate actele?",
       calloutAfterBulletsCta: "Sună oricum.",
     },
