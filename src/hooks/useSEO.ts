@@ -50,7 +50,7 @@ export function useSEO({ title, description, keywords, canonical, alternates, lo
     }
 
     const origin = window.location.origin;
-    const url = canonical || origin + window.location.pathname;
+    const url = toAbsoluteUrl(canonical || window.location.pathname);
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement('link');
