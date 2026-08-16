@@ -64,6 +64,10 @@ export interface SubServiceSection {
   ctaWhatsApp?: boolean;
   /** Custom label for the secondary WhatsApp CTA. */
   ctaWhatsAppLabel?: string;
+  /** Optional callout rendered after the subsections block. */
+  calloutAfterSubsections?: string;
+  /** Optional main CTA rendered after the subsections block. */
+  ctaAfterSubsections?: string;
 }
 
 export interface SubServiceFaqItem {
