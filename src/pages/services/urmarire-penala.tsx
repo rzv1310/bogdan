@@ -148,7 +148,7 @@ export default function UrmarirePenala() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Urmărire Penală București - Apărare din Prima Oră a Anchetei | Bogdan Lamatic
+        Avocat Urmărire Penală București - Apărare din Prima Oră a Anchetei
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
