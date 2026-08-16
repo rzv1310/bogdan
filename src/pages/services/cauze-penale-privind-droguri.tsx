@@ -10,6 +10,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function CauzeDroguri() {
   const SITE = "https://avocatpenalbucuresti.ro";
   const pageUrl = `${SITE}/servicii/cauze-penale-privind-droguri`;

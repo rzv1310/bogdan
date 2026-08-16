@@ -9,6 +9,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function CoruptieSiFunctiePublica() {
   useSEO({
     keywords: "avocat coruptie bucuresti",

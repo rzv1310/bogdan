@@ -10,6 +10,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function InfractiuniRutiere() {
   useSEO({
     keywords: "avocat accidente rutiere bucuresti, avocat infractiuni rutiere",
