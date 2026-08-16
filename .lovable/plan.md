@@ -17,4 +17,4 @@ Se va transforma fraza „persoana este reținută" într-un link către `/servi
 2. Verificare build + SEO validation pentru a confirma că nu apar erori de tip sau de structură.
 
 ## Rezultat așteptat
-Utilizatorii care citesc despre termenul de propunere a arestării preventive pot da click direct pe „reținută" pentru a afla ce se poate face în primele 24 de ore de reținere.
+Utilizatorii care citesc despre termenul de propunere a arestării preventive pot da click direct pe „persoana este reținută" pentru a afla ce se poate face în primele 24 de ore de reținere.
