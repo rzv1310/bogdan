@@ -9,6 +9,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function RoadTrafficEn() {
   useSEO({
     keywords: "road traffic offenses lawyer romania, car accident criminal defense, negligent homicide attorney",

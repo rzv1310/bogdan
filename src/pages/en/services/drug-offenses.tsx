@@ -9,6 +9,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function DrugOffensesEn() {
   useSEO({
     keywords: "drug offenses lawyer romania, drug trafficking defense attorney, narcotics lawyer bucharest",
