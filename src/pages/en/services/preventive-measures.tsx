@@ -380,6 +380,8 @@ export default function PreventiveMeasures() {
             <p>Intervention can begin from the moment a detention proposal exists. Once the measure has been ordered, the appeal, opposition to the extension, periodic reviews, revocation or replacement of the measure may become relevant.</p>
             <SubServiceLinkButton to="/en/services/pre-trial-detention">Pre-trial detention - proposal, appeal, extension and replacement</SubServiceLinkButton>
           </div>
+
+          <p>The Criminal Procedure Code provides for 5 preventive measures: police custody, judicial control, judicial control on bail, house arrest and pre-trial detention.</p>
         </CardContent>
       </Card>
 

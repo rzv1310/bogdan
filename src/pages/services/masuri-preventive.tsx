@@ -380,6 +380,8 @@ export default function MasuriPreventive() {
             <p>Intervenția poate începe încă din momentul în care există o propunere de arestare. După dispunerea măsurii pot deveni relevante contestația, opoziția la prelungire, verificările periodice, revocarea sau înlocuirea măsurii.</p>
             <SubServiceLinkButton to="/servicii/arest-preventiv">Arest preventiv - propunere, contestație, prelungire și înlocuire</SubServiceLinkButton>
           </div>
+
+          <p>Codul de procedură penală prevede 5 măsuri preventive: reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă.</p>
         </CardContent>
       </Card>
 
