@@ -206,6 +206,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutAfterBulletsClassName,
     calloutAfterBulletsCta,
     cta,
+    ctaIcon = true,
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
@@ -220,6 +221,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
     cta?: string;
+    ctaIcon?: boolean;
     ctaWhatsApp?: boolean;
     ctaWhatsAppLabel?: string;
   }) => (
