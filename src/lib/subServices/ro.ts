@@ -743,15 +743,15 @@ export const retinere24OreRo: SubServicePageData = {
           h3: "Ce trebuie verificat rapid",
           paragraphs: [
             "Într-o asemenea situație analizez:",
-            [
-              { text: "ordonanța prin care a fost dispusă reținerea;", bold: false },
-              { text: "motivele concrete invocate;", bold: false },
-              { text: "condițiile legale pentru luarea măsurii;", bold: false },
-              { text: "ora la care reținerea a început;", bold: false },
-              { text: "timpul rămas până la expirarea măsurii;", bold: false },
-              { text: "actele și informațiile disponibile în acel moment.", bold: false },
-            ],
             "Pentru că reținerea poate dura maximum 24 de ore, utilitatea practică a plângerii depinde și de cât timp mai este disponibil până la expirarea măsurii.",
+          ],
+          bullets: [
+            "ordonanța prin care a fost dispusă reținerea;",
+            "motivele concrete invocate;",
+            "condițiile legale pentru luarea măsurii;",
+            "ora la care reținerea a început;",
+            "timpul rămas până la expirarea măsurii;",
+            "actele și informațiile disponibile în acel moment.",
           ],
         },
       ],
@@ -772,12 +772,12 @@ export const retinere24OreRo: SubServicePageData = {
           paragraphs: [
             "Primul document care trebuie verificat este ordonanța de reținere.",
             "Aceasta trebuie să cuprindă:",
-            [
-              { text: "ziua și ora începerii reținerii;", bold: false },
-              { text: "ziua și ora încetării reținerii;", bold: false },
-              { text: "motivele pentru care măsura a fost dispusă.", bold: false },
-            ],
             "Persoana reținută trebuie să primească un exemplar al ordonanței.",
+          ],
+          bullets: [
+            "ziua și ora începerii reținerii;",
+            "ziua și ora încetării reținerii;",
+            "motivele pentru care măsura a fost dispusă.",
           ],
         },
       ],
