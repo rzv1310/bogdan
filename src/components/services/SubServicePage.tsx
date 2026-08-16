@@ -22,6 +22,8 @@ export interface SubServiceSubsection {
   callout?: string;
   /** Optional extra className for the callout paragraph. */
   calloutClassName?: string;
+  /** Optional inline CTA button rendered inside the callout. */
+  calloutCta?: string;
   /** Renders a secondary WhatsApp CTA at the end of the subsection. */
   ctaWhatsApp?: boolean;
   /** Custom label for the secondary WhatsApp CTA. */
@@ -40,6 +42,16 @@ export interface SubServiceSection {
   callout?: string;
   /** Optional extra className for the callout paragraph. */
   calloutClassName?: string;
+  /** Optional inline CTA button rendered inside the callout. */
+  calloutCta?: string;
+  /** Optional paragraphs rendered after the bullets. */
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+  /** Optional small highlighted callout rendered after the bullets. */
+  calloutAfterBullets?: string;
+  /** Optional extra className for the after-bullets callout. */
+  calloutAfterBulletsClassName?: string;
+  /** Optional inline CTA button rendered inside the after-bullets callout. */
+  calloutAfterBulletsCta?: string;
   /** Optional extra className applied to the section Card. */
   cardClassName?: string;
   /** Optional subsections rendered as h3 blocks inside the section. */
@@ -184,6 +196,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     links,
     callout,
     calloutClassName,
+    calloutCta,
+    paragraphsAfterBullets,
+    calloutAfterBullets,
+    calloutAfterBulletsClassName,
+    calloutAfterBulletsCta,
     cta,
     ctaWhatsApp,
     ctaWhatsAppLabel,
@@ -193,6 +210,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
+    calloutCta?: string;
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+    calloutAfterBullets?: string;
+    calloutAfterBulletsClassName?: string;
+    calloutAfterBulletsCta?: string;
     cta?: string;
     ctaWhatsApp?: boolean;
     ctaWhatsAppLabel?: string;
@@ -214,9 +236,16 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </p>
       ))}
       {callout && (
-        <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${calloutClassName ?? ""}`}>
-          {callout}
-        </p>
+        <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutClassName ?? ""}`}>
+          <span>{callout}</span>
+          {calloutCta && (
+            <Button asChild variant="warning" size="sm" aria-label={`${calloutCta} - ${data.serviceName}`}>
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> {calloutCta}
+              </a>
+            </Button>
+          )}
+        </div>
       )}
       {bullets && bullets.length > 0 && (
         <ul className="list-disc pl-6 space-y-2">
@@ -233,6 +262,33 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             </li>
           ))}
         </ul>
+      )}
+      {paragraphsAfterBullets?.map((paragraph, pIdx) => (
+        <p key={`after-${pIdx}`}>
+          {typeof paragraph === "string" ? (
+            paragraph
+          ) : (
+            paragraph.map((segment, sIdx) =>
+              segment.bold ? (
+                <strong key={sIdx}>{segment.text}</strong>
+              ) : (
+                <span key={sIdx}>{segment.text}</span>
+              )
+            )
+          )}
+        </p>
+      ))}
+      {calloutAfterBullets && (
+        <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutAfterBulletsClassName ?? ""}`}>
+          <span>{calloutAfterBullets}</span>
+          {calloutAfterBulletsCta && (
+            <Button asChild variant="warning" size="sm" aria-label={`${calloutAfterBulletsCta} - ${data.serviceName}`}>
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> {calloutAfterBulletsCta}
+              </a>
+            </Button>
+          )}
+        </div>
       )}
       {links && links.length > 0 && (
         <ul className="space-y-2">
@@ -326,6 +382,11 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               links={section.links}
               callout={section.callout}
               calloutClassName={section.calloutClassName}
+              calloutCta={section.calloutCta}
+              paragraphsAfterBullets={section.paragraphsAfterBullets}
+              calloutAfterBullets={section.calloutAfterBullets}
+              calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
+              calloutAfterBulletsCta={section.calloutAfterBulletsCta}
               cta={section.cta}
               ctaWhatsApp={section.ctaWhatsApp}
               ctaWhatsAppLabel={section.ctaWhatsAppLabel}
@@ -340,6 +401,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                       bullets={sub.bullets}
                       callout={sub.callout}
                       calloutClassName={sub.calloutClassName}
+                      calloutCta={sub.calloutCta}
                       cta={sub.cta}
                       ctaWhatsApp={sub.ctaWhatsApp}
                       ctaWhatsAppLabel={sub.ctaWhatsAppLabel}
