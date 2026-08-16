@@ -60,7 +60,7 @@ export interface SubServicePageData {
   resources: SubServiceResource[];
   contactText: string;
   /** Link to the parent pillar page */
-  parent: { to: string; label: string };
+  parent: { to: string; label: string; breadcrumbLabel: string };
 }
 
 const CTA_CLASS =
@@ -101,7 +101,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             name: isEn ? "Services" : "Servicii",
             item: isEn ? `${SITE}/en/services` : `${SITE}/servicii`,
           },
-          { "@type": "ListItem", position: 3, name: data.breadcrumbLabel, item: pageUrl },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: data.parent.breadcrumbLabel,
+            item: SITE + data.parent.to,
+          },
+          { "@type": "ListItem", position: 4, name: data.breadcrumbLabel, item: pageUrl },
         ],
       },
       {
@@ -161,6 +167,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbLink href={isEn ? "/en/services" : "/servicii"}>{isEn ? "Services" : "Servicii"}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href={data.parent.to}>{data.parent.breadcrumbLabel}</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

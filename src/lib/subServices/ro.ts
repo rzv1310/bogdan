@@ -2,7 +2,11 @@ import type { SubServicePageData } from "@/components/services/SubServicePage";
 
 const CPP = "https://legislatie.just.ro/Public/DetaliiDocument/185907";
 const CP = "https://legislatie.just.ro/Public/DetaliiDocument/223635";
-const PARENT = { to: "/servicii/urmarire-penala", label: "urmărire penală" };
+const PARENT = {
+  to: "/servicii/urmarire-penala",
+  label: "urmărire penală",
+  breadcrumbLabel: "Urmărire penală",
+};
 const BIO_INTRO = "Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal.";
 const LEGAL500 =
   "Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime.";
@@ -604,7 +608,11 @@ export const avocatDnaRo: SubServicePageData = {
   parent: PARENT,
 };
 
-const PARENT_MP = { to: "/servicii/masuri-preventive", label: "măsuri preventive" };
+const PARENT_MP = {
+  to: "/servicii/masuri-preventive",
+  label: "măsuri preventive",
+  breadcrumbLabel: "Măsuri preventive",
+};
 
 export const retinere24OreRo: SubServicePageData = {
   lang: "ro",
