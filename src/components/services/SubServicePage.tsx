@@ -10,6 +10,22 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 
+export interface SubServiceSubsection {
+  h3: string;
+  paragraphs?: (string | { text: string; bold?: boolean }[])[];
+  bullets?: (string | { bold: string; rest: string })[];
+  /** Renders a CTA button at the end of the subsection, with this label. */
+  cta?: string;
+  /** Optional small highlighted callout inside the subsection. */
+  callout?: string;
+  /** Optional extra className for the callout paragraph. */
+  calloutClassName?: string;
+  /** Renders a secondary WhatsApp CTA at the end of the subsection. */
+  ctaWhatsApp?: boolean;
+  /** Custom label for the secondary WhatsApp CTA. */
+  ctaWhatsAppLabel?: string;
+}
+
 export interface SubServiceSection {
   h2: string;
   paragraphs?: (string | { text: string; bold?: boolean }[])[];
@@ -24,6 +40,12 @@ export interface SubServiceSection {
   calloutClassName?: string;
   /** Optional extra className applied to the section Card. */
   cardClassName?: string;
+  /** Optional subsections rendered as h3 blocks inside the section. */
+  subsections?: SubServiceSubsection[];
+  /** Renders a secondary WhatsApp CTA at the end of the section. */
+  ctaWhatsApp?: boolean;
+  /** Custom label for the secondary WhatsApp CTA. */
+  ctaWhatsAppLabel?: string;
 }
 
 export interface SubServiceFaqItem {
