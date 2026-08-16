@@ -211,19 +211,7 @@ export default function ContactEn() {
         }}
       />
 
-      <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-        <div className="flex flex-col">
-        <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Contact</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+      <section className="mx-auto max-w-6xl px-4 md:px-6 py-8 flex flex-col">
 
         <h1 className="text-2xl font-semibold mb-4">Contact - Attorney Bogdan Lamatic</h1>
 
@@ -417,8 +405,18 @@ export default function ContactEn() {
               </form>
             </CardContent>
           </Card>
-        </div>
         <ServicesQuickLinks lang="en" />
+        <Breadcrumb className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Contact</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
       </section>
     </>
   );

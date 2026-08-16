@@ -176,7 +176,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
+    <section className="mx-auto max-w-6xl px-4 md:px-6 py-8 flex flex-col">
       {/* SEO JSON-LD */}
       <script
         type="application/ld+json"
@@ -207,18 +207,6 @@ export default function Contact() {
       />
 
       {/* Breadcrumb */}
-      <div className="flex flex-col">
-      <Breadcrumb className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Contact</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
 
       {/* Heading */}
       <motion.h1 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-3xl md:text-4xl font-bold">
@@ -420,8 +408,18 @@ export default function Contact() {
             </form>
           </CardContent>
         </Card>
-      </div>
       <ServicesQuickLinks />
+      <Breadcrumb className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Contact</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
     </section>
   );
 }
