@@ -257,8 +257,8 @@ export default function PreventiveMeasures() {
             </div>
           ))}
           <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
-            <h3 className="text-lg font-semibold">Not sure exactly which measure is being discussed?</h3>
-            <p className="mt-1">You do not know whether it is police custody, judicial control or a detention proposal? You do not need to know. Just tell me what happened.</p>
+            <h3 className="text-lg font-semibold">Not sure whether it is police custody, judicial control or a detention proposal?</h3>
+            <p className="mt-1">You do not need to know the legal terms. Tell me what happened and I will tell you what needs to be checked immediately.</p>
             <CallCta label="Call now - 031 632 01 83" />
           </div>
         </CardContent>
