@@ -1,3 +1,11 @@
+# Force the no-trailing-slash canonical form (301), keeping URLs consistent
+# with sitemap.xml and <link rel="canonical">.
+[[redirects]]
+from = "/*/"
+to = "/:splat"
+status = 301
+force = true
+
 # SPA fallback for client-side routes. Real 404s are served by dist/404.html
 # with a 404 status because this rewrite only applies when no file matches
 # and the requested path is a known SPA route prefix.

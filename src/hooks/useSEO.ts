@@ -6,7 +6,7 @@ import { collectHead, isPrerender, SITE_ORIGIN } from "@/lib/ssr-head";
  * trailing slash (except the homepage) so they stay consistent with sitemap.xml.
  */
 function toAbsoluteUrl(value: string) {
-  if (/^https?:\/\//i.test(value)) return value.replace(/(?!^)\/+$/, "") || value;
+  if (/^https?:\/\//i.test(value)) return value;
   const path = value.startsWith("/") ? value : `/${value}`;
   const normalized = path.length > 1 ? path.replace(/\/+$/, "") : "/";
   return SITE_ORIGIN + normalized;
