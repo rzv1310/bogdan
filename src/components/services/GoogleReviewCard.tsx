@@ -3,9 +3,10 @@ import { Heart, MoreVertical } from "lucide-react";
 interface GoogleReviewCardProps {
   lang?: "ro" | "en";
   className?: string;
+  reviewText?: string;
 }
 
-const REVIEW_TEXT =
+const DEFAULT_REVIEW_TEXT =
   "Dosar penal complicat, cu acuzații serioase. Domnul avocat Bogdan Lamatic a fost excepțional: extrem de profesionist, strategie foarte bună, calm și pregătit maxim. A identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar și realist, fără promisiuni false. Rezultatul a fost mult peste ce speram.";
 
 const AUTHOR = "Robert Boloaja";
@@ -31,7 +32,11 @@ function GoogleGlyph() {
 }
 
 /** Single social-proof review, styled like a Google Business Profile review. */
-export default function GoogleReviewCard({ lang = "ro", className = "" }: GoogleReviewCardProps) {
+export default function GoogleReviewCard({
+  lang = "ro",
+  className = "",
+  reviewText = DEFAULT_REVIEW_TEXT,
+}: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
   const reviewCount = lang === "en" ? "3 reviews" : "3 recenzii";
   const timestamp = lang === "en" ? "2 months ago" : "acum 2 luni";
@@ -61,7 +66,9 @@ export default function GoogleReviewCard({ lang = "ro", className = "" }: Google
         <span className="text-xs text-slate-400">{timestamp}</span>
       </div>
 
-      <blockquote className="mt-3 text-base leading-relaxed text-slate-200">{REVIEW_TEXT}</blockquote>
+      <blockquote className="mt-3 whitespace-pre-line text-base leading-relaxed text-slate-200">
+        {reviewText}
+      </blockquote>
 
       <div className="mt-4 flex items-center justify-between">
         <Heart className="h-5 w-5 text-red-500" fill="currentColor" aria-hidden="true" />
