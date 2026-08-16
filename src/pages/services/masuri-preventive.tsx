@@ -291,13 +291,13 @@ export default function MasuriPreventive() {
             <strong>18+ ani de experiență în drept penal.</strong> Am reprezentat clienți în cauze penale și în relația cu organele judiciare relevante, iar practica mea include dosare de white-collar crime și investigații complexe.
           </p>
           <p>
-            <strong>Recunoaștere Legal 500 - White-Collar Crime.</strong> Legal 500 îl include în prezent pe Bogdan Lamatic în categoria Next Generation Partners - White-Collar Crime, România. Experiența într-un dosar penal nu înseamnă doar cunoașterea textului de lege, ci capacitatea de a identifica rapid ce contează procedural și probator atunci când timpul este limitat.
+            <strong>Recunoaștere Legal 500 - White-Collar Crime - Next Generation Partners - România.</strong>
           </p>
           <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
             <p className="text-foreground"><span className="font-semibold">Mă ocup personal de dosarul tău.</span> Nu preiau dosarul pentru ca apoi să fii trimis automat la alt avocat. Mă ocup personal de strategie și de momentele esențiale ale mandatului.</p>
           </div>
           <p>
-            <strong>Program extins și intervenție în situații urgente.</strong> Luni - Vineri: 06:00 - 22:00, Sâmbătă - Duminică: 09:00 - 20:00. Pentru urgențe penale există și disponibilitate în afara programului obișnuit, în funcție de situație. Dacă este vorba despre reținere, audiere urgentă, percheziție, propunere de arestare sau un termen apropiat privind o măsură preventivă, sună direct.
+            <strong>Program extins și intervenție în situații urgente.</strong> Luni - Vineri: 06:00 - 22:00, Sâmbătă - Duminică: 09:00 - 20:00. Dacă este vorba despre reținere, audiere urgentă, percheziție, propunere de arestare sau un termen apropiat privind o măsură preventivă, sună-mă direct.
           </p>
           <p>
             <strong>Discreție și confidențialitate.</strong> Discuțiile cu avocatul și informațiile primite în exercitarea profesiei sunt protejate de regulile privind secretul profesional.
