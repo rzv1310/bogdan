@@ -127,9 +127,9 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
   serviceName: "Avocat percheziție domiciliară București - Bogdan Lamatic",
   urgency: [
     "Poliția sau procurorii sunt la ușă cu un mandat de percheziție?",
+    "- Solicită o legitimație persoanelor care se prezintă la ușa ta.",
     "- Citește cu atenție documentele înainte de semnare.",
     "- Nu încerca să împiedici fizic efectuarea percheziției.",
-    "- Contactează imediat un avocat!",
   ],
   bio: [
     `${BIO_INTRO} Asist persoane fizice și reprezentanți ai companiilor atunci când are loc o percheziție la domiciliu sau la sediul unei firme.`,
