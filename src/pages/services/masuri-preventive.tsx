@@ -193,7 +193,7 @@ export default function MasuriPreventive() {
         <p className="text-foreground">
           <span className="block"><strong>Ai fost reținut, ești sub control judiciar sau urmează o propunere de arestare preventivă?</strong></span>
           <span className="block">O măsură preventivă îți poate limita libertatea, deplasările, activitatea profesională și viața de familie înainte de existența unei condamnări.</span>
-          <span className="block font-semibold mt-2">Dacă ție sau unei persoane apropiate vi s-a comunicat că urmează o măsură preventivă sau măsura a fost deja dispusă, timpul disponibil pentru pregătirea apărării poate fi foarte scurt.</span>
+          <span className="block font-semibold mt-2">Dacă față de tine sau față de o persoană apropiată urmează să fie dispusă o măsură preventivă sau măsura a fost deja dispusă, timpul disponibil pentru pregătirea apărării poate fi foarte scurt.</span>
         </p>
       </div>
 
