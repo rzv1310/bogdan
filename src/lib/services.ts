@@ -1,7 +1,6 @@
 export const services = [
   { label: "Urmărire penală", to: "/servicii/urmarire-penala" },
   { label: "Măsuri preventive", to: "/servicii/masuri-preventive" },
-  { label: "Infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
   { label: "Criminalitate economică", to: "/servicii/criminalitate-economica" },
   { label: "Infracțiuni de corupție și fapte legate de exercitarea funcției publice", to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
   { label: "Investigații privind activele cripto", to: "/servicii/investigatii-privind-activele-cripto" },
@@ -11,12 +10,12 @@ export const services = [
   { label: "Infracțiuni rutiere", to: "/servicii/infractiuni-rutiere-cu-victime" },
   { label: "Răspundere penală pentru incidente la locul de muncă", to: "/servicii/raspundere-penala-incidente-locul-de-munca" },
   { label: "Reprezentarea victimelor în procese penale", to: "/servicii/reprezentarea-victimelor-in-procese-penale" },
+  { label: "Infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
 ] as const;
 
 export const servicesEn = [
   { label: "Criminal investigation", to: "/en/services/criminal-investigation" },
   { label: "Preventive measures", to: "/en/services/preventive-measures" },
-  { label: "Offenses against persons", to: "/en/services/offenses-against-persons" },
   { label: "Economic crime", to: "/en/services/financial-crime" },
   { label: "Corruption offenses and acts related to the exercise of public office", to: "/en/services/corruption-and-public-office-offenses" },
   { label: "Investigations regarding crypto assets", to: "/en/services/crypto-asset-investigations" },
@@ -26,4 +25,5 @@ export const servicesEn = [
   { label: "Road traffic offenses with victims", to: "/en/services/road-traffic-offenses" },
   { label: "Criminal liability for incidents at the workplace", to: "/en/services/workplace-criminal-liability" },
   { label: "Representation of victims in criminal proceedings", to: "/en/services/victim-representation-in-criminal-cases" },
+  { label: "Offenses against persons", to: "/en/services/offenses-against-persons" },
 ] as const;
