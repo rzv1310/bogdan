@@ -257,8 +257,8 @@ export default function MasuriPreventive() {
             </div>
           ))}
           <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
-            <h3 className="text-lg font-semibold">Nu știi exact ce măsură se discută?</h3>
-            <p className="mt-1">Nu știi dacă este reținere, control judiciar sau propunere de arestare? Nu trebuie să știi. Spune-mi ce s-a întâmplat.</p>
+            <h3 className="text-lg font-semibold">Nu știi dacă este reținere, control judiciar sau propunere de arestare?</h3>
+            <p className="mt-1">Nu trebuie să cunoști termenii juridici. Spune-mi ce s-a întâmplat și îți spun ce trebuie verificat imediat.</p>
             <CallCta label="Sună acum - 031 632 01 83" />
           </div>
         </CardContent>
