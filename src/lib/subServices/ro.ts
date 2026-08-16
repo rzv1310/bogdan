@@ -897,7 +897,6 @@ export const arestPreventivRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.",
       ],
-      cta: "Urmează propunerea de arestare - Sună-mă acum",
     },
     {
       h2: "Ce trebuie să-mi spui când mă suni",
@@ -908,7 +907,8 @@ export const arestPreventivRo: SubServicePageData = {
         "ce Parchet sau instanță are dosarul?",
         "ai încheierea, citația sau alte acte?",
       ],
-      paragraphsAfterBullets: [[{ text: "Nu ai toate actele? Sună oricum.", bold: true }]],
+      calloutAfterBullets: "Nu ai toate actele?",
+      calloutAfterBulletsCta: "Sună oricum.",
       ctaWhatsApp: true,
     },
     {
