@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CTA_CLASS } from "@/lib/cta";
 
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";

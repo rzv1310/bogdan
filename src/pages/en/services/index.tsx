@@ -1,5 +1,6 @@
 
 import { useSEO } from "@/hooks/useSEO";
+import { CTA_CLASS } from "@/lib/cta";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
