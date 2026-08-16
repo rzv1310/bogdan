@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { servedAreasSchema } from "@/lib/areaServed";
 
@@ -487,8 +487,9 @@ export default function MasuriPreventive() {
           <p>Dacă este o situație urgentă, spune de la început: „Este vorba despre o măsură preventivă.”</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună-mă acum</a>
+              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum - 031 632 01 83</a>
             </Button>
+            <WhatsAppDocsCta lang="ro" />
             <Button asChild variant="outline">
               <Link to="/contact">Trimite solicitarea și actele</Link>
             </Button>
