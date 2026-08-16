@@ -151,18 +151,23 @@ function labelEn(path: string): string | undefined {
 /**
  * Returns related internal links for a given page path.
  * Accepts either a RO service path or an EN service path.
+ * `exclude` removes paths that are already linked contextually on the page.
  */
-export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"): RelatedLink[] {
+export function getRelatedServices(
+  currentPath: string,
+  lang: "ro" | "en" = "ro",
+  exclude: string[] = []
+): RelatedLink[] {
   const roPath = currentPath.startsWith("/en")
     ? Object.entries(roToEn).find(([, en]) => en === currentPath)?.[0] ?? currentPath
     : currentPath;
 
-  const targets = relatedServices[roPath] ?? [];
+  const targets = relatedServices[roPath] ?? subServiceTargets(roPath);
+  const excluded = new Set(exclude);
 
   return targets
     .map((target) => {
       if (lang === "en") {
-        
         const enTarget = roToEn[target] ?? target;
         const label = labelEn(enTarget) ?? labelEn(target);
         return label ? { to: enTarget, label } : null;
@@ -170,5 +175,7 @@ export function getRelatedServices(currentPath: string, lang: "ro" | "en" = "ro"
       const label = labelRo(target);
       return label ? { to: target, label } : null;
     })
-    .filter((x): x is RelatedLink => Boolean(x));
+    .filter((x): x is RelatedLink => Boolean(x))
+    .filter((link) => !excluded.has(link.to));
 }
+
