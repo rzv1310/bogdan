@@ -185,8 +185,8 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
       h2: "Ce trebuie să știi în timpul unei percheziții domiciliare",
       paragraphs: [
         [
-          { text: "Percheziția domiciliară se dispune în cadrul " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Percheziția domiciliară se dispune în " },
+          { text: "cadrul urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: ", iar ceea ce se ridică acum poate influența întregul dosar." },
         ],
       ],
