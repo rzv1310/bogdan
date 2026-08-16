@@ -10,7 +10,7 @@
    - Se includ doar recenziile care au text (cele fără text - rating-only - rămân doar în `aggregateRating`).
 3. Fiecare recenzie primește și răspunsul proprietarului, marcat ca `comment` (`@type: Answer`) cu autorul `Avocat Bogdan Lamatic`, plus `itemReviewed` legat de entitatea LegalService existentă și `publisher` = Google.
 4. `aggregateRating` rămâne 5,0 / 28.
-5. Textul din cardul vizual `GoogleReviewCard` (recenzia Robert Boloaja) se corectează la textul integral real, inclusiv fraza finală „Recomand cu încredere totală oricui are nevoie de un avocat penalist de top! Mulțumesc din suflet!”.
+
 
 Se păstrează diacriticele și ortografia din recenziile originale, cu excepția înlocuirii oricărui em dash cu cratimă (regula de conținut a proiectului).
 
