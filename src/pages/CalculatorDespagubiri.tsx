@@ -1,4 +1,3 @@
-</div>
 import React, { useMemo, useState } from "react";
 import { useSEO } from "@/hooks/useSEO";
 import {
