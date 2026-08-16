@@ -1056,10 +1056,6 @@ export const arestPreventivRo: SubServicePageData = {
       a: "Atunci când au încetat temeiurile care au determinat luarea măsurii sau au apărut împrejurări noi din care rezultă că măsura nu mai este legală ori necesară, în condițiile art. 242 CPP.",
     },
     {
-      q: "Care este diferența dintre revocare și înlocuire?",
-      a: "Revocarea urmărește încetarea măsurii preventive și punerea în libertate. Înlocuirea păstrează o măsură preventivă, dar una mai puțin severă, cum sunt arestul la domiciliu sau controlul judiciar.",
-    },
-    {
       q: "Cine poate dispune arestarea preventivă?",
       a: "Arestarea preventivă este în competența judecătorului sau a instanței, în funcție de etapa procesuală. Procurorul poate formula propunerea, însă nu poate dispune el însuși măsura.",
     },
