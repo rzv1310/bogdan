@@ -148,9 +148,9 @@ export const homeSearchEn: SubServicePageData = {
       h2: "What happens after the search",
       paragraphs: [
         [
-          { text: "A home search is ordered during the " },
-          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
-          { text: " phase." },
+          { text: "A home search is ordered " },
+          { text: "within the criminal investigation stage", to: "/en/services/criminal-investigation" },
+          { text: "." },
         ],
         "A search is usually followed by questioning and, in more serious cases, by a proposal for a preventive measure. If your phone or laptop was seized, the procedure continues with a computer search of the data.",
       ],
