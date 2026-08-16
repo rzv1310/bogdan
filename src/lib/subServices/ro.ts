@@ -672,6 +672,7 @@ export const retinere24OreRo: SubServicePageData = {
       paragraphs: [
         "Faptul că ai fost reținut nu înseamnă că trebuie să răspunzi imediat la toate întrebările sau să iei singur decizii privind poziția ta în dosar.",
         "În cazul reținerii, Codul de procedură penală îți recunoaște mai multe drepturi importante.",
+        [{ text: "Dacă tu sau o persoană apropiată ați fost reținuți, nu este nevoie să așteptați următoarea audiere pentru a contacta un avocat.", bold: true }],
       ],
       subsections: [
         {
@@ -715,9 +716,6 @@ export const retinere24OreRo: SubServicePageData = {
           ],
         },
       ],
-      paragraphs: [
-        [{ text: "Dacă tu sau o persoană apropiată ați fost reținuți, nu este nevoie să așteptați următoarea audiere pentru a contacta un avocat.", bold: true }],
-      ],
       cta: "Sună acum - 031 632 01 83",
     },
     {
@@ -725,6 +723,7 @@ export const retinere24OreRo: SubServicePageData = {
       paragraphs: [
         "Da. Din punct de vedere juridic, împotriva ordonanței de reținere se formulează o plângere, iar aceasta trebuie făcută înainte de expirarea măsurii.",
         "Procedura depinde de cine a dispus reținerea.",
+        [{ text: "Ai primit ordonanța de reținere? Trimite-mi documentul sau spune-mi exact când a început măsura.", bold: true }],
       ],
       subsections: [
         {
@@ -756,9 +755,6 @@ export const retinere24OreRo: SubServicePageData = {
           ],
         },
       ],
-      paragraphs: [
-        [{ text: "Ai primit ordonanța de reținere? Trimite-mi documentul sau spune-mi exact când a început măsura.", bold: true }],
-      ],
       cta: "Sună acum - 031 632 01 83",
     },
     {
@@ -768,6 +764,7 @@ export const retinere24OreRo: SubServicePageData = {
         "Ordonanța de reținere trebuie să precizeze ziua și ora la care reținerea începe și ziua și ora la care se termină.",
         "În durata reținerii nu se include timpul strict necesar conducerii suspectului sau inculpatului la sediul organului judiciar.",
         "De asemenea, dacă persoana a fost adusă pentru audiere în baza unui mandat de aducere legal emis, perioada în care s-a aflat sub puterea mandatului de aducere nu se include în cele 24 de ore ale reținerii.",
+        [{ text: "Dacă nu știi când expiră cele 24 de ore, trimite-mi ordonanța și verificăm exact situația procedurală.", bold: true }],
       ],
       subsections: [
         {
@@ -783,9 +780,6 @@ export const retinere24OreRo: SubServicePageData = {
             "Persoana reținută trebuie să primească un exemplar al ordonanței.",
           ],
         },
-      ],
-      paragraphs: [
-        [{ text: "Dacă nu știi când expiră cele 24 de ore, trimite-mi ordonanța și verificăm exact situația procedurală.", bold: true }],
       ],
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite ordonanța pe WhatsApp",
