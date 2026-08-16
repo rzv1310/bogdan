@@ -1032,8 +1032,8 @@ export const arestPreventivRo: SubServicePageData = {
       h2: "Cât poate dura arestarea preventivă și prelungirea",
       paragraphs: [
         [
-          { text: "Arestarea preventivă este cea mai severă dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "Arestarea preventivă este " },
+          { text: "cea mai severă dintre măsurile preventive", to: "/servicii/masuri-preventive" },
           { text: " reglementate de Codul de procedură penală." },
         ],
         "În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.",
