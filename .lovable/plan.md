@@ -11,7 +11,7 @@ Pe toate paginile de servicii și subservicii (existente și viitoare):
 Componenta va renderiza acum întregul bloc hero de conversie:
 - butonul CTA (nemodificat);
 - un rând cu textul negru semi-bold: RO `Mă ocup personal de dosar` / EN `I personally handle your case`;
-- rândul cu recenziile, tot negru: RO `5,0 ★★★★★ din 27 de recenzii Google` / EN `5.0 ★★★★★ from 27 Google reviews`.
+- rândul cu recenziile, tot negru: RO `5,0 ★★★★★ din 28 de recenzii Google` / EN `5.0 ★★★★★ from 27 Google reviews`.
 
 Se păstrează stelele galbene (`text-yellow-400`) și se folosește `text-foreground` pentru restul textului.
 
