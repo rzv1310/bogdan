@@ -878,10 +878,9 @@ export const arestPreventivRo: SubServicePageData = {
           ],
         },
       ],
-      calloutAfterBullets:
+      calloutAfterSubsections:
         "O persoană apropiată este reținută și urmează propunerea de arestare? Mă poți contacta tu chiar dacă nu ai toate actele dosarului.",
-      cta: "Sună-mă acum - 031 632 01 83",
-      ctaIcon: false,
+      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
     },
     {
       h2: "Ce analizez la o propunere de arestare preventivă",
@@ -1011,7 +1010,7 @@ export const arestPreventivRo: SubServicePageData = {
           ],
         },
       ],
-      calloutAfterBullets:
+      calloutAfterSubsections:
         "Art. 242 CPP reglementează distinct revocarea și înlocuirea. Alegerea cererii potrivite depinde de etapa dosarului și de ce se poate demonstra concret.",
     },
     {
@@ -1072,6 +1071,7 @@ export const arestPreventivRo: SubServicePageData = {
     { text: "Art. 241-242 CPP - încetarea de drept, revocarea și înlocuirea măsurilor.", href: CPP, linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
+  contactWhatsApp: true,
   parent: PARENT_MP,
 };
 
