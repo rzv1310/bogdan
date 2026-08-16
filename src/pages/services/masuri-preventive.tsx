@@ -312,23 +312,11 @@ export default function MasuriPreventive() {
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce riști dacă nu reacționezi la timp</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>O măsură preventivă nu trebuie tratată ca o simplă formalitate procedurală. Poate produce efecte reale înainte ca dosarul penal să fie soluționat definitiv.</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>Poate fi dispusă o măsură mai severă.</strong> Atunci când există argumente pentru o măsură mai puțin restrictivă, acestea trebuie identificate și prezentate în momentul procesual potrivit.
-            </li>
-            <li>
-              <strong>Poți pierde un termen procedural scurt.</strong> În materia măsurilor preventive există situații în care termenul pentru formularea căii de atac este de doar 48 de ore.
-            </li>
-            <li>
-              <strong>Poți continua să respecți obligații care ar putea fi modificate.</strong> Controlul judiciar poate afecta deplasările, călătoriile, activitatea profesională, relația cu anumite persoane și modul în care îți organizezi viața de zi cu zi.
-            </li>
-            <li>
-              <strong>O măsură privativă de libertate poate continua deși situația dosarului s-a schimbat.</strong> Codul de procedură penală reglementează revocarea și înlocuirea măsurilor preventive atunci când sunt îndeplinite condițiile legale.
-            </li>
-            <li>
-              <strong>Efectele nu sunt doar juridice.</strong> O măsură preventivă poate influența direct libertatea, familia, locul de muncă, administrarea unei afaceri, călătoriile, relațiile profesionale, reputația și capacitatea de a continua anumite activități.
-            </li>
+            <li>Poți pierde un termen de 48 de ore.</li>
+            <li>Poate fi dispusă sau menținută o măsură mai severă.</li>
+            <li>Poți rămâne cu restricții care îți afectează munca și deplasările.</li>
+            <li>Situația personală și profesională se poate complica rapid.</li>
           </ul>
         </CardContent>
       </Card>
