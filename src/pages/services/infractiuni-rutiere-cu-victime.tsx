@@ -9,6 +9,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function InfractiuniRutiere() {
   useSEO({
     keywords: "avocat accidente rutiere bucuresti, avocat infractiuni rutiere",
@@ -164,18 +165,7 @@ export default function InfractiuniRutiere() {
       </p>
       <ServiceSubServices path="/servicii/infractiuni-rutiere-cu-victime" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal și dosare rutiere - de la fapte fără victime până la accidente cu vătămare sau deces, în fața tuturor instanțelor și organelor de urmărire penală.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime), statut relevant pentru rigoarea și strategia de apărare pe care le aplic și în dosarele rutiere. Accidentele rutiere cu victime fac parte, ca încadrare juridică, din sfera mai largă a{" "}
-          <Link to="/servicii/infractiuni-contra-persoanei" className="text-primary underline underline-offset-2">
-            infracțiunilor contra persoanei
-          </Link>
-          .
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/infractiuni-rutiere-cu-victime" lang="ro" />
 
       {/* De ce să apelezi la mine */}
       <Card className="mt-12 md:mt-14 border-accent">

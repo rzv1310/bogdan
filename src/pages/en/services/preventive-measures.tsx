@@ -9,6 +9,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/preventive-measures";
 const TITLE = "Preventive Measures Lawyer Bucharest - Immediate Intervention | Bogdan Lamatic";
@@ -201,18 +202,7 @@ export default function PreventiveMeasures() {
       </p>
       <ServiceSubServices path="/en/services/preventive-measures" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I intervene in situations involving custody of up to 24 hours, pre-trial detention, judicial control, judicial control on bail, house arrest, the extension or maintenance of a measure, challenging it, revoking it or replacing it with a less severe one, usually in the context of a{" "}
-          <Link to="/en/services/criminal-investigation" className="text-primary underline underline-offset-2">
-            criminal investigation stage
-          </Link>
-          .
-        </p>
-        <p>
-          I am currently listed by Legal 500 in the Next Generation Partners category - White-Collar Crime. I have represented clients before the judge for rights and liberties, the pre-trial chamber judge and the trial courts.
-        </p>
-      </div>
+      <LawyerBioBlock path="/en/services/preventive-measures" lang="en" />
 
       {/* Do you have one of these problems */}
       <Card className="mt-12 md:mt-14 border-accent">

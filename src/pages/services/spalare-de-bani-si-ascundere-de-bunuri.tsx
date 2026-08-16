@@ -7,6 +7,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const CTA_CLASS =
   "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
@@ -146,14 +147,7 @@ export default function SpalareDeBani() {
           </p>
           <ServiceSubServices path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
 
-          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-            <p>
-              Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal, specializat în spălare de bani și ascunderea de bunuri. Fiecare dosar de „white-collar crime" pe care îl preiau îmi confirmă că nu există două povești identice, iar drumul spre o soluție justă începe de la înțelegerea contextului legal și a responsabilităților celor implicați.
-            </p>
-            <p>
-              Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-            </p>
-          </div>
+          <LawyerBioBlock path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" lang="ro" />
 
         </header>
 

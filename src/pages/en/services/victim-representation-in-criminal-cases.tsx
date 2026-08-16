@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function VictimRepresentationEn() {
   useSEO({
     keywords: "victim representation lawyer romania, civil party criminal case, injured party attorney",
@@ -135,14 +136,7 @@ export default function VictimRepresentationEn() {
         </p>
         <ServiceSubServices path="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries, workplace accidents and other criminal acts, including complex cases with medico-legal expertise and negotiation with insurers.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have pleaded at all levels of jurisdiction, from prosecutors' offices to the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
         {/* Cases I take */}
         <Card className="mt-12 md:mt-14 border-accent">

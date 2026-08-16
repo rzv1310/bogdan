@@ -8,6 +8,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function CoruptieSiFunctiePublica() {
   useSEO({
     keywords: "avocat coruptie bucuresti",
@@ -164,14 +165,7 @@ export default function CoruptieSiFunctiePublica() {
       </p>
       <ServiceSubServices path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București din 2007, cu peste 18 ani de experiență în drept penal. Coordonez apărarea în dosare de corupție și fapte legate de exercitarea funcției publice - de la investigație internă, până la verdict definitiv.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și Rising Star, și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" lang="ro" />
 
       {/* Definiții și cadru */}
       <Card className="mt-12 md:mt-14 border-accent">

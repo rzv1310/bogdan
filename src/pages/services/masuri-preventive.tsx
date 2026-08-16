@@ -9,6 +9,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/masuri-preventive";
 const TITLE = "Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic";
@@ -201,18 +202,7 @@ export default function MasuriPreventive() {
       </p>
       <ServiceSubServices path="/servicii/masuri-preventive" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Intervin în situații privind reținerea pentru maximum 24 de ore, arestarea preventivă, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu, prelungirea sau menținerea unei măsuri, contestarea acesteia, revocarea sau înlocuirea ei cu una mai puțin severă, de regulă în contextul unei{" "}
-          <Link to="/servicii/urmarire-penala" className="text-primary underline underline-offset-2">
-            faze de urmărire penală
-          </Link>
-          .
-        </p>
-        <p>
-          Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime. Am reprezentat clienți în fața judecătorului de drepturi și libertăți, a judecătorului de cameră preliminară și a instanțelor de judecată.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/masuri-preventive" lang="ro" />
 
       {/* Ai una dintre aceste probleme */}
       <Card className="mt-12 md:mt-14 border-accent">

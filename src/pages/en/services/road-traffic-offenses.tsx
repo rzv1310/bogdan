@@ -8,6 +8,7 @@ import RoadAccidentsChart from "@/components/charts/RoadAccidentsChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function RoadTrafficEn() {
   useSEO({
     keywords: "road traffic offenses lawyer romania, car accident criminal defense, negligent homicide attorney",
@@ -93,14 +94,7 @@ export default function RoadTrafficEn() {
         </p>
         <ServiceSubServices path="/en/services/road-traffic-offenses" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I defend clients in traffic offenses, from matters without victims to accidents with bodily injury or death.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before all prosecutors' offices and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/road-traffic-offenses" lang="en" />
 
         {/* Why choose me */}
         <Card className="mt-12 md:mt-14 border-accent">

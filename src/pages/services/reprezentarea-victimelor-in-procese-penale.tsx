@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function ReprezentareaVictimelor() {
   useSEO({
     keywords: "avocat victime infractiuni bucuresti, avocat parte civila, reprezentare victime proces penal, avocat parte vatamata, avocat despagubiri victime",
@@ -167,14 +168,7 @@ export default function ReprezentareaVictimelor() {
       </p>
       <ServiceSubServices path="/servicii/reprezentarea-victimelor-in-procese-penale" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale, accidente de muncă sau alte fapte penale, inclusiv în cauze complexe, cu expertize medico-legale și negocieri cu asigurătorii.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/reprezentarea-victimelor-in-procese-penale" lang="ro" />
 
       {/* Ce cazuri preiau */}
       <Card className="mt-12 md:mt-14 border-accent">

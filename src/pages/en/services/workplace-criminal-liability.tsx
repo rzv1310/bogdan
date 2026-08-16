@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function WorkplaceLiabilityEn() {
   useSEO({
     keywords: "workplace accident lawyer romania, employer criminal liability, occupational safety defense",
@@ -91,14 +92,7 @@ export default function WorkplaceLiabilityEn() {
         </p>
         <ServiceSubServices path="/en/services/workplace-criminal-liability" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law and numerous successful cases in white-collar crime. I assist employers, managers and health and safety officers in criminal investigations regarding workplace accidents and breaches of safety regulations.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/workplace-criminal-liability" lang="en" />
 
         {/* General framework */}
         <Card className="mt-12 md:mt-14 border-accent">

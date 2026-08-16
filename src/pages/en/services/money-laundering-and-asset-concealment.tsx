@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function MoneyLaunderingEn() {
   useSEO({
     keywords: "money laundering lawyer romania, asset concealment defense, aml defense attorney",
@@ -132,14 +133,7 @@ export default function MoneyLaunderingEn() {
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
           <ServiceSubServices path="/en/services/money-laundering-and-asset-concealment" lang="en" />
-          <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-            <p>
-              I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law, specialized in money laundering and asset concealment cases, where facts, money and intent intertwine in a way that directly shapes people's lives.
-            </p>
-            <p>
-              I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-            </p>
-          </div>
+          <LawyerBioBlock path="/en/services/money-laundering-and-asset-concealment" lang="en" />
         </header>
 
         <section className="mt-4 border border-accent rounded-md p-4">

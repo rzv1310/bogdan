@@ -7,6 +7,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/urmarire-penala";
 const TITLE = "Avocat Urmărire Penală București - Apărare din Prima Oră | Bogdan Lamatic";
 const DESCRIPTION =
@@ -164,14 +165,7 @@ export default function UrmarirePenala() {
       </p>
       <ServiceSubServices path="/servicii/urmarire-penala" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Asist persoane citate, reținute, percheziționate sau aflate în orice etapă a fazei de urmărire penală - de la primul telefon primit de la poliție sau parchet, până la soluția procurorului.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/urmarire-penala" lang="ro" />
 
       {/* Ce este urmărirea penală */}
       <Card className="mt-12 md:mt-14 border-accent">

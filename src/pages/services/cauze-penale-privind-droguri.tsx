@@ -9,6 +9,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function CauzeDroguri() {
   const SITE = "https://avocatpenalbucuresti.ro";
   const pageUrl = `${SITE}/servicii/cauze-penale-privind-droguri`;
@@ -151,14 +152,7 @@ export default function CauzeDroguri() {
       </p>
       <ServiceSubServices path="/servicii/cauze-penale-privind-droguri" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Am reprezentat clienți în dosare complexe de trafic de droguri, de la investigații DIICOT până la procese în fața Înaltei Curți de Casație și Justiție.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/cauze-penale-privind-droguri" lang="ro" />
 
       {/* H2: Ce înseamnă traficul de droguri */}
       <Card className="mt-12 md:mt-14 border-accent">
