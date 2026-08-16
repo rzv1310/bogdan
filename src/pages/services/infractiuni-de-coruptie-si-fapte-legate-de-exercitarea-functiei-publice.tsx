@@ -395,24 +395,23 @@ export default function CoruptieSiFunctiePublica() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente rapide</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <ul className="space-y-2">
-            <li>
-              <strong>Mi s-a propus o „atenție”. Ce fac?</strong> Nu accepta. Dacă ai oferit bani sub presiune, discutăm imediat despre oportunitatea denunțului (art. 290 alin. 3).
-            </li>
-            <li>
-              <strong>Dosarul meu e la DNA. Contează „valoarea”?</strong> Competența poate depinde de natura faptei și criteriile din OUG 43/2002; verificăm exact situația ta.
-            </li>
-            <li>
-              <strong>Am o funcție de conducere într-o companie de stat. Mă afectează art. 308?</strong> Da, norma extinde aplicarea la persoane asimilate - analizăm atribuțiile concrete.
-            </li>
-          </ul>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente rapide"
+        items={[
+          {
+            q: "Mi s-a propus o \"atenție\". Ce fac?",
+            a: "Nu accepta. Dacă ai oferit bani sub presiune, discutăm imediat despre oportunitatea denunțului (art. 290 alin. 3).",
+          },
+          {
+            q: "Dosarul meu e la DNA. Contează \"valoarea\"?",
+            a: "Competența poate depinde de natura faptei și criteriile din OUG 43/2002; verificăm exact situația ta.",
+          },
+          {
+            q: "Am o funcție de conducere într-o companie de stat. Mă afectează art. 308?",
+            a: "Da, norma extinde aplicarea la persoane asimilate - analizăm atribuțiile concrete.",
+          },
+        ]}
+      />
 
       {/* Contact rapid */}
       <Card className="mt-8 border-accent">

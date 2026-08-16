@@ -587,32 +587,23 @@ export default function CauzeDroguri() {
       </Card>
 
       {/* H2: Întrebări frecvente */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold">Întrebări frecvente din experiența mea</h2>
-        </CardHeader>
-        <CardContent className="space-y-4 text-base leading-relaxed">
-          <div>
-            <p className="font-medium">Pot scăpa de închisoare dacă am o cantitate mică?</p>
-            <p className="text-muted-foreground">
-              Dacă se dovedește că este pentru consum propriu, pedeapsa poate fi redusă sau înlocuită cu măsuri
-              alternative.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium">Ce fac dacă DIICOT mă cheamă la audieri?</p>
-            <p className="text-muted-foreground">
-              Mă contactezi imediat și nu dai declarații fără consultanță juridică.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium">Se poate schimba încadrarea din trafic în deținere?</p>
-            <p className="text-muted-foreground">
-              Da, dacă lipsesc probele privind intenția de comercializare.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente din experiența mea"
+        items={[
+          {
+            q: "Pot scăpa de închisoare dacă am o cantitate mică?",
+            a: "Dacă se dovedește că este pentru consum propriu, pedeapsa poate fi redusă sau înlocuită cu măsuri alternative.",
+          },
+          {
+            q: "Ce fac dacă DIICOT mă cheamă la audieri?",
+            a: "Mă contactezi imediat și nu dai declarații fără consultanță juridică.",
+          },
+          {
+            q: "Se poate schimba încadrarea din trafic în deținere?",
+            a: "Da, dacă lipsesc probele privind intenția de comercializare.",
+          },
+        ]}
+      />
 
       {/* H2: Contact */}
       <Card className="mt-8 border-accent">

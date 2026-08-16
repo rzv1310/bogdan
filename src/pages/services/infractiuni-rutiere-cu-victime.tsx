@@ -282,24 +282,23 @@ export default function InfractiuniRutiere() {
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <ul className="space-y-2">
-            <li>
-              <strong>0,80 g/l în sânge e întotdeauna penal?</strong> Da, peste prag e art. 336 alin. (1); sub prag discutăm contravențional (Codul rutier). În cazul drogurilor, contează influența/substanța depistată. (Portal Legislativ)
-            </li>
-            <li>
-              <strong>Dacă refuz recoltarea?</strong> E faptă separată (art. 337), chiar dacă alcoolemia ar fi ieșit sub prag. (Portal Legislativ)
-            </li>
-            <li>
-              <strong>Când nu e infracțiune părăsirea locului?</strong> Legea prevede situații limitate (ex. transportul răniților cu reîntoarcere imediată). (Portal Legislativ)
-            </li>
-          </ul>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente"
+        items={[
+          {
+            q: "0,80 g/l în sânge e întotdeauna penal?",
+            a: "Da, peste prag e art. 336 alin. (1); sub prag discutăm contravențional (Codul rutier). În cazul drogurilor, contează influența/substanța depistată. (Portal Legislativ)",
+          },
+          {
+            q: "Dacă refuz recoltarea?",
+            a: "E faptă separată (art. 337), chiar dacă alcoolemia ar fi ieșit sub prag. (Portal Legislativ)",
+          },
+          {
+            q: "Când nu e infracțiune părăsirea locului?",
+            a: "Legea prevede situații limitate (ex. transportul răniților cu reîntoarcere imediată). (Portal Legislativ)",
+          },
+        ]}
+      />
 
       {/* Documente utile */}
       <Card className="mt-8 border-accent">

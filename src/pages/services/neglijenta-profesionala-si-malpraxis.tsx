@@ -311,31 +311,28 @@ export default function Malpraxis() {
       </Card>
 
       {/* Întrebări frecvente */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <ol className="list-decimal pl-6 space-y-3">
-            <li>
-              <strong>Pot cere despăgubiri fără proces penal?</strong>
-              <p className="mt-1">Da. Răspunderea civilă se poate valorifica separat (Comisie + acțiune civilă), independent de penal. (Titlul XVI Legea 95/2006).</p>
-            </li>
-            <li>
-              <strong>Care este termenul de prescripție?</strong>
-              <p className="mt-1">De regulă, 3 ani pentru malpraxis pe civil; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale.</p>
-            </li>
-            <li>
-              <strong>Ce se întâmplă dacă unitatea/medicul nu are asigurare?</strong>
-              <p className="mt-1">E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct. (Art. 689, 690-691 Legea 95/2006; OMS 482/2007).</p>
-            </li>
-            <li>
-              <strong>Când discutăm „neglijență în serviciu” penal?</strong>
-              <p className="mt-1">Când încălcarea unei atribuții prevăzute de lege de către un funcționar public (ex. în unitate publică) cauzează pagubă/vătămare; pentru mediul privat funcționează extinderea din art. 308 CP.</p>
-            </li>
-          </ol>
-        </CardContent>
-      </Card>
+      <ServiceFaq
+        title="Întrebări frecvente"
+        ordered
+        items={[
+          {
+            q: "Pot cere despăgubiri fără proces penal?",
+            a: "Da. Răspunderea civilă se poate valorifica separat (Comisie + acțiune civilă), independent de penal. (Titlul XVI Legea 95/2006).",
+          },
+          {
+            q: "Care este termenul de prescripție?",
+            a: "De regulă, 3 ani pentru malpraxis pe civil; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale.",
+          },
+          {
+            q: "Ce se întâmplă dacă unitatea/medicul nu are asigurare?",
+            a: "E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct. (Art. 689, 690-691 Legea 95/2006; OMS 482/2007).",
+          },
+          {
+            q: "Când discutăm \"neglijență în serviciu\" penal?",
+            a: "Când încălcarea unei atribuții prevăzute de lege de către un funcționar public (ex. în unitate publică) cauzează pagubă/vătămare; pentru mediul privat funcționează extinderea din art. 308 CP.",
+          },
+        ]}
+      />
 
       {/* De ce eu */}
       <Card className="mt-8 border-accent">
