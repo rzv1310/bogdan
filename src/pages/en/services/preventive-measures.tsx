@@ -293,9 +293,9 @@ export default function PreventiveMeasures() {
           <p>
             <strong>Legal 500 recognition - White-Collar Crime.</strong> Legal 500 currently lists Bogdan Lamatic in the Next Generation Partners category - White-Collar Crime, Romania. Experience in a criminal case does not only mean knowing the text of the law, but being able to identify quickly what matters procedurally and evidentially when time is limited.
           </p>
-          <p>
-            <strong>I handle your case personally.</strong> I remain your point-of-contact lawyer, and if the particularities of the case require cooperation with other professionals, I personally coordinate the defence.
-          </p>
+          <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
+            <p className="text-foreground">I handle your case personally. I do not take on the case only to then automatically pass you to another lawyer. I personally handle the strategy and the essential moments of the mandate.</p>
+          </div>
           <p>
             <strong>Extended hours and intervention in urgent situations.</strong> Monday - Friday: 06:00 - 22:00, Saturday - Sunday: 09:00 - 20:00. For criminal emergencies there is also availability outside the usual schedule, depending on the situation. If it concerns custody, an urgent hearing, a search, a detention proposal or an imminent term regarding a preventive measure, call directly.
           </p>

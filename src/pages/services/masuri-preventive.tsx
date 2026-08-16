@@ -293,9 +293,9 @@ export default function MasuriPreventive() {
           <p>
             <strong>Recunoaștere Legal 500 - White-Collar Crime.</strong> Legal 500 îl include în prezent pe Bogdan Lamatic în categoria Next Generation Partners - White-Collar Crime, România. Experiența într-un dosar penal nu înseamnă doar cunoașterea textului de lege, ci capacitatea de a identifica rapid ce contează procedural și probator atunci când timpul este limitat.
           </p>
-          <p>
-            <strong>Mă ocup personal de dosarul tău.</strong> Rămân avocatul tău de contact, iar dacă particularitățile cauzei necesită colaborarea cu alți profesioniști, coordonez personal apărarea.
-          </p>
+          <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
+            <p className="text-foreground">Mă ocup personal de dosarul tău. Nu preiau dosarul pentru ca apoi să fii trimis automat la alt avocat. Mă ocup personal de strategie și de momentele esențiale ale mandatului.</p>
+          </div>
           <p>
             <strong>Program extins și intervenție în situații urgente.</strong> Luni - Vineri: 06:00 - 22:00, Sâmbătă - Duminică: 09:00 - 20:00. Pentru urgențe penale există și disponibilitate în afara programului obișnuit, în funcție de situație. Dacă este vorba despre reținere, audiere urgentă, percheziție, propunere de arestare sau un termen apropiat privind o măsură preventivă, sună direct.
           </p>
