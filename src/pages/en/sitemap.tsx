@@ -27,7 +27,7 @@ export default function SitemapEn() {
     { url: "/en", title: "Homepage - Criminal Lawyer Bucharest", icon: Home },
     { url: "/en/about", title: "About - Attorney Bogdan Lamatic", icon: User },
     { url: "/en/contact", title: "Contact - Legal Consultations", icon: Phone },
-    { url: "/en/blog", title: "Blog - Legal Articles", icon: FileText },
+    { url: "/en/blog", title: "Resources - Legal Articles", icon: FileText },
     { url: "/en/compensation-calculator", title: "Compensation Calculator", icon: FileText },
   ];
 
@@ -57,7 +57,7 @@ export default function SitemapEn() {
     { url: "/servicii", title: "Toate serviciile" },
     { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic" },
     { url: "/contact", title: "Contact - Consultații Juridice" },
-    { url: "/blog", title: "Blog - Articole Juridice" },
+    { url: "/blog", title: "Resurse - Articole Juridice" },
     { url: "/calculator-despagubiri", title: "Calculator Despăgubiri" },
     { url: "/harta-site", title: "Harta site" },
   ];

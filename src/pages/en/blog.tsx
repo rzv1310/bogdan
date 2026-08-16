@@ -8,8 +8,8 @@ import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 export default function BlogEn() {
   useSEO({
     keywords: "criminal law blog, romanian criminal law articles, legal insights romania",
-    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" }, { "@type": "ListItem", position: 2, name: "Blog", item: "https://avocatpenalbucuresti.ro/en/blog" }] }],
-    title: "Blog | Attorney Bogdan Lamatic",
+    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" }, { "@type": "ListItem", position: 2, name: "Resources", item: "https://avocatpenalbucuresti.ro/en/blog" }] }],
+    title: "Resources | Attorney Bogdan Lamatic",
     description: "Legal articles and updates published by attorney Bogdan Lamatic.",
     alternates: { en: "/en/blog", ro: "/blog" , xDefault: "/blog"},
     locale: "en_US",
@@ -25,12 +25,12 @@ export default function BlogEn() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Blog</BreadcrumbPage>
+            <BreadcrumbPage>Resources</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
-      <h1 className="text-2xl font-semibold mb-2">Blog</h1>
+      <h1 className="text-2xl font-semibold mb-2">Resources</h1>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article>

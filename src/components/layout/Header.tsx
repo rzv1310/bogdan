@@ -87,7 +87,7 @@ export default function Header() {
                     {svcList.map((s) => (
                       <li key={s.to}>
                         <NavigationMenuLink asChild>
-                          <Link to={s.to} className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug">
+                          <Link to={s.to} className="block rounded-md px-3 py-2 hover:bg-muted text-sm leading-snug whitespace-normal break-words">
                             {labelFor(s.to, s.label)}
                           </Link>
                         </NavigationMenuLink>

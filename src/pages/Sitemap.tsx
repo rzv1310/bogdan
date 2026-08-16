@@ -16,7 +16,7 @@ export default function Sitemap() {
     { url: "/", title: "Pagina Principală - Avocat Penal București", icon: Home },
     { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic", icon: User },
     { url: "/contact", title: "Contact - Consultații Juridice", icon: Phone },
-    { url: "/blog", title: "Blog - Articole Juridice", icon: FileText },
+    { url: "/blog", title: "Resurse - Articole Juridice", icon: FileText },
   ];
 
   const services = [
@@ -44,7 +44,7 @@ export default function Sitemap() {
     { url: "/en", title: "Homepage - Criminal Lawyer Bucharest" },
     { url: "/en/services", title: "All services" },
     { url: "/en/contact", title: "Contact - Legal Consultations" },
-    { url: "/en/blog", title: "Blog - Legal Articles" },
+    { url: "/en/blog", title: "Resources - Legal Articles" },
     { url: "/en/sitemap", title: "Sitemap - All Pages" },
     { url: "/en/compensation-calculator", title: "Compensation Calculator" },
     { url: "/en/services/criminal-investigation", title: "Criminal Investigation - Defense from the First Hour" },
