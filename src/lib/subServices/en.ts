@@ -689,11 +689,7 @@ export const judicialControlEn: SubServicePageData = {
     {
       h2: "What I analyse in a judicial control case",
       paragraphs: [
-        [
-          { text: "Judicial control is one of the " },
-          { text: "preventive measures that do not involve deprivation of liberty", to: "/en/services/preventive-measures" },
-          { text: "." },
-        ],
+        "Judicial control does not involve deprivation of liberty, but it imposes obligations that must be observed throughout the measure.",
         "The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:",
       ],
       bullets: [
