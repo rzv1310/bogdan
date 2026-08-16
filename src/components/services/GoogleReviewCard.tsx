@@ -32,7 +32,7 @@ function GoogleGlyph() {
 export default function GoogleReviewCard({ lang = "ro", className = "" }: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
   return (
-    <figure className={`mt-12 md:mt-16 rounded-lg border bg-card p-5 shadow-sm ${className}`}>
+    <figure className={`mt-12 md:mt-16 rounded-lg border border-slate-700 bg-slate-900 p-5 shadow-sm ${className}`}>
       <div className="flex items-center gap-3">
         <span
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-base font-semibold text-accent-foreground"
@@ -41,19 +41,19 @@ export default function GoogleReviewCard({ lang = "ro", className = "" }: Google
           R
         </span>
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-foreground">{AUTHOR}</p>
+          <p className="text-sm font-semibold text-slate-100">{AUTHOR}</p>
           <div className="flex items-center gap-2">
             <span className="text-yellow-400 text-sm" aria-hidden="true">
               ★★★★★
             </span>
-            <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+            <span className="inline-flex items-center gap-1 text-xs text-slate-300">
               <GoogleGlyph />
               {badge}
             </span>
           </div>
         </div>
       </div>
-      <blockquote className="mt-3 text-base leading-relaxed text-foreground">{REVIEW_TEXT}</blockquote>
+      <blockquote className="mt-3 text-base leading-relaxed text-slate-200">{REVIEW_TEXT}</blockquote>
       <figcaption className="sr-only">
         {AUTHOR} - {badge}
       </figcaption>
