@@ -131,9 +131,6 @@ export default function VictimRepresentationEn() {
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for a victim case consultation" />
 
-        <p className="mt-3 text-sm text-muted-foreground">
-          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
-        </p>
         <LawyerBioBlock path="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
         <ServiceSubServices path="/en/services/victim-representation-in-criminal-cases" lang="en" />

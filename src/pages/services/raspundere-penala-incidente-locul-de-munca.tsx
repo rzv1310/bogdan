@@ -88,9 +88,6 @@ export default function RaspunderePenalaMunca() {
 
         <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat accidente de muncă" />
 
-        <p className="mt-3 text-sm text-muted-foreground">
-          5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
-        </p>
         <LawyerBioBlock path="/servicii/raspundere-penala-incidente-locul-de-munca" lang="ro" />
 
         <ServiceSubServices path="/servicii/raspundere-penala-incidente-locul-de-munca" />

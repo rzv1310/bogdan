@@ -101,9 +101,6 @@ export default function FinancialCrimeEn() {
             <span className="block">Documents handed over, statements given and accounts frozen at the start of the investigation can decide whether the file is closed or turns into a lengthy trial with seizures and reputational damage.</span>
           </p>
           <ServiceHeroCta lang="en" ariaLabel="Call now" />
-          <p className="mt-3 text-sm text-muted-foreground">
-            5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
-          </p>
           <LawyerBioBlock path="/en/services/financial-crime" lang="en" />
           <ServiceSubServices path="/en/services/financial-crime" lang="en" />
         </header>

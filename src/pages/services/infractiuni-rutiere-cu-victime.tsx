@@ -160,9 +160,6 @@ export default function InfractiuniRutiere() {
 
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat infracțiuni rutiere" />
 
-      <p className="mt-3 text-sm text-muted-foreground">
-        5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
-      </p>
       <LawyerBioBlock path="/servicii/infractiuni-rutiere-cu-victime" lang="ro" />
 
       <ServiceSubServices path="/servicii/infractiuni-rutiere-cu-victime" />

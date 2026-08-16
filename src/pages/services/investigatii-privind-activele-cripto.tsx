@@ -181,9 +181,6 @@ export default function InvestigatiiCripto() {
           </p>
         </div>
         <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat investigații active cripto" />
-        <p className="mt-3 text-sm text-muted-foreground">
-          5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
-        </p>
         <LawyerBioBlock path="/servicii/investigatii-privind-activele-cripto" lang="ro" />
         <ServiceSubServices path="/servicii/investigatii-privind-activele-cripto" />
       </header>

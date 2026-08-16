@@ -183,13 +183,6 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
       <ServiceHeroCta lang={data.lang} ariaLabel={`${heroCallLabel} - ${data.serviceName}`} />
 
-      <p className="mt-3 text-sm text-muted-foreground">
-        {isEn ? (
-          <>5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 27 Google reviews</>
-        ) : (
-          <>5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google</>
-        )}
-      </p>
 
       <LawyerBioBlock path={data.path} lang={data.lang} />
 

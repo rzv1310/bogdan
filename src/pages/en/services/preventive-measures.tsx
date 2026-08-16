@@ -200,9 +200,6 @@ export default function PreventiveMeasures() {
 
       <ServiceHeroCta lang="en" ariaLabel="Call me now! - preventive measures lawyer" />
 
-      <p className="mt-3 text-sm text-muted-foreground">
-        5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 27 Google reviews
-      </p>
       <LawyerBioBlock path="/en/services/preventive-measures" lang="en" />
 
       <ServiceSubServices path="/en/services/preventive-measures" />
