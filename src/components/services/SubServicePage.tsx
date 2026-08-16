@@ -220,9 +220,16 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </p>
       ))}
       {callout && (
-        <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${calloutClassName ?? ""}`}>
-          {callout}
-        </p>
+        <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutClassName ?? ""}`}>
+          <span>{callout}</span>
+          {calloutCta && (
+            <Button asChild variant="warning" size="sm" aria-label={`${calloutCta} - ${data.serviceName}`}>
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> {calloutCta}
+              </a>
+            </Button>
+          )}
+        </div>
       )}
       {bullets && bullets.length > 0 && (
         <ul className="list-disc pl-6 space-y-2">
