@@ -44,6 +44,14 @@ export interface SubServiceSection {
   calloutClassName?: string;
   /** Optional inline CTA button rendered inside the callout. */
   calloutCta?: string;
+  /** Optional paragraphs rendered after the bullets. */
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+  /** Optional small highlighted callout rendered after the bullets. */
+  calloutAfterBullets?: string;
+  /** Optional extra className for the after-bullets callout. */
+  calloutAfterBulletsClassName?: string;
+  /** Optional inline CTA button rendered inside the after-bullets callout. */
+  calloutAfterBulletsCta?: string;
   /** Optional extra className applied to the section Card. */
   cardClassName?: string;
   /** Optional subsections rendered as h3 blocks inside the section. */
