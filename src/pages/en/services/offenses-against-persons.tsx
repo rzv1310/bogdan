@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
@@ -145,7 +144,12 @@ export default function OffensesAgainstPersons() {
         Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic
       </h1>
 
-      <ServiceAuthorBio lang="en" path="/en/services/offenses-against-persons" />
+      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p className="text-foreground">
+          <span className="block"><strong>Accusations of offenses against persons directly affect your freedom, but also your reputation and family life.</strong></span>
+          <span className="block">Many of these cases start from a conflict, a complaint filed in anger, or a misinterpretation of events - and how you react from day one can decisively influence the final outcome.</span>
+        </p>
+      </div>
 
       <ServiceHeroCta lang="en" ariaLabel="Call now! - offenses against persons lawyer" />
 
@@ -154,7 +158,16 @@ export default function OffensesAgainstPersons() {
       </p>
       <ServiceSubServices path="/en/services/offenses-against-persons" lang="en" />
 
-            {/* What offenses against persons means */}
+      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <p>
+          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent people accused of offenses against persons - from assault and threats to domestic violence or offenses against sexual freedom and integrity - before the Police, the Prosecutor's Office and the courts.
+        </p>
+        <p>
+          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
+        </p>
+      </div>
+
+      {/* What offenses against persons means */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
           <h2 className="text-2xl font-semibold leading-none tracking-tight">What offenses against persons means</h2>

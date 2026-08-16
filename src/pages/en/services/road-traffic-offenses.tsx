@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -79,7 +78,13 @@ export default function RoadTrafficEn() {
         </Breadcrumb>
 
         <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest</h1>
-        <ServiceAuthorBio lang="en" path="/en/services/road-traffic-offenses" />
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            <span className="block"><strong>After a road accident, the first hours matter most.</strong></span>
+            <span className="block">Blood alcohol testing, the on-site report and the first statements you give can decide whether the case is closed or turns into a lengthy trial.</span>
+            <span className="block">Do not wait for the first court hearing to ask for help.</span>
+          </p>
+        </div>
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for a traffic case consultation" />
 
@@ -88,7 +93,16 @@ export default function RoadTrafficEn() {
         </p>
         <ServiceSubServices path="/en/services/road-traffic-offenses" lang="en" />
 
-                {/* Why choose me */}
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I defend clients in traffic offenses, from matters without victims to accidents with bodily injury or death.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before all prosecutors' offices and courts of all levels, including the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        {/* Why choose me */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Why choose me for a traffic case?</h2>

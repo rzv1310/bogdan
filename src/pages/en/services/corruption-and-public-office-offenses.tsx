@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -79,7 +78,13 @@ export default function CorruptionPublicOfficeEn() {
         </Breadcrumb>
 
         <h1 className="text-2xl font-semibold mb-4">Corruption offenses and acts related to the exercise of public office - Attorney Bogdan Lamatic | Bucharest</h1>
-        <ServiceAuthorBio lang="en" path="/en/services/corruption-and-public-office-offenses" />
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            <span className="block"><strong>In corruption and public office cases, the first hours matter most.</strong></span>
+            <span className="block">What you state, what you sign and how you react from the very first summons can decide whether the file is closed or turns into a lengthy trial with a reputational cost.</span>
+            <span className="block">Do not wait for the indictment to ask for help.</span>
+          </p>
+        </div>
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for anti-corruption advice" />
 
@@ -88,7 +93,16 @@ export default function CorruptionPublicOfficeEn() {
         </p>
         <ServiceSubServices path="/en/services/corruption-and-public-office-offenses" lang="en" />
 
-                {/* Definitions & framework */}
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a pleading lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I coordinate the defense in corruption and service-related cases, from internal investigation to final verdict.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        {/* Definitions & framework */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">What counts as corruption vs service offenses</h2>

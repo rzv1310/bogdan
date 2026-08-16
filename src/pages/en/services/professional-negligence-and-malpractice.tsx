@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -121,7 +120,13 @@ export default function MalpracticeEn() {
         </Breadcrumb>
 
         <h1 className="text-2xl font-semibold mb-4">Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service</h1>
-        <ServiceAuthorBio lang="en" path="/en/services/professional-negligence-and-malpractice" />
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            <span className="block"><strong>In malpractice cases, the first days matter most.</strong></span>
+            <span className="block">The medical file, the medico-legal expert reports and the statements given at the beginning of the investigation can decide whether criminal liability is established or not.</span>
+            <span className="block">Do not wait for the indictment to ask for help.</span>
+          </p>
+        </div>
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for malpractice advice" />
 
@@ -130,7 +135,16 @@ export default function MalpracticeEn() {
         </p>
         <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
-                {/* What malpractice means. Legal basis */}
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law (white-collar, service offenses) and litigation with medical components. I represent both defendants and injured parties, including complex files with medico-legal expertise and malpractice committees.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        {/* What malpractice means. Legal basis */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">What medical malpractice means. Legal basis</h2>

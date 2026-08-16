@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -78,7 +77,13 @@ export default function RaspunderePenalaMunca() {
 
         <h1 className="text-2xl font-semibold mb-4">Avocat accidente de muncă București și răspundere penală SSM | av. Bogdan Lamatic</h1>
 
-        <ServiceAuthorBio lang="ro" path="/servicii/raspundere-penala-incidente-locul-de-munca" />
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            <span className="block"><strong>După un accident de muncă, primele ore contează cel mai mult.</strong></span>
+            <span className="block">Cercetarea ITM, declarațiile date de angajați și documentele de securitate a muncii predate în primele zile pot decide dacă răspunderea penală este reținută sau nu.</span>
+            <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
+          </p>
+        </div>
 
         <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat accidente de muncă" />
 
@@ -87,7 +92,16 @@ export default function RaspunderePenalaMunca() {
         </p>
         <ServiceSubServices path="/servicii/raspundere-penala-incidente-locul-de-munca" />
 
-                {/* Cadrul general */}
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal și numeroase cazuri de succes în domeniul white-collar crime. Asist angajatori, administratori și persoane cu atribuții SSM în investigații penale privind accidentele de muncă și nerespectarea normelor de securitate.
+          </p>
+          <p>
+            Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
+          </p>
+        </div>
+
+        {/* Cadrul general */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Cadrul general al securității şi sănătății în muncă</h2>

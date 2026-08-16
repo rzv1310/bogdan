@@ -1,4 +1,3 @@
-import { ServiceAuthorBio } from "@/components/services/ServiceAuthorBio";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -122,7 +121,12 @@ export default function VictimRepresentationEn() {
 
         <h1 className="text-2xl font-semibold mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
 
-        <ServiceAuthorBio lang="en" path="/en/services/victim-representation-in-criminal-cases" />
+        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-foreground">
+            <span className="block"><strong>As the victim of a crime, the first days matter most.</strong></span>
+            <span className="block">The criminal complaint, joining the case as a civil party in time and the medical evidence gathered from the start can decide whether you obtain full compensation or lose that right for good.</span>
+          </p>
+        </div>
 
         <ServiceHeroCta lang="en" ariaLabel="Call now for a victim case consultation" />
 
@@ -131,7 +135,16 @@ export default function VictimRepresentationEn() {
         </p>
         <ServiceSubServices path="/en/services/victim-representation-in-criminal-cases" lang="en" />
 
-                {/* Cases I take */}
+        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent victims in criminal proceedings and obtain compensation for road accidents, bodily injuries, workplace accidents and other criminal acts, including complex cases with medico-legal expertise and negotiation with insurers.
+          </p>
+          <p>
+            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have pleaded at all levels of jurisdiction, from prosecutors' offices to the High Court of Cassation and Justice.
+          </p>
+        </div>
+
+        {/* Cases I take */}
         <Card className="mt-12 md:mt-14 border-accent">
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">Cases I take</h2>
