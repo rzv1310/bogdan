@@ -491,13 +491,13 @@ export const policeCustody24HoursEn: SubServicePageData = {
     {
       h2: "What happens after the 24 hours",
       paragraphs: [
-        [
-          { text: "Police custody is one of the " },
-          { text: "preventive measures provided by the Criminal Procedure Code", to: "/en/services/preventive-measures" },
-          { text: "." },
-        ],
+        "Police custody can be ordered for no more than 24 hours, under the conditions set by the Criminal Procedure Code.",
         "Once the 24 hours expire, the person cannot be held further on the basis of the same custody measure.",
-        "Depending on the case, another preventive measure may come into discussion, which is why the defence strategy should be analysed before the next decision.",
+        [
+          { text: "Depending on the case, " },
+          { text: "another preventive measure", to: "/en/services/preventive-measures" },
+          { text: " may come into discussion, which is why the defence strategy should be analysed before the next decision." },
+        ],
       ],
       links: [
         { label: "Pre-trial detention - request, appeal and replacement", to: "/en/services/pre-trial-detention" },
@@ -580,18 +580,20 @@ export const preTrialDetentionEn: SubServicePageData = {
     {
       h2: "How long pre-trial detention can last",
       paragraphs: [
-        [
-          { text: "Pre-trial detention is " },
-          { text: "the most severe of the preventive measures", to: "/en/services/preventive-measures" },
-          { text: " regulated by the Criminal Procedure Code." },
-        ],
+        "Pre-trial detention is the most severe of the preventive measures regulated by the Criminal Procedure Code.",
         "During the criminal investigation the measure can be ordered initially for no more than 30 days, and extensions are subject to the conditions and limits set by law. The total duration in this phase cannot exceed 180 days.",
         "The regime applicable in the preliminary chamber and during trial is distinct and involves periodic verification of the measure.",
       ],
     },
     {
       h2: "If the measure has already been ordered",
-      paragraphs: ["The fact that detention was ordered does not mean the analysis of the defence is over. Depending on the stage of the case, the following can become relevant:"],
+      paragraphs: [
+        [
+          { text: "The fact that detention was ordered does not mean the analysis of the defence is over. Depending on the stage of the case, the appeal, the extension, the periodic verification, the revocation or the replacement with " },
+          { text: "a lighter measure", to: "/en/services/preventive-measures" },
+          { text: " can become relevant:" },
+        ],
+      ],
       bullets: [
         "the appeal against the decision;",
         "the defence against the extension of the measure;",
@@ -687,11 +689,7 @@ export const judicialControlEn: SubServicePageData = {
     {
       h2: "What I analyse in a judicial control case",
       paragraphs: [
-        [
-          { text: "Judicial control is one of the " },
-          { text: "preventive measures that do not involve deprivation of liberty", to: "/en/services/preventive-measures" },
-          { text: "." },
-        ],
+        "Judicial control does not involve deprivation of liberty, but it imposes obligations that must be observed throughout the measure.",
         "The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:",
       ],
       bullets: [
@@ -707,7 +705,11 @@ export const judicialControlEn: SubServicePageData = {
       h2: "Judicial control on bail",
       paragraphs: [
         "Judicial control on bail is regulated separately by the Criminal Procedure Code and requires, in addition to the obligations of judicial control, the payment of bail under the conditions set by law.",
-        "In such a situation I analyse, as the case may be, the conditions of the measure, its suitability compared with other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using a non-custodial measure instead of a more severe one, where the legal framework and the facts support that argument.",
+        [
+          { text: "In such a situation I analyse, as the case may be, the conditions of the measure, its suitability compared with other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using " },
+          { text: "a non-custodial measure", to: "/en/services/preventive-measures" },
+          { text: " instead of a more severe one, where the legal framework and the facts support that argument." },
+        ],
       ],
     },
     {

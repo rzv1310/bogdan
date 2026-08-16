@@ -573,7 +573,11 @@ export const avocatDnaRo: SubServicePageData = {
           { text: "regulile generale ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
-        "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, măsuri preventive ori asigurătorii.",
+        [
+          { text: "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, " },
+          { text: "măsuri preventive ori asigurătorii", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
         "Fiecare dintre aceste acte trebuie analizat separat, dar și în contextul întregii strategii de apărare.",
         "Un răspuns dat la audiere, un document predat sau o poziție exprimată la începutul dosarului poate avea relevanță și în etapele ulterioare. Din acest motiv, recomand ca strategia să fie stabilită înainte de primul act procedural la care participi, atunci când acest lucru este posibil.",
       ],
@@ -812,13 +816,13 @@ export const retinere24OreRo: SubServicePageData = {
     {
       h2: "Ce urmează după reținere",
       paragraphs: [
-        [
-          { text: "Reținerea este una dintre " },
-          { text: "măsurile preventive prevăzute de Codul de procedură penală", to: "/servicii/masuri-preventive" },
-          { text: "." },
-        ],
+        "Reținerea poate fi dispusă pentru cel mult 24 de ore, în condițiile prevăzute de Codul de procedură penală.",
         "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
-        "În funcție de dosar, poate intra în discuție o altă măsură preventivă. De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii.",
+        [
+          { text: "În funcție de dosar, poate intra în discuție " },
+          { text: "o altă măsură preventivă", to: "/servicii/masuri-preventive" },
+          { text: ". De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii." },
+        ],
       ],
       links: [
         { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
@@ -906,7 +910,11 @@ export const arestPreventivRo: SubServicePageData = {
         {
           h3: "Arestarea a fost deja dispusă?",
           paragraphs: [
-            "Verificăm ce cale procedurală mai este deschisă: contestația, apărarea împotriva prelungirii, verificarea periodică a măsurii, revocarea sau înlocuirea cu o măsură mai ușoară.",
+            [
+              { text: "Verificăm ce cale procedurală mai este deschisă: contestația, apărarea împotriva prelungirii, verificarea periodică a măsurii, revocarea sau înlocuirea cu " },
+              { text: "o măsură mai ușoară", to: "/servicii/masuri-preventive" },
+              { text: "." },
+            ],
           ],
         },
       ],
@@ -1031,11 +1039,7 @@ export const arestPreventivRo: SubServicePageData = {
     {
       h2: "Cât poate dura arestarea preventivă și prelungirea",
       paragraphs: [
-        [
-          { text: "Arestarea preventivă este " },
-          { text: "cea mai severă dintre măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " reglementate de Codul de procedură penală." },
-        ],
+        "Arestarea preventivă este cea mai severă dintre măsurile preventive reglementate de Codul de procedură penală.",
         "În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.",
         "Regimul aplicabil în camera preliminară și în cursul judecății este distinct și presupune verificări periodice ale măsurii.",
         "Când procurorul cere prelungirea, apărarea se pregătește înainte de termen: se analizează dacă temeiurile inițiale subzistă, ce probe s-au administrat între timp și dacă au apărut împrejurări noi.",
@@ -1152,11 +1156,7 @@ export const controlJudiciarRo: SubServicePageData = {
     {
       h2: "Ce analizez în cazul controlului judiciar",
       paragraphs: [
-        [
-          { text: "Controlul judiciar face parte dintre " },
-          { text: "măsurile preventive neprivative de libertate", to: "/servicii/masuri-preventive" },
-          { text: "." },
-        ],
+        "Controlul judiciar nu presupune privarea de libertate, însă impune obligații care trebuie respectate pe toată durata măsurii.",
         "Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului. Analizez dacă:",
       ],
       bullets: [
@@ -1172,7 +1172,11 @@ export const controlJudiciarRo: SubServicePageData = {
       h2: "Controlul judiciar pe cauțiune",
       paragraphs: [
         "Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
-        "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei măsuri neprivative de libertate în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație.",
+        [
+          { text: "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii " },
+          { text: "unei măsuri neprivative de libertate", to: "/servicii/masuri-preventive" },
+          { text: " în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație." },
+        ],
       ],
     },
     {
