@@ -188,6 +188,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     links,
     callout,
     calloutClassName,
+    calloutCta,
     cta,
     ctaWhatsApp,
     ctaWhatsAppLabel,
@@ -197,6 +198,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
+    calloutCta?: string;
     cta?: string;
     ctaWhatsApp?: boolean;
     ctaWhatsAppLabel?: string;
