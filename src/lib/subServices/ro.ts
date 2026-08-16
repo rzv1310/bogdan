@@ -646,7 +646,7 @@ export const retinere24OreRo: SubServicePageData = {
         "Pregătesc din timp apărarea dacă urmează o propunere de arestare.",
       ],
       paragraphs: [
-        "Un aspect important este anticiparea pasului următor. Dacă există riscul unei propuneri de arestare preventivă, apărarea trebuie pregătită înainte de termenul respectiv, nu după pronunțarea soluției.",
+        "Un aspect important este anticiparea pasului următor.",
       ],
       cta: "A fost dispusă reținerea? - Sună-mă acum!",
     },
