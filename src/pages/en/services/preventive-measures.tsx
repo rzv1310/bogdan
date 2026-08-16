@@ -269,22 +269,14 @@ export default function PreventiveMeasures() {
         <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">What to tell me or send me</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>So that I can understand the situation as quickly as possible, tell me from the start:</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>the name of the person concerned;</li>
-            <li>where they are at this moment;</li>
-            <li>whether they have been taken into custody;</li>
-            <li>their status in the case, if you know it;</li>
-            <li>which measure has been proposed or ordered;</li>
-            <li>which institution is handling the case;</li>
-            <li>when the next hearing or term is;</li>
-            <li>when the decision was pronounced or communicated, if any.</li>
-          </ul>
-          <p>If you have them, send me the ordinance, the court ruling, the summons, the documents received from the Police or the Prosecutor's Office, the documents concerning the preventive measure and any other relevant document.</p>
-          <p>Do not wait until you have gathered all the documents before contacting me. Especially in the case of custody or an imminent term, the information you already have may be enough for a first discussion.</p>
+        <CardContent className="text-base leading-relaxed space-y-3 pb-5">
+          <p className="font-semibold">Tell me 3 things:</p>
+          <p>where the person is · what happened · when the next deadline is</p>
+          <p className="font-semibold pt-2">If you have them, send:</p>
+          <p>the ordinance · the court ruling · the summons · the Police/Prosecutor documents</p>
+          <p className="font-semibold text-foreground pt-2">Don't have all the documents? Call anyway.</p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <WhatsAppDocsCta lang="en" />
+            <WhatsAppDocsCta lang="en" variant="green" />
           </div>
         </CardContent>
       </Card>

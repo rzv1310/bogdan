@@ -269,22 +269,14 @@ export default function MasuriPreventive() {
         <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce trebuie să îmi spui sau să îmi trimiți</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>Pentru a înțelege cât mai repede situația, spune-mi de la început:</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>numele persoanei vizate;</li>
-            <li>unde se află în acest moment;</li>
-            <li>dacă a fost reținută;</li>
-            <li>ce calitate are în dosar, dacă o cunoști;</li>
-            <li>ce măsură i s-a propus sau dispus;</li>
-            <li>ce instituție instrumentează dosarul;</li>
-            <li>când este următoarea audiere sau termen;</li>
-            <li>când a fost pronunțată sau comunicată soluția, dacă există.</li>
-          </ul>
-          <p>Dacă le ai, trimite-mi ordonanța, încheierea instanței, citația, documentele primite de la Poliție sau Parchet, actele referitoare la măsura preventivă și orice alt document relevant.</p>
-          <p>Nu aștepta să strângi toate actele înainte să mă contactezi. În special în cazul unei rețineri sau al unui termen apropiat, informațiile pe care le ai deja pot fi suficiente pentru prima discuție.</p>
+        <CardContent className="text-base leading-relaxed space-y-3 pb-5">
+          <p className="font-semibold">Spune-mi 3 lucruri:</p>
+          <p>unde este persoana · ce s-a întâmplat · când este următorul termen</p>
+          <p className="font-semibold pt-2">Dacă le ai, trimite:</p>
+          <p>ordonanța · încheierea · citația · actele de la Poliție/Parchet</p>
+          <p className="font-semibold text-foreground pt-2">Nu ai toate documentele? Sună oricum.</p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <WhatsAppDocsCta lang="ro" />
+            <WhatsAppDocsCta lang="ro" variant="green" />
           </div>
         </CardContent>
       </Card>
