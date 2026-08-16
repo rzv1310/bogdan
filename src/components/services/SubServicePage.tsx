@@ -7,6 +7,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
 import RelatedServices from "@/components/RelatedServices";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 
 export interface SubServiceSection {
   h2: string;
@@ -66,18 +67,6 @@ const CTA_CLASS =
 
 const SITE = "https://avocatpenalbucuresti.ro";
 
-/** Headshots alternate page by page across sub-service pages. */
-const HEADSHOTS = [
-  "/lovable-uploads/avocat_bogdan_lamatic_headshot.webp",
-  "/lovable-uploads/avocat_bogdan_lamatic_headshot_2.webp",
-];
-
-function pickHeadshot(path: string) {
-  const slug = path.replace(/\/+$/, "").split("/").pop() ?? "";
-  let sum = 0;
-  for (const char of slug) sum += char.charCodeAt(0);
-  return HEADSHOTS[sum % HEADSHOTS.length];
-}
 
 
 export default function SubServicePage({ data }: { data: SubServicePageData }) {
@@ -85,7 +74,6 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const callLabel = isEn ? "Call now" : "Sună-mă acum";
   const heroCallLabel = isEn ? "Call now!" : "Sună-mă acum!";
   const pageUrl = SITE + data.path;
-  const headshotSrc = pickHeadshot(data.path);
 
 
   useSEO({
@@ -203,27 +191,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         )}
       </p>
 
-      <div className="mt-6 flex items-center gap-4">
-        <img
-          src={headshotSrc}
-
-          alt={isEn ? "Bogdan Lamatic, criminal defence lawyer in Bucharest" : "Avocat Bogdan Lamatic, drept penal București"}
-          width={72}
-          height={72}
-          loading="lazy"
-          decoding="async"
-          className="h-[72px] w-[72px] rounded-full object-cover border border-accent"
-        />
-        <div className="text-sm leading-relaxed">
-          <span className="block text-base font-semibold text-foreground">
-            {isEn ? "Lawyer Bogdan Lamatic" : "Avocat Bogdan Lamatic"}
-          </span>
-          <span className="block text-foreground">
-            {isEn ? "Bucharest Bar · 18+ years of experience" : "Baroul București · 18+ ani experiență"}
-          </span>
-          <span className="block text-foreground">Legal 500 · White-Collar Crime</span>
-        </div>
-      </div>
+      <LawyerBioBlock path={data.path} lang={data.lang} />
 
       {data.sections.map((section, sectionIndex) => (
         <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent ${section.cardClassName ?? ""}`} key={section.h2}>
