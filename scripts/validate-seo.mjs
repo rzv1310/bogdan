@@ -297,6 +297,7 @@ async function main() {
     ].map((m) => ({ hreflang: m[1], href: m[2] }));
 
     collectJsonLd(route, html);
+    validateFaqHeadings(route, html);
     pages.set(route, { alternates, html });
 
     if (alternates.length === 0) {
