@@ -322,65 +322,34 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>
           <CardContent className="text-base leading-relaxed space-y-3">
-            {section.paragraphs?.map((paragraph, pIdx) => (
-              <p key={pIdx}>
-                {typeof paragraph === "string" ? (
-                  paragraph
-                ) : (
-                  paragraph.map((segment, sIdx) =>
-                    segment.bold ? (
-                      <strong key={sIdx}>{segment.text}</strong>
-                    ) : (
-                      <span key={sIdx}>{segment.text}</span>
-                    )
-                  )
-                )}
-              </p>
-            ))}
-            {section.callout && (
-              <p className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md ${section.calloutClassName ?? ""}`}>
-                {section.callout}
-              </p>
-            )}
-            {section.bullets && section.bullets.length > 0 && (
-              <ul className="list-disc pl-6 space-y-2">
-                {section.bullets.map((bullet, idx) => (
-                  <li key={idx}>
-                    {typeof bullet === "string" ? (
-                      bullet
-                    ) : (
-                      <>
-                        <span className="font-semibold text-foreground">{bullet.bold}</span>{" "}
-                        {bullet.rest}
-                      </>
-                    )}
-                  </li>
+            <SectionContent
+              paragraphs={section.paragraphs}
+              bullets={section.bullets}
+              links={section.links}
+              callout={section.callout}
+              calloutClassName={section.calloutClassName}
+              cta={section.cta}
+              ctaWhatsApp={section.ctaWhatsApp}
+              ctaWhatsAppLabel={section.ctaWhatsAppLabel}
+            />
+            {section.subsections && section.subsections.length > 0 && (
+              <div className="space-y-6 pt-2">
+                {section.subsections.map((sub) => (
+                  <div key={sub.h3} className="space-y-3">
+                    <h3 className="text-xl font-semibold leading-snug tracking-tight">{sub.h3}</h3>
+                    <SectionContent
+                      paragraphs={sub.paragraphs}
+                      bullets={sub.bullets}
+                      callout={sub.callout}
+                      calloutClassName={sub.calloutClassName}
+                      cta={sub.cta}
+                      ctaWhatsApp={sub.ctaWhatsApp}
+                      ctaWhatsAppLabel={sub.ctaWhatsAppLabel}
+                    />
+                  </div>
                 ))}
-              </ul>
+              </div>
             )}
-            {section.links && section.links.length > 0 && (
-              <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    {link.to ? (
-                      <Link
-                        to={link.to}
-                        className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
-                      >
-                        <span>{link.label}</span>
-                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
-                      </Link>
-                    ) : (
-                      <span className="inline-flex items-start gap-2 text-base text-foreground">
-                        <span>{link.label}</span>
-                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60" />
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-            {section.cta && <CallCta label={section.cta} />}
           </CardContent>
         </Card>
       ))}
