@@ -14,7 +14,7 @@ import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 
 export interface SubServiceSubsection {
   h3: string;
-  paragraphs?: (string | { text: string; bold?: boolean }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
