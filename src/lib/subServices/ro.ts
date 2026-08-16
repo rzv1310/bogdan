@@ -68,8 +68,8 @@ export const audierePolitieParchetRo: SubServicePageData = {
       h2: "De ce contează ce se întâmplă la prima audiere",
       paragraphs: [
         [
-          { text: "Audierea este un act din faza de " },
-          { text: "urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "Audierea este un act din " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
           { text: ", iar declarația dată acum rămâne la dosar pe tot parcursul procesului." },
         ],
         [
