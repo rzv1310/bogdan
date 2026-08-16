@@ -10,6 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
+import { googleReviews } from "@/lib/reviews";
 const legal500Badges = [
   { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 - avocat Bogdan Lamatic" },
   { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 - avocat Bogdan Lamatic" },
