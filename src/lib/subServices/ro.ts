@@ -928,10 +928,10 @@ export const arestPreventivRo: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         [
-          { text: "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea " },
-          { text: "controlului judiciar", to: "/servicii/control-judiciar" },
-          { text: ", aplicarea " },
-          { text: "arestului la domiciliu", to: "/servicii/arest-la-domiciliu" },
+          { text: "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, " },
+          { text: "aplicarea controlului judiciar", to: "/servicii/control-judiciar" },
+          { text: ", " },
+          { text: "măsura arestului la domiciliu", to: "/servicii/arest-la-domiciliu" },
           { text: " sau o altă soluție permisă de lege." },
         ],
       ],
