@@ -7,7 +7,7 @@ const BIO_INTRO = "Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 1
 const LEGAL500 =
   "Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime.";
 const CONTACT =
-  "Spune-mi în câteva propoziții ce s-a întâmplat și îți răspund concret care sunt pașii următori. Ofer o primă discuție pentru evaluarea situației.";
+  "Spune-mi în câteva propoziții ce s-a întâmplat și îți răspund concret care sunt pașii următori. Ofer o primă discuție fără niciun cost, pentru evaluarea situației.";
 
 export const audierePolitieParchetRo: SubServicePageData = {
   lang: "ro",
@@ -95,7 +95,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
     },
     {
       q: "Cât costă asistența unui avocat la audiere?",
-      a: "Onorariul depinde de situația concretă, urgență, instituția în fața căreia are loc audierea și complexitatea dosarului. Ofer o primă discuție pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de situația concretă, urgență, instituția în fața căreia are loc audierea și complexitatea dosarului. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
     },
   ],
   resources: [
@@ -463,7 +463,7 @@ export const avocatDiicotRo: SubServicePageData = {
     },
     {
       q: "Cât costă apărarea într-un dosar DIICOT?",
-      a: "Onorariul depinde de complexitatea dosarului, stadiul procedurii, urgență și volumul activităților necesare. Ofer o primă discuție pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de complexitatea dosarului, stadiul procedurii, urgență și volumul activităților necesare. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
     },
   ],
   resources: [
@@ -580,7 +580,7 @@ export const avocatDnaRo: SubServicePageData = {
     },
     {
       q: "Cât costă apărarea într-un dosar DNA?",
-      a: "Onorariul depinde de complexitatea și stadiul cauzei, urgență și activitatea efectiv necesară. Ofer o primă discuție pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de complexitatea și stadiul cauzei, urgență și activitatea efectiv necesară. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
     },
   ],
   resources: [
