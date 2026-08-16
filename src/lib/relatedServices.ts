@@ -115,6 +115,30 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/avocat-diicot",
     "/servicii/masuri-preventive",
   ],
+  "/servicii/retinere-24-ore": [
+    "/servicii/masuri-preventive",
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/infractiuni-contra-persoanei",
+  ],
+  "/servicii/arest-preventiv": [
+    "/servicii/masuri-preventive",
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/infractiuni-contra-persoanei",
+  ],
+  "/servicii/control-judiciar": [
+    "/servicii/masuri-preventive",
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/infractiuni-contra-persoanei",
+  ],
+  "/servicii/arest-la-domiciliu": [
+    "/servicii/masuri-preventive",
+    "/servicii/urmarire-penala",
+    "/servicii/audiere-politie-parchet",
+    "/servicii/infractiuni-contra-persoanei",
+  ],
 };
 
 const extraLabelsRo: Record<string, string> = {
@@ -123,6 +147,10 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/perchezitie-informatica": "Percheziție informatică",
   "/servicii/avocat-diicot": "Avocat DIICOT",
   "/servicii/avocat-dna": "Avocat DNA",
+  "/servicii/retinere-24-ore": "Reținere 24 ore",
+  "/servicii/arest-preventiv": "Arest preventiv",
+  "/servicii/control-judiciar": "Control judiciar",
+  "/servicii/arest-la-domiciliu": "Arest la domiciliu",
   "/calculator-despagubiri": "Calculator despăgubiri",
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
@@ -134,6 +162,10 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/computer-search": "Computer search",
   "/en/services/diicot-lawyer": "DIICOT lawyer",
   "/en/services/dna-lawyer": "DNA lawyer",
+  "/en/services/police-custody-24-hours": "Police custody 24 hours",
+  "/en/services/pre-trial-detention": "Pre-trial detention",
+  "/en/services/judicial-control": "Judicial control",
+  "/en/services/house-arrest": "House arrest",
   "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
