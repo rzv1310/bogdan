@@ -200,9 +200,9 @@ export default function PreventiveMeasures() {
       <p className="mt-3 text-sm text-muted-foreground">
         5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 27 Google reviews
       </p>
-      <ServiceSubServices path="/en/services/preventive-measures" />
-
       <LawyerBioBlock path="/en/services/preventive-measures" lang="en" />
+
+      <ServiceSubServices path="/en/services/preventive-measures" />
 
       {/* Do you have one of these problems */}
       <Card className="mt-12 md:mt-14 border-accent">

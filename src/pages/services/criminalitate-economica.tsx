@@ -126,9 +126,9 @@ export default function CriminalitateEconomica() {
       <p className="mt-3 text-sm text-muted-foreground">
         5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
-      <ServiceSubServices path="/servicii/criminalitate-economica" />
-
       <LawyerBioBlock path="/servicii/criminalitate-economica" lang="ro" />
+
+      <ServiceSubServices path="/servicii/criminalitate-economica" />
 
       <p className="mt-6 bg-accent text-accent-foreground rounded-md px-3 py-2 text-base leading-relaxed">
         Indiferent dacă ești anchetat, inculpat sau parte vătămată într-un dosar de infracțiuni economice, obiectivul meu este să îți asigur o apărare solidă, discretă și orientată spre rezultate concrete.

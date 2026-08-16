@@ -157,9 +157,9 @@ export default function OffensesAgainstPersons() {
       <p className="mt-3 text-sm text-muted-foreground">
         5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
       </p>
-      <ServiceSubServices path="/en/services/offenses-against-persons" lang="en" />
-
       <LawyerBioBlock path="/en/services/offenses-against-persons" lang="en" />
+
+      <ServiceSubServices path="/en/services/offenses-against-persons" lang="en" />
 
       {/* What offenses against persons means */}
       <Card className="mt-12 md:mt-14 border-accent">

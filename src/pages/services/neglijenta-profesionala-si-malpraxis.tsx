@@ -172,9 +172,9 @@ export default function Malpraxis() {
       <p className="mt-3 text-sm text-muted-foreground">
         5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 27 de recenzii Google
       </p>
-      <ServiceSubServices path="/servicii/neglijenta-profesionala-si-malpraxis" />
-
       <LawyerBioBlock path="/servicii/neglijenta-profesionala-si-malpraxis" lang="ro" />
+
+      <ServiceSubServices path="/servicii/neglijenta-profesionala-si-malpraxis" />
 
       {/* Ce înseamnă malpraxis medical. Baza legală */}
       <Card className="mt-12 md:mt-14 border-accent">

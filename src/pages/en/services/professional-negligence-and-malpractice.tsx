@@ -134,9 +134,9 @@ export default function MalpracticeEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
-        <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
-
         <LawyerBioBlock path="/en/services/professional-negligence-and-malpractice" lang="en" />
+
+        <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
         {/* What malpractice means. Legal basis */}
         <Card className="mt-12 md:mt-14 border-accent">

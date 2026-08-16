@@ -92,9 +92,9 @@ export default function CorruptionPublicOfficeEn() {
         <p className="mt-3 text-sm text-muted-foreground">
           5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
         </p>
-        <ServiceSubServices path="/en/services/corruption-and-public-office-offenses" lang="en" />
-
         <LawyerBioBlock path="/en/services/corruption-and-public-office-offenses" lang="en" />
+
+        <ServiceSubServices path="/en/services/corruption-and-public-office-offenses" lang="en" />
 
         {/* Definitions & framework */}
         <Card className="mt-12 md:mt-14 border-accent">

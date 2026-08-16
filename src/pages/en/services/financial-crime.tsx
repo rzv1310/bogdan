@@ -104,8 +104,8 @@ export default function FinancialCrimeEn() {
           <p className="mt-3 text-sm text-muted-foreground">
             5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> out of 27 Google reviews
           </p>
-          <ServiceSubServices path="/en/services/financial-crime" lang="en" />
           <LawyerBioBlock path="/en/services/financial-crime" lang="en" />
+          <ServiceSubServices path="/en/services/financial-crime" lang="en" />
         </header>
 
         <section className="space-y-3 text-base leading-relaxed text-muted-foreground">
