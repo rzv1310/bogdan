@@ -2,13 +2,15 @@ interface WhatsAppDocsCtaProps {
   lang?: "ro" | "en";
   className?: string;
   variant?: "default" | "green";
+  label?: string;
 }
 
 const WHATSAPP_URL = "https://wa.me/40745506443";
 
 /** Secondary CTA used right after explaining which documents are useful. */
-export default function WhatsAppDocsCta({ lang = "ro", className = "", variant = "default" }: WhatsAppDocsCtaProps) {
-  const label = lang === "en" ? "Send documents on WhatsApp" : "Trimite-mi actele pe WhatsApp";
+export default function WhatsAppDocsCta({ lang = "ro", className = "", variant = "default", label }: WhatsAppDocsCtaProps) {
+  const defaultLabel = lang === "en" ? "Send documents on WhatsApp" : "Trimite-mi actele pe WhatsApp";
+  const resolvedLabel = label ?? defaultLabel;
   const borderClass = variant === "green" ? "border-[#25D366]" : "border-accent";
   const hoverClass = variant === "green" ? "hover:bg-[#25D366]/10" : "hover:bg-accent/10";
   return (
@@ -16,7 +18,7 @@ export default function WhatsAppDocsCta({ lang = "ro", className = "", variant =
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={label}
+      aria-label={resolvedLabel}
       className={`inline-flex items-center gap-2 rounded-md ${borderClass} bg-transparent px-4 py-2 text-sm font-medium text-foreground transition-colors ${hoverClass} ${className}`}
     >
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-[#25D366]" aria-hidden="true">
