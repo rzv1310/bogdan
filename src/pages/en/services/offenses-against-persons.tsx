@@ -9,6 +9,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/offenses-against-persons";
 const TITLE = "Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic";
 const DESCRIPTION =
@@ -158,14 +159,7 @@ export default function OffensesAgainstPersons() {
       </p>
       <ServiceSubServices path="/en/services/offenses-against-persons" lang="en" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I represent people accused of offenses against persons - from assault and threats to domestic violence or offenses against sexual freedom and integrity - before the Police, the Prosecutor's Office and the courts.
-        </p>
-        <p>
-          I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
-        </p>
-      </div>
+      <LawyerBioBlock path="/en/services/offenses-against-persons" lang="en" />
 
       {/* What offenses against persons means */}
       <Card className="mt-12 md:mt-14 border-accent">

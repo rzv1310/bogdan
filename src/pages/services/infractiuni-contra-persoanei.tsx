@@ -9,6 +9,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/infractiuni-contra-persoanei";
 const TITLE = "Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
 const DESCRIPTION =
@@ -154,14 +155,7 @@ export default function InfractiuniContraPersoanei() {
       </p>
       <ServiceSubServices path="/servicii/infractiuni-contra-persoanei" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal. Reprezint persoane acuzate de infracțiuni contra persoanei - de la loviri și amenințări, la violență în familie sau infracțiuni contra libertății și integrității sexuale - în fața Poliției, Parchetului și instanțelor de judecată.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am pledat la toate nivelurile de jurisdicție, de la parchete până la Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/infractiuni-contra-persoanei" lang="ro" />
 
       {/* Ce înseamnă infracțiuni contra persoanei */}
       <Card className="mt-12 md:mt-14 border-accent">

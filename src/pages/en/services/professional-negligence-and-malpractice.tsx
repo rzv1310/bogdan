@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function MalpracticeEn() {
   useSEO({
     keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
@@ -135,14 +136,7 @@ export default function MalpracticeEn() {
         </p>
         <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law (white-collar, service offenses) and litigation with medical components. I represent both defendants and injured parties, including complex files with medico-legal expertise and malpractice committees.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have appeared at every level of jurisdiction, from prosecutor's offices to the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/professional-negligence-and-malpractice" lang="en" />
 
         {/* What malpractice means. Legal basis */}
         <Card className="mt-12 md:mt-14 border-accent">

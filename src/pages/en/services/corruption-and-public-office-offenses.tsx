@@ -8,6 +8,7 @@ import MitaBarChart from "@/components/charts/MitaBarChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function CorruptionPublicOfficeEn() {
   useSEO({
     keywords: "bribery lawyer romania, corruption defense attorney, public office offenses lawyer",
@@ -93,14 +94,7 @@ export default function CorruptionPublicOfficeEn() {
         </p>
         <ServiceSubServices path="/en/services/corruption-and-public-office-offenses" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a pleading lawyer with the Bucharest Bar since 2007, with over 18 years of experience in criminal law. I coordinate the defense in corruption and service-related cases, from internal investigation to final verdict.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/corruption-and-public-office-offenses" lang="en" />
 
         {/* Definitions & framework */}
         <Card className="mt-12 md:mt-14 border-accent">

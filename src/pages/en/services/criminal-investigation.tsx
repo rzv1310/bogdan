@@ -8,6 +8,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/criminal-investigation";
 const TITLE = "Criminal Investigation Lawyer Bucharest - Defense From the First Hour | Bogdan Lamatic";
 const DESCRIPTION =
@@ -162,14 +163,7 @@ export default function CriminalInvestigation() {
       </p>
       <ServiceSubServices path="/en/services/criminal-investigation" lang="en" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I assist persons who have been summoned, detained, searched, or who are otherwise at any stage of the criminal investigation - from the very first call received from the police or the prosecutor's office, until the prosecutor's final decision.
-        </p>
-        <p>
-          I have been recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, the National Anticorruption Directorate (DNA), the Directorate for Investigating Organized Crime and Terrorism (DIICOT), the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-        </p>
-      </div>
+      <LawyerBioBlock path="/en/services/criminal-investigation" lang="en" />
 
       {/* What is a criminal investigation */}
       <Card className="mt-12 md:mt-14 border-accent">

@@ -8,6 +8,7 @@ import DrugPenaltiesChart from "@/components/charts/DrugPenaltiesChart";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function DrugOffensesEn() {
   useSEO({
     keywords: "drug offenses lawyer romania, drug trafficking defense attorney, narcotics lawyer bucharest",
@@ -94,14 +95,7 @@ export default function DrugOffensesEn() {
         </p>
         <ServiceSubServices path="/en/services/drug-offenses" lang="en" />
 
-        <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p>
-            I am Bogdan Lamatic, a lawyer with the Bucharest Bar, with over 18 years of experience in criminal law. I have defended clients in DIICOT investigations and court trials involving drug trafficking, possession for personal use and organized criminal groups.
-          </p>
-          <p>
-            I am recognized by Legal 500 as a "Next Generation Partner" (White-Collar Crime) and have represented clients before the Police, Prosecutor's Offices, DNA, DIICOT, the European Public Prosecutor's Office and courts of all levels, including the High Court of Cassation and Justice.
-          </p>
-        </div>
+        <LawyerBioBlock path="/en/services/drug-offenses" lang="en" />
 
         {/* Why acting fast matters */}
         <Card className="mt-12 md:mt-14 border-accent">

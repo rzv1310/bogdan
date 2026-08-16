@@ -9,6 +9,7 @@ import MalpraxisChecklistSection from "@/components/services/MalpraxisChecklistS
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 export default function Malpraxis() {
   useSEO({
     keywords: "avocat malpraxis medical bucuresti, avocat neglijenta profesionala, avocat neglijenta in serviciu, raspundere penala medic",
@@ -173,14 +174,7 @@ export default function Malpraxis() {
       </p>
       <ServiceSubServices path="/servicii/neglijenta-profesionala-si-malpraxis" />
 
-      <div className="mt-6 space-y-3 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Sunt Bogdan Lamatic, avocat în Baroul București, cu peste 18 ani de experiență în drept penal (white-collar, infracțiuni de serviciu) și litigii cu componentă medicală. Am reprezentat atât inculpați, cât și părți vătămate, inclusiv în dosare complexe cu expertize medico-legale, investigații interne și comisii de malpraxis.
-        </p>
-        <p>
-          Sunt recunoscut de Legal 500 ca „Next Generation Partner” (White-Collar Crime) și am reprezentat clienți în fața Poliției, Parchetelor, DNA, DIICOT, Parchetului European și instanțelor de toate gradele, inclusiv Înalta Curte de Casație și Justiție.
-        </p>
-      </div>
+      <LawyerBioBlock path="/servicii/neglijenta-profesionala-si-malpraxis" lang="ro" />
 
       {/* Ce înseamnă malpraxis medical. Baza legală */}
       <Card className="mt-12 md:mt-14 border-accent">
