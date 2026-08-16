@@ -323,7 +323,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           {cta && (
             <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${cta} - ${data.serviceName}`}>
               <a href="tel:+40316320183">
-                <Phone className="mr-2 h-4 w-4" /> {cta}
+                {ctaIcon && <Phone className="mr-2 h-4 w-4" />} {cta}
               </a>
             </Button>
           )}
