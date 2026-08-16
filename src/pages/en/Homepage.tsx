@@ -9,6 +9,7 @@ import { ReviewsCarousel3D, type Review as Reviews3DItem } from "@/components/ui
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { servedAreasSchema } from "@/lib/areaServed";
+import { googleReviews } from "@/lib/reviews";
 const legal500Badges = [
   { src: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_rising_star_2020_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Rising Star 2020 - attorney Bogdan Lamatic" },
   { src: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.png", webp: "/lovable-uploads/EMEA_LEGAL_500_Next_Generation_Partner_2021_avocat_bogdan_lamatic.webp", alt: "Legal 500 EMEA Next Generation Partner 2021 - attorney Bogdan Lamatic" },
@@ -314,12 +315,23 @@ const HomepageEN = () => {
               "bestRating": "5",
               "reviewCount": "28"
             },
-            "review": currentReviews.slice(0, 5).map((review, index) => ({
+            "review": googleReviews.map((review) => ({
               "@type": "Review",
-              "inLanguage": "en-US",
-              "author": { "@type": "Person", "name": review.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": review.stars.toString(), "bestRating": "5" },
-              "reviewBody": review.text
+              "inLanguage": "ro-RO",
+              "author": { "@type": "Person", "name": review.author },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": review.reviewBody,
+              "itemReviewed": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+              "publisher": { "@type": "Organization", "name": "Google" },
+              ...(review.ownerReply
+                ? {
+                    "comment": {
+                      "@type": "Answer",
+                      "author": { "@type": "Person", "name": "Avocat Bogdan Lamatic" },
+                      "text": review.ownerReply,
+                    },
+                  }
+                : {}),
             }))
           },
           {
