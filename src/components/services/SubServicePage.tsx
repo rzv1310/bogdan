@@ -36,6 +36,8 @@ export interface SubServiceSection {
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
+  /** When false, hides the phone icon inside the CTA button. Defaults to true. */
+  ctaIcon?: boolean;
   /** Optional list of inline service links (text-only when `to` is missing). */
   links?: { label: string; to?: string }[];
   /** Optional small highlighted callout inside the section. */
