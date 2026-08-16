@@ -906,7 +906,11 @@ export const arestPreventivRo: SubServicePageData = {
         {
           h3: "Arestarea a fost deja dispusă?",
           paragraphs: [
-            "Verificăm ce cale procedurală mai este deschisă: contestația, apărarea împotriva prelungirii, verificarea periodică a măsurii, revocarea sau înlocuirea cu o măsură mai ușoară.",
+            [
+              { text: "Verificăm ce cale procedurală mai este deschisă: contestația, apărarea împotriva prelungirii, verificarea periodică a măsurii, revocarea sau înlocuirea cu " },
+              { text: "o măsură mai ușoară", to: "/servicii/masuri-preventive" },
+              { text: "." },
+            ],
           ],
         },
       ],
