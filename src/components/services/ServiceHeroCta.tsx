@@ -35,7 +35,7 @@ export function ServiceHeroCta({ lang, ariaLabel: _ariaLabel }: ServiceHeroCtaPr
       <p className="mt-2 text-sm text-foreground">
         {lang === "en" ? (
           <>
-            5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 27 Google reviews
+            5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 28 Google reviews
           </>
         ) : (
           <>

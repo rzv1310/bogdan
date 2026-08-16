@@ -487,7 +487,7 @@ const Index = () => {
               "@type": "AggregateRating",
               "ratingValue": "5",
               "bestRating": "5",
-              "reviewCount": "10"
+              "reviewCount": "28"
             },
             "review": [
               {
