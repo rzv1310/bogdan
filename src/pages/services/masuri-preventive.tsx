@@ -224,16 +224,16 @@ export default function MasuriPreventive() {
           </p>
           <ol className="list-decimal pl-5 space-y-3 text-black">
             <li>
-              <strong>Clarific situația</strong> – ce s-a întâmplat, unde este persoana, ce termen urmează.
+              <strong>Clarific situația</strong> - ce s-a întâmplat, unde este persoana, ce termen urmează.
             </li>
             <li>
-              <strong>Verific actele</strong> – ordonanță, încheiere, citație și documentele disponibile.
+              <strong>Verific actele</strong> - ordonanță, încheiere, citație și documentele disponibile.
             </li>
             <li>
-              <strong>Evaluez riscul</strong> – ce măsură poate fi dispusă și ce argumente există.
+              <strong>Evaluez riscul</strong> - ce măsură poate fi dispusă și ce argumente există.
             </li>
             <li>
-              <strong>Pregătesc apărarea</strong> – contestare, respingere, revocare sau măsură mai ușoară.
+              <strong>Pregătesc apărarea</strong> - contestare, respingere, revocare sau măsură mai ușoară.
             </li>
           </ol>
           <CallCta label="Sună acum - 031 632 01 83" />

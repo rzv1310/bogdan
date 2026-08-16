@@ -224,16 +224,16 @@ export default function PreventiveMeasures() {
           </p>
           <ol className="list-decimal pl-5 space-y-3 text-black">
             <li>
-              <strong>I clarify the situation</strong> – what happened, where the person is, what deadline is next.
+              <strong>I clarify the situation</strong> - what happened, where the person is, what deadline is next.
             </li>
             <li>
-              <strong>I check the documents</strong> – ordinance, court ruling, summons and any available documents.
+              <strong>I check the documents</strong> - ordinance, court ruling, summons and any available documents.
             </li>
             <li>
-              <strong>I assess the risk</strong> – what measure may be ordered and what arguments exist.
+              <strong>I assess the risk</strong> - what measure may be ordered and what arguments exist.
             </li>
             <li>
-              <strong>I prepare the defence</strong> – challenge, rejection, revocation or a lighter measure.
+              <strong>I prepare the defence</strong> - challenge, rejection, revocation or a lighter measure.
             </li>
           </ol>
           <CallCta label="Call now - 031 632 01 83" />
