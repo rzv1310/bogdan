@@ -237,7 +237,10 @@ export default function PreventiveMeasures() {
         </CardContent>
       </Card>
 
-      <GoogleReviewCard lang="en" />
+      <GoogleReviewCard
+        lang="en"
+        reviewText={`Complicated criminal case with serious accusations. Attorney Lamatic quickly identified the weak points of the case and handled everything firmly. Available anytime, explains everything clearly, calmly and realistically, without false promises.\nThe result was far beyond what I hoped for.`}
+      />
 
       {/* What is your situation right now */}
       <Card className="mt-12 md:mt-16 border-accent">
