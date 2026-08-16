@@ -505,7 +505,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         </CardContent>
       </Card>
 
-      <RelatedServices current={data.path} lang={data.lang} />
+      <RelatedServices current={data.path} lang={data.lang} exclude={contextualPaths} />
     </section>
   );
 }
