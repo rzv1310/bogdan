@@ -210,7 +210,7 @@ export default function MasuriPreventive() {
           .
         </p>
         <p>
-          Bogdan Lamatic este listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime. Am reprezentat clienți în fața judecătorului de drepturi și libertăți, a judecătorului de cameră preliminară și a instanțelor de judecată.
+          Sunt listat în prezent de Legal 500 în categoria Next Generation Partners - White-Collar Crime. Am reprezentat clienți în fața judecătorului de drepturi și libertăți, a judecătorului de cameră preliminară și a instanțelor de judecată.
         </p>
       </div>
 

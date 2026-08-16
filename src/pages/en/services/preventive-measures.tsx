@@ -210,7 +210,7 @@ export default function PreventiveMeasures() {
           .
         </p>
         <p>
-          Bogdan Lamatic is currently listed by Legal 500 in the Next Generation Partners category - White-Collar Crime. I have represented clients before the judge for rights and liberties, the pre-trial chamber judge and the trial courts.
+          I am currently listed by Legal 500 in the Next Generation Partners category - White-Collar Crime. I have represented clients before the judge for rights and liberties, the pre-trial chamber judge and the trial courts.
         </p>
       </div>
 
