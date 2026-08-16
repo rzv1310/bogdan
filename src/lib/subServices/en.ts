@@ -689,11 +689,11 @@ export const judicialControlEn: SubServicePageData = {
       paragraphs: [
         [
           { text: "Judicial control is one of the " },
-          { text: "preventive measures", to: "/en/services/preventive-measures" },
-          { text: " that do not involve deprivation of liberty." },
+          { text: "preventive measures that do not involve deprivation of liberty", to: "/en/services/preventive-measures" },
+          { text: "." },
         ],
+        "The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:",
       ],
-      paragraphs: ["The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:"],
       bullets: [
         "the measure is still necessary;",
         "the obligations are proportionate;",
