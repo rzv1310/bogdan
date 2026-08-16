@@ -170,6 +170,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
+            <BreadcrumbLink href={data.parent.to}>{data.parent.breadcrumbLabel}</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
             <BreadcrumbPage>{data.breadcrumbLabel}</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
