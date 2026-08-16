@@ -374,8 +374,8 @@ export const dnaLawyerEn: SubServicePageData = {
       h2: "What the DNA is and when it has competence",
       paragraphs: [
         [
-          { text: "DNA files follow the general rules of the " },
-          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: "DNA files follow " },
+          { text: "the general rules of the criminal investigation", to: "/en/services/criminal-investigation" },
           { text: "." },
         ],
         "The DNA is the prosecutor's office specialised in fighting medium and high-level corruption, set up by Government Emergency Ordinance no. 43/2002. It has competence, among others, when:",
