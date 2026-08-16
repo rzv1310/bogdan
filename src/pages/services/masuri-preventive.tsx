@@ -3,13 +3,16 @@ import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { servedAreasSchema } from "@/lib/areaServed";
 
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewCard from "@/components/services/GoogleReviewCard";
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
+import SubServiceLinkButton from "@/components/services/SubServiceLinkButton";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/masuri-preventive";
 const TITLE = "Avocat Măsuri Preventive București - Intervenție Imediată | Bogdan Lamatic";
@@ -204,133 +207,18 @@ export default function MasuriPreventive() {
 
       <ServiceSubServices path="/servicii/masuri-preventive" />
 
-      {/* Ai una dintre aceste probleme */}
-      <Card className="mt-12 md:mt-14 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ai una dintre aceste probleme?</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-6">
-          {PROBLEMS.map((item) => (
-            <div key={item.to} className="space-y-2">
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="text-foreground">{item.lead}</p>
-              <p className="text-muted-foreground">{item.text}</p>
-              <Link to={item.to} className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-                {item.linkLabel} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-          ))}
-          <div className="pt-2">
-            <h3 className="text-lg font-semibold">Nu știi exact ce măsură se discută?</h3>
-            <p className="mt-1">Nu trebuie să cunoști denumirea juridică exactă.</p>
-            <p>Spune-mi ce s-a întâmplat, unde se află persoana și ce informații ai primit de la Poliție, Parchet sau instanță.</p>
-            <CallCta label="Sună acum - 031 632 01 83" />
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Ce se întâmplă acum */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce se întâmplă acum?</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-6">
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ai fost reținut sau o persoană apropiată a fost reținută</h3>
-            <p>Reținerea este o măsură preventivă privativă de libertate care se poate dispune pentru cel mult 24 de ore. În acest interval pot avea loc audieri și alte acte procedurale importante.</p>
-            <p>În funcție de dosar, după reținere poate intra în discuție o altă măsură preventivă, inclusiv controlul judiciar, arestul la domiciliu sau arestarea preventivă. De aceea, este preferabil ca strategia de apărare să fie analizată înainte de luarea următoarei decizii.</p>
-            <p>Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu. Spune-mi:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>numele persoanei;</li>
-              <li>unde se află;</li>
-              <li>la ce secție de Poliție, Parchet sau structură a fost dusă;</li>
-              <li>când a avut loc reținerea;</li>
-              <li>ce informații ai primit până acum;</li>
-              <li>dacă știi când urmează audierea sau prezentarea în fața judecătorului.</li>
-            </ul>
-            <p>Nu este necesar să ai toate documentele pentru a mă contacta.</p>
-            <CallCta label="A fost dispusă reținerea - Sună acum" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Urmează o propunere de arestare preventivă</h3>
-            <p>Acesta este unul dintre momentele în care pregătirea rapidă a apărării este esențială. Arestarea preventivă este cea mai severă dintre măsurile preventive prevăzute de Codul de procedură penală.</p>
-            <p>În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.</p>
-            <p>Analizez:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>motivele concrete invocate pentru arestare;</li>
-              <li>condițiile generale ale măsurilor preventive;</li>
-              <li>condițiile speciale ale arestării preventive;</li>
-              <li>probele relevante disponibile;</li>
-              <li>existența riscurilor procesuale invocate;</li>
-              <li>circumstanțele personale, familiale și profesionale;</li>
-              <li>proporționalitatea măsurii;</li>
-              <li>posibilitatea aplicării unei măsuri mai puțin severe.</li>
-            </ul>
-            <p>Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.</p>
-            <CallCta label="Urmează propunerea de arestare - Sună acum" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești deja sub control judiciar</h3>
-            <p>Controlul judiciar nu presupune detenția, dar poate avea un impact real asupra vieții de zi cu zi. Pot exista obligații referitoare la:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>prezentarea la organul judiciar;</li>
-              <li>prezentarea la organul de poliție desemnat cu supravegherea;</li>
-              <li>schimbarea locuinței;</li>
-              <li>deplasarea în anumite limite teritoriale;</li>
-              <li>contactul cu anumite persoane;</li>
-              <li>exercitarea anumitor activități, atunci când o asemenea obligație este stabilită în condițiile legii.</li>
-            </ul>
-            <p>Conținutul controlului judiciar este reglementat de art. 215 CPP. Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului.</p>
-            <p>Analizez dacă măsura mai este necesară, dacă obligațiile sunt proporționale, dacă au apărut împrejurări noi, dacă anumite restricții pot fi modificate și dacă există temei pentru revocarea sau înlocuirea măsurii.</p>
-            <CallCta label="Analizează obligațiile din controlul judiciar" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești în arest la domiciliu</h3>
-            <p>Arestul la domiciliu este o măsură preventivă privativă de libertate. În cursul urmăririi penale poate fi luat pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.</p>
-            <p>Dacă măsura este deja dispusă, analizăm:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>dacă există o cale de atac disponibilă;</li>
-              <li>dacă măsura mai este necesară;</li>
-              <li>dacă poate fi înlocuită cu una mai puțin severă;</li>
-              <li>dacă există împrejurări noi;</li>
-              <li>dacă este necesară formularea unei cereri pentru părăsirea temporară a imobilului într-o situație permisă de lege.</li>
-            </ul>
-            <CallCta label="Sunt în arest la domiciliu - Vreau să verific opțiunile" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești deja arestat preventiv</h3>
-            <p>Faptul că arestarea preventivă a fost dispusă nu înseamnă că analiza apărării s-a încheiat. În funcție de etapa dosarului pot deveni relevante:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>contestația;</li>
-              <li>apărarea împotriva prelungirii măsurii;</li>
-              <li>verificarea periodică a măsurii;</li>
-              <li>revocarea;</li>
-              <li>înlocuirea cu o măsură preventivă mai puțin severă.</li>
-            </ul>
-            <p>Codul de procedură penală permite revocarea măsurii atunci când au încetat temeiurile care au determinat-o sau au apărut împrejurări noi relevante și reglementează și înlocuirea cu o măsură mai ușoară atunci când condițiile legale sunt îndeplinite.</p>
-            <CallCta label="Măsura a fost deja dispusă - Verifică opțiunile" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Vrei să contești o măsură preventivă</h3>
-            <p className="text-foreground"><strong>Nu amâna verificarea termenului.</strong></p>
-            <p>În materia măsurilor preventive există termene procedurale foarte scurte. Pentru contestațiile reglementate de art. 204-206 CPP, termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare. Și împotriva ordonanței procurorului prin care se dispune controlul judiciar există o cale specifică de atac, reglementată de art. 213 CPP.</p>
-            <p>De aceea, primul lucru pe care îl verific este: ce măsură a fost dispusă, prin ce act, de către cine, în ce etapă se află dosarul, când a fost pronunțată soluția, când a fost comunicată și ce termen procedural este aplicabil situației concrete.</p>
-            <CallCta label="Vreau să verific termenul" />
-          </div>
-        </CardContent>
-      </Card>
+      {/* USP - mă ocup personal */}
+      <div className="mt-10 md:mt-12 rounded-lg border-l-4 border-accent bg-accent/10 px-5 py-4">
+        <p className="text-lg font-semibold text-foreground">Mă ocup personal de dosarul tău</p>
+        <p className="mt-1 text-base leading-relaxed text-foreground">Nu ești preluat și apoi trimis automat la alt avocat. Mă ocup personal de strategie și de momentele esențiale ale mandatului.</p>
+      </div>
 
       {/* Ce fac imediat după ce mă contactezi */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce fac imediat după ce mă contactezi</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Nu trebuie să cunoști Codul de procedură penală și nici să știi ce cerere trebuie formulată. Spune-mi ce s-a întâmplat.</p>
           <p>
             <strong>1. Clarific situația.</strong> Stabilesc unde se află persoana, dacă are calitatea de suspect sau inculpat, ce măsură a fost discutată, propusă sau dispusă, cine a dispus-o sau cine o solicită, în ce etapă se află dosarul, când este următoarea audiere sau termen și dacă există un termen procedural în curs.
@@ -348,12 +236,36 @@ export default function MasuriPreventive() {
         </CardContent>
       </Card>
 
+      <GoogleReviewCard lang="ro" />
+
+      {/* În ce situație te afli acum */}
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">În ce situație te afli acum?</h2>
+        </CardHeader>
+        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
+          {PROBLEMS.map((item) => (
+            <div key={item.to} className="space-y-2">
+              <h3 className="text-lg font-semibold">{item.title}</h3>
+              <p className="text-foreground">{item.lead}</p>
+              <p className="text-muted-foreground">{item.text}</p>
+              <SubServiceLinkButton to={item.to}>{item.linkLabel}</SubServiceLinkButton>
+            </div>
+          ))}
+          <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
+            <h3 className="text-lg font-semibold">Nu știi exact ce măsură se discută?</h3>
+            <p className="mt-1">Nu știi dacă este reținere, control judiciar sau propunere de arestare? Nu trebuie să știi. Spune-mi ce s-a întâmplat.</p>
+            <CallCta label="Sună acum - 031 632 01 83" />
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Ce trebuie să îmi spui */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce trebuie să îmi spui sau să îmi trimiți</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Pentru a înțelege cât mai repede situația, spune-mi de la început:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>numele persoanei vizate;</li>
@@ -367,15 +279,18 @@ export default function MasuriPreventive() {
           </ul>
           <p>Dacă le ai, trimite-mi ordonanța, încheierea instanței, citația, documentele primite de la Poliție sau Parchet, actele referitoare la măsura preventivă și orice alt document relevant.</p>
           <p>Nu aștepta să strângi toate actele înainte să mă contactezi. În special în cazul unei rețineri sau al unui termen apropiat, informațiile pe care le ai deja pot fi suficiente pentru prima discuție.</p>
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <WhatsAppDocsCta lang="ro" />
+          </div>
         </CardContent>
       </Card>
 
       {/* De ce să mă alegi */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">De ce să mă alegi pentru o măsură preventivă</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>
             <strong>18+ ani de experiență în drept penal.</strong> Am reprezentat clienți în cauze penale și în relația cu organele judiciare relevante, iar practica mea include dosare de white-collar crime și investigații complexe.
           </p>
@@ -383,7 +298,7 @@ export default function MasuriPreventive() {
             <strong>Recunoaștere Legal 500 - White-Collar Crime.</strong> Legal 500 îl include în prezent pe Bogdan Lamatic în categoria Next Generation Partners - White-Collar Crime, România. Experiența într-un dosar penal nu înseamnă doar cunoașterea textului de lege, ci capacitatea de a identifica rapid ce contează procedural și probator atunci când timpul este limitat.
           </p>
           <p>
-            <strong>Mă ocup personal de dosarul tău.</strong> Mă ocup personal de strategie și de reprezentarea pentru care am preluat mandatul și rămân avocatul tău de contact. Dacă particularitățile cauzei necesită colaborarea cu alți profesioniști, coordonez personal apărarea.
+            <strong>Mă ocup personal de dosarul tău.</strong> Rămân avocatul tău de contact, iar dacă particularitățile cauzei necesită colaborarea cu alți profesioniști, coordonez personal apărarea.
           </p>
           <p>
             <strong>Program extins și intervenție în situații urgente.</strong> Luni - Vineri: 06:00 - 22:00, Sâmbătă - Duminică: 09:00 - 20:00. Pentru urgențe penale există și disponibilitate în afara programului obișnuit, în funcție de situație. Dacă este vorba despre reținere, audiere urgentă, percheziție, propunere de arestare sau un termen apropiat privind o măsură preventivă, sună direct.
@@ -391,16 +306,16 @@ export default function MasuriPreventive() {
           <p>
             <strong>Discreție și confidențialitate.</strong> Discuțiile cu avocatul și informațiile primite în exercitarea profesiei sunt protejate de regulile privind secretul profesional.
           </p>
-          <CallCta label="Vorbește direct cu avocatul Bogdan Lamatic" />
+          <CallCta label="Sună acum - 031 632 01 83" />
         </CardContent>
       </Card>
 
       {/* Riscuri */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce riști dacă nu reacționezi la timp</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>O măsură preventivă nu trebuie tratată ca o simplă formalitate procedurală. Poate produce efecte reale înainte ca dosarul penal să fie soluționat definitiv.</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
@@ -423,11 +338,11 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* Ce sunt măsurile preventive */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce sunt măsurile preventive și în ce scop pot fi luate</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Măsurile preventive sunt măsuri procesuale care pot restrânge libertatea sau exercitarea unor drepturi pe durata procesului penal. Pot fi luate numai în condițiile prevăzute de lege.</p>
           <p>
             Art. 202 CPP stabilește cadrul general, inclusiv necesitatea existenței unei suspiciuni rezonabile și cerința ca măsura să fie necesară pentru scopurile procesuale prevăzute de lege și proporțională cu gravitatea acuzației. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
@@ -437,11 +352,11 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* Cele 5 măsuri preventive */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Care sunt cele 5 măsuri preventive</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-6">
+        <CardContent className="text-base leading-relaxed space-y-4 pb-5">
           <div className="space-y-2">
             <p>Codul de procedură penală prevede cinci măsuri preventive: reținerea, controlul judiciar, controlul judiciar pe cauțiune, arestul la domiciliu și arestarea preventivă.</p>
             <p>Trei sunt privative de libertate - reținerea, arestul la domiciliu și arestarea preventivă - iar două sunt restrictive de drepturi - controlul judiciar și controlul judiciar pe cauțiune.</p>
@@ -451,55 +366,45 @@ export default function MasuriPreventive() {
             <h3 className="text-lg font-semibold">1. Reținerea - maximum 24 de ore</h3>
             <p>Reținerea este o măsură preventivă privativă de libertate. În cursul urmăririi penale, aceasta poate fi dispusă pentru cel mult 24 de ore. Durata redusă nu înseamnă însă că această etapă este lipsită de importanță, pentru că în acest interval pot avea loc acte procedurale care influențează ceea ce urmează.</p>
             <p>În funcție de situația concretă, pot interveni pentru consultanță juridică imediată, asistență la audieri, analiza situației procesuale, verificarea documentelor disponibile, pregătirea poziției procesuale și pregătirea apărării pentru eventuala solicitare a unei alte măsuri preventive.</p>
-            <Link to="/servicii/retinere-24-ore" className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-              Reținere 24 ore - drepturi, asistență avocat și ce urmează <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            <SubServiceLinkButton to="/servicii/retinere-24-ore">Reținere 24 ore - drepturi, asistență avocat și ce urmează</SubServiceLinkButton>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">2. Controlul judiciar</h3>
             <p>Controlul judiciar este o măsură preventivă neprivativă de libertate. Persoana rămâne în libertate, dar trebuie să respecte obligațiile stabilite de organul judiciar competent. Art. 215 CPP reglementează conținutul controlului judiciar și obligațiile care pot fi impuse.</p>
             <p>Analizez motivele pentru care a fost dispusă măsura, obligațiile stabilite, impactul lor concret, proporționalitatea restricțiilor, evoluția dosarului și eventualele împrejurări noi. În funcție de situație, pot fi analizate calea de atac, modificarea obligațiilor, eliminarea anumitor restricții, revocarea sau înlocuirea măsurii.</p>
-            <Link to="/servicii/control-judiciar" className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-              Control judiciar - obligații, plângere, modificare și revocare <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            <SubServiceLinkButton to="/servicii/control-judiciar">Control judiciar - obligații, plângere, modificare și revocare</SubServiceLinkButton>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">3. Controlul judiciar pe cauțiune</h3>
             <p>Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege. Informațiile despre această procedură sunt integrate în pagina dedicată controlului judiciar.</p>
             <p>Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei măsuri neprivative de libertate în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație.</p>
-            <Link to="/servicii/control-judiciar" className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-              Control judiciar și control judiciar pe cauțiune <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            <SubServiceLinkButton to="/servicii/control-judiciar">Control judiciar și control judiciar pe cauțiune</SubServiceLinkButton>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">4. Arestul la domiciliu</h3>
             <p>Arestul la domiciliu este o măsură preventivă privativă de libertate. Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent. În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, iar durata maximă în această etapă poate ajunge, prin prelungiri succesive în condițiile legii, la 180 de zile.</p>
             <p>În funcție de momentul în care mă contactezi, pregătesc apărarea împotriva luării măsurii, analizez calea de atac disponibilă, solicit înlocuirea cu o măsură mai puțin severă atunci când există temei, analizez posibilitatea revocării și formulez cereri privind părăsirea imobilului atunci când există un motiv justificat.</p>
-            <Link to="/servicii/arest-la-domiciliu" className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-              Arest la domiciliu - contestație, permisiuni, revocare și înlocuire <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            <SubServiceLinkButton to="/servicii/arest-la-domiciliu">Arest la domiciliu - contestație, permisiuni, revocare și înlocuire</SubServiceLinkButton>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">5. Arestarea preventivă</h3>
             <p>Arestarea preventivă este cea mai severă măsură preventivă prevăzută de Codul de procedură penală. În cursul urmăririi penale poate fi dispusă de judecător pentru o perioadă de cel mult 30 de zile și poate fi prelungită în condițiile legii, durata totală în această fază neputând depăși 180 de zile.</p>
             <p>Intervenția poate începe încă din momentul în care există o propunere de arestare. După dispunerea măsurii pot deveni relevante contestația, opoziția la prelungire, verificările periodice, revocarea sau înlocuirea măsurii.</p>
-            <Link to="/servicii/arest-preventiv" className="inline-flex items-center gap-1 text-primary underline underline-offset-2">
-              Arest preventiv - propunere, contestație, prelungire și înlocuire <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+            <SubServiceLinkButton to="/servicii/arest-preventiv">Arest preventiv - propunere, contestație, prelungire și înlocuire</SubServiceLinkButton>
           </div>
         </CardContent>
       </Card>
 
       {/* Metodă de lucru */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Cum te ajut - metoda mea de lucru</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>
             <strong>A. Intervenție rapidă.</strong> Primul obiectiv este să stabilim exact ce s-a întâmplat, ce urmează, când urmează, ce acte există și ce termen procedural trebuie respectat. Nu aștept ca dosarul să ajungă într-o etapă mai avansată pentru a identifica riscurile care există deja.
           </p>
@@ -516,11 +421,11 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* Pași practici */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Pași practici în funcție de situația ta</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>
             <strong>Ai fost reținut.</strong> Sună imediat. Reținerea nu poate depăși 24 de ore, iar în acest interval pot avea loc acte procedurale importante.
           </p>
@@ -539,13 +444,13 @@ export default function MasuriPreventive() {
           <p>
             <strong>Măsura a fost dispusă sau prelungită recent.</strong> Spune-mi data și ora pronunțării sau comunicării. În anumite proceduri termenul de atac este de numai 48 de ore.
           </p>
-          <CallCta label="Verifică acum ce opțiuni ai" />
+          <CallCta label="Sună acum - 031 632 01 83" />
         </CardContent>
       </Card>
 
       {/* FAQ */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Întrebări frecvente despre măsurile preventive</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed">
@@ -561,29 +466,30 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* Ai nevoie de ajutor acum */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Ai nevoie de ajutor acum?</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Dacă ție sau unei persoane apropiate i s-a dispus reținerea, i se propune sau i s-a dispus arestarea preventivă, i s-a impus control judiciar, are probleme cu obligațiile acestuia, este în arest la domiciliu, i-a fost prelungită o măsură ori vrea să conteste, să solicite revocarea sau înlocuirea cu o măsură mai puțin severă, nu trebuie să știi singur ce cerere trebuie formulată.</p>
           <p>Spune-mi ce s-a întâmplat și verificăm ce opțiuni procedurale există în situația concretă.</p>
         </CardContent>
       </Card>
 
       {/* Contact */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h3 className="text-xl font-semibold leading-none tracking-tight">Contact - evaluare inițială gratuită</h3>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-2">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Bogdan Lamatic - avocat drept penal, București. Telefon: 031 632 01 83.</p>
           <p>Program: Luni - Vineri: 06:00 - 22:00; Sâmbătă - Duminică: 09:00 - 20:00.</p>
           <p>Dacă este o situație urgentă, spune de la început: „Este vorba despre o măsură preventivă.”</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună-mă acum</a>
+              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum - 031 632 01 83</a>
             </Button>
+            <WhatsAppDocsCta lang="ro" />
             <Button asChild variant="outline">
               <Link to="/contact">Trimite solicitarea și actele</Link>
             </Button>
@@ -592,11 +498,11 @@ export default function MasuriPreventive() {
       </Card>
 
       {/* Resurse oficiale */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
+      <Card className="mt-12 md:mt-16 border-accent">
+        <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Resurse oficiale</h2>
         </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
+        <CardContent className="text-base leading-relaxed space-y-2 pb-5">
           <p>Informațiile juridice de pe această pagină se raportează la dispozițiile Codului de procedură penală privind măsurile preventive.</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>art. 202 CPP - scopul, condițiile generale și categoriile măsurilor preventive;</li>
