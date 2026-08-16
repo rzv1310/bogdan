@@ -50,9 +50,9 @@ export const policeProsecutorQuestioningEn: SubServicePageData = {
       h2: "Why a lawyer matters from the very first hearing",
       paragraphs: [
         [
-          { text: "Questioning is an act of the " },
-          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
-          { text: " phase, and the statement you give now stays in the file." },
+          { text: "Questioning is an act of " },
+          { text: "the criminal investigation phase", to: "/en/services/criminal-investigation" },
+          { text: ", and the statement you give now stays in the file." },
         ],
       ],
       bullets: [
