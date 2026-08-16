@@ -814,8 +814,8 @@ export const retinere24OreRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Reținerea este una dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " prevăzute de Codul de procedură penală." },
+          { text: "măsurile preventive prevăzute de Codul de procedură penală", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
         "În funcție de dosar, poate intra în discuție o altă măsură preventivă. De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii.",
