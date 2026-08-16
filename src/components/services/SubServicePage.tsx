@@ -101,7 +101,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             name: isEn ? "Services" : "Servicii",
             item: isEn ? `${SITE}/en/services` : `${SITE}/servicii`,
           },
-          { "@type": "ListItem", position: 3, name: data.breadcrumbLabel, item: pageUrl },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: data.parent.breadcrumbLabel,
+            item: SITE + data.parent.to,
+          },
+          { "@type": "ListItem", position: 4, name: data.breadcrumbLabel, item: pageUrl },
         ],
       },
       {
