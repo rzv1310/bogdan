@@ -14,9 +14,6 @@ const TITLE = "Criminal Law Services Bucharest - Attorney Bogdan Lamatic";
 const DESCRIPTION =
   "Criminal defense services in Bucharest: financial crime, corruption, money laundering, crypto investigations, drug offenses, road traffic offenses, malpractice, workplace accidents and victim representation.";
 
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
-
 function CallCta({ label = "Talk to the attorney" }: { label?: string }) {
   return (
     <div className="flex flex-wrap items-center gap-3">
