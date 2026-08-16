@@ -895,7 +895,13 @@ export const arestPreventivRo: SubServicePageData = {
         "posibilitatea aplicării unei măsuri mai puțin severe.",
       ],
       paragraphsAfterBullets: [
-        "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.",
+        [
+          { text: "Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea " },
+          { text: "controlului judiciar", to: "/servicii/control-judiciar" },
+          { text: ", aplicarea " },
+          { text: "arestului la domiciliu", to: "/servicii/arest-la-domiciliu" },
+          { text: " sau o altă soluție permisă de lege." },
+        ],
       ],
     },
     {
