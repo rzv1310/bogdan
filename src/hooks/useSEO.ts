@@ -1,5 +1,16 @@
 import { useEffect } from "react";
-import { collectHead, isPrerender } from "@/lib/ssr-head";
+import { collectHead, isPrerender, SITE_ORIGIN } from "@/lib/ssr-head";
+
+/**
+ * Canonical / og:url must be absolute URLs on the production origin, with no
+ * trailing slash (except the homepage) so they stay consistent with sitemap.xml.
+ */
+function toAbsoluteUrl(value: string) {
+  if (/^https?:\/\//i.test(value)) return value.replace(/(?!^)\/+$/, "") || value;
+  const path = value.startsWith("/") ? value : `/${value}`;
+  const normalized = path.length > 1 ? path.replace(/\/+$/, "") : "/";
+  return SITE_ORIGIN + normalized;
+}
 
 interface SEOOptions {
   title?: string;
