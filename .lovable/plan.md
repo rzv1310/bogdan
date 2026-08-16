@@ -1,7 +1,7 @@
 Actualizare text buton în secțiunea "Percheziția are loc chiar acum?"
 
 Problemă
-- Textul butonului CTA din secțiunea "Percheziția are loc chiar acum?" trebuie actualizat la o variantă intermediară.
+- Textul butonului CTA din secțiunea "Percheziția are loc chiar acum?" trebuie actualizat la "Sună-mă imediat - 031 632 01 83", fara emoji telefon
 
 Modificări
 
