@@ -8,7 +8,7 @@ const WHATSAPP_URL = "https://wa.me/40745506443";
 
 /** Secondary CTA used right after explaining which documents are useful. */
 export default function WhatsAppDocsCta({ lang = "ro", className = "", variant = "default" }: WhatsAppDocsCtaProps) {
-  const label = lang === "en" ? "Send documents on WhatsApp" : "Trimite actele pe WhatsApp";
+  const label = lang === "en" ? "Send documents on WhatsApp" : "Trimite-mi actele pe WhatsApp";
   const borderClass = variant === "green" ? "border-[#25D366]" : "border-accent";
   const hoverClass = variant === "green" ? "hover:bg-[#25D366]/10" : "hover:bg-accent/10";
   return (
