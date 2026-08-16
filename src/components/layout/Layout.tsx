@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
+import MobileConversionBar from "./MobileConversionBar";
 
 export default function Layout() {
   const location = useLocation();
