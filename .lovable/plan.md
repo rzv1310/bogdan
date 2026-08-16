@@ -10,7 +10,7 @@ Secțiunea „Ce se întâmplă la termenul pentru propunerea de arestare preven
 "Dacă persoana este reținută, sesizarea judecătorului cu propunerea de arestare preventivă trebuie făcută cu cel puțin 6 ore înainte de expirarea duratei reținerii. În practică, asta înseamnă că apărarea se pregătește în câteva ore."
 ```
 
-Se va transforma cuvântul „reținută" într-un link către `/servicii/retinere-24-ore`, folosind structura segmentată de text (suportată deja după ultima actualizare).
+Se va transforma fraza „persoana este reținută" într-un link către `/servicii/retinere-24-ore`, folosind structura segmentată de text (suportată deja după ultima actualizare).
 
 ## Modificări tehnice
 1. `src/lib/subServices/ro.ts` — convertește paragraful `paragraphsAfterBullets` din string simplu în array de segmente, unde segmentul `reținută` primește `to: "/servicii/retinere-24-ore"`.
