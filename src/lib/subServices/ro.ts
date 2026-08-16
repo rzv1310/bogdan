@@ -1248,8 +1248,8 @@ export const arestLaDomiciliuRo: SubServicePageData = {
       paragraphs: [
         [
           { text: "Arestul la domiciliu este una dintre " },
-          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
-          { text: " privative de libertate." },
+          { text: "măsurile preventive privative de libertate", to: "/servicii/masuri-preventive" },
+          { text: "." },
         ],
         "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.",
         "Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent.",
