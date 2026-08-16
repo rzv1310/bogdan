@@ -171,7 +171,8 @@ export default function PreventiveMeasures() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <Breadcrumb className="mb-4">
+      <div className="flex flex-col">
+      <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/en">Home</BreadcrumbLink>
@@ -200,6 +201,7 @@ export default function PreventiveMeasures() {
       <ServiceHeroCta lang="en" ariaLabel="Call me now! - preventive measures lawyer" />
 
       <LawyerBioBlock path="/en/services/preventive-measures" lang="en" />
+      </div>
 
       <ServiceSubServices path="/en/services/preventive-measures" />
 

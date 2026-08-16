@@ -140,7 +140,8 @@ export default function Malpraxis() {
         </>
       )}
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <Breadcrumb className="mb-4 mt-3 md:mt-0">
+      <div className="flex flex-col">
+      <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Acasă</BreadcrumbLink>
@@ -171,6 +172,7 @@ export default function Malpraxis() {
       <ServiceHeroCta lang="ro" ariaLabel="Sună acum - avocat malpraxis" />
 
       <LawyerBioBlock path="/servicii/neglijenta-profesionala-si-malpraxis" lang="ro" />
+      </div>
 
       <ServiceSubServices path="/servicii/neglijenta-profesionala-si-malpraxis" />
 
