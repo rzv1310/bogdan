@@ -312,23 +312,11 @@ export default function PreventiveMeasures() {
           <h2 className="text-2xl font-semibold leading-none tracking-tight">What you risk if you do not react in time</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-2 pb-5">
-          <p>A preventive measure should not be treated as a mere procedural formality. It can produce real effects before the criminal case is finally resolved.</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>A more severe measure may be ordered.</strong> When there are arguments for a less restrictive measure, they must be identified and presented at the right procedural moment.
-            </li>
-            <li>
-              <strong>You may miss a short procedural deadline.</strong> In the field of preventive measures there are situations in which the deadline for filing the remedy is only 48 hours.
-            </li>
-            <li>
-              <strong>You may keep complying with obligations that could be changed.</strong> Judicial control can affect travel, trips, professional activity, the relationship with certain persons and the way you organise your daily life.
-            </li>
-            <li>
-              <strong>A custodial measure may continue even though the case has changed.</strong> The Criminal Procedure Code governs the revocation and replacement of preventive measures when the legal conditions are met.
-            </li>
-            <li>
-              <strong>The effects are not only legal.</strong> A preventive measure can directly affect liberty, family, employment, running a business, travel, professional relationships, reputation and the ability to continue certain activities.
-            </li>
+            <li>You can miss a 48-hour deadline.</li>
+            <li>A more severe measure may be ordered or maintained.</li>
+            <li>You may be left with restrictions affecting your work and travel.</li>
+            <li>Your personal and professional situation can become complicated quickly.</li>
           </ul>
         </CardContent>
       </Card>
