@@ -165,27 +165,6 @@ export default function UrmarirePenala() {
 
       <ServiceSubServices path="/servicii/urmarire-penala" />
 
-      {/* Ce este urmărirea penală */}
-      <Card className="mt-12 md:mt-14 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">
-            Ce este urmărirea penală și de ce ai nevoie de avocat din prima fază
-          </h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <p>
-            Urmărirea penală este etapa în care organele de urmărire penală (poliție, procuror) strâng probe pentru a stabili dacă s-a comis o infracțiune și cine este responsabil. Ea începe, potrivit art. 305 din Codul de procedură penală, printr-o ordonanță de începere a urmăririi penale „cu privire la faptă”, iar atunci când există indicii că o anumită persoană a comis fapta, aceasta capătă <strong>calitatea de suspect</strong> (art. 307 CPP). (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Portal Legislativ</a>)
-          </p>
-          <p>
-            Mulți oameni cred că au nevoie de avocat abia „dacă se ajunge la proces”. În realitate, exact <strong>faza de urmărire penală este momentul în care se construiește sau se pierde apărarea</strong>: declarațiile date fără avocat, probele necontestate la timp sau termenele ratate pentru plângeri pot cântări decisiv mai târziu, în instanță.
-          </p>
-          <p>
-            Ca avocat de urmărire penală, intervin din prima etapă pentru a-ți proteja drepturile, a verifica legalitatea probelor și a construi o strategie coerentă înainte ca dosarul să avanseze.
-          </p>
-          <CallCta label="Vreau avocat!" />
-        </CardContent>
-      </Card>
-
       {/* Ce fac pentru tine */}
       <Card className="mt-8 border-accent">
         <CardHeader>
