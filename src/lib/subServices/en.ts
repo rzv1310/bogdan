@@ -398,3 +398,396 @@ export const dnaLawyerEn: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT,
 };
+
+const PARENT_MP_EN = { to: "/en/services/preventive-measures", label: "preventive measures" };
+
+export const policeCustody24HoursEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/police-custody-24-hours",
+  altPath: "/servicii/retinere-24-ore",
+  roPath: "/servicii/retinere-24-ore",
+  title: "Police Custody Lawyer Bucharest - 24 Hours | Bogdan Lamatic",
+  h1: "Police Custody Lawyer Bucharest - 24 Hours Detention | Bogdan Lamatic",
+  description:
+    "Police custody lawyer in Bucharest - immediate assistance during the 24-hour detention, at questioning and for the measure that follows. 18+ years of experience.",
+  keywords: "police custody lawyer bucharest, 24 hours detention lawyer, urgent criminal lawyer bucharest",
+  breadcrumbLabel: "Police custody 24 hours",
+  serviceName: "Police custody lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you been detained, or is someone close to you at the police station or prosecutor's office?",
+    "Police custody is a preventive measure involving deprivation of liberty and may be ordered for no more than 24 hours.",
+    "Questioning and other procedural acts that influence the next preventive measure can take place within this interval.",
+  ],
+  bio: [
+    `${BIO_INTRO} I intervene in custody situations, at the request of the detained person or of the family.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you during police custody",
+      bullets: [
+        "I provide immediate legal advice based on the available information.",
+        "I assist you at questioning and prepare your procedural position with you.",
+        "I analyse the procedural situation and the documents the defence has access to.",
+        "I check the lawfulness of the measure and how the statements are recorded.",
+        "I prepare the defence for a possible request for pre-trial detention, judicial control or house arrest.",
+        "I communicate with the family, within the limits of the mandate and of confidentiality.",
+      ],
+      paragraphs: [
+        "Anticipating the next step matters. If there is a risk of a pre-trial detention request, the defence should be prepared before that hearing, not after the decision is delivered.",
+      ],
+      cta: "Custody was ordered - Call now",
+    },
+    {
+      h2: "What to tell me when you call about a detention",
+      paragraphs: ["If the detained person is a family member or someone close to you, you can contact me as well. Tell me:"],
+      bullets: [
+        "the name of the person;",
+        "where the person is;",
+        "which police station, prosecutor's office or structure the person was taken to;",
+        "when the detention took place;",
+        "what information you have received so far;",
+        "whether you know when the questioning or the hearing before the judge takes place.",
+      ],
+      callout: "You do not need to have all the documents in order to contact me.",
+    },
+    {
+      h2: "What happens after the 24 hours",
+      paragraphs: [
+        "Once the 24 hours expire, the person cannot be held further on the basis of the same custody measure.",
+        "Depending on the case, another preventive measure may come into discussion, which is why the defence strategy should be analysed before the next decision.",
+      ],
+      links: [
+        { label: "Pre-trial detention - request, appeal and replacement", to: "/en/services/pre-trial-detention" },
+        { label: "Judicial control - obligations, appeal and revocation", to: "/en/services/judicial-control" },
+        { label: "House arrest - appeal, permissions and replacement", to: "/en/services/house-arrest" },
+        { label: "Police and prosecutor questioning lawyer", to: "/en/services/police-prosecutor-questioning" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long can police custody last?",
+      a: "It can be ordered for no more than 24 hours. After that interval the person cannot be held further on the basis of the same measure; a different preventive measure requires its own procedure.",
+    },
+    {
+      q: "Who can order police custody?",
+      a: "During the criminal investigation it can be ordered by the criminal investigation body or by the prosecutor, under the conditions of the Criminal Procedure Code.",
+    },
+    {
+      q: "Do I have the right to a lawyer during custody?",
+      a: "Yes. A suspect or defendant has the right to a lawyer and may consult with the lawyer before and during questioning, under the conditions of the law.",
+    },
+    {
+      q: "Can the family contact the lawyer?",
+      a: "Yes. Very often the first person to look for a lawyer is a family member. It helps to know who was detained, where the person is, when it happened and which authority handles the case.",
+    },
+    {
+      q: "What happens if I do not react in the first hours?",
+      a: "Acts carried out in this interval, including statements, can remain relevant later, and the defence regarding the next preventive measure is better prepared before the hearing.",
+    },
+  ],
+  resources: [
+    { text: "Art. 202 of the Criminal Procedure Code - purpose and general conditions of preventive measures.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 209 of the Criminal Procedure Code - police custody.", href: CPP, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP_EN,
+};
+
+export const preTrialDetentionEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/pre-trial-detention",
+  altPath: "/servicii/arest-preventiv",
+  roPath: "/servicii/arest-preventiv",
+  title: "Pre-Trial Detention Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Pre-Trial Detention Lawyer Bucharest | Bogdan Lamatic",
+  description:
+    "Pre-trial detention lawyer in Bucharest - defence against the prosecutor's request, appeals, extensions and replacement of the measure. 18+ years of experience.",
+  keywords: "pre-trial detention lawyer bucharest, arrest appeal lawyer romania, criminal detention lawyer",
+  breadcrumbLabel: "Pre-trial detention",
+  serviceName: "Pre-trial detention lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Is the prosecutor requesting pre-trial detention, or has the measure already been ordered?",
+    "Pre-trial detention is the most severe preventive measure provided by the Criminal Procedure Code.",
+    "The defence must be built around the concrete reasons invoked, the evidence in the file and the possibility of a less severe measure.",
+  ],
+  bio: [
+    `${BIO_INTRO} I have represented clients before the judge of rights and liberties, the preliminary chamber judge and the courts in cases involving deprivation of liberty.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse when detention is requested",
+      bullets: [
+        "the concrete reasons invoked for the arrest;",
+        "the general conditions of preventive measures;",
+        "the special conditions of pre-trial detention;",
+        "the relevant available evidence;",
+        "whether the procedural risks invoked actually exist;",
+        "personal, family and professional circumstances;",
+        "the proportionality of the measure;",
+        "the possibility of applying a less severe measure.",
+      ],
+      paragraphs: [
+        "Depending on the case, the aim of the defence can be the rejection of the request, judicial control, house arrest or another solution permitted by law.",
+      ],
+      cta: "Detention is being requested - Call now",
+    },
+    {
+      h2: "How long pre-trial detention can last",
+      paragraphs: [
+        "During the criminal investigation the measure can be ordered initially for no more than 30 days, and extensions are subject to the conditions and limits set by law. The total duration in this phase cannot exceed 180 days.",
+        "The regime applicable in the preliminary chamber and during trial is distinct and involves periodic verification of the measure.",
+      ],
+    },
+    {
+      h2: "If the measure has already been ordered",
+      paragraphs: ["The fact that detention was ordered does not mean the analysis of the defence is over. Depending on the stage of the case, the following can become relevant:"],
+      bullets: [
+        "the appeal against the decision;",
+        "the defence against the extension of the measure;",
+        "the periodic verification of the measure;",
+        "revocation;",
+        "replacement with a less severe preventive measure.",
+      ],
+      callout:
+        "The Criminal Procedure Code allows revocation when the grounds that determined the measure have ceased or new circumstances have appeared, and also regulates replacement with a lighter measure when the legal conditions are met.",
+      cta: "The measure was ordered - Check your options",
+    },
+    {
+      h2: "Appeal deadlines",
+      paragraphs: [
+        "Deadlines are very short in this area. For appeals under art. 204-206 of the Criminal Procedure Code the deadline is 48 hours from delivery or, as the case may be, from communication.",
+        "If you already have the court decision, tell me the exact date and hour when it was delivered or communicated.",
+      ],
+      links: [
+        { label: "Judicial control - obligations, appeal and revocation", to: "/en/services/judicial-control" },
+        { label: "House arrest - appeal, permissions and replacement", to: "/en/services/house-arrest" },
+        { label: "Police custody 24 hours - what to do immediately", to: "/en/services/police-custody-24-hours" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long can pre-trial detention last?",
+      a: "During the criminal investigation it can be ordered initially for up to 30 days and extended under the conditions of the law, without the total duration in this phase exceeding 180 days. The regime in the other stages of the proceedings is distinct.",
+    },
+    {
+      q: "Who can order pre-trial detention?",
+      a: "It falls within the competence of the judge or the court, depending on the procedural stage. The prosecutor may file the request but cannot order the measure.",
+    },
+    {
+      q: "How is pre-trial detention challenged?",
+      a: "Through an appeal against the decision by which the measure was taken, extended or maintained, under art. 204-206 of the Criminal Procedure Code, within the 48-hour deadline.",
+    },
+    {
+      q: "Can detention be replaced with a lighter measure?",
+      a: "Yes, if the conditions of art. 242 of the Criminal Procedure Code are met. The grounds of the measure, the evolution of the case and the procedural conduct must be analysed concretely. No outcome can be guaranteed.",
+    },
+    {
+      q: "What can be done before an extension hearing?",
+      a: "The defence can be prepared in advance by analysing the invoked grounds, the evidence gathered in the meantime and any relevant new circumstances.",
+    },
+  ],
+  resources: [
+    { text: "Art. 202 of the Criminal Procedure Code - general conditions of preventive measures.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 223 and following of the Criminal Procedure Code - pre-trial detention.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 204-206 of the Criminal Procedure Code - appeals regarding preventive measures.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 241-242 of the Criminal Procedure Code - cessation, revocation and replacement.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP_EN,
+};
+
+export const judicialControlEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/judicial-control",
+  altPath: "/servicii/control-judiciar",
+  roPath: "/servicii/control-judiciar",
+  title: "Judicial Control Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Judicial Control Lawyer Bucharest | Bogdan Lamatic",
+  description:
+    "Judicial control lawyer in Bucharest - obligations, appeals, changing restrictions, revocation and replacement, including judicial control on bail.",
+  keywords: "judicial control lawyer bucharest, judicial control on bail romania, bail lawyer romania",
+  breadcrumbLabel: "Judicial control",
+  serviceName: "Judicial control lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Do you have restrictions on travel, on contact with certain people or on your professional activity?",
+    "Judicial control does not involve detention, but it can have a real impact on daily life.",
+    "It must be assessed whether the obligations are necessary and proportionate and whether there are grounds to change, revoke or replace the measure.",
+  ],
+  bio: [
+    `${BIO_INTRO} I analyse the obligations imposed through judicial control and the procedural options for changing them.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What obligations judicial control can involve",
+      paragraphs: ["The content of judicial control is regulated by art. 215 of the Criminal Procedure Code. Depending on the case, obligations may concern:"],
+      bullets: [
+        "appearing before the judicial body;",
+        "reporting to the police unit in charge of supervision;",
+        "notifying any change of residence;",
+        "travelling only within certain territorial limits;",
+        "contact with certain persons;",
+        "carrying out certain activities, where such an obligation is imposed under the law;",
+        "other obligations permitted by law.",
+      ],
+      callout: "The exact obligations must be checked in the document by which the measure was ordered.",
+    },
+    {
+      h2: "What I analyse in a judicial control case",
+      paragraphs: ["The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:"],
+      bullets: [
+        "the measure is still necessary;",
+        "the obligations are proportionate;",
+        "new circumstances have appeared;",
+        "certain restrictions can be modified;",
+        "there are grounds for revoking or replacing the measure.",
+      ],
+      cta: "Review my judicial control obligations",
+    },
+    {
+      h2: "Judicial control on bail",
+      paragraphs: [
+        "Judicial control on bail is regulated separately by the Criminal Procedure Code and requires, in addition to the obligations of judicial control, the payment of bail under the conditions set by law.",
+        "In such a situation I analyse, as the case may be, the conditions of the measure, its suitability compared with other measures, the obligations imposed, the bail, the relevant financial situation and the possibility of using a non-custodial measure instead of a more severe one, where the legal framework and the facts support that argument.",
+      ],
+    },
+    {
+      h2: "Challenging the measure and the deadlines",
+      paragraphs: [
+        "There is a specific remedy against the prosecutor's order imposing judicial control, regulated by art. 213 of the Criminal Procedure Code. For court decisions on preventive measures, art. 204-206 apply, with the 48-hour deadline.",
+        "Send me the order or the court decision, the obligations imposed, the date the measure was taken or extended and the concrete problem one of the obligations creates for you.",
+      ],
+      links: [
+        { label: "House arrest - appeal, permissions and replacement", to: "/en/services/house-arrest" },
+        { label: "Pre-trial detention - request, appeal and replacement", to: "/en/services/pre-trial-detention" },
+        { label: "Police custody 24 hours - what to do immediately", to: "/en/services/police-custody-24-hours" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "What obligations can be imposed through judicial control?",
+      a: "The obligations provided by art. 215 of the Criminal Procedure Code, which may include appearing before the judicial body or the police, notifying a change of residence, territorial restrictions, restrictions on contact with certain persons and, under the law, restrictions on certain activities.",
+    },
+    {
+      q: "Does judicial control mean deprivation of liberty?",
+      a: "No. The person remains free but must comply with the obligations set by the competent judicial body.",
+    },
+    {
+      q: "How do I challenge judicial control ordered by the prosecutor?",
+      a: "Through the specific remedy regulated by art. 213 of the Criminal Procedure Code. Deadlines are short, so it helps to tell me exactly when the order was communicated to you.",
+    },
+    {
+      q: "Can the obligations be changed during the case?",
+      a: "Yes, where there are legal grounds. Modification of the obligations, revocation or replacement of the measure can be requested depending on how the case evolves and on new circumstances.",
+    },
+    {
+      q: "What is judicial control on bail?",
+      a: "It is a distinct preventive measure which requires, in addition to the obligations of judicial control, the payment of bail under the conditions set by law.",
+    },
+  ],
+  resources: [
+    { text: "Art. 211-215 of the Criminal Procedure Code - judicial control.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 216-217 of the Criminal Procedure Code - judicial control on bail.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 213 of the Criminal Procedure Code - remedy against judicial control ordered by the prosecutor.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 242 of the Criminal Procedure Code - revocation and replacement of preventive measures.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP_EN,
+};
+
+export const houseArrestEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/house-arrest",
+  altPath: "/servicii/arest-la-domiciliu",
+  roPath: "/servicii/arest-la-domiciliu",
+  title: "House Arrest Lawyer Bucharest | Bogdan Lamatic",
+  h1: "House Arrest Lawyer Bucharest | Bogdan Lamatic",
+  description:
+    "House arrest lawyer in Bucharest - appeals, requests to leave the premises, revocation and replacement of the measure. 18+ years of experience.",
+  keywords: "house arrest lawyer bucharest, house arrest romania appeal, criminal lawyer house arrest",
+  breadcrumbLabel: "House arrest",
+  serviceName: "House arrest lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you under house arrest, or is this measure about to be discussed?",
+    "House arrest is a preventive measure involving deprivation of liberty, executed in the premises set by the judicial body.",
+    "Depending on the situation, challenging the measure, replacing it with a less severe one or requesting permission to leave the premises can be analysed.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist clients both before the measure is taken and after it has been ordered.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "How long house arrest can last",
+      paragraphs: [
+        "During the criminal investigation it can be ordered for no more than 30 days, with the possibility of extension under the conditions of the law, and the maximum duration in this phase is 180 days.",
+        "The person must remain in the premises where the measure is executed and comply with the obligations imposed, with the exceptions permitted by law or approved by the competent judicial body.",
+      ],
+    },
+    {
+      h2: "What I do for you in a house arrest case",
+      bullets: [
+        "I prepare the defence against the measure when you contact me before the hearing;",
+        "I analyse the available remedy;",
+        "I request replacement with a less severe measure where there are grounds;",
+        "I analyse the possibility of revocation;",
+        "I file requests to leave the premises where there is a justified reason and the legal conditions are met.",
+      ],
+      paragraphs: [
+        "Situations concerning professional activity, medical treatment or other well-justified personal circumstances can become relevant. Each request must be analysed individually.",
+      ],
+      cta: "I am under house arrest - Check my options",
+    },
+    {
+      h2: "What I check if the measure has already been ordered",
+      bullets: [
+        "whether a remedy is available;",
+        "whether the measure is still necessary;",
+        "whether it can be replaced with a less severe one;",
+        "whether new circumstances have appeared;",
+        "whether a request to temporarily leave the premises is needed in a situation permitted by law.",
+      ],
+      callout: "Send me the court decision and explain the concrete problem the measure creates for you.",
+      links: [
+        { label: "Judicial control - obligations, appeal and revocation", to: "/en/services/judicial-control" },
+        { label: "Pre-trial detention - request, appeal and replacement", to: "/en/services/pre-trial-detention" },
+        { label: "Police custody 24 hours - what to do immediately", to: "/en/services/police-custody-24-hours" },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long can house arrest last?",
+      a: "During the criminal investigation it can be taken for up to 30 days, with the possibility of extension under the law, and the maximum duration in this phase is 180 days.",
+    },
+    {
+      q: "Who can order house arrest?",
+      a: "The measure falls within the competence of the judge or the court, depending on the procedural stage and the applicable procedure.",
+    },
+    {
+      q: "Can I leave the premises for work or medical treatment?",
+      a: "In the situations and under the conditions provided by law, permission to leave the premises for a determined period and a justified purpose can be requested. There is no automatic approval and the request must be argued.",
+    },
+    {
+      q: "Can house arrest be replaced with judicial control?",
+      a: "Yes, where the conditions of art. 242 of the Criminal Procedure Code on replacement with a lighter measure are met.",
+    },
+    {
+      q: "How is house arrest challenged?",
+      a: "Through an appeal against the court decision, under art. 204-206 of the Criminal Procedure Code. The deadline is 48 hours from delivery or, as the case may be, from communication.",
+    },
+  ],
+  resources: [
+    { text: "Art. 218-222 of the Criminal Procedure Code - house arrest.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 204-206 of the Criminal Procedure Code - appeals regarding preventive measures.", href: CPP, linkLabel: "Legislation" },
+    { text: "Art. 242 of the Criminal Procedure Code - revocation and replacement of preventive measures.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_MP_EN,
+};
