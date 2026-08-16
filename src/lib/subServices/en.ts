@@ -581,8 +581,8 @@ export const preTrialDetentionEn: SubServicePageData = {
       h2: "How long pre-trial detention can last",
       paragraphs: [
         [
-          { text: "Pre-trial detention is the most severe of the " },
-          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: "Pre-trial detention is " },
+          { text: "the most severe of the preventive measures", to: "/en/services/preventive-measures" },
           { text: " regulated by the Criminal Procedure Code." },
         ],
         "During the criminal investigation the measure can be ordered initially for no more than 30 days, and extensions are subject to the conditions and limits set by law. The total duration in this phase cannot exceed 180 days.",
