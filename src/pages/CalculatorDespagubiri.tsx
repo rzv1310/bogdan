@@ -1,3 +1,4 @@
+</div>
 import React, { useMemo, useState } from "react";
 import { useSEO } from "@/hooks/useSEO";
 import {
@@ -166,8 +167,9 @@ export default function CalculatorDespagubiri() {
   return (
     <div className="min-h-screen bg-zinc-50">
       <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
+<div className="flex flex-col">
         {/* Breadcrumb */}
-        <section className="mb-4">
+        <section className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
