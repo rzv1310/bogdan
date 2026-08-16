@@ -289,22 +289,28 @@ export default function MoneyLaunderingEn() {
         </Card>
 
         {/* FAQ */}
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
-          </CardHeader>
-          <CardContent className="space-y-3 text-base leading-relaxed">
-            <p>
-              <strong>Is a conviction for the predicate offense required?</strong> Not necessarily. It suffices to prove assets come from a criminal offense (not a contravention) and that the defendant knew this. <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(reference)</a>
-            </p>
-            <p>
-              <strong>Can the author of the predicate also be charged with laundering?</strong> Yes. For art. 49 (a) and (b), the offender need not be a different person; only for (c) (acquiring/using) must it be a third party.
-            </p>
-            <p>
-              <strong>Can seizures and garnishments be lifted if they paralyze activity?</strong> Yes. Courts must respect proportionality; under the 2025 amendments, measures can be challenged and narrowed when they disproportionately affect economic activity.
-            </p>
-          </CardContent>
-        </Card>
+        <ServiceFaq
+          title="Frequently asked questions"
+          items={[
+            {
+              q: "Is a conviction for the predicate offense required?",
+              a: (
+                <>
+                  Not necessarily. It suffices to prove assets come from a criminal offense (not a contravention) and that the defendant knew this.{" "}
+                  <a href="https://legislatie.just.ro/Public/DetaliiDocument/239926#:~:text=Constituie%20infrac%C8%9Biuni%20de%20evaziune%20fiscal%C4%83,f" target="_blank" rel="noopener noreferrer" className="underline">(reference)</a>
+                </>
+              ),
+            },
+            {
+              q: "Can the author of the predicate also be charged with laundering?",
+              a: "Yes. For art. 49 (a) and (b), the offender need not be a different person; only for (c) (acquiring/using) must it be a third party.",
+            },
+            {
+              q: "Can seizures and garnishments be lifted if they paralyze activity?",
+              a: "Yes. Courts must respect proportionality; under the 2025 amendments, measures can be challenged and narrowed when they disproportionately affect economic activity.",
+            },
+          ]}
+        />
 
         {/* Conclusion + CTA */}
         <Card className="mt-8 border-accent">

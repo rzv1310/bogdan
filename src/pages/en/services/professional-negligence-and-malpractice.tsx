@@ -211,27 +211,28 @@ export default function MalpracticeEn() {
           </CardContent>
         </Card>
 
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">Frequently asked questions</h2>
-          </CardHeader>
-          <CardContent className="text-base leading-relaxed space-y-3">
-            <ol className="list-decimal pl-6 space-y-3">
-              <li>
-                <strong>Can I claim damages without a criminal trial?</strong> Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings (Law 95/2006).
-              </li>
-              <li>
-                <strong>What is the limitation period?</strong> Generally 3 years for civil malpractice; for criminal offenses (e.g., arts. 192/196 CP) criminal limitation periods apply.
-              </li>
-              <li>
-                <strong>What if the unit/doctor has no insurance?</strong> It is a sanctionable breach; civil liability remains and damages can be pursued directly.
-              </li>
-              <li>
-                <strong>When does it become “negligence in service” (criminal)?</strong> When a public official breaches a legal duty causing damage/rights violation; for the private sector, art. 308 CP extends the rules with reduced limits.
-              </li>
-            </ol>
-          </CardContent>
-        </Card>
+        <ServiceFaq
+          title="Frequently asked questions"
+          ordered
+          items={[
+            {
+              q: "Can I claim damages without a criminal trial?",
+              a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings (Law 95/2006).",
+            },
+            {
+              q: "What is the limitation period?",
+              a: "Generally 3 years for civil malpractice; for criminal offenses (e.g., arts. 192/196 CP) criminal limitation periods apply.",
+            },
+            {
+              q: "What if the unit/doctor has no insurance?",
+              a: "It is a sanctionable breach; civil liability remains and damages can be pursued directly.",
+            },
+            {
+              q: "When does it become \"negligence in service\" (criminal)?",
+              a: "When a public official breaches a legal duty causing damage/rights violation; for the private sector, art. 308 CP extends the rules with reduced limits.",
+            },
+          ]}
+        />
         <RelatedServices current="/en/services/professional-negligence-and-malpractice" lang="en" />
 
       </section>
