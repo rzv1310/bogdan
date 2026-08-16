@@ -204,6 +204,37 @@ export default function MasuriPreventive() {
 
       <ServiceSubServices path="/servicii/masuri-preventive" />
 
+      {/* USP - mă ocup personal */}
+      <div className="mt-10 md:mt-12 rounded-lg border-l-4 border-accent bg-accent/10 px-5 py-4">
+        <p className="text-lg font-semibold text-foreground">Mă ocup personal de dosarul tău</p>
+        <p className="mt-1 text-base leading-relaxed text-foreground">Nu ești preluat și apoi trimis automat la alt avocat. Mă ocup personal de strategie și de momentele esențiale ale mandatului.</p>
+      </div>
+
+      {/* Ce fac imediat după ce mă contactezi */}
+      <Card className="mt-8 border-accent">
+        <CardHeader>
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce fac imediat după ce mă contactezi</h2>
+        </CardHeader>
+        <CardContent className="text-base leading-relaxed space-y-3">
+          <p>Nu trebuie să cunoști Codul de procedură penală și nici să știi ce cerere trebuie formulată. Spune-mi ce s-a întâmplat.</p>
+          <p>
+            <strong>1. Clarific situația.</strong> Stabilesc unde se află persoana, dacă are calitatea de suspect sau inculpat, ce măsură a fost discutată, propusă sau dispusă, cine a dispus-o sau cine o solicită, în ce etapă se află dosarul, când este următoarea audiere sau termen și dacă există un termen procedural în curs.
+          </p>
+          <p>
+            <strong>2. Analizez actele disponibile.</strong> Verific documentele pe care le ai și, în limitele accesului permis de lege, actele relevante ale dosarului. Identific acuzația, motivele măsurii, argumentele procurorului, situația procesuală și elementele care pot fi folosite în apărare.
+          </p>
+          <p>
+            <strong>3. Evaluez riscul procedural.</strong> Analizez condițiile legale aplicabile măsurii și circumstanțele concrete ale clientului. Contează inclusiv natura acuzației, probele, conduita procesuală, antecedentele relevante, situația familială și profesională, legăturile cu comunitatea, evoluția anchetei și riscurile invocate de acuzare.
+          </p>
+          <p>
+            <strong>4. Construiesc apărarea.</strong> În funcție de situație, strategia poate urmări evitarea unei măsuri preventive, respingerea propunerii de arestare, menținerea persoanei în libertate, aplicarea unei măsuri mai puțin severe, contestarea măsurii dispuse, modificarea unor obligații, revocarea sau înlocuirea acesteia. Nicio soluție nu poate fi garantată.
+          </p>
+          <CallCta label="Sună acum - 031 632 01 83" />
+        </CardContent>
+      </Card>
+
+      <GoogleReviewCard lang="ro" />
+
       {/* Ai una dintre aceste probleme */}
       <Card className="mt-12 md:mt-14 border-accent">
         <CardHeader>
@@ -226,125 +257,6 @@ export default function MasuriPreventive() {
             <p>Spune-mi ce s-a întâmplat, unde se află persoana și ce informații ai primit de la Poliție, Parchet sau instanță.</p>
             <CallCta label="Sună acum - 031 632 01 83" />
           </div>
-        </CardContent>
-      </Card>
-
-      {/* Ce se întâmplă acum */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce se întâmplă acum?</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-6">
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ai fost reținut sau o persoană apropiată a fost reținută</h3>
-            <p>Reținerea este o măsură preventivă privativă de libertate care se poate dispune pentru cel mult 24 de ore. În acest interval pot avea loc audieri și alte acte procedurale importante.</p>
-            <p>În funcție de dosar, după reținere poate intra în discuție o altă măsură preventivă, inclusiv controlul judiciar, arestul la domiciliu sau arestarea preventivă. De aceea, este preferabil ca strategia de apărare să fie analizată înainte de luarea următoarei decizii.</p>
-            <p>Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu. Spune-mi:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>numele persoanei;</li>
-              <li>unde se află;</li>
-              <li>la ce secție de Poliție, Parchet sau structură a fost dusă;</li>
-              <li>când a avut loc reținerea;</li>
-              <li>ce informații ai primit până acum;</li>
-              <li>dacă știi când urmează audierea sau prezentarea în fața judecătorului.</li>
-            </ul>
-            <p>Nu este necesar să ai toate documentele pentru a mă contacta.</p>
-            <CallCta label="A fost dispusă reținerea - Sună acum" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Urmează o propunere de arestare preventivă</h3>
-            <p>Acesta este unul dintre momentele în care pregătirea rapidă a apărării este esențială. Arestarea preventivă este cea mai severă dintre măsurile preventive prevăzute de Codul de procedură penală.</p>
-            <p>În cursul urmăririi penale, măsura poate fi dispusă inițial pentru cel mult 30 de zile, iar prelungirile sunt supuse condițiilor și limitelor prevăzute de lege. Durata totală în această fază nu poate depăși 180 de zile.</p>
-            <p>Analizez:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>motivele concrete invocate pentru arestare;</li>
-              <li>condițiile generale ale măsurilor preventive;</li>
-              <li>condițiile speciale ale arestării preventive;</li>
-              <li>probele relevante disponibile;</li>
-              <li>existența riscurilor procesuale invocate;</li>
-              <li>circumstanțele personale, familiale și profesionale;</li>
-              <li>proporționalitatea măsurii;</li>
-              <li>posibilitatea aplicării unei măsuri mai puțin severe.</li>
-            </ul>
-            <p>Obiectivul apărării poate fi, în funcție de situația concretă: respingerea propunerii, aplicarea controlului judiciar, aplicarea arestului la domiciliu sau o altă soluție permisă de lege.</p>
-            <CallCta label="Urmează propunerea de arestare - Sună acum" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești deja sub control judiciar</h3>
-            <p>Controlul judiciar nu presupune detenția, dar poate avea un impact real asupra vieții de zi cu zi. Pot exista obligații referitoare la:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>prezentarea la organul judiciar;</li>
-              <li>prezentarea la organul de poliție desemnat cu supravegherea;</li>
-              <li>schimbarea locuinței;</li>
-              <li>deplasarea în anumite limite teritoriale;</li>
-              <li>contactul cu anumite persoane;</li>
-              <li>exercitarea anumitor activități, atunci când o asemenea obligație este stabilită în condițiile legii.</li>
-            </ul>
-            <p>Conținutul controlului judiciar este reglementat de art. 215 CPP. Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului.</p>
-            <p>Analizez dacă măsura mai este necesară, dacă obligațiile sunt proporționale, dacă au apărut împrejurări noi, dacă anumite restricții pot fi modificate și dacă există temei pentru revocarea sau înlocuirea măsurii.</p>
-            <CallCta label="Analizează obligațiile din controlul judiciar" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești în arest la domiciliu</h3>
-            <p>Arestul la domiciliu este o măsură preventivă privativă de libertate. În cursul urmăririi penale poate fi luat pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.</p>
-            <p>Dacă măsura este deja dispusă, analizăm:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>dacă există o cale de atac disponibilă;</li>
-              <li>dacă măsura mai este necesară;</li>
-              <li>dacă poate fi înlocuită cu una mai puțin severă;</li>
-              <li>dacă există împrejurări noi;</li>
-              <li>dacă este necesară formularea unei cereri pentru părăsirea temporară a imobilului într-o situație permisă de lege.</li>
-            </ul>
-            <CallCta label="Sunt în arest la domiciliu - Vreau să verific opțiunile" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Ești deja arestat preventiv</h3>
-            <p>Faptul că arestarea preventivă a fost dispusă nu înseamnă că analiza apărării s-a încheiat. În funcție de etapa dosarului pot deveni relevante:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>contestația;</li>
-              <li>apărarea împotriva prelungirii măsurii;</li>
-              <li>verificarea periodică a măsurii;</li>
-              <li>revocarea;</li>
-              <li>înlocuirea cu o măsură preventivă mai puțin severă.</li>
-            </ul>
-            <p>Codul de procedură penală permite revocarea măsurii atunci când au încetat temeiurile care au determinat-o sau au apărut împrejurări noi relevante și reglementează și înlocuirea cu o măsură mai ușoară atunci când condițiile legale sunt îndeplinite.</p>
-            <CallCta label="Măsura a fost deja dispusă - Verifică opțiunile" />
-          </div>
-
-          <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Vrei să contești o măsură preventivă</h3>
-            <p className="text-foreground"><strong>Nu amâna verificarea termenului.</strong></p>
-            <p>În materia măsurilor preventive există termene procedurale foarte scurte. Pentru contestațiile reglementate de art. 204-206 CPP, termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare. Și împotriva ordonanței procurorului prin care se dispune controlul judiciar există o cale specifică de atac, reglementată de art. 213 CPP.</p>
-            <p>De aceea, primul lucru pe care îl verific este: ce măsură a fost dispusă, prin ce act, de către cine, în ce etapă se află dosarul, când a fost pronunțată soluția, când a fost comunicată și ce termen procedural este aplicabil situației concrete.</p>
-            <CallCta label="Vreau să verific termenul" />
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Ce fac imediat după ce mă contactezi */}
-      <Card className="mt-8 border-accent">
-        <CardHeader>
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce fac imediat după ce mă contactezi</h2>
-        </CardHeader>
-        <CardContent className="text-base leading-relaxed space-y-3">
-          <p>Nu trebuie să cunoști Codul de procedură penală și nici să știi ce cerere trebuie formulată. Spune-mi ce s-a întâmplat.</p>
-          <p>
-            <strong>1. Clarific situația.</strong> Stabilesc unde se află persoana, dacă are calitatea de suspect sau inculpat, ce măsură a fost discutată, propusă sau dispusă, cine a dispus-o sau cine o solicită, în ce etapă se află dosarul, când este următoarea audiere sau termen și dacă există un termen procedural în curs.
-          </p>
-          <p>
-            <strong>2. Analizez actele disponibile.</strong> Verific documentele pe care le ai și, în limitele accesului permis de lege, actele relevante ale dosarului. Identific acuzația, motivele măsurii, argumentele procurorului, situația procesuală și elementele care pot fi folosite în apărare.
-          </p>
-          <p>
-            <strong>3. Evaluez riscul procedural.</strong> Analizez condițiile legale aplicabile măsurii și circumstanțele concrete ale clientului. Contează inclusiv natura acuzației, probele, conduita procesuală, antecedentele relevante, situația familială și profesională, legăturile cu comunitatea, evoluția anchetei și riscurile invocate de acuzare.
-          </p>
-          <p>
-            <strong>4. Construiesc apărarea.</strong> În funcție de situație, strategia poate urmări evitarea unei măsuri preventive, respingerea propunerii de arestare, menținerea persoanei în libertate, aplicarea unei măsuri mai puțin severe, contestarea măsurii dispuse, modificarea unor obligații, revocarea sau înlocuirea acesteia. Nicio soluție nu poate fi garantată.
-          </p>
-          <CallCta label="Sună acum - 031 632 01 83" />
         </CardContent>
       </Card>
 
