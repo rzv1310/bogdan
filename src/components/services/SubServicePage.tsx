@@ -339,6 +339,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               links={section.links}
               callout={section.callout}
               calloutClassName={section.calloutClassName}
+              calloutCta={section.calloutCta}
               cta={section.cta}
               ctaWhatsApp={section.ctaWhatsApp}
               ctaWhatsAppLabel={section.ctaWhatsAppLabel}
