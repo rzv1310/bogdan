@@ -332,7 +332,7 @@ export default function PreventiveMeasures() {
             Article 202 of the Criminal Procedure Code sets the general framework, including the need for a reasonable suspicion and the requirement that the measure be necessary for the procedural purposes provided by law and proportionate to the seriousness of the accusation. (<a href={LEGISLATIE} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Legislative Portal</a>)
           </p>
           <p>In essence, preventive measures aim at the proper conduct of the criminal proceedings, preventing evasion from investigation or trial and preventing the commission of another offence. The concrete measure must be analysed in relation to the individual situation of the case.</p>
-          <p>The Criminal Procedure Code provides for 5 preventive measures: police custody, judicial control, judicial control on bail, house arrest and pre-trial detention.</p>
+          <p className="font-semibold">The Criminal Procedure Code provides for 5 preventive measures: police custody, judicial control, judicial control on bail, house arrest and pre-trial detention.</p>
         </CardContent>
       </Card>
 
