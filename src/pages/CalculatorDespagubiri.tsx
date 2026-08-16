@@ -596,7 +596,7 @@ export default function CalculatorDespagubiri() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+                <BreadcrumbLink href="/blog">Resurse</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

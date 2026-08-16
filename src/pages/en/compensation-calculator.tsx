@@ -605,7 +605,7 @@ export default function CompensationCalculator() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/en/blog">Blog</BreadcrumbLink>
+                <BreadcrumbLink href="/en/blog">Resources</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

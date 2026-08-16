@@ -28,7 +28,7 @@ const NotFound = () => {
     { label: "Acasă", to: "/" },
     { label: "Despre mine", to: "/despre-mine" },
     { label: "Contact", to: "/contact" },
-    { label: "Blog", to: "/blog" },
+    { label: "Resurse", to: "/blog" },
     { label: "Calculator despăgubiri", to: "/calculator-despagubiri" },
     { label: "Harta site", to: "/harta-site" },
   ];
@@ -37,7 +37,7 @@ const NotFound = () => {
     { label: "Home", to: "/en" },
     { label: "About me", to: "/en/about" },
     { label: "Contact", to: "/en/contact" },
-    { label: "Blog", to: "/en/blog" },
+    { label: "Resources", to: "/en/blog" },
   ];
 
   return (

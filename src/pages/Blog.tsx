@@ -8,11 +8,11 @@ import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 export default function Blog() {
   useSEO({
     keywords: "blog drept penal, articole juridice penale, noutati drept penal",
-    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Blog", item: "https://avocatpenalbucuresti.ro/blog" }] }],
+    schemas: [{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://avocatpenalbucuresti.ro/" }, { "@type": "ListItem", position: 2, name: "Resurse", item: "https://avocatpenalbucuresti.ro/blog" }] }],
     canonical: "/blog",
     alternates: { ro: "/blog", en: "/en/blog", xDefault: "/blog" },
     locale: "ro_RO",
-    title: "Blog | Avocat Bogdan Lamatic",
+    title: "Resurse | Avocat Bogdan Lamatic",
     description: "Articole și noutăți juridice publicate de avocat Bogdan Lamatic.",
   });
 
@@ -26,12 +26,12 @@ export default function Blog() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Blog</BreadcrumbPage>
+            <BreadcrumbPage>Resurse</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
-      <h1 className="text-2xl font-semibold mb-2">Blog</h1>
+      <h1 className="text-2xl font-semibold mb-2">Resurse</h1>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article>

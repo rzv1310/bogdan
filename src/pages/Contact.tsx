@@ -226,7 +226,6 @@ export default function Contact() {
         <div className="h-5"></div>
         <div className="text-left text-sm text-muted-foreground font-medium">SAU</div>
       </div>
-      </div>
 
       {/* Form Card */}
       <div className="mt-8 max-w-3xl">
@@ -408,6 +407,7 @@ export default function Contact() {
             </form>
           </CardContent>
         </Card>
+      </div>
       <ServicesQuickLinks />
       <Breadcrumb className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
         <BreadcrumbList>

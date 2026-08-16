@@ -223,7 +223,6 @@ export default function ContactEn() {
             </Button>
           </a>
         </div>
-        </div>
 
         <div className="h-6" />
         <div className="mt-8 max-w-3xl">
@@ -405,6 +404,7 @@ export default function ContactEn() {
               </form>
             </CardContent>
           </Card>
+        </div>
         <ServicesQuickLinks lang="en" />
         <Breadcrumb className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
           <BreadcrumbList>
