@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { CTA_CLASS } from "@/lib/cta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -53,9 +54,6 @@ const FAQ = [
     a: "I personally handle the file, from the first discussion to the prosecutor's decision and, if necessary, in court. I remain your point-of-contact lawyer throughout the case.",
   },
 ];
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 function CallCta({ label = "Call now!" }: { label?: string }) {
   return (

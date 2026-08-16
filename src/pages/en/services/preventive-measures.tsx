@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { CTA_CLASS } from "@/lib/cta";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -66,9 +67,6 @@ const FAQ = [
     a: "Yes. Very often, in a custody situation, the first person to look for a lawyer is a family member. Tell me who was taken into custody, where they are, when it happened, what information you received and, if you know it, which authority is handling the case. You do not have to wait until you have all the documents.",
   },
 ];
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 function CallCta({ label = "Call me now!" }: { label?: string }) {
   return (

@@ -1,4 +1,3 @@
-
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
@@ -7,14 +6,12 @@ import { Link } from "react-router-dom";
 import { Phone, ArrowRight, Briefcase } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { roServiceGroups } from "@/lib/serviceGroups";
+import { CTA_CLASS } from "@/lib/cta";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii";
 const TITLE = "Servicii avocat penal București - av. Bogdan Lamatic";
 const DESCRIPTION =
   "Servicii de avocat penal în București: urmărire penală, măsuri preventive, criminalitate economică, corupție, spălare de bani, crypto, droguri, infracțiuni rutiere, malpraxis, accidente de muncă și reprezentarea victimelor.";
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 function CallCta({ label = "Discută cu avocatul" }: { label?: string }) {
   return (

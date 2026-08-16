@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
+import { CTA_CLASS } from "@/lib/cta";
 
 interface ServiceHeroCtaProps {
   lang: "ro" | "en";
@@ -21,7 +19,7 @@ export function ServiceHeroCta({ lang, ariaLabel: _ariaLabel }: ServiceHeroCtaPr
           asChild
           variant="premium"
           size="lg"
-          className={`${CTA_CLASS} h-14 px-6 text-base md:h-11 md:px-8 md:text-sm`}
+          className={`${CTA_CLASS} md:min-h-[56px] md:px-8 md:text-lg`}
           aria-label={label}
         >
           <a href="tel:+40316320183">{label}</a>

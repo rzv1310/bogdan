@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { CTA_CLASS } from "@/lib/cta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -52,9 +53,6 @@ const FAQ = [
     a: "Mă ocup personal de dosar, de la prima discuție până la soluția procurorului și, dacă e cazul, în instanță. Rămân avocatul dumneavoastră de contact pe tot parcursul cauzei.",
   },
 ];
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 function CallCta({ label = "Sună-mă acum!" }: { label?: string }) {
   return (

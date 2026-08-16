@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { CTA_CLASS } from "@/lib/cta";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -85,9 +86,6 @@ export interface SubServicePageData {
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 }
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 const SITE = "https://avocatpenalbucuresti.ro";
 

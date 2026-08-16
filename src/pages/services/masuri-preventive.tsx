@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { CTA_CLASS } from "@/lib/cta";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -66,9 +67,6 @@ const FAQ = [
     a: "Da. Foarte des, în cazul unei rețineri, prima persoană care caută avocatul este un membru al familiei. Spune-mi cine a fost reținut, unde se află, când s-a întâmplat, ce informații ai primit și, dacă știi, ce structură instrumentează dosarul. Nu trebuie să aștepți până când ai toate actele.",
   },
 ];
-
-const CTA_CLASS =
-  "relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none";
 
 function CallCta({ label = "Sună-mă acum!" }: { label?: string }) {
   return (
