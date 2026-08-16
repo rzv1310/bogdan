@@ -24,6 +24,7 @@ export default function Layout() {
 
   const path = location.pathname;
   const isServicePage = path.startsWith("/servicii") || path.startsWith("/en/services");
+  const isHomepage = path === "/" || path === "/en";
   const lang = path.startsWith("/en") ? "en" : "ro";
 
   return (
@@ -31,7 +32,7 @@ export default function Layout() {
       className={`min-h-screen bg-background text-foreground${isServicePage ? " pb-16 md:pb-0" : ""}`}
     >
       <Header />
-      <main>
+      <main className={isHomepage ? undefined : "pt-16 md:pt-0"}>
         <Outlet />
       </main>
       <Footer />
