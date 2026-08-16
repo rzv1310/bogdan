@@ -19,7 +19,7 @@ export default function MobileConversionBar({ lang = 'ro' }: MobileConversionBar
 
   if (!hasConsented || !scrolled) return null;
 
-  const callLabel = lang === 'en' ? 'Call now' : 'Sună acum';
+  const callLabel = lang === 'en' ? 'Call now' : 'Sună-mă acum!';
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] flex border-t border-border bg-background pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_10px_rgba(0,0,0,0.15)] md:hidden">
