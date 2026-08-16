@@ -197,6 +197,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     callout,
     calloutClassName,
     calloutCta,
+    paragraphsAfterBullets,
+    calloutAfterBullets,
+    calloutAfterBulletsClassName,
+    calloutAfterBulletsCta,
     cta,
     ctaWhatsApp,
     ctaWhatsAppLabel,
@@ -207,6 +211,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     callout?: string;
     calloutClassName?: string;
     calloutCta?: string;
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+    calloutAfterBullets?: string;
+    calloutAfterBulletsClassName?: string;
+    calloutAfterBulletsCta?: string;
     cta?: string;
     ctaWhatsApp?: boolean;
     ctaWhatsAppLabel?: string;
