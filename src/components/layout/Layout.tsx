@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
+import MobileConversionBar from "./MobileConversionBar";
 
 export default function Layout() {
   const location = useLocation();
@@ -20,14 +21,21 @@ export default function Layout() {
       return () => clearTimeout(timeoutId);
     }
   }, [location.pathname]);
+
+  const path = location.pathname;
+  const isServicePage = path.startsWith("/servicii") || path.startsWith("/en/services");
+  const lang = path.startsWith("/en") ? "en" : "ro";
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div
+      className={`min-h-screen bg-background text-foreground${isServicePage ? " pb-16 md:pb-0" : ""}`}
+    >
       <Header />
       <main>
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppButton />
+      {isServicePage ? <MobileConversionBar lang={lang} /> : <WhatsAppButton />}
     </div>
   );
 }
