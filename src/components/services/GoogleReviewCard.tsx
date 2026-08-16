@@ -64,7 +64,7 @@ export default function GoogleReviewCard({ lang = "ro", className = "" }: Google
       <blockquote className="mt-3 text-base leading-relaxed text-slate-200">{REVIEW_TEXT}</blockquote>
 
       <div className="mt-4 flex items-center justify-between">
-        <Heart className="h-5 w-5 text-slate-400" aria-hidden="true" />
+        <Heart className="h-5 w-5 text-red-500" fill="currentColor" aria-hidden="true" />
         <span className="inline-flex items-center gap-1 text-xs text-slate-300">
           <GoogleGlyph />
           {badge}
