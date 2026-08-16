@@ -22,6 +22,8 @@ export interface SubServiceSubsection {
   callout?: string;
   /** Optional extra className for the callout paragraph. */
   calloutClassName?: string;
+  /** Optional inline CTA button rendered inside the callout. */
+  calloutCta?: string;
   /** Renders a secondary WhatsApp CTA at the end of the subsection. */
   ctaWhatsApp?: boolean;
   /** Custom label for the secondary WhatsApp CTA. */
