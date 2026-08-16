@@ -144,6 +144,7 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
       calloutClassName: "font-semibold bg-white",
       cardClassName: "bg-[#faf0e6]",
       cta: "Sună-mă imediat - 031 632 01 83",
+      ctaIcon: false,
     },
     {
       h2: "Ce fac pentru tine în cazul unei percheziții",

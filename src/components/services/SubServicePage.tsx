@@ -18,6 +18,8 @@ export interface SubServiceSubsection {
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
+  /** When false, hides the phone icon inside the CTA button. Defaults to true. */
+  ctaIcon?: boolean;
   /** Optional small highlighted callout inside the subsection. */
   callout?: string;
   /** Optional extra className for the callout paragraph. */
@@ -36,6 +38,8 @@ export interface SubServiceSection {
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
+  /** When false, hides the phone icon inside the CTA button. Defaults to true. */
+  ctaIcon?: boolean;
   /** Optional list of inline service links (text-only when `to` is missing). */
   links?: { label: string; to?: string }[];
   /** Optional small highlighted callout inside the section. */
@@ -202,6 +206,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutAfterBulletsClassName,
     calloutAfterBulletsCta,
     cta,
+    ctaIcon = true,
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
@@ -216,6 +221,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
     cta?: string;
+    ctaIcon?: boolean;
     ctaWhatsApp?: boolean;
     ctaWhatsAppLabel?: string;
   }) => (
@@ -317,7 +323,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           {cta && (
             <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${cta} - ${data.serviceName}`}>
               <a href="tel:+40316320183">
-                <Phone className="mr-2 h-4 w-4" /> {cta}
+                {ctaIcon && <Phone className="mr-2 h-4 w-4" />} {cta}
               </a>
             </Button>
           )}
@@ -388,6 +394,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
               calloutAfterBulletsCta={section.calloutAfterBulletsCta}
               cta={section.cta}
+              ctaIcon={section.ctaIcon}
               ctaWhatsApp={section.ctaWhatsApp}
               ctaWhatsAppLabel={section.ctaWhatsAppLabel}
             />
@@ -403,6 +410,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                       calloutClassName={sub.calloutClassName}
                       calloutCta={sub.calloutCta}
                       cta={sub.cta}
+                      ctaIcon={sub.ctaIcon}
                       ctaWhatsApp={sub.ctaWhatsApp}
                       ctaWhatsAppLabel={sub.ctaWhatsAppLabel}
                     />
