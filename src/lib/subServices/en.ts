@@ -292,8 +292,8 @@ export const diicotLawyerEn: SubServicePageData = {
       h2: "What the DIICOT is and what it investigates",
       paragraphs: [
         [
-          { text: "A DIICOT file follows the same stages of the " },
-          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: "A DIICOT file follows " },
+          { text: "the same stages of the criminal investigation", to: "/en/services/criminal-investigation" },
           { text: ", with a much larger volume of evidence." },
         ],
         "The DIICOT is a specialised structure within the Prosecutor's Office attached to the High Court of Cassation and Justice, set up by Government Emergency Ordinance no. 78/2016, with competence in particular for:",
