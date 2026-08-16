@@ -216,13 +216,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
-    paragraphs?: (string | { text: string; bold?: boolean }[])[];
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
     bullets?: (string | { bold: string; rest: string })[];
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
     calloutCta?: string;
-    paragraphsAfterBullets?: (string | { text: string; bold?: boolean }[])[];
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
