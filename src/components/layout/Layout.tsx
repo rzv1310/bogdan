@@ -27,9 +27,11 @@ export default function Layout() {
   const lang = path.startsWith("/en") ? "en" : "ro";
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div
+      className={`min-h-screen bg-background text-foreground${isServicePage ? " pb-16 md:pb-0" : ""}`}
+    >
       <Header />
-      <main className={isServicePage ? "pb-16 md:pb-0" : undefined}>
+      <main>
         <Outlet />
       </main>
       <Footer />
