@@ -213,53 +213,29 @@ export default function PreventiveMeasures() {
         <p className="mt-1 text-base leading-relaxed text-foreground">You are not taken on and then automatically passed to another lawyer. I personally handle the strategy and the essential moments of the mandate.</p>
       </div>
 
-      {/* What I do immediately - 4 visual steps */}
+      {/* What I do immediately - 4 steps */}
       <Card className="mt-12 md:mt-16 border-accent">
         <CardHeader className="pb-3">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">What I do immediately after you contact me</h2>
         </CardHeader>
         <CardContent className="pb-5">
-          <p className="text-base leading-relaxed text-muted-foreground mb-5">
+          <p className="text-base leading-relaxed text-black mb-5">
             You do not need to know the Criminal Procedure Code. Just tell me what happened.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">1</span>
-                <h3 className="text-base font-semibold leading-tight">I clarify the situation</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                What happened, where the person is, what deadline is next.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">2</span>
-                <h3 className="text-base font-semibold leading-tight">I check the documents</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Ordinance, court ruling, summons and any available documents.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">3</span>
-                <h3 className="text-base font-semibold leading-tight">I assess the risk</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                What measure may be ordered and what arguments exist.
-              </p>
-            </div>
-            <div className="rounded-lg border border-accent/60 bg-accent/5 p-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground">4</span>
-                <h3 className="text-base font-semibold leading-tight">I prepare the defence</h3>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Challenge, rejection, revocation or a lighter measure.
-              </p>
-            </div>
-          </div>
+          <ol className="list-decimal pl-5 space-y-3 text-black">
+            <li>
+              <strong>I clarify the situation</strong> – what happened, where the person is, what deadline is next.
+            </li>
+            <li>
+              <strong>I check the documents</strong> – ordinance, court ruling, summons and any available documents.
+            </li>
+            <li>
+              <strong>I assess the risk</strong> – what measure may be ordered and what arguments exist.
+            </li>
+            <li>
+              <strong>I prepare the defence</strong> – challenge, rejection, revocation or a lighter measure.
+            </li>
+          </ol>
           <CallCta label="Call now - 031 632 01 83" />
         </CardContent>
       </Card>
