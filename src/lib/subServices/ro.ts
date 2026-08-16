@@ -1152,11 +1152,7 @@ export const controlJudiciarRo: SubServicePageData = {
     {
       h2: "Ce analizez în cazul controlului judiciar",
       paragraphs: [
-        [
-          { text: "Controlul judiciar face parte dintre " },
-          { text: "măsurile preventive neprivative de libertate", to: "/servicii/masuri-preventive" },
-          { text: "." },
-        ],
+        "Controlul judiciar nu presupune privarea de libertate, însă impune obligații care trebuie respectate pe toată durata măsurii.",
         "Faptul că o obligație a fost stabilită nu înseamnă că ea trebuie să rămână automat neschimbată indiferent de evoluția dosarului. Analizez dacă:",
       ],
       bullets: [
