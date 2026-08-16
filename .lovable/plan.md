@@ -41,3 +41,7 @@ Linkurile contextuale existente între subservicii (ex. „controlului judiciar�
 - Se modifică doar segmentele de text din `src/lib/subServices/ro.ts` și `src/lib/subServices/en.ts`: se mută cuvintele adiacente în interiorul segmentului cu `to`, fără a schimba sensul frazelor.
 - Logica din `SubServicePage.tsx`, `RelatedServices.tsx` și `relatedServices.ts` rămâne neschimbată; excluderea din „Servicii conexe” se bazează pe path, nu pe anchor, deci comportamentul actual (secțiune eliminată la cele 4 pagini de măsuri preventive) se păstrează.
 - La final: build cu prerender + validare SEO.
+
+## Fix necesar înainte (build rupt)
+
+`src/lib/subServices/en.ts`, secțiunea „What I analyse in a judicial control case”: cheia `paragraphs` apare de două ori în același obiect (liniile 689 și 696), ceea ce oprește build-ul. Se unesc cele două valori într-un singur array `paragraphs` (segmentul cu link + fraza „The fact that an obligation was imposed...”). În plan mode nu pot edita fișiere de cod, deci fixul intră odată cu aprobarea.
