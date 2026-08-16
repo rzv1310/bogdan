@@ -41,7 +41,7 @@ export default function GoogleReviewCard({ lang = "ro", className = "" }: Google
       <div className="flex items-start justify-between gap-2">
         <div className="flex items-center gap-3">
           <span
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-base font-semibold text-accent-foreground"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-muted text-base font-semibold text-muted-foreground"
             aria-hidden="true"
           >
             R
