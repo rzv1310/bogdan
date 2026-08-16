@@ -569,8 +569,8 @@ export const avocatDnaRo: SubServicePageData = {
       h2: "De ce primele etape ale dosarului sunt importante",
       paragraphs: [
         [
-          { text: "Dosarele DNA urmează regulile generale ale " },
-          { text: "urmăririi penale", to: "/servicii/urmarire-penala" },
+          { text: "Dosarele DNA urmează " },
+          { text: "regulile generale ale urmăririi penale", to: "/servicii/urmarire-penala" },
           { text: "." },
         ],
         "Într-o anchetă DNA, primele acte la care participă persoana cercetată pot include audierea, percheziția, ridicarea de înscrisuri sau bunuri și, în anumite situații, măsuri preventive ori asigurătorii.",
