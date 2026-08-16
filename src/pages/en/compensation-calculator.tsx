@@ -174,26 +174,7 @@ export default function CompensationCalculator() {
 
   return (
     <div className="min-h-screen bg-zinc-50">
-      <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
-        {/* Breadcrumb */}
-        <div className="flex flex-col">
-        <section className="order-last mt-5 md:order-first md:mt-0 md:mb-4">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/en/blog">Blog</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Compensation Calculator</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </section>
+      <main className="mx-auto max-w-6xl px-4 py-8 md:py-12 flex flex-col">
 
         {/* Hero */}
         <section className="grid grid-cols-1 gap-6 items-start mb-10">
@@ -404,7 +385,6 @@ export default function CompensationCalculator() {
             </Card>
           </div>
         </section>
-        </div>
 
         {/* Results */}
         {showResults && (
@@ -616,6 +596,24 @@ export default function CompensationCalculator() {
           </Button>
               <ServicesQuickLinks lang="en" />
 </section>
+        {/* Breadcrumb */}
+        <section className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en/blog">Blog</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Compensation Calculator</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </section>
       </main>
     </div>
   );
