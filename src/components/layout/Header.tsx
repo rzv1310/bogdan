@@ -106,7 +106,7 @@ export default function Header() {
             <Button
               size="sm"
               variant="ghost"
-              className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+              className={lang === "ro" ? "bg-muted text-muted-foreground hover:bg-muted/80" : undefined}
               aria-label="Schimbă limba în română"
               aria-pressed={lang === "ro"}
               onClick={() => switchLang("ro")}
@@ -116,7 +116,7 @@ export default function Header() {
             <Button
               size="sm"
               variant="ghost"
-              className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+              className={lang === "en" ? "bg-muted text-muted-foreground hover:bg-muted/80" : undefined}
               aria-label="Schimbă limba în engleză"
               aria-pressed={lang === "en"}
               onClick={() => switchLang("en")}
@@ -131,7 +131,7 @@ export default function Header() {
           <Button
             size="sm"
             variant="ghost"
-            className={lang === "ro" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+            className={lang === "ro" ? "bg-muted text-muted-foreground hover:bg-muted/80" : undefined}
             aria-label="Schimbă limba în română"
             aria-pressed={lang === "ro"}
             onClick={() => switchLang("ro")}
@@ -141,7 +141,7 @@ export default function Header() {
           <Button
             size="sm"
             variant="ghost"
-            className={lang === "en" ? "bg-accent text-accent-foreground hover:bg-accent/90" : undefined}
+            className={lang === "en" ? "bg-muted text-muted-foreground hover:bg-muted/80" : undefined}
             aria-label="Schimbă limba în engleză"
             aria-pressed={lang === "en"}
             onClick={() => switchLang("en")}
