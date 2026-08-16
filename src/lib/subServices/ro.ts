@@ -812,13 +812,13 @@ export const retinere24OreRo: SubServicePageData = {
     {
       h2: "Ce urmează după reținere",
       paragraphs: [
-        [
-          { text: "Reținerea este una dintre " },
-          { text: "măsurile preventive prevăzute de Codul de procedură penală", to: "/servicii/masuri-preventive" },
-          { text: "." },
-        ],
+        "Reținerea poate fi dispusă pentru cel mult 24 de ore, în condițiile prevăzute de Codul de procedură penală.",
         "După expirarea celor 24 de ore, persoana nu poate fi ținută în continuare în baza aceleiași măsuri de reținere.",
-        "În funcție de dosar, poate intra în discuție o altă măsură preventivă. De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii.",
+        [
+          { text: "În funcție de dosar, poate intra în discuție " },
+          { text: "o altă măsură preventivă", to: "/servicii/masuri-preventive" },
+          { text: ". De aceea, strategia de apărare este preferabil să fie analizată înainte de luarea următoarei decizii." },
+        ],
       ],
       links: [
         { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
