@@ -12,6 +12,7 @@ import { useState } from "react";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function InvestigatiiCripto() {
   const [pdfLoading, setPdfLoading] = useState(false);
 

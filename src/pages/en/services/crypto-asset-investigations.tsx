@@ -10,6 +10,7 @@ import PhoneLoader from "@/components/crypto/PhoneLoader";
 import RelatedServices from "@/components/RelatedServices";
 import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import ServiceFaq from "@/components/services/ServiceFaq";
 export default function CryptoInvestigationsEn() {
   useSEO({
     keywords: "crypto lawyer romania, cryptocurrency investigations, blockchain forensics attorney",
