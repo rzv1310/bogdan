@@ -800,24 +800,36 @@ export const retinere24OreRo: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Cât poate dura reținerea?",
-      a: "Reținerea poate fi dispusă pentru cel mult 24 de ore. După expirarea acestui interval, persoana nu poate fi ținută în continuare în baza aceleiași măsuri. Dacă se urmărește o altă măsură preventivă, trebuie respectată procedura prevăzută pentru acea măsură.",
+      q: "Reținerea de 24 de ore poate fi prelungită?",
+      a: "Nu poate fi prelungită aceeași măsură de reținere peste limita legală de 24 de ore. După expirarea acesteia, persoana nu poate rămâne privată de libertate în baza ordonanței de reținere expirate. Dacă se urmărește luarea unei alte măsuri preventive, trebuie urmată procedura prevăzută de lege pentru măsura respectivă.",
     },
     {
-      q: "Cine poate dispune reținerea?",
-      a: "Reținerea poate fi dispusă, în cursul urmăririi penale, de organul de cercetare penală sau de procuror, în condițiile prevăzute de Codul de procedură penală.",
+      q: "Cele 24 de ore încep din momentul în care mă ia Poliția?",
+      a: "Nu neapărat. Ordonanța de reținere trebuie să indice ora exactă a începerii și încetării măsurii. Timpul strict necesar conducerii la sediul organului judiciar și, în condițiile legii, perioada petrecută sub puterea unui mandat de aducere nu intră în durata reținerii.",
     },
     {
-      q: "Am dreptul la avocat în timpul reținerii?",
-      a: "Da. Suspectul sau inculpatul are dreptul la asistența unui avocat și se poate consulta cu acesta înainte și în cursul audierii, în condițiile legii.",
+      q: "Pot refuza să dau declarație dacă sunt reținut?",
+      a: "Da. Înainte de audiere trebuie să ți se aducă la cunoștință dreptul de a nu face nicio declarație, cu excepția informațiilor privind identitatea. Dacă dai declarații, acestea pot fi folosite ca mijloace de probă împotriva ta.",
     },
     {
-      q: "Poate familia să contacteze avocatul pentru persoana reținută?",
-      a: "Da. Foarte des prima persoană care caută avocatul este un membru al familiei. Este util să știu cine a fost reținut, unde se află, când s-a întâmplat și ce structură instrumentează dosarul.",
+      q: "Pot vorbi cu avocatul înainte să dau declarație?",
+      a: "Da. Persoana reținută are dreptul la avocat, iar avocatul are dreptul să comunice direct cu clientul în condiții care să asigure confidențialitatea. Măsura reținerii poate fi luată numai după audierea suspectului sau inculpatului în prezența avocatului ales sau numit din oficiu.",
     },
     {
-      q: "Ce se întâmplă dacă nu reacționez în primele ore?",
-      a: "Actele efectuate în acest interval, inclusiv declarațiile, pot avea relevanță în etapele ulterioare, iar apărarea privind următoarea măsură preventivă se pregătește mai bine înainte de termen decât după pronunțarea soluției.",
+      q: "Cum contest ordonanța de reținere?",
+      a: "Calea prevăzută de art. 209 CPP este plângerea. Dacă reținerea a fost dispusă de organul de cercetare penală, plângerea se adresează procurorului care supraveghează urmărirea penală. Dacă a fost dispusă de procuror, plângerea se adresează prim-procurorului sau procurorului ierarhic superior. Plângerea trebuie făcută înainte de expirarea reținerii.",
+    },
+    {
+      q: "Ce se întâmplă după expirarea celor 24 de ore?",
+      a: "Persoana nu poate rămâne privată de libertate în baza aceleiași măsuri de reținere. În funcție de situația dosarului, poate fi pusă în libertate sau poate intra în discuție o altă măsură preventivă, cu respectarea procedurii legale aplicabile acesteia.",
+    },
+    {
+      q: "Poate urma arestarea preventivă după reținerea de 24 de ore?",
+      a: "Da, dacă sunt îndeplinite condițiile legale și procurorul formulează o propunere în acest sens. Pentru un inculpat reținut, Codul prevede că sesizarea judecătorului în vederea arestării preventive trebuie făcută cu cel puțin 6 ore înainte de expirarea reținerii.",
+    },
+    {
+      q: "Poate familia să contacteze avocatul dacă persoana este reținută?",
+      a: "Da. Un membru al familiei poate contacta avocatul chiar dacă nu are încă toate actele. Pentru prima evaluare sunt utile numele persoanei, locul unde se află, momentul aproximativ al reținerii și informațiile primite până atunci.",
     },
   ],
   resources: [
