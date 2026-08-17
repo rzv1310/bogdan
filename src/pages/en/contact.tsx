@@ -12,6 +12,7 @@ import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const MAX_FILES = 5;
