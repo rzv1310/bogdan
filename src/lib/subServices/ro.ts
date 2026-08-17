@@ -1395,15 +1395,15 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   title: "Avocat Arest la Domiciliu București | Bogdan Lamatic",
   h1: "Avocat pentru arest la domiciliu în București",
   description:
-    "Avocat arest la domiciliu București - contestație, cereri de părăsire a imobilului, revocare și înlocuirea măsurii. 18+ ani experiență.",
+    "Avocat arest la domiciliu București - contestație, cereri de părăsire a imobilului, revocare, înlocuire cu control judiciar. 18+ ani experiență.",
   keywords:
-    "avocat arest la domiciliu, arest la domiciliu bucuresti, contestatie arest la domiciliu, inlocuire arest la domiciliu",
+    "avocat arest la domiciliu, arest la domiciliu bucuresti, contestatie arest la domiciliu, inlocuire arest la domiciliu, permisiune parasesire domiciliu",
   breadcrumbLabel: "Arest la domiciliu",
   serviceName: "Avocat arest la domiciliu București - Bogdan Lamatic",
   urgency: [
-    "Ești în arest la domiciliu sau această măsură urmează să fie discutată?",
-    "Arestul la domiciliu este o măsură preventivă privativă de libertate, executată în imobilul stabilit de organul judiciar.",
-    "În funcție de situație, pot fi analizate contestarea măsurii, înlocuirea cu una mai puțin severă sau cererile privind părăsirea imobilului în cazurile permise de lege.",
+    "Ești în arest la domiciliu sau această măsură urmează să fie decisă?",
+    "Arestul la domiciliu îți limitează libertatea și poate afecta direct munca, familia și activitățile de zi cu zi.",
+    "Dacă procurorul solicită o măsură privativă de libertate, dacă ești deja în arest la domiciliu sau dacă vrei înlocuirea măsurii cu control judiciar, trebuie analizate rapid situația dosarului, motivele măsurii și opțiunile procedurale disponibile.",
   ],
   bio: [
     `${BIO_INTRO} Asist clienți atât înainte de luarea măsurii, cât și după dispunerea acesteia.`,
@@ -1411,75 +1411,499 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Cât poate dura arestul la domiciliu",
+      h2: "Te pot ajuta dacă",
+      bullets: [
+        "procurorul solicită arest la domiciliu;",
+        "procurorul solicită arestarea preventivă și vrei susținerea unei măsuri mai puțin severe;",
+        "arestul la domiciliu a fost deja dispus și vrei să îl contești;",
+        "ai nevoie să părăsești domiciliul pentru muncă, tratament medical sau o altă situație justificată;",
+        "vrei revocarea sau înlocuirea arestului la domiciliu;",
+        "urmează prelungirea sau verificarea măsurii;",
+        "ai încălcat sau există riscul să fi încălcat una dintre obligații.",
+      ],
+    },
+    {
+      h2: "În ce situație te afli acum?",
+      subsections: [
+        {
+          h3: "Procurorul solicită arestarea preventivă",
+          paragraphs: [
+            "Arestul la domiciliu poate deveni relevant ca alternativă mai puțin severă atunci când condițiile legale sunt îndeplinite și circumstanțele concrete permit susținerea unei asemenea soluții.",
+            [
+              { text: "Analizez dacă scopul urmărit prin măsura preventivă poate fi atins fără detenție într-un centru de arest. " },
+              { text: "Arest preventiv - vezi opțiunile de apărare", to: "/servicii/arest-preventiv" },
+              { text: " →" },
+            ],
+          ],
+        },
+        {
+          h3: "Arestul la domiciliu a fost deja dispus",
+          bullets: [
+            "motivele pentru care a fost luată măsura;",
+            "actele și probele relevante;",
+            "proporționalitatea măsurii;",
+            "termenul pentru contestație;",
+            "posibilitatea revocării;",
+            "posibilitatea înlocuirii cu control judiciar sau control judiciar pe cauțiune.",
+          ],
+          cta: "☎ Sună acum - 031 632 01 83",
+          ctaIcon: false,
+        },
+        {
+          h3: "Ai nevoie să ieși din domiciliu",
+          paragraphs: [
+            "În anumite situații, legea permite solicitarea unei autorizări pentru părăsirea temporară a imobilului, inclusiv pentru muncă, studii, procurarea mijloacelor esențiale de existență sau alte interese legitime temeinic justificate.",
+          ],
+          ctaWhatsApp: true,
+          ctaWhatsAppLabel: "Trimite încheierea pentru analiză",
+        },
+        {
+          h3: "Ai încălcat sau crezi că ai încălcat măsura",
+          paragraphs: [
+            "Nu presupune că orice abatere are automat aceeași consecință.",
+            "Trebuie verificat exact ce s-a întâmplat, ce obligație era stabilită, dacă exista o autorizare și în ce condiții a avut loc situația.",
+            "Încălcarea cu rea-credință a măsurii sau a obligațiilor poate conduce, în condițiile legii, la înlocuirea arestului la domiciliu cu arestarea preventivă.",
+            "Dacă ai fost chemat pentru explicații, discută cu avocatul înainte de următoarea declarație.",
+          ],
+          callout: "Ai încălcat o obligație? Sună înainte de următoarea audiere.",
+          calloutClassName: "font-semibold bg-white",
+          cta: "☎ Sună acum",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "Ce analizez în cazul arestului la domiciliu",
       paragraphs: [
+        "Arestul la domiciliu este o măsură privativă de libertate. Nu trebuie tratat ca o simplă variantă „mai comodă" a arestării preventive.",
+        "În funcție de situație, analizez:",
+      ],
+      bullets: [
+        "dacă sunt îndeplinite condițiile legale pentru măsură;",
+        "motivele concrete invocate de procuror sau instanță;",
+        "situația probatorie relevantă;",
+        "gravitatea și circumstanțele acuzației;",
+        "riscurile procesuale invocate;",
+        "conduita procesuală;",
+        "situația familială;",
+        "activitatea profesională;",
+        "starea de sănătate;",
+        "proporționalitatea măsurii;",
+        "dacă o măsură mai puțin severă poate fi suficientă;",
+        "dacă au apărut împrejurări noi care justifică revocarea sau înlocuirea.",
+      ],
+      paragraphsAfterBullets: [
+        "Codul de procedură penală prevede că, la aprecierea arestului la domiciliu, se ține seama inclusiv de gradul de pericol al infracțiunii, scopul măsurii, sănătatea, vârsta, situația familială și alte împrejurări privind persoana inculpatului.",
+      ],
+      cta: "Analizează situația arestului la domiciliu",
+    },
+    {
+      h2: "Ce trebuie să-mi spui când mă contactezi",
+      paragraphs: [
+        "Pentru o primă evaluare rapidă, spune-mi:",
+      ],
+      bullets: [
+        "dacă ești deja în arest la domiciliu sau urmează un termen;",
+        "când a fost dispusă măsura;",
+        "când este următorul termen;",
+        "ce Parchet sau instanță are dosarul;",
+        "dacă ai fost anterior reținut sau arestat preventiv;",
+        "ce problemă vrei să rezolvi imediat.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă le ai, trimite-mi:",
+        "încheierea prin care s-a dispus arestul la domiciliu;",
+        "citația;",
+        "încheierea de prelungire sau menținere;",
+        "documentele referitoare la obligațiile impuse;",
+        "cererile sau răspunsurile primite anterior.",
+      ].map((text) => ({ text: `${text}` })),
+      calloutAfterBullets: "Nu ai toate actele? Sună oricum.",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite încheierea pe WhatsApp",
+    },
+    {
+      h2: "Ce este arestul la domiciliu?",
+      paragraphs: [
+        "Arestul la domiciliu este o măsură preventivă privativă de libertate.",
+        "În esență, persoana față de care s-a dispus măsura are obligația de a nu părăsi imobilul în care locuiește fără permisiunea organului judiciar competent, cu excepțiile prevăzute de lege, și trebuie să respecte restricțiile stabilite prin încheiere.",
         [
-          { text: "Arestul la domiciliu este una dintre " },
-          { text: "măsurile preventive privative de libertate", to: "/servicii/masuri-preventive" },
+          { text: "Arestul la domiciliu este diferit de " },
+          { text: "controlul judiciar", to: "/servicii/control-judiciar" },
+          { text: ", care este o măsură preventivă neprivativă de libertate." },
+        ],
+        [
+          { text: "Este diferit și de " },
+          { text: "arestarea preventivă", to: "/servicii/arest-preventiv" },
+          { text: ", deoarece măsura se execută în imobilul stabilit, nu într-un centru de reținere și arestare preventivă." },
+        ],
+      ],
+    },
+    {
+      h2: "În ce condiții poate fi dispus arestul la domiciliu?",
+      paragraphs: [
+        "Arestul la domiciliu poate fi dispus de judecătorul de drepturi și libertăți, judecătorul de cameră preliminară sau instanța de judecată, în funcție de etapa procesului.",
+        "Pentru luarea măsurii trebuie îndeplinite condițiile prevăzute de lege, inclusiv cele la care face trimitere art. 218 CPP, iar măsura trebuie să fie necesară și suficientă pentru realizarea scopului procesual urmărit.",
+        "La evaluare contează situația concretă, nu doar denumirea infracțiunii. Pot deveni relevante:",
+      ],
+      bullets: [
+        "gravitatea concretă a acuzației;",
+        "situația probatorie;",
+        "existența unui risc de sustragere;",
+        "riscul de influențare a martorilor sau probelor;",
+        "conduita procesuală;",
+        "antecedentele;",
+        "situația familială și profesională;",
+        "starea de sănătate;",
+        "posibilitatea ca scopul procesual să fie realizat prin această măsură în locul arestării preventive.",
+      ],
+      paragraphsAfterBullets: [
+        "Legea prevede și situații în care arestul la domiciliu nu poate fi dispus, inclusiv în anumite cauze privind infracțiuni asupra unui membru de familie și în cazul unei condamnări definitive anterioare pentru infracțiunea de evadare.",
+      ],
+    },
+    {
+      h2: "Poate fi dispus arestul la domiciliu în locul arestării preventive?",
+      paragraphs: [
+        "Da, dacă sunt îndeplinite condițiile legale și judecătorul apreciază că măsura mai puțin severă este suficientă în raport cu situația concretă.",
+        "Tocmai de aceea, dacă procurorul solicită arestarea preventivă, apărarea nu trebuie să se limiteze la argumentul „să nu fie arestat".",
+        "Trebuie analizat dacă există argumente concrete pentru:",
+      ],
+      bullets: [
+        "respingerea propunerii;",
+        "control judiciar;",
+        "control judiciar pe cauțiune;",
+        "arest la domiciliu.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "În evaluarea unei măsuri mai puțin severe sunt relevante împrejurările concrete ale cauzei și conduita procesuală a inculpatului. Art. 242 CPP permite înlocuirea unei măsuri preventive cu una mai ușoară atunci când aceasta este suficientă pentru realizarea scopului măsurii preventive. Vezi și pagina dedicată " },
+          { text: "apărării împotriva propunerii de arestare preventivă", to: "/servicii/arest-preventiv" },
           { text: "." },
         ],
-        "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile prevăzute de lege, iar durata maximă în această fază este de 180 de zile.",
-        "Persoana trebuie să rămână în imobilul în care execută măsura și să respecte obligațiile stabilite, cu excepțiile permise de lege sau aprobate de organul judiciar competent.",
       ],
     },
     {
-      h2: "Ce fac pentru tine în cazul arestului la domiciliu",
-      bullets: [
-        "pregătesc apărarea împotriva luării măsurii, atunci când mă contactezi înainte de termen;",
-        "analizez calea de atac disponibilă;",
-        "solicit înlocuirea cu o măsură mai puțin severă atunci când există temei;",
-        "analizez posibilitatea revocării;",
-        "formulez cereri privind părăsirea imobilului atunci când există un motiv justificat și condițiile legale sunt îndeplinite.",
-      ],
+      h2: "Ce obligații ai în arest la domiciliu?",
       paragraphs: [
-        "Pot deveni relevante inclusiv situații privind activitatea profesională, tratamentul medical sau alte împrejurări personale temeinic justificate. Fiecare cerere trebuie analizată individual.",
+        "Principala obligație este să nu părăsești imobilul în care locuiești fără permisiunea organului judiciar, în afara situațiilor permise de lege.",
+        "În plus, pe durata măsurii trebuie:",
       ],
-      cta: "Sunt în arest la domiciliu - Vreau să verific opțiunile",
+      bullets: [
+        "să te prezinți în fața organelor judiciare ori de câte ori ești chemat;",
+        "să nu comunici cu persoanele indicate de lege sau stabilite prin încheiere, cum pot fi persoana vătămată, martorii, experții, alți participanți ori alte persoane stabilite de organul judiciar.",
+      ],
+      paragraphsAfterBullets: [
+        "Obligațiile concrete trebuie verificate întotdeauna în încheierea prin care a fost dispusă măsura.",
+        "Nu presupune că regulile aplicabile altei persoane aflate în arest la domiciliu sunt identice cu ale tale.",
+      ],
     },
     {
-      h2: "Ce verific dacă măsura este deja dispusă",
+      h2: "Poți ieși din casă dacă ești în arest la domiciliu?",
+      paragraphs: [
+        "Da, dar numai în situațiile și condițiile prevăzute de lege.",
+      ],
+      subsections: [
+        {
+          h3: "Pentru prezentarea la Poliție, Parchet sau instanță",
+          paragraphs: [
+            "Poți părăsi imobilul pentru a te prezenta în fața organelor judiciare atunci când ești chemat.",
+          ],
+        },
+        {
+          h3: "Pentru muncă",
+          paragraphs: [
+            "La cererea scrisă și motivată a inculpatului, organul judiciar competent poate permite părăsirea imobilului pentru prezentarea la locul de muncă, pentru o perioadă determinată și în condițiile stabilite prin încheiere.",
+            "Faptul că ai un loc de muncă nu înseamnă că poți pleca automat din domiciliu.",
+            "Este necesară analiza situației și, de regulă, o cerere motivată.",
+          ],
+        },
+        {
+          h3: "Pentru școală sau pregătire profesională",
+          paragraphs: [
+            "Legea permite formularea unei cereri și pentru participarea la cursuri de învățământ sau pregătire profesională, dacă sunt îndeplinite condițiile legale.",
+          ],
+        },
+        {
+          h3: "Pentru procurarea mijloacelor esențiale de existență",
+          paragraphs: [
+            "Poate fi solicitată permisiunea și pentru procurarea mijloacelor esențiale de existență.",
+            "Trebuie explicat concret de ce deplasarea este necesară și de ce interesul invocat nu poate fi realizat rezonabil în alt mod.",
+          ],
+        },
+        {
+          h3: "Pentru alte motive justificate",
+          paragraphs: [
+            "Codul permite autorizarea părăsirii imobilului și în alte situații temeinic justificate, atunci când acest lucru este necesar pentru realizarea unor drepturi sau interese legitime.",
+          ],
+        },
+      ],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Ai nevoie să ieși din domiciliu? Trimite încheierea",
+    },
+    {
+      h2: "Pot merge la medic sau la spital dacă sunt în arest la domiciliu?",
+      paragraphs: [
+        "Pentru o consultație, investigație sau procedură medicală planificată, situația trebuie analizată din timp și, dacă este necesar, trebuie solicitată permisiunea organului judiciar.",
+        "În cazul unei situații urgente și pentru motive întemeiate, legea permite părăsirea imobilului fără autorizare prealabilă pe durata strict necesară, cu obligația informării imediate a autorității desemnate cu supravegherea și a organului judiciar competent.",
+        "O urgență reală nu trebuie confundată cu o deplasare care putea fi planificată și autorizată anterior.",
+      ],
+      callout: "Dacă situația medicală este previzibilă, discută cu avocatul înainte.",
+      calloutClassName: "font-semibold bg-white",
+    },
+    {
+      h2: "Cum se obține permisiunea de a părăsi domiciliul?",
+      paragraphs: [
+        "Cererea trebuie să fie scrisă și motivată.",
+        "În funcție de motiv, pot fi utile documente precum:",
+      ],
       bullets: [
-        "dacă există o cale de atac disponibilă;",
-        "dacă măsura mai este necesară;",
-        "dacă poate fi înlocuită cu una mai puțin severă;",
-        "dacă au apărut împrejurări noi;",
-        "dacă este necesară o cerere pentru părăsirea temporară a imobilului într-o situație permisă de lege.",
+        "adeverință de la angajator;",
+        "contract de muncă;",
+        "programul de lucru;",
+        "programare medicală;",
+        "acte medicale;",
+        "dovada cursurilor sau activității educaționale;",
+        "documente care justifică situația personală invocată.",
       ],
-      callout: "Trimite-mi încheierea și explică-mi problema concretă pe care măsura ți-o creează.",
-      links: [
-        { label: "Control judiciar - obligații, contestare și revocare", to: "/servicii/control-judiciar" },
-        { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
-        { label: "Reținere 24 ore - ce trebuie făcut imediat", to: "/servicii/retinere-24-ore" },
+      paragraphsAfterBullets: [
+        "Cererea trebuie să arate clar: motivul deplasării, data, intervalul orar, destinația, necesitatea concretă, eventual traseul relevant și documentele care susțin solicitarea.",
+        "Nu există o aprobare automată. Organul judiciar decide în funcție de situația concretă.",
       ],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite cererea pe WhatsApp",
+    },
+    {
+      h2: "Poți purta brățară electronică în arest la domiciliu?",
+      paragraphs: [
+        "Da. Organul judiciar poate dispune ca inculpatul aflat în arest la domiciliu să poarte permanent un sistem electronic de supraveghere.",
+        "Existența sau inexistența unei asemenea măsuri trebuie verificată în actele și dispozițiile aplicabile cazului concret.",
+      ],
+    },
+    {
+      h2: "Cum este verificată respectarea arestului la domiciliu?",
+      paragraphs: [
+        "Autoritatea desemnată cu supravegherea verifică periodic respectarea măsurii și a obligațiilor impuse.",
+        "În acest scop, legea permite organului de poliție să pătrundă în imobilul în care se execută arestul la domiciliu fără consimțământul inculpatului sau al persoanelor care locuiesc împreună cu acesta, pentru verificarea respectării măsurii.",
+        "Dacă sunt constatate încălcări, acestea sunt sesizate organului judiciar competent.",
+      ],
+    },
+    {
+      h2: "Ce se întâmplă dacă încalci arestul la domiciliu?",
+      subsections: [
+        {
+          h3: "Încălcarea cu rea-credință poate duce la arestare preventivă",
+          paragraphs: [
+            "Dacă inculpatul încalcă cu rea-credință măsura sau obligațiile stabilite, judecătorul ori instanța poate dispune, în condițiile legii, înlocuirea arestului la domiciliu cu arestarea preventivă. Același risc procedural există și în ipoteza prevăzută de lege privind săvârșirea cu intenție a unei noi infracțiuni.",
+            "Nu orice situație trebuie tratată automat ca fiind o încălcare cu rea-credință. Circumstanțele concrete contează.",
+          ],
+        },
+        {
+          h3: "Părăsirea neautorizată poate avea și consecințe penale",
+          paragraphs: [
+            "Codul penal include, în condițiile prevăzute de art. 285, încălcarea de către persoana aflată în arest la domiciliu a obligației de a nu părăsi imobilul ori nerespectarea itinerarului sau condițiilor de deplasare în sfera infracțiunii de evadare.",
+            "Dacă ai părăsit deja domiciliul sau ai depășit condițiile unei autorizări, situația trebuie analizată imediat, înainte de declarații sau explicații date fără consultarea avocatului.",
+          ],
+        },
+      ],
+      cta: "Ai o problemă privind respectarea măsurii? Sună acum",
+    },
+    {
+      h2: "Cum contești arestul la domiciliu?",
+      paragraphs: [
+        "Încheierea prin care se dispune asupra unei măsuri preventive poate fi atacată prin contestație în condițiile aplicabile etapei procesuale.",
+        "Pentru încheierile privind măsurile preventive:",
+      ],
+      subsections: [
+        {
+          h3: "În cursul urmăririi penale",
+          paragraphs: [
+            "Este relevant art. 204 CPP.",
+          ],
+        },
+        {
+          h3: "În camera preliminară",
+          paragraphs: [
+            "Este relevant art. 205 CPP.",
+          ],
+        },
+        {
+          h3: "În cursul judecății",
+          paragraphs: [
+            "Este relevant art. 206 CPP.",
+          ],
+        },
+      ],
+      paragraphsAfterBullets: [
+        "În aceste situații, Codul prevede termenul de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
+        "De aceea trebuie verificat imediat: ce instanță a pronunțat încheierea, data și ora pronunțării, dacă ai fost prezent, momentul comunicării și etapa în care se află procesul.",
+        "Dacă ai primit deja încheierea, trimite-mi documentul și spune-mi când ți-a fost comunicat.",
+      ],
+      cta: "Verifică termenul pentru contestație",
+    },
+    {
+      h2: "Cât durează arestul la domiciliu?",
+      subsections: [
+        {
+          h3: "În cursul urmăririi penale",
+          paragraphs: [
+            "Arestul la domiciliu poate fi luat inițial pentru cel mult 30 de zile.",
+            "Poate fi prelungit dacă se mențin temeiurile care au determinat măsura sau au apărut temeiuri noi, fiecare prelungire neputând depăși 30 de zile.",
+            "În cursul urmăririi penale, durata maximă a arestului la domiciliu este de 180 de zile.",
+            "Propunerea procurorului pentru prelungire trebuie înaintată judecătorului, împreună cu dosarul, cu cel puțin 5 zile înainte de expirarea măsurii.",
+          ],
+        },
+        {
+          h3: "În camera preliminară și în cursul judecății",
+          paragraphs: [
+            "Regimul este diferit.",
+            "În aceste faze, măsura poate fi dispusă pentru perioade de cel mult 30 de zile, fiind supusă verificării periodice prevăzute de Codul de procedură penală și regulilor privind durata maximă aplicabile în etapa respectivă.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Cum te aperi la o propunere de prelungire a arestului la domiciliu?",
+      paragraphs: [
+        "Prelungirea nu ar trebui tratată ca o formalitate.",
+        "Analizez:",
+      ],
+      bullets: [
+        "dacă se mențin efectiv motivele inițiale;",
+        "dacă procurorul invocă împrejurări noi;",
+        "ce s-a schimbat de la momentul luării măsurii;",
+        "conduita persoanei pe durata arestului la domiciliu;",
+        "respectarea tuturor obligațiilor;",
+        "evoluția probelor;",
+        "durata deja executată;",
+        "situația familială și profesională;",
+        "dacă o măsură mai puțin severă este suficientă.",
+      ],
+      paragraphsAfterBullets: [
+        "În funcție de situație, apărarea poate urmări:",
+      ],
+      bulletsAfterBullets: [
+        "respingerea propunerii de prelungire;",
+        "revocarea măsurii;",
+        [
+          { text: "înlocuirea cu " },
+          { text: "control judiciar", to: "/servicii/control-judiciar" },
+          { text: ";" },
+        ],
+        "înlocuirea cu control judiciar pe cauțiune.",
+      ],
+    },
+    {
+      h2: "Când poate fi revocat arestul la domiciliu?",
+      paragraphs: [
+        "Revocarea și înlocuirea nu sunt același lucru.",
+      ],
+      subsections: [
+        {
+          h3: "Revocarea",
+          paragraphs: [
+            "Măsura preventivă poate fi revocată atunci când au încetat temeiurile care au determinat-o sau au apărut împrejurări noi din care rezultă nelegalitatea măsurii.",
+            "În practică, trebuie arătat concret ce s-a schimbat de la momentul luării măsurii: probe noi, martori audiați, dosar finalizat, situație personală modificată sau alte împrejurări relevante.",
+          ],
+        },
+        {
+          h3: "Înlocuirea",
+          paragraphs: [
+            "Arestul la domiciliu poate fi înlocuit cu o măsură preventivă mai ușoară dacă sunt îndeplinite condițiile pentru acea măsură și, după evaluarea împrejurărilor concrete și a conduitei procesuale, aceasta este considerată suficientă.",
+            [
+              { text: "În practică, obiectivul poate fi înlocuirea arestului la domiciliu cu " },
+              { text: "control judiciar", to: "/servicii/control-judiciar" },
+              { text: " sau cu control judiciar pe cauțiune." },
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Se scade arestul la domiciliu din pedeapsă?",
+      paragraphs: [
+        "Da.",
+        "Durata arestului la domiciliu se deduce din pedeapsa aplicată, o zi de arest la domiciliu fiind echivalată cu o zi din pedeapsă.",
+      ],
+    },
+    {
+      h2: "Ai nevoie de ajutor pentru arestul la domiciliu?",
+      bullets: [
+        "urmează să se decidă o măsură preventivă;",
+        "ești deja în arest la domiciliu;",
+        "vrei să contești măsura;",
+        "ai nevoie să mergi la muncă sau la medic;",
+        "vrei modificarea condițiilor;",
+        "urmează prelungirea;",
+        "vrei revocarea sau înlocuirea cu control judiciar;",
+        "ai încălcat sau există riscul să fi încălcat măsura.",
+      ],
+      paragraphsAfterBullets: [
+        "Spune-mi ce s-a întâmplat și verificăm ce opțiuni procedurale există.",
+      ],
+      cta: "☎ Sună acum",
     },
   ],
+  reviewAfterSection: 3,
   faq: [
     {
+      q: "Pot merge la serviciu dacă sunt în arest la domiciliu?",
+      a: "Nu automat. Poate fi solicitată, prin cerere scrisă și motivată, permisiunea de a părăsi imobilul pentru prezentarea la locul de muncă, pentru o perioadă determinată. Cererea trebuie aprobată de organul judiciar competent.",
+    },
+    {
+      q: "Pot merge la medic?",
+      a: "Pentru consultații sau tratamente programate este recomandată solicitarea prealabilă a permisiunii, dacă deplasarea nu este deja permisă. Pentru situații urgente și motive întemeiate există regula specială prevăzută de art. 221 alin. (7) CPP, cu obligația informării imediate a autorităților competente.",
+    },
+    {
+      q: "Pot ieși la cumpărături?",
+      a: "Nu există un drept general de a părăsi domiciliul pentru cumpărături. Legea permite solicitarea unei autorizări inclusiv pentru procurarea mijloacelor esențiale de existență, dacă sunt îndeplinite condițiile și organul judiciar aprobă cererea.",
+    },
+    {
+      q: "Pot primi persoane în domiciliu?",
+      a: "Trebuie respectate interdicțiile privind comunicarea cu persoanele prevăzute în lege și în încheierea prin care a fost dispusă măsura. Pentru a stabili dacă poți primi o anumită persoană trebuie verificat conținutul exact al obligațiilor tale.",
+    },
+    {
+      q: "Poliția poate intra în locuință pentru verificare?",
+      a: "Da. Pentru verificarea respectării arestului la domiciliu și a obligațiilor impuse, Codul permite organului de poliție să pătrundă în imobil fără consimțământul persoanei aflate sub măsură sau al celor care locuiesc împreună cu aceasta.",
+    },
+    {
+      q: "Este obligatorie brățara electronică?",
+      a: "Nu în toate cazurile. Organul judiciar poate dispune purtarea permanentă a unui sistem electronic de supraveghere.",
+    },
+    {
+      q: "Ce se întâmplă dacă ies din casă fără permisiune?",
+      a: "Situația poate avea consecințe serioase. Încălcarea cu rea-credință poate conduce la înlocuirea arestului la domiciliu cu arestarea preventivă, iar părăsirea neautorizată poate ridica și probleme în raport cu infracțiunea de evadare prevăzută de Codul penal.",
+    },
+    {
+      q: "Pot contesta arestul la domiciliu?",
+      a: "Da. Pentru încheierile privind măsurile preventive, termenul contestației este, în situațiile reglementate de art. 204-206 CPP, de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
+    },
+    {
+      q: "Poate fi înlocuit arestul la domiciliu cu control judiciar?",
+      a: "Da, dacă sunt îndeplinite condițiile prevăzute de lege și organul judiciar apreciază că măsura mai ușoară este suficientă în raport cu situația concretă.",
+    },
+    {
       q: "Cât poate dura arestul la domiciliu?",
-      a: "În cursul urmăririi penale poate fi luat pentru cel mult 30 de zile, cu posibilitatea prelungirii în condițiile legii, iar durata maximă în această etapă este de 180 de zile.",
+      a: "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea unor prelungiri de cel mult 30 de zile fiecare, iar durata maximă în această fază este de 180 de zile. Regimul din camera preliminară și din cursul judecății este diferit.",
     },
     {
-      q: "Cine poate dispune arestul la domiciliu?",
-      a: "Măsura este în competența judecătorului sau a instanței, în funcție de etapa procesuală și de procedura aplicabilă.",
-    },
-    {
-      q: "Pot ieși din imobil pentru muncă sau tratament medical?",
-      a: "În situațiile și condițiile prevăzute de lege poate fi solicitată permisiunea de a părăsi imobilul pentru o perioadă determinată și într-un scop justificat. Nu există o aprobare automată, iar cererea trebuie argumentată.",
-    },
-    {
-      q: "Se poate înlocui arestul la domiciliu cu controlul judiciar?",
-      a: "Da, atunci când sunt îndeplinite condițiile prevăzute de art. 242 CPP privind înlocuirea măsurii cu una mai ușoară.",
-    },
-    {
-      q: "Cum contest arestul la domiciliu?",
-      a: "Prin contestație împotriva încheierii, în condițiile art. 204-206 CPP. Termenul este de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
+      q: "Poate familia să contacteze avocatul?",
+      a: "Da. Dacă o persoană apropiată este în arest la domiciliu sau urmează un termen privind măsura, familia poate contacta avocatul și poate transmite informațiile și documentele disponibile.",
     },
   ],
   resources: [
-    { text: "Art. 218-222 CPP - arestul la domiciliu.", href: CPP, linkLabel: "Legislație" },
-    { text: "Art. 204-206 CPP - căile de atac privind măsurile preventive.", href: CPP, linkLabel: "Legislație" },
-    { text: "Art. 242 CPP - revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 202 CPP - scopul și condițiile generale ale măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 204-206 CPP - contestația împotriva încheierilor privind măsurile preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 218 CPP - condițiile generale ale arestului la domiciliu.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 219-220 CPP - luarea măsurii.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 221 CPP - conținutul și obligațiile arestului la domiciliu.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 222 CPP - durata și prelungirea arestului la domiciliu.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 241-242 CPP - încetarea de drept, revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 285 Cod penal - evadarea.", href: CP, linkLabel: "Legislație" },
   ],
-  contactText: CONTACT,
+  contactText: "Bogdan Lamatic - avocat drept penal, București. Telefon: 031 632 01 83",
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite încheierea pe WhatsApp",
   parent: PARENT_MP,
 };
