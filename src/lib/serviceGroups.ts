@@ -217,10 +217,8 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Accidente de muncă și răspundere penală SSM",
         description: "Consultanță și reprezentare în cauze de accidente de muncă, răspundere penală SSM și incidente mortale.",
         subServices: [
-          { label: "Accident de muncă" },
           { label: "Răspundere penală angajator" },
-          { label: "Răspundere penală SSM" },
-          { label: "Accident mortal de muncă" },
+          { label: "Răspundere penală responsabil SSM" },
         ],
         to: "/servicii/raspundere-penala-incidente-locul-de-munca",
         cta: "Vezi pagina privind accidentele de muncă",
