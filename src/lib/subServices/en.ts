@@ -4260,6 +4260,10 @@ export const drugPossessionPersonalUseEn: SubServicePageData = {
   contactWhatsAppLabel: "Send me documents on WhatsApp",
   reviewAfterSection: 2,
   reviewAuthor: "Lidia Caescu",
+  reviewText:
+    "I was looking for a lawyer in Bucharest and fortunately I met Mr. Bogdan Lamatic. From the very first moment he won my trust through his professionalism, calmness and the empathy with which he listened to me. A true human being in the full sense of the word. I wholeheartedly recommend him to anyone who needs a criminal law specialist and real support in a difficult moment.",
+  reviewMeta: "Local Guide · 24 reviews",
+  reviewTimestamp: "4 months ago",
   parent: PARENT_DO_EN,
 };
 
