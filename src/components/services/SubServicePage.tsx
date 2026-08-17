@@ -11,6 +11,8 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
+import GoogleReviewCard from "@/components/services/GoogleReviewCard";
+
 
 export interface SubServiceSubsection {
   h3: string;
@@ -34,14 +36,17 @@ export interface SubServiceSubsection {
 
 export interface SubServiceSection {
   h2: string;
+  /** Optional DOM id, used as in-page anchor target. */
+  id?: string;
   paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
   /** When false, hides the phone icon inside the CTA button. Defaults to true. */
   ctaIcon?: boolean;
-  /** Optional list of inline service links (text-only when `to` is missing). */
+  /** Optional list of inline service links (text-only when `to` is missing). Use "#id" for in-page anchors. */
   links?: { label: string; to?: string }[];
+
   /** Optional small highlighted callout inside the section. */
   callout?: string;
   /** Optional extra className for the callout paragraph. */
@@ -105,8 +110,14 @@ export interface SubServicePageData {
   contactText: string;
   /** Replaces the email button in the final contact card with a WhatsApp CTA. */
   contactWhatsApp?: boolean;
+  /** Custom label for the WhatsApp CTA in the contact card. */
+  contactWhatsAppLabel?: string;
+
+  /** Inserts the Google review card after the section at this index. */
+  reviewAfterSection?: number;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
+
 }
 
 const SITE = "https://avocatpenalbucuresti.ro";
@@ -130,8 +141,9 @@ function collectContextualPaths(data: SubServicePageData): string[] {
     fromParagraphs(section.paragraphs);
     fromParagraphs(section.paragraphsAfterBullets);
     section.links?.forEach((link) => {
-      if (link.to) paths.add(link.to);
+      if (link.to && !link.to.startsWith("#")) paths.add(link.to);
     });
+
     section.subsections?.forEach((sub) => fromParagraphs(sub.paragraphs));
   });
 
@@ -349,7 +361,15 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         <ul className="space-y-2">
           {links.map((link) => (
             <li key={link.label}>
-              {link.to ? (
+              {link.to?.startsWith("#") ? (
+                <a
+                  href={link.to}
+                  className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
+                >
+                  <span>{link.label}</span>
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              ) : link.to ? (
                 <Link
                   to={link.to}
                   className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
@@ -358,6 +378,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               ) : (
+
                 <span className="inline-flex items-start gap-2 text-base text-foreground">
                   <span>{link.label}</span>
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60" />
@@ -426,11 +447,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
 
       {data.sections.map((section, sectionIndex) => (
-        <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent ${section.cardClassName ?? ""}`} key={section.h2}>
+        <div key={section.h2}>
+        <Card id={section.id} className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent scroll-mt-24 ${section.cardClassName ?? ""}`}>
 
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>
+
           <CardContent className="text-base leading-relaxed space-y-3">
             <SectionContent
               paragraphs={section.paragraphs}
@@ -477,7 +500,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             )}
           </CardContent>
         </Card>
+        {data.reviewAfterSection === sectionIndex && <GoogleReviewCard lang={data.lang} />}
+        </div>
       ))}
+
 
       <ServiceFaq
         title={isEn ? "Frequently asked questions" : "Întrebări frecvente"}
@@ -503,7 +529,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               <WhatsAppDocsCta
                 lang={data.lang}
                 variant="green"
-                label={isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele"}
+                label={data.contactWhatsAppLabel ?? (isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele")}
               />
             ) : (
               <Button asChild variant="outline">

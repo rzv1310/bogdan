@@ -1138,6 +1138,18 @@ export const controlJudiciarRo: SubServicePageData = {
   ],
   sections: [
     {
+      h2: "Ce vrei să rezolvi?",
+      paragraphs: [
+        "Alege situația care te interesează și mergi direct la explicații:",
+      ],
+      links: [
+        { label: "Vreau să pot pleca din țară sau din localitate", to: "#deplasare" },
+        { label: "Vreau modificarea unei obligații", to: "#modificare-revocare" },
+        { label: "Vreau revocarea controlului judiciar", to: "#modificare-revocare" },
+        { label: "Am primit ordonanța și vreau să o contest", to: "#contestare" },
+      ],
+    },
+    {
       h2: "Ce obligații pot fi impuse prin control judiciar",
       paragraphs: [
         "Conținutul controlului judiciar este reglementat de art. 215 CPP. Obligațiile pot privi, în funcție de situație:",
@@ -1169,60 +1181,170 @@ export const controlJudiciarRo: SubServicePageData = {
       cta: "Analizează obligațiile din controlul judiciar",
     },
     {
+      h2: "Ce trebuie să-mi trimiți",
+      paragraphs: [
+        "Pentru o evaluare rapidă a situației tale, trimite-mi:",
+      ],
+      bullets: [
+        "ordonanța sau încheierea prin care s-a dispus măsura;",
+        "lista obligațiilor stabilite;",
+        "actul prin care măsura a fost prelungită, dacă există;",
+        "problema concretă pe care vrei să o rezolvi.",
+      ],
+      calloutAfterBullets: "Nu ai toate actele? Trimite documentul pe care îl ai.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "WhatsApp - Trimite ordonanța",
+    },
+    {
+      h2: "Pot pleca din țară sau din localitate dacă sunt sub control judiciar?",
+      id: "deplasare",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Răspunsul depinde de obligația concretă stabilită în cazul tău. Controlul judiciar nu interzice automat orice deplasare: trebuie citită exact obligația din ordonanța procurorului sau din încheierea judecătorului, pentru a vedea dacă este vorba despre o limită teritorială, despre o interdicție de a părăsi țara ori despre o obligație de informare.",
+        "Verific apoi cine a dispus măsura și care este organul judiciar competent să analizeze cererea, pentru că de acest lucru depinde procedura aplicabilă și documentele care trebuie atașate.",
+        [
+          { text: "Când situația o permite, se poate solicita modificarea obligației ori încuviințarea unei deplasări, cu justificarea motivului (activitate profesională, tratament medical, situație familială). Regulile generale privind " },
+          { text: "regimul măsurilor preventive", to: "/servicii/masuri-preventive" },
+          { text: " se aplică și aici." },
+        ],
+      ],
+      calloutAfterBullets:
+        "Ai nevoie să pleci din țară sau din localitate? Trimite-mi ordonanța și verific obligația exactă.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actul pe WhatsApp",
+    },
+    {
+      h2: "Cum poți obține modificarea sau revocarea („ridicarea”) controlului judiciar?",
+      id: "modificare-revocare",
+      paragraphs: [
+        "În limbajul curent se vorbește despre „ridicarea” controlului judiciar. În procedura penală există însă două cereri diferite, cu condiții diferite:",
+      ],
+      bullets: [
+        { bold: "Modificarea obligațiilor:", rest: "măsura rămâne în vigoare, dar anumite obligații pot fi schimbate sau eliminate atunci când nu mai sunt necesare ori nu mai sunt proporționale." },
+        { bold: "Revocarea măsurii:", rest: "se solicită încetarea controlului judiciar, dacă sunt îndeplinite condițiile legale, de exemplu când temeiurile care au justificat măsura nu mai există." },
+      ],
+      paragraphsAfterBullets: [
+        "Revocarea și înlocuirea măsurilor preventive sunt reglementate distinct de art. 242 CPP. Cererea trebuie susținută cu împrejurări concrete apărute după luarea măsurii: schimbarea situației profesionale sau familiale, stadiul dosarului, respectarea obligațiilor pe o perioadă îndelungată, probleme medicale documentate.",
+      ],
+      cta: "Vreau să verific dacă am temei pentru revocare",
+    },
+    {
+      h2: "Contestarea măsurii și termenele",
+      id: "contestare",
+      paragraphs: [
+        "Primul lucru care trebuie stabilit este cine a dispus controlul judiciar, pentru că de acest lucru depinde calea de atac și termenul aplicabil.",
+      ],
+      subsections: [
+        {
+          h3: "Dacă măsura a fost dispusă de procuror",
+          paragraphs: [
+            "Împotriva ordonanței procurorului există procedura specifică de plângere prevăzută de art. 213 CPP, cu un termen scurt, de 48 de ore de la comunicarea ordonanței. Plângerea se soluționează de judecătorul de drepturi și libertăți, care poate menține sau revoca măsura, în condițiile legii.",
+          ],
+        },
+        {
+          h3: "Dacă măsura rezultă dintr-o încheiere a judecătorului sau a instanței",
+          paragraphs: [
+            [
+              { text: "Aici calea de atac depinde de etapa procesuală, iar regulile generale privind contestația în materia măsurilor preventive sunt cele din art. 204-206 CPP, cu termenul de 48 de ore. Aceleași reguli de termen se aplică și atunci când se discută " },
+              { text: "propunerea de arestare preventivă", to: "/servicii/arest-preventiv" },
+              { text: " sau o măsură mai severă." },
+            ],
+          ],
+        },
+      ],
+      calloutAfterSubsections:
+        "Spune-mi data exactă la care ți-a fost comunicat actul: termenul de 48 de ore curge repede.",
+      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce se întâmplă dacă încalci obligațiile controlului judiciar?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Încălcarea unei obligații nu trebuie tratată superficial. Dacă obligațiile sunt încălcate cu rea-credință, în condițiile legii controlul judiciar poate fi înlocuit cu o măsură mai severă, inclusiv " },
+          { text: "arest la domiciliu", to: "/servicii/arest-la-domiciliu" },
+          { text: " sau arestare preventivă." },
+        ],
+        "Contează foarte mult contextul: o neprezentare cauzată de o problemă medicală sau de o comunicare greșită a datei nu este același lucru cu o sustragere deliberată de la supraveghere. De aceea explicațiile trebuie pregătite cu documente, nu improvizate.",
+        "Dacă ai încălcat deja o obligație sau ai fost chemat pentru explicații, discută cu avocatul înainte de următoarea declarație.",
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Cât durează controlul judiciar și cum se prelungește?",
+      paragraphs: [
+        "Regimul duratei este prevăzut de art. 215¹ CPP și diferă în funcție de etapa procesuală.",
+        "În cursul urmăririi penale, controlul judiciar se dispune pentru o perioadă determinată și poate fi prelungit de procuror, prin ordonanță, pentru perioade succesive, fiecare de cel mult 60 de zile, atunci când se constată că este în continuare necesar. Ordonanța de prelungire se comunică inculpatului și poate fi contestată în condițiile legii.",
+        "În procedura de cameră preliminară și în cursul judecății, măsura nu se „prelungește” în același mod: judecătorul sau instanța verifică periodic dacă subzistă temeiurile care au justificat luarea măsurii și dispune, după caz, menținerea sau revocarea acesteia.",
+        [
+          { text: "Legea stabilește și limite pentru durata totală, calculate distinct pe faze procesuale. Tocmai de aceea fiecare prelungire sau verificare este un moment în care se poate cere " },
+          { text: "o măsură mai puțin restrictivă", to: "/servicii/masuri-preventive" },
+          { text: " ori chiar revocarea, dacă situația s-a schimbat." },
+        ],
+      ],
+      callout: "Ai primit un act de prelungire? Termenul de contestare este scurt.",
+      calloutCta: "Sună oricum.",
+    },
+    {
       h2: "Controlul judiciar pe cauțiune",
       paragraphs: [
         "Controlul judiciar pe cauțiune este reglementat distinct de Codul de procedură penală și presupune, pe lângă obligațiile specifice controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
         [
-          { text: "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii " },
-          { text: "unei măsuri neprivative de libertate", to: "/servicii/masuri-preventive" },
-          { text: " în locul uneia mai severe, atunci când cadrul legal și situația concretă permit această argumentație." },
+          { text: "Într-o asemenea situație analizez, după caz: condițiile măsurii, oportunitatea acesteia în raport cu alte măsuri, obligațiile impuse, cauțiunea, situația materială relevantă și posibilitatea folosirii unei soluții mai puțin severe atunci când cadrul legal permite această argumentație, inclusiv în cazurile care pornesc de la " },
+          { text: "măsura reținerii de 24 de ore", to: "/servicii/retinere-24-ore" },
+          { text: "." },
         ],
       ],
     },
-    {
-      h2: "Contestarea măsurii și termenele",
-      paragraphs: [
-        "Împotriva ordonanței procurorului prin care se dispune controlul judiciar există o cale specifică de atac, reglementată de art. 213 CPP. Pentru încheierile privind măsurile preventive se aplică art. 204-206 CPP, cu termenul de 48 de ore.",
-        "Trimite-mi ordonanța sau încheierea, obligațiile stabilite, data la care măsura a fost luată sau prelungită și problema concretă pe care una dintre obligații ți-o creează.",
-      ],
-      links: [
-        { label: "Arest la domiciliu - contestație, permisiuni și înlocuire", to: "/servicii/arest-la-domiciliu" },
-        { label: "Arest preventiv - propunere, contestație și înlocuire", to: "/servicii/arest-preventiv" },
-        { label: "Reținere 24 ore - ce trebuie făcut imediat", to: "/servicii/retinere-24-ore" },
-      ],
-    },
   ],
+  reviewAfterSection: 3,
   faq: [
     {
-      q: "Ce obligații pot fi impuse prin control judiciar?",
-      a: "Obligațiile prevăzute de art. 215 CPP, care pot include prezentarea la organul judiciar sau la poliție, comunicarea schimbării locuinței, restricții teritoriale, restricții privind contactul cu anumite persoane și, în condițiile legii, restricții privind anumite activități.",
+      q: "Pot pleca din țară dacă sunt sub control judiciar?",
+      a: "Depinde de obligația concretă din ordonanță sau încheiere. Dacă a fost stabilită interdicția de a părăsi teritoriul ori o limită teritorială, deplasarea presupune o cerere adresată organului judiciar competent, cu justificarea motivului.",
     },
     {
-      q: "Controlul judiciar înseamnă privare de libertate?",
-      a: "Nu. Persoana rămâne în libertate, dar trebuie să respecte obligațiile stabilite de organul judiciar competent.",
+      q: "Pot merge la serviciu în timpul controlului judiciar?",
+      a: "De regulă da, controlul judiciar nu presupune privarea de libertate. Trebuie însă verificat dacă a fost impusă o obligație privind exercitarea anumitor activități sau o limită teritorială care afectează deplasarea la locul de muncă.",
     },
     {
-      q: "Cum contest controlul judiciar dispus de procuror?",
-      a: "Prin calea de atac specifică reglementată de art. 213 CPP. Termenele sunt scurte, așa că este util să îmi spui exact când ți-a fost comunicată ordonanța.",
+      q: "Ce se întâmplă dacă nu mă prezint la Poliție?",
+      a: "Neprezentarea la organul de poliție desemnat cu supravegherea este o încălcare a obligațiilor. Contează motivul și dovezile: o problemă medicală documentată se analizează diferit de o sustragere deliberată. Sună-mă înainte de a da explicații.",
     },
     {
-      q: "Pot fi modificate obligațiile pe parcursul dosarului?",
-      a: "Da, atunci când există temei legal. Se poate solicita modificarea obligațiilor, revocarea sau înlocuirea măsurii, în funcție de evoluția cauzei și de împrejurările noi apărute.",
+      q: "Pot vorbi cu martorii sau cu ceilalți inculpați?",
+      a: "Nu, dacă în cazul tău a fost impusă obligația de a nu comunica cu anumite persoane. Această interdicție este una dintre cele mai des încălcate involuntar, inclusiv prin mesaje sau prin intermediari, iar consecințele pot fi serioase.",
     },
     {
-      q: "Ce este controlul judiciar pe cauțiune?",
-      a: "Este o măsură preventivă distinctă, care presupune, pe lângă obligațiile controlului judiciar, constituirea unei cauțiuni în condițiile stabilite de lege.",
+      q: "Cât timp poate dura controlul judiciar?",
+      a: "Măsura se dispune pe o perioadă determinată și poate fi prelungită în cursul urmăririi penale, cu perioade de cel mult 60 de zile fiecare, iar legea prevede limite pentru durata totală, diferite în funcție de faza procesuală.",
+    },
+    {
+      q: "Se poate ridica controlul judiciar înainte de terminarea dosarului?",
+      a: "Da. Se poate cere revocarea măsurii dacă nu mai există temeiurile care au justificat-o, ori modificarea obligațiilor, potrivit art. 242 CPP. Cererea trebuie susținută cu împrejurări noi și documente.",
+    },
+    {
+      q: "Ce fac dacă am încălcat accidental una dintre obligații?",
+      a: "Strânge toate dovezile care explică situația și nu da declarații înainte de a discuta cu un avocat. O încălcare fără rea-credință poate fi explicată, dar modul în care este prezentată contează decisiv.",
+    },
+    {
+      q: "Poate controlul judiciar fi transformat în arest la domiciliu?",
+      a: "Da, în condițiile legii, măsura poate fi înlocuită cu una mai severă, inclusiv arest la domiciliu sau arestare preventivă, atunci când obligațiile sunt încălcate cu rea-credință sau apar temeiuri noi.",
     },
   ],
   resources: [
-    { text: "Art. 211-215¹ CPP - controlul judiciar.", href: CPP, linkLabel: "Legislație" },
+    { text: "Art. 211-215¹ CPP - controlul judiciar și durata măsurii.", href: CPP, linkLabel: "Legislație" },
     { text: "Art. 216-217 CPP - controlul judiciar pe cauțiune.", href: CPP, linkLabel: "Legislație" },
     { text: "Art. 213 CPP - calea de atac împotriva controlului judiciar dispus de procuror.", href: CPP, linkLabel: "Legislație" },
     { text: "Art. 242 CPP - revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "WhatsApp - Trimite ordonanța / încheierea",
+
   parent: PARENT_MP,
 };
+
 
 export const arestLaDomiciliuRo: SubServicePageData = {
   lang: "ro",
