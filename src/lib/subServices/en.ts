@@ -5622,3 +5622,396 @@ export const confiscationEn: SubServicePageData = {
   contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_ML_EN,
 };
+
+const PARENT_RT_EN = {
+  to: "/en/services/road-traffic-offenses",
+  label: "road traffic offences",
+  breadcrumbLabel: "Road traffic offences",
+};
+
+export const drunkDrivingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/drunk-driving",
+  altPath: "/servicii/alcool-la-volan",
+  roPath: "/servicii/alcool-la-volan",
+  title: "Drunk Driving Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Drunk driving lawyer in Bucharest",
+  description:
+    "Criminal case for drunk driving in Romania? I review the breath test, the blood sampling procedure and the charge under art. 336 of the Criminal Code.",
+  keywords: "drunk driving lawyer bucharest, dui lawyer romania, art 336 criminal code, blood alcohol criminal case",
+  breadcrumbLabel: "Drunk driving",
+  serviceName: "Drunk driving lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you stopped in traffic, tested with a breathalyser and had your licence withheld?",
+    "The first hours matter: how the testing was carried out, when the blood samples were taken and what you declared at the scene.",
+    "I assess whether the recorded blood alcohol level withstands a technical review and what solutions exist in your case.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for driving under the influence of alcohol, from the moment the licence is withheld until the final decision in the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "The breath test showed a high value",
+          paragraphs: [
+            "The breath test value is only an indication. The criminal charge is based on the blood alcohol concentration expressed in grams of pure alcohol per litre of blood.",
+            "I check whether you were offered blood sampling and whether the device was metrologically verified.",
+          ],
+        },
+        {
+          h3: "Blood samples were taken and you await the toxicology report",
+          paragraphs: [
+            "Until the laboratory result arrives, no final charge can be discussed. The interval between the traffic stop and the sampling is essential.",
+            "I prepare in advance the arguments regarding the alcohol elimination curve and possible sampling or transport errors.",
+          ],
+        },
+        {
+          h3: "You were also involved in an accident",
+          paragraphs: [
+            [
+              { text: "When alcohol is combined with a road event, the defence is built together with the one in a case of " },
+              { text: "road accident with victims", to: "/en/services/road-accident-with-victims" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "You were summoned for questioning",
+          paragraphs: [
+            [
+              { text: "Before giving a statement you should know exactly what is alleged. See how I prepare " },
+              { text: "police or prosecutor questioning", to: "/en/services/police-prosecutor-questioning" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a drunk driving case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the time of the traffic stop and the exact time of the breath test;",
+        "the metrological verification certificate of the device used;",
+        "whether you were informed of your right to request blood sampling;",
+        "the interval between the stop and the first blood sample;",
+        "compliance with the two successive samplings and the interval between them;",
+        "the chain of custody of the samples;",
+        "the way the blood alcohol level was calculated;",
+        "any alcohol consumed after the stop, where this can be proven;",
+        "the statements given at the scene and how they were recorded;",
+        "the record of withholding the driving licence;",
+        "medical conditions or treatments that may influence the result;",
+        "the option of a forensic expert report recalculating the blood alcohol level.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the record of withholding the licence and the temporary permit;",
+        "the breath test slip, if you received one;",
+        "the toxicology report, if already issued;",
+        "the ordinance starting the criminal investigation or the summons;",
+        "the statement given to the police, if you have a copy;",
+        "medical documents or prescriptions for any treatment;",
+        "the details of witnesses who were with you before the stop.",
+      ],
+      paragraphsAfterBullets: [
+        "If you have no written documents yet, tell me the time of the stop, the breath test value and the time of the blood sampling.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "When drunk driving is a criminal offence",
+      paragraphs: [
+        "Under art. 336 (1) of the Criminal Code, driving a vehicle on public roads with a blood alcohol concentration above 0.80 g/l of pure alcohol is a criminal offence.",
+        "Below that threshold the act generally remains an administrative offence under the Road Code, with consequences regarding fines and licence suspension.",
+        "The threshold refers to blood alcohol, not to the breath test value. This is why the laboratory result is the central piece of evidence.",
+      ],
+    },
+    {
+      h2: "Breath test, breathalyser and blood samples",
+      paragraphs: [
+        "Preliminary roadside testing serves as an indication only. The blood alcohol concentration is established through biological samples taken in authorised medical units.",
+        "Any irregularity concerning the moment of sampling, the number of samples, their preservation or transport may affect the evidentiary value of the toxicology report.",
+      ],
+    },
+    {
+      h2: "Blood alcohol at the time of driving and retrograde calculation",
+      paragraphs: [
+        "Between the traffic stop and the sampling, the body continues to absorb or eliminate alcohol.",
+        "Depending on the phase, the blood alcohol level at the time of driving may be lower than the laboratory result. This difference is established through a forensic expert report.",
+        "The request must be reasoned and supported by concrete data on quantity consumed, timing, food intake and body weight.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What happens to your driving licence",
+      paragraphs: [
+        "In a criminal case for drunk driving the licence is withheld and the right to drive is suspended for the duration of the proceedings, under the law.",
+        "Returning the licence depends on the outcome of the case. A dismissal or acquittal opens the way to recovering the right to drive, while a conviction brings additional restrictions.",
+      ],
+    },
+    {
+      h2: "Possible outcomes in the case",
+      bullets: [
+        "dismissal, where the blood alcohol level at the time of driving was below the criminal threshold;",
+        "acquittal, where the evidence does not support the charge;",
+        "waiver of criminal prosecution, under the conditions provided by law;",
+        "postponement of the application of the penalty, with a supervision term;",
+        "suspended sentence under supervision;",
+        "a plea agreement, where it brings a better result than an ordinary trial.",
+      ],
+    },
+    {
+      h2: "Common mistakes after a traffic stop",
+      paragraphs: [
+        [
+          { text: "Refusing biological sampling is a separate offence, explained on the page about " },
+          { text: "refusal to provide biological samples", to: "/en/services/refusal-to-provide-biological-samples" },
+          { text: "." },
+        ],
+      ],
+      bullets: [
+        "refusing blood sampling, which is a distinct offence;",
+        "drinking alcohol after the stop without being able to prove it properly;",
+        "giving detailed statements without a lawyer;",
+        "losing the documents received from the police;",
+        "ignoring the summons for questioning;",
+        "driving while the right to drive is suspended.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "From what level does drunk driving become a criminal offence?",
+      a: "Above 0.80 g/l of pure alcohol in the blood, under art. 336 (1) of the Criminal Code. Below that threshold the act is generally an administrative offence.",
+    },
+    {
+      q: "Is the roadside breath test enough for a conviction?",
+      a: "No. The breath value is only an indication. The blood alcohol concentration is established through samples taken in an authorised medical unit.",
+    },
+    {
+      q: "Can I challenge the toxicology report?",
+      a: "Yes. You can invoke irregularities in sampling, preservation or transport and request a forensic expert report on the blood alcohol level at the time of driving.",
+    },
+    {
+      q: "What is retrograde calculation of blood alcohol?",
+      a: "It is an expert assessment estimating the blood alcohol level at the time of driving, based on the laboratory result and on data about the consumption and the person.",
+    },
+    {
+      q: "Will I lose my licence permanently?",
+      a: "The licence is withheld during the proceedings. Any longer loss of the right to drive depends on the final decision in the criminal case.",
+    },
+    {
+      q: "Can I avoid a custodial sentence?",
+      a: "Depending on the alcohol level, criminal record and circumstances, a waiver of prosecution, postponement of the penalty or a suspended sentence are possible.",
+    },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 336 on driving under the influence.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence and expert reports.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const drugDrivingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/drug-driving",
+  altPath: "/servicii/droguri-la-volan",
+  roPath: "/servicii/droguri-la-volan",
+  title: "Drug Driving Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Drug driving lawyer in Bucharest",
+  description:
+    "Tested positive with a roadside drug test in Romania? I review the toxicology report, the state of influence and the charge under art. 336 (2) Criminal Code.",
+  keywords: "drug driving lawyer bucharest, driving under influence of drugs romania, positive drug test, art 336 criminal code",
+  breadcrumbLabel: "Drug driving",
+  serviceName: "Drug driving lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you tested with a roadside drug test and the result was positive?",
+    "A rapid test alone does not establish guilt. Toxicological confirmation and proof of the state of influence are required.",
+    "I review the testing procedure, the sampling and how the result was interpreted.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for driving under the influence of psychoactive substances, including where the result comes from prescribed medication.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "The roadside drug test was positive",
+          paragraphs: [
+            "The rapid saliva test indicates the presence of a substance, not the quantity and not the state of influence. The result must be confirmed through biological samples.",
+          ],
+        },
+        {
+          h3: "You were taken to hospital for blood samples",
+          paragraphs: [
+            "The laboratory analysis shows the substance and its metabolites. The presence of metabolites may indicate earlier use, not necessarily influence while driving.",
+          ],
+        },
+        {
+          h3: "You were taking prescribed medication",
+          paragraphs: [
+            "Some medicines contain psychoactive substances that can produce a positive result. Prescriptions and medical records become important evidence.",
+          ],
+        },
+        {
+          h3: "You are also investigated for possession",
+          paragraphs: [
+            [
+              { text: "If substances were found on you, the case may also include a charge of " },
+              { text: "possession for personal use", to: "/en/services/drug-possession-personal-use" },
+              { text: ", with a distinct defence." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a drug driving case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "how the preliminary roadside testing was carried out;",
+        "how the rapid test result was recorded;",
+        "the interval between the stop and the biological sampling;",
+        "the toxicology report and the substances identified;",
+        "the difference between the active substance and inactive metabolites;",
+        "any clinical signs of influence noted by the physician;",
+        "the clinical examination sheet drawn up at the medical unit;",
+        "the chain of custody of the samples;",
+        "the medication taken and the related prescriptions;",
+        "the statements given at the scene;",
+        "any related road offences in the same case;",
+        "whether a toxicological expert report is appropriate.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the record of withholding the licence;",
+        "the document showing the rapid test result;",
+        "the clinical examination sheet from the medical unit;",
+        "the toxicology report;",
+        "prescriptions and medical documents for your treatment;",
+        "the summons or ordinance received;",
+        "the statement given, if you have a copy.",
+      ],
+      paragraphsAfterBullets: [
+        "If you are still waiting for the laboratory result, tell me which substance the rapid test indicated and when the sampling took place.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What the law provides for driving under the influence of drugs",
+      paragraphs: [
+        "Art. 336 (2) of the Criminal Code punishes driving a vehicle on public roads by a person under the influence of psychoactive substances.",
+        "Unlike alcohol, the law sets no numerical threshold. The prosecution must prove the state of influence at the time of driving, not merely the presence of the substance in the body.",
+      ],
+    },
+    {
+      h2: "Rapid test, toxicological confirmation and metabolites",
+      paragraphs: [
+        "The saliva test is a preliminary test with an indicative role. Confirmation is made through biological samples taken in an authorised medical unit.",
+        "The analysis may identify the active substance or only metabolites, meaning traces of earlier use. Metabolites alone do not automatically prove influence while driving.",
+        "For this reason the clinical examination and the concrete signs recorded by the physician are particularly important.",
+      ],
+    },
+    {
+      h2: "Medication containing psychoactive substances",
+      paragraphs: [
+        "Certain treatments for pain, anxiety or sleep disorders contain substances that may appear in the analysis.",
+        "In such situations it matters whether the treatment was prescribed, whether the recommended dose was respected and whether the patient was informed about the effects on driving.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Your licence and the course of the case",
+      paragraphs: [
+        "The licence is withheld and the right to drive is suspended for the duration of the proceedings, under the law.",
+        [
+          { text: "If you have been summoned to give a statement, preparing the " },
+          { text: "police or prosecutor questioning", to: "/en/services/police-prosecutor-questioning" },
+          { text: " is the first useful step." },
+        ],
+      ],
+    },
+    {
+      h2: "Common mistakes in drug driving cases",
+      bullets: [
+        "admitting recent use before knowing the laboratory result;",
+        "refusing biological sampling, which triggers a separate charge;",
+        "not presenting medical documents for prescribed treatment;",
+        "accepting uncritically that any positive result means guilt;",
+        "not requesting a toxicological expert report;",
+        "driving while the right to drive is suspended.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Does a positive drug test automatically mean a conviction?",
+      a: "No. The rapid test is preliminary. The prosecution must prove, through analysis and clinical examination, the state of influence at the time of driving.",
+    },
+    {
+      q: "What does state of influence mean?",
+      a: "It is the state in which the ability to drive is affected by the substance used. It is established through toxicology combined with the clinical examination and the concrete circumstances.",
+    },
+    {
+      q: "I used a substance days earlier. Am I still criminally liable?",
+      a: "The presence of metabolites may indicate earlier use. Without proof of influence at the time of driving, this can be challenged through expert evidence.",
+    },
+    {
+      q: "Can prescribed medication put me in a criminal case?",
+      a: "It is possible if the medicine contains psychoactive substances. The prescription, medical advice and dosage are essential for the defence.",
+    },
+    {
+      q: "What happens if I refuse testing?",
+      a: "Refusing biological sampling is a distinct offence under art. 337 of the Criminal Code, regardless of the result the analysis would have shown.",
+    },
+    {
+      q: "Can I obtain a non-custodial outcome?",
+      a: "Yes. Depending on the evidence and circumstances, dismissal, waiver of prosecution, postponement of the penalty or a suspended sentence are possible.",
+    },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 336 on driving under the influence of psychoactive substances.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence and expert reports.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
