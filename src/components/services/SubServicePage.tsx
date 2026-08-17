@@ -355,7 +355,15 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         <ul className="space-y-2">
           {links.map((link) => (
             <li key={link.label}>
-              {link.to ? (
+              {link.to?.startsWith("#") ? (
+                <a
+                  href={link.to}
+                  className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
+                >
+                  <span>{link.label}</span>
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              ) : link.to ? (
                 <Link
                   to={link.to}
                   className="group inline-flex items-start gap-2 text-base text-primary underline underline-offset-2"
@@ -364,6 +372,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               ) : (
+
                 <span className="inline-flex items-start gap-2 text-base text-foreground">
                   <span>{link.label}</span>
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 opacity-60" />
