@@ -17,7 +17,7 @@ export const translations = {
       "masuri-preventive": "Măsuri preventive",
       "infractiuni-contra-persoanei": "Infracțiuni contra persoanei",
       "criminalitate-economica": "Criminalitate economică",
-      "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție și fapte legate de exercitarea funcției publice",
+      "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție",
       "investigatii-privind-activele-cripto": "Investigații privind activele cripto",
       "cauze-penale-privind-droguri": "Cauze penale privind droguri",
       "spalare-de-bani-si-ascundere-de-bunuri": "Dosare de spălare de bani și ascundere de bunuri",
