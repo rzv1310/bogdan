@@ -73,6 +73,8 @@ export interface SubServiceSection {
   ctaWhatsAppLabel?: string;
   /** Optional callout rendered after the subsections block. */
   calloutAfterSubsections?: string;
+  /** Optional inline phone CTA button rendered inside the after-subsections callout. */
+  calloutAfterSubsectionsCta?: string;
   /** Optional main CTA rendered after the subsections block. */
   ctaAfterSubsections?: string;
 }
