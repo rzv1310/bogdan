@@ -7,6 +7,8 @@ import { Phone, ArrowRight, Briefcase } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { roServiceGroups } from "@/lib/serviceGroups";
 import { CTA_CLASS } from "@/lib/cta";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewStars from "@/components/services/GoogleReviewStars";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii";
 const TITLE = "Servicii avocat penal București - av. Bogdan Lamatic";
