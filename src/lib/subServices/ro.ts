@@ -5066,11 +5066,33 @@ export const conflictDeIntereseRo: SubServicePageData = {
       ],
     },
     {
-      h2: "Când fapta nu constituie infracțiune",
+      h2: "Când art. 301 Cod penal nu se aplică",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: [
-        "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege.",
-        "Rămân în afara textului penal situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, foloasele nepatrimoniale, precum și emiterea sau adoptarea actelor normative, exceptată expres de lege.",
+        "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege. În plus, legea prevede expres, în art. 301 alin. (2), situații în care fapta nu se pedepsește.",
+      ],
+      subsections: [
+        {
+          h3: "Emiterea, aprobarea sau adoptarea actelor normative",
+          paragraphs: [
+            "Când actul reproșat este un act normativ, textul penal nu se aplică. Verific natura reală a actului, pentru că în practică actele normative sunt uneori tratate greșit ca acte individuale.",
+          ],
+        },
+        {
+          h3: "Exercitarea unui drept recunoscut de lege",
+          paragraphs: [
+            "Nu există infracțiune atunci când folosul rezultă din exercitarea unui drept pe care legea îl recunoaște, cum sunt drepturile salariale, indemnizațiile sau alte drepturi acordate în temeiul legii.",
+          ],
+        },
+        {
+          h3: "Îndeplinirea unei obligații impuse de lege",
+          paragraphs: [
+            "Când ai fost obligat prin lege să îndeplinești actul, iar marja de apreciere lipsea, fapta nu intră sub incidența textului penal. Aici sunt relevante actele prin care s-a executat o hotărâre sau o obligație legală.",
+          ],
+        },
+      ],
+      paragraphsAfterSubsections: [
+        "Rămân în afara textului penal și situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, precum și foloasele nepatrimoniale.",
       ],
     },
     {
