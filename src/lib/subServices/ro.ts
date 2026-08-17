@@ -1143,11 +1143,13 @@ export const controlJudiciarRo: SubServicePageData = {
         "Alege situația care te interesează și mergi direct la explicații:",
       ],
       links: [
+        { label: "Am încălcat o obligație / am fost chemat pentru explicații", to: "#incalcare" },
         { label: "Vreau să pot pleca din țară sau din localitate", to: "#deplasare" },
         { label: "Vreau modificarea unei obligații", to: "#modificare-revocare" },
-        { label: "Vreau revocarea controlului judiciar", to: "#modificare-revocare" },
+        { label: "Vreau revocarea controlului judiciar", to: "#revocare" },
         { label: "Am primit ordonanța și vreau să o contest", to: "#contestare" },
       ],
+
     },
     {
       h2: "Ce obligații pot fi impuse prin control judiciar",
