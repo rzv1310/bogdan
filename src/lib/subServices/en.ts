@@ -930,6 +930,13 @@ export const taxEvasionEn: SubServicePageData = {
           { text: "rules of the criminal investigation", to: "/en/services/criminal-investigation" },
           { text: " governing the evidence gathered." },
         ],
+        [
+          { text: "Depending on the operations retained, the file may also include a charge of " },
+          { text: "deception or financial fraud", to: "/en/services/fraud-and-deception" },
+          { text: ", or, where public money is involved, of " },
+          { text: "misuse of European funds", to: "/en/services/eu-funds-fraud" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -1044,6 +1051,11 @@ export const fraudAndDeceptionEn: SubServicePageData = {
           { text: "Large-value files are often built together with other charges, which is why the strategy has to cover the whole " },
           { text: "white-collar crime accusation", to: "/en/services/financial-crime" },
           { text: ", not just the disputed contract." },
+        ],
+        [
+          { text: "When the money was taken through payment systems or online accounts, the conduct is assessed as " },
+          { text: "fraud committed through computer systems", to: "/en/services/computer-fraud" },
+          { text: "." },
         ],
       ],
     },
@@ -1299,6 +1311,11 @@ export const forgeryEn: SubServicePageData = {
           { text: "economic and financial crime files", to: "/en/services/financial-crime" },
           { text: "." },
         ],
+        [
+          { text: "Falsified accounting records of an insolvent company are examined separately, as " },
+          { text: "bankruptcy in fraud of creditors", to: "/en/services/fraudulent-bankruptcy" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -1413,6 +1430,11 @@ export const fraudulentBankruptcyEn: SubServicePageData = {
           { text: "The defense follows the same logic as in any " },
           { text: "complex financial crime case", to: "/en/services/financial-crime" },
           { text: ": the economic explanation must match the documents." },
+        ],
+        [
+          { text: "Sums taken from the company by a person with management duties are examined instead as " },
+          { text: "misappropriation of company funds", to: "/en/services/embezzlement" },
+          { text: "." },
         ],
       ],
     },
