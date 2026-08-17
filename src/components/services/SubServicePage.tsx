@@ -349,6 +349,22 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           )}
         </p>
       ))}
+      {bulletsAfterBullets && bulletsAfterBullets.length > 0 && (
+        <ul className="list-disc pl-6 space-y-2">
+          {bulletsAfterBullets.map((bullet, idx) => (
+            <li key={`after-bullet-${idx}`}>
+              {typeof bullet === "string" ? (
+                bullet
+              ) : (
+                <>
+                  <span className="font-semibold text-foreground">{bullet.bold}</span>{" "}
+                  {bullet.rest}
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
       {calloutAfterBullets && (
         <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutAfterBulletsClassName ?? ""}`}>
           <span>{calloutAfterBullets}</span>
