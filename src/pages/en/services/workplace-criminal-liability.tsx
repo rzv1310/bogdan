@@ -28,7 +28,8 @@ export default function WorkplaceLiabilityEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Criminal liability for incidents at the workplace", item: "https://avocatpenalbucuresti.ro/en/services/workplace-criminal-liability" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Criminal liability for incidents at the workplace", item: "https://avocatpenalbucuresti.ro/en/services/workplace-criminal-liability" },
             ],
           }),
         }}

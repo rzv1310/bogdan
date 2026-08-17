@@ -44,7 +44,7 @@ export default function InfractiuniRutiere() {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/servicii"
                   },
                   {
                     "@type": "ListItem",
