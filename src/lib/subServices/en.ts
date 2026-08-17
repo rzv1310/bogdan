@@ -3703,7 +3703,7 @@ export const conflictOfInterestEn: SubServicePageData = {
         },
         {
           h3: "You signed a contract with a related company",
-          paragraphs: ["I check the family or business relationship invoked, the commercial dealings of recent years and the exceptions provided by law."],
+          paragraphs: ["I check the degree of kinship or affinity, whether a real patrimonial benefit resulted from the act and whether the situation falls within the exceptions provided by law. Separately from criminal liability, I check whether an administrative integrity issue may exist."],
         },
       ],
       ctaAfterSubsections: "I want an assessment of my situation",
@@ -3712,10 +3712,10 @@ export const conflictOfInterestEn: SubServicePageData = {
       h2: "What I analyse immediately in the file",
       bullets: [
         "The concrete act performed in the exercise of official duties.",
-        "The existence of a patrimonial benefit for you, for relatives or for persons you had business dealings with.",
-        "The degree of kinship and the period of the commercial relations invoked.",
+        "The existence of a patrimonial benefit for you, for your spouse, for a relative or an in-law up to the second degree inclusive.",
+        "The degree of kinship or affinity invoked in the accusation.",
         "Whether the situation falls within the exceptions expressly provided by law.",
-        "The relationship between the administrative integrity procedure and the criminal file.",
+        "Separately from the criminal file, whether an administrative integrity issue exists and within what deadline it can be challenged.",
       ],
     },
     {
@@ -3742,6 +3742,156 @@ export const conflictOfInterestEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "How do you challenge an integrity report on conflict of interest?",
+      paragraphs: [
+        "The assessment report drawn up by the National Integrity Agency is challenged before the administrative court, within 15 days of receiving it. The deadline is short, and missing it lets the report become final.",
+      ],
+      subsections: [
+        {
+          h3: "When the 15 day deadline starts running",
+          paragraphs: [
+            "The deadline runs from the date you received the report, not from the date it was drawn up. That is why I first check the proof of communication: the acknowledgment of receipt, the envelope, the address it was sent to and who signed for it.",
+          ],
+        },
+        {
+          h3: "Where the report is challenged",
+          paragraphs: [
+            "The challenge is filed with the competent administrative court, depending on the office held and the seat of the authority. The application must set out the grounds of unlawfulness and the evidence you rely on.",
+          ],
+        },
+        {
+          h3: "Which documents must be analysed",
+          paragraphs: [
+            "The full report and its annexes, the act said to have generated the benefit, the underlying documentation of the decision, the job description and the civil status documents showing the real degree of kinship or affinity.",
+          ],
+        },
+        {
+          h3: "What happens if you do not challenge it",
+          paragraphs: [
+            "A report not challenged in time becomes final and may trigger consequences for your office, disciplinary consequences and procedures concerning the acts concluded. A final report does not automatically mean a criminal conviction, but it makes the defense harder.",
+          ],
+          ctaWhatsApp: true,
+          ctaWhatsAppLabel: "Received the integrity report? Send it now so I can check the deadline",
+        },
+      ],
+    },
+    {
+      h2: "Conflict of interest or incompatibility - what is the difference?",
+      paragraphs: [
+        "The two are frequently confused, because they are assessed through similar integrity procedures, but they are distinct legal situations.",
+        "Conflict of interest concerns a concrete act performed in the exercise of official duties, generating a benefit for you or for the close persons set out by law. Incompatibility concerns simply holding two offices or capacities at the same time which the law does not allow to be combined, regardless of any act or any benefit.",
+        "The difference has practical consequences: incompatibility is usually resolved by ending the combined offices and through administrative consequences, whereas conflict of interest may also, under certain conditions, trigger criminal liability under art. 301 of the Criminal Code.",
+      ],
+    },
+    {
+      h2: "Who must obtain the benefit for the offense to exist?",
+      paragraphs: [
+        "The circle of favoured persons is expressly limited by the current criminal text. If the beneficiary of the benefit is outside that circle, the offense is not made out.",
+      ],
+      subsections: [
+        {
+          h3: "A benefit for you",
+          paragraphs: [
+            "The most direct scenario: the act performed brings you a personal patrimonial advantage. Here I check whether the advantage is real, whether it stems from the act complained of and whether you actually performed that act.",
+          ],
+        },
+        {
+          h3: "A benefit for your spouse",
+          paragraphs: [
+            "The law expressly includes the spouse. I check the existence and date of the marriage, as well as whether the benefit actually entered the spouse's assets.",
+          ],
+        },
+        {
+          h3: "Relatives and in-laws up to the second degree",
+          paragraphs: [
+            "The circle stops at relatives and in-laws up to the second degree inclusive. Persons beyond that degree do not fall within the criminal text, even if the relationship is close in fact.",
+          ],
+        },
+        {
+          h3: "What a patrimonial benefit means",
+          paragraphs: [
+            "The benefit must have economic content: money, goods, contracts, exemptions, advantages assessable in money. Non-patrimonial benefits, such as reputational advantages or favours without economic value, do not fall within the current text.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "If I abstained from the vote or did not sign the act, is there still criminal liability?",
+      paragraphs: [
+        "The criminal text requires the act to have been actually performed by you, in the exercise of your official duties. That is why I analyse each form of involvement separately.",
+      ],
+      subsections: [
+        {
+          h3: "Actual participation in the act",
+          paragraphs: [
+            "What you concretely did matters: whether you drafted, endorsed, approved or were merely present in the procedure. Without an act of your own in the exercise of your duties, the material element is missing.",
+          ],
+        },
+        {
+          h3: "The signature",
+          paragraphs: [
+            "The signature is the element most often used by the prosecution, but it is not sufficient in itself: what counts is your competence, the checks that were your responsibility and whether the signature actually generated the benefit.",
+          ],
+        },
+        {
+          h3: "The vote",
+          paragraphs: [
+            "In collective decisions I analyse whether your vote was necessary for the act to be adopted and how it was recorded in the minutes of the meeting.",
+          ],
+        },
+        {
+          h3: "The abstention",
+          paragraphs: [
+            "Abstaining from the vote or refusing to sign, recorded in the meeting documents, are strong defense arguments, because they show you did not perform the act generating the benefit.",
+          ],
+        },
+        {
+          h3: "Preparatory acts",
+          paragraphs: [
+            "Internal notes, reports or proposals producing no legal effects of their own do not amount to performing the act. They may be relevant for context, not for the legal classification.",
+          ],
+        },
+        {
+          h3: "Who actually took the decision",
+          paragraphs: [
+            "I reconstruct the decision path to show who had final competence. Where the decision was taken by another person or by a collective body, liability cannot be extended automatically.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "What happens if the integrity report becomes final?",
+      paragraphs: [
+        "A final assessment report is not merely a finding document: it may trigger distinct procedures, running in parallel with any criminal file.",
+      ],
+      subsections: [
+        {
+          h3: "Consequences for your office",
+          paragraphs: [
+            "Depending on the capacity held, a final report may lead to the termination of the mandate or of the service relationship and to a ban on holding a similar office for the period provided by law.",
+          ],
+        },
+        {
+          h3: "Disciplinary consequences",
+          paragraphs: [
+            "The authority you work for may start disciplinary proceedings based on the final report, with its own sanctions, independent of the outcome of the criminal file.",
+          ],
+        },
+        {
+          h3: "Effects on acts and contracts",
+          paragraphs: [
+            "Administrative acts and contracts concluded in a state of conflict of interest may be subject to nullity under the conditions of the law, with effects on payments, guarantees and works already performed.",
+          ],
+        },
+        {
+          h3: "The relationship with a possible criminal file",
+          paragraphs: [
+            "A final report does not mean criminal guilt, because the offense has stricter conditions. It is, however, frequently used as the starting point of the complaint, which is why the administrative and the criminal defense must be coordinated.",
+          ],
+        },
+      ],
+    },
+    {
       h2: "What conflict of interest means in criminal law",
       paragraphs: [
         "The criminal text, named use of office to favour certain persons, sanctions the act of a public official who, in the exercise of their duties, performed an act through which a patrimonial benefit was obtained for themselves, for their spouse, for a relative or an in-law up to the second degree inclusive. The offense is set out in art. 301 of the Criminal Code.",
@@ -3756,11 +3906,31 @@ export const conflictOfInterestEn: SubServicePageData = {
       ],
     },
     {
-      h2: "When the act is not an offense",
+      h2: "When art. 301 of the Criminal Code does not apply",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: [
-        "Not every overlap of interests amounts to an offense. It must be proven that an act was actually performed in the exercise of official duties, that a concrete patrimonial benefit resulted, and that the beneficiary belongs to the circle of persons set out by law.",
-        "Outside the criminal text remain situations of abstention from voting or signing, preparatory acts producing no effects, non-patrimonial benefits, as well as the issuing or adoption of normative acts, expressly exempted by law.",
+        "Not every overlap of interests amounts to an offense. It must be proven that an act was actually performed in the exercise of official duties, that a concrete patrimonial benefit resulted, and that the beneficiary belongs to the circle of persons set out by law. In addition, art. 301 para. (2) expressly provides situations in which the act is not punishable.",
+        "Also outside the criminal text remain situations of abstention from voting or signing, preparatory acts producing no effects, and non-patrimonial benefits.",
+      ],
+      subsections: [
+        {
+          h3: "Issuing, approving or adopting normative acts",
+          paragraphs: [
+            "Where the act complained of is a normative act, the criminal text does not apply. I check the real nature of the act, because in practice normative acts are sometimes wrongly treated as individual acts.",
+          ],
+        },
+        {
+          h3: "Exercising a right recognised by law",
+          paragraphs: [
+            "There is no offense where the benefit results from exercising a right the law recognises, such as salary rights, allowances or other entitlements granted under the law.",
+          ],
+        },
+        {
+          h3: "Performing an obligation imposed by law",
+          paragraphs: [
+            "Where the law obliged you to perform the act and you had no margin of appreciation, the act does not fall under the criminal text. Acts executing a court decision or a legal obligation are relevant here.",
+          ],
+        },
       ],
     },
     {
@@ -3784,7 +3954,7 @@ export const conflictOfInterestEn: SubServicePageData = {
       bullets: [
         "I check whether the act complained of falls within your official duties.",
         "I challenge the patrimonial character of the benefit or its very existence.",
-        "I analyse the degree of kinship and the duration of the commercial relations invoked.",
+        "I analyse the degree of kinship or affinity and whether you or a person within the circle set out by law was the beneficiary of the benefit.",
         "I argue for the application of the exceptions expressly provided by law.",
         "I coordinate the criminal defense with the challenge against the integrity report.",
       ],
@@ -3804,24 +3974,8 @@ export const conflictOfInterestEn: SubServicePageData = {
       a: "No. An administrative finding of a conflict of interest does not equate to the elements of the offense being met.",
     },
     {
-      q: "Which persons fall within the circle set out by law?",
-      a: "The spouse, relatives and in-laws up to the second degree inclusive, according to the criminal text.",
-    },
-    {
-      q: "Does abstaining from the vote protect me?",
-      a: "In principle, yes. If you did not perform the act generating the benefit, the material element of the offense is missing.",
-    },
-    {
-      q: "Does the text apply to normative acts?",
-      a: "No. The law expressly exempts the issuing, approval or adoption of normative acts.",
-    },
-    {
       q: "Can the signed contract be annulled?",
       a: "Yes. Acts concluded in breach of the conflict of interest rules can be null and void.",
-    },
-    {
-      q: "Can I challenge the assessment report?",
-      a: "Yes, before the administrative court, within the statutory deadline from its communication. The deadline is short, so you must act quickly.",
     },
   ],
   resources: [

@@ -4862,7 +4862,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
         {
           h3: "Ai semnat un contract cu o firmă apropiată",
           paragraphs: [
-            "Verific relația de rudenie sau afacere invocată, raporturile comerciale din ultimii ani și excepțiile prevăzute de lege.",
+            "Verific gradul de rudenie sau de afinitate, dacă din act a rezultat un folos patrimonial real și dacă situația intră în excepțiile prevăzute de lege. Separat de latura penală, verific dacă poate exista o problemă administrativă de integritate.",
           ],
         },
       ],
@@ -4872,10 +4872,10 @@ export const conflictDeIntereseRo: SubServicePageData = {
       h2: "Ce analizez imediat în dosar",
       bullets: [
         "Actul concret îndeplinit în exercitarea atribuțiilor de serviciu.",
-        "Existența unui folos patrimonial pentru tine, pentru rude sau pentru persoane cu care ai avut raporturi de afaceri.",
-        "Gradul de rudenie și perioada raporturilor comerciale invocate.",
+        "Existența unui folos patrimonial pentru tine, pentru soț sau soție, pentru o rudă ori un afin până la gradul II inclusiv.",
+        "Gradul de rudenie sau de afinitate invocat în acuzație.",
         "Dacă situația se încadrează în excepțiile prevăzute expres de lege.",
-        "Relația dintre procedura administrativă de integritate și dosarul penal.",
+        "Separat de dosarul penal, dacă există o problemă administrativă de integritate și în ce termen poate fi contestată.",
       ],
     },
     {
@@ -4902,6 +4902,156 @@ export const conflictDeIntereseRo: SubServicePageData = {
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
     {
+      h2: "Cum contești un raport ANI privind conflictul de interese?",
+      paragraphs: [
+        "Raportul de evaluare întocmit de Agenția Națională de Integritate se contestă în contencios administrativ, în termen de 15 zile de la primirea acestuia. Termenul este scurt, iar pierderea lui lasă raportul să devină definitiv.",
+      ],
+      subsections: [
+        {
+          h3: "De când curge termenul de 15 zile",
+          paragraphs: [
+            "Termenul curge de la data primirii raportului, nu de la data la care acesta a fost întocmit. De aceea verific întâi dovada comunicării: confirmarea de primire, plicul, adresa la care a fost trimis și cine a semnat de primire.",
+          ],
+        },
+        {
+          h3: "Unde se contestă raportul",
+          paragraphs: [
+            "Contestația se depune la instanța de contencios administrativ competentă, în funcție de funcția deținută și de sediul autorității. Cererea trebuie să cuprindă motivele de nelegalitate și probele pe care le invoci.",
+          ],
+        },
+        {
+          h3: "Ce documente trebuie analizate",
+          paragraphs: [
+            "Raportul integral și anexele, actul din care ar rezulta folosul, documentația care a stat la baza deciziei, fișa postului și actele de stare civilă care arată gradul real de rudenie sau afinitate.",
+          ],
+        },
+        {
+          h3: "Ce se întâmplă dacă nu îl contești",
+          paragraphs: [
+            "Raportul necontestat în termen rămâne definitiv și poate produce consecințe asupra funcției, consecințe disciplinare și proceduri privind actele încheiate. Un raport definitiv nu înseamnă automat condamnare penală, dar îngreunează apărarea.",
+          ],
+          ctaWhatsApp: true,
+          ctaWhatsAppLabel: "Ai primit raportul ANI? Trimite-l acum pentru verificarea termenului",
+        },
+      ],
+    },
+    {
+      h2: "Conflict de interese sau incompatibilitate - care este diferența?",
+      paragraphs: [
+        "Cele două situații sunt frecvent confundate, pentru că sunt evaluate prin proceduri de integritate asemănătoare, dar sunt situații juridice distincte.",
+        "Conflictul de interese privește un act concret îndeplinit în exercitarea atribuțiilor de serviciu, din care rezultă un folos pentru tine sau pentru persoanele apropiate prevăzute de lege. Incompatibilitatea privește simpla deținere simultană a două funcții sau calități pe care legea nu permite să fie cumulate, independent de vreun act sau de vreun folos.",
+        "Diferența are consecințe practice: incompatibilitatea se rezolvă, de regulă, prin încetarea situației de cumul și prin consecințe administrative, în timp ce conflictul de interese poate atrage, în anumite condiții, și răspundere penală în temeiul art. 301 Cod penal.",
+      ],
+    },
+    {
+      h2: "Cine trebuie să obțină folosul pentru a exista infracțiunea?",
+      paragraphs: [
+        "Sfera persoanelor favorizate este limitată expres de textul penal actual. Dacă beneficiarul folosului nu se află în acest cerc, infracțiunea nu este întrunită.",
+      ],
+      subsections: [
+        {
+          h3: "Folos pentru tine",
+          paragraphs: [
+            "Ipoteza cea mai directă: actul îndeplinit îți aduce un avantaj patrimonial personal. Aici se verifică dacă avantajul este real, dacă provine din actul reproșat și dacă tu ai îndeplinit efectiv acel act.",
+          ],
+        },
+        {
+          h3: "Folos pentru soț sau soție",
+          paragraphs: [
+            "Legea include expres soțul. Verific existența și data căsătoriei, precum și dacă folosul a intrat efectiv în patrimoniul soțului sau al soției.",
+          ],
+        },
+        {
+          h3: "Rude și afini până la gradul II",
+          paragraphs: [
+            "Cercul se oprește la rudele și afinii până la gradul II inclusiv. Persoanele aflate în afara acestui grad nu intră în ipoteza textului penal, chiar dacă relația este apropiată în fapt.",
+          ],
+        },
+        {
+          h3: "Ce înseamnă folos patrimonial",
+          paragraphs: [
+            "Folosul trebuie să aibă conținut economic: bani, bunuri, contracte, scutiri, avantaje evaluabile în bani. Foloasele nepatrimoniale, cum ar fi un avantaj de imagine sau o favoare fără valoare economică, nu se încadrează în textul actual.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Dacă m-am abținut de la vot sau nu am semnat actul, mai există răspundere penală?",
+      paragraphs: [
+        "Textul penal cere ca actul să fie îndeplinit efectiv de tine, în exercitarea atribuțiilor de serviciu. De aceea analizez separat fiecare formă de implicare.",
+      ],
+      subsections: [
+        {
+          h3: "Participarea efectivă la act",
+          paragraphs: [
+            "Se verifică ce ai făcut concret: ai întocmit, ai avizat, ai aprobat sau doar ai fost prezent în procedură. Fără un act propriu în exercitarea atribuțiilor, elementul material lipsește.",
+          ],
+        },
+        {
+          h3: "Semnătura",
+          paragraphs: [
+            "Semnătura este cel mai frecvent element folosit în acuzare, dar nu este suficientă în sine: contează care era competența ta, ce verificări îți reveneau și dacă semnătura a produs efectiv folosul.",
+          ],
+        },
+        {
+          h3: "Votul",
+          paragraphs: [
+            "În deciziile colegiale se analizează dacă votul tău a fost necesar pentru adoptarea actului și cum a fost consemnat în procesul-verbal al ședinței.",
+          ],
+        },
+        {
+          h3: "Abținerea",
+          paragraphs: [
+            "Abținerea de la vot sau refuzul de a semna, consemnate în documentele ședinței, sunt argumente puternice de apărare, pentru că arată că nu ai îndeplinit actul din care ar rezulta folosul.",
+          ],
+        },
+        {
+          h3: "Actele pregătitoare",
+          paragraphs: [
+            "Notele interne, referatele sau propunerile care nu produc efecte juridice proprii nu echivalează cu îndeplinirea actului. Ele pot fi relevante pentru context, nu pentru încadrare.",
+          ],
+        },
+        {
+          h3: "Cine a luat efectiv decizia",
+          paragraphs: [
+            "Reconstruiesc traseul deciziei pentru a arăta cine avea competența finală. Când decizia a fost luată de altă persoană sau de un organ colegial, responsabilitatea nu poate fi extinsă automat.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Ce se întâmplă dacă raportul ANI rămâne definitiv?",
+      paragraphs: [
+        "Un raport de evaluare rămas definitiv nu este doar un document constatator: poate declanșa proceduri distincte, care se derulează în paralel cu eventualul dosar penal.",
+      ],
+      subsections: [
+        {
+          h3: "Consecințe asupra funcției",
+          paragraphs: [
+            "În funcție de calitatea deținută, raportul definitiv poate conduce la încetarea mandatului sau a raportului de serviciu și la interdicția de a mai ocupa o funcție similară pe durata prevăzută de lege.",
+          ],
+        },
+        {
+          h3: "Consecințe disciplinare",
+          paragraphs: [
+            "Autoritatea la care activezi poate declanșa cercetarea disciplinară pe baza raportului definitiv, cu sancțiuni proprii, independente de soluția din dosarul penal.",
+          ],
+        },
+        {
+          h3: "Efecte asupra actelor și contractelor",
+          paragraphs: [
+            "Actele administrative și contractele încheiate în stare de conflict de interese pot fi supuse nulității în condițiile legii, cu efecte asupra plăților, garanțiilor și lucrărilor deja executate.",
+          ],
+        },
+        {
+          h3: "Relația cu un eventual dosar penal",
+          paragraphs: [
+            "Raportul definitiv nu înseamnă vinovăție penală, pentru că infracțiunea are condiții mai stricte. El este însă folosit frecvent ca punct de plecare al sesizării, motiv pentru care apărarea administrativă și cea penală trebuie coordonate.",
+          ],
+        },
+      ],
+    },
+    {
       h2: "Ce este conflictul de interese în plan penal",
       paragraphs: [
         "Textul penal, denumit folosirea funcției pentru favorizarea unor persoane, sancționează fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, a îndeplinit un act prin care s-a obținut un folos patrimonial pentru sine, pentru soțul său, pentru o rudă ori un afin până la gradul II inclusiv. Fapta este prevăzută de art. 301 Cod penal.",
@@ -4916,11 +5066,31 @@ export const conflictDeIntereseRo: SubServicePageData = {
       ],
     },
     {
-      h2: "Când fapta nu constituie infracțiune",
+      h2: "Când art. 301 Cod penal nu se aplică",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: [
-        "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege.",
-        "Rămân în afara textului penal situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, foloasele nepatrimoniale, precum și emiterea sau adoptarea actelor normative, exceptată expres de lege.",
+        "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege. În plus, legea prevede expres, în art. 301 alin. (2), situații în care fapta nu se pedepsește.",
+        "Rămân în afara textului penal și situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, precum și foloasele nepatrimoniale.",
+      ],
+      subsections: [
+        {
+          h3: "Emiterea, aprobarea sau adoptarea actelor normative",
+          paragraphs: [
+            "Când actul reproșat este un act normativ, textul penal nu se aplică. Verific natura reală a actului, pentru că în practică actele normative sunt uneori tratate greșit ca acte individuale.",
+          ],
+        },
+        {
+          h3: "Exercitarea unui drept recunoscut de lege",
+          paragraphs: [
+            "Nu există infracțiune atunci când folosul rezultă din exercitarea unui drept pe care legea îl recunoaște, cum sunt drepturile salariale, indemnizațiile sau alte drepturi acordate în temeiul legii.",
+          ],
+        },
+        {
+          h3: "Îndeplinirea unei obligații impuse de lege",
+          paragraphs: [
+            "Când ai fost obligat prin lege să îndeplinești actul, iar marja de apreciere lipsea, fapta nu intră sub incidența textului penal. Aici sunt relevante actele prin care s-a executat o hotărâre sau o obligație legală.",
+          ],
+        },
       ],
     },
     {
@@ -4944,7 +5114,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
       bullets: [
         "Verific dacă actul reproșat intră în sfera atribuțiilor tale de serviciu.",
         "Contest caracterul patrimonial al folosului sau existența lui.",
-        "Analizez gradul de rudenie și durata raporturilor comerciale invocate.",
+        "Analizez gradul de rudenie sau de afinitate și dacă tu ori o persoană din cercul prevăzut de lege ai fost beneficiarul folosului.",
         "Susțin aplicarea excepțiilor prevăzute expres de lege.",
         "Coordonez apărarea din dosarul penal cu contestația împotriva raportului de integritate.",
       ],
@@ -4964,24 +5134,8 @@ export const conflictDeIntereseRo: SubServicePageData = {
       a: "Nu. Constatarea administrativă a unei stări de conflict de interese nu echivalează cu întrunirea elementelor infracțiunii.",
     },
     {
-      q: "Ce persoane intră în cercul prevăzut de lege?",
-      a: "Soțul, rudele și afinii până la gradul II inclusiv, potrivit textului de incriminare.",
-    },
-    {
-      q: "Abținerea de la vot mă protejează?",
-      a: "Da, în principiu. Dacă nu ai îndeplinit actul din care rezultă folosul, elementul material al infracțiunii lipsește.",
-    },
-    {
-      q: "Se aplică textul și la actele normative?",
-      a: "Nu. Legea exceptează expres emiterea, aprobarea sau adoptarea actelor normative.",
-    },
-    {
       q: "Contractul semnat poate fi anulat?",
       a: "Da. Actele încheiate cu încălcarea regulilor privind conflictul de interese pot fi lovite de nulitate.",
-    },
-    {
-      q: "Pot contesta raportul de evaluare?",
-      a: "Da, în contencios administrativ, în termenul prevăzut de lege de la comunicare. Termenul este scurt, așa că trebuie acționat rapid.",
     },
   ],
   resources: [
