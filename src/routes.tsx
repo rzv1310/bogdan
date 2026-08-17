@@ -40,6 +40,20 @@ const Retinere24Ore = lazyRoute(() => import("./pages/services/retinere-24-ore")
 const ArestPreventiv = lazyRoute(() => import("./pages/services/arest-preventiv"));
 const ControlJudiciar = lazyRoute(() => import("./pages/services/control-judiciar"));
 const ArestLaDomiciliu = lazyRoute(() => import("./pages/services/arest-la-domiciliu"));
+const EvaziuneFiscala = lazyRoute(() => import("./pages/services/evaziune-fiscala"));
+const InselaciuneFrauda = lazyRoute(() => import("./pages/services/inselaciune-frauda"));
+const Delapidare = lazyRoute(() => import("./pages/services/delapidare"));
+const FalsSiUzDeFals = lazyRoute(() => import("./pages/services/fals-si-uz-de-fals"));
+const BancrutaFrauduloasa = lazyRoute(() => import("./pages/services/bancruta-frauduloasa"));
+const FraudaInformatica = lazyRoute(() => import("./pages/services/frauda-informatica"));
+const FonduriEuropene = lazyRoute(() => import("./pages/services/fonduri-europene"));
+const TaxEvasionEn = lazyRoute(() => import("./pages/en/services/tax-evasion"));
+const FraudAndDeceptionEn = lazyRoute(() => import("./pages/en/services/fraud-and-deception"));
+const EmbezzlementEn = lazyRoute(() => import("./pages/en/services/embezzlement"));
+const ForgeryEn = lazyRoute(() => import("./pages/en/services/forgery-and-use-of-forgery"));
+const FraudulentBankruptcyEn = lazyRoute(() => import("./pages/en/services/fraudulent-bankruptcy"));
+const ComputerFraudEn = lazyRoute(() => import("./pages/en/services/computer-fraud"));
+const EuFundsFraudEn = lazyRoute(() => import("./pages/en/services/eu-funds-fraud"));
 const CalculatorDespagubiri = lazyRoute(() => import("./pages/CalculatorDespagubiri"));
 const ServiciiPage = lazyRoute(() => import("./pages/servicii"));
 const TermeniSiConditii = lazyRoute(() => import("./pages/termeni-si-conditii"));
@@ -122,6 +136,13 @@ export default function AppRoutes() {
           <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
           <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
           <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
+          <Route path="/servicii/evaziune-fiscala" element={<EvaziuneFiscala />} />
+          <Route path="/servicii/inselaciune-frauda" element={<InselaciuneFrauda />} />
+          <Route path="/servicii/delapidare" element={<Delapidare />} />
+          <Route path="/servicii/fals-si-uz-de-fals" element={<FalsSiUzDeFals />} />
+          <Route path="/servicii/bancruta-frauduloasa" element={<BancrutaFrauduloasa />} />
+          <Route path="/servicii/frauda-informatica" element={<FraudaInformatica />} />
+          <Route path="/servicii/fonduri-europene" element={<FonduriEuropene />} />
           <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
           <Route path="/gdpr" element={<GDPR />} />
           <Route path="/politica-cookies" element={<PoliticaCookies />} />
@@ -153,6 +174,13 @@ export default function AppRoutes() {
           <Route path="/en/services/judicial-control" element={<JudicialControlEn />} />
           <Route path="/en/services/house-arrest" element={<HouseArrestEn />} />
           <Route path="/en/services/financial-crime" element={<FinancialCrimeEn />} />
+          <Route path="/en/services/tax-evasion" element={<TaxEvasionEn />} />
+          <Route path="/en/services/fraud-and-deception" element={<FraudAndDeceptionEn />} />
+          <Route path="/en/services/embezzlement" element={<EmbezzlementEn />} />
+          <Route path="/en/services/forgery-and-use-of-forgery" element={<ForgeryEn />} />
+          <Route path="/en/services/fraudulent-bankruptcy" element={<FraudulentBankruptcyEn />} />
+          <Route path="/en/services/computer-fraud" element={<ComputerFraudEn />} />
+          <Route path="/en/services/eu-funds-fraud" element={<EuFundsFraudEn />} />
           <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
           <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
           <Route path="/en/services/drug-offenses" element={<DrugOffensesEn />} />
