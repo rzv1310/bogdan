@@ -12,6 +12,7 @@ import { servedAreasSchema } from "@/lib/areaServed";
 import { toast } from "@/components/ui/use-toast";
 import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const MAX_FILES = 5;
@@ -210,26 +211,24 @@ export default function Contact() {
 
       {/* Heading */}
       <motion.h1 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-3xl md:text-4xl font-bold">
-        Contact - Cabinet Avocat Bogdan Lamatic
+        Contact Cabinet Avocat Bogdan Lamatic
       </motion.h1>
-<p className="mt-3 text-muted-foreground max-w-3xl">
-        Ai nevoie de asistență penală sau de o evaluare a despăgubirilor? Scrie-mi datele esențiale, atașează actele relevante și îți răspund rapid cu pașii concreți.
+      <p className="mt-3 text-lg font-medium text-foreground max-w-3xl">
+        Sună-mă acum pentru o evaluare gratuită și confidențială!
       </p>
-<div className="mt-4">
-        <span className="text-sm md:text-base font-medium">Sună-mă acum:</span>
-        <div className="h-5"></div>
-        <a href="tel:+40316320183" aria-label="Sună-mă acum">
-          <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black border border-white">
-            <Phone /> +40 (31) 632 01 83
-          </Button>
-        </a>
-        <div className="h-5"></div>
-        <div className="text-left text-sm text-muted-foreground font-medium">SAU</div>
+      <LawyerBioBlock path="/contact" lang="ro" className="mt-5" />
+      <div className="mt-5">
+        <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
+          <a href="tel:+40316320183" aria-label="Sună-mă acum - 031 632 01 83">
+            <Phone /> Sună-mă acum - 031 632 01 83
+          </a>
+        </Button>
       </div>
+      <div className="mt-5 text-left text-sm text-muted-foreground font-medium">sau</div>
 
       {/* Form Card */}
       <div className="mt-8 max-w-3xl">
-        <Card>
+        <Card className="bg-[#faf0e6]">
           <CardHeader className="pb-0">
             <CardTitle as="h2" className="flex items-center gap-2 text-xl">
               <Send className="h-5 w-5" aria-hidden="true" /> Trimite-mi o solicitare online

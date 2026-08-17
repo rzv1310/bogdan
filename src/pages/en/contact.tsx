@@ -11,6 +11,7 @@ import { toast } from "@/components/ui/use-toast";
 import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const MAX_FILES = 5;
@@ -215,18 +216,20 @@ export default function ContactEn() {
 
         <h1 className="text-2xl font-semibold mb-4">Contact - Attorney Bogdan Lamatic</h1>
 
-        <p className="text-muted-foreground max-w-3xl">Need urgent help or a case assessment? Call me directly.</p>
-        <div className="mt-4">
-          <a href="tel:+40316320183" aria-label="Call now">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black border border-white">
-              <Phone /> Call now: +40 (31) 632 01 83
-            </Button>
-          </a>
+        <p className="text-lg font-medium text-foreground max-w-3xl">Call now for a free and confidential assessment!</p>
+        <LawyerBioBlock path="/en/contact" lang="en" className="mt-5" />
+        <div className="mt-5">
+          <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
+            <a href="tel:+40316320183" aria-label="Call now - 031 632 01 83">
+              <Phone /> Call now - 031 632 01 83
+            </a>
+          </Button>
         </div>
+        <div className="mt-5 text-left text-sm text-muted-foreground font-medium">or</div>
 
         <div className="h-6" />
         <div className="mt-8 max-w-3xl">
-          <Card>
+          <Card className="bg-[#faf0e6]">
             <CardHeader className="pb-0">
               <CardTitle as="h2" className="flex items-center gap-2 text-xl">
                 <Send className="h-5 w-5" aria-hidden="true" /> Send me a request online
