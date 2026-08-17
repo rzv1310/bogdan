@@ -4598,7 +4598,11 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "what other evidence supports or contradicts the charge.",
       ],
       paragraphsAfterBullets: [
-        "There is no standard strategy for all situations.",
+        [
+          { text: "There is no standard strategy for all situations. If the quantity found is small and the investigation considers personal use, the analysis differs, as explained on the page about " },
+          { text: "drug possession for personal use", to: "/en/services/drug-possession-personal-use" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -4619,7 +4623,13 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         "It must be established whether the recipient actually knew the contents and what evidence exists in this regard.",
-        "If you have been summoned to collect a parcel or after receiving it, discuss with a lawyer before making a statement.",
+        [
+          { text: "If you have been summoned to collect a parcel or after receiving it, discuss with a lawyer before making a statement. See what " },
+          { text: "assistance during questioning", to: "/en/services/police-prosecutor-questioning" },
+          { text: " involves and what happens during a " },
+          { text: "home search", to: "/en/services/home-search" },
+          { text: "." },
+        ],
       ],
       cta: "☎ Call now - 031 632 01 83",
       ctaIcon: false,
