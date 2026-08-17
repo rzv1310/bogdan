@@ -7,6 +7,8 @@ interface GoogleReviewCardProps {
   author?: string;
   reviewMeta?: string;
   timestamp?: string;
+  /** Optional URL to the original Google review. When provided, the badge becomes a link. */
+  reviewLink?: string;
 }
 
 const DEFAULT_REVIEW_TEXT =
@@ -43,11 +45,19 @@ export default function GoogleReviewCard({
   author = DEFAULT_AUTHOR,
   reviewMeta: reviewMetaProp,
   timestamp: timestampProp,
+  reviewLink,
 }: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
-  const reviewMeta = reviewMetaProp ?? (lang === "en" ? "3 reviews" : "3 recenzii");
+  const reviewMeta = reviewMetaProp ?? (lang === "en" ? "Local Guide · 3 reviews" : "Local Guide · 3 recenzii");
   const timestamp = timestampProp ?? (lang === "en" ? "2 months ago" : "acum 2 luni");
   const initial = author.charAt(0).toUpperCase();
+
+  const badgeContent = (
+    <span className="inline-flex items-center gap-1 text-xs text-slate-300">
+      <GoogleGlyph />
+      {badge}
+    </span>
+  );
 
 
   return (
@@ -81,10 +91,18 @@ export default function GoogleReviewCard({
 
       <div className="mt-4 flex items-center justify-between">
         <Heart className="h-5 w-5 text-red-500" fill="currentColor" aria-hidden="true" />
-        <span className="inline-flex items-center gap-1 text-xs text-slate-300">
-          <GoogleGlyph />
-          {badge}
-        </span>
+        {reviewLink ? (
+          <a
+            href={reviewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs text-slate-300 underline underline-offset-2 hover:text-primary"
+          >
+            {badgeContent}
+          </a>
+        ) : (
+          badgeContent
+        )}
       </div>
 
       <figcaption className="sr-only">
