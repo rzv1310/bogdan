@@ -5185,6 +5185,7 @@ export const detinereDroguriConsumPropriuRo: SubServicePageData = {
   sections: [
     {
       h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Alege situația care corespunde dosarului tău."],
       subsections: [
         {
