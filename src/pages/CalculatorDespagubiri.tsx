@@ -197,7 +197,7 @@ export default function CalculatorDespagubiri() {
             </div>
           </div>
           <div>
-            <Card>
+            <Card className="bg-[#faf0e6]">
               <div className="flex items-center gap-2 mb-3">
                 <Calculator className="w-5 h-5" />
                 <h2 className="text-xl font-semibold">Calculator despăgubiri</h2>
@@ -235,7 +235,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={ittDays}
                         onChange={(e) => setIttDays(clampNum(e.target.value, 0, 3650))}
                       />
@@ -244,7 +244,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={hospDays}
                         onChange={(e) => setHospDays(clampNum(e.target.value, 0, 365))}
                       />
@@ -254,7 +254,7 @@ export default function CalculatorDespagubiri() {
                         type="number"
                         min={0}
                         max={100}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={disability}
                         onChange={(e) => setDisability(clampNum(e.target.value, 0, 100))}
                       />
@@ -263,7 +263,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={1}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={age}
                         onChange={(e) => setAge(clampNum(e.target.value, 1, 120))}
                       />
@@ -274,7 +274,7 @@ export default function CalculatorDespagubiri() {
                         min={1}
                         max={5}
                         step={1}
-                        className="w-full accent-[hsl(var(--accent))]"
+                        className="w-full bg-white accent-[hsl(var(--accent))]"
                         value={psych}
                         onChange={(e) => setPsych(clampNum(e.target.value, 1, 5))}
                       />
@@ -289,7 +289,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={netIncome}
                         onChange={(e) => setNetIncome(clampNum(e.target.value, 0, 1e7))}
                       />
@@ -298,7 +298,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={monthsOff}
                         onChange={(e) => setMonthsOff(clampNum(e.target.value, 0, 120))}
                       />
@@ -307,7 +307,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={medCosts}
                         onChange={(e) => setMedCosts(clampNum(e.target.value, 0, 1e9))}
                       />
@@ -316,7 +316,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={travelCare}
                         onChange={(e) => setTravelCare(clampNum(e.target.value, 0, 1e9))}
                       />
@@ -325,7 +325,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={otherCosts}
                         onChange={(e) => setOtherCosts(clampNum(e.target.value, 0, 1e9))}
                       />
@@ -338,7 +338,7 @@ export default function CalculatorDespagubiri() {
                         type="number"
                         min={0}
                         max={100}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={victimFault}
                         onChange={(e) => setVictimFault(clampNum(e.target.value, 0, 100))}
                       />
@@ -350,7 +350,7 @@ export default function CalculatorDespagubiri() {
                       <input
                         type="number"
                         min={0}
-                        className="w-full rounded-xl border p-2"
+                        className="w-full rounded-xl border bg-white p-2"
                         value={cap}
                         onChange={(e) => setCap(clampNum(e.target.value, 0, 1e12))}
                       />
