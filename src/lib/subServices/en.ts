@@ -3228,13 +3228,8 @@ export const abuseOfOfficeEn: SubServicePageData = {
         "I argue lack of intent, where the decision was taken on the basis of the approvals received.",
         "I file challenges against disproportionate precautionary measures.",
       ],
-      paragraphsAfterBullets: [
-        [
-          { text: "The accusation is often analysed together with the " },
-          { text: "negligent breach of duties", to: "/en/services/negligence-in-office" },
-          { text: ", and the form of guilt retained changes the sanctioning regime entirely." },
-        ],
-      ],
+
+
       cta: "Why choose me",
     },
   ],
