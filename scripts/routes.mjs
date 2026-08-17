@@ -46,8 +46,6 @@ export const ROUTES = [
   "/servicii/neglijenta-in-serviciu",
   "/servicii/conflict-de-interese",
   "/servicii/fonduri-europene",
-  "/servicii/sechestru-asigurator",
-  "/servicii/confiscare",
   "/en/services/asset-freezing-order",
   "/en/services/confiscation",
   "/servicii/alcool-la-volan",
@@ -91,8 +89,6 @@ export const ROUTES = [
   "/en/services/organized-crime-group",
   "/en/services/international-drug-trafficking",
   "/en/services/money-laundering-and-asset-concealment",
-  "/en/services/asset-freezing-order",
-  "/en/services/confiscation",
 
   "/en/services/professional-negligence-and-malpractice",
   "/en/services/road-traffic-offenses",
