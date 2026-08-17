@@ -448,10 +448,8 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Workplace accidents and criminal liability",
         description: "Advice and representation in workplace accidents, OSH criminal liability and fatal incident cases.",
         subServices: [
-          { label: "Workplace accident" },
           { label: "Employer criminal liability" },
-          { label: "OSH criminal liability" },
-          { label: "Fatal workplace accident" },
+          { label: "OSH officer criminal liability" },
         ],
         to: "/en/services/workplace-criminal-liability",
         cta: "See the workplace liability page",
