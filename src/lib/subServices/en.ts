@@ -3644,14 +3644,6 @@ export const negligenceInOfficeEn: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Can negligence be retained without damage?",
-      a: "No. The law requires damage or harm to the rights or legitimate interests of a person.",
-    },
-    {
-      q: "What if I did not have enough staff?",
-      a: "The lack of resources is an important defense element, especially if you requested additional resources in writing.",
-    },
-    {
       q: "Can an abuse charge be reclassified as negligence?",
       a: "Yes. Where the evidence does not support intent, the legal classification can be changed to negligence in office.",
     },
