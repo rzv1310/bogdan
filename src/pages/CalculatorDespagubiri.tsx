@@ -213,20 +213,20 @@ export default function CalculatorDespagubiri() {
                     <InputRow label="Tip eveniment" hint="Alege scenariul cel mai apropiat">
                       <div className="flex gap-2">
                         {[
-                          { id: "accident", label: "Accident rutier", icon: <Car className="w-4 h-4" /> },
-                          { id: "agresiune", label: "Agresiune", icon: <Gavel className="w-4 h-4" /> },
+                          { id: "accident", label: "Accident rutier" },
+                          { id: "agresiune", label: "Agresiune" },
                           { id: "altul", label: "Altul" },
                         ].map((opt) => (
                           <button
                             key={opt.id}
                             onClick={() => setEventType(opt.id)}
-                            className={`px-3 py-1.5 rounded-full border text-sm flex items-center gap-1 ${
+                            className={`px-3 py-1.5 rounded-full border text-sm ${
                               eventType === opt.id
                                 ? "bg-accent text-accent-foreground border-accent"
                                 : "bg-white text-zinc-700"
                             }`}
                           >
-                            {opt.icon} {opt.label}
+                            {opt.label}
                           </button>
                         ))}
                       </div>

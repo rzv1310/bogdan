@@ -222,20 +222,20 @@ export default function CompensationCalculator() {
                     <InputRow label="Type of event" hint="Choose the closest scenario">
                       <div className="flex gap-2">
                         {[
-                          { id: "accident", label: "Road accident", icon: <Car className="w-4 h-4" /> },
-                          { id: "assault", label: "Assault", icon: <Gavel className="w-4 h-4" /> },
+                          { id: "accident", label: "Road accident" },
+                          { id: "assault", label: "Assault" },
                           { id: "other", label: "Other" },
                         ].map((opt) => (
                           <button
                             key={opt.id}
                             onClick={() => setEventType(opt.id)}
-                            className={`px-3 py-1.5 rounded-full border text-sm flex items-center gap-1 ${
+                            className={`px-3 py-1.5 rounded-full border text-sm ${
                               eventType === opt.id
                                 ? "bg-accent text-accent-foreground border-accent"
                                 : "bg-white text-zinc-700"
                             }`}
                           >
-                            {opt.icon} {opt.label}
+                            {opt.label}
                           </button>
                         ))}
                       </div>
