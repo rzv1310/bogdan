@@ -559,6 +559,12 @@ export default function CalculatorDespagubiri() {
           </Card>
         </section>
 
+        {/* Bio + reviews */}
+        <section className="mb-8">
+          <LawyerBioBlock path="/calculator-despagubiri" lang="ro" />
+          <GoogleReviewStars lang="ro" className="mt-3" />
+        </section>
+
         {/* Call to Action */}
         <section className="text-center mb-12">
           <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună-mă acum">
