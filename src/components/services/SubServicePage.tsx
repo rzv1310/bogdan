@@ -55,6 +55,8 @@ export interface SubServiceSection {
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
   paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  /** Optional bullets rendered after the paragraphs-after-bullets. */
+  bulletsAfterBullets?: (string | { bold: string; rest: string })[];
   /** Optional small highlighted callout rendered after the bullets. */
   calloutAfterBullets?: string;
   /** Optional extra className for the after-bullets callout. */
