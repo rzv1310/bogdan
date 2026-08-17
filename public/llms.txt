@@ -42,11 +42,21 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Bancrută frauduloasă](/servicii/bancruta-frauduloasa): Dosare penale legate de insolvență și active înstrăinate.
 
 - [Fraudă informatică](/servicii/frauda-informatica): Operațiuni financiare frauduloase, fraude online.
+- [Dare și luare de mită](/servicii/dare-luare-de-mita): Apărare în dosare de dare și luare de mită.
+- [Trafic de influență](/servicii/trafic-de-influenta): Trafic și cumpărare de influență.
+- [Abuz în serviciu](/servicii/abuz-in-serviciu): Apărare pentru funcționari și administratori.
+- [Neglijență în serviciu](/servicii/neglijenta-in-serviciu): Încălcarea din culpă a atribuțiilor de serviciu.
+- [Conflict de interese](/servicii/conflict-de-interese): Folosirea funcției pentru favorizarea unor persoane.
 
 - [Fonduri europene](/servicii/fonduri-europene): Fraudă cu fonduri UE, nereguli în proiecte, controale DLAF.
 - [Economic Crime](/en/services/financial-crime): Financial crime defense.
 - [Infracțiuni de corupție](/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice): Mită, abuz în serviciu, trafic de influență.
 - [Corruption and Public Office Offenses](/en/services/corruption-and-public-office-offenses): Bribery, abuse of office, influence peddling.
+- [Bribery](/en/services/bribery-giving-and-taking): Defense in giving and taking bribe cases.
+- [Influence Peddling](/en/services/influence-peddling): Trading in and buying of influence.
+- [Abuse of Office](/en/services/abuse-of-office): Defense for officials and directors.
+- [Negligence in Office](/en/services/negligence-in-office): Negligent breach of official duties.
+- [Conflict of Interest](/en/services/conflict-of-interest): Use of office to favour certain persons.
 - [Investigații privind activele cripto](/servicii/investigatii-privind-activele-cripto): Criptomonede, blockchain, fraude digitale.
 - [Crypto Asset Investigations](/en/services/crypto-asset-investigations): Crypto and blockchain-related investigations.
 - [Cauze penale privind droguri](/servicii/cauze-penale-privind-droguri): Deținere, trafic, conducere sub influență.
