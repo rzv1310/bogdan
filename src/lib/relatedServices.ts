@@ -211,6 +211,12 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/organized-crime-group": "Organized crime group",
   "/en/services/international-drug-trafficking": "International drug trafficking",
   "/en/services/asset-freezing-order": "Asset seizure",
+  "/en/services/drunk-driving": "Drunk driving",
+  "/en/services/drug-driving": "Drug driving",
+  "/en/services/leaving-the-accident-scene": "Leaving the accident scene",
+  "/en/services/refusal-to-provide-biological-samples": "Refusal to provide biological samples",
+  "/en/services/driving-without-a-licence": "Driving without a licence",
+  "/en/services/road-accident-with-victims": "Road accident with victims",
   "/en/services/confiscation": "Confiscation",
 
   "/en/compensation-calculator": "Compensation calculator",
