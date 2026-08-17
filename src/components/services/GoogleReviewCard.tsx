@@ -4,12 +4,14 @@ interface GoogleReviewCardProps {
   lang?: "ro" | "en";
   className?: string;
   reviewText?: string;
+  author?: string;
 }
 
 const DEFAULT_REVIEW_TEXT =
   "Dosar penal complicat, cu acuzații serioase. Domnul avocat Bogdan Lamatic a fost excepțional: extrem de profesionist, strategie foarte bună, calm și pregătit maxim. A identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar și realist, fără promisiuni false. Rezultatul a fost mult peste ce speram.";
 
-const AUTHOR = "Robert Boloaja";
+const DEFAULT_AUTHOR = "Robert Boloaja";
+
 
 function GoogleGlyph() {
   return (
@@ -36,10 +38,13 @@ export default function GoogleReviewCard({
   lang = "ro",
   className = "",
   reviewText = DEFAULT_REVIEW_TEXT,
+  author = DEFAULT_AUTHOR,
 }: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
   const reviewCount = lang === "en" ? "3 reviews" : "3 recenzii";
   const timestamp = lang === "en" ? "2 months ago" : "acum 2 luni";
+  const initial = author.charAt(0).toUpperCase();
+
 
   return (
     <figure className={`mt-12 md:mt-16 rounded-lg border border-slate-700 bg-slate-900 p-5 shadow-sm ${className}`}>
@@ -49,10 +54,10 @@ export default function GoogleReviewCard({
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-muted text-base font-semibold text-muted-foreground"
             aria-hidden="true"
           >
-            R
+            {initial}
           </span>
           <div className="min-w-0">
-            <p className="text-sm font-semibold text-slate-100">{AUTHOR}</p>
+            <p className="text-sm font-semibold text-slate-100">{author}</p>
             <p className="text-xs text-slate-400">{reviewCount}</p>
           </div>
         </div>
@@ -79,9 +84,10 @@ export default function GoogleReviewCard({
       </div>
 
       <figcaption className="sr-only">
-        {AUTHOR} - {badge}
+        {author} - {badge}
       </figcaption>
     </figure>
+
   );
 }
 

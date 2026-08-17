@@ -5145,3 +5145,619 @@ export const conflictDeIntereseRo: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT_COR,
 };
+
+/* ============================================================
+   Subservicii - pagina-pilon Cauze penale privind droguri
+   ============================================================ */
+
+const L143 = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/23629";
+const ICCJ25 = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/293958";
+const OUG78 = "https://legislatie.just.ro/Public/DetaliiDocument/305273";
+
+const PARENT_DO = {
+  to: "/servicii/cauze-penale-privind-droguri",
+  label: "cauze penale privind droguri",
+  breadcrumbLabel: "Cauze penale privind droguri",
+};
+
+export const detinereDroguriConsumPropriuRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/detinere-droguri-consum-propriu",
+  altPath: "/en/services/drug-possession-personal-use",
+  roPath: "/servicii/detinere-droguri-consum-propriu",
+  title: "Avocat deținere droguri consum propriu București | Bogdan Lamatic",
+  h1: "Avocat deținere droguri pentru consum propriu în București",
+  description:
+    "Ai fost găsit cu droguri pentru consum propriu sau ai fost chemat într-un dosar penal? Analizez rapid încadrarea, probele și riscul de trafic.",
+  keywords:
+    "avocat detinere droguri consum propriu, avocat droguri bucuresti, avocat dosar droguri, consum propriu vs trafic",
+  breadcrumbLabel: "Deținere droguri pentru consum propriu",
+  serviceName: "Avocat deținere droguri pentru consum propriu București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost găsit cu droguri asupra ta, în mașină sau în locuință?",
+    "Ai primit citație sau urmează să fii audiat?",
+    "Diferența dintre consum propriu și trafic poate schimba radical situația juridică.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist persoane cercetate pentru deținerea de droguri pentru consum propriu, în dosare instrumentate de Poliție, Parchet sau DIICOT.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Alege situația care corespunde dosarului tău."],
+      subsections: [
+        {
+          h3: "Au fost găsite droguri asupra ta, în mașină sau în locuință",
+          paragraphs: [
+            "Trebuie stabilit rapid ce substanță a fost ridicată, cantitatea, locul în care a fost găsită și ce alte probe există în dosar.",
+            "Într-o acuzație privind deținerea de droguri pentru consum propriu, analiza nu trebuie făcută doar prin raportare la cantitate. Contează contextul complet al cauzei și ceea ce poate fi dovedit prin probe.",
+          ],
+        },
+        {
+          h3: "Ai primit citație sau urmează să fii audiat",
+          paragraphs: [
+            "Înainte de declarație trebuie să știi exact în ce calitate ești chemat, ce faptă este investigată și ce informații există deja în dosar.",
+            "Nu încerca să explici situația printr-o declarație improvizată înainte să înțelegi acuzația și probele.",
+          ],
+        },
+        {
+          h3: "Procurorul consideră că drogurile nu erau doar pentru consum propriu",
+          paragraphs: [
+            [
+              { text: "Diferența dintre deținerea pentru consum propriu și " },
+              { text: "traficul de droguri", to: "/servicii/cauze-penale-privind-droguri" },
+              { text: " poate schimba radical situația juridică." },
+            ],
+            "Dacă sunt invocate cantitatea, modul de ambalare, conversații, transferuri de bani sau alte indicii de distribuire, fiecare element trebuie analizat separat.",
+          ],
+        },
+        {
+          h3: "O persoană apropiată este cercetată",
+          paragraphs: [
+            "Familia mă poate contacta chiar dacă nu are toate documentele dosarului.",
+            "Spune-mi unde se află persoana, ce s-a întâmplat și ce acte aveți în acest moment.",
+          ],
+          cta: "Sună-mă acum - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de deținere de droguri pentru consum propriu",
+      paragraphs: [
+        "Verific în primul rând dacă probele susțin efectiv încadrarea reținută de organele de urmărire penală.",
+      ],
+      bullets: [
+        "substanța identificată și raportul de constatare sau expertiză;",
+        "cantitatea ridicată;",
+        "locul și împrejurările în care a fost găsită;",
+        "modul în care era păstrată sau ambalată;",
+        "existența sau lipsa unor probe privind distribuirea;",
+        "conversațiile din telefon și contextul lor complet;",
+        "eventualele transferuri de bani;",
+        "declarațiile celorlalte persoane din dosar;",
+        "procesele-verbale de percheziție și ridicare;",
+        "legalitatea obținerii probelor;",
+        "dacă există probe care susțin scopul exclusiv de consum propriu;",
+        "dacă acuzația include și alte infracțiuni.",
+      ],
+      paragraphsAfterBullets: [
+        "Nu există în lege un prag cantitativ fix care să transforme automat deținerea pentru consum propriu în trafic. Încadrarea se stabilește în funcție de ansamblul probelor și de scopul deținerii. Înalta Curte a subliniat în 2025 opțiunea legiuitorului de a nu stabili un asemenea prag.",
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți pentru prima evaluare",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "citația;",
+        "procesul-verbal de percheziție;",
+        "procesul-verbal de ridicare a substanțelor;",
+        "ordonanțele sau actele primite de la organul de urmărire penală;",
+        "raportul privind substanța, dacă ți-a fost comunicat;",
+        "orice document privind telefonul sau alte dispozitive ridicate;",
+        "informația privind următoarea audiere sau următorul termen.",
+      ],
+      paragraphsAfterBullets: [
+        "Pentru prima discuție este suficient să îmi spui ce s-a întâmplat și ce știi în acest moment.",
+      ],
+      calloutAfterBullets: "Nu ai toate actele?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce înseamnă deținerea de droguri pentru consum propriu?",
+      paragraphs: [
+        "Art. 4 din Legea nr. 143/2000 sancționează cultivarea, producerea, fabricarea, experimentarea, extragerea, prepararea, transformarea, cumpărarea sau deținerea de droguri pentru consum propriu, fără drept.",
+        "În forma consolidată actuală a legii, fapta prevăzută de art. 4 este sancționată cu închisoare de la 2 la 5 ani.",
+        "Important este scopul pentru care substanța a fost cumpărată sau deținută. Același fapt material - de exemplu deținerea - poate necesita o analiză complet diferită dacă organele de anchetă susțin că drogurile erau destinate circulației sau distribuirii și nu exclusiv consumului propriu.",
+      ],
+    },
+    {
+      h2: "Care este diferența dintre deținerea pentru consum propriu și traficul de droguri?",
+      paragraphs: [
+        "Diferența nu se stabilește numai după numărul de grame. Pentru a vedea dacă probele indică consum propriu sau trafic, trebuie analizate împreună toate circumstanțele.",
+      ],
+      subsections: [
+        {
+          h3: "Cantitatea contează, dar nu decide singură încadrarea",
+          paragraphs: [
+            "O cantitate mai mare poate fi folosită de acuzare ca indiciu, însă legea nu stabilește un număr de grame de la care deținerea devine automat trafic.",
+          ],
+        },
+        {
+          h3: "Modul de ambalare poate deveni relevant",
+          paragraphs: [
+            "Mai multe pachete separate, obiecte despre care acuzarea susține că erau folosite pentru porționare sau alte împrejurări similare pot fi analizate împreună cu celelalte probe. Aceste elemente nu trebuie evaluate izolat.",
+          ],
+        },
+        {
+          h3: "Telefonul și conversațiile pot schimba interpretarea dosarului",
+          paragraphs: [
+            "În multe dosare, acuzarea folosește conversații, contacte, localizări, fotografii sau alte date informatice pentru a susține existența unor operațiuni de distribuire. Mesajele trebuie analizate în context, nu doar prin fragmente selectate.",
+          ],
+        },
+        {
+          h3: "Fluxurile de bani pot fi analizate ca probe",
+          paragraphs: [
+            "Transferurile bancare sau alte plăți pot fi invocate în susținerea acuzației. Trebuie stabilit însă ce reprezintă efectiv fiecare tranzacție și dacă există o legătură probată cu drogurile.",
+          ],
+        },
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "La final, vezi și " },
+          { text: "pagina principală despre cauze penale privind drogurile", to: "/servicii/cauze-penale-privind-droguri" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Pot fi acuzat de trafic dacă drogurile erau pentru mine?",
+      paragraphs: [
+        "Da, o asemenea acuzație poate apărea dacă organele de urmărire penală interpretează probele ca indicând distribuirea sau alte operațiuni de circulație a drogurilor. Dar existența acuzației nu înseamnă că încadrarea este automat corectă.",
+        "Art. 2 și art. 4 din Legea nr. 143/2000 reglementează situații diferite, iar scopul concret al operațiunii trebuie stabilit prin probe.",
+      ],
+      bullets: [
+        "ce probe indică pretinsa distribuire;",
+        "dacă există efectiv cumpărători sau destinatari identificați;",
+        "dacă sunt dovedite tranzacții;",
+        "contextul conversațiilor;",
+        "raportul dintre cantitate și situația concretă;",
+        "explicația celorlalte obiecte ridicate;",
+        "dacă există argumente pentru o altă încadrare juridică.",
+      ],
+    },
+    {
+      h2: "Ce se întâmplă cu telefonul ridicat în dosar?",
+      paragraphs: [
+        "În dosarele privind drogurile, telefonul poate deveni una dintre principalele surse de probă. Pot fi analizate, în condițiile procedurale aplicabile: conversații, fotografii și fișiere, contacte, date privind conturile, localizări, aplicații de mesagerie și alte informații relevante pentru acuzație.",
+        "Verific atât conținutul folosit de acuzare, cât și modul în care datele au fost obținute și interpretate. Nu șterge și nu modifica date despre care știi că pot fi relevante pentru o procedură penală.",
+      ],
+    },
+    {
+      h2: "Ce se întâmplă după deschiderea dosarului?",
+      paragraphs: [
+        "Procedura diferă de la caz la caz. Pot urma: analiza substanțelor ridicate, audierea persoanei cercetate, analiza telefoanelor și a altor probe, administrarea unor probe suplimentare, stabilirea încadrării juridice, o soluție a procurorului sau, dacă se dispune trimiterea în judecată, continuarea cauzei în instanță.",
+        "În apărare urmăresc atât acuzația în sine, cât și legalitatea și forța probelor pe care aceasta se bazează. Nicio soluție nu poate fi garantată înainte de analiza dosarului.",
+      ],
+    },
+    {
+      h2: "Dacă mai multe persoane sunt cercetate în același dosar",
+      paragraphs: [
+        [
+          { text: "Faptul că mai multe persoane sunt cercetate împreună nu înseamnă automat existența unui " },
+          { text: "grup infracțional organizat", to: "/servicii/grup-infractional-organizat" },
+          { text: ". O asemenea acuzație are condiții distincte și trebuie probată separat." },
+        ],
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar privind posesia sau deținerea de droguri pentru consum propriu",
+      paragraphs: [
+        "Strategia poate include, în funcție de dosar:",
+      ],
+      bullets: [
+        "delimitarea consumului propriu de acuzația de trafic;",
+        "verificarea legalității percheziției și ridicării probelor;",
+        "analiza raportului privind substanțele;",
+        "verificarea datelor informatice;",
+        "contestarea interpretărilor care nu sunt susținute de ansamblul probelor;",
+        "administrarea probelor favorabile;",
+        "formularea cererilor și apărărilor potrivite etapei procesuale;",
+        "reprezentarea în fața organelor de urmărire penală și a instanței.",
+      ],
+      paragraphsAfterBullets: [
+        "Mă ocup personal de strategia dosarului și de momentele esențiale ale mandatului.",
+        [
+          { text: "Vezi și " },
+          { text: "pagina principală despre cauze penale privind drogurile", to: "/servicii/cauze-penale-privind-droguri" },
+          { text: " sau situația de " },
+          { text: "trafic internațional de droguri", to: "/servicii/trafic-international-de-droguri" },
+          { text: "." },
+        ],
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Există o cantitate maximă considerată automat pentru consum propriu?",
+      a: "Nu. Legea nu stabilește un prag cantitativ fix care să separe automat consumul propriu de trafic. Cantitatea este analizată împreună cu celelalte probe.",
+    },
+    {
+      q: "Dacă drogurile erau doar pentru mine, tot există dosar penal?",
+      a: "Art. 4 din Legea nr. 143/2000 incriminează, între altele, cumpărarea și deținerea fără drept de droguri pentru consum propriu. Chiar și în această situație este posibil un dosar penal, deși încadrarea și pedeapsa sunt diferite de trafic.",
+    },
+    {
+      q: "Cantitatea mică garantează încadrarea la consum propriu?",
+      a: "Nu. Nici cantitatea mică și nici cantitatea mare nu stabilesc singure încadrarea. Trebuie analizat ansamblul probelor.",
+    },
+    {
+      q: "Se poate schimba încadrarea din trafic în deținere pentru consum propriu?",
+      a: "Încadrarea juridică trebuie să corespundă faptelor și probelor efectiv dovedite. Dacă probele invocate pentru trafic nu susțin această acuzație, trebuie analizată încadrarea corectă în situația concretă.",
+    },
+    {
+      q: "Ce fac dacă am primit citație?",
+      a: "Verifică în ce calitate ești chemat și discută cu avocatul înainte de audiere, mai ales dacă există riscul ca declarația să influențeze încadrarea juridică.",
+    },
+    {
+      q: "Familia poate contacta avocatul?",
+      a: "Da. Un membru al familiei mă poate contacta și poate transmite documentele disponibile.",
+    },
+  ],
+  faqTitle: "Întrebări frecvente despre deținerea de droguri pentru consum propriu",
+  resources: [
+    {
+      text: "Legea nr. 143/2000 privind prevenirea și combaterea traficului și consumului ilicit de droguri.",
+      href: L143,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Decizia nr. 25/2025 a Înaltei Curți privind lipsa unui prag cantitativ legal.",
+      href: ICCJ25,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "OUG nr. 78/2016 privind organizarea și competența DIICOT.",
+      href: OUG78,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+  reviewAfterSection: 2,
+  reviewAuthor: "Lidia Caescu",
+  parent: PARENT_DO,
+};
+
+
+export const grupInfractionalOrganizatRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/grup-infractional-organizat",
+  altPath: "/en/services/organized-crime-group",
+  roPath: "/servicii/grup-infractional-organizat",
+  title: "Avocat grup infracțional organizat București | Bogdan Lamatic",
+  h1: "Avocat grup infracțional organizat în București",
+  description:
+    "Ești cercetat pentru asociere în grup infracțional organizat? Analizez structura, probele și apărarea în dosare complexe instrumentate de DIICOT sau Parchet.",
+  keywords:
+    "avocat grup infractional organizat, avocat diicot bucuresti, grup infractional droguri, avocat asociere criminala",
+  breadcrumbLabel: "Grup infracțional organizat",
+  serviceName: "Avocat grup infracțional organizat București - Bogdan Lamatic",
+  urgency: [
+    "Ești cercetat pentru asociere într-un grup infracțional organizat?",
+    "Acuzația de grup infracțional are condiții speciale și pedepse sporite.",
+    "Fiecare probă trebuie verificată individual și în contextul dosarului.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane cercetate pentru asociere în grup infracțional organizat, în special în dosare cu droguri, corupție, fraudă sau spălare de bani.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Identifică etapa în care se află dosarul tău."],
+      subsections: [
+        {
+          h3: "Ești suspect de asociere într-un grup infracțional organizat",
+          paragraphs: [
+            "Înainte de a da declarații, trebuie să înțelegi exact ce acte sau fapte se îmbracă în această calitate juridică și dacă există probe în acest sens.",
+          ],
+        },
+        {
+          h3: "Dosarul include interceptări, filaje sau date din telefoane",
+          paragraphs: [
+            "Probele în dosarele de grup infracțional organizat sunt adesea voluminoase. Fiecare înregistrare, conversație sau localizare trebuie verificată în raport cu rolul pretins atribuit clientului.",
+          ],
+        },
+        {
+          h3: "Mai multe persoane sunt cercetate împreună",
+          paragraphs: [
+            "Co-cercetarea nu confirmă automat calitatea de membru al unui grup structurat. Fiecare persoană răspunde pentru faptele sale și nu pentru cele atribuite altora, decât dacă există probe ale participației.",
+          ],
+        },
+        {
+          h3: "Procurorul propune trimiterea în judecată pentru grup infracțional organizat",
+          paragraphs: [
+            "În această fază este esențială contestarea calității de membru, a structurii grupului și a contribuției personale. O bună strategie de apărare se construiește înainte de sesizarea instanței.",
+          ],
+          cta: "Sună-mă acum - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de grup infracțional organizat",
+      paragraphs: [
+        "Verific dacă sunt îndeplinite condițiile pentru existența unui grup infracțional organizat și ce probe susțin calitatea de membru.",
+      ],
+      bullets: [
+        "structura pretinsă a grupului și stabilitatea în timp;",
+        "existența unui obiectiv sau program comun;",
+        "repartizarea rolurilor și ierarhia, dacă sunt demonstrate;",
+        "probele privind participația efectivă a clientului;",
+        "legalitatea interceptărilor și a perchezițiilor;",
+        "consistența declarațiilor celorlalte persoane;",
+        "existența unor probe alternative sau exonerante;",
+        "eventualele diferențe dintre acuzație și materialul probator.",
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți pentru prima evaluare",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "încheierile de începere a urmăririi penale;",
+        "ordonațele de reținere sau arestare;",
+        "procesele-verbale de percheziție și de ridicare;",
+        "rezumatele interceptărilor, dacă ți-au fost comunicate;",
+        "rechizitoriul sau propunerea de arestare;",
+        "orice înscris care arată relațiile comerciale sau personale dintre persoanele din dosar;",
+        "informații despre termenele următoare.",
+      ],
+      paragraphsAfterBullets: ["Nu ai toate actele? Sună oricum. Spune-mi ce știi despre dosar și cine mai este implicat."],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce înseamnă grup infracțional organizat?",
+      paragraphs: [
+        "Conform Codului penal, grupul infracțional organizat este constituit dintr-o structură formată din trei sau mai multe persoane, care există pentru o perioadă de timp și acționează în coordonare pentru săvârșirea uneia sau mai multor infracțiuni grave.",
+        "Pentru existența acestei infracțiuni este necesară o anumită structură și continuitate, nu doar o simplă asociere ocazională pentru comiterea unei fapte.",
+      ],
+    },
+    {
+      h2: "Diferența dintre grup infracțional organizat și asocierea sporadică",
+      paragraphs: [
+        "Legea sancționează o structură stabilă, cu roluri distribuite, nu orice cooperare pentru o faptă izolată. O înțelegere punctuală, fără structură repetitivă sau diviziune a sarcinilor, poate să nu întrunescă elementele constitutive ale infracțiunii de grup infracțional organizat.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de grup infracțional organizat",
+      paragraphs: ["Strategia depinde de situația concretă, dar poate include:"],
+      bullets: [
+        "contestarea existenței structurii grupului;",
+        "separarea rolului clientului de acuzațiile generale;",
+        "analizarea legalității probelor;",
+        "verificarea corelației dintre interceptări și rolul pretins;",
+        "administrarea de probe și martori favorabili;",
+        "formularea apărărilor în fața organelor de urmărire penală și în instanță.",
+      ],
+      paragraphsAfterBullets: [
+        "Mă ocup personal de strategia dosarului și de momentele esențiale ale mandatului.",
+        [
+          { text: "Vezi și " },
+          { text: "pagina principală despre cauze penale privind drogurile", to: "/servicii/cauze-penale-privind-droguri" },
+          { text: " sau situația de " },
+          { text: "grup infracțional organizat", to: "/servicii/grup-infractional-organizat" },
+          { text: "." },
+        ],
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Dacă am vorbit cu cineva cercetat, înseamnă că fac parte din grup?",
+      a: "Nu. O simplă conversație sau relație personală nu este suficientă pentru calitatea de membru al unui grup infracțional organizat. Trebuie să existe probe că ai acceptat să participi la o structură cu obiectiv infracțional.",
+    },
+    {
+      q: "Pot fi condamnat doar pentru că sunt rudă cu un suspect?",
+      a: "Nu. Calitatea de membru se probează prin fapte concrete, nu prin relații de familie sau prietenie.",
+    },
+    {
+      q: "Ce înseamnă lipsa unei structuri organizate?",
+      a: "Dacă nu există o structură cu roluri distribuite, continuitate și obiectiv comun, acuzația de grup infracțional organizat poate fi contestată. Fiecare dosar se analizează în funcție de probe.",
+    },
+    {
+      q: "Familia poate contacta avocatul?",
+      a: "Da. Un membru al familiei mă poate contacta și transmite documentele disponibile, chiar și parțiale.",
+    },
+  ],
+  faqTitle: "Întrebări frecvente despre grupul infracțional organizat",
+  resources: [
+    {
+      text: "Codul penal - Art. 367 și regimul juridic al grupului infracțional organizat.",
+      href: "https://legislatie.just.ro/Public/DetaliiDocument/304554",
+      linkLabel: "Legislație",
+    },
+    {
+      text: "OUG nr. 78/2016 privind organizarea și competența DIICOT.",
+      href: OUG78,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+  parent: PARENT_DO,
+};
+
+export const traficInternationalDeDroguriRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/trafic-international-de-droguri",
+  altPath: "/en/services/international-drug-trafficking",
+  roPath: "/servicii/trafic-international-de-droguri",
+  title: "Avocat trafic internațional de droguri București | Bogdan Lamatic",
+  h1: "Avocat trafic internațional de droguri în București",
+  description:
+    "Cercetat pentru trafic internațional de droguri, interceptare la frontieră sau transport de colete? Analizez probele, legalitatea și apărarea în dosare transfrontaliere.",
+  keywords:
+    "avocat trafic international droguri, avocat droguri frontiera, avocat colet droguri, avocat diicot droguri",
+  breadcrumbLabel: "Trafic internațional de droguri",
+  serviceName: "Avocat trafic internațional de droguri București - Bogdan Lamatic",
+  urgency: [
+    "Droguri descoperite la frontieră, în aeroport sau în trafic internațional?",
+    "Traficul transfrontalier de droguri atrage pedepse severe și proceduri complexe.",
+    "Fiecare etapă a transportului și fiecare probă trebuie verificate în detaliu.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane cercetate pentru trafic internațional de droguri, în dosare cu interceptări, transporturi și cooperare judiciară internațională.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Droguri descoperite la frontieră sau în aeroport",
+          paragraphs: [
+            "Contează locul descoperirii, cantitatea, modul de ambalare, documentele de însoțire și orice date privind expeditorul sau destinatarul.",
+          ],
+        },
+        {
+          h3: "Ești acuzat de transport sau de curierat",
+          paragraphs: [
+            "Curieratul poate fi calificat diferit în funcție de ceea ce știai sau trebuia să știi despre conținut, destinație și beneficiari. Probele privind cunoștința sunt esențiale.",
+          ],
+        },
+        {
+          h3: "Coletul era trimis către sau dinspre România",
+          paragraphs: [
+            "În dosarele transfrontaliere apar adesea proceduri de cooperare judiciară internațională, traducerea probelor și diferențe de legislație. Trebuie verificate competența și legalitatea fiecărei probe.",
+          ],
+        },
+        {
+          h3: "O persoană apropiată este reținută în străinătate",
+          paragraphs: [
+            "Familia poate contacta avocatul pentru a înțelege procedura și opțiunile. Spune-mi țara, situația și documentele disponibile.",
+          ],
+          cta: "Sună-mă acum - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de trafic internațional de droguri",
+      paragraphs: [
+        "Verific dacă probele sunt suficiente, legale și corect interpretate în context transfrontalier.",
+      ],
+      bullets: [
+        "legalitatea percheziției și a ridicării probelor;",
+        "cantitatea și tipul substanței;",
+        "modul de ambalare și disimulare;",
+        "documentele de transport și facturarea;",
+        "datele privind expeditorul, destinatarul și intermediarii;",
+        "interceptările, conversațiile și localizările;",
+        "cooperarea judiciară internațională și competența;",
+        "traducerea și autenticitatea probelor străine;",
+        "probele privind cunoștința și intenția clientului.",
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți pentru prima evaluare",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "actele de reținere sau arestare;",
+        "procesele-verbale de percheziție și ridicare;",
+        "raportul de expertiză privind substanța;",
+        "documentele de transport și livrare;",
+        "interceptările sau datele comunicate;",
+        "cererile de extrădare sau actele de cooperare judiciară;",
+        "informații despre termenele următoare.",
+      ],
+      paragraphsAfterBullets: ["Nu ai toate actele? Sună oricum. Prima discuție este suficientă pentru a înțelege situația."],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce înseamnă traficul internațional de droguri?",
+      paragraphs: [
+        "Traficul internațional de droguri implică operațiuni de import, export, transport sau transfer de droguri peste frontieră. Acuzația poate viza pe oricine participă la aceste operațiuni, de la organizatori la curieri.",
+        "Legea nr. 143/2000 pedepsește traficul de droguri cu închisoare de la 10 la 20 de ani, iar în varianta agravată (trafic transfrontalier) limitele pot crește. Pedepsele exacte depind de împrejurări.",
+      ],
+    },
+    {
+      h2: "Cum se apără un dosar de trafic internațional de droguri",
+      paragraphs: ["Apărarea poate urmări mai multe direcții, în funcție de dosar:"],
+      bullets: [
+        "verificarea legalității probelor străine;",
+        "contestarea cunoștinței și a intenției;",
+        "dovedirea unui rol secundar sau involuntar;",
+        "analiza cantității și a împrejurărilor de descoperire;",
+        "verificarea cooperării judiciare internaționale;",
+        "administrarea de probe favorabile și apărări în instanță.",
+      ],
+      paragraphsAfterBullets: [
+        "Mă ocup personal de strategia dosarului și de momentele esențiale ale mandatului.",
+      ],
+      cta: "Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Ce se întâmplă dacă nu știam ce conține coletul?",
+      a: "Cunoștința și intenția sunt esențiale pentru încadrare. Dacă probele nu arată că știai despre droguri, acuzația poate fi contestată. Fiecare element din dosar trebuie analizat separat.",
+    },
+    {
+      q: "Pot fi extrădat dacă sunt în străinătate?",
+      a: "Extrădarea depinde de tratatele internaționale, de naționalitate și de legislația statului respectiv. O apărare eficientă începe cât mai devreme în țara în care te afli.",
+    },
+    {
+      q: "Cât de severe sunt pedepsele pentru trafic internațional de droguri?",
+      a: "Pedepsele sunt între 10 și 20 de ani, cu posibilitate de agravare în funcție de cantitate, rol și circumstanțe. Limita exactă se stabilește de instanță.",
+    },
+    {
+      q: "Familia poate contacta avocatul?",
+      a: "Da. Un membru al familiei mă poate contacta și transmite informațiile disponibile, inclusiv din străinătate.",
+    },
+  ],
+  faqTitle: "Întrebări frecvente despre traficul internațional de droguri",
+  resources: [
+    {
+      text: "Legea nr. 143/2000 privind prevenirea și combaterea traficului și consumului ilicit de droguri.",
+      href: L143,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Decizia nr. 25/2025 a Înaltei Curți privind lipsa unui prag cantitativ legal.",
+      href: ICCJ25,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "OUG nr. 78/2016 privind organizarea și competența DIICOT.",
+      href: OUG78,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+  parent: PARENT_DO,
+};
