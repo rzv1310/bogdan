@@ -3240,21 +3240,10 @@ export const abuseOfOfficeEn: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Does any unlawful act amount to abuse of office?",
-      a: "No. A breach of a provision in a law or ordinance, actual damage or harm, and the official's intent are all required.",
-    },
-    {
-      q: "Does it matter that I signed based on a favourable legal opinion?",
-      a: "Yes. The approvals received are relevant to the form of guilt and can support the absence of intent.",
-    },
-    {
       q: "Can a private company director be accused of abuse of office?",
       a: "Yes, through the extension of liability, with penalty limits reduced by one third compared to the basic form.",
     },
-    {
-      q: "What does the aggravated form under Law 78/2000 mean?",
-      a: "It applies where the official obtained an undue benefit for themselves or for another, and the penalty limits are increased.",
-    },
+
     {
       q: "If I repay the damage, is the file closed?",
       a: "Not automatically. Covering the damage matters for sentencing and for the civil claim, but does not by itself remove criminal liability.",
