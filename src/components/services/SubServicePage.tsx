@@ -123,6 +123,12 @@ export interface SubServicePageData {
   reviewAfterSection?: number;
   /** Optional author name for the Google review card. */
   reviewAuthor?: string;
+  /** Optional custom review text for the Google review card. */
+  reviewText?: string;
+  /** Optional meta line under the author (e.g. "Local Guide · 24 de recenzii"). */
+  reviewMeta?: string;
+  /** Optional timestamp text for the Google review card. */
+  reviewTimestamp?: string;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 
@@ -530,7 +536,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           </CardContent>
         </Card>
         {data.reviewAfterSection === sectionIndex && (
-          <GoogleReviewCard lang={data.lang} author={data.reviewAuthor} />
+          <GoogleReviewCard
+            lang={data.lang}
+            author={data.reviewAuthor}
+            reviewText={data.reviewText}
+            reviewMeta={data.reviewMeta}
+            timestamp={data.reviewTimestamp}
+          />
         )}
 
         </div>

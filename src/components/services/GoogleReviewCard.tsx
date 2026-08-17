@@ -5,6 +5,8 @@ interface GoogleReviewCardProps {
   className?: string;
   reviewText?: string;
   author?: string;
+  reviewMeta?: string;
+  timestamp?: string;
 }
 
 const DEFAULT_REVIEW_TEXT =
@@ -39,10 +41,12 @@ export default function GoogleReviewCard({
   className = "",
   reviewText = DEFAULT_REVIEW_TEXT,
   author = DEFAULT_AUTHOR,
+  reviewMeta: reviewMetaProp,
+  timestamp: timestampProp,
 }: GoogleReviewCardProps) {
   const badge = lang === "en" ? "Google review" : "Recenzie Google";
-  const reviewCount = lang === "en" ? "3 reviews" : "3 recenzii";
-  const timestamp = lang === "en" ? "2 months ago" : "acum 2 luni";
+  const reviewMeta = reviewMetaProp ?? (lang === "en" ? "3 reviews" : "3 recenzii");
+  const timestamp = timestampProp ?? (lang === "en" ? "2 months ago" : "acum 2 luni");
   const initial = author.charAt(0).toUpperCase();
 
 
