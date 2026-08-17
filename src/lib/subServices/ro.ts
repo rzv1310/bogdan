@@ -4036,10 +4036,126 @@ export const traficDeInfluentaRo: SubServicePageData = {
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
     {
+      h2: "Care este diferența dintre trafic de influență și înșelăciune?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Traficul de influență și înșelăciunea pot părea apropiate pentru că, în ambele situații, o persoană poate fi indusă în eroare cu promisiuni false. Diferența juridică este însă esențială: la trafic de influență este vorba despre promisiunea de a interveni pe lângă un funcționar public, în timp ce la înșelăciune nu există nicio legătură cu o astfel de intervenție.",
+        [
+          { text: "Dacă ești cercetat pentru o faptă care pare să aibă elemente din ambele infracțiuni, este util să vezi și pagina dedicată " },
+          { text: "apărării în dosare de înșelăciune și fraudă", to: "/servicii/inselaciune-frauda" },
+          { text: "." },
+        ],
+      ],
+      subsections: [
+        {
+          h3: "Ce se întâmplă dacă persoana nu avea în realitate influență",
+          paragraphs: [
+            "Influența reală nu este un element obligatoriu al infracțiunii. Este suficient ca persoana să lase să se creadă că are influență asupra unui funcționar public și să pretindă sau să primească foloase în schimbul promisiunii de intervenție. Acesta este primul punct în care traficul de influență se separă clar de înșelăciune, unde este necesară inducerea în eroare cu privire la o situație de fapt.",
+          ],
+        },
+        {
+          h3: "Promisiunea unei intervenții vs simpla inducere în eroare",
+          paragraphs: [
+            "La trafic de influență, obiectul promisiunii este determinarea funcționarului să îndeplinească, să nu îndeplinească sau să întârzie un act de serviciu. La înșelăciune, obiectul inducerii în eroare poate fi orice situație de fapt care determină victima să transmită un patrimoniu. Dacă în discuție nu apare clar o intervenție pe lângă un funcționar, acuzația de trafic de influență poate fi contestată.",
+          ],
+        },
+        {
+          h3: "Pot exista ambele acuzații în același dosar?",
+          paragraphs: [
+            "Da. În practică, procurorii pot reține ambele infracțiuni, mai ales când persoana care a pretins că are influență nu a mai și intervenit, iar banii au fost primiți pe baza unei reprezentări false. Apărarea trebuie să delimiteze cu precizie care sunt elementele concrete ale fiecărei acuzații și ce probe le susțin.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Denunțul și cauza de nepedepsire la cumpărarea de influență",
+      paragraphs: [
+        "Art. 292 Cod penal prevede în mod explicit că persoana care a cumpărat influență nu se pedepsește dacă denunță fapta înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta. Acest termen este cel mai important și trebuie verificat cu atenție în fiecare caz.",
+        [
+          { text: "Mecanismul este asemănător cu cel de la " },
+          { text: "darea și luarea de mită", to: "/servicii/dare-luare-de-mita" },
+          { text: ", însă la cumpărarea de influență beneficiarul folosului este intermediarul, nu funcționarul însuși." },
+        ],
+      ],
+      subsections: [
+        {
+          h3: "Când trebuie făcut denunțul",
+          paragraphs: [
+            "Denunțul trebuie făcut înainte ca organul de urmărire penală să fi fost sesizat cu privire la fapta de cumpărare de influență. Sesizarea se poate face de orice persoană, nu neapărat de denunțător. De aceea, este crucial să stabilim exact când a început urmărirea penală și dacă denunțul tău a fost anterior.",
+          ],
+        },
+        {
+          h3: "Când nu mai poate opera cauza de nepedepsire",
+          paragraphs: [
+            "Cauza de nepedepsire nu mai poate opera după ce organul de urmărire penală a fost sesizat oficial, după ce a început urmărirea penală sau după ce au fost dispuse măsuri procesuale. De asemenea, denunțul trebuie să fie real și complet, nu doar o simplă invocare verbală.",
+          ],
+        },
+        {
+          h3: "Ce se întâmplă cu banii dați",
+          paragraphs: [
+            "Chiar dacă operează cauza de nepedepsire, banii sau foloasele date nu se întorc automat. Legea prevede posibilitatea confiscării sau, în anumite condiții, restituirea. Fiecare situație trebuie analizată separat, în funcție de stadiul dosarului și de bunurile identificate.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Flagrantul, denunțătorul și provocarea în dosarele de trafic de influență",
+      paragraphs: [
+        "Multe dosare de trafic de influență pornesc de la un denunț și continuă cu un flagrant. În această etapă devine esențial să verific cum a fost obținută proba, dacă a existat o provocare și care a fost rolul real al denunțătorului.",
+      ],
+      subsections: [
+        {
+          h3: "Contract de consultanță, lobby sau trafic de influență?",
+          paragraphs: [
+            "Nu orice conversație despre relații sau despre modul în care funcționează o instituție înseamnă trafic de influență. Pentru existența infracțiunii trebuie dovedită o promisiune concretă de intervenție pe lângă un funcționar determinat sau determinabil și legătura acesteia cu un folos pretins ori primit.",
+            "Discuțiile generale, activitatea reală de consultanță, lobby-ul desfășurat în limitele legii sau simpla afirmare a unor relații, fără o promisiune de intervenție, nu întrunesc elementele infracțiunii.",
+          ],
+        },
+        {
+          h3: "Contractul de consultanță nu exclude automat acuzația",
+          paragraphs: [
+            "Un contract de consultanță nu este o apărare absolută. Procurorii pot reține că, în spatele contractului, s-a ascuns de fapt o promisiune de influență. De aceea, verific atât forma contractului, cât și corespondența, livrabilele și justificarea sumelor.",
+          ],
+        },
+        {
+          h3: "Cum se dovedește activitatea profesională reală",
+          paragraphs: [
+            "Activitatea reală se probează cu documente: rapoarte, note de analiză, corespondență cu instituțiile, chitanțe, facturi și orice alt document care arată că serviciul promis a fost efectiv prestat. Cu cât există mai multe probe concrete, cu atât este mai greu de reținut infracțiunea.",
+          ],
+        },
+        {
+          h3: "Când plata are o explicație contractuală legitimă",
+          paragraphs: [
+            "Plata este legitimă atunci când există o prestație reală, prețul este corelat cu piața, sumele sunt justificate documentar și nu există o legătură directă între plată și promisiunea de a interveni pe lângă un funcționar. Analizez fiecare transfer bancar și fiecare justificare oferită.",
+            [
+              { text: "Pentru dosarele instrumentate de DNA, vezi și pagina de " },
+              { text: "asistență în anchete anticorupție", to: "/servicii/avocat-dna" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Ce se întâmplă cu banii într-un dosar de trafic sau cumpărare de influență",
+      paragraphs: [
+        "Traficul și cumpărarea de influență au reguli specifice privind confiscarea și, în anumite situații, restituirea. Sumele primite sau date pot fi supuse confiscării speciale, iar asupra bunurilor tale pot fi luate măsuri asigurătorii încă din faza de urmărire penală.",
+        "Restituirea banilor dați pentru influență este posibilă doar în condiții strict limitate, de regulă atunci când fapta a fost denunțată înainte de sesizarea organelor de urmărire penală. Chiar și așa, instanța analizează dacă sumele pot fi restituite sau trebuie confiscate.",
+      ],
+      bullets: [
+        "Confiscarea sumelor sau bunurilor care au făcut obiectul infracțiunii.",
+        "Măsuri asigurătorii asupra bunurilor, dispuse pe parcursul urmăririi penale.",
+        "Restituirea către victimă, în condițiile prevăzute de lege.",
+        "Obligații de plată accesorii, în funcție de modul în care au fost folosiți banii.",
+      ],
+      callout: "Dacă ai deja o ordonanță de sechestru sau confiscare, analizez imediat ce căi de atac sunt disponibile.",
+      calloutCta: "Sună-mă acum",
+    },
+    {
       h2: "Ce este traficul de influență",
       paragraphs: [
         "Traficul de influență constă în pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, direct sau indirect, de către o persoană care are influență ori lasă să se creadă că are influență asupra unui funcționar public, promițând că îl va determina să îndeplinească, să nu îndeplinească ori să întârzie un act de serviciu.",
-        "Fapta este prevăzută de art. 291 Cod penal. Nu are relevanță dacă influența era reală sau doar afirmată și nici dacă funcționarul a fost efectiv contactat.",
+        "Fapta este prevăzută de art. 291 Cod penal. Nu are relevanță dacă influința era reală sau doar afirmată și nici dacă funcționarul a fost efectiv contactat.",
       ],
     },
     {
@@ -4047,14 +4163,6 @@ export const traficDeInfluentaRo: SubServicePageData = {
       paragraphs: [
         "Cumpărarea de influență, prevăzută de art. 292 Cod penal, este fapta persoanei care promite, oferă sau dă bani ori alte foloase celui care susține că are influență asupra unui funcționar public.",
         "Și în acest caz legea prevede o cauză de nepedepsire pentru cel care denunță fapta înainte ca organul de urmărire penală să fi fost sesizat.",
-      ],
-    },
-    {
-      h2: "Când o discuție nu înseamnă infracțiune",
-      cardClassName: "bg-[#faf0e6]",
-      paragraphs: [
-        "Nu orice conversație despre relații sau despre modul în care funcționează o instituție înseamnă trafic de influență. Pentru existența infracțiunii trebuie dovedită o promisiune concretă de intervenție pe lângă un funcționar determinat sau determinabil și legătura acesteia cu un folos pretins ori primit.",
-        "Discuțiile generale, activitatea reală de consultanță, lobby-ul desfășurat în limitele legii sau simpla afirmare a unor relații, fără o promisiune de intervenție, nu întrunesc elementele infracțiunii.",
       ],
     },
     {
