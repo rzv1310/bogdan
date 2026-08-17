@@ -1154,19 +1154,20 @@ export const controlJudiciarRo: SubServicePageData = {
     {
       h2: "Ce obligații pot fi impuse prin control judiciar",
       paragraphs: [
-        "Conținutul controlului judiciar este reglementat de art. 215 CPP. Obligațiile pot privi, în funcție de situație:",
+        "Conținutul controlului judiciar este reglementat de art. 215 CPP, care distinge între obligațiile ce se aplică în toate cazurile și obligațiile suplimentare pe care organul judiciar le poate impune.",
+        "Pe durata controlului judiciar trebuie să respecți trei obligații de bază:",
       ],
       bullets: [
-        "prezentarea în fața organului judiciar;",
-        "prezentarea la organul de poliție desemnat cu supravegherea;",
-        "comunicarea schimbării locuinței;",
-        "deplasarea în anumite limite teritoriale;",
-        "contactul cu anumite persoane;",
-        "exercitarea anumitor activități, atunci când o asemenea obligație este stabilită în condițiile legii;",
-        "alte obligații permise de lege.",
+        "să te prezinți la organul judiciar ori de câte ori ești chemat;",
+        "să informezi imediat dacă îți schimbi locuința;",
+        "să te prezinți la organul de poliție desemnat cu supravegherea, conform programului stabilit.",
       ],
-      callout: "Obligațiile exacte trebuie verificate în actul prin care măsura a fost dispusă.",
+      paragraphsAfterBullets: [
+        "În plus, organul judiciar poate impune și alte obligații, precum restricții privind deplasările, contactul cu anumite persoane sau exercitarea anumitor activități.",
+      ],
+      calloutAfterBullets: "Obligațiile exacte trebuie verificate în actul prin care măsura a fost dispusă.",
     },
+
     {
       h2: "Ce analizez în cazul controlului judiciar",
       paragraphs: [
