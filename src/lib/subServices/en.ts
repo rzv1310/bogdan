@@ -4728,8 +4728,9 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
   reviewAuthor: "Robert Boloaja",
   reviewText:
     "Complicated criminal case with serious accusations. Mr. Bogdan Lamatic was exceptional: extremely professional, very good strategy, calm and maximally prepared. He quickly identified the weak points of the case and handled everything with determination. Available at any time, explains everything clearly and realistically, without false promises. The result was far beyond what I hoped for.",
-  reviewMeta: "3 reviews",
+  reviewMeta: "Local Guide · 3 reviews",
   reviewTimestamp: "2 months ago",
+  reviewLink: "https://maps.app.goo.gl/FrP7GEBkgb1pFW2Y8",
   faqTitle: "Frequently asked questions about international drug trafficking",
   faq: [
     {
