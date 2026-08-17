@@ -13,8 +13,6 @@ import {
   Calculator,
   ShieldCheck,
   FileText,
-  Gavel,
-  Car,
   HeartPulse,
   BadgeInfo,
   Download,
