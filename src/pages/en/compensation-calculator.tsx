@@ -568,6 +568,12 @@ export default function CompensationCalculator() {
           </Card>
         </section>
 
+        {/* Bio + reviews */}
+        <section className="mb-8">
+          <LawyerBioBlock path="/en/compensation-calculator" lang="en" />
+          <GoogleReviewStars lang="en" className="mt-3" />
+        </section>
+
         {/* Call to Action */}
         <section className="text-center mb-12">
           <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call me now">
