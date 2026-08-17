@@ -5912,8 +5912,9 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
   reviewAuthor: "Robert Boloaja",
   reviewText:
     "Dosar penal complicat, cu acuzații serioase. Domnul avocat Bogdan Lamatic a fost excepțional: extrem de profesionist, strategie foarte bună, calm și pregătit maxim. A identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar și realist, fără promisiuni false. Rezultatul a fost mult peste ce speram.",
-  reviewMeta: "3 recenzii",
+  reviewMeta: "Local Guide · 3 recenzii",
   reviewTimestamp: "acum 2 luni",
+  reviewLink: "https://maps.app.goo.gl/FrP7GEBkgb1pFW2Y8",
   faqTitle: "Întrebări frecvente despre traficul internațional de droguri",
   faq: [
     {
