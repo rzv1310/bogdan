@@ -1403,7 +1403,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   urgency: [
     "Ești în arest la domiciliu sau această măsură urmează să fie decisă?",
     "Arestul la domiciliu îți limitează libertatea și poate afecta direct munca, familia și activitățile de zi cu zi.",
-    "Dacă procurorul solicită o măsură privativă de libertate, dacă ești deja în arest la domiciliu sau dacă vrei înlocuirea măsurii cu control judiciar, trebuie analizate rapid situația dosarului, motivele măsurii și opțiunile procedurale disponibile.",
+    "Dacă procurorul solicită asta, dacă ești deja în arest la domiciliu sau dacă vrei înlocuirea măsurii cu control judiciar, trebuie analizate rapid situația dosarului, motivele măsurii și opțiunile procedurale disponibile.",
   ],
   bio: [
     `${BIO_INTRO} Asist clienți atât înainte de luarea măsurii, cât și după dispunerea acesteia.`,
@@ -1412,6 +1412,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   sections: [
     {
       h2: "Te pot ajuta dacă",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "procurorul solicită arest la domiciliu;",
         "procurorul solicită arestarea preventivă și vrei susținerea unei măsuri mai puțin severe;",
@@ -1429,11 +1430,6 @@ export const arestLaDomiciliuRo: SubServicePageData = {
           h3: "Procurorul solicită arestarea preventivă",
           paragraphs: [
             "Arestul la domiciliu poate deveni relevant ca alternativă mai puțin severă atunci când condițiile legale sunt îndeplinite și circumstanțele concrete permit susținerea unei asemenea soluții.",
-            [
-              { text: "Analizez dacă scopul urmărit prin măsura preventivă poate fi atins fără detenție într-un centru de arest. " },
-              { text: "Arest preventiv - vezi opțiunile de apărare", to: "/servicii/arest-preventiv" },
-              { text: " →" },
-            ],
           ],
         },
         {
@@ -1499,6 +1495,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să-mi spui când mă contactezi",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Pentru o primă evaluare rapidă, spune-mi:",
       ],
@@ -1511,14 +1508,16 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "ce problemă vrei să rezolvi imediat.",
       ],
       paragraphsAfterBullets: [
-        "Dacă le ai, trimite-mi:",
+        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+      ],
+      bulletsAfterBullets: [
         "încheierea prin care s-a dispus arestul la domiciliu;",
         "citația;",
         "încheierea de prelungire sau menținere;",
         "documentele referitoare la obligațiile impuse;",
         "cererile sau răspunsurile primite anterior.",
       ],
-      calloutAfterBullets: "Nu ai toate actele? Sună oricum.",
+      calloutAfterBullets: "Nu ai toate actele?",
       calloutAfterBulletsClassName: "font-semibold bg-white",
       calloutAfterBulletsCta: "Sună oricum",
       ctaWhatsApp: true,
