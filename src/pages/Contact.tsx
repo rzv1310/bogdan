@@ -13,7 +13,7 @@ import { toast } from "@/components/ui/use-toast";
 import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
-import GoogleReviewCard from "@/components/services/GoogleReviewCard";
+import GoogleReviewStars from "@/components/services/GoogleReviewStars";
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const MAX_FILES = 5;
@@ -218,7 +218,7 @@ export default function Contact() {
         Sună-mă acum pentru o evaluare gratuită și confidențială!
       </p>
       <LawyerBioBlock path="/contact" lang="ro" className="mt-5" />
-      <GoogleReviewCard lang="ro" className="mt-5" />
+      <GoogleReviewStars lang="ro" className="mt-3" />
       <div className="mt-5">
         <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
           <a href="tel:+40316320183" aria-label="Sună-mă acum - 031 632 01 83">
