@@ -3742,6 +3742,156 @@ export const conflictOfInterestEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "How do you challenge an integrity report on conflict of interest?",
+      paragraphs: [
+        "The assessment report drawn up by the National Integrity Agency is challenged before the administrative court, within 15 days of receiving it. The deadline is short, and missing it lets the report become final.",
+      ],
+      subsections: [
+        {
+          h3: "When the 15 day deadline starts running",
+          paragraphs: [
+            "The deadline runs from the date you received the report, not from the date it was drawn up. That is why I first check the proof of communication: the acknowledgment of receipt, the envelope, the address it was sent to and who signed for it.",
+          ],
+        },
+        {
+          h3: "Where the report is challenged",
+          paragraphs: [
+            "The challenge is filed with the competent administrative court, depending on the office held and the seat of the authority. The application must set out the grounds of unlawfulness and the evidence you rely on.",
+          ],
+        },
+        {
+          h3: "Which documents must be analysed",
+          paragraphs: [
+            "The full report and its annexes, the act said to have generated the benefit, the underlying documentation of the decision, the job description and the civil status documents showing the real degree of kinship or affinity.",
+          ],
+        },
+        {
+          h3: "What happens if you do not challenge it",
+          paragraphs: [
+            "A report not challenged in time becomes final and may trigger consequences for your office, disciplinary consequences and procedures concerning the acts concluded. A final report does not automatically mean a criminal conviction, but it makes the defense harder.",
+          ],
+          ctaWhatsApp: true,
+          ctaWhatsAppLabel: "Received the integrity report? Send it now so I can check the deadline",
+        },
+      ],
+    },
+    {
+      h2: "Conflict of interest or incompatibility - what is the difference?",
+      paragraphs: [
+        "The two are frequently confused, because they are assessed through similar integrity procedures, but they are distinct legal situations.",
+        "Conflict of interest concerns a concrete act performed in the exercise of official duties, generating a benefit for you or for the close persons set out by law. Incompatibility concerns simply holding two offices or capacities at the same time which the law does not allow to be combined, regardless of any act or any benefit.",
+        "The difference has practical consequences: incompatibility is usually resolved by ending the combined offices and through administrative consequences, whereas conflict of interest may also, under certain conditions, trigger criminal liability under art. 301 of the Criminal Code.",
+      ],
+    },
+    {
+      h2: "Who must obtain the benefit for the offense to exist?",
+      paragraphs: [
+        "The circle of favoured persons is expressly limited by the current criminal text. If the beneficiary of the benefit is outside that circle, the offense is not made out.",
+      ],
+      subsections: [
+        {
+          h3: "A benefit for you",
+          paragraphs: [
+            "The most direct scenario: the act performed brings you a personal patrimonial advantage. Here I check whether the advantage is real, whether it stems from the act complained of and whether you actually performed that act.",
+          ],
+        },
+        {
+          h3: "A benefit for your spouse",
+          paragraphs: [
+            "The law expressly includes the spouse. I check the existence and date of the marriage, as well as whether the benefit actually entered the spouse's assets.",
+          ],
+        },
+        {
+          h3: "Relatives and in-laws up to the second degree",
+          paragraphs: [
+            "The circle stops at relatives and in-laws up to the second degree inclusive. Persons beyond that degree do not fall within the criminal text, even if the relationship is close in fact.",
+          ],
+        },
+        {
+          h3: "What a patrimonial benefit means",
+          paragraphs: [
+            "The benefit must have economic content: money, goods, contracts, exemptions, advantages assessable in money. Non-patrimonial benefits, such as reputational advantages or favours without economic value, do not fall within the current text.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "If I abstained from the vote or did not sign the act, is there still criminal liability?",
+      paragraphs: [
+        "The criminal text requires the act to have been actually performed by you, in the exercise of your official duties. That is why I analyse each form of involvement separately.",
+      ],
+      subsections: [
+        {
+          h3: "Actual participation in the act",
+          paragraphs: [
+            "What you concretely did matters: whether you drafted, endorsed, approved or were merely present in the procedure. Without an act of your own in the exercise of your duties, the material element is missing.",
+          ],
+        },
+        {
+          h3: "The signature",
+          paragraphs: [
+            "The signature is the element most often used by the prosecution, but it is not sufficient in itself: what counts is your competence, the checks that were your responsibility and whether the signature actually generated the benefit.",
+          ],
+        },
+        {
+          h3: "The vote",
+          paragraphs: [
+            "In collective decisions I analyse whether your vote was necessary for the act to be adopted and how it was recorded in the minutes of the meeting.",
+          ],
+        },
+        {
+          h3: "The abstention",
+          paragraphs: [
+            "Abstaining from the vote or refusing to sign, recorded in the meeting documents, are strong defense arguments, because they show you did not perform the act generating the benefit.",
+          ],
+        },
+        {
+          h3: "Preparatory acts",
+          paragraphs: [
+            "Internal notes, reports or proposals producing no legal effects of their own do not amount to performing the act. They may be relevant for context, not for the legal classification.",
+          ],
+        },
+        {
+          h3: "Who actually took the decision",
+          paragraphs: [
+            "I reconstruct the decision path to show who had final competence. Where the decision was taken by another person or by a collective body, liability cannot be extended automatically.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "What happens if the integrity report becomes final?",
+      paragraphs: [
+        "A final assessment report is not merely a finding document: it may trigger distinct procedures, running in parallel with any criminal file.",
+      ],
+      subsections: [
+        {
+          h3: "Consequences for your office",
+          paragraphs: [
+            "Depending on the capacity held, a final report may lead to the termination of the mandate or of the service relationship and to a ban on holding a similar office for the period provided by law.",
+          ],
+        },
+        {
+          h3: "Disciplinary consequences",
+          paragraphs: [
+            "The authority you work for may start disciplinary proceedings based on the final report, with its own sanctions, independent of the outcome of the criminal file.",
+          ],
+        },
+        {
+          h3: "Effects on acts and contracts",
+          paragraphs: [
+            "Administrative acts and contracts concluded in a state of conflict of interest may be subject to nullity under the conditions of the law, with effects on payments, guarantees and works already performed.",
+          ],
+        },
+        {
+          h3: "The relationship with a possible criminal file",
+          paragraphs: [
+            "A final report does not mean criminal guilt, because the offense has stricter conditions. It is, however, frequently used as the starting point of the complaint, which is why the administrative and the criminal defense must be coordinated.",
+          ],
+        },
+      ],
+    },
+    {
       h2: "What conflict of interest means in criminal law",
       paragraphs: [
         "The criminal text, named use of office to favour certain persons, sanctions the act of a public official who, in the exercise of their duties, performed an act through which a patrimonial benefit was obtained for themselves, for their spouse, for a relative or an in-law up to the second degree inclusive. The offense is set out in art. 301 of the Criminal Code.",
