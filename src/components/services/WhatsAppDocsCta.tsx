@@ -13,7 +13,7 @@ export default function WhatsAppDocsCta({ lang = "ro", className = "", variant =
   const resolvedLabel = label ?? defaultLabel;
   const isGreen = variant === "green";
   const colorClass = isGreen
-    ? "border border-[#25D366] bg-[#25D366]/10 text-black hover:bg-[#25D366]/20"
+    ? "border border-[#128C7E] bg-[#128C7E] text-white hover:bg-[#075E54]"
     : "border border-accent bg-transparent text-foreground hover:bg-accent/10";
   return (
     <a
