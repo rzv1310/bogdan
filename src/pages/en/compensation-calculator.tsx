@@ -519,34 +519,6 @@ export default function CompensationCalculator() {
           </section>
         )}
 
-        {/* Contact (FAQ removed) */}
-        <section className="mb-12">
-          <Card id="contact" className="border border-accent">
-            <h2 className="text-xl font-semibold mb-2">Quick contact</h2>
-            <p className="text-sm text-zinc-700 mb-3">
-              Send me the essential details and I will provide an initial assessment.
-            </p>
-            <div className="grid gap-3">
-              <input className="rounded-xl border p-2" placeholder="Name" />
-              <input className="rounded-xl border p-2" placeholder="Email / Phone" />
-              <textarea
-                className="rounded-xl border p-2"
-                rows={4}
-                placeholder="Briefly describe the event (date, place, what happened, injuries)"
-              ></textarea>
-              <a
-                href="mailto:contact@avocatpenalbucuresti.ro"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90"
-              >
-                Send the request <ArrowRight className="w-4 h-4" />
-              </a>
-              <p className="text-xs text-zinc-500">
-                By submitting, you confirm that you have read the data processing notice.
-              </p>
-            </div>
-          </Card>
-        </section>
-
         {/* CTA */}
         <section className="mb-8">
           <Card className="bg-zinc-900 text-white">
