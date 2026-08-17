@@ -51,4 +51,4 @@ Conținut juridic acoperit: art. 289-292 Cod penal (luare/dare de mită, trafic 
 
 ## Ce nu se schimbă
 
-Meniul din header și footer rămân cu cele 12 servicii principale; subserviciile se accesează din pagina-pilon, hartă site și linkuri contextuale.
+Meniul din header și footer rămân cu cele 12 servicii principale; subserviciile se accesează din pagina-pilon, din casetele cu servicii din pagina Servicii (bullets), din harta site și din linkuri contextuale.
