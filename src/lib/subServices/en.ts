@@ -2579,6 +2579,140 @@ export const briberyGivingAndTakingEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "What to do if you were caught in flagrante delicto for giving or taking a bribe",
+      paragraphs: [
+        "Flagrante delicto is the moment when most of the evidence against you is gathered, but also the moment when most procedural mistakes are made. The first hours after it often decide the direction of the whole case.",
+        "Do not sign anything and do not explain anything before speaking with a lawyer. You have the right to remain silent and that right cannot be used against you.",
+      ],
+      subsections: [
+        {
+          h3: "What I check in the flagrante delicto report",
+          paragraphs: ["The report fixes the moment of the alleged act, so any inconsistency in it can change how the evidence is interpreted."],
+          bullets: [
+            { bold: "Time and place:", rest: "whether they match the other evidence in the file, including phone data or surveillance footage." },
+            { bold: "Assisting witnesses:", rest: "whether they were actually present and signed under the conditions required by law." },
+            { bold: "Description of the money or benefits:", rest: "banknote serial numbers, the marking method, the exact place where the items were found." },
+            { bold: "Consistency with the authorisation:", rest: "whether the activity carried out falls within what the judge or the prosecutor had authorised." },
+          ],
+        },
+        {
+          h3: "What must be checked before your first statement",
+          bullets: [
+            { bold: "Procedural capacity:", rest: "whether you are questioned as a witness, a suspect or a defendant, because the rights differ substantially." },
+            { bold: "Right to a lawyer:", rest: "whether it was actually communicated to you and whether you were able to talk to your lawyer before questioning." },
+            { bold: "Right to remain silent:", rest: "you may refuse to give statements without any negative legal consequence." },
+            { bold: "The risk of statements given under pressure:", rest: "a statement given under stress, without access to the case file, is very hard to correct later." },
+          ],
+        },
+        {
+          h3: "Interceptions and recordings used in flagrante delicto",
+          bullets: [
+            { bold: "Authorisation:", rest: "the existence of the technical surveillance warrant and whether it covers the period when the recordings were made." },
+            { bold: "The moment they were obtained:", rest: "whether the recordings were made before or after the authorisation." },
+            { bold: "Match with the transcripts:", rest: "whether the written version faithfully reflects the audio content, including pauses and incomplete sentences." },
+          ],
+        },
+        {
+          h3: "The role of the reporting person and the issue of entrapment",
+          paragraphs: [
+            "Many bribery files start from a report. I check whether the reporting person has an interest of their own, whether they cooperated with the investigating authorities and, more importantly, whether the act already existed or was triggered by their insistence.",
+            "The line between recording an existing act and provoking it is essential: evidence obtained through entrapment cannot be used against you.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Were you caught in flagrante delicto right now? You do not have the documents with you?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaAfterSubsections: "Was there a flagrante delicto? - Call me now!",
+    },
+    {
+      h2: "Reporting, coercion and exemption from punishment for giving a bribe",
+      paragraphs: [
+        "Art. 290 of the Criminal Code contains two important safety valves for the person who gave the bribe: the situation where the act was committed under coercion and the exemption from punishment through self-reporting. Both have strict conditions.",
+      ],
+      subsections: [
+        {
+          h3: "When reporting can remove the punishment",
+          paragraphs: [
+            "The bribe giver is not punished if they report the act before the criminal investigation body was notified about it. The report must be complete and must concern the specific act, not just a general description of irregularities.",
+          ],
+        },
+        {
+          h3: "What it means that the investigation body had not yet been notified",
+          paragraphs: [
+            "The condition is assessed by reference to the moment the judicial authorities received the first information about your act, through a complaint, a report, an ex officio notification or an official record. If the file had already been opened for that act, the report no longer produces the exemption, but it can matter when the sentence is individualised.",
+          ],
+        },
+        {
+          h3: "What happens if you were coerced into giving a bribe",
+          paragraphs: [
+            "If you gave the money or benefits because you were coerced by the person who took the bribe, the act is not an offense. Evidence is decisive here: messages, witnesses, repeated refusals, requests abusively rejected or unjustified delays of an act you were entitled to.",
+          ],
+        },
+        {
+          h3: "When the money is returned and when it is confiscated",
+          bullets: [
+            { bold: "Return:", rest: "the money or assets are returned to the person who gave the bribe under coercion, as well as to the person who reported the act before the authorities were notified." },
+            { bold: "Confiscation:", rest: "in all other situations, the sums and benefits received are confiscated and, where they can no longer be found, their monetary equivalent is confiscated." },
+            { bold: "Assets marked during flagrante delicto:", rest: "they remain frozen until the case is resolved, even if they come from lawful sources." },
+          ],
+        },
+      ],
+    },
+    {
+      h2: "When can a gift, a token of appreciation or a benefit be considered a bribe?",
+      paragraphs: [
+        "Many people investigated for bribery do not recognise themselves in the wording „I gave” or „I took a bribe”. In practice, the discussion is about a gift, a token of appreciation, a meal, a repair, a discount or help between acquaintances.",
+        "Art. 289 of the Criminal Code refers to money or other undue benefits received in connection with performing, not performing, speeding up or delaying an act falling within the official duties of the public official. The link with official duties is what turns a social gesture into a criminal charge.",
+      ],
+      bullets: [
+        { bold: "The link with official duties:", rest: "whether the person had the power to decide on, approve or influence that act." },
+        { bold: "Undue benefits:", rest: "any financial or non-financial advantage the person was not entitled to, regardless of what it was called." },
+        { bold: "Timing:", rest: "a benefit offered before the act is seen differently from a gift given long after a working relationship ended." },
+        { bold: "Value and context:", rest: "a symbolic gesture in a private context, unrelated to a pending file, does not carry the same meaning as a benefit proportionate to the decision obtained." },
+        { bold: "Repetition:", rest: "repeated tokens of appreciation given to the same decision maker are almost always interpreted as a bribe." },
+      ],
+      paragraphsAfterBullets: [
+        "There are situations with no offense at all: courtesy gestures unrelated to an official act, advantages granted lawfully and transparently, or payments made under a genuine contract with supporting documents.",
+        [
+          { text: "Where the benefit was offered to a person claiming influence over an official, the correct classification may be " },
+          { text: "influence peddling or buying influence", to: "/en/services/influence-peddling" },
+          { text: ", with a different evidentiary regime." },
+        ],
+      ],
+    },
+    {
+      h2: "How interceptions and recordings are analysed in a bribery file",
+      paragraphs: [
+        "In corruption files, interceptions and ambient recordings are often the central evidence. That is exactly why they are also the evidence most open to challenge, when analysed in detail.",
+      ],
+      bullets: [
+        { bold: "Authorisation:", rest: "I check the existence and limits of the technical surveillance warrant, the period covered, the persons and means of communication targeted, and the reasoning behind the measure." },
+        { bold: "Integrity of the recording:", rest: "continuity of the files, absence of unjustified interruptions, the way it was stored and transferred, the existence of reference copies." },
+        { bold: "Context of the conversation:", rest: "an isolated sentence can completely change the meaning; I request the full conversation, not only the selected excerpt." },
+        { bold: "Incomplete transcripts:", rest: "I compare the written version with the audio to identify omitted passages, misheard words or lines wrongly attributed." },
+        { bold: "Interpretation of ambiguous expressions:", rest: "generic phrases such as „we will sort it out” or „we will see what we can do” do not, on their own, prove a promise of a bribe." },
+      ],
+      calloutAfterBullets: "There are interceptions in the file and you do not know exactly what they contain?",
+      calloutAfterBulletsCta: "Call anyway",
+    },
+    {
+      h2: "Seizure and confiscation in a bribery file",
+      paragraphs: [
+        "In parallel with the criminal investigation, the prosecutor can order precautionary measures over assets and accounts, in order to secure confiscation or recovery of the damage. These measures immediately affect daily activity and the family business.",
+      ],
+      bullets: [
+        { bold: "Precautionary measures:", rest: "seizure, garnishment and freezing of accounts can be ordered by prosecutor's order, before any conviction." },
+        { bold: "What assets can be frozen:", rest: "sums of money, bank accounts, real estate, vehicles and, in certain situations, assets held by other persons." },
+        { bold: "Special confiscation:", rest: "the money and benefits received as a bribe are confiscated and, if they can no longer be found, their equivalent in money or assets is confiscated." },
+        { bold: "Return of assets:", rest: "assets given under coercion or connected to a report made before the authorities were notified can be returned." },
+        { bold: "Challenging the measure:", rest: "seizure can be challenged and its limits reduced where it exceeds the value of the alleged benefit or covers assets unrelated to the act." },
+      ],
+      paragraphsAfterBullets: [
+        "I check the proportionality of the measure, the lawful source of the assets and the documents showing they do not come from the investigated act. A well documented challenge can unblock economic activity even during the criminal investigation.",
+      ],
+      cta: "Have your accounts been frozen? - Call me now!",
+    },
+    {
       h2: "What taking a bribe means",
       paragraphs: [
         "Taking a bribe means claiming, receiving or accepting the promise of money or other benefits by a public official, in connection with performing, not performing or delaying an act falling within their official duties.",
