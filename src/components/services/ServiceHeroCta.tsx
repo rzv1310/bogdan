@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { HERO_CTA_CLASS } from "@/lib/cta";
+import GoogleReviewStars from "./GoogleReviewStars";
 
 interface ServiceHeroCtaProps {
   lang: "ro" | "en";
