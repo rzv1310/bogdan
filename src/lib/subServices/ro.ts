@@ -4374,13 +4374,8 @@ export const abuzInServiciuRo: SubServicePageData = {
         "Susțin lipsa intenției, atunci când decizia a fost luată pe baza avizelor primite.",
         "Formulez contestații împotriva măsurilor asigurătorii disproporționate.",
       ],
-      paragraphsAfterBullets: [
-        [
-          { text: "Acuzația este analizată adesea împreună cu " },
-          { text: "încălcarea din culpă a atribuțiilor", to: "/servicii/neglijenta-in-serviciu" },
-          { text: ", iar forma de vinovăție reținută schimbă complet regimul sancționator." },
-        ],
-      ],
+
+
       cta: "De ce să mă alegi",
     },
   ],
