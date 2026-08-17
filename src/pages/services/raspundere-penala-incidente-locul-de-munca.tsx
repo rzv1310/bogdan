@@ -78,7 +78,7 @@ export default function RaspunderePenalaMunca() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className="text-2xl font-semibold mb-4">Avocat accidente de muncă București și răspundere penală SSM | av. Bogdan Lamatic</h1>
+        <h1 className="text-2xl font-semibold mb-4">Avocat accident de muncă București</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="text-foreground">
