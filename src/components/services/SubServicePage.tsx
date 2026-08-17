@@ -483,6 +483,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               calloutClassName={section.calloutClassName}
               calloutCta={section.calloutCta}
               paragraphsAfterBullets={section.paragraphsAfterBullets}
+              bulletsAfterBullets={section.bulletsAfterBullets}
               calloutAfterBullets={section.calloutAfterBullets}
               calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
               calloutAfterBulletsCta={section.calloutAfterBulletsCta}
