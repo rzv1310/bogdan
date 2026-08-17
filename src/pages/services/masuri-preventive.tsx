@@ -277,7 +277,7 @@ export default function MasuriPreventive() {
           <p>ordonanța · încheierea · citația · actele de la Poliție/Parchet</p>
           <p className="font-semibold text-foreground pt-2">Nu ai toate documentele? Sună oricum.</p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <WhatsAppDocsCta lang="ro" variant="green" />
+            <WhatsAppDocsCta lang="ro" />
           </div>
         </CardContent>
       </Card>

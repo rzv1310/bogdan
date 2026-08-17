@@ -8,7 +8,7 @@ interface WhatsAppDocsCtaProps {
 const WHATSAPP_URL = "https://wa.me/40745506443";
 
 /** Secondary CTA used right after explaining which documents are useful. */
-export default function WhatsAppDocsCta({ lang = "ro", className = "", variant = "default", label }: WhatsAppDocsCtaProps) {
+export default function WhatsAppDocsCta({ lang = "ro", className = "", variant = "green", label }: WhatsAppDocsCtaProps) {
   const defaultLabel = lang === "en" ? "Send documents on WhatsApp" : "Trimite-mi actele pe WhatsApp";
   const resolvedLabel = label ?? defaultLabel;
   const borderClass = variant === "green" ? "border-[#25D366]" : "border-accent";
