@@ -4344,7 +4344,7 @@ export const neglijentaInServiciuRo: SubServicePageData = {
   parent: PARENT_COR,
 };
 
-export const conflictDeInteresenRo: SubServicePageData = {
+export const conflictDeIntereseRo: SubServicePageData = {
   lang: "ro",
   path: "/servicii/conflict-de-interese",
   altPath: "/en/services/conflict-of-interest",
