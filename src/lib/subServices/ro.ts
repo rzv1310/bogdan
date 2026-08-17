@@ -5442,6 +5442,7 @@ export const detinereDroguriConsumPropriuRo: SubServicePageData = {
     "Cautam un avocat in Bucuresti si din fericire l-am intalnit pe dl avocat Bogdan Lamatic. Din primul moment mi-a castigat intrederea prin profesionismul sau, calmul si empatia cu care m-a ascultat. Un OM in sensul adevarat al cuvantului. Il recomand din toata inima celor care au nevoie de un specialist in drept penal si un sprijin real intr-un moment dificil.",
   reviewMeta: "Local Guide · 24 de recenzii",
   reviewTimestamp: "acum 4 luni",
+  reviewLink: "https://maps.app.goo.gl/wQzkQUTgvdG3JwbG6",
   parent: PARENT_DO,
 };
 
