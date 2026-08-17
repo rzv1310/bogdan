@@ -231,8 +231,8 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Victime și despăgubiri",
         description: "Reprezentarea victimelor în procesele penale pentru recuperarea prejudiciului și constituirea ca parte civilă.",
         subServices: [
-          { label: "Despăgubiri accident rutier" },
-          { label: "Despăgubiri vătămare corporală" },
+          { label: "Despăgubiri accident rutier", to: "/servicii/despagubiri-accident-rutier" },
+          { label: "Despăgubiri vătămare corporală", to: "/servicii/despagubiri-vatamare-corporala" },
         ],
         to: "/servicii/reprezentarea-victimelor-in-procese-penale",
         cta: "Vezi pagina pentru victime",
@@ -460,8 +460,8 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Victims and compensation",
         description: "Representation of victims in criminal proceedings to recover damages and establish civil party status.",
         subServices: [
-          { label: "Road accident compensation" },
-          { label: "Bodily injury compensation" },
+          { label: "Road accident compensation", to: "/en/services/road-accident-compensation" },
+          { label: "Bodily injury compensation", to: "/en/services/bodily-injury-compensation" },
         ],
         to: "/en/services/victim-representation-in-criminal-cases",
         cta: "See the victim representation page",

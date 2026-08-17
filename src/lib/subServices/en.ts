@@ -6650,3 +6650,428 @@ export const roadAccidentWithVictimsEn: SubServicePageData = {
   contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_RT_EN,
 };
+
+const PARENT_VIC_EN = {
+  to: "/en/services/victim-representation-in-criminal-cases",
+  label: "victim representation in criminal cases",
+  breadcrumbLabel: "Victim representation",
+};
+
+export const roadAccidentCompensationEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/road-accident-compensation",
+  altPath: "/servicii/despagubiri-accident-rutier",
+  roPath: "/servicii/despagubiri-accident-rutier",
+  title: "Road Accident Compensation Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Lawyer for compensation after a road accident",
+  description:
+    "Injured in a road accident in Romania or lost a family member? I represent you as civil party for material and moral damages, including against the MTPL insurer.",
+  keywords: "road accident compensation lawyer romania, moral damages road accident, civil party road accident",
+  breadcrumbLabel: "Road accident compensation",
+  serviceName: "Road accident compensation lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you injured in a road accident or did you lose a close person?",
+    "Compensation is not granted automatically: it must be claimed, proven and supported with documents, at the right procedural moment.",
+    "I represent you as civil party in the criminal case and in dealings with the MTPL insurer.",
+  ],
+  bio: [
+    `${BIO_INTRO} I represent road accident victims and their families in obtaining material and moral damages, both in the criminal case and before the insurer.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "You were injured in a road accident",
+          paragraphs: [
+            "You need treatment, you have expenses and you lost income. All of this can be recovered if it is properly proven from the investigation stage onwards.",
+          ],
+        },
+        {
+          h3: "A family member died",
+          paragraphs: [
+            "The surviving spouse, children, parents and, in certain situations, other close relatives can claim moral damages for the suffering caused by the loss, as well as the expenses incurred.",
+          ],
+        },
+        {
+          h3: "The insurer offers less than you are entitled to",
+          paragraphs: [
+            "Initial offers are frequently below the real loss. I review the offer and tell you concretely whether it is worth accepting or challenging.",
+          ],
+        },
+        {
+          h3: "You are already in a criminal case but have not joined as civil party",
+          paragraphs: [
+            [
+              { text: "There is a deadline. If the driver is under criminal investigation, the case is often tried together with the civil claim, as explained on the page about a " },
+              { text: "road accident with victims", to: "/en/services/road-accident-with-victims" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in your case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the on-site investigation report and how fault was established;",
+        "medical records, discharge papers and recovery recommendations;",
+        "the forensic certificate and the number of days of medical care;",
+        "expenses already incurred and foreseeable ones;",
+        "lost income and the impact on working capacity;",
+        "the MTPL policy of the vehicle at fault and the compensation limits;",
+        "any concurrent fault that could reduce your compensation;",
+        "the deadlines for joining as civil party;",
+        "the insurer's offer, if already made.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you need to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the police report or the letter received from the police;",
+        "the forensic certificate and the medical records;",
+        "receipts and invoices for treatment, medication and transport;",
+        "income proof or documents on the loss of earnings;",
+        "the MTPL policy details of the vehicle at fault;",
+        "correspondence with the insurer and the offer received;",
+        "photos from the accident scene, if any.",
+      ],
+      paragraphsAfterBullets: [
+        "If you do not have the documents yet, briefly describe the date, place and consequences of the accident and I will tell you what can be obtained.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send the documents on WhatsApp",
+    },
+    {
+      h2: "Who can claim compensation after a road accident",
+      paragraphs: [
+        "Compensation can be claimed by the person directly injured, whether driver, passenger, pedestrian, cyclist or motorcyclist, provided they are not exclusively at fault for the accident.",
+        "In case of death, compensation can be claimed by the surviving spouse, children, parents and, depending on the evidence, other close persons who genuinely suffered from the loss.",
+        "Persons who bore expenses, such as hospitalisation, recovery or funeral costs, can also claim compensation.",
+      ],
+    },
+    {
+      h2: "Material and moral damages: what each means",
+      paragraphs: [
+        "Material damages cover quantifiable losses: treatment, medication, medical devices, transport, recovery, repair or replacement of damaged property and lost income.",
+        "Moral damages cover physical and psychological suffering, limitations in daily life, aesthetic consequences and the loss of a close person. They are not proven with receipts, but with evidence of the real impact on your life.",
+        "In practice, the amounts awarded depend on the severity of the injuries, the recovery period, the remaining consequences and how the claim is argued before the court.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Joining as civil party in the criminal case",
+      paragraphs: [
+        "Joining as civil party is done in writing or orally, stating the nature and extent of the claims, before the start of the judicial investigation. Missing that moment forces you to start a separate civil case.",
+        "The claim can later be supplemented with new documents, but the grounds and the claims must be formulated in time and correctly.",
+        "I assist you in filing the claim, in producing evidence and throughout the proceedings, including in relation to the investigated driver's defence.",
+      ],
+    },
+    {
+      h2: "MTPL insurance, the guarantee fund and the claim against the insurer",
+      paragraphs: [
+        "Compensation is borne, within the policy limits, by the MTPL insurer of the vehicle at fault. The insurer is summoned in the criminal proceedings and is directly liable towards the injured person.",
+        "If the vehicle was uninsured, if the insurer is insolvent or if the driver remained unidentified, compensation can be claimed through the guarantee fund, under the conditions provided by law.",
+        "You can file a claim directly with the insurer, in parallel with the criminal case. The two procedures must be coordinated so that you do not limit your own claims.",
+      ],
+    },
+    {
+      h2: "What to do if the insurer refuses or offers too little",
+      paragraphs: [
+        "A refusal or an undervaluation can be challenged before the supervisory authority, through alternative dispute resolution or in court.",
+        "Before signing any settlement, check whether the amount also covers future loss, because a signed agreement can close the discussion for good.",
+        "I review the offer received and show you the difference between what is proposed and what is commonly obtained in similar situations.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Concurrent fault and its effect on compensation",
+      paragraphs: [
+        "If the victim contributed to the accident, for instance by crossing unlawfully or by not wearing a seatbelt, compensation can be reduced proportionally.",
+        "The percentage of fault is not set automatically. It is debated on the basis of the technical expert report and can be challenged with concrete arguments.",
+      ],
+    },
+    {
+      h2: "Deadlines you must keep in mind",
+      bullets: [
+        "joining as civil party, before the start of the judicial investigation;",
+        "the general 3-year limitation period for the civil compensation claim;",
+        "the response deadlines applicable to the insurer in the claims procedure;",
+        "the deadlines for challenging the insurer's offer or refusal.",
+      ],
+    },
+    {
+      h2: "Frequent mistakes made by victims",
+      bullets: [
+        "signing a settlement with the insurer before treatment is completed;",
+        "lacking medical records that document the evolution and the sequelae;",
+        "failing to join as civil party in time;",
+        "claiming a global amount, without a breakdown per head of claim;",
+        "waiving claims in exchange for a quick payment below the real loss.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long until I receive the compensation?",
+      a: "It depends on the procedure. Amicably, with the insurer, it takes a few months. In the criminal case, payment follows the final judgment.",
+    },
+    {
+      q: "Do I have to pay anything to claim compensation?",
+      a: "Joining as civil party in criminal proceedings is exempt from stamp duty. We discuss the representation terms transparently from the start.",
+    },
+    {
+      q: "Can I claim moral damages if I have no permanent sequelae?",
+      a: "Yes. Physical suffering, treatment and the recovery period can justify moral damages even without permanent sequelae.",
+    },
+    {
+      q: "What if the driver at fault had no insurance?",
+      a: "Compensation can be obtained through the guarantee fund, under the conditions provided by law.",
+    },
+    {
+      q: "Can I claim compensation if I was a passenger?",
+      a: "Yes. The passenger is compensated by the insurer of the vehicle at fault, regardless of which car they were in.",
+    },
+    {
+      q: "I already accepted a sum from the insurer. Can I still claim more?",
+      a: "It depends on the document you signed. If you expressly waived any future claims, the situation is difficult but still worth reviewing.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on the civil action in criminal proceedings.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Code, art. 192 and art. 196 on negligent homicide and negligent bodily injury.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send the documents on WhatsApp",
+  parent: PARENT_VIC_EN,
+};
+
+export const bodilyInjuryCompensationEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/bodily-injury-compensation",
+  altPath: "/servicii/despagubiri-vatamare-corporala",
+  roPath: "/servicii/despagubiri-vatamare-corporala",
+  title: "Bodily Injury Compensation Lawyer | Bogdan Lamatic",
+  h1: "Lawyer for compensation in bodily injury cases",
+  description:
+    "Assaulted or injured in Romania? I represent you as civil party for material and moral damages, with medical evidence and a correct assessment of the loss.",
+  keywords: "bodily injury compensation lawyer romania, moral damages assault, civil party bodily injury",
+  breadcrumbLabel: "Bodily injury compensation",
+  serviceName: "Bodily injury compensation lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you assaulted or did you suffer bodily injury and want compensation?",
+    "Medical evidence is gathered at the beginning of the case. Without a forensic certificate and treatment records, the loss remains unproven.",
+    "I represent you as injured person and civil party throughout the criminal proceedings.",
+  ],
+  bio: [
+    `${BIO_INTRO} I represent persons injured by assault or other acts causing injury, in obtaining recognition of the loss and full compensation.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "You were assaulted and have injuries",
+          paragraphs: [
+            [
+              { text: "The first step is obtaining the forensic certificate and filing the complaint. The legal context of the act is explained on the page about " },
+              { text: "offenses against persons", to: "/en/services/offenses-against-persons" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "The injury was caused by someone else's negligence",
+          paragraphs: [
+            "It may be a workplace accident, a medical intervention or the negligence of a person who had a safety obligation. Compensation can be claimed in all these cases.",
+          ],
+        },
+        {
+          h3: "The aggressor is already under criminal investigation",
+          paragraphs: [
+            "You must join as civil party in time and support your claims with documents, otherwise the court cannot award you compensation in that case.",
+          ],
+        },
+        {
+          h3: "You were offered reconciliation or a sum of money",
+          paragraphs: [
+            "Reconciliation ends the criminal proceedings. Before accepting, check whether the amount covers treatment, recovery and long-term consequences.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in your case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the forensic certificate and the number of days of medical care;",
+        "the legal classification of the act and its procedural consequences;",
+        "medical records, interventions and the recovery plan;",
+        "sequelae, disability or aesthetic prejudice;",
+        "expenses incurred and income lost;",
+        "the existence of witnesses, video footage or other evidence;",
+        "the deadline for the prior complaint, where the law requires it;",
+        "the perpetrator's solvency and the chance of actually recovering the money.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you need to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the forensic certificate;",
+        "discharge papers, treatment sheets and medical recommendations;",
+        "receipts and invoices for medication, prostheses, physiotherapy or transport;",
+        "proof of income and of sick leave days;",
+        "the complaint filed and the case number, if any;",
+        "photos of the injuries;",
+        "the witnesses' details.",
+      ],
+      paragraphsAfterBullets: [
+        "If you do not have all the documents yet, describe what happened and what treatment you followed and I will tell you what further evidence is needed.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send the documents on WhatsApp",
+    },
+    {
+      h2: "Assault and bodily harm: what difference it makes",
+      paragraphs: [
+        "Art. 193 of the Criminal Code sanctions assault and other violence, while art. 194 sanctions bodily harm. The difference lies in the severity of the consequence: days of medical care, disability, serious and permanent aesthetic prejudice, miscarriage or danger to life.",
+        "The classification also determines the procedure: for assault, prosecution starts upon the prior complaint of the injured person, and reconciliation removes criminal liability.",
+        "This distinction directly influences the level of compensation that can be obtained.",
+      ],
+    },
+    {
+      h2: "The forensic report and the days of medical care",
+      paragraphs: [
+        "The forensic certificate is obtained from the forensic medicine institution as soon as possible after the injuries occur, so that they can be observed directly.",
+        "The number of days of medical care is not the length of sick leave, but the time medically necessary for healing.",
+        "If the initial assessment does not reflect the real situation, a new expert report or a supplement to the conclusions can be requested, with clear objectives.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "How moral damages are established",
+      paragraphs: [
+        "Moral damages are not calculated with a formula. The court analyses the intensity of the suffering, the length of treatment, the sequelae, age, professional activity and how your life has changed.",
+        "A visible aesthetic prejudice, a disability or the impossibility of resuming previous activity justify significantly higher amounts.",
+        "Supporting these elements with concrete evidence, not only with statements, makes the difference between a symbolic sum and real compensation.",
+      ],
+    },
+    {
+      h2: "Treatment costs, recovery and lost income",
+      bullets: [
+        "consultations, surgery and hospitalisation;",
+        "medication, medical supplies, prostheses and devices;",
+        "physiotherapy and recovery treatment;",
+        "transport to medical facilities;",
+        "the help of another person, if you need care;",
+        "the income difference during sick leave;",
+        "long-term loss or reduction of working capacity.",
+      ],
+    },
+    {
+      h2: "Civil action in the criminal case or a separate civil case",
+      paragraphs: [
+        "In criminal proceedings, joining as civil party is exempt from stamp duty and the evidence gathered by the judicial bodies can support your claims.",
+        "A separate civil case involves stamp duty and your own evidence, but it can be useful when the criminal case was closed or the claims were not settled there.",
+        "I assess from the start which option is more favourable for you.",
+      ],
+    },
+    {
+      h2: "Reconciliation and settlement: benefits and risks",
+      paragraphs: [
+        "Reconciliation has definitive effects and removes criminal liability in the cases provided by law. Once concluded, it cannot be reversed.",
+        "A properly drafted settlement can bring the money quickly, without years of litigation, but it must also cover future consequences, not only past expenses.",
+        "I review every clause before signing, so that you do not unknowingly waive future compensation.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "The evidence that makes the difference",
+      bullets: [
+        "the forensic certificate obtained in time;",
+        "complete medical records, throughout the treatment;",
+        "photos of the injuries, at different moments;",
+        "statements of eyewitnesses;",
+        "video footage from the incident area;",
+        "proof of expenses and of lost income;",
+        "psychological assessment, where the emotional impact is significant.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long do I have to file the complaint?",
+      a: "For acts prosecuted upon prior complaint, the deadline is 3 months from learning about the act and the perpetrator. For the others, prosecution starts ex officio.",
+    },
+    {
+      q: "Is the forensic certificate mandatory?",
+      a: "It is not mandatory by law, but in practice it is the essential evidence for establishing the severity of the injuries and the compensation.",
+    },
+    {
+      q: "What amounts are awarded for moral damages?",
+      a: "There is no fixed scale. Amounts vary with the severity of the injuries, the sequelae and the evidence in the file.",
+    },
+    {
+      q: "If I reconcile, do I still get compensation?",
+      a: "Only the amount agreed in the settlement. After reconciliation you can no longer claim additional damages for the same act.",
+    },
+    {
+      q: "The aggressor has no money. Is the case still worth it?",
+      a: "Yes. The enforceable title remains valid for years and can be enforced when the debtor's financial situation changes.",
+    },
+    {
+      q: "Can I claim compensation for psychological impact as well?",
+      a: "Yes. Anxiety, sleep disorders or persistent fear can be proven with specialist assessments and fall within moral damages.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 193 and art. 194 on assault and bodily harm.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on the civil party.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send the documents on WhatsApp",
+  parent: PARENT_VIC_EN,
+};

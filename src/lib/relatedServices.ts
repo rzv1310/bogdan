@@ -124,6 +124,10 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/conducere-fara-permis",
     "/servicii/accident-rutier-cu-victime",
   ],
+  "/servicii/reprezentarea-victimelor-in-procese-penale": [
+    "/servicii/despagubiri-accident-rutier",
+    "/servicii/despagubiri-vatamare-corporala",
+  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/avocat-diicot",
     "/servicii/detinere-droguri-consum-propriu",
@@ -177,6 +181,8 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/conducere-fara-permis": "Conducere fără permis",
   "/servicii/accident-rutier-cu-victime": "Accident rutier cu victime",
   "/servicii/confiscare": "Confiscare",
+  "/servicii/despagubiri-accident-rutier": "Despăgubiri accident rutier",
+  "/servicii/despagubiri-vatamare-corporala": "Despăgubiri vătămare corporală",
   "/calculator-despagubiri": "Calculator despăgubiri",
 
   "/despre-mine": "Despre mine",
@@ -218,6 +224,8 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/driving-without-a-licence": "Driving without a licence",
   "/en/services/road-accident-with-victims": "Road accident with victims",
   "/en/services/confiscation": "Confiscation",
+  "/en/services/road-accident-compensation": "Road accident compensation",
+  "/en/services/bodily-injury-compensation": "Bodily injury compensation",
 
   "/en/compensation-calculator": "Compensation calculator",
 

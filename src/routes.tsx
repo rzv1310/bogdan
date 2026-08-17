@@ -148,6 +148,10 @@ const ConducereFaraPermis = lazyRoute(() => import("./pages/services/conducere-f
 const DrivingWithoutLicenceEn = lazyRoute(() => import("./pages/en/services/driving-without-a-licence"));
 const AccidentRutierCuVictime = lazyRoute(() => import("./pages/services/accident-rutier-cu-victime"));
 const RoadAccidentWithVictimsEn = lazyRoute(() => import("./pages/en/services/road-accident-with-victims"));
+const DespagubiriAccidentRutier = lazyRoute(() => import("./pages/services/despagubiri-accident-rutier"));
+const RoadAccidentCompensationEn = lazyRoute(() => import("./pages/en/services/road-accident-compensation"));
+const DespagubiriVatamareCorporala = lazyRoute(() => import("./pages/services/despagubiri-vatamare-corporala"));
+const BodilyInjuryCompensationEn = lazyRoute(() => import("./pages/en/services/bodily-injury-compensation"));
 
 
 export default function AppRoutes() {
@@ -196,6 +200,8 @@ export default function AppRoutes() {
           <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
           <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
           <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
+          <Route path="/servicii/despagubiri-accident-rutier" element={<DespagubiriAccidentRutier />} />
+          <Route path="/servicii/despagubiri-vatamare-corporala" element={<DespagubiriVatamareCorporala />} />
           <Route path="/servicii/evaziune-fiscala" element={<EvaziuneFiscala />} />
           <Route path="/servicii/inselaciune-frauda" element={<InselaciuneFrauda />} />
           <Route path="/servicii/delapidare" element={<Delapidare />} />
@@ -271,6 +277,8 @@ export default function AppRoutes() {
           <Route path="/en/services/road-accident-with-victims" element={<RoadAccidentWithVictimsEn />} />
           <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
           <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
+          <Route path="/en/services/road-accident-compensation" element={<RoadAccidentCompensationEn />} />
+          <Route path="/en/services/bodily-injury-compensation" element={<BodilyInjuryCompensationEn />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

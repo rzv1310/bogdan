@@ -8083,3 +8083,430 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_IR,
 };
+
+const PARENT_VIC = {
+  to: "/servicii/reprezentarea-victimelor-in-procese-penale",
+  label: "reprezentarea victimelor în procese penale",
+  breadcrumbLabel: "Reprezentarea victimelor",
+};
+
+export const despagubiriAccidentRutierRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/despagubiri-accident-rutier",
+  altPath: "/en/services/road-accident-compensation",
+  roPath: "/servicii/despagubiri-accident-rutier",
+  title: "Avocat despăgubiri accident rutier București | Bogdan Lamatic",
+  h1: "Avocat pentru despăgubiri după un accident rutier",
+  description:
+    "Ai fost rănit într-un accident rutier sau ai pierdut un membru al familiei? Te reprezint ca parte civilă pentru daune materiale și morale, inclusiv față de asigurătorul RCA.",
+  keywords:
+    "avocat despagubiri accident rutier, despagubiri accident rutier bucuresti, daune morale accident rutier, parte civila accident rutier",
+  breadcrumbLabel: "Despăgubiri accident rutier",
+  serviceName: "Avocat despăgubiri accident rutier București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost rănit într-un accident rutier sau ai pierdut o persoană apropiată?",
+    "Despăgubirea nu se acordă automat: trebuie cerută, dovedită și susținută cu acte, la momentul procesual potrivit.",
+    "Te reprezint ca parte civilă în dosarul penal și în relația cu asigurătorul RCA.",
+  ],
+  bio: [
+    `${BIO_INTRO} Reprezint victimele accidentelor rutiere și familiile acestora pentru obținerea despăgubirilor materiale și morale, în dosarul penal și în raport cu asigurătorul.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Ai fost rănit într-un accident rutier",
+          paragraphs: [
+            "Ai nevoie de tratament, ai cheltuieli și ai pierdut venituri. Toate acestea se pot recupera, dacă sunt dovedite corect încă din faza de urmărire penală.",
+          ],
+        },
+        {
+          h3: "A decedat un membru al familiei",
+          paragraphs: [
+            "Soțul, copiii, părinții și, în anumite situații, alte rude apropiate pot cere daune morale pentru suferința provocată de pierderea persoanei, precum și cheltuielile efectuate.",
+          ],
+        },
+        {
+          h3: "Asigurătorul îți oferă mai puțin decât ți se cuvine",
+          paragraphs: [
+            "Ofertele inițiale sunt frecvent sub nivelul prejudiciului real. Analizez oferta și îți spun concret dacă merită acceptată sau contestată.",
+          ],
+        },
+        {
+          h3: "Ești deja în dosar penal, dar nu te-ai constituit parte civilă",
+          paragraphs: [
+            [
+              { text: "Constituirea are termen. Dacă șoferul este cercetat penal, dosarul se judecă adesea împreună cu latura civilă, așa cum explic și pe pagina despre " },
+              { text: "accident rutier cu victime", to: "/servicii/accident-rutier-cu-victime" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în cazul tău",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "procesul-verbal de cercetare la fața locului și modul în care s-a reținut culpa;",
+        "documentele medicale, externările și recomandările de recuperare;",
+        "certificatul medico-legal și numărul zilelor de îngrijiri medicale;",
+        "cheltuielile deja efectuate și cele previzibile;",
+        "veniturile pierdute și impactul asupra capacității de muncă;",
+        "polița RCA a vehiculului vinovat și limitele de despăgubire;",
+        "existența unei culpe concurente care ți-ar putea reduce despăgubirea;",
+        "termenele pentru constituirea ca parte civilă;",
+        "oferta asigurătorului, dacă a fost deja formulată.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal sau adresa primită de la Poliție;",
+        "certificatul medico-legal și documentele medicale;",
+        "bonurile și facturile pentru tratament, medicamente și transport;",
+        "adeverința de venit sau documentele privind pierderea câștigului;",
+        "datele poliței RCA a vehiculului vinovat;",
+        "corespondența cu asigurătorul și oferta primită;",
+        "fotografii de la locul accidentului, dacă există.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă actele, îmi poți descrie pe scurt data, locul și consecințele accidentului, iar eu îți spun ce se poate obține.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Cine poate cere despăgubiri după un accident rutier",
+      paragraphs: [
+        "Poate cere despăgubiri persoana vătămată direct în accident, indiferent dacă era șofer, pasager, pieton, biciclist sau motociclist, cu condiția să nu fie ea însăși vinovată exclusiv de producerea evenimentului.",
+        "În caz de deces, despăgubirile pot fi cerute de soțul supraviețuitor, de copii, de părinți și, în funcție de probe, de alte persoane apropiate care au suferit efectiv din cauza pierderii.",
+        "Pot cere despăgubiri și persoanele care au suportat cheltuieli, cum sunt cheltuielile de spitalizare, de recuperare sau de înmormântare.",
+      ],
+    },
+    {
+      h2: "Daune materiale și daune morale: ce înseamnă fiecare",
+      paragraphs: [
+        "Daunele materiale acoperă pierderile care se pot calcula: tratament, medicamente, dispozitive medicale, transport, recuperare, reparația sau înlocuirea bunurilor avariate și veniturile pierdute.",
+        "Daunele morale acoperă suferința fizică și psihică, limitările în viața de zi cu zi, sechelele estetice și pierderea unei persoane apropiate. Nu se dovedesc cu bonuri, ci prin probe privind impactul real asupra vieții tale.",
+        "În practică, sumele acordate depind de gravitatea leziunilor, de durata recuperării, de sechelele rămase și de modul în care sunt susținute în fața instanței.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Constituirea ca parte civilă în dosarul penal",
+      paragraphs: [
+        "Constituirea ca parte civilă se face în scris sau oral, cu indicarea naturii și a întinderii pretențiilor, până la începerea cercetării judecătorești. Depășirea acestui moment te obligă să pornești un proces civil separat.",
+        "Cererea poate fi ulterior completată cu documente noi, dar temeiul și pretențiile trebuie formulate din timp și corect.",
+        "Te asist la depunerea cererii, la administrarea probelor și în tot parcursul procesului, inclusiv în raport cu apărarea șoferului cercetat.",
+      ],
+    },
+    {
+      h2: "RCA, BAAR și acțiunea împotriva asigurătorului",
+      paragraphs: [
+        "Despăgubirile sunt suportate, în limitele poliței, de asigurătorul RCA al vehiculului vinovat. Asigurătorul este chemat în procesul penal și răspunde direct față de persoana prejudiciată.",
+        "Dacă vehiculul nu era asigurat, dacă asigurătorul este în faliment sau dacă autorul a rămas neidentificat, despăgubirea poate fi cerută prin Fondul de garantare, respectiv prin BAAR, în condițiile legii.",
+        "Poți formula cerere de despăgubire direct la asigurător, în paralel cu dosarul penal. Este important ca cele două proceduri să fie corelate, ca să nu îți limitezi singur pretențiile.",
+      ],
+    },
+    {
+      h2: "Ce faci dacă asigurătorul refuză sau oferă prea puțin",
+      paragraphs: [
+        "Refuzul sau subevaluarea se pot contesta. Se poate formula plângere la ASF, se poate apela la procedura SAL-Fin sau se poate continua cu acțiunea în instanță.",
+        "Înainte de a semna orice tranzacție, verifică dacă suma acoperă și prejudiciul viitor, pentru că o înțelegere semnată poate închide definitiv discuția.",
+        "Analizez oferta primită și îți arăt diferența dintre ce ți se propune și ce se obține, în mod curent, în situații similare.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Culpa concurentă și efectul asupra despăgubirii",
+      paragraphs: [
+        "Dacă victima a contribuit la producerea accidentului, de exemplu prin traversare neregulamentară sau prin nepurtarea centurii, despăgubirea poate fi diminuată proporțional.",
+        "Procentul de culpă nu este stabilit automat. Se discută pe baza expertizei tehnice și poate fi contestat cu argumente concrete.",
+      ],
+    },
+    {
+      h2: "Termene de care trebuie să ții cont",
+      bullets: [
+        "constituirea ca parte civilă, până la începerea cercetării judecătorești;",
+        "termenul general de prescripție de 3 ani pentru acțiunea civilă în despăgubiri;",
+        "termenele de răspuns prevăzute pentru asigurător în procedura de despăgubire;",
+        "termenele de contestare a ofertei sau a refuzului asigurătorului.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente ale victimelor",
+      bullets: [
+        "semnarea unei tranzacții cu asigurătorul înainte de finalizarea tratamentului;",
+        "lipsa documentelor medicale care să ateste evoluția și sechelele;",
+        "neconstituirea ca parte civilă în termen;",
+        "solicitarea unei sume globale, fără defalcare pe capete de cerere;",
+        "renunțarea la pretenții în schimbul unei plăți rapide, sub valoarea reală a prejudiciului.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât durează până primesc despăgubirile?",
+      a: "Depinde de procedură. Pe cale amiabilă, la asigurător, termenele sunt de câteva luni. În dosarul penal, plata se face după rămânerea definitivă a hotărârii.",
+    },
+    {
+      q: "Trebuie să plătesc ceva ca să cer despăgubiri?",
+      a: "Constituirea ca parte civilă în procesul penal este scutită de taxă de timbru. Discutăm de la început, transparent, condițiile de reprezentare.",
+    },
+    {
+      q: "Pot cere daune morale dacă nu am rămas cu sechele?",
+      a: "Da. Suferința fizică, tratamentul și perioada de recuperare pot justifica daune morale chiar și fără sechele permanente.",
+    },
+    {
+      q: "Ce fac dacă șoferul vinovat nu avea RCA?",
+      a: "Despăgubirea se poate obține prin Fondul de garantare, prin intermediul BAAR, în condițiile prevăzute de lege.",
+    },
+    {
+      q: "Pot cere despăgubiri dacă eram pasager?",
+      a: "Da. Pasagerul este despăgubit de asigurătorul vehiculului vinovat, indiferent în ce mașină se afla.",
+    },
+    {
+      q: "Am acceptat deja o sumă de la asigurător. Mai pot cere ceva?",
+      a: "Depinde de conținutul actului semnat. Dacă ai renunțat expres la orice pretenții viitoare, situația este dificilă, dar merită analizată.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind acțiunea civilă în procesul penal.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul penal, art. 192 și art. 196 privind uciderea din culpă și vătămarea corporală din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_VIC,
+};
+
+export const despagubiriVatamareCorporalaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/despagubiri-vatamare-corporala",
+  altPath: "/en/services/bodily-injury-compensation",
+  roPath: "/servicii/despagubiri-vatamare-corporala",
+  title: "Avocat despăgubiri vătămare corporală | Bogdan Lamatic",
+  h1: "Avocat pentru despăgubiri în cazuri de vătămare corporală",
+  description:
+    "Ai fost agresat sau ai suferit o vătămare corporală? Te reprezint ca parte civilă pentru daune materiale și morale, cu probe medicale și evaluare corectă a prejudiciului.",
+  keywords:
+    "avocat despagubiri vatamare corporala, daune morale vatamare corporala, parte civila vatamare corporala, despagubiri agresiune",
+  breadcrumbLabel: "Despăgubiri vătămare corporală",
+  serviceName: "Avocat despăgubiri vătămare corporală București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost agresat sau ai suferit o vătămare corporală și vrei să obții despăgubiri?",
+    "Probele medicale se strâng la începutul cauzei. Fără certificat medico-legal și fără documente de tratament, prejudiciul rămâne nedovedit.",
+    "Te reprezint ca persoană vătămată și ca parte civilă, pe toată durata procesului penal.",
+  ],
+  bio: [
+    `${BIO_INTRO} Reprezint persoanele vătămate prin agresiuni sau alte fapte care au produs leziuni, pentru recunoașterea prejudiciului și obținerea despăgubirilor.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Ai fost agresat și ai leziuni",
+          paragraphs: [
+            [
+              { text: "Primul pas este obținerea certificatului medico-legal și formularea plângerii. Contextul juridic al faptei este explicat pe pagina despre " },
+              { text: "infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Vătămarea s-a produs din culpa altcuiva",
+          paragraphs: [
+            "Poate fi vorba despre un accident la locul de muncă, despre o intervenție medicală sau despre neglijența unei persoane care avea o obligație de siguranță. În toate aceste cazuri se poate cere despăgubire.",
+          ],
+        },
+        {
+          h3: "Agresorul este deja cercetat penal",
+          paragraphs: [
+            "Trebuie să te constitui parte civilă în termen și să îți susții pretențiile cu documente, altfel instanța nu îți poate acorda despăgubiri în acel dosar.",
+          ],
+        },
+        {
+          h3: "Ți s-a propus împăcarea sau o sumă de bani",
+          paragraphs: [
+            "Împăcarea închide procesul penal. Înainte să accepți, verifică dacă suma acoperă tratamentul, recuperarea și consecințele pe termen lung.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în cazul tău",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "certificatul medico-legal și numărul zilelor de îngrijiri medicale;",
+        "încadrarea juridică a faptei și consecințele asupra procedurii;",
+        "documentele medicale, intervențiile și planul de recuperare;",
+        "sechelele, infirmitatea sau prejudiciul estetic;",
+        "cheltuielile efectuate și veniturile pierdute;",
+        "existența martorilor, a imaginilor video sau a altor probe;",
+        "termenul pentru plângerea prealabilă, acolo unde legea o cere;",
+        "solvabilitatea autorului și posibilitatea de recuperare efectivă a sumelor.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "certificatul medico-legal;",
+        "biletele de externare, fișele de tratament și recomandările medicale;",
+        "bonurile și facturile pentru medicamente, proteze, kinetoterapie sau transport;",
+        "dovada veniturilor și a zilelor de concediu medical;",
+        "plângerea depusă și numărul dosarului, dacă există;",
+        "fotografii ale leziunilor;",
+        "datele martorilor.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă toate documentele, îmi poți descrie ce s-a întâmplat și ce tratament ai urmat, iar eu îți spun ce probe mai sunt necesare.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Lovire sau alte violențe și vătămare corporală: ce diferență face",
+      paragraphs: [
+        "Art. 193 Cod penal sancționează lovirea sau alte violențe, iar art. 194 Cod penal sancționează vătămarea corporală. Diferența ține de gravitatea urmării: numărul zilelor de îngrijiri medicale, infirmitatea, prejudiciul estetic grav și permanent, avortul sau punerea în primejdie a vieții.",
+        "Încadrarea determină și procedura: la lovire, acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate, iar împăcarea înlătură răspunderea penală.",
+        "Această distincție influențează direct și nivelul despăgubirilor care se pot obține.",
+      ],
+    },
+    {
+      h2: "Expertiza medico-legală și zilele de îngrijiri medicale",
+      paragraphs: [
+        "Certificatul medico-legal se obține de la instituția de medicină legală, cât mai repede după producerea leziunilor, pentru ca acestea să poată fi constatate direct.",
+        "Numărul zilelor de îngrijiri medicale nu reprezintă durata concediului medical, ci timpul necesar, din punct de vedere medical, pentru vindecare.",
+        "Dacă evaluarea inițială nu reflectă situația reală, se poate cere o nouă expertiză sau o completare a concluziilor, cu obiective clare.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Cum se stabilesc daunele morale",
+      paragraphs: [
+        "Daunele morale nu se calculează după o formulă. Instanța analizează intensitatea suferinței, durata tratamentului, sechelele, vârsta, activitatea profesională și modul în care viața ta s-a schimbat.",
+        "Un prejudiciu estetic vizibil, o infirmitate sau imposibilitatea de a relua activitatea anterioară justifică sume semnificativ mai mari.",
+        "Susținerea acestor elemente cu probe concrete, nu doar cu afirmații, face diferența între o sumă simbolică și o despăgubire reală.",
+      ],
+    },
+    {
+      h2: "Cheltuieli de tratament, recuperare și venituri pierdute",
+      bullets: [
+        "consultații, intervenții chirurgicale și spitalizare;",
+        "medicamente, materiale sanitare, proteze și dispozitive medicale;",
+        "kinetoterapie și tratamente de recuperare;",
+        "transportul la unitățile medicale;",
+        "ajutorul unei alte persoane, dacă ai nevoie de îngrijire;",
+        "diferența de venit pe perioada concediului medical;",
+        "pierderea sau reducerea capacității de muncă pe termen lung.",
+      ],
+    },
+    {
+      h2: "Acțiune civilă în procesul penal sau proces civil separat",
+      paragraphs: [
+        "În procesul penal, constituirea ca parte civilă este scutită de taxă de timbru, iar probele administrate de organele judiciare pot fi folosite în susținerea pretențiilor.",
+        "Un proces civil separat presupune taxă de timbru și administrarea propriilor probe, dar poate fi util atunci când dosarul penal s-a închis sau când pretențiile nu au fost soluționate acolo.",
+        "Analizez de la început care variantă îți este mai favorabilă.",
+      ],
+    },
+    {
+      h2: "Împăcarea și tranzacția: avantaje și riscuri",
+      paragraphs: [
+        "Împăcarea produce efecte definitive și înlătură răspunderea penală în cazurile prevăzute de lege. Odată realizată, nu mai poți reveni asupra ei.",
+        "O tranzacție corect redactată poate aduce banii rapid, fără ani de proces, dar trebuie să acopere și consecințele viitoare, nu doar cheltuielile de până acum.",
+        "Verific fiecare clauză înainte de semnare, ca să nu renunți, fără să îți dai seama, la despăgubiri viitoare.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Probele care fac diferența",
+      bullets: [
+        "certificatul medico-legal obținut la timp;",
+        "documentele medicale complete, pe toată durata tratamentului;",
+        "fotografiile leziunilor, la momente diferite;",
+        "declarațiile martorilor oculari;",
+        "înregistrările video din zona incidentului;",
+        "dovezile privind cheltuielile și pierderea veniturilor;",
+        "evaluarea psihologică, atunci când impactul emoțional este semnificativ.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât timp am ca să depun plângere?",
+      a: "Pentru faptele urmărite la plângere prealabilă, termenul este de 3 luni de la data la care ai aflat despre faptă și despre autor. Pentru celelalte, acțiunea penală se exercită din oficiu.",
+    },
+    {
+      q: "Certificatul medico-legal este obligatoriu?",
+      a: "Nu este obligatoriu prin lege, dar în practică este proba esențială pentru stabilirea gravității leziunilor și a despăgubirilor.",
+    },
+    {
+      q: "Ce sume se acordă pentru daune morale?",
+      a: "Nu există un barem. Sumele variază în funcție de gravitatea leziunilor, de sechele și de probele administrate în dosar.",
+    },
+    {
+      q: "Dacă mă împac, mai primesc despăgubiri?",
+      a: "Doar suma convenită prin înțelegere. După împăcare nu mai poți cere despăgubiri suplimentare pentru aceeași faptă.",
+    },
+    {
+      q: "Agresorul nu are bani. Mai are rost procesul?",
+      a: "Da. Titlul executoriu rămâne valabil ani de zile și poate fi pus în executare când situația patrimonială a debitorului se schimbă.",
+    },
+    {
+      q: "Pot cere despăgubiri și pentru impactul psihologic?",
+      a: "Da. Anxietatea, tulburările de somn sau teama persistentă pot fi dovedite cu evaluări de specialitate și intră în sfera daunelor morale.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 193 și art. 194 privind lovirea și vătămarea corporală.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind partea civilă.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_VIC,
+};

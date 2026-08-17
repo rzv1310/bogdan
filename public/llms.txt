@@ -83,6 +83,8 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Refuz prelevare probe biologice](/servicii/refuz-prelevare-probe-biologice): Refuzul recoltării probelor biologice, art. 337 Cod penal.
 - [Conducere fără permis](/servicii/conducere-fara-permis): Dosare pentru conducerea fără permis de conducere, art. 335 Cod penal.
 - [Accident rutier cu victime](/servicii/accident-rutier-cu-victime): Apărarea șoferului cercetat penal pentru accident cu victime.
+- [Despăgubiri accident rutier](/servicii/despagubiri-accident-rutier): Reprezentarea victimei ca parte civilă pentru daune materiale și morale după un accident rutier.
+- [Despăgubiri vătămare corporală](/servicii/despagubiri-vatamare-corporala): Despăgubiri pentru persoana vătămată prin agresiune sau alte fapte care au produs leziuni.
 - [Road Traffic Offenses](/en/services/road-traffic-offenses): Serious road traffic offenses.
 - [Răspundere penală incidente locul de muncă](/servicii/raspundere-penala-incidente-locul-de-munca): Accidente de muncă, securitate.
 - [Workplace Criminal Liability](/en/services/workplace-criminal-liability): Criminal liability for workplace incidents.
