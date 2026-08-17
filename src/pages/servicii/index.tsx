@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import { Phone, ArrowRight, Briefcase } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { roServiceGroups } from "@/lib/serviceGroups";
 import { CTA_CLASS } from "@/lib/cta";
