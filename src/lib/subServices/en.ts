@@ -3991,7 +3991,9 @@ export const conflictOfInterestEn: SubServicePageData = {
    ============================================================ */
 
 const L143_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/23629";
+const L58_EN = "https://legislatie.just.ro/Public/DetaliiDocument/280178";
 const ICCJ25_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/293958";
+const ICCJ15_EN = "https://legislatie.just.ro/Public/DetaliiDocument/189358";
 const OUG78_EN = "https://legislatie.just.ro/Public/DetaliiDocument/305273";
 
 const PARENT_DO_EN = {
@@ -4430,10 +4432,10 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
   path: "/en/services/international-drug-trafficking",
   altPath: "/servicii/trafic-international-de-droguri",
   roPath: "/servicii/trafic-international-de-droguri",
-  title: "International Drug Trafficking Lawyer Bucharest | Bogdan Lamatic",
+  title: "International drug trafficking lawyer | Bucharest",
   h1: "International drug trafficking lawyer in Bucharest",
   description:
-    "Investigated for international drug trafficking, seizure at the border or parcel transport? I analyse the evidence, legality and defence in cross-border cases.",
+    "Accused of importing, exporting or bringing drugs into the country? Defence in international trafficking cases, border controls and DIICOT investigations.",
   keywords:
     "international drug trafficking lawyer, border drug lawyer, parcel drug lawyer, diicot drug lawyer",
   breadcrumbLabel: "International drug trafficking",
@@ -4450,123 +4452,321 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
   sections: [
     {
       h2: "What situation are you in now?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Choose the scenario closest to your situation."],
       subsections: [
         {
-          h3: "Drugs discovered at the border or at the airport",
+          h3: "Drugs found at the airport, border or in a vehicle",
           paragraphs: [
-            "The place of discovery, quantity, packaging, accompanying documents and any data about sender or recipient are all relevant.",
+            "In an international trafficking case it must be established exactly who had control over the luggage, parcel or vehicle, what each person knew and what evidence links the investigated person to the substances discovered.",
           ],
         },
         {
-          h3: "You are accused of transport or courier activity",
+          h3: "You received or sent a parcel from abroad",
           paragraphs: [
-            "Courier activity can be qualified differently depending on what you knew or should have known about the content, destination and beneficiaries. Evidence of knowledge is essential.",
+            "The fact that substances are transported by courier or post does not remove the cross-border nature of the investigation. The sender, recipient, payment, communications, parcel route and what can be proved regarding knowledge of the contents must all be analysed.",
           ],
         },
         {
-          h3: "The parcel was sent to or from Romania",
+          h3: "You are accused of organising the transport without having the drugs on you",
           paragraphs: [
-            "Cross-border cases often involve international judicial cooperation procedures, translation of evidence and differences in legislation. The jurisdiction and legality of each piece of evidence must be verified.",
+            "A case is not limited to the person physically transporting the substances. The prosecution may examine the roles of people alleged to have ordered, financed, coordinated, received or facilitated the operation. Each role must however be proved individually.",
           ],
         },
         {
-          h3: "A close person is detained abroad",
+          h3: "The case involves several people or an organised criminal group charge",
           paragraphs: [
-            "Family can contact a lawyer to understand the procedure and options. Tell me the country, the situation and the available documents.",
+            [
+              { text: "The offence under Article 367 of the Criminal Code is distinct and must be analysed separately from the drug offence. See also the dedicated page on " },
+              { text: "organised criminal groups", to: "/en/services/organized-crime-group" },
+              { text: "." },
+            ],
           ],
-          cta: "Call now - 031 632 01 83",
-          ctaIcon: false,
         },
       ],
     },
     {
       h2: "What I immediately analyse in an international drug trafficking case",
       paragraphs: [
-        "I verify whether the evidence is sufficient, lawful and correctly interpreted in a cross-border context.",
+        "In such cases I verify:",
       ],
       bullets: [
-        "legality of the search and seizure of evidence;",
-        "quantity and type of substance;",
-        "packaging and concealment method;",
-        "transport and invoicing documents;",
-        "data on sender, recipient and intermediaries;",
-        "wiretaps, conversations and locations;",
-        "international judicial cooperation and jurisdiction;",
-        "translation and authenticity of foreign evidence;",
-        "evidence of the client's knowledge and intent.",
+        "where and how the substances were discovered;",
+        "the international route alleged by the prosecution;",
+        "who organised the travel or shipment;",
+        "who had control over the luggage, parcel or vehicle;",
+        "what the investigated person actually knew about the contents;",
+        "transport documents;",
+        "reservations and tickets;",
+        "phone data;",
+        "locations and communications;",
+        "payments and money transfers;",
+        "evidence regarding sender and recipient;",
+        "technical surveillance;",
+        "any controlled deliveries;",
+        "control and search records;",
+        "the report on the nature of the substance;",
+        "the chain of custody of the evidence;",
+        "the concrete role attributed to each person.",
       ],
-      cta: "Call now - 031 632 01 83",
+      cta: "☎ Call now - 031 632 01 83",
       ctaIcon: false,
     },
     {
-      h2: "Documents to send me for the first assessment",
+      h2: "Documents to send me",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: ["If you have them, send me:"],
       bullets: [
-        "detention or arrest orders;",
-        "search and seizure reports;",
-        "expert report on the substance;",
-        "transport and delivery documents;",
-        "wiretaps or communicated data;",
-        "extradition requests or judicial cooperation documents;",
-        "information about upcoming deadlines.",
+        "the summons;",
+        "the control record;",
+        "the search record;",
+        "documents regarding the luggage or parcel;",
+        "the AWB and courier documents;",
+        "tickets, reservations or transport documents;",
+        "ordinances and court orders received;",
+        "documents regarding the phone or other seized devices;",
+        "any document relating to the next hearing.",
       ],
-      paragraphsAfterBullets: ["Don't have all documents? Call anyway. The first discussion is enough to understand the situation."],
+      calloutAfterBullets: "Don't have all the documents? Call anyway.",
       ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Send me documents on WhatsApp",
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
     },
     {
       h2: "What does international drug trafficking mean?",
       paragraphs: [
-        "International drug trafficking involves import, export, transport or transfer of drugs across borders. The charge can target anyone participating in these operations, from organisers to couriers.",
-        "Law no. 143/2000 punishes drug trafficking with imprisonment from 10 to 20 years, and in the aggravated form (cross-border) the limits can increase. The exact penalty depends on the circumstances.",
+        [
+          { text: "Article 3 of Law no. 143/2000 criminalises the introduction or removal from the country, as well as the import or export of drugs, without right. It is an offence distinct from the forms of " },
+          { text: "drug trafficking", to: "/en/services/drug-offenses" },
+          { text: " regulated by Article 2." },
+        ],
+        "In practice, the international element can arise through:",
+      ],
+      bullets: [
+        "road transport;",
+        "air transport;",
+        "luggage;",
+        "parcels;",
+        "courier services;",
+        "maritime transport;",
+        "other methods by which substances cross the border.",
       ],
     },
     {
-      h2: "How to defend an international drug trafficking case",
-      paragraphs: ["The defence can pursue several directions, depending on the file:"],
+      h2: "What penalties does the law provide for international drug trafficking?",
+      paragraphs: [
+        "The current form of Article 3 of Law no. 143/2000 provides:",
+      ],
       bullets: [
-        "verifying the legality of foreign evidence;",
-        "contesting knowledge and intent;",
-        "proving a secondary or involuntary role;",
-        "analysing the quantity and discovery circumstances;",
-        "verifying international judicial cooperation;",
-        "administering favourable evidence and court defences.",
+        "for risk drugs: 10 to 20 years' imprisonment and a ban on certain rights;",
+        "for high-risk drugs: 15 to 25 years' imprisonment and a ban on certain rights.",
       ],
       paragraphsAfterBullets: [
-        "I personally handle the case strategy and the essential moments of the mandate.",
+        "For the offence under Article 3 paragraph (2) - international trafficking of high-risk drugs - the law expressly provides that suspended execution of the sentence under supervision cannot be ordered. This rule was introduced by Law no. 58/2024.",
+        "For this reason, the classification of the substance and the exact determination of the facts alleged are of major importance.",
       ],
-      cta: "Call now - 031 632 01 83",
+    },
+    {
+      h2: "International trafficking or drug trafficking on Romanian territory?",
+      paragraphs: [
+        [
+          { text: "Articles 2 and 3 regulate different facts. Article 3 concerns the cross-border element - introduction, removal, import or export. Article 2 concerns operations for the circulation of drugs such as production, offering, sale, distribution, transport, procurement, purchase or possession, under the conditions provided by law.", bold: true },
+        ],
+        "In certain situations, a cross-border activity may lead to the analysis of both offences. The High Court of Cassation and Justice has expressly analysed the possibility of concurrence between international trafficking and drug trafficking in the situation of cross-border transport continued thereafter on Romanian territory.",
+        "Therefore, the following must be established separately:",
+      ],
+      bullets: [
+        "the moment the border was crossed;",
+        "conduct after entering Romania;",
+        "the role of each participant;",
+        "the evidence relating to each charge.",
+      ],
+    },
+    {
+      h2: "What happens if the drugs were found in luggage belonging to you?",
+      paragraphs: [
+        "The fact that the substances are in luggage associated with a person is important evidence, but the case must be analysed as a whole. The following must be verified:",
+      ],
+      bullets: [
+        "who prepared the luggage;",
+        "who had access to it;",
+        "who actually controlled it;",
+        "what the person knew about the contents;",
+        "what conversations exist;",
+        "who bought the tickets;",
+        "who financed the trip;",
+        "what other evidence supports or contradicts the charge.",
+      ],
+      paragraphsAfterBullets: [
+        "There is no standard strategy for all situations.",
+      ],
+    },
+    {
+      h2: "What happens if the drugs came in a parcel?",
+      paragraphs: [
+        "In such cases the investigation may trace the entire route of the parcel:",
+      ],
+      bullets: [
+        "sender;",
+        "details entered in the order;",
+        "phone number;",
+        "delivery address;",
+        "payment;",
+        "IPs and accounts;",
+        "recipient;",
+        "the person who actually collected the parcel;",
+        "communications between the people involved.",
+      ],
+      paragraphsAfterBullets: [
+        "It must be established whether the recipient actually knew the contents and what evidence exists in this regard.",
+        "If you have been summoned to collect a parcel or after receiving it, discuss with a lawyer before making a statement.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Controlled delivery and intervention by the investigating authorities",
+      paragraphs: [
+        "The law allows, subject to applicable procedural conditions, the use of controlled deliveries in the investigation of drug offences. Legislation also permits the use of authorised investigators and collaborators under the conditions of the law.",
+        "In such a case I verify:",
+      ],
+      bullets: [
+        "the authorisation documents;",
+        "the sequence of operations;",
+        "the moment the judicial authorities intervened;",
+        "the persons under surveillance;",
+        "how the actions were documented;",
+        "the statements of investigators or collaborators;",
+        "whether the evidence actually supports the role attributed to the client.",
+      ],
+    },
+    {
+      h2: "What role do phone, location and money transfers play?",
+      paragraphs: [
+        "International trafficking cases often have a significant digital and financial component. The prosecution may try to reconstruct the alleged route of the operation through:",
+      ],
+      bullets: [
+        "conversations;",
+        "calls;",
+        "locations;",
+        "reservations;",
+        "online accounts;",
+        "money transfers;",
+        "payments for transport;",
+        "courier data;",
+        "photos and files.",
+      ],
+      paragraphsAfterBullets: [
+        "In defence it is not enough to read isolated fragments. The complete chronology and the real link between each piece of evidence and the alleged act must be verified.",
+      ],
+    },
+    {
+      h2: "What happens if you did not personally transport the drugs?",
+      paragraphs: [
+        "A person can be investigated even if they did not themselves cross the border with the substances, if the prosecutor alleges that they participated in organising or carrying out the operation. In this case the following must be established exactly:",
+      ],
+      bullets: [
+        "what action is attributed to them;",
+        "what evidence supports participation;",
+        "whether there are only contacts with other people or concrete actions;",
+        "whether the person knew the purpose of the operation;",
+        "whether the charge correctly distinguishes the roles of the participants.",
+      ],
+      paragraphsAfterBullets: [
+        "Simple association with other people does not replace proof of individual contribution.",
+      ],
+    },
+    {
+      h2: "If the case also includes an organised criminal group charge",
+      paragraphs: [
+        [
+          { text: "In cases with several participants, the prosecutor may also examine the existence of an " },
+          { text: "organised criminal group", to: "/en/services/organized-crime-group" },
+          { text: ". This offence has its own elements and does not automatically result from the mere fact that three or more people are investigated in the same case." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defence in an international drug trafficking case",
+      paragraphs: [
+        "I analyse separately:",
+      ],
+      bullets: [
+        "the cross-border element;",
+        "the nature and classification of the substance;",
+        "the concrete role attributed to the client;",
+        "knowledge of the transported contents;",
+        "the link between the client and the other participants;",
+        "digital and financial evidence;",
+        "legality of controls, searches and surveillance;",
+        "any controlled deliveries;",
+        "the legal classification;",
+        "connected charges.",
+      ],
+      paragraphsAfterBullets: [
+        "Strategy is built from the case, not from assumptions.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
       ctaIcon: false,
     },
   ],
+  reviewAfterSection: 2,
+  reviewAuthor: "Robert Boloaja",
+  reviewText:
+    "Complicated criminal case with serious accusations. Mr. Bogdan Lamatic was exceptional: extremely professional, very good strategy, calm and maximally prepared. He quickly identified the weak points of the case and handled everything with determination. Available at any time, explains everything clearly and realistically, without false promises. The result was far beyond what I hoped for.",
+  reviewMeta: "Google review",
+  reviewTimestamp: "2 months ago",
+  faqTitle: "Frequently asked questions about international drug trafficking",
   faq: [
     {
-      q: "What happens if I did not know what the parcel contained?",
-      a: "Knowledge and intent are essential for the charge. If the evidence does not show you knew about the drugs, the charge can be contested. Every element in the file must be analysed separately.",
+      q: "What is the difference between international trafficking and drug trafficking?",
+      a: "International trafficking involves the introduction, removal, import or export element regulated by Article 3. Trafficking under Article 2 covers other operations concerning the circulation of drugs.",
     },
     {
-      q: "Can I be extradited if I am abroad?",
-      a: "Extradition depends on international treaties, nationality and the law of the state concerned. Effective defence starts as early as possible in the country where you are located.",
+      q: "Can I be accused if the drugs were in a parcel addressed to me?",
+      a: "You can be investigated, but it must be established whether you knew what the parcel contained and what evidence actually links the person to the operation.",
     },
     {
-      q: "How severe are penalties for international drug trafficking?",
-      a: "Penalties range from 10 to 20 years, with possible increases depending on quantity, role and circumstances. The exact limit is set by the court.",
+      q: "What is the penalty for importing drugs?",
+      a: "Under the current form of the law, Article 3 provides 10-20 years for risk drugs and 15-25 years for high-risk drugs.",
     },
     {
-      q: "Can family contact the lawyer?",
-      a: "Yes. A family member can contact me and send the available information, including from abroad.",
+      q: "Can the sentence be suspended for international trafficking of high-risk drugs?",
+      a: "Law no. 143/2000 expressly provides that for Article 3 paragraph (2) suspended execution of the sentence under supervision cannot be ordered.",
+    },
+    {
+      q: "Is attempt punishable?",
+      a: "Yes. Law no. 143/2000 provides for the punishment of attempt for the indicated offences, including Article 3.",
+    },
+    {
+      q: "Do several people involved in transport automatically mean an organised criminal group?",
+      a: "Not automatically. For Article 367 of the Criminal Code the specific conditions of the organised criminal group must be proved.",
     },
   ],
-  faqTitle: "Frequently asked questions about international drug trafficking",
   resources: [
-    { text: "Law no. 143/2000 on preventing and combating drug trafficking and illicit drug use.", href: L143_EN, linkLabel: "Legislation" },
-    { text: "High Court Decision no. 25/2025 on the absence of a fixed quantity threshold.", href: ICCJ25_EN, linkLabel: "Legislation" },
-    { text: "Emergency Ordinance no. 78/2016 on the organisation and jurisdiction of DIICOT.", href: OUG78_EN, linkLabel: "Legislation" },
+    {
+      text: "Legislative Portal - Law no. 143/2000 on preventing and combating drug trafficking and illicit drug use.",
+      href: L143_EN,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Law no. 58/2024 including the impossibility of suspension for Article 2 paragraph (2) and Article 3 paragraph (2).",
+      href: L58_EN,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - High Court Decision no. 15/2017 on international trafficking and drug trafficking.",
+      href: ICCJ15_EN,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Emergency Ordinance no. 78/2016 on DIICOT jurisdiction.",
+      href: OUG78_EN,
+      linkLabel: "Legislation",
+    },
   ],
-  contactText: CONTACT,
+  contactText:
+    "Do you have a cross-border trafficking or drug import case? Tell me where the substances were found, how they reached Romania, what role is attributed to you, whether other people are also investigated and when the next hearing is. You do not need to have all the documents before contacting me.",
   contactWhatsApp: true,
-  contactWhatsAppLabel: "Send me documents on WhatsApp",
+  contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_DO_EN,
 };
