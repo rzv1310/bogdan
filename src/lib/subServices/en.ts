@@ -3756,11 +3756,31 @@ export const conflictOfInterestEn: SubServicePageData = {
       ],
     },
     {
-      h2: "When the act is not an offense",
+      h2: "When art. 301 of the Criminal Code does not apply",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: [
-        "Not every overlap of interests amounts to an offense. It must be proven that an act was actually performed in the exercise of official duties, that a concrete patrimonial benefit resulted, and that the beneficiary belongs to the circle of persons set out by law.",
-        "Outside the criminal text remain situations of abstention from voting or signing, preparatory acts producing no effects, non-patrimonial benefits, as well as the issuing or adoption of normative acts, expressly exempted by law.",
+        "Not every overlap of interests amounts to an offense. It must be proven that an act was actually performed in the exercise of official duties, that a concrete patrimonial benefit resulted, and that the beneficiary belongs to the circle of persons set out by law. In addition, art. 301 para. (2) expressly provides situations in which the act is not punishable.",
+        "Also outside the criminal text remain situations of abstention from voting or signing, preparatory acts producing no effects, and non-patrimonial benefits.",
+      ],
+      subsections: [
+        {
+          h3: "Issuing, approving or adopting normative acts",
+          paragraphs: [
+            "Where the act complained of is a normative act, the criminal text does not apply. I check the real nature of the act, because in practice normative acts are sometimes wrongly treated as individual acts.",
+          ],
+        },
+        {
+          h3: "Exercising a right recognised by law",
+          paragraphs: [
+            "There is no offense where the benefit results from exercising a right the law recognises, such as salary rights, allowances or other entitlements granted under the law.",
+          ],
+        },
+        {
+          h3: "Performing an obligation imposed by law",
+          paragraphs: [
+            "Where the law obliged you to perform the act and you had no margin of appreciation, the act does not fall under the criminal text. Acts executing a court decision or a legal obligation are relevant here.",
+          ],
+        },
       ],
     },
     {
