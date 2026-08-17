@@ -4327,6 +4327,138 @@ export const abuzInServiciuRo: SubServicePageData = {
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
     {
+      h2: "Ce lege trebuie să fi fost încălcată pentru a exista abuz în serviciu?",
+      paragraphs: [
+        "În forma actuală, art. 297 Cod penal cere ca acuzarea să identifice concret actul prevăzut de lege, de o ordonanță sau de un alt act cu putere de lege care nu a fost îndeplinit, ori dispoziția dintr-un asemenea act care a fost încălcată. Fără această indicare precisă, acuzația rămâne fără fundament legal.",
+        "De aceea, primul lucru pe care îl cer în dosar este textul exact invocat de procuror: articol, alineat și act normativ. Dacă rechizitoriul sau ordonanța se referă doar la o procedură internă sau la o apreciere de oportunitate, apărarea poate susține că fapta nu este prevăzută de legea penală.",
+      ],
+      subsections: [
+        {
+          h3: "Este suficientă încălcarea unei proceduri interne?",
+          paragraphs: [
+            "Nu. Regulamentele interne, circularele, notele de serviciu sau procedurile operaționale nu sunt legi ori ordonanțe. Încălcarea lor poate atrage răspundere disciplinară sau administrativă, dar nu îndeplinește singură cerința prevăzută de art. 297.",
+            "În practică, acuzarea încearcă uneori să lege procedura internă de o normă generală din lege. Verific dacă legătura este reală sau doar construită ulterior, pentru a acoperi lipsa unui text legal aplicabil.",
+          ],
+        },
+        {
+          h3: "Fișa postului poate fi suficientă singură?",
+          paragraphs: [
+            "Fișa postului arată ce atribuții aveai, nu ce dispoziție legală ai încălcat. Ea este utilă pentru a stabili dacă actul intra în competența ta, însă nu poate înlocui norma din lege sau ordonanță pe care se sprijină acuzația.",
+            "Dacă atribuția invocată nu apare nici în fișa postului, nici în actele de delegare, susțin că nu exista o obligație legală de a acționa în modul pretins de procuror.",
+          ],
+        },
+        {
+          h3: "Ce se întâmplă dacă norma era neclară sau interpretabilă",
+          paragraphs: [
+            "Când textul legal permite mai multe interpretări rezonabile, alegerea unei variante nu poate fi transformată automat în infracțiune. Norma neclară, practica administrativă contradictorie sau lipsa unor instrucțiuni de aplicare sunt argumente puternice pentru lipsa intenției.",
+            "În aceste situații valorific și avizele primite, punctele de vedere ale instituțiilor și soluțiile similare adoptate în alte dosare sau de instanțele de contencios administrativ.",
+          ],
+        },
+      ],
+      cta: "Vreau să verificăm temeiul legal invocat",
+      ctaIcon: false,
+    },
+    {
+      h2: "Cum se stabilește prejudiciul într-un dosar de abuz în serviciu?",
+      paragraphs: [
+        "Prejudiciul nu este un detaliu contabil, ci un element al infracțiunii. Fără o pagubă certă sau o vătămare efectivă a drepturilor unei persoane, fapta nu întrunește condițiile art. 297. În plus, valoarea reținută influențează direct încadrarea juridică, competența și limitele de pedeapsă.",
+      ],
+      subsections: [
+        {
+          h3: "Prejudiciul trebuie să fie efectiv",
+          paragraphs: [
+            "Paguba trebuie să fie reală și certă, nu ipotetică sau viitoare. Un beneficiu nerealizat, o estimare de oportunitate sau o diferență teoretică de preț nu echivalează automat cu un prejudiciu în sensul legii penale.",
+          ],
+        },
+        {
+          h3: "Cum se calculează paguba",
+          paragraphs: [
+            "Verific metoda de calcul din nota de constatare sau din raportul de control: ce sume au fost luate în considerare, dacă serviciul ori lucrarea a fost efectiv prestată, dacă valoarea plătită corespunde prețului pieței și dacă s-au scăzut sumele deja recuperate.",
+          ],
+        },
+        {
+          h3: "Rolul expertizei",
+          paragraphs: [
+            "Într-un dosar cu componentă economică, expertiza contabilă sau tehnică este esențială. Solicit efectuarea expertizei, propun obiectivele și formulez obiecțiuni la raport, pentru ca discuția să nu rămână doar pe concluziile organului de control.",
+          ],
+        },
+        {
+          h3: "Cum poate fi contestat prejudiciul",
+          paragraphs: [
+            "Contest atât existența, cât și întinderea pagubei: prin cereri în probațiune, obiecțiuni la expertiză, documente care arată contraprestația reală și, dacă este necesar, prin contestarea măsurilor asigurătorii dispuse pe baza unei valori supraevaluate.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Ai deja un prejudiciu calculat în sarcina ta?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+    },
+    {
+      h2: "Abuz în serviciu sau neglijență în serviciu?",
+      paragraphs: [
+        "Cele două fapte sunt reglementate separat: abuzul în serviciu la art. 297 Cod penal, iar neglijența în serviciu la art. 298. Diferența nu ține de gravitatea rezultatului, ci de forma de vinovăție.",
+        "Abuzul în serviciu presupune intenție, adică faptul că ai știut că actul este contrar unei dispoziții legale și ai acceptat consecințele. Neglijența în serviciu presupune culpă: o neatenție, o omisiune sau o greșeală de apreciere, fără voința de a produce urmarea.",
+        "Forma de vinovăție schimbă complet regimul: încadrarea juridică, limitele de pedeapsă, termenul de prescripție și chiar competența de urmărire. De aceea, în multe dosare apărarea nu urmărește achitarea totală, ci demonstrarea faptului că fapta, dacă a existat, a fost comisă din culpă.",
+        [
+          { text: "Pentru situațiile în care acuzația vizează o omisiune din neatenție, vezi și pagina despre " },
+          { text: "răspunderea din culpă a funcționarului", to: "/servicii/neglijenta-in-serviciu" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Cine răspunde când actul a fost avizat și semnat de mai multe persoane?",
+      paragraphs: [
+        "În administrație, aproape niciun act nu este emis de o singură persoană. Există referate, avize, vize de control financiar preventiv, semnături de conformitate și, uneori, decizii colegiale. Apărarea începe prin reconstituirea completă a circuitului documentului.",
+      ],
+      subsections: [
+        {
+          h3: "Aviz juridic favorabil",
+          paragraphs: [
+            "Dacă ai semnat pe baza unui aviz juridic favorabil, argumentul lipsei intenției devine foarte solid. Avizul arată că legalitatea actului a fost verificată de persoana desemnată tocmai pentru acest lucru, iar tu te-ai bazat pe concluzia ei.",
+          ],
+        },
+        {
+          h3: "Aviz economic sau tehnic",
+          paragraphs: [
+            "Pentru aspectele de preț, cantități, soluții tehnice sau încadrări contabile, răspunderea aparține în primul rând celor care au întocmit și avizat documentația de specialitate. Un decident nu are obligația de a reface calculele făcute de specialiști.",
+          ],
+        },
+        {
+          h3: "Delegarea atribuțiilor",
+          paragraphs: [
+            "Analizez deciziile de delegare, perioada acoperită și limitele exacte ale competenței transferate. Dacă atribuția fusese delegată altei persoane, acuzația îndreptată împotriva ta poate fi lipsită de bază.",
+          ],
+        },
+        {
+          h3: "Decizia colegială",
+          paragraphs: [
+            "În cazul comisiilor, consiliilor sau comitetelor, votul individual, poziția exprimată în procesul-verbal și eventualele obiecții consemnate sunt determinante. O decizie colectivă nu se transformă automat în răspundere penală pentru fiecare membru.",
+          ],
+        },
+        {
+          h3: "Răspunderea fiecărei persoane din circuit",
+          paragraphs: [
+            "Scopul este delimitarea clară: cine a propus, cine a verificat, cine a avizat și cine a semnat final. Prezint organului judiciar o schemă a circuitului, susținută de documente, pentru ca răspunderea să fie stabilită pe atribuții reale, nu pe simpla prezență a unei semnături.",
+          ],
+        },
+      ],
+      cta: "Am semnat un act care este acum contestat",
+      ctaIcon: false,
+    },
+    {
+      h2: "Când abuzul în serviciu intră sub Legea 78/2000",
+      paragraphs: [
+        "Legea 78/2000 prevede o formă agravată a abuzului în serviciu, aplicabilă atunci când fapta a fost săvârșită în legătură cu obținerea, pentru sine sau pentru altul, a unui folos necuvenit. În acest caz limitele de pedeapsă se majorează, iar dosarul capătă natura unei cauze de corupție.",
+        "Consecințele practice sunt importante: competența poate reveni Direcției Naționale Anticorupție, se dispun frecvent măsuri asigurătorii extinse și apar frecvent interceptări sau denunțuri în probatoriu. Apărarea trebuie să conteste chiar existența folosului necuvenit și legătura lui cu actul de serviciu.",
+        [
+          { text: "Dacă ancheta este instrumentată de procurorii anticorupție, vezi și pagina de " },
+          { text: "asistență în anchete DNA", to: "/servicii/avocat-dna" },
+          { text: "." },
+        ],
+      ],
+    },
+
+    {
       h2: "Ce este abuzul în serviciu",
       paragraphs: [
         "Abuzul în serviciu constă în fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, nu îndeplinește un act sau îl îndeplinește în mod defectuos și cauzează astfel o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane. Fapta este prevăzută de art. 297 Cod penal.",
