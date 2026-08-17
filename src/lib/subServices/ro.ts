@@ -6798,3 +6798,1288 @@ export const confiscareRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_SB,
 };
+
+const PARENT_IR = {
+  to: "/servicii/infractiuni-rutiere-cu-victime",
+  label: "infracțiuni rutiere",
+  breadcrumbLabel: "Infracțiuni rutiere",
+};
+
+export const alcoolLaVolanRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/alcool-la-volan",
+  altPath: "/en/services/drunk-driving",
+  roPath: "/servicii/alcool-la-volan",
+  title: "Avocat alcool la volan București | Bogdan Lamatic",
+  h1: "Avocat alcool la volan în București",
+  description:
+    "Dosar penal pentru alcool la volan? Analizez etilotestul, recoltarea probelor biologice și încadrarea juridică pe art. 336 Cod penal. 18+ ani experiență.",
+  keywords:
+    "avocat alcool la volan bucuresti, dosar penal alcool volan, avocat art 336 cod penal, alcoolemie peste 0,80",
+  breadcrumbLabel: "Alcool la volan",
+  serviceName: "Avocat alcool la volan București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost oprit în trafic, ai suflat în etilotest și ți s-a reținut permisul?",
+    "În primele ore contează modul în care s-a făcut testarea, ora recoltării probelor de sânge și ce ai declarat la fața locului.",
+    "Analizez dacă alcoolemia reținută rezistă la o verificare tehnică serioasă și ce soluții există în dosarul tău.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru conducerea sub influența alcoolului, din momentul reținerii permisului până la soluția finală din dosar.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Ai suflat peste 0,40 mg/l în aerul expirat",
+          paragraphs: [
+            "Valoarea din etilotest este doar un indiciu. Încadrarea penală se stabilește pe baza alcoolemiei din sânge, exprimată în grame de alcool pur la litru.",
+            "Verific dacă ți s-a oferit posibilitatea recoltării probelor biologice și dacă aparatul folosit era verificat metrologic.",
+          ],
+        },
+        {
+          h3: "Ți s-au recoltat probe de sânge și aștepți buletinul toxicologic",
+          paragraphs: [
+            "Până la rezultatul analizei nu se poate discuta despre o încadrare definitivă. Intervalul dintre oprirea în trafic și recoltare este esențial.",
+            "Pregătesc din timp argumentele privind curba de eliminare a alcoolului și eventualele erori de recoltare sau de transport al probelor.",
+          ],
+        },
+        {
+          h3: "Ai fost implicat și într-un accident",
+          paragraphs: [
+            [
+              { text: "Când alcoolul se combină cu un eveniment rutier, dosarul capătă o altă dimensiune, iar apărarea se construiește împreună cu cea din dosarul de " },
+              { text: "accident rutier cu victime", to: "/servicii/accident-rutier-cu-victime" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Ai fost chemat la audiere",
+          paragraphs: [
+            [
+              { text: "Înainte de a da o declarație este bine să știi exact ce se reține în sarcina ta. Vezi cum pregătesc o " },
+              { text: "audiere la Poliție sau Parchet", to: "/servicii/audiere-politie-parchet" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de alcool la volan",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "ora opririi în trafic și ora exactă a testării cu etilotestul;",
+        "buletinul de verificare metrologică al aparatului folosit;",
+        "dacă ți s-a adus la cunoștință dreptul de a cere recoltarea probelor biologice;",
+        "intervalul dintre oprire și prima recoltare de sânge;",
+        "respectarea celor două recoltări succesive și a intervalului dintre ele;",
+        "lanțul de custodie al probelor, de la unitatea medicală la laborator;",
+        "modul de calcul al alcoolemiei și eventuala interpretare retroactivă;",
+        "consumul de alcool ulterior opririi, dacă acesta există și poate fi probat;",
+        "declarațiile date la fața locului și modul în care au fost consemnate;",
+        "procesul-verbal de reținere a permisului de conducere;",
+        "existența unor afecțiuni medicale sau tratamente care influențează rezultatul;",
+        "posibilitatea unei expertize medico-legale de recalculare a alcoolemiei.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal de reținere a permisului și dovada înlocuitoare;",
+        "fișa de testare cu etilotestul, dacă ți-a fost înmânată;",
+        "buletinul de analiză toxicologică, dacă l-ai primit;",
+        "ordonanța de începere a urmăririi penale sau citația;",
+        "declarația dată la Poliție, dacă ai o copie;",
+        "actele medicale sau rețetele pentru tratamentele urmate;",
+        "datele martorilor care au fost cu tine înainte de oprire.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă niciun act scris, îmi poți spune ora opririi, valoarea afișată de etilotest și ora recoltării probelor.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Când conducerea sub influența alcoolului este infracțiune",
+      paragraphs: [
+        "Potrivit art. 336 alin. (1) Cod penal, conducerea pe drumurile publice a unui vehicul pentru care legea prevede obligativitatea deținerii permisului de conducere de către o persoană care are o îmbibație alcoolică de peste 0,80 g/l alcool pur în sânge este infracțiune.",
+        "Sub acest prag, fapta rămâne, de regulă, în sfera contravențională, potrivit Codului rutier, cu consecințe privind amenda și suspendarea permisului.",
+        "Pragul se raportează la alcoolemia din sânge, nu la valoarea afișată de etilotest. De aceea rezultatul analizei de laborator este proba centrală a dosarului.",
+      ],
+    },
+    {
+      h2: "Etilotest, aparat etilometru și probe biologice: ce contează juridic",
+      paragraphs: [
+        "Testarea preliminară din trafic are rol de indiciu. Stabilirea îmbibației alcoolice se face prin analiza probelor biologice recoltate în unități medicale autorizate.",
+        "Din acest motiv, orice neregulă privind momentul recoltării, numărul probelor, conservarea sau transportul lor poate influența valoarea probatorie a buletinului toxicologic.",
+        "Verific dacă recoltarea s-a făcut în intervalul prevăzut de procedură și dacă rezultatul poate fi raportat corect la momentul conducerii.",
+      ],
+    },
+    {
+      h2: "Alcoolemia la momentul conducerii și calculul retroactiv",
+      paragraphs: [
+        "Între momentul opririi în trafic și cel al recoltării trece, de regulă, un interval în care organismul continuă să absoarbă sau să elimine alcoolul.",
+        "În funcție de faza în care se afla organismul, alcoolemia la momentul conducerii poate fi mai mică decât cea rezultată din analiză. Această diferență se stabilește prin expertiză medico-legală.",
+        "Solicitarea expertizei se face motivat și cu date concrete despre cantitatea consumată, momentul consumului, alimentație și greutate corporală.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce se întâmplă cu permisul de conducere",
+      paragraphs: [
+        "În cazul unui dosar penal pentru alcool la volan, permisul se reține, iar dreptul de a conduce este suspendat pe durata procedurii, în condițiile legii.",
+        "Restituirea permisului depinde de soluția din dosar. O soluție de clasare sau de achitare deschide calea redobândirii dreptului de a conduce, în timp ce o condamnare atrage interdicții suplimentare.",
+      ],
+    },
+    {
+      h2: "Ce soluții pot exista în dosar",
+      bullets: [
+        "clasarea, atunci când alcoolemia la momentul conducerii se situează sub pragul penal;",
+        "achitarea, atunci când probele nu susțin acuzarea;",
+        "renunțarea la urmărirea penală, în condițiile prevăzute de lege;",
+        "amânarea aplicării pedepsei, cu termen de supraveghere;",
+        "suspendarea sub supraveghere a executării pedepsei;",
+        "acordul de recunoaștere a vinovăției, când aduce un rezultat mai bun decât judecata obișnuită.",
+      ],
+      paragraphsAfterBullets: [
+        "Soluția concretă depinde de valoarea alcoolemiei, de antecedente, de existența unui accident și de conduita procesuală.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente după oprirea în trafic",
+      bullets: [
+        "refuzul recoltării probelor biologice, care este o infracțiune distinctă;",
+        "consumul de alcool după oprirea în trafic, fără a putea fi probat corect;",
+        "declarațiile detaliate date fără avocat, care fixează o versiune greu de corectat;",
+        "pierderea documentelor primite de la Poliție;",
+        "ignorarea citației pentru audiere;",
+        "conducerea în perioada în care dreptul de a conduce este suspendat.",
+      ],
+      paragraphs: [
+        [
+          { text: "Refuzul de a te supune prelevării de mostre biologice este o faptă separată, explicată pe pagina privind " },
+          { text: "refuzul prelevării probelor", to: "/servicii/refuz-prelevare-probe-biologice" },
+          { text: "." },
+        ],
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Cum lucrez într-un astfel de dosar",
+      bullets: [
+        "analizez actele existente și stabilesc calitatea ta procesuală;",
+        "cer accesul la dosar și studiez probele administrate;",
+        "verific tehnic buletinul toxicologic și procedura de recoltare;",
+        "formulez cereri de probatoriu, inclusiv expertiza de recalculare a alcoolemiei;",
+        "te asist la audieri și pregătesc declarația împreună cu tine;",
+        "susțin apărarea în fața procurorului și, dacă este cazul, în instanță.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "De la ce valoare alcoolul la volan devine infracțiune?",
+      a: "Peste 0,80 g/l alcool pur în sânge, potrivit art. 336 alin. (1) Cod penal. Sub acest prag fapta este, de regulă, contravenție potrivit Codului rutier.",
+    },
+    {
+      q: "Etilotestul din trafic este suficient pentru condamnare?",
+      a: "Nu. Valoarea din aerul expirat are rol de indiciu, iar îmbibația alcoolică se stabilește prin analiza probelor biologice recoltate în unitate medicală autorizată.",
+    },
+    {
+      q: "Pot contesta buletinul de analiză toxicologică?",
+      a: "Da. Se pot invoca neregulile privind recoltarea, conservarea sau transportul probelor și se poate cere expertiză medico-legală pentru stabilirea alcoolemiei la momentul conducerii.",
+    },
+    {
+      q: "Ce înseamnă calculul retroactiv al alcoolemiei?",
+      a: "Este o expertiză prin care se estimează valoarea alcoolemiei la ora conducerii, pornind de la rezultatul analizei și de la datele privind consumul, ora acestuia și caracteristicile persoanei.",
+    },
+    {
+      q: "Îmi pierd definitiv permisul?",
+      a: "Permisul se reține pe durata procedurii. Pierderea dreptului de a conduce pe termen mai lung depinde de soluția pronunțată în dosarul penal.",
+    },
+    {
+      q: "Pot scăpa cu o pedeapsă neprivativă de libertate?",
+      a: "În funcție de alcoolemie, antecedente și circumstanțe, sunt posibile renunțarea la urmărirea penală, amânarea aplicării pedepsei sau suspendarea sub supraveghere.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 336 privind conducerea sub influența alcoolului sau a altor substanțe.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind probele și expertizele.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const droguriLaVolanRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/droguri-la-volan",
+  altPath: "/en/services/drug-driving",
+  roPath: "/servicii/droguri-la-volan",
+  title: "Avocat droguri la volan București | Bogdan Lamatic",
+  h1: "Avocat droguri la volan în București",
+  description:
+    "Ai fost testat pozitiv cu drug test în trafic? Analizez proba toxicologică, starea de influență și încadrarea pe art. 336 alin. (2) Cod penal.",
+  keywords:
+    "avocat droguri la volan bucuresti, conducere sub influenta drogurilor, drug test pozitiv, avocat art 336 droguri",
+  breadcrumbLabel: "Droguri la volan",
+  serviceName: "Avocat droguri la volan București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost testat cu un drug test în trafic și rezultatul a ieșit pozitiv?",
+    "Testul rapid nu stabilește singur vinovăția. Contează confirmarea toxicologică și dovada stării de influență.",
+    "Verific procedura de testare, recoltarea probelor și modul în care a fost interpretat rezultatul.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru conducerea sub influența substanțelor psihoactive, inclusiv în situațiile în care rezultatul provine de la un tratament medicamentos.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Drug testul din trafic a ieșit pozitiv",
+          paragraphs: [
+            "Testul rapid din salivă indică prezența unei substanțe, nu cantitatea și nici starea de influență. Rezultatul trebuie confirmat prin analiza probelor biologice.",
+            "Verific tipul aparatului, modul de prelevare a probei de salivă și consemnarea rezultatului.",
+          ],
+        },
+        {
+          h3: "Ai fost dus la spital pentru recoltarea probelor de sânge",
+          paragraphs: [
+            "Analiza de laborator arată substanța și metaboliții acesteia. Prezența metaboliților poate indica un consum anterior, nu neapărat o influență la momentul conducerii.",
+            "Această distincție este esențială și se susține cu expertiză toxicologică.",
+          ],
+        },
+        {
+          h3: "Ai luat medicamente pe bază de rețetă",
+          paragraphs: [
+            "Unele medicamente conțin substanțe psihoactive care pot genera un rezultat pozitiv. Contează dacă ai fost avertizat asupra efectului asupra conducerii.",
+            "Documentele medicale și rețetele devin probe importante în dosar.",
+          ],
+        },
+        {
+          h3: "Ai fost cercetat și pentru deținere de droguri",
+          paragraphs: [
+            [
+              { text: "Dacă asupra ta s-au găsit substanțe, dosarul poate include și o acuzație de " },
+              { text: "deținere pentru consum propriu", to: "/servicii/detinere-droguri-consum-propriu" },
+              { text: ", cu o apărare distinctă." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de droguri la volan",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "modul în care s-a efectuat testarea preliminară în trafic;",
+        "consemnarea rezultatului testului rapid în actele întocmite;",
+        "intervalul dintre oprirea în trafic și recoltarea probelor biologice;",
+        "buletinul de analiză toxicologică și substanțele identificate;",
+        "diferența dintre substanța activă și metaboliți inactivi;",
+        "existența unor semne clinice de influență constatate de medic;",
+        "fișa de examinare clinică întocmită la unitatea medicală;",
+        "lanțul de custodie al probelor;",
+        "tratamentele medicamentoase urmate și prescripțiile aferente;",
+        "declarațiile date la fața locului;",
+        "eventuala asociere cu alte fapte rutiere;",
+        "oportunitatea unei expertize toxicologice.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal de reținere a permisului;",
+        "documentul care atestă rezultatul testului rapid;",
+        "fișa de examinare clinică de la unitatea medicală;",
+        "buletinul de analiză toxicologică;",
+        "rețetele și documentele medicale pentru tratamentele urmate;",
+        "citația sau ordonanța primită;",
+        "declarația dată, dacă ai o copie.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă aștepți încă rezultatul de laborator, îmi poți spune ce substanță a fost indicată de testul rapid și când a avut loc recoltarea.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce prevede legea pentru conducerea sub influența drogurilor",
+      paragraphs: [
+        "Art. 336 alin. (2) Cod penal sancționează conducerea pe drumurile publice a unui vehicul pentru care legea prevede obligativitatea deținerii permisului de către o persoană aflată sub influența unor substanțe psihoactive.",
+        "Spre deosebire de alcool, legea nu prevede un prag valoric. Acuzarea trebuie să dovedească starea de influență la momentul conducerii, nu doar prezența substanței în organism.",
+      ],
+    },
+    {
+      h2: "Test rapid, confirmare toxicologică și metaboliți",
+      paragraphs: [
+        "Testul din salivă este o testare preliminară, cu rol de indiciu. Confirmarea se face prin analiza probelor biologice recoltate în unitate medicală autorizată.",
+        "Analiza poate identifica substanța activă sau doar metaboliți, adică urme ale unui consum anterior. Prezența metaboliților, în lipsa altor elemente, nu dovedește automat starea de influență la volan.",
+        "De aceea, examinarea clinică efectuată de medic și consemnarea semnelor concrete au o importanță deosebită.",
+      ],
+    },
+    {
+      h2: "Medicamentele cu substanțe psihoactive",
+      paragraphs: [
+        "Anumite tratamente pentru durere, anxietate sau tulburări de somn conțin substanțe care pot apărea în analize.",
+        "În aceste situații se verifică dacă tratamentul era prescris, dacă a fost respectată doza recomandată și dacă pacientul a fost informat cu privire la efectele asupra capacității de a conduce.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce se întâmplă cu permisul și cu dosarul",
+      paragraphs: [
+        "Permisul se reține, iar dreptul de a conduce se suspendă pe durata procedurii, în condițiile legii.",
+        "Dosarul este instrumentat, de regulă, de organele de urmărire penală competente, iar soluția depinde de rezultatul analizelor și de restul probelor.",
+        [
+          { text: "Dacă ai fost chemat să dai o declarație, pregătirea " },
+          { text: "audierii la Poliție sau Parchet", to: "/servicii/audiere-politie-parchet" },
+          { text: " este primul pas util." },
+        ],
+      ],
+    },
+    {
+      h2: "Greșeli frecvente în dosarele de droguri la volan",
+      bullets: [
+        "recunoașterea unui consum recent, fără a cunoaște rezultatul analizelor;",
+        "refuzul recoltării probelor biologice, care atrage o acuzație separată;",
+        "neprezentarea documentelor medicale pentru tratamentele urmate;",
+        "acceptarea necritică a concluziei că orice rezultat pozitiv înseamnă vinovăție;",
+        "lipsa unei cereri de expertiză toxicologică;",
+        "conducerea în perioada suspendării dreptului de a conduce.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "analizez actele și stabilesc ce anume susține acuzarea;",
+        "verific dacă există dovada stării de influență, nu doar a prezenței substanței;",
+        "contest rezultatele obținute cu încălcarea procedurii;",
+        "solicit expertiză toxicologică atunci când datele o justifică;",
+        "valorific documentele medicale și tratamentele prescrise;",
+        "te asist la audieri și susțin apărarea în fața instanței.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Un drug test pozitiv înseamnă automat dosar penal cu condamnare?",
+      a: "Nu. Testul rapid este o testare preliminară. Acuzarea trebuie să dovedească, prin analize și examinare clinică, starea de influență la momentul conducerii.",
+    },
+    {
+      q: "Ce înseamnă stare de influență?",
+      a: "Este starea în care capacitatea de a conduce este afectată de substanța consumată. Se stabilește prin analiza toxicologică coroborată cu examinarea clinică și cu împrejurările concrete.",
+    },
+    {
+      q: "Dacă am consumat cu câteva zile înainte, mai răspund penal?",
+      a: "Prezența unor metaboliți poate indica un consum anterior. Fără dovada influenței la momentul conducerii, această situație poate fi combătută prin expertiză.",
+    },
+    {
+      q: "Medicamentele prescrise mă pot pune într-un dosar penal?",
+      a: "Este posibil, dacă medicamentul conține substanțe psihoactive. Rețeta, indicațiile medicului și modul de administrare sunt esențiale pentru apărare.",
+    },
+    {
+      q: "Ce se întâmplă dacă refuz testarea?",
+      a: "Refuzul prelevării de mostre biologice este o infracțiune distinctă, prevăzută de art. 337 Cod penal, indiferent de rezultatul pe care l-ar fi avut analiza.",
+    },
+    {
+      q: "Pot obține o soluție fără pedeapsă cu închisoarea?",
+      a: "Da, în funcție de probe și de circumstanțe sunt posibile clasarea, renunțarea la urmărirea penală, amânarea aplicării pedepsei sau suspendarea sub supraveghere.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 336 privind conducerea sub influența substanțelor psihoactive.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind probele, expertizele și constatările.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const parasireaLoculuiAccidentuluiRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/parasirea-locului-accidentului",
+  altPath: "/en/services/leaving-the-accident-scene",
+  roPath: "/servicii/parasirea-locului-accidentului",
+  title: "Avocat părăsirea locului accidentului | Bogdan Lamatic",
+  h1: "Avocat pentru părăsirea locului accidentului în București",
+  description:
+    "Dosar de părăsire a locului accidentului? Analizez dacă fapta intră în art. 338 Cod penal, excepțiile legale și lipsa intenției. 18+ ani experiență.",
+  keywords:
+    "avocat parasirea locului accidentului, dosar parasire loc accident, art 338 cod penal, avocat penal rutier bucuresti",
+  breadcrumbLabel: "Părăsirea locului accidentului",
+  serviceName: "Avocat părăsirea locului accidentului București - Bogdan Lamatic",
+  urgency: [
+    "Ai plecat de la locul unui eveniment rutier și acum ești cercetat penal?",
+    "Nu orice plecare de la fața locului înseamnă infracțiune. Contează dacă a existat un accident în sensul legii și dacă ai știut de producerea lui.",
+    "Analizez situația concretă și stabilim împreună ce poate fi dovedit în apărare.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru părăsirea locului accidentului, inclusiv în situațiile în care contactul a fost minor sau nu a fost perceput.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Nu ai observat impactul",
+          paragraphs: [
+            "În parcări sau la manevre lente, atingerile ușoare pot trece neobservate. Fără reprezentarea producerii accidentului, nu se poate reține intenția cerută de lege.",
+            "Verific imaginile, avariile și poziția vehiculelor, pentru a arăta că nu ai putut percepe evenimentul.",
+          ],
+        },
+        {
+          h3: "Ai plecat pentru a transporta o persoană rănită",
+          paragraphs: [
+            "Legea prevede situații în care fapta nu constituie infracțiune, printre care transportul răniților la spital urmat de revenirea imediată la locul accidentului.",
+            "Documentele medicale și ora prezentării la spital devin probe esențiale.",
+          ],
+        },
+        {
+          h3: "Ai revenit ulterior sau te-ai prezentat la Poliție",
+          paragraphs: [
+            "Prezentarea voluntară la organele de poliție și conduita ulterioară contează în evaluarea situației și în individualizarea unei eventuale pedepse.",
+          ],
+        },
+        {
+          h3: "Ai plecat pentru că erai speriat sau consumaseși alcool",
+          paragraphs: [
+            [
+              { text: "În aceste cazuri dosarul poate cuprinde mai multe acuzații, iar apărarea se corelează cu cea din dosarul de " },
+              { text: "alcool la volan", to: "/servicii/alcool-la-volan" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în acest tip de dosar",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "dacă evenimentul îndeplinește condițiile unui accident de circulație în sensul legii;",
+        "dacă au rezultat victime sau doar pagube materiale;",
+        "dacă ai avut reprezentarea producerii impactului;",
+        "existența înregistrărilor video din trafic, din parcare sau de la camera de bord;",
+        "avariile celor două vehicule și compatibilitatea lor;",
+        "declarațiile martorilor și ale celeilalte părți;",
+        "momentul și modul în care ai fost identificat;",
+        "dacă te-ai prezentat ulterior la Poliție;",
+        "dacă se aplică una dintre situațiile în care fapta nu constituie infracțiune;",
+        "eventualele acuzații conexe reținute în același dosar;",
+        "posibilitatea acoperirii pagubei și efectul acesteia asupra laturii civile;",
+        "oportunitatea unei expertize tehnice auto.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "citația sau ordonanța primită;",
+        "procesul-verbal întocmit de Poliție;",
+        "fotografii cu avariile mașinii tale;",
+        "înregistrările de la camera de bord sau de la camerele din zonă;",
+        "actele mașinii și polița RCA;",
+        "documentele medicale, dacă ai transportat o persoană rănită;",
+        "datele martorilor.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai niciun act, îmi poți descrie locul, ora și felul în care s-a produs contactul.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce prevede art. 338 Cod penal",
+      paragraphs: [
+        "Părăsirea locului accidentului fără încuviințarea organelor de poliție care efectuează cercetarea locului faptei este infracțiune, potrivit art. 338 Cod penal.",
+        "Aceeași dispoziție sancționează și modificarea sau ștergerea urmelor accidentului, atunci când se urmărește ascunderea împrejurărilor producerii lui.",
+        "Textul are în vedere accidentul din care a rezultat uciderea sau vătămarea integrității corporale ori a sănătății unei persoane.",
+      ],
+    },
+    {
+      h2: "Situațiile în care fapta nu constituie infracțiune",
+      paragraphs: ["Legea prevede excepții limitate, printre care:"],
+      bullets: [
+        "accidentul din care au rezultat doar pagube materiale;",
+        "conducătorul vehiculului transportă el însuși persoanele rănite la cea mai apropiată unitate sanitară și se întoarce imediat la locul accidentului;",
+        "conducătorul, în lipsa altor mijloace de transport, transportă persoana rănită și revine la locul faptei;",
+        "situațiile în care conducătorul este el însuși rănit și transportat pentru îngrijiri medicale.",
+      ],
+      paragraphsAfterBullets: [
+        "Aceste situații se interpretează strict și trebuie dovedite cu documente și martori.",
+      ],
+    },
+    {
+      h2: "Lipsa intenției și impactul neperceput",
+      paragraphs: [
+        "Infracțiunea presupune intenție. Dacă șoferul nu a avut reprezentarea producerii accidentului, elementul subiectiv nu este întrunit.",
+        "Această apărare se susține cu date obiective: viteza redusă, tipul avariei, zgomotul de fond, poziția vehiculelor, vizibilitatea din interiorul mașinii.",
+        "În aceste situații, expertiza tehnică auto poate stabili dacă impactul putea fi perceput de conducătorul auto.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Cumulul cu alte fapte rutiere",
+      paragraphs: [
+        [
+          { text: "Părăsirea locului accidentului apare frecvent alături de alte acuzații: vătămare corporală din culpă, ucidere din culpă sau " },
+          { text: "conducerea fără permis", to: "/servicii/conducere-fara-permis" },
+          { text: "." },
+        ],
+        "Apărarea trebuie construită unitar, pentru că argumentele dintr-un capăt de acuzare pot influența direct celelalte acuzații din același dosar.",
+      ],
+    },
+    {
+      h2: "Latura civilă și relația cu asigurătorul",
+      paragraphs: [
+        "Persoana vătămată poate formula pretenții civile în procesul penal. Acoperirea prejudiciului sau încheierea unei înțelegeri poate influența soluția privind latura civilă și individualizarea pedepsei.",
+        "Verific și modul în care intervine asigurătorul RCA, precum și limitele acoperirii, pentru ca răspunderea ta patrimonială să fie corect stabilită.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente",
+      bullets: [
+        "repararea mașinii înainte de a fi fotografiată și expertizată;",
+        "declarațiile contradictorii date la momente diferite;",
+        "încercarea de a ascunde avariile sau urmele accidentului;",
+        "ignorarea citației și lipsa de la audiere;",
+        "discuțiile directe cu cealaltă parte, fără consultarea unui avocat;",
+        "renunțarea la o expertiză tehnică atunci când percepția impactului este contestabilă.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Dacă au rezultat doar pagube materiale, este infracțiune?",
+      a: "Nu. Textul are în vedere accidentele din care a rezultat vătămarea sau decesul unei persoane. Pentru pagube materiale se aplică regulile din Codul rutier.",
+    },
+    {
+      q: "Am plecat pentru că nu am simțit impactul. Ce fac?",
+      a: "Lipsa reprezentării producerii accidentului înlătură intenția. Această apărare se dovedește cu imagini, avarii, martori și, dacă este cazul, cu expertiză tehnică auto.",
+    },
+    {
+      q: "Am dus victima la spital și nu m-am întors. Mai este excepție?",
+      a: "Legea cere revenirea imediată la locul accidentului. Dacă nu ai revenit, se analizează motivele concrete, inclusiv starea ta medicală.",
+    },
+    {
+      q: "M-am prezentat singur la Poliție a doua zi. Contează?",
+      a: "Da. Prezentarea voluntară nu înlătură automat răspunderea, dar este un element important în evaluarea conduitei și în individualizarea pedepsei.",
+    },
+    {
+      q: "Ce se întâmplă cu permisul de conducere?",
+      a: "Permisul poate fi reținut, iar dreptul de a conduce suspendat pe durata procedurii. Situația finală depinde de soluția din dosarul penal.",
+    },
+    {
+      q: "Împăcarea cu partea vătămată rezolvă dosarul?",
+      a: "Pentru părăsirea locului accidentului, urmărirea penală nu depinde de plângerea prealabilă. O înțelegere poate rezolva latura civilă și poate influența individualizarea pedepsei.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 338 privind părăsirea locului accidentului.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind probele și expertizele.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const refuzPrelevareProbeRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/refuz-prelevare-probe-biologice",
+  altPath: "/en/services/refusal-to-provide-biological-samples",
+  roPath: "/servicii/refuz-prelevare-probe-biologice",
+  title: "Avocat refuz prelevare probe biologice | Bogdan Lamatic",
+  h1: "Avocat pentru refuzul prelevării de probe biologice",
+  description:
+    "Ești cercetat pentru refuz probe biologice, art. 337 Cod penal? Verific legalitatea solicitării, informarea corectă și imposibilitatea medicală de recoltare.",
+  keywords:
+    "avocat refuz prelevare probe, refuz probe biologice, art 337 cod penal, avocat refuz recoltare sange",
+  breadcrumbLabel: "Refuz prelevare probe",
+  serviceName: "Avocat refuz prelevare probe biologice București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost oprit în trafic și ești acuzat că ai refuzat recoltarea probelor biologice?",
+    "Refuzul este o infracțiune distinctă, chiar dacă alcoolemia ar fi ieșit sub pragul penal.",
+    "Verific dacă solicitarea a fost legală, dacă ai fost informat corect și dacă a existat o imposibilitate reală de recoltare.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru refuzul sau sustragerea de la prelevarea de mostre biologice, inclusiv în situațiile în care recoltarea nu a fost posibilă din motive medicale.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Ai spus că nu vrei să mergi la spital",
+          paragraphs: [
+            "Se verifică dacă ți s-a explicat clar consecința refuzului și dacă solicitarea a fost făcută de un agent competent, în condițiile legii.",
+            "Contează și modul în care refuzul a fost consemnat în actele întocmite.",
+          ],
+        },
+        {
+          h3: "Nu s-a putut recolta sânge din motive medicale",
+          paragraphs: [
+            "Dificultatea recoltării, o afecțiune sau o stare medicală specială nu înseamnă refuz. Fișa medicală și declarația personalului medical devin probe esențiale.",
+          ],
+        },
+        {
+          h3: "Ai plecat de la spital înainte de recoltare",
+          paragraphs: [
+            "Se analizează motivul plecării, timpul de așteptare și dacă ai fost informat că părăsirea unității este considerată sustragere de la prelevare.",
+          ],
+        },
+        {
+          h3: "Ai fost oprit după un eveniment rutier",
+          paragraphs: [
+            [
+              { text: "Când refuzul apare într-un dosar în care există și victime, acuzațiile se cumulează, iar apărarea se corelează cu cea din dosarul de " },
+              { text: "accident rutier cu victime", to: "/servicii/accident-rutier-cu-victime" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în dosarele de refuz",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "cine a formulat solicitarea de prelevare și în ce condiții;",
+        "dacă ai fost informat asupra consecințelor refuzului;",
+        "modul în care a fost consemnat refuzul în procesul-verbal;",
+        "dacă exista o testare preliminară care justifica solicitarea;",
+        "starea ta medicală la momentul solicitării;",
+        "fișa de examinare clinică și mențiunile personalului medical;",
+        "timpul petrecut în unitatea sanitară și motivele plecării;",
+        "dacă ți s-a oferit posibilitatea unei noi recoltări;",
+        "existența unei bariere de comunicare sau de limbă;",
+        "înregistrările video din trafic sau din unitatea medicală;",
+        "declarațiile martorilor și ale agenților;",
+        "eventualele acuzații conexe din același dosar.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal în care este consemnat refuzul;",
+        "dovada reținerii permisului de conducere;",
+        "fișa de examinare clinică sau documentele de la unitatea medicală;",
+        "actele medicale privind afecțiunile de care suferi;",
+        "citația sau ordonanța primită;",
+        "declarația dată, dacă ai o copie;",
+        "datele martorilor prezenți la momentul solicitării.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai niciun document, îmi poți spune ce ți s-a cerut, ce ai răspuns și ce s-a întâmplat la unitatea medicală.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce prevede art. 337 Cod penal",
+      paragraphs: [
+        "Refuzul, împotrivirea ori sustragerea conducătorului unui vehicul de la prelevarea de mostre biologice necesare stabilirii alcoolemiei ori a prezenței unor substanțe psihoactive este infracțiune, potrivit art. 337 Cod penal.",
+        "Fapta este distinctă de conducerea sub influența alcoolului sau a drogurilor. Ea se poate reține chiar dacă analiza, în cazul în care ar fi fost efectuată, ar fi indicat o valoare sub pragul penal.",
+      ],
+    },
+    {
+      h2: "Ce înseamnă refuz, împotrivire și sustragere",
+      paragraphs: [
+        "Refuzul presupune o manifestare clară prin care conducătorul auto respinge prelevarea, după ce i s-a solicitat în mod legal.",
+        "Împotrivirea presupune o opoziție activă la efectuarea recoltării, iar sustragerea constă în conduita prin care persoana se plasează în afara procedurii, de exemplu prin părăsirea unității medicale.",
+        "Simpla ezitare, cererea unor lămuriri sau o imposibilitate obiectivă de recoltare nu au aceeași semnificație juridică.",
+      ],
+    },
+    {
+      h2: "Legalitatea solicitării și informarea corectă",
+      paragraphs: [
+        "Solicitarea trebuie să vină de la un agent competent și să se încadreze în situațiile prevăzute de lege.",
+        "Persoana trebuie informată cu privire la scopul prelevării și la consecințele refuzului. Lipsa acestei informări poate fi invocată în apărare.",
+        "Verific și dacă procesul-verbal reflectă real ceea ce s-a discutat la fața locului sau la spital.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Imposibilitatea medicală de recoltare",
+      paragraphs: [
+        "Nu orice recoltare nereușită înseamnă refuz. Există situații medicale în care prelevarea nu poate fi efectuată sau este contraindicată.",
+        "Acestea trebuie consemnate de personalul medical. Documentele medicale, istoricul afecțiunilor și declarațiile cadrelor medicale susțin această apărare.",
+      ],
+    },
+    {
+      h2: "Relația cu dosarul de alcool sau droguri la volan",
+      paragraphs: [
+        [
+          { text: "Refuzul poate fi cercetat singur sau împreună cu acuzația de " },
+          { text: "conducere sub influența alcoolului", to: "/servicii/alcool-la-volan" },
+          { text: " ori de " },
+          { text: "conducere sub influența drogurilor", to: "/servicii/droguri-la-volan" },
+          { text: "." },
+        ],
+        "Când există și alte acuzații, strategia trebuie construită unitar, pentru că argumentele se influențează reciproc.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente",
+      bullets: [
+        "semnarea fără citire a procesului-verbal în care se consemnează refuzul;",
+        "plecarea din unitatea medicală fără o mențiune scrisă privind motivul;",
+        "lipsa documentelor medicale care explică imposibilitatea recoltării;",
+        "declarațiile date fără avocat, în care se recunoaște un refuz care nu a existat;",
+        "ignorarea citației și a termenelor din dosar;",
+        "presupunerea că, în lipsa unei analize, dosarul nu poate avea consecințe.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Dacă alcoolemia ar fi fost sub 0,80 g/l, mai răspund pentru refuz?",
+      a: "Da. Refuzul prelevării este o infracțiune distinctă, prevăzută de art. 337 Cod penal, independentă de valoarea pe care ar fi indicat-o analiza.",
+    },
+    {
+      q: "Pot cere să fiu testat doar cu etilotestul?",
+      a: "Testarea preliminară nu înlocuiește prelevarea de mostre biologice atunci când aceasta este solicitată în condițiile legii.",
+    },
+    {
+      q: "Nu mi s-a putut recolta sânge. Este refuz?",
+      a: "Nu, dacă imposibilitatea este obiectivă și este consemnată medical. Diferența dintre imposibilitate și refuz se dovedește cu documentele unității sanitare.",
+    },
+    {
+      q: "Am cerut să vorbesc întâi cu un avocat. Se consideră refuz?",
+      a: "Solicitarea de a consulta un avocat nu echivalează automat cu un refuz. Contează conduita concretă și modul în care a fost consemnată în acte.",
+    },
+    {
+      q: "Ce se întâmplă cu permisul de conducere?",
+      a: "Permisul se reține, iar dreptul de a conduce se suspendă pe durata procedurii. Situația finală depinde de soluția pronunțată în dosar.",
+    },
+    {
+      q: "Ce soluții pot exista în acest dosar?",
+      a: "În funcție de probe, sunt posibile clasarea, achitarea, renunțarea la urmărirea penală, amânarea aplicării pedepsei sau suspendarea sub supraveghere.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 337 privind refuzul sau sustragerea de la prelevarea de mostre biologice.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind probele și constatările.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const conducereFaraPermisRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/conducere-fara-permis",
+  altPath: "/en/services/driving-without-a-licence",
+  roPath: "/servicii/conducere-fara-permis",
+  title: "Avocat conducere fără permis București | Bogdan Lamatic",
+  h1: "Avocat pentru conducere fără permis în București",
+  description:
+    "Dosar penal pentru conducere fără permis, art. 335 Cod penal? Analizez situația permisului, categoria vehiculului și soluțiile posibile în dosar.",
+  keywords:
+    "avocat conducere fara permis, dosar conducere fara permis, art 335 cod penal, permis suspendat dosar penal",
+  breadcrumbLabel: "Conducere fără permis",
+  serviceName: "Avocat conducere fără permis București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost oprit în trafic și ți s-a spus că nu aveai dreptul de a conduce?",
+    "Situațiile sunt diferite: permis anulat, permis suspendat, categorie necorespunzătoare sau permis eliberat în altă țară.",
+    "Fiecare variantă are consecințe juridice proprii și o apărare diferită.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru conducerea unui vehicul fără permis sau în perioada în care dreptul de a conduce era suspendat.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Nu ai obținut niciodată permis de conducere",
+          paragraphs: [
+            "Este situația tipică prevăzută de art. 335 alin. (1) Cod penal. Apărarea vizează împrejurările concrete, urgența în care ai condus și individualizarea pedepsei.",
+          ],
+        },
+        {
+          h3: "Permisul îți era suspendat sau anulat",
+          paragraphs: [
+            "Contează dacă măsura îți fusese comunicată efectiv și de când producea efecte. Data comunicării este esențială pentru existența faptei.",
+          ],
+        },
+        {
+          h3: "Ai condus un vehicul din altă categorie",
+          paragraphs: [
+            "Conducerea unui vehicul pentru care nu deții categoria corespunzătoare intră tot în sfera art. 335. Verific încadrarea vehiculului și categoria necesară.",
+          ],
+        },
+        {
+          h3: "Ai permis eliberat în altă țară",
+          paragraphs: [
+            "Se analizează dacă permisul este recunoscut în România, dacă era valabil la data faptei și dacă exista obligația preschimbării.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în dosarele de conducere fără permis",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "situația juridică exactă a permisului la data faptei;",
+        "dacă suspendarea sau anularea îți fusese comunicată legal;",
+        "data de la care măsura producea efecte;",
+        "categoria vehiculului condus și categoria deținută;",
+        "dacă drumul pe care ai condus era drum public în sensul legii;",
+        "dacă vehiculul necesita permis potrivit legii;",
+        "existența unei stări de necesitate sau a unei urgențe medicale;",
+        "eroarea asupra situației de fapt, atunci când există elemente care o susțin;",
+        "modul în care ai fost identificat ca fiind conducătorul auto;",
+        "declarațiile date la fața locului;",
+        "eventualele acuzații conexe reținute în același dosar;",
+        "antecedentele și conduita, pentru individualizarea pedepsei.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal întocmit de Poliție;",
+        "documentul de suspendare sau anulare a permisului;",
+        "dovada comunicării acestei măsuri;",
+        "permisul de conducere sau copia acestuia, inclusiv cel eliberat în altă țară;",
+        "actele vehiculului condus;",
+        "citația sau ordonanța primită;",
+        "documentele medicale, dacă ai condus într-o situație de urgență.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai actele la îndemână, îmi poți spune data opririi și situația în care se afla permisul tău.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce prevede art. 335 Cod penal",
+      paragraphs: [
+        "Conducerea pe drumurile publice a unui vehicul pentru care legea prevede obligativitatea deținerii permisului de conducere de către o persoană care nu posedă un asemenea permis este infracțiune, potrivit art. 335 alin. (1) Cod penal.",
+        "Textul sancționează și conducerea de către o persoană al cărei permis este necorespunzător categoriei vehiculului, precum și conducerea în perioada în care exercitarea dreptului de a conduce a fost suspendată ori permisul a fost retras sau anulat.",
+        "Fapta se pedepsește și atunci când vehiculul este încredințat unei persoane care se află într-una dintre aceste situații.",
+      ],
+    },
+    {
+      h2: "Permis suspendat: de când produce efecte măsura",
+      paragraphs: [
+        "Suspendarea dreptului de a conduce produce efecte de la momentul prevăzut de lege, iar comunicarea măsurii este esențială.",
+        "Dacă la data opririi în trafic măsura nu îți fusese comunicată sau nu începuse să producă efecte, elementele infracțiunii pot lipsi.",
+        "De aceea verific dovezile de comunicare, data poștală și modul în care a fost consemnată primirea documentului.",
+      ],
+    },
+    {
+      h2: "Categoria vehiculului și noțiunea de drum public",
+      paragraphs: [
+        "Nu toate vehiculele necesită permis, iar unele categorii au reguli speciale. Verific încadrarea concretă a vehiculului condus.",
+        "În egală măsură, fapta presupune conducerea pe drum public. Manevrele efectuate într-o incintă privată, care nu este deschisă circulației publice, se analizează diferit.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Starea de necesitate și eroarea",
+      paragraphs: [
+        "Există situații în care conducerea a fost impusă de o urgență reală, de exemplu transportul unei persoane aflate în pericol.",
+        "De asemenea, eroarea asupra situației juridice a permisului poate fi relevantă atunci când se bazează pe elemente obiective, nu pe o simplă presupunere.",
+        "Aceste apărări se susțin cu documente, martori și date verificabile.",
+      ],
+    },
+    {
+      h2: "Cumulul cu alte fapte rutiere",
+      paragraphs: [
+        [
+          { text: "Conducerea fără permis apare frecvent alături de alte acuzații, cum ar fi " },
+          { text: "conducerea sub influența alcoolului", to: "/servicii/alcool-la-volan" },
+          { text: " sau " },
+          { text: "părăsirea locului accidentului", to: "/servicii/parasirea-locului-accidentului" },
+          { text: "." },
+        ],
+        "Atunci când în dosar există mai multe acuzații, strategia trebuie să fie unitară, iar prioritatea este stabilită în funcție de riscul fiecărui capăt de acuzare.",
+      ],
+    },
+    {
+      h2: "Ce soluții pot exista în dosar",
+      bullets: [
+        "clasarea, atunci când nu sunt întrunite elementele infracțiunii;",
+        "achitarea, când probele nu susțin acuzarea;",
+        "renunțarea la urmărirea penală, în condițiile legii;",
+        "amânarea aplicării pedepsei;",
+        "suspendarea sub supraveghere a executării pedepsei;",
+        "acordul de recunoaștere a vinovăției, atunci când este mai avantajos.",
+      ],
+      paragraphsAfterBullets: [
+        "Rezultatul depinde de situația concretă, de antecedente și de conduita procesuală pe parcursul dosarului.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Am condus câțiva metri. Este tot infracțiune?",
+      a: "Legea nu prevede o distanță minimă. Contează faptul conducerii pe drum public, însă împrejurările concrete pot fi valorificate la individualizarea pedepsei.",
+    },
+    {
+      q: "Nu am știut că îmi era suspendat permisul. Ce fac?",
+      a: "Comunicarea măsurii este esențială. Dacă suspendarea nu îți fusese comunicată legal sau nu producea încă efecte, apărarea poate viza chiar existența faptei.",
+    },
+    {
+      q: "Am permis eliberat în altă țară. Este suficient?",
+      a: "Depinde de statul emitent, de valabilitate și de regulile privind recunoașterea sau preschimbarea permisului în România.",
+    },
+    {
+      q: "Conducerea într-o parcare privată intră sub incidența legii?",
+      a: "Fapta presupune conducerea pe drum public. Statutul juridic al zonei în care ai condus se verifică în concret și poate fi decisiv.",
+    },
+    {
+      q: "Ce risc dacă am împrumutat mașina unei persoane fără permis?",
+      a: "Încredințarea unui vehicul unei persoane care nu are dreptul de a conduce este sancționată de art. 335 Cod penal.",
+    },
+    {
+      q: "Pot evita închisoarea?",
+      a: "În multe dosare se pot obține soluții neprivative de libertate, în funcție de circumstanțe, antecedente și conduita din timpul procesului.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 335 privind conducerea unui vehicul fără permis de conducere.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind urmărirea penală și probele.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const accidentRutierCuVictimeRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/accident-rutier-cu-victime",
+  altPath: "/en/services/road-accident-with-victims",
+  roPath: "/servicii/accident-rutier-cu-victime",
+  title: "Avocat accident rutier cu victime | Bogdan Lamatic",
+  h1: "Avocat pentru șoferul cercetat penal după un accident rutier cu victime",
+  description:
+    "Ești șofer cercetat penal după un accident cu victime? Apărare pe vătămare corporală din culpă și ucidere din culpă, culpă, expertiză și pretenții civile.",
+  keywords:
+    "avocat accident rutier cu victime, sofer cercetat penal accident, vatamare corporala din culpa, ucidere din culpa avocat",
+  breadcrumbLabel: "Accident rutier cu victime",
+  serviceName: "Avocat accident rutier cu victime București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost implicat într-un accident cu victime și ai devenit suspect în dosar?",
+    "Primele zile decid cum se stabilește culpa: urmele de la fața locului, martorii și expertiza tehnică.",
+    "Îți apăr poziția de șofer cercetat penal, atât pe latura penală, cât și pe pretențiile civile.",
+  ],
+  bio: [
+    `${BIO_INTRO} Reprezint șoferi cercetați penal după accidente rutiere soldate cu vătămarea sau decesul unei persoane, de la primele acte de urmărire penală până la soluția finală.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Accidentul tocmai s-a produs",
+          paragraphs: [
+            "Cercetarea la fața locului fixează majoritatea probelor: urme de frânare, poziția vehiculelor, avarii, martori.",
+            "Este momentul în care se pot pierde definitiv date favorabile, dacă nu sunt solicitate imediat.",
+          ],
+        },
+        {
+          h3: "Ai fost chemat la audiere ca suspect",
+          paragraphs: [
+            [
+              { text: "Declarația dată acum rămâne la dosar pe tot parcursul procesului. Pregătim împreună " },
+              { text: "audierea la Poliție sau Parchet", to: "/servicii/audiere-politie-parchet" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Victima a decedat sau are leziuni grave",
+          paragraphs: [
+            "Încadrarea juridică se poate schimba în funcție de concluziile medico-legale privind numărul de zile de îngrijiri medicale sau cauza decesului.",
+            "Aceste concluzii pot fi analizate critic și, dacă este cazul, contestate.",
+          ],
+        },
+        {
+          h3: "Se discută despre alcool, droguri sau plecarea de la fața locului",
+          paragraphs: [
+            [
+              { text: "În aceste situații apar acuzații suplimentare, iar apărarea se corelează cu cea din dosarul de " },
+              { text: "părăsire a locului accidentului", to: "/servicii/parasirea-locului-accidentului" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în dosarul tău",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "procesul-verbal de cercetare la fața locului și planșa foto;",
+        "schița accidentului și măsurătorile efectuate;",
+        "urmele de frânare, avariile și punctul de impact;",
+        "starea tehnică a vehiculelor implicate;",
+        "condițiile de drum, vizibilitatea, semnalizarea și starea carosabilului;",
+        "declarațiile martorilor și eventualele contradicții;",
+        "înregistrările video din trafic sau de la camera de bord;",
+        "raportul de constatare tehnico-științifică;",
+        "concluziile medico-legale privind leziunile sau cauza decesului;",
+        "comportamentul victimei și eventuala culpă concurentă;",
+        "existența unor acuzații conexe în același dosar;",
+        "situația poliței RCA și modul de intervenție al asigurătorului.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "citația sau ordonanța prin care ai aflat calitatea ta procesuală;",
+        "procesul-verbal întocmit de Poliție;",
+        "fotografiile de la locul accidentului;",
+        "înregistrarea de la camera de bord, dacă există;",
+        "actele mașinii și polița RCA;",
+        "documentele medicale primite, dacă ai fost și tu rănit;",
+        "datele martorilor pe care i-ai identificat.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă actele din dosar, îmi poți descrie locul, ora, direcțiile de deplasare și ce s-a constatat la fața locului.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce acuzații pot fi reținute împotriva șoferului",
+      paragraphs: [
+        "Când din accident rezultă leziuni, fapta poate fi încadrată ca vătămare corporală din culpă, prevăzută de art. 196 Cod penal. Când a intervenit decesul unei persoane, încadrarea este uciderea din culpă, prevăzută de art. 192 Cod penal.",
+        "Ambele texte prevăd forme agravate atunci când accidentul este urmarea nerespectării dispozițiilor legale sau a măsurilor de prevedere pentru exercițiul unei activități.",
+        "În același dosar pot apărea și alte acuzații rutiere, iar apărarea trebuie construită pentru întreg ansamblul acestora.",
+      ],
+    },
+    {
+      h2: "Cum se stabilește culpa în accidentul rutier",
+      paragraphs: [
+        "Culpa se stabilește prin raportare la regulile de circulație și la ceea ce un conducător auto diligent putea prevedea și evita în situația concretă.",
+        "Se analizează viteza, distanța de vizibilitate, timpul de reacție, posibilitatea de evitare a impactului și conduita celorlalți participanți la trafic.",
+        "Un raport de expertiză tehnică auto bine fundamentat poate schimba complet reprezentarea asupra dinamicii accidentului.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Legătura de cauzalitate și culpa concurentă a victimei",
+      paragraphs: [
+        "Pentru răspunderea penală nu este suficient să existe o abatere de la regulile de circulație. Trebuie dovedită legătura de cauzalitate între acea abatere și urmarea produsă.",
+        "În multe accidente, conduita victimei contribuie la producerea evenimentului: traversarea prin loc nepermis, deplasarea pe carosabil pe timp de noapte fără elemente reflectorizante, pătrunderea neregulamentară în intersecție.",
+        "Culpa concurentă nu înlătură automat răspunderea, dar poate modifica încadrarea, individualizarea pedepsei și întinderea despăgubirilor.",
+      ],
+    },
+    {
+      h2: "Expertiza tehnică auto și expertiza medico-legală",
+      paragraphs: [
+        "Expertiza tehnică auto stabilește dinamica accidentului, vitezele de deplasare și posibilitatea de evitare a impactului.",
+        "Expertiza medico-legală stabilește leziunile, numărul zilelor de îngrijiri medicale și cauza decesului, elemente care determină încadrarea juridică.",
+        "Ambele pot fi completate sau contestate, iar cererea trebuie formulată la momentul procesual potrivit, cu obiective clare.",
+      ],
+    },
+    {
+      h2: "Pretențiile civile și rolul asigurătorului RCA",
+      paragraphs: [
+        "Persoana vătămată sau succesorii se pot constitui parte civilă în procesul penal și pot solicita daune materiale și morale.",
+        "Asigurătorul RCA este chemat în proces și răspunde în limitele prevăzute de lege și de poliță. Analizez întinderea acoperirii și partea care ar putea rămâne în sarcina ta.",
+        "Verific și cuantumul pretențiilor solicitate, pentru că sumele cerute sunt frecvent disproporționate față de prejudiciul dovedit.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Împăcarea, retragerea plângerii și efectele lor",
+      paragraphs: [
+        "În cazul vătămării corporale din culpă, punerea în mișcare a acțiunii penale se face, în anumite situații prevăzute de lege, la plângerea prealabilă a persoanei vătămate, iar retragerea acesteia poate duce la încetarea procesului penal.",
+        "În cazul uciderii din culpă, acțiunea penală se exercită din oficiu, iar o înțelegere cu familia victimei privește doar latura civilă și individualizarea pedepsei.",
+        "Analizez în fiecare dosar dacă o astfel de soluție este posibilă și în ce condiții este în interesul tău.",
+      ],
+    },
+    {
+      h2: "Măsurile preventive care pot fi luate față de șofer",
+      paragraphs: [
+        [
+          { text: "În dosarele grave se pot dispune măsuri preventive, de la control judiciar până la arest. Detaliile privind aceste măsuri sunt explicate pe pagina despre " },
+          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+        "Intervin de la primele ore pentru a susține alegerea celei mai puțin restrictive măsuri și pentru a evita restricțiile care nu sunt justificate de situația concretă.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente ale șoferului cercetat penal",
+      bullets: [
+        "declarațiile detaliate date imediat după accident, sub șoc, fără avocat;",
+        "repararea vehiculului înainte de expertiză;",
+        "asumarea vinovăției în discuțiile cu familia victimei sau cu asigurătorul;",
+        "acceptarea necritică a concluziilor primului raport tehnic;",
+        "lipsa unei cereri de expertiză atunci când dinamica accidentului este discutabilă;",
+        "ignorarea laturii civile până la ultimul termen de judecată.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Sunt automat vinovat pentru că am lovit un pieton?",
+      a: "Nu. Trebuie dovedită o abatere de la regulile de circulație și legătura de cauzalitate dintre aceasta și urmarea produsă. Conduita pietonului se analizează în concret.",
+    },
+    {
+      q: "Ce înseamnă culpă concurentă?",
+      a: "Este situația în care și victima a contribuit la producerea accidentului. Ea poate influența încadrarea, pedeapsa și întinderea despăgubirilor.",
+    },
+    {
+      q: "Cine plătește daunele către victimă?",
+      a: "În limitele poliței, despăgubirile sunt suportate de asigurătorul RCA. Peste aceste limite sau în situațiile excluse de lege, răspunderea poate reveni conducătorului auto.",
+    },
+    {
+      q: "Pot cere o nouă expertiză tehnică?",
+      a: "Da. Se poate solicita expertiză sau suplimentarea obiectivelor, cu argumente concrete privind neclaritățile din raportul existent.",
+    },
+    {
+      q: "Dacă victima își retrage plângerea, se închide dosarul?",
+      a: "În cazul vătămării corporale din culpă, retragerea plângerii prealabile poate duce la încetarea procesului, în situațiile prevăzute de lege. La uciderea din culpă, acțiunea penală se exercită din oficiu.",
+    },
+    {
+      q: "Îmi pierd permisul până la finalul procesului?",
+      a: "Permisul poate fi reținut, iar dreptul de a conduce suspendat pe durata procedurii. Situația finală depinde de soluția pronunțată în dosar.",
+    },
+    {
+      q: "Pot evita o pedeapsă cu executare?",
+      a: "În multe dosare de culpă se obțin soluții neprivative de libertate. Rezultatul depinde de gravitatea urmării, de circumstanțe și de conduita din timpul procesului.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 192 privind uciderea din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul penal, art. 196 privind vătămarea corporală din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind expertizele și acțiunea civilă.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};

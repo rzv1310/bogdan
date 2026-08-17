@@ -5622,3 +5622,1031 @@ export const confiscationEn: SubServicePageData = {
   contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_ML_EN,
 };
+
+const PARENT_RT_EN = {
+  to: "/en/services/road-traffic-offenses",
+  label: "road traffic offences",
+  breadcrumbLabel: "Road traffic offences",
+};
+
+export const drunkDrivingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/drunk-driving",
+  altPath: "/servicii/alcool-la-volan",
+  roPath: "/servicii/alcool-la-volan",
+  title: "Drunk Driving Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Drunk driving lawyer in Bucharest",
+  description:
+    "Criminal case for drunk driving in Romania? I review the breath test, the blood sampling procedure and the charge under art. 336 of the Criminal Code.",
+  keywords: "drunk driving lawyer bucharest, dui lawyer romania, art 336 criminal code, blood alcohol criminal case",
+  breadcrumbLabel: "Drunk driving",
+  serviceName: "Drunk driving lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you stopped in traffic, tested with a breathalyser and had your licence withheld?",
+    "The first hours matter: how the testing was carried out, when the blood samples were taken and what you declared at the scene.",
+    "I assess whether the recorded blood alcohol level withstands a technical review and what solutions exist in your case.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for driving under the influence of alcohol, from the moment the licence is withheld until the final decision in the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "The breath test showed a high value",
+          paragraphs: [
+            "The breath test value is only an indication. The criminal charge is based on the blood alcohol concentration expressed in grams of pure alcohol per litre of blood.",
+            "I check whether you were offered blood sampling and whether the device was metrologically verified.",
+          ],
+        },
+        {
+          h3: "Blood samples were taken and you await the toxicology report",
+          paragraphs: [
+            "Until the laboratory result arrives, no final charge can be discussed. The interval between the traffic stop and the sampling is essential.",
+            "I prepare in advance the arguments regarding the alcohol elimination curve and possible sampling or transport errors.",
+          ],
+        },
+        {
+          h3: "You were also involved in an accident",
+          paragraphs: [
+            [
+              { text: "When alcohol is combined with a road event, the defence is built together with the one in a case of " },
+              { text: "road accident with victims", to: "/en/services/road-accident-with-victims" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "You were summoned for questioning",
+          paragraphs: [
+            [
+              { text: "Before giving a statement you should know exactly what is alleged. See how I prepare " },
+              { text: "police or prosecutor questioning", to: "/en/services/police-prosecutor-questioning" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a drunk driving case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the time of the traffic stop and the exact time of the breath test;",
+        "the metrological verification certificate of the device used;",
+        "whether you were informed of your right to request blood sampling;",
+        "the interval between the stop and the first blood sample;",
+        "compliance with the two successive samplings and the interval between them;",
+        "the chain of custody of the samples;",
+        "the way the blood alcohol level was calculated;",
+        "any alcohol consumed after the stop, where this can be proven;",
+        "the statements given at the scene and how they were recorded;",
+        "the record of withholding the driving licence;",
+        "medical conditions or treatments that may influence the result;",
+        "the option of a forensic expert report recalculating the blood alcohol level.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the record of withholding the licence and the temporary permit;",
+        "the breath test slip, if you received one;",
+        "the toxicology report, if already issued;",
+        "the ordinance starting the criminal investigation or the summons;",
+        "the statement given to the police, if you have a copy;",
+        "medical documents or prescriptions for any treatment;",
+        "the details of witnesses who were with you before the stop.",
+      ],
+      paragraphsAfterBullets: [
+        "If you have no written documents yet, tell me the time of the stop, the breath test value and the time of the blood sampling.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "When drunk driving is a criminal offence",
+      paragraphs: [
+        "Under art. 336 (1) of the Criminal Code, driving a vehicle on public roads with a blood alcohol concentration above 0.80 g/l of pure alcohol is a criminal offence.",
+        "Below that threshold the act generally remains an administrative offence under the Road Code, with consequences regarding fines and licence suspension.",
+        "The threshold refers to blood alcohol, not to the breath test value. This is why the laboratory result is the central piece of evidence.",
+      ],
+    },
+    {
+      h2: "Breath test, breathalyser and blood samples",
+      paragraphs: [
+        "Preliminary roadside testing serves as an indication only. The blood alcohol concentration is established through biological samples taken in authorised medical units.",
+        "Any irregularity concerning the moment of sampling, the number of samples, their preservation or transport may affect the evidentiary value of the toxicology report.",
+      ],
+    },
+    {
+      h2: "Blood alcohol at the time of driving and retrograde calculation",
+      paragraphs: [
+        "Between the traffic stop and the sampling, the body continues to absorb or eliminate alcohol.",
+        "Depending on the phase, the blood alcohol level at the time of driving may be lower than the laboratory result. This difference is established through a forensic expert report.",
+        "The request must be reasoned and supported by concrete data on quantity consumed, timing, food intake and body weight.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What happens to your driving licence",
+      paragraphs: [
+        "In a criminal case for drunk driving the licence is withheld and the right to drive is suspended for the duration of the proceedings, under the law.",
+        "Returning the licence depends on the outcome of the case. A dismissal or acquittal opens the way to recovering the right to drive, while a conviction brings additional restrictions.",
+      ],
+    },
+    {
+      h2: "Possible outcomes in the case",
+      bullets: [
+        "dismissal, where the blood alcohol level at the time of driving was below the criminal threshold;",
+        "acquittal, where the evidence does not support the charge;",
+        "waiver of criminal prosecution, under the conditions provided by law;",
+        "postponement of the application of the penalty, with a supervision term;",
+        "suspended sentence under supervision;",
+        "a plea agreement, where it brings a better result than an ordinary trial.",
+      ],
+    },
+    {
+      h2: "Common mistakes after a traffic stop",
+      paragraphs: [
+        [
+          { text: "Refusing biological sampling is a separate offence, explained on the page about " },
+          { text: "refusal to provide biological samples", to: "/en/services/refusal-to-provide-biological-samples" },
+          { text: "." },
+        ],
+      ],
+      bullets: [
+        "refusing blood sampling, which is a distinct offence;",
+        "drinking alcohol after the stop without being able to prove it properly;",
+        "giving detailed statements without a lawyer;",
+        "losing the documents received from the police;",
+        "ignoring the summons for questioning;",
+        "driving while the right to drive is suspended.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "From what level does drunk driving become a criminal offence?",
+      a: "Above 0.80 g/l of pure alcohol in the blood, under art. 336 (1) of the Criminal Code. Below that threshold the act is generally an administrative offence.",
+    },
+    {
+      q: "Is the roadside breath test enough for a conviction?",
+      a: "No. The breath value is only an indication. The blood alcohol concentration is established through samples taken in an authorised medical unit.",
+    },
+    {
+      q: "Can I challenge the toxicology report?",
+      a: "Yes. You can invoke irregularities in sampling, preservation or transport and request a forensic expert report on the blood alcohol level at the time of driving.",
+    },
+    {
+      q: "What is retrograde calculation of blood alcohol?",
+      a: "It is an expert assessment estimating the blood alcohol level at the time of driving, based on the laboratory result and on data about the consumption and the person.",
+    },
+    {
+      q: "Will I lose my licence permanently?",
+      a: "The licence is withheld during the proceedings. Any longer loss of the right to drive depends on the final decision in the criminal case.",
+    },
+    {
+      q: "Can I avoid a custodial sentence?",
+      a: "Depending on the alcohol level, criminal record and circumstances, a waiver of prosecution, postponement of the penalty or a suspended sentence are possible.",
+    },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 336 on driving under the influence.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence and expert reports.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const drugDrivingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/drug-driving",
+  altPath: "/servicii/droguri-la-volan",
+  roPath: "/servicii/droguri-la-volan",
+  title: "Drug Driving Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Drug driving lawyer in Bucharest",
+  description:
+    "Tested positive with a roadside drug test in Romania? I review the toxicology report, the state of influence and the charge under art. 336 (2) Criminal Code.",
+  keywords: "drug driving lawyer bucharest, driving under influence of drugs romania, positive drug test, art 336 criminal code",
+  breadcrumbLabel: "Drug driving",
+  serviceName: "Drug driving lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you tested with a roadside drug test and the result was positive?",
+    "A rapid test alone does not establish guilt. Toxicological confirmation and proof of the state of influence are required.",
+    "I review the testing procedure, the sampling and how the result was interpreted.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for driving under the influence of psychoactive substances, including where the result comes from prescribed medication.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "The roadside drug test was positive",
+          paragraphs: [
+            "The rapid saliva test indicates the presence of a substance, not the quantity and not the state of influence. The result must be confirmed through biological samples.",
+          ],
+        },
+        {
+          h3: "You were taken to hospital for blood samples",
+          paragraphs: [
+            "The laboratory analysis shows the substance and its metabolites. The presence of metabolites may indicate earlier use, not necessarily influence while driving.",
+          ],
+        },
+        {
+          h3: "You were taking prescribed medication",
+          paragraphs: [
+            "Some medicines contain psychoactive substances that can produce a positive result. Prescriptions and medical records become important evidence.",
+          ],
+        },
+        {
+          h3: "You are also investigated for possession",
+          paragraphs: [
+            [
+              { text: "If substances were found on you, the case may also include a charge of " },
+              { text: "possession for personal use", to: "/en/services/drug-possession-personal-use" },
+              { text: ", with a distinct defence." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a drug driving case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "how the preliminary roadside testing was carried out;",
+        "how the rapid test result was recorded;",
+        "the interval between the stop and the biological sampling;",
+        "the toxicology report and the substances identified;",
+        "the difference between the active substance and inactive metabolites;",
+        "any clinical signs of influence noted by the physician;",
+        "the clinical examination sheet drawn up at the medical unit;",
+        "the chain of custody of the samples;",
+        "the medication taken and the related prescriptions;",
+        "the statements given at the scene;",
+        "any related road offences in the same case;",
+        "whether a toxicological expert report is appropriate.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the record of withholding the licence;",
+        "the document showing the rapid test result;",
+        "the clinical examination sheet from the medical unit;",
+        "the toxicology report;",
+        "prescriptions and medical documents for your treatment;",
+        "the summons or ordinance received;",
+        "the statement given, if you have a copy.",
+      ],
+      paragraphsAfterBullets: [
+        "If you are still waiting for the laboratory result, tell me which substance the rapid test indicated and when the sampling took place.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What the law provides for driving under the influence of drugs",
+      paragraphs: [
+        "Art. 336 (2) of the Criminal Code punishes driving a vehicle on public roads by a person under the influence of psychoactive substances.",
+        "Unlike alcohol, the law sets no numerical threshold. The prosecution must prove the state of influence at the time of driving, not merely the presence of the substance in the body.",
+      ],
+    },
+    {
+      h2: "Rapid test, toxicological confirmation and metabolites",
+      paragraphs: [
+        "The saliva test is a preliminary test with an indicative role. Confirmation is made through biological samples taken in an authorised medical unit.",
+        "The analysis may identify the active substance or only metabolites, meaning traces of earlier use. Metabolites alone do not automatically prove influence while driving.",
+        "For this reason the clinical examination and the concrete signs recorded by the physician are particularly important.",
+      ],
+    },
+    {
+      h2: "Medication containing psychoactive substances",
+      paragraphs: [
+        "Certain treatments for pain, anxiety or sleep disorders contain substances that may appear in the analysis.",
+        "In such situations it matters whether the treatment was prescribed, whether the recommended dose was respected and whether the patient was informed about the effects on driving.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Your licence and the course of the case",
+      paragraphs: [
+        "The licence is withheld and the right to drive is suspended for the duration of the proceedings, under the law.",
+        [
+          { text: "If you have been summoned to give a statement, preparing the " },
+          { text: "police or prosecutor questioning", to: "/en/services/police-prosecutor-questioning" },
+          { text: " is the first useful step." },
+        ],
+      ],
+    },
+    {
+      h2: "Common mistakes in drug driving cases",
+      bullets: [
+        "admitting recent use before knowing the laboratory result;",
+        "refusing biological sampling, which triggers a separate charge;",
+        "not presenting medical documents for prescribed treatment;",
+        "accepting uncritically that any positive result means guilt;",
+        "not requesting a toxicological expert report;",
+        "driving while the right to drive is suspended.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Does a positive drug test automatically mean a conviction?",
+      a: "No. The rapid test is preliminary. The prosecution must prove, through analysis and clinical examination, the state of influence at the time of driving.",
+    },
+    {
+      q: "What does state of influence mean?",
+      a: "It is the state in which the ability to drive is affected by the substance used. It is established through toxicology combined with the clinical examination and the concrete circumstances.",
+    },
+    {
+      q: "I used a substance days earlier. Am I still criminally liable?",
+      a: "The presence of metabolites may indicate earlier use. Without proof of influence at the time of driving, this can be challenged through expert evidence.",
+    },
+    {
+      q: "Can prescribed medication put me in a criminal case?",
+      a: "It is possible if the medicine contains psychoactive substances. The prescription, medical advice and dosage are essential for the defence.",
+    },
+    {
+      q: "What happens if I refuse testing?",
+      a: "Refusing biological sampling is a distinct offence under art. 337 of the Criminal Code, regardless of the result the analysis would have shown.",
+    },
+    {
+      q: "Can I obtain a non-custodial outcome?",
+      a: "Yes. Depending on the evidence and circumstances, dismissal, waiver of prosecution, postponement of the penalty or a suspended sentence are possible.",
+    },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 336 on driving under the influence of psychoactive substances.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence and expert reports.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const leavingAccidentSceneEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/leaving-the-accident-scene",
+  altPath: "/servicii/parasirea-locului-accidentului",
+  roPath: "/servicii/parasirea-locului-accidentului",
+  title: "Leaving the Accident Scene Lawyer | Bogdan Lamatic",
+  h1: "Lawyer for leaving the accident scene in Bucharest",
+  description:
+    "Investigated for leaving the accident scene in Romania? I review whether art. 338 Criminal Code applies, the legal exceptions and the lack of intent.",
+  keywords: "leaving the accident scene lawyer, hit and run lawyer romania, art 338 criminal code, criminal road case bucharest",
+  breadcrumbLabel: "Leaving the accident scene",
+  serviceName: "Leaving the accident scene lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Did you leave the scene of a road event and are now under criminal investigation?",
+    "Not every departure from the scene is an offence. What matters is whether there was an accident within the meaning of the law and whether you were aware of it.",
+    "I review the concrete situation and we establish what can be proven in your defence.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for leaving the accident scene, including where the contact was minor or was not perceived at all.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "You did not notice the impact",
+          paragraphs: [
+            "In car parks or during slow manoeuvres, light contacts may go unnoticed. Without awareness of the accident, the intent required by law cannot be established.",
+          ],
+        },
+        {
+          h3: "You left to transport an injured person",
+          paragraphs: [
+            "The law provides situations in which the act is not an offence, including transporting the injured to hospital followed by an immediate return to the scene.",
+          ],
+        },
+        {
+          h3: "You returned later or reported to the police",
+          paragraphs: [
+            "Voluntarily reporting to the police and your subsequent conduct matter in the assessment of the case and in sentencing.",
+          ],
+        },
+        {
+          h3: "You left because alcohol was involved",
+          paragraphs: [
+            [
+              { text: "In such cases several charges may be combined, and the defence is coordinated with the one in a " },
+              { text: "drunk driving", to: "/en/services/drunk-driving" },
+              { text: " case." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in this type of case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "whether the event qualifies as a road accident within the meaning of the law;",
+        "whether there were injured persons or only material damage;",
+        "whether you were aware of the impact;",
+        "video recordings from traffic, car parks or dashcams;",
+        "the damage to both vehicles and their compatibility;",
+        "witness statements and those of the other party;",
+        "when and how you were identified;",
+        "whether you subsequently reported to the police;",
+        "whether one of the statutory exceptions applies;",
+        "any related charges in the same case;",
+        "the possibility of covering the damage and its effect on the civil claim;",
+        "whether a technical vehicle expert report is appropriate.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the summons or ordinance received;",
+        "the police report;",
+        "photographs of the damage to your car;",
+        "dashcam or CCTV recordings;",
+        "the vehicle documents and the insurance policy;",
+        "medical documents, if you transported an injured person;",
+        "the details of any witnesses.",
+      ],
+      paragraphsAfterBullets: [
+        "If you have no documents, describe to me the place, the time and how the contact occurred.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What art. 338 of the Criminal Code provides",
+      paragraphs: [
+        "Leaving the scene of an accident without the approval of the police officers carrying out the on-site investigation is an offence under art. 338 of the Criminal Code.",
+        "The same provision also punishes altering or removing the traces of the accident in order to conceal the circumstances in which it occurred.",
+        "The text concerns accidents resulting in the death or injury of a person.",
+      ],
+    },
+    {
+      h2: "Situations in which the act is not an offence",
+      paragraphs: ["The law provides limited exceptions, including:"],
+      bullets: [
+        "accidents resulting only in material damage;",
+        "the driver personally transports the injured to the nearest medical unit and returns immediately to the scene;",
+        "the driver, in the absence of other means of transport, transports the injured person and returns to the scene;",
+        "situations in which the driver is himself injured and taken for medical care.",
+      ],
+      paragraphsAfterBullets: [
+        "These situations are interpreted strictly and must be proven with documents and witnesses.",
+      ],
+    },
+    {
+      h2: "Lack of intent and unperceived impact",
+      paragraphs: [
+        "The offence requires intent. If the driver was not aware of the accident, the subjective element is not met.",
+        "This defence is supported by objective data: low speed, the type of damage, background noise, the position of the vehicles and visibility from inside the car.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Combination with other road offences",
+      paragraphs: [
+        [
+          { text: "Leaving the accident scene frequently appears alongside other charges, such as " },
+          { text: "driving without a licence", to: "/en/services/driving-without-a-licence" },
+          { text: "." },
+        ],
+        "The defence must be built as a whole, because arguments on one charge directly influence the others.",
+      ],
+    },
+    {
+      h2: "Civil claims and the insurer",
+      paragraphs: [
+        "The injured person may bring civil claims within the criminal proceedings. Covering the damage or reaching a settlement may influence the civil outcome and sentencing.",
+        "I also review how the motor insurer intervenes and the limits of cover, so that your own liability is correctly established.",
+      ],
+    },
+  ],
+  faq: [
+    { q: "If there was only material damage, is it an offence?", a: "No. The provision concerns accidents resulting in injury or death. Material damage is dealt with under the Road Code." },
+    { q: "I left because I did not feel the impact. What can I do?", a: "Lack of awareness of the accident removes intent. This is proven with images, damage analysis, witnesses and, if needed, a technical expert report." },
+    { q: "I took the victim to hospital and did not return. Does the exception apply?", a: "The law requires an immediate return to the scene. If you did not return, the concrete reasons, including your own medical condition, are examined." },
+    { q: "I reported to the police the next day. Does it matter?", a: "Yes. Voluntary reporting does not automatically remove liability, but it is an important element in assessing conduct and in sentencing." },
+    { q: "What happens to my driving licence?", a: "The licence may be withheld and the right to drive suspended during the proceedings. The final situation depends on the outcome of the case." },
+    { q: "Does a settlement with the injured person close the case?", a: "Prosecution does not depend on a prior complaint here. A settlement may resolve the civil claim and influence sentencing." },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 338 on leaving the accident scene.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence and expert reports.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const refusalBiologicalSamplesEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/refusal-to-provide-biological-samples",
+  altPath: "/servicii/refuz-prelevare-probe-biologice",
+  roPath: "/servicii/refuz-prelevare-probe-biologice",
+  title: "Refusal of Biological Samples Lawyer | Bogdan Lamatic",
+  h1: "Lawyer for refusal to provide biological samples",
+  description:
+    "Charged under art. 337 Criminal Code for refusing biological samples? I review the legality of the request, the information given and medical impossibility.",
+  keywords: "refusal biological samples lawyer, refusal blood test romania, art 337 criminal code, dui refusal lawyer bucharest",
+  breadcrumbLabel: "Refusal of samples",
+  serviceName: "Refusal of biological samples lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you accused of refusing the taking of biological samples after a traffic stop?",
+    "The refusal is a distinct offence, even if the blood alcohol level would have been below the criminal threshold.",
+    "I review whether the request was lawful, whether you were properly informed and whether sampling was genuinely impossible.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for refusing or evading the taking of biological samples, including where sampling was not possible for medical reasons.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        { h3: "You said you did not want to go to hospital", paragraphs: ["It is examined whether the consequence of refusal was clearly explained and whether the request came from a competent officer under the law."] },
+        { h3: "Blood could not be taken for medical reasons", paragraphs: ["A failed sampling is not a refusal. The medical record and the statement of the medical staff become essential evidence."] },
+        { h3: "You left the hospital before sampling", paragraphs: ["The reason for leaving, the waiting time and whether you were informed that leaving counts as evading sampling are analysed."] },
+        {
+          h3: "You were stopped after a road event",
+          paragraphs: [
+            [
+              { text: "Where a refusal appears in a case with injured persons, the charges accumulate and the defence is coordinated with the one in a " },
+              { text: "road accident with victims", to: "/en/services/road-accident-with-victims" },
+              { text: " case." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in refusal cases",
+      paragraphs: ["I check:"],
+      bullets: [
+        "who made the sampling request and under what conditions;",
+        "whether you were informed of the consequences of refusal;",
+        "how the refusal was recorded in the report;",
+        "whether a preliminary test justified the request;",
+        "your medical condition at the time of the request;",
+        "the clinical examination sheet and the notes of the medical staff;",
+        "the time spent in the medical unit and the reasons for leaving;",
+        "whether you were offered a further sampling;",
+        "any language or communication barrier;",
+        "video recordings from traffic or from the medical unit;",
+        "the statements of witnesses and officers;",
+        "any related charges in the same case.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the report recording the refusal;",
+        "proof of withholding the driving licence;",
+        "the clinical examination sheet or documents from the medical unit;",
+        "medical records regarding your conditions;",
+        "the summons or ordinance received;",
+        "the statement given, if you have a copy;",
+        "the details of witnesses present at the time of the request.",
+      ],
+      paragraphsAfterBullets: [
+        "If you have no documents, tell me what was requested, what you replied and what happened at the medical unit.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What art. 337 of the Criminal Code provides",
+      paragraphs: [
+        "The refusal, opposition or evasion of a driver from the taking of biological samples needed to establish the blood alcohol level or the presence of psychoactive substances is an offence under art. 337 of the Criminal Code.",
+        "The act is distinct from driving under the influence. It can be established even if the analysis, had it been carried out, would have shown a value below the criminal threshold.",
+      ],
+    },
+    {
+      h2: "Refusal, opposition and evasion",
+      paragraphs: [
+        "Refusal means a clear manifestation rejecting the sampling after it was lawfully requested.",
+        "Opposition means active resistance to the sampling, while evasion consists of conduct placing the person outside the procedure, for example by leaving the medical unit.",
+        "Mere hesitation, asking for clarification or an objective impossibility do not carry the same legal meaning.",
+      ],
+    },
+    {
+      h2: "Lawfulness of the request and proper information",
+      paragraphs: [
+        "The request must come from a competent officer and fall within the situations provided by law.",
+        "The person must be informed about the purpose of the sampling and the consequences of refusal. The absence of that information can be invoked in defence.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Medical impossibility of sampling",
+      paragraphs: [
+        "Not every unsuccessful sampling means refusal. There are medical situations in which sampling cannot be performed or is contraindicated.",
+        "These must be recorded by the medical staff. Medical documents and the statements of medical personnel support this defence.",
+      ],
+    },
+    {
+      h2: "Relation to drunk or drug driving cases",
+      paragraphs: [
+        [
+          { text: "A refusal may be investigated alone or together with a charge of " },
+          { text: "drunk driving", to: "/en/services/drunk-driving" },
+          { text: " or " },
+          { text: "drug driving", to: "/en/services/drug-driving" },
+          { text: "." },
+        ],
+      ],
+    },
+  ],
+  faq: [
+    { q: "If my blood alcohol was below the threshold, am I still liable for refusal?", a: "Yes. The refusal is a distinct offence under art. 337 of the Criminal Code, independent of the value the analysis would have shown." },
+    { q: "Can I ask to be tested only with the breathalyser?", a: "Preliminary testing does not replace biological sampling when the latter is lawfully requested." },
+    { q: "Blood could not be taken. Is that a refusal?", a: "No, if the impossibility is objective and medically recorded. The difference is proven with the documents of the medical unit." },
+    { q: "I asked to speak to a lawyer first. Does that count as refusal?", a: "Asking to consult a lawyer is not automatically a refusal. The concrete conduct and how it was recorded are what matter." },
+    { q: "What happens to my driving licence?", a: "The licence is withheld and the right to drive suspended during the proceedings. The final situation depends on the outcome of the case." },
+    { q: "What outcomes are possible?", a: "Depending on the evidence: dismissal, acquittal, waiver of prosecution, postponement of the penalty or a suspended sentence." },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 337 on refusal or evasion of biological sampling.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on evidence.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const drivingWithoutLicenceEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/driving-without-a-licence",
+  altPath: "/servicii/conducere-fara-permis",
+  roPath: "/servicii/conducere-fara-permis",
+  title: "Driving Without a Licence Lawyer | Bogdan Lamatic",
+  h1: "Lawyer for driving without a licence in Bucharest",
+  description:
+    "Criminal case for driving without a licence under art. 335 Criminal Code? I review the status of the licence, the vehicle category and the possible outcomes.",
+  keywords: "driving without a licence lawyer, art 335 criminal code, suspended licence criminal case romania",
+  breadcrumbLabel: "Driving without a licence",
+  serviceName: "Driving without a licence lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you stopped in traffic and told you had no right to drive?",
+    "The situations differ: annulled licence, suspended licence, wrong category or a licence issued abroad.",
+    "Each variant has its own legal consequences and a different defence.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist drivers investigated for driving a vehicle without a licence or while their right to drive was suspended.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        { h3: "You never obtained a driving licence", paragraphs: ["This is the typical situation under art. 335 (1) of the Criminal Code. The defence concerns the concrete circumstances and sentencing."] },
+        { h3: "Your licence was suspended or annulled", paragraphs: ["What matters is whether the measure was actually communicated to you and from when it produced effects. The date of communication is essential."] },
+        { h3: "You drove a vehicle of another category", paragraphs: ["Driving a vehicle for which you do not hold the corresponding category also falls under art. 335. I check the classification of the vehicle."] },
+        { h3: "You hold a licence issued abroad", paragraphs: ["It is examined whether the licence is recognised in Romania, whether it was valid at the time and whether exchange was required."] },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in these cases",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the exact legal status of the licence on the date of the act;",
+        "whether the suspension or annulment was lawfully communicated;",
+        "the date from which the measure produced effects;",
+        "the category of the vehicle driven and the category you hold;",
+        "whether the road was a public road within the meaning of the law;",
+        "whether the vehicle required a licence at all;",
+        "the existence of a state of necessity or a medical emergency;",
+        "a mistake of fact, where supported by objective elements;",
+        "how you were identified as the driver;",
+        "the statements given at the scene;",
+        "any related charges in the same case;",
+        "your record and conduct, for sentencing purposes.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the police report;",
+        "the document suspending or annulling the licence;",
+        "proof of communication of that measure;",
+        "your driving licence, including one issued abroad;",
+        "the documents of the vehicle driven;",
+        "the summons or ordinance received;",
+        "medical documents, if you drove in an emergency.",
+      ],
+      paragraphsAfterBullets: [
+        "If you do not have the documents at hand, tell me the date of the stop and the status of your licence at that time.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What art. 335 of the Criminal Code provides",
+      paragraphs: [
+        "Driving a vehicle on public roads, where a licence is mandatory, by a person who does not hold such a licence is an offence under art. 335 (1) of the Criminal Code.",
+        "The text also punishes driving with a licence that does not correspond to the vehicle category, as well as driving while the right to drive is suspended or the licence has been withdrawn or annulled.",
+        "Entrusting a vehicle to a person in one of these situations is also punishable.",
+      ],
+    },
+    {
+      h2: "Suspended licence: when the measure takes effect",
+      paragraphs: [
+        "The suspension of the right to drive takes effect at the moment provided by law, and communication of the measure is essential.",
+        "If at the time of the stop the measure had not been communicated or had not yet taken effect, the elements of the offence may be missing.",
+      ],
+    },
+    {
+      h2: "Vehicle category and the notion of public road",
+      paragraphs: [
+        "Not all vehicles require a licence, and some categories have special rules. I check the concrete classification of the vehicle driven.",
+        "The offence also requires driving on a public road. Manoeuvres in a private area not open to public traffic are analysed differently.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "State of necessity and mistake",
+      paragraphs: [
+        "There are situations in which driving was imposed by a genuine emergency, such as transporting a person in danger.",
+        "A mistake regarding the legal status of the licence may also be relevant where it is based on objective elements.",
+      ],
+    },
+    {
+      h2: "Combination with other road offences",
+      paragraphs: [
+        [
+          { text: "Driving without a licence frequently appears together with charges such as " },
+          { text: "drunk driving", to: "/en/services/drunk-driving" },
+          { text: " or " },
+          { text: "leaving the accident scene", to: "/en/services/leaving-the-accident-scene" },
+          { text: "." },
+        ],
+      ],
+    },
+  ],
+  faq: [
+    { q: "I drove only a few metres. Is it still an offence?", a: "The law sets no minimum distance. What matters is driving on a public road, although the concrete circumstances can be used in sentencing." },
+    { q: "I did not know my licence was suspended. What can I do?", a: "Communication of the measure is essential. If it was not lawfully communicated or had not taken effect, the defence may target the very existence of the offence." },
+    { q: "I hold a licence issued abroad. Is that enough?", a: "It depends on the issuing state, on validity and on the rules concerning recognition or exchange of the licence in Romania." },
+    { q: "Does driving in a private car park fall under the law?", a: "The offence requires driving on a public road. The legal status of the area is verified in concrete terms and can be decisive." },
+    { q: "What is the risk if I lent my car to someone without a licence?", a: "Entrusting a vehicle to a person who has no right to drive is punishable under art. 335 of the Criminal Code." },
+    { q: "Can I avoid imprisonment?", a: "In many cases non-custodial outcomes can be obtained, depending on circumstances, record and conduct during the proceedings." },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 335 on driving a vehicle without a licence.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on criminal investigation and evidence.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
+
+export const roadAccidentWithVictimsEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/road-accident-with-victims",
+  altPath: "/servicii/accident-rutier-cu-victime",
+  roPath: "/servicii/accident-rutier-cu-victime",
+  title: "Road Accident With Victims Lawyer | Bogdan Lamatic",
+  h1: "Lawyer for drivers investigated after a road accident with victims",
+  description:
+    "Are you a driver under criminal investigation after an accident with victims? Defence on negligent injury and negligent homicide, fault, expert reports, claims.",
+  keywords: "road accident with victims lawyer, driver criminal investigation accident, negligent homicide lawyer romania",
+  breadcrumbLabel: "Road accident with victims",
+  serviceName: "Road accident with victims lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Were you involved in an accident with victims and became a suspect in the case?",
+    "The first days decide how fault is established: traces at the scene, witnesses and the technical expert report.",
+    "I defend your position as the investigated driver, both on the criminal charge and on the civil claims.",
+  ],
+  bio: [
+    `${BIO_INTRO} I represent drivers under criminal investigation after road accidents resulting in injury or death, from the first investigative acts to the final decision.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        { h3: "The accident has just happened", paragraphs: ["The on-site investigation fixes most of the evidence: braking marks, vehicle positions, damage, witnesses. Favourable data can be lost for good if not requested immediately."] },
+        {
+          h3: "You were summoned for questioning as a suspect",
+          paragraphs: [
+            [
+              { text: "The statement you give now stays in the file throughout the proceedings. We prepare together the " },
+              { text: "police or prosecutor questioning", to: "/en/services/police-prosecutor-questioning" },
+              { text: "." },
+            ],
+          ],
+        },
+        { h3: "The victim died or has serious injuries", paragraphs: ["The legal classification may change depending on the forensic conclusions on the days of medical care or on the cause of death. Those conclusions can be analysed critically and challenged."] },
+        {
+          h3: "Alcohol, drugs or leaving the scene are discussed",
+          paragraphs: [
+            [
+              { text: "In these situations additional charges appear, and the defence is coordinated with the one in a case of " },
+              { text: "leaving the accident scene", to: "/en/services/leaving-the-accident-scene" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in your case",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the on-site investigation report and the photo file;",
+        "the accident sketch and the measurements taken;",
+        "braking marks, damage and the point of impact;",
+        "the technical condition of the vehicles involved;",
+        "road conditions, visibility, signage and road surface;",
+        "witness statements and any contradictions;",
+        "video recordings from traffic or dashcams;",
+        "the technical and scientific findings report;",
+        "the forensic conclusions on the injuries or the cause of death;",
+        "the victim's behaviour and any concurrent fault;",
+        "any related charges in the same case;",
+        "the insurance policy and how the insurer intervenes.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the summons or ordinance showing your procedural status;",
+        "the police report;",
+        "photographs from the accident scene;",
+        "the dashcam recording, if any;",
+        "the vehicle documents and the insurance policy;",
+        "medical documents, if you were also injured;",
+        "the details of witnesses you identified.",
+      ],
+      paragraphsAfterBullets: [
+        "If you do not yet have the case documents, describe the place, the time, the directions of travel and what was found at the scene.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What charges can be brought against the driver",
+      paragraphs: [
+        "Where the accident results in injuries, the act may be classified as bodily harm through negligence under art. 196 of the Criminal Code. Where a person has died, the classification is negligent homicide under art. 192.",
+        "Both provisions include aggravated forms where the accident results from a breach of legal provisions or of precautionary measures for carrying out an activity.",
+        "Other road charges may appear in the same case, and the defence must cover all of them together.",
+      ],
+    },
+    {
+      h2: "How fault is established in a road accident",
+      paragraphs: [
+        "Fault is assessed against the traffic rules and against what a diligent driver could have foreseen and avoided in the concrete situation.",
+        "Speed, visibility distance, reaction time, the possibility of avoiding the impact and the conduct of other road users are analysed.",
+        "A well-founded technical vehicle expert report can completely change the picture of the accident dynamics.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Causal link and concurrent fault of the victim",
+      paragraphs: [
+        "Criminal liability requires more than a breach of the traffic rules. The causal link between that breach and the result must be proven.",
+        "In many accidents the victim's conduct contributes: crossing in a prohibited place, walking on the roadway at night without reflective items, entering an intersection unlawfully.",
+        "Concurrent fault does not automatically remove liability, but it can change the classification, the sentence and the amount of damages.",
+      ],
+    },
+    {
+      h2: "Technical and forensic expert reports",
+      paragraphs: [
+        "The technical vehicle expert report establishes the accident dynamics, the speeds and the possibility of avoiding the impact.",
+        "The forensic report establishes the injuries, the days of medical care and the cause of death, elements that determine the legal classification.",
+        "Both can be supplemented or challenged, and the request must be made at the right procedural moment, with clear objectives.",
+      ],
+    },
+    {
+      h2: "Civil claims and the role of the motor insurer",
+      paragraphs: [
+        "The injured person or the successors may join the criminal proceedings as civil party and claim material and moral damages.",
+        "The motor insurer is summoned and is liable within the limits provided by law and by the policy. I assess the extent of cover and the part that could remain your responsibility.",
+        "I also review the amounts claimed, as they are frequently disproportionate to the damage actually proven.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Settlement, withdrawal of the complaint and their effects",
+      paragraphs: [
+        "For bodily harm through negligence, in the situations provided by law the criminal action is set in motion upon the prior complaint of the injured person, and its withdrawal may lead to the termination of the proceedings.",
+        "For negligent homicide the criminal action is exercised ex officio, and an agreement with the victim's family concerns only the civil claim and sentencing.",
+      ],
+    },
+    {
+      h2: "Preventive measures that may be ordered against the driver",
+      paragraphs: [
+        [
+          { text: "In serious cases preventive measures may be ordered, from judicial control to detention. These are explained on the page about " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Common mistakes made by investigated drivers",
+      bullets: [
+        "detailed statements given immediately after the accident, in shock, without a lawyer;",
+        "repairing the vehicle before the expert examination;",
+        "admitting guilt in discussions with the victim's family or the insurer;",
+        "accepting uncritically the conclusions of the first technical report;",
+        "not requesting an expert report where the accident dynamics are debatable;",
+        "ignoring the civil claim until the last hearing.",
+      ],
+    },
+  ],
+  faq: [
+    { q: "Am I automatically guilty because I hit a pedestrian?", a: "No. A breach of the traffic rules and the causal link with the result must be proven. The pedestrian's conduct is analysed in concrete terms." },
+    { q: "What does concurrent fault mean?", a: "It is the situation where the victim also contributed to the accident. It can influence the classification, the sentence and the amount of damages." },
+    { q: "Who pays the damages to the victim?", a: "Within the limits of the policy, damages are borne by the motor insurer. Beyond those limits or in excluded situations, liability may fall on the driver." },
+    { q: "Can I request a new technical expert report?", a: "Yes. An expert report or additional objectives can be requested, with concrete arguments about the unclear points in the existing report." },
+    { q: "If the victim withdraws the complaint, is the case closed?", a: "For bodily harm through negligence, withdrawal of the prior complaint may lead to termination in the cases provided by law. For negligent homicide the action is exercised ex officio." },
+    { q: "Will I lose my licence until the end of the trial?", a: "The licence may be withheld and the right to drive suspended during the proceedings. The final situation depends on the outcome of the case." },
+    { q: "Can I avoid an executed prison sentence?", a: "In many negligence cases non-custodial outcomes are obtained, depending on the seriousness of the result, the circumstances and your conduct." },
+  ],
+  resources: [
+    { text: "Legislative Portal - Criminal Code, art. 192 on negligent homicide.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Code, art. 196 on bodily harm through negligence.", href: CP, linkLabel: "Legislation" },
+    { text: "Legislative Portal - Criminal Procedure Code, provisions on expert reports and civil action.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_RT_EN,
+};
