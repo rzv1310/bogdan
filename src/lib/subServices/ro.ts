@@ -5851,7 +5851,11 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "fotografii și fișiere.",
       ],
       paragraphsAfterBullets: [
-        "În apărare nu este suficient să fie citite fragmente izolate. Trebuie verificată cronologia completă și legătura reală dintre fiecare probă și fapta imputată.",
+        [
+          { text: "În apărare nu este suficient să fie citite fragmente izolate. Trebuie verificată cronologia completă, legătura reală dintre fiecare probă și fapta imputată, precum și legalitatea modului în care au fost extrase datele în cadrul unei " },
+          { text: "percheziții informatice", to: "/servicii/perchezitie-informatica" },
+          { text: "." },
+        ],
       ],
     },
     {
