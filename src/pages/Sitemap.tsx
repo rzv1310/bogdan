@@ -58,6 +58,8 @@ export default function Sitemap() {
     { url: "/servicii/conducere-fara-permis", title: "Conducere fără permis" },
     { url: "/servicii/accident-rutier-cu-victime", title: "Accident rutier cu victime" },
     { url: "/servicii/confiscare", title: "Confiscare" },
+    { url: "/servicii/despagubiri-accident-rutier", title: "Despăgubiri accident rutier" },
+    { url: "/servicii/despagubiri-vatamare-corporala", title: "Despăgubiri vătămare corporală" },
   ];
 
   const englishPages = [
