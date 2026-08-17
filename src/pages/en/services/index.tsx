@@ -25,8 +25,8 @@ const MAIN_SERVICE_PATHS = new Set([
   "/en/services/road-traffic-offenses",
   "/en/services/offenses-against-persons",
   "/en/services/professional-negligence-and-malpractice",
-  "/en/services/workplace-accidents-and-criminal-liability",
-  "/en/services/representation-of-victims",
+  "/en/services/workplace-criminal-liability",
+  "/en/services/victim-representation-in-criminal-cases",
 ]);
 
 function CallCta({ label = "Talk to the attorney" }: { label?: string }) {
