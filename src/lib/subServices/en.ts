@@ -1,3 +1,17 @@
+import type { SubServicePageData } from "@/components/services/SubServicePage";
+
+const CPP = "https://legislatie.just.ro/Public/DetaliiDocument/185907";
+const CP = "https://legislatie.just.ro/Public/DetaliiDocument/223635";
+const PARENT = {
+  to: "/en/services/criminal-investigation",
+  label: "criminal investigation",
+  breadcrumbLabel: "Criminal investigation",
+};
+const BIO_INTRO = "I am Bogdan Lamatic, attorney with the Bucharest Bar and more than 18 years of experience in criminal law.";
+const LEGAL500 = "I am recognised by Legal 500 as a Next Generation Partner (White-Collar Crime).";
+const CONTACT =
+  "Tell me in a few sentences what happened and I will tell you concretely what the next steps are. The first assessment discussion is free.";
+
 export const policeProsecutorQuestioningEn: SubServicePageData = {
   lang: "en",
   path: "/en/services/police-prosecutor-questioning",
