@@ -3703,7 +3703,7 @@ export const conflictOfInterestEn: SubServicePageData = {
         },
         {
           h3: "You signed a contract with a related company",
-          paragraphs: ["I check the family or business relationship invoked, the commercial dealings of recent years and the exceptions provided by law."],
+          paragraphs: ["I check the degree of kinship or affinity, whether a real patrimonial benefit resulted from the act and whether the situation falls within the exceptions provided by law. Separately from criminal liability, I check whether an administrative integrity issue may exist."],
         },
       ],
       ctaAfterSubsections: "I want an assessment of my situation",
