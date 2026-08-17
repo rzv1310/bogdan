@@ -59,6 +59,8 @@ export default function SitemapEn() {
     { url: "/en/services/driving-without-a-licence", title: "Driving without a licence" },
     { url: "/en/services/road-accident-with-victims", title: "Road accident with victims" },
     { url: "/en/services/confiscation", title: "Confiscation" },
+    { url: "/en/services/road-accident-compensation", title: "Road accident compensation" },
+    { url: "/en/services/bodily-injury-compensation", title: "Bodily injury compensation" },
     { url: "/en/services/professional-negligence-and-malpractice", title: "Professional Negligence and Malpractice" },
     { url: "/en/services/road-traffic-offenses", title: "Road Traffic Offenses" },
     { url: "/en/services/workplace-criminal-liability", title: "Workplace Criminal Liability" },
