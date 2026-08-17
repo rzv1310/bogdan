@@ -529,7 +529,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               <WhatsAppDocsCta
                 lang={data.lang}
                 variant="green"
-                label={isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele"}
+                label={data.contactWhatsAppLabel ?? (isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele")}
               />
             ) : (
               <Button asChild variant="outline">
