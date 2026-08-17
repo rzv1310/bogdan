@@ -1576,11 +1576,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "arest la domiciliu.",
       ],
       paragraphsAfterBullets: [
-        [
-          { text: "În evaluarea unei măsuri mai puțin severe sunt relevante împrejurările concrete ale cauzei și conduita procesuală a inculpatului. Art. 242 CPP permite înlocuirea unei măsuri preventive cu una mai ușoară atunci când aceasta este suficientă pentru realizarea scopului măsurii preventive. Vezi și pagina dedicată " },
-          { text: "apărării împotriva propunerii de arestare preventivă", to: "/servicii/arest-preventiv" },
-          { text: "." },
-        ],
+        "În evaluarea unei măsuri mai puțin severe sunt relevante împrejurările concrete ale cauzei și conduita procesuală a inculpatului. Art. 242 CPP permite înlocuirea unei măsuri preventive cu una mai ușoară atunci când aceasta este suficientă pentru realizarea scopului măsurii preventive.",
       ],
     },
     {
@@ -1846,7 +1842,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
       cta: "☎ Sună acum",
     },
   ],
-  reviewAfterSection: 3,
+  
   faq: [
     {
       q: "Pot merge la serviciu dacă sunt în arest la domiciliu?",
@@ -1875,18 +1871,6 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     {
       q: "Ce se întâmplă dacă ies din casă fără permisiune?",
       a: "Situația poate avea consecințe serioase. Încălcarea cu rea-credință poate conduce la înlocuirea arestului la domiciliu cu arestarea preventivă, iar părăsirea neautorizată poate ridica și probleme în raport cu infracțiunea de evadare prevăzută de Codul penal.",
-    },
-    {
-      q: "Pot contesta arestul la domiciliu?",
-      a: "Da. Pentru încheierile privind măsurile preventive, termenul contestației este, în situațiile reglementate de art. 204-206 CPP, de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
-    },
-    {
-      q: "Poate fi înlocuit arestul la domiciliu cu control judiciar?",
-      a: "Da, dacă sunt îndeplinite condițiile prevăzute de lege și organul judiciar apreciază că măsura mai ușoară este suficientă în raport cu situația concretă.",
-    },
-    {
-      q: "Cât poate dura arestul la domiciliu?",
-      a: "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea unor prelungiri de cel mult 30 de zile fiecare, iar durata maximă în această fază este de 180 de zile. Regimul din camera preliminară și din cursul judecății este diferit.",
     },
     {
       q: "Poate familia să contacteze avocatul?",
