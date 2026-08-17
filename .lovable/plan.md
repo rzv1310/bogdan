@@ -9,7 +9,7 @@ Plan: Ajustări pagina Trafic internațional de droguri (RO + EN)
 
 3. Linkuri contextuale în secțiuni
    - Adaugă linkuri inline relevante în corpul paginilor RO/EN pentru a reduce numărul de elemente din blocul "Servicii conexe" / "Related services".
-   - Linkuri posibile (acolo unde textul permite): percheziție, audiere Poliție/Parchet, reținere/arest, spălare de bani, grup infracțional organizat, cauze penale privind drogurile.
+   - Prioritate: mai întâi subserviciile-frați (deținere droguri pentru consum propriu, grup infracțional organizat) și pagina-pilon cauze penale privind drogurile; apoi alte pagini (percheziție, audiere Poliție/Parchet, reținere/arest, spălare de bani) doar dacă există context bun.
    - Linkurile vor fi adăugate ca segmente `{ text: "...", to: "/..." }` în paragrafe, astfel încât `collectContextualPaths` să le excludă automat din serviciile conexe.
 
 4. Verificare
