@@ -275,7 +275,14 @@ export default function MasuriPreventive() {
           <p>unde este persoana · ce s-a întâmplat · când este următorul termen</p>
           <p className="font-semibold pt-2">Dacă le ai, trimite:</p>
           <p>ordonanța · încheierea · citația · actele de la Poliție/Parchet</p>
-          <p className="font-semibold text-foreground pt-2">Nu ai toate documentele? Sună oricum.</p>
+          <div className="mt-2 flex flex-wrap items-center gap-3 rounded-r-md border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground">
+            <span className="font-semibold">Nu ai toate documentele?</span>
+            <Button asChild variant="warning" size="sm" aria-label="Sună oricum - Avocat măsuri preventive București">
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> Sună oricum
+              </a>
+            </Button>
+          </div>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <WhatsAppDocsCta lang="ro" />
           </div>

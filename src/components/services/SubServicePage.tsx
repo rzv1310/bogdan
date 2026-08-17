@@ -73,6 +73,8 @@ export interface SubServiceSection {
   ctaWhatsAppLabel?: string;
   /** Optional callout rendered after the subsections block. */
   calloutAfterSubsections?: string;
+  /** Optional inline phone CTA button rendered inside the after-subsections callout. */
+  calloutAfterSubsectionsCta?: string;
   /** Optional main CTA rendered after the subsections block. */
   ctaAfterSubsections?: string;
 }
@@ -515,6 +517,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             {(section.calloutAfterSubsections || section.ctaAfterSubsections) && (
               <SectionContent
                 calloutAfterBullets={section.calloutAfterSubsections}
+                calloutAfterBulletsCta={section.calloutAfterSubsectionsCta}
                 cta={section.ctaAfterSubsections}
                 ctaIcon={false}
               />

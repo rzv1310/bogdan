@@ -48,6 +48,7 @@ export const policeProsecutorQuestioningEn: SubServicePageData = {
     },
     {
       h2: "Why a lawyer matters from the very first hearing",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Questioning is an act of " },
@@ -63,6 +64,7 @@ export const policeProsecutorQuestioningEn: SubServicePageData = {
     },
     {
       h2: "Situations where I intervene most often",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Questioning is often only the first step of a case that continues with searches, seizure of devices or proposals for preventive measures.",
       ],
@@ -127,6 +129,7 @@ export const homeSearchEn: SubServicePageData = {
   sections: [
     {
       h2: "What I do for you",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "I check the legality of the warrant issued by the judge for rights and liberties and the conditions under which the search was ordered (Articles 157-158 of the Criminal Procedure Code).",
         "I am present or guide you by phone throughout the search, to protect your rights.",
@@ -138,6 +141,7 @@ export const homeSearchEn: SubServicePageData = {
     },
     {
       h2: "What you should know during a search",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "You have the right to be present, or to have a representative or an adult family member present.",
         "You can ask for your lawyer from this very moment - the judicial bodies must let you make contact.",
@@ -217,6 +221,7 @@ export const computerSearchEn: SubServicePageData = {
     },
     {
       h2: "What you should know about a computer search",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "A computer search is an evidence-gathering procedure used in " },
@@ -232,6 +237,7 @@ export const computerSearchEn: SubServicePageData = {
     },
     {
       h2: "Cases where it appears most often",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Computer searches are frequent in economic crime cases, online fraud, and DIICOT or DNA files, where the data from a phone or laptop becomes the main evidence.",
       ],
@@ -290,6 +296,7 @@ export const diicotLawyerEn: SubServicePageData = {
   sections: [
     {
       h2: "What the DIICOT is and what it investigates",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "A DIICOT file follows " },
@@ -309,6 +316,7 @@ export const diicotLawyerEn: SubServicePageData = {
     },
     {
       h2: "What I do for you in a DIICOT case",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "I analyse the case documents I have access to and check the legality of the evidence (wiretaps, searches, technical surveillance).",
         "I defend you at hearings and, where necessary, before the judge for rights and liberties, where the DIICOT frequently proposes severe preventive measures.",
@@ -372,6 +380,7 @@ export const dnaLawyerEn: SubServicePageData = {
   sections: [
     {
       h2: "What the DNA is and when it has competence",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "DNA files follow " },
@@ -389,6 +398,7 @@ export const dnaLawyerEn: SubServicePageData = {
     },
     {
       h2: "What I do for you in a DNA case",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "I analyse the case documents and check whether the DNA's competence conditions are met in your case.",
         "I assist you at hearings, including at possible searches or seizures of documents from the institution's or company's premises.",
@@ -477,6 +487,7 @@ export const policeCustody24HoursEn: SubServicePageData = {
     },
     {
       h2: "What to tell me when you call about a detention",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["If the detained person is a family member or someone close to you, you can contact me as well. Tell me:"],
       bullets: [
         "the name of the person;",
@@ -490,6 +501,7 @@ export const policeCustody24HoursEn: SubServicePageData = {
     },
     {
       h2: "What happens after the 24 hours",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Police custody can be ordered for no more than 24 hours, under the conditions set by the Criminal Procedure Code.",
         "Once the 24 hours expire, the person cannot be held further on the basis of the same custody measure.",
@@ -587,6 +599,7 @@ export const preTrialDetentionEn: SubServicePageData = {
     },
     {
       h2: "If the measure has already been ordered",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "The fact that detention was ordered does not mean the analysis of the defence is over. Depending on the stage of the case, the appeal, the extension, the periodic verification, the revocation or the replacement with " },
@@ -607,6 +620,7 @@ export const preTrialDetentionEn: SubServicePageData = {
     },
     {
       h2: "Appeal deadlines",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Deadlines are very short in this area. For appeals under art. 204-206 of the Criminal Procedure Code the deadline is 48 hours from delivery or, as the case may be, from communication.",
         "If you already have the court decision, tell me the exact date and hour when it was delivered or communicated.",
@@ -688,6 +702,7 @@ export const judicialControlEn: SubServicePageData = {
     },
     {
       h2: "What I analyse in a judicial control case",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Judicial control does not involve deprivation of liberty, but it imposes obligations that must be observed throughout the measure.",
         "The fact that an obligation was imposed does not mean it must remain unchanged regardless of how the case evolves. I analyse whether:",
@@ -714,6 +729,7 @@ export const judicialControlEn: SubServicePageData = {
     },
     {
       h2: "Challenging the measure and the deadlines",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "There is a specific remedy against the prosecutor's order imposing judicial control, regulated by art. 213 of the Criminal Procedure Code. For court decisions on preventive measures, art. 204-206 apply, with the 48-hour deadline.",
         "Send me the order or the court decision, the obligations imposed, the date the measure was taken or extended and the concrete problem one of the obligations creates for you.",
@@ -793,6 +809,7 @@ export const houseArrestEn: SubServicePageData = {
     },
     {
       h2: "What I do for you in a house arrest case",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "I prepare the defence against the measure when you contact me before the hearing;",
         "I analyse the available remedy;",
@@ -807,6 +824,7 @@ export const houseArrestEn: SubServicePageData = {
     },
     {
       h2: "What I check if the measure has already been ordered",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "whether a remedy is available;",
         "whether the measure is still necessary;",
@@ -987,6 +1005,7 @@ export const taxEvasionEn: SubServicePageData = {
     },
     {
       h2: "The difference between tax evasion, a tax error and a tax dispute",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "A tax error occurs where an operation is recorded incorrectly or an obligation is miscalculated, without any intention to evade. The consequences remain, in principle, fiscal.",
         "A tax dispute occurs where the taxpayer and the tax authority interpret a tax rule differently. These disputes are settled through administrative appeals and administrative litigation.",
@@ -1395,7 +1414,8 @@ export const embezzlementEn: SubServicePageData = {
           paragraphs: ["The document setting out how the claimed amount was calculated and for what period."],
         },
       ],
-      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
@@ -1642,6 +1662,7 @@ export const forgeryEn: SubServicePageData = {
     },
     {
       h2: "Can you be accused of use of forgery if you did not forge the document?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Yes. Use of forgery is a separate offense and concerns the person who uses the document, regardless of who produced it.",
         "That is why the defense focuses on how you obtained the document, what checks you could reasonably make and what you actually knew about its origin.",
@@ -1649,7 +1670,6 @@ export const forgeryEn: SubServicePageData = {
     },
     {
       h2: "Do you have to know the document is forged in order to answer for use of forgery?",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Yes. The offense requires intention, meaning knowledge that the document is forged at the moment it is used.",
         "Using a document received from a third party, in good faith and without any element indicating a problem, does not meet this requirement. This must be proven by evidence, not merely asserted.",
@@ -1837,7 +1857,8 @@ export const fraudulentBankruptcyEn: SubServicePageData = {
           paragraphs: ["The reports on the causes of insolvency and on the operations considered questionable."],
         },
       ],
-      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
@@ -2053,7 +2074,8 @@ export const computerFraudEn: SubServicePageData = {
           paragraphs: ["The list of items seized and any receipt confirming what was taken."],
         },
       ],
-      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
@@ -2301,7 +2323,8 @@ export const euFundsFraudEn: SubServicePageData = {
           paragraphs: ["The notes establishing irregularities, the anti-fraud reports and any criminal notification communicated to you."],
         },
       ],
-      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
@@ -2384,7 +2407,6 @@ export const euFundsFraudEn: SubServicePageData = {
     },
     {
       h2: "Are recovery of the funds and criminal liability the same thing?",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "No. Recovery of the funds is an administrative consequence of the irregularity established and can exist even where no criminal offense is retained.",
         "The obligation to return part of the financing does not, in itself, prove an offense. The two procedures have different conditions and different standards of proof.",

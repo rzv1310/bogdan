@@ -53,6 +53,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
     },
     {
       h2: "Situații în care mă poți contacta",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Mă poți contacta dacă:"],
       bullets: [
         "ai primit o citație pentru a te prezenta la Poliție sau Parchet;",
@@ -66,6 +67,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
     },
     {
       h2: "De ce contează ce se întâmplă la prima audiere",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Audierea este un act din " },
@@ -142,12 +144,12 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
   sections: [
     {
       h2: "Percheziția are loc chiar acum?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Dacă este solicitat avocatul, începerea percheziției se amână până la sosirea acestuia, însă nu mai mult de 2 ore, cu excepțiile prevăzute de lege pentru situații urgente sau atunci când avocatul nu poate fi contactat.",
       ],
       callout: "Ai dreptul să contactezi un avocat !",
       calloutClassName: "font-semibold bg-white",
-      cardClassName: "bg-[#faf0e6]",
       cta: "Sună-mă imediat - 031 632 01 83",
       ctaIcon: false,
     },
@@ -183,6 +185,7 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să știi în timpul unei percheziții domiciliare",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Percheziția domiciliară se dispune în " },
@@ -277,6 +280,7 @@ export const perchezitieInformaticaRo: SubServicePageData = {
     },
     {
       h2: "Situații în care mă poți contacta",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "ți-a fost ridicat telefonul în timpul unei percheziții;",
         "poliția sau procurorul ți-a ridicat laptopul ori calculatorul;",
@@ -290,6 +294,7 @@ export const perchezitieInformaticaRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să știi despre telefonul sau laptopul ridicat",
+      cardClassName: "bg-[#faf0e6]",
       callout:
         "Faptul că ți-au ridicat un dispozitiv nu este același lucru cu percheziționarea datelor din el.",
       bullets: [
@@ -418,6 +423,7 @@ export const avocatDiicotRo: SubServicePageData = {
     },
     {
       h2: "Situații în care mă poți contacta",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "ai primit citație pentru audiere la DIICOT;",
         "procurorii sau poliția efectuează o percheziție;",
@@ -450,6 +456,7 @@ export const avocatDiicotRo: SubServicePageData = {
     },
     {
       h2: "De ce un dosar DIICOT necesită o strategie construită de la început",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Un dosar DIICOT parcurge " },
@@ -553,6 +560,7 @@ export const avocatDnaRo: SubServicePageData = {
     },
     {
       h2: "Situații în care mă poți contacta",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "ai primit o citație de la DNA;",
         "ai fost informat că ești suspect sau inculpat;",
@@ -567,6 +575,7 @@ export const avocatDnaRo: SubServicePageData = {
     },
     {
       h2: "De ce primele etape ale dosarului sunt importante",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Dosarele DNA urmează " },
@@ -684,6 +693,7 @@ export const retinere24OreRo: SubServicePageData = {
     },
     {
       h2: "Ce îmi spui când mă contactezi pentru o reținere",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Dacă persoana reținută este un membru al familiei sau o persoană apropiată, mă poți contacta și tu.",
         "Spune-mi 3 lucruri:",
@@ -698,6 +708,7 @@ export const retinere24OreRo: SubServicePageData = {
     },
     {
       h2: "Ce drepturi ai dacă ești reținut 24 de ore?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Faptul că ai fost reținut nu înseamnă că trebuie să răspunzi imediat la toate întrebările sau să iei singur decizii privind poziția ta în dosar.",
         "În cazul reținerii, Codul de procedură penală îți recunoaște mai multe drepturi importante.",
@@ -946,6 +957,7 @@ export const arestPreventivRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să-mi spui când mă suni",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Spune-mi 4 lucruri:"],
       bullets: [
         "persoana este reținută sau deja arestată?",
@@ -990,7 +1002,6 @@ export const arestPreventivRo: SubServicePageData = {
     },
     {
       h2: "Ce se întâmplă la termenul pentru propunerea de arestare preventivă?",
-      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "procurorul formulează propunerea de arestare preventivă;",
         "dosarul ajunge la judecătorul de drepturi și libertăți competent;",
@@ -1009,7 +1020,6 @@ export const arestPreventivRo: SubServicePageData = {
     },
     {
       h2: "Cum contești arestarea preventivă și ce se poate obține?",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Împotriva încheierii prin care s-a dispus, s-a prelungit sau s-a menținut arestarea preventivă se poate formula contestație, în condițiile art. 204-206 CPP.",
       ],
@@ -1186,6 +1196,7 @@ export const controlJudiciarRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Pentru o evaluare rapidă a situației tale, trimite-mi:",
       ],
@@ -1202,7 +1213,6 @@ export const controlJudiciarRo: SubServicePageData = {
     {
       h2: "Pot pleca din țară sau din localitate dacă sunt sub control judiciar?",
       id: "deplasare",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Răspunsul depinde de obligația concretă stabilită în cazul tău. Controlul judiciar nu interzice automat orice deplasare: trebuie citită exact obligația din ordonanța procurorului sau din încheierea judecătorului, pentru a vedea dacă este vorba despre o limită teritorială, despre o interdicție de a părăsi țara ori despre o obligație de informare.",
         "Verific apoi cine a dispus măsura și care este organul judiciar competent să analizeze cererea, pentru că de acest lucru depinde procedura aplicabilă și documentele care trebuie atașate.",
@@ -1256,7 +1266,6 @@ export const controlJudiciarRo: SubServicePageData = {
     {
       h2: "Ce se întâmplă dacă încalci obligațiile controlului judiciar?",
       id: "incalcare",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "O abatere nu înseamnă automat arestare. Riscul unei măsuri mai severe apare, în condițiile legii, în cazul încălcării cu rea-credință a obligațiilor controlului judiciar.", bold: true },
@@ -2036,6 +2045,7 @@ export const evaziuneFiscalaRo: SubServicePageData = {
     },
     {
       h2: "Care este diferența dintre evaziune fiscală, o eroare fiscală și un litigiu fiscal",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Eroarea fiscală apare atunci când o operațiune este înregistrată greșit sau o obligație este calculată eronat, fără intenția de sustragere. Consecințele rămân, în principiu, fiscale.",
         "Litigiul fiscal apare atunci când contribuabilul și organul fiscal interpretează diferit o normă fiscală. Aceste dispute se soluționează în contestație și în contencios administrativ.",
@@ -2492,7 +2502,8 @@ export const delapidareRo: SubServicePageData = {
           paragraphs: ["Modul în care a fost calculată suma reclamată, cu anexele și documentele pe care se sprijină."],
         },
       ],
-      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
@@ -2752,6 +2763,7 @@ export const falsSiUzDeFalsRo: SubServicePageData = {
     },
     {
       h2: "Poți fi acuzat de uz de fals dacă nu ai falsificat documentul?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Da. Uzul de fals este o infracțiune distinctă, iar autorul ei nu trebuie să fie persoana care a falsificat documentul. Este suficientă folosirea înscrisului în vederea producerii unei consecințe juridice.",
         "În practică, apar frecvent dosare în care documentul a fost primit de la un terț, iar discuția se mută pe ceea ce știa efectiv persoana care l-a folosit.",
@@ -2948,7 +2960,8 @@ export const bancrutaFrauduloasaRo: SubServicePageData = {
           paragraphs: ["Raportul asupra cauzelor insolvenței și orice sesizare formulată în cadrul procedurii."],
         },
       ],
-      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
@@ -3170,7 +3183,8 @@ export const fraudaInformaticaRo: SubServicePageData = {
           paragraphs: ["Dovezile de proprietate, facturile și informațiile despre persoanele care foloseau dispozitivele."],
         },
       ],
-      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
@@ -3436,7 +3450,8 @@ export const fonduriEuropeneRo: SubServicePageData = {
           paragraphs: ["Notele de constatare a neregulilor, rapoartele DLAF și orice sesizare penală comunicată."],
         },
       ],
-      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
@@ -3519,7 +3534,6 @@ export const fonduriEuropeneRo: SubServicePageData = {
     },
     {
       h2: "Recuperarea fondurilor și răspunderea penală sunt același lucru?",
-      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Nu. Recuperarea fondurilor este o consecință administrativă a neregulii constatate și poate exista chiar și atunci când nu se reține nicio faptă penală.",
         "Obligația de a restitui o parte din finanțare nu dovedește, prin ea însăși, comiterea unei infracțiuni. Cele două proceduri au condiții și standarde de probă diferite.",
