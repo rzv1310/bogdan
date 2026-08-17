@@ -887,62 +887,57 @@ export const taxEvasionEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you in a tax evasion case",
-      bullets: [
-        "I review the tax inspection report and the criminal complaint to identify the exact conduct alleged.",
-        "I check whether the operations invoked fall under Law 241/2005 or amount only to a different fiscal interpretation.",
-        "I analyse how the damage was calculated and, where useful, request an accounting or tax expert report.",
-        "I prepare you for questioning and assist you at every stage, before the prosecutor and in court.",
-        "I challenge precautionary measures, including seizures over accounts or assets, where grounds exist.",
-        "I assess the effect that covering the damage may have on criminal liability, under the conditions set by law.",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Pick the situation that best describes your stage. The defense starts from there."],
+      subsections: [
+        {
+          h3: "You have been summoned by the police or the prosecutor in a tax evasion case",
+          paragraphs: [
+            "Before you appear, you need to know in what capacity you are being questioned, what conduct is investigated and which documents support the accusation. The statement you give now stays in the file for the whole trial.",
+          ],
+        },
+        {
+          h3: "There has been an ANAF or anti-fraud inspection",
+          paragraphs: [
+            "The tax inspection report and the anti-fraud minutes are usually the acts that trigger the criminal complaint. The way the explanations were given to inspectors shapes the file.",
+          ],
+        },
+        {
+          h3: "Searches or document seizures have taken place",
+          paragraphs: [
+            "I check the legal basis of the search, what was actually seized and how the acts were recorded, because those documents become the prosecution's main evidence.",
+          ],
+        },
+        {
+          h3: "A tax damage figure has been calculated",
+          paragraphs: [
+            "The amount of the damage influences the legal classification, the sentencing range and any precautionary measures. The calculation can be challenged through objections and expert reports.",
+          ],
+        },
+        {
+          h3: "Accounts or assets have been frozen",
+          paragraphs: [
+            "Precautionary measures can be challenged, and their extent can be reviewed against the damage retained in the file.",
+          ],
+        },
       ],
-      cta: "I have a tax evasion case - request an assessment",
+      ctaAfterSubsections: "I have a tax evasion file - I want an assessment",
     },
     {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
+      h2: "What I review immediately in a tax evasion file",
       bullets: [
-        "ANAF filed a criminal complaint after an audit or tax inspection;",
-        "you are summoned for questioning as a suspect or defendant;",
-        "the company you manage is investigated for fictitious operations;",
-        "accounts, real estate or other assets have been frozen;",
-        "you have been indicted and are preparing the trial defense;",
-        "you want to know what effect paying the damage has in your case.",
-      ],
-    },
-    {
-      h2: "What the law says about tax evasion",
-      paragraphs: [
-        "Law 241/2005 on preventing and combating tax evasion sets out an exhaustive list of criminal conduct. Not every difference found by the tax authority is automatically a criminal offense.",
-        "Article 9 of the law covers, among others:",
-      ],
-      bullets: [
-        "concealing the taxable asset or source;",
-        "omitting to record commercial operations carried out or income earned;",
-        "recording expenses not based on real operations, or fictitious operations;",
-        "altering, destroying or hiding accounting records;",
-        "keeping double accounting records;",
-        "substituting, damaging or disposing of seized assets.",
-      ],
-      paragraphsAfterBullets: [
-        [
-          { text: "Penalty limits increase when the damage exceeds the statutory thresholds, and the file is often accompanied by precautionary measures. The defense is built on the accounting documents and on the " },
-          { text: "rules of the criminal investigation", to: "/en/services/criminal-investigation" },
-          { text: " governing the evidence gathered." },
-        ],
-        [
-          { text: "Depending on the operations retained, the file may also include a charge of " },
-          { text: "deception or financial fraud", to: "/en/services/fraud-and-deception" },
-          { text: ", or, where public money is involved, of " },
-          { text: "misuse of European funds", to: "/en/services/eu-funds-fraud" },
-          { text: "." },
-        ],
+        "The tax inspection report and the criminal complaint, to identify exactly what conduct is alleged.",
+        "Whether the operations invoked fall under Law 241/2005 or amount to a difference in tax interpretation.",
+        "The reality of the contested operations: documents, deliveries, payments and financial flows.",
+        "How the damage was calculated and whether an accounting or tax expert report is useful.",
+        "The actual decision-making duties and the documents signed, to establish who answers and for what.",
+        "The precautionary measures ordered and the grounds for challenging them.",
       ],
     },
     {
-      h2: "What to send me",
+      h2: "What you should send me for the first assessment",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["For a quick first assessment, tell me what happened and at what stage the file is."],
+      paragraphs: ["Tell me what happened and at what stage the file is."],
       paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
       bulletsAfterBullets: [
         "the tax inspection report;",
@@ -957,31 +952,146 @@ export const taxEvasionEn: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
+    {
+      h2: "What tax evasion is and when a tax problem becomes criminal",
+      paragraphs: [
+        "Tax evasion means avoiding tax obligations through the conduct exhaustively listed in Law 241/2005. A tax problem becomes criminal only where the conduct matches one of those forms and there is an intention to evade.",
+        [
+          { text: "An audit that establishes additional amounts due is not automatically an offense. That is why the first step in a " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: " file is to separate the tax obligation from the criminal accusation." },
+        ],
+      ],
+    },
+    {
+      h2: "What conduct can amount to tax evasion",
+      subsections: [
+        {
+          h3: "Income or operations not recorded in the accounts",
+          paragraphs: ["Failing to record, in whole or in part, commercial operations carried out or income earned is one of the most frequently alleged forms."],
+        },
+        {
+          h3: "Expenses and operations considered fictitious",
+          paragraphs: ["Recording expenses not based on real operations, or fictitious operations, requires proof that the supply or service never existed."],
+        },
+        {
+          h3: "Documents and accounting records contested by the investigators",
+          paragraphs: ["Altering, destroying or hiding accounting documents, as well as keeping double records, are separately criminalized."],
+        },
+        {
+          h3: "Concealing the taxable asset or source",
+          paragraphs: ["This form requires conduct that disguises the taxable asset or source, not the mere failure to pay a declared obligation."],
+        },
+      ],
+      calloutAfterSubsections: "Article 9 of Law 241/2005 remains the core provision for tax evasion.",
+    },
+    {
+      h2: "The difference between tax evasion, a tax error and a tax dispute",
+      paragraphs: [
+        "A tax error occurs where an operation is recorded incorrectly or an obligation is miscalculated, without any intention to evade. The consequences remain, in principle, fiscal.",
+        "A tax dispute occurs where the taxpayer and the tax authority interpret a tax rule differently. These disputes are settled through administrative appeals and administrative litigation.",
+        "Tax evasion requires one of the forms of conduct set out in the law, committed with the intention of avoiding tax obligations. This distinction is often the core of the defense.",
+      ],
+    },
+    {
+      h2: "How the damage is established in a tax evasion file",
+      subsections: [
+        {
+          h3: "The ANAF report and the damage calculation",
+          paragraphs: ["The starting point is the tax authority's calculation. I check which operations were taken into account, what period is covered and whether ancillary amounts were wrongly included."],
+        },
+        {
+          h3: "The accounting expert report",
+          paragraphs: ["In files with large volumes of documents, a judicial accounting expert report can significantly change the amount retained. I submit expert objectives and objections to the report."],
+        },
+        {
+          h3: "How the damage can be challenged",
+          paragraphs: ["The damage can be challenged with supporting documents, through expert evidence and through requests for evidence, both during the investigation and at trial."],
+        },
+      ],
+    },
+    {
+      h2: "What effect paying the damage can have in a tax evasion file",
+      paragraphs: [
+        "Law 241/2005 provides specific consequences depending on when the damage is covered and on its amount, ranging from grounds for non-punishment to reduced sentencing limits.",
+        "The concrete effect must be analysed on your file, against the legal classification retained and the procedural stage. A payment made without prior analysis can be interpreted unfavourably.",
+      ],
+    },
+    {
+      h2: "Freezing accounts, real estate and other assets in tax evasion files",
+      paragraphs: [
+        "Precautionary measures are frequent in these files, to secure recovery of the damage. They can target bank accounts, real estate, vehicles or company shares.",
+        "I check whether the measure was ordered lawfully, whether the value of the frozen assets is proportionate to the damage retained, and I file a challenge where there are grounds.",
+      ],
+    },
+    {
+      h2: "What happens after a criminal tax evasion file is opened",
+      subsections: [
+        {
+          h3: "The criminal investigation",
+          paragraphs: ["Accounting documents are collected, searches or document seizures are ordered, and directors, accountants and business partners are questioned."],
+        },
+        {
+          h3: "Expert evidence and the taking of evidence",
+          paragraphs: ["Most files involve an accounting expert report. This is the moment when the defense can decisively influence the damage figure and the legal classification."],
+        },
+        {
+          h3: "Indictment or closing the file",
+          paragraphs: ["At the end, the prosecutor may close the file, waive prosecution or send the case to trial. Each outcome is prepared through requests and submissions filed in time."],
+        },
+      ],
+    },
+    {
+      h2: "How I build the defense in a tax evasion file",
+      bullets: [
+        "I start from the documents, not from the conclusions of the tax report, and reconstruct the real flow of operations.",
+        "I separate the tax obligation from the criminal offense and argue the civil or fiscal nature of the dispute where appropriate.",
+        "I challenge the damage calculation through objections and expert evidence.",
+        "I contest disproportionate precautionary measures.",
+        "I prepare you for questioning and assist you at every hearing.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Where the file also involves allegations of " },
+          { text: "business deception", to: "/en/services/fraud-and-deception" },
+          { text: ", the defense must be built as a whole, because the evidence largely overlaps." },
+        ],
+      ],
+      cta: "I want a strategy for my file",
+    },
   ],
   faq: [
     {
-      q: "Does any tax debt mean tax evasion?",
-      a: "No. Law 241/2005 lists the conduct that constitutes an offense. An unpaid tax debt or a difference resulting from a different reading of tax legislation is not automatically a criminal offense.",
+      q: "Does any debt to the tax authority mean tax evasion?",
+      a: "No. Law 241/2005 lists the conduct that amounts to an offense. An unpaid tax debt or a difference resulting from a different interpretation of tax law is not automatically tax evasion.",
     },
     {
-      q: "What happens if I pay the damage?",
-      a: "The law provides specific consequences depending on when the damage is covered and on its amount. The concrete effect must be assessed against the legal classification retained in your file and the procedural stage.",
+      q: "Is the company director automatically liable?",
+      a: "No. Criminal liability is personal and is assessed against actual duties, decisions taken and documents signed. Being a director does not in itself mean guilt.",
+    },
+    {
+      q: "What happens if the invoices are considered fictitious?",
+      a: "The investigators must prove that the operation never took place. The defense is built on evidence of delivery, performance, payment and use of the goods or services.",
+    },
+    {
+      q: "Who establishes the damage?",
+      a: "The starting point is the tax authority's calculation, but the criminal damage is established by the judicial bodies, usually through an accounting expert report that can be challenged.",
     },
     {
       q: "Can the company accounts be frozen?",
-      a: "Yes, the judicial authorities may order precautionary measures to secure recovery of the damage. Such measures can be challenged and their extent assessed against the damage retained.",
+      a: "Yes, through precautionary measures ordered to secure recovery of the damage. They can be challenged, and their extent reviewed against the amount retained in the file.",
     },
     {
-      q: "Who is liable, the director or the company?",
-      a: "Criminal liability may be examined both for the individual and for the legal entity. What matters is the actual decision-making powers, the decisions taken and the documents signed.",
+      q: "Does paying the damage close the criminal file?",
+      a: "Not automatically. The law provides different effects depending on the moment of payment and the amount, from grounds for non-punishment to reduced sentences. The analysis must be done before paying.",
     },
     {
-      q: "What should I do if I am summoned for questioning?",
-      a: "Do not attend without knowing in what capacity you are questioned and what conduct is investigated. Contact me beforehand so we can assess the situation and prepare the hearing.",
+      q: "Can the company itself be criminally liable?",
+      a: "Yes. A legal entity can be criminally liable alongside the individuals involved, with specific penalties including fines and measures affecting its activity.",
     },
     {
-      q: "How long does a tax evasion case take?",
-      a: "It depends on the complexity of the operations, the number of persons investigated and the expert reports ordered. Files with a large volume of documents can take longer, so the defense must be built from the start.",
+      q: "How long can a tax evasion file take?",
+      a: "It depends on the complexity of the operations, the number of persons investigated and the expert reports ordered. Files with large document volumes can take years, so the defense must be built from the start.",
     },
   ],
   resources: [
@@ -1014,61 +1124,49 @@ export const fraudAndDeceptionEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Identify the concrete situation, because the defense differs by stage and by type of accusation."],
+      subsections: [
+        {
+          h3: "You are accused of misleading a person",
+          paragraphs: ["The accusation usually rests on the injured party's statements and on the documents exchanged. What you communicated, when and on what information matters."],
+        },
+        {
+          h3: "A contract or a business deal ended up under criminal investigation",
+          paragraphs: ["I reconstruct the timeline of the deal, to show whether non-performance had objective causes or whether the prosecution claims an intention that existed from the start."],
+        },
+        {
+          h3: "You received money or an advance and a criminal complaint was filed",
+          paragraphs: ["I analyse where the sums went, the evidence of partial performance and the correspondence between the parties, elements that can change the classification of the file."],
+        },
+        {
+          h3: "You are investigated in a file with large damage or several injured parties",
+          paragraphs: ["These files usually involve precautionary measures and related charges. The defense must be organised for each set of facts, not globally."],
+        },
+      ],
+      ctaAfterSubsections: "I want to discuss my file",
+    },
+    {
+      h2: "What I review in a deception file",
       bullets: [
-        "I review the accusation and check whether the conditions of deception are met, in particular misleading conduct and damage.",
-        "I separate the civil or commercial dispute from criminal liability, where the facts allow it.",
-        "I build the defense on documents: contracts, invoices, bank statements, correspondence.",
-        "I file the criminal complaint and represent the injured party seeking recovery of the damage.",
-        "I request precautionary measures to protect sums and assets, where appropriate.",
-        "I assist you at hearings and before the court, at every stage of the proceedings.",
-      ],
-      cta: "I want to discuss my case",
-    },
-    {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
-      bullets: [
-        "you are accused of misleading a contractual partner;",
-        "you paid for goods or services you never received;",
-        "you were the victim of an investment or online fraud;",
-        "you are a director and your company is reported over a failed deal;",
-        "you issued cheques or promissory notes without funds;",
-        "you want to file a criminal complaint and join the case as a civil party.",
+        "Whether the conditions of the offense are met, in particular the misleading conduct and the loss.",
+        "The moment when the intention to mislead is said to have arisen.",
+        "The documents of the deal: contracts, invoices, proof of payment, correspondence.",
+        "Partial performance or the steps taken to fulfil the obligations.",
+        "How the damage was calculated and the civil claims filed.",
+        "The precautionary measures ordered over accounts or assets.",
       ],
     },
     {
-      h2: "What the law says about deception",
-      paragraphs: [
-        "Article 244 of the Criminal Code punishes misleading a person by presenting a false fact as true or a true fact as false, in order to obtain an unjust patrimonial benefit, where damage has been caused.",
-        "The offense is aggravated when committed by using false names or capacities or other fraudulent means. The Criminal Code also regulates insurance deception separately, in art. 245.",
-        [
-          { text: "In practice, the central issue is whether the intent to mislead existed from the outset or whether this is a contractual breach. That assessment is made on the evidence gathered during the " },
-          { text: "criminal investigation stage", to: "/en/services/criminal-investigation" },
-          { text: "." },
-        ],
-        [
-          { text: "Large-value files are often built together with other charges, which is why the strategy has to cover the whole " },
-          { text: "white-collar crime accusation", to: "/en/services/financial-crime" },
-          { text: ", not just the disputed contract." },
-        ],
-        [
-          { text: "When the money was taken through payment systems or online accounts, the conduct is assessed as " },
-          { text: "fraud committed through computer systems", to: "/en/services/computer-fraud" },
-          { text: "." },
-        ],
-      ],
-    },
-    {
-      h2: "What to send me",
+      h2: "What documents you should send me",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me briefly what happened, what amounts are involved and at what stage the file is."],
+      paragraphs: ["Tell me briefly what happened, what sums are involved and at what stage the file is."],
       paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
       bulletsAfterBullets: [
         "the contract or written agreement;",
-        "invoices and proof of payment;",
-        "correspondence with the other party;",
-        "the criminal complaint or the order received;",
+        "the invoices and proof of payment;",
+        "the correspondence with the other party;",
+        "the criminal complaint or the order you received;",
         "the summons.",
       ],
       calloutAfterBullets: "You do not have all the documents?",
@@ -1077,36 +1175,144 @@ export const fraudAndDeceptionEn: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
+    {
+      h2: "What the offense of deception is",
+      paragraphs: [
+        "Deception means misleading a person by presenting a false fact as true or a true fact as false, in order to obtain an unjust patrimonial benefit, where a loss has been caused.",
+        [
+          { text: "The offense is aggravated where it is committed by using false names or capacities or other fraudulent means. It is one of the most frequent accusations in " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: " files." },
+        ],
+      ],
+    },
+    {
+      h2: "What must be proven for the offense to exist",
+      subsections: [
+        {
+          h3: "The misleading conduct",
+          paragraphs: ["There must be proof of deceptive conduct, through untrue statements, concealment of essential information or the use of false documents or capacities."],
+        },
+        {
+          h3: "The purpose of obtaining an unjust patrimonial benefit",
+          paragraphs: ["An economic advantage is not enough. It must be proven that the benefit sought was unjust and that this was the purpose of the conduct."],
+        },
+        {
+          h3: "The existence of a loss",
+          paragraphs: ["The loss must be real and proven by documents, not merely asserted by the injured party."],
+        },
+        {
+          h3: "The link between the misleading conduct and the loss",
+          paragraphs: ["The loss must be the consequence of the deception. If the damage has another cause, such as an assumed commercial risk, the accusation loses its basis."],
+        },
+      ],
+      calloutAfterSubsections: "Deception is governed by article 244 of the Criminal Code.",
+    },
+    {
+      h2: "When failing to perform a contract becomes deception",
+      cardClassName: "bg-[#faf0e6]",
+      subsections: [
+        {
+          h3: "Non-performance of a contract is not automatically an offense",
+          paragraphs: ["Failure to perform or late performance triggers, in principle, civil liability. A commercial dispute does not turn into a criminal file merely because one party suffered a loss."],
+        },
+        {
+          h3: "What matters in establishing the intention at the moment the deal was concluded",
+          paragraphs: ["What matters is whether the activity was real, whether the necessary resources existed, what information was presented to the partner, how the sums received were used and what steps were taken towards performance."],
+        },
+      ],
+    },
+    {
+      h2: "The most frequent situations in deception files",
+      subsections: [
+        {
+          h3: "Contracts and commercial transactions",
+          paragraphs: ["Undelivered goods, unperformed services or payments redirected to destinations other than those agreed."],
+        },
+        {
+          h3: "Advances and sales",
+          paragraphs: ["Advances collected for goods never delivered, or sales of assets whose legal situation differed from the one presented to the buyer."],
+        },
+        {
+          h3: "Investments and promises of profit",
+          paragraphs: ["Investment schemes with promised returns, where the question is whether the economic activity invoked ever existed."],
+        },
+        {
+          h3: "Use of untrue documents or information",
+          paragraphs: ["Documents, capacities or financial data presented to gain the partner's trust. A forgery charge may also arise in these cases."],
+        },
+      ],
+    },
+    {
+      h2: "The difference between deception and computer fraud",
+      paragraphs: [
+        "In deception, the benefit is obtained by misleading a person. The injured party acts personally, but on a false picture of reality.",
+        [
+          { text: "In " },
+          { text: "computer fraud", to: "/en/services/computer-fraud" },
+          { text: ", the result is obtained by interfering with data or with the functioning of a computer system, without any person being misled. The distinction has been analysed explicitly in the case law of the High Court." },
+        ],
+      ],
+    },
+    {
+      h2: "Recovering the damage, returning the money and settlement between the parties",
+      paragraphs: [
+        "Returning the sums does not automatically remove criminal liability, but it can influence the outcome and the sentence. For some forms of deception, settlement between the parties has effects expressly provided by law.",
+        "I analyse whether settlement is possible in your file, which procedural moment is useful and how it must be documented so that it produces the intended legal effect.",
+      ],
+    },
+    {
+      h2: "Asset freezing and recovery of the damage in a deception file",
+      paragraphs: [
+        "The injured party can join the proceedings as civil party and can request precautionary measures over accounts or assets, to protect the chances of recovery.",
+        "On the defense side, I check the proportionality of the measure and the evidence of the claimed damage, and I file a challenge where the freezing exceeds the justified claims.",
+      ],
+    },
+    {
+      h2: "How I build the defense in a deception file",
+      bullets: [
+        "I reconstruct the timeline of the deal on documents and payments.",
+        "I argue the civil or commercial nature of the dispute where the evidence allows it.",
+        "I contest the existence of intention at the moment the agreement was concluded.",
+        "I analyse the real amount of the damage and the civil claims.",
+        "I prepare you for questioning and assist you at every hearing.",
+      ],
+      cta: "I want a strategy for my file",
+    },
   ],
   faq: [
     {
-      q: "When does a breach of contract become deception?",
-      a: "When it is proven that the party misled the other by presenting untrue facts, in order to obtain an unjust patrimonial benefit, and damage was caused. A mere breach without that element remains a civil dispute.",
+      q: "Can an unpaid debt amount to deception?",
+      a: "Not in itself. An unpaid debt is in principle a civil matter. It becomes criminally relevant only if misleading conduct and the purpose of an unjust patrimonial benefit are proven.",
     },
     {
-      q: "Can I recover my money through the criminal case?",
-      a: "You can join the criminal proceedings as a civil party to claim compensation. In parallel, precautionary measures can be requested to protect available sums or assets.",
+      q: "Is failing to perform a contract an offense?",
+      a: "Not automatically. It must be proven that the intention not to perform existed when the contract was concluded and that the partner was misled by untrue statements or documents.",
     },
     {
-      q: "What should I do if I was the victim of an online fraud?",
-      a: "Gather all available evidence, including conversations, proof of payment and details of the accounts used, then file a criminal complaint. Depending on the method used, the conduct may also be assessed as computer fraud.",
+      q: "What happens if the damage is repaid?",
+      a: "Repayment does not automatically close the file, but it can influence the prosecutor's decision and the sentence. For some forms, settlement between the parties has effects expressly provided by law.",
     },
     {
-      q: "What do I risk if I am accused of deception?",
-      a: "Article 244 of the Criminal Code provides for imprisonment, with higher limits in the aggravated form. Alongside the penalty, an obligation to repair the damage may be examined.",
+      q: "Can the victim withdraw the complaint?",
+      a: "The effects depend on the legal classification retained. In certain cases settlement removes criminal liability, while in others the file continues ex officio.",
     },
     {
-      q: "Is issuing a cheque without funds an offense?",
-      a: "It may be assessed as deception when the legal conditions on misleading conduct and damage are met. The context of issuance and what the parties knew at that time are decisive.",
+      q: "What is the difference between deception and computer fraud?",
+      a: "In deception a person is misled and acts on a false picture of reality. In computer fraud the patrimonial result is obtained by interfering with data or with the functioning of a computer system.",
     },
     {
-      q: "Can I be investigated if my company became insolvent?",
-      a: "Insolvency in itself is not an offense. However, the operations carried out before insolvency may be examined, including from the perspective of fraudulent bankruptcy.",
+      q: "Can accounts and assets be frozen?",
+      a: "Yes, through precautionary measures ordered to secure recovery of the damage. The measure can be challenged, especially where it is disproportionate to the amount claimed.",
+    },
+    {
+      q: "Can a company be criminally liable?",
+      a: "Yes. A legal entity can be criminally liable where the offense was committed in carrying out its activity or in its interest, alongside the liability of the individuals involved.",
     },
   ],
   resources: [
     { text: "Criminal Code - art. 244 on deception.", href: CP, linkLabel: "Legislation" },
-    { text: "Criminal Code - art. 245 on insurance deception.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 245 on insurance fraud.", href: CP, linkLabel: "Legislation" },
   ],
   contactText: CONTACT,
   parent: PARENT_FC_EN,
@@ -1134,102 +1340,199 @@ export const embezzlementEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
-      bullets: [
-        "I check whether you held the capacity required by law, namely a public official managing or administering the assets.",
-        "I analyse the management records, account sheets, settlements and supporting documents.",
-        "I challenge how the damage was established and, where needed, request an accounting expert report.",
-        "I separate shortfalls caused by errors or weak internal procedures from criminal conduct.",
-        "I assist you at hearings and throughout the trial, filing the necessary requests and objections.",
-        "I represent the injured company seeking recovery of the sums and precautionary measures.",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Tell me where the matter stands, because each stage requires different steps."],
+      subsections: [
+        {
+          h3: "An audit or internal control has identified shortfalls in the accounts",
+          paragraphs: ["The audit conclusions are not a criminal judgment. What matters is who actually held the assets and how the movements were documented."],
+        },
+        {
+          h3: "The employer or the company has filed a criminal complaint",
+          paragraphs: ["Once the complaint is filed, the evidence begins to be gathered. Your explanations must be supported by documents from the very first step."],
+        },
+        {
+          h3: "You are a director, manager, custodian or employee under investigation for embezzlement",
+          paragraphs: ["The offense can only be committed by a person who manages or administers the assets. I check whether you actually held that capacity."],
+        },
+        {
+          h3: "A damage figure has been established and measures have been taken over assets",
+          paragraphs: ["The amount of the damage influences the sentencing limits and any precautionary measures. Both can be challenged with supporting evidence."],
+        },
       ],
-      cta: "I am investigated for embezzlement - request an assessment",
+      ctaAfterSubsections: "I am investigated for embezzlement - I want an assessment",
     },
     {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
+      h2: "What I review immediately in an embezzlement file",
       bullets: [
-        "you have been notified that money or goods are missing from the assets you manage;",
-        "the company filed a criminal complaint against you;",
-        "you have been summoned for questioning in an embezzlement file;",
-        "you are a director and discovered unjustified operations;",
-        "you have been indicted and are preparing the defense;",
-        "precautionary measures have been ordered over your assets.",
+        "Whether you had, in law and in fact, duties of managing or administering the assets.",
+        "What sums or goods are said to be missing and on what documents that is based.",
+        "The accounting records, inventories and handover documents.",
+        "Who had access to the funds, cash desk or warehouse, and under what internal procedures.",
+        "How the damage was calculated and whether an expert report is needed.",
+        "The precautionary measures ordered over your assets.",
       ],
     },
     {
-      h2: "What the law says about embezzlement",
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me what capacity you held and what is being claimed against you."],
+      subsections: [
+        {
+          h3: "The accounting and inventory documents",
+          paragraphs: ["Inventory records, cash registers, stock reports and any document showing the movement of the sums or goods."],
+        },
+        {
+          h3: "The contracts and duties of the person under investigation",
+          paragraphs: ["Employment contract, job description, mandate decisions and internal procedures on handling assets."],
+        },
+        {
+          h3: "The audit or control report",
+          paragraphs: ["The report that identified the shortfall, together with the annexes and the explanations already given."],
+        },
+        {
+          h3: "The damage calculation",
+          paragraphs: ["The document setting out how the claimed amount was calculated and for what period."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What embezzlement is",
       paragraphs: [
-        "Article 295 of the Criminal Code punishes the appropriation, use or trafficking, by a public official, in his own interest or for another, of money, valuables or other assets he manages or administers.",
-        "Several elements must be proven for the offense to exist:",
+        "Embezzlement means appropriating, using or dealing with money, valuables or other assets managed or administered by the perpetrator, in that person's own interest or in the interest of another.",
+        [
+          { text: "It is one of the most frequent accusations in company-related " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: " files, and it is analysed on the accounting documents." },
+        ],
       ],
+    },
+    {
+      h2: "Who can be accused of embezzlement",
+      paragraphs: [
+        "Only a person who manages or administers the assets in question can commit the offense. This capacity results from the employment contract, from a mandate, from a decision of the company's bodies or from the actual duties performed.",
+        "A person who merely has occasional access to funds, without duties of management or administration, may answer for another offense, but not for embezzlement.",
+      ],
+    },
+    {
+      h2: "What conduct can amount to embezzlement",
+      subsections: [
+        {
+          h3: "Appropriating money or goods",
+          paragraphs: ["Taking the assets out of the company's patrimony and treating them as one's own."],
+        },
+        {
+          h3: "Using them in one's own interest or for another",
+          paragraphs: ["Using the sums or goods for purposes other than those of the company, even temporarily."],
+        },
+        {
+          h3: "Dealing with the managed assets or valuables",
+          paragraphs: ["Carrying out operations with the managed assets for personal benefit or for the benefit of another person."],
+        },
+      ],
+    },
+    {
+      h2: "Embezzlement or a mere inventory shortfall?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "A shortfall may result from accounting errors, poor internal procedures, wastage or from the conduct of other persons with access to the assets.",
+        "For the offense to exist, it must be proven that the assets were appropriated, used or dealt with intentionally. Absent that proof, the discussion remains civil and disciplinary.",
+      ],
+    },
+    {
+      h2: "The difference between embezzlement, breach of trust and fraudulent management",
+      paragraphs: [
+        "Embezzlement concerns assets managed or administered by the perpetrator in a company context, based on that specific capacity.",
+        "Breach of trust concerns goods held on the basis of a title, with the obligation to return or use them in a certain way.",
+        "Fraudulent management involves damage caused while managing another person's assets, through acts contrary to that person's interest. The classification changes the sentencing limits and the defense strategy.",
+      ],
+    },
+    {
+      h2: "How the damage is established in an embezzlement case",
+      subsections: [
+        {
+          h3: "The inventory and the accounting documents",
+          paragraphs: ["The starting point is the shortfall recorded in the inventory and in the accounting records, which must be verified document by document."],
+        },
+        {
+          h3: "The accounting expert report",
+          paragraphs: ["In files with numerous operations, the expert report is decisive. I submit expert objectives and objections where the calculation is questionable."],
+        },
+        {
+          h3: "Challenging the damage calculation",
+          paragraphs: ["Amounts already returned, wrongly attributed operations and periods outside your duties can be removed from the amount retained."],
+        },
+      ],
+    },
+    {
+      h2: "What effect recovering or paying the damage has",
+      paragraphs: [
+        "Repaying the damage does not remove the offense, but it is relevant to the prosecutor's decision, to the sentence and to the civil claims.",
+        "I analyse whether payment is useful in your file and at what moment, so that it is not interpreted as an implicit admission of the alleged conduct.",
+      ],
+    },
+    {
+      h2: "Freezing assets in an embezzlement file",
+      paragraphs: [
+        "Precautionary measures can be ordered over personal assets, accounts and real estate, up to the value of the damage retained in the file.",
+        "I check the proportionality of the measure and the evidence supporting the claimed amount, and I file a challenge where the freezing exceeds what is justified.",
+      ],
+    },
+    {
+      h2: "How I build the defense in an embezzlement file",
       bullets: [
-        "the capacity of official with management or administration duties;",
-        "the existence of the assets or sums under that person's management;",
-        "the act of appropriation, use or trafficking;",
-        "intent, not mere negligence in keeping the records.",
+        "I check whether the capacity of manager or administrator was actually held.",
+        "I reconstruct the movement of the sums and goods on documents.",
+        "I identify the other persons with access to the assets and the flaws in internal procedures.",
+        "I challenge the damage calculation through objections and expert evidence.",
+        "I prepare you for questioning and assist you at every hearing.",
       ],
       paragraphsAfterBullets: [
         [
-          { text: "The offense has an aggravated form where particularly serious consequences were caused. In complex files, embezzlement often appears alongside other economic charges, so the defense must be built as a whole. See also " },
-          { text: "defense in economic crime cases", to: "/en/services/financial-crime" },
-          { text: "." },
-        ],
-        [
-          { text: "Where the supporting documents themselves are contested, the file may also include a charge of " },
-          { text: "forged documents", to: "/en/services/forgery-and-use-of-forgery" },
+          { text: "Where the file also involves contested documents, the accusation is analysed together with " },
+          { text: "forgery of private documents", to: "/en/services/forgery-and-use-of-forgery" },
           { text: "." },
         ],
       ],
-    },
-    {
-      h2: "What to send me",
-      cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me what position you held, what sums are retained and at what stage the file is."],
-      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
-      bulletsAfterBullets: [
-        "your job description and employment contract or mandate;",
-        "the inventory report;",
-        "the relevant accounting documents and settlements;",
-        "the criminal complaint or the order received;",
-        "the summons.",
-      ],
-      calloutAfterBullets: "You do not have all the documents?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Call anyway",
-      ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+      cta: "I want a strategy for my file",
     },
   ],
   faq: [
     {
-      q: "Does any shortfall mean embezzlement?",
-      a: "No. A shortfall may result from bookkeeping errors, weak internal procedures or justified losses. Embezzlement requires proof of appropriation, use or trafficking, committed with intent.",
+      q: "Does any inventory shortfall mean embezzlement?",
+      a: "No. A shortfall may result from accounting errors, poor procedures or the conduct of other persons. The offense requires proof that the assets were appropriated, used or dealt with intentionally.",
     },
     {
-      q: "Who can be liable for embezzlement?",
-      a: "The person holding the capacity required by law who actually manages or administers the assets or sums. The analysis starts from the job description, the mandate granted and the duties actually exercised.",
+      q: "Who can commit embezzlement?",
+      a: "Only a person who manages or administers the assets in question, based on an employment contract, a mandate or actual duties performed within the company.",
     },
     {
-      q: "What happens if I return the money?",
-      a: "Returning the damage does not automatically remove criminal liability, but it can be used in the defense and in sentencing. The concrete effect depends on the procedural stage and the circumstances.",
+      q: "Can a company director be accused of embezzlement?",
+      a: "Yes, where the director managed or administered the assets concerned. Liability is assessed on the actual duties and on the documents signed.",
     },
     {
-      q: "Can the company claim damages in the criminal case?",
-      a: "Yes. The injured company can join as a civil party and request precautionary measures to recover the damage.",
+      q: "How is the damage calculated?",
+      a: "It starts from the shortfall recorded in the accounts and inventories and is usually established through an accounting expert report, which can be challenged with documents and objections.",
     },
     {
-      q: "Is an accounting expert report useful?",
-      a: "In many files yes, because the damage retained rests on accounting calculations. An expert report can clarify the sums, the period analysed and the supporting documents.",
+      q: "What happens if the damage is repaid?",
+      a: "Repayment does not remove the offense, but it is relevant to the prosecutor's decision, to the sentence and to the civil claims in the file.",
     },
     {
-      q: "What do I risk in an embezzlement file?",
-      a: "Article 295 of the Criminal Code provides for imprisonment, with higher limits where particularly serious consequences were caused. An obligation to repair the damage may also be examined.",
+      q: "What is the difference between embezzlement and fraudulent management?",
+      a: "Embezzlement concerns assets managed or administered by the perpetrator, while fraudulent management concerns damage caused while managing another person's assets through acts contrary to that person's interest.",
+    },
+    {
+      q: "Can personal assets be frozen?",
+      a: "Yes, through precautionary measures ordered up to the value of the damage retained. The measure can be challenged where it is disproportionate.",
     },
   ],
   resources: [
     { text: "Criminal Code - art. 295 on embezzlement.", href: CP, linkLabel: "Legislation" },
-    { text: "Criminal Procedure Code - art. 249 and following on precautionary measures.", href: CPP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 238 and 242 on breach of trust and fraudulent management.", href: CP, linkLabel: "Legislation" },
   ],
   contactText: CONTACT,
   parent: PARENT_FC_EN,
@@ -1257,78 +1560,50 @@ export const forgeryEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
-      bullets: [
-        "I check which type of forgery is retained and whether the document is an official or a private one.",
-        "I assess whether the document produced legal consequences, an essential condition for several of these offenses.",
-        "I challenge the conclusions of the handwriting expert report and request a new one where needed.",
-        "I examine whether the person using the document knew it was forged.",
-        "I assist you at hearings, file requests and objections and prepare the trial defense.",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Tell me what document is contested and in what context it was used."],
+      subsections: [
+        {
+          h3: "You are accused of forging a document",
+          paragraphs: ["I check who drafted the document, what was altered and whether the change had any legal consequence."],
+        },
+        {
+          h3: "You are accused of using a forged document",
+          paragraphs: ["Use of forgery requires proof that you knew the document was forged. That is the core of the defense in most of these files."],
+        },
+        {
+          h3: "The signature or the content of a document is contested",
+          paragraphs: ["A handwriting expert report or a document examination can be decisive. The original documents and comparison samples matter."],
+        },
+        {
+          h3: "The documents are used as evidence in another criminal file",
+          paragraphs: ["Forgery charges usually accompany an economic accusation. The two must be defended together, because they rest on the same documents."],
+        },
       ],
-      cta: "I want an assessment of my case",
+      ctaAfterSubsections: "I have a forgery file - I want an assessment",
     },
     {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
+      h2: "What I review in a forgery or use of forgery file",
       bullets: [
-        "you are accused of signing a document in another person's name;",
-        "a contract, invoice or certificate is said to be forged;",
-        "you filed with an institution a document said not to be genuine;",
-        "you are an official and an official act is said to have been drafted untruthfully;",
-        "the forgery charge accompanies a tax evasion, deception or fraud file;",
-        "you have been summoned for questioning or received the indictment.",
-      ],
-    },
-    {
-      h2: "What the law says about forgery",
-      paragraphs: ["The Criminal Code regulates several distinct offenses:"],
-      bullets: [
-        {
-          bold: "Material forgery of official documents (art. 320).",
-          rest: "Forging an official document by counterfeiting the writing or signature, or by altering it in any way.",
-        },
-        {
-          bold: "Intellectual forgery (art. 321).",
-          rest: "Forging an official document when drafting it, by certifying facts or circumstances that do not correspond to the truth or by omitting data.",
-        },
-        {
-          bold: "Forgery of private documents (art. 322).",
-          rest: "Forging a private document, followed by using it or handing it to another person for use, with a view to producing legal consequences.",
-        },
-        {
-          bold: "Use of forgery (art. 323).",
-          rest: "Using an official or private document, knowing it is forged, with a view to producing legal consequences.",
-        },
-      ],
-      paragraphsAfterBullets: [
-        [
-          { text: "Forgery frequently accompanies other economic charges, so the strategy must cover the whole file, not just the document. See also " },
-          { text: "tax evasion cases", to: "/en/services/tax-evasion" },
-          { text: "." },
-        ],
-        [
-          { text: "For an overview of how these charges are handled together, see my work on " },
-          { text: "economic and financial crime files", to: "/en/services/financial-crime" },
-          { text: "." },
-        ],
-        [
-          { text: "Falsified accounting records of an insolvent company are examined separately, as " },
-          { text: "bankruptcy in fraud of creditors", to: "/en/services/fraudulent-bankruptcy" },
-          { text: "." },
-        ],
+        "What document is contested and what type of forgery is alleged.",
+        "Who drafted the document and how it reached you.",
+        "Whether the document produced legal consequences.",
+        "What you knew about the origin of the document at the moment you used it.",
+        "The available expert evidence and comparison samples.",
+        "The link with the other charges in the file.",
       ],
     },
     {
-      h2: "What to send me",
+      h2: "What documents you should send me",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me which document is involved, who drafted it and where it was used."],
+      paragraphs: ["Send me the contested document, if you have it, and the order or summons you received."],
       paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
       bulletsAfterBullets: [
-        "the contested document;",
-        "the order or the criminal complaint;",
-        "the expert report, if one was ordered;",
-        "the summons;",
-        "the relevant correspondence.",
+        "the contested document, in original or copy;",
+        "the correspondence showing how you obtained it;",
+        "the criminal complaint or the order in the file;",
+        "the expert report, if one has already been produced;",
+        "the summons.",
       ],
       calloutAfterBullets: "You do not have all the documents?",
       calloutAfterBulletsClassName: "font-semibold bg-white",
@@ -1336,31 +1611,150 @@ export const forgeryEn: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
+    {
+      h2: "The difference between forgery and use of forgery",
+      paragraphs: [
+        "Forgery is the act of creating or altering a document so that it no longer reflects reality.",
+        "Use of forgery is the act of using such a document in order to produce legal consequences, and it can be committed by a person who did not take part in the forgery itself.",
+      ],
+    },
+    {
+      h2: "The types of forgery that can appear in a criminal file",
+      subsections: [
+        {
+          h3: "Material forgery of official documents",
+          paragraphs: ["Falsifying an official document by counterfeiting or altering it, so that it appears genuine."],
+        },
+        {
+          h3: "Intellectual forgery",
+          paragraphs: ["Recording untrue facts in an official document, committed while drafting it by the person under a duty to certify the truth."],
+        },
+        {
+          h3: "Forgery of private documents",
+          paragraphs: ["Falsifying a private document, followed by its use or by handing it over to another person for use."],
+        },
+        {
+          h3: "Use of forgery",
+          paragraphs: ["Using a forged document, whether official or private, in order to produce legal consequences."],
+        },
+      ],
+      calloutAfterSubsections: "These forms are regulated separately in the area of articles 320 to 323 of the Criminal Code.",
+    },
+    {
+      h2: "Can you be accused of use of forgery if you did not forge the document?",
+      paragraphs: [
+        "Yes. Use of forgery is a separate offense and concerns the person who uses the document, regardless of who produced it.",
+        "That is why the defense focuses on how you obtained the document, what checks you could reasonably make and what you actually knew about its origin.",
+      ],
+    },
+    {
+      h2: "Do you have to know the document is forged in order to answer for use of forgery?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Yes. The offense requires intention, meaning knowledge that the document is forged at the moment it is used.",
+        "Using a document received from a third party, in good faith and without any element indicating a problem, does not meet this requirement. This must be proven by evidence, not merely asserted.",
+      ],
+    },
+    {
+      h2: "How it is proven that a document is forged",
+      subsections: [
+        {
+          h3: "The handwriting expert report",
+          paragraphs: ["It analyses the signature and the handwriting, by comparison with samples taken in the file."],
+        },
+        {
+          h3: "Document examination",
+          paragraphs: ["It examines the paper, the ink, the stamps and the traces of alteration, in order to establish whether the document was modified."],
+        },
+        {
+          h3: "Original documents and comparison samples",
+          paragraphs: ["Without the original, the conclusions of an expert report are limited. I request that the originals be brought into the file where they exist."],
+        },
+        {
+          h3: "Other evidence on the origin of the document",
+          paragraphs: ["Correspondence, witnesses and electronic records can show who produced the document and how it was circulated."],
+        },
+      ],
+    },
+    {
+      h2: "What happens where the same person forges and uses the document",
+      paragraphs: [
+        "Where the person who forged the document also uses it, the situation is analysed under the rules on the relationship between the two offenses and on the concurrence of offenses.",
+        "The legal classification retained influences the sentencing limits, so it must be discussed from the investigation stage, not only at trial.",
+      ],
+    },
+    {
+      h2: "The link between forgery and other offenses",
+      subsections: [
+        {
+          h3: "Forgery and deception",
+          paragraphs: [
+            [
+              { text: "Where a document is used to mislead a person, the accusation is analysed together with " },
+              { text: "deception in business", to: "/en/services/fraud-and-deception" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Forgery and tax evasion",
+          paragraphs: ["Invoices and accounting records considered untrue often generate both a tax accusation and a forgery charge."],
+        },
+        {
+          h3: "Forgery and EU funds fraud",
+          paragraphs: ["Documents submitted to the financing authority are examined both for the fraud charge and for the forgery charge."],
+        },
+      ],
+      calloutAfterSubsections: "The relationship between forged documents and other economic offenses appears in the case law of the High Court as well.",
+    },
+    {
+      h2: "How I build the defense in a forgery or use of forgery file",
+      bullets: [
+        "I establish who drafted the document and how it reached you.",
+        "I contest the alleged knowledge of the forgery where you acted in good faith.",
+        "I request the original documents and challenge incomplete expert reports.",
+        "I analyse whether the document produced any legal consequence.",
+        "I prepare you for questioning and assist you at every hearing.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Forgery charges rarely stand alone. They are usually part of a broader " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: " file and must be defended as a whole." },
+        ],
+      ],
+      cta: "I want a strategy for my file",
+    },
   ],
   faq: [
     {
       q: "What is the difference between forgery and use of forgery?",
-      a: "Forgery means falsifying the document, while use of forgery means using a forged document, knowing its character, with a view to producing legal consequences. The same person may be liable for both or only one of them.",
+      a: "Forgery is the act of producing or altering the document. Use of forgery is the act of using such a document to produce legal consequences, and it can be committed by a person who did not forge it.",
     },
     {
-      q: "Can I be investigated if I did not know the document was forged?",
-      a: "Use of forgery requires knowledge that the document is forged. If you did not know, this must be established through the evidence in the file.",
+      q: "Can I be convicted if I did not know the document was forged?",
+      a: "No. Use of forgery requires intention, meaning knowledge that the document was forged at the moment of use. Good faith must be supported by evidence in the file.",
     },
     {
-      q: "What does producing legal consequences mean?",
-      a: "It means the document is capable of creating, modifying or extinguishing rights or obligations. It is assessed separately for private documents and for use of forgery.",
+      q: "Is a handwriting expert report necessary?",
+      a: "It is often decisive where the signature is contested. Its conclusions depend on the availability of the original document and of proper comparison samples.",
     },
     {
-      q: "Can the handwriting expert report be challenged?",
-      a: "Yes. The conclusions can be contested, objections can be filed and a new expert report can be requested, under the conditions set by the Criminal Procedure Code.",
+      q: "What happens if the signature is not mine?",
+      a: "The expert report can establish that. In that case the discussion moves to who produced the document and whether you used it knowing the situation.",
     },
     {
-      q: "What do I risk in a forgery file?",
-      a: "Penalties differ depending on the type of forgery retained and are set out in art. 320-323 of the Criminal Code. The concrete classification directly affects the penalty limits.",
+      q: "Can an electronic document be forged?",
+      a: "Yes. Altering electronic data can fall under computer forgery, which is regulated separately from forgery of paper documents.",
+    },
+    {
+      q: "Can forgery and deception coexist in the same file?",
+      a: "Yes. Where a forged document was used to mislead a person, both charges can be retained, and they must be defended together.",
     },
   ],
   resources: [
-    { text: "Criminal Code - art. 320-323 on forgery and use of forgery.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 320 to 323 on forgery and use of forgery.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code - provisions on expert evidence.", href: CPP, linkLabel: "Legislation" },
   ],
   contactText: CONTACT,
   parent: PARENT_FC_EN,
@@ -1388,95 +1782,184 @@ export const fraudulentBankruptcyEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
-      bullets: [
-        "I review the complaint and the report of the judicial administrator or liquidator.",
-        "I check whether the contested operations had a genuine economic justification.",
-        "I separate insolvency caused by economic difficulties from conduct committed with fraudulent intent.",
-        "I analyse asset transfers, preferential payments and how the accounting records were kept.",
-        "I assist you at hearings and before the court, with defenses built on the company's documents.",
-        "I align the criminal defense with the ongoing insolvency proceedings.",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Tell me at what stage the insolvency file is and what is being claimed against you."],
+      subsections: [
+        {
+          h3: "The company is or has been in insolvency and a criminal complaint has been filed",
+          paragraphs: ["Insolvency is not in itself an offense. The complaint must indicate concrete conduct, and that conduct is verified against documents."],
+        },
+        {
+          h3: "You are a director or a member of the company's management",
+          paragraphs: ["Liability is personal and is assessed on the decisions taken, the documents signed and the moment they were signed."],
+        },
+        {
+          h3: "Transfers or disposals of assets are contested",
+          paragraphs: ["I analyse the economic justification of each operation, its price and its timing relative to the opening of the procedure."],
+        },
+        {
+          h3: "Missing accounting records or untrue debts are alleged",
+          paragraphs: ["These allegations require verification of who kept the accounts, how the records were handed over and what documents actually exist."],
+        },
       ],
-      cta: "I received a bankruptcy complaint - request an assessment",
+      ctaAfterSubsections: "I have a bankruptcy file - I want an assessment",
     },
     {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
+      h2: "What I review in a fraudulent bankruptcy file",
       bullets: [
-        "the judicial administrator or liquidator filed a criminal complaint;",
-        "a creditor accuses you of hiding or transferring assets;",
-        "you are investigated for falsifying or destroying accounting records;",
-        "preferential payments to certain creditors are alleged;",
-        "you have been summoned in a file linked to the company's insolvency;",
-        "the bankruptcy charge comes with other economic offenses.",
-      ],
-    },
-    {
-      h2: "What the law says about fraudulent bankruptcy",
-      paragraphs: ["Article 241 of the Criminal Code punishes a person who, in fraud of creditors:"],
-      bullets: [
-        "falsifies, removes or destroys the debtor's records, or hides part of the debtor's assets;",
-        "presents non-existent debts or records in the debtor's registers, in another document or in the financial statements sums that are not owed;",
-        "transfers part of the assets in case of the debtor's insolvency.",
-      ],
-      paragraphsAfterBullets: [
-        "The essential condition is fraud of creditors. A company may become insolvent for objective economic reasons, without that amounting to an offense.",
-        [
-          { text: "The Criminal Code also regulates simple bankruptcy in art. 240. In larger files, these charges may appear together with " },
-          { text: "asset concealment operations", to: "/en/services/money-laundering-and-asset-concealment" },
-          { text: "." },
-        ],
-        [
-          { text: "The defense follows the same logic as in any " },
-          { text: "complex financial crime case", to: "/en/services/financial-crime" },
-          { text: ": the economic explanation must match the documents." },
-        ],
-        [
-          { text: "Sums taken from the company by a person with management duties are examined instead as " },
-          { text: "misappropriation of company funds", to: "/en/services/embezzlement" },
-          { text: "." },
-        ],
+        "What concrete conduct is alleged and on what documents it is based.",
+        "The chronology of the insolvency and the moment of the contested operations.",
+        "The transfers of assets, their price and their economic justification.",
+        "The state of the accounting records and how they were handed over.",
+        "The reports of the insolvency practitioner and the creditors' claims.",
+        "The damage claimed and the precautionary measures ordered.",
       ],
     },
     {
-      h2: "What to send me",
+      h2: "What documents you should send me",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me at what stage the insolvency procedure is and which operations are contested."],
-      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
-      bulletsAfterBullets: [
-        "the report of the judicial administrator or liquidator;",
-        "the criminal complaint or the order received;",
-        "the relevant financial statements and trial balances;",
-        "the contracts concerning the transferred assets;",
-        "the summons.",
+      paragraphs: ["Tell me what company is involved and what stage the insolvency procedure has reached."],
+      subsections: [
+        {
+          h3: "The insolvency file",
+          paragraphs: ["The decision opening the procedure, the reports filed and the creditors' table."],
+        },
+        {
+          h3: "The accounting records",
+          paragraphs: ["Balance sheets, trial balances, journals and any document on the company's financial position."],
+        },
+        {
+          h3: "The contracts and asset transfers",
+          paragraphs: ["Sale contracts, valuations, proof of payment and documents on the destination of the sums."],
+        },
+        {
+          h3: "The reports of the insolvency practitioner or liquidator",
+          paragraphs: ["The reports on the causes of insolvency and on the operations considered questionable."],
+        },
       ],
-      calloutAfterBullets: "You do not have all the documents?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Call anyway",
+      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What fraudulent bankruptcy is",
+      paragraphs: [
+        "Fraudulent bankruptcy means conduct carried out in fraud of creditors, in the context of insolvency, such as concealing assets, falsifying or destroying records, presenting untrue debts or disposing of assets to their detriment.",
+        [
+          { text: "It is one of the most technical accusations in " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: ", because it requires a joint analysis of the insolvency file and of the company's accounts." },
+        ],
+      ],
+    },
+    {
+      h2: "What conduct can amount to fraudulent bankruptcy",
+      subsections: [
+        {
+          h3: "Concealing assets of the debtor",
+          paragraphs: ["Removing assets from the reach of creditors, or hiding them from the procedure."],
+        },
+        {
+          h3: "Falsifying, removing or destroying the records",
+          paragraphs: ["Conduct affecting the accounting records of the debtor, so that the real financial position can no longer be established."],
+        },
+        {
+          h3: "Presenting untrue debts",
+          paragraphs: ["Introducing debts that do not exist, in order to alter the distribution among creditors."],
+        },
+        {
+          h3: "Disposing of assets in fraud of creditors",
+          paragraphs: ["Transfers made at undervalue or to related parties, in the period when insolvency was imminent."],
+        },
+      ],
+    },
+    {
+      h2: "The difference between fraudulent bankruptcy and simple bankruptcy",
+      paragraphs: [
+        "Simple bankruptcy concerns failure to comply with the obligation to request the opening of the insolvency procedure within the legal time limit.",
+        "Fraudulent bankruptcy requires conduct carried out in fraud of creditors. The two offenses have different conditions and different sentencing limits.",
+      ],
+    },
+    {
+      h2: "Does a company's insolvency automatically mean criminal liability?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "No. Insolvency can result from market conditions, from unpaid receivables, from loss of financing or from decisions that proved commercially wrong.",
+        "Criminal liability requires proof of specific conduct carried out in fraud of creditors. A commercial failure, in itself, is not an offense.",
+      ],
+    },
+    {
+      h2: "Who can file a complaint for fraudulent bankruptcy",
+      paragraphs: [
+        "The complaint can come from creditors, from the insolvency practitioner or liquidator, or the file can be opened following notification by other authorities.",
+        "The insolvency practitioner's report on the causes of insolvency is often the document that triggers the criminal file, which is why it must be examined carefully.",
+      ],
+    },
+    {
+      h2: "How transfers of goods and assets before or during insolvency are analysed",
+      paragraphs: [
+        "The relevant elements are the timing of the operation, the price, the identity of the buyer, the destination of the sums received and the economic justification of the transaction.",
+        "A transfer made at market value, with payment received and used in the company's activity, has a different meaning from a transfer at undervalue to a related party shortly before the procedure opened.",
+      ],
+    },
+    {
+      h2: "The role of the accounting records and of expert evidence in a fraudulent bankruptcy file",
+      paragraphs: [
+        "The accounts are the main source of evidence. The absence of records, or their late handover, is often interpreted unfavourably, so the circumstances must be documented.",
+        "A judicial accounting expert report can establish the real financial position, the causes of insolvency and whether the contested operations affected the creditors. I submit expert objectives and objections to the report.",
+      ],
+    },
+    {
+      h2: "Fraudulent bankruptcy and damage to creditors",
+      paragraphs: [
+        "The damage is assessed by reference to the creditors' unsatisfied claims and to the effect of the contested operations on the debtor's estate.",
+        [
+          { text: "Where the sums or assets were transferred through several companies or accounts, the file may also involve " },
+          { text: "money laundering", to: "/en/services/money-laundering-and-asset-concealment" },
+          { text: " charges, and the defense must be built jointly." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defense in a fraudulent bankruptcy file",
+      bullets: [
+        "I reconstruct the chronology of the insolvency and of the contested operations.",
+        "I prove the economic justification of the transfers and the destination of the sums.",
+        "I document the state of the accounts and how the records were handed over.",
+        "I challenge the claimed damage through expert evidence and objections.",
+        "I prepare you for questioning and assist you at every hearing.",
+      ],
+      cta: "I want a strategy for my file",
     },
   ],
   faq: [
     {
-      q: "Does insolvency automatically mean fraudulent bankruptcy?",
-      a: "No. Insolvency may have objective economic causes. Fraudulent bankruptcy requires conduct committed in fraud of creditors, from those expressly listed in art. 241 of the Criminal Code.",
+      q: "Does the company's bankruptcy mean fraudulent bankruptcy?",
+      a: "No. Insolvency can result from objective causes or from commercial decisions that proved wrong. The offense requires conduct carried out in fraud of creditors.",
     },
     {
-      q: "Who can notify the criminal authorities?",
-      a: "The judicial administrator, the liquidator, creditors or other interested persons. The investigating authorities may also act on their own initiative.",
+      q: "Is the director automatically liable?",
+      a: "No. Liability is personal and is assessed on the decisions taken, on the documents signed and on the moment when the contested operations were carried out.",
     },
     {
-      q: "What are preferential payments?",
-      a: "Payments made to certain creditors to the detriment of others. They are examined in the insolvency procedure and may also be relevant in the criminal file, depending on the circumstances.",
+      q: "Is selling the company's assets before insolvency an offense?",
+      a: "Not in itself. What matters is the price, the buyer, the destination of the sums and the economic justification of the operation.",
     },
     {
-      q: "Is the director liable with personal assets?",
-      a: "In the insolvency procedure, patrimonial liability may be examined, and in the criminal file an obligation to repair the damage may be assessed. These are distinct procedures with their own conditions.",
+      q: "Who can file the complaint?",
+      a: "Creditors, the insolvency practitioner or liquidator, or the authorities that notify the prosecutor on the basis of the insolvency file.",
     },
     {
-      q: "How do the criminal file and the insolvency relate?",
-      a: "Documents from the insolvency procedure frequently end up in the criminal file. The defense must therefore be consistent across both procedures, with the same economic explanations.",
+      q: "What is the difference between simple and fraudulent bankruptcy?",
+      a: "Simple bankruptcy concerns failing to request the opening of the procedure in time. Fraudulent bankruptcy requires conduct carried out in fraud of creditors.",
+    },
+    {
+      q: "What is the role of the insolvency practitioner?",
+      a: "The practitioner administers the procedure and reports on the causes of insolvency. Those reports often become the basis of the criminal file.",
+    },
+    {
+      q: "Can assets be frozen?",
+      a: "Yes, through precautionary measures ordered to secure recovery of the damage claimed by creditors. The measure can be challenged where it is disproportionate.",
     },
   ],
   resources: [
@@ -1509,90 +1992,219 @@ export const computerFraudEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Tell me what operations are investigated and what has already happened in the file."],
+      subsections: [
+        {
+          h3: "You are investigated for transactions or operations carried out online",
+          paragraphs: ["I check what conduct is alleged and whether the evidence actually links you to the operations in question."],
+        },
+        {
+          h3: "Accounts, devices or computer data are being investigated",
+          paragraphs: ["Technical data is interpretable. An account or an IP address does not automatically identify the person who used it."],
+        },
+        {
+          h3: "The police or DIICOT have seized phones, laptops or other devices",
+          paragraphs: [
+            [
+              { text: "The way the devices were seized and searched matters. The applicable rules are set out on the page dedicated to the " },
+              { text: "computer search", to: "/en/services/computer-search" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "The file involves bank transfers, online accounts or cryptocurrencies",
+          paragraphs: ["Financial flows must be reconstructed document by document, because the amount of the damage and the precautionary measures depend on them."],
+        },
+      ],
+      ctaAfterSubsections: "I have a computer fraud file - I want an assessment",
+    },
+    {
+      h2: "What I review immediately in a computer fraud file",
       bullets: [
-        "I review the accusation and check whether the conduct qualifies as computer fraud or as another cybercrime offense.",
-        "I verify how the digital evidence was obtained and whether the legal procedures were observed.",
-        "I analyse the technical report and, where needed, support an independent expert examination.",
-        "I challenge the link between an IP address, an account or a device and the accused person where that link is not proven.",
-        "I file the criminal complaint and represent the injured party seeking recovery of the sums.",
-        "I assist you at hearings and at every stage of the proceedings.",
-      ],
-      cta: "I want an assessment of my situation",
-    },
-    {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
-      bullets: [
-        "you are accused of carrying out fraudulent operations in computer systems;",
-        "your accounts were emptied through an unauthorised online operation;",
-        "you were the victim of card or electronic payment fraud;",
-        "you were involved, without knowing, in suspicious money transfers;",
-        "your devices were seized in an investigation into online fraud;",
-        "you have been summoned in a cybercrime file.",
+        "What conduct is alleged and whether it matches the elements of the offense.",
+        "How the digital evidence was obtained and whether the procedure was lawful.",
+        "The link between the accounts, devices and the person investigated.",
+        "The bank transactions and the destination of the sums.",
+        "The claimed damage and the civil claims in the file.",
+        "The devices seized and the possibility of obtaining their return.",
       ],
     },
     {
-      h2: "What the law says about computer fraud",
-      paragraphs: [
-        "Article 249 of the Criminal Code punishes causing patrimonial damage to a person by introducing, modifying or deleting computer data, by restricting access to such data or by hindering in any way the functioning of a computer system, in order to obtain a material benefit for oneself or for another.",
-        "In practice, the charge often comes together with others, such as illegal access to a computer system, illegal operations with devices or computer programs, or fraudulent financial operations.",
-        [
-          { text: "Evidence is frequently obtained by seizing devices and analysing the data. See what a " },
-          { text: "computer search of your phone or laptop", to: "/en/services/computer-search" },
-          { text: " involves." },
-        ],
-        [
-          { text: "When the money flows are also examined, the file moves into the area of " },
-          { text: "financial and economic offenses", to: "/en/services/financial-crime" },
-          { text: "." },
-        ],
-      ],
-    },
-    {
-      h2: "What to send me",
+      h2: "What you should send me",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me which operations are targeted, what amounts are involved and what you have been told so far."],
-      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
-      bulletsAfterBullets: [
-        "the order or the criminal complaint;",
-        "bank statements and proof of the transactions;",
-        "the report on the seizure of the devices;",
-        "correspondence with the bank or the platform involved;",
-        "the summons.",
+      paragraphs: ["Tell me what happened and what documents you have received so far."],
+      subsections: [
+        {
+          h3: "Search and seizure records",
+          paragraphs: ["The minutes drawn up when the devices were seized and any authorisation communicated to you."],
+        },
+        {
+          h3: "Bank statements and transactions",
+          paragraphs: ["Statements showing the contested transfers and the accounts involved."],
+        },
+        {
+          h3: "Relevant messages, emails and accounts",
+          paragraphs: ["The correspondence connected to the operations, together with details of the accounts referred to in the file."],
+        },
+        {
+          h3: "Documents on the seized devices",
+          paragraphs: ["The list of items seized and any receipt confirming what was taken."],
+        },
       ],
-      calloutAfterBullets: "You do not have all the documents?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Call anyway",
+      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What computer fraud is",
+      paragraphs: [
+        "Computer fraud means causing a patrimonial loss by introducing, altering or deleting computer data, by restricting access to such data or by hindering the functioning of a computer system, in order to obtain a benefit.",
+        "The essential element is the intervention on data or on the system, not the misleading of a person.",
+      ],
+    },
+    {
+      h2: "What conduct can amount to computer fraud",
+      subsections: [
+        {
+          h3: "Introducing or transmitting computer data",
+          paragraphs: ["Inserting data into a system in order to produce an unlawful patrimonial result."],
+        },
+        {
+          h3: "Altering or deleting data",
+          paragraphs: ["Changing or removing existing data, so that the system produces a different outcome."],
+        },
+        {
+          h3: "Restricting access to data",
+          paragraphs: ["Blocking legitimate access to data, with patrimonial consequences for the injured party."],
+        },
+        {
+          h3: "Hindering the functioning of a computer system",
+          paragraphs: ["Any intervention that prevents the system from operating normally, with the purpose of obtaining a benefit."],
+        },
+      ],
+    },
+    {
+      h2: "The difference between computer fraud and deception",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "In " },
+          { text: "deception", to: "/en/services/fraud-and-deception" },
+          { text: ", a person is misled and acts on a false picture of reality." },
+        ],
+        "In computer fraud, no person is misled. The result is obtained by intervening on the data or on the functioning of the system. The distinction determines the legal classification and the sentencing limits.",
+      ],
+    },
+    {
+      h2: "Computer fraud and other computer offenses",
+      subsections: [
+        {
+          h3: "Unlawful access to a computer system",
+          paragraphs: ["Accessing a system without authorisation is a separate offense and can be retained together with computer fraud."],
+        },
+        {
+          h3: "Computer forgery",
+          paragraphs: ["Altering data in order to produce legal consequences is criminalised separately from fraud."],
+        },
+        {
+          h3: "Fraudulent financial operations",
+          paragraphs: ["Operations carried out with payment instruments or with data obtained unlawfully are regulated distinctly and frequently appear in these files."],
+        },
+      ],
+    },
+    {
+      h2: "How digital evidence is analysed in a computer fraud file",
+      subsections: [
+        {
+          h3: "Phones and computers",
+          paragraphs: ["The data extracted from devices must be obtained lawfully and correlated with other evidence in the file."],
+        },
+        {
+          h3: "IP addresses, accounts and logs",
+          paragraphs: ["Technical data indicates a connection or an account, not necessarily the person who used it at that moment."],
+        },
+        {
+          h3: "Bank transactions",
+          paragraphs: ["Financial flows are reconstructed on statements and can show who actually benefited from the sums."],
+        },
+        {
+          h3: "Data from online platforms and services",
+          paragraphs: ["Information provided by service providers must be verified against the period and the accounts relevant to the file."],
+        },
+      ],
+    },
+    {
+      h2: "Computer search and seizure of devices",
+      paragraphs: [
+        "A computer search requires judicial authorisation and must be carried out within the limits set out in that authorisation.",
+        "I check the lawfulness of the procedure, what was actually seized and how the data was preserved, and I request the return of devices where they are no longer needed for the file.",
+      ],
+    },
+    {
+      h2: "Computer fraud and cryptocurrency transactions",
+      paragraphs: [
+        [
+          { text: "Where the file involves digital assets, the flows can be traced on the blockchain and are analysed as described for " },
+          { text: "crypto asset investigations", to: "/en/services/crypto-asset-investigations" },
+          { text: "." },
+        ],
+        "Holding an address or a wallet does not in itself prove participation in the alleged conduct. The link with the person investigated must be established by evidence.",
+      ],
+    },
+    {
+      h2: "Freezing, confiscation and recovery of the damage",
+      paragraphs: [
+        "Accounts, sums and digital assets can be frozen to secure recovery of the damage and possible confiscation.",
+        "I check the proportionality of the measure against the damage retained in the file and file a challenge where the freezing affects assets unconnected to the alleged conduct.",
+      ],
+    },
+    {
+      h2: "How I build the defense in a computer fraud file",
+      bullets: [
+        "I contest the link between the accounts or devices and your person.",
+        "I check the lawfulness of the way the digital evidence was obtained.",
+        "I analyse the real amount of the damage and the destination of the sums.",
+        "I request the return of the seized devices where they are no longer needed.",
+        "I prepare you for questioning and assist you at every hearing.",
+      ],
+      cta: "I want a strategy for my file",
     },
   ],
   faq: [
     {
-      q: "What is the difference between deception and computer fraud?",
-      a: "Deception requires misleading a person, while computer fraud requires intervening on data or on the functioning of a computer system, causing patrimonial damage and pursuing a material benefit.",
+      q: "What is the difference between computer fraud and deception?",
+      a: "In deception a person is misled. In computer fraud the patrimonial result is obtained by intervening on computer data or on the functioning of a system.",
     },
     {
-      q: "Is an IP address enough to accuse me?",
-      a: "An IP address identifies a connection, not automatically a person. The link between connection, device and user must be proven through corroborating evidence.",
+      q: "Is using the internet enough for computer fraud to exist?",
+      a: "No. The offense requires an intervention on data or on the system. Simply using the internet in a transaction does not amount to computer fraud.",
     },
     {
-      q: "Can I recover money lost in an online fraud?",
-      a: "You can join the criminal proceedings as a civil party, and in parallel steps towards the bank or the payment service provider can be assessed. Acting quickly is essential.",
+      q: "Can the police seize my phone or laptop?",
+      a: "Yes, under the conditions provided by law, based on judicial authorisation. The lawfulness of the procedure and the scope of what was seized can be verified and challenged.",
+    },
+    {
+      q: "What is a computer search?",
+      a: "It is the procedure by which stored computer data is searched and examined, on the basis of a judicial authorisation and within the limits it sets.",
+    },
+    {
+      q: "How is it established who used an account or a device?",
+      a: "Through technical data correlated with other evidence. An IP address or an account is not, by itself, proof of the identity of the person who used it.",
+    },
+    {
+      q: "Can cryptocurrency transactions be traced?",
+      a: "Yes, transfers can be followed on the blockchain, but linking an address to a specific person must be proven by additional evidence.",
     },
     {
       q: "What happens to the seized devices?",
-      a: "Devices may be kept for as long as they are needed as evidence. Where there is a legal basis, their return or a copy of the data can be requested.",
-    },
-    {
-      q: "Can I be investigated if I received money without knowing its origin?",
-      a: "Yes, such a situation can be examined. What matters is what you knew when the sums were received and what you did with them afterwards, points that must be clarified from the first statements.",
+      a: "They remain in the file while they are needed as evidence. Their return can be requested once the technical examination has been completed.",
     },
   ],
   resources: [
     { text: "Criminal Code - art. 249 on computer fraud.", href: CP, linkLabel: "Legislation" },
-    { text: "Criminal Procedure Code - art. 168 on computer searches.", href: CPP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 250 and 325 on fraudulent financial operations and computer forgery.", href: CP, linkLabel: "Legislation" },
   ],
   contactText: CONTACT,
   parent: PARENT_FC_EN,
@@ -1620,92 +2232,222 @@ export const euFundsFraudEn: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "What I do for you",
-      bullets: [
-        "I review the project documents, the funding application and the control reports.",
-        "I check whether the situation is an administrative irregularity or conduct covered by criminal law.",
-        "I analyse how the damage and the financial corrections were established.",
-        "I assist you before the investigating authorities, including in files handled by the anti-corruption directorate.",
-        "I build the defense on documents: procurement, deliveries, progress reports, proof of payment.",
-        "I challenge precautionary measures ordered over accounts or assets.",
+      h2: "What situation are you in right now?",
+      paragraphs: ["Tell me what stage your project has reached."],
+      subsections: [
+        {
+          h3: "You have received a request or a control concerning an EU-funded project",
+          paragraphs: ["The answers given to the managing authority become part of the file. I prepare them with you, on the project documents."],
+        },
+        {
+          h3: "The anti-fraud department is reviewing the project",
+          paragraphs: ["An anti-fraud control can be followed by a criminal notification. I analyse the scope of the control and prepare a position on each point raised."],
+        },
+        {
+          h3: "You have been summoned by DNA, the prosecutor or another investigating body",
+          paragraphs: [
+            [
+              { text: "Before being questioned you need to know what offense is investigated and on what documents it rests. For files handled by the National Anticorruption Directorate the rules are set out on the " },
+              { text: "DNA lawyer", to: "/en/services/dna-lawyer" },
+              { text: " page." },
+            ],
+          ],
+        },
+        {
+          h3: "The documents used to obtain the financing are contested",
+          paragraphs: ["I check each contested document, its origin and whether the information it contained was relevant to the award of the financing."],
+        },
+        {
+          h3: "The authority is requesting recovery of the funds",
+          paragraphs: ["Recovery of the sums is separate from criminal liability. The two procedures can run in parallel and must be handled in a coordinated way."],
+        },
       ],
-      cta: "My project is under control - I want to discuss",
+      ctaAfterSubsections: "I have an EU funds file - I want an assessment",
     },
     {
-      h2: "When you can contact me",
-      paragraphs: ["Contact me if:"],
+      h2: "What I review immediately in an EU funds file",
       bullets: [
-        "the anti-fraud department or the managing authority started a review of the project;",
-        "you received a note establishing irregularities;",
-        "a criminal complaint was filed over documents or statements submitted in the project;",
-        "the funds are said to have been used for other purposes than those provided;",
-        "the procurement procedure in the project is contested;",
-        "you have been summoned in a file concerning EU funds.",
-      ],
-    },
-    {
-      h2: "What the law says about EU funds fraud",
-      paragraphs: [
-        "Law 78/2000 regulates, in art. 18^1 to art. 18^5, offenses against the financial interests of the European Union. These include:",
-      ],
-      bullets: [
-        "using or presenting false, inaccurate or incomplete documents or statements, resulting in the wrongful obtaining of funds;",
-        "omitting to provide the required data, with the same result;",
-        "changing the destination of the funds obtained, without observing the legal provisions;",
-        "changing the destination of a lawfully obtained benefit, where the conduct produces the consequences provided by law.",
-      ],
-      paragraphsAfterBullets: [
-        [
-          { text: "These files are frequently handled by the National Anticorruption Directorate, so the defense must be prepared from the control stage. See what " },
-          { text: "assistance in a DNA investigation", to: "/en/services/dna-lawyer" },
-          { text: " involves." },
-        ],
-        [
-          { text: "Project files are frequently paired with other charges, so the defense is built as in any " },
-          { text: "economic crime investigation", to: "/en/services/financial-crime" },
-          { text: "." },
-        ],
+        "What conduct is concretely alleged and what document supports the accusation.",
+        "The conditions in the applicable guidelines and in the financing contract.",
+        "The supporting documents submitted with the payment or reimbursement claims.",
+        "The procurement procedures carried out within the project.",
+        "The findings of the managing authority and of the anti-fraud department.",
+        "How the damage was calculated and the precautionary measures ordered.",
       ],
     },
     {
-      h2: "What to send me",
+      h2: "What documents you should send me",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Tell me which funding programme is involved, what amounts are at stake and who is carrying out the review."],
-      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
-      bulletsAfterBullets: [
-        "the financing contract and the funding application;",
-        "the note of findings or the control report;",
-        "the procurement documents of the project;",
-        "the progress reports and reimbursement claims;",
-        "the order or summons received.",
+      paragraphs: ["Tell me under which programme the project was financed and what exactly is being claimed."],
+      subsections: [
+        {
+          h3: "The application and the financing contract",
+          paragraphs: ["The application, the contract and its amendments, together with the applicable guidelines."],
+        },
+        {
+          h3: "The payment and reimbursement claims",
+          paragraphs: ["The claims submitted, the progress reports and the correspondence with the managing authority."],
+        },
+        {
+          h3: "The invoices and supporting documents",
+          paragraphs: ["Invoices, proof of payment, acceptance records and documents on the deliveries made."],
+        },
+        {
+          h3: "The procurement documents",
+          paragraphs: ["The tender documentation, the offers received, the evaluation reports and the contracts concluded."],
+        },
+        {
+          h3: "The control reports and the authorities' findings",
+          paragraphs: ["The notes establishing irregularities, the anti-fraud reports and any criminal notification communicated to you."],
+        },
       ],
-      calloutAfterBullets: "You do not have all the documents?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Call anyway",
+      calloutAfterSubsections: "You do not have all the documents? Call anyway.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "When an irregularity concerning EU funds can become a criminal file",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "An irregularity is a departure from the financing rules, which triggers financial corrections and recovery of the affected sums. It can result from differing interpretations, reporting errors or procedural flaws.",
+        [
+          { text: "A criminal offense requires, in addition, the use of false, inaccurate or incomplete documents or declarations, or the omission of information, with the intention of obtaining the funds. This distinction is essential in " },
+          { text: "financial crime", to: "/en/services/financial-crime" },
+          { text: " files concerning European financing." },
+        ],
+      ],
+    },
+    {
+      h2: "What conduct can amount to EU funds fraud",
+      subsections: [
+        {
+          h3: "Using false, inaccurate or incomplete documents or declarations",
+          paragraphs: ["Submitting documents that do not reflect reality, in order to obtain the financing or the reimbursement of expenses."],
+        },
+        {
+          h3: "Omitting information relevant to obtaining the funds",
+          paragraphs: ["Failing to disclose data the beneficiary was required to communicate, where that data affected the award of the financing."],
+        },
+        {
+          h3: "Changing the destination of the funds obtained",
+          paragraphs: ["Using the sums for a purpose other than the one for which they were granted, which is criminalised separately."],
+        },
+        {
+          h3: "Other conduct affecting the financial interests of the European Union",
+          paragraphs: ["Conduct causing a loss to the Union budget, including in connection with the procurement procedures of the project."],
+        },
+      ],
+      calloutAfterSubsections: "The specific criminal regime is provided mainly by articles 18 indent 1 to 18 indent 5 of Law 78/2000, while the unlawful change of the funds' destination is regulated separately.",
+    },
+    {
+      h2: "The difference between an administrative irregularity and criminal EU funds fraud",
+      paragraphs: [
+        "An irregularity is established by the managing authorities or the control bodies and is resolved through financial corrections and recovery of the sums.",
+        "Fraud requires the intention to obtain funds that are not due, proven through false documents, omitted information or use of the sums for another purpose. Without that intentional element, the matter remains administrative.",
+      ],
+    },
+    {
+      h2: "Who investigates EU funds fraud",
+      subsections: [
+        {
+          h3: "The role of the anti-fraud department",
+          paragraphs: ["The anti-fraud department carries out administrative controls concerning EU funds and can notify the criminal investigation bodies."],
+        },
+        {
+          h3: "The criminal investigation",
+          paragraphs: ["The investigation is conducted by the prosecutor, with evidence, expert reports and questioning, and the defense can file requests throughout."],
+        },
+        {
+          h3: "Which body has jurisdiction over the file",
+          paragraphs: ["Depending on the offense, on the capacity of the persons involved and on the amount of the damage, jurisdiction may lie with the National Anticorruption Directorate or with the ordinary prosecutor's offices."],
+        },
+      ],
+      calloutAfterSubsections: "The anti-fraud department also operates an official channel for reporting fraud affecting European Union funds.",
+    },
+    {
+      h2: "Contested documents in EU funds files",
+      paragraphs: [
+        [
+          { text: "The accusation concerning documents submitted to the financing authority is frequently analysed together with " },
+          { text: "forgery and use of forgery", to: "/en/services/forgery-and-use-of-forgery" },
+          { text: ", because the same documents support both charges." },
+        ],
+        "I check the origin of each document, who drafted it and whether the contested information was relevant to the financing decision. An inaccurate document is not automatically a forged one.",
+      ],
+    },
+    {
+      h2: "Procurement problems in an EU-funded project",
+      paragraphs: [
+        "Procurement is the area generating most findings: restrictive criteria, offers prepared by the same person, overpriced contracts or amendments made during performance.",
+        "Not every procedural departure amounts to an offense. I analyse whether it caused an actual loss and whether there is proof of intentional conduct, rather than an error in applying the procedure.",
+      ],
+    },
+    {
+      h2: "Are recovery of the funds and criminal liability the same thing?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "No. Recovery of the funds is an administrative consequence of the irregularity established and can exist even where no criminal offense is retained.",
+        "The obligation to return part of the financing does not, in itself, prove an offense. The two procedures have different conditions and different standards of proof.",
+      ],
+    },
+    {
+      h2: "How the damage is established in an EU funds file",
+      paragraphs: [
+        "The damage is assessed by reference to the sums unduly paid from European funds or from national co-financing, not to the total value of the project.",
+        "I analyse which expenses were actually incurred and justified, support expert evidence where the calculation is questionable and file objections to the reports in the file.",
+      ],
+    },
+    {
+      h2: "Asset freezing and recovery of the damage",
+      paragraphs: [
+        "Precautionary measures are frequently ordered over accounts, real estate or assets purchased through the project, to secure recovery of the damage.",
+        "I check the proportionality of the measure against the amount retained and file a challenge where the freezing affects assets unconnected to the project or exceeds the claimed damage.",
+      ],
+    },
+    {
+      h2: "How I build the defense in an EU funds file",
+      bullets: [
+        "I separate the administrative irregularity from the criminal accusation, on the project documents.",
+        "I prove the reality of the expenses and of the activities implemented.",
+        "I contest the alleged falsity or the relevance of the documents in question.",
+        "I challenge the damage calculation through expert evidence and objections.",
+        "I prepare you for questioning and assist you at every hearing, including in files handled by DNA.",
+      ],
+      cta: "I want a strategy for my file",
     },
   ],
   faq: [
     {
-      q: "Is every project irregularity a criminal offense?",
-      a: "No. An irregularity may only trigger financial corrections and the obligation to return funds. Criminal liability requires the conditions set by law, including as regards intent.",
+      q: "Does any irregularity in a project mean fraud?",
+      a: "No. An irregularity triggers financial corrections and recovery of the sums. Fraud requires the intention to obtain funds that are not due, through false documents, omitted information or use of the sums for another purpose.",
     },
     {
-      q: "What does the anti-fraud department do?",
-      a: "It carries out controls on how EU funds are used and may notify the criminal investigation authorities where it finds indications of criminal conduct.",
+      q: "If I have to return the financing, does that mean I committed an offense?",
+      a: "No. The obligation to return is an administrative consequence and can exist without any criminal offense. The two procedures have different conditions and standards of proof.",
     },
     {
-      q: "Who handles these files?",
-      a: "Offenses against the financial interests of the European Union are generally handled by the National Anticorruption Directorate, within the limits of its statutory competence.",
+      q: "What documents can generate a criminal file?",
+      a: "Documents submitted to obtain the financing or the reimbursement of expenses, where they do not reflect reality: invoices, acceptance records, declarations or procurement documents.",
     },
     {
-      q: "What happens if I return the funds?",
-      a: "Returning the sums may be relevant in the file, but it does not automatically remove criminal liability. The concrete effect depends on the conduct retained and the procedural stage.",
+      q: "Who investigates EU funds fraud?",
+      a: "Administrative control is carried out by the anti-fraud department and the managing authorities, while the criminal investigation is conducted by the prosecutor, including by the National Anticorruption Directorate.",
     },
     {
-      q: "Can I continue implementing the project?",
-      a: "It depends on the measures ordered by the managing authority and on any precautionary measures. Each situation must be assessed separately, on the project documents.",
+      q: "Can the company and the director be liable at the same time?",
+      a: "Yes. The legal entity can be criminally liable alongside the individuals involved, and in parallel there may be an obligation to return the funds.",
+    },
+    {
+      q: "Can assets be frozen?",
+      a: "Yes, including assets purchased through the project or other assets, up to the amount of the damage retained. The measure can be challenged where it is disproportionate.",
+    },
+    {
+      q: "What happens if the funds were used for another purpose?",
+      a: "Changing the destination of the funds is regulated separately and can trigger criminal liability, alongside the obligation to return the sums.",
+    },
+    {
+      q: "Can forgery charges appear in the same file?",
+      a: "Yes. The accusation concerning documents submitted to the financing authority is frequently analysed together with forgery and use of forgery, because the same documents support both charges.",
     },
   ],
   resources: [
