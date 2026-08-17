@@ -13,7 +13,7 @@ import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii/infractiuni-contra-persoanei";
-const TITLE = "Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic";
+const TITLE = "Avocat Infracțiuni Contra Persoanei București - Îți Apăr Libertatea și Reputația | Bogdan Lamatic";
 const DESCRIPTION =
   "Avocat infracțiuni contra persoanei București - violență, amenințare, vătămare corporală, infracțiuni sexuale. Experiență 18+ ani. Sună acum!";
 
@@ -138,7 +138,7 @@ export default function InfractiuniContraPersoanei() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic
+        Avocat Infracțiuni Contra Persoanei București - Îți Apăr Libertatea și Reputația
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
