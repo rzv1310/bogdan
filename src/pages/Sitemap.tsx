@@ -50,6 +50,8 @@ export default function Sitemap() {
     { url: "/servicii/neglijenta-in-serviciu", title: "Neglijență în serviciu" },
     { url: "/servicii/conflict-de-interese", title: "Conflict de interese" },
     { url: "/servicii/fonduri-europene", title: "Fonduri europene" },
+    { url: "/servicii/sechestru-asigurator", title: "Sechestru asigurător" },
+    { url: "/servicii/confiscare", title: "Confiscare" },
   ];
 
   const englishPages = [

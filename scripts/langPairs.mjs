@@ -26,6 +26,8 @@ export const RO_TO_EN = {
   "/servicii/grup-infractional-organizat": "/en/services/organized-crime-group",
   "/servicii/trafic-international-de-droguri": "/en/services/international-drug-trafficking",
   "/servicii/spalare-de-bani-si-ascundere-de-bunuri": "/en/services/money-laundering-and-asset-concealment",
+  "/servicii/sechestru-asigurator": "/en/services/asset-freezing-order",
+  "/servicii/confiscare": "/en/services/confiscation",
 
   "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",

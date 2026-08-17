@@ -135,9 +135,8 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Spălare de bani, sechestru și confiscare",
         description: "Consultanță și reprezentare în dosare de spălare de bani, măsuri asigurătorii, sechestru și confiscare extinsă.",
         subServices: [
-          { label: "Spălare de bani" },
-          { label: "Sechestru asigurător" },
-          { label: "Confiscare" },
+          { label: "Sechestru asigurător", to: "/servicii/sechestru-asigurator" },
+          { label: "Confiscare", to: "/servicii/confiscare" },
         ],
         to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
         cta: "Vezi pagina privind spălarea de bani",
@@ -365,9 +364,8 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Money laundering, seizure and confiscation",
         description: "Advice and representation in money laundering cases, precautionary measures, seizure and extended confiscation.",
         subServices: [
-          { label: "Money laundering" },
-          { label: "Asset seizure" },
-          { label: "Confiscation" },
+          { label: "Asset seizure", to: "/en/services/asset-freezing-order" },
+          { label: "Confiscation", to: "/en/services/confiscation" },
         ],
         to: "/en/services/money-laundering-and-asset-concealment",
         cta: "See the money laundering page",

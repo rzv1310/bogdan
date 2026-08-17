@@ -5067,3 +5067,558 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
   contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_DO_EN,
 };
+
+const PARENT_ML_EN = {
+  to: "/en/services/money-laundering-and-asset-concealment",
+  label: "money laundering and asset concealment",
+  breadcrumbLabel: "Money laundering, seizure and confiscation",
+};
+
+export const assetFreezingOrderEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/asset-freezing-order",
+  altPath: "/servicii/sechestru-asigurator",
+  roPath: "/servicii/sechestru-asigurator",
+  title: "Asset Seizure Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Asset seizure and freezing order lawyer in Bucharest",
+  description:
+    "Bank accounts or real estate frozen in a criminal case? Challenging the seizure order, lifting and limiting precautionary measures. 18+ years of experience.",
+  keywords:
+    "asset seizure lawyer romania, challenge criminal seizure, lift asset freezing order, precautionary measures criminal case",
+  breadcrumbLabel: "Asset seizure",
+  serviceName: "Asset seizure lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have your bank accounts, car or real estate been frozen through a seizure order?",
+    "The complaint against a precautionary measure must be filed within a short term, 3 days from communication or from enforcement.",
+    "I check whether the measure is justified, whether it is proportionate to the alleged damage and which assets can be released.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist individuals and companies subject to precautionary measures in criminal cases, from frozen bank accounts to seizure over real estate and company shares.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "Your bank accounts have been frozen",
+          paragraphs: [
+            "Freezing accounts is the fastest form of asset restraint and immediately affects current payments, salaries and tax obligations.",
+            "I check which amounts are actually covered by the order, whether the value limit was respected and whether the account holds sums that cannot be frozen.",
+          ],
+        },
+        {
+          h3: "You have received a seizure order",
+          paragraphs: [
+            "The order must state the purpose of the measure, the assets covered and the value up to which the seizure is established.",
+            "General reasoning, unconnected to the alleged damage or to assets subject to confiscation, can be challenged.",
+          ],
+        },
+        {
+          h3: "The seizure has been registered in the land register",
+          paragraphs: [
+            "Seizure over real estate is registered in the land register and blocks any sale or mortgage, even if you can still use the property.",
+            "I check whether the property is a family home, whether it is jointly owned and whether its value clearly exceeds the necessary limit.",
+          ],
+        },
+        {
+          h3: "The seizure affects assets of another person or of the company",
+          paragraphs: [
+            [
+              { text: "The measure may cover assets that are not yours or shares in a company. A third party who considers itself harmed can defend its right, and in business cases seizure frequently appears alongside " },
+              { text: "economic crime accusations", to: "/en/services/financial-crime" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a case with a seizure order",
+      paragraphs: ["I check:"],
+      bullets: [
+        "who ordered the measure: the prosecutor, the preliminary chamber judge or the court;",
+        "the concrete legal basis: compensation of damage, special confiscation, extended confiscation or enforcement of a fine;",
+        "whether the order is reasoned in relation to the case file;",
+        "the amount of damage claimed and the proportion between it and the frozen assets;",
+        "whether the assets belong to the suspect, the defendant, the civilly liable party or a third party;",
+        "whether the rules on assets exempt from seizure were observed;",
+        "how the assets were identified and valued;",
+        "the seizure record and the way it was communicated;",
+        "whether the complaint term runs from communication or from enforcement;",
+        "whether the measure can be limited to part of the assets;",
+        "whether some assets can be replaced by a bond or other guarantees;",
+        "the effects of the measure on company activity and on essential payments.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you need to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the order or court ruling establishing the seizure;",
+        "the seizure record;",
+        "the notification received from the bank;",
+        "the land register extract showing the measure;",
+        "ownership documents for the assets involved;",
+        "documents showing the origin of the funds or assets;",
+        "company documents, if the measure concerns a business;",
+        "any communication regarding your procedural status in the case;",
+        "the date you actually received the documents, for calculating the complaint term.",
+      ],
+      paragraphsAfterBullets: [
+        "If you only learned about the seizure because your account was blocked, you can contact me before obtaining all the documents.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What a seizure order is and what it is based on",
+      paragraphs: [
+        "Asset seizure is a precautionary measure provided by art. 249-254 of the Criminal Procedure Code. Through it, assets become unavailable, meaning they can no longer be sold, encumbered or transferred.",
+        "Precautionary measures may be taken to:",
+      ],
+      bullets: [
+        "prevent the concealment, destruction or transfer of assets that may be subject to special or extended confiscation;",
+        "secure enforcement of a criminal fine;",
+        "secure compensation of the damage caused by the offence;",
+        "secure judicial expenses.",
+      ],
+      paragraphsAfterBullets: [
+        "Seizure does not require a conviction and is not the same as confiscation. It is a provisional measure that can be lifted, limited or maintained depending on the outcome of the case.",
+      ],
+    },
+    {
+      h2: "Who can order asset seizure",
+      paragraphs: [
+        "During the criminal investigation the measure is ordered by the prosecutor.",
+        "In the preliminary chamber procedure it can be ordered by the preliminary chamber judge, and during trial by the court, ex officio or at the request of the prosecutor or the civil party.",
+        "In some situations provided by law, taking precautionary measures is mandatory, for instance for offences that caused damage where a special law expressly requires it.",
+      ],
+    },
+    {
+      h2: "Which assets can be frozen",
+      paragraphs: ["Seizure may cover:"],
+      bullets: [
+        "amounts held in bank accounts;",
+        "cash identified during a search;",
+        "vehicles;",
+        "buildings and land;",
+        "company shares;",
+        "valuable movable assets;",
+        "receivables and amounts owed by third parties.",
+      ],
+      paragraphsAfterBullets: [
+        "Assets belonging to a public entity cannot be seized, nor can assets exempt by law from enforcement, such as those strictly necessary for the daily living of the debtor and the family.",
+        "Seizure can also cover assets of a person other than the suspect or defendant, to the extent those assets fall within the categories set by law, for example assets acquired from the defendant or assets subject to confiscation.",
+      ],
+    },
+    {
+      h2: "How to challenge an asset seizure order",
+      paragraphs: [
+        "Against a precautionary measure taken by the prosecutor, or against the way it is enforced, the suspect, the defendant or any interested person may file a complaint within 3 days from communication of the order or from its enforcement, with the judge for rights and liberties.",
+        "When the measure is ordered during trial, the challenge is decided by the higher court, also within 3 days.",
+        "In practice, the arguments may concern:",
+      ],
+      bullets: [
+        "lack of concrete reasoning in the order;",
+        "absence of a link between the seized assets and the offence investigated;",
+        "disproportion between the value of the assets and the alleged damage;",
+        "ownership of the asset by a good faith third party;",
+        "the exempt nature of the asset;",
+        "incorrect valuation of the assets;",
+        "unjustified impact on a company's activity.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Lifting or limiting the seizure",
+      paragraphs: [
+        "Even if the measure was lawfully taken, it is not final. If the grounds change, a full or partial lifting can be requested.",
+        "Frequent situations:",
+      ],
+      bullets: [
+        "the damage has been covered fully or partially;",
+        "the value of the frozen assets clearly exceeds what is necessary;",
+        "the case was closed or ended in acquittal;",
+        "the asset belongs to a third party who can prove ownership;",
+        "the asset is essential for business activity and other guarantees exist.",
+      ],
+      paragraphsAfterBullets: [
+        "When the case ends without confiscation or an obligation to pay, the precautionary measure ceases and the assets must be returned.",
+      ],
+    },
+    {
+      h2: "Seizure, garnishment and confiscation: what is the difference",
+      paragraphs: [
+        "Asset seizure freezes specific assets. Precautionary garnishment concerns amounts owed to the suspect or defendant by a third party and is also a precautionary measure.",
+        [
+          { text: "Confiscation is a safety measure ordered by judgment, transferring the asset definitively to the state. Seizure only prepares a possible confiscation or compensation. Special and extended confiscation are explained on the page about " },
+          { text: "confiscation of assets in criminal cases", to: "/en/services/confiscation" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Effects on accounts, real estate and companies",
+      paragraphs: [
+        "Frozen accounts can stop payment of salaries, suppliers and tax obligations. Seizure over real estate prevents sale or mortgage, and seizure over company shares blocks operations concerning share capital.",
+        "In such situations it is important to show the court the concrete effects of the measure, so that proportionality can be assessed. A measure that goes beyond its purpose can be limited.",
+        [
+          { text: "Where seizure appears together with accusations regarding the origin of the money, the defence must be built together with the defence on the merits of the " },
+          { text: "money laundering", to: "/en/services/money-laundering-and-asset-concealment" },
+          { text: " accusation." },
+        ],
+      ],
+    },
+    {
+      h2: "Frequent mistakes after a seizure order",
+      bullets: [
+        "missing the 3 day term for the complaint;",
+        "trying to transfer a seized asset, which can trigger a new criminal accusation;",
+        "not submitting documents showing the lawful origin of the funds;",
+        "not requesting a correct valuation of the assets;",
+        "not asking for the measure to be limited when the value exceeds the damage;",
+        "third parties not exercising their right to defend their asset in the criminal proceedings.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "The practical steps I follow",
+      bullets: [
+        "I analyse the order and the case file, within the limits of permitted access;",
+        "I calculate the complaint term and prepare the challenge;",
+        "I gather documents on ownership and the origin of the assets;",
+        "I file the request to lift or limit the measure, where appropriate;",
+        "I argue the request before the judge for rights and liberties or before the court;",
+        "I follow the measure throughout the proceedings, until the assets are returned.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long do I have to challenge an asset seizure order?",
+      a: "The term is 3 days from communication of the order or from the date the measure is enforced, under art. 250 of the Criminal Procedure Code.",
+    },
+    {
+      q: "Does seizure mean I lose my assets?",
+      a: "No. Seizure is a provisional measure freezing the assets. Definitive loss can occur only through confiscation, ordered by a court judgment.",
+    },
+    {
+      q: "Can I still use a seized property?",
+      a: "As a rule yes, if the asset was not physically taken. Seizure blocks sale and encumbrance, as registered in the land register, but does not automatically mean eviction.",
+    },
+    {
+      q: "What happens to a salary paid into a frozen account?",
+      a: "The law exempts certain amounts necessary for daily living. If such sums enter the frozen account, a limitation of the measure can be requested for the exempt part.",
+    },
+    {
+      q: "Can assets of a spouse or another person be seized?",
+      a: "Yes, in the situations provided by law, for example assets acquired from the defendant or assets subject to confiscation. A third party who considers itself harmed can file a complaint against the measure.",
+    },
+    {
+      q: "If I pay the damage, will the seizure be lifted?",
+      a: "Covering the damage is an important argument for lifting or limiting the measure, but the court also verifies the other purposes of seizure, such as confiscation or a fine.",
+    },
+    {
+      q: "What happens to the seizure if the case is closed or ends in acquittal?",
+      a: "When no confiscation and no payment obligation are ordered, the precautionary measure ceases and the assets must be returned.",
+    },
+    {
+      q: "Can I sell the asset if I urgently need money?",
+      a: "No. Transferring a seized asset can lead to new criminal liability. The correct approach is to request the lifting or limitation of the measure through legal means.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Procedure Code, art. 249-254 on precautionary measures.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Code, art. 112 and 112^1 on special and extended confiscation.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_ML_EN,
+};
+
+export const confiscationEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/confiscation",
+  altPath: "/servicii/confiscare",
+  roPath: "/servicii/confiscare",
+  title: "Extended Confiscation Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Confiscation and extended confiscation lawyer in Bucharest",
+  description:
+    "Do you risk confiscation of assets in a criminal case? Defence against special and extended confiscation and proof of the lawful origin of assets.",
+  keywords:
+    "extended confiscation lawyer, confiscation of assets criminal case, special confiscation romania, confiscation lawyer bucharest",
+  breadcrumbLabel: "Confiscation",
+  serviceName: "Confiscation and extended confiscation lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Is the prosecution seeking confiscation of money, of your car or of your real estate?",
+    "Special confiscation and extended confiscation have different conditions and require different arguments.",
+    "Proof of the lawful origin of assets is prepared in advance, not on the last day of trial.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend individuals and companies in cases where special or extended confiscation of assets is sought, including business crime and corruption files.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "The prosecutor seeks confiscation of money",
+          paragraphs: [
+            "It must be established whether the amounts are considered proceeds of the offence, whether they were concretely identified and whether there is evidence of their lawful origin.",
+          ],
+        },
+        {
+          h3: "Extended confiscation of assets acquired in recent years is sought",
+          paragraphs: [
+            "Extended confiscation concerns assets acquired during the 5 years before and, where applicable, after the offence. The analysis starts from lawful income and the documents proving it.",
+          ],
+        },
+        {
+          h3: "The assets have already been frozen through a seizure order",
+          paragraphs: [
+            [
+              { text: "Seizure is only the provisional measure preparing a possible confiscation. The two are challenged separately, and the details on freezing assets are on the page about " },
+              { text: "asset seizure in criminal cases", to: "/en/services/asset-freezing-order" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "You are a third party and an asset of yours is being confiscated",
+          paragraphs: [
+            "The law allows confiscation from third parties in certain situations. If you bought the asset in good faith and can prove the payment, your position must be supported with documents in the criminal proceedings.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+    },
+    {
+      h2: "What I review immediately in a case with confiscation risk",
+      paragraphs: ["I check:"],
+      bullets: [
+        "the legal basis invoked: special or extended confiscation;",
+        "the concrete category in which the assets are placed;",
+        "whether the offence allows extended confiscation, according to the statutory list;",
+        "the penalty provided by law for the offence investigated;",
+        "the reference period for the assets acquired;",
+        "the lawful income during the period analysed;",
+        "tax documents, contracts and bank statements;",
+        "how the difference between income and assets was calculated;",
+        "whether the asset was transferred to a third party and under what conditions;",
+        "whether the asset can be replaced by its monetary equivalent;",
+        "the relationship between confiscation and the civil damages claimed;",
+        "the valuation of the assets and any calculation errors.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you need to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the indictment or order showing the confiscation request;",
+        "the seizure order, if one exists;",
+        "ownership documents for the assets involved;",
+        "sale, donation or loan contracts;",
+        "bank statements for the relevant period;",
+        "tax returns and income certificates;",
+        "documents on the income of family members;",
+        "documents regarding bank loans;",
+        "any document showing the origin of the money used to buy the assets.",
+      ],
+      paragraphsAfterBullets: [
+        "If you do not yet have all the documents, we can establish together which ones must be obtained and from where.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "What special confiscation is",
+      paragraphs: [
+        "Special confiscation is a safety measure provided by art. 112 of the Criminal Code. Through it, certain assets pass definitively into state ownership.",
+        "Subject to special confiscation are:",
+      ],
+      bullets: [
+        "assets produced by committing the act provided by criminal law;",
+        "assets used, in any way, or intended to be used to commit the act, if they belong to the perpetrator or to another person who knew the purpose of their use;",
+        "assets used immediately after the act to secure the perpetrator's escape or to keep the benefit or product obtained;",
+        "assets given to determine the commission of an act provided by criminal law or to reward the perpetrator;",
+        "assets acquired by committing the act provided by criminal law, if they are not returned to the injured person;",
+        "assets whose possession is prohibited by criminal law.",
+      ],
+      paragraphsAfterBullets: [
+        "If the assets cannot be found, their monetary equivalent or the assets acquired in their place are confiscated.",
+      ],
+    },
+    {
+      h2: "What extended confiscation is",
+      paragraphs: [
+        "Extended confiscation is regulated by art. 112^1 of the Criminal Code and concerns assets other than those directly linked to the offence for which the conviction was ordered.",
+        "Several conditions must be met:",
+      ],
+      bullets: [
+        "the person must be convicted of one of the offences expressly listed by law;",
+        "the penalty provided by law for that offence must be imprisonment of 4 years or more;",
+        "the act must be capable of procuring a material benefit;",
+        "the value of the assets acquired during the reference period must clearly exceed lawfully obtained income;",
+        "the court must be convinced that the assets derive from criminal activities of the kind for which the conviction was ordered.",
+      ],
+      paragraphsAfterBullets: [
+        "The period analysed is the 5 years before and, where applicable, after the offence, up to the date the court is seised.",
+      ],
+    },
+    {
+      h2: "Difference between special and extended confiscation",
+      paragraphs: [
+        "Special confiscation concerns assets directly linked to the offence: proceeds, means used, amounts given or received.",
+        "Extended confiscation concerns a broader estate acquired over a defined period and requires a conviction for an offence from the statutory list.",
+        "Special confiscation can also be ordered without a conviction, for example when the case is closed, under the conditions provided by law. Extended confiscation cannot be ordered without a conviction.",
+      ],
+    },
+    {
+      h2: "What proof of the lawful origin of assets means",
+      paragraphs: [
+        "For extended confiscation, the analysis starts from a comparison between the assets acquired and lawful income during the reference period.",
+        "The defence is built with documents:",
+      ],
+      bullets: [
+        "employment contracts, income certificates and tax returns;",
+        "dividends and income from independent activities;",
+        "contracts for the sale of previously owned assets;",
+        "bank loans and loan agreements;",
+        "donations and inheritances;",
+        "income of family members who contributed to the purchase;",
+        "amounts received from abroad, with the transfer documents.",
+      ],
+      paragraphsAfterBullets: [
+        "Each acquisition should be explained chronologically, with the corresponding documents, and the prosecution's calculation must be verified in detail.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Confiscation from third parties and assets transferred to family",
+      paragraphs: [
+        "The law allows confiscation of assets transferred to a family member or to a legal entity controlled by the convicted person, as well as of assets transferred to a third party who knew the purpose of the transfer.",
+        "A good faith third party who paid a real price and can prove the payment can defend its right in the criminal proceedings. Payment documents and proof of sources are therefore essential.",
+      ],
+    },
+    {
+      h2: "Confiscation or civil damages",
+      paragraphs: [
+        "When the offence caused damage to a person, the amounts may first be used to compensate that damage, and confiscation concerns what remains.",
+        [
+          { text: "In business cases the two frequently overlap, and the strategy must be aligned with the defence on the merits, for example in " },
+          { text: "tax evasion", to: "/en/services/tax-evasion" },
+          { text: " cases or in files concerning " },
+          { text: "money laundering and asset concealment", to: "/en/services/money-laundering-and-asset-concealment" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What can be obtained on appeal",
+      paragraphs: [
+        "The confiscation ruling can be challenged separately from the finding on guilt.",
+        "On appeal one can invoke:",
+      ],
+      bullets: [
+        "lack of the legal conditions for extended confiscation;",
+        "wrong classification of the assets under art. 112 of the Criminal Code;",
+        "calculation errors regarding lawful income;",
+        "documents on file that were ignored;",
+        "confiscation of assets belonging to good faith third parties;",
+        "disproportion between the value confiscated and the benefit found.",
+      ],
+    },
+    {
+      h2: "The practical steps I follow",
+      bullets: [
+        "I identify exactly which assets are targeted and on what basis;",
+        "I reconstruct the income situation for the reference period;",
+        "I gather and organise the documents for each acquisition;",
+        "I verify the prosecution's calculations and the valuation of the assets;",
+        "I file requests and written conclusions on the confiscation issue;",
+        "I argue the position before the court and, where needed, on appeal.",
+      ],
+      cta: "☎ Call me now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What is extended confiscation?",
+      a: "It is the measure by which the court confiscates assets acquired during the 5 years before and, where applicable, after the offence, when their value clearly exceeds lawful income and the person is convicted of an offence listed in art. 112^1 of the Criminal Code.",
+    },
+    {
+      q: "Can confiscation be ordered without a conviction?",
+      a: "Special confiscation can be ordered without a conviction in the cases provided by law, for example when the case is closed. Extended confiscation, however, requires a conviction.",
+    },
+    {
+      q: "Which documents prove the lawful origin of assets?",
+      a: "Tax returns, income certificates, employment contracts, dividends, sale contracts, bank loans, loan agreements, donations and inheritances, together with bank statements confirming the flow of money.",
+    },
+    {
+      q: "Can assets bought by my spouse or children be confiscated?",
+      a: "The law allows confiscation of assets transferred to family members or to legal entities controlled by the convicted person. The interested person can, however, prove that the asset was acquired from their own income.",
+    },
+    {
+      q: "What happens if the asset has already been sold?",
+      a: "If the asset can no longer be found, its monetary equivalent or the assets acquired in its place are confiscated.",
+    },
+    {
+      q: "Does confiscation also apply to the car used to commit the offence?",
+      a: "It can be confiscated if it is considered an asset used to commit the act and belongs to the perpetrator or to a person who knew the purpose of its use. Each situation is assessed concretely.",
+    },
+    {
+      q: "What is the link between seizure and confiscation?",
+      a: "Seizure provisionally freezes assets to secure a possible confiscation or compensation. Confiscation is ordered by judgment and transfers the asset definitively to the state.",
+    },
+    {
+      q: "Can I challenge only the confiscation part of the judgment?",
+      a: "Yes. The appeal can target exclusively the confiscation ruling, with its own arguments, distinct from those on guilt.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 112 on special confiscation.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, art. 249-254 on precautionary measures.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_ML_EN,
+};

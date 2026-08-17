@@ -51,6 +51,8 @@ export default function SitemapEn() {
     { url: "/en/services/crypto-asset-investigations", title: "Crypto Asset Investigations" },
     { url: "/en/services/drug-offenses", title: "Drug Offenses - Legal Defense" },
     { url: "/en/services/money-laundering-and-asset-concealment", title: "Money Laundering and Asset Concealment" },
+    { url: "/en/services/asset-freezing-order", title: "Asset Seizure" },
+    { url: "/en/services/confiscation", title: "Confiscation" },
     { url: "/en/services/professional-negligence-and-malpractice", title: "Professional Negligence and Malpractice" },
     { url: "/en/services/road-traffic-offenses", title: "Road Traffic Offenses" },
     { url: "/en/services/workplace-criminal-liability", title: "Workplace Criminal Liability" },
