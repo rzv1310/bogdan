@@ -3707,6 +3707,140 @@ export const dareLuareDeMitaRo: SubServicePageData = {
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
     {
+      h2: "Ce trebuie să faci dacă ai fost prins în flagrant pentru dare sau luare de mită",
+      paragraphs: [
+        "Flagrantul este momentul în care se strâng cele mai multe probe împotriva ta, dar și momentul în care se fac cele mai multe greșeli de procedură. Primele ore după flagrant decid, de multe ori, direcția întregului dosar.",
+        "Nu semna și nu explica nimic înainte să discuți cu un avocat. Ai dreptul să nu dai declarații, iar acest drept nu poate fi folosit împotriva ta.",
+      ],
+      subsections: [
+        {
+          h3: "Ce verific la procesul-verbal de flagrant",
+          paragraphs: ["Procesul-verbal este actul care fixează momentul faptei, iar orice neconcordanță din el poate schimba interpretarea probelor."],
+          bullets: [
+            { bold: "Ora și locul:", rest: "dacă se potrivesc cu celelalte probe din dosar, inclusiv cu datele din telefon sau din camerele de supraveghere." },
+            { bold: "Martorii asistenți:", rest: "dacă au fost prezenți efectiv și dacă au semnat în condițiile prevăzute de lege." },
+            { bold: "Descrierea sumei sau a foloaselor:", rest: "seriile bancnotelor, modul de marcare, locul exact unde au fost găsite bunurile." },
+            { bold: "Concordanța cu autorizarea:", rest: "dacă activitatea desfășurată se încadrează în ceea ce fusese autorizat de judecător sau de procuror." },
+          ],
+        },
+        {
+          h3: "Ce trebuie verificat înainte de prima declarație",
+          bullets: [
+            { bold: "Calitatea procesuală:", rest: "ești audiat ca martor, ca suspect sau ca inculpat, pentru că drepturile diferă substanțial." },
+            { bold: "Dreptul la avocat:", rest: "dacă ți-a fost comunicat efectiv și dacă ai avut posibilitatea să vorbești cu avocatul înainte de audiere." },
+            { bold: "Dreptul de a nu declara:", rest: "poți refuza să dai declarații fără nicio consecință legală negativă." },
+            { bold: "Riscul declarațiilor date sub presiune:", rest: "o declarație dată în stres, fără acces la actele dosarului, este greu de corectat ulterior." },
+          ],
+        },
+        {
+          h3: "Interceptările și înregistrările folosite în flagrant",
+          bullets: [
+            { bold: "Autorizarea:", rest: "existența mandatului de supraveghere tehnică și acoperirea perioadei în care s-au făcut înregistrările." },
+            { bold: "Momentul obținerii:", rest: "dacă înregistrările au fost realizate înainte sau după autorizare." },
+            { bold: "Corespondența cu transcrierile:", rest: "dacă redarea scrisă reflectă fidel conținutul audio, inclusiv pauzele și frazele incomplete." },
+          ],
+        },
+        {
+          h3: "Rolul denunțătorului și problema provocării",
+          paragraphs: [
+            "Multe dosare de mită pornesc de la un denunț. Verific dacă denunțătorul are un interes propriu, dacă a colaborat cu organele de urmărire penală și, mai important, dacă fapta exista deja sau a fost determinată prin insistențele lui.",
+            "Limita dintre constatarea unei fapte existente și determinarea ei este esențială: probele obținute prin provocare nu pot fi folosite împotriva ta.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Ai fost prins în flagrant chiar acum? Nu ai actele la tine?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaAfterSubsections: "A avut loc un flagrant? - Sună-mă acum!",
+    },
+    {
+      h2: "Denunțul, constrângerea și nepedepsirea la darea de mită",
+      paragraphs: [
+        "Art. 290 Cod penal conține două supape importante pentru persoana care a dat mită: situația în care fapta a fost săvârșită sub constrângere și cauza de nepedepsire prin denunț. Ambele au condiții stricte de aplicare.",
+      ],
+      subsections: [
+        {
+          h3: "Când denunțul poate înlătura pedeapsa",
+          paragraphs: [
+            "Mituitorul nu se pedepsește dacă denunță fapta înainte ca organul de urmărire penală să fie sesizat cu privire la aceasta. Denunțul trebuie să fie complet și să privească fapta concretă, nu doar o descriere generală a unor nereguli.",
+          ],
+        },
+        {
+          h3: "Ce înseamnă că organul de urmărire penală nu fusese încă sesizat",
+          paragraphs: [
+            "Condiția se analizează raportat la momentul în care organele judiciare au primit prima informație despre fapta ta, prin plângere, denunț, sesizare din oficiu sau proces-verbal. Dacă dosarul era deja început pentru acea faptă, denunțul nu mai produce efectul de nepedepsire, dar poate conta la individualizarea pedepsei.",
+          ],
+        },
+        {
+          h3: "Ce se întâmplă dacă ai fost constrâns să dai mită",
+          paragraphs: [
+            "Dacă ai dat banii sau foloasele pentru că ai fost constrâns prin orice mijloace de către cel care a luat mita, fapta nu constituie infracțiune. Aici probele contează decisiv: mesaje, martori, refuzuri repetate, cereri respinse abuziv sau amânări nejustificate ale unui act care ți se cuvenea.",
+          ],
+        },
+        {
+          h3: "Când se restituie banii și când se confiscă",
+          bullets: [
+            { bold: "Restituire:", rest: "banii sau bunurile se restituie persoanei care a dat mită sub constrângere, precum și celui care a denunțat fapta înainte de sesizarea organelor." },
+            { bold: "Confiscare:", rest: "în celelalte situații, sumele și foloasele primite se confiscă, iar când nu se mai găsesc, se confiscă echivalentul în bani." },
+            { bold: "Bunuri marcate în flagrant:", rest: "rămân indisponibilizate până la soluționarea dosarului, chiar dacă provin din surse licite." },
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Când un cadou, o „atenție” sau un avantaj poate fi considerat mită?",
+      paragraphs: [
+        "Multe persoane cercetate pentru mită nu se recunosc în formularea „am dat” sau „am primit mită”. În practică, discuția se poartă despre un cadou, o atenție, o masă, o reparație, un discount sau un ajutor între cunoștințe.",
+        "Art. 289 Cod penal vorbește despre bani sau alte foloase care nu se cuvin, primite în legătură cu îndeplinirea, neîndeplinirea, urgentarea sau întârzierea unui act ce intră în atribuțiile de serviciu ale funcționarului. Legătura cu atribuțiile de serviciu este elementul care transformă un gest social într-o acuzație penală.",
+      ],
+      bullets: [
+        { bold: "Legătura cu atribuțiile de serviciu:", rest: "dacă persoana avea competența de a decide, de a aviza sau de a influența actul respectiv." },
+        { bold: "Foloasele care nu se cuvin:", rest: "orice avantaj patrimonial sau nepatrimonial la care persoana nu avea dreptul, indiferent de denumirea dată." },
+        { bold: "Momentul:", rest: "un folos oferit înainte de act este privit diferit de un cadou dat mult după finalizarea unei relații de serviciu." },
+        { bold: "Valoarea și contextul:", rest: "un gest simbolic, în context privat și fără legătură cu un dosar aflat în lucru, nu are aceeași semnificație ca un folos proporțional cu decizia obținută." },
+        { bold: "Caracterul repetitiv:", rest: "atențiile repetate către aceeași persoană care decide sunt aproape întotdeauna interpretate ca mită." },
+      ],
+      paragraphsAfterBullets: [
+        "Sunt situații în care nu există infracțiune: gesturi de curtoazie fără legătură cu un act de serviciu, avantaje acordate în mod legal și transparent, sau plăți efectuate în baza unui contract real, cu documente justificative.",
+        [
+          { text: "Când folosul a fost oferit unei persoane care pretinde că are influență asupra unui funcționar, încadrarea corectă poate fi cea de " },
+          { text: "trafic sau cumpărare de influență", to: "/servicii/trafic-de-influenta" },
+          { text: ", cu un alt regim probatoriu." },
+        ],
+      ],
+    },
+    {
+      h2: "Cum sunt analizate interceptările și înregistrările într-un dosar de mită",
+      paragraphs: [
+        "În dosarele de corupție, interceptările și înregistrările ambientale sunt adesea proba centrală. Tocmai de aceea sunt și proba cea mai vulnerabilă la contestare, dacă este analizată în detaliu.",
+      ],
+      bullets: [
+        { bold: "Autorizarea:", rest: "verific existența și limitele mandatului de supraveghere tehnică, perioada acoperită, persoanele și mijloacele de comunicare vizate, precum și motivarea măsurii." },
+        { bold: "Integritatea înregistrării:", rest: "continuitatea fișierelor, lipsa întreruperilor nejustificate, modul de stocare și de transfer, existența copiilor de referință." },
+        { bold: "Contextul conversației:", rest: "o frază izolată poate schimba complet sensul discuției; cer redarea integrală a conversației, nu doar fragmentul selectat." },
+        { bold: "Transcrieri incomplete:", rest: "compar redarea scrisă cu suportul audio, pentru a identifica pasajele omise, cuvintele înțelese greșit sau atribuirile eronate de replici." },
+        { bold: "Interpretarea expresiilor ambigue:", rest: "termeni generici precum „rezolvăm”, „vedem ce facem” sau „ne înțelegem” nu dovedesc singuri o promisiune de mită." },
+      ],
+      calloutAfterBullets: "În dosar există interceptări și nu știi exact ce conțin?",
+      calloutAfterBulletsCta: "Sună oricum",
+    },
+    {
+      h2: "Sechestrul și confiscarea într-un dosar de mită",
+      paragraphs: [
+        "În paralel cu ancheta penală, procurorul poate dispune măsuri asigurătorii asupra bunurilor și conturilor, pentru a garanta confiscarea sau recuperarea prejudiciului. Aceste măsuri afectează imediat activitatea zilnică și afacerile familiei.",
+      ],
+      bullets: [
+        { bold: "Măsurile asigurătorii:", rest: "sechestrul, poprirea și indisponibilizarea conturilor pot fi dispuse prin ordonanță, înainte de orice hotărâre de condamnare." },
+        { bold: "Ce bunuri pot fi indisponibilizate:", rest: "sume de bani, conturi bancare, imobile, autoturisme și, în anumite situații, bunuri aflate la alte persoane." },
+        { bold: "Confiscarea specială:", rest: "banii și foloasele primite ca mită se confiscă, iar dacă nu se mai găsesc, se confiscă echivalentul lor în bani sau bunuri." },
+        { bold: "Restituirea:", rest: "bunurile date sub constrângere sau cele legate de un denunț anterior sesizării organelor pot fi restituite." },
+        { bold: "Contestarea măsurii:", rest: "sechestrul poate fi contestat, iar limitele lui pot fi reduse când depășesc valoarea presupusului folos sau afectează bunuri fără legătură cu fapta." },
+      ],
+      paragraphsAfterBullets: [
+        "Verific proporționalitatea măsurii, sursa licită a bunurilor și documentele care arată că acestea nu provin din fapta cercetată. O contestație bine documentată poate debloca activitatea economică chiar în timpul urmăririi penale.",
+      ],
+      cta: "Ți-au fost blocate conturile? - Sună-mă acum!",
+    },
+    {
       h2: "Ce înseamnă luarea de mită",
       paragraphs: [
         "Luarea de mită presupune pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, de către un funcționar public, în legătură cu îndeplinirea, neîndeplinirea sau întârzierea unui act ce ține de atribuțiile sale de serviciu.",
