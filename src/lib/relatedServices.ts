@@ -116,6 +116,14 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/sechestru-asigurator",
     "/servicii/confiscare",
   ],
+  "/servicii/infractiuni-rutiere-cu-victime": [
+    "/servicii/alcool-la-volan",
+    "/servicii/droguri-la-volan",
+    "/servicii/parasirea-locului-accidentului",
+    "/servicii/refuz-prelevare-probe-biologice",
+    "/servicii/conducere-fara-permis",
+    "/servicii/accident-rutier-cu-victime",
+  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/avocat-diicot",
     "/servicii/detinere-droguri-consum-propriu",
