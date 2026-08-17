@@ -5091,7 +5091,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
           ],
         },
       ],
-      paragraphsAfterSubsections: [
+      paragraphsAfterBullets: [
         "Rămân în afara textului penal și situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, precum și foloasele nepatrimoniale.",
       ],
     },
