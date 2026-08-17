@@ -219,6 +219,7 @@ export default function ContactEn() {
 
         <p className="text-lg font-medium text-foreground max-w-3xl">Call now for a free and confidential assessment!</p>
         <LawyerBioBlock path="/en/contact" lang="en" className="mt-5" />
+        <GoogleReviewCard lang="en" className="mt-5" />
         <div className="mt-5">
           <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
             <a href="tel:+40316320183" aria-label="Call now - 031 632 01 83">
