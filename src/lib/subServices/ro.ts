@@ -3606,3 +3606,911 @@ export const fonduriEuropeneRo: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT_CE,
 };
+
+/* ============================================================
+   Subservicii - pagina-pilon Infracțiuni de corupție
+   ============================================================ */
+
+const L78 = "https://legislatie.just.ro/Public/DetaliiDocument/22361";
+
+const PARENT_COR = {
+  to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+  label: "infracțiuni de corupție",
+  breadcrumbLabel: "Infracțiuni de corupție",
+};
+
+export const dareLuareDeMitaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/dare-luare-de-mita",
+  altPath: "/en/services/bribery-giving-and-taking",
+  roPath: "/servicii/dare-luare-de-mita",
+  title: "Avocat Dare și Luare de Mită București | Bogdan Lamatic",
+  h1: "Avocat dare de mită și luare de mită în București",
+  description:
+    "Avocat dare de mită și luare de mită în București. Apărare în dosare de corupție, flagrant, audieri și măsuri preventive. 18+ ani experiență.",
+  keywords:
+    "avocat dare de mita, avocat luare de mita, avocat mita bucuresti, dosar coruptie mita",
+  breadcrumbLabel: "Dare și luare de mită",
+  serviceName: "Avocat dare și luare de mită București - Bogdan Lamatic",
+  urgency: [
+    "Ești cercetat pentru dare de mită sau luare de mită, ori ai fost prins într-un flagrant?",
+    "În aceste dosare, primele declarații, interceptările și modul în care este descrisă suma sau folosul primit decid direcția întregii anchete.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist funcționari publici, angajați din mediul privat și persoane acuzate că au oferit sume sau alte foloase, în dosare de mită instrumentate de Parchet sau de DNA.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi în ce etapă ești, pentru că apărarea se construiește diferit în fiecare dintre aceste situații."],
+      subsections: [
+        {
+          h3: "Ai fost prins în flagrant",
+          paragraphs: [
+            "Verific modul în care a fost organizat flagrantul, dacă erau întrunite condițiile legale și cum au fost consemnate sumele sau bunurile ridicate.",
+          ],
+        },
+        {
+          h3: "Ai fost chemat la audiere ca suspect",
+          paragraphs: [
+            "Analizez ordonanța, stabilesc ce faptă este reținută concret și pregătim împreună declarația, înainte de a te prezenta.",
+          ],
+        },
+        {
+          h3: "Ai oferit sau ai promis o sumă și acum ești cercetat",
+          paragraphs: [
+            "Verific dacă fapta a fost determinată prin constrângere din partea funcționarului și dacă poate opera cauza de nepedepsire prevăzută de lege pentru denunțător.",
+          ],
+        },
+        {
+          h3: "S-a propus o măsură preventivă în dosar",
+          paragraphs: [
+            "Pregătesc apărarea pentru propunerea de arestare sau de control judiciar și contest temeiurile invocate de procuror.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Sunt cercetat pentru mită - vreau o evaluare",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de mită",
+      bullets: [
+        "Calitatea persoanei cercetate și atribuțiile ei reale de serviciu.",
+        "Legătura dintre suma sau folosul reclamat și un act concret de serviciu.",
+        "Legalitatea interceptărilor, a înregistrărilor ambientale și a autorizațiilor.",
+        "Modul de organizare a flagrantului și consemnarea bunurilor ridicate.",
+        "Declarațiile denunțătorului și consecvența lor pe parcursul dosarului.",
+        "Măsurile asigurătorii dispuse asupra conturilor și bunurilor.",
+      ],
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Trimite-mi ce ai la îndemână, chiar dacă dosarul este la început."],
+      subsections: [
+        {
+          h3: "Actele primite de la organele judiciare",
+          paragraphs: ["Citația, ordonanța de punere în mișcare a acțiunii penale, procesul-verbal de flagrant sau de percheziție."],
+        },
+        {
+          h3: "Documentele de serviciu",
+          paragraphs: ["Fișa postului, decizii interne, regulamente și orice act care arată ce atribuții aveai în realitate."],
+        },
+        {
+          h3: "Corespondența relevantă",
+          paragraphs: ["Mesaje, e-mailuri sau documente care explică natura relației cu persoana care a formulat denunțul."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce înseamnă luarea de mită",
+      paragraphs: [
+        "Luarea de mită presupune pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, de către un funcționar public, în legătură cu îndeplinirea, neîndeplinirea sau întârzierea unui act ce ține de atribuțiile sale de serviciu.",
+        "Fapta este reglementată de art. 289 Cod penal și se poate reține chiar dacă suma nu a fost primită efectiv, fiind suficientă pretinderea sau acceptarea promisiunii.",
+        [
+          { text: "Atunci când fapta este cercetată alături de alte acuzații economice, dosarul intră frecvent în sfera de " },
+          { text: "apărare în cauze economice", to: "/servicii/criminalitate-economica" },
+          { text: ", cu expertize și analiza fluxurilor financiare." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce înseamnă darea de mită",
+      paragraphs: [
+        "Darea de mită constă în promisiunea, oferirea sau darea de bani ori alte foloase unui funcționar public, pentru ca acesta să îndeplinească, să nu îndeplinească sau să întârzie un act de serviciu. Fapta este prevăzută de art. 290 Cod penal.",
+        "Legea prevede două situații importante: fapta nu constituie infracțiune atunci când persoana a fost constrânsă să dea mita, iar mituitorul nu se pedepsește dacă denunță fapta înainte ca organul de urmărire penală să fi fost sesizat.",
+      ],
+    },
+    {
+      h2: "Cine poate fi subiect al infracțiunii",
+      paragraphs: [
+        "Textul vizează funcționarii publici, dar răspunderea este extinsă prin art. 308 Cod penal și la persoanele care exercită atribuții în cadrul unei persoane juridice private, cum sunt administratorii, directorii sau angajații cu atribuții de decizie.",
+        "Legea 78/2000 asimilează anumite categorii profesionale și extinde aplicarea textelor la fapte de corupție săvârșite în legătură cu fonduri publice sau europene.",
+      ],
+    },
+    {
+      h2: "Ce riști concret într-un dosar de mită",
+      cardClassName: "bg-[#faf0e6]",
+      bullets: [
+        "Pedeapsa închisorii, în limitele prevăzute de textul de incriminare pentru fiecare faptă.",
+        "Interzicerea exercitării dreptului de a ocupa o funcție publică sau de a exercita profesia.",
+        "Confiscarea sumelor sau bunurilor care au făcut obiectul mitei.",
+        "Măsuri asigurătorii asupra conturilor și bunurilor personale, pe durata procesului.",
+        "Consecințe disciplinare și profesionale în paralel cu procesul penal.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Dacă în dosar se discută deja o propunere de arestare sau de control judiciar, apărarea trebuie pregătită imediat pentru " },
+          { text: "termenul privind măsura preventivă", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Diferența dintre mită și trafic de influență",
+      paragraphs: [
+        "La mită, folosul este pretins sau oferit chiar funcționarului care are atribuția de serviciu vizată.",
+        [
+          { text: "La " },
+          { text: "cumpărarea sau vânzarea de influență", to: "/servicii/trafic-de-influenta" },
+          { text: ", folosul ajunge la o persoană care susține că are influență asupra funcționarului, fără ca funcționarul să primească ceva." },
+        ],
+        "Delimitarea are consecințe directe asupra încadrării juridice și asupra probelor care trebuie administrate.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "Verific dacă există o legătură dovedită între folos și un act concret de serviciu.",
+        "Contest legalitatea mijloacelor de probă obținute prin interceptare sau prin colaborator.",
+        "Analizez rolul denunțătorului și eventuala provocare la comiterea faptei.",
+        "Susțin constrângerea sau lipsa intenției, atunci când probele o permit.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen, inclusiv în dosarele instrumentate de DNA.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Când ancheta este condusă de procurorii anticorupție, se aplică regulile specifice descrise pe pagina de " },
+          { text: "asistență în dosare DNA", to: "/servicii/avocat-dna" },
+          { text: "." },
+        ],
+      ],
+      cta: "De ce să mă alegi",
+    },
+  ],
+  faq: [
+    {
+      q: "Se poate reține mita dacă nu am primit banii?",
+      a: "Da. Este suficientă pretinderea sumei sau acceptarea promisiunii, chiar dacă banii nu au fost primiți efectiv.",
+    },
+    {
+      q: "Ce se întâmplă dacă am fost constrâns să dau mită?",
+      a: "Legea prevede că fapta nu constituie infracțiune atunci când mituitorul a fost constrâns prin orice mijloace de cel care a primit folosul. Constrângerea trebuie însă dovedită.",
+    },
+    {
+      q: "Denunțul mă scutește de pedeapsă?",
+      a: "Mituitorul nu se pedepsește dacă denunță fapta mai înainte ca organul de urmărire penală să fi fost sesizat cu privire la aceasta. Condițiile trebuie verificate atent în fiecare caz.",
+    },
+    {
+      q: "Poate fi acuzat de mită un angajat dintr-o firmă privată?",
+      a: "Da. Prin norma de extindere a răspunderii, textele se aplică și persoanelor care exercită atribuții într-o persoană juridică privată, cu limite de pedeapsă reduse.",
+    },
+    {
+      q: "Banii ridicați la flagrant se restituie?",
+      a: "Sumele care au făcut obiectul mitei sunt supuse confiscării. Situația bunurilor ridicate se analizează separat, în funcție de proveniența și rolul lor în dosar.",
+    },
+    {
+      q: "Cine investighează dosarele de mită?",
+      a: "În funcție de calitatea persoanei și de valoarea folosului, competența aparține parchetelor de drept comun sau Direcției Naționale Anticorupție.",
+    },
+  ],
+  resources: [
+    { text: "Codul penal - art. 289 și art. 290 privind luarea și darea de mită.", href: CP, linkLabel: "Legislație" },
+    { text: "Legea 78/2000 privind prevenirea, descoperirea și sancționarea faptelor de corupție.", href: L78, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR,
+};
+
+export const traficDeInfluentaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/trafic-de-influenta",
+  altPath: "/en/services/influence-peddling",
+  roPath: "/servicii/trafic-de-influenta",
+  title: "Avocat Trafic de Influență București | Bogdan Lamatic",
+  h1: "Avocat trafic de influență în București",
+  description:
+    "Avocat trafic de influență și cumpărare de influență în București. Apărare în dosare de corupție, interceptări și denunțuri. 18+ ani experiență.",
+  keywords:
+    "avocat trafic de influenta, avocat cumparare de influenta, dosar trafic de influenta bucuresti",
+  breadcrumbLabel: "Trafic de influență",
+  serviceName: "Avocat trafic de influență București - Bogdan Lamatic",
+  urgency: [
+    "Ești acuzat că ai pretins bani susținând că ai influență asupra unui funcționar, sau că ai plătit pentru o astfel de intervenție?",
+    "În aceste dosare, totul se joacă pe conținutul discuțiilor înregistrate și pe modul în care este interpretată promisiunea făcută.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist persoane cercetate pentru trafic de influență și cumpărare de influență, în dosare bazate pe denunțuri, interceptări și înregistrări ambientale.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi unde este dosarul acum, ca să știm ce se poate face imediat."],
+      subsections: [
+        {
+          h3: "Există un denunț împotriva ta",
+          paragraphs: [
+            "Analizez conținutul denunțului, momentul formulării lui și interesul denunțătorului în dosar.",
+          ],
+        },
+        {
+          h3: "Ai fost chemat la audiere",
+          paragraphs: [
+            "Stabilim ce faptă este reținută concret și pregătim declarația, pentru ca discuțiile invocate să fie explicate corect.",
+          ],
+        },
+        {
+          h3: "În dosar există interceptări sau înregistrări ambientale",
+          paragraphs: [
+            "Verific autorizațiile, integritatea înregistrărilor și transcrierile, pentru că interpretarea unei conversații este adesea decisivă.",
+          ],
+        },
+        {
+          h3: "Ai plătit pentru o intervenție și acum ești cercetat",
+          paragraphs: [
+            "Verific dacă poate opera cauza de nepedepsire prin denunț și care sunt riscurile reale în situația ta.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Vreau o evaluare a dosarului meu",
+    },
+    {
+      h2: "Ce analizez imediat în dosar",
+      bullets: [
+        "Dacă a existat o promisiune concretă de intervenție pe lângă un funcționar determinat.",
+        "Dacă influența pretinsă era reală sau doar afirmată, pentru că infracțiunea există în ambele situații.",
+        "Legalitatea și integritatea interceptărilor și a înregistrărilor.",
+        "Rolul denunțătorului și eventuala provocare la comiterea faptei.",
+        "Sumele reclamate, traseul lor financiar și documentele care le însoțesc.",
+      ],
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Trimite-mi actele primite și, dacă există, transcrierile puse la dispoziție în dosar."],
+      subsections: [
+        {
+          h3: "Actele din dosar",
+          paragraphs: ["Citația, ordonanța de efectuare în continuare a urmăririi penale, procesul-verbal de percheziție."],
+        },
+        {
+          h3: "Corespondența cu persoana care te acuză",
+          paragraphs: ["Mesaje, e-mailuri, contracte sau documente care explică natura reală a relației dintre voi."],
+        },
+        {
+          h3: "Documentele financiare",
+          paragraphs: ["Extrase de cont, chitanțe, contracte de consultanță sau orice document care justifică sumele discutate."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este traficul de influență",
+      paragraphs: [
+        "Traficul de influență constă în pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, direct sau indirect, de către o persoană care are influență ori lasă să se creadă că are influență asupra unui funcționar public, promițând că îl va determina să îndeplinească, să nu îndeplinească ori să întârzie un act de serviciu.",
+        "Fapta este prevăzută de art. 291 Cod penal. Nu are relevanță dacă influența era reală sau doar afirmată și nici dacă funcționarul a fost efectiv contactat.",
+      ],
+    },
+    {
+      h2: "Ce este cumpărarea de influență",
+      paragraphs: [
+        "Cumpărarea de influență, prevăzută de art. 292 Cod penal, este fapta persoanei care promite, oferă sau dă bani ori alte foloase celui care susține că are influență asupra unui funcționar public.",
+        "Și în acest caz legea prevede o cauză de nepedepsire pentru cel care denunță fapta înainte ca organul de urmărire penală să fi fost sesizat.",
+      ],
+    },
+    {
+      h2: "Când o discuție nu înseamnă infracțiune",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Nu orice conversație despre relații sau despre modul în care funcționează o instituție înseamnă trafic de influență. Pentru existența infracțiunii trebuie dovedită o promisiune concretă de intervenție pe lângă un funcționar determinat sau determinabil și legătura acesteia cu un folos pretins ori primit.",
+        "Discuțiile generale, activitatea reală de consultanță, lobby-ul desfășurat în limitele legii sau simpla afirmare a unor relații, fără o promisiune de intervenție, nu întrunesc elementele infracțiunii.",
+      ],
+    },
+    {
+      h2: "Ce riști dacă acuzația se confirmă",
+      bullets: [
+        "Pedeapsa închisorii, potrivit limitelor prevăzute de textul de incriminare.",
+        "Interzicerea unor drepturi, inclusiv a dreptului de a ocupa o funcție publică.",
+        "Confiscarea sumelor sau bunurilor primite.",
+        "Măsuri asigurătorii asupra bunurilor, luate pe parcursul urmăririi penale.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Când în același dosar se discută și foloase primite direct de funcționar, acuzația se analizează împreună cu " },
+          { text: "faptele de mită", to: "/servicii/dare-luare-de-mita" },
+          { text: ", iar delimitarea dintre ele devine esențială." },
+        ],
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "Reconstitui contextul real al discuțiilor, dincolo de fragmentele selectate în rechizitoriu.",
+        "Contest transcrierile inexacte și solicit verificarea integrității înregistrărilor.",
+        "Demonstrez, acolo unde este cazul, existența unei activități profesionale reale în spatele sumelor primite.",
+        "Analizez provocarea și rolul organelor judiciare în producerea probelor.",
+        "Te asist la audieri și la fiecare termen, inclusiv în dosarele instrumentate de procurorii anticorupție.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Pentru dosarele aflate în competența Direcției Naționale Anticorupție, particularitățile procedurale sunt detaliate pe pagina dedicată " },
+          { text: "anchetelor DNA", to: "/servicii/avocat-dna" },
+          { text: "." },
+        ],
+      ],
+      cta: "De ce să mă alegi",
+    },
+  ],
+  faq: [
+    {
+      q: "Contează dacă influența era reală?",
+      a: "Nu. Infracțiunea se reține și atunci când persoana doar lasă să se creadă că are influență asupra funcționarului.",
+    },
+    {
+      q: "Trebuie ca funcționarul să fi fost contactat?",
+      a: "Nu. Este suficientă promisiunea de intervenție, chiar dacă funcționarul nu a aflat niciodată despre discuție.",
+    },
+    {
+      q: "Un contract de consultanță mă protejează?",
+      a: "Nu automat. Contractul are relevanță doar dacă în spatele lui există o activitate reală, dovedită prin livrabile și corespondență.",
+    },
+    {
+      q: "Ce se întâmplă cu banii dați pentru intervenție?",
+      a: "Sumele sunt supuse confiscării. Persoana care denunță fapta în condițiile legii poate obține restituirea, în limitele prevăzute de lege.",
+    },
+    {
+      q: "Pot fi cercetat doar pe baza unui denunț?",
+      a: "Denunțul poate declanșa ancheta, dar nu poate fundamenta singur o condamnare. El trebuie coroborat cu alte mijloace de probă.",
+    },
+    {
+      q: "Care este diferența față de luarea de mită?",
+      a: "La mită, folosul este pretins de funcționarul care are atribuția vizată. La trafic de influență, folosul ajunge la un intermediar care promite că va interveni.",
+    },
+  ],
+  resources: [
+    { text: "Codul penal - art. 291 și art. 292 privind traficul și cumpărarea de influență.", href: CP, linkLabel: "Legislație" },
+    { text: "Legea 78/2000 privind faptele de corupție și faptele asimilate acestora.", href: L78, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR,
+};
+
+export const abuzInServiciuRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/abuz-in-serviciu",
+  altPath: "/en/services/abuse-of-office",
+  roPath: "/servicii/abuz-in-serviciu",
+  title: "Avocat Abuz în Serviciu București | Bogdan Lamatic",
+  h1: "Avocat abuz în serviciu în București",
+  description:
+    "Avocat abuz în serviciu în București. Apărare pentru funcționari publici și administratori, prejudiciu, expertize și măsuri asigurătorii.",
+  keywords:
+    "avocat abuz in serviciu, dosar abuz in serviciu bucuresti, aparare abuz in serviciu",
+  breadcrumbLabel: "Abuz în serviciu",
+  serviceName: "Avocat abuz în serviciu București - Bogdan Lamatic",
+  urgency: [
+    "Ești cercetat pentru abuz în serviciu, după un control, un raport al Curții de Conturi sau o plângere?",
+    "În aceste dosare, apărarea începe de la atribuțiile tale exacte și de la textul legal despre care se spune că a fost încălcat.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist funcționari publici, primari, directori, membri ai comisiilor de achiziții și administratori din mediul privat, în dosare de abuz în serviciu.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi de unde a pornit dosarul, pentru că sursa acuzației arată ce probe trebuie contracarate."],
+      subsections: [
+        {
+          h3: "Un control sau un raport de audit a sesizat organele penale",
+          paragraphs: [
+            "Verific constatările controlului, temeiul legal invocat și dacă neregulile identificate au caracter administrativ sau penal.",
+          ],
+        },
+        {
+          h3: "Ai semnat sau ai aprobat un act care este acum contestat",
+          paragraphs: [
+            "Analizez circuitul documentului, avizele primite și responsabilitatea reală a fiecărei persoane implicate în decizie.",
+          ],
+        },
+        {
+          h3: "S-a calculat un prejudiciu în sarcina ta",
+          paragraphs: [
+            "Contest modul de calcul al pagubei și solicit expertiză, pentru că valoarea prejudiciului influențează direct încadrarea și limitele de pedeapsă.",
+          ],
+        },
+        {
+          h3: "Ai fost citat la audiere",
+          paragraphs: [
+            "Pregătim declarația pe documente, pentru ca explicațiile tehnice să fie consemnate corect încă de la prima audiere.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Vreau o analiză a acuzației",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de abuz în serviciu",
+      bullets: [
+        "Care este textul de lege despre care se susține că a fost încălcat.",
+        "Ce atribuții de serviciu aveai în mod concret, potrivit fișei postului și actelor interne.",
+        "Dacă actul contestat a fost avizat sau semnat și de alte persoane.",
+        "Existența unei pagube certe și modul în care a fost calculată.",
+        "Legătura dintre conduita ta și paguba sau vătămarea reclamată.",
+        "Măsurile asigurătorii dispuse asupra bunurilor tale.",
+      ],
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Cu cât văd mai repede documentele, cu atât pot spune mai exact unde este punctul slab al acuzației."],
+      subsections: [
+        {
+          h3: "Actele care descriu atribuțiile tale",
+          paragraphs: ["Fișa postului, regulamentul de organizare și funcționare, deciziile de numire și delegările de competență."],
+        },
+        {
+          h3: "Documentul contestat și circuitul lui",
+          paragraphs: ["Actul semnat, referatele, avizele juridice și economice, notele interne și corespondența aferentă."],
+        },
+        {
+          h3: "Raportul de control sau de audit",
+          paragraphs: ["Raportul Curții de Conturi, raportul de audit intern sau nota de constatare care a stat la baza sesizării."],
+        },
+        {
+          h3: "Actele privind prejudiciul",
+          paragraphs: ["Modul de calcul al pagubei, anexele și eventualele expertize deja efectuate."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este abuzul în serviciu",
+      paragraphs: [
+        "Abuzul în serviciu constă în fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, nu îndeplinește un act sau îl îndeplinește în mod defectuos și cauzează astfel o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane. Fapta este prevăzută de art. 297 Cod penal.",
+        "Îndeplinirea defectuoasă trebuie raportată la o dispoziție cuprinsă în lege sau într-o ordonanță, nu la norme interne sau la aprecieri de oportunitate. Această limitare este esențială în apărare.",
+      ],
+    },
+    {
+      h2: "Cine poate fi acuzat de abuz în serviciu",
+      paragraphs: [
+        "Subiectul principal este funcționarul public, noțiune definită larg în Codul penal și care include persoane din administrația centrală și locală, din instituții publice, precum și persoane care exercită un serviciu de interes public pentru care au fost învestite.",
+        "Prin art. 308 Cod penal, răspunderea este extinsă și la persoanele care exercită atribuții în cadrul unei persoane juridice private, cu limite de pedeapsă reduse cu o treime.",
+        "Când fapta este săvârșită în legătură cu obținerea unui folos necuvenit, se aplică forma agravată prevăzută de Legea 78/2000, iar competența poate reveni Direcției Naționale Anticorupție.",
+      ],
+    },
+    {
+      h2: "Când o eroare administrativă nu este infracțiune",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Nu orice decizie greșită, nelegală sau anulată de instanța de contencios administrativ înseamnă abuz în serviciu. Pentru existența infracțiunii sunt necesare încălcarea unei dispoziții din lege sau ordonanță, o pagubă ori o vătămare efectivă și intenția funcționarului.",
+        "Interpretarea diferită a unei norme neclare, decizia luată pe baza unui aviz favorabil, lipsa unei pagube certe sau simpla nerespectare a unei proceduri interne rămân, de regulă, în sfera răspunderii administrative sau disciplinare.",
+      ],
+    },
+    {
+      h2: "Ce riști dacă acuzația se confirmă",
+      bullets: [
+        "Pedeapsa închisorii și interzicerea exercitării dreptului de a ocupa o funcție publică.",
+        "Obligarea la plata prejudiciului reținut în sarcina ta.",
+        "Măsuri asigurătorii asupra bunurilor și conturilor, dispuse încă din urmărirea penală.",
+        "Consecințe disciplinare și pierderea funcției, în paralel cu procesul penal.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Când acuzația este însoțită de suspiciunea unui folos necuvenit, dosarul se apropie de zona " },
+          { text: "faptelor de mită", to: "/servicii/dare-luare-de-mita" },
+          { text: ", cu consecințe directe asupra încadrării juridice." },
+        ],
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "Identific exact norma din lege sau ordonanță invocată și verific dacă îți era aplicabilă.",
+        "Delimitez responsabilitatea ta de cea a celorlalte persoane care au avizat sau semnat actul.",
+        "Contest existența și întinderea prejudiciului, prin expertiză și obiecțiuni.",
+        "Susțin lipsa intenției, atunci când decizia a fost luată pe baza avizelor primite.",
+        "Formulez contestații împotriva măsurilor asigurătorii disproporționate.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Acuzația este analizată adesea împreună cu " },
+          { text: "încălcarea din culpă a atribuțiilor", to: "/servicii/neglijenta-in-serviciu" },
+          { text: ", iar forma de vinovăție reținută schimbă complet regimul sancționator." },
+        ],
+      ],
+      cta: "De ce să mă alegi",
+    },
+  ],
+  faq: [
+    {
+      q: "Orice act nelegal înseamnă abuz în serviciu?",
+      a: "Nu. Este necesară încălcarea unei dispoziții din lege sau ordonanță, existența unei pagube ori vătămări și intenția funcționarului.",
+    },
+    {
+      q: "Contează dacă am semnat pe baza unui aviz juridic favorabil?",
+      a: "Da. Avizele primite sunt relevante pentru forma de vinovăție și pot susține lipsa intenției în luarea deciziei.",
+    },
+    {
+      q: "Un administrator de firmă privată poate fi acuzat de abuz în serviciu?",
+      a: "Da, prin norma de extindere a răspunderii, cu limite de pedeapsă reduse cu o treime față de forma de bază.",
+    },
+    {
+      q: "Ce înseamnă forma agravată prevăzută de Legea 78/2000?",
+      a: "Se aplică atunci când funcționarul a obținut pentru sine sau pentru altul un folos necuvenit, iar limitele de pedeapsă se majorează.",
+    },
+    {
+      q: "Dacă restitui prejudiciul, dosarul se închide?",
+      a: "Nu automat. Acoperirea prejudiciului este relevantă pentru individualizarea pedepsei și pentru latura civilă, dar nu înlătură prin ea însăși răspunderea penală.",
+    },
+    {
+      q: "Cine investighează dosarele de abuz în serviciu?",
+      a: "Parchetele de drept comun, iar în cazul formei agravate sau al valorii ridicate a prejudiciului, Direcția Națională Anticorupție.",
+    },
+  ],
+  resources: [
+    { text: "Codul penal - art. 297 privind abuzul în serviciu.", href: CP, linkLabel: "Legislație" },
+    { text: "Legea 78/2000 - forma agravată a abuzului în serviciu.", href: L78, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR,
+};
+
+export const neglijentaInServiciuRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/neglijenta-in-serviciu",
+  altPath: "/en/services/negligence-in-office",
+  roPath: "/servicii/neglijenta-in-serviciu",
+  title: "Avocat Neglijență în Serviciu București | Bogdan Lamatic",
+  h1: "Avocat neglijență în serviciu în București",
+  description:
+    "Avocat neglijență în serviciu în București. Apărare pentru funcționari acuzați de încălcarea din culpă a atribuțiilor. 18+ ani experiență.",
+  keywords:
+    "avocat neglijenta in serviciu, dosar neglijenta in serviciu, aparare functionar public",
+  breadcrumbLabel: "Neglijență în serviciu",
+  serviceName: "Avocat neglijență în serviciu București - Bogdan Lamatic",
+  urgency: [
+    "Ești cercetat pentru neglijență în serviciu după un incident, un control sau o plângere?",
+    "În aceste dosare, apărarea se construiește pe volumul real de atribuții, pe resursele avute la dispoziție și pe legătura dintre omisiune și urmarea produsă.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist funcționari publici și persoane cu atribuții de control, avizare sau supraveghere, cercetate pentru încălcarea din culpă a îndatoririlor de serviciu.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi ce s-a întâmplat concret, pentru că în aceste dosare detaliile faptice decid soluția."],
+      subsections: [
+        {
+          h3: "A avut loc un incident și se caută responsabili",
+          paragraphs: [
+            "Verific ce obligații aveai efectiv, ce ai putut controla în mod real și dacă urmarea produsă îți este imputabilă.",
+          ],
+        },
+        {
+          h3: "Un control a constatat că nu ai îndeplinit o atribuție",
+          paragraphs: [
+            "Analizez actul de control și stabilesc dacă omisiunea reclamată a produs o pagubă sau o vătămare, condiție esențială a infracțiunii.",
+          ],
+        },
+        {
+          h3: "Ai fost citat ca suspect",
+          paragraphs: [
+            "Pregătim declarația pe documente și pe cronologia faptelor, pentru a evita asumarea unor obligații care nu îți reveneau.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Vreau o evaluare a situației mele",
+    },
+    {
+      h2: "Ce analizez imediat în dosar",
+      bullets: [
+        "Care era obligația concretă de serviciu și din ce act normativ rezulta.",
+        "Dacă omisiunea a fost din culpă și în ce formă.",
+        "Dacă există o pagubă sau o vătămare efectivă a drepturilor unei persoane.",
+        "Legătura de cauzalitate dintre omisiune și urmarea produsă.",
+        "Resursele, personalul și timpul avute la dispoziție în perioada analizată.",
+        "Responsabilitatea celorlalte persoane implicate în circuitul decizional.",
+      ],
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Trimite-mi actele care arată ce trebuia să faci și ce ai făcut efectiv."],
+      subsections: [
+        {
+          h3: "Atribuțiile tale de serviciu",
+          paragraphs: ["Fișa postului, regulamentul intern, deciziile de delegare și procedurile operaționale aplicabile."],
+        },
+        {
+          h3: "Documentele privind incidentul",
+          paragraphs: ["Sesizarea, procesul-verbal de constatare, rapoartele interne și corespondența din perioada relevantă."],
+        },
+        {
+          h3: "Dovezile privind resursele disponibile",
+          paragraphs: ["State de funcții, volumul de lucrări repartizate, solicitări de suplimentare a personalului sau a bugetului."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este neglijența în serviciu",
+      paragraphs: [
+        "Neglijența în serviciu constă în încălcarea din culpă, de către un funcționar public, a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau prin îndeplinirea ei defectuoasă, dacă se cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane. Fapta este prevăzută de art. 298 Cod penal.",
+        "Spre deosebire de alte fapte de serviciu, aici nu se cere intenția, ci culpa. Însă urmarea păgubitoare trebuie să existe și să fie dovedită, nu presupusă.",
+      ],
+    },
+    {
+      h2: "Diferența față de abuzul în serviciu",
+      paragraphs: [
+        [
+          { text: "Elementul care separă cele două infracțiuni este forma de vinovăție. La " },
+          { text: "încălcarea cu intenție a atribuțiilor", to: "/servicii/abuz-in-serviciu" },
+          { text: ", funcționarul acționează cu intenție, în timp ce la neglijență fapta este comisă din culpă." },
+        ],
+        "Delimitarea are consecințe majore: limitele de pedeapsă sunt mai reduse, iar în multe situații acuzația inițială de abuz poate fi reîncadrată corect ca neglijență, atunci când probele nu susțin intenția.",
+      ],
+    },
+    {
+      h2: "Când nu există infracțiune",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Lipsa pagubei sau a vătămării efective face ca fapta să nu întrunească elementele infracțiunii, oricât de gravă ar părea omisiunea din perspectivă disciplinară.",
+        "De asemenea, nu se poate reține neglijența atunci când obligația nu îți revenea, când îndeplinirea ei era imposibilă din cauza lipsei de resurse ori de personal, sau când urmarea s-a produs din cauza conduitei altei persoane. În aceste situații, discuția rămâne una de răspundere disciplinară sau administrativă.",
+      ],
+    },
+    {
+      h2: "Ce riști dacă acuzația se confirmă",
+      bullets: [
+        "Pedeapsa închisorii sau amenda, potrivit limitelor prevăzute de lege.",
+        "Obligarea la plata prejudiciului produs.",
+        "Sancțiuni disciplinare aplicate în paralel de angajator.",
+        "Consecințe asupra dreptului de a ocupa anumite funcții.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "Delimitez exact obligațiile care îți reveneau, prin raportare la actele normative și interne.",
+        "Demonstrez lipsa legăturii de cauzalitate dintre omisiune și urmarea produsă.",
+        "Contest existența sau întinderea prejudiciului, cu expertiză atunci când este necesar.",
+        "Susțin imposibilitatea obiectivă de îndeplinire a atribuției, prin probe privind resursele disponibile.",
+        "Te asist la audieri și la fiecare termen, în fața procurorului și a instanței.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Alte acuzații apărute frecvent în același dosar, cum sunt cele privind " },
+          { text: "situațiile de incompatibilitate", to: "/servicii/conflict-de-interese" },
+          { text: ", trebuie analizate separat, pentru că au condiții distincte." },
+        ],
+      ],
+      cta: "De ce să mă alegi",
+    },
+  ],
+  faq: [
+    {
+      q: "Se poate reține neglijența fără prejudiciu?",
+      a: "Nu. Legea cere producerea unei pagube ori a unei vătămări a drepturilor sau intereselor legitime ale unei persoane.",
+    },
+    {
+      q: "Ce se întâmplă dacă nu am avut personal suficient?",
+      a: "Lipsa resurselor este un element de apărare important, mai ales dacă ai solicitat în scris suplimentarea lor.",
+    },
+    {
+      q: "Poate fi schimbată încadrarea din abuz în neglijență?",
+      a: "Da. Atunci când probele nu susțin intenția, încadrarea juridică poate fi schimbată în neglijență în serviciu.",
+    },
+    {
+      q: "Este necesară plângerea prealabilă?",
+      a: "Nu. Urmărirea penală se desfășoară din oficiu, iar persoana vătămată se poate constitui parte civilă.",
+    },
+    {
+      q: "Sancțiunea disciplinară exclude dosarul penal?",
+      a: "Nu. Cele două forme de răspundere sunt distincte și pot funcționa în paralel.",
+    },
+    {
+      q: "Cât durează un astfel de dosar?",
+      a: "Depinde de complexitatea probelor și de expertizele necesare. Îți pot da o estimare realistă după ce văd actele.",
+    },
+  ],
+  resources: [
+    { text: "Codul penal - art. 298 privind neglijența în serviciu.", href: CP, linkLabel: "Legislație" },
+    { text: "Codul penal - art. 308 privind extinderea răspunderii.", href: CP, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR,
+};
+
+export const conflictDeInteresenRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/conflict-de-interese",
+  altPath: "/en/services/conflict-of-interest",
+  roPath: "/servicii/conflict-de-interese",
+  title: "Avocat Conflict de Interese București | Bogdan Lamatic",
+  h1: "Avocat conflict de interese în București",
+  description:
+    "Avocat conflict de interese în București. Apărare în dosare privind folosirea funcției pentru favorizarea unor persoane. 18+ ani experiență.",
+  keywords:
+    "avocat conflict de interese, folosirea functiei pentru favorizarea unor persoane, dosar ANI",
+  breadcrumbLabel: "Conflict de interese",
+  serviceName: "Avocat conflict de interese București - Bogdan Lamatic",
+  urgency: [
+    "Ai primit un raport de evaluare de la Agenția Națională de Integritate sau ești cercetat penal pentru conflict de interese?",
+    "Raportul administrativ și dosarul penal sunt proceduri diferite, iar apărarea trebuie construită pe ambele, în paralel.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist aleși locali, funcționari publici și persoane cu atribuții de decizie în proceduri de integritate și în dosare penale privind conflictul de interese.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi din ce procedură a pornit problema, pentru că termenele sunt diferite."],
+      subsections: [
+        {
+          h3: "Ai primit un raport de evaluare privind integritatea",
+          paragraphs: [
+            "Analizez raportul, termenul de contestare și șansele de anulare în contencios administrativ, înainte ca acesta să devină definitiv.",
+          ],
+        },
+        {
+          h3: "Ai fost sesizat că ești cercetat penal",
+          paragraphs: [
+            "Verific dacă actul îndeplinit se încadrează în ipoteza textului penal și dacă folosul reclamat are caracter patrimonial.",
+          ],
+        },
+        {
+          h3: "Ai semnat un contract cu o firmă apropiată",
+          paragraphs: [
+            "Verific relația de rudenie sau afacere invocată, raporturile comerciale din ultimii ani și excepțiile prevăzute de lege.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Vreau o evaluare a situației mele",
+    },
+    {
+      h2: "Ce analizez imediat în dosar",
+      bullets: [
+        "Actul concret îndeplinit în exercitarea atribuțiilor de serviciu.",
+        "Existența unui folos patrimonial pentru tine, pentru rude sau pentru persoane cu care ai avut raporturi de afaceri.",
+        "Gradul de rudenie și perioada raporturilor comerciale invocate.",
+        "Dacă situația se încadrează în excepțiile prevăzute expres de lege.",
+        "Relația dintre procedura administrativă de integritate și dosarul penal.",
+      ],
+    },
+    {
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Am nevoie de actele care arată cine a decis și în ce condiții."],
+      subsections: [
+        {
+          h3: "Actul contestat",
+          paragraphs: ["Contractul, dispoziția, hotărârea sau decizia semnată, împreună cu documentația care a stat la baza ei."],
+        },
+        {
+          h3: "Raportul de evaluare",
+          paragraphs: ["Raportul primit, dovada comunicării și eventuala contestație deja formulată."],
+        },
+        {
+          h3: "Documentele privind relația invocată",
+          paragraphs: ["Acte de stare civilă, documente societare, contracte anterioare care arată natura reală a raporturilor."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este conflictul de interese în plan penal",
+      paragraphs: [
+        "Textul penal, denumit folosirea funcției pentru favorizarea unor persoane, sancționează fapta funcționarului public care, în exercitarea atribuțiilor de serviciu, a îndeplinit un act prin care s-a obținut un folos patrimonial pentru sine, pentru soțul său, pentru o rudă ori un afin până la gradul II inclusiv. Fapta este prevăzută de art. 301 Cod penal.",
+        "Legea prevede și o excepție expresă, pentru situațiile de emitere, aprobare sau adoptare a actelor normative.",
+      ],
+    },
+    {
+      h2: "Diferența dintre procedura de integritate și dosarul penal",
+      paragraphs: [
+        "Raportul de evaluare întocmit în procedura administrativă de integritate poate constata o stare de conflict de interese fără ca fapta să constituie automat infracțiune. Raportul se contestă în contencios administrativ, în termenul prevăzut de lege.",
+        "Dosarul penal are condiții proprii, mai stricte, privind actul îndeplinit, folosul patrimonial și cercul de persoane favorizate. Cele două proceduri se desfășoară în paralel, iar apărarea trebuie coordonată între ele.",
+      ],
+    },
+    {
+      h2: "Când fapta nu constituie infracțiune",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege.",
+        "Rămân în afara textului penal situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, foloasele nepatrimoniale, precum și emiterea sau adoptarea actelor normative, exceptată expres de lege.",
+      ],
+    },
+    {
+      h2: "Ce riști dacă acuzația se confirmă",
+      bullets: [
+        "Pedeapsa închisorii și interzicerea dreptului de a ocupa o funcție publică.",
+        "Anularea actelor administrative sau a contractelor încheiate în conflict de interese.",
+        "Încetarea mandatului sau a raportului de serviciu, în procedura de integritate.",
+        "Interdicția de a mai ocupa o funcție eligibilă pe durata prevăzută de lege.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "În aceleași dosare apare frecvent și acuzația privind " },
+          { text: "exercitarea defectuoasă a atribuțiilor", to: "/servicii/abuz-in-serviciu" },
+          { text: ", motiv pentru care apărarea trebuie construită unitar." },
+        ],
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea",
+      bullets: [
+        "Verific dacă actul reproșat intră în sfera atribuțiilor tale de serviciu.",
+        "Contest caracterul patrimonial al folosului sau existența lui.",
+        "Analizez gradul de rudenie și durata raporturilor comerciale invocate.",
+        "Susțin aplicarea excepțiilor prevăzute expres de lege.",
+        "Coordonez apărarea din dosarul penal cu contestația împotriva raportului de integritate.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Când în dosar apar și acuzații privind foloase primite direct, situația se analizează împreună cu " },
+          { text: "acuzațiile de corupție propriu-zisă", to: "/servicii/dare-luare-de-mita" },
+          { text: "." },
+        ],
+      ],
+      cta: "De ce să mă alegi",
+    },
+  ],
+  faq: [
+    {
+      q: "Raportul de integritate înseamnă automat dosar penal?",
+      a: "Nu. Constatarea administrativă a unei stări de conflict de interese nu echivalează cu întrunirea elementelor infracțiunii.",
+    },
+    {
+      q: "Ce persoane intră în cercul prevăzut de lege?",
+      a: "Soțul, rudele și afinii până la gradul II inclusiv, potrivit textului de incriminare.",
+    },
+    {
+      q: "Abținerea de la vot mă protejează?",
+      a: "Da, în principiu. Dacă nu ai îndeplinit actul din care rezultă folosul, elementul material al infracțiunii lipsește.",
+    },
+    {
+      q: "Se aplică textul și la actele normative?",
+      a: "Nu. Legea exceptează expres emiterea, aprobarea sau adoptarea actelor normative.",
+    },
+    {
+      q: "Contractul semnat poate fi anulat?",
+      a: "Da. Actele încheiate cu încălcarea regulilor privind conflictul de interese pot fi lovite de nulitate.",
+    },
+    {
+      q: "Pot contesta raportul de evaluare?",
+      a: "Da, în contencios administrativ, în termenul prevăzut de lege de la comunicare. Termenul este scurt, așa că trebuie acționat rapid.",
+    },
+  ],
+  resources: [
+    { text: "Codul penal - art. 301 privind folosirea funcției pentru favorizarea unor persoane.", href: CP, linkLabel: "Legislație" },
+    { text: "Legea 78/2000 privind faptele de corupție și faptele asimilate acestora.", href: L78, linkLabel: "Legislație" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR,
+};
