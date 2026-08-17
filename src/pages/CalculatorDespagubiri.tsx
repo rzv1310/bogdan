@@ -64,7 +64,7 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className = "",
   ...props
 }) => (
-  <div {...props} className={`rounded-2xl shadow-lg bg-white p-5 md:p-7 ${className}`}>{children}</div>
+  <div {...props} className={cn("rounded-2xl shadow-lg bg-white p-5 md:p-7", className)}>{children}</div>
 );
 
 export default function CalculatorDespagubiri() {
