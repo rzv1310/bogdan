@@ -11,6 +11,8 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
+import GoogleReviewCard from "@/components/services/GoogleReviewCard";
+
 
 export interface SubServiceSubsection {
   h3: string;
