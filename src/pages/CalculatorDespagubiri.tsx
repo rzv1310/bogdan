@@ -558,8 +558,8 @@ export default function CalculatorDespagubiri() {
               <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună acum</span>
             </a>
           </Button>
-              <ServicesQuickLinks exclude={[
-        {/* Breadcrumb */}
+              <ServicesQuickLinks exclude={["/blog", "/contact"]} />
+            </section>
         <section className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
           <Breadcrumb>
             <BreadcrumbList>
