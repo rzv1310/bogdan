@@ -1139,6 +1139,7 @@ export const controlJudiciarRo: SubServicePageData = {
   sections: [
     {
       h2: "Ce vrei să rezolvi?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Alege situația care te interesează și mergi direct la explicații:",
       ],
