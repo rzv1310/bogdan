@@ -4616,6 +4616,140 @@ export const neglijentaInServiciuRo: SubServicePageData = {
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
     {
+      h2: "Ce normă trebuie încălcată pentru a exista neglijență în serviciu?",
+      paragraphs: [
+        "În forma actuală, art. 298 Cod penal cere ca îndatorirea de serviciu încălcată să rezulte dintr-o lege, o ordonanță a Guvernului, o ordonanță de urgență sau un alt act care avea putere de lege. Nu orice obligație profesională intră în această categorie.",
+        "Curtea Constituțională a aplicat și neglijenței în serviciu standardul stabilit pentru abuzul în serviciu: sintagma „îndeplinirea defectuoasă” înseamnă îndeplinirea prin încălcarea unei dispoziții dintr-un act normativ cu putere de lege, nu simpla nerespectare a unor reguli interne sau a unor bune practici.",
+      ],
+      subsections: [
+        {
+          h3: "Este suficientă încălcarea fișei postului?",
+          paragraphs: [
+            "Nu. Fișa postului arată ce atribuții aveai, deci este utilă pentru a stabili dacă obligația îți revenea, dar nu poate înlocui norma din lege sau ordonanță pe care trebuie să se sprijine acuzația.",
+            "Dacă singurul document invocat este fișa postului, susțin că fapta nu este prevăzută de legea penală și că discuția rămâne una de răspundere disciplinară.",
+          ],
+        },
+        {
+          h3: "Este suficientă încălcarea unei proceduri interne?",
+          paragraphs: [
+            "Regulamentele interne, procedurile operaționale, circularele sau notele de serviciu nu sunt legi ori ordonanțe. Nerespectarea lor poate atrage sancțiuni administrative, însă nu îndeplinește singură cerința prevăzută de art. 298.",
+            "Verific dacă procedura internă este într-adevăr legată de o dispoziție dintr-un act normativ cu putere de lege sau dacă legătura a fost construită ulterior, pentru a acoperi lipsa unui text aplicabil.",
+          ],
+        },
+        {
+          h3: "Ce act normativ trebuie indicat în acuzație?",
+          paragraphs: [
+            "Cer de la început indicarea exactă a actului normativ, a articolului și a alineatului care ar fi fost încălcate. Fără această indicare precisă, apărarea poate cere clasarea sau achitarea, pentru că elementul material al infracțiunii nu este determinat.",
+          ],
+        },
+      ],
+      cta: "Vreau să verificăm temeiul legal invocat",
+      ctaIcon: false,
+    },
+    {
+      h2: "Când o greșeală profesională devine neglijență în serviciu?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Lipsa pagubei sau a vătămării efective face ca fapta să nu întrunească elementele infracțiunii, oricât de gravă ar părea omisiunea din perspectivă disciplinară.",
+        "De asemenea, nu se poate reține neglijența atunci când obligația nu îți revenea, când îndeplinirea ei era imposibilă din cauza lipsei de resurse ori de personal, sau când urmarea s-a produs din cauza conduitei altei persoane.",
+      ],
+      subsections: [
+        {
+          h3: "Greșeală profesională vs infracțiune",
+          paragraphs: [
+            "O eroare de apreciere, o interpretare rezonabilă a unei norme neclare sau o alegere între mai multe variante permise nu se transformă automat în infracțiune. Pentru neglijență este nevoie de încălcarea unei îndatoriri prevăzute de lege și de o urmare păgubitoare dovedită.",
+          ],
+        },
+        {
+          h3: "Abatere disciplinară vs răspundere penală",
+          paragraphs: [
+            "Multe fapte reclamate în astfel de dosare rămân în sfera disciplinară: întârzieri, completări incomplete, nerespectarea unor termene interne. Sancțiunea disciplinară nu presupune și existența infracțiunii, iar cele două forme de răspundere au condiții diferite.",
+          ],
+        },
+        {
+          h3: "De ce simplul rezultat nefavorabil nu este suficient",
+          paragraphs: [
+            "Faptul că a apărut un incident, o pierdere financiară sau o nemulțumire nu dovedește culpa ta. Acuzarea trebuie să arate ce obligație legală ai încălcat și cum anume conduita ta a produs urmarea, nu doar că rezultatul este neplăcut.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Ți s-a spus că ești responsabil pentru un incident?",
+      calloutAfterSubsectionsCta: "Sună oricum",
+    },
+    {
+      h2: "Cum se dovedește legătura dintre greșeală și prejudiciu?",
+      paragraphs: [
+        "Neglijența în serviciu este o infracțiune de rezultat: nu este suficientă încălcarea îndatoririi, trebuie dovedită și producerea unei pagube ori a unei vătămări a drepturilor sau intereselor legitime ale unei persoane, precum și legătura de cauzalitate dintre cele două.",
+      ],
+      subsections: [
+        {
+          h3: "Ce se întâmplă dacă rezultatul s-ar fi produs oricum",
+          paragraphs: [
+            "Dacă paguba s-ar fi produs și în ipoteza în care ți-ai fi îndeplinit perfect atribuția, legătura de cauzalitate lipsește. Este unul dintre cele mai puternice argumente de apărare în dosarele construite pe omisiuni formale.",
+          ],
+        },
+        {
+          h3: "Intervenția altor persoane",
+          paragraphs: [
+            "Reconstitui circuitul complet al documentului sau al deciziei: cine a propus, cine a verificat, cine a avizat și cine a semnat. Când urmarea a fost determinată de conduita altei persoane, răspunderea nu poate fi mutată pe tine.",
+          ],
+        },
+        {
+          h3: "Cauze externe",
+          paragraphs: [
+            "Defecțiuni tehnice, informații eronate primite din exterior, decizii ale altor instituții sau evenimente imprevizibile pot rupe lanțul cauzal. Documentez aceste împrejurări cu acte, nu doar cu declarații.",
+          ],
+        },
+        {
+          h3: "Expertiza tehnică",
+          paragraphs: [
+            "Când discuția implică valori, calcule sau aspecte tehnice, solicit expertiză, propun obiectivele și formulez obiecțiuni la raport, ca legătura de cauzalitate și întinderea pagubei să nu rămână stabilite doar de organul de control.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Lipsa personalului, timpului sau resurselor poate exclude răspunderea?",
+      paragraphs: [
+        "Da, atunci când imposibilitatea de executare este reală și poate fi dovedită. Nu se poate reține culpa pentru o obligație care, în condițiile concrete de lucru, nu putea fi îndeplinită.",
+      ],
+      subsections: [
+        {
+          h3: "Lipsa de personal",
+          paragraphs: ["State de funcții, posturi vacante și repartizarea reală a sarcinilor în perioada analizată."],
+        },
+        {
+          h3: "Buget insuficient",
+          paragraphs: ["Bugetul aprobat, refuzurile de finanțare și imposibilitatea de a contracta serviciile sau lucrările necesare."],
+        },
+        {
+          h3: "Volum excesiv de muncă",
+          paragraphs: ["Numărul de lucrări repartizate, termenele impuse și comparația cu volumul normal pentru funcția ta."],
+        },
+        {
+          h3: "Solicitări de suplimentare ignorate",
+          paragraphs: ["Notele, referatele și adresele prin care ai cerut personal, buget sau prelungirea termenelor, împreună cu răspunsurile primite."],
+        },
+        {
+          h3: "Imposibilitate obiectivă de executare",
+          paragraphs: ["Situațiile în care îndeplinirea atribuției depindea de un act, o informație sau o aprobare care nu au existat la momentul respectiv."],
+        },
+      ],
+      ctaAfterSubsections: "Vreau să analizăm resursele pe care le-am avut",
+    },
+    {
+      h2: "Cine poate fi acuzat de neglijență în serviciu?",
+      paragraphs: [
+        "Subiectul infracțiunii este funcționarul public în sensul penal al termenului, noțiune mult mai largă decât cea din dreptul administrativ: include persoanele care exercită atribuții prevăzute de lege, o funcție de demnitate publică, o funcție de conducere într-o instituție publică sau atribuții de control și avizare.",
+        "Prin art. 308 Cod penal, răspunderea se extinde și la persoanele care exercită, permanent ori temporar, cu sau fără remunerație, o însărcinare de orice natură în serviciul unei persoane fizice sau al unei persoane juridice de drept privat. Astfel, pot fi cercetați și angajați din mediul privat, directori, administratori sau membri ai organelor de conducere, cu limite de pedeapsă reduse cu o treime.",
+        [
+          { text: "Pentru contextul general al acuzațiilor legate de exercitarea funcției, vezi pagina despre " },
+          { text: "fapte legate de exercitarea funcției publice", to: PARENT_COR.to },
+          { text: "." },
+        ],
+      ],
+    },
+    {
       h2: "Ce este neglijența în serviciu",
       paragraphs: [
         "Neglijența în serviciu constă în încălcarea din culpă, de către un funcționar public, a unei îndatoriri de serviciu, prin neîndeplinirea acesteia sau prin îndeplinirea ei defectuoasă, dacă se cauzează o pagubă ori o vătămare a drepturilor sau intereselor legitime ale unei persoane. Fapta este prevăzută de art. 298 Cod penal.",
@@ -4631,14 +4765,6 @@ export const neglijentaInServiciuRo: SubServicePageData = {
           { text: ", funcționarul acționează cu intenție, în timp ce la neglijență fapta este comisă din culpă." },
         ],
         "Delimitarea are consecințe majore: limitele de pedeapsă sunt mai reduse, iar în multe situații acuzația inițială de abuz poate fi reîncadrată corect ca neglijență, atunci când probele nu susțin intenția.",
-      ],
-    },
-    {
-      h2: "Când nu există infracțiune",
-      cardClassName: "bg-[#faf0e6]",
-      paragraphs: [
-        "Lipsa pagubei sau a vătămării efective face ca fapta să nu întrunească elementele infracțiunii, oricât de gravă ar părea omisiunea din perspectivă disciplinară.",
-        "De asemenea, nu se poate reține neglijența atunci când obligația nu îți revenea, când îndeplinirea ei era imposibilă din cauza lipsei de resurse ori de personal, sau când urmarea s-a produs din cauza conduitei altei persoane. În aceste situații, discuția rămâne una de răspundere disciplinară sau administrativă.",
       ],
     },
     {
@@ -4670,14 +4796,6 @@ export const neglijentaInServiciuRo: SubServicePageData = {
     },
   ],
   faq: [
-    {
-      q: "Se poate reține neglijența fără prejudiciu?",
-      a: "Nu. Legea cere producerea unei pagube ori a unei vătămări a drepturilor sau intereselor legitime ale unei persoane.",
-    },
-    {
-      q: "Ce se întâmplă dacă nu am avut personal suficient?",
-      a: "Lipsa resurselor este un element de apărare important, mai ales dacă ai solicitat în scris suplimentarea lor.",
-    },
     {
       q: "Poate fi schimbată încadrarea din abuz în neglijență?",
       a: "Da. Atunci când probele nu susțin intenția, încadrarea juridică poate fi schimbată în neglijență în serviciu.",
