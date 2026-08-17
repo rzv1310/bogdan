@@ -162,6 +162,12 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/grup-infractional-organizat": "Grup infracțional organizat",
   "/servicii/trafic-international-de-droguri": "Trafic internațional de droguri",
   "/servicii/sechestru-asigurator": "Sechestru asigurător",
+  "/servicii/alcool-la-volan": "Alcool la volan",
+  "/servicii/droguri-la-volan": "Droguri la volan",
+  "/servicii/parasirea-locului-accidentului": "Părăsirea locului accidentului",
+  "/servicii/refuz-prelevare-probe-biologice": "Refuz prelevare probe biologice",
+  "/servicii/conducere-fara-permis": "Conducere fără permis",
+  "/servicii/accident-rutier-cu-victime": "Accident rutier cu victime",
   "/servicii/confiscare": "Confiscare",
   "/calculator-despagubiri": "Calculator despăgubiri",
 

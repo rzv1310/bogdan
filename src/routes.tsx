@@ -136,6 +136,19 @@ const PreTrialDetentionEn = lazyRoute(() => import("./pages/en/services/pre-tria
 const JudicialControlEn = lazyRoute(() => import("./pages/en/services/judicial-control"));
 const HouseArrestEn = lazyRoute(() => import("./pages/en/services/house-arrest"));
 const CompensationCalculatorEn = lazyRoute(() => import("./pages/en/compensation-calculator"));
+const AlcoolLaVolan = lazyRoute(() => import("./pages/services/alcool-la-volan"));
+const DrunkDrivingEn = lazyRoute(() => import("./pages/en/services/drunk-driving"));
+const DroguriLaVolan = lazyRoute(() => import("./pages/services/droguri-la-volan"));
+const DrugDrivingEn = lazyRoute(() => import("./pages/en/services/drug-driving"));
+const ParasireaLoculuiAccidentului = lazyRoute(() => import("./pages/services/parasirea-locului-accidentului"));
+const LeavingAccidentSceneEn = lazyRoute(() => import("./pages/en/services/leaving-the-accident-scene"));
+const RefuzPrelevareProbe = lazyRoute(() => import("./pages/services/refuz-prelevare-probe-biologice"));
+const RefusalBiologicalSamplesEn = lazyRoute(() => import("./pages/en/services/refusal-to-provide-biological-samples"));
+const ConducereFaraPermis = lazyRoute(() => import("./pages/services/conducere-fara-permis"));
+const DrivingWithoutLicenceEn = lazyRoute(() => import("./pages/en/services/driving-without-a-licence"));
+const AccidentRutierCuVictime = lazyRoute(() => import("./pages/services/accident-rutier-cu-victime"));
+const RoadAccidentWithVictimsEn = lazyRoute(() => import("./pages/en/services/road-accident-with-victims"));
+
 
 export default function AppRoutes() {
   return (
@@ -171,6 +184,12 @@ export default function AppRoutes() {
           <Route path="/servicii/trafic-international-de-droguri" element={<TraficInternationalDeDroguri />} />
           <Route path="/servicii/sechestru-asigurator" element={<SechestruAsigurator />} />
           <Route path="/servicii/confiscare" element={<Confiscare />} />
+          <Route path="/servicii/alcool-la-volan" element={<AlcoolLaVolan />} />
+          <Route path="/servicii/droguri-la-volan" element={<DroguriLaVolan />} />
+          <Route path="/servicii/parasirea-locului-accidentului" element={<ParasireaLoculuiAccidentului />} />
+          <Route path="/servicii/refuz-prelevare-probe-biologice" element={<RefuzPrelevareProbe />} />
+          <Route path="/servicii/conducere-fara-permis" element={<ConducereFaraPermis />} />
+          <Route path="/servicii/accident-rutier-cu-victime" element={<AccidentRutierCuVictime />} />
 
           <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
           <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
@@ -244,6 +263,12 @@ export default function AppRoutes() {
           <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
           <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
           <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
+          <Route path="/en/services/drunk-driving" element={<DrunkDrivingEn />} />
+          <Route path="/en/services/drug-driving" element={<DrugDrivingEn />} />
+          <Route path="/en/services/leaving-the-accident-scene" element={<LeavingAccidentSceneEn />} />
+          <Route path="/en/services/refusal-to-provide-biological-samples" element={<RefusalBiologicalSamplesEn />} />
+          <Route path="/en/services/driving-without-a-licence" element={<DrivingWithoutLicenceEn />} />
+          <Route path="/en/services/road-accident-with-victims" element={<RoadAccidentWithVictimsEn />} />
           <Route path="/en/services/workplace-criminal-liability" element={<WorkplaceLiabilityEn />} />
           <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
 
