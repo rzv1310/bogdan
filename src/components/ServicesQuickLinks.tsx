@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 interface ServicesQuickLinksProps {
   lang?: "ro" | "en";
   className?: string;
+  exclude?: string[];
 }
 
 

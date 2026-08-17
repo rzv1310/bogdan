@@ -176,7 +176,7 @@ export default function CalculatorDespagubiri() {
               Calculator despăgubiri victime accidente
             </h1>
             <p className="mt-3 text-zinc-700">
-              Sunt <strong>Bogdan Lamatic</strong>, avocat în Baroul București. Reprezint victimele în procese penale și <Link to="/servicii/reprezentarea-victimelor-in-procese-penale" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obțin despăgubiri pentru accidente rutiere</Link>, vătămări corporale și accidente de muncă. Recunoscut de Legal 500 ca <em>Next Generation Partner</em> (White-Collar Crime).
+              Sunt Bogdan Lamatic, avocat în Baroul București. Reprezint victimele în procese penale și obțin despăgubiri pentru accidente rutiere, vătămări corporale și accidente de muncă. Sunt recunoscut de Legal 500 ca Next Generation Partner (White-Collar Crime).
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">

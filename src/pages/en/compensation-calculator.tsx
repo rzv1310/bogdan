@@ -185,7 +185,7 @@ export default function CompensationCalculator() {
               Compensation Calculator for Accident Victims
             </h1>
             <p className="mt-3 text-zinc-700">
-              I am <strong>Bogdan Lamatic</strong>, attorney with the Bucharest Bar. I represent victims in criminal proceedings and <Link to="/en/services/victim-representation-in-criminal-cases" className="underline decoration-accent decoration-2 underline-offset-2 text-current">obtain compensation for road accidents</Link>, bodily harm and workplace accidents. Recognized by Legal 500 as a <em>Next Generation Partner</em> (White-Collar Crime).
+              I am Bogdan Lamatic, attorney with the Bucharest Bar. I represent victims in criminal proceedings and obtain compensation for road accidents, bodily harm and workplace accidents. I am recognized by Legal 500 as a Next Generation Partner (White-Collar Crime).
             </p>
             <ul className="mt-4 grid gap-2 text-zinc-700">
               <li className="flex items-start gap-2">
