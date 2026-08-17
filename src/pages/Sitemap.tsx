@@ -38,6 +38,13 @@ export default function Sitemap() {
     { url: "/servicii/infractiuni-rutiere-cu-victime", title: "Infracțiuni Rutiere cu Victime" },
     { url: "/servicii/raspundere-penala-incidente-locul-de-munca", title: "Răspundere Penală Locul de Muncă" },
     { url: "/servicii/reprezentarea-victimelor-in-procese-penale", title: "Reprezentarea Victimelor în Procese Penale" },
+    { url: "/servicii/evaziune-fiscala", title: "Evaziune fiscală" },
+    { url: "/servicii/inselaciune-frauda", title: "Înșelăciune și fraudă" },
+    { url: "/servicii/delapidare", title: "Delapidare" },
+    { url: "/servicii/fals-si-uz-de-fals", title: "Fals și uz de fals" },
+    { url: "/servicii/bancruta-frauduloasa", title: "Bancrută frauduloasă" },
+    { url: "/servicii/frauda-informatica", title: "Fraudă informatică" },
+    { url: "/servicii/fonduri-europene", title: "Fonduri europene" },
   ];
 
   const englishPages = [
@@ -56,6 +63,13 @@ export default function Sitemap() {
     { url: "/en/services/diicot-lawyer", title: "DIICOT Lawyer - Organised Crime" },
     { url: "/en/services/dna-lawyer", title: "DNA Lawyer - Corruption Cases" },
     { url: "/en/services/financial-crime", title: "Financial Crime - Legal Services" },
+    { url: "/en/services/tax-evasion", title: "Tax Evasion" },
+    { url: "/en/services/fraud-and-deception", title: "Fraud and Deception" },
+    { url: "/en/services/embezzlement", title: "Embezzlement" },
+    { url: "/en/services/forgery-and-use-of-forgery", title: "Forgery and Use of Forgery" },
+    { url: "/en/services/fraudulent-bankruptcy", title: "Fraudulent Bankruptcy" },
+    { url: "/en/services/computer-fraud", title: "Computer Fraud" },
+    { url: "/en/services/eu-funds-fraud", title: "EU Funds Fraud" },
     { url: "/en/services/corruption-and-public-office-offenses", title: "Corruption and Public Office Offenses" },
     { url: "/en/services/crypto-asset-investigations", title: "Crypto Asset Investigations" },
     { url: "/en/services/drug-offenses", title: "Drug Offenses - Legal Defense" },

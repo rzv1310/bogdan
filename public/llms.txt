@@ -30,6 +30,20 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Avocat DNA](/servicii/avocat-dna): Apărare în dosare de corupție instrumentate de DNA.
 - [DNA Lawyer](/en/services/dna-lawyer): Defense in DNA corruption cases.
 - [Avocat Drept Penal](/servicii/criminalitate-economica): Criminalitate economică - fraude, delapidare, fals, evaziune fiscală.
+
+- [Evaziune fiscală](/servicii/evaziune-fiscala): Dosare penale de evaziune fiscală, control ANAF, prejudiciu.
+
+- [Înșelăciune și fraudă](/servicii/inselaciune-frauda): Apărare și reprezentare în dosare de înșelăciune și fraudă.
+
+- [Delapidare](/servicii/delapidare): Dosare de delapidare, lipsuri în gestiune.
+
+- [Fals și uz de fals](/servicii/fals-si-uz-de-fals): Fals în înscrisuri, fals intelectual, uz de fals.
+
+- [Bancrută frauduloasă](/servicii/bancruta-frauduloasa): Dosare penale legate de insolvență și active înstrăinate.
+
+- [Fraudă informatică](/servicii/frauda-informatica): Operațiuni financiare frauduloase, fraude online.
+
+- [Fonduri europene](/servicii/fonduri-europene): Fraudă cu fonduri UE, nereguli în proiecte, controale DLAF.
 - [Economic Crime](/en/services/financial-crime): Financial crime defense.
 - [Infracțiuni de corupție](/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice): Mită, abuz în serviciu, trafic de influență.
 - [Corruption and Public Office Offenses](/en/services/corruption-and-public-office-offenses): Bribery, abuse of office, influence peddling.
