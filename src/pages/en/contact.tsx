@@ -12,6 +12,7 @@ import { submitContactToNetlify, type ContactPayload } from "@/lib/contact";
 
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 const MAX_FILE_MB = 10;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const MAX_FILES = 5;
@@ -218,6 +219,7 @@ export default function ContactEn() {
 
         <p className="text-lg font-medium text-foreground max-w-3xl">Call now for a free and confidential assessment!</p>
         <LawyerBioBlock path="/en/contact" lang="en" className="mt-5" />
+        <GoogleReviewCard lang="en" className="mt-5" />
         <div className="mt-5">
           <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
             <a href="tel:+40316320183" aria-label="Call now - 031 632 01 83">
@@ -344,7 +346,7 @@ export default function ContactEn() {
                   <div className="h-[15px]"></div>
                   <h3 className="text-base font-medium">Attachments (PDF/JPG/PNG, max. {MAX_FILE_MB} MB/file)</h3>
                   <div className="mt-1">
-                    <label className={`relative w-full flex items-center justify-between rounded-md border p-2 cursor-pointer ${errors.files ? "border-destructive" : ""}`}>
+                    <label className={`relative w-full flex items-center justify-between rounded-md border bg-background p-2 cursor-pointer ${errors.files ? "border-destructive" : ""}`}>
                       <span className="flex items-center gap-2"><Paperclip className="w-4 h-4" aria-hidden="true" /><span className="text-sm">Choose files</span></span>
                       <span className="text-xs text-muted-foreground">{files.length ? `${files.length} selected · ${(selectedTotalSize/1024/1024).toFixed(1)} MB total` : "No file selected"}</span>
                       <input id="files" name="files" ref={fileInputRef} type="file" multiple accept={allowedTypes.join(",")} onChange={onFiles} className="absolute inset-0 opacity-0 cursor-pointer" aria-label="Choose files" />
