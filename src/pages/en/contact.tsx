@@ -217,7 +217,7 @@ export default function ContactEn() {
 
         <h1 className="text-2xl font-semibold mb-4">Contact - Attorney Bogdan Lamatic</h1>
 
-        <p className="text-lg font-medium text-foreground max-w-3xl">Call now for a free and confidential assessment!</p>
+        <p className="text-lg font-medium text-foreground max-w-3xl">Call me for a free and confidential assessment!</p>
         <LawyerBioBlock path="/en/contact" lang="en" className="mt-5" />
         <GoogleReviewStars lang="en" className="mt-3" />
         <div className="mt-5">

@@ -215,7 +215,7 @@ export default function Contact() {
         Contact Cabinet Avocat Bogdan Lamatic
       </motion.h1>
       <p className="mt-3 text-lg font-medium text-foreground max-w-3xl">
-        Sună-mă acum pentru o evaluare gratuită și confidențială!
+        Sună-mă pentru o evaluare gratuită și confidențială!
       </p>
       <LawyerBioBlock path="/contact" lang="ro" className="mt-5" />
       <GoogleReviewStars lang="ro" className="mt-3" />
