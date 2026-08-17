@@ -559,7 +559,6 @@ export default function CalculatorDespagubiri() {
             </a>
           </Button>
               <ServicesQuickLinks exclude={[
-</section>
         {/* Breadcrumb */}
         <section className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
           <Breadcrumb>
