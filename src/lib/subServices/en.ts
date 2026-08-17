@@ -4025,6 +4025,7 @@ export const drugPossessionPersonalUseEn: SubServicePageData = {
   sections: [
     {
       h2: "What situation are you in now?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Choose the scenario that matches your case."],
       subsections: [
         {
