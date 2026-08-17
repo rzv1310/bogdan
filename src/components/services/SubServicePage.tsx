@@ -442,11 +442,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
 
 
       {data.sections.map((section, sectionIndex) => (
-        <Card className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent ${section.cardClassName ?? ""}`} key={section.h2}>
+        <div key={section.h2}>
+        <Card id={section.id} className={`${sectionIndex === 0 ? "mt-12 md:mt-14" : "mt-8"} border-accent scroll-mt-24 ${section.cardClassName ?? ""}`}>
 
           <CardHeader>
             <h2 className="text-2xl font-semibold leading-none tracking-tight">{section.h2}</h2>
           </CardHeader>
+
           <CardContent className="text-base leading-relaxed space-y-3">
             <SectionContent
               paragraphs={section.paragraphs}
