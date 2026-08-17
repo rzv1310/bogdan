@@ -5114,7 +5114,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
       bullets: [
         "Verific dacă actul reproșat intră în sfera atribuțiilor tale de serviciu.",
         "Contest caracterul patrimonial al folosului sau existența lui.",
-        "Analizez gradul de rudenie și durata raporturilor comerciale invocate.",
+        "Analizez gradul de rudenie sau de afinitate și dacă tu ori o persoană din cercul prevăzut de lege ai fost beneficiarul folosului.",
         "Susțin aplicarea excepțiilor prevăzute expres de lege.",
         "Coordonez apărarea din dosarul penal cu contestația împotriva raportului de integritate.",
       ],
