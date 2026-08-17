@@ -257,6 +257,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutClassName,
     calloutCta,
     paragraphsAfterBullets,
+    bulletsAfterBullets,
     calloutAfterBullets,
     calloutAfterBulletsClassName,
     calloutAfterBulletsCta,
@@ -272,6 +273,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutClassName?: string;
     calloutCta?: string;
     paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    bulletsAfterBullets?: (string | { bold: string; rest: string })[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
