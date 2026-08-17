@@ -1928,81 +1928,58 @@ export const evaziuneFiscalaRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine într-un dosar de evaziune fiscală",
-      bullets: [
-        "Analizez raportul de inspecție fiscală și sesizarea penală, pentru a identifica ce faptă este reținută concret.",
-        "Verific dacă operațiunile invocate se încadrează în vreuna dintre faptele prevăzute de Legea 241/2005 sau reprezintă doar o diferență de interpretare fiscală.",
-        "Analizez modul de calcul al prejudiciului și susțin, atunci când este cazul, o expertiză contabilă sau fiscală.",
-        "Te pregătesc pentru audiere și te asist la fiecare termen, în fața organelor de urmărire penală și în instanță.",
-        "Contest măsurile asigurătorii, sechestrul asupra conturilor sau bunurilor, atunci când există motive.",
-        "Analizez efectele acoperirii prejudiciului asupra răspunderii penale, în condițiile prevăzute de lege.",
-      ],
-      cta: "Am un dosar de evaziune fiscală - vreau o evaluare",
-    },
-    {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
-      bullets: [
-        "ANAF a întocmit o sesizare penală după un control sau o inspecție fiscală;",
-        "ești chemat la audiere ca suspect sau inculpat într-un dosar de evaziune fiscală;",
-        "societatea pe care o administrezi este cercetată pentru operațiuni fictive;",
-        "ți s-a instituit sechestru pe conturi, imobile sau alte bunuri;",
-        "ai fost trimis în judecată și pregătești apărarea în faza de judecată;",
-        "vrei să știi ce efecte are plata prejudiciului în dosarul tău.",
-      ],
-    },
-    {
-      h2: "Ce prevede legea privind evaziunea fiscală",
-      paragraphs: [
-        "Legea 241/2005 pentru prevenirea și combaterea evaziunii fiscale enumeră limitativ faptele care constituie infracțiuni. Nu orice diferență constatată de organul fiscal înseamnă automat infracțiune.",
-        "Printre faptele prevăzute de art. 9 din lege se numără:",
-      ],
-      bullets: [
-        "ascunderea bunului ori a sursei impozabile sau taxabile;",
-        "omisiunea evidențierii operațiunilor comerciale efectuate sau a veniturilor realizate;",
-        "evidențierea unor cheltuieli care nu au la bază operațiuni reale sau a unor operațiuni fictive;",
-        "alterarea, distrugerea sau ascunderea documentelor de evidență contabilă;",
-        "ținerea unor evidențe contabile duble;",
-        "substituirea, degradarea sau înstrăinarea bunurilor sechestrate.",
-      ],
-      paragraphsAfterBullets: [
-        [
-          { text: "Limitele de pedeapsă cresc atunci când prejudiciul depășește pragurile prevăzute de lege, iar dosarul poate fi însoțit de măsuri asigurătorii. Apărarea se construiește pe documentele contabile și pe " },
-          { text: "regulile urmăririi penale", to: "/servicii/urmarire-penala" },
-          { text: " aplicabile probelor administrate." },
-        ],
-      ],
-    },
-    {
-      h2: "Ce analizez în dosarul tău",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Alege situația care descrie cel mai bine etapa în care te afli. De aici pornește apărarea."],
       subsections: [
         {
-          h3: "Realitatea operațiunilor",
+          h3: "Ai fost chemat la Poliție sau Parchet într-un dosar de evaziune fiscală",
           paragraphs: [
-            "Verific dacă operațiunile contestate au corespondent în documente, livrări, plăți și fluxuri reale, pentru că exact aici se decide de multe ori dacă fapta este sau nu infracțiune.",
+            "Înainte să te prezinți, trebuie să știi în ce calitate ești audiat, ce faptă este cercetată și ce documente stau la baza acuzației. Declarația dată acum rămâne la dosar pe tot parcursul procesului.",
           ],
         },
         {
-          h3: "Prejudiciul reținut",
+          h3: "A avut loc un control ANAF sau Antifraudă",
           paragraphs: [
-            "Cuantumul prejudiciului influențează încadrarea juridică, limitele de pedeapsă și măsurile asigurătorii. Analizez modul de calcul și susțin, atunci când este util, o contraexpertiză.",
+            "Raportul de inspecție fiscală și procesul-verbal întocmit de Antifraudă sunt de regulă actele care declanșează sesizarea penală. Modul în care au fost formulate explicațiile date inspectorilor influențează dosarul.",
           ],
         },
         {
-          h3: "Poziția administratorului",
+          h3: "Au avut loc percheziții sau ridicări de documente",
           paragraphs: [
-            "Analizez cine a avut atribuții efective de decizie, cine a semnat documentele și cum se raportează acestea la acuzația concretă.",
+            "Verific temeiul percheziției, ce a fost ridicat efectiv și cum au fost consemnate actele, pentru că aceste documente devin principalele probe ale acuzării.",
           ],
         },
+        {
+          h3: "A fost calculat un prejudiciu fiscal",
+          paragraphs: [
+            "Cuantumul prejudiciului influențează încadrarea juridică, limitele de pedeapsă și măsurile asigurătorii. Modul de calcul poate fi contestat prin obiecțiuni și expertiză.",
+          ],
+        },
+        {
+          h3: "S-a pus sechestru pe conturi sau bunuri",
+          paragraphs: [
+            "Măsurile asigurătorii pot fi contestate, iar întinderea lor poate fi analizată în raport cu prejudiciul reținut în dosar.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Am un dosar de evaziune fiscală - vreau o evaluare",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar de evaziune fiscală",
+      bullets: [
+        "Raportul de inspecție fiscală și sesizarea penală, pentru a identifica ce faptă este reținută concret.",
+        "Dacă operațiunile invocate se încadrează în vreuna dintre faptele prevăzute de Legea 241/2005 sau reprezintă o diferență de interpretare fiscală.",
+        "Realitatea operațiunilor contestate: documente, livrări, plăți și fluxuri financiare.",
+        "Modul de calcul al prejudiciului și oportunitatea unei expertize contabile sau fiscale.",
+        "Atribuțiile efective de decizie și documentele semnate, pentru a stabili cine răspunde și pentru ce.",
+        "Măsurile asigurătorii instituite și motivele pentru care pot fi contestate.",
       ],
     },
     {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Ce trebuie să-mi trimiți pentru prima evaluare",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Pentru o primă evaluare rapidă, spune-mi ce s-a întâmplat și în ce etapă este dosarul."],
-      paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
-      ],
+      paragraphs: ["Spune-mi ce s-a întâmplat și în ce etapă este dosarul."],
+      paragraphsAfterBullets: [[{ text: "Dacă le ai, trimite-mi:", bold: true }]],
       bulletsAfterBullets: [
         "raportul de inspecție fiscală;",
         "sesizarea penală sau ordonanța primită;",
@@ -2016,6 +1993,133 @@ export const evaziuneFiscalaRo: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
+    {
+      h2: "Ce este evaziunea fiscală și când o problemă fiscală devine penală",
+      paragraphs: [
+        "Evaziunea fiscală este sustragerea de la plata obligațiilor fiscale prin faptele descrise limitativ în Legea 241/2005. O problemă fiscală devine penală doar atunci când conduita se suprapune pe una dintre aceste fapte și există intenția de sustragere.",
+        [
+          { text: "Un control care stabilește sume suplimentare de plată nu echivalează automat cu o infracțiune. De aceea, primul pas într-un dosar de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: " este să delimitezi obligația fiscală de acuzația penală." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce fapte pot constitui evaziune fiscală",
+      subsections: [
+        {
+          h3: "Venituri sau operațiuni care nu apar în evidențele contabile",
+          paragraphs: [
+            "Omisiunea evidențierii, în tot sau în parte, a operațiunilor comerciale efectuate ori a veniturilor realizate este una dintre faptele reținute cel mai frecvent.",
+          ],
+        },
+        {
+          h3: "Cheltuieli și operațiuni considerate fictive",
+          paragraphs: [
+            "Evidențierea unor cheltuieli care nu au la bază operațiuni reale sau a unor operațiuni fictive presupune să se dovedească faptul că prestația ori livrarea nu a existat în realitate.",
+          ],
+        },
+        {
+          h3: "Documente și evidențe contabile contestate de organele de anchetă",
+          paragraphs: [
+            "Alterarea, distrugerea sau ascunderea documentelor de evidență contabilă, precum și ținerea unor evidențe duble sunt incriminate distinct.",
+          ],
+        },
+        {
+          h3: "Ascunderea bunului sau a sursei impozabile",
+          paragraphs: [
+            "Această formă presupune o conduită de disimulare a bunului ori a sursei impozabile sau taxabile, nu simpla neplată a unei obligații declarate.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Art. 9 din Legea 241/2005 rămâne nucleul incriminării evaziunii fiscale.",
+    },
+    {
+      h2: "Care este diferența dintre evaziune fiscală, o eroare fiscală și un litigiu fiscal",
+      paragraphs: [
+        "Eroarea fiscală apare atunci când o operațiune este înregistrată greșit sau o obligație este calculată eronat, fără intenția de sustragere. Consecințele rămân, în principiu, fiscale.",
+        "Litigiul fiscal apare atunci când contribuabilul și organul fiscal interpretează diferit o normă fiscală. Aceste dispute se soluționează în contestație și în contencios administrativ.",
+        "Evaziunea fiscală presupune o faptă dintre cele prevăzute de lege, săvârșită cu intenția de a te sustrage de la plata obligațiilor fiscale. Această delimitare este, de multe ori, chiar miezul apărării.",
+      ],
+    },
+    {
+      h2: "Cum se stabilește prejudiciul într-un dosar de evaziune fiscală",
+      subsections: [
+        {
+          h3: "Raportul ANAF și calculul prejudiciului",
+          paragraphs: [
+            "Punctul de plecare este calculul organului fiscal. Verific ce operațiuni au fost luate în considerare, ce perioadă acoperă și dacă au fost incluse accesorii care nu ar trebui să facă parte din prejudiciul penal.",
+          ],
+        },
+        {
+          h3: "Expertiza contabilă",
+          paragraphs: [
+            "În dosarele cu volum mare de documente, expertiza contabilă judiciară poate schimba semnificativ cuantumul reținut. Formulez obiective de expertiză și obiecțiuni la raportul depus.",
+          ],
+        },
+        {
+          h3: "Cum poate fi contestat prejudiciul",
+          paragraphs: [
+            "Prejudiciul poate fi contestat prin documente justificative, prin expertiză și prin cereri de administrare de probe, atât în urmărirea penală, cât și în faza de judecată.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Ce efect poate avea achitarea prejudiciului într-un dosar de evaziune fiscală",
+      paragraphs: [
+        "Legea 241/2005 prevede consecințe specifice în funcție de momentul acoperirii prejudiciului și de cuantumul acestuia, de la cauze de nepedepsire până la reducerea limitelor de pedeapsă.",
+        "Efectul concret trebuie analizat pe dosarul tău, raportat la încadrarea juridică reținută și la etapa procesuală. Plata făcută fără o analiză prealabilă poate fi interpretată nefavorabil.",
+      ],
+    },
+    {
+      h2: "Sechestrul pe conturi, imobile și alte bunuri în dosarele de evaziune fiscală",
+      paragraphs: [
+        "Măsurile asigurătorii sunt frecvente în aceste dosare, pentru garantarea recuperării prejudiciului. Ele pot viza conturi bancare, imobile, autovehicule sau părți sociale.",
+        "Verific dacă măsura a fost dispusă cu respectarea condițiilor legale, dacă valoarea bunurilor indisponibilizate este proporțională cu prejudiciul reținut și formulez contestație atunci când există motive.",
+      ],
+    },
+    {
+      h2: "Ce se întâmplă după începerea unui dosar penal pentru evaziune fiscală",
+      subsections: [
+        {
+          h3: "Urmărirea penală",
+          paragraphs: [
+            "Se strâng documentele contabile, se dispun percheziții sau ridicări de acte, se audiază administratorii, contabilii și partenerii comerciali.",
+          ],
+        },
+        {
+          h3: "Expertiza și administrarea probelor",
+          paragraphs: [
+            "În majoritatea dosarelor se dispune o expertiză contabilă. Este momentul în care apărarea poate influența decisiv cuantumul prejudiciului și încadrarea juridică.",
+          ],
+        },
+        {
+          h3: "Trimiterea în judecată sau clasarea",
+          paragraphs: [
+            "La final, procurorul poate dispune clasarea, renunțarea la urmărirea penală sau trimiterea în judecată. Fiecare soluție se pregătește prin cereri și memorii depuse la timp.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de evaziune fiscală",
+      bullets: [
+        "Pornesc de la documente, nu de la concluziile raportului fiscal, și reconstruiesc fluxul real al operațiunilor.",
+        "Delimitez obligația fiscală de fapta penală și susțin, atunci când este cazul, caracterul civil sau fiscal al litigiului.",
+        "Atac modul de calcul al prejudiciului prin obiecțiuni și expertiză.",
+        "Contest măsurile asigurătorii disproporționate.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen din dosar.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Atunci când dosarul se suprapune cu acuzații de " },
+          { text: "înșelăciune în afaceri", to: "/servicii/inselaciune-frauda" },
+          { text: ", apărarea trebuie construită unitar, pentru că probele sunt în mare parte aceleași." },
+        ],
+      ],
+      cta: "Vreau o strategie pentru dosarul meu",
+    },
   ],
   faq: [
     {
@@ -2023,24 +2127,32 @@ export const evaziuneFiscalaRo: SubServicePageData = {
       a: "Nu. Legea 241/2005 enumeră faptele care constituie infracțiuni. O datorie fiscală neachitată sau o diferență rezultată dintr-o interpretare diferită a legislației fiscale nu se confundă automat cu o infracțiune de evaziune fiscală.",
     },
     {
-      q: "Ce se întâmplă dacă plătesc prejudiciul?",
-      a: "Legea prevede consecințe specifice în funcție de momentul acoperirii prejudiciului și de cuantumul acestuia. Efectul concret trebuie analizat pe dosarul tău, raportat la încadrarea juridică reținută și la etapa procesuală.",
+      q: "Administratorul firmei răspunde automat?",
+      a: "Nu. Răspunderea penală este personală și se analizează în raport cu atribuțiile efective, deciziile luate și documentele semnate. Calitatea de administrator, în sine, nu echivalează cu vinovăția.",
     },
     {
-      q: "Pot fi sechestrate conturile firmei?",
-      a: "Da, organele judiciare pot dispune măsuri asigurătorii pentru a garanta recuperarea prejudiciului. Aceste măsuri pot fi contestate, iar întinderea lor poate fi analizată în raport cu prejudiciul reținut.",
+      q: "Ce se întâmplă dacă facturile sunt considerate fictive?",
+      a: "Organele de anchetă trebuie să dovedească faptul că operațiunea nu a existat în realitate. Apărarea se construiește pe dovezi privind livrarea, prestația, plata și utilizarea bunurilor sau serviciilor.",
     },
     {
-      q: "Răspunde administratorul sau firma?",
-      a: "Răspunderea penală poate fi analizată atât în privința persoanei fizice, cât și a persoanei juridice. Contează atribuțiile reale, deciziile luate și documentele semnate.",
+      q: "Cine stabilește prejudiciul?",
+      a: "Punctul de plecare este calculul organului fiscal, dar prejudiciul penal se stabilește de organele judiciare, de regulă pe baza unei expertize contabile care poate fi contestată.",
     },
     {
-      q: "Ce fac dacă sunt chemat la audiere?",
-      a: "Nu te prezenta fără să știi în ce calitate ești audiat și ce faptă este cercetată. Contactează-mă înainte pentru a analiza situația și pentru a pregăti audierea.",
+      q: "Pot fi blocate conturile firmei?",
+      a: "Da, prin măsuri asigurătorii dispuse pentru garantarea recuperării prejudiciului. Acestea pot fi contestate, iar întinderea lor poate fi analizată în raport cu suma reținută în dosar.",
     },
     {
-      q: "Cât durează un dosar de evaziune fiscală?",
-      a: "Durata depinde de complexitatea operațiunilor, de numărul persoanelor cercetate și de expertizele dispuse. Dosarele cu volum mare de documente pot dura mai mult, iar apărarea trebuie construită de la început.",
+      q: "Plata prejudiciului închide dosarul penal?",
+      a: "Nu automat. Legea prevede efecte diferite în funcție de momentul plății și de cuantumul prejudiciului, de la cauze de nepedepsire până la reducerea pedepsei. Analiza trebuie făcută înainte de plată.",
+    },
+    {
+      q: "Poate răspunde penal și societatea?",
+      a: "Da. Persoana juridică poate răspunde penal alături de persoana fizică, cu sancțiuni specifice, printre care amenda și măsuri care afectează activitatea societății.",
+    },
+    {
+      q: "Cât poate dura un dosar de evaziune fiscală?",
+      a: "Durata depinde de complexitatea operațiunilor, de numărul persoanelor cercetate și de expertizele dispuse. Dosarele cu volum mare de documente pot dura mai mulți ani, iar apărarea trebuie construită de la început.",
     },
   ],
   resources: [
@@ -2073,48 +2185,52 @@ export const inselaciuneFraudaRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Identifică situația concretă, pentru că apărarea diferă în funcție de etapă și de tipul acuzației."],
+      subsections: [
+        {
+          h3: "Ai fost acuzat că ai indus o persoană în eroare",
+          paragraphs: [
+            "Acuzația se sprijină, de regulă, pe declarațiile persoanei vătămate și pe documentele schimbate între părți. Contează ce ai comunicat, când și pe baza căror informații.",
+          ],
+        },
+        {
+          h3: "Un contract sau o afacere a ajuns să fie cercetată penal",
+          paragraphs: [
+            "Reconstruiesc cronologia afacerii, pentru a arăta dacă neexecutarea a apărut din cauze obiective sau dacă acuzarea susține o intenție existentă de la început.",
+          ],
+        },
+        {
+          h3: "Ai primit bani sau un avans și a fost formulată plângere penală",
+          paragraphs: [
+            "Analizez destinația sumelor, dovezile privind executarea parțială și corespondența dintre părți, elemente care pot schimba încadrarea dosarului.",
+          ],
+        },
+        {
+          h3: "Ești cercetat într-un dosar cu prejudiciu mare sau mai multe persoane vătămate",
+          paragraphs: [
+            "În aceste dosare apar de regulă măsuri asigurătorii și acuzații conexe. Apărarea trebuie organizată pe fiecare situație de fapt, nu global.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "Vreau să discut despre dosarul meu",
+    },
+    {
+      h2: "Ce analizez într-un dosar de înșelăciune",
       bullets: [
-        "Analizez acuzația și verific dacă sunt îndeplinite condițiile infracțiunii de înșelăciune, în special inducerea în eroare și paguba.",
-        "Delimitez litigiul civil sau comercial de răspunderea penală, atunci când situația o permite.",
-        "Pregătesc apărarea pe documente: contracte, facturi, extrase bancare, corespondență.",
-        "Formulez plângere penală și reprezint persoana vătămată care vrea recuperarea prejudiciului.",
-        "Solicit măsuri asigurătorii pentru protejarea sumelor și bunurilor, atunci când este cazul.",
-        "Te asist la audieri și în fața instanței, în toate etapele procesului.",
-      ],
-      cta: "Vreau să discut despre dosarul meu",
-    },
-    {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
-      bullets: [
-        "ai fost acuzat că ai indus în eroare un partener contractual;",
-        "ai plătit pentru bunuri sau servicii pe care nu le-ai primit niciodată;",
-        "ai fost victima unei fraude investiționale sau online;",
-        "ești administrator și firma ta este reclamată pentru o afacere eșuată;",
-        "ai emis file CEC sau bilete la ordin fără acoperire;",
-        "vrei să formulezi plângere penală și să te constitui parte civilă.",
+        "Dacă sunt îndeplinite condițiile infracțiunii, în special inducerea în eroare și paguba.",
+        "Momentul la care se susține că a apărut intenția de a induce în eroare.",
+        "Documentele afacerii: contracte, facturi, dovezi de plată, corespondență.",
+        "Executarea parțială sau demersurile făcute pentru îndeplinirea obligațiilor.",
+        "Modul de calcul al prejudiciului și pretențiile civile formulate.",
+        "Măsurile asigurătorii dispuse asupra conturilor sau bunurilor.",
       ],
     },
     {
-      h2: "Ce prevede legea privind înșelăciunea",
-      paragraphs: [
-        "Art. 244 din Codul penal sancționează inducerea în eroare a unei persoane prin prezentarea ca adevărată a unei fapte mincinoase sau ca mincinoasă a unei fapte adevărate, în scopul obținerii unui folos patrimonial injust și dacă s-a pricinuit o pagubă.",
-        "Fapta este mai gravă atunci când este săvârșită prin folosirea de nume sau calități mincinoase ori de alte mijloace frauduloase. Codul penal reglementează distinct și înșelăciunea privind asigurările, prevăzută de art. 245.",
-        [
-          { text: "În practică, discuția centrală este dacă intenția de a induce în eroare a existat de la început sau dacă vorbim despre o neexecutare contractuală. Această analiză se face pe probele administrate în " },
-          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
-          { text: "." },
-        ],
-      ],
-    },
-    {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Ce documente trebuie să-mi trimiți",
       cardClassName: "bg-[#faf0e6]",
       paragraphs: ["Spune-mi pe scurt ce s-a întâmplat, ce sume sunt implicate și în ce etapă este dosarul."],
-      paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
-      ],
+      paragraphsAfterBullets: [[{ text: "Dacă le ai, trimite-mi:", bold: true }]],
       bulletsAfterBullets: [
         "contractul sau înțelegerea scrisă;",
         "facturile și dovezile de plată;",
@@ -2128,31 +2244,159 @@ export const inselaciuneFraudaRo: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
+    {
+      h2: "Ce este infracțiunea de înșelăciune",
+      paragraphs: [
+        "Înșelăciunea presupune inducerea în eroare a unei persoane prin prezentarea ca adevărată a unei fapte mincinoase sau ca mincinoasă a unei fapte adevărate, în scopul obținerii unui folos patrimonial injust, dacă s-a pricinuit o pagubă.",
+        [
+          { text: "Fapta este mai gravă atunci când este săvârșită prin folosirea de nume sau calități mincinoase ori de alte mijloace frauduloase. Este una dintre acuzațiile cele mai frecvente în dosarele de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce trebuie dovedit pentru existența infracțiunii",
+      subsections: [
+        {
+          h3: "Inducerea în eroare",
+          paragraphs: [
+            "Trebuie dovedită o acțiune de amăgire, prin afirmații neadevărate, ascunderea unor informații esențiale sau folosirea unor documente ori calități nereale.",
+          ],
+        },
+        {
+          h3: "Scopul obținerii unui folos patrimonial injust",
+          paragraphs: [
+            "Nu este suficient un avantaj economic. Trebuie dovedit că folosul urmărit era injust și că acesta a fost scopul conduitei.",
+          ],
+        },
+        {
+          h3: "Existența unei pagube",
+          paragraphs: [
+            "Paguba trebuie să fie efectivă și dovedită prin documente, nu doar afirmată de persoana vătămată.",
+          ],
+        },
+        {
+          h3: "Legătura dintre inducerea în eroare și prejudiciu",
+          paragraphs: [
+            "Paguba trebuie să fie consecința inducerii în eroare. Dacă prejudiciul are altă cauză, cum ar fi un risc comercial asumat, acuzația își pierde suportul.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Înșelăciunea este reglementată de art. 244 Cod penal.",
+    },
+    {
+      h2: "Când nerespectarea unui contract devine înșelăciune",
+      cardClassName: "bg-[#faf0e6]",
+      subsections: [
+        {
+          h3: "Neexecutarea unui contract nu înseamnă automat infracțiune",
+          paragraphs: [
+            "Neexecutarea sau executarea cu întârziere a unui contract atrage, în principiu, răspundere civilă. Un litigiu comercial nu se transformă în dosar penal doar pentru că una dintre părți a suferit o pierdere.",
+          ],
+        },
+        {
+          h3: "Ce contează în stabilirea intenției existente la momentul încheierii afacerii",
+          paragraphs: [
+            "Contează dacă activitatea era reală, dacă existau resursele necesare, ce informații au fost prezentate partenerului, cum au fost folosite sumele primite și ce demersuri au fost făcute pentru executare.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Cele mai frecvente situații în dosarele de înșelăciune",
+      subsections: [
+        {
+          h3: "Contracte și tranzacții comerciale",
+          paragraphs: [
+            "Livrări neefectuate, servicii neprestate sau plăți redirecționate către alte destinații decât cele convenite.",
+          ],
+        },
+        {
+          h3: "Avansuri și vânzări",
+          paragraphs: [
+            "Avansuri încasate pentru bunuri care nu au fost livrate sau vânzări ale unor bunuri cu situație juridică diferită de cea prezentată cumpărătorului.",
+          ],
+        },
+        {
+          h3: "Investiții și promisiuni de câștig",
+          paragraphs: [
+            "Scheme de investiții cu randamente promise, în care se analizează dacă activitatea economică invocată a existat în realitate.",
+          ],
+        },
+        {
+          h3: "Folosirea unor documente sau informații nereale",
+          paragraphs: [
+            "Documente, calități sau date financiare prezentate pentru a obține încrederea partenerului. În aceste cazuri poate apărea și o acuzație de fals.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Care este diferența dintre înșelăciune și fraudă informatică",
+      paragraphs: [
+        "La înșelăciune, folosul este obținut prin amăgirea unei persoane. Persoana vătămată acționează ea însăși, dar pe baza unei reprezentări false a realității.",
+        [
+          { text: "La " },
+          { text: "fraudă informatică", to: "/servicii/frauda-informatica" },
+          { text: ", rezultatul este obținut prin intervenția asupra datelor sau a funcționării unui sistem informatic, fără ca o persoană să fie amăgită. Delimitarea celor două încadrări a fost analizată explicit în jurisprudența Înaltei Curți." },
+        ],
+      ],
+    },
+    {
+      h2: "Recuperarea prejudiciului, restituirea banilor și împăcarea părților",
+      paragraphs: [
+        "Restituirea sumelor nu înlătură automat răspunderea penală, dar poate influența soluția și individualizarea pedepsei. Pentru unele forme ale înșelăciunii, împăcarea părților are efecte prevăzute expres de lege.",
+        "Analizez dacă în dosarul tău este posibilă împăcarea, ce moment procesual este util și cum trebuie documentată, astfel încât efectul juridic să fie cel urmărit.",
+      ],
+    },
+    {
+      h2: "Sechestrul și recuperarea prejudiciului într-un dosar de înșelăciune",
+      paragraphs: [
+        "Persoana vătămată se poate constitui parte civilă și poate solicita instituirea de măsuri asigurătorii asupra conturilor sau bunurilor, pentru a proteja șansele de recuperare.",
+        "Pe partea de apărare, verific proporționalitatea măsurii, dovada prejudiciului invocat și formulez contestație atunci când sechestrul depășește pretențiile justificate.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de înșelăciune",
+      bullets: [
+        "Reconstruiesc cronologia afacerii pe documente și plăți.",
+        "Susțin natura civilă sau comercială a disputei, atunci când probele o permit.",
+        "Contest existența intenției la momentul încheierii înțelegerii.",
+        "Analizez cuantumul real al prejudiciului și pretențiile civile.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen.",
+      ],
+      cta: "Vreau o strategie pentru dosarul meu",
+    },
   ],
   faq: [
     {
-      q: "Când o neexecutare de contract devine înșelăciune?",
-      a: "Atunci când se dovedește că partea a indus în eroare cealaltă parte, prezentând fapte neadevărate, cu scopul obținerii unui folos patrimonial injust, și s-a produs o pagubă. Simpla neexecutare, fără această componentă, rămâne un litigiu civil.",
+      q: "O datorie neachitată poate fi înșelăciune?",
+      a: "Nu prin ea însăși. O datorie neachitată este, în principiu, o problemă civilă. Devine relevantă penal doar dacă se dovedește inducerea în eroare și scopul obținerii unui folos patrimonial injust.",
     },
     {
-      q: "Îmi pot recupera banii prin dosarul penal?",
-      a: "Te poți constitui parte civilă în procesul penal pentru a solicita repararea prejudiciului. În paralel, pot fi solicitate măsuri asigurătorii pentru a proteja sumele sau bunurile disponibile.",
+      q: "Nerespectarea unui contract este infracțiune?",
+      a: "Nu automat. Trebuie dovedit că intenția de a nu executa a existat la momentul încheierii contractului și că partenerul a fost amăgit prin afirmații sau documente nereale.",
     },
     {
-      q: "Ce fac dacă am fost victima unei fraude online?",
-      a: "Strânge toate dovezile disponibile, inclusiv conversații, dovezi de plată și date despre conturile folosite, apoi formulează plângere penală. În funcție de modul de operare, fapta poate fi analizată și ca fraudă informatică.",
+      q: "Ce se întâmplă dacă prejudiciul este restituit?",
+      a: "Restituirea nu închide automat dosarul, dar poate influența soluția procurorului și individualizarea pedepsei. Pentru unele forme, împăcarea părților are efecte prevăzute expres de lege.",
     },
     {
-      q: "Ce risc dacă sunt acuzat de înșelăciune?",
-      a: "Pedeapsa prevăzută de art. 244 din Codul penal este închisoarea, cu limite majorate în forma agravată. Alături de aceasta, poate fi analizată obligarea la repararea prejudiciului.",
+      q: "Victima își poate retrage plângerea?",
+      a: "Efectele depind de încadrarea juridică reținută. În anumite cazuri, împăcarea părților înlătură răspunderea penală, iar în altele dosarul continuă din oficiu.",
     },
     {
-      q: "Emiterea unui CEC fără acoperire este infracțiune?",
-      a: "Poate fi analizată ca înșelăciune atunci când sunt îndeplinite condițiile legale privind inducerea în eroare și paguba. Contează contextul emiterii instrumentului de plată și ce cunoșteau părțile la acel moment.",
+      q: "Care este diferența dintre înșelăciune și fraudă informatică?",
+      a: "La înșelăciune este amăgită o persoană, care acționează pe baza unei reprezentări false. La fraudă informatică, rezultatul patrimonial se obține prin intervenția asupra datelor sau a funcționării unui sistem informatic.",
     },
     {
-      q: "Pot fi cercetat dacă firma mea a intrat în insolvență?",
-      a: "Insolvența, în sine, nu este infracțiune. Pot fi însă analizate operațiunile efectuate înainte de intrarea în insolvență, inclusiv din perspectiva bancrutei frauduloase.",
+      q: "Pot fi puse sub sechestru conturile și bunurile?",
+      a: "Da, prin măsuri asigurătorii dispuse pentru garantarea recuperării prejudiciului. Măsura poate fi contestată, mai ales atunci când este disproporționată față de suma pretinsă.",
+    },
+    {
+      q: "Poate răspunde penal și o firmă?",
+      a: "Da. Persoana juridică poate răspunde penal atunci când fapta a fost săvârșită în realizarea obiectului de activitate sau în interesul său, alături de răspunderea persoanelor fizice implicate.",
     },
   ],
   resources: [
@@ -2185,99 +2429,208 @@ export const delapidareRo: SubServicePageData = {
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
-      bullets: [
-        "Verific dacă ai avut calitatea cerută de lege, respectiv de funcționar care gestionează sau administrează bunurile.",
-        "Analizez actele de gestiune, fișele de cont, deconturile și documentele justificative.",
-        "Contest modul de stabilire a prejudiciului și susțin, atunci când este necesar, o expertiză contabilă.",
-        "Delimitez lipsurile în gestiune generate de erori sau de proceduri interne deficitare de faptele penale.",
-        "Te asist la audieri și pe parcursul judecății, formulând cererile și obiecțiile necesare.",
-        "Reprezint societatea păgubită care vrea recuperarea sumelor și instituirea măsurilor asigurătorii.",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi în ce etapă ești, pentru că prioritățile apărării sunt diferite."],
+      subsections: [
+        {
+          h3: "Un audit sau control intern a identificat lipsuri în gestiune",
+          paragraphs: [
+            "Verific modul în care a fost făcut inventarul, ce documente au fost luate în calcul și dacă lipsurile constatate au o explicație procedurală sau contabilă.",
+          ],
+        },
+        {
+          h3: "Angajatorul sau societatea a formulat plângere penală",
+          paragraphs: [
+            "Analizez plângerea, sumele reclamate și documentele depuse, pentru a stabili ce faptă este reținută concret și pe ce probe se sprijină.",
+          ],
+        },
+        {
+          h3: "Ești administrator, director, gestionar sau angajat cercetat pentru delapidare",
+          paragraphs: [
+            "Calitatea și atribuțiile efective sunt esențiale în această infracțiune. Verific fișa postului, contractul, procurile și limitele reale de decizie.",
+          ],
+        },
+        {
+          h3: "A fost stabilit un prejudiciu și s-au luat măsuri asupra bunurilor",
+          paragraphs: [
+            "Contest modul de calcul al prejudiciului și proporționalitatea măsurilor asigurătorii instituite asupra bunurilor personale.",
+          ],
+        },
       ],
-      cta: "Sunt cercetat pentru delapidare - vreau o evaluare",
+      ctaAfterSubsections: "Sunt cercetat pentru delapidare - vreau o evaluare",
     },
     {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
+      h2: "Ce analizez imediat într-un dosar de delapidare",
       bullets: [
-        "ai fost sesizat că lipsesc sume de bani sau bunuri din gestiunea pe care o administrezi;",
-        "societatea a formulat plângere penală împotriva ta;",
-        "ai fost chemat la audiere într-un dosar de delapidare;",
-        "ești administrator și ai descoperit operațiuni nejustificate;",
-        "ai fost trimis în judecată și pregătești apărarea;",
-        "ți-au fost instituite măsuri asigurătorii pe bunuri.",
+        "Dacă ai avut calitatea cerută de lege și atribuții efective de gestionare sau administrare.",
+        "Ce bunuri sau sume se aflau efectiv în gestiunea ta și pe baza căror documente.",
+        "Modul de întocmire a inventarului și a raportului de control.",
+        "Documentele justificative pentru operațiunile contestate.",
+        "Calculul prejudiciului și oportunitatea unei expertize contabile.",
+        "Măsurile asigurătorii dispuse și motivele de contestație.",
       ],
     },
     {
-      h2: "Ce prevede legea privind delapidarea",
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Spune-mi ce sume sunt reclamate și în ce etapă este dosarul."],
+      subsections: [
+        {
+          h3: "Documentele contabile și de gestiune",
+          paragraphs: ["Fișe de cont, deconturi, registre de casă, note de recepție, procese-verbale de inventar."],
+        },
+        {
+          h3: "Contractele și atribuțiile persoanei cercetate",
+          paragraphs: ["Contractul de muncă sau de mandat, fișa postului, procurile și deciziile interne."],
+        },
+        {
+          h3: "Raportul de audit sau control",
+          paragraphs: ["Raportul intern, raportul de audit extern sau nota de constatare care a generat plângerea."],
+        },
+        {
+          h3: "Calculul prejudiciului",
+          paragraphs: ["Modul în care a fost calculată suma reclamată, cu anexele și documentele pe care se sprijină."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este delapidarea",
       paragraphs: [
-        "Art. 295 din Codul penal sancționează însușirea, folosirea sau traficarea, de către un funcționar, în interesul său ori pentru altul, de bani, valori sau alte bunuri pe care le gestionează sau le administrează.",
-        "Pentru existența infracțiunii trebuie dovedite mai multe elemente:",
-      ],
-      bullets: [
-        "calitatea de funcționar cu atribuții de gestiune sau administrare;",
-        "existența bunurilor sau sumelor în gestiunea persoanei;",
-        "actul de însușire, folosire sau traficare;",
-        "intenția, nu simpla neglijență în ținerea evidențelor.",
-      ],
-      paragraphsAfterBullets: [
+        "Delapidarea presupune însușirea, folosirea sau traficarea, în interes propriu ori pentru altul, de bani, valori sau alte bunuri pe care autorul le gestionează sau le administrează.",
         [
-          { text: "Fapta poate avea o formă agravată atunci când a produs consecințe deosebit de grave. În dosarele complexe, delapidarea apare frecvent alături de alte acuzații din sfera infracțiunilor economice, motiv pentru care apărarea trebuie construită unitar. Vezi și " },
-          { text: "apărarea în dosare de criminalitate economică", to: "/servicii/criminalitate-economica" },
-          { text: "." },
+          { text: "Este una dintre infracțiunile centrale din zona de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: ", pentru că apare frecvent în dosarele generate de controale interne și de audituri financiare." },
         ],
       ],
     },
     {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Cine poate fi acuzat de delapidare",
+      paragraphs: [
+        "Autorul trebuie să aibă calitatea cerută de lege, respectiv atribuții efective de gestionare sau administrare a bunurilor. Nu orice angajat care are acces la bunuri are și gestiunea acestora.",
+        "Textul se aplică funcționarilor publici, iar prin norma de extindere a răspunderii se aplică și persoanelor care exercită atribuții similare în cadrul unei persoane juridice, cum sunt administratorii, directorii, casierii sau gestionarii.",
+        "Această calitate se verifică pe documente: contract, fișa postului, decizii interne, procuri, semnături pe documentele de gestiune. Reglementarea se regăsește în art. 295, coroborat cu art. 308 Cod penal.",
+      ],
+    },
+    {
+      h2: "Ce fapte pot constitui delapidare",
+      subsections: [
+        {
+          h3: "Însușirea banilor sau bunurilor",
+          paragraphs: ["Scoaterea definitivă a bunului sau a sumei din patrimoniul societății, prin trecerea în stăpânirea autorului."],
+        },
+        {
+          h3: "Folosirea lor în interes propriu sau pentru altul",
+          paragraphs: ["Utilizarea temporară a bunurilor ori sumelor gestionate în alt scop decât cel al societății, chiar dacă ulterior sunt restituite."],
+        },
+        {
+          h3: "Traficarea bunurilor sau valorilor administrate",
+          paragraphs: ["Punerea în circulație a bunurilor gestionate pentru obținerea unui profit personal, cu intenția de a le reintroduce ulterior în gestiune."],
+        },
+      ],
+    },
+    {
+      h2: "Delapidare sau simplă lipsă în gestiune?",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Spune-mi ce funcție ai avut, ce sume sunt reținute și în ce etapă este dosarul."],
+      paragraphs: [
+        "O lipsă în gestiune poate avea cauze care nu au nicio legătură cu o faptă penală: erori de înregistrare, proceduri interne deficitare, pierderi tehnologice, documente justificative depuse cu întârziere sau acces al mai multor persoane la aceeași gestiune.",
+        "Pentru existența infracțiunii trebuie dovedită o conduită de însușire, folosire sau traficare, săvârșită cu intenție. Fără această dovadă, discuția rămâne una de răspundere patrimonială, nu penală.",
+      ],
+    },
+    {
+      h2: "Care este diferența dintre delapidare, abuz de încredere și gestiune frauduloasă",
+      paragraphs: [
+        "La delapidare, autorul are calitatea specială cerută de lege și gestionează bunurile persoanei juridice pe care o păgubește.",
+        "La abuz de încredere, bunul este deținut în baza unui titlu, fără atribuții de gestiune, iar fapta constă în însușirea sau refuzul de a-l restitui.",
+        "La gestiune frauduloasă, fapta constă în pricinuirea de pagube prin administrarea sau conservarea defectuoasă a bunurilor altei persoane, cu rea-credință.",
+      ],
+    },
+    {
+      h2: "Cum se stabilește prejudiciul în cazul delapidării",
+      subsections: [
+        {
+          h3: "Inventarul și documentele contabile",
+          paragraphs: ["Punctul de plecare este inventarul și confruntarea acestuia cu evidențele contabile și cu documentele justificative."],
+        },
+        {
+          h3: "Expertiza contabilă",
+          paragraphs: ["Expertiza judiciară stabilește sumele care nu au acoperire în documente. Formulez obiective de expertiză și obiecțiuni la raport."],
+        },
+        {
+          h3: "Contestarea calculului prejudiciului",
+          paragraphs: ["Prejudiciul poate fi redus sau înlăturat prin documente justificative găsite ulterior, prin corectarea perioadei analizate ori prin identificarea altor persoane cu acces la gestiune."],
+        },
+      ],
+    },
+    {
+      h2: "Ce efect are recuperarea sau achitarea prejudiciului",
+      paragraphs: [
+        "Acoperirea prejudiciului nu înlătură prin ea însăși răspunderea penală, dar poate influența soluția procurorului, individualizarea pedepsei și modul de executare.",
+        "Recuperarea prejudiciului este relevantă și pentru latura civilă a dosarului, atunci când societatea s-a constituit parte civilă.",
+      ],
+    },
+    {
+      h2: "Sechestrul asupra bunurilor într-un dosar de delapidare",
+      paragraphs: [
+        "Organele judiciare pot institui măsuri asigurătorii asupra conturilor și bunurilor persoanei cercetate, pentru garantarea recuperării prejudiciului.",
+        "Verific dacă măsura este proporțională cu suma reținută și dacă vizează bunuri care pot fi indisponibilizate potrivit legii, apoi formulez contestație atunci când există motive.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de delapidare",
+      bullets: [
+        "Verific mai întâi calitatea și atribuțiile efective, pentru că fără acestea infracțiunea nu poate fi reținută.",
+        "Reconstitui gestiunea pe documente și identific toate persoanele cu acces la bunuri sau la conturi.",
+        "Susțin caracterul patrimonial, nu penal, al lipsurilor constatate, atunci când probele o permit.",
+        "Atac modul de calcul al prejudiciului prin expertiză și obiecțiuni.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen.",
+      ],
       paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+        [
+          { text: "Atunci când în dosar apar și documente contestate, apărarea se suprapune cu problematica de " },
+          { text: "fals în înscrisuri", to: "/servicii/fals-si-uz-de-fals" },
+          { text: ", iar cele două acuzații trebuie tratate împreună." },
+        ],
       ],
-      bulletsAfterBullets: [
-        "fișa postului și contractul de muncă sau mandatul;",
-        "procesul-verbal de inventariere;",
-        "documentele contabile și deconturile relevante;",
-        "plângerea penală sau ordonanța primită;",
-        "citația.",
-      ],
-      calloutAfterBullets: "Nu ai toate actele?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Sună oricum",
-      ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+      cta: "Vreau o strategie pentru dosarul meu",
     },
   ],
   faq: [
     {
       q: "Orice lipsă în gestiune înseamnă delapidare?",
-      a: "Nu. O lipsă poate rezulta din erori de evidență, din proceduri interne deficitare sau din pierderi justificate. Pentru delapidare trebuie dovedit actul de însușire, folosire sau traficare, săvârșit cu intenție.",
+      a: "Nu. O lipsă în gestiune poate avea cauze contabile sau procedurale. Pentru infracțiune trebuie dovedită însușirea, folosirea ori traficarea bunurilor gestionate, săvârșită cu intenție.",
     },
     {
-      q: "Cine poate răspunde pentru delapidare?",
-      a: "Persoana care are calitatea cerută de lege și care gestionează sau administrează efectiv bunurile ori sumele. Analiza pornește de la fișa postului, mandatul acordat și atribuțiile exercitate în fapt.",
+      q: "Cine poate fi autorul delapidării?",
+      a: "Numai o persoană care are atribuții efective de gestionare sau administrare a bunurilor. Simplul acces la bunuri, fără atribuții de gestiune, nu este suficient.",
     },
     {
-      q: "Ce se întâmplă dacă restitui sumele?",
-      a: "Restituirea prejudiciului nu înlătură automat răspunderea penală, dar poate fi valorificată în apărare și în individualizarea pedepsei. Efectul concret depinde de etapa procesuală și de circumstanțele cauzei.",
+      q: "Un administrator de firmă poate fi acuzat de delapidare?",
+      a: "Da. Prin norma de extindere a răspunderii, administratorii și directorii societăților pot răspunde pentru delapidare atunci când gestionează sau administrează bunurile societății.",
     },
     {
-      q: "Firma poate cere despăgubiri în dosarul penal?",
-      a: "Da. Societatea păgubită se poate constitui parte civilă și poate solicita măsuri asigurătorii pentru recuperarea prejudiciului.",
+      q: "Cum se calculează prejudiciul?",
+      a: "Prin confruntarea inventarului cu evidențele contabile și documentele justificative, de regulă pe baza unei expertize contabile judiciare care poate fi contestată.",
     },
     {
-      q: "Este utilă o expertiză contabilă?",
-      a: "În multe dosare da, pentru că prejudiciul reținut se bazează pe calcule contabile. O expertiză poate clarifica sumele, perioada analizată și documentele justificative.",
+      q: "Ce se întâmplă dacă prejudiciul este achitat?",
+      a: "Plata nu înlătură automat răspunderea penală, dar poate influența soluția și individualizarea pedepsei, iar latura civilă a dosarului se poate stinge.",
     },
     {
-      q: "Ce risc într-un dosar de delapidare?",
-      a: "Pedeapsa prevăzută de art. 295 din Codul penal este închisoarea, iar limitele se majorează dacă fapta a produs consecințe deosebit de grave. Alături de pedeapsă, poate fi analizată obligarea la repararea prejudiciului.",
+      q: "Care este diferența dintre delapidare și gestiune frauduloasă?",
+      a: "Delapidarea presupune însușirea, folosirea sau traficarea bunurilor gestionate. Gestiunea frauduloasă presupune pricinuirea de pagube prin administrarea cu rea-credință a bunurilor altei persoane.",
+    },
+    {
+      q: "Poate fi pus sechestru pe bunurile personale?",
+      a: "Da, măsurile asigurătorii pot viza bunuri și conturi personale, în limita necesară acoperirii prejudiciului. Măsura poate fi contestată atunci când este disproporționată.",
     },
   ],
   resources: [
     { text: "Codul penal - art. 295 privind delapidarea.", href: CP, linkLabel: "Legislație" },
-    { text: "Codul de procedură penală - art. 249 și urm. privind măsurile asigurătorii.", href: CPP, linkLabel: "Legislație" },
+    { text: "Codul penal - art. 308 privind extinderea răspunderii la alte persoane.", href: CP, linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
   parent: PARENT_CE,
@@ -2291,86 +2644,72 @@ export const falsSiUzDeFalsRo: SubServicePageData = {
   title: "Avocat Fals și Uz de Fals București | Bogdan Lamatic",
   h1: "Avocat pentru fals și uz de fals în București",
   description:
-    "Avocat fals și uz de fals în București. Apărare în dosare privind falsul în înscrisuri, falsul intelectual și folosirea documentelor false. Sună acum.",
-  keywords: "avocat fals și uz de fals, fals înscrisuri, avocat fals în acte, uz de fals",
+    "Avocat fals și uz de fals București. Apărare în dosare penale privind falsul în înscrisuri și folosirea documentelor false. Sună acum pentru o evaluare.",
+  keywords: "avocat fals și uz de fals, fals în înscrisuri, avocat uz de fals, expertiză grafoscopică",
   breadcrumbLabel: "Fals și uz de fals",
   serviceName: "Avocat fals și uz de fals București - Bogdan Lamatic",
   urgency: [
-    "Ești cercetat pentru fals în înscrisuri sau pentru folosirea unui document despre care se susține că ar fi fals?",
-    "În aceste dosare contează cine a întocmit documentul, ce a cunoscut persoana care l-a folosit și ce consecințe juridice a produs înscrisul.",
+    "Ești cercetat pentru fals în înscrisuri sau pentru folosirea unui document fals?",
+    "În aceste dosare, discuția se poartă pe document și pe expertiză, iar cererile formulate la timp pot schimba concluziile anchetei.",
   ],
   bio: [
-    `${BIO_INTRO} Asist persoane cercetate pentru fals în înscrisuri sub semnătură privată, fals intelectual, fals material și uz de fals, inclusiv în dosare economice complexe.`,
+    `${BIO_INTRO} Asist persoane cercetate pentru fals material, fals intelectual, fals în înscrisuri sub semnătură privată sau uz de fals, inclusiv atunci când acuzația apare alături de alte infracțiuni economice.`,
     LEGAL500,
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
-      bullets: [
-        "Verific ce tip de fals este reținut și dacă documentul intră în categoria înscrisurilor oficiale sau sub semnătură privată.",
-        "Analizez dacă înscrisul a produs consecințe juridice, condiție esențială pentru mai multe dintre aceste infracțiuni.",
-        "Contest concluziile expertizei grafoscopice și solicit, atunci când este necesar, o nouă expertiză.",
-        "Analizez dacă persoana care a folosit documentul cunoștea caracterul fals al acestuia.",
-        "Te asist la audieri, formulez cereri și obiecții și pregătesc apărarea pentru faza de judecată.",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Alege situația care corespunde dosarului tău."],
+      subsections: [
+        {
+          h3: "Ești acuzat că ai falsificat un document",
+          paragraphs: [
+            "Verific documentul contestat, proveniența lui și dacă există probe care te leagă efectiv de operațiunea de falsificare.",
+          ],
+        },
+        {
+          h3: "Ești acuzat că ai folosit un document fals",
+          paragraphs: [
+            "Pentru uz de fals trebuie dovedit că ai cunoscut caracterul fals al documentului la momentul folosirii lui. Acesta este, de regulă, punctul central al apărării.",
+          ],
+        },
+        {
+          h3: "Semnătura sau conținutul unui înscris este contestat",
+          paragraphs: [
+            "Solicit expertiză grafoscopică sau expertiza documentului și propun probele de comparație necesare pentru o concluzie corectă.",
+          ],
+        },
+        {
+          h3: "Documentele sunt folosite ca probe într-un alt dosar penal",
+          paragraphs: [
+            "Atunci când documentul contestat susține o altă acuzație, apărarea trebuie construită unitar, pentru că înlăturarea documentului afectează întreg dosarul.",
+          ],
+        },
       ],
-      cta: "Vreau o evaluare a dosarului meu",
+      ctaAfterSubsections: "Am un dosar de fals - vreau o evaluare",
     },
     {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
+      h2: "Ce analizez într-un dosar de fals sau uz de fals",
       bullets: [
-        "ești acuzat că ai semnat un document în numele altei persoane;",
-        "se susține că un contract, o factură sau o adeverință ar fi falsă;",
-        "ai depus la o instituție un document despre care se afirmă că nu este real;",
-        "ești funcționar și se reține întocmirea nereală a unui act oficial;",
-        "acuzația de fals însoțește un dosar de evaziune fiscală, înșelăciune sau fraudă;",
-        "ai fost chemat la audiere sau ai primit rechizitoriul.",
-      ],
-    },
-    {
-      h2: "Ce prevede legea privind falsul în înscrisuri",
-      paragraphs: [
-        "Codul penal reglementează distinct mai multe fapte:",
-      ],
-      bullets: [
-        {
-          bold: "Falsul material în înscrisuri oficiale (art. 320).",
-          rest: "Falsificarea unui înscris oficial prin contrafacerea scrierii ori a subscrierii sau prin alterarea lui în orice mod.",
-        },
-        {
-          bold: "Falsul intelectual (art. 321).",
-          rest: "Falsificarea unui înscris oficial cu prilejul întocmirii acestuia, prin atestarea unor fapte sau împrejurări necorespunzătoare adevărului ori prin omisiunea unor date.",
-        },
-        {
-          bold: "Falsul în înscrisuri sub semnătură privată (art. 322).",
-          rest: "Falsificarea unui înscris sub semnătură privată, urmată de folosirea lui sau de încredințarea altei persoane spre folosire, în vederea producerii unei consecințe juridice.",
-        },
-        {
-          bold: "Uzul de fals (art. 323).",
-          rest: "Folosirea unui înscris oficial ori sub semnătură privată, cunoscând că este fals, în vederea producerii unei consecințe juridice.",
-        },
-      ],
-      paragraphsAfterBullets: [
-        [
-          { text: "Falsul apare frecvent alături de alte acuzații economice, iar strategia trebuie gândită pe întregul dosar, nu doar pe document. Vezi și " },
-          { text: "dosarele de evaziune fiscală", to: "/servicii/evaziune-fiscala" },
-          { text: "." },
-        ],
+        "Tipul de înscris și încadrarea juridică reținută.",
+        "Dacă documentul contestat produce consecințe juridice, condiție esențială pentru existența infracțiunii.",
+        "Proveniența documentului și circuitul lui până la momentul folosirii.",
+        "Probele privind cunoașterea caracterului fals, în cazul uzului de fals.",
+        "Expertizele dispuse, obiectivele acestora și probele de comparație folosite.",
+        "Legătura dintre acuzația de fals și celelalte acuzații din dosar.",
       ],
     },
     {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Ce documente trebuie să-mi trimiți",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Spune-mi despre ce document este vorba, cine l-a întocmit și unde a fost folosit."],
-      paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
-      ],
+      paragraphs: ["Spune-mi ce document este contestat și în ce dosar a fost folosit."],
+      paragraphsAfterBullets: [[{ text: "Dacă le ai, trimite-mi:", bold: true }]],
       bulletsAfterBullets: [
-        "documentul contestat;",
-        "ordonanța sau plângerea penală;",
-        "raportul de expertiză, dacă a fost dispusă;",
+        "documentul contestat, în original sau copie;",
+        "ordonanța sau plângerea din care rezultă acuzația;",
         "citația;",
-        "corespondența relevantă.",
+        "raportul de expertiză, dacă a fost deja efectuat;",
+        "documentele care arată proveniența înscrisului.",
       ],
       calloutAfterBullets: "Nu ai toate actele?",
       calloutAfterBulletsClassName: "font-semibold bg-white",
@@ -2378,31 +2717,146 @@ export const falsSiUzDeFalsRo: SubServicePageData = {
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
     },
+    {
+      h2: "Care este diferența dintre fals și uz de fals",
+      paragraphs: [
+        "Falsul presupune operațiunea de alterare, contrafacere sau atestare a unor împrejurări necorespunzătoare adevărului într-un înscris.",
+        [
+          { text: "Uzul de fals presupune folosirea unui document fals în vederea producerii unei consecințe juridice, de către o persoană care cunoaște caracterul fals al acestuia. Cele două acuzații apar frecvent împreună în dosarele de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce tipuri de fals pot apărea într-un dosar penal",
+      subsections: [
+        {
+          h3: "Fals material în înscrisuri oficiale",
+          paragraphs: ["Falsificarea materială a unui înscris oficial, prin contrafacerea scrierii, a subscrierii sau prin alterarea lui în orice mod."],
+        },
+        {
+          h3: "Fals intelectual",
+          paragraphs: ["Atestarea unor fapte sau împrejurări necorespunzătoare adevărului ori omisiunea unor date, la întocmirea unui înscris oficial."],
+        },
+        {
+          h3: "Fals în înscrisuri sub semnătură privată",
+          paragraphs: ["Falsificarea unui înscris sub semnătură privată, urmată de folosirea lui sau de încredințarea altei persoane spre folosire."],
+        },
+        {
+          h3: "Uz de fals",
+          paragraphs: ["Folosirea unui înscris oficial ori sub semnătură privată, cunoscând că este fals, în vederea producerii unei consecințe juridice."],
+        },
+      ],
+      calloutAfterSubsections: "Aceste forme sunt reglementate distinct în zona art. 320-323 Cod penal.",
+    },
+    {
+      h2: "Poți fi acuzat de uz de fals dacă nu ai falsificat documentul?",
+      paragraphs: [
+        "Da. Uzul de fals este o infracțiune distinctă, iar autorul ei nu trebuie să fie persoana care a falsificat documentul. Este suficientă folosirea înscrisului în vederea producerii unei consecințe juridice.",
+        "În practică, apar frecvent dosare în care documentul a fost primit de la un terț, iar discuția se mută pe ceea ce știa efectiv persoana care l-a folosit.",
+      ],
+    },
+    {
+      h2: "Trebuie să știi că documentul este fals pentru a răspunde pentru uz de fals?",
+      paragraphs: [
+        "Da. Uzul de fals se săvârșește cu intenție, deci presupune cunoașterea caracterului fals al înscrisului la momentul folosirii lui.",
+        "Dacă documentul a fost folosit cu bună-credință, fără să știi că este fals, lipsește elementul subiectiv al infracțiunii. Aceasta se dovedește prin contextul obținerii documentului, verificările făcute și conduita ulterioară.",
+      ],
+    },
+    {
+      h2: "Cum se dovedește că un document este fals",
+      subsections: [
+        {
+          h3: "Expertiza grafoscopică",
+          paragraphs: ["Analizează scrisul și semnătura, prin comparație cu probe de scriere. Concluziile pot fi certe sau de probabilitate, iar această diferență contează."],
+        },
+        {
+          h3: "Expertiza documentelor",
+          paragraphs: ["Analizează suportul, cerneala, ștampilele, urmele de modificare sau adăugare, precum și elementele de securitate ale documentului."],
+        },
+        {
+          h3: "Înscrisurile originale și probele de comparație",
+          paragraphs: ["Fără originalul documentului și fără probe de comparație adecvate, concluziile expertizei rămân fragile și pot fi contestate."],
+        },
+        {
+          h3: "Alte probe privind proveniența documentului",
+          paragraphs: ["Corespondența, declarațiile martorilor, datele din registre și evidențe electronice pot arăta cine a întocmit efectiv documentul."],
+        },
+      ],
+    },
+    {
+      h2: "Ce se întâmplă când aceeași persoană falsifică și folosește documentul",
+      paragraphs: [
+        "În cazul falsului în înscrisuri sub semnătură privată, folosirea documentului de către autorul falsului este inclusă în conținutul infracțiunii, deci nu se reține separat uz de fals.",
+        "În cazul înscrisurilor oficiale, situația este diferită și se poate reține un concurs de infracțiuni. Încadrarea corectă influențează direct limitele de pedeapsă, motiv pentru care o verific de la începutul dosarului.",
+      ],
+    },
+    {
+      h2: "Legătura dintre fals și alte infracțiuni",
+      subsections: [
+        {
+          h3: "Fals și înșelăciune",
+          paragraphs: ["Documentul fals poate fi mijlocul prin care s-a realizat inducerea în eroare, ceea ce atrage forma agravată a înșelăciunii."],
+        },
+        {
+          h3: "Fals și evaziune fiscală",
+          paragraphs: ["Facturile sau documentele contabile contestate pot genera simultan o acuzație de fals și una de evaziune fiscală."],
+        },
+        {
+          h3: "Fals și fraude cu fonduri europene",
+          paragraphs: [
+            [
+              { text: "Documentele depuse pentru obținerea finanțării sunt analizate atât din perspectiva falsului, cât și a regimului special aplicabil " },
+              { text: "fondurilor europene", to: "/servicii/fonduri-europene" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Relația dintre documentele falsificate și alte infracțiuni economice apare inclusiv în jurisprudența Înaltei Curți.",
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de fals sau uz de fals",
+      bullets: [
+        "Verific dacă înscrisul poate produce consecințe juridice, condiție fără care infracțiunea nu există.",
+        "Contest concluziile expertizei atunci când probele de comparație sau originalul lipsesc.",
+        "Susțin lipsa cunoașterii caracterului fals, în dosarele de uz de fals.",
+        "Verific încadrarea juridică și evit reținerea nejustificată a unui concurs de infracțiuni.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen.",
+      ],
+      cta: "Vreau o strategie pentru dosarul meu",
+    },
   ],
   faq: [
     {
       q: "Care este diferența dintre fals și uz de fals?",
-      a: "Falsul presupune falsificarea înscrisului, iar uzul de fals presupune folosirea unui înscris fals, cunoscând acest caracter, în vederea producerii unei consecințe juridice. Aceeași persoană poate răspunde pentru ambele fapte sau doar pentru una dintre ele.",
+      a: "Falsul este operațiunea de falsificare a documentului. Uzul de fals este folosirea unui document fals, în vederea producerii unei consecințe juridice, de către o persoană care cunoaște că este fals.",
     },
     {
-      q: "Pot fi cercetat dacă nu am știut că documentul este fals?",
-      a: "Uzul de fals presupune cunoașterea caracterului fals al înscrisului. Dacă nu ai cunoscut acest lucru, aspectul trebuie dovedit prin probele din dosar.",
+      q: "Pot fi condamnat dacă nu știam că documentul este fals?",
+      a: "Uzul de fals presupune intenție, deci cunoașterea caracterului fals al documentului. Buna-credință, dovedită prin contextul obținerii și folosirii documentului, înlătură răspunderea penală.",
     },
     {
-      q: "Ce înseamnă că înscrisul produce consecințe juridice?",
-      a: "Înseamnă că documentul este apt să creeze, să modifice sau să stingă drepturi ori obligații. Este o condiție analizată distinct în cazul înscrisurilor sub semnătură privată și al uzului de fals.",
+      q: "Este necesară expertiza grafoscopică?",
+      a: "Nu este obligatorie în toate dosarele, dar devine esențială atunci când semnătura sau scrisul sunt contestate. Poate fi solicitată atât de organul de urmărire penală, cât și de apărare.",
     },
     {
-      q: "Expertiza grafoscopică poate fi contestată?",
-      a: "Da. Concluziile pot fi contestate, pot fi formulate obiecțiuni și poate fi solicitată o nouă expertiză, în condițiile prevăzute de Codul de procedură penală.",
+      q: "Ce se întâmplă dacă semnătura nu îmi aparține?",
+      a: "Dacă expertiza stabilește că semnătura nu îți aparține, acuzația de fals material nu poate fi susținută în privința ta. Rămâne însă de analizat dacă ai folosit documentul cunoscând că este fals.",
     },
     {
-      q: "Ce risc într-un dosar de fals?",
-      a: "Pedepsele diferă în funcție de tipul de fals reținut și sunt prevăzute de art. 320-323 din Codul penal. Încadrarea concretă influențează direct limitele de pedeapsă.",
+      q: "Un document electronic poate fi fals?",
+      a: "Da. Alterarea datelor informatice cu consecințe juridice este incriminată distinct, ca fals informatic, iar în dosare apar frecvent și documente scanate sau semnate electronic.",
+    },
+    {
+      q: "Pot exista simultan fals și înșelăciune?",
+      a: "Da. Atunci când documentul fals a fost mijlocul prin care s-a realizat inducerea în eroare, se poate reține forma agravată a înșelăciunii, alături de infracțiunea de fals.",
     },
   ],
   resources: [
     { text: "Codul penal - art. 320-323 privind falsul în înscrisuri și uzul de fals.", href: CP, linkLabel: "Legislație" },
+    { text: "Codul de procedură penală - dispozițiile privind expertiza judiciară.", href: CPP, linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
   parent: PARENT_CE,
@@ -2416,103 +2870,210 @@ export const bancrutaFrauduloasaRo: SubServicePageData = {
   title: "Avocat Bancrută Frauduloasă București | Bogdan Lamatic",
   h1: "Avocat pentru bancrută frauduloasă în București",
   description:
-    "Avocat bancrută frauduloasă București. Apărare în dosare penale privind insolvența, falsificarea evidențelor și înstrăinarea activelor. Sună acum.",
-  keywords: "avocat bancrută frauduloasă, bancrută frauduloasă dosar penal, avocat insolvență penal",
+    "Avocat bancrută frauduloasă București. Apărare în dosare penale privind insolvența, transferurile de active și evidențele contabile. Sună acum.",
+  keywords:
+    "avocat bancrută frauduloasă, bancrută frauduloasă dosar penal, avocat insolvență penal, bancrută simplă",
   breadcrumbLabel: "Bancrută frauduloasă",
   serviceName: "Avocat bancrută frauduloasă București - Bogdan Lamatic",
   urgency: [
-    "Firma a intrat în insolvență și ai fost sesizat penal pentru bancrută frauduloasă?",
-    "Operațiunile efectuate înainte de deschiderea procedurii, evidențele contabile și transferurile de active sunt primele analizate de organele de urmărire penală.",
+    "Firma este în insolvență și a fost formulată o plângere penală pentru bancrută frauduloasă?",
+    "Aceste dosare se construiesc pe documentele contabile și pe transferurile de active din perioada anterioară insolvenței, iar explicațiile economice trebuie susținute cu documente.",
   ],
   bio: [
-    `${BIO_INTRO} Asist administratori și asociați în dosare penale legate de insolvență, bancrută frauduloasă și operațiuni contestate de creditori sau de administratorul judiciar.`,
+    `${BIO_INTRO} Asist administratori, directori și societăți în dosare penale privind bancruta frauduloasă, inclusiv atunci când dosarul pornește din procedura de insolvență.`,
     LEGAL500,
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
-      bullets: [
-        "Analizez sesizarea și raportul administratorului judiciar sau al lichidatorului.",
-        "Verific dacă operațiunile contestate au avut o justificare economică reală.",
-        "Delimitez insolvența cauzată de dificultăți economice de faptele săvârșite cu intenție frauduloasă.",
-        "Analizez transferurile de active, plățile preferențiale și modul de ținere a evidențelor contabile.",
-        "Te asist la audieri și în fața instanței, cu apărări construite pe documentele societății.",
-        "Corelez apărarea din dosarul penal cu procedura de insolvență aflată în derulare.",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi în ce etapă se află procedura și dosarul penal."],
+      subsections: [
+        {
+          h3: "Firma este sau a fost în insolvență și s-a formulat o plângere penală",
+          paragraphs: [
+            "Verific ce anume se reclamă concret: ascunderea de active, lipsa evidențelor, datorii nereale sau transferuri făcute în frauda creditorilor.",
+          ],
+        },
+        {
+          h3: "Ești administrator sau persoană din conducerea societății",
+          paragraphs: [
+            "Analizez atribuțiile efective, deciziile luate și documentele semnate, pentru că răspunderea penală este personală și nu decurge automat din funcție.",
+          ],
+        },
+        {
+          h3: "Sunt contestate transferuri sau înstrăinări de active",
+          paragraphs: [
+            "Reconstruiesc contextul economic al operațiunilor, prețul, plata efectivă și destinația sumelor, pentru a arăta dacă tranzacțiile au fost reale.",
+          ],
+        },
+        {
+          h3: "Sunt reclamate documente contabile lipsă sau datorii nereale",
+          paragraphs: [
+            "Verific ce documente au fost predate administratorului judiciar, cine le deținea și dacă lipsa lor are o explicație obiectivă.",
+          ],
+        },
       ],
-      cta: "Am o sesizare de bancrută - vreau o evaluare",
+      ctaAfterSubsections: "Am un dosar de bancrută - vreau o evaluare",
     },
     {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
+      h2: "Ce analizez într-un dosar de bancrută frauduloasă",
       bullets: [
-        "administratorul judiciar sau lichidatorul a formulat o sesizare penală;",
-        "un creditor te acuză că ai ascuns sau ai înstrăinat active;",
-        "ești cercetat pentru falsificarea sau distrugerea evidențelor contabile;",
-        "se reține că ai efectuat plăți preferențiale către anumiți creditori;",
-        "ai fost chemat la audiere într-un dosar legat de insolvența firmei;",
-        "acuzația de bancrută este însoțită de alte fapte economice.",
+        "Ce faptă concretă este reținută și pe ce documente se sprijină.",
+        "Cronologia operațiunilor raportată la momentul apariției stării de insolvență.",
+        "Realitatea economică a transferurilor de active și prețurile practicate.",
+        "Situația evidențelor contabile și modul în care au fost predate.",
+        "Prejudiciul reclamat de creditori și modul de calcul.",
+        "Existența plângerii prealabile și îndeplinirea condițiilor procedurale.",
       ],
     },
     {
-      h2: "Ce prevede legea privind bancruta frauduloasă",
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Spune-mi ce se reclamă și în ce etapă este dosarul."],
+      subsections: [
+        {
+          h3: "Dosarul de insolvență",
+          paragraphs: ["Hotărârea de deschidere a procedurii, tabelul creditorilor, cererile formulate în procedură."],
+        },
+        {
+          h3: "Evidențele contabile",
+          paragraphs: ["Balanțe, bilanțuri, registre, situația creanțelor și a datoriilor din perioada analizată."],
+        },
+        {
+          h3: "Contractele și transferurile de active",
+          paragraphs: ["Contractele de vânzare, cesiune sau compensare, cu dovezile de plată aferente."],
+        },
+        {
+          h3: "Rapoartele administratorului sau lichidatorului judiciar",
+          paragraphs: ["Raportul asupra cauzelor insolvenței și orice sesizare formulată în cadrul procedurii."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este bancruta frauduloasă",
       paragraphs: [
-        "Art. 241 din Codul penal sancționează fapta persoanei care, în frauda creditorilor:",
-      ],
-      bullets: [
-        "falsifică, sustrage sau distruge evidențele debitorului ori ascunde o parte din activul averii acestuia;",
-        "înfățișează datorii inexistente sau prezintă în registrele debitorului, în alt act ori în situația financiară sume nedatorate;",
-        "înstrăinează, în caz de insolvență a debitorului, o parte din active.",
-      ],
-      paragraphsAfterBullets: [
-        "Condiția esențială este frauda creditorilor. O firmă poate ajunge în insolvență din cauze economice obiective, fără ca aceasta să însemne o infracțiune.",
+        "Bancruta frauduloasă presupune fapte prin care debitorul, în frauda creditorilor, își diminuează aparent sau real activul, își denaturează evidențele ori prezintă datorii care nu există.",
         [
-          { text: "Codul penal reglementează distinct și bancruta simplă, prevăzută de art. 240. În dosarele mai ample, aceste acuzații pot apărea împreună cu " },
-          { text: "operațiuni de ascundere a bunurilor", to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
-          { text: "." },
+          { text: "Este o infracțiune specifică zonei de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: ", iar analiza ei nu poate fi separată de conduita debitorului în raport cu creditorii. Reglementarea se află în art. 241 Cod penal." },
         ],
       ],
     },
     {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Ce fapte pot constitui bancrută frauduloasă",
+      subsections: [
+        {
+          h3: "Ascunderea unor active ale debitorului",
+          paragraphs: ["Sustragerea unor bunuri din patrimoniul societății sau disimularea existenței lor, astfel încât să nu poată fi valorificate de creditori."],
+        },
+        {
+          h3: "Falsificarea, sustragerea sau distrugerea evidențelor",
+          paragraphs: ["Denaturarea documentelor contabile ori dispariția acestora, atunci când urmărește împiedicarea verificării situației reale a societății."],
+        },
+        {
+          h3: "Prezentarea unor datorii nereale",
+          paragraphs: ["Înregistrarea unor datorii inexistente, care diminuează artificial activul disponibil pentru creditorii reali."],
+        },
+        {
+          h3: "Înstrăinarea activelor în frauda creditorilor",
+          paragraphs: ["Transferuri de bunuri la prețuri nejustificate sau către persoane apropiate, în perioada anterioară ori în timpul insolvenței."],
+        },
+      ],
+    },
+    {
+      h2: "Care este diferența dintre bancrută frauduloasă și bancrută simplă",
+      paragraphs: [
+        "Bancruta simplă presupune neintroducerea sau introducerea tardivă a cererii de deschidere a procedurii insolvenței, în termenul prevăzut de lege.",
+        "Bancruta frauduloasă presupune o conduită activă de fraudare a creditorilor, prin ascunderea activelor, denaturarea evidențelor sau prezentarea unor datorii nereale. Diferența dintre cele două influențează direct limitele de pedeapsă.",
+      ],
+    },
+    {
+      h2: "Insolvența unei societăți înseamnă automat răspundere penală?",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Spune-mi în ce stadiu este procedura de insolvență și ce operațiuni sunt contestate."],
+      paragraphs: [
+        "Nu. Insolvența este o situație economică, iar cauzele ei pot fi complet obiective: pierderea unui client important, blocaje financiare, creșterea costurilor sau litigii care afectează încasările.",
+        "Răspunderea penală apare doar atunci când se dovedește o conduită de fraudare a creditorilor. Faptul că societatea nu își poate plăti datoriile nu constituie, prin el însuși, infracțiune.",
+      ],
+    },
+    {
+      h2: "Cine poate formula plângere pentru bancrută frauduloasă",
+      paragraphs: [
+        "Plângerea poate fi formulată, de regulă, de creditorii prejudiciați, iar sesizări pot proveni și din procedura de insolvență, prin administratorul sau lichidatorul judiciar.",
+        "Bancruta frauduloasă este una dintre infracțiunile pentru care existența plângerii prealabile are relevanță procedurală. Verific dacă această condiție a fost îndeplinită și în termenul prevăzut de lege.",
+      ],
+    },
+    {
+      h2: "Cum se analizează transferurile de bunuri și active înainte sau în timpul insolvenței",
+      paragraphs: [
+        "Organele judiciare urmăresc perioada anterioară deschiderii procedurii și verifică dacă bunurile au ieșit din patrimoniu la valoarea reală, dacă prețul a fost efectiv încasat și cine a beneficiat de operațiune.",
+        "Apărarea se construiește pe justificarea economică a fiecărei tranzacții: evaluări, negocieri, plăți bancare, destinația sumelor și utilitatea operațiunii pentru societate.",
+      ],
+    },
+    {
+      h2: "Rolul documentelor contabile și al expertizei într-un dosar de bancrută frauduloasă",
+      paragraphs: [
+        "Evidențele contabile sunt principala probă în aceste dosare. Lipsa lor este interpretată frecvent în defavoarea conducerii societății, motiv pentru care trebuie dovedit cine le deținea și ce a fost predat efectiv.",
+        "Expertiza contabilă judiciară stabilește evoluția activului și pasivului, momentul apariției insolvenței și efectul operațiunilor contestate. Formulez obiective de expertiză și obiecțiuni la raport.",
+      ],
+    },
+    {
+      h2: "Bancruta frauduloasă și prejudiciul creditorilor",
+      paragraphs: [
+        "Prejudiciul se raportează la sumele pe care creditorii nu le mai pot recupera din cauza operațiunilor contestate, nu la totalul datoriilor societății.",
+        "Această distincție este esențială, pentru că influențează atât încadrarea juridică, cât și întinderea măsurilor asigurătorii și a pretențiilor civile.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de bancrută frauduloasă",
+      bullets: [
+        "Verific îndeplinirea condițiilor procedurale, inclusiv existența plângerii prealabile.",
+        "Susțin cauzele obiective ale insolvenței, pe documente și date financiare.",
+        "Justific economic fiecare transfer de active contestat.",
+        "Dovedesc predarea documentelor contabile și lămuresc situația evidențelor.",
+        "Atac modul de calcul al prejudiciului prin expertiză și obiecțiuni.",
+      ],
       paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+        [
+          { text: "Atunci când în același dosar apar acuzații privind sume ridicate din societate, apărarea se corelează cu problematica de " },
+          { text: "delapidare din patrimoniul firmei", to: "/servicii/delapidare" },
+          { text: "." },
+        ],
       ],
-      bulletsAfterBullets: [
-        "raportul administratorului judiciar sau al lichidatorului;",
-        "sesizarea penală sau ordonanța primită;",
-        "situațiile financiare și balanțele relevante;",
-        "contractele privind activele înstrăinate;",
-        "citația.",
-      ],
-      calloutAfterBullets: "Nu ai toate actele?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Sună oricum",
-      ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+      cta: "Vreau o strategie pentru dosarul meu",
     },
   ],
   faq: [
     {
-      q: "Insolvența firmei înseamnă automat bancrută frauduloasă?",
-      a: "Nu. Insolvența poate avea cauze economice obiective. Bancruta frauduloasă presupune fapte săvârșite în frauda creditorilor, dintre cele prevăzute expres de art. 241 din Codul penal.",
+      q: "Falimentul firmei înseamnă bancrută frauduloasă?",
+      a: "Nu. Insolvența și falimentul sunt situații economice. Infracțiunea există doar dacă se dovedește o conduită de fraudare a creditorilor, prin ascunderea activelor, denaturarea evidențelor sau datorii nereale.",
     },
     {
-      q: "Cine poate sesiza organele penale?",
-      a: "Sesizarea poate proveni de la administratorul judiciar, de la lichidator, de la creditori sau de la alte persoane interesate. Organele de urmărire penală se pot sesiza și din oficiu.",
+      q: "Administratorul răspunde automat?",
+      a: "Nu. Răspunderea penală este personală și se analizează în raport cu deciziile luate, documentele semnate și atribuțiile efective din perioada relevantă.",
     },
     {
-      q: "Ce înseamnă plăți preferențiale?",
-      a: "Sunt plăți făcute către anumiți creditori în detrimentul celorlalți. Acestea sunt analizate în procedura de insolvență și pot fi valorificate și în dosarul penal, în funcție de circumstanțe.",
+      q: "Vânzarea bunurilor firmei înainte de insolvență este infracțiune?",
+      a: "Nu în sine. Devine relevantă penal atunci când se dovedește că operațiunea a fost făcută în frauda creditorilor, la un preț nejustificat sau fără o utilitate economică reală.",
     },
     {
-      q: "Răspunde administratorul cu bunurile personale?",
-      a: "În procedura de insolvență poate fi analizată atragerea răspunderii patrimoniale, iar în dosarul penal poate fi analizată obligarea la repararea prejudiciului. Sunt proceduri distincte, cu condiții proprii.",
+      q: "Cine poate depune plângerea?",
+      a: "De regulă creditorii prejudiciați, iar sesizări pot veni și din procedura de insolvență. Existența plângerii prealabile are relevanță procedurală în acest tip de dosar.",
     },
     {
-      q: "Cum se corelează dosarul penal cu insolvența?",
-      a: "Documentele din procedura de insolvență ajung frecvent în dosarul penal. De aceea, apărarea trebuie construită coerent în ambele proceduri, cu aceleași explicații economice.",
+      q: "Care este diferența dintre bancrută simplă și frauduloasă?",
+      a: "Bancruta simplă privește neintroducerea sau introducerea tardivă a cererii de insolvență. Bancruta frauduloasă presupune fapte active de fraudare a creditorilor.",
+    },
+    {
+      q: "Ce rol are administratorul judiciar?",
+      a: "Administratorul sau lichidatorul judiciar întocmește raportul asupra cauzelor insolvenței și poate sesiza organele judiciare atunci când identifică operațiuni suspecte.",
+    },
+    {
+      q: "Se poate dispune sechestru asupra bunurilor?",
+      a: "Da, pot fi instituite măsuri asigurătorii pentru garantarea recuperării prejudiciului creditorilor. Măsura poate fi contestată atunci când este disproporționată sau nejustificată.",
     },
   ],
   resources: [
@@ -2531,96 +3092,240 @@ export const fraudaInformaticaRo: SubServicePageData = {
   title: "Avocat Fraudă Informatică București | Bogdan Lamatic",
   h1: "Avocat pentru fraudă informatică în București",
   description:
-    "Avocat fraudă informatică București. Apărare în dosare privind operațiuni financiare frauduloase, plăți online și date informatice. Sună acum.",
-  keywords: "avocat fraudă informatică, operațiuni financiare frauduloase, fraudă online, avocat criminalitate informatică",
+    "Avocat fraudă informatică București. Apărare în dosare cu probe digitale, dispozitive ridicate, conturi online și tranzacții cripto. Sună acum.",
+  keywords:
+    "avocat fraudă informatică, operațiuni financiare frauduloase, avocat criminalitate informatică, percheziție informatică",
   breadcrumbLabel: "Fraudă informatică",
   serviceName: "Avocat fraudă informatică București - Bogdan Lamatic",
   urgency: [
-    "Ești cercetat pentru fraudă informatică sau ai pierdut bani printr-o operațiune online frauduloasă?",
-    "Probele în aceste dosare sunt tehnice: adrese IP, loguri, conturi, dispozitive. Modul în care sunt obținute și interpretate poate schimba complet situația.",
+    "Ești cercetat pentru fraudă informatică sau ți-au fost ridicate telefonul și laptopul?",
+    "În aceste dosare, probele sunt digitale, iar modul în care au fost obținute și interpretate poate fi verificat și contestat.",
   ],
   bio: [
-    `${BIO_INTRO} Asist persoane cercetate pentru fraudă informatică și operațiuni financiare frauduloase, precum și persoane vătămate prin astfel de fapte.`,
+    `${BIO_INTRO} Asist persoane cercetate în dosare de fraudă informatică și criminalitate informatică, inclusiv atunci când sunt implicate conturi online, transferuri bancare sau tranzacții cu criptomonede.`,
     LEGAL500,
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
-      bullets: [
-        "Analizez acuzația și verific dacă fapta se încadrează în frauda informatică sau în alte infracțiuni din sfera criminalității informatice.",
-        "Verific modul în care au fost obținute probele digitale și dacă procedurile legale au fost respectate.",
-        "Analizez raportul tehnic și susțin, atunci când este necesar, o expertiză independentă.",
-        "Contest legătura dintre o adresă IP, un cont sau un dispozitiv și persoana acuzată, atunci când această legătură nu este dovedită.",
-        "Formulez plângere penală și reprezint persoana vătămată care vrea recuperarea sumelor.",
-        "Te asist la audieri și în toate etapele procesului.",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi ce s-a întâmplat concret, pentru că probele digitale se degradează sau devin greu de contestat cu trecerea timpului."],
+      subsections: [
+        {
+          h3: "Ești cercetat pentru tranzacții sau operațiuni realizate online",
+          paragraphs: [
+            "Verific ce operațiuni sunt reținute, cine le-a inițiat efectiv și dacă există probe care te leagă direct de contul sau dispozitivul folosit.",
+          ],
+        },
+        {
+          h3: "Sunt investigate conturi, dispozitive sau date informatice",
+          paragraphs: [
+            "Analizez actele prin care au fost obținute datele și dacă au fost respectate condițiile legale pentru accesul la ele.",
+          ],
+        },
+        {
+          h3: "Poliția sau DIICOT a ridicat telefoane, laptopuri ori alte dispozitive",
+          paragraphs: [
+            "Verific procesele-verbale, modul de sigilare și dacă a fost dispusă autorizarea necesară pentru examinarea conținutului dispozitivelor.",
+          ],
+        },
+        {
+          h3: "Dosarul implică transferuri bancare, conturi online sau criptomonede",
+          paragraphs: [
+            "Reconstruiesc fluxul financiar pe extrase și pe date din platforme, pentru a delimita operațiunile tale de cele ale altor persoane.",
+          ],
+        },
       ],
-      cta: "Vreau o evaluare a situației mele",
+      ctaAfterSubsections: "Am un dosar de fraudă informatică - vreau o evaluare",
     },
     {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
+      h2: "Ce analizez imediat într-un dosar de fraudă informatică",
       bullets: [
-        "ești acuzat că ai efectuat operațiuni frauduloase în sisteme informatice;",
-        "ți-au fost golite conturile printr-o operațiune online neautorizată;",
-        "ai fost victima unei fraude cu carduri sau cu instrumente de plată electronică;",
-        "ai fost implicat, fără să știi, în transferuri suspecte de bani;",
-        "ți-au fost ridicate dispozitivele într-o anchetă privind fraude online;",
-        "ai fost chemat la audiere într-un dosar de criminalitate informatică.",
-      ],
-    },
-    {
-      h2: "Ce prevede legea privind frauda informatică",
-      paragraphs: [
-        "Art. 249 din Codul penal sancționează fapta de a cauza un prejudiciu patrimonial unei persoane prin introducerea, modificarea sau ștergerea de date informatice, prin restricționarea accesului la aceste date ori prin împiedicarea în orice mod a funcționării unui sistem informatic, în scopul de a obține un beneficiu material pentru sine sau pentru altul.",
-        "În practică, acuzația de fraudă informatică apare frecvent alături de alte fapte, precum accesul ilegal la un sistem informatic, operațiuni ilegale cu dispozitive sau programe informatice ori efectuarea de operațiuni financiare în mod fraudulos.",
-        [
-          { text: "Probele sunt obținute de multe ori prin ridicarea dispozitivelor și prin analiza datelor. Vezi ce presupune o " },
-          { text: "percheziție informatică a telefonului sau laptopului", to: "/servicii/perchezitie-informatica" },
-          { text: "." },
-        ],
+        "Încadrarea juridică reținută și dacă fapta descrisă corespunde textului de lege.",
+        "Legalitatea obținerii probelor digitale și a autorizațiilor emise.",
+        "Modul de identificare a persoanei care a folosit efectiv contul sau dispozitivul.",
+        "Rapoartele tehnice și concluziile privind datele informatice.",
+        "Fluxul financiar și destinația sumelor.",
+        "Măsurile dispuse asupra conturilor, dispozitivelor și activelor digitale.",
       ],
     },
     {
       h2: "Ce trebuie să-mi trimiți",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Spune-mi ce operațiuni sunt vizate, ce sume sunt implicate și ce ți s-a comunicat până acum."],
-      paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+      paragraphs: ["Spune-mi ce ți s-a comunicat și ce a fost ridicat efectiv."],
+      subsections: [
+        {
+          h3: "Procese-verbale de percheziție și ridicare",
+          paragraphs: ["Actele întocmite la percheziție, lista dispozitivelor ridicate și mențiunile privind sigilarea."],
+        },
+        {
+          h3: "Extrase și tranzacții bancare",
+          paragraphs: ["Extrasele de cont pentru perioada relevantă și documentele privind transferurile contestate."],
+        },
+        {
+          h3: "Mesaje, emailuri și conturi relevante",
+          paragraphs: ["Corespondența care lămurește contextul operațiunilor și accesul altor persoane la conturi."],
+        },
+        {
+          h3: "Documentele privind dispozitivele ridicate",
+          paragraphs: ["Dovezile de proprietate, facturile și informațiile despre persoanele care foloseau dispozitivele."],
+        },
       ],
-      bulletsAfterBullets: [
-        "ordonanța sau plângerea penală;",
-        "extrasele de cont și dovezile tranzacțiilor;",
-        "procesul-verbal de ridicare a dispozitivelor;",
-        "corespondența cu banca sau cu platforma implicată;",
-        "citația.",
-      ],
-      calloutAfterBullets: "Nu ai toate actele?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Sună oricum",
+      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este frauda informatică",
+      paragraphs: [
+        "Frauda informatică presupune cauzarea unui prejudiciu patrimonial prin introducerea, modificarea sau ștergerea de date informatice, prin restricționarea accesului la aceste date ori prin împiedicarea funcționării unui sistem informatic, în scopul obținerii unui beneficiu material.",
+        [
+          { text: "Fapta este reglementată de art. 249 Cod penal și se analizează, în dosarele de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: ", împreună cu celelalte infracțiuni informatice care apar în aceeași cauză." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce fapte pot constitui fraudă informatică",
+      subsections: [
+        {
+          h3: "Introducerea sau transmiterea de date informatice",
+          paragraphs: ["Inserarea unor date care modifică rezultatul unei operațiuni, cum sunt datele de plată sau informațiile dintr-o aplicație."],
+        },
+        {
+          h3: "Modificarea sau ștergerea datelor",
+          paragraphs: ["Alterarea înregistrărilor existente într-un sistem informatic, pentru a produce un rezultat patrimonial diferit de cel real."],
+        },
+        {
+          h3: "Restricționarea accesului la date",
+          paragraphs: ["Blocarea accesului titularului la propriile date, atunci când urmărește obținerea unui beneficiu material."],
+        },
+        {
+          h3: "Împiedicarea funcționării unui sistem informatic",
+          paragraphs: ["Intervenția care afectează funcționarea normală a sistemului, cu consecințe patrimoniale pentru titular."],
+        },
+      ],
+    },
+    {
+      h2: "Care este diferența dintre frauda informatică și înșelăciune",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "La " },
+          { text: "înșelăciune", to: "/servicii/inselaciune-frauda" },
+          { text: ", este amăgită o persoană, care acționează ea însăși pe baza unei reprezentări false a realității." },
+        ],
+        "La fraudă informatică, rezultatul patrimonial este obținut prin intervenția asupra datelor sau a funcționării unui sistem informatic, fără ca o persoană să fie amăgită.",
+        "Delimitarea dintre art. 249 și art. 244 a fost analizată explicit în jurisprudența Înaltei Curți și influențează direct încadrarea juridică din dosarul tău.",
+      ],
+    },
+    {
+      h2: "Frauda informatică și alte infracțiuni informatice",
+      subsections: [
+        {
+          h3: "Acces ilegal la un sistem informatic",
+          paragraphs: ["Accesarea fără drept a unui sistem informatic, incriminată distinct, chiar dacă nu s-a produs un prejudiciu."],
+        },
+        {
+          h3: "Fals informatic",
+          paragraphs: ["Alterarea datelor informatice pentru a produce consecințe juridice, incriminată separat de frauda informatică."],
+        },
+        {
+          h3: "Operațiuni financiare efectuate în mod fraudulos",
+          paragraphs: ["Efectuarea de operațiuni de retragere de numerar, transfer sau plată prin folosirea unui instrument de plată electronică ori a datelor de identificare ale acestuia."],
+        },
+      ],
+    },
+    {
+      h2: "Cum sunt analizate probele digitale într-un dosar de fraudă informatică",
+      subsections: [
+        {
+          h3: "Telefoane și calculatoare",
+          paragraphs: ["Conținutul dispozitivelor este examinat pe baza unei autorizații, iar modul de ridicare și sigilare poate fi verificat și contestat."],
+        },
+        {
+          h3: "Adrese IP, conturi și log-uri",
+          paragraphs: ["O adresă IP indică o conexiune, nu neapărat o persoană. Aceeași observație se aplică unui cont folosit de mai multe persoane."],
+        },
+        {
+          h3: "Tranzacții bancare",
+          paragraphs: ["Extrasele și rapoartele bancare arată fluxul sumelor, dar nu identifică singure persoana care a inițiat operațiunea."],
+        },
+        {
+          h3: "Date din platforme și servicii online",
+          paragraphs: ["Datele furnizate de platforme trebuie obținute în condițiile legii și interpretate în raport cu contextul tehnic concret."],
+        },
+      ],
+    },
+    {
+      h2: "Percheziția informatică și ridicarea dispozitivelor",
+      paragraphs: [
+        [
+          { text: "Examinarea conținutului unui dispozitiv se face pe baza unei autorizații emise de judecător. Regulile aplicabile sunt cele analizate pe pagina dedicată " },
+          { text: "percheziției informatice", to: "/servicii/perchezitie-informatica" },
+          { text: "." },
+        ],
+        "Verific temeiul măsurii, obiectul autorizației și modul de consemnare a operațiunilor, iar atunci când există motive solicit restituirea dispozitivelor care nu mai sunt necesare anchetei.",
+      ],
+    },
+    {
+      h2: "Frauda informatică și tranzacțiile cu criptomonede",
+      paragraphs: [
+        [
+          { text: "În dosarele care implică active digitale, analiza se extinde la portofele, platforme de schimb și trasee de tranzacții. Aceste aspecte sunt tratate detaliat în cadrul serviciului de " },
+          { text: "investigații privind activele cripto", to: "/servicii/investigatii-privind-activele-cripto" },
+          { text: "." },
+        ],
+        "Tranzacțiile efectuate pe rețele publice pot fi urmărite, dar legătura dintre un portofel și o persoană trebuie dovedită separat, cu probe suplimentare.",
+      ],
+    },
+    {
+      h2: "Sechestrul, confiscarea și recuperarea prejudiciului",
+      paragraphs: [
+        "În aceste dosare pot fi indisponibilizate conturi bancare, sume, dispozitive și active digitale, pentru garantarea recuperării prejudiciului.",
+        "Verific proporționalitatea măsurilor, formulez contestație atunci când există motive și analizez efectul recuperării prejudiciului asupra soluției din dosar.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar de fraudă informatică",
+      bullets: [
+        "Contest încadrarea juridică atunci când fapta descrisă nu corespunde textului de lege.",
+        "Verific legalitatea obținerii probelor digitale și a autorizațiilor emise.",
+        "Susțin lipsa identificării certe a persoanei care a folosit contul sau dispozitivul.",
+        "Solicit expertiză tehnică atunci când rapoartele existente sunt incomplete.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen.",
+      ],
+      cta: "Vreau o strategie pentru dosarul meu",
     },
   ],
   faq: [
     {
-      q: "Care este diferența dintre înșelăciune și fraudă informatică?",
-      a: "Înșelăciunea presupune inducerea în eroare a unei persoane, iar frauda informatică presupune intervenția asupra datelor sau a funcționării unui sistem informatic, cu producerea unui prejudiciu patrimonial și urmărirea unui beneficiu material.",
+      q: "Care este diferența dintre fraudă informatică și înșelăciune?",
+      a: "La înșelăciune este amăgită o persoană, care acționează pe baza unei reprezentări false. La fraudă informatică, prejudiciul se produce prin intervenția asupra datelor sau a funcționării unui sistem informatic.",
     },
     {
-      q: "O adresă IP este suficientă pentru a mă acuza?",
-      a: "O adresă IP identifică o conexiune, nu automat o persoană. Legătura dintre conexiune, dispozitiv și utilizator trebuie dovedită prin probe coroborate.",
+      q: "Este suficientă folosirea internetului pentru a exista fraudă informatică?",
+      a: "Nu. Folosirea internetului nu transformă orice faptă în fraudă informatică. Trebuie dovedită o intervenție asupra datelor sau asupra funcționării unui sistem informatic.",
     },
     {
-      q: "Îmi pot recupera banii pierduți într-o fraudă online?",
-      a: "Te poți constitui parte civilă în procesul penal, iar în paralel pot fi analizate demersurile față de bancă sau față de furnizorul serviciului de plată. Rapiditatea sesizării este esențială.",
+      q: "Poliția îmi poate ridica telefonul sau laptopul?",
+      a: "Da, dispozitivele pot fi ridicate în condițiile legii, de regulă în cadrul unei percheziții. Examinarea conținutului lor presupune însă o autorizație distinctă.",
+    },
+    {
+      q: "Ce este percheziția informatică?",
+      a: "Este procedura prin care se examinează conținutul unui sistem informatic sau al unui suport de stocare, pe baza unei autorizații emise de judecător.",
+    },
+    {
+      q: "Cum se stabilește cine a folosit un cont sau dispozitiv?",
+      a: "Prin coroborarea datelor tehnice cu alte probe. O adresă IP sau un cont nu identifică, prin ele însele, persoana care a efectuat operațiunea.",
+    },
+    {
+      q: "Tranzacțiile cu criptomonede pot fi urmărite?",
+      a: "Da, tranzacțiile efectuate pe rețele publice pot fi analizate. Legătura dintre un portofel și o persoană trebuie însă dovedită cu probe suplimentare.",
     },
     {
       q: "Ce se întâmplă cu dispozitivele ridicate?",
-      a: "Dispozitivele pot fi păstrate cât timp sunt necesare ca mijloc de probă. Atunci când există temei legal, poate fi solicitată restituirea lor sau efectuarea de copii ale datelor.",
-    },
-    {
-      q: "Pot fi cercetat dacă am primit bani în cont fără să știu proveniența?",
-      a: "Da, o astfel de situație poate fi verificată. Contează ce ai cunoscut la momentul primirii sumelor și ce ai făcut ulterior cu acestea, aspecte care trebuie clarificate încă de la primele declarații.",
+      a: "Sunt păstrate cât timp sunt necesare anchetei. Se poate solicita restituirea lor, iar cererea se analizează în raport cu stadiul dosarului și cu utilitatea probatorie.",
     },
   ],
   resources: [
@@ -2639,103 +3344,245 @@ export const fonduriEuropeneRo: SubServicePageData = {
   title: "Avocat Fraudă Fonduri Europene București | Bogdan Lamatic",
   h1: "Avocat pentru fraudă cu fonduri europene în București",
   description:
-    "Avocat fraudă fonduri europene în București. Apărare în dosare privind deturnarea fondurilor UE, nereguli în proiecte și controale DLAF. Sună acum.",
-  keywords: "avocat fraudă fonduri europene, deturnare fonduri UE, dosar fonduri europene, avocat DLAF",
+    "Avocat fraudă fonduri europene București. Apărare în dosare DLAF și DNA privind proiecte finanțate din fonduri UE, nereguli și prejudiciu. Sună acum.",
+  keywords:
+    "avocat fraudă fonduri europene, deturnare fonduri UE, dosar DLAF, avocat fonduri europene bucurești",
   breadcrumbLabel: "Fonduri europene",
   serviceName: "Avocat fraudă fonduri europene București - Bogdan Lamatic",
   urgency: [
-    "Ai un proiect finanțat din fonduri europene verificat de DLAF, de autoritatea de management sau de Parchet?",
-    "Distincția dintre o neregulă administrativă și o faptă penală se face pe documentele proiectului, iar aceste documente trebuie pregătite corect de la primul control.",
+    "Ai un proiect finanțat din fonduri europene verificat de DLAF sau ai fost chemat la Parchet?",
+    "În aceste dosare, distincția dintre o neregulă administrativă și o faptă penală se stabilește pe documentele proiectului, iar explicațiile trebuie susținute de la început cu acte.",
   ],
   bio: [
-    `${BIO_INTRO} Asist beneficiari de fonduri europene, administratori și persoane implicate în implementarea proiectelor, în controale și în dosare penale privind fondurile UE.`,
+    `${BIO_INTRO} Asist beneficiari, administratori și societăți în dosare privind fondurile europene, de la controalele autorităților de management și verificările DLAF până la faza de judecată.`,
     LEGAL500,
   ],
   sections: [
     {
-      h2: "Ce fac pentru tine",
-      bullets: [
-        "Analizez documentele proiectului, cererea de finanțare și rapoartele de control.",
-        "Verific dacă situația reprezintă o neregulă administrativă sau o faptă prevăzută de legea penală.",
-        "Analizez modul de stabilire a prejudiciului și a corecțiilor financiare aplicate.",
-        "Te asist în relația cu organele de urmărire penală, inclusiv în dosarele instrumentate de DNA.",
-        "Pregătesc apărarea pe documente: achiziții, livrări, rapoarte de progres, dovezi de plată.",
-        "Contest măsurile asigurătorii dispuse asupra conturilor sau bunurilor.",
+      h2: "În ce situație te afli acum?",
+      paragraphs: ["Spune-mi ce etapă a fost atinsă în proiectul tău."],
+      subsections: [
+        {
+          h3: "Ai primit o solicitare sau un control privind un proiect finanțat din fonduri UE",
+          paragraphs: [
+            "Răspunsurile date autorității de management devin parte din dosar. Le pregătesc împreună cu tine, pe baza documentelor proiectului.",
+          ],
+        },
+        {
+          h3: "DLAF verifică proiectul",
+          paragraphs: [
+            "Verificarea DLAF poate fi urmată de o sesizare penală. Analizez obiectul controlului și pregătesc punctul de vedere pe fiecare aspect reclamat.",
+          ],
+        },
+        {
+          h3: "Ai fost chemat la DNA, Parchet sau alt organ de urmărire penală",
+          paragraphs: [
+            [
+              { text: "Înainte de audiere trebuie să știi ce faptă este cercetată și pe ce documente se sprijină. Pentru dosarele instrumentate de Direcția Națională Anticorupție se aplică regulile analizate pe pagina " },
+              { text: "avocat DNA", to: "/servicii/avocat-dna" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Sunt contestate documentele folosite pentru obținerea finanțării",
+          paragraphs: [
+            "Verific fiecare document reclamat, proveniența lui și dacă informațiile cuprinse aveau relevanță pentru acordarea finanțării.",
+          ],
+        },
+        {
+          h3: "Autoritatea solicită recuperarea fondurilor",
+          paragraphs: [
+            "Recuperarea sumelor este un demers distinct de răspunderea penală. Cele două proceduri se pot desfășura în paralel și trebuie gestionate coordonat.",
+          ],
+        },
       ],
-      cta: "Am un control pe proiect - vreau să discut",
+      ctaAfterSubsections: "Am un dosar privind fonduri europene - vreau o evaluare",
     },
     {
-      h2: "Situații în care mă poți contacta",
-      paragraphs: ["Mă poți contacta dacă:"],
+      h2: "Ce analizez imediat într-un dosar privind fondurile europene",
       bullets: [
-        "DLAF sau autoritatea de management a început o verificare a proiectului;",
-        "ți s-a comunicat o notă de constatare a neregulilor;",
-        "ai fost sesizat penal pentru documente sau declarații depuse în cadrul proiectului;",
-        "se reține folosirea fondurilor în alte scopuri decât cele prevăzute;",
-        "procedura de achiziție din proiect este contestată;",
-        "ai fost chemat la audiere într-un dosar privind fonduri europene.",
+        "Ce faptă este reținută concret și ce document stă la baza acuzației.",
+        "Condițiile din ghidul finanțării și din contractul de finanțare.",
+        "Documentele justificative depuse la cererile de plată sau rambursare.",
+        "Procedurile de achiziție derulate în cadrul proiectului.",
+        "Constatările autorităților de management și ale DLAF.",
+        "Modul de calcul al prejudiciului și măsurile asigurătorii dispuse.",
       ],
     },
     {
-      h2: "Ce prevede legea privind frauda cu fonduri europene",
+      h2: "Ce documente trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Spune-mi din ce program a fost finanțat proiectul și ce se reclamă concret."],
+      subsections: [
+        {
+          h3: "Cererea și contractul de finanțare",
+          paragraphs: ["Cererea de finanțare, contractul și actele adiționale, împreună cu ghidul aplicabil."],
+        },
+        {
+          h3: "Cererile de plată și rambursare",
+          paragraphs: ["Cererile depuse, rapoartele de progres și corespondența cu autoritatea de management."],
+        },
+        {
+          h3: "Facturile și documentele justificative",
+          paragraphs: ["Facturile, dovezile de plată, procesele-verbale de recepție și documentele privind livrările."],
+        },
+        {
+          h3: "Documentele achizițiilor",
+          paragraphs: ["Documentația de atribuire, ofertele primite, rapoartele de evaluare și contractele încheiate."],
+        },
+        {
+          h3: "Rapoartele de control și constatările autorităților",
+          paragraphs: ["Notele de constatare a neregulilor, rapoartele DLAF și orice sesizare penală comunicată."],
+        },
+      ],
+      calloutAfterSubsections: "Nu ai toate actele? Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Când o neregulă privind fondurile europene poate deveni dosar penal",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
-        "Legea 78/2000 reglementează, în art. 18 indice 1 - art. 18 indice 5, infracțiunile împotriva intereselor financiare ale Uniunii Europene. Printre acestea se numără:",
-      ],
-      bullets: [
-        "folosirea sau prezentarea de documente ori declarații false, inexacte sau incomplete, care are ca rezultat obținerea pe nedrept de fonduri;",
-        "omisiunea de a furniza datele cerute, cu același rezultat;",
-        "schimbarea destinației fondurilor obținute, fără respectarea prevederilor legale;",
-        "schimbarea destinației unui folos legal obținut, atunci când fapta produce consecințele prevăzute de lege.",
-      ],
-      paragraphsAfterBullets: [
+        "Neregula este o abatere de la regulile de finanțare, care atrage corecții financiare și recuperarea sumelor afectate. Ea poate rezulta din interpretări diferite, erori de raportare sau vicii de procedură.",
         [
-          { text: "Aceste dosare sunt frecvent instrumentate de Direcția Națională Anticorupție, motiv pentru care apărarea trebuie pregătită din faza controlului. Vezi ce presupune " },
-          { text: "asistența într-o anchetă DNA", to: "/servicii/avocat-dna" },
-          { text: "." },
+          { text: "Fapta penală presupune, în plus, folosirea unor documente ori declarații false, inexacte sau incomplete ori omisiunea unor informații, cu intenția de a obține fondurile. Această delimitare este esențială în dosarele de " },
+          { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+          { text: " privind finanțările europene." },
         ],
       ],
     },
     {
-      h2: "Ce trebuie să-mi trimiți",
+      h2: "Ce fapte pot constitui fraudă cu fonduri europene",
+      subsections: [
+        {
+          h3: "Folosirea unor documente sau declarații false, inexacte ori incomplete",
+          paragraphs: ["Depunerea unor documente care nu reflectă realitatea, în vederea obținerii finanțării sau a rambursării cheltuielilor."],
+        },
+        {
+          h3: "Omiterea unor informații relevante pentru obținerea fondurilor",
+          paragraphs: ["Neprezentarea unor date pe care beneficiarul avea obligația să le comunice, atunci când acestea influențau acordarea finanțării."],
+        },
+        {
+          h3: "Schimbarea destinației fondurilor obținute",
+          paragraphs: ["Utilizarea sumelor în alt scop decât cel pentru care au fost acordate, faptă reglementată distinct de lege."],
+        },
+        {
+          h3: "Alte fapte care afectează interesele financiare ale Uniunii Europene",
+          paragraphs: ["Conduite care produc un prejudiciu bugetului Uniunii, inclusiv în legătură cu procedurile de achiziție din cadrul proiectului."],
+        },
+      ],
+      calloutAfterSubsections: "Regimul penal specific este prevăzut în principal de art. 18 indice 1 - 18 indice 5 din Legea 78/2000, iar schimbarea nelegală a destinației fondurilor este reglementată distinct.",
+    },
+    {
+      h2: "Care este diferența dintre neregulă administrativă și fraudă penală cu fonduri europene",
+      paragraphs: [
+        "Neregula se constată de autoritățile de management sau de organismele de control și se soluționează prin corecții financiare și recuperarea sumelor.",
+        "Frauda presupune intenția de a obține fonduri necuvenite, dovedită prin documente false, informații omise sau folosirea sumelor în alt scop. Fără această componentă intenționată, discuția rămâne administrativă.",
+      ],
+    },
+    {
+      h2: "Cine investighează fraudele cu fonduri europene",
+      subsections: [
+        {
+          h3: "Rolul DLAF",
+          paragraphs: ["Departamentul pentru lupta antifraudă efectuează controale administrative privind fondurile europene și poate sesiza organele de urmărire penală."],
+        },
+        {
+          h3: "Urmărirea penală",
+          paragraphs: ["Ancheta se desfășoară de procuror, cu administrarea de probe, expertize și audieri, iar apărarea poate formula cereri în tot acest interval."],
+        },
+        {
+          h3: "Competența organului de anchetă în funcție de dosar",
+          paragraphs: ["În funcție de faptă, de calitatea persoanelor implicate și de valoarea prejudiciului, competența poate aparține Direcției Naționale Anticorupție sau parchetelor de drept comun."],
+        },
+      ],
+      calloutAfterSubsections: "DLAF are inclusiv canal oficial pentru sesizarea fraudelor care afectează fondurile Uniunii Europene.",
+    },
+    {
+      h2: "Documentele false în dosarele privind fondurile europene",
+      paragraphs: [
+        [
+          { text: "Acuzația privind documentele depuse la finanțator este analizată frecvent împreună cu problematica de " },
+          { text: "fals și uz de fals", to: "/servicii/fals-si-uz-de-fals" },
+          { text: ", pentru că aceleași înscrisuri susțin ambele acuzații." },
+        ],
+        "Verific proveniența fiecărui document, cine l-a întocmit și dacă informația contestată era relevantă pentru decizia de finanțare. Un document inexact nu echivalează automat cu un document falsificat.",
+      ],
+    },
+    {
+      h2: "Problemele din achizițiile unui proiect finanțat din fonduri europene",
+      paragraphs: [
+        "Achizițiile sunt zona în care apar cele mai multe constatări: criterii restrictive, oferte pregătite de aceeași persoană, prețuri supraevaluate sau modificări ale contractelor pe parcursul executării.",
+        "Nu orice abatere de procedură constituie infracțiune. Analizez dacă abaterea a produs un prejudiciu real și dacă există dovada unei conduite intenționate, nu doar a unei erori de aplicare a procedurii.",
+      ],
+    },
+    {
+      h2: "Recuperarea fondurilor și răspunderea penală sunt același lucru?",
       cardClassName: "bg-[#faf0e6]",
-      paragraphs: ["Spune-mi ce program de finanțare este vizat, ce sume sunt implicate și cine face verificarea."],
-      paragraphsAfterBullets: [
-        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+      paragraphs: [
+        "Nu. Recuperarea fondurilor este o consecință administrativă a neregulii constatate și poate exista chiar și atunci când nu se reține nicio faptă penală.",
+        "Obligația de a restitui o parte din finanțare nu dovedește, prin ea însăși, comiterea unei infracțiuni. Cele două proceduri au condiții și standarde de probă diferite.",
       ],
-      bulletsAfterBullets: [
-        "contractul de finanțare și cererea de finanțare;",
-        "nota de constatare sau raportul de control;",
-        "documentele de achiziție din proiect;",
-        "rapoartele de progres și cererile de rambursare;",
-        "ordonanța sau citația primită.",
+    },
+    {
+      h2: "Cum se stabilește prejudiciul într-un dosar privind fondurile europene",
+      paragraphs: [
+        "Prejudiciul se raportează la sumele plătite necuvenit din fonduri europene sau naționale de cofinanțare, nu la valoarea totală a proiectului.",
+        "Analizez ce cheltuieli au fost efectiv realizate și justificate, susțin expertiză atunci când calculul este contestabil și formulez obiecțiuni la rapoartele depuse la dosar.",
       ],
-      calloutAfterBullets: "Nu ai toate actele?",
-      calloutAfterBulletsClassName: "font-semibold bg-white",
-      calloutAfterBulletsCta: "Sună oricum",
-      ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Trimite-mi actele pe WhatsApp",
+    },
+    {
+      h2: "Sechestrul și recuperarea prejudiciului",
+      paragraphs: [
+        "În aceste dosare se dispun frecvent măsuri asigurătorii asupra conturilor, imobilelor sau bunurilor achiziționate prin proiect, pentru garantarea recuperării prejudiciului.",
+        "Verific proporționalitatea măsurii față de suma reținută și formulez contestație atunci când sechestrul afectează bunuri fără legătură cu proiectul sau depășește prejudiciul invocat.",
+      ],
+    },
+    {
+      h2: "Cum construiesc apărarea într-un dosar privind fondurile europene",
+      bullets: [
+        "Delimitez neregula administrativă de acuzația penală, pe documentele proiectului.",
+        "Dovedesc realitatea cheltuielilor și a activităților implementate.",
+        "Contest caracterul fals sau relevanța documentelor reclamate.",
+        "Atac modul de calcul al prejudiciului prin expertiză și obiecțiuni.",
+        "Te pregătesc pentru audieri și te asist la fiecare termen, inclusiv în dosarele instrumentate de DNA.",
+      ],
+      cta: "Vreau o strategie pentru dosarul meu",
     },
   ],
   faq: [
     {
-      q: "Orice neregulă în proiect este infracțiune?",
-      a: "Nu. O neregulă poate atrage doar corecții financiare și obligația de restituire. Răspunderea penală presupune îndeplinirea condițiilor prevăzute de lege, inclusiv sub aspectul intenției.",
+      q: "Orice neregulă într-un proiect înseamnă fraudă?",
+      a: "Nu. Neregula atrage corecții financiare și recuperarea sumelor. Frauda presupune intenția de a obține fonduri necuvenite, prin documente false, informații omise sau folosirea sumelor în alt scop.",
     },
     {
-      q: "Ce face DLAF?",
-      a: "Departamentul pentru lupta antifraudă efectuează controale privind modul de utilizare a fondurilor europene și poate sesiza organele de urmărire penală atunci când constată indicii privind săvârșirea unor fapte penale.",
+      q: "Dacă trebuie să restitui finanțarea înseamnă că am comis o infracțiune?",
+      a: "Nu. Obligația de restituire este o consecință administrativă și poate exista și în lipsa oricărei fapte penale. Cele două proceduri au condiții și standarde de probă diferite.",
     },
     {
-      q: "Cine instrumentează aceste dosare?",
-      a: "Dosarele privind infracțiuni împotriva intereselor financiare ale Uniunii Europene sunt de regulă instrumentate de Direcția Națională Anticorupție, în limitele competenței prevăzute de lege.",
+      q: "Ce documente false pot genera un dosar penal?",
+      a: "Documentele depuse pentru obținerea finanțării sau pentru rambursarea cheltuielilor, atunci când nu reflectă realitatea: facturi, procese-verbale de recepție, declarații sau documente de achiziție.",
     },
     {
-      q: "Ce se întâmplă dacă restitui fondurile?",
-      a: "Restituirea sumelor poate avea relevanță în dosar, dar nu înlătură automat răspunderea penală. Efectul concret depinde de faptele reținute și de etapa procesuală.",
+      q: "Cine investighează fraudele cu fonduri europene?",
+      a: "Controlul administrativ este realizat de DLAF și de autoritățile de management, iar ancheta penală se desfășoară de procuror, în funcție de competență, inclusiv de Direcția Națională Anticorupție.",
     },
     {
-      q: "Pot continua implementarea proiectului?",
-      a: "Depinde de măsurile dispuse de autoritatea de management și de eventualele măsuri asigurătorii. Fiecare situație trebuie analizată separat, pe documentele proiectului.",
+      q: "Firma și administratorul pot răspunde simultan?",
+      a: "Da. Persoana juridică poate răspunde penal alături de persoanele fizice implicate, iar în paralel poate exista obligația de restituire a fondurilor.",
+    },
+    {
+      q: "Poate fi pus sechestru pe bunuri?",
+      a: "Da, inclusiv pe bunurile achiziționate prin proiect sau pe alte bunuri, în limita prejudiciului reținut. Măsura poate fi contestată atunci când este disproporționată.",
+    },
+    {
+      q: "Ce se întâmplă dacă fondurile au fost folosite în alt scop?",
+      a: "Schimbarea destinației fondurilor este reglementată distinct și poate atrage răspundere penală, alături de obligația de restituire a sumelor.",
+    },
+    {
+      q: "Pot exista în același dosar și acuzații de fals?",
+      a: "Da. Acuzația privind documentele depuse la finanțator este analizată frecvent împreună cu falsul și uzul de fals, pentru că aceleași înscrisuri susțin ambele acuzații.",
     },
   ],
   resources: [
