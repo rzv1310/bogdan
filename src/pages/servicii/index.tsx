@@ -114,12 +114,14 @@ export default function ServiciiPage() {
         {/* Hero */}
         <section className="mb-12 md:mb-16">
 
-          <h1 className="text-2xl font-semibold mb-4">Servicii avocat penal în București</h1>
+          <h1 className="text-2xl font-semibold mb-4">Servicii avocat drept penal în București</h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            Asistență și reprezentare în dosare penale complexe, de la audieri, reținere și arest preventiv până la cauze DIICOT, criminalitate economică, corupție, infracțiuni rutiere și reprezentarea victimelor.
+            Ofer asistență și reprezentare în dosare penale complexe, de la audieri, reținere și arest preventiv până la cauze DIICOT, criminalitate economică, corupție, infracțiuni rutiere și reprezentarea victimelor.
           </p>
-          <div className="mt-6">
-            <CallCta />
+          <LawyerBioBlock path="/servicii" lang="ro" className="mt-5" />
+          <GoogleReviewStars lang="ro" className="mt-3" />
+          <div className="mt-5">
+            <CallCta label="Sună-mă acum!" />
           </div>
         </section>
         </div>
