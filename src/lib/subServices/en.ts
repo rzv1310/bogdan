@@ -852,3 +852,814 @@ export const houseArrestEn: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT_MP_EN,
 };
+
+/* ============================================================
+   Sub-services - Financial crime pillar page
+   ============================================================ */
+
+const L241_EN = "https://legislatie.just.ro/Public/DetaliiDocument/239926";
+
+const PARENT_FC_EN = {
+  to: "/en/services/financial-crime",
+  label: "financial crime",
+  breadcrumbLabel: "Financial crime",
+};
+
+export const taxEvasionEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/tax-evasion",
+  altPath: "/servicii/evaziune-fiscala",
+  roPath: "/servicii/evaziune-fiscala",
+  title: "Tax Evasion Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Tax evasion lawyer in Bucharest",
+  description:
+    "Tax evasion lawyer in Bucharest. Defense in criminal tax evasion files, ANAF audits, damage assessment and asset freezing. Call now.",
+  keywords: "tax evasion lawyer bucharest, tax evasion criminal file, tax fraud defense romania",
+  breadcrumbLabel: "Tax evasion",
+  serviceName: "Tax evasion lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you received a criminal complaint after an ANAF audit or been summoned by the prosecutor in a tax evasion case?",
+    "Accounting records, the explanations given to inspectors and your first statement before the investigating authorities can directly shape how the file is built.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist individuals, directors and companies in criminal tax evasion cases, from the complaint filed after a tax inspection to the final resolution.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you in a tax evasion case",
+      bullets: [
+        "I review the tax inspection report and the criminal complaint to identify the exact conduct alleged.",
+        "I check whether the operations invoked fall under Law 241/2005 or amount only to a different fiscal interpretation.",
+        "I analyse how the damage was calculated and, where useful, request an accounting or tax expert report.",
+        "I prepare you for questioning and assist you at every stage, before the prosecutor and in court.",
+        "I challenge precautionary measures, including seizures over accounts or assets, where grounds exist.",
+        "I assess the effect that covering the damage may have on criminal liability, under the conditions set by law.",
+      ],
+      cta: "I have a tax evasion case - request an assessment",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "ANAF filed a criminal complaint after an audit or tax inspection;",
+        "you are summoned for questioning as a suspect or defendant;",
+        "the company you manage is investigated for fictitious operations;",
+        "accounts, real estate or other assets have been frozen;",
+        "you have been indicted and are preparing the trial defense;",
+        "you want to know what effect paying the damage has in your case.",
+      ],
+    },
+    {
+      h2: "What the law says about tax evasion",
+      paragraphs: [
+        "Law 241/2005 on preventing and combating tax evasion sets out an exhaustive list of criminal conduct. Not every difference found by the tax authority is automatically a criminal offense.",
+        "Article 9 of the law covers, among others:",
+      ],
+      bullets: [
+        "concealing the taxable asset or source;",
+        "omitting to record commercial operations carried out or income earned;",
+        "recording expenses not based on real operations, or fictitious operations;",
+        "altering, destroying or hiding accounting records;",
+        "keeping double accounting records;",
+        "substituting, damaging or disposing of seized assets.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Penalty limits increase when the damage exceeds the statutory thresholds, and the file is often accompanied by precautionary measures. The defense is built on the accounting documents and on the " },
+          { text: "rules of the criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " governing the evidence gathered." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["For a quick first assessment, tell me what happened and at what stage the file is."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the tax inspection report;",
+        "the criminal complaint or the order you received;",
+        "the summons;",
+        "the tax assessment decision;",
+        "the relevant accounting documents.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "Does any tax debt mean tax evasion?",
+      a: "No. Law 241/2005 lists the conduct that constitutes an offense. An unpaid tax debt or a difference resulting from a different reading of tax legislation is not automatically a criminal offense.",
+    },
+    {
+      q: "What happens if I pay the damage?",
+      a: "The law provides specific consequences depending on when the damage is covered and on its amount. The concrete effect must be assessed against the legal classification retained in your file and the procedural stage.",
+    },
+    {
+      q: "Can the company accounts be frozen?",
+      a: "Yes, the judicial authorities may order precautionary measures to secure recovery of the damage. Such measures can be challenged and their extent assessed against the damage retained.",
+    },
+    {
+      q: "Who is liable, the director or the company?",
+      a: "Criminal liability may be examined both for the individual and for the legal entity. What matters is the actual decision-making powers, the decisions taken and the documents signed.",
+    },
+    {
+      q: "What should I do if I am summoned for questioning?",
+      a: "Do not attend without knowing in what capacity you are questioned and what conduct is investigated. Contact me beforehand so we can assess the situation and prepare the hearing.",
+    },
+    {
+      q: "How long does a tax evasion case take?",
+      a: "It depends on the complexity of the operations, the number of persons investigated and the expert reports ordered. Files with a large volume of documents can take longer, so the defense must be built from the start.",
+    },
+  ],
+  resources: [
+    { text: "Law 241/2005 - conduct constituting tax evasion offenses.", href: L241_EN, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code - art. 249 and following on precautionary measures.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const fraudAndDeceptionEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/fraud-and-deception",
+  altPath: "/servicii/inselaciune-frauda",
+  roPath: "/servicii/inselaciune-frauda",
+  title: "Fraud and Deception Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Fraud and deception lawyer in Bucharest",
+  description:
+    "Fraud lawyer in Bucharest. Defense and representation in deception, financial fraud and unperformed contract cases. Call now for an assessment.",
+  keywords: "fraud lawyer bucharest, deception lawyer romania, financial fraud attorney",
+  breadcrumbLabel: "Fraud and deception",
+  serviceName: "Fraud and deception lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you accused of deception, or have you lost money through fraud?",
+    "The line between a breach of contract and the offense of deception is drawn on the evidence in the file, and that evidence takes shape from the very first investigative acts.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist both persons accused of fraud or deception and injured parties who want to recover the sums lost.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I review the accusation and check whether the conditions of deception are met, in particular misleading conduct and damage.",
+        "I separate the civil or commercial dispute from criminal liability, where the facts allow it.",
+        "I build the defense on documents: contracts, invoices, bank statements, correspondence.",
+        "I file the criminal complaint and represent the injured party seeking recovery of the damage.",
+        "I request precautionary measures to protect sums and assets, where appropriate.",
+        "I assist you at hearings and before the court, at every stage of the proceedings.",
+      ],
+      cta: "I want to discuss my case",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "you are accused of misleading a contractual partner;",
+        "you paid for goods or services you never received;",
+        "you were the victim of an investment or online fraud;",
+        "you are a director and your company is reported over a failed deal;",
+        "you issued cheques or promissory notes without funds;",
+        "you want to file a criminal complaint and join the case as a civil party.",
+      ],
+    },
+    {
+      h2: "What the law says about deception",
+      paragraphs: [
+        "Article 244 of the Criminal Code punishes misleading a person by presenting a false fact as true or a true fact as false, in order to obtain an unjust patrimonial benefit, where damage has been caused.",
+        "The offense is aggravated when committed by using false names or capacities or other fraudulent means. The Criminal Code also regulates insurance deception separately, in art. 245.",
+        [
+          { text: "In practice, the central issue is whether the intent to mislead existed from the outset or whether this is a contractual breach. That assessment is made on the evidence gathered during the " },
+          { text: "criminal investigation stage", to: "/en/services/criminal-investigation" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me briefly what happened, what amounts are involved and at what stage the file is."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the contract or written agreement;",
+        "invoices and proof of payment;",
+        "correspondence with the other party;",
+        "the criminal complaint or the order received;",
+        "the summons.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "When does a breach of contract become deception?",
+      a: "When it is proven that the party misled the other by presenting untrue facts, in order to obtain an unjust patrimonial benefit, and damage was caused. A mere breach without that element remains a civil dispute.",
+    },
+    {
+      q: "Can I recover my money through the criminal case?",
+      a: "You can join the criminal proceedings as a civil party to claim compensation. In parallel, precautionary measures can be requested to protect available sums or assets.",
+    },
+    {
+      q: "What should I do if I was the victim of an online fraud?",
+      a: "Gather all available evidence, including conversations, proof of payment and details of the accounts used, then file a criminal complaint. Depending on the method used, the conduct may also be assessed as computer fraud.",
+    },
+    {
+      q: "What do I risk if I am accused of deception?",
+      a: "Article 244 of the Criminal Code provides for imprisonment, with higher limits in the aggravated form. Alongside the penalty, an obligation to repair the damage may be examined.",
+    },
+    {
+      q: "Is issuing a cheque without funds an offense?",
+      a: "It may be assessed as deception when the legal conditions on misleading conduct and damage are met. The context of issuance and what the parties knew at that time are decisive.",
+    },
+    {
+      q: "Can I be investigated if my company became insolvent?",
+      a: "Insolvency in itself is not an offense. However, the operations carried out before insolvency may be examined, including from the perspective of fraudulent bankruptcy.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 244 on deception.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 245 on insurance deception.", href: CP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const embezzlementEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/embezzlement",
+  altPath: "/servicii/delapidare",
+  roPath: "/servicii/delapidare",
+  title: "Embezzlement Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Embezzlement lawyer in Bucharest",
+  description:
+    "Embezzlement lawyer in Bucharest. Defense in criminal files involving missing funds, inventory shortfalls and misappropriated assets. Call now.",
+  keywords: "embezzlement lawyer bucharest, embezzlement criminal case romania, misappropriation defense",
+  breadcrumbLabel: "Embezzlement",
+  serviceName: "Embezzlement lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for embezzlement, or have you found shortfalls in your company's accounts?",
+    "In such a file everything is decided on documents: who held the assets, what sums were moved and how they were justified.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist directors, employees with management duties and companies in embezzlement cases, both in defense and as injured party.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I check whether you held the capacity required by law, namely a public official managing or administering the assets.",
+        "I analyse the management records, account sheets, settlements and supporting documents.",
+        "I challenge how the damage was established and, where needed, request an accounting expert report.",
+        "I separate shortfalls caused by errors or weak internal procedures from criminal conduct.",
+        "I assist you at hearings and throughout the trial, filing the necessary requests and objections.",
+        "I represent the injured company seeking recovery of the sums and precautionary measures.",
+      ],
+      cta: "I am investigated for embezzlement - request an assessment",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "you have been notified that money or goods are missing from the assets you manage;",
+        "the company filed a criminal complaint against you;",
+        "you have been summoned for questioning in an embezzlement file;",
+        "you are a director and discovered unjustified operations;",
+        "you have been indicted and are preparing the defense;",
+        "precautionary measures have been ordered over your assets.",
+      ],
+    },
+    {
+      h2: "What the law says about embezzlement",
+      paragraphs: [
+        "Article 295 of the Criminal Code punishes the appropriation, use or trafficking, by a public official, in his own interest or for another, of money, valuables or other assets he manages or administers.",
+        "Several elements must be proven for the offense to exist:",
+      ],
+      bullets: [
+        "the capacity of official with management or administration duties;",
+        "the existence of the assets or sums under that person's management;",
+        "the act of appropriation, use or trafficking;",
+        "intent, not mere negligence in keeping the records.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "The offense has an aggravated form where particularly serious consequences were caused. In complex files, embezzlement often appears alongside other economic charges, so the defense must be built as a whole. See also " },
+          { text: "defense in economic crime cases", to: "/en/services/financial-crime" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me what position you held, what sums are retained and at what stage the file is."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "your job description and employment contract or mandate;",
+        "the inventory report;",
+        "the relevant accounting documents and settlements;",
+        "the criminal complaint or the order received;",
+        "the summons.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "Does any shortfall mean embezzlement?",
+      a: "No. A shortfall may result from bookkeeping errors, weak internal procedures or justified losses. Embezzlement requires proof of appropriation, use or trafficking, committed with intent.",
+    },
+    {
+      q: "Who can be liable for embezzlement?",
+      a: "The person holding the capacity required by law who actually manages or administers the assets or sums. The analysis starts from the job description, the mandate granted and the duties actually exercised.",
+    },
+    {
+      q: "What happens if I return the money?",
+      a: "Returning the damage does not automatically remove criminal liability, but it can be used in the defense and in sentencing. The concrete effect depends on the procedural stage and the circumstances.",
+    },
+    {
+      q: "Can the company claim damages in the criminal case?",
+      a: "Yes. The injured company can join as a civil party and request precautionary measures to recover the damage.",
+    },
+    {
+      q: "Is an accounting expert report useful?",
+      a: "In many files yes, because the damage retained rests on accounting calculations. An expert report can clarify the sums, the period analysed and the supporting documents.",
+    },
+    {
+      q: "What do I risk in an embezzlement file?",
+      a: "Article 295 of the Criminal Code provides for imprisonment, with higher limits where particularly serious consequences were caused. An obligation to repair the damage may also be examined.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 295 on embezzlement.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code - art. 249 and following on precautionary measures.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const forgeryEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/forgery-and-use-of-forgery",
+  altPath: "/servicii/fals-si-uz-de-fals",
+  roPath: "/servicii/fals-si-uz-de-fals",
+  title: "Forgery Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Forgery and use of forgery lawyer in Bucharest",
+  description:
+    "Forgery lawyer in Bucharest. Defense in cases of forged documents, intellectual forgery and use of forged documents. Call now.",
+  keywords: "forgery lawyer bucharest, use of forgery romania, forged documents criminal defense",
+  breadcrumbLabel: "Forgery and use of forgery",
+  serviceName: "Forgery and use of forgery lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for forging a document, or for using a document said to be forged?",
+    "In these files what matters is who drafted the document, what the person using it knew and what legal consequences it produced.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist persons investigated for forgery of private documents, intellectual forgery, material forgery and use of forgery, including in complex economic files.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I check which type of forgery is retained and whether the document is an official or a private one.",
+        "I assess whether the document produced legal consequences, an essential condition for several of these offenses.",
+        "I challenge the conclusions of the handwriting expert report and request a new one where needed.",
+        "I examine whether the person using the document knew it was forged.",
+        "I assist you at hearings, file requests and objections and prepare the trial defense.",
+      ],
+      cta: "I want an assessment of my case",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "you are accused of signing a document in another person's name;",
+        "a contract, invoice or certificate is said to be forged;",
+        "you filed with an institution a document said not to be genuine;",
+        "you are an official and an official act is said to have been drafted untruthfully;",
+        "the forgery charge accompanies a tax evasion, deception or fraud file;",
+        "you have been summoned for questioning or received the indictment.",
+      ],
+    },
+    {
+      h2: "What the law says about forgery",
+      paragraphs: ["The Criminal Code regulates several distinct offenses:"],
+      bullets: [
+        {
+          bold: "Material forgery of official documents (art. 320).",
+          rest: "Forging an official document by counterfeiting the writing or signature, or by altering it in any way.",
+        },
+        {
+          bold: "Intellectual forgery (art. 321).",
+          rest: "Forging an official document when drafting it, by certifying facts or circumstances that do not correspond to the truth or by omitting data.",
+        },
+        {
+          bold: "Forgery of private documents (art. 322).",
+          rest: "Forging a private document, followed by using it or handing it to another person for use, with a view to producing legal consequences.",
+        },
+        {
+          bold: "Use of forgery (art. 323).",
+          rest: "Using an official or private document, knowing it is forged, with a view to producing legal consequences.",
+        },
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Forgery frequently accompanies other economic charges, so the strategy must cover the whole file, not just the document. See also " },
+          { text: "tax evasion cases", to: "/en/services/tax-evasion" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me which document is involved, who drafted it and where it was used."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the contested document;",
+        "the order or the criminal complaint;",
+        "the expert report, if one was ordered;",
+        "the summons;",
+        "the relevant correspondence.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between forgery and use of forgery?",
+      a: "Forgery means falsifying the document, while use of forgery means using a forged document, knowing its character, with a view to producing legal consequences. The same person may be liable for both or only one of them.",
+    },
+    {
+      q: "Can I be investigated if I did not know the document was forged?",
+      a: "Use of forgery requires knowledge that the document is forged. If you did not know, this must be established through the evidence in the file.",
+    },
+    {
+      q: "What does producing legal consequences mean?",
+      a: "It means the document is capable of creating, modifying or extinguishing rights or obligations. It is assessed separately for private documents and for use of forgery.",
+    },
+    {
+      q: "Can the handwriting expert report be challenged?",
+      a: "Yes. The conclusions can be contested, objections can be filed and a new expert report can be requested, under the conditions set by the Criminal Procedure Code.",
+    },
+    {
+      q: "What do I risk in a forgery file?",
+      a: "Penalties differ depending on the type of forgery retained and are set out in art. 320-323 of the Criminal Code. The concrete classification directly affects the penalty limits.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 320-323 on forgery and use of forgery.", href: CP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const fraudulentBankruptcyEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/fraudulent-bankruptcy",
+  altPath: "/servicii/bancruta-frauduloasa",
+  roPath: "/servicii/bancruta-frauduloasa",
+  title: "Fraudulent Bankruptcy Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Fraudulent bankruptcy lawyer in Bucharest",
+  description:
+    "Fraudulent bankruptcy lawyer in Bucharest. Defense in criminal files on insolvency, falsified records and asset transfers. Call now.",
+  keywords: "fraudulent bankruptcy lawyer bucharest, insolvency criminal case romania, asset concealment defense",
+  breadcrumbLabel: "Fraudulent bankruptcy",
+  serviceName: "Fraudulent bankruptcy lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Has your company entered insolvency and a criminal complaint for fraudulent bankruptcy has been filed against you?",
+    "The operations carried out before the procedure opened, the accounting records and the asset transfers are the first things the investigating authorities examine.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist directors and shareholders in criminal files linked to insolvency, fraudulent bankruptcy and operations contested by creditors or by the insolvency practitioner.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I review the complaint and the report of the judicial administrator or liquidator.",
+        "I check whether the contested operations had a genuine economic justification.",
+        "I separate insolvency caused by economic difficulties from conduct committed with fraudulent intent.",
+        "I analyse asset transfers, preferential payments and how the accounting records were kept.",
+        "I assist you at hearings and before the court, with defenses built on the company's documents.",
+        "I align the criminal defense with the ongoing insolvency proceedings.",
+      ],
+      cta: "I received a bankruptcy complaint - request an assessment",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "the judicial administrator or liquidator filed a criminal complaint;",
+        "a creditor accuses you of hiding or transferring assets;",
+        "you are investigated for falsifying or destroying accounting records;",
+        "preferential payments to certain creditors are alleged;",
+        "you have been summoned in a file linked to the company's insolvency;",
+        "the bankruptcy charge comes with other economic offenses.",
+      ],
+    },
+    {
+      h2: "What the law says about fraudulent bankruptcy",
+      paragraphs: ["Article 241 of the Criminal Code punishes a person who, in fraud of creditors:"],
+      bullets: [
+        "falsifies, removes or destroys the debtor's records, or hides part of the debtor's assets;",
+        "presents non-existent debts or records in the debtor's registers, in another document or in the financial statements sums that are not owed;",
+        "transfers part of the assets in case of the debtor's insolvency.",
+      ],
+      paragraphsAfterBullets: [
+        "The essential condition is fraud of creditors. A company may become insolvent for objective economic reasons, without that amounting to an offense.",
+        [
+          { text: "The Criminal Code also regulates simple bankruptcy in art. 240. In larger files, these charges may appear together with " },
+          { text: "asset concealment operations", to: "/en/services/money-laundering-and-asset-concealment" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me at what stage the insolvency procedure is and which operations are contested."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the report of the judicial administrator or liquidator;",
+        "the criminal complaint or the order received;",
+        "the relevant financial statements and trial balances;",
+        "the contracts concerning the transferred assets;",
+        "the summons.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "Does insolvency automatically mean fraudulent bankruptcy?",
+      a: "No. Insolvency may have objective economic causes. Fraudulent bankruptcy requires conduct committed in fraud of creditors, from those expressly listed in art. 241 of the Criminal Code.",
+    },
+    {
+      q: "Who can notify the criminal authorities?",
+      a: "The judicial administrator, the liquidator, creditors or other interested persons. The investigating authorities may also act on their own initiative.",
+    },
+    {
+      q: "What are preferential payments?",
+      a: "Payments made to certain creditors to the detriment of others. They are examined in the insolvency procedure and may also be relevant in the criminal file, depending on the circumstances.",
+    },
+    {
+      q: "Is the director liable with personal assets?",
+      a: "In the insolvency procedure, patrimonial liability may be examined, and in the criminal file an obligation to repair the damage may be assessed. These are distinct procedures with their own conditions.",
+    },
+    {
+      q: "How do the criminal file and the insolvency relate?",
+      a: "Documents from the insolvency procedure frequently end up in the criminal file. The defense must therefore be consistent across both procedures, with the same economic explanations.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 241 on fraudulent bankruptcy.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 240 on simple bankruptcy.", href: CP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const computerFraudEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/computer-fraud",
+  altPath: "/servicii/frauda-informatica",
+  roPath: "/servicii/frauda-informatica",
+  title: "Computer Fraud Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Computer fraud lawyer in Bucharest",
+  description:
+    "Computer fraud lawyer in Bucharest. Defense in cases involving fraudulent financial operations, online payments and computer data. Call now.",
+  keywords: "computer fraud lawyer bucharest, online fraud attorney romania, cybercrime defense lawyer",
+  breadcrumbLabel: "Computer fraud",
+  serviceName: "Computer fraud lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for computer fraud, or have you lost money through a fraudulent online operation?",
+    "The evidence in these files is technical: IP addresses, logs, accounts, devices. How it is obtained and interpreted can change the case entirely.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist persons investigated for computer fraud and fraudulent financial operations, as well as persons harmed by such conduct.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I review the accusation and check whether the conduct qualifies as computer fraud or as another cybercrime offense.",
+        "I verify how the digital evidence was obtained and whether the legal procedures were observed.",
+        "I analyse the technical report and, where needed, support an independent expert examination.",
+        "I challenge the link between an IP address, an account or a device and the accused person where that link is not proven.",
+        "I file the criminal complaint and represent the injured party seeking recovery of the sums.",
+        "I assist you at hearings and at every stage of the proceedings.",
+      ],
+      cta: "I want an assessment of my situation",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "you are accused of carrying out fraudulent operations in computer systems;",
+        "your accounts were emptied through an unauthorised online operation;",
+        "you were the victim of card or electronic payment fraud;",
+        "you were involved, without knowing, in suspicious money transfers;",
+        "your devices were seized in an investigation into online fraud;",
+        "you have been summoned in a cybercrime file.",
+      ],
+    },
+    {
+      h2: "What the law says about computer fraud",
+      paragraphs: [
+        "Article 249 of the Criminal Code punishes causing patrimonial damage to a person by introducing, modifying or deleting computer data, by restricting access to such data or by hindering in any way the functioning of a computer system, in order to obtain a material benefit for oneself or for another.",
+        "In practice, the charge often comes together with others, such as illegal access to a computer system, illegal operations with devices or computer programs, or fraudulent financial operations.",
+        [
+          { text: "Evidence is frequently obtained by seizing devices and analysing the data. See what a " },
+          { text: "computer search of your phone or laptop", to: "/en/services/computer-search" },
+          { text: " involves." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me which operations are targeted, what amounts are involved and what you have been told so far."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the order or the criminal complaint;",
+        "bank statements and proof of the transactions;",
+        "the report on the seizure of the devices;",
+        "correspondence with the bank or the platform involved;",
+        "the summons.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between deception and computer fraud?",
+      a: "Deception requires misleading a person, while computer fraud requires intervening on data or on the functioning of a computer system, causing patrimonial damage and pursuing a material benefit.",
+    },
+    {
+      q: "Is an IP address enough to accuse me?",
+      a: "An IP address identifies a connection, not automatically a person. The link between connection, device and user must be proven through corroborating evidence.",
+    },
+    {
+      q: "Can I recover money lost in an online fraud?",
+      a: "You can join the criminal proceedings as a civil party, and in parallel steps towards the bank or the payment service provider can be assessed. Acting quickly is essential.",
+    },
+    {
+      q: "What happens to the seized devices?",
+      a: "Devices may be kept for as long as they are needed as evidence. Where there is a legal basis, their return or a copy of the data can be requested.",
+    },
+    {
+      q: "Can I be investigated if I received money without knowing its origin?",
+      a: "Yes, such a situation can be examined. What matters is what you knew when the sums were received and what you did with them afterwards, points that must be clarified from the first statements.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 249 on computer fraud.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code - art. 168 on computer searches.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
+
+export const euFundsFraudEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/eu-funds-fraud",
+  altPath: "/servicii/fonduri-europene",
+  roPath: "/servicii/fonduri-europene",
+  title: "EU Funds Fraud Lawyer Bucharest | Bogdan Lamatic",
+  h1: "EU funds fraud lawyer in Bucharest",
+  description:
+    "EU funds fraud lawyer in Bucharest. Defense in cases on misuse of EU funds, project irregularities and anti-fraud controls. Call now.",
+  keywords: "eu funds fraud lawyer bucharest, misuse of eu funds romania, dlaf investigation attorney",
+  breadcrumbLabel: "EU funds",
+  serviceName: "EU funds fraud lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Is your EU-funded project under review by the anti-fraud department, the managing authority or the prosecutor?",
+    "The line between an administrative irregularity and a criminal offense is drawn on the project documents, and those documents must be prepared properly from the first control.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist beneficiaries of EU funds, directors and persons involved in project implementation, during controls and in criminal files concerning EU funds.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I do for you",
+      bullets: [
+        "I review the project documents, the funding application and the control reports.",
+        "I check whether the situation is an administrative irregularity or conduct covered by criminal law.",
+        "I analyse how the damage and the financial corrections were established.",
+        "I assist you before the investigating authorities, including in files handled by the anti-corruption directorate.",
+        "I build the defense on documents: procurement, deliveries, progress reports, proof of payment.",
+        "I challenge precautionary measures ordered over accounts or assets.",
+      ],
+      cta: "My project is under control - I want to discuss",
+    },
+    {
+      h2: "When you can contact me",
+      paragraphs: ["Contact me if:"],
+      bullets: [
+        "the anti-fraud department or the managing authority started a review of the project;",
+        "you received a note establishing irregularities;",
+        "a criminal complaint was filed over documents or statements submitted in the project;",
+        "the funds are said to have been used for other purposes than those provided;",
+        "the procurement procedure in the project is contested;",
+        "you have been summoned in a file concerning EU funds.",
+      ],
+    },
+    {
+      h2: "What the law says about EU funds fraud",
+      paragraphs: [
+        "Law 78/2000 regulates, in art. 18^1 to art. 18^5, offenses against the financial interests of the European Union. These include:",
+      ],
+      bullets: [
+        "using or presenting false, inaccurate or incomplete documents or statements, resulting in the wrongful obtaining of funds;",
+        "omitting to provide the required data, with the same result;",
+        "changing the destination of the funds obtained, without observing the legal provisions;",
+        "changing the destination of a lawfully obtained benefit, where the conduct produces the consequences provided by law.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "These files are frequently handled by the National Anticorruption Directorate, so the defense must be prepared from the control stage. See what " },
+          { text: "assistance in a DNA investigation", to: "/en/services/dna-lawyer" },
+          { text: " involves." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Tell me which funding programme is involved, what amounts are at stake and who is carrying out the review."],
+      paragraphsAfterBullets: [[{ text: "If you have them, send me:", bold: true }]],
+      bulletsAfterBullets: [
+        "the financing contract and the funding application;",
+        "the note of findings or the control report;",
+        "the procurement documents of the project;",
+        "the progress reports and reimbursement claims;",
+        "the order or summons received.",
+      ],
+      calloutAfterBullets: "You do not have all the documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+  ],
+  faq: [
+    {
+      q: "Is every project irregularity a criminal offense?",
+      a: "No. An irregularity may only trigger financial corrections and the obligation to return funds. Criminal liability requires the conditions set by law, including as regards intent.",
+    },
+    {
+      q: "What does the anti-fraud department do?",
+      a: "It carries out controls on how EU funds are used and may notify the criminal investigation authorities where it finds indications of criminal conduct.",
+    },
+    {
+      q: "Who handles these files?",
+      a: "Offenses against the financial interests of the European Union are generally handled by the National Anticorruption Directorate, within the limits of its statutory competence.",
+    },
+    {
+      q: "What happens if I return the funds?",
+      a: "Returning the sums may be relevant in the file, but it does not automatically remove criminal liability. The concrete effect depends on the conduct retained and the procedural stage.",
+    },
+    {
+      q: "Can I continue implementing the project?",
+      a: "It depends on the measures ordered by the managing authority and on any precautionary measures. Each situation must be assessed separately, on the project documents.",
+    },
+  ],
+  resources: [
+    { text: "Law 78/2000 - offenses against the financial interests of the European Union.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Procedure Code - art. 249 and following on precautionary measures.", href: CPP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_FC_EN,
+};
