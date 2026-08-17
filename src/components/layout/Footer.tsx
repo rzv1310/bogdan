@@ -170,7 +170,7 @@ export default function Footer() {
             {/* Social Media Icons */}
             <div className="mt-6">
               <h3 className="text-sm font-semibold tracking-wide uppercase mb-4">
-                {lang === "en" ? "Follow Us" : "Urmărește-ne"}
+                {lang === "en" ? "Follow me" : "Urmărește-mă"}
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <a 
