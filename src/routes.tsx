@@ -90,6 +90,16 @@ const CookiePolicyEn = lazyRoute(() => import("./pages/en/cookie-policy"));
 const SitemapEn = lazyRoute(() => import("./pages/en/sitemap"));
 const CriminalInvestigationEn = lazyRoute(() => import("./pages/en/services/criminal-investigation"));
 const PreventiveMeasuresEn = lazyRoute(() => import("./pages/en/services/preventive-measures"));
+const DareLuareDeMita = lazyRoute(() => import("./pages/services/dare-luare-de-mita"));
+const TraficDeInfluenta = lazyRoute(() => import("./pages/services/trafic-de-influenta"));
+const AbuzInServiciu = lazyRoute(() => import("./pages/services/abuz-in-serviciu"));
+const NeglijentaInServiciu = lazyRoute(() => import("./pages/services/neglijenta-in-serviciu"));
+const ConflictDeInterese = lazyRoute(() => import("./pages/services/conflict-de-interese"));
+const BriberyGivingAndTakingEn = lazyRoute(() => import("./pages/en/services/bribery-giving-and-taking"));
+const InfluencePeddlingEn = lazyRoute(() => import("./pages/en/services/influence-peddling"));
+const AbuseOfOfficeEn = lazyRoute(() => import("./pages/en/services/abuse-of-office"));
+const NegligenceInOfficeEn = lazyRoute(() => import("./pages/en/services/negligence-in-office"));
+const ConflictOfInterestEn = lazyRoute(() => import("./pages/en/services/conflict-of-interest"));
 const OffensesAgainstPersonsEn = lazyRoute(() => import("./pages/en/services/offenses-against-persons"));
 const PoliceQuestioningEn = lazyRoute(() => import("./pages/en/services/police-prosecutor-questioning"));
 const HomeSearchEn = lazyRoute(() => import("./pages/en/services/home-search"));
@@ -163,6 +173,16 @@ export default function AppRoutes() {
           <Route path="/en/services" element={<EnServicesPage />} />
           <Route path="/en/services/criminal-investigation" element={<CriminalInvestigationEn />} />
           <Route path="/en/services/preventive-measures" element={<PreventiveMeasuresEn />} />
+          <Route path="/servicii/dare-luare-de-mita" element={<DareLuareDeMita />} />
+          <Route path="/servicii/trafic-de-influenta" element={<TraficDeInfluenta />} />
+          <Route path="/servicii/abuz-in-serviciu" element={<AbuzInServiciu />} />
+          <Route path="/servicii/neglijenta-in-serviciu" element={<NeglijentaInServiciu />} />
+          <Route path="/servicii/conflict-de-interese" element={<ConflictDeInterese />} />
+          <Route path="/en/services/bribery-giving-and-taking" element={<BriberyGivingAndTakingEn />} />
+          <Route path="/en/services/influence-peddling" element={<InfluencePeddlingEn />} />
+          <Route path="/en/services/abuse-of-office" element={<AbuseOfOfficeEn />} />
+          <Route path="/en/services/negligence-in-office" element={<NegligenceInOfficeEn />} />
+          <Route path="/en/services/conflict-of-interest" element={<ConflictOfInterestEn />} />
           <Route path="/en/services/offenses-against-persons" element={<OffensesAgainstPersonsEn />} />
           <Route path="/en/services/police-prosecutor-questioning" element={<PoliceQuestioningEn />} />
           <Route path="/en/services/home-search" element={<HomeSearchEn />} />

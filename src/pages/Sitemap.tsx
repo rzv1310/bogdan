@@ -44,6 +44,11 @@ export default function Sitemap() {
     { url: "/servicii/fals-si-uz-de-fals", title: "Fals și uz de fals" },
     { url: "/servicii/bancruta-frauduloasa", title: "Bancrută frauduloasă" },
     { url: "/servicii/frauda-informatica", title: "Fraudă informatică" },
+    { url: "/servicii/dare-luare-de-mita", title: "Dare și luare de mită" },
+    { url: "/servicii/trafic-de-influenta", title: "Trafic de influență" },
+    { url: "/servicii/abuz-in-serviciu", title: "Abuz în serviciu" },
+    { url: "/servicii/neglijenta-in-serviciu", title: "Neglijență în serviciu" },
+    { url: "/servicii/conflict-de-interese", title: "Conflict de interese" },
     { url: "/servicii/fonduri-europene", title: "Fonduri europene" },
   ];
 
@@ -69,6 +74,11 @@ export default function Sitemap() {
     { url: "/en/services/forgery-and-use-of-forgery", title: "Forgery and Use of Forgery" },
     { url: "/en/services/fraudulent-bankruptcy", title: "Fraudulent Bankruptcy" },
     { url: "/en/services/computer-fraud", title: "Computer Fraud" },
+    { url: "/en/services/bribery-giving-and-taking", title: "Bribery" },
+    { url: "/en/services/influence-peddling", title: "Influence peddling" },
+    { url: "/en/services/abuse-of-office", title: "Abuse of office" },
+    { url: "/en/services/negligence-in-office", title: "Negligence in office" },
+    { url: "/en/services/conflict-of-interest", title: "Conflict of interest" },
     { url: "/en/services/eu-funds-fraud", title: "EU Funds Fraud" },
     { url: "/en/services/corruption-and-public-office-offenses", title: "Corruption and Public Office Offenses" },
     { url: "/en/services/crypto-asset-investigations", title: "Crypto Asset Investigations" },

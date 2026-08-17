@@ -105,6 +105,13 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/frauda-informatica",
     "/servicii/fonduri-europene",
   ],
+  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": [
+    "/servicii/dare-luare-de-mita",
+    "/servicii/trafic-de-influenta",
+    "/servicii/abuz-in-serviciu",
+    "/servicii/neglijenta-in-serviciu",
+    "/servicii/conflict-de-interese",
+  ],
 };
 
 
@@ -135,6 +142,11 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/bancruta-frauduloasa": "Bancrută frauduloasă",
   "/servicii/frauda-informatica": "Fraudă informatică",
   "/servicii/fonduri-europene": "Fraudă cu fonduri europene",
+  "/servicii/dare-luare-de-mita": "Dare și luare de mită",
+  "/servicii/trafic-de-influenta": "Trafic de influență",
+  "/servicii/abuz-in-serviciu": "Abuz în serviciu",
+  "/servicii/neglijenta-in-serviciu": "Neglijență în serviciu",
+  "/servicii/conflict-de-interese": "Conflict de interese",
   "/calculator-despagubiri": "Calculator despăgubiri",
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
@@ -157,6 +169,12 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/fraudulent-bankruptcy": "Fraudulent bankruptcy",
   "/en/services/computer-fraud": "Computer fraud",
   "/en/services/eu-funds-fraud": "EU funds fraud",
+
+  "/en/services/bribery-giving-and-taking": "Bribery",
+  "/en/services/influence-peddling": "Influence peddling",
+  "/en/services/abuse-of-office": "Abuse of office",
+  "/en/services/negligence-in-office": "Negligence in office",
+  "/en/services/conflict-of-interest": "Conflict of interest",
 
   "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
