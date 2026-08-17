@@ -163,9 +163,8 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Droguri și DIICOT",
         description: "Asistență în dosare privind traficul, deținerea și alte infracțiuni investigate de DIICOT.",
         subServices: [
-          { label: "Trafic de droguri", to: "/servicii/cauze-penale-privind-droguri" },
           { label: "Deținere pentru consum propriu", to: "/servicii/detinere-droguri-consum-propriu" },
-          { label: "Asistență DIICOT", to: "/servicii/avocat-diicot" },
+          { label: "Trafic internațional de droguri", to: "/servicii/trafic-international-de-droguri" },
           { label: "Grup infracțional organizat", to: "/servicii/grup-infractional-organizat" },
         ],
         to: "/servicii/cauze-penale-privind-droguri",
@@ -394,9 +393,8 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Drug offenses and DIICOT",
         description: "Assistance in cases involving drug trafficking, possession and other offenses investigated by DIICOT.",
         subServices: [
-          { label: "Drug trafficking", to: "/en/services/drug-offenses" },
           { label: "Possession for personal use", to: "/en/services/drug-possession-personal-use" },
-          { label: "DIICOT assistance", to: "/en/services/diicot-lawyer" },
+          { label: "International drug trafficking", to: "/en/services/international-drug-trafficking" },
           { label: "Organized criminal group", to: "/en/services/organized-crime-group" },
         ],
         to: "/en/services/drug-offenses",
