@@ -7648,3 +7648,438 @@ export const refuzPrelevareProbeRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_IR,
 };
+
+export const conducereFaraPermisRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/conducere-fara-permis",
+  altPath: "/en/services/driving-without-a-licence",
+  roPath: "/servicii/conducere-fara-permis",
+  title: "Avocat conducere fără permis București | Bogdan Lamatic",
+  h1: "Avocat pentru conducere fără permis în București",
+  description:
+    "Dosar penal pentru conducere fără permis, art. 335 Cod penal? Analizez situația permisului, categoria vehiculului și soluțiile posibile în dosar.",
+  keywords:
+    "avocat conducere fara permis, dosar conducere fara permis, art 335 cod penal, permis suspendat dosar penal",
+  breadcrumbLabel: "Conducere fără permis",
+  serviceName: "Avocat conducere fără permis București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost oprit în trafic și ți s-a spus că nu aveai dreptul de a conduce?",
+    "Situațiile sunt diferite: permis anulat, permis suspendat, categorie necorespunzătoare sau permis eliberat în altă țară.",
+    "Fiecare variantă are consecințe juridice proprii și o apărare diferită.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist șoferi cercetați pentru conducerea unui vehicul fără permis sau în perioada în care dreptul de a conduce era suspendat.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Nu ai obținut niciodată permis de conducere",
+          paragraphs: [
+            "Este situația tipică prevăzută de art. 335 alin. (1) Cod penal. Apărarea vizează împrejurările concrete, urgența în care ai condus și individualizarea pedepsei.",
+          ],
+        },
+        {
+          h3: "Permisul îți era suspendat sau anulat",
+          paragraphs: [
+            "Contează dacă măsura îți fusese comunicată efectiv și de când producea efecte. Data comunicării este esențială pentru existența faptei.",
+          ],
+        },
+        {
+          h3: "Ai condus un vehicul din altă categorie",
+          paragraphs: [
+            "Conducerea unui vehicul pentru care nu deții categoria corespunzătoare intră tot în sfera art. 335. Verific încadrarea vehiculului și categoria necesară.",
+          ],
+        },
+        {
+          h3: "Ai permis eliberat în altă țară",
+          paragraphs: [
+            "Se analizează dacă permisul este recunoscut în România, dacă era valabil la data faptei și dacă exista obligația preschimbării.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în dosarele de conducere fără permis",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "situația juridică exactă a permisului la data faptei;",
+        "dacă suspendarea sau anularea îți fusese comunicată legal;",
+        "data de la care măsura producea efecte;",
+        "categoria vehiculului condus și categoria deținută;",
+        "dacă drumul pe care ai condus era drum public în sensul legii;",
+        "dacă vehiculul necesita permis potrivit legii;",
+        "existența unei stări de necesitate sau a unei urgențe medicale;",
+        "eroarea asupra situației de fapt, atunci când există elemente care o susțin;",
+        "modul în care ai fost identificat ca fiind conducătorul auto;",
+        "declarațiile date la fața locului;",
+        "eventualele acuzații conexe reținute în același dosar;",
+        "antecedentele și conduita, pentru individualizarea pedepsei.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "procesul-verbal întocmit de Poliție;",
+        "documentul de suspendare sau anulare a permisului;",
+        "dovada comunicării acestei măsuri;",
+        "permisul de conducere sau copia acestuia, inclusiv cel eliberat în altă țară;",
+        "actele vehiculului condus;",
+        "citația sau ordonanța primită;",
+        "documentele medicale, dacă ai condus într-o situație de urgență.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai actele la îndemână, îmi poți spune data opririi și situația în care se afla permisul tău.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce prevede art. 335 Cod penal",
+      paragraphs: [
+        "Conducerea pe drumurile publice a unui vehicul pentru care legea prevede obligativitatea deținerii permisului de conducere de către o persoană care nu posedă un asemenea permis este infracțiune, potrivit art. 335 alin. (1) Cod penal.",
+        "Textul sancționează și conducerea de către o persoană al cărei permis este necorespunzător categoriei vehiculului, precum și conducerea în perioada în care exercitarea dreptului de a conduce a fost suspendată ori permisul a fost retras sau anulat.",
+        "Fapta se pedepsește și atunci când vehiculul este încredințat unei persoane care se află într-una dintre aceste situații.",
+      ],
+    },
+    {
+      h2: "Permis suspendat: de când produce efecte măsura",
+      paragraphs: [
+        "Suspendarea dreptului de a conduce produce efecte de la momentul prevăzut de lege, iar comunicarea măsurii este esențială.",
+        "Dacă la data opririi în trafic măsura nu îți fusese comunicată sau nu începuse să producă efecte, elementele infracțiunii pot lipsi.",
+        "De aceea verific dovezile de comunicare, data poștală și modul în care a fost consemnată primirea documentului.",
+      ],
+    },
+    {
+      h2: "Categoria vehiculului și noțiunea de drum public",
+      paragraphs: [
+        "Nu toate vehiculele necesită permis, iar unele categorii au reguli speciale. Verific încadrarea concretă a vehiculului condus.",
+        "În egală măsură, fapta presupune conducerea pe drum public. Manevrele efectuate într-o incintă privată, care nu este deschisă circulației publice, se analizează diferit.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Starea de necesitate și eroarea",
+      paragraphs: [
+        "Există situații în care conducerea a fost impusă de o urgență reală, de exemplu transportul unei persoane aflate în pericol.",
+        "De asemenea, eroarea asupra situației juridice a permisului poate fi relevantă atunci când se bazează pe elemente obiective, nu pe o simplă presupunere.",
+        "Aceste apărări se susțin cu documente, martori și date verificabile.",
+      ],
+    },
+    {
+      h2: "Cumulul cu alte fapte rutiere",
+      paragraphs: [
+        [
+          { text: "Conducerea fără permis apare frecvent alături de alte acuzații, cum ar fi " },
+          { text: "conducerea sub influența alcoolului", to: "/servicii/alcool-la-volan" },
+          { text: " sau " },
+          { text: "părăsirea locului accidentului", to: "/servicii/parasirea-locului-accidentului" },
+          { text: "." },
+        ],
+        "Atunci când în dosar există mai multe acuzații, strategia trebuie să fie unitară, iar prioritatea este stabilită în funcție de riscul fiecărui capăt de acuzare.",
+      ],
+    },
+    {
+      h2: "Ce soluții pot exista în dosar",
+      bullets: [
+        "clasarea, atunci când nu sunt întrunite elementele infracțiunii;",
+        "achitarea, când probele nu susțin acuzarea;",
+        "renunțarea la urmărirea penală, în condițiile legii;",
+        "amânarea aplicării pedepsei;",
+        "suspendarea sub supraveghere a executării pedepsei;",
+        "acordul de recunoaștere a vinovăției, atunci când este mai avantajos.",
+      ],
+      paragraphsAfterBullets: [
+        "Rezultatul depinde de situația concretă, de antecedente și de conduita procesuală pe parcursul dosarului.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Am condus câțiva metri. Este tot infracțiune?",
+      a: "Legea nu prevede o distanță minimă. Contează faptul conducerii pe drum public, însă împrejurările concrete pot fi valorificate la individualizarea pedepsei.",
+    },
+    {
+      q: "Nu am știut că îmi era suspendat permisul. Ce fac?",
+      a: "Comunicarea măsurii este esențială. Dacă suspendarea nu îți fusese comunicată legal sau nu producea încă efecte, apărarea poate viza chiar existența faptei.",
+    },
+    {
+      q: "Am permis eliberat în altă țară. Este suficient?",
+      a: "Depinde de statul emitent, de valabilitate și de regulile privind recunoașterea sau preschimbarea permisului în România.",
+    },
+    {
+      q: "Conducerea într-o parcare privată intră sub incidența legii?",
+      a: "Fapta presupune conducerea pe drum public. Statutul juridic al zonei în care ai condus se verifică în concret și poate fi decisiv.",
+    },
+    {
+      q: "Ce risc dacă am împrumutat mașina unei persoane fără permis?",
+      a: "Încredințarea unui vehicul unei persoane care nu are dreptul de a conduce este sancționată de art. 335 Cod penal.",
+    },
+    {
+      q: "Pot evita închisoarea?",
+      a: "În multe dosare se pot obține soluții neprivative de libertate, în funcție de circumstanțe, antecedente și conduita din timpul procesului.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 335 privind conducerea unui vehicul fără permis de conducere.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind urmărirea penală și probele.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
+
+export const accidentRutierCuVictimeRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/accident-rutier-cu-victime",
+  altPath: "/en/services/road-accident-with-victims",
+  roPath: "/servicii/accident-rutier-cu-victime",
+  title: "Avocat accident rutier cu victime | Bogdan Lamatic",
+  h1: "Avocat pentru șoferul cercetat penal după un accident rutier cu victime",
+  description:
+    "Ești șofer cercetat penal după un accident cu victime? Apărare pe vătămare corporală din culpă și ucidere din culpă, culpă, expertiză și pretenții civile.",
+  keywords:
+    "avocat accident rutier cu victime, sofer cercetat penal accident, vatamare corporala din culpa, ucidere din culpa avocat",
+  breadcrumbLabel: "Accident rutier cu victime",
+  serviceName: "Avocat accident rutier cu victime București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost implicat într-un accident cu victime și ai devenit suspect în dosar?",
+    "Primele zile decid cum se stabilește culpa: urmele de la fața locului, martorii și expertiza tehnică.",
+    "Îți apăr poziția de șofer cercetat penal, atât pe latura penală, cât și pe pretențiile civile.",
+  ],
+  bio: [
+    `${BIO_INTRO} Reprezint șoferi cercetați penal după accidente rutiere soldate cu vătămarea sau decesul unei persoane, de la primele acte de urmărire penală până la soluția finală.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Accidentul tocmai s-a produs",
+          paragraphs: [
+            "Cercetarea la fața locului fixează majoritatea probelor: urme de frânare, poziția vehiculelor, avarii, martori.",
+            "Este momentul în care se pot pierde definitiv date favorabile, dacă nu sunt solicitate imediat.",
+          ],
+        },
+        {
+          h3: "Ai fost chemat la audiere ca suspect",
+          paragraphs: [
+            [
+              { text: "Declarația dată acum rămâne la dosar pe tot parcursul procesului. Pregătim împreună " },
+              { text: "audierea la Poliție sau Parchet", to: "/servicii/audiere-politie-parchet" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Victima a decedat sau are leziuni grave",
+          paragraphs: [
+            "Încadrarea juridică se poate schimba în funcție de concluziile medico-legale privind numărul de zile de îngrijiri medicale sau cauza decesului.",
+            "Aceste concluzii pot fi analizate critic și, dacă este cazul, contestate.",
+          ],
+        },
+        {
+          h3: "Se discută despre alcool, droguri sau plecarea de la fața locului",
+          paragraphs: [
+            [
+              { text: "În aceste situații apar acuzații suplimentare, iar apărarea se corelează cu cea din dosarul de " },
+              { text: "părăsire a locului accidentului", to: "/servicii/parasirea-locului-accidentului" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat în dosarul tău",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "procesul-verbal de cercetare la fața locului și planșa foto;",
+        "schița accidentului și măsurătorile efectuate;",
+        "urmele de frânare, avariile și punctul de impact;",
+        "starea tehnică a vehiculelor implicate;",
+        "condițiile de drum, vizibilitatea, semnalizarea și starea carosabilului;",
+        "declarațiile martorilor și eventualele contradicții;",
+        "înregistrările video din trafic sau de la camera de bord;",
+        "raportul de constatare tehnico-științifică;",
+        "concluziile medico-legale privind leziunile sau cauza decesului;",
+        "comportamentul victimei și eventuala culpă concurentă;",
+        "existența unor acuzații conexe în același dosar;",
+        "situația poliței RCA și modul de intervenție al asigurătorului.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "citația sau ordonanța prin care ai aflat calitatea ta procesuală;",
+        "procesul-verbal întocmit de Poliție;",
+        "fotografiile de la locul accidentului;",
+        "înregistrarea de la camera de bord, dacă există;",
+        "actele mașinii și polița RCA;",
+        "documentele medicale primite, dacă ai fost și tu rănit;",
+        "datele martorilor pe care i-ai identificat.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă actele din dosar, îmi poți descrie locul, ora, direcțiile de deplasare și ce s-a constatat la fața locului.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce acuzații pot fi reținute împotriva șoferului",
+      paragraphs: [
+        "Când din accident rezultă leziuni, fapta poate fi încadrată ca vătămare corporală din culpă, prevăzută de art. 196 Cod penal. Când a intervenit decesul unei persoane, încadrarea este uciderea din culpă, prevăzută de art. 192 Cod penal.",
+        "Ambele texte prevăd forme agravate atunci când accidentul este urmarea nerespectării dispozițiilor legale sau a măsurilor de prevedere pentru exercițiul unei activități.",
+        "În același dosar pot apărea și alte acuzații rutiere, iar apărarea trebuie construită pentru întreg ansamblul acestora.",
+      ],
+    },
+    {
+      h2: "Cum se stabilește culpa în accidentul rutier",
+      paragraphs: [
+        "Culpa se stabilește prin raportare la regulile de circulație și la ceea ce un conducător auto diligent putea prevedea și evita în situația concretă.",
+        "Se analizează viteza, distanța de vizibilitate, timpul de reacție, posibilitatea de evitare a impactului și conduita celorlalți participanți la trafic.",
+        "Un raport de expertiză tehnică auto bine fundamentat poate schimba complet reprezentarea asupra dinamicii accidentului.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Legătura de cauzalitate și culpa concurentă a victimei",
+      paragraphs: [
+        "Pentru răspunderea penală nu este suficient să existe o abatere de la regulile de circulație. Trebuie dovedită legătura de cauzalitate între acea abatere și urmarea produsă.",
+        "În multe accidente, conduita victimei contribuie la producerea evenimentului: traversarea prin loc nepermis, deplasarea pe carosabil pe timp de noapte fără elemente reflectorizante, pătrunderea neregulamentară în intersecție.",
+        "Culpa concurentă nu înlătură automat răspunderea, dar poate modifica încadrarea, individualizarea pedepsei și întinderea despăgubirilor.",
+      ],
+    },
+    {
+      h2: "Expertiza tehnică auto și expertiza medico-legală",
+      paragraphs: [
+        "Expertiza tehnică auto stabilește dinamica accidentului, vitezele de deplasare și posibilitatea de evitare a impactului.",
+        "Expertiza medico-legală stabilește leziunile, numărul zilelor de îngrijiri medicale și cauza decesului, elemente care determină încadrarea juridică.",
+        "Ambele pot fi completate sau contestate, iar cererea trebuie formulată la momentul procesual potrivit, cu obiective clare.",
+      ],
+    },
+    {
+      h2: "Pretențiile civile și rolul asigurătorului RCA",
+      paragraphs: [
+        "Persoana vătămată sau succesorii se pot constitui parte civilă în procesul penal și pot solicita daune materiale și morale.",
+        "Asigurătorul RCA este chemat în proces și răspunde în limitele prevăzute de lege și de poliță. Analizez întinderea acoperirii și partea care ar putea rămâne în sarcina ta.",
+        "Verific și cuantumul pretențiilor solicitate, pentru că sumele cerute sunt frecvent disproporționate față de prejudiciul dovedit.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Împăcarea, retragerea plângerii și efectele lor",
+      paragraphs: [
+        "În cazul vătămării corporale din culpă, punerea în mișcare a acțiunii penale se face, în anumite situații prevăzute de lege, la plângerea prealabilă a persoanei vătămate, iar retragerea acesteia poate duce la încetarea procesului penal.",
+        "În cazul uciderii din culpă, acțiunea penală se exercită din oficiu, iar o înțelegere cu familia victimei privește doar latura civilă și individualizarea pedepsei.",
+        "Analizez în fiecare dosar dacă o astfel de soluție este posibilă și în ce condiții este în interesul tău.",
+      ],
+    },
+    {
+      h2: "Măsurile preventive care pot fi luate față de șofer",
+      paragraphs: [
+        [
+          { text: "În dosarele grave se pot dispune măsuri preventive, de la control judiciar până la arest. Detaliile privind aceste măsuri sunt explicate pe pagina despre " },
+          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+        "Intervin de la primele ore pentru a susține alegerea celei mai puțin restrictive măsuri și pentru a evita restricțiile care nu sunt justificate de situația concretă.",
+      ],
+    },
+    {
+      h2: "Greșeli frecvente ale șoferului cercetat penal",
+      bullets: [
+        "declarațiile detaliate date imediat după accident, sub șoc, fără avocat;",
+        "repararea vehiculului înainte de expertiză;",
+        "asumarea vinovăției în discuțiile cu familia victimei sau cu asigurătorul;",
+        "acceptarea necritică a concluziilor primului raport tehnic;",
+        "lipsa unei cereri de expertiză atunci când dinamica accidentului este discutabilă;",
+        "ignorarea laturii civile până la ultimul termen de judecată.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Sunt automat vinovat pentru că am lovit un pieton?",
+      a: "Nu. Trebuie dovedită o abatere de la regulile de circulație și legătura de cauzalitate dintre aceasta și urmarea produsă. Conduita pietonului se analizează în concret.",
+    },
+    {
+      q: "Ce înseamnă culpă concurentă?",
+      a: "Este situația în care și victima a contribuit la producerea accidentului. Ea poate influența încadrarea, pedeapsa și întinderea despăgubirilor.",
+    },
+    {
+      q: "Cine plătește daunele către victimă?",
+      a: "În limitele poliței, despăgubirile sunt suportate de asigurătorul RCA. Peste aceste limite sau în situațiile excluse de lege, răspunderea poate reveni conducătorului auto.",
+    },
+    {
+      q: "Pot cere o nouă expertiză tehnică?",
+      a: "Da. Se poate solicita expertiză sau suplimentarea obiectivelor, cu argumente concrete privind neclaritățile din raportul existent.",
+    },
+    {
+      q: "Dacă victima își retrage plângerea, se închide dosarul?",
+      a: "În cazul vătămării corporale din culpă, retragerea plângerii prealabile poate duce la încetarea procesului, în situațiile prevăzute de lege. La uciderea din culpă, acțiunea penală se exercită din oficiu.",
+    },
+    {
+      q: "Îmi pierd permisul până la finalul procesului?",
+      a: "Permisul poate fi reținut, iar dreptul de a conduce suspendat pe durata procedurii. Situația finală depinde de soluția pronunțată în dosar.",
+    },
+    {
+      q: "Pot evita o pedeapsă cu executare?",
+      a: "În multe dosare de culpă se obțin soluții neprivative de libertate. Rezultatul depinde de gravitatea urmării, de circumstanțe și de conduita din timpul procesului.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 192 privind uciderea din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul penal, art. 196 privind vătămarea corporală din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind expertizele și acțiunea civilă.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_IR,
+};
