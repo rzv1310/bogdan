@@ -138,7 +138,7 @@ export default function InfractiuniContraPersoanei() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Infracțiuni Contra Persoanei București - Apăr Libertatea și Reputația Ta | Bogdan Lamatic
+        Avocat Infracțiuni Contra Persoanei București - Îți Apăr Libertatea și Reputația
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
