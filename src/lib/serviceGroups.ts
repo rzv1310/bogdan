@@ -145,8 +145,7 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Crypto și active digitale",
         description: "Investigații și apărare în cauze privind criptomonede, blockchain, NFT și smart contracts.",
         subServices: [
-          { label: "Investigații crypto" },
-          { label: "Fraudă crypto" },
+          { label: "NFT" },
           { label: "Blockchain" },
         ],
         to: "/servicii/investigatii-privind-activele-cripto",
@@ -375,8 +374,7 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Crypto and digital assets",
         description: "Investigations and defense in cases involving cryptocurrencies, blockchain, NFTs and smart contracts.",
         subServices: [
-          { label: "Crypto investigations" },
-          { label: "Crypto fraud" },
+          { label: "NFT" },
           { label: "Blockchain" },
         ],
         to: "/en/services/crypto-asset-investigations",
