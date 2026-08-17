@@ -112,6 +112,10 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/neglijenta-in-serviciu",
     "/servicii/conflict-de-interese",
   ],
+  "/servicii/spalare-de-bani-si-ascundere-de-bunuri": [
+    "/servicii/sechestru-asigurator",
+    "/servicii/confiscare",
+  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/avocat-diicot",
     "/servicii/detinere-droguri-consum-propriu",
@@ -157,6 +161,8 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/detinere-droguri-consum-propriu": "Deținere droguri pentru consum propriu",
   "/servicii/grup-infractional-organizat": "Grup infracțional organizat",
   "/servicii/trafic-international-de-droguri": "Trafic internațional de droguri",
+  "/servicii/sechestru-asigurator": "Sechestru asigurător",
+  "/servicii/confiscare": "Confiscare",
   "/calculator-despagubiri": "Calculator despăgubiri",
 
   "/despre-mine": "Despre mine",
@@ -190,6 +196,8 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/drug-possession-personal-use": "Drug possession for personal use",
   "/en/services/organized-crime-group": "Organized crime group",
   "/en/services/international-drug-trafficking": "International drug trafficking",
+  "/en/services/asset-freezing-order": "Asset seizure",
+  "/en/services/confiscation": "Confiscation",
 
   "/en/compensation-calculator": "Compensation calculator",
 

@@ -94,6 +94,10 @@ const DrugPossessionPersonalUseEn = lazyRoute(
 const OrganizedCrimeGroupEn = lazyRoute(
   () => import("./pages/en/services/organized-crime-group"),
 );
+const SechestruAsigurator = lazyRoute(() => import("./pages/services/sechestru-asigurator"));
+const Confiscare = lazyRoute(() => import("./pages/services/confiscare"));
+const AssetFreezingOrderEn = lazyRoute(() => import("./pages/en/services/asset-freezing-order"));
+const ConfiscationEn = lazyRoute(() => import("./pages/en/services/confiscation"));
 const InternationalDrugTraffickingEn = lazyRoute(
   () => import("./pages/en/services/international-drug-trafficking"),
 );
@@ -165,6 +169,8 @@ export default function AppRoutes() {
           <Route path="/servicii/detinere-droguri-consum-propriu" element={<DetinereDroguriConsumPropriu />} />
           <Route path="/servicii/grup-infractional-organizat" element={<GrupInfractionalOrganizat />} />
           <Route path="/servicii/trafic-international-de-droguri" element={<TraficInternationalDeDroguri />} />
+          <Route path="/servicii/sechestru-asigurator" element={<SechestruAsigurator />} />
+          <Route path="/servicii/confiscare" element={<Confiscare />} />
 
           <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
           <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
@@ -232,6 +238,8 @@ export default function AppRoutes() {
           <Route path="/en/services/drug-possession-personal-use" element={<DrugPossessionPersonalUseEn />} />
           <Route path="/en/services/organized-crime-group" element={<OrganizedCrimeGroupEn />} />
           <Route path="/en/services/international-drug-trafficking" element={<InternationalDrugTraffickingEn />} />
+          <Route path="/en/services/asset-freezing-order" element={<AssetFreezingOrderEn />} />
+          <Route path="/en/services/confiscation" element={<ConfiscationEn />} />
 
           <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
           <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />

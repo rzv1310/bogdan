@@ -57,6 +57,10 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Abuse of Office](/en/services/abuse-of-office): Defense for officials and directors.
 - [Negligence in Office](/en/services/negligence-in-office): Negligent breach of official duties.
 - [Conflict of Interest](/en/services/conflict-of-interest): Use of office to favour certain persons.
+- [Sechestru asigurător](/servicii/sechestru-asigurator): Contestarea și ridicarea sechestrului asigurător în dosare penale.
+- [Confiscare](/servicii/confiscare): Apărare împotriva confiscării speciale și a confiscării extinse.
+- [Asset Seizure](/en/services/asset-freezing-order): Challenging and lifting precautionary seizure in criminal cases.
+- [Confiscation](/en/services/confiscation): Defence against special and extended confiscation.
 - [Investigații privind activele cripto](/servicii/investigatii-privind-activele-cripto): Criptomonede, blockchain, fraude digitale.
 - [Crypto Asset Investigations](/en/services/crypto-asset-investigations): Crypto and blockchain-related investigations.
 - [Cauze penale privind droguri](/servicii/cauze-penale-privind-droguri): Deținere, trafic, conducere sub influență.
