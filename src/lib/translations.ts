@@ -18,7 +18,7 @@ export const translations = {
       "infractiuni-contra-persoanei": "Infracțiuni contra persoanei",
       "criminalitate-economica": "Criminalitate economică",
       "infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice": "Infracțiuni de corupție",
-      "investigatii-privind-activele-cripto": "Investigații privind activele cripto",
+      "investigatii-privind-activele-cripto": "Investigații criptomonede",
       "cauze-penale-privind-droguri": "Cauze penale privind droguri",
       "spalare-de-bani-si-ascundere-de-bunuri": "Dosare de spălare de bani și ascundere de bunuri",
       "neglijenta-profesionala-si-malpraxis": "Neglijență profesională și malpraxis",
