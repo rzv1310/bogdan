@@ -1040,6 +1040,11 @@ export const fraudAndDeceptionEn: SubServicePageData = {
           { text: "criminal investigation stage", to: "/en/services/criminal-investigation" },
           { text: "." },
         ],
+        [
+          { text: "Large-value files are often built together with other charges, which is why the strategy has to cover the whole " },
+          { text: "white-collar crime accusation", to: "/en/services/financial-crime" },
+          { text: ", not just the disputed contract." },
+        ],
       ],
     },
     {
@@ -1156,6 +1161,11 @@ export const embezzlementEn: SubServicePageData = {
         [
           { text: "The offense has an aggravated form where particularly serious consequences were caused. In complex files, embezzlement often appears alongside other economic charges, so the defense must be built as a whole. See also " },
           { text: "defense in economic crime cases", to: "/en/services/financial-crime" },
+          { text: "." },
+        ],
+        [
+          { text: "Where the supporting documents themselves are contested, the file may also include a charge of " },
+          { text: "forged documents", to: "/en/services/forgery-and-use-of-forgery" },
           { text: "." },
         ],
       ],
@@ -1284,6 +1294,11 @@ export const forgeryEn: SubServicePageData = {
           { text: "tax evasion cases", to: "/en/services/tax-evasion" },
           { text: "." },
         ],
+        [
+          { text: "For an overview of how these charges are handled together, see my work on " },
+          { text: "economic and financial crime files", to: "/en/services/financial-crime" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -1394,6 +1409,11 @@ export const fraudulentBankruptcyEn: SubServicePageData = {
           { text: "asset concealment operations", to: "/en/services/money-laundering-and-asset-concealment" },
           { text: "." },
         ],
+        [
+          { text: "The defense follows the same logic as in any " },
+          { text: "complex financial crime case", to: "/en/services/financial-crime" },
+          { text: ": the economic explanation must match the documents." },
+        ],
       ],
     },
     {
@@ -1499,6 +1519,11 @@ export const computerFraudEn: SubServicePageData = {
           { text: "Evidence is frequently obtained by seizing devices and analysing the data. See what a " },
           { text: "computer search of your phone or laptop", to: "/en/services/computer-search" },
           { text: " involves." },
+        ],
+        [
+          { text: "When the money flows are also examined, the file moves into the area of " },
+          { text: "financial and economic offenses", to: "/en/services/financial-crime" },
+          { text: "." },
         ],
       ],
     },
@@ -1612,6 +1637,11 @@ export const euFundsFraudEn: SubServicePageData = {
           { text: "These files are frequently handled by the National Anticorruption Directorate, so the defense must be prepared from the control stage. See what " },
           { text: "assistance in a DNA investigation", to: "/en/services/dna-lawyer" },
           { text: " involves." },
+        ],
+        [
+          { text: "Project files are frequently paired with other charges, so the defense is built as in any " },
+          { text: "economic crime investigation", to: "/en/services/financial-crime" },
+          { text: "." },
         ],
       ],
     },
