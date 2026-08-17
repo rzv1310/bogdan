@@ -2899,6 +2899,122 @@ export const influencePeddlingEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "What is the difference between influence peddling and fraud?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Influence peddling and fraud may seem close because in both situations a person can be misled by false promises. The legal difference is however essential: in influence peddling the promise is to intervene with a public official, while in fraud there is no such link.",
+        [
+          { text: "If you are investigated for an act that seems to contain elements of both offenses, it is useful to see also the page on " },
+          { text: "defense in fraud and deception files", to: "/en/services/fraud-and-deception" },
+          { text: "." },
+        ],
+      ],
+      subsections: [
+        {
+          h3: "What happens if the person did not really have influence",
+          paragraphs: [
+            "Real influence is not a mandatory element of the offense. It is sufficient for the person to let it be believed that they have influence over a public official and to claim or receive benefits in exchange for the promise to intervene. This is the first point where influence peddling clearly separates from fraud, where misleading with regard to a factual situation is required.",
+          ],
+        },
+        {
+          h3: "Promise of intervention vs simple misleading",
+          paragraphs: [
+            "In influence peddling, the object of the promise is to determine the official to perform, not perform or delay an official act. In fraud, the object of the misleading can be any factual situation that leads the victim to transfer assets. If the discussion does not clearly involve an intervention with an official, the influence peddling accusation can be challenged.",
+          ],
+        },
+        {
+          h3: "Can both accusations exist in the same file?",
+          paragraphs: [
+            "Yes. In practice, prosecutors can retain both offenses, especially when the person who claimed to have influence did not actually intervene and the money was received based on a false representation. The defense must precisely delimit the concrete elements of each accusation and the evidence supporting them.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "The report and the ground for impunity in buying of influence",
+      paragraphs: [
+        "Article 292 of the Criminal Code expressly provides that the person who bought influence is not punished if they report the act before the criminal investigation body was notified about it. This deadline is the most important and must be carefully checked in each case.",
+        [
+          { text: "The mechanism is similar to that for " },
+          { text: "giving and taking bribes", to: "/en/services/bribery-giving-and-taking" },
+          { text: ", but in buying of influence the beneficiary of the benefit is the intermediary, not the official himself." },
+        ],
+      ],
+      subsections: [
+        {
+          h3: "When the report must be made",
+          paragraphs: [
+            "The report must be made before the criminal investigation body was notified about the act of buying of influence. Notification can be made by any person, not necessarily the reporting person. Therefore, it is crucial to establish exactly when the criminal investigation started and whether your report was earlier.",
+          ],
+        },
+        {
+          h3: "When the ground for impunity no longer applies",
+          paragraphs: [
+            "The ground for impunity can no longer apply after the criminal investigation body has been officially notified, after the criminal investigation has started or after procedural measures have been ordered. Also, the report must be real and complete, not just a verbal mention.",
+          ],
+        },
+        {
+          h3: "What happens to the money paid",
+          paragraphs: [
+            "Even if the ground for impunity applies, the money or benefits given are not automatically returned. The law provides for the possibility of confiscation or, in certain conditions, restitution. Each situation must be analysed separately, depending on the stage of the file and the assets identified.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "The sting operation, the reporting person and entrapment in influence peddling files",
+      paragraphs: [
+        "Many influence peddling files start from a report and continue with a sting operation. At this stage it becomes essential to check how the evidence was obtained, whether there was entrapment and what the real role of the reporting person was.",
+      ],
+      subsections: [
+        {
+          h3: "Consultancy contract, lobbying or influence peddling?",
+          paragraphs: [
+            "Not every conversation about connections or about how an institution works amounts to influence peddling. The offense requires a concrete promise to intervene with a determined or determinable official and a link between that promise and a benefit claimed or received.",
+            "General discussions, genuine consultancy work, lobbying carried out within the limits of the law, or the mere mention of connections without a promise to intervene, do not meet the elements of the offense.",
+          ],
+        },
+        {
+          h3: "A consultancy contract does not automatically rule out the accusation",
+          paragraphs: [
+            "A consultancy contract is not an absolute defense. Prosecutors may find that behind the contract there was in fact a promise of influence. Therefore, I check both the form of the contract and the correspondence, deliverables and justification for the amounts.",
+          ],
+        },
+        {
+          h3: "How real professional activity is proven",
+          paragraphs: [
+            "Real activity is proven with documents: reports, analysis notes, correspondence with institutions, receipts, invoices and any other document showing that the promised service was actually provided. The more concrete evidence exists, the harder it is to retain the offense.",
+          ],
+        },
+        {
+          h3: "When payment has a legitimate contractual explanation",
+          paragraphs: [
+            "Payment is legitimate when there is a real service, the price matches the market, the amounts are documented and there is no direct link between payment and a promise to intervene with an official. I analyse every bank transfer and every justification offered.",
+            [
+              { text: "For files handled by the DNA, see also the page on " },
+              { text: "assistance in anticorruption investigations", to: "/en/services/dna-lawyer" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      h2: "What happens to the money in an influence peddling or buying of influence file",
+      paragraphs: [
+        "Influence peddling and buying of influence have specific rules on confiscation and, in certain situations, restitution. The sums received or paid can be subject to special confiscation, and precautionary measures can be taken over your assets already during the criminal investigation.",
+        "Restitution of money paid for influence is possible only under strictly limited conditions, usually when the act was reported before the criminal investigation bodies were notified. Even so, the court analyses whether the sums can be returned or must be confiscated.",
+      ],
+      bullets: [
+        "Confiscation of the sums or goods that were the object of the offense.",
+        "Precautionary measures over assets, ordered during the criminal investigation.",
+        "Restitution to the victim, under the conditions provided by law.",
+        "Accessory payment obligations, depending on how the money was used.",
+      ],
+      callout: "If you already have a seizure or confiscation order, I immediately analyse what remedies are available.",
+      calloutCta: "Call me now",
+    },
+    {
       h2: "What influence peddling is",
       paragraphs: [
         "Influence peddling consists of claiming, receiving or accepting the promise of money or other benefits, directly or indirectly, by a person who has influence or who lets it be believed that they have influence over a public official, promising to determine that official to perform, not perform or delay an official act.",
@@ -2910,14 +3026,6 @@ export const influencePeddlingEn: SubServicePageData = {
       paragraphs: [
         "Buying of influence, set out in art. 292 of the Criminal Code, is the act of a person who promises, offers or gives money or other benefits to someone claiming to have influence over a public official.",
         "Here too, the law provides a ground for impunity for the person who reports the act before the criminal investigation body was notified.",
-      ],
-    },
-    {
-      h2: "When a conversation is not an offense",
-      cardClassName: "bg-[#faf0e6]",
-      paragraphs: [
-        "Not every conversation about connections or about how an institution works amounts to influence peddling. The offense requires a concrete promise to intervene with a determined or determinable official and a link between that promise and a benefit claimed or received.",
-        "General discussions, genuine consultancy work, lobbying carried out within the limits of the law, or the mere mention of connections without a promise to intervene, do not meet the elements of the offense.",
       ],
     },
     {
