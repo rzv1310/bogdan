@@ -3181,6 +3181,138 @@ export const abuseOfOfficeEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "Which law must have been breached for abuse of office to exist?",
+      paragraphs: [
+        "In its current wording, art. 297 of the Criminal Code requires the prosecution to identify the specific act provided for by a law, a government ordinance or another act having the force of law that was not performed, or the provision of such an act that was breached. Without this precise identification, the accusation has no legal basis.",
+        "That is why the first thing I request in the file is the exact text invoked by the prosecutor: article, paragraph and normative act. If the indictment or the order refers only to an internal procedure or to a matter of expediency, the defense can argue that the act is not provided for by criminal law.",
+      ],
+      subsections: [
+        {
+          h3: "Is the breach of an internal procedure enough?",
+          paragraphs: [
+            "No. Internal regulations, circulars, service notes or operating procedures are not laws or ordinances. Breaching them may trigger disciplinary or administrative liability, but on its own it does not meet the requirement of art. 297.",
+            "In practice, the prosecution sometimes tries to link the internal procedure to a general provision of law. I check whether that link is real or merely constructed afterwards to cover the absence of an applicable legal text.",
+          ],
+        },
+        {
+          h3: "Can the job description alone be sufficient?",
+          paragraphs: [
+            "The job description shows what duties you had, not which legal provision you breached. It is useful for establishing whether the act fell within your competence, but it cannot replace the provision of law or ordinance on which the accusation rests.",
+            "If the duty invoked appears neither in the job description nor in the delegation documents, I argue that there was no legal obligation to act in the manner claimed by the prosecutor.",
+          ],
+        },
+        {
+          h3: "What happens if the rule was unclear or open to interpretation",
+          paragraphs: [
+            "Where the legal text allows several reasonable interpretations, choosing one of them cannot automatically be turned into a criminal offense. An unclear rule, contradictory administrative practice or the absence of implementing instructions are strong arguments for the lack of intent.",
+            "In these situations I also rely on the approvals received, the positions expressed by the institutions and similar solutions adopted in other files or by the administrative courts.",
+          ],
+        },
+      ],
+      cta: "I want the legal basis checked",
+      ctaIcon: false,
+    },
+    {
+      h2: "How is the damage established in an abuse of office file?",
+      paragraphs: [
+        "The damage is not an accounting detail, it is an element of the offense. Without certain damage or actual harm to a person's rights, the act does not meet the conditions of art. 297. In addition, the value retained directly influences the legal classification, jurisdiction and penalty limits.",
+      ],
+      subsections: [
+        {
+          h3: "The damage must be actual",
+          paragraphs: [
+            "The damage must be real and certain, not hypothetical or future. A lost benefit, an assessment of expediency or a theoretical price difference does not automatically amount to damage in the sense of criminal law.",
+          ],
+        },
+        {
+          h3: "How the loss is calculated",
+          paragraphs: [
+            "I review the calculation method in the finding note or in the control report: which amounts were taken into account, whether the service or works were actually delivered, whether the price paid matches the market price and whether amounts already recovered were deducted.",
+          ],
+        },
+        {
+          h3: "The role of expert evidence",
+          paragraphs: [
+            "In a file with an economic component, accounting or technical expert evidence is essential. I request the expert report, propose its objectives and file objections, so that the discussion does not remain limited to the conclusions of the control body.",
+          ],
+        },
+        {
+          h3: "How the damage can be challenged",
+          paragraphs: [
+            "I challenge both the existence and the extent of the loss: through evidentiary requests, objections to the expert report, documents showing the real consideration and, where necessary, by challenging precautionary measures ordered on the basis of an overstated value.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Has a damage figure already been calculated against you?",
+      calloutAfterSubsectionsCta: "Call anyway",
+    },
+    {
+      h2: "Abuse of office or negligence in office?",
+      paragraphs: [
+        "The two offenses are regulated separately: abuse of office in art. 297 of the Criminal Code and negligence in office in art. 298. The difference does not lie in the seriousness of the outcome, but in the form of guilt.",
+        "Abuse of office requires intent, meaning that you knew the act was contrary to a legal provision and accepted the consequences. Negligence in office requires fault: inattention, an omission or an error of assessment, without any wish to produce the outcome.",
+        "The form of guilt changes everything: the legal classification, the penalty limits, the limitation period and even the investigating authority. This is why in many files the defense does not seek a full acquittal, but aims to show that the act, if committed at all, was committed negligently.",
+        [
+          { text: "For situations where the accusation concerns an omission out of inattention, see also the page on " },
+          { text: "negligent liability of officials", to: "/en/services/negligence-in-office" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Who is liable when the act was approved and signed by several people?",
+      paragraphs: [
+        "In public administration, almost no act is issued by a single person. There are reports, approvals, preventive financial control endorsements, compliance signatures and sometimes collective decisions. The defense starts by fully reconstructing the document's route.",
+      ],
+      subsections: [
+        {
+          h3: "Favourable legal opinion",
+          paragraphs: [
+            "If you signed on the basis of a favourable legal opinion, the lack of intent argument becomes very solid. The opinion shows that the lawfulness of the act was verified by the person designated for exactly that purpose, and that you relied on their conclusion.",
+          ],
+        },
+        {
+          h3: "Economic or technical approval",
+          paragraphs: [
+            "For matters of price, quantities, technical solutions or accounting treatment, liability lies first with those who drafted and endorsed the specialist documentation. A decision maker is not required to redo the calculations made by specialists.",
+          ],
+        },
+        {
+          h3: "Delegation of duties",
+          paragraphs: [
+            "I analyse the delegation decisions, the period covered and the exact limits of the competence transferred. If the duty had been delegated to another person, the accusation directed at you may lack any basis.",
+          ],
+        },
+        {
+          h3: "Collective decision",
+          paragraphs: [
+            "For committees, councils or boards, the individual vote, the position expressed in the minutes and any recorded objections are decisive. A collective decision does not automatically turn into criminal liability for each member.",
+          ],
+        },
+        {
+          h3: "The liability of each person in the chain",
+          paragraphs: [
+            "The aim is a clear delimitation: who proposed, who verified, who approved and who signed last. I present the authorities with a map of the document's route, supported by documents, so that liability is established on real duties, not on the mere presence of a signature.",
+          ],
+        },
+      ],
+      cta: "I signed an act now being challenged",
+      ctaIcon: false,
+    },
+    {
+      h2: "When abuse of office falls under Law 78/2000",
+      paragraphs: [
+        "Law 78/2000 provides an aggravated form of abuse of office, applicable where the act was committed in connection with obtaining an undue benefit for oneself or for another. In that case the penalty limits are increased and the file becomes a corruption case.",
+        "The practical consequences matter: jurisdiction may lie with the National Anticorruption Directorate, extensive precautionary measures are frequently ordered, and interceptions or whistleblower reports often appear in the evidence. The defense must challenge the very existence of the undue benefit and its link to the official act.",
+        [
+          { text: "If the investigation is run by anticorruption prosecutors, see also the page on " },
+          { text: "assistance in DNA investigations", to: "/en/services/dna-lawyer" },
+          { text: "." },
+        ],
+      ],
+    },
+
+    {
       h2: "What abuse of office is",
       paragraphs: [
         "Abuse of office is the act of a public official who, in the exercise of their duties, fails to perform an act or performs it defectively and thereby causes damage or harm to the rights or legitimate interests of a person. The offense is set out in art. 297 of the Criminal Code.",
