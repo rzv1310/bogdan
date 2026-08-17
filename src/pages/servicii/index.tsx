@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import { Phone, ArrowRight, Briefcase } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { servedAreasSchema } from "@/lib/areaServed";
 import { roServiceGroups } from "@/lib/serviceGroups";
 import { CTA_CLASS } from "@/lib/cta";
@@ -148,9 +148,8 @@ export default function ServiciiPage() {
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">
           {filteredGroups.map((group) => (
-            <section key={group.id} className={group.id === "economic" ? "rounded-2xl border border-primary/20 p-5 md:p-8" : undefined}>
-              <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2">
-                {group.id === "economic" && <Briefcase className="h-5 w-5 text-primary" />}
+            <section key={group.id}>
+              <h2 className="text-xl md:text-2xl font-semibold mb-6">
                 {group.title}
               </h2>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
