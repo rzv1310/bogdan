@@ -3954,7 +3954,7 @@ export const conflictOfInterestEn: SubServicePageData = {
       bullets: [
         "I check whether the act complained of falls within your official duties.",
         "I challenge the patrimonial character of the benefit or its very existence.",
-        "I analyse the degree of kinship and the duration of the commercial relations invoked.",
+        "I analyse the degree of kinship or affinity and whether you or a person within the circle set out by law was the beneficiary of the benefit.",
         "I argue for the application of the exceptions expressly provided by law.",
         "I coordinate the criminal defense with the challenge against the integrity report.",
       ],
