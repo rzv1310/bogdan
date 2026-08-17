@@ -2479,3 +2479,878 @@ export const euFundsFraudEn: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT_FC_EN,
 };
+
+/* ============================================================
+   Sub-services - Corruption and public office pillar page
+   ============================================================ */
+
+const L78_EN = "https://legislatie.just.ro/Public/DetaliiDocument/22361";
+
+const PARENT_COR_EN = {
+  to: "/en/services/corruption-and-public-office-offenses",
+  label: "corruption and public office offenses",
+  breadcrumbLabel: "Corruption and public office offenses",
+};
+
+export const briberyGivingAndTakingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/bribery-giving-and-taking",
+  altPath: "/servicii/dare-luare-de-mita",
+  roPath: "/servicii/dare-luare-de-mita",
+  title: "Bribery Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Bribery lawyer in Bucharest - giving and taking bribes",
+  description:
+    "Bribery lawyer in Bucharest. Defense in giving and taking bribe cases, flagrante delicto, questioning and preventive measures. Call now.",
+  keywords: "bribery lawyer bucharest, taking bribe defense romania, giving bribe lawyer",
+  breadcrumbLabel: "Bribery",
+  serviceName: "Bribery lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for giving or taking a bribe, or were you caught in a flagrante delicto operation?",
+    "In these files, the first statements, the intercepted conversations and the way the sum or benefit is described set the direction of the whole investigation.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist public officials, private sector employees and people accused of offering sums or other benefits, in bribery files handled by the Prosecutor's Office or by the DNA.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      paragraphs: ["Tell me at what stage you are, because the defense is built differently in each of these situations."],
+      subsections: [
+        {
+          h3: "You were caught in flagrante delicto",
+          paragraphs: [
+            "I check how the operation was organised, whether the legal conditions were met and how the sums or goods seized were recorded.",
+          ],
+        },
+        {
+          h3: "You were summoned for questioning as a suspect",
+          paragraphs: [
+            "I analyse the prosecutor's order, establish what offense is actually alleged and we prepare your statement before you attend.",
+          ],
+        },
+        {
+          h3: "You offered or promised a sum and are now investigated",
+          paragraphs: [
+            "I check whether the act was determined by coercion from the official and whether the statutory ground for impunity available to the reporting person can apply.",
+          ],
+        },
+        {
+          h3: "A preventive measure has been proposed in the file",
+          paragraphs: [
+            "I prepare the defense for the detention or judicial control request and challenge the grounds invoked by the prosecutor.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "I am investigated for bribery - I want an assessment",
+    },
+    {
+      h2: "What I analyse immediately in a bribery file",
+      bullets: [
+        "The capacity of the investigated person and their actual duties.",
+        "The link between the sum or benefit claimed and a concrete official act.",
+        "The lawfulness of interceptions, ambient recordings and authorisations.",
+        "How the flagrante delicto operation was organised and how the seized items were recorded.",
+        "The statements of the reporting person and their consistency throughout the file.",
+        "The precautionary measures ordered over accounts and assets.",
+      ],
+    },
+    {
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Send me whatever you have at hand, even if the file is at an early stage."],
+      subsections: [
+        {
+          h3: "Documents received from the judicial authorities",
+          paragraphs: ["The summons, the order initiating criminal action, the flagrante delicto or search report."],
+        },
+        {
+          h3: "Employment documents",
+          paragraphs: ["Job description, internal decisions, regulations and any document showing your actual duties."],
+        },
+        {
+          h3: "Relevant correspondence",
+          paragraphs: ["Messages, e-mails or documents explaining the nature of your relationship with the reporting person."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What taking a bribe means",
+      paragraphs: [
+        "Taking a bribe means claiming, receiving or accepting the promise of money or other benefits by a public official, in connection with performing, not performing or delaying an act falling within their official duties.",
+        "The offense is set out in art. 289 of the Criminal Code and can be retained even if the money was never actually received, since claiming or accepting the promise is enough.",
+        [
+          { text: "Where the case is investigated alongside other economic charges, the file often falls within the area of " },
+          { text: "economic crime defense", to: "/en/services/financial-crime" },
+          { text: ", with expert evidence and analysis of financial flows." },
+        ],
+      ],
+    },
+    {
+      h2: "What giving a bribe means",
+      paragraphs: [
+        "Giving a bribe consists of promising, offering or giving money or other benefits to a public official so that the official performs, does not perform or delays an official act. The offense is set out in art. 290 of the Criminal Code.",
+        "The law provides two important situations: the act is not an offense where the person was coerced into giving the bribe, and the giver is not punished if they report the act before the criminal investigation body was notified.",
+      ],
+    },
+    {
+      h2: "Who can be a subject of the offense",
+      paragraphs: [
+        "The text targets public officials, but liability is extended by art. 308 of the Criminal Code to persons exercising duties within a private legal entity, such as directors, managers or employees with decision-making powers.",
+        "Law 78/2000 assimilates certain professional categories and extends these texts to corruption acts connected with public or European funds.",
+      ],
+    },
+    {
+      h2: "What you actually risk in a bribery file",
+      cardClassName: "bg-[#faf0e6]",
+      bullets: [
+        "Imprisonment, within the limits set by the relevant text for each offense.",
+        "A ban on holding public office or on practising your profession.",
+        "Confiscation of the sums or goods that were the object of the bribe.",
+        "Precautionary measures over personal accounts and assets during the proceedings.",
+        "Disciplinary and professional consequences running in parallel with the criminal case.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "If detention or judicial control is already being discussed, the defense must be prepared immediately for the " },
+          { text: "preventive measure hearing", to: "/en/services/preventive-measures" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "The difference between bribery and influence peddling",
+      paragraphs: [
+        "In bribery, the benefit is claimed by or offered to the very official who holds the relevant duty.",
+        [
+          { text: "In " },
+          { text: "buying or trading influence", to: "/en/services/influence-peddling" },
+          { text: ", the benefit goes to a person who claims to have influence over the official, without the official receiving anything." },
+        ],
+        "This distinction has direct consequences for the legal classification and for the evidence that must be produced.",
+      ],
+    },
+    {
+      h2: "How I build the defense",
+      bullets: [
+        "I check whether there is proven link between the benefit and a concrete official act.",
+        "I challenge the lawfulness of evidence obtained through interception or through a collaborator.",
+        "I analyse the role of the reporting person and any entrapment.",
+        "I argue coercion or lack of intent, where the evidence allows it.",
+        "I prepare you for questioning and assist you at every hearing, including in files handled by DNA.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "When the investigation is run by the anticorruption prosecutors, the specific rules are described on the page dedicated to " },
+          { text: "DNA case assistance", to: "/en/services/dna-lawyer" },
+          { text: "." },
+        ],
+      ],
+      cta: "Why choose me",
+    },
+  ],
+  faq: [
+    {
+      q: "Can bribery be retained if I never received the money?",
+      a: "Yes. Claiming the sum or accepting the promise is sufficient, even if the money was never actually handed over.",
+    },
+    {
+      q: "What happens if I was coerced into giving a bribe?",
+      a: "The law provides that the act is not an offense where the giver was coerced by the person who received the benefit. Coercion must, however, be proven.",
+    },
+    {
+      q: "Does reporting the act exempt me from punishment?",
+      a: "The giver is not punished if they report the act before the criminal investigation body was notified about it. The conditions must be checked carefully in each case.",
+    },
+    {
+      q: "Can an employee of a private company be accused of bribery?",
+      a: "Yes. Through the extension of liability, the texts also apply to persons exercising duties within a private legal entity, with reduced penalty limits.",
+    },
+    {
+      q: "Is money seized during the operation returned?",
+      a: "Sums that were the object of the bribe are subject to confiscation. The status of other seized goods is analysed separately.",
+    },
+    {
+      q: "Who investigates bribery files?",
+      a: "Depending on the capacity of the person and the value of the benefit, jurisdiction lies with the ordinary prosecutor's offices or with the National Anticorruption Directorate.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 289 and art. 290 on taking and giving bribes.", href: CP, linkLabel: "Legislation" },
+    { text: "Law 78/2000 on preventing, discovering and sanctioning corruption offenses.", href: L78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR_EN,
+};
+
+export const influencePeddlingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/influence-peddling",
+  altPath: "/servicii/trafic-de-influenta",
+  roPath: "/servicii/trafic-de-influenta",
+  title: "Influence Peddling Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Influence peddling lawyer in Bucharest",
+  description:
+    "Influence peddling and buying of influence lawyer in Bucharest. Defense in corruption files based on interceptions and reports. Call now.",
+  keywords: "influence peddling lawyer bucharest, buying of influence defense, trading in influence romania",
+  breadcrumbLabel: "Influence peddling",
+  serviceName: "Influence peddling lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you accused of claiming money by saying you have influence over an official, or of paying for such an intervention?",
+    "In these files, everything turns on the content of the recorded discussions and on how the promise made is interpreted.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist people investigated for influence peddling and buying of influence, in files built on reports, interceptions and ambient recordings.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      paragraphs: ["Tell me where the file stands, so we know what can be done immediately."],
+      subsections: [
+        {
+          h3: "There is a report against you",
+          paragraphs: ["I analyse the content of the report, the moment it was filed and the interest of the reporting person in the file."],
+        },
+        {
+          h3: "You have been summoned for questioning",
+          paragraphs: ["We establish what offense is actually alleged and prepare the statement, so that the conversations invoked are explained correctly."],
+        },
+        {
+          h3: "The file contains interceptions or ambient recordings",
+          paragraphs: ["I check the authorisations, the integrity of the recordings and the transcripts, because the interpretation of a conversation is often decisive."],
+        },
+        {
+          h3: "You paid for an intervention and are now investigated",
+          paragraphs: ["I check whether the ground for impunity through reporting can apply and what the real risks are in your situation."],
+        },
+      ],
+      ctaAfterSubsections: "I want an assessment of my file",
+    },
+    {
+      h2: "What I analyse immediately in the file",
+      bullets: [
+        "Whether there was a concrete promise to intervene with a determined official.",
+        "Whether the influence claimed was real or only asserted, since the offense exists in both situations.",
+        "The lawfulness and integrity of the interceptions and recordings.",
+        "The role of the reporting person and any entrapment.",
+        "The sums claimed, their financial trail and the documents accompanying them.",
+      ],
+    },
+    {
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Send me the documents you received and, if available, the transcripts disclosed in the file."],
+      subsections: [
+        {
+          h3: "Documents from the file",
+          paragraphs: ["The summons, the order continuing the criminal investigation, the search report."],
+        },
+        {
+          h3: "Correspondence with the person accusing you",
+          paragraphs: ["Messages, e-mails, contracts or documents explaining the real nature of your relationship."],
+        },
+        {
+          h3: "Financial documents",
+          paragraphs: ["Bank statements, receipts, consultancy contracts or any document justifying the sums discussed."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What influence peddling is",
+      paragraphs: [
+        "Influence peddling consists of claiming, receiving or accepting the promise of money or other benefits, directly or indirectly, by a person who has influence or who lets it be believed that they have influence over a public official, promising to determine that official to perform, not perform or delay an official act.",
+        "The offense is set out in art. 291 of the Criminal Code. It is irrelevant whether the influence was real or merely asserted, and whether the official was ever contacted.",
+      ],
+    },
+    {
+      h2: "What buying of influence is",
+      paragraphs: [
+        "Buying of influence, set out in art. 292 of the Criminal Code, is the act of a person who promises, offers or gives money or other benefits to someone claiming to have influence over a public official.",
+        "Here too, the law provides a ground for impunity for the person who reports the act before the criminal investigation body was notified.",
+      ],
+    },
+    {
+      h2: "When a conversation is not an offense",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Not every conversation about connections or about how an institution works amounts to influence peddling. The offense requires a concrete promise to intervene with a determined or determinable official and a link between that promise and a benefit claimed or received.",
+        "General discussions, genuine consultancy work, lobbying carried out within the limits of the law, or the mere mention of connections without a promise to intervene, do not meet the elements of the offense.",
+      ],
+    },
+    {
+      h2: "What you risk if the accusation is confirmed",
+      bullets: [
+        "Imprisonment, within the limits set by the relevant text.",
+        "A ban on certain rights, including the right to hold public office.",
+        "Confiscation of the sums or goods received.",
+        "Precautionary measures over assets, ordered during the criminal investigation.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "When the same file also concerns benefits received directly by the official, the accusation is analysed together with " },
+          { text: "bribery charges", to: "/en/services/bribery-giving-and-taking" },
+          { text: ", and the distinction between them becomes essential." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defense",
+      bullets: [
+        "I reconstruct the real context of the discussions, beyond the fragments selected in the indictment.",
+        "I challenge inaccurate transcripts and request verification of the integrity of the recordings.",
+        "I show, where applicable, that there was genuine professional activity behind the sums received.",
+        "I analyse entrapment and the role of the judicial authorities in producing the evidence.",
+        "I assist you at questioning and at every hearing, including in files handled by anticorruption prosecutors.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "For files within the jurisdiction of the National Anticorruption Directorate, the procedural particularities are detailed on the page dedicated to " },
+          { text: "DNA investigations", to: "/en/services/dna-lawyer" },
+          { text: "." },
+        ],
+      ],
+      cta: "Why choose me",
+    },
+  ],
+  faq: [
+    {
+      q: "Does it matter whether the influence was real?",
+      a: "No. The offense is retained even where the person merely lets it be believed that they have influence over the official.",
+    },
+    {
+      q: "Must the official have been contacted?",
+      a: "No. The promise to intervene is sufficient, even if the official never learned about the discussion.",
+    },
+    {
+      q: "Does a consultancy contract protect me?",
+      a: "Not automatically. The contract matters only if there is real activity behind it, proven by deliverables and correspondence.",
+    },
+    {
+      q: "What happens to the money paid for the intervention?",
+      a: "The sums are subject to confiscation. A person who reports the act under the conditions of the law may obtain restitution, within the limits set by law.",
+    },
+    {
+      q: "Can I be investigated based only on a report?",
+      a: "A report can trigger the investigation but cannot alone support a conviction. It must be corroborated by other evidence.",
+    },
+    {
+      q: "What is the difference from taking a bribe?",
+      a: "In bribery, the benefit is claimed by the official holding the relevant duty. In influence peddling, the benefit goes to an intermediary who promises to intervene.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 291 and art. 292 on trading in and buying of influence.", href: CP, linkLabel: "Legislation" },
+    { text: "Law 78/2000 on corruption offenses and assimilated acts.", href: L78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR_EN,
+};
+
+export const abuseOfOfficeEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/abuse-of-office",
+  altPath: "/servicii/abuz-in-serviciu",
+  roPath: "/servicii/abuz-in-serviciu",
+  title: "Abuse of Office Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Abuse of office lawyer in Bucharest",
+  description:
+    "Abuse of office lawyer in Bucharest. Defense for public officials and directors, damage assessment, expert evidence and asset freezing.",
+  keywords: "abuse of office lawyer bucharest, abuse of office defense romania, public official criminal defense",
+  breadcrumbLabel: "Abuse of office",
+  serviceName: "Abuse of office lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for abuse of office after an audit, a Court of Accounts report or a complaint?",
+    "In these files, the defense starts from your exact duties and from the legal text said to have been breached.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist public officials, mayors, directors, members of procurement committees and private sector managers in abuse of office files.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      paragraphs: ["Tell me where the file started from, because the source of the accusation shows which evidence must be countered."],
+      subsections: [
+        {
+          h3: "An audit or control report notified the criminal authorities",
+          paragraphs: ["I check the findings, the legal basis invoked and whether the irregularities identified are administrative or criminal in nature."],
+        },
+        {
+          h3: "You signed or approved a document now being challenged",
+          paragraphs: ["I analyse the circuit of the document, the approvals received and the actual responsibility of each person involved in the decision."],
+        },
+        {
+          h3: "A damage figure has been calculated against you",
+          paragraphs: ["I challenge how the loss was calculated and request expert evidence, because the amount directly influences the classification and the penalty limits."],
+        },
+        {
+          h3: "You have been summoned for questioning",
+          paragraphs: ["We prepare the statement on documents, so that the technical explanations are recorded correctly from the first hearing."],
+        },
+      ],
+      ctaAfterSubsections: "I want an analysis of the accusation",
+    },
+    {
+      h2: "What I analyse immediately in an abuse of office file",
+      bullets: [
+        "Which legal provision is said to have been breached.",
+        "What duties you actually had, according to the job description and internal acts.",
+        "Whether the contested document was also approved or signed by other persons.",
+        "The existence of certain damage and the way it was calculated.",
+        "The link between your conduct and the loss or harm claimed.",
+        "The precautionary measures ordered over your assets.",
+      ],
+    },
+    {
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["The sooner I see the documents, the more precisely I can tell you where the weak point of the accusation lies."],
+      subsections: [
+        {
+          h3: "Documents describing your duties",
+          paragraphs: ["Job description, organisation and functioning regulation, appointment decisions and delegations of authority."],
+        },
+        {
+          h3: "The contested document and its circuit",
+          paragraphs: ["The signed act, the memos, the legal and economic approvals, internal notes and related correspondence."],
+        },
+        {
+          h3: "The audit or control report",
+          paragraphs: ["The Court of Accounts report, the internal audit report or the finding note behind the notification."],
+        },
+        {
+          h3: "Documents concerning the damage",
+          paragraphs: ["The calculation of the loss, the annexes and any expert reports already produced."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What abuse of office is",
+      paragraphs: [
+        "Abuse of office is the act of a public official who, in the exercise of their duties, fails to perform an act or performs it defectively and thereby causes damage or harm to the rights or legitimate interests of a person. The offense is set out in art. 297 of the Criminal Code.",
+        "Defective performance must be measured against a provision contained in a law or in a government ordinance, not against internal rules or considerations of expediency. This limitation is essential in the defense.",
+      ],
+    },
+    {
+      h2: "Who can be accused of abuse of office",
+      paragraphs: [
+        "The main subject is the public official, a broadly defined notion covering persons in central and local administration, in public institutions, as well as persons carrying out a public interest service for which they were invested.",
+        "Through art. 308 of the Criminal Code, liability also extends to persons exercising duties within a private legal entity, with penalty limits reduced by one third.",
+        "Where the act is committed in connection with obtaining an undue benefit, the aggravated form under Law 78/2000 applies and jurisdiction may lie with the National Anticorruption Directorate.",
+      ],
+    },
+    {
+      h2: "When an administrative error is not an offense",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Not every wrong or unlawful decision, or one annulled by the administrative court, amounts to abuse of office. The offense requires a breach of a provision in a law or ordinance, actual damage or harm, and the official's intent.",
+        "A different interpretation of an unclear rule, a decision taken on the basis of a favourable legal opinion, the absence of certain damage or the mere breach of an internal procedure normally remain within administrative or disciplinary liability.",
+      ],
+    },
+    {
+      h2: "What you risk if the accusation is confirmed",
+      bullets: [
+        "Imprisonment and a ban on holding public office.",
+        "An obligation to pay the damage retained against you.",
+        "Precautionary measures over assets and accounts, ordered as early as the investigation stage.",
+        "Disciplinary consequences and loss of office, in parallel with the criminal case.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Where the accusation is accompanied by the suspicion of an undue benefit, the file moves close to the area of " },
+          { text: "bribery charges", to: "/en/services/bribery-giving-and-taking" },
+          { text: ", with direct consequences for the legal classification." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defense",
+      bullets: [
+        "I identify the exact provision of law or ordinance invoked and check whether it applied to you.",
+        "I separate your responsibility from that of the other persons who approved or signed the act.",
+        "I challenge the existence and extent of the damage, through expert evidence and objections.",
+        "I argue lack of intent, where the decision was taken on the basis of the approvals received.",
+        "I file challenges against disproportionate precautionary measures.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "The accusation is often analysed together with the " },
+          { text: "negligent breach of duties", to: "/en/services/negligence-in-office" },
+          { text: ", and the form of guilt retained changes the sanctioning regime entirely." },
+        ],
+      ],
+      cta: "Why choose me",
+    },
+  ],
+  faq: [
+    {
+      q: "Does any unlawful act amount to abuse of office?",
+      a: "No. A breach of a provision in a law or ordinance, actual damage or harm, and the official's intent are all required.",
+    },
+    {
+      q: "Does it matter that I signed based on a favourable legal opinion?",
+      a: "Yes. The approvals received are relevant to the form of guilt and can support the absence of intent.",
+    },
+    {
+      q: "Can a private company director be accused of abuse of office?",
+      a: "Yes, through the extension of liability, with penalty limits reduced by one third compared to the basic form.",
+    },
+    {
+      q: "What does the aggravated form under Law 78/2000 mean?",
+      a: "It applies where the official obtained an undue benefit for themselves or for another, and the penalty limits are increased.",
+    },
+    {
+      q: "If I repay the damage, is the file closed?",
+      a: "Not automatically. Covering the damage matters for sentencing and for the civil claim, but does not by itself remove criminal liability.",
+    },
+    {
+      q: "Who investigates abuse of office files?",
+      a: "The ordinary prosecutor's offices and, in the aggravated form or where the damage is high, the National Anticorruption Directorate.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 297 on abuse of office.", href: CP, linkLabel: "Legislation" },
+    { text: "Law 78/2000 - aggravated form of abuse of office.", href: L78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR_EN,
+};
+
+export const negligenceInOfficeEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/negligence-in-office",
+  altPath: "/servicii/neglijenta-in-serviciu",
+  roPath: "/servicii/neglijenta-in-serviciu",
+  title: "Negligence in Office Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Negligence in office lawyer in Bucharest",
+  description:
+    "Negligence in office lawyer in Bucharest. Defense for officials accused of negligent breach of their duties. 18+ years of experience.",
+  keywords: "negligence in office lawyer bucharest, negligent breach of duty romania, public official defense",
+  breadcrumbLabel: "Negligence in office",
+  serviceName: "Negligence in office lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated for negligence in office after an incident, an audit or a complaint?",
+    "In these files, the defense is built on your real workload, on the resources available and on the link between the omission and the consequence produced.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist public officials and persons with control, approval or supervision duties, investigated for the negligent breach of their obligations.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      paragraphs: ["Tell me what actually happened, because in these files the factual details decide the outcome."],
+      subsections: [
+        {
+          h3: "An incident occurred and responsibility is being sought",
+          paragraphs: ["I check what obligations you actually had, what you could genuinely control and whether the consequence can be attributed to you."],
+        },
+        {
+          h3: "An audit found that you did not perform a duty",
+          paragraphs: ["I analyse the control document and establish whether the omission caused damage or harm, an essential condition of the offense."],
+        },
+        {
+          h3: "You have been summoned as a suspect",
+          paragraphs: ["We prepare the statement on documents and on the chronology of events, to avoid assuming obligations that were not yours."],
+        },
+      ],
+      ctaAfterSubsections: "I want an assessment of my situation",
+    },
+    {
+      h2: "What I analyse immediately in the file",
+      bullets: [
+        "What the concrete duty was and from which legal act it derived.",
+        "Whether the omission was negligent and in what form.",
+        "Whether there is actual damage or harm to a person's rights.",
+        "The causal link between the omission and the consequence produced.",
+        "The resources, staff and time available during the period analysed.",
+        "The responsibility of the other persons in the decision chain.",
+      ],
+    },
+    {
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Send me the documents showing what you had to do and what you actually did."],
+      subsections: [
+        {
+          h3: "Your official duties",
+          paragraphs: ["Job description, internal regulation, delegation decisions and applicable operating procedures."],
+        },
+        {
+          h3: "Documents concerning the incident",
+          paragraphs: ["The complaint, the finding report, internal reports and correspondence from the relevant period."],
+        },
+        {
+          h3: "Evidence about available resources",
+          paragraphs: ["Staffing charts, workload allocated, requests for additional staff or budget."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What negligence in office is",
+      paragraphs: [
+        "Negligence in office consists of the negligent breach by a public official of an official duty, by failing to perform it or by performing it defectively, if damage or harm to the rights or legitimate interests of a person is caused. The offense is set out in art. 298 of the Criminal Code.",
+        "Unlike other office offenses, intent is not required here, but negligence is. The damaging consequence must nevertheless exist and be proven, not presumed.",
+      ],
+    },
+    {
+      h2: "The difference from abuse of office",
+      paragraphs: [
+        [
+          { text: "The element separating the two offenses is the form of guilt. In the " },
+          { text: "intentional breach of duties", to: "/en/services/abuse-of-office" },
+          { text: ", the official acts intentionally, whereas in negligence the act is committed carelessly." },
+        ],
+        "The distinction has major consequences: the penalty limits are lower, and in many situations an initial abuse charge can be correctly reclassified as negligence where the evidence does not support intent.",
+      ],
+    },
+    {
+      h2: "When there is no offense",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "The absence of actual damage or harm means the elements of the offense are not met, however serious the omission may appear from a disciplinary perspective.",
+        "Likewise, negligence cannot be retained where the obligation was not yours, where performing it was impossible due to a lack of resources or staff, or where the consequence was caused by another person's conduct. In such situations the matter remains one of disciplinary or administrative liability.",
+      ],
+    },
+    {
+      h2: "What you risk if the accusation is confirmed",
+      bullets: [
+        "Imprisonment or a fine, within the limits set by law.",
+        "An obligation to pay the damage caused.",
+        "Disciplinary sanctions applied in parallel by the employer.",
+        "Consequences for your right to hold certain positions.",
+      ],
+    },
+    {
+      h2: "How I build the defense",
+      bullets: [
+        "I define exactly which obligations were yours, by reference to legal and internal acts.",
+        "I show the absence of a causal link between the omission and the consequence produced.",
+        "I challenge the existence or extent of the damage, with expert evidence where necessary.",
+        "I argue the objective impossibility of performing the duty, through evidence about available resources.",
+        "I assist you at questioning and at every hearing, before the prosecutor and the court.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Other charges frequently appearing in the same file, such as those concerning " },
+          { text: "incompatibility situations", to: "/en/services/conflict-of-interest" },
+          { text: ", must be analysed separately, because their conditions are different." },
+        ],
+      ],
+      cta: "Why choose me",
+    },
+  ],
+  faq: [
+    {
+      q: "Can negligence be retained without damage?",
+      a: "No. The law requires damage or harm to the rights or legitimate interests of a person.",
+    },
+    {
+      q: "What if I did not have enough staff?",
+      a: "The lack of resources is an important defense element, especially if you requested additional resources in writing.",
+    },
+    {
+      q: "Can an abuse charge be reclassified as negligence?",
+      a: "Yes. Where the evidence does not support intent, the legal classification can be changed to negligence in office.",
+    },
+    {
+      q: "Is a prior complaint required?",
+      a: "No. The criminal investigation is carried out ex officio, and the injured person may join as a civil party.",
+    },
+    {
+      q: "Does a disciplinary sanction rule out a criminal file?",
+      a: "No. The two forms of liability are distinct and can run in parallel.",
+    },
+    {
+      q: "How long does such a file take?",
+      a: "It depends on the complexity of the evidence and the expert reports needed. I can give you a realistic estimate once I see the documents.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 298 on negligence in office.", href: CP, linkLabel: "Legislation" },
+    { text: "Criminal Code - art. 308 on the extension of liability.", href: CP, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR_EN,
+};
+
+export const conflictOfInterestEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/conflict-of-interest",
+  altPath: "/servicii/conflict-de-interese",
+  roPath: "/servicii/conflict-de-interese",
+  title: "Conflict of Interest Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Conflict of interest lawyer in Bucharest",
+  description:
+    "Conflict of interest lawyer in Bucharest. Defense in files concerning the use of office to favour certain persons. 18+ years of experience.",
+  keywords: "conflict of interest lawyer bucharest, use of office to favour persons, integrity report romania",
+  breadcrumbLabel: "Conflict of interest",
+  serviceName: "Conflict of interest lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you received an assessment report from the National Integrity Agency or are you criminally investigated for conflict of interest?",
+    "The administrative report and the criminal file are different procedures, and the defense must be built on both, in parallel.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist local elected officials, public servants and decision makers in integrity procedures and in criminal files concerning conflict of interest.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What is your situation right now?",
+      paragraphs: ["Tell me which procedure the problem started from, because the deadlines are different."],
+      subsections: [
+        {
+          h3: "You received an integrity assessment report",
+          paragraphs: ["I analyse the report, the challenge deadline and the chances of annulment before the administrative court, before it becomes final."],
+        },
+        {
+          h3: "You were notified that you are criminally investigated",
+          paragraphs: ["I check whether the act performed falls within the criminal text and whether the benefit claimed is of a patrimonial nature."],
+        },
+        {
+          h3: "You signed a contract with a related company",
+          paragraphs: ["I check the family or business relationship invoked, the commercial dealings of recent years and the exceptions provided by law."],
+        },
+      ],
+      ctaAfterSubsections: "I want an assessment of my situation",
+    },
+    {
+      h2: "What I analyse immediately in the file",
+      bullets: [
+        "The concrete act performed in the exercise of official duties.",
+        "The existence of a patrimonial benefit for you, for relatives or for persons you had business dealings with.",
+        "The degree of kinship and the period of the commercial relations invoked.",
+        "Whether the situation falls within the exceptions expressly provided by law.",
+        "The relationship between the administrative integrity procedure and the criminal file.",
+      ],
+    },
+    {
+      h2: "What documents you should send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["I need the documents showing who decided and under what conditions."],
+      subsections: [
+        {
+          h3: "The contested act",
+          paragraphs: ["The contract, order, decision or resolution signed, together with the underlying documentation."],
+        },
+        {
+          h3: "The assessment report",
+          paragraphs: ["The report received, proof of its communication and any challenge already filed."],
+        },
+        {
+          h3: "Documents about the relationship invoked",
+          paragraphs: ["Civil status documents, corporate records, earlier contracts showing the real nature of the dealings."],
+        },
+      ],
+      calloutAfterSubsections: "You do not have all the documents?",
+      calloutAfterSubsectionsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me the documents on WhatsApp",
+    },
+    {
+      h2: "What conflict of interest means in criminal law",
+      paragraphs: [
+        "The criminal text, named use of office to favour certain persons, sanctions the act of a public official who, in the exercise of their duties, performed an act through which a patrimonial benefit was obtained for themselves, for their spouse, for a relative or an in-law up to the second degree inclusive. The offense is set out in art. 301 of the Criminal Code.",
+        "The law also provides an express exception, for situations involving the issuing, approval or adoption of normative acts.",
+      ],
+    },
+    {
+      h2: "The difference between the integrity procedure and the criminal file",
+      paragraphs: [
+        "The assessment report drawn up in the administrative integrity procedure may find a state of conflict of interest without the act automatically being an offense. The report is challenged before the administrative court, within the statutory deadline.",
+        "The criminal file has its own, stricter conditions regarding the act performed, the patrimonial benefit and the circle of favoured persons. The two procedures run in parallel, and the defense must be coordinated between them.",
+      ],
+    },
+    {
+      h2: "When the act is not an offense",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Not every overlap of interests amounts to an offense. It must be proven that an act was actually performed in the exercise of official duties, that a concrete patrimonial benefit resulted, and that the beneficiary belongs to the circle of persons set out by law.",
+        "Outside the criminal text remain situations of abstention from voting or signing, preparatory acts producing no effects, non-patrimonial benefits, as well as the issuing or adoption of normative acts, expressly exempted by law.",
+      ],
+    },
+    {
+      h2: "What you risk if the accusation is confirmed",
+      bullets: [
+        "Imprisonment and a ban on holding public office.",
+        "Annulment of the administrative acts or contracts concluded in conflict of interest.",
+        "Termination of the mandate or of the service relationship, in the integrity procedure.",
+        "A ban on holding an elected position for the period provided by law.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "The same files frequently also contain the accusation of " },
+          { text: "defective exercise of duties", to: "/en/services/abuse-of-office" },
+          { text: ", which is why the defense must be built as a whole." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defense",
+      bullets: [
+        "I check whether the act complained of falls within your official duties.",
+        "I challenge the patrimonial character of the benefit or its very existence.",
+        "I analyse the degree of kinship and the duration of the commercial relations invoked.",
+        "I argue for the application of the exceptions expressly provided by law.",
+        "I coordinate the criminal defense with the challenge against the integrity report.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Where the file also contains accusations about benefits received directly, the situation is analysed together with " },
+          { text: "corruption charges proper", to: "/en/services/bribery-giving-and-taking" },
+          { text: "." },
+        ],
+      ],
+      cta: "Why choose me",
+    },
+  ],
+  faq: [
+    {
+      q: "Does an integrity report automatically mean a criminal file?",
+      a: "No. An administrative finding of a conflict of interest does not equate to the elements of the offense being met.",
+    },
+    {
+      q: "Which persons fall within the circle set out by law?",
+      a: "The spouse, relatives and in-laws up to the second degree inclusive, according to the criminal text.",
+    },
+    {
+      q: "Does abstaining from the vote protect me?",
+      a: "In principle, yes. If you did not perform the act generating the benefit, the material element of the offense is missing.",
+    },
+    {
+      q: "Does the text apply to normative acts?",
+      a: "No. The law expressly exempts the issuing, approval or adoption of normative acts.",
+    },
+    {
+      q: "Can the signed contract be annulled?",
+      a: "Yes. Acts concluded in breach of the conflict of interest rules can be null and void.",
+    },
+    {
+      q: "Can I challenge the assessment report?",
+      a: "Yes, before the administrative court, within the statutory deadline from its communication. The deadline is short, so you must act quickly.",
+    },
+  ],
+  resources: [
+    { text: "Criminal Code - art. 301 on the use of office to favour certain persons.", href: CP, linkLabel: "Legislation" },
+    { text: "Law 78/2000 on corruption offenses and assimilated acts.", href: L78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  parent: PARENT_COR_EN,
+};
