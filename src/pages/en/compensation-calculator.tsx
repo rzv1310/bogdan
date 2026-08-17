@@ -568,9 +568,9 @@ export default function CompensationCalculator() {
 
         {/* Call to Action */}
         <section className="text-center mb-12">
-          <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call now">
+          <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Call me now">
             <a href="tel:+40316320183">
-              <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Call now</span>
+              <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Call me now</span>
             </a>
           </Button>
               <ServicesQuickLinks lang="en" exclude={["/en/blog", "/en/contact"]} />
