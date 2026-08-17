@@ -5782,7 +5782,11 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "ce alte probe confirmă sau contrazic acuzația.",
       ],
       paragraphsAfterBullets: [
-        "Nu există o strategie standard pentru toate situațiile.",
+        [
+          { text: "Nu există o strategie standard pentru toate situațiile. Dacă cantitatea descoperită este mică și ancheta discută varianta consumului personal, situația se analizează diferit, potrivit celor explicate pe pagina privind " },
+          { text: "deținerea de droguri pentru consum propriu", to: "/servicii/detinere-droguri-consum-propriu" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -5898,7 +5902,7 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
   reviewAuthor: "Robert Boloaja",
   reviewText:
     "Dosar penal complicat, cu acuzații serioase. Domnul avocat Bogdan Lamatic a fost excepțional: extrem de profesionist, strategie foarte bună, calm și pregătit maxim. A identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar și realist, fără promisiuni false. Rezultatul a fost mult peste ce speram.",
-  reviewMeta: "recenzie Google",
+  reviewMeta: "3 recenzii",
   reviewTimestamp: "acum 2 luni",
   faqTitle: "Întrebări frecvente despre traficul internațional de droguri",
   faq: [
