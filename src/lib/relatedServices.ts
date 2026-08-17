@@ -140,6 +140,7 @@ const extraLabelsRo: Record<string, string> = {
   "/contact": "Contact",
 };
 
+const extraLabelsEn: Record<string, string> = {
   "/en/services/police-prosecutor-questioning": "Police and prosecutor questioning",
   "/en/services/home-search": "Home search",
   "/en/services/computer-search": "Computer search",
@@ -149,6 +150,14 @@ const extraLabelsRo: Record<string, string> = {
   "/en/services/pre-trial-detention": "Pre-trial detention",
   "/en/services/judicial-control": "Judicial control",
   "/en/services/house-arrest": "House arrest",
+  "/en/services/tax-evasion": "Tax evasion",
+  "/en/services/fraud-and-deception": "Fraud and deception",
+  "/en/services/embezzlement": "Embezzlement",
+  "/en/services/forgery-and-use-of-forgery": "Forgery and use of forgery",
+  "/en/services/fraudulent-bankruptcy": "Fraudulent bankruptcy",
+  "/en/services/computer-fraud": "Computer fraud",
+  "/en/services/eu-funds-fraud": "EU funds fraud",
+
   "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
