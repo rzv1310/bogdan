@@ -30,6 +30,8 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewStars from "@/components/services/GoogleReviewStars";
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
   new Intl.NumberFormat("ro-RO", {
@@ -555,6 +557,12 @@ export default function CalculatorDespagubiri() {
               </li>
             </ol>
           </Card>
+        </section>
+
+        {/* Bio + reviews */}
+        <section className="mb-8">
+          <LawyerBioBlock path="/calculator-despagubiri" lang="ro" />
+          <GoogleReviewStars lang="ro" className="mt-3" />
         </section>
 
         {/* Call to Action */}
