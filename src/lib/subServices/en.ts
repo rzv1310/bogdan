@@ -3991,7 +3991,9 @@ export const conflictOfInterestEn: SubServicePageData = {
    ============================================================ */
 
 const L143_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/23629";
+const L58_EN = "https://legislatie.just.ro/Public/DetaliiDocument/280178";
 const ICCJ25_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/293958";
+const ICCJ15_EN = "https://legislatie.just.ro/Public/DetaliiDocument/189358";
 const OUG78_EN = "https://legislatie.just.ro/Public/DetaliiDocument/305273";
 
 const PARENT_DO_EN = {

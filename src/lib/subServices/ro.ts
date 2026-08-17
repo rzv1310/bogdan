@@ -5151,7 +5151,9 @@ export const conflictDeIntereseRo: SubServicePageData = {
    ============================================================ */
 
 const L143 = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/23629";
+const L58 = "https://legislatie.just.ro/Public/DetaliiDocument/280178";
 const ICCJ25 = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/293958";
+const ICCJ15 = "https://legislatie.just.ro/Public/DetaliiDocument/189358";
 const OUG78 = "https://legislatie.just.ro/Public/DetaliiDocument/305273";
 
 const PARENT_DO = {
