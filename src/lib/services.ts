@@ -2,7 +2,7 @@ export const services = [
   { label: "Urmărire penală", to: "/servicii/urmarire-penala" },
   { label: "Măsuri preventive", to: "/servicii/masuri-preventive" },
   { label: "Criminalitate economică", to: "/servicii/criminalitate-economica" },
-  { label: "Infracțiuni de corupție și fapte legate de exercitarea funcției publice", to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
+  { label: "Infracțiuni de corupție", to: "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" },
   { label: "Investigații privind activele cripto", to: "/servicii/investigatii-privind-activele-cripto" },
   { label: "Cauze penale privind droguri", to: "/servicii/cauze-penale-privind-droguri" },
   { label: "Dosare de spălare de bani și ascundere de bunuri", to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
