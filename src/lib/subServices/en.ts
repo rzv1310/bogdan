@@ -3974,24 +3974,8 @@ export const conflictOfInterestEn: SubServicePageData = {
       a: "No. An administrative finding of a conflict of interest does not equate to the elements of the offense being met.",
     },
     {
-      q: "Which persons fall within the circle set out by law?",
-      a: "The spouse, relatives and in-laws up to the second degree inclusive, according to the criminal text.",
-    },
-    {
-      q: "Does abstaining from the vote protect me?",
-      a: "In principle, yes. If you did not perform the act generating the benefit, the material element of the offense is missing.",
-    },
-    {
-      q: "Does the text apply to normative acts?",
-      a: "No. The law expressly exempts the issuing, approval or adoption of normative acts.",
-    },
-    {
       q: "Can the signed contract be annulled?",
       a: "Yes. Acts concluded in breach of the conflict of interest rules can be null and void.",
-    },
-    {
-      q: "Can I challenge the assessment report?",
-      a: "Yes, before the administrative court, within the statutory deadline from its communication. The deadline is short, so you must act quickly.",
     },
   ],
   resources: [
