@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 interface ServicesQuickLinksProps {
   lang?: "ro" | "en";
   className?: string;
+  exclude?: string[];
 }
 
 
@@ -31,11 +32,11 @@ const linksEn = [
   { to: "/en/contact", label: "Contact - book an assessment" },
 ];
 
-const ServicesQuickLinks = ({ lang = "ro", className = "" }: ServicesQuickLinksProps) => {
+const ServicesQuickLinks = ({ lang = "ro", className = "", exclude = [] }: ServicesQuickLinksProps) => {
   const { pathname } = useLocation();
   const currentPath = pathname.replace(/\/$/, "") || "/";
   const links = (lang === "en" ? linksEn : linksRo).filter(
-    (link) => link.to !== currentPath
+    (link) => link.to !== currentPath && !exclude.includes(link.to)
   );
 
   return (
