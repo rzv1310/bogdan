@@ -108,8 +108,11 @@ export interface SubServicePageData {
   contactText: string;
   /** Replaces the email button in the final contact card with a WhatsApp CTA. */
   contactWhatsApp?: boolean;
+  /** Inserts the Google review card after the section at this index. */
+  reviewAfterSection?: number;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
+
 }
 
 const SITE = "https://avocatpenalbucuresti.ro";
