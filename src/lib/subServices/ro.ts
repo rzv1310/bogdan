@@ -5070,6 +5070,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
       cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Nu orice suprapunere de interese înseamnă infracțiune. Trebuie dovedite un act îndeplinit efectiv în exercitarea atribuțiilor de serviciu, un folos patrimonial concret și apartenența beneficiarului la cercul de persoane prevăzut de lege. În plus, legea prevede expres, în art. 301 alin. (2), situații în care fapta nu se pedepsește.",
+        "Rămân în afara textului penal și situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, precum și foloasele nepatrimoniale.",
       ],
       subsections: [
         {
@@ -5090,9 +5091,6 @@ export const conflictDeIntereseRo: SubServicePageData = {
             "Când ai fost obligat prin lege să îndeplinești actul, iar marja de apreciere lipsea, fapta nu intră sub incidența textului penal. Aici sunt relevante actele prin care s-a executat o hotărâre sau o obligație legală.",
           ],
         },
-      ],
-      paragraphsAfterBullets: [
-        "Rămân în afara textului penal și situațiile de abținere de la vot sau de la semnare, actele pregătitoare care nu produc efecte, precum și foloasele nepatrimoniale.",
       ],
     },
     {
