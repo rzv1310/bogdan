@@ -4930,10 +4930,10 @@ export const conflictDeIntereseRo: SubServicePageData = {
           paragraphs: [
             "Raportul necontestat în termen rămâne definitiv și poate produce consecințe asupra funcției, consecințe disciplinare și proceduri privind actele încheiate. Un raport definitiv nu înseamnă automat condamnare penală, dar îngreunează apărarea.",
           ],
+          ctaWhatsApp: true,
+          ctaWhatsAppLabel: "Ai primit raportul ANI? Trimite-l acum pentru verificarea termenului",
         },
       ],
-      ctaWhatsApp: true,
-      ctaWhatsAppLabel: "Ai primit raportul ANI? Trimite-l acum pentru verificarea termenului",
     },
     {
       h2: "Conflict de interese sau incompatibilitate - care este diferența?",
