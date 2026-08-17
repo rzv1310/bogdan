@@ -1517,7 +1517,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "încheierea de prelungire sau menținere;",
         "documentele referitoare la obligațiile impuse;",
         "cererile sau răspunsurile primite anterior.",
-      ].map((text) => ({ text: `${text}` })),
+      ],
       calloutAfterBullets: "Nu ai toate actele? Sună oricum.",
       calloutAfterBulletsClassName: "font-semibold bg-white",
       calloutAfterBulletsCta: "Sună oricum",
