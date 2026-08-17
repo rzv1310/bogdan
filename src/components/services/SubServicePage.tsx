@@ -398,7 +398,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             </Button>
           )}
           {ctaWhatsApp && (
-            <WhatsAppDocsCta lang={data.lang} variant="green" label={ctaWhatsAppLabel} />
+            <WhatsAppDocsCta lang={data.lang} label={ctaWhatsAppLabel} />
           )}
         </div>
       )}
@@ -528,7 +528,6 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             {data.contactWhatsApp ? (
               <WhatsAppDocsCta
                 lang={data.lang}
-                variant="green"
                 label={data.contactWhatsAppLabel ?? (isEn ? "WhatsApp - send documents" : "WhatsApp - trimite actele")}
               />
             ) : (

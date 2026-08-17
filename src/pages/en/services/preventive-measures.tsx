@@ -277,7 +277,7 @@ export default function PreventiveMeasures() {
           <p>the ordinance · the court ruling · the summons · the Police/Prosecutor documents</p>
           <p className="font-semibold text-foreground pt-2">Don't have all the documents? Call anyway.</p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <WhatsAppDocsCta lang="en" variant="green" />
+            <WhatsAppDocsCta lang="en" />
           </div>
         </CardContent>
       </Card>
