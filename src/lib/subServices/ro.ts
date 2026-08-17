@@ -5807,7 +5807,13 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         "Trebuie stabilit dacă destinatarul cunoștea efectiv conținutul și ce probe există în acest sens.",
-        "Dacă ai fost chemat pentru ridicarea unui colet sau după primirea acestuia, discută cu avocatul înainte de declarație.",
+        [
+          { text: "Dacă ai fost chemat pentru ridicarea unui colet sau după primirea acestuia, discută cu avocatul înainte de declarație. Vezi ce presupune " },
+          { text: "asistența la audiere", to: "/servicii/audiere-politie-parchet" },
+          { text: " și ce se întâmplă în cazul unei " },
+          { text: "percheziții la domiciliu", to: "/servicii/perchezitie-domiciliara" },
+          { text: "." },
+        ],
       ],
       cta: "☎ Sună-mă acum - 031 632 01 83",
       ctaIcon: false,
