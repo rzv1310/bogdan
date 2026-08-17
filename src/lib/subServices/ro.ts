@@ -1345,41 +1345,33 @@ export const controlJudiciarRo: SubServicePageData = {
     },
 
   ],
-  reviewAfterSection: 3,
   faq: [
     {
       q: "Pot pleca din țară dacă sunt sub control judiciar?",
-      a: "Depinde de obligația concretă din ordonanță sau încheiere. Dacă a fost stabilită interdicția de a părăsi teritoriul ori o limită teritorială, deplasarea presupune o cerere adresată organului judiciar competent, cu justificarea motivului.",
-    },
-    {
-      q: "Pot merge la serviciu în timpul controlului judiciar?",
-      a: "De regulă da, controlul judiciar nu presupune privarea de libertate. Trebuie însă verificat dacă a fost impusă o obligație privind exercitarea anumitor activități sau o limită teritorială care afectează deplasarea la locul de muncă.",
+      a: "Depinde de obligația concretă din ordonanță sau încheiere. Dacă a fost stabilită interdicția de a părăsi teritoriul ori o limită teritorială, deplasarea presupune o cerere adresată organului judiciar competent, cu justificarea motivului. Trimite-mi actul și verific obligația exactă.",
     },
     {
       q: "Ce se întâmplă dacă nu mă prezint la Poliție?",
       a: "Neprezentarea la organul de poliție desemnat cu supravegherea este o încălcare a obligațiilor. Contează motivul și dovezile: o problemă medicală documentată se analizează diferit de o sustragere deliberată. Sună-mă înainte de a da explicații.",
     },
     {
-      q: "Pot vorbi cu martorii sau cu ceilalți inculpați?",
-      a: "Nu, dacă în cazul tău a fost impusă obligația de a nu comunica cu anumite persoane. Această interdicție este una dintre cele mai des încălcate involuntar, inclusiv prin mesaje sau prin intermediari, iar consecințele pot fi serioase.",
+      q: "Ce fac dacă am încălcat accidental una dintre obligații?",
+      a: "O abatere nu duce automat la o măsură mai severă: riscul apare, în condițiile legii, în cazul încălcării cu rea-credință. Strânge dovezile care explică situația și nu da declarații înainte de a discuta cu un avocat.",
     },
     {
       q: "Cât timp poate dura controlul judiciar?",
-      a: "Măsura se dispune pe o perioadă determinată și poate fi prelungită în cursul urmăririi penale, cu perioade de cel mult 60 de zile fiecare, iar legea prevede limite pentru durata totală, diferite în funcție de faza procesuală.",
+      a: "Durata diferă în funcție de faza procesuală. În urmărirea penală măsura se dispune pe o perioadă determinată și poate fi prelungită cu perioade de cel mult 60 de zile fiecare. În cursul judecății în primă instanță legea prevede o limită totală distinctă, de până la 5 ani de la trimiterea în judecată.",
     },
     {
       q: "Se poate ridica controlul judiciar înainte de terminarea dosarului?",
-      a: "Da. Se poate cere revocarea măsurii dacă nu mai există temeiurile care au justificat-o, ori modificarea obligațiilor, potrivit art. 242 CPP. Cererea trebuie susținută cu împrejurări noi și documente.",
+      a: "Da. Se poate cere revocarea măsurii, adică încetarea acesteia, atunci când au încetat temeiurile care au justificat-o ori au apărut împrejurări noi, potrivit art. 242 CPP. Alternativ, se poate cere doar modificarea obligațiilor. Ambele cereri trebuie susținute cu documente.",
     },
     {
-      q: "Ce fac dacă am încălcat accidental una dintre obligații?",
-      a: "Strânge toate dovezile care explică situația și nu da declarații înainte de a discuta cu un avocat. O încălcare fără rea-credință poate fi explicată, dar modul în care este prezentată contează decisiv.",
-    },
-    {
-      q: "Poate controlul judiciar fi transformat în arest la domiciliu?",
-      a: "Da, în condițiile legii, măsura poate fi înlocuită cu una mai severă, inclusiv arest la domiciliu sau arestare preventivă, atunci când obligațiile sunt încălcate cu rea-credință sau apar temeiuri noi.",
+      q: "Poate controlul judiciar deveni arest la domiciliu sau arest preventiv?",
+      a: "Da, în condițiile legii, măsura poate fi înlocuită cu una mai severă atunci când obligațiile sunt încălcate cu rea-credință sau apar temeiuri noi. Înlocuirea nu este automată, iar conduita concretă și explicațiile date cântăresc decisiv.",
     },
   ],
+
   resources: [
     { text: "Art. 211-215¹ CPP - controlul judiciar și durata măsurii.", href: CPP, linkLabel: "Legislație" },
     { text: "Art. 216-217 CPP - controlul judiciar pe cauțiune.", href: CPP, linkLabel: "Legislație" },
