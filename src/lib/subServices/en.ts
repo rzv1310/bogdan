@@ -4667,7 +4667,11 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "photos and files.",
       ],
       paragraphsAfterBullets: [
-        "In defence it is not enough to read isolated fragments. The complete chronology and the real link between each piece of evidence and the alleged act must be verified.",
+        [
+          { text: "In defence it is not enough to read isolated fragments. The complete chronology, the real link between each piece of evidence and the alleged act, and the lawfulness of how data was extracted during a " },
+          { text: "computer search", to: "/en/services/computer-search" },
+          { text: " must all be verified." },
+        ],
       ],
     },
     {
