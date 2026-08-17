@@ -149,7 +149,7 @@ export default function CoruptieSiFunctiePublica() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat Infracțiuni de corupție și fapte legate de exercitarea funcției publice - Bogdan Lamatic | București
+        Avocat Infracțiuni de corupție și fapte legate de exercitarea funcției publice
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
