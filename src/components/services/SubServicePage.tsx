@@ -136,8 +136,9 @@ function collectContextualPaths(data: SubServicePageData): string[] {
     fromParagraphs(section.paragraphs);
     fromParagraphs(section.paragraphsAfterBullets);
     section.links?.forEach((link) => {
-      if (link.to) paths.add(link.to);
+      if (link.to && !link.to.startsWith("#")) paths.add(link.to);
     });
+
     section.subsections?.forEach((sub) => fromParagraphs(sub.paragraphs));
   });
 
