@@ -530,10 +530,10 @@ export default function CompensationCalculator() {
                 </div>
               </div>
               <a
-                href="mailto:contact@avocatpenalbucuresti.ro"
+                href="tel:+40316320183"
                 className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-white text-zinc-900"
               >
-                Schedule a consultation <ArrowRight className="w-4 h-4" />
+                Call me now! <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </Card>
