@@ -1340,6 +1340,8 @@ export const controlJudiciarRo: SubServicePageData = {
   ],
   contactText: CONTACT,
   contactWhatsApp: true,
+  contactWhatsAppLabel: "WhatsApp - Trimite ordonanța / încheierea",
+
   parent: PARENT_MP,
 };
 
