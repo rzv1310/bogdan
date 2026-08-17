@@ -567,7 +567,7 @@ export default function CompensationCalculator() {
               <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Call now</span>
             </a>
           </Button>
-              <ServicesQuickLinks lang="en" />
+              <ServicesQuickLinks lang="en" exclude={["/en/blog", "/en/contact"]} />
 </section>
         {/* Breadcrumb */}
         <section className="order-last mt-8 md:order-first md:mt-0 md:mb-4">
