@@ -275,7 +275,14 @@ export default function PreventiveMeasures() {
           <p>where the person is · what happened · when the next deadline is</p>
           <p className="font-semibold pt-2">If you have them, send:</p>
           <p>the ordinance · the court ruling · the summons · the Police/Prosecutor documents</p>
-          <p className="font-semibold text-foreground pt-2">Don't have all the documents? Call anyway.</p>
+          <div className="mt-2 flex flex-wrap items-center gap-3 rounded-r-md border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground">
+            <span className="font-semibold">Don't have all the documents?</span>
+            <Button asChild variant="warning" size="sm" aria-label="Call anyway - Preventive measures lawyer Bucharest">
+              <a href="tel:+40316320183">
+                <Phone className="mr-1 h-3.5 w-3.5" /> Call anyway
+              </a>
+            </Button>
+          </div>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <WhatsAppDocsCta lang="en" />
           </div>
