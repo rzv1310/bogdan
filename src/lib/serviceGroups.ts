@@ -190,7 +190,8 @@ export const roServiceGroups: ServiceGroup[] = [
         subServices: [
           { label: "Loviri / Vătămare corporală" },
           { label: "Violență domestică" },
-          { label: "Lipsire de libertate / Amenințare / Șantaj / Hărțuire" },
+          { label: "Lipsire de libertate / Amenințare" },
+          { label: "Șantaj / Hărțuire" },
           { label: "Viol / Agresiune sexuală" },
           { label: "Omor / Ucidere din culpă" },
         ],
@@ -419,7 +420,8 @@ export const enServiceGroups: ServiceGroup[] = [
         subServices: [
           { label: "Assault / Bodily harm" },
           { label: "Domestic violence" },
-          { label: "Unlawful deprivation of liberty / Threats / Blackmail / Harassment" },
+          { label: "Unlawful deprivation of liberty / Threats" },
+          { label: "Blackmail / Harassment" },
           { label: "Rape / Sexual assault" },
           { label: "Murder / Manslaughter" },
         ],
