@@ -14,6 +14,21 @@ const TITLE = "Criminal Law Services Bucharest - Attorney Bogdan Lamatic";
 const DESCRIPTION =
   "Criminal defense services in Bucharest: financial crime, corruption, money laundering, crypto investigations, drug offenses, road traffic offenses, malpractice, workplace accidents and victim representation.";
 
+const MAIN_SERVICE_PATHS = new Set([
+  "/en/services/criminal-investigation",
+  "/en/services/preventive-measures",
+  "/en/services/financial-crime",
+  "/en/services/corruption-and-public-office-offenses",
+  "/en/services/money-laundering-and-asset-concealment",
+  "/en/services/crypto-asset-investigations",
+  "/en/services/drug-offenses",
+  "/en/services/road-traffic-offenses",
+  "/en/services/offenses-against-persons",
+  "/en/services/professional-negligence-and-malpractice",
+  "/en/services/workplace-criminal-liability",
+  "/en/services/victim-representation-in-criminal-cases",
+]);
+
 function CallCta({ label = "Talk to the attorney" }: { label?: string }) {
   return (
     <div className="flex flex-wrap items-center gap-3">
@@ -27,7 +42,11 @@ function CallCta({ label = "Talk to the attorney" }: { label?: string }) {
 }
 
 export default function EnServicesPage() {
-  const allServiceItems = enServiceGroups.flatMap((group, groupIndex) =>
+  const filteredGroups = enServiceGroups
+    .map((group) => ({ ...group, cards: group.cards.filter((card) => MAIN_SERVICE_PATHS.has(card.to)) }))
+    .filter((group) => group.cards.length > 0);
+
+  const allServiceItems = filteredGroups.flatMap((group, groupIndex) =>
     group.cards.map((card, cardIndex) => ({
       "@type": "ListItem",
       position: groupIndex * 10 + cardIndex + 1,
@@ -125,7 +144,7 @@ export default function EnServicesPage() {
 
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">
-          {enServiceGroups.map((group) => (
+          {filteredGroups.map((group) => (
             <section key={group.id} className={group.id === "economic" ? "rounded-2xl border border-primary/20 p-5 md:p-8" : undefined}>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2">
                 {group.id === "economic" && <Briefcase className="h-5 w-5 text-primary" />}

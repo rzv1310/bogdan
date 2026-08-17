@@ -15,6 +15,21 @@ const TITLE = "Servicii avocat penal București - av. Bogdan Lamatic";
 const DESCRIPTION =
   "Servicii de avocat penal în București: urmărire penală, măsuri preventive, criminalitate economică, corupție, spălare de bani, crypto, droguri, infracțiuni rutiere, malpraxis, accidente de muncă și reprezentarea victimelor.";
 
+const MAIN_SERVICE_PATHS = new Set([
+  "/servicii/urmarire-penala",
+  "/servicii/masuri-preventive",
+  "/servicii/criminalitate-economica",
+  "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
+  "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
+  "/servicii/investigatii-privind-activele-cripto",
+  "/servicii/cauze-penale-privind-droguri",
+  "/servicii/infractiuni-rutiere-cu-victime",
+  "/servicii/infractiuni-contra-persoanei",
+  "/servicii/neglijenta-profesionala-si-malpraxis",
+  "/servicii/raspundere-penala-incidente-locul-de-munca",
+  "/servicii/reprezentarea-victimelor-in-procese-penale",
+]);
+
 function CallCta({ label = "Discută cu avocatul" }: { label?: string }) {
   return (
     <div className="flex flex-wrap items-center gap-3">
@@ -28,7 +43,11 @@ function CallCta({ label = "Discută cu avocatul" }: { label?: string }) {
 }
 
 export default function ServiciiPage() {
-  const allServiceItems = roServiceGroups.flatMap((group, groupIndex) =>
+  const filteredGroups = roServiceGroups
+    .map((group) => ({ ...group, cards: group.cards.filter((card) => MAIN_SERVICE_PATHS.has(card.to)) }))
+    .filter((group) => group.cards.length > 0);
+
+  const allServiceItems = filteredGroups.flatMap((group, groupIndex) =>
     group.cards.map((card, cardIndex) => ({
       "@type": "ListItem",
       position: groupIndex * 10 + cardIndex + 1,
@@ -128,7 +147,7 @@ export default function ServiciiPage() {
 
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">
-          {roServiceGroups.map((group) => (
+          {filteredGroups.map((group) => (
             <section key={group.id} className={group.id === "economic" ? "rounded-2xl border border-primary/20 p-5 md:p-8" : undefined}>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2">
                 {group.id === "economic" && <Briefcase className="h-5 w-5 text-primary" />}
