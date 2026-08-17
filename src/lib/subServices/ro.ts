@@ -4797,14 +4797,6 @@ export const neglijentaInServiciuRo: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Se poate reține neglijența fără prejudiciu?",
-      a: "Nu. Legea cere producerea unei pagube ori a unei vătămări a drepturilor sau intereselor legitime ale unei persoane.",
-    },
-    {
-      q: "Ce se întâmplă dacă nu am avut personal suficient?",
-      a: "Lipsa resurselor este un element de apărare important, mai ales dacă ai solicitat în scris suplimentarea lor.",
-    },
-    {
       q: "Poate fi schimbată încadrarea din abuz în neglijență?",
       a: "Da. Atunci când probele nu susțin intenția, încadrarea juridică poate fi schimbată în neglijență în serviciu.",
     },
