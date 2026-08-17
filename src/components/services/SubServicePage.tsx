@@ -517,6 +517,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             {(section.calloutAfterSubsections || section.ctaAfterSubsections) && (
               <SectionContent
                 calloutAfterBullets={section.calloutAfterSubsections}
+                calloutAfterBulletsCta={section.calloutAfterSubsectionsCta}
                 cta={section.ctaAfterSubsections}
                 ctaIcon={false}
               />
