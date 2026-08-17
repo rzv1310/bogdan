@@ -62,7 +62,7 @@ export default function GoogleReviewCard({
           </span>
           <div className="min-w-0">
             <p className="text-sm font-semibold text-slate-100">{author}</p>
-            <p className="text-xs text-slate-400">{reviewCount}</p>
+            <p className="text-xs text-slate-400">{reviewMeta}</p>
           </div>
         </div>
         <MoreVertical className="h-4 w-4 shrink-0 text-slate-400" aria-hidden="true" />
