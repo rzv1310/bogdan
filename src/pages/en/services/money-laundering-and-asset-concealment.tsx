@@ -143,7 +143,6 @@ export default function MoneyLaunderingEn() {
               As a lawyer with the Bucharest Bar, specialized in money laundering and asset concealment, I share key landmarks to navigate the current legislation and prepare your defense.
             </p>
           </div>
-          <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
 
         </section>
 
@@ -338,6 +337,7 @@ export default function MoneyLaunderingEn() {
             </div>
           </CardContent>
         </Card>
+      <RelatedServices current="/en/services/money-laundering-and-asset-concealment" lang="en" />
       </main>
     </>
   );

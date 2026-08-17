@@ -153,7 +153,6 @@ export default function SpalareDeBani() {
           <p className="bg-accent text-accent-foreground rounded-md px-3 py-2">
             În calitate de avocat specializat în spălare de bani și ascunderea de bunuri, vă împărtășesc câteva repere esențiale pentru a naviga prin legislația actuală și pentru a vă pregăti apărarea.
           </p>
-          <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
         </section>
 
         {/* Ce reprezintă infracțiunea de spălare a banilor */}
@@ -359,6 +358,7 @@ export default function SpalareDeBani() {
             </div>
           </CardContent>
         </Card>
+      <RelatedServices current="/servicii/spalare-de-bani-si-ascundere-de-bunuri" />
       </main>
     </>
   );

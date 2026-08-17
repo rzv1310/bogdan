@@ -118,7 +118,6 @@ export default function FinancialCrimeEn() {
             Whether you are under investigation, indicted, or a victim in an economic crime case, my goal is to secure a
             solid, discreet, and result-oriented outcome.
           </p>
-          <RelatedServices current="/en/services/financial-crime" lang="en" />
 
         </section>
 
@@ -190,6 +189,7 @@ export default function FinancialCrimeEn() {
             </a>
           </Button>
         </div>
+      <RelatedServices current="/en/services/financial-crime" lang="en" />
       </main>
     </>
   );
