@@ -55,6 +55,8 @@ export interface SubServiceSection {
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
   paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  /** Optional bullets rendered after the paragraphs-after-bullets. */
+  bulletsAfterBullets?: (string | { bold: string; rest: string })[];
   /** Optional small highlighted callout rendered after the bullets. */
   calloutAfterBullets?: string;
   /** Optional extra className for the after-bullets callout. */
@@ -255,6 +257,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutClassName,
     calloutCta,
     paragraphsAfterBullets,
+    bulletsAfterBullets,
     calloutAfterBullets,
     calloutAfterBulletsClassName,
     calloutAfterBulletsCta,
@@ -270,6 +273,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     calloutClassName?: string;
     calloutCta?: string;
     paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    bulletsAfterBullets?: (string | { bold: string; rest: string })[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
     calloutAfterBulletsCta?: string;
@@ -345,6 +349,22 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           )}
         </p>
       ))}
+      {bulletsAfterBullets && bulletsAfterBullets.length > 0 && (
+        <ul className="list-disc pl-6 space-y-2">
+          {bulletsAfterBullets.map((bullet, idx) => (
+            <li key={`after-bullet-${idx}`}>
+              {typeof bullet === "string" ? (
+                bullet
+              ) : (
+                <>
+                  <span className="font-semibold text-foreground">{bullet.bold}</span>{" "}
+                  {bullet.rest}
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
       {calloutAfterBullets && (
         <div className={`border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground rounded-r-md flex flex-wrap items-center gap-3 ${calloutAfterBulletsClassName ?? ""}`}>
           <span>{calloutAfterBullets}</span>
@@ -463,6 +483,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
               calloutClassName={section.calloutClassName}
               calloutCta={section.calloutCta}
               paragraphsAfterBullets={section.paragraphsAfterBullets}
+              bulletsAfterBullets={section.bulletsAfterBullets}
               calloutAfterBullets={section.calloutAfterBullets}
               calloutAfterBulletsClassName={section.calloutAfterBulletsClassName}
               calloutAfterBulletsCta={section.calloutAfterBulletsCta}

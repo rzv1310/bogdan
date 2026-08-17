@@ -1403,7 +1403,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   urgency: [
     "Ești în arest la domiciliu sau această măsură urmează să fie decisă?",
     "Arestul la domiciliu îți limitează libertatea și poate afecta direct munca, familia și activitățile de zi cu zi.",
-    "Dacă procurorul solicită o măsură privativă de libertate, dacă ești deja în arest la domiciliu sau dacă vrei înlocuirea măsurii cu control judiciar, trebuie analizate rapid situația dosarului, motivele măsurii și opțiunile procedurale disponibile.",
+    "Dacă procurorul solicită asta, dacă ești deja în arest la domiciliu sau dacă vrei înlocuirea măsurii cu control judiciar, trebuie analizate rapid situația dosarului, motivele măsurii și opțiunile procedurale disponibile.",
   ],
   bio: [
     `${BIO_INTRO} Asist clienți atât înainte de luarea măsurii, cât și după dispunerea acesteia.`,
@@ -1412,6 +1412,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
   sections: [
     {
       h2: "Te pot ajuta dacă",
+      cardClassName: "bg-[#faf0e6]",
       bullets: [
         "procurorul solicită arest la domiciliu;",
         "procurorul solicită arestarea preventivă și vrei susținerea unei măsuri mai puțin severe;",
@@ -1429,11 +1430,6 @@ export const arestLaDomiciliuRo: SubServicePageData = {
           h3: "Procurorul solicită arestarea preventivă",
           paragraphs: [
             "Arestul la domiciliu poate deveni relevant ca alternativă mai puțin severă atunci când condițiile legale sunt îndeplinite și circumstanțele concrete permit susținerea unei asemenea soluții.",
-            [
-              { text: "Analizez dacă scopul urmărit prin măsura preventivă poate fi atins fără detenție într-un centru de arest. " },
-              { text: "Arest preventiv - vezi opțiunile de apărare", to: "/servicii/arest-preventiv" },
-              { text: " →" },
-            ],
           ],
         },
         {
@@ -1499,6 +1495,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     },
     {
       h2: "Ce trebuie să-mi spui când mă contactezi",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Pentru o primă evaluare rapidă, spune-mi:",
       ],
@@ -1511,14 +1508,16 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "ce problemă vrei să rezolvi imediat.",
       ],
       paragraphsAfterBullets: [
-        "Dacă le ai, trimite-mi:",
+        [{ text: "Dacă le ai, trimite-mi:", bold: true }],
+      ],
+      bulletsAfterBullets: [
         "încheierea prin care s-a dispus arestul la domiciliu;",
         "citația;",
         "încheierea de prelungire sau menținere;",
         "documentele referitoare la obligațiile impuse;",
         "cererile sau răspunsurile primite anterior.",
       ],
-      calloutAfterBullets: "Nu ai toate actele? Sună oricum.",
+      calloutAfterBullets: "Nu ai toate actele?",
       calloutAfterBulletsClassName: "font-semibold bg-white",
       calloutAfterBulletsCta: "Sună oricum",
       ctaWhatsApp: true,
@@ -1577,11 +1576,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "arest la domiciliu.",
       ],
       paragraphsAfterBullets: [
-        [
-          { text: "În evaluarea unei măsuri mai puțin severe sunt relevante împrejurările concrete ale cauzei și conduita procesuală a inculpatului. Art. 242 CPP permite înlocuirea unei măsuri preventive cu una mai ușoară atunci când aceasta este suficientă pentru realizarea scopului măsurii preventive. Vezi și pagina dedicată " },
-          { text: "apărării împotriva propunerii de arestare preventivă", to: "/servicii/arest-preventiv" },
-          { text: "." },
-        ],
+        "În evaluarea unei măsuri mai puțin severe sunt relevante împrejurările concrete ale cauzei și conduita procesuală a inculpatului. Art. 242 CPP permite înlocuirea unei măsuri preventive cu una mai ușoară atunci când aceasta este suficientă pentru realizarea scopului măsurii preventive.",
       ],
     },
     {
@@ -1847,7 +1842,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
       cta: "☎ Sună acum",
     },
   ],
-  reviewAfterSection: 3,
+  
   faq: [
     {
       q: "Pot merge la serviciu dacă sunt în arest la domiciliu?",
@@ -1876,18 +1871,6 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     {
       q: "Ce se întâmplă dacă ies din casă fără permisiune?",
       a: "Situația poate avea consecințe serioase. Încălcarea cu rea-credință poate conduce la înlocuirea arestului la domiciliu cu arestarea preventivă, iar părăsirea neautorizată poate ridica și probleme în raport cu infracțiunea de evadare prevăzută de Codul penal.",
-    },
-    {
-      q: "Pot contesta arestul la domiciliu?",
-      a: "Da. Pentru încheierile privind măsurile preventive, termenul contestației este, în situațiile reglementate de art. 204-206 CPP, de 48 de ore de la pronunțare sau, după caz, de la comunicare.",
-    },
-    {
-      q: "Poate fi înlocuit arestul la domiciliu cu control judiciar?",
-      a: "Da, dacă sunt îndeplinite condițiile prevăzute de lege și organul judiciar apreciază că măsura mai ușoară este suficientă în raport cu situația concretă.",
-    },
-    {
-      q: "Cât poate dura arestul la domiciliu?",
-      a: "În cursul urmăririi penale poate fi dispus pentru cel mult 30 de zile, cu posibilitatea unor prelungiri de cel mult 30 de zile fiecare, iar durata maximă în această fază este de 180 de zile. Regimul din camera preliminară și din cursul judecății este diferit.",
     },
     {
       q: "Poate familia să contacteze avocatul?",
