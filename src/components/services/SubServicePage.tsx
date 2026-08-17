@@ -34,14 +34,17 @@ export interface SubServiceSubsection {
 
 export interface SubServiceSection {
   h2: string;
+  /** Optional DOM id, used as in-page anchor target. */
+  id?: string;
   paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
   /** When false, hides the phone icon inside the CTA button. Defaults to true. */
   ctaIcon?: boolean;
-  /** Optional list of inline service links (text-only when `to` is missing). */
+  /** Optional list of inline service links (text-only when `to` is missing). Use "#id" for in-page anchors. */
   links?: { label: string; to?: string }[];
+
   /** Optional small highlighted callout inside the section. */
   callout?: string;
   /** Optional extra className for the callout paragraph. */
