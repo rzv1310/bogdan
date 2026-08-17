@@ -4862,7 +4862,7 @@ export const conflictDeIntereseRo: SubServicePageData = {
         {
           h3: "Ai semnat un contract cu o firmă apropiată",
           paragraphs: [
-            "Verific relația de rudenie sau afacere invocată, raporturile comerciale din ultimii ani și excepțiile prevăzute de lege.",
+            "Verific gradul de rudenie sau de afinitate, dacă din act a rezultat un folos patrimonial real și dacă situația intră în excepțiile prevăzute de lege. Separat de latura penală, verific dacă poate exista o problemă administrativă de integritate.",
           ],
         },
       ],
@@ -4872,10 +4872,10 @@ export const conflictDeIntereseRo: SubServicePageData = {
       h2: "Ce analizez imediat în dosar",
       bullets: [
         "Actul concret îndeplinit în exercitarea atribuțiilor de serviciu.",
-        "Existența unui folos patrimonial pentru tine, pentru rude sau pentru persoane cu care ai avut raporturi de afaceri.",
-        "Gradul de rudenie și perioada raporturilor comerciale invocate.",
+        "Existența unui folos patrimonial pentru tine, pentru soț sau soție, pentru o rudă ori un afin până la gradul II inclusiv.",
+        "Gradul de rudenie sau de afinitate invocat în acuzație.",
         "Dacă situația se încadrează în excepțiile prevăzute expres de lege.",
-        "Relația dintre procedura administrativă de integritate și dosarul penal.",
+        "Separat de dosarul penal, dacă există o problemă administrativă de integritate și în ce termen poate fi contestată.",
       ],
     },
     {
