@@ -4527,7 +4527,8 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "documents regarding the phone or other seized devices;",
         "any document relating to the next hearing.",
       ],
-      calloutAfterBullets: "Don't have all the documents? Call anyway.",
+      calloutAfterBullets: "Don't have all the documents?",
+      calloutAfterBulletsCta: "Call anyway.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send documents on WhatsApp",
     },
@@ -4597,7 +4598,11 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "what other evidence supports or contradicts the charge.",
       ],
       paragraphsAfterBullets: [
-        "There is no standard strategy for all situations.",
+        [
+          { text: "There is no standard strategy for all situations. If the quantity found is small and the investigation considers personal use, the analysis differs, as explained on the page about " },
+          { text: "drug possession for personal use", to: "/en/services/drug-possession-personal-use" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -4618,7 +4623,13 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         "It must be established whether the recipient actually knew the contents and what evidence exists in this regard.",
-        "If you have been summoned to collect a parcel or after receiving it, discuss with a lawyer before making a statement.",
+        [
+          { text: "If you have been summoned to collect a parcel or after receiving it, discuss with a lawyer before making a statement. See what " },
+          { text: "assistance during questioning", to: "/en/services/police-prosecutor-questioning" },
+          { text: " involves and what happens during a " },
+          { text: "home search", to: "/en/services/home-search" },
+          { text: "." },
+        ],
       ],
       cta: "☎ Call now - 031 632 01 83",
       ctaIcon: false,
@@ -4656,7 +4667,11 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "photos and files.",
       ],
       paragraphsAfterBullets: [
-        "In defence it is not enough to read isolated fragments. The complete chronology and the real link between each piece of evidence and the alleged act must be verified.",
+        [
+          { text: "In defence it is not enough to read isolated fragments. The complete chronology, the real link between each piece of evidence and the alleged act, and the lawfulness of how data was extracted during a " },
+          { text: "computer search", to: "/en/services/computer-search" },
+          { text: " must all be verified." },
+        ],
       ],
     },
     {
@@ -4713,7 +4728,7 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
   reviewAuthor: "Robert Boloaja",
   reviewText:
     "Complicated criminal case with serious accusations. Mr. Bogdan Lamatic was exceptional: extremely professional, very good strategy, calm and maximally prepared. He quickly identified the weak points of the case and handled everything with determination. Available at any time, explains everything clearly and realistically, without false promises. The result was far beyond what I hoped for.",
-  reviewMeta: "Google review",
+  reviewMeta: "3 reviews",
   reviewTimestamp: "2 months ago",
   faqTitle: "Frequently asked questions about international drug trafficking",
   faq: [

@@ -5711,7 +5711,8 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "actele privind telefonul sau alte dispozitive ridicate;",
         "orice document referitor la următoarea audiere.",
       ],
-      calloutAfterBullets: "Nu ai toate documentele? Sună oricum.",
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
     },
@@ -5781,7 +5782,11 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "ce alte probe confirmă sau contrazic acuzația.",
       ],
       paragraphsAfterBullets: [
-        "Nu există o strategie standard pentru toate situațiile.",
+        [
+          { text: "Nu există o strategie standard pentru toate situațiile. Dacă cantitatea descoperită este mică și ancheta discută varianta consumului personal, situația se analizează diferit, potrivit celor explicate pe pagina privind " },
+          { text: "deținerea de droguri pentru consum propriu", to: "/servicii/detinere-droguri-consum-propriu" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -5802,7 +5807,13 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
       ],
       paragraphsAfterBullets: [
         "Trebuie stabilit dacă destinatarul cunoștea efectiv conținutul și ce probe există în acest sens.",
-        "Dacă ai fost chemat pentru ridicarea unui colet sau după primirea acestuia, discută cu avocatul înainte de declarație.",
+        [
+          { text: "Dacă ai fost chemat pentru ridicarea unui colet sau după primirea acestuia, discută cu avocatul înainte de declarație. Vezi ce presupune " },
+          { text: "asistența la audiere", to: "/servicii/audiere-politie-parchet" },
+          { text: " și ce se întâmplă în cazul unei " },
+          { text: "percheziții la domiciliu", to: "/servicii/perchezitie-domiciliara" },
+          { text: "." },
+        ],
       ],
       cta: "☎ Sună-mă acum - 031 632 01 83",
       ctaIcon: false,
@@ -5840,7 +5851,11 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "fotografii și fișiere.",
       ],
       paragraphsAfterBullets: [
-        "În apărare nu este suficient să fie citite fragmente izolate. Trebuie verificată cronologia completă și legătura reală dintre fiecare probă și fapta imputată.",
+        [
+          { text: "În apărare nu este suficient să fie citite fragmente izolate. Trebuie verificată cronologia completă, legătura reală dintre fiecare probă și fapta imputată, precum și legalitatea modului în care au fost extrase datele în cadrul unei " },
+          { text: "percheziții informatice", to: "/servicii/perchezitie-informatica" },
+          { text: "." },
+        ],
       ],
     },
     {
@@ -5897,7 +5912,7 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
   reviewAuthor: "Robert Boloaja",
   reviewText:
     "Dosar penal complicat, cu acuzații serioase. Domnul avocat Bogdan Lamatic a fost excepțional: extrem de profesionist, strategie foarte bună, calm și pregătit maxim. A identificat rapid punctele slabe ale dosarului și a gestionat totul cu fermitate. Disponibil oricând, explică totul clar și realist, fără promisiuni false. Rezultatul a fost mult peste ce speram.",
-  reviewMeta: "recenzie Google",
+  reviewMeta: "3 recenzii",
   reviewTimestamp: "acum 2 luni",
   faqTitle: "Întrebări frecvente despre traficul internațional de droguri",
   faq: [
