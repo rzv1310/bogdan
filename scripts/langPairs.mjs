@@ -22,7 +22,11 @@ export const RO_TO_EN = {
     "/en/services/corruption-and-public-office-offenses",
   "/servicii/investigatii-privind-activele-cripto": "/en/services/crypto-asset-investigations",
   "/servicii/cauze-penale-privind-droguri": "/en/services/drug-offenses",
+  "/servicii/detinere-droguri-consum-propriu": "/en/services/drug-possession-personal-use",
+  "/servicii/grup-infractional-organizat": "/en/services/organized-crime-group",
+  "/servicii/trafic-international-de-droguri": "/en/services/international-drug-trafficking",
   "/servicii/spalare-de-bani-si-ascundere-de-bunuri": "/en/services/money-laundering-and-asset-concealment",
+
   "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
   "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",

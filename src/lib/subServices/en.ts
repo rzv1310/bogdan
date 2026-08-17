@@ -3985,3 +3985,583 @@ export const conflictOfInterestEn: SubServicePageData = {
   contactText: CONTACT,
   parent: PARENT_COR_EN,
 };
+
+/* ============================================================
+   Sub-services - Drug offenses pillar page
+   ============================================================ */
+
+const L143_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/23629";
+const ICCJ25_EN = "https://legislatie.just.ro/Public/DetaliiDocumentAfis/293958";
+const OUG78_EN = "https://legislatie.just.ro/Public/DetaliiDocument/305273";
+
+const PARENT_DO_EN = {
+  to: "/en/services/drug-offenses",
+  label: "drug offense cases",
+  breadcrumbLabel: "Drug offenses",
+};
+
+export const drugPossessionPersonalUseEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/drug-possession-personal-use",
+  altPath: "/servicii/detinere-droguri-consum-propriu",
+  roPath: "/servicii/detinere-droguri-consum-propriu",
+  title: "Drug Possession for Personal Use Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Drug possession for personal use lawyer in Bucharest",
+  description:
+    "Were you found with drugs for personal use or summoned in a criminal case? I quickly analyse the charge, the evidence and the trafficking risk.",
+  keywords:
+    "drug possession personal use lawyer, drug offenses lawyer bucharest, personal use vs trafficking, criminal lawyer drugs",
+  breadcrumbLabel: "Drug possession for personal use",
+  serviceName: "Drug possession for personal use lawyer in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Drugs found on you, in your car or in your home?",
+    "Have you received a summons or are you about to be questioned?",
+    "The difference between personal use and trafficking can drastically change the legal situation.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist people investigated for drug possession for personal use, in cases handled by the Police, Prosecutor's Office or DIICOT.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What situation are you in now?",
+      paragraphs: ["Choose the scenario that matches your case."],
+      subsections: [
+        {
+          h3: "Drugs were found on you, in your car or at your home",
+          paragraphs: [
+            "It must be quickly established what substance was seized, the quantity, where it was found and what other evidence exists in the file.",
+            "In a charge of drug possession for personal use, the analysis must not be done by quantity alone. The full context of the case and what can be proven by evidence matter.",
+          ],
+        },
+        {
+          h3: "You received a summons or are about to be questioned",
+          paragraphs: [
+            "Before giving a statement, you must know exactly in what capacity you are summoned, what offense is being investigated and what information is already in the file.",
+            "Do not try to explain the situation through an improvised statement before you understand the charge and the evidence.",
+          ],
+        },
+        {
+          h3: "The prosecutor believes the drugs were not just for personal use",
+          paragraphs: [
+            [
+              { text: "The difference between possession for personal use and " },
+              { text: "drug trafficking", to: "/en/services/drug-offenses" },
+              { text: " can radically change the legal situation." },
+            ],
+            "If quantity, packaging, conversations, money transfers or other distribution clues are invoked, each element must be analysed separately.",
+          ],
+        },
+        {
+          h3: "A close person is being investigated",
+          paragraphs: [
+            "Family can contact me even if they do not have all the file documents. Tell me where the person is, what happened and what documents you currently have.",
+          ],
+          cta: "Call now - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "What I immediately analyse in a personal-use drug possession case",
+      paragraphs: [
+        "I first check whether the evidence actually supports the charge retained by the prosecution.",
+      ],
+      bullets: [
+        "the identified substance and the finding or expert report;",
+        "the seized quantity;",
+        "the place and circumstances where it was found;",
+        "how it was stored or packaged;",
+        "the existence or absence of evidence concerning distribution;",
+        "phone conversations and their full context;",
+        "any money transfers;",
+        "statements of the other persons in the file;",
+        "search and seizure records;",
+        "the legality of how evidence was obtained;",
+        "whether evidence supports the exclusive purpose of personal use;",
+        "whether the charge also includes other offenses.",
+      ],
+      paragraphsAfterBullets: [
+        "There is no fixed quantity threshold in the law that automatically turns personal-use possession into trafficking. The charge is determined by the overall evidence and the purpose of possession. The High Court emphasised in 2025 the legislator's choice not to set such a threshold.",
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "What you should send me for the first assessment",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the summons;",
+        "the search report;",
+        "the seizure report for the substances;",
+        "orders or documents received from the prosecution;",
+        "the substance report, if communicated to you;",
+        "any document regarding seized phones or other devices;",
+        "information about the next hearing or deadline.",
+      ],
+      paragraphsAfterBullets: [
+        "For the first discussion, it is enough to tell me what happened and what you know at this stage.",
+      ],
+      calloutAfterBullets: "Don't have all documents?",
+      calloutAfterBulletsClassName: "font-semibold bg-white",
+      calloutAfterBulletsCta: "Call anyway",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me documents on WhatsApp",
+    },
+    {
+      h2: "What does drug possession for personal use mean?",
+      paragraphs: [
+        "Art. 4 of Law no. 143/2000 punishes the cultivation, production, manufacture, experimentation, extraction, preparation, transformation, purchase or possession of drugs for personal use, without right.",
+        "In the current consolidated form of the law, the offense under Art. 4 is punishable by imprisonment from 2 to 5 years.",
+        "The important element is the purpose for which the substance was bought or held. The same material fact - for example possession - may require a completely different analysis if the investigative authorities claim the drugs were intended for circulation or distribution rather than exclusively for personal use.",
+      ],
+    },
+    {
+      h2: "What is the difference between possession for personal use and drug trafficking?",
+      paragraphs: [
+        "The difference is not determined solely by the number of grams. To see whether the evidence indicates personal use or trafficking, all circumstances must be analysed together.",
+      ],
+      subsections: [
+        {
+          h3: "Quantity matters, but does not alone decide the charge",
+          paragraphs: [
+            "A larger quantity may be used by the prosecution as a clue, but the law does not set a gram threshold from which possession automatically becomes trafficking.",
+          ],
+        },
+        {
+          h3: "Packaging can become relevant",
+          paragraphs: [
+            "Several separate packages, objects that the prosecution claims were used for portioning or similar circumstances can be analysed together with the other evidence. These elements must not be assessed in isolation.",
+          ],
+        },
+        {
+          h3: "Phone and conversations can change the interpretation of the file",
+          paragraphs: [
+            "In many cases, the prosecution uses conversations, contacts, localisations, photos or other computer data to support the existence of distribution operations. Messages must be analysed in context, not only through selected fragments.",
+          ],
+        },
+        {
+          h3: "Money flows can be analysed as evidence",
+          paragraphs: [
+            "Bank transfers or other payments may be invoked in support of the charge. However, it must be established what each transaction actually represents and whether there is proven connection to the drugs.",
+          ],
+        },
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "See also the main page on " },
+          { text: "drug offense cases", to: "/en/services/drug-offenses" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Can you be charged with trafficking if the drugs were for you?",
+      paragraphs: [
+        "Yes, such a charge can arise if the investigative authorities interpret the evidence as indicating distribution or other circulation operations. But the existence of the charge does not mean the charge is automatically correct.",
+        "Art. 2 and Art. 4 of Law no. 143/2000 regulate different situations, and the concrete purpose of the operation must be established through evidence.",
+      ],
+      bullets: [
+        "what evidence indicates the alleged distribution;",
+        "whether actual buyers or recipients are identified;",
+        "whether transactions are proven;",
+        "the context of conversations;",
+        "the ratio between quantity and the concrete situation;",
+        "the explanation for other seized objects;",
+        "whether there are arguments for another legal classification.",
+      ],
+    },
+    {
+      h2: "What happens to the seized phone?",
+      paragraphs: [
+        "In drug cases, the phone can become one of the main sources of evidence. The following may be analysed, under the applicable procedural conditions: conversations, photos and files, contacts, account data, locations, messaging apps and other information relevant to the charge.",
+        "I verify both the content used by the prosecution and the manner in which the data were obtained and interpreted. Do not delete or alter data that you know may be relevant to a criminal procedure.",
+      ],
+    },
+    {
+      h2: "What happens after the file is opened?",
+      paragraphs: [
+        "The procedure differs from case to case. It may include: analysis of seized substances, questioning of the investigated person, analysis of phones and other evidence, administration of further evidence, determination of the legal classification, a prosecutor's solution or, if indictment is ordered, continuation of the case in court.",
+        "In defence, I pursue both the charge itself and the legality and strength of the evidence on which it is based. No solution can be guaranteed before the file is analysed.",
+      ],
+    },
+    {
+      h2: "If several people are investigated together",
+      paragraphs: [
+        [
+          { text: "The fact that several people are investigated together does not automatically mean an " },
+          { text: "organized crime group", to: "/en/services/organized-crime-group" },
+          { text: " exists. Such a charge has distinct conditions and must be proven separately." },
+        ],
+      ],
+    },
+    {
+      h2: "How I build the defence in a personal-use drug possession case",
+      paragraphs: ["The strategy may include, depending on the file:"],
+      bullets: [
+        "distinguishing personal use from the trafficking charge;",
+        "checking the legality of the search and seizure of evidence;",
+        "analysing the substance report;",
+        "verifying computer data;",
+        "challenging interpretations not supported by the overall evidence;",
+        "administering favourable evidence;",
+        "formulating requests and defences appropriate to the procedural stage;",
+        "representing you before the prosecution and in court.",
+      ],
+      paragraphsAfterBullets: [
+        "I personally handle the case strategy and the essential moments of the mandate.",
+        [
+          { text: "See also the " },
+          { text: "main drug offense page", to: "/en/services/drug-offenses" },
+          { text: " or the " },
+          { text: "international drug trafficking page", to: "/en/services/international-drug-trafficking" },
+          { text: "." },
+        ],
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Is there a maximum quantity automatically considered personal use?",
+      a: "No. The law does not set a fixed quantity threshold that automatically separates personal use from trafficking. Quantity is analysed together with the other evidence.",
+    },
+    {
+      q: "If the drugs were only for me, is there still a criminal case?",
+      a: "Art. 4 of Law no. 143/2000 criminalises, among others, the purchase and possession without right of drugs for personal use. Even in this situation a criminal case is possible, although the charge and penalty are different from trafficking.",
+    },
+    {
+      q: "Does a small quantity guarantee a personal-use classification?",
+      a: "No. Neither a small nor a large quantity alone determines the charge. The overall evidence must be analysed.",
+    },
+    {
+      q: "Can the charge be changed from trafficking to personal-use possession?",
+      a: "The legal classification must correspond to the facts and evidence actually proven. If the evidence invoked for trafficking does not support that charge, the correct classification in the concrete situation must be analysed.",
+    },
+    {
+      q: "What do I do if I received a summons?",
+      a: "Check in what capacity you are summoned and discuss with a lawyer before the hearing, especially if there is a risk that the statement could influence the legal classification.",
+    },
+    {
+      q: "Can family contact the lawyer?",
+      a: "Yes. A family member can contact me and send the available documents, even if partial.",
+    },
+  ],
+  faqTitle: "Frequently asked questions about drug possession for personal use",
+  resources: [
+    { text: "Law no. 143/2000 on preventing and combating drug trafficking and illicit drug use.", href: L143_EN, linkLabel: "Legislation" },
+    { text: "High Court Decision no. 25/2025 on the absence of a fixed quantity threshold.", href: ICCJ25_EN, linkLabel: "Legislation" },
+    { text: "Emergency Ordinance no. 78/2016 on the organisation and jurisdiction of DIICOT.", href: OUG78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send me documents on WhatsApp",
+  reviewAfterSection: 2,
+  reviewAuthor: "Lidia Caescu",
+  parent: PARENT_DO_EN,
+};
+
+export const organizedCrimeGroupEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/organized-crime-group",
+  altPath: "/servicii/grup-infractional-organizat",
+  roPath: "/servicii/grup-infractional-organizat",
+  title: "Organized Crime Group Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Organized crime group lawyer in Bucharest",
+  description:
+    "Are you investigated for membership in an organized crime group? I analyse the structure, the evidence and the defence in complex cases handled by DIICOT or the Prosecutor's Office.",
+  keywords:
+    "organized crime group lawyer, diicot lawyer bucharest, drug crime association, criminal association lawyer",
+  breadcrumbLabel: "Organized crime group",
+  serviceName: "Organized crime group lawyer in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you being investigated for membership in an organized crime group?",
+    "The charge of organized crime has special conditions and increased penalties.",
+    "Every piece of evidence must be checked individually and in the context of the file.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people investigated for membership in an organized crime group, especially in cases involving drugs, corruption, fraud or money laundering.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What situation are you in now?",
+      paragraphs: ["Identify the stage of your file."],
+      subsections: [
+        {
+          h3: "You are suspected of membership in an organized crime group",
+          paragraphs: [
+            "Before giving statements, you must understand exactly which acts or facts are framed under this legal status and whether there is evidence supporting it.",
+          ],
+        },
+        {
+          h3: "The file includes wiretaps, surveillance or phone data",
+          paragraphs: [
+            "Evidence in organized crime cases is often voluminous. Each recording, conversation or location must be verified against the alleged role assigned to the client.",
+          ],
+        },
+        {
+          h3: "Several people are investigated together",
+          paragraphs: [
+            "Co-investigation does not automatically confirm the status of member of a structured group. Each person answers for their own acts and not for those attributed to others, unless there is evidence of participation.",
+          ],
+        },
+        {
+          h3: "The prosecutor proposes indictment for organized crime",
+          paragraphs: [
+            "At this stage, contesting the existence of the group structure, the client's role and the personal contribution is essential. A strong defence is built before the court is seized.",
+          ],
+          cta: "Call now - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "What I immediately analyse in an organized crime group case",
+      paragraphs: [
+        "I verify whether the conditions for an organized crime group are met and what evidence supports the membership status.",
+      ],
+      bullets: [
+        "the alleged group structure and its stability over time;",
+        "the existence of a common objective or programme;",
+        "the distribution of roles and hierarchy, if proven;",
+        "evidence of the client's actual participation;",
+        "legality of wiretaps and searches;",
+        "consistency of the other persons' statements;",
+        "existence of alternative or exculpatory evidence;",
+        "differences between the charge and the evidence on file.",
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Documents to send me for the first assessment",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "orders starting the criminal investigation;",
+        "detention or arrest orders;",
+        "search and seizure reports;",
+        "wiretap summaries, if communicated;",
+        "the indictment or arrest proposal;",
+        "any document showing commercial or personal relationships between the persons in the file;",
+        "information about upcoming deadlines.",
+      ],
+      paragraphsAfterBullets: ["Don't have all documents? Call anyway. Tell me what you know about the case and who else is involved."],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me documents on WhatsApp",
+    },
+    {
+      h2: "What does organized crime group mean?",
+      paragraphs: [
+        "Under the Criminal Code, an organized crime group is a structure consisting of three or more persons, existing for a period of time and acting in coordination to commit one or more serious offenses.",
+        "For this offense to exist, a certain structure and continuity are required, not just an occasional association to commit a single act.",
+      ],
+    },
+    {
+      h2: "Difference between organized crime group and sporadic association",
+      paragraphs: [
+        "The law punishes a stable structure with distributed roles, not any cooperation for an isolated offense. A one-time agreement without repetitive structure or division of tasks may not meet the elements of the organized crime group offense.",
+      ],
+    },
+    {
+      h2: "How I build the defence in an organized crime group case",
+      paragraphs: ["The strategy depends on the concrete situation, but may include:"],
+      bullets: [
+        "contesting the existence of the group structure;",
+        "separating the client's role from the general accusations;",
+        "analysing the legality of the evidence;",
+        "verifying the correlation between wiretaps and the alleged role;",
+        "administering favourable evidence and witnesses;",
+        "formulating defences before the prosecution and in court.",
+      ],
+      paragraphsAfterBullets: [
+        "I personally handle the case strategy and the essential moments of the mandate.",
+        [
+          { text: "See also the " },
+          { text: "main drug offense page", to: "/en/services/drug-offenses" },
+          { text: " or the " },
+          { text: "organized crime group page", to: "/en/services/organized-crime-group" },
+          { text: "." },
+        ],
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "If I spoke to someone under investigation, does that mean I am part of the group?",
+      a: "No. A simple conversation or personal relationship is not enough for the status of member of an organized crime group. There must be evidence that you accepted to participate in a structure with an criminal objective.",
+    },
+    {
+      q: "Can I be convicted just because I am related to a suspect?",
+      a: "No. Membership is proven through concrete acts, not family or friendship ties.",
+    },
+    {
+      q: "What does lack of organized structure mean?",
+      a: "If there is no structure with distributed roles, continuity and common objective, the charge of organized crime group can be contested. Each file is analysed based on the evidence.",
+    },
+    {
+      q: "Can family contact the lawyer?",
+      a: "Yes. A family member can contact me and send the available documents, even if partial.",
+    },
+  ],
+  faqTitle: "Frequently asked questions about organized crime groups",
+  resources: [
+    { text: "Criminal Code - Art. 367 on the legal regime of the organized crime group.", href: "https://legislatie.just.ro/Public/DetaliiDocument/304554", linkLabel: "Legislation" },
+    { text: "Emergency Ordinance no. 78/2016 on the organisation and jurisdiction of DIICOT.", href: OUG78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send me documents on WhatsApp",
+  parent: PARENT_DO_EN,
+};
+
+export const internationalDrugTraffickingEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/international-drug-trafficking",
+  altPath: "/servicii/trafic-international-de-droguri",
+  roPath: "/servicii/trafic-international-de-droguri",
+  title: "International Drug Trafficking Lawyer Bucharest | Bogdan Lamatic",
+  h1: "International drug trafficking lawyer in Bucharest",
+  description:
+    "Investigated for international drug trafficking, seizure at the border or parcel transport? I analyse the evidence, legality and defence in cross-border cases.",
+  keywords:
+    "international drug trafficking lawyer, border drug lawyer, parcel drug lawyer, diicot drug lawyer",
+  breadcrumbLabel: "International drug trafficking",
+  serviceName: "International drug trafficking lawyer in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Drugs discovered at the border, airport or in international traffic?",
+    "Cross-border drug trafficking carries severe penalties and complex procedures.",
+    "Every stage of transport and every piece of evidence must be verified in detail.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people investigated for international drug trafficking, in cases involving wiretaps, transports and international judicial cooperation.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What situation are you in now?",
+      paragraphs: ["Choose the scenario closest to your situation."],
+      subsections: [
+        {
+          h3: "Drugs discovered at the border or at the airport",
+          paragraphs: [
+            "The place of discovery, quantity, packaging, accompanying documents and any data about sender or recipient are all relevant.",
+          ],
+        },
+        {
+          h3: "You are accused of transport or courier activity",
+          paragraphs: [
+            "Courier activity can be qualified differently depending on what you knew or should have known about the content, destination and beneficiaries. Evidence of knowledge is essential.",
+          ],
+        },
+        {
+          h3: "The parcel was sent to or from Romania",
+          paragraphs: [
+            "Cross-border cases often involve international judicial cooperation procedures, translation of evidence and differences in legislation. The jurisdiction and legality of each piece of evidence must be verified.",
+          ],
+        },
+        {
+          h3: "A close person is detained abroad",
+          paragraphs: [
+            "Family can contact a lawyer to understand the procedure and options. Tell me the country, the situation and the available documents.",
+          ],
+          cta: "Call now - 031 632 01 83",
+          ctaIcon: false,
+        },
+      ],
+    },
+    {
+      h2: "What I immediately analyse in an international drug trafficking case",
+      paragraphs: [
+        "I verify whether the evidence is sufficient, lawful and correctly interpreted in a cross-border context.",
+      ],
+      bullets: [
+        "legality of the search and seizure of evidence;",
+        "quantity and type of substance;",
+        "packaging and concealment method;",
+        "transport and invoicing documents;",
+        "data on sender, recipient and intermediaries;",
+        "wiretaps, conversations and locations;",
+        "international judicial cooperation and jurisdiction;",
+        "translation and authenticity of foreign evidence;",
+        "evidence of the client's knowledge and intent.",
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Documents to send me for the first assessment",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "detention or arrest orders;",
+        "search and seizure reports;",
+        "expert report on the substance;",
+        "transport and delivery documents;",
+        "wiretaps or communicated data;",
+        "extradition requests or judicial cooperation documents;",
+        "information about upcoming deadlines.",
+      ],
+      paragraphsAfterBullets: ["Don't have all documents? Call anyway. The first discussion is enough to understand the situation."],
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send me documents on WhatsApp",
+    },
+    {
+      h2: "What does international drug trafficking mean?",
+      paragraphs: [
+        "International drug trafficking involves import, export, transport or transfer of drugs across borders. The charge can target anyone participating in these operations, from organisers to couriers.",
+        "Law no. 143/2000 punishes drug trafficking with imprisonment from 10 to 20 years, and in the aggravated form (cross-border) the limits can increase. The exact penalty depends on the circumstances.",
+      ],
+    },
+    {
+      h2: "How to defend an international drug trafficking case",
+      paragraphs: ["The defence can pursue several directions, depending on the file:"],
+      bullets: [
+        "verifying the legality of foreign evidence;",
+        "contesting knowledge and intent;",
+        "proving a secondary or involuntary role;",
+        "analysing the quantity and discovery circumstances;",
+        "verifying international judicial cooperation;",
+        "administering favourable evidence and court defences.",
+      ],
+      paragraphsAfterBullets: [
+        "I personally handle the case strategy and the essential moments of the mandate.",
+      ],
+      cta: "Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What happens if I did not know what the parcel contained?",
+      a: "Knowledge and intent are essential for the charge. If the evidence does not show you knew about the drugs, the charge can be contested. Every element in the file must be analysed separately.",
+    },
+    {
+      q: "Can I be extradited if I am abroad?",
+      a: "Extradition depends on international treaties, nationality and the law of the state concerned. Effective defence starts as early as possible in the country where you are located.",
+    },
+    {
+      q: "How severe are penalties for international drug trafficking?",
+      a: "Penalties range from 10 to 20 years, with possible increases depending on quantity, role and circumstances. The exact limit is set by the court.",
+    },
+    {
+      q: "Can family contact the lawyer?",
+      a: "Yes. A family member can contact me and send the available information, including from abroad.",
+    },
+  ],
+  faqTitle: "Frequently asked questions about international drug trafficking",
+  resources: [
+    { text: "Law no. 143/2000 on preventing and combating drug trafficking and illicit drug use.", href: L143_EN, linkLabel: "Legislation" },
+    { text: "High Court Decision no. 25/2025 on the absence of a fixed quantity threshold.", href: ICCJ25_EN, linkLabel: "Legislation" },
+    { text: "Emergency Ordinance no. 78/2016 on the organisation and jurisdiction of DIICOT.", href: OUG78_EN, linkLabel: "Legislation" },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send me documents on WhatsApp",
+  parent: PARENT_DO_EN,
+};

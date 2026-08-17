@@ -112,7 +112,14 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/neglijenta-in-serviciu",
     "/servicii/conflict-de-interese",
   ],
+  "/servicii/cauze-penale-privind-droguri": [
+    "/servicii/avocat-diicot",
+    "/servicii/detinere-droguri-consum-propriu",
+    "/servicii/grup-infractional-organizat",
+    "/servicii/trafic-international-de-droguri",
+  ],
 };
+
 
 
 function subServiceTargets(roPath: string): string[] {
@@ -147,7 +154,11 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/abuz-in-serviciu": "Abuz în serviciu",
   "/servicii/neglijenta-in-serviciu": "Neglijență în serviciu",
   "/servicii/conflict-de-interese": "Conflict de interese",
+  "/servicii/detinere-droguri-consum-propriu": "Deținere droguri pentru consum propriu",
+  "/servicii/grup-infractional-organizat": "Grup infracțional organizat",
+  "/servicii/trafic-international-de-droguri": "Trafic internațional de droguri",
   "/calculator-despagubiri": "Calculator despăgubiri",
+
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
 };
@@ -176,7 +187,12 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/negligence-in-office": "Negligence in office",
   "/en/services/conflict-of-interest": "Conflict of interest",
 
+  "/en/services/drug-possession-personal-use": "Drug possession for personal use",
+  "/en/services/organized-crime-group": "Organized crime group",
+  "/en/services/international-drug-trafficking": "International drug trafficking",
+
   "/en/compensation-calculator": "Compensation calculator",
+
   "/en/about": "About me",
   "/en/contact": "Contact",
 };

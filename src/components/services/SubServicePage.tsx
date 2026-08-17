@@ -110,6 +110,8 @@ export interface SubServicePageData {
   bio: string[];
   sections: SubServiceSection[];
   faq: SubServiceFaqItem[];
+  /** Optional custom FAQ card title. Defaults to "Întrebări frecvente" / "Frequently asked questions". */
+  faqTitle?: string;
   resources: SubServiceResource[];
   contactText: string;
   /** Replaces the email button in the final contact card with a WhatsApp CTA. */
@@ -119,10 +121,13 @@ export interface SubServicePageData {
 
   /** Inserts the Google review card after the section at this index. */
   reviewAfterSection?: number;
+  /** Optional author name for the Google review card. */
+  reviewAuthor?: string;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 
 }
+
 
 const SITE = "https://avocatpenalbucuresti.ro";
 
@@ -524,16 +529,20 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             )}
           </CardContent>
         </Card>
-        {data.reviewAfterSection === sectionIndex && <GoogleReviewCard lang={data.lang} />}
+        {data.reviewAfterSection === sectionIndex && (
+          <GoogleReviewCard lang={data.lang} author={data.reviewAuthor} />
+        )}
+
         </div>
       ))}
 
 
       <ServiceFaq
-        title={isEn ? "Frequently asked questions" : "Întrebări frecvente"}
+        title={data.faqTitle ?? (isEn ? "Frequently asked questions" : "Întrebări frecvente")}
         items={data.faq.map((item) => ({ q: item.q, a: item.a }))}
         ordered
       />
+
 
       <Card className="mt-8 border-accent">
         <CardHeader>

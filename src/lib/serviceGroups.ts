@@ -163,14 +163,15 @@ export const roServiceGroups: ServiceGroup[] = [
         title: "Droguri și DIICOT",
         description: "Asistență în dosare privind traficul, deținerea și alte infracțiuni investigate de DIICOT.",
         subServices: [
-          { label: "Trafic de droguri" },
-          { label: "Deținere pentru consum propriu" },
-          { label: "Asistență DIICOT" },
-          { label: "Grup infracțional organizat" },
+          { label: "Trafic de droguri", to: "/servicii/cauze-penale-privind-droguri" },
+          { label: "Deținere pentru consum propriu", to: "/servicii/detinere-droguri-consum-propriu" },
+          { label: "Asistență DIICOT", to: "/servicii/avocat-diicot" },
+          { label: "Grup infracțional organizat", to: "/servicii/grup-infractional-organizat" },
         ],
         to: "/servicii/cauze-penale-privind-droguri",
         cta: "Vezi pagina privind drogurile și DIICOT",
       },
+
       {
         title: "Infracțiuni rutiere",
         description: "Apărare în cauze de alcool sau droguri la volan, părăsirea locului accidentului, refuz probe și accidente cu victime.",
@@ -393,14 +394,15 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Drug offenses and DIICOT",
         description: "Assistance in cases involving drug trafficking, possession and other offenses investigated by DIICOT.",
         subServices: [
-          { label: "Drug trafficking" },
-          { label: "Possession for personal use" },
-          { label: "DIICOT assistance" },
-          { label: "Organized criminal group" },
+          { label: "Drug trafficking", to: "/en/services/drug-offenses" },
+          { label: "Possession for personal use", to: "/en/services/drug-possession-personal-use" },
+          { label: "DIICOT assistance", to: "/en/services/diicot-lawyer" },
+          { label: "Organized criminal group", to: "/en/services/organized-crime-group" },
         ],
         to: "/en/services/drug-offenses",
         cta: "See the drug offense page",
       },
+
       {
         title: "Road traffic offenses",
         description: "Defense in drunk driving, drug driving, hit-and-run, refusal of tests and accidents with victims.",

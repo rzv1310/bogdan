@@ -60,7 +60,14 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Investigații privind activele cripto](/servicii/investigatii-privind-activele-cripto): Criptomonede, blockchain, fraude digitale.
 - [Crypto Asset Investigations](/en/services/crypto-asset-investigations): Crypto and blockchain-related investigations.
 - [Cauze penale privind droguri](/servicii/cauze-penale-privind-droguri): Deținere, trafic, conducere sub influență.
+- [Deținere droguri pentru consum propriu](/servicii/detinere-droguri-consum-propriu): Apărare în dosare de posesie pentru consum propriu și risc de trafic.
+- [Grup infracțional organizat](/servicii/grup-infractional-organizat): Apărare în dosare de asociere în grup infracțional organizat.
+- [Trafic internațional de droguri](/servicii/trafic-international-de-droguri): Apărare în dosare transfrontaliere de droguri.
 - [Drug Offenses](/en/services/drug-offenses): Drug possession, trafficking, DUI.
+- [Drug Possession for Personal Use](/en/services/drug-possession-personal-use): Defense in personal-use possession cases and trafficking risk.
+- [Organized Crime Group](/en/services/organized-crime-group): Defense in organized crime group cases.
+- [International Drug Trafficking](/en/services/international-drug-trafficking): Defense in cross-border drug trafficking cases.
+
 - [Spălare de bani și ascundere de bunuri](/servicii/spalare-de-bani-si-ascundere-de-bunuri): Spălarea produselor infracționale.
 - [Money Laundering and Asset Concealment](/en/services/money-laundering-and-asset-concealment): Money laundering and asset concealment defense.
 - [Neglijență profesională și malpraxis](/servicii/neglijenta-profesionala-si-malpraxis): Malpraxis medical, juridic, tehnic.

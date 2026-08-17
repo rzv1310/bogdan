@@ -19,6 +19,16 @@ const CoruptieSiFunctiePublica = lazyRoute(
 );
 const InvestigatiiCripto = lazyRoute(() => import("./pages/services/investigatii-privind-activele-cripto"));
 const CauzeDroguri = lazyRoute(() => import("./pages/services/cauze-penale-privind-droguri"));
+const DetinereDroguriConsumPropriu = lazyRoute(
+  () => import("./pages/services/detinere-droguri-consum-propriu"),
+);
+const GrupInfractionalOrganizat = lazyRoute(
+  () => import("./pages/services/grup-infractional-organizat"),
+);
+const TraficInternationalDeDroguri = lazyRoute(
+  () => import("./pages/services/trafic-international-de-droguri"),
+);
+
 const SpalareDeBani = lazyRoute(() => import("./pages/services/spalare-de-bani-si-ascundere-de-bunuri"));
 const Malpraxis = lazyRoute(() => import("./pages/services/neglijenta-profesionala-si-malpraxis"));
 const InfractiuniRutiere = lazyRoute(() => import("./pages/services/infractiuni-rutiere-cu-victime"));
@@ -78,7 +88,18 @@ const MoneyLaunderingEn = lazyRoute(
 const MalpracticeEn = lazyRoute(
   () => import("./pages/en/services/professional-negligence-and-malpractice"),
 );
+const DrugPossessionPersonalUseEn = lazyRoute(
+  () => import("./pages/en/services/drug-possession-personal-use"),
+);
+const OrganizedCrimeGroupEn = lazyRoute(
+  () => import("./pages/en/services/organized-crime-group"),
+);
+const InternationalDrugTraffickingEn = lazyRoute(
+  () => import("./pages/en/services/international-drug-trafficking"),
+);
 const RoadTrafficEn = lazyRoute(() => import("./pages/en/services/road-traffic-offenses"));
+
+
 const WorkplaceLiabilityEn = lazyRoute(() => import("./pages/en/services/workplace-criminal-liability"));
 const VictimRepresentationEn = lazyRoute(
   () => import("./pages/en/services/victim-representation-in-criminal-cases"),
@@ -141,6 +162,10 @@ export default function AppRoutes() {
           <Route path="/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice" element={<CoruptieSiFunctiePublica />} />
           <Route path="/servicii/investigatii-privind-activele-cripto" element={<InvestigatiiCripto />} />
           <Route path="/servicii/cauze-penale-privind-droguri" element={<CauzeDroguri />} />
+          <Route path="/servicii/detinere-droguri-consum-propriu" element={<DetinereDroguriConsumPropriu />} />
+          <Route path="/servicii/grup-infractional-organizat" element={<GrupInfractionalOrganizat />} />
+          <Route path="/servicii/trafic-international-de-droguri" element={<TraficInternationalDeDroguri />} />
+
           <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
           <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
           <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
@@ -204,6 +229,10 @@ export default function AppRoutes() {
           <Route path="/en/services/corruption-and-public-office-offenses" element={<CorruptionPublicOfficeEn />} />
           <Route path="/en/services/crypto-asset-investigations" element={<CryptoInvestigationsEn />} />
           <Route path="/en/services/drug-offenses" element={<DrugOffensesEn />} />
+          <Route path="/en/services/drug-possession-personal-use" element={<DrugPossessionPersonalUseEn />} />
+          <Route path="/en/services/organized-crime-group" element={<OrganizedCrimeGroupEn />} />
+          <Route path="/en/services/international-drug-trafficking" element={<InternationalDrugTraffickingEn />} />
+
           <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
           <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
           <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
