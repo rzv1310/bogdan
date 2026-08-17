@@ -128,12 +128,18 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/arest-preventiv": "Arest preventiv",
   "/servicii/control-judiciar": "Control judiciar",
   "/servicii/arest-la-domiciliu": "Arest la domiciliu",
+  "/servicii/evaziune-fiscala": "Evaziune fiscală",
+  "/servicii/inselaciune-frauda": "Înșelăciune și fraudă",
+  "/servicii/delapidare": "Delapidare",
+  "/servicii/fals-si-uz-de-fals": "Fals și uz de fals",
+  "/servicii/bancruta-frauduloasa": "Bancrută frauduloasă",
+  "/servicii/frauda-informatica": "Fraudă informatică",
+  "/servicii/fonduri-europene": "Fraudă cu fonduri europene",
   "/calculator-despagubiri": "Calculator despăgubiri",
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
 };
 
-const extraLabelsEn: Record<string, string> = {
   "/en/services/police-prosecutor-questioning": "Police and prosecutor questioning",
   "/en/services/home-search": "Home search",
   "/en/services/computer-search": "Computer search",
