@@ -96,7 +96,17 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/control-judiciar",
     "/servicii/arest-la-domiciliu",
   ],
+  "/servicii/criminalitate-economica": [
+    "/servicii/evaziune-fiscala",
+    "/servicii/inselaciune-frauda",
+    "/servicii/delapidare",
+    "/servicii/fals-si-uz-de-fals",
+    "/servicii/bancruta-frauduloasa",
+    "/servicii/frauda-informatica",
+    "/servicii/fonduri-europene",
+  ],
 };
+
 
 function subServiceTargets(roPath: string): string[] {
   for (const [parent, children] of Object.entries(subServiceGroups)) {
@@ -118,6 +128,13 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/arest-preventiv": "Arest preventiv",
   "/servicii/control-judiciar": "Control judiciar",
   "/servicii/arest-la-domiciliu": "Arest la domiciliu",
+  "/servicii/evaziune-fiscala": "Evaziune fiscală",
+  "/servicii/inselaciune-frauda": "Înșelăciune și fraudă",
+  "/servicii/delapidare": "Delapidare",
+  "/servicii/fals-si-uz-de-fals": "Fals și uz de fals",
+  "/servicii/bancruta-frauduloasa": "Bancrută frauduloasă",
+  "/servicii/frauda-informatica": "Fraudă informatică",
+  "/servicii/fonduri-europene": "Fraudă cu fonduri europene",
   "/calculator-despagubiri": "Calculator despăgubiri",
   "/despre-mine": "Despre mine",
   "/contact": "Contact",
@@ -133,6 +150,14 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/pre-trial-detention": "Pre-trial detention",
   "/en/services/judicial-control": "Judicial control",
   "/en/services/house-arrest": "House arrest",
+  "/en/services/tax-evasion": "Tax evasion",
+  "/en/services/fraud-and-deception": "Fraud and deception",
+  "/en/services/embezzlement": "Embezzlement",
+  "/en/services/forgery-and-use-of-forgery": "Forgery and use of forgery",
+  "/en/services/fraudulent-bankruptcy": "Fraudulent bankruptcy",
+  "/en/services/computer-fraud": "Computer fraud",
+  "/en/services/eu-funds-fraud": "EU funds fraud",
+
   "/en/compensation-calculator": "Compensation calculator",
   "/en/about": "About me",
   "/en/contact": "Contact",
