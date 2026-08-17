@@ -3092,6 +3092,7 @@ export const influencePeddlingEn: SubServicePageData = {
   resources: [
     { text: "Criminal Code - art. 291 and art. 292 on trading in and buying of influence.", href: CP, linkLabel: "Legislation" },
     { text: "Law 78/2000 on corruption offenses and assimilated acts.", href: L78_EN, linkLabel: "Legislation" },
+    { text: "Rules on confiscation and restitution in criminal matters.", href: "https://legislatie.just.ro/Public/DetaliiDocument/304554", linkLabel: "Legislation" },
   ],
   contactText: CONTACT,
   parent: PARENT_COR_EN,

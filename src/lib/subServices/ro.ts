@@ -4155,7 +4155,7 @@ export const traficDeInfluentaRo: SubServicePageData = {
       h2: "Ce este traficul de influență",
       paragraphs: [
         "Traficul de influență constă în pretinderea, primirea ori acceptarea promisiunii de bani sau alte foloase, direct sau indirect, de către o persoană care are influență ori lasă să se creadă că are influență asupra unui funcționar public, promițând că îl va determina să îndeplinească, să nu îndeplinească ori să întârzie un act de serviciu.",
-        "Fapta este prevăzută de art. 291 Cod penal. Nu are relevanță dacă influința era reală sau doar afirmată și nici dacă funcționarul a fost efectiv contactat.",
+        "Fapta este prevăzută de art. 291 Cod penal. Nu are relevanță dacă influența era reală sau doar afirmată și nici dacă funcționarul a fost efectiv contactat.",
       ],
     },
     {
@@ -4229,6 +4229,7 @@ export const traficDeInfluentaRo: SubServicePageData = {
   resources: [
     { text: "Codul penal - art. 291 și art. 292 privind traficul și cumpărarea de influență.", href: CP, linkLabel: "Legislație" },
     { text: "Legea 78/2000 privind faptele de corupție și faptele asimilate acestora.", href: L78, linkLabel: "Legislație" },
+    { text: "Reglementare privind confiscarea și restituirea în materie penală.", href: "https://legislatie.just.ro/Public/DetaliiDocument/304554", linkLabel: "Legislație" },
   ],
   contactText: CONTACT,
   parent: PARENT_COR,
