@@ -3712,10 +3712,10 @@ export const conflictOfInterestEn: SubServicePageData = {
       h2: "What I analyse immediately in the file",
       bullets: [
         "The concrete act performed in the exercise of official duties.",
-        "The existence of a patrimonial benefit for you, for relatives or for persons you had business dealings with.",
-        "The degree of kinship and the period of the commercial relations invoked.",
+        "The existence of a patrimonial benefit for you, for your spouse, for a relative or an in-law up to the second degree inclusive.",
+        "The degree of kinship or affinity invoked in the accusation.",
         "Whether the situation falls within the exceptions expressly provided by law.",
-        "The relationship between the administrative integrity procedure and the criminal file.",
+        "Separately from the criminal file, whether an administrative integrity issue exists and within what deadline it can be challenged.",
       ],
     },
     {
