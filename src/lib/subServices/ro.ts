@@ -6243,3 +6243,558 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_DO,
 };
+
+const PARENT_SB = {
+  to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri",
+  label: "spălare de bani și ascundere de bunuri",
+  breadcrumbLabel: "Spălare de bani, sechestru și confiscare",
+};
+
+export const sechestruAsiguratorRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/sechestru-asigurator",
+  altPath: "/en/services/asset-freezing-order",
+  roPath: "/servicii/sechestru-asigurator",
+  title: "Avocat sechestru asigurător București | Bogdan Lamatic",
+  h1: "Avocat sechestru asigurător în București",
+  description:
+    "Ți s-au blocat conturile sau imobilele într-un dosar penal? Contestarea sechestrului asigurător, ridicarea și restrângerea măsurii. 18+ ani experiență.",
+  keywords:
+    "avocat sechestru asigurator, contestare sechestru penal, ridicare sechestru, sechestru asigurator dosar penal",
+  breadcrumbLabel: "Sechestru asigurător",
+  serviceName: "Avocat sechestru asigurător București - Bogdan Lamatic",
+  urgency: [
+    "Ți s-au blocat conturile, mașina sau imobilele printr-o ordonanță de sechestru asigurător?",
+    "Contestația împotriva măsurii asigurătorii se face în termen scurt, de 3 zile de la comunicare sau de la punerea în executare.",
+    "Verific dacă măsura este justificată, dacă are proporție cu prejudiciul și ce bunuri pot fi scoase de sub sechestru.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist persoane fizice și societăți cărora li s-au instituit măsuri asigurătorii în dosare penale, de la blocarea conturilor până la sechestrul pe imobile și părți sociale.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Ți s-au blocat conturile bancare",
+          paragraphs: [
+            "Blocarea conturilor este cea mai rapidă formă de indisponibilizare și afectează imediat plățile curente, salariile și obligațiile fiscale.",
+            "Verific ce sume sunt vizate efectiv de ordonanță, dacă limita valorică a fost respectată și dacă în cont există sume care nu pot fi indisponibilizate.",
+          ],
+        },
+        {
+          h3: "Ai primit o ordonanță de instituire a sechestrului",
+          paragraphs: [
+            "Ordonanța trebuie să arate concret scopul măsurii, bunurile vizate și valoarea până la care se instituie sechestrul.",
+            "O motivare generală, fără legătură cu prejudiciul sau cu bunurile supuse confiscării, poate fi criticată prin contestație.",
+          ],
+        },
+        {
+          h3: "Ți s-a notat sechestrul în cartea funciară",
+          paragraphs: [
+            "Sechestrul pe imobile se înscrie în cartea funciară și blochează vânzarea sau ipotecarea, chiar dacă poți folosi în continuare imobilul.",
+            "Verific dacă imobilul este locuință de familie, dacă este coproprietate și dacă valoarea lui depășește vădit limita necesară.",
+          ],
+        },
+        {
+          h3: "Sechestrul afectează bunuri ale altei persoane sau ale firmei",
+          paragraphs: [
+            [
+              { text: "Măsura poate atinge bunuri care nu îți aparțin sau părți sociale ale unei societăți. Terțul care se consideră vătămat își poate apăra dreptul, iar în dosarele economice sechestrul apare frecvent alături de acuzații de " },
+              { text: "criminalitate economică", to: "/servicii/criminalitate-economica" },
+              { text: "." },
+            ],
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar cu sechestru asigurător",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "cine a dispus măsura: procurorul, judecătorul de cameră preliminară sau instanța;",
+        "temeiul concret al măsurii: reparația pagubei, confiscarea specială, confiscarea extinsă sau executarea amenzii;",
+        "dacă ordonanța este motivată în raport cu situația din dosar;",
+        "valoarea prejudiciului reținut și proporția dintre aceasta și bunurile indisponibilizate;",
+        "dacă bunurile aparțin suspectului, inculpatului, părții responsabile civilmente sau unui terț;",
+        "dacă au fost respectate regulile privind bunurile exceptate de la sechestru;",
+        "modul în care s-a făcut identificarea și evaluarea bunurilor;",
+        "procesul-verbal de sechestru și modul de comunicare;",
+        "dacă termenul de contestație curge de la comunicare sau de la punerea în executare;",
+        "dacă se poate cere restrângerea măsurii la o parte din bunuri;",
+        "dacă există bunuri care pot fi înlocuite cu o cauțiune sau cu alte garanții;",
+        "efectele măsurii asupra activității firmei și asupra plăților esențiale.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "ordonanța sau încheierea prin care s-a dispus sechestrul;",
+        "procesul-verbal de aplicare a sechestrului;",
+        "notificarea primită de la bancă;",
+        "extrasul de carte funciară cu notarea măsurii;",
+        "actele de proprietate pentru bunurile vizate;",
+        "documentele care arată originea sumelor sau a bunurilor;",
+        "actele societății, dacă măsura privește o firmă;",
+        "orice comunicare privind calitatea ta procesuală în dosar;",
+        "data la care ai primit efectiv documentele, pentru calculul termenului de contestație.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă ai aflat de sechestru doar din blocarea contului, mă poți contacta înainte să obții toate actele.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este sechestrul asigurător și pe ce se bazează",
+      paragraphs: [
+        "Sechestrul asigurător este o măsură asigurătorie prevăzută de art. 249-254 Cod procedură penală. Prin această măsură bunurile sunt indisponibilizate, adică nu mai pot fi vândute, grevate sau înstrăinate.",
+        "Măsurile asigurătorii se pot lua pentru:",
+      ],
+      bullets: [
+        "evitarea ascunderii, distrugerii sau înstrăinării bunurilor care pot face obiectul confiscării speciale sau al confiscării extinse;",
+        "garantarea executării pedepsei amenzii;",
+        "garantarea reparării pagubei produse prin infracțiune;",
+        "garantarea cheltuielilor judiciare.",
+      ],
+      paragraphsAfterBullets: [
+        "Sechestrul nu presupune o condamnare și nu echivalează cu o confiscare. Este o măsură provizorie, care poate fi ridicată, restrânsă sau menținută în funcție de soluția din dosar.",
+      ],
+    },
+    {
+      h2: "Cine poate dispune sechestrul asigurător",
+      paragraphs: [
+        "În cursul urmăririi penale, măsura este dispusă de procuror prin ordonanță.",
+        "În procedura de cameră preliminară măsura poate fi dispusă de judecătorul de cameră preliminară, iar în cursul judecății de instanță, din oficiu sau la cererea procurorului ori a părții civile.",
+        "În unele situații prevăzute de lege, luarea măsurilor asigurătorii este obligatorie, cum se întâmplă în cazul infracțiunilor care au produs un prejudiciu, atunci când legea specială prevede expres acest lucru.",
+      ],
+    },
+    {
+      h2: "Ce bunuri pot fi indisponibilizate",
+      paragraphs: ["Sechestrul poate viza:"],
+      bullets: [
+        "sume de bani din conturi bancare;",
+        "numerar identificat cu ocazia percheziției;",
+        "autovehicule;",
+        "imobile, terenuri și construcții;",
+        "părți sociale sau acțiuni;",
+        "bunuri mobile de valoare;",
+        "creanțe și sume datorate de terți.",
+      ],
+      paragraphsAfterBullets: [
+        "Nu pot fi sechestrate bunurile care aparțin unei unități publice, precum și bunurile exceptate de lege de la urmărirea silită, cum sunt cele strict necesare traiului zilnic al debitorului și al familiei sale.",
+        "Sechestrul se poate institui și asupra bunurilor altei persoane decât suspectul sau inculpatul, în măsura în care acele bunuri intră în categoriile prevăzute de lege, de exemplu bunuri dobândite de la inculpat sau bunuri supuse confiscării.",
+      ],
+    },
+    {
+      h2: "Cum se contestă sechestrul asigurător",
+      paragraphs: [
+        "Împotriva măsurii asigurătorii luate de procuror sau a modului de aducere la îndeplinire a acesteia, suspectul, inculpatul sau orice altă persoană interesată poate face plângere, în termen de 3 zile de la comunicarea ordonanței sau de la data punerii în executare, la judecătorul de drepturi și libertăți.",
+        "Când măsura este dispusă în cursul judecății, contestația se soluționează de instanța ierarhic superioară, tot în termen de 3 zile.",
+        "În practică, argumentele care pot fi folosite privesc:",
+      ],
+      bullets: [
+        "lipsa motivării concrete a ordonanței;",
+        "inexistența unei legături între bunurile sechestrate și fapta cercetată;",
+        "disproporția dintre valoarea bunurilor și prejudiciul reținut;",
+        "apartenența bunului către un terț de bună-credință;",
+        "caracterul exceptat al bunului;",
+        "evaluarea greșită a bunurilor;",
+        "afectarea nejustificată a activității unei societăți.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ridicarea sau restrângerea sechestrului",
+      paragraphs: [
+        "Chiar dacă măsura a fost luată legal, ea nu este definitivă. Dacă temeiurile care au justificat sechestrul se schimbă, se poate cere ridicarea totală sau parțială a măsurii.",
+        "Situații întâlnite frecvent:",
+      ],
+      bullets: [
+        "prejudiciul a fost acoperit integral sau parțial;",
+        "valoarea bunurilor indisponibilizate depășește vădit valoarea necesară;",
+        "s-a dispus clasarea, achitarea sau încetarea procesului penal;",
+        "bunul aparține unui terț care își poate dovedi dreptul;",
+        "bunul este esențial pentru desfășurarea activității economice și există alte garanții.",
+      ],
+      paragraphsAfterBullets: [
+        "Când procesul se finalizează fără dispoziție de confiscare sau de reparare a pagubei, măsura asigurătorie încetează de drept, iar bunurile trebuie restituite.",
+      ],
+    },
+    {
+      h2: "Sechestru asigurător, poprire și confiscare: care este diferența",
+      paragraphs: [
+        "Sechestrul asigurător indisponibilizează bunuri determinate. Poprirea asigurătorie privește sumele de bani datorate suspectului sau inculpatului de către un terț și se dispune tot ca măsură asigurătorie.",
+        [
+          { text: "Confiscarea este o măsură de siguranță dispusă prin hotărâre, care transferă definitiv bunul către stat. Sechestrul doar pregătește o eventuală confiscare sau o despăgubire. Detaliile privind confiscarea specială și cea extinsă sunt explicate pe pagina despre " },
+          { text: "confiscarea bunurilor în dosarul penal", to: "/servicii/confiscare" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce efecte are sechestrul asupra conturilor, imobilelor și firmei",
+      paragraphs: [
+        "Blocarea conturilor poate opri plata salariilor, a furnizorilor și a obligațiilor fiscale. Sechestrul pe imobil împiedică vânzarea sau ipotecarea, iar sechestrul pe părțile sociale blochează operațiunile privind capitalul societății.",
+        "În aceste situații este important să fie arătate instanței efectele concrete ale măsurii, pentru ca aceasta să poată aprecia proporționalitatea. O măsură care depășește scopul urmărit poate fi restrânsă.",
+        [
+          { text: "În dosarele în care sechestrul apare alături de acuzații privind proveniența banilor, apărarea trebuie construită împreună cu apărarea pe fondul acuzației de " },
+          { text: "spălare de bani", to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Greșeli frecvente după instituirea sechestrului",
+      bullets: [
+        "se ratează termenul de 3 zile pentru contestație;",
+        "se încearcă înstrăinarea bunului sechestrat, ceea ce poate atrage o nouă acuzație penală;",
+        "nu se depun documentele care arată originea licită a sumelor;",
+        "nu se cere evaluarea corectă a bunurilor;",
+        "nu se solicită restrângerea măsurii atunci când valoarea depășește prejudiciul;",
+        "terții nu își valorifică dreptul de a-și apăra bunul în procesul penal.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Pașii practici pe care îi urmez",
+      bullets: [
+        "analizez ordonanța și dosarul, în limita accesului permis;",
+        "calculez termenul de contestație și pregătesc plângerea;",
+        "adun documentele privind proprietatea și originea bunurilor;",
+        "formulez cererea de ridicare sau de restrângere a măsurii, dacă este cazul;",
+        "susțin cererea în fața judecătorului de drepturi și libertăți sau a instanței;",
+        "urmăresc soluția asupra măsurii pe tot parcursul procesului, până la restituirea bunurilor.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "În cât timp pot contesta sechestrul asigurător?",
+      a: "Termenul este de 3 zile de la comunicarea ordonanței sau de la data punerii în executare a măsurii, potrivit art. 250 Cod procedură penală.",
+    },
+    {
+      q: "Sechestrul înseamnă că îmi pierd bunurile?",
+      a: "Nu. Sechestrul este o măsură provizorie de indisponibilizare. Pierderea definitivă a bunului poate interveni doar prin confiscare, dispusă prin hotărâre judecătorească.",
+    },
+    {
+      q: "Pot folosi în continuare imobilul sechestrat?",
+      a: "De regulă da, dacă bunul nu a fost ridicat. Sechestrul blochează înstrăinarea și grevarea imobilului, notate în cartea funciară, dar nu presupune automat evacuarea.",
+    },
+    {
+      q: "Ce se întâmplă cu salariul virat într-un cont blocat?",
+      a: "Legea exceptează de la urmărire anumite sume necesare traiului. Dacă în contul indisponibilizat intră astfel de sume, se poate cere restrângerea măsurii pentru partea exceptată.",
+    },
+    {
+      q: "Se poate institui sechestru pe bunurile soției sau ale unei alte persoane?",
+      a: "Da, în situațiile prevăzute de lege, de exemplu pentru bunuri dobândite de la inculpat sau bunuri supuse confiscării. Terțul care se consideră vătămat poate face plângere împotriva măsurii.",
+    },
+    {
+      q: "Dacă achit prejudiciul, se ridică sechestrul?",
+      a: "Acoperirea prejudiciului este un argument important pentru ridicarea sau restrângerea măsurii, dar instanța verifică și celelalte scopuri ale sechestrului, cum ar fi confiscarea sau amenda.",
+    },
+    {
+      q: "Ce se întâmplă cu sechestrul dacă se dispune clasarea sau achitarea?",
+      a: "Când nu se dispune confiscarea și nici obligarea la plata unor sume, măsura asigurătorie încetează, iar bunurile trebuie restituite.",
+    },
+    {
+      q: "Pot vinde bunul dacă am nevoie urgentă de bani?",
+      a: "Nu. Înstrăinarea unui bun sechestrat poate atrage o nouă răspundere penală. Soluția corectă este să ceri ridicarea sau restrângerea măsurii pe cale legală.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul de procedură penală, art. 249-254 privind măsurile asigurătorii.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul penal, art. 112 și art. 112 indice 1 privind confiscarea specială și extinsă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_SB,
+};
+
+export const confiscareRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/confiscare",
+  altPath: "/en/services/confiscation",
+  roPath: "/servicii/confiscare",
+  title: "Avocat confiscare extinsă București | Bogdan Lamatic",
+  h1: "Avocat confiscare și confiscare extinsă în București",
+  description:
+    "Riști confiscarea bunurilor într-un dosar penal? Apărare împotriva confiscării speciale și a confiscării extinse, proba originii licite a bunurilor.",
+  keywords:
+    "avocat confiscare extinsa, confiscare bunuri dosar penal, confiscare speciala, avocat confiscare bucuresti",
+  breadcrumbLabel: "Confiscare",
+  serviceName: "Avocat confiscare și confiscare extinsă București - Bogdan Lamatic",
+  urgency: [
+    "Ți se cere confiscarea unor sume de bani, a mașinii sau a imobilelor în dosarul penal?",
+    "Confiscarea specială și confiscarea extinsă au condiții diferite și se combat cu argumente diferite.",
+    "Proba originii licite a bunurilor se pregătește din timp, nu în ultima zi de proces.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane și societăți în cauze în care se solicită confiscarea specială sau confiscarea extinsă a bunurilor, inclusiv în dosare economice și de corupție.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "În ce situație te afli acum?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Alege scenariul care se apropie cel mai mult de situația ta."],
+      subsections: [
+        {
+          h3: "Procurorul cere confiscarea unor sume de bani",
+          paragraphs: [
+            "Trebuie stabilit dacă sumele sunt considerate produs al infracțiunii, dacă au fost identificate concret și dacă există dovezi ale provenienței lor licite.",
+          ],
+        },
+        {
+          h3: "Se solicită confiscarea extinsă a bunurilor dobândite în ultimii ani",
+          paragraphs: [
+            "Confiscarea extinsă privește bunuri dobândite în perioada de 5 ani anterioară și, dacă este cazul, ulterioară săvârșirii faptei. Analiza pornește de la veniturile licite și de la documentele care le atestă.",
+          ],
+        },
+        {
+          h3: "Bunurile au fost deja indisponibilizate prin sechestru",
+          paragraphs: [
+            [
+              { text: "Sechestrul este doar măsura provizorie prin care se pregătește o eventuală confiscare. Cele două se contestă separat, iar detaliile privind indisponibilizarea sunt pe pagina despre " },
+              { text: "sechestrul asigurător în dosarul penal", to: "/servicii/sechestru-asigurator" },
+              { text: "." },
+            ],
+          ],
+        },
+        {
+          h3: "Ești terț și ți se confiscă un bun",
+          paragraphs: [
+            "Legea permite confiscarea de la terți în anumite situații. Dacă ai cumpărat bunul cu bună-credință și poți dovedi plata, poziția ta trebuie susținută cu documente în procesul penal.",
+          ],
+        },
+      ],
+      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+    },
+    {
+      h2: "Ce analizez imediat într-un dosar cu risc de confiscare",
+      paragraphs: ["Verific:"],
+      bullets: [
+        "temeiul invocat: confiscare specială sau confiscare extinsă;",
+        "categoria concretă în care sunt încadrate bunurile;",
+        "dacă infracțiunea permite confiscarea extinsă, potrivit listei din lege;",
+        "pedeapsa prevăzută de lege pentru fapta cercetată;",
+        "perioada de referință pentru bunurile dobândite;",
+        "veniturile licite din perioada analizată;",
+        "documentele fiscale, contractele și extrasele de cont;",
+        "modul în care a fost calculată diferența dintre venituri și bunuri;",
+        "dacă bunul a fost transferat unui terț și în ce condiții;",
+        "dacă bunul poate fi înlocuit cu echivalentul în bani;",
+        "raportul dintre confiscare și despăgubirile civile cerute;",
+        "evaluarea bunurilor și eventualele erori de calcul.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Ce trebuie să-mi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "rechizitoriul sau ordonanța din care rezultă solicitarea de confiscare;",
+        "ordonanța de instituire a sechestrului, dacă există;",
+        "actele de proprietate pentru bunurile vizate;",
+        "contractele de vânzare, donație sau împrumut;",
+        "extrasele de cont pentru perioada relevantă;",
+        "declarațiile fiscale și adeverințele de venit;",
+        "documentele privind veniturile membrilor familiei;",
+        "actele privind creditele bancare;",
+        "orice document care arată originea banilor folosiți la cumpărarea bunurilor.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă nu ai încă toate actele, putem stabili împreună ce documente trebuie obținute și de unde.",
+      ],
+      calloutAfterBullets: "Nu ai toate documentele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ce este confiscarea specială",
+      paragraphs: [
+        "Confiscarea specială este o măsură de siguranță prevăzută de art. 112 Cod penal. Prin ea, anumite bunuri trec definitiv în proprietatea statului.",
+        "Sunt supuse confiscării speciale:",
+      ],
+      bullets: [
+        "bunurile produse prin săvârșirea faptei prevăzute de legea penală;",
+        "bunurile care au fost folosite, în orice mod, sau destinate a fi folosite la săvârșirea faptei, dacă sunt ale făptuitorului sau dacă aparțin altei persoane care a cunoscut scopul folosirii lor;",
+        "bunurile folosite, imediat după săvârșirea faptei, pentru a asigura scăparea făptuitorului sau păstrarea folosului ori a produsului obținut;",
+        "bunurile date pentru a determina săvârșirea unei fapte prevăzute de legea penală sau pentru a răsplăti pe făptuitor;",
+        "bunurile dobândite prin săvârșirea faptei prevăzute de legea penală, dacă nu sunt restituite persoanei vătămate;",
+        "bunurile a căror deținere este interzisă de legea penală.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă bunurile nu se găsesc, se confiscă echivalentul lor în bani sau bunurile dobândite în locul lor.",
+      ],
+    },
+    {
+      h2: "Ce este confiscarea extinsă",
+      paragraphs: [
+        "Confiscarea extinsă este reglementată de art. 112 indice 1 Cod penal și privește alte bunuri decât cele legate direct de fapta pentru care s-a dispus condamnarea.",
+        "Pentru a se dispune confiscarea extinsă trebuie îndeplinite mai multe condiții:",
+      ],
+      bullets: [
+        "persoana să fie condamnată pentru una dintre infracțiunile prevăzute expres de lege;",
+        "pedeapsa prevăzută de lege pentru acea infracțiune să fie închisoarea de 4 ani sau mai mare;",
+        "fapta să fie susceptibilă să îi procure un folos material;",
+        "valoarea bunurilor dobândite în perioada de referință să depășească în mod vădit veniturile obținute în mod licit;",
+        "instanța să aibă convingerea că bunurile provin din activități infracționale de natura celor pentru care s-a dispus condamnarea.",
+      ],
+      paragraphsAfterBullets: [
+        "Perioada analizată este cea de 5 ani anterioară și, dacă este cazul, ulterioară momentului săvârșirii infracțiunii, până la data emiterii actului de sesizare a instanței.",
+      ],
+    },
+    {
+      h2: "Diferența dintre confiscarea specială și confiscarea extinsă",
+      paragraphs: [
+        "Confiscarea specială privește bunuri legate direct de fapta cercetată: produsul infracțiunii, mijloacele folosite, sumele date sau primite.",
+        "Confiscarea extinsă privește un patrimoniu mai larg, dobândit într-o perioadă determinată, și presupune o condamnare pentru o infracțiune din lista prevăzută de lege.",
+        "Confiscarea specială se poate dispune și atunci când nu se pronunță o condamnare, de exemplu în caz de clasare, în condițiile prevăzute de lege. Confiscarea extinsă nu poate fi dispusă fără o condamnare.",
+      ],
+    },
+    {
+      h2: "Ce înseamnă proba originii licite a bunurilor",
+      paragraphs: [
+        "În materia confiscării extinse, analiza pornește de la o comparație între bunurile dobândite și veniturile licite din perioada de referință.",
+        "Apărarea se construiește cu documente:",
+      ],
+      bullets: [
+        "contracte de muncă, adeverințe și declarații fiscale;",
+        "dividende și venituri din activități independente;",
+        "contracte de vânzare a unor bunuri anterioare;",
+        "credite bancare și contracte de împrumut;",
+        "donații și moșteniri;",
+        "venituri ale membrilor familiei care au contribuit la achiziție;",
+        "sume obținute din străinătate, cu documentele de transfer.",
+      ],
+      paragraphsAfterBullets: [
+        "Este important ca fiecare achiziție să fie explicată în ordine cronologică, cu documentele corespunzătoare, iar calculul acuzării să fie verificat în detaliu.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Confiscarea de la terți și bunurile transferate familiei",
+      paragraphs: [
+        "Legea permite confiscarea și în cazul bunurilor transferate unui membru de familie sau unei persoane juridice controlate de condamnat, precum și în cazul bunurilor transferate unei terțe persoane care cunoștea scopul transferului.",
+        "Terțul de bună-credință, care a plătit un preț real pentru bun și poate dovedi plata, își poate apăra dreptul în procesul penal. De aceea documentele de plată și dovada surselor sunt esențiale.",
+      ],
+    },
+    {
+      h2: "Confiscare sau despăgubiri civile",
+      paragraphs: [
+        "Când prin faptă s-a produs un prejudiciu unei persoane, sumele pot fi folosite mai întâi pentru repararea pagubei, iar confiscarea privește ceea ce rămâne.",
+        [
+          { text: "În dosarele economice cele două se suprapun frecvent, iar strategia trebuie corelată cu apărarea pe fondul acuzației, de exemplu în cauzele de " },
+          { text: "evaziune fiscală", to: "/servicii/evaziune-fiscala" },
+          { text: " sau în dosarele de " },
+          { text: "spălare de bani și ascundere de bunuri", to: "/servicii/spalare-de-bani-si-ascundere-de-bunuri" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce se poate obține în apel",
+      paragraphs: [
+        "Dispoziția de confiscare poate fi criticată separat de soluția asupra vinovăției.",
+        "În apel se pot invoca:",
+      ],
+      bullets: [
+        "lipsa condițiilor legale ale confiscării extinse;",
+        "greșita încadrare a bunurilor în categoriile din art. 112 Cod penal;",
+        "erori de calcul privind veniturile licite;",
+        "ignorarea unor documente depuse la dosar;",
+        "confiscarea unor bunuri care aparțin unor terți de bună-credință;",
+        "disproporția dintre valoarea confiscată și folosul reținut.",
+      ],
+    },
+    {
+      h2: "Pașii practici pe care îi urmez",
+      bullets: [
+        "identific exact ce bunuri sunt vizate și pe ce temei;",
+        "reconstitui situația veniturilor pe perioada de referință;",
+        "adun și organizez documentele privind fiecare achiziție;",
+        "verific calculele acuzării și evaluarea bunurilor;",
+        "formulez cereri și concluzii scrise pe capătul privind confiscarea;",
+        "susțin poziția în fața instanței și, dacă este cazul, în apel.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Ce este confiscarea extinsă?",
+      a: "Este măsura prin care instanța confiscă bunuri dobândite în perioada de 5 ani anterioară și, dacă este cazul, ulterioară săvârșirii infracțiunii, atunci când valoarea lor depășește vădit veniturile licite, iar persoana este condamnată pentru o infracțiune din lista prevăzută de art. 112 indice 1 Cod penal.",
+    },
+    {
+      q: "Se poate dispune confiscarea fără condamnare?",
+      a: "Confiscarea specială poate fi dispusă și în lipsa unei condamnări, în cazurile prevăzute de lege, de exemplu la clasare. Confiscarea extinsă presupune însă o condamnare.",
+    },
+    {
+      q: "Ce documente dovedesc originea licită a bunurilor?",
+      a: "Declarațiile fiscale, adeverințele de venit, contractele de muncă, dividendele, contractele de vânzare, creditele bancare, împrumuturile, donațiile și moștenirile, alături de extrasele de cont care confirmă fluxul banilor.",
+    },
+    {
+      q: "Îmi pot fi confiscate bunurile cumpărate de soț sau de copii?",
+      a: "Legea permite confiscarea bunurilor transferate membrilor de familie sau unor persoane juridice controlate de condamnat. Persoana interesată poate dovedi însă că bunul a fost dobândit din venituri proprii.",
+    },
+    {
+      q: "Ce se întâmplă dacă bunul a fost deja vândut?",
+      a: "Dacă bunul nu se mai găsește, se confiscă echivalentul în bani sau bunurile dobândite în locul lui.",
+    },
+    {
+      q: "Confiscarea se aplică și mașinii folosite la comiterea faptei?",
+      a: "Poate fi confiscată dacă este considerată bun folosit la săvârșirea faptei și aparține făptuitorului sau unei persoane care a cunoscut scopul folosirii. Fiecare situație se analizează concret.",
+    },
+    {
+      q: "Care este legătura dintre sechestru și confiscare?",
+      a: "Sechestrul indisponibilizează provizoriu bunurile pentru a garanta o eventuală confiscare sau despăgubire. Confiscarea se dispune prin hotărâre și transferă definitiv bunul către stat.",
+    },
+    {
+      q: "Pot contesta doar dispoziția de confiscare din hotărâre?",
+      a: "Da. Apelul poate viza exclusiv capătul privind confiscarea, cu argumente proprii, distincte de cele privind vinovăția.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 112 privind confiscarea specială.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, art. 249-254 privind măsurile asigurătorii.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_SB,
+};
