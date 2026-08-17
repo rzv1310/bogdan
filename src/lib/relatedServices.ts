@@ -96,7 +96,17 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/control-judiciar",
     "/servicii/arest-la-domiciliu",
   ],
+  "/servicii/criminalitate-economica": [
+    "/servicii/evaziune-fiscala",
+    "/servicii/inselaciune-frauda",
+    "/servicii/delapidare",
+    "/servicii/fals-si-uz-de-fals",
+    "/servicii/bancruta-frauduloasa",
+    "/servicii/frauda-informatica",
+    "/servicii/fonduri-europene",
+  ],
 };
+
 
 function subServiceTargets(roPath: string): string[] {
   for (const [parent, children] of Object.entries(subServiceGroups)) {
