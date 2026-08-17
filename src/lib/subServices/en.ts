@@ -3463,6 +3463,140 @@ export const negligenceInOfficeEn: SubServicePageData = {
       ctaWhatsAppLabel: "Send me the documents on WhatsApp",
     },
     {
+      h2: "Which rule must have been breached for negligence in office to exist?",
+      paragraphs: [
+        "In its current wording, art. 298 of the Criminal Code requires the breached official duty to derive from a law, a Government ordinance, an emergency ordinance or another act having the force of law. Not every professional obligation falls into this category.",
+        "The Constitutional Court applied to negligence in office the same standard set for abuse of office: „defective performance” means performance in breach of a provision contained in an act having the force of law, not the mere failure to observe internal rules or good practice.",
+      ],
+      subsections: [
+        {
+          h3: "Is a breach of the job description enough?",
+          paragraphs: [
+            "No. The job description shows which duties you had, so it is useful to establish whether the obligation was yours, but it cannot replace the provision of a law or ordinance on which the accusation must rest.",
+            "If the only document invoked is the job description, I argue that the act is not provided for by criminal law and that the matter remains one of disciplinary liability.",
+          ],
+        },
+        {
+          h3: "Is a breach of an internal procedure enough?",
+          paragraphs: [
+            "Internal regulations, operating procedures, circulars or service notes are not laws or ordinances. Failing to observe them may attract administrative sanctions, but on its own it does not meet the requirement of art. 298.",
+            "I check whether the internal procedure is genuinely linked to a provision of an act having the force of law, or whether that link was built later to cover the absence of an applicable text.",
+          ],
+        },
+        {
+          h3: "Which legal act must be indicated in the accusation?",
+          paragraphs: [
+            "From the outset I request the precise identification of the legal act, the article and the paragraph allegedly breached. Without that precise identification, the defense can seek dismissal or acquittal, because the material element of the offense is not determined.",
+          ],
+        },
+      ],
+      cta: "I want to check the legal basis invoked",
+      ctaIcon: false,
+    },
+    {
+      h2: "When does a professional mistake become negligence in office?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "The absence of actual damage or harm means the elements of the offense are not met, however serious the omission may appear from a disciplinary perspective.",
+        "Likewise, negligence cannot be retained where the obligation was not yours, where performing it was impossible due to a lack of resources or staff, or where the consequence was caused by another person's conduct.",
+      ],
+      subsections: [
+        {
+          h3: "Professional mistake vs offense",
+          paragraphs: [
+            "An error of assessment, a reasonable interpretation of an unclear rule or a choice between several permitted options does not automatically become an offense. Negligence requires the breach of a duty provided by law and a proven damaging consequence.",
+          ],
+        },
+        {
+          h3: "Disciplinary breach vs criminal liability",
+          paragraphs: [
+            "Many facts reported in such files remain disciplinary: delays, incomplete entries, failure to meet internal deadlines. A disciplinary sanction does not imply that the offense exists, and the two forms of liability have different conditions.",
+          ],
+        },
+        {
+          h3: "Why an unfavourable outcome alone is not enough",
+          paragraphs: [
+            "The fact that an incident, a financial loss or a complaint occurred does not prove your fault. The prosecution must show which legal obligation you breached and how your conduct produced the consequence, not merely that the outcome is unwelcome.",
+          ],
+        },
+      ],
+      calloutAfterSubsections: "Have you been told you are responsible for an incident?",
+      calloutAfterSubsectionsCta: "Call anyway",
+    },
+    {
+      h2: "How is the link between the mistake and the damage proven?",
+      paragraphs: [
+        "Negligence in office is a result offense: breaching the duty is not enough, the prosecution must also prove damage or harm to the rights or legitimate interests of a person, together with the causal link between the two.",
+      ],
+      subsections: [
+        {
+          h3: "What if the result would have occurred anyway",
+          paragraphs: [
+            "If the damage would have occurred even had you performed your duty perfectly, the causal link is missing. This is one of the strongest defense arguments in files built on formal omissions.",
+          ],
+        },
+        {
+          h3: "The involvement of other persons",
+          paragraphs: [
+            "I reconstruct the full circuit of the document or decision: who proposed, who verified, who approved and who signed. Where the consequence was determined by another person's conduct, liability cannot be shifted onto you.",
+          ],
+        },
+        {
+          h3: "External causes",
+          paragraphs: [
+            "Technical failures, erroneous information received from outside, decisions of other institutions or unforeseeable events can break the causal chain. I document these circumstances with records, not only with statements.",
+          ],
+        },
+        {
+          h3: "Technical expert evidence",
+          paragraphs: [
+            "Where values, calculations or technical aspects are involved, I request an expert report, propose its objectives and file objections, so that causation and the extent of the damage are not established solely by the control body.",
+          ],
+        },
+      ],
+    },
+    {
+      h2: "Can a lack of staff, time or resources exclude liability?",
+      paragraphs: [
+        "Yes, where the impossibility of performance is real and can be proven. Fault cannot be retained for an obligation which, in the actual working conditions, could not be performed.",
+      ],
+      subsections: [
+        {
+          h3: "Lack of staff",
+          paragraphs: ["Staffing charts, vacant positions and the actual allocation of tasks during the period analysed."],
+        },
+        {
+          h3: "Insufficient budget",
+          paragraphs: ["The approved budget, funding refusals and the impossibility of contracting the necessary services or works."],
+        },
+        {
+          h3: "Excessive workload",
+          paragraphs: ["The number of files allocated, the deadlines imposed and the comparison with the normal workload for your position."],
+        },
+        {
+          h3: "Ignored requests for additional resources",
+          paragraphs: ["The notes, memos and letters requesting staff, budget or deadline extensions, together with the replies received."],
+        },
+        {
+          h3: "Objective impossibility of performance",
+          paragraphs: ["Situations where performing the duty depended on a document, information or approval that did not exist at the relevant time."],
+        },
+      ],
+      ctaAfterSubsections: "I want to review the resources I had",
+    },
+    {
+      h2: "Who can be accused of negligence in office?",
+      paragraphs: [
+        "The subject of the offense is the public official in the criminal law sense, a notion far broader than the administrative one: it covers persons exercising duties provided by law, a public dignity office, a management position in a public institution or control and approval duties.",
+        "Through art. 308 of the Criminal Code, liability also extends to persons who exercise, permanently or temporarily, with or without remuneration, a task of any nature in the service of a natural person or of a private legal entity. Employees in the private sector, directors, managers or members of governing bodies can therefore be investigated, with penalty limits reduced by one third.",
+        [
+          { text: "For the general context of charges related to the exercise of public office, see the page on " },
+          { text: "acts related to the exercise of public office", to: PARENT_COR_EN.to },
+          { text: "." },
+        ],
+      ],
+    },
+    {
       h2: "What negligence in office is",
       paragraphs: [
         "Negligence in office consists of the negligent breach by a public official of an official duty, by failing to perform it or by performing it defectively, if damage or harm to the rights or legitimate interests of a person is caused. The offense is set out in art. 298 of the Criminal Code.",
@@ -3478,14 +3612,6 @@ export const negligenceInOfficeEn: SubServicePageData = {
           { text: ", the official acts intentionally, whereas in negligence the act is committed carelessly." },
         ],
         "The distinction has major consequences: the penalty limits are lower, and in many situations an initial abuse charge can be correctly reclassified as negligence where the evidence does not support intent.",
-      ],
-    },
-    {
-      h2: "When there is no offense",
-      cardClassName: "bg-[#faf0e6]",
-      paragraphs: [
-        "The absence of actual damage or harm means the elements of the offense are not met, however serious the omission may appear from a disciplinary perspective.",
-        "Likewise, negligence cannot be retained where the obligation was not yours, where performing it was impossible due to a lack of resources or staff, or where the consequence was caused by another person's conduct. In such situations the matter remains one of disciplinary or administrative liability.",
       ],
     },
     {
