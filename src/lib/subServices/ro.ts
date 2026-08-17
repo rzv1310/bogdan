@@ -4386,21 +4386,10 @@ export const abuzInServiciuRo: SubServicePageData = {
   ],
   faq: [
     {
-      q: "Orice act nelegal înseamnă abuz în serviciu?",
-      a: "Nu. Este necesară încălcarea unei dispoziții din lege sau ordonanță, existența unei pagube ori vătămări și intenția funcționarului.",
-    },
-    {
-      q: "Contează dacă am semnat pe baza unui aviz juridic favorabil?",
-      a: "Da. Avizele primite sunt relevante pentru forma de vinovăție și pot susține lipsa intenției în luarea deciziei.",
-    },
-    {
       q: "Un administrator de firmă privată poate fi acuzat de abuz în serviciu?",
       a: "Da, prin norma de extindere a răspunderii, cu limite de pedeapsă reduse cu o treime față de forma de bază.",
     },
-    {
-      q: "Ce înseamnă forma agravată prevăzută de Legea 78/2000?",
-      a: "Se aplică atunci când funcționarul a obținut pentru sine sau pentru altul un folos necuvenit, iar limitele de pedeapsă se majorează.",
-    },
+
     {
       q: "Dacă restitui prejudiciul, dosarul se închide?",
       a: "Nu automat. Acoperirea prejudiciului este relevantă pentru individualizarea pedepsei și pentru latura civilă, dar nu înlătură prin ea însăși răspunderea penală.",
