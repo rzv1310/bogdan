@@ -30,6 +30,8 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 import ServicesQuickLinks from "@/components/ServicesQuickLinks";
+import LawyerBioBlock from "@/components/services/LawyerBioBlock";
+import GoogleReviewStars from "@/components/services/GoogleReviewStars";
 // Helper: currency formatter RON
 const fmtRON = (n: number) =>
   new Intl.NumberFormat("ro-RO", {
