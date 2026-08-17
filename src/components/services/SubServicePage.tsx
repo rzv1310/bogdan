@@ -129,6 +129,8 @@ export interface SubServicePageData {
   reviewMeta?: string;
   /** Optional timestamp text for the Google review card. */
   reviewTimestamp?: string;
+  /** Optional URL to the original Google review. */
+  reviewLink?: string;
   /** Link to the parent pillar page */
   parent: { to: string; label: string; breadcrumbLabel: string };
 
