@@ -1475,7 +1475,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     {
       h2: "Ce analizez în cazul arestului la domiciliu",
       paragraphs: [
-        "Arestul la domiciliu este o măsură privativă de libertate. Nu trebuie tratat ca o simplă variantă „mai comodă" a arestării preventive.",
+        "Arestul la domiciliu este o măsură privativă de libertate. Nu trebuie tratat ca o simplă variantă \"mai comodă\" a arestării preventive.",
         "În funcție de situație, analizez:",
       ],
       bullets: [
@@ -1567,7 +1567,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
       h2: "Poate fi dispus arestul la domiciliu în locul arestării preventive?",
       paragraphs: [
         "Da, dacă sunt îndeplinite condițiile legale și judecătorul apreciază că măsura mai puțin severă este suficientă în raport cu situația concretă.",
-        "Tocmai de aceea, dacă procurorul solicită arestarea preventivă, apărarea nu trebuie să se limiteze la argumentul „să nu fie arestat".",
+        "Tocmai de aceea, dacă procurorul solicită arestarea preventivă, apărarea nu trebuie să se limiteze la argumentul \"să nu fie arestat\".",
         "Trebuie analizat dacă există argumente concrete pentru:",
       ],
       bullets: [
@@ -1781,17 +1781,19 @@ export const arestLaDomiciliuRo: SubServicePageData = {
         "dacă o măsură mai puțin severă este suficientă.",
       ],
       paragraphsAfterBullets: [
-        "În funcție de situație, apărarea poate urmări:",
-      ],
-      bulletsAfterBullets: [
-        "respingerea propunerii de prelungire;",
-        "revocarea măsurii;",
         [
-          { text: "înlocuirea cu " },
-          { text: "control judiciar", to: "/servicii/control-judiciar" },
-          { text: ";" },
+          { text: "În funcție de situație, apărarea poate urmări: " },
+          { text: "respingerea propunerii de prelungire", bold: true },
+          { text: "; " },
+          { text: "revocarea măsurii", bold: true },
+          { text: "; " },
+          { text: "înlocuirea cu control judiciar", bold: true },
+          { text: " (vezi și " },
+          { text: "pagina de control judiciar", to: "/servicii/control-judiciar" },
+          { text: "); " },
+          { text: "înlocuirea cu control judiciar pe cauțiune", bold: true },
+          { text: "." },
         ],
-        "înlocuirea cu control judiciar pe cauțiune.",
       ],
     },
     {
