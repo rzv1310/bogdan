@@ -495,7 +495,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
             )}
           </CardContent>
         </Card>
+        {data.reviewAfterSection === sectionIndex && <GoogleReviewCard lang={data.lang} />}
+        </div>
       ))}
+
 
       <ServiceFaq
         title={isEn ? "Frequently asked questions" : "Întrebări frecvente"}
