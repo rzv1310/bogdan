@@ -5134,24 +5134,8 @@ export const conflictDeIntereseRo: SubServicePageData = {
       a: "Nu. Constatarea administrativă a unei stări de conflict de interese nu echivalează cu întrunirea elementelor infracțiunii.",
     },
     {
-      q: "Ce persoane intră în cercul prevăzut de lege?",
-      a: "Soțul, rudele și afinii până la gradul II inclusiv, potrivit textului de incriminare.",
-    },
-    {
-      q: "Abținerea de la vot mă protejează?",
-      a: "Da, în principiu. Dacă nu ai îndeplinit actul din care rezultă folosul, elementul material al infracțiunii lipsește.",
-    },
-    {
-      q: "Se aplică textul și la actele normative?",
-      a: "Nu. Legea exceptează expres emiterea, aprobarea sau adoptarea actelor normative.",
-    },
-    {
       q: "Contractul semnat poate fi anulat?",
       a: "Da. Actele încheiate cu încălcarea regulilor privind conflictul de interese pot fi lovite de nulitate.",
-    },
-    {
-      q: "Pot contesta raportul de evaluare?",
-      a: "Da, în contencios administrativ, în termenul prevăzut de lege de la comunicare. Termenul este scurt, așa că trebuie acționat rapid.",
     },
   ],
   resources: [
