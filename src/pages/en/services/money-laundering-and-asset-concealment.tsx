@@ -105,7 +105,7 @@ export default function MoneyLaunderingEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
+                <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

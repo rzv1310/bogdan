@@ -132,7 +132,7 @@ export default function OffensesAgainstPersons() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <span className="text-muted-foreground">Services</span>
+            <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

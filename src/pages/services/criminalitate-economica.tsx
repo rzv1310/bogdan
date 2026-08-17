@@ -104,7 +104,7 @@ export default function CriminalitateEconomica() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <span className="text-muted-foreground">Servicii</span>
+            <BreadcrumbLink href="/servicii">Servicii</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
