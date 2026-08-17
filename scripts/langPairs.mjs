@@ -28,6 +28,12 @@ export const RO_TO_EN = {
   "/servicii/spalare-de-bani-si-ascundere-de-bunuri": "/en/services/money-laundering-and-asset-concealment",
   "/servicii/sechestru-asigurator": "/en/services/asset-freezing-order",
   "/servicii/confiscare": "/en/services/confiscation",
+  "/servicii/alcool-la-volan": "/en/services/drunk-driving",
+  "/servicii/droguri-la-volan": "/en/services/drug-driving",
+  "/servicii/parasirea-locului-accidentului": "/en/services/leaving-the-accident-scene",
+  "/servicii/refuz-prelevare-probe-biologice": "/en/services/refusal-to-provide-biological-samples",
+  "/servicii/conducere-fara-permis": "/en/services/driving-without-a-licence",
+  "/servicii/accident-rutier-cu-victime": "/en/services/road-accident-with-victims",
 
   "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",

@@ -77,6 +77,12 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Neglijență profesională și malpraxis](/servicii/neglijenta-profesionala-si-malpraxis): Malpraxis medical, juridic, tehnic.
 - [Professional Negligence and Malpractice](/en/services/professional-negligence-and-malpractice): Professional negligence and malpractice defense.
 - [Infracțiuni rutiere cu victime](/servicii/infractiuni-rutiere-cu-victime): Accidente rutiere grave.
+- [Alcool la volan](/servicii/alcool-la-volan): Dosare penale pentru conducere sub influența alcoolului, art. 336 Cod penal.
+- [Droguri la volan](/servicii/droguri-la-volan): Conducere sub influența substanțelor psihoactive, art. 336 alin. 2 Cod penal.
+- [Părăsirea locului accidentului](/servicii/parasirea-locului-accidentului): Apărare în dosare de părăsire a locului accidentului, art. 338 Cod penal.
+- [Refuz prelevare probe biologice](/servicii/refuz-prelevare-probe-biologice): Refuzul recoltării probelor biologice, art. 337 Cod penal.
+- [Conducere fără permis](/servicii/conducere-fara-permis): Dosare pentru conducerea fără permis de conducere, art. 335 Cod penal.
+- [Accident rutier cu victime](/servicii/accident-rutier-cu-victime): Apărarea șoferului cercetat penal pentru accident cu victime.
 - [Road Traffic Offenses](/en/services/road-traffic-offenses): Serious road traffic offenses.
 - [Răspundere penală incidente locul de muncă](/servicii/raspundere-penala-incidente-locul-de-munca): Accidente de muncă, securitate.
 - [Workplace Criminal Liability](/en/services/workplace-criminal-liability): Criminal liability for workplace incidents.

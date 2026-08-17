@@ -51,6 +51,12 @@ export default function Sitemap() {
     { url: "/servicii/conflict-de-interese", title: "Conflict de interese" },
     { url: "/servicii/fonduri-europene", title: "Fonduri europene" },
     { url: "/servicii/sechestru-asigurator", title: "Sechestru asigurător" },
+    { url: "/servicii/alcool-la-volan", title: "Alcool la volan" },
+    { url: "/servicii/droguri-la-volan", title: "Droguri la volan" },
+    { url: "/servicii/parasirea-locului-accidentului", title: "Părăsirea locului accidentului" },
+    { url: "/servicii/refuz-prelevare-probe-biologice", title: "Refuz prelevare probe biologice" },
+    { url: "/servicii/conducere-fara-permis", title: "Conducere fără permis" },
+    { url: "/servicii/accident-rutier-cu-victime", title: "Accident rutier cu victime" },
     { url: "/servicii/confiscare", title: "Confiscare" },
   ];
 
