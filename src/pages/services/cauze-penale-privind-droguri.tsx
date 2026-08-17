@@ -99,7 +99,8 @@ export default function CauzeDroguri() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Acasă", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "Cauze penale privind droguri", item: pageUrl },
+      { "@type": "ListItem", position: 2, name: "Servicii", item: "https://avocatpenalbucuresti.ro/servicii" },
+      { "@type": "ListItem", position: 3, name: "Cauze penale privind droguri", item: pageUrl },
     ],
   };
 
@@ -127,7 +128,7 @@ export default function CauzeDroguri() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <span className="text-muted-foreground">Servicii</span>
+            <BreadcrumbLink href="/servicii">Servicii</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

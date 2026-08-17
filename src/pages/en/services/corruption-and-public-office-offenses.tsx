@@ -30,7 +30,8 @@ export default function CorruptionPublicOfficeEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Corruption offenses and acts related to the exercise of public office", item: "https://avocatpenalbucuresti.ro/en/services/corruption-and-public-office-offenses" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Corruption offenses and acts related to the exercise of public office", item: "https://avocatpenalbucuresti.ro/en/services/corruption-and-public-office-offenses" },
             ],
           }),
         }}
@@ -71,7 +72,7 @@ export default function CorruptionPublicOfficeEn() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
+              <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

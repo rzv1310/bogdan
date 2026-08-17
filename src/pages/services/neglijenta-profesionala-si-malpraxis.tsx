@@ -44,7 +44,7 @@ export default function Malpraxis() {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Servicii",
-                    "item": "https://avocatpenalbucuresti.ro/#servicii"
+                    "item": "https://avocatpenalbucuresti.ro/servicii"
                   },
                   {
                     "@type": "ListItem",

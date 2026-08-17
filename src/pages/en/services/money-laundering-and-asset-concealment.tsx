@@ -28,7 +28,8 @@ export default function MoneyLaunderingEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Money laundering and asset concealment", item: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Money laundering and asset concealment", item: "https://avocatpenalbucuresti.ro/en/services/money-laundering-and-asset-concealment" },
             ],
           }),
         }}
@@ -105,7 +106,7 @@ export default function MoneyLaunderingEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
+                <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

@@ -29,7 +29,8 @@ export default function MalpracticeEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Professional negligence and malpractice", item: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Professional negligence and malpractice", item: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice" },
             ],
           }),
         }}

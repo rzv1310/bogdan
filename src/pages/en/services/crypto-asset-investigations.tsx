@@ -39,6 +39,12 @@ export default function CryptoInvestigationsEn() {
               {
                 "@type": "ListItem",
                 position: 2,
+                name: "Services",
+                item: "https://avocatpenalbucuresti.ro/en/services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
                 name: "Investigations regarding crypto assets",
                 item:
                   "https://avocatpenalbucuresti.ro/en/services/crypto-asset-investigations",
@@ -124,7 +130,7 @@ export default function CryptoInvestigationsEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
+                <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

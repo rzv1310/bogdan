@@ -30,7 +30,8 @@ export default function RoadTrafficEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Road traffic offenses with victims", item: "https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Road traffic offenses with victims", item: "https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses" },
             ],
           }),
         }}

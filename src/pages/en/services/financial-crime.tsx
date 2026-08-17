@@ -38,6 +38,12 @@ export default function FinancialCrimeEn() {
               {
                 "@type": "ListItem",
                 position: 2,
+                name: "Services",
+                item: "https://avocatpenalbucuresti.ro/en/services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
                 name: "Economic crime",
                 item:
                   "https://avocatpenalbucuresti.ro/en/services/financial-crime",
@@ -87,7 +93,7 @@ export default function FinancialCrimeEn() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span className="text-muted-foreground">Services</span>
+                <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

@@ -30,7 +30,8 @@ export default function DrugOffensesEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Criminal cases regarding drugs", item: "https://avocatpenalbucuresti.ro/en/services/drug-offenses" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Criminal cases regarding drugs", item: "https://avocatpenalbucuresti.ro/en/services/drug-offenses" },
             ],
           }),
         }}
@@ -71,7 +72,7 @@ export default function DrugOffensesEn() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
+              <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>

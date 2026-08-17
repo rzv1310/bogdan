@@ -29,7 +29,8 @@ export default function VictimRepresentationEn() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
-              { "@type": "ListItem", position: 2, name: "Representation of victims in criminal proceedings", item: "https://avocatpenalbucuresti.ro/en/services/victim-representation-in-criminal-cases" },
+              { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
+              { "@type": "ListItem", position: 3, name: "Representation of victims in criminal proceedings", item: "https://avocatpenalbucuresti.ro/en/services/victim-representation-in-criminal-cases" },
             ],
           }),
         }}
@@ -113,7 +114,7 @@ export default function VictimRepresentationEn() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <span className="text-muted-foreground">Services</span>
+              <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
