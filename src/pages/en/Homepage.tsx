@@ -438,17 +438,20 @@ const HomepageEN = () => {
           },
           {
             "@type": "WebSite",
+            "@id": "https://avocatpenalbucuresti.ro/#website",
             "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
             "url": "https://avocatpenalbucuresti.ro/en",
             "description": "Official website of lawyer Bogdan Lamatic - criminal defense, white-collar crime, and crypto investigations in Bucharest.",
             "inLanguage": "en-US",
             "publisher": {
-              "@type": "LegalService",
               "@id": "https://avocatpenalbucuresti.ro/#legalservice"
             }
           },
           {
             "@type": "FAQPage",
+            "@id": "https://avocatpenalbucuresti.ro/en#faq",
+            "inLanguage": "en-US",
+            "isPartOf": { "@id": "https://avocatpenalbucuresti.ro/#website" },
             "mainEntity": [
               {
                 "@type": "Question",
