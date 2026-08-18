@@ -6662,17 +6662,16 @@ export const roadAccidentCompensationEn: SubServicePageData = {
   path: "/en/services/road-accident-compensation",
   altPath: "/servicii/despagubiri-accident-rutier",
   roPath: "/servicii/despagubiri-accident-rutier",
-  title: "Road Accident Compensation Lawyer Bucharest | Bogdan Lamatic",
-  h1: "Lawyer for compensation after a road accident",
+  title: "Car Accident Lawyer Bucharest, Romania | Compensation Claims",
+  h1: "Car Accident Lawyer in Bucharest",
   description:
     "Injured in a road accident in Romania or lost a family member? I represent you as civil party for material and moral damages, including against the MTPL insurer.",
   keywords: "road accident compensation lawyer romania, moral damages road accident, civil party road accident",
   breadcrumbLabel: "Road accident compensation",
   serviceName: "Road accident compensation lawyer Bucharest - Bogdan Lamatic",
   urgency: [
-    "Were you injured in a road accident or did you lose a close person?",
-    "Compensation is not granted automatically: it must be claimed, proven and supported with documents, at the right procedural moment.",
-    "I represent you as civil party in the criminal case and in dealings with the MTPL insurer.",
+    "Were you injured in a road accident or did you lose a loved one?",
+    "I represent injured victims and families seeking compensation after road accidents in Romania.",
   ],
   bio: [
     `${BIO_INTRO} I represent road accident victims and their families in obtaining material and moral damages, both in the criminal case and before the insurer.`,
