@@ -21,16 +21,21 @@ Deci structura cerută există deja. „FAQPage — All (1)" cu celelalte entit�
 
 ## Ce propun
 
-Nicio modificare a schemei - nu ating proprietăți, review-uri, rating, coordonate sau `hasOfferCatalog`.
+Nicio modificare a schemei JSON-LD - nu ating review-urile, `aggregateRating`, coordonatele, `hasOfferCatalog` sau alte proprietăți. Structura rămâne un singur `<script type="application/ld+json">` cu `@graph` și cele 4 noduri top-level (`#legalservice`, `/despre-mine#person`, `#website`, `#faq`), cu relațiile (`founder`, `employee`, `worksFor`, `publisher`, `itemReviewed`, `isPartOf`, `provider`) păstrate ca referințe simple `{"@id":"..."}`.
 
 Adaug doar o gardă la build în `scripts/validate-seo.mjs`, care pentru fiecare pagină prerandată verifică:
 
 1. exact un script JSON-LD `data-managed`;
 2. payload-ul e `@context` + `@graph`;
-3. fiecare `@id` apare o singură dată ca nod top-level în `@graph`;
-4. pe homepage RO există toate cele 4 `@id`-uri cerute.
+3. fiecare entitate are o singură definiție top-level în `@graph`; aparițiile aceluiași `@id` ca referință în `publisher`, `worksFor`, `itemReviewed`, `provider` etc. sunt permise și nu sunt considerate duplicate;
+4. homepage RO conține toate cele 4 noduri cerute;
+5. vechiul ID S3 = 0 apariții;
+6. `priceRange` apare o singură dată și are valoarea `$$`;
+7. homepage EN: verificare separată a `FAQPage`; dacă FAQ-ul EN e specific paginii `/en/`, ID-ul acceptat e `https://avocatpenalbucuresti.ro/en/#faq`, dar `LegalService` și `Person` păstrează aceleași ID-uri globale.
 
 Build-ul eșuează dacă vreo condiție cade, deci regresiile viitoare sunt prinse automat.
+
+După build raportez: numărul de scripturi JSON-LD din `dist/index.html` și `dist/en/index.html`, lista nodurilor top-level din `@graph`, ID-ul `FAQPage` pentru RO și EN, și confirmarea că nu există duplicate top-level pentru același `@id`.
 
 ## Detalii tehnice
 
