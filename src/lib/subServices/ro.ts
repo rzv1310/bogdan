@@ -9314,3 +9314,616 @@ export const omorUcidereDinCulpaRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_PERS,
 };
+
+
+/* ============================================================
+   Subservicii - pagina-pilon Malpraxis și neglijență profesională
+   ============================================================ */
+
+const L95 = "https://legislatie.just.ro/Public/DetaliiDocument/16203";
+const CMR = "https://www.cmr.ro";
+const CMSR = "https://www.cmsr.ro";
+
+const PARENT_MALPRAXIS = {
+  to: "/servicii/neglijenta-profesionala-si-malpraxis",
+  label: "malpraxis medical și neglijență profesională",
+  breadcrumbLabel: "Malpraxis și neglijență profesională",
+};
+
+export const despagubiriMalpraxisMedicalRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/despagubiri-malpraxis-medical",
+  altPath: "/en/services/medical-malpractice-compensation",
+  roPath: "/servicii/despagubiri-malpraxis-medical",
+  title: "Avocat Despăgubiri Malpraxis Medical București | Lamatic",
+  h1: "Avocat pentru Despăgubiri Malpraxis Medical în București",
+  description:
+    "Ai fost prejudiciat printr-un act medical? Analizez dosarul, probele medicale și despăgubirile ce pot fi solicitate medicului, clinicii sau asigurătorului.",
+  keywords:
+    "despagubiri malpraxis medical, avocat despagubiri malpraxis, daune morale malpraxis medical, despăgubiri eroare medicală, avocat malpraxis pacient",
+  breadcrumbLabel: "Despăgubiri malpraxis medical",
+  serviceName: "Avocat pentru Despăgubiri Malpraxis Medical București - Bogdan Lamatic",
+  urgency: [
+    "Ai suferit un prejudiciu după un tratament sau o intervenție medicală?",
+    "Un rezultat medical nefavorabil nu înseamnă automat malpraxis. Pentru a putea cere despăgubiri trebuie analizate conduita medicală, prejudiciul produs și legătura dintre acestea.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist pacienți și familiile acestora în demersurile pentru despăgubiri în caz de malpraxis medical, neglijență profesională sau eroare medicală.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce despăgubiri pot fi solicitate?",
+      paragraphs: [
+        "În funcție de situație, prejudiciul poate include cheltuieli medicale suplimentare, costuri de recuperare și îngrijire, venituri pierdute și prejudicii nepatrimoniale.",
+        "Valoarea unei cereri nu trebuie stabilită arbitrar. O construiesc pornind de la consecințele medicale și economice care pot fi probate.",
+      ],
+    },
+    {
+      h2: "Cum dovedești malpraxisul?",
+      paragraphs: [
+        [
+          { text: "Cele mai importante elemente sunt, de regulă, dosarul medical complet, protocoalele și standardele aplicabile, evoluția pacientului și expertiza de specialitate." },
+        ],
+        [
+          { text: "Comisia prevăzută de Legea nr. 95/2006 poate stabili dacă a existat sau nu un caz de malpraxis, dar procedura Comisiei nu este obligatorie înaintea accesului la instanță. " },
+          { text: "(Legislație)", href: L95 },
+        ],
+        [
+          { text: "Vezi separat " },
+          { text: "Comisia de malpraxis", to: "/servicii/comisia-de-malpraxis" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce să îmi trimiți",
+      paragraphs: [
+        "Ideal: biletul de externare, foaia de observație, investigațiile, consimțământul informat, recomandările ulterioare și documentele care arată cheltuielile sau consecințele produse.",
+        "Dacă nu ai dosarul complet, stabilim mai întâi ce trebuie obținut.",
+      ],
+      cta: "Vrei să afli dacă există baza pentru o cerere de despăgubiri?",
+    },
+  ],
+  faq: [
+    {
+      q: "Pot cere despăgubiri fără să trec prin Comisia de malpraxis?",
+      a: "Da. Procedura Comisiei nu este obligatorie înaintea sesizării instanței. Alegerea depinde de probele existente și de obiectivul concret al cazului.",
+    },
+    {
+      q: "Ce se întâmplă dacă medicul sau clinica nu au asigurare?",
+      a: "Lipsa asigurării constituie o abatere sancționabilă, dar răspunderea civilă rămâne. Despăgubirile pot fi urmărite direct de la medic sau de la unitatea sanitară.",
+    },
+    {
+      q: "Cât durează un proces pentru despăgubiri malpraxis?",
+      a: "Durata depinde de complexitatea medicală, de numărul expertizelor și de instanță. Pentru o estimare realistă, analizez mai întâi documentația disponibilă.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legea nr. 95/2006 privind reforma în domeniul sănătății - Titlul XVI, malpraxisul și răspunderea civilă.",
+      href: L95,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const raspunderePenalaMedicRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/raspundere-penala-medic",
+  altPath: "/en/services/doctor-criminal-liability",
+  roPath: "/servicii/raspundere-penala-medic",
+  title: "Avocat Răspundere Penală Medic București | Bogdan Lamatic",
+  h1: "Avocat pentru Răspunderea Penală a Medicului în București",
+  description:
+    "Ești medic cercetat penal pentru un act medical? Analizez documentația, standardul profesional, expertizele și legătura dintre conduită și prejudiciu.",
+  keywords:
+    "răspundere penală medic, avocat medic dosar penal, medic acuzat malpraxis, apărare penală medic, avocat penal malpraxis, răspundere penală medicală",
+  breadcrumbLabel: "Răspundere penală medic",
+  serviceName: "Avocat pentru Răspunderea Penală a Medicului București - Bogdan Lamatic",
+  urgency: [
+    "Ești medic și ai fost chemat la Poliție sau Parchet?",
+    "Într-un dosar penal privind un act medical, prima întrebare nu este doar dacă pacientul a suferit un prejudiciu, ci ce obligație profesională ți se impută că ai încălcat și dacă există legătură cauzală cu rezultatul produs.",
+    "Nu aștepta expertiza finală pentru a construi apărarea.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr medici, clinici și personal medical în dosare penale care privesc acte medicale, expertize, malpraxis și răspundere profesională.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce verific în apărarea medicului",
+      paragraphs: [
+        "Analizez documentația medicală integrală, cronologia deciziilor clinice, starea pacientului la momentul intervenției, protocoalele aplicabile, limitele competenței profesionale și expertizele efectuate sau solicitate.",
+        "Trebuie făcută diferența dintre o culpă penală și un rezultat nefavorabil care poate ține de riscul inerent al actului medical sau de alți factori.",
+      ],
+    },
+    {
+      h2: "Ce acuzație există?",
+      paragraphs: [
+        [
+          { text: "În funcție de rezultat, dosarul poate privi, între altele, " },
+          { text: "vătămarea corporală din culpă", to: "/servicii/vatamare-corporala-din-culpa-medicala" },
+          { text: " sau " },
+          { text: "uciderea din culpă", to: "/servicii/ucidere-din-culpa-medicala" },
+          { text: ". Codul penal tratează distinct inclusiv situațiile în care rezultatul este legat de nerespectarea regulilor unei profesii. " },
+          { text: "(Legislație)", href: CP },
+        ],
+      ],
+    },
+    {
+      h2: "Nu modifica retrospectiv documentația medicală",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Păstrează dosarul, logurile și documentele în forma în care există.",
+        "O explicație profesională trebuie construită pe documentele existente și pe ceea ce putea fi cunoscut la momentul actului medical, nu pe rezultatul observat ulterior.",
+      ],
+    },
+    {
+      h2: "Ai primit citație?",
+      paragraphs: [
+        "Trimite-mi citația și spune-mi: ce calitate procesuală ai; ce act medical este cercetat; când a avut loc; dacă există deja o expertiză.",
+        "Discută strategia înainte de declarație.",
+      ],
+      cta: "Ai primit citație? Sună-mă acum",
+    },
+  ],
+  faq: [
+    {
+      q: "Pot fi cercetat penal doar pentru că pacientul a avut o complicație?",
+      a: "Nu. Complicațiile pot apărea și în absența unei culpe profesionale. Răspunderea penală presupune o conduită culpabilă, legată cauzal de rezultatul produs.",
+    },
+    {
+      q: "Ce înseamnă art. 308 Cod penal pentru medici din privat?",
+      a: "Art. 308 extinde infracțiunile de serviciu și la persoanele care îndeplinesc o însărcinare în cadrul unei persoane juridice private, aplicându-se cu reducerea limitelor de pedeapsă.",
+    },
+    {
+      q: "Când trebuie să contactez un avocat?",
+      a: "Cel mai devreme posibil, înainte de prima audiere sau de efectuarea unei expertize care ar putea fi influențată de modul în care este prezentat cazul.",
+    },
+  ],
+  resources: [
+    {
+      text: "Codul penal - infracțiuni de culpă, neglijență în serviciu și extinderea la mediul privat (art. 192, 196, 298, 308).",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const comisiaDeMalpraxisRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/comisia-de-malpraxis",
+  altPath: "/en/services/malpractice-committee",
+  roPath: "/servicii/comisia-de-malpraxis",
+  title: "Comisia de Malpraxis - Avocat București | Bogdan Lamatic",
+  h1: "Avocat pentru Comisia de Malpraxis în București",
+  description:
+    "Asistență pentru sesizarea Comisiei de malpraxis, pregătirea dosarului, analiza expertizei și contestarea deciziei.",
+  keywords:
+    "Comisia de malpraxis, sesizare Comisia de malpraxis, avocat Comisia malpraxis, contestație Comisia malpraxis, procedură malpraxis DSP",
+  breadcrumbLabel: "Comisia de malpraxis",
+  serviceName: "Avocat pentru Comisia de Malpraxis București - Bogdan Lamatic",
+  urgency: [
+    "Vrei să sesizezi Comisia de malpraxis?",
+    "Comisia de monitorizare și competență profesională pentru cazurile de malpraxis funcționează la nivelul direcțiilor de sănătate publică și stabilește prin decizie dacă în cazul analizat a existat sau nu malpraxis.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist pacienți, aparținători și personal medical în procedura Comisiei de malpraxis, de la sesizare până la contestarea deciziei.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Cine poate sesiza Comisia?",
+      paragraphs: [
+        [
+          { text: "Legea permite sesizarea de către persoana care se consideră victima actului de malpraxis sau reprezentantul său legal și, în cazul decesului, de către succesorii persoanei. " },
+          { text: "(Legislație)", href: L95 },
+        ],
+      ],
+    },
+    {
+      h2: "Ce pregătim înainte de sesizare",
+      paragraphs: [
+        "Nu aș trimite doar o reclamație generală.",
+        "Construiesc o cronologie clară a actului medical și selectez documentele relevante: dosarul medical, investigațiile, consimțământul informat, documentele privind evoluția ulterioară și celelalte probe necesare.",
+      ],
+    },
+    {
+      h2: "Este obligatoriu să mergi mai întâi la Comisie?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Nu. Procedura Comisiei nu împiedică sesizarea instanței potrivit dreptului comun. Alegerea traseului trebuie făcută în funcție de probele existente și obiectivul concret al cazului. " },
+          { text: "(Legislație)", href: L95 },
+        ],
+        [
+          { text: "Dacă obiectivul principal este obținerea unor sume pentru prejudiciul suferit, vezi " },
+          { text: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Poți contesta decizia Comisiei?",
+      paragraphs: [
+        [
+          { text: "Da. Legea prevede un termen de 15 zile de la comunicarea deciziei pentru contestarea acesteia la instanța competentă. " },
+          { text: "(Legislație)", href: L95 },
+        ],
+        "Ai primit deja decizia? Trimite-mi documentul cât mai repede, pentru a verifica termenul și opțiunile disponibile.",
+      ],
+      cta: "Am primit decizia Comisiei - vreau să o contest",
+    },
+  ],
+  faq: [
+    {
+      q: "Cât durează procedura la Comisia de malpraxis?",
+      a: "Legea prevede termene pentru desemnarea experților, efectuarea raportului și emiterea deciziei. Durata exactă poate varia în funcție de complexitatea cazului și de instanța administrativă implicată.",
+    },
+    {
+      q: "Comisia de malpraxis decide și despăgubirile?",
+      a: "Nu. Comisia stabilește dacă a existat sau nu malpraxis. Despăgubirile se pot obține pe cale civilă, iar pentru această latură analizăm separat strategia.",
+    },
+    {
+      q: "Ce fac dacă decizia Comisiei îmi este defavorabilă?",
+      a: "Decizia poate fi contestată în termen de 15 zile de la comunicare. Analizez raportul, motivele invocate și expertizele pentru a construi contestația.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legea nr. 95/2006 - Titlul XVI, procedura Comisiei de malpraxis, termenul de contestație și drepturile părților.",
+      href: L95,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const vatamareCorporalaDinCulpaMedicalaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/vatamare-corporala-din-culpa-medicala",
+  altPath: "/en/services/medical-negligence-bodily-injury",
+  roPath: "/servicii/vatamare-corporala-din-culpa-medicala",
+  title: "Vătămare din Culpă Medicală | Avocat Penal București",
+  h1: "Avocat pentru Vătămare Corporală din Culpă Medicală",
+  description:
+    "Dosar penal pentru vătămare corporală produsă printr-un act medical? Analiza culpei profesionale, expertizei și legăturii de cauzalitate.",
+  keywords:
+    "vătămare corporală din culpă medicală, avocat vătămare culpă medicală, eroare medicală vătămare corporală, art 196 malpraxis, vătămare pacient medic",
+  breadcrumbLabel: "Vătămare corporală din culpă medicală",
+  serviceName: "Avocat pentru Vătămare Corporală din Culpă Medicală - Bogdan Lamatic",
+  urgency: [
+    "Există un dosar penal după o vătămare produsă în timpul unui act medical?",
+    "Într-o asemenea cauză trebuie stabilit dacă leziunea pacientului este rezultatul unei încălcări culpabile a regulilor profesionale sau dacă rezultatul are o altă explicație medicală.",
+  ],
+  bio: [
+    `${BIO_INTRO} Analizez dosare penale privind vătămări corporale produse în context medical, verificând legătura dintre conduită, standardul profesional și prejudiciu.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce trebuie dovedit în dosar",
+      paragraphs: [
+        "Nu este suficient să existe o complicație și nici simplul fapt că pacientul a avut nevoie de tratament ulterior.",
+        "Analiza trebuie să privească: conduita medicală concretă; regula profesională presupus încălcată; caracterul culpabil al conduitei; consecința medicală; legătura dintre conduită și consecință.",
+      ],
+    },
+    {
+      h2: "Expertiza este una dintre probele centrale",
+      paragraphs: [
+        "Trebuie verificat dacă expertiza pornește de la documentația medicală completă și dacă răspunde problemei reale: ce trebuia făcut în condițiile existente la acel moment și dacă o altă conduită ar fi evitat rezultatul.",
+      ],
+    },
+    {
+      h2: "Ești medic sau pacient?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Dacă ești medic cercetat penal, vezi și " },
+          { text: "Răspunderea penală a medicului", to: "/servicii/raspundere-penala-medic" },
+          { text: "." },
+        ],
+        [
+          { text: "Dacă ești pacient și urmărești repararea prejudiciului, vezi " },
+          { text: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
+          { text: "." },
+        ],
+        "Pagina aceasta rămâne concentrată exclusiv pe acuzația penală de vătămare corporală din culpă.",
+      ],
+      cta: "Ai primit citație sau există deja o expertiză? Trimite-mi actele",
+    },
+  ],
+  faq: [
+    {
+      q: "Care este diferența dintre malpraxis civil și vătămare din culpă medicală penală?",
+      a: "Malpraxisul civil atrage răspundere pentru despăgubiri. Vătămarea din culpă medicală este o infracțiune care presupune o conduită culpabilă, cauzală, ce încalcă regulile profesiei.",
+    },
+    {
+      q: "Pot contesta o expertiză medico-legală?",
+      a: "Da. Se poate cere o nouă expertiză, completarea celei existente sau punerea de întrebări suplimentare, atunci când concluziile nu sunt suficient fundamentate pe documentație.",
+    },
+    {
+      q: "Ce se întâmplă dacă sunt chemat la audiere în această calitate?",
+      a: "Contactează-mi înainte de prima declarație. Strategia se construiește pe baza calității procesuale și a probelor existente.",
+    },
+  ],
+  resources: [
+    {
+      text: "Codul penal - vătămarea corporală din culpă (art. 196) și situațiile legate de nerespectarea regulilor profesiei.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const ucidereDinCulpaMedicalaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/ucidere-din-culpa-medicala",
+  altPath: "/en/services/medical-negligence-manslaughter",
+  roPath: "/servicii/ucidere-din-culpa-medicala",
+  title: "Ucidere din Culpă Medicală | Avocat Penal București",
+  h1: "Avocat pentru Ucidere din Culpă Medicală",
+  description:
+    "Apărare și reprezentare în dosare de ucidere din culpă privind acte medicale. Analiza conduitei profesionale, cauzei decesului și expertizelor.",
+  keywords:
+    "ucidere din culpă medicală, avocat ucidere din culpă medic, deces malpraxis penal, medic acuzat ucidere din culpă, deces eroare medicală",
+  breadcrumbLabel: "Ucidere din culpă medicală",
+  serviceName: "Avocat pentru Ucidere din Culpă Medicală - Bogdan Lamatic",
+  urgency: [
+    "Dosarul privește decesul unui pacient?",
+    "În cauzele medicale cu rezultat letal, faptul că decesul a urmat unei intervenții sau unui tratament nu stabilește singur răspunderea penală.",
+    "Trebuie analizate cauza medicală a decesului, conduita imputată medicului și existența unei legături de cauzalitate.",
+  ],
+  bio: [
+    `${BIO_INTRO} Reprezint medici și familii în cauze cu deces în context medical, analizând cauzalitatea, expertizele și răspunderea penală.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez în primele etape",
+      paragraphs: [
+        "Verific dosarul medical, raportul operator atunci când există, documentația ATI, rezultatele investigațiilor, cronologia deteriorării stării pacientului, raportul medico-legal și expertizele efectuate.",
+        "Întrebarea centrală este dacă rezultatul fatal poate fi atribuit juridic conduitei cercetate.",
+      ],
+    },
+    {
+      h2: "Complicație medicală sau culpă penală?",
+      paragraphs: [
+        "Aceasta este una dintre delimitările esențiale. Un rezultat tragic poate exista și în absența unei conduite penalmente culpabile. Apărarea trebuie să reconstruiască situația așa cum se prezenta în momentul luării deciziei medicale.",
+      ],
+    },
+    {
+      h2: "Pentru cine este pagina",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Dacă ești medic cercetat, vezi și " },
+          { text: "Răspundere penală medic", to: "/servicii/raspundere-penala-medic" },
+          { text: "." },
+        ],
+        [
+          { text: "Dacă reprezinți familia pacientului decedat, pot fi analizate separat participarea în procesul penal și repararea prejudiciului. Pentru această latură vezi " },
+          { text: "Reprezentarea victimelor în procese penale", to: "/servicii/reprezentarea-victimelor-in-procese-penale" },
+          { text: " și " },
+          { text: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
+          { text: "." },
+        ],
+      ],
+      cta: "Există deja o anchetă penală? Sună-mă acum",
+    },
+  ],
+  faq: [
+    {
+      q: "Cât de importantă este prima expertiză în cazul unui deces medical?",
+      a: "Foarte importantă. Ea stabilește mecanismul decesului și cauzalitatea. Orice neclaritate în obiective sau concluzii poate afecta apărarea sau pretențiile ulterioare.",
+    },
+    {
+      q: "Familia pacientului decedat poate cere despăgubiri?",
+      a: "Da. Pe lângă latura penală, se poate urmări repararea prejudiciului pe cale civilă. Strategia se stabilește în funcție de obiectivul concret.",
+    },
+    {
+      q: "Există un termen-limită pentru sesizarea organelor?",
+      a: "Termenele procesuale și de prescripție depind de încadrarea juridică. De aceea este utilă o analiză cât mai rapidă.",
+    },
+  ],
+  resources: [
+    {
+      text: "Codul penal - uciderea din culpă (art. 192) și situațiile legate de nerespectarea regulilor profesiei.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const plangereColegiulMedicilorRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/plangere-colegiul-medicilor",
+  altPath: "/en/services/complaint-college-of-physicians",
+  roPath: "/servicii/plangere-colegiul-medicilor",
+  title: "Plângere la Colegiul Medicilor | Avocat București",
+  h1: "Avocat pentru Plângere la Colegiul Medicilor",
+  description:
+    "Asistență pentru redactarea unei plângeri la Colegiul Medicilor și reprezentare în procedura disciplinară privind conduita profesională a medicului.",
+  keywords:
+    "plângere Colegiul Medicilor, reclamație Colegiul Medicilor, sesizare Colegiul Medicilor, plângere împotriva unui medic, avocat procedură disciplinară medic",
+  breadcrumbLabel: "Plângere Colegiul Medicilor",
+  serviceName: "Avocat pentru Plângere la Colegiul Medicilor - Bogdan Lamatic",
+  urgency: [
+    "Vrei să formulezi o plângere împotriva unui medic?",
+    "Procedura disciplinară de la Colegiul Medicilor are un scop diferit de procedura Comisiei de malpraxis și de un proces pentru despăgubiri.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist pacienți și familii în formularea plângerilor disciplinare către Colegiul Medicilor și analizez opțiunile procesuale ale cazului.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce trebuie să conțină plângerea",
+      paragraphs: [
+        "O sesizare eficientă trebuie să identifice medicul și conduita profesională reclamată și să prezinte faptele într-o cronologie care poate fi verificată prin documente.",
+        "Te ajut să separi ceea ce este relevant disciplinar de nemulțumirile care nu pot susține, singure, o abatere profesională.",
+      ],
+    },
+    {
+      h2: "Colegiul Medicilor sau Comisia de malpraxis?",
+      paragraphs: [
+        "Sunt două proceduri diferite. Colegiul Medicilor analizează răspunderea disciplinară profesională. Comisia de malpraxis stabilește, în procedura prevăzută de Legea nr. 95/2006, dacă a existat sau nu un caz de malpraxis.",
+        [
+          { text: "Vezi separat pagina " },
+          { text: "Comisia de malpraxis", to: "/servicii/comisia-de-malpraxis" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Poți obține despăgubiri prin plângerea disciplinară?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Nu aș construi strategia de despăgubire în jurul procedurii disciplinare. Dacă obiectivul principal este recuperarea prejudiciului, trebuie analizată separat calea civilă. Vezi " },
+          { text: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ai deja documentația medicală?",
+      paragraphs: [
+        "Trimite-mi actele și cronologia evenimentelor pentru a stabili ce demers are sens în cazul tău.",
+      ],
+      cta: "Vrei să formulezi o plângere? Sună-mă acum",
+    },
+  ],
+  faq: [
+    {
+      q: "Cine poate face plângere la Colegiul Medicilor?",
+      a: "Pacientul sau reprezentantul său legal, iar în cazul decesului, succesorii acestuia pot formula plângere împotriva unui medic pentru abateri disciplinare.",
+    },
+    {
+      q: "Plângerea disciplinară duce automat la o anchetă penală?",
+      a: "Nu. Procedura disciplinară este distinctă. O anchetă penală se declanșează separat, în condițiile legii, dacă fapta întruniește elementele unei infracțiuni.",
+    },
+    {
+      q: "Ce se întâmplă după ce depun plângerea?",
+      a: "Colegiul Medicilor teritorial competent analizează sesizarea, poate dispune cercetări și emite o decizie. Termenele și procedura sunt prevăzute de regulamentele de organizare.",
+    },
+  ],
+  resources: [
+    {
+      text: "Colegiul Medicilor din România - procedura disciplinară și sesizarea comisiilor de disciplină.",
+      href: CMR,
+      linkLabel: "Colegiul Medicilor",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
+
+export const malpraxisStomatologicRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/malpraxis-stomatologic",
+  altPath: "/en/services/dental-malpractice",
+  roPath: "/servicii/malpraxis-stomatologic",
+  title: "Avocat Malpraxis Stomatologic București | Bogdan Lamatic",
+  h1: "Avocat Malpraxis Stomatologic în București",
+  description:
+    "Probleme după implanturi, extracții sau alte tratamente stomatologice? Analizez documentația, prejudiciul și opțiunile juridice în caz de malpraxis.",
+  keywords:
+    "avocat malpraxis stomatologic, malpraxis stomatologic București, despăgubiri malpraxis dentar, eroare medicală stomatologie, reclamație medic stomatolog",
+  breadcrumbLabel: "Malpraxis stomatologic",
+  serviceName: "Avocat Malpraxis Stomatologic București - Bogdan Lamatic",
+  urgency: [
+    "Ai suferit un prejudiciu după un tratament stomatologic?",
+    "Implanturile, tratamentele endodontice, extracțiile, lucrările protetice sau alte proceduri pot genera uneori complicații. O complicație nu înseamnă însă automat malpraxis.",
+  ],
+  bio: [
+    `${BIO_INTRO} Asist pacienți în cazuri de malpraxis stomatologic, analizând documentația, consecințele și opțiunile juridice disponibile.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez",
+      paragraphs: [
+        "Sunt importante planul de tratament, radiografiile și investigațiile efectuate înainte și după procedură, fișa pacientului, consimțământul informat, tratamentul efectiv realizat și evaluările ulterioare.",
+        "În anumite cazuri este necesară și o opinie de specialitate independentă.",
+      ],
+    },
+    {
+      h2: "Ce poți face dacă suspectezi malpraxis stomatologic?",
+      paragraphs: [
+        "În funcție de obiectiv și de probe pot fi analizate: solicitarea de despăgubiri; procedura Comisiei de malpraxis; răspunderea disciplinară; iar în cazurile care întrunesc condițiile unei infracțiuni, latura penală.",
+        [
+          { text: "Pentru repararea prejudiciului vezi " },
+          { text: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Unde reclami disciplinar un medic stomatolog?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Medicii stomatologi țin de Colegiul Medicilor Stomatologi din România (CMSR), nu de Colegiul Medicilor din România (CMR). Procedura disciplinară a medicilor stomatologi se desfășoară în cadrul comisiilor de disciplină ale CMSR.",
+      ],
+    },
+    {
+      h2: "Ce să îmi trimiți",
+      paragraphs: [
+        "Fișa tratamentului, planul terapeutic, radiografiile/CBCT, facturile, consimțământul informat și documentele de la medicul care a evaluat problema ulterior.",
+      ],
+      cta: "Vrei să verificăm dacă există bază pentru un demers?",
+    },
+  ],
+  faq: [
+    {
+      q: "Se aplică aceeași lege ca în malpraxisul medical general?",
+      a: "Da, malpraxisul stomatologic intră sub incidența aceluiași cadru legal privind răspunderea medicală. Particularitățile țin de standardul profesional stomatologic și de instituțiile de reglementare disciplinară.",
+    },
+    {
+      q: "Pot cere despăgubiri pentru un implant dentar nereușit?",
+      a: "Da, dacă se poate dovedi o abatere de la standardul profesional și o legătură cauzală cu prejudiciul. Fiecare caz se analizează individual.",
+    },
+    {
+      q: "La cine mă adresez cu plângere disciplinară pentru un stomatolog?",
+      a: "La Colegiul Medicilor Stomatologi din România (CMSR), instituție distinctă de Colegiul Medicilor din România (CMR).",
+    },
+  ],
+  resources: [
+    {
+      text: "Colegiul Medicilor Stomatologi din România - comisiile de disciplină și procedura de sesizare.",
+      href: CMSR,
+      linkLabel: "CMSR",
+    },
+    {
+      text: "Legea nr. 95/2006 - Titlul XVI, malpraxisul și răspunderea civilă.",
+      href: L95,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_MALPRAXIS,
+};
