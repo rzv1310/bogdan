@@ -142,7 +142,7 @@ export default function OffensesAgainstPersons() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic
+        Violent Crime Defense Lawyer in Bucharest
       </h1>
 
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
