@@ -161,6 +161,62 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/despagubiri-malpraxis-medical</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/despagubiri-malpraxis-medical" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-malpractice-compensation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/despagubiri-malpraxis-medical" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/raspundere-penala-medic</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/raspundere-penala-medic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/doctor-criminal-liability" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/raspundere-penala-medic" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/comisia-de-malpraxis</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/comisia-de-malpraxis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/malpractice-committee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/comisia-de-malpraxis" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/vatamare-corporala-din-culpa-medicala</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/vatamare-corporala-din-culpa-medicala" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-negligence-bodily-injury" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/vatamare-corporala-din-culpa-medicala" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/ucidere-din-culpa-medicala</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/ucidere-din-culpa-medicala" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-negligence-manslaughter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/ucidere-din-culpa-medicala" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/plangere-colegiul-medicilor</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/plangere-colegiul-medicilor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/complaint-college-of-physicians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/plangere-colegiul-medicilor" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/servicii/malpraxis-stomatologic</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/malpraxis-stomatologic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/dental-malpractice" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/malpraxis-stomatologic" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://avocatpenalbucuresti.ro/servicii/infractiuni-rutiere-cu-victime</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/infractiuni-rutiere-cu-victime" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses" />
@@ -735,6 +791,62 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/medical-malpractice-compensation</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/despagubiri-malpraxis-medical" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-malpractice-compensation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/despagubiri-malpraxis-medical" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/doctor-criminal-liability</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/raspundere-penala-medic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/doctor-criminal-liability" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/raspundere-penala-medic" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/malpractice-committee</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/comisia-de-malpraxis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/malpractice-committee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/comisia-de-malpraxis" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/medical-negligence-bodily-injury</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/vatamare-corporala-din-culpa-medicala" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-negligence-bodily-injury" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/vatamare-corporala-din-culpa-medicala" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/medical-negligence-manslaughter</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/ucidere-din-culpa-medicala" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/medical-negligence-manslaughter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/ucidere-din-culpa-medicala" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/complaint-college-of-physicians</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/plangere-colegiul-medicilor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/complaint-college-of-physicians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/plangere-colegiul-medicilor" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/en/services/dental-malpractice</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/servicii/malpraxis-stomatologic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/services/dental-malpractice" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/servicii/malpraxis-stomatologic" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://avocatpenalbucuresti.ro/en/services/road-traffic-offenses</loc>
