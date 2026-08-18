@@ -162,7 +162,7 @@ export default function Malpraxis() {
           </Breadcrumb>
 
           <h1 className="text-2xl font-semibold mb-4">
-            Avocat Malpraxis Medical București - Bogdan Lamatic | Neglijență în serviciu
+            Avocat Malpraxis Medical București
           </h1>
 
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
