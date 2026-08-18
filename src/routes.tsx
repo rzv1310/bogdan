@@ -225,6 +225,13 @@ export default function AppRoutes() {
 
           <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
           <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
+          <Route path="/servicii/despagubiri-malpraxis-medical" element={<DespagubiriMalpraxisMedical />} />
+          <Route path="/servicii/raspundere-penala-medic" element={<RaspunderePenalaMedic />} />
+          <Route path="/servicii/comisia-de-malpraxis" element={<ComisiaDeMalpraxis />} />
+          <Route path="/servicii/vatamare-corporala-din-culpa-medicala" element={<VatamareCorporalaDinCulpaMedicala />} />
+          <Route path="/servicii/ucidere-din-culpa-medicala" element={<UcidereDinCulpaMedicala />} />
+          <Route path="/servicii/plangere-colegiul-medicilor" element={<PlangereColegiulMedicilor />} />
+          <Route path="/servicii/malpraxis-stomatologic" element={<MalpraxisStomatologic />} />
           <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
           <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
           <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
