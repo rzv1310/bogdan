@@ -256,6 +256,13 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/blackmail-and-harassment": "Blackmail and harassment",
   "/en/services/rape-and-sexual-assault": "Rape and sexual assault",
   "/en/services/homicide-and-manslaughter": "Homicide and manslaughter",
+  "/en/services/medical-malpractice-compensation": "Medical malpractice compensation",
+  "/en/services/doctor-criminal-liability": "Doctor criminal liability",
+  "/en/services/malpractice-committee": "Malpractice committee",
+  "/en/services/medical-negligence-bodily-injury": "Bodily injury from medical negligence",
+  "/en/services/medical-negligence-manslaughter": "Manslaughter from medical negligence",
+  "/en/services/complaint-college-of-physicians": "Complaint to the College of Physicians",
+  "/en/services/dental-malpractice": "Dental malpractice",
 
   "/en/compensation-calculator": "Compensation calculator",
 
