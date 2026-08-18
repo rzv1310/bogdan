@@ -1,11 +1,11 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { useSEO } from "@/hooks/useSEO";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
-import { toast } from "@/hooks/use-toast";
+
 
 import RelatedServices from "@/components/RelatedServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
