@@ -165,6 +165,22 @@ const BlackmailAndHarassmentEn = lazyRoute(() => import("./pages/en/services/bla
 const RapeAndSexualAssaultEn = lazyRoute(() => import("./pages/en/services/rape-and-sexual-assault"));
 const HomicideAndManslaughterEn = lazyRoute(() => import("./pages/en/services/homicide-and-manslaughter"));
 
+// Malpractice sub-services
+const DespagubiriMalpraxisMedical = lazyRoute(() => import("./pages/services/despagubiri-malpraxis-medical"));
+const RaspunderePenalaMedic = lazyRoute(() => import("./pages/services/raspundere-penala-medic"));
+const ComisiaDeMalpraxis = lazyRoute(() => import("./pages/services/comisia-de-malpraxis"));
+const VatamareCorporalaDinCulpaMedicala = lazyRoute(() => import("./pages/services/vatamare-corporala-din-culpa-medicala"));
+const UcidereDinCulpaMedicala = lazyRoute(() => import("./pages/services/ucidere-din-culpa-medicala"));
+const PlangereColegiulMedicilor = lazyRoute(() => import("./pages/services/plangere-colegiul-medicilor"));
+const MalpraxisStomatologic = lazyRoute(() => import("./pages/services/malpraxis-stomatologic"));
+const MedicalMalpracticeCompensationEn = lazyRoute(() => import("./pages/en/services/medical-malpractice-compensation"));
+const DoctorCriminalLiabilityEn = lazyRoute(() => import("./pages/en/services/doctor-criminal-liability"));
+const MalpracticeCommitteeEn = lazyRoute(() => import("./pages/en/services/malpractice-committee"));
+const MedicalNegligenceBodilyInjuryEn = lazyRoute(() => import("./pages/en/services/medical-negligence-bodily-injury"));
+const MedicalNegligenceManslaughterEn = lazyRoute(() => import("./pages/en/services/medical-negligence-manslaughter"));
+const ComplaintCollegeOfPhysiciansEn = lazyRoute(() => import("./pages/en/services/complaint-college-of-physicians"));
+const DentalMalpracticeEn = lazyRoute(() => import("./pages/en/services/dental-malpractice"));
+
 
 export default function AppRoutes() {
   return (
@@ -209,6 +225,13 @@ export default function AppRoutes() {
 
           <Route path="/servicii/spalare-de-bani-si-ascundere-de-bunuri" element={<SpalareDeBani />} />
           <Route path="/servicii/neglijenta-profesionala-si-malpraxis" element={<Malpraxis />} />
+          <Route path="/servicii/despagubiri-malpraxis-medical" element={<DespagubiriMalpraxisMedical />} />
+          <Route path="/servicii/raspundere-penala-medic" element={<RaspunderePenalaMedic />} />
+          <Route path="/servicii/comisia-de-malpraxis" element={<ComisiaDeMalpraxis />} />
+          <Route path="/servicii/vatamare-corporala-din-culpa-medicala" element={<VatamareCorporalaDinCulpaMedicala />} />
+          <Route path="/servicii/ucidere-din-culpa-medicala" element={<UcidereDinCulpaMedicala />} />
+          <Route path="/servicii/plangere-colegiul-medicilor" element={<PlangereColegiulMedicilor />} />
+          <Route path="/servicii/malpraxis-stomatologic" element={<MalpraxisStomatologic />} />
           <Route path="/servicii/infractiuni-rutiere-cu-victime" element={<InfractiuniRutiere />} />
           <Route path="/servicii/raspundere-penala-incidente-locul-de-munca" element={<RaspunderePenalaMunca />} />
           <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
@@ -286,6 +309,13 @@ export default function AppRoutes() {
 
           <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
           <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
+          <Route path="/en/services/medical-malpractice-compensation" element={<MedicalMalpracticeCompensationEn />} />
+          <Route path="/en/services/doctor-criminal-liability" element={<DoctorCriminalLiabilityEn />} />
+          <Route path="/en/services/malpractice-committee" element={<MalpracticeCommitteeEn />} />
+          <Route path="/en/services/medical-negligence-bodily-injury" element={<MedicalNegligenceBodilyInjuryEn />} />
+          <Route path="/en/services/medical-negligence-manslaughter" element={<MedicalNegligenceManslaughterEn />} />
+          <Route path="/en/services/complaint-college-of-physicians" element={<ComplaintCollegeOfPhysiciansEn />} />
+          <Route path="/en/services/dental-malpractice" element={<DentalMalpracticeEn />} />
           <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
           <Route path="/en/services/drunk-driving" element={<DrunkDrivingEn />} />
           <Route path="/en/services/drug-driving" element={<DrugDrivingEn />} />

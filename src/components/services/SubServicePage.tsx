@@ -16,7 +16,7 @@ import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 
 export interface SubServiceSubsection {
   h3: string;
-  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
@@ -38,7 +38,7 @@ export interface SubServiceSection {
   h2: string;
   /** Optional DOM id, used as in-page anchor target. */
   id?: string;
-  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
@@ -54,7 +54,7 @@ export interface SubServiceSection {
   /** Optional inline CTA button rendered inside the callout. */
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
-  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   /** Optional bullets rendered after the paragraphs-after-bullets. */
   bulletsAfterBullets?: (string | { bold: string; rest: string })[];
   /** Optional small highlighted callout rendered after the bullets. */
@@ -148,7 +148,7 @@ function collectContextualPaths(data: SubServicePageData): string[] {
   const addPath = (path: string) => paths.add(normalizePath(path));
 
   const fromParagraphs = (
-    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[]
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[]
   ) => {
     paragraphs?.forEach((paragraph) => {
       if (typeof paragraph === "string") return;
@@ -285,13 +285,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
-    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
     bullets?: (string | { bold: string; rest: string })[];
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
     calloutCta?: string;
-    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
     bulletsAfterBullets?: (string | { bold: string; rest: string })[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
@@ -312,6 +312,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
                   {segment.text}
                 </Link>
+              ) : segment.href ? (
+                <a key={sIdx} href={segment.href} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </a>
               ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (
@@ -359,6 +363,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
                   {segment.text}
                 </Link>
+              ) : segment.href ? (
+                <a key={sIdx} href={segment.href} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </a>
               ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (

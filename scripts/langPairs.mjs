@@ -36,6 +36,13 @@ export const RO_TO_EN = {
   "/servicii/accident-rutier-cu-victime": "/en/services/road-accident-with-victims",
 
   "/servicii/neglijenta-profesionala-si-malpraxis": "/en/services/professional-negligence-and-malpractice",
+  "/servicii/despagubiri-malpraxis-medical": "/en/services/medical-malpractice-compensation",
+  "/servicii/raspundere-penala-medic": "/en/services/doctor-criminal-liability",
+  "/servicii/comisia-de-malpraxis": "/en/services/malpractice-committee",
+  "/servicii/vatamare-corporala-din-culpa-medicala": "/en/services/medical-negligence-bodily-injury",
+  "/servicii/ucidere-din-culpa-medicala": "/en/services/medical-negligence-manslaughter",
+  "/servicii/plangere-colegiul-medicilor": "/en/services/complaint-college-of-physicians",
+  "/servicii/malpraxis-stomatologic": "/en/services/dental-malpractice",
   "/servicii/infractiuni-rutiere-cu-victime": "/en/services/road-traffic-offenses",
   "/servicii/raspundere-penala-incidente-locul-de-munca": "/en/services/workplace-criminal-liability",
   "/servicii/reprezentarea-victimelor-in-procese-penale": "/en/services/victim-representation-in-criminal-cases",
