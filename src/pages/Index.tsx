@@ -605,8 +605,8 @@ const Index = () => {
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "44.4533",
-                "longitude": "26.0876"
+                "latitude": 44.4572663,
+                "longitude": 26.0635712
               },
               "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
             }
