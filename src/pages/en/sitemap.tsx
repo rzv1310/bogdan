@@ -71,6 +71,20 @@ export default function SitemapEn() {
     { url: "/en/services/road-traffic-offenses", title: "Road Traffic Offenses" },
     { url: "/en/services/workplace-criminal-liability", title: "Workplace Criminal Liability" },
     { url: "/en/services/victim-representation-in-criminal-cases", title: "Victim Representation in Criminal Cases" },
+    { url: "/en/services/tax-evasion", title: "Tax Evasion" },
+    { url: "/en/services/fraud-and-deception", title: "Fraud and Deception" },
+    { url: "/en/services/embezzlement", title: "Embezzlement" },
+    { url: "/en/services/forgery-and-use-of-forgery", title: "Forgery and Use of Forgery" },
+    { url: "/en/services/fraudulent-bankruptcy", title: "Fraudulent Bankruptcy" },
+    { url: "/en/services/computer-fraud", title: "Computer Fraud" },
+    { url: "/en/services/eu-funds-fraud", title: "EU Funds Fraud" },
+    { url: "/en/services/drug-possession-personal-use", title: "Drug Possession for Personal Use" },
+    { url: "/en/services/organized-crime-group", title: "Organized Crime Group" },
+    { url: "/en/services/international-drug-trafficking", title: "International Drug Trafficking" },
+    { url: "/en/services/police-custody-24-hours", title: "Police Custody 24 Hours" },
+    { url: "/en/services/pre-trial-detention", title: "Pre-trial Detention" },
+    { url: "/en/services/judicial-control", title: "Judicial Control" },
+    { url: "/en/services/house-arrest", title: "House Arrest" },
   ];
 
   const romanianPages = [

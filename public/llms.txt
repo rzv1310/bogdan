@@ -15,10 +15,31 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Contact](/contact): Formular și date de contact în română.
 - [Contact](/en/contact): Contact form and details in English.
 - [Calculator despăgubiri](/calculator-despagubiri): Instrument de estimare a despăgubirilor.
+- [Compensation Calculator](/en/compensation-calculator): Compensation estimate tool.
+- [Harta site](/harta-site): Index cu toate paginile în română.
+- [Sitemap](/en/sitemap): Index of all pages in English.
 - [Sitemap](/sitemap.xml): Harta site-ului.
 
 ## Services
 
+- [Servicii](/servicii): Toate serviciile de drept penal, în română.
+- [Services](/en/services): All criminal law services, in English.
+
+
+- [Urmărire penală](/servicii/urmarire-penala): Apărare din prima oră în faza de urmărire penală.
+- [Criminal Investigation](/en/services/criminal-investigation): Defense from the first hour of the investigation.
+- [Măsuri preventive](/servicii/masuri-preventive): Reținere, arest preventiv, control judiciar, arest la domiciliu.
+- [Preventive Measures](/en/services/preventive-measures): Custody, pre-trial detention, judicial control, house arrest.
+- [Reținere 24 de ore](/servicii/retinere-24-ore): Asistență imediată în primele 24 de ore de reținere.
+- [Police Custody 24 Hours](/en/services/police-custody-24-hours): Immediate assistance during the first 24 hours.
+- [Arest preventiv](/servicii/arest-preventiv): Apărare la propunerea și prelungirea arestului preventiv.
+- [Pre-trial Detention](/en/services/pre-trial-detention): Defense against pre-trial detention requests and extensions.
+- [Control judiciar](/servicii/control-judiciar): Contestarea și modificarea obligațiilor din controlul judiciar.
+- [Judicial Control](/en/services/judicial-control): Challenging and amending judicial control obligations.
+- [Arest la domiciliu](/servicii/arest-la-domiciliu): Solicitarea și respectarea arestului la domiciliu.
+- [House Arrest](/en/services/house-arrest): Requesting and complying with house arrest.
+- [Infracțiuni contra persoanei](/servicii/infractiuni-contra-persoanei): Apărare în acuzații de violență, agresiune și omor.
+- [Violent Crime Defense](/en/services/offenses-against-persons): Defense in violence, assault and homicide cases.
 - [Audiere Poliție și Parchet](/servicii/audiere-politie-parchet): Asistență la audiere ca suspect, inculpat sau martor.
 - [Police and Prosecutor Questioning](/en/services/police-prosecutor-questioning): Assistance during questioning.
 - [Percheziție domiciliară](/servicii/perchezitie-domiciliara): Asistență în timpul percheziției la domiciliu sau la firmă.
@@ -50,6 +71,13 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 
 - [Fonduri europene](/servicii/fonduri-europene): Fraudă cu fonduri UE, nereguli în proiecte, controale DLAF.
 - [Economic Crime](/en/services/financial-crime): Financial crime defense.
+- [Tax Evasion](/en/services/tax-evasion): Tax evasion cases, ANAF audits, damage assessment.
+- [Fraud and Deception](/en/services/fraud-and-deception): Defense and representation in fraud cases.
+- [Embezzlement](/en/services/embezzlement): Embezzlement and management shortfall cases.
+- [Forgery and Use of Forgery](/en/services/forgery-and-use-of-forgery): Document forgery and use of forged documents.
+- [Fraudulent Bankruptcy](/en/services/fraudulent-bankruptcy): Insolvency-related criminal cases and asset transfers.
+- [Computer Fraud](/en/services/computer-fraud): Fraudulent financial operations and online fraud.
+- [EU Funds Fraud](/en/services/eu-funds-fraud): EU funds fraud, project irregularities, DLAF audits.
 - [Infracțiuni de corupție](/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice): Mită, abuz în serviciu, trafic de influență.
 - [Corruption and Public Office Offenses](/en/services/corruption-and-public-office-offenses): Bribery, abuse of office, influence peddling.
 - [Bribery](/en/services/bribery-giving-and-taking): Defense in giving and taking bribe cases.
@@ -92,10 +120,24 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Viol și agresiune sexuală](/servicii/viol-agresiune-sexuala): Apărare confidențială în acuzații de infracțiuni sexuale.
 - [Omor și ucidere din culpă](/servicii/omor-ucidere-din-culpa): Apărare în dosare de omor și ucidere din culpă.
 - [Road Traffic Offenses](/en/services/road-traffic-offenses): Serious road traffic offenses.
+- [Drunk Driving](/en/services/drunk-driving): Driving under the influence of alcohol, art. 336 Criminal Code.
+- [Drug Driving](/en/services/drug-driving): Driving under the influence of psychoactive substances.
+- [Leaving the Accident Scene](/en/services/leaving-the-accident-scene): Defense in hit and run cases, art. 338 Criminal Code.
+- [Refusal to Provide Biological Samples](/en/services/refusal-to-provide-biological-samples): Refusal of biological sampling, art. 337 Criminal Code.
+- [Driving Without a Licence](/en/services/driving-without-a-licence): Cases of driving without a valid licence.
+- [Road Accident with Victims](/en/services/road-accident-with-victims): Defense of drivers investigated for accidents with victims.
+- [Car Accident Lawyer](/en/services/road-accident-compensation): Compensation claims for road accident victims and families.
+- [Bodily Injury Compensation](/en/services/bodily-injury-compensation): Compensation for victims of assault and injury.
+- [Assault and Bodily Injury](/en/services/assault-and-bodily-injury): Defense in assault and bodily harm accusations.
+- [Domestic Violence](/en/services/domestic-violence): Defense in domestic violence and protection order cases.
+- [Unlawful Detention and Threats](/en/services/unlawful-detention-and-threats): Defense in unlawful detention and threat cases.
+- [Blackmail and Harassment](/en/services/blackmail-and-harassment): Defense in blackmail and harassment accusations.
+- [Rape and Sexual Assault](/en/services/rape-and-sexual-assault): Confidential defense in sexual offense accusations.
+- [Homicide and Manslaughter](/en/services/homicide-and-manslaughter): Defense in homicide and manslaughter cases.
 - [Răspundere penală incidente locul de muncă](/servicii/raspundere-penala-incidente-locul-de-munca): Accidente de muncă, securitate.
 - [Workplace Criminal Liability](/en/services/workplace-criminal-liability): Criminal liability for workplace incidents.
 - [Reprezentarea victimelor în procese penale](/servicii/reprezentarea-victimelor-in-procese-penale): Asistență persoane vătămate.
-- [Victim Representation in Criminal Cases](/en/services/victim-representation-in-criminal-cases): Representation of victims in criminal proceedings.
+- [Personal Injury Lawyer](/en/services/victim-representation-in-criminal-cases): Representation of victims in criminal proceedings.
 
 ## Legal
 
