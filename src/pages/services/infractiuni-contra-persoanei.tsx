@@ -192,20 +192,53 @@ export default function InfractiuniContraPersoanei() {
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Tipuri de cauze pe care le apăr</h2>
         </CardHeader>
         <CardContent className="text-base leading-relaxed space-y-3">
-          <ol className="list-decimal pl-6 space-y-2">
-            <li><strong>Loviri și alte violențe, vătămare corporală (art. 193-195 CP).</strong> Apăr persoane acuzate de acte de violență, analizând proporționalitatea faptei reținute, certificatele medico-legale și circumstanțele reale ale conflictului.</li>
-            <li><strong>Vătămare corporală din culpă (art. 196 CP).</strong> Frecvent întâlnită în contexte de accidente, neglijențe sau conflicte fără intenție de vătămare - contest încadrarea juridică atunci când elementele de culpă nu sunt clar dovedite. Pentru cauzele rezultate din accidente de circulație, vezi și pagina{" "}
-              <Link to="/servicii/infractiuni-rutiere-cu-victime" className="text-primary underline underline-offset-2">
-                Infracțiuni rutiere cu victime
-              </Link>.
+          <p>Fiecare tip de cauză are pagina sa dedicată, cu explicații și pași concreți:</p>
+          <ul className="space-y-3">
+            <li>
+              <Link to="/servicii/loviri-vatamare-corporala" className="text-primary underline underline-offset-2">
+                Apărare la acuzații de lovire sau vătămare corporală
+              </Link>{" "}
+              (art. 193-196 CP), inclusiv analiza certificatului medico-legal.
             </li>
-            <li><strong>Violență în familie (art. 199 CP).</strong> Construiesc apărarea ținând cont de particularitățile acestor cauze - deseori cu probe contradictorii, martori din familie și, uneori, ordine de protecție deja emise.</li>
-            <li><strong>Amenințare și șantaj (art. 206-207 CP).</strong> Analizez dacă fapta reclamată întrunește efectiv elementele de tipicitate ale infracțiunii sau reprezintă un conflict verbal fără relevanță penală.</li>
-            <li><strong>Hărțuire și hărțuire sexuală (art. 208, art. 223 CP).</strong> Apăr persoane acuzate în astfel de cauze, verificând cu atenție probele și contextul comunicărilor invocate.</li>
-            <li><strong>Lipsirea de libertate în mod ilegal (art. 205 CP).</strong> Reprezint persoane acuzate în situații deseori legate de conflicte familiale sau de proprietate, unde încadrarea juridică trebuie analizată cu rigoare.</li>
-            <li><strong>Infracțiuni contra libertății și integrității sexuale - viol, agresiune sexuală (art. 218-219 CP).</strong> Cauze cu miză extrem de ridicată pentru libertatea și reputația clientului, în care construiesc apărarea pe baza probelor medico-legale, martorilor și cronologiei faptelor.</li>
-            <li><strong>Violare de domiciliu și violarea vieții private (art. 224-227 CP).</strong> Apăr persoane acuzate de pătrundere fără drept sau de încălcarea vieții private a altei persoane.</li>
-          </ol>
+            <li>
+              <Link to="/servicii/violenta-domestica" className="text-primary underline underline-offset-2">
+                Dosare de violență în familie
+              </Link>{" "}
+              (art. 199 CP), inclusiv atunci când există deja un ordin de protecție.
+            </li>
+            <li>
+              <Link to="/servicii/lipsire-de-libertate-amenintare" className="text-primary underline underline-offset-2">
+                Lipsire de libertate și amenințare
+              </Link>{" "}
+              (art. 205-206 CP), cu verificarea contextului real al conflictului.
+            </li>
+            <li>
+              <Link to="/servicii/santaj-hartuire" className="text-primary underline underline-offset-2">
+                Acuzații de șantaj sau hărțuire
+              </Link>{" "}
+              (art. 207-208 CP), cu analiza integrală a mesajelor invocate.
+            </li>
+            <li>
+              <Link to="/servicii/viol-agresiune-sexuala" className="text-primary underline underline-offset-2">
+                Apărare confidențială în cauze sexuale
+              </Link>{" "}
+              (art. 218-219 CP), cu accent pe cronologie și probe.
+            </li>
+            <li>
+              <Link to="/servicii/omor-ucidere-din-culpa" className="text-primary underline underline-offset-2">
+                Dosare de omor și ucidere din culpă
+              </Link>{" "}
+              (art. 188-192 CP), cu analiza intenției și a cauzalității.
+            </li>
+          </ul>
+          <p>
+            Pentru vătămările produse în accidente de circulație, informațiile potrivite sunt pe pagina privind{" "}
+            <Link to="/servicii/infractiuni-rutiere-cu-victime" className="text-primary underline underline-offset-2">
+              infracțiunile rutiere cu victime
+            </Link>
+            .
+          </p>
+
           <CallCta />
         </CardContent>
       </Card>
