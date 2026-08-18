@@ -6872,8 +6872,8 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
   path: "/en/services/bodily-injury-compensation",
   altPath: "/servicii/despagubiri-vatamare-corporala",
   roPath: "/servicii/despagubiri-vatamare-corporala",
-  title: "Bodily Injury Compensation Lawyer | Bogdan Lamatic",
-  h1: "Lawyer for compensation in bodily injury cases",
+  title: "Bodily Injury Lawyer Bucharest | Assault Compensation Claims",
+  h1: "Assault & Bodily Injury Compensation Lawyer in Bucharest",
   description:
     "Assaulted or injured in Romania? I represent you as civil party for material and moral damages, with medical evidence and a correct assessment of the loss.",
   keywords: "bodily injury compensation lawyer romania, moral damages assault, civil party bodily injury",
