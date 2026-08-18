@@ -16,7 +16,7 @@ import GoogleReviewCard from "@/components/services/GoogleReviewCard";
 
 export interface SubServiceSubsection {
   h3: string;
-  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the subsection, with this label. */
   cta?: string;
