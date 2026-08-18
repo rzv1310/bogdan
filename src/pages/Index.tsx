@@ -494,7 +494,7 @@ const Index = () => {
               "@type": "Review",
               "inLanguage": "ro-RO",
               "author": { "@type": "Person", "name": review.author },
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5, "worstRating": 1 },
               "reviewBody": review.reviewBody,
               "itemReviewed": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
               "publisher": { "@type": "Organization", "name": "Google" },
