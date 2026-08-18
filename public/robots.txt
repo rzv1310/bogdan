@@ -34,6 +34,9 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 # All other bots
 User-agent: *
 Allow: /
