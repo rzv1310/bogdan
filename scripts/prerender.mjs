@@ -91,15 +91,19 @@ function buildHead(route, head) {
 
   const schemas = head?.schemas ?? [];
   if (schemas.length > 0) {
-    const graph = schemas.map((schema) => {
-      // Strip per-schema @context so the top-level context applies to all nodes.
-      const { ["@context"]: _, ...rest } = schema;
-      return rest;
-    });
-    const json = JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": graph,
-    }).replace(/</g, "\\u003c");
+    let payload;
+    if (schemas.length === 1 && schemas[0]["@graph"]) {
+      // A single @graph object is passed through as-is.
+      payload = schemas[0];
+    } else {
+      // Combine multiple schemas into one @graph.
+      const graph = schemas.map((schema) => {
+        const { ["@context"]: _, ...rest } = schema;
+        return rest;
+      });
+      payload = { "@context": "https://schema.org", "@graph": graph };
+    }
+    const json = JSON.stringify(payload).replace(/</g, "\\u003c");
     tags.push(`<script type="application/ld+json" data-managed="true">${json}</script>`);
   }
 
