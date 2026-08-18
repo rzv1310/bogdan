@@ -8,6 +8,7 @@ import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { HERO_CTA_CLASS } from "@/lib/cta";
 
 
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 import RelatedServices from "@/components/RelatedServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
