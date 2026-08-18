@@ -165,6 +165,22 @@ const BlackmailAndHarassmentEn = lazyRoute(() => import("./pages/en/services/bla
 const RapeAndSexualAssaultEn = lazyRoute(() => import("./pages/en/services/rape-and-sexual-assault"));
 const HomicideAndManslaughterEn = lazyRoute(() => import("./pages/en/services/homicide-and-manslaughter"));
 
+// Malpractice sub-services
+const DespagubiriMalpraxisMedical = lazyRoute(() => import("./pages/services/despagubiri-malpraxis-medical"));
+const RaspunderePenalaMedic = lazyRoute(() => import("./pages/services/raspundere-penala-medic"));
+const ComisiaDeMalpraxis = lazyRoute(() => import("./pages/services/comisia-de-malpraxis"));
+const VatamareCorporalaDinCulpaMedicala = lazyRoute(() => import("./pages/services/vatamare-corporala-din-culpa-medicala"));
+const UcidereDinCulpaMedicala = lazyRoute(() => import("./pages/services/ucidere-din-culpa-medicala"));
+const PlangereColegiulMedicilor = lazyRoute(() => import("./pages/services/plangere-colegiul-medicilor"));
+const MalpraxisStomatologic = lazyRoute(() => import("./pages/services/malpraxis-stomatologic"));
+const MedicalMalpracticeCompensationEn = lazyRoute(() => import("./pages/en/services/medical-malpractice-compensation"));
+const DoctorCriminalLiabilityEn = lazyRoute(() => import("./pages/en/services/doctor-criminal-liability"));
+const MalpracticeCommitteeEn = lazyRoute(() => import("./pages/en/services/malpractice-committee"));
+const MedicalNegligenceBodilyInjuryEn = lazyRoute(() => import("./pages/en/services/medical-negligence-bodily-injury"));
+const MedicalNegligenceManslaughterEn = lazyRoute(() => import("./pages/en/services/medical-negligence-manslaughter"));
+const ComplaintCollegeOfPhysiciansEn = lazyRoute(() => import("./pages/en/services/complaint-college-of-physicians"));
+const DentalMalpracticeEn = lazyRoute(() => import("./pages/en/services/dental-malpractice"));
+
 
 export default function AppRoutes() {
   return (
