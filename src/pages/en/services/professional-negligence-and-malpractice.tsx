@@ -1,20 +1,63 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
 import { useSEO } from "@/hooks/useSEO";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 import RelatedServices from "@/components/RelatedServices";
-import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
+
+const subPages = [
+  {
+    to: "/en/services/medical-malpractice-compensation",
+    title: "Medical malpractice compensation",
+    text: "Have you suffered damage after a medical act? I analyse the file, the medical evidence and the damage to build a solid compensation claim. Civil liability can be pursued independently of criminal proceedings.",
+  },
+  {
+    to: "/en/services/doctor-criminal-liability",
+    title: "Doctor criminal liability",
+    text: "Are you a doctor summoned by the Police or the Prosecutor's Office? I check what professional conduct is attributed to you, which standard applies and how causality is established. Defence starts before the first statement.",
+  },
+  {
+    to: "/en/services/malpractice-committee",
+    title: "Malpractice committee",
+    text: "Do you want to file a complaint with the Malpractice Committee or have you already received the decision? I prepare the complaint with a clear chronology and relevant documents, and I can analyse the decision for appeal within 15 days.",
+  },
+  {
+    to: "/en/services/medical-negligence-bodily-injury",
+    title: "Bodily injury from medical negligence",
+    text: "Are you being investigated for bodily injury following a medical act or are you the injured patient? I analyse the medico-legal report and distinguish between medical complication and professional criminal fault.",
+  },
+  {
+    to: "/en/services/medical-negligence-manslaughter",
+    title: "Manslaughter from medical negligence",
+    text: "Does the case involve the death of a patient? I reconstruct the medical context and verify whether the fatal outcome can be legally attributed to the conduct under investigation, separating tragic cases from those with criminal fault.",
+  },
+  {
+    to: "/en/services/complaint-college-of-physicians",
+    title: "Complaint to the College of Physicians",
+    text: "Do you want to file a disciplinary complaint against a doctor? I help you structure the facts and documents so that the complaint targets professional liability, distinct from civil malpractice.",
+  },
+  {
+    to: "/en/services/dental-malpractice",
+    title: "Dental malpractice",
+    text: "Problems after an implant, extraction or endodontic treatment? I analyse the dental file and radiographs to see if there was a deviation from the dental professional standard and what legal options are available.",
+  },
+];
+
 export default function MalpracticeEn() {
   useSEO({
     keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
-    title: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
+    title: "Medical malpractice lawyer | Bogdan Lamatic | Bucharest | Negligence in service",
     description: "Defense and representation in medical malpractice cases.",
-    alternates: { en: "/en/services/professional-negligence-and-malpractice", ro: "/servicii/neglijenta-profesionala-si-malpraxis" , xDefault: "/servicii/neglijenta-profesionala-si-malpraxis"},
+    alternates: {
+      en: "/en/services/professional-negligence-and-malpractice",
+      ro: "/servicii/neglijenta-profesionala-si-malpraxis",
+      xDefault: "/servicii/neglijenta-profesionala-si-malpraxis",
+    },
     locale: "en_US",
     canonical: "/en/services/professional-negligence-and-malpractice",
   });
@@ -30,7 +73,12 @@ export default function MalpracticeEn() {
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://avocatpenalbucuresti.ro/en" },
               { "@type": "ListItem", position: 2, name: "Services", item: "https://avocatpenalbucuresti.ro/en/services" },
-              { "@type": "ListItem", position: 3, name: "Professional negligence and malpractice", item: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice" },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Professional negligence and malpractice",
+                item: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice",
+              },
             ],
           }),
         }}
@@ -41,7 +89,7 @@ export default function MalpracticeEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service",
+            name: "Medical malpractice lawyer | Bogdan Lamatic | Bucharest | Negligence in service",
             description: "Defense and representation in medical malpractice cases.",
             url: "https://avocatpenalbucuresti.ro/en/services/professional-negligence-and-malpractice",
             areaServed: ["RO", "EU"],
@@ -53,7 +101,7 @@ export default function MalpracticeEn() {
               addressRegion: "Bucuresti",
               postalCode: "012244",
               addressCountry: "RO",
-              url: "https://www.google.com/maps?cid=17818591254142574295"
+              url: "https://www.google.com/maps?cid=17818591254142574295",
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
@@ -61,158 +109,59 @@ export default function MalpracticeEn() {
           }),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                        {
-                                    "@type": "Question",
-                                    "name": "Can I claim damages without a criminal trial?",
-                                    "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings (Law 95/2006)."
-                                    }
-                        },
-                        {
-                                    "@type": "Question",
-                                    "name": "What is the limitation period?",
-                                    "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Generally 3 years for civil malpractice; for criminal offenses (e.g., arts. 192/196 CP) criminal limitation periods apply."
-                                    }
-                        },
-                        {
-                                    "@type": "Question",
-                                    "name": "What if the unit/doctor has no insurance?",
-                                    "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "It is a sanctionable breach; civil liability remains and damages can be pursued directly."
-                                    }
-                        },
-                        {
-                                    "@type": "Question",
-                                    "name": "When does it become “negligence in service” (criminal)?",
-                                    "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "When a public official breaches a legal duty causing damage/rights violation; for the private sector, art. 308 CP extends the rules with reduced limits."
-                                    }
-                        }
-            ]
-}),
-        }}
-      />
 
       <section className="mx-auto max-w-6xl px-4 md:px-6 py-8">
-      <div className="flex flex-col">
-        <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Professional negligence and malpractice</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+        <div className="flex flex-col">
+          <Breadcrumb className="order-last mt-5 mb-5 md:order-first md:mt-0 md:mb-4">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/en/services">Services</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Professional negligence and malpractice</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
 
-        <h1 className="text-2xl font-semibold mb-4">Medical malpractice lawyer | Attorney Bogdan Lamatic | Bucharest | Negligence in service</h1>
-        <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-          <p className="text-foreground">
-            <span className="block"><strong>In malpractice cases, the first days matter most.</strong></span>
-            <span className="block">The medical file, the medico-legal expert reports and the statements given at the beginning of the investigation can decide whether criminal liability is established or not.</span>
-            <span className="block">Do not wait for the indictment to ask for help.</span>
-          </p>
+          <h1 className="text-2xl font-semibold mb-4">Medical malpractice lawyer | Bogdan Lamatic | Bucharest | Negligence in service</h1>
+          <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+            <p className="text-foreground">
+              <span className="block"><strong>In malpractice cases, the first days matter most.</strong></span>
+              <span className="block">The medical file, the medico-legal expert reports and the statements given at the beginning of the investigation can decide whether criminal liability is established or not.</span>
+              <span className="block">Do not wait for the indictment to ask for help.</span>
+            </p>
+          </div>
+
+          <ServiceHeroCta lang="en" ariaLabel="Call now for malpractice advice" />
+
+          <LawyerBioBlock path="/en/services/professional-negligence-and-malpractice" lang="en" />
         </div>
 
-        <ServiceHeroCta lang="en" ariaLabel="Call now for malpractice advice" />
-
-        <LawyerBioBlock path="/en/services/professional-negligence-and-malpractice" lang="en" />
-      </div>
-
-        <ServiceSubServices path="/en/services/professional-negligence-and-malpractice" lang="en" />
-
-        {/* What malpractice means. Legal basis */}
-        <Card className="mt-12 md:mt-14 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">What medical malpractice means. Legal basis</h2>
-          </CardHeader>
-          <CardContent className="text-base leading-relaxed space-y-3">
-            <p>
-              Legal definition: malpractice is the professional error in the medical/pharmaceutical act that causes damage
-              to the patient and attracts civil liability of the medical staff and/or the provider. (Law 95/2006)
-            </p>
-            <div>
-              <h3 className="text-xl font-semibold">Who is liable?</h3>
-              <ul className="mt-2 list-disc pl-6 space-y-2">
-                <li>
-                  <strong>Medical staff</strong> - negligence, imprudence or insufficient knowledge, including breach of
-                  confidentiality/consent.
-                </li>
-                <li>
-                  <strong>Healthcare unit</strong> - nosocomial infections, non-compliant devices/materials, lack of insurance, etc.
-                </li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* When it becomes criminal */}
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">When does it become criminal</h2>
-          </CardHeader>
-          <CardContent className="text-base leading-relaxed space-y-3">
-            <ul className="list-disc pl-6 space-y-2">
-              <li>
-                <strong>Bodily injury by negligence - art. 196 CP</strong>
-              </li>
-              <li>
-                <strong>Manslaughter by negligence - art. 192 CP</strong>
-              </li>
-              <li>
-                <strong>Negligence in service - art. 298 CP</strong>; extension to private sector via art. 308 CP.
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* How I work for you */}
-        <Card className="mt-8 border-accent">
-          <CardHeader>
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">How I work for you</h2>
-          </CardHeader>
-          <CardContent className="text-base leading-relaxed space-y-5">
-            <div>
-              <h3 className="text-xl font-semibold">If you are a patient/family (injured party)</h3>
-              <ul className="mt-2 list-disc pl-6 space-y-2">
-                <li><strong>Legal & medical audit:</strong> identify deviation from professional standard and document causality.</li>
-                <li><strong>Dual channels:</strong> malpractice committee procedure and, where applicable, criminal complaint.</li>
-                <li><strong>Damages:</strong> activate insurer and follow full compensation (treatment, income, moral damages).</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">If you are a doctor/clinic (defense)</h3>
-              <ul className="mt-2 list-disc pl-6 space-y-2">
-                <li><strong>Standard of care & competence</strong> delimitation</li>
-                <li><strong>Managing investigations</strong> - responses to committees/inspectorates, coherent positions, confidentiality</li>
-                <li><strong>Criminal strategy</strong> - delimiting professional fault from inherent medical risks</li>
-              </ul>
-            </div>
-            <div className="pt-2">
-              <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call for malpractice consultation">
-                <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now</a>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="mt-8 space-y-4">
+          <p className="text-base leading-relaxed text-muted-foreground">
+            This parent page gives a summary for each direction. Choose the topic below for details, frequently asked questions and the concrete action for your case.
+          </p>
+          {subPages.map((sub) => (
+            <Card key={sub.to} className="border-accent">
+              <CardContent className="p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div className="space-y-2">
+                  <h2 className="text-xl font-semibold leading-tight">{sub.title}</h2>
+                  <p className="text-base leading-relaxed text-muted-foreground">{sub.text}</p>
+                </div>
+                <Button asChild variant="outline" className="shrink-0 gap-2">
+                  <Link to={sub.to}>
+                    See the page <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
 
         <ServiceFaq
           title="Frequently asked questions"
@@ -220,7 +169,7 @@ export default function MalpracticeEn() {
           items={[
             {
               q: "Can I claim damages without a criminal trial?",
-              a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings (Law 95/2006).",
+              a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings.",
             },
             {
               q: "What is the limitation period?",
@@ -231,13 +180,13 @@ export default function MalpracticeEn() {
               a: "It is a sanctionable breach; civil liability remains and damages can be pursued directly.",
             },
             {
-              q: "When does it become \"negligence in service\" (criminal)?",
-              a: "When a public official breaches a legal duty causing damage/rights violation; for the private sector, art. 308 CP extends the rules with reduced limits.",
+              q: "How do I choose the right path for my situation?",
+              a: "Depending on your goal: compensation (civil), criminal defence (criminal), Committee decision (appeal) or disciplinary liability (College of Physicians). We discuss together which path makes sense.",
             },
           ]}
         />
-        <RelatedServices current="/en/services/professional-negligence-and-malpractice" lang="en" />
 
+        <RelatedServices current="/en/services/professional-negligence-and-malpractice" lang="en" />
       </section>
     </>
   );
