@@ -39,14 +39,6 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     "/servicii/urmarire-penala",
   ],
-  "/servicii/infractiuni-contra-persoanei": [
-    "/servicii/loviri-vatamare-corporala",
-    "/servicii/violenta-domestica",
-    "/servicii/lipsire-de-libertate-amenintare",
-    "/servicii/santaj-hartuire",
-    "/servicii/viol-agresiune-sexuala",
-    "/servicii/omor-ucidere-din-culpa",
-  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/masuri-preventive",
     "/servicii/urmarire-penala",
