@@ -104,6 +104,20 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Money Laundering and Asset Concealment](/en/services/money-laundering-and-asset-concealment): Money laundering and asset concealment defense.
 - [Neglijență profesională și malpraxis](/servicii/neglijenta-profesionala-si-malpraxis): Malpraxis medical, juridic, tehnic.
 - [Professional Negligence and Malpractice](/en/services/professional-negligence-and-malpractice): Professional negligence and malpractice defense.
+- [Despăgubiri malpraxis medical](/servicii/despagubiri-malpraxis-medical): Cereri de despăgubiri pentru pacienți prejudiciați de un act medical.
+- [Medical Malpractice Compensation](/en/services/medical-malpractice-compensation): Compensation claims for patients harmed by a medical act.
+- [Răspundere penală medic](/servicii/raspundere-penala-medic): Apărarea medicului cercetat penal pentru un act medical.
+- [Doctor Criminal Liability](/en/services/doctor-criminal-liability): Criminal defence for doctors investigated over a medical act.
+- [Comisia de malpraxis](/servicii/comisia-de-malpraxis): Sesizarea Comisiei de malpraxis și contestarea deciziei în 15 zile.
+- [Malpractice Committee](/en/services/malpractice-committee): Filing with the Malpractice Committee and appealing the decision.
+- [Vătămare corporală din culpă medicală](/servicii/vatamare-corporala-din-culpa-medicala): Dosare de vătămare corporală din culpă în context medical.
+- [Bodily Injury from Medical Negligence](/en/services/medical-negligence-bodily-injury): Bodily injury cases arising from medical negligence.
+- [Ucidere din culpă medicală](/servicii/ucidere-din-culpa-medicala): Dosare de ucidere din culpă în urma unui act medical.
+- [Manslaughter from Medical Negligence](/en/services/medical-negligence-manslaughter): Manslaughter cases following a medical act.
+- [Plângere Colegiul Medicilor](/servicii/plangere-colegiul-medicilor): Plângere disciplinară împotriva unui medic la Colegiul Medicilor.
+- [Complaint to the College of Physicians](/en/services/complaint-college-of-physicians): Disciplinary complaint against a doctor before the College of Physicians.
+- [Malpraxis stomatologic](/servicii/malpraxis-stomatologic): Probleme după implant, extracție sau tratament endodontic.
+- [Dental Malpractice](/en/services/dental-malpractice): Issues after implants, extractions or endodontic treatment.
 - [Infracțiuni rutiere cu victime](/servicii/infractiuni-rutiere-cu-victime): Accidente rutiere grave.
 - [Alcool la volan](/servicii/alcool-la-volan): Dosare penale pentru conducere sub influența alcoolului, art. 336 Cod penal.
 - [Droguri la volan](/servicii/droguri-la-volan): Conducere sub influența substanțelor psihoactive, art. 336 alin. 2 Cod penal.
