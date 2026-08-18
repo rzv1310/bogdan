@@ -50,6 +50,10 @@ const subPages = [
 
 const FAQ = [
   {
+    q: "Does an unfavourable medical result automatically mean malpractice?",
+    a: "No. It must be analysed whether there was a deviation from the professional standard, whether damage occurred and whether there is a link between the medical conduct and that damage.",
+  },
+  {
     q: "Can I claim damages without a criminal trial?",
     a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings.",
   },
@@ -167,9 +171,9 @@ export default function MalpracticeEn() {
           <h1 className="text-2xl font-semibold mb-4">Medical malpractice lawyer | Bogdan Lamatic | Bucharest | Negligence in service</h1>
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
             <p className="text-foreground">
-              <span className="block"><strong>In malpractice cases, the first days matter most.</strong></span>
-              <span className="block">The medical file, the medico-legal expert reports and the statements given at the beginning of the investigation can decide whether criminal liability is established or not.</span>
-              <span className="block">Do not wait for the indictment to ask for help.</span>
+              <span className="block"><strong>In malpractice cases, the first few days can be decisive.</strong></span>
+              <span className="block">The medical documentation, expert reports and first steps can influence both the patient's compensation and the establishment of any criminal liability of the doctor.</span>
+              <span className="block">I analyse the case from the outset and determine the appropriate legal route.</span>
             </p>
           </div>
 
