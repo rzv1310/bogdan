@@ -24,7 +24,7 @@ const linksEn = [
   { to: "/en/services/criminal-investigation", label: "Criminal investigation lawyer" },
   { to: "/en/services/preventive-measures", label: "Preventive measures lawyer (detention, arrest)" },
   { to: "/en/services/financial-crime", label: "Economic crime defense" },
-  { to: "/en/services/offenses-against-persons", label: "Offenses against persons lawyer" },
+  { to: "/en/services/offenses-against-persons", label: "Violent Crime Defense Lawyer" },
   { to: "/en/services/victim-representation-in-criminal-cases", label: "Representation of victims in criminal proceedings" },
   { to: "/en/compensation-calculator", label: "Compensation calculator" },
   { to: "/en/about", label: "About attorney Bogdan Lamatic" },
