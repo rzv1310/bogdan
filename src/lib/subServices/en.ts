@@ -7807,3 +7807,616 @@ export const homicideAndManslaughterEn: SubServicePageData = {
   contactWhatsAppLabel: "Send documents on WhatsApp",
   parent: PARENT_PERS_EN,
 };
+
+
+/* ============================================================
+   Sub-services - Malpractice & professional negligence pillar page
+   ============================================================ */
+
+const L95_EN = "https://legislatie.just.ro/Public/DetaliiDocument/16203";
+const CMR_EN = "https://www.cmr.ro";
+const CMSR_EN = "https://www.cmsr.ro";
+
+const PARENT_MALPRAXIS_EN = {
+  to: "/en/services/professional-negligence-and-malpractice",
+  label: "medical malpractice and professional negligence",
+  breadcrumbLabel: "Professional negligence and malpractice",
+};
+
+export const medicalMalpracticeCompensationEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/medical-malpractice-compensation",
+  altPath: "/servicii/despagubiri-malpraxis-medical",
+  roPath: "/servicii/despagubiri-malpraxis-medical",
+  title: "Medical Malpractice Compensation Lawyer Bucharest | Lamatic",
+  h1: "Lawyer for Medical Malpractice Compensation in Bucharest",
+  description:
+    "Have you been harmed by a medical act? I analyse the file, medical evidence and the damages that can be claimed from the doctor, clinic or insurer.",
+  keywords:
+    "medical malpractice compensation, lawyer medical malpractice damages, moral damages medical malpractice, compensation medical error, patient malpractice lawyer",
+  breadcrumbLabel: "Medical malpractice compensation",
+  serviceName: "Lawyer for Medical Malpractice Compensation in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you suffered harm after a medical treatment or procedure?",
+    "An unfavourable medical outcome does not automatically mean malpractice. To claim compensation, the medical conduct, the damage and the causal link between them must be analysed.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist patients and their families in claims for compensation in cases of medical malpractice, professional negligence or medical error.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What damages can be claimed?",
+      paragraphs: [
+        "Depending on the situation, the damage may include additional medical expenses, recovery and care costs, lost income and non-pecuniary harm.",
+        "The value of a claim should not be set arbitrarily. I build it based on the medical and economic consequences that can be proven.",
+      ],
+    },
+    {
+      h2: "How do you prove malpractice?",
+      paragraphs: [
+        [
+          { text: "The most important elements are usually the complete medical file, the applicable protocols and standards, the patient's evolution and the specialist expertise." },
+        ],
+        [
+          { text: "The Committee provided for by Law no. 95/2006 can establish whether there was a malpractice case or not, but the Committee procedure is not mandatory before going to court. " },
+          { text: "(Legislation)", href: L95_EN },
+        ],
+        [
+          { text: "See separately the " },
+          { text: "Malpractice Committee", to: "/en/services/malpractice-committee" },
+          { text: " page." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      paragraphs: [
+        "Ideally: discharge letter, observation sheet, investigations, informed consent, further recommendations and documents showing expenses or consequences.",
+        "If you do not have the complete file, we first establish what needs to be obtained.",
+      ],
+      cta: "Want to find out if there is a basis for a compensation claim?",
+    },
+  ],
+  faq: [
+    {
+      q: "Can I claim compensation without going through the Malpractice Committee?",
+      a: "Yes. The Committee procedure is not mandatory before going to court. The choice depends on the existing evidence and the concrete objective of the case.",
+    },
+    {
+      q: "What if the doctor or clinic has no insurance?",
+      a: "The lack of insurance is a sanctionable breach, but civil liability remains. Damages can be pursued directly from the doctor or the healthcare unit.",
+    },
+    {
+      q: "How long does a malpractice compensation case take?",
+      a: "It depends on the medical complexity, the number of expert reports and the court. For a realistic estimate, I first analyse the available documentation.",
+    },
+  ],
+  resources: [
+    {
+      text: "Law no. 95/2006 on health reform - Title XVI, malpractice and civil liability.",
+      href: L95_EN,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const doctorCriminalLiabilityEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/doctor-criminal-liability",
+  altPath: "/servicii/raspundere-penala-medic",
+  roPath: "/servicii/raspundere-penala-medic",
+  title: "Doctor Criminal Liability Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Lawyer for the Criminal Liability of Doctors in Bucharest",
+  description:
+    "Are you a doctor under criminal investigation for a medical act? I analyse the documentation, professional standard, expert reports and the causal link between conduct and damage.",
+  keywords:
+    "doctor criminal liability, lawyer doctor criminal case, doctor accused malpractice, criminal defence doctor, criminal lawyer malpractice, medical criminal liability",
+  breadcrumbLabel: "Doctor criminal liability",
+  serviceName: "Lawyer for the Criminal Liability of Doctors in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you a doctor and have you been called to the Police or Prosecutor's Office?",
+    "In a criminal case concerning a medical act, the first question is not only whether the patient suffered damage, but what professional obligation you are accused of breaching and whether there is a causal link with the result.",
+    "Do not wait for the final expert report to build the defence.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend doctors, clinics and medical staff in criminal cases concerning medical acts, expert reports, malpractice and professional liability.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I check in the doctor's defence",
+      paragraphs: [
+        "I analyse the full medical documentation, the chronology of clinical decisions, the patient's condition at the time of the intervention, the applicable protocols, the limits of professional competence and the expert reports carried out or requested.",
+        "The distinction must be made between criminal fault and an unfavourable result that may be due to the inherent risk of the medical act or other factors.",
+      ],
+    },
+    {
+      h2: "What charges may exist?",
+      paragraphs: [
+        [
+          { text: "Depending on the result, the case may concern, among other things, " },
+          { text: "bodily injury from negligence", to: "/en/services/medical-negligence-bodily-injury" },
+          { text: " or " },
+          { text: "manslaughter", to: "/en/services/medical-negligence-manslaughter" },
+          { text: ". The Criminal Code treats distinctly, including situations where the result is linked to non-compliance with the rules of a profession. " },
+          { text: "(Legislation)", href: CP },
+        ],
+      ],
+    },
+    {
+      h2: "Do not retrospectively alter the medical documentation",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Keep the file, logs and documents as they exist.",
+        "A professional explanation must be built on the existing documents and on what could have been known at the time of the medical act, not on the result observed later.",
+      ],
+    },
+    {
+      h2: "Have you received a summons?",
+      paragraphs: [
+        "Send me the summons and tell me: what procedural capacity you have; what medical act is being investigated; when it took place; whether there is already an expert report.",
+        "Discuss the strategy before giving a statement.",
+      ],
+      cta: "Received a summons? Call me now",
+    },
+  ],
+  faq: [
+    {
+      q: "Can a doctor be investigated just because a patient had a complication?",
+      a: "No. Complications can occur in the absence of professional fault. Criminal liability requires culpable conduct causally linked to the result.",
+    },
+    {
+      q: "What does Article 308 of the Criminal Code mean for doctors in the private sector?",
+      a: "Article 308 extends service offences to persons performing a task within a private legal entity, applying with reduced penalty limits.",
+    },
+    {
+      q: "When should a lawyer be contacted?",
+      a: "As early as possible, before the first hearing or before an expert report is carried out that could be influenced by how the case is presented.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Code - offences of negligence, negligence in service and extension to the private sector (arts. 192, 196, 298, 308).",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const malpracticeCommitteeEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/malpractice-committee",
+  altPath: "/servicii/comisia-de-malpraxis",
+  roPath: "/servicii/comisia-de-malpraxis",
+  title: "Malpractice Committee - Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Lawyer for the Malpractice Committee in Bucharest",
+  description:
+    "Assistance for submitting a complaint to the Malpractice Committee, preparing the file, analysing the expert report and challenging the decision.",
+  keywords:
+    "malpractice committee, file malpractice committee, lawyer malpractice committee, challenge malpractice committee, malpractice procedure DSP",
+  breadcrumbLabel: "Malpractice committee",
+  serviceName: "Lawyer for the Malpractice Committee in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Do you want to file a complaint with the Malpractice Committee?",
+    "The Committee for monitoring and professional competence in malpractice cases operates at the level of public health directorates and decides by decision whether or not there was malpractice in the analysed case.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist patients, relatives and medical staff in the Malpractice Committee procedure, from filing the complaint to challenging the decision.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Who can refer the Committee?",
+      paragraphs: [
+        [
+          { text: "The law allows the complaint to be filed by the person who considers themselves the victim of the malpractice act or their legal representative and, in the event of death, by the successors of the person. " },
+          { text: "(Legislation)", href: L95_EN },
+        ],
+      ],
+    },
+    {
+      h2: "What we prepare before filing",
+      paragraphs: [
+        "I would not send just a general complaint.",
+        "I build a clear chronology of the medical act and select the relevant documents: medical file, investigations, informed consent, documents on subsequent evolution and any other necessary evidence.",
+      ],
+    },
+    {
+      h2: "Is it mandatory to go to the Committee first?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "No. The Committee procedure does not prevent the court from being seized under ordinary law. The choice of route must be made according to the existing evidence and the concrete objective of the case. " },
+          { text: "(Legislation)", href: L95_EN },
+        ],
+        [
+          { text: "If the main objective is to obtain sums for the damage suffered, see " },
+          { text: "Medical malpractice compensation", to: "/en/services/medical-malpractice-compensation" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Can the Committee's decision be challenged?",
+      paragraphs: [
+        [
+          { text: "Yes. The law provides for a 15-day deadline from the communication of the decision to challenge it before the competent court. " },
+          { text: "(Legislation)", href: L95_EN },
+        ],
+        "Have you already received the decision? Send me the document as soon as possible to check the deadline and available options.",
+      ],
+      cta: "I have received the Committee's decision - I want to challenge it",
+    },
+  ],
+  faq: [
+    {
+      q: "How long does the Malpractice Committee procedure take?",
+      a: "The law provides deadlines for appointing experts, preparing the report and issuing the decision. The exact duration may vary depending on the complexity of the case and the administrative authority involved.",
+    },
+    {
+      q: "Does the Malpractice Committee also decide on compensation?",
+      a: "No. The Committee establishes whether or not there was malpractice. Compensation can be obtained through civil proceedings, and we analyse the strategy for this aspect separately.",
+    },
+    {
+      q: "What do I do if the Committee's decision is unfavourable?",
+      a: "The decision can be challenged within 15 days of communication. I analyse the report, the grounds and the expert reports to build the challenge.",
+    },
+  ],
+  resources: [
+    {
+      text: "Law no. 95/2006 - Title XVI, Malpractice Committee procedure, deadline for challenge and parties' rights.",
+      href: L95_EN,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const medicalNegligenceBodilyInjuryEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/medical-negligence-bodily-injury",
+  altPath: "/servicii/vatamare-corporala-din-culpa-medicala",
+  roPath: "/servicii/vatamare-corporala-din-culpa-medicala",
+  title: "Medical Negligence Bodily Injury Lawyer Bucharest",
+  h1: "Lawyer for Bodily Injury from Medical Negligence",
+  description:
+    "Criminal case for bodily injury caused by a medical act? Analysis of professional fault, the expert report and the causal link.",
+  keywords:
+    "medical negligence bodily injury, lawyer bodily injury medical negligence, medical error bodily injury, art 196 malpractice, patient injury doctor",
+  breadcrumbLabel: "Bodily injury from medical negligence",
+  serviceName: "Lawyer for Bodily Injury from Medical Negligence - Bogdan Lamatic",
+  urgency: [
+    "Is there a criminal case after an injury caused during a medical act?",
+    "In such a case, it must be established whether the patient's injury is the result of a culpable breach of professional rules or whether the result has another medical explanation.",
+  ],
+  bio: [
+    `${BIO_INTRO} I analyse criminal cases concerning bodily injury in a medical context, verifying the link between conduct, professional standard and damage.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What must be proven in the case",
+      paragraphs: [
+        "It is not enough that there was a complication, nor that the patient simply needed further treatment.",
+        "The analysis must cover: the concrete medical conduct; the professional rule allegedly breached; the culpable nature of the conduct; the medical consequence; and the causal link between conduct and consequence.",
+      ],
+    },
+    {
+      h2: "The expert report is one of the central pieces of evidence",
+      paragraphs: [
+        "It must be checked whether the expert report starts from the complete medical documentation and whether it answers the real question: what should have been done under the existing conditions at that time and whether a different conduct would have avoided the result.",
+      ],
+    },
+    {
+      h2: "Are you a doctor or a patient?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "If you are a doctor under criminal investigation, see also " },
+          { text: "Doctor criminal liability", to: "/en/services/doctor-criminal-liability" },
+          { text: "." },
+        ],
+        [
+          { text: "If you are a patient seeking compensation for the damage, see " },
+          { text: "Medical malpractice compensation", to: "/en/services/medical-malpractice-compensation" },
+          { text: "." },
+        ],
+        "This page remains exclusively focused on the criminal charge of bodily injury from negligence.",
+      ],
+      cta: "Have you received a summons or is there already an expert report? Send me the documents",
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between civil malpractice and criminal bodily injury from medical negligence?",
+      a: "Civil malpractice triggers liability for damages. Bodily injury from negligence is an offence which requires culpable, causally linked conduct that breaches the rules of the profession.",
+    },
+    {
+      q: "Can a forensic report be challenged?",
+      a: "Yes. A new expert report, completion of the existing one or additional questions can be requested when the conclusions are not sufficiently based on the documentation.",
+    },
+    {
+      q: "What happens if I am called for a hearing in this capacity?",
+      a: "Contact me before the first statement. The strategy is built according to the procedural capacity and the existing evidence.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Code - bodily injury from negligence (art. 196) and situations linked to non-compliance with professional rules.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const medicalNegligenceManslaughterEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/medical-negligence-manslaughter",
+  altPath: "/servicii/ucidere-din-culpa-medicala",
+  roPath: "/servicii/ucidere-din-culpa-medicala",
+  title: "Medical Negligence Manslaughter Lawyer Bucharest",
+  h1: "Lawyer for Manslaughter from Medical Negligence",
+  description:
+    "Defence and representation in manslaughter cases concerning medical acts. Analysis of professional conduct, cause of death and expert reports.",
+  keywords:
+    "medical negligence manslaughter, lawyer manslaughter doctor, death malpractice criminal, doctor accused manslaughter, death medical error",
+  breadcrumbLabel: "Manslaughter from medical negligence",
+  serviceName: "Lawyer for Manslaughter from Medical Negligence - Bogdan Lamatic",
+  urgency: [
+    "Does the case concern the death of a patient?",
+    "In medical cases with a fatal outcome, the fact that death followed an intervention or treatment does not alone establish criminal liability.",
+    "The medical cause of death, the conduct attributed to the doctor and the existence of a causal link must be analysed.",
+  ],
+  bio: [
+    `${BIO_INTRO} I represent doctors and families in cases involving death in a medical context, analysing causality, expert reports and criminal liability.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse in the first stages",
+      paragraphs: [
+        "I check the medical file, the operating report where available, the ICU documentation, the investigation results, the chronology of the patient's deterioration, the medico-legal report and the expert reports carried out.",
+        "The central question is whether the fatal outcome can be legally attributed to the conduct under investigation.",
+      ],
+    },
+    {
+      h2: "Medical complication or criminal fault?",
+      paragraphs: [
+        "This is one of the essential distinctions. A tragic outcome can exist in the absence of criminally culpable conduct. The defence must reconstruct the situation as it appeared at the time the medical decision was taken.",
+      ],
+    },
+    {
+      h2: "Who is this page for",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "If you are a doctor under investigation, see also " },
+          { text: "Doctor criminal liability", to: "/en/services/doctor-criminal-liability" },
+          { text: "." },
+        ],
+        [
+          { text: "If you represent the family of the deceased patient, participation in the criminal process and compensation for the damage can be analysed separately. For this aspect see " },
+          { text: "Victim representation in criminal cases", to: "/en/services/victim-representation-in-criminal-cases" },
+          { text: " and " },
+          { text: "Medical malpractice compensation", to: "/en/services/medical-malpractice-compensation" },
+          { text: "." },
+        ],
+      ],
+      cta: "Is there already a criminal investigation? Call me now",
+    },
+  ],
+  faq: [
+    {
+      q: "How important is the first expert report in a medical death case?",
+      a: "Very important. It establishes the mechanism of death and causality. Any ambiguity in the objectives or conclusions may affect the defence or subsequent claims.",
+    },
+    {
+      q: "Can the family of the deceased patient claim compensation?",
+      a: "Yes. In addition to the criminal aspect, compensation for the damage can be pursued through civil proceedings. The strategy is determined according to the concrete objective.",
+    },
+    {
+      q: "Is there a deadline for reporting to the authorities?",
+      a: "Procedural and limitation periods depend on the legal classification. That is why an early analysis is useful.",
+    },
+  ],
+  resources: [
+    {
+      text: "Criminal Code - manslaughter (art. 192) and situations linked to non-compliance with professional rules.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const complaintCollegeOfPhysiciansEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/complaint-college-of-physicians",
+  altPath: "/servicii/plangere-colegiul-medicilor",
+  roPath: "/servicii/plangere-colegiul-medicilor",
+  title: "Complaint to the College of Physicians | Lawyer Bucharest",
+  h1: "Lawyer for Complaints to the College of Physicians",
+  description:
+    "Assistance in drafting a complaint to the College of Physicians and representation in the disciplinary procedure concerning the doctor's professional conduct.",
+  keywords:
+    "complaint college of physicians, complaint to medical college, referral college of physicians, complaint against a doctor, lawyer disciplinary procedure doctor",
+  breadcrumbLabel: "Complaint to the College of Physicians",
+  serviceName: "Lawyer for Complaints to the College of Physicians - Bogdan Lamatic",
+  urgency: [
+    "Do you want to file a complaint against a doctor?",
+    "The disciplinary procedure at the College of Physicians has a different purpose from the Malpractice Committee procedure and from a compensation lawsuit.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist patients and families in drafting disciplinary complaints to the College of Physicians and analyse the procedural options of the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What the complaint should contain",
+      paragraphs: [
+        "An effective complaint must identify the doctor and the professional conduct complained of and present the facts in a chronology that can be verified through documents.",
+        "I help you separate what is relevant from a disciplinary point of view from grievances that cannot, on their own, support a professional misconduct.",
+      ],
+    },
+    {
+      h2: "College of Physicians or Malpractice Committee?",
+      paragraphs: [
+        "These are two different procedures. The College of Physicians analyses professional disciplinary liability. The Malpractice Committee establishes, under the procedure provided by Law no. 95/2006, whether or not there was a malpractice case.",
+        [
+          { text: "See separately the " },
+          { text: "Malpractice Committee", to: "/en/services/malpractice-committee" },
+          { text: " page." },
+        ],
+      ],
+    },
+    {
+      h2: "Can compensation be obtained through the disciplinary complaint?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "I would not build a compensation strategy around the disciplinary procedure. If the main objective is to recover the damage, the civil route must be analysed separately. See " },
+          { text: "Medical malpractice compensation", to: "/en/services/medical-malpractice-compensation" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Do you already have the medical documentation?",
+      paragraphs: [
+        "Send me the documents and the chronology of events to establish which approach makes sense in your case.",
+      ],
+      cta: "Want to file a complaint? Call me now",
+    },
+  ],
+  faq: [
+    {
+      q: "Who can file a complaint with the College of Physicians?",
+      a: "The patient or their legal representative, and in the event of death, the successors of the patient may file a complaint against a doctor for disciplinary misconduct.",
+    },
+    {
+      q: "Does a disciplinary complaint automatically lead to a criminal investigation?",
+      a: "No. The disciplinary procedure is distinct. A criminal investigation is triggered separately, under the conditions of the law, if the offence elements are met.",
+    },
+    {
+      q: "What happens after I submit the complaint?",
+      a: "The competent territorial College of Physicians analyses the referral, may carry out investigations and issues a decision. Deadlines and procedure are provided by the organisational regulations.",
+    },
+  ],
+  resources: [
+    {
+      text: "College of Physicians of Romania - disciplinary procedure and referral of disciplinary committees.",
+      href: CMR_EN,
+      linkLabel: "College of Physicians",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
+
+export const dentalMalpracticeEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/dental-malpractice",
+  altPath: "/servicii/malpraxis-stomatologic",
+  roPath: "/servicii/malpraxis-stomatologic",
+  title: "Dental Malpractice Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Dental Malpractice Lawyer in Bucharest",
+  description:
+    "Problems after implants, extractions or other dental treatments? I analyse the documentation, the damage and the legal options in case of malpractice.",
+  keywords:
+    "dental malpractice lawyer, dental malpractice Bucharest, dental malpractice compensation, dental error lawyer, complaint dentist",
+  breadcrumbLabel: "Dental malpractice",
+  serviceName: "Dental Malpractice Lawyer in Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you suffered damage after a dental treatment?",
+    "Implants, endodontic treatments, extractions, prosthetic work or other procedures can sometimes cause complications. A complication does not automatically mean malpractice.",
+  ],
+  bio: [
+    `${BIO_INTRO} I assist patients in dental malpractice cases, analysing the documentation, consequences and available legal options.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse",
+      paragraphs: [
+        "The treatment plan, radiographs and investigations carried out before and after the procedure, the patient file, informed consent, the actual treatment performed and subsequent evaluations are important.",
+        "In some cases an independent specialist opinion is also necessary.",
+      ],
+    },
+    {
+      h2: "What can you do if you suspect dental malpractice?",
+      paragraphs: [
+        "Depending on the objective and evidence, the following can be analysed: a claim for compensation; the Malpractice Committee procedure; disciplinary liability; and, in cases that meet the conditions of an offence, the criminal aspect.",
+        [
+          { text: "For compensation for the damage, see " },
+          { text: "Medical malpractice compensation", to: "/en/services/medical-malpractice-compensation" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Where do you file a disciplinary complaint against a dentist?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Dentists fall under the College of Dentists of Romania (CMSR), not the College of Physicians of Romania (CMR). The disciplinary procedure for dentists is carried out within the CMSR disciplinary committees.",
+      ],
+    },
+    {
+      h2: "What to send me",
+      paragraphs: [
+        "Treatment file, therapeutic plan, radiographs/CBCT, invoices, informed consent and documents from the doctor who later evaluated the problem.",
+      ],
+      cta: "Want to check whether there is a basis for a claim?",
+    },
+  ],
+  faq: [
+    {
+      q: "Does the same law apply as in general medical malpractice?",
+      a: "Yes, dental malpractice falls under the same legal framework on medical liability. The particularities concern the dental professional standard and the disciplinary regulatory institutions.",
+    },
+    {
+      q: "Can I claim compensation for a failed dental implant?",
+      a: "Yes, if a breach of the professional standard and a causal link with the damage can be proven. Each case is analysed individually.",
+    },
+    {
+      q: "To whom do I file a disciplinary complaint against a dentist?",
+      a: "To the College of Dentists of Romania (CMSR), a distinct institution from the College of Physicians of Romania (CMR).",
+    },
+  ],
+  resources: [
+    {
+      text: "College of Dentists of Romania - disciplinary committees and referral procedure.",
+      href: CMSR_EN,
+      linkLabel: "CMSR",
+    },
+    {
+      text: "Law no. 95/2006 - Title XVI, malpractice and civil liability.",
+      href: L95_EN,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_MALPRAXIS_EN,
+};
