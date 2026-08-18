@@ -148,7 +148,7 @@ function collectContextualPaths(data: SubServicePageData): string[] {
   const addPath = (path: string) => paths.add(normalizePath(path));
 
   const fromParagraphs = (
-    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[]
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[]
   ) => {
     paragraphs?.forEach((paragraph) => {
       if (typeof paragraph === "string") return;
@@ -285,13 +285,13 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
     ctaWhatsApp,
     ctaWhatsAppLabel,
   }: {
-    paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
     bullets?: (string | { bold: string; rest: string })[];
     links?: { label: string; to?: string }[];
     callout?: string;
     calloutClassName?: string;
     calloutCta?: string;
-    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+    paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
     bulletsAfterBullets?: (string | { bold: string; rest: string })[];
     calloutAfterBullets?: string;
     calloutAfterBulletsClassName?: string;
