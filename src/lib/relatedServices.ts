@@ -60,7 +60,7 @@ export const relatedServices: Record<string, string[]> = {
   "/servicii/neglijenta-profesionala-si-malpraxis": [
     "/servicii/reprezentarea-victimelor-in-procese-penale",
     "/servicii/infractiuni-contra-persoanei",
-    "/servicii/infractiuni-rutiere-cu-victime",
+    "/servicii/urmarire-penala",
     "/servicii/raspundere-penala-incidente-locul-de-munca",
   ],
   "/servicii/raspundere-penala-incidente-locul-de-munca": [

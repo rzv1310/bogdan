@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
+import { HERO_CTA_CLASS } from "@/lib/cta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -49,6 +50,10 @@ const subPages = [
 ];
 
 const FAQ = [
+  {
+    q: "Does an unfavourable medical result automatically mean malpractice?",
+    a: "No. It must be analysed whether there was a deviation from the professional standard, whether damage occurred and whether there is a link between the medical conduct and that damage.",
+  },
   {
     q: "Can I claim damages without a criminal trial?",
     a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings.",
@@ -167,9 +172,9 @@ export default function MalpracticeEn() {
           <h1 className="text-2xl font-semibold mb-4">Medical malpractice lawyer | Bogdan Lamatic | Bucharest | Negligence in service</h1>
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
             <p className="text-foreground">
-              <span className="block"><strong>In malpractice cases, the first days matter most.</strong></span>
-              <span className="block">The medical file, the medico-legal expert reports and the statements given at the beginning of the investigation can decide whether criminal liability is established or not.</span>
-              <span className="block">Do not wait for the indictment to ask for help.</span>
+              <span className="block"><strong>In malpractice cases, the first few days can be decisive.</strong></span>
+              <span className="block">The medical documentation, expert reports and first steps can influence both the patient's compensation and the establishment of any criminal liability of the doctor.</span>
+              <span className="block">I analyse the case from the outset and determine the appropriate legal route.</span>
             </p>
           </div>
 
@@ -179,8 +184,9 @@ export default function MalpracticeEn() {
         </div>
 
         <div className="mt-8 space-y-4">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">How I can help in a medical malpractice case</h2>
           <p className="text-base leading-relaxed text-muted-foreground">
-            This parent page gives a summary for each direction. Choose the topic below for details, frequently asked questions and the concrete action for your case.
+            Choose below the topic you are interested in; you will find details, frequently asked questions and the concrete action for your case.
           </p>
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
@@ -197,6 +203,31 @@ export default function MalpracticeEn() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">When can medical malpractice exist?</h2>
+          <p>
+            An unfavourable medical outcome does not automatically mean malpractice. In a specific case, the conduct of the doctor or medical unit, the applicable professional standard, the damage caused and the link between the act and the consequences for the patient must be analysed.
+          </p>
+          <p>
+            Depending on the situation, liability may be civil, disciplinary or criminal, and these procedures have different objectives and rules. The first step is to analyse the medical documentation and choose the appropriate legal route for the case.
+          </p>
+        </div>
+
+        <div className="mt-8 space-y-3">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">What documents are important from the start?</h2>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            For an initial assessment, the discharge letter, observation sheet, investigations, informed consent, medical recommendations and any expert report or complaint already filed are useful. If you do not have the complete medical file, we can establish which documents need to be requested.
+          </p>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            You do not need to have all the documents for the first discussion.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
+              <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
+            </Button>
+          </div>
         </div>
 
         <ServiceFaq title="Frequently asked questions" ordered items={FAQ} />
