@@ -60,6 +60,12 @@ export default function Sitemap() {
     { url: "/servicii/confiscare", title: "Confiscare" },
     { url: "/servicii/despagubiri-accident-rutier", title: "Despăgubiri accident rutier" },
     { url: "/servicii/despagubiri-vatamare-corporala", title: "Despăgubiri vătămare corporală" },
+    { url: "/servicii/loviri-vatamare-corporala", title: "Loviri și vătămare corporală" },
+    { url: "/servicii/violenta-domestica", title: "Violență domestică" },
+    { url: "/servicii/lipsire-de-libertate-amenintare", title: "Lipsire de libertate și amenințare" },
+    { url: "/servicii/santaj-hartuire", title: "Șantaj și hărțuire" },
+    { url: "/servicii/viol-agresiune-sexuala", title: "Viol și agresiune sexuală" },
+    { url: "/servicii/omor-ucidere-din-culpa", title: "Omor și ucidere din culpă" },
   ];
 
   const englishPages = [

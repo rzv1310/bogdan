@@ -39,6 +39,14 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice",
     "/servicii/urmarire-penala",
   ],
+  "/servicii/infractiuni-contra-persoanei": [
+    "/servicii/loviri-vatamare-corporala",
+    "/servicii/violenta-domestica",
+    "/servicii/lipsire-de-libertate-amenintare",
+    "/servicii/santaj-hartuire",
+    "/servicii/viol-agresiune-sexuala",
+    "/servicii/omor-ucidere-din-culpa",
+  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/masuri-preventive",
     "/servicii/urmarire-penala",
@@ -183,6 +191,12 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/confiscare": "Confiscare",
   "/servicii/despagubiri-accident-rutier": "Despăgubiri accident rutier",
   "/servicii/despagubiri-vatamare-corporala": "Despăgubiri vătămare corporală",
+  "/servicii/loviri-vatamare-corporala": "Loviri și vătămare corporală",
+  "/servicii/violenta-domestica": "Violență domestică",
+  "/servicii/lipsire-de-libertate-amenintare": "Lipsire de libertate și amenințare",
+  "/servicii/santaj-hartuire": "Șantaj și hărțuire",
+  "/servicii/viol-agresiune-sexuala": "Viol și agresiune sexuală",
+  "/servicii/omor-ucidere-din-culpa": "Omor și ucidere din culpă",
   "/calculator-despagubiri": "Calculator despăgubiri",
 
   "/despre-mine": "Despre mine",
@@ -226,6 +240,12 @@ const extraLabelsEn: Record<string, string> = {
   "/en/services/confiscation": "Confiscation",
   "/en/services/road-accident-compensation": "Road accident compensation",
   "/en/services/bodily-injury-compensation": "Bodily injury compensation",
+  "/en/services/assault-and-bodily-injury": "Assault and bodily harm",
+  "/en/services/domestic-violence": "Domestic violence",
+  "/en/services/unlawful-detention-and-threats": "Unlawful detention and threats",
+  "/en/services/blackmail-and-harassment": "Blackmail and harassment",
+  "/en/services/rape-and-sexual-assault": "Rape and sexual assault",
+  "/en/services/homicide-and-manslaughter": "Homicide and manslaughter",
 
   "/en/compensation-calculator": "Compensation calculator",
 
