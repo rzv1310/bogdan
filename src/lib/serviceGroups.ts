@@ -464,7 +464,7 @@ export const enServiceGroups: ServiceGroup[] = [
         title: "Victims and compensation",
         description: "Representation of victims in criminal proceedings to recover damages and establish civil party status.",
         subServices: [
-          { label: "Road accident compensation", to: "/en/services/road-accident-compensation" },
+          { label: "Car Accident Lawyer", to: "/en/services/road-accident-compensation" },
           { label: "Bodily injury compensation", to: "/en/services/bodily-injury-compensation" },
         ],
         to: "/en/services/victim-representation-in-criminal-cases",
