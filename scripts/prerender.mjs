@@ -89,8 +89,17 @@ function buildHead(route, head) {
       tags.push(`<link rel="alternate" hreflang="x-default" href="${escapeHtml(absolute(alternates.xDefault))}" />`);
   }
 
-  for (const schema of head?.schemas ?? []) {
-    const json = JSON.stringify(schema).replace(/</g, "\\u003c");
+  const schemas = head?.schemas ?? [];
+  if (schemas.length > 0) {
+    const graph = schemas.map((schema) => {
+      // Strip per-schema @context so the top-level context applies to all nodes.
+      const { ["@context"]: _, ...rest } = schema;
+      return rest;
+    });
+    const json = JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": graph,
+    }).replace(/</g, "\\u003c");
     tags.push(`<script type="application/ld+json" data-managed="true">${json}</script>`);
   }
 
