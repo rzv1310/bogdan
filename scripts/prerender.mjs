@@ -140,7 +140,7 @@ async function main() {
     if (head?.keywords) {
       page = page.replace(
         /<meta\s+name="keywords"[^>]*>/i,
-        `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
+        () => `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
       );
     }
 
