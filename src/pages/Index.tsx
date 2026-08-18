@@ -613,17 +613,20 @@ const Index = () => {
           },
           {
             "@type": "WebSite",
+            "@id": "https://avocatpenalbucuresti.ro/#website",
             "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
             "url": "https://avocatpenalbucuresti.ro/",
             "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
             "inLanguage": "ro-RO",
             "publisher": {
-              "@type": "LegalService",
               "@id": "https://avocatpenalbucuresti.ro/#legalservice"
             }
           },
           {
             "@type": "FAQPage",
+            "@id": "https://avocatpenalbucuresti.ro/#faq",
+            "inLanguage": "ro-RO",
+            "isPartOf": { "@id": "https://avocatpenalbucuresti.ro/#website" },
             "mainEntity": [
               {
                 "@type": "Question",
