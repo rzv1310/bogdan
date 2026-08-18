@@ -200,6 +200,13 @@ const extraLabelsRo: Record<string, string> = {
   "/servicii/santaj-hartuire": "Șantaj și hărțuire",
   "/servicii/viol-agresiune-sexuala": "Viol și agresiune sexuală",
   "/servicii/omor-ucidere-din-culpa": "Omor și ucidere din culpă",
+  "/servicii/despagubiri-malpraxis-medical": "Despăgubiri malpraxis medical",
+  "/servicii/raspundere-penala-medic": "Răspundere penală medic",
+  "/servicii/comisia-de-malpraxis": "Comisia de malpraxis",
+  "/servicii/vatamare-corporala-din-culpa-medicala": "Vătămare corporală din culpă medicală",
+  "/servicii/ucidere-din-culpa-medicala": "Ucidere din culpă medicală",
+  "/servicii/plangere-colegiul-medicilor": "Plângere Colegiul Medicilor",
+  "/servicii/malpraxis-stomatologic": "Malpraxis stomatologic",
   "/calculator-despagubiri": "Calculator despăgubiri",
 
   "/despre-mine": "Despre mine",
