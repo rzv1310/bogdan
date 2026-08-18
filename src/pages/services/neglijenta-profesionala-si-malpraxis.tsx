@@ -186,17 +186,30 @@ export default function Malpraxis() {
 
         <div className="mt-8 space-y-4">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">Cum te pot ajuta într-un caz de malpraxis medical</h2>
-          <p className="text-base leading-relaxed text-muted-foreground">
+          <div className="space-y-3 text-base leading-relaxed text-foreground">
+            <p>Nu știi dacă ceea ce s-a întâmplat este într-adevăr malpraxis, ce probe îți trebuie sau ce procedură trebuie începută?</p>
+            <p>Poate ai suferit un prejudiciu și vrei despăgubiri, ai pierdut o persoană apropiată sau, ca medic, ai primit deja o sesizare ori o citație.</p>
+            <p>Analizez cazul și îți spun concret ce opțiuni ai, ce merită făcut și ce trebuie evitat de la început. În funcție de situație, pot fi necesare despăgubiri, sesizarea Comisiei de malpraxis sau a organismului profesional ori apărarea într-un dosar penal.</p>
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - 031 632 01 83">
+              <a href="tel:+40316320183">☎ Sună-mă acum - 031 632 01 83</a>
+            </Button>
+          </div>
+
+          <p className="mt-[30px] text-base leading-relaxed text-muted-foreground">
             Alege mai jos subiectul care te interesează, vei găsi detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
           </p>
+
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
               <CardContent className="p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="space-y-2">
                   <h2 className="text-xl font-semibold leading-tight">{sub.title}</h2>
-                  <p className="text-base leading-relaxed text-muted-foreground">{sub.text}</p>
+                  <p className="text-base leading-relaxed text-foreground">{sub.text}</p>
                 </div>
-                <Button asChild variant="outline" className="shrink-0 gap-2">
+                <Button asChild variant="outline" className="shrink-0 gap-2 bg-[#faf0e6] hover:bg-[#f0e6da] border-[#faf0e6] hover:border-[#f0e6da] text-foreground">
                   <Link to={sub.to}>
                     Vezi pagina <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -206,7 +219,7 @@ export default function Malpraxis() {
           ))}
         </div>
 
-        <div className="mt-8 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-8 space-y-3 text-base leading-relaxed text-foreground">
           <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">Când poate exista malpraxis medical?</h2>
           <p>
             Un rezultat medical nefavorabil nu înseamnă automat malpraxis. Într-un caz concret trebuie analizate conduita medicului sau a unității medicale, standardul profesional aplicabil, prejudiciul produs și legătura dintre faptă și consecințele pentru pacient.
@@ -216,18 +229,16 @@ export default function Malpraxis() {
           </p>
         </div>
 
-        <div className="mt-8 space-y-3">
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce documente sunt importante de la început?</h2>
-          <p className="text-base leading-relaxed text-muted-foreground">
+        <div className="mt-8 space-y-3 text-foreground">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">Ce documente sunt importante de la început?</h2>
+          <p className="text-base leading-relaxed">
             Pentru o primă evaluare sunt utile biletul de externare, foaia de observație, investigațiile, consimțământul informat, recomandările medicale și orice expertiză sau sesizare deja formulată. Dacă nu ai dosarul medical complet, putem stabili ce documente trebuie solicitate.
           </p>
-          <p className="text-base leading-relaxed text-muted-foreground">
+          <p className="text-base leading-relaxed">
             Nu trebuie să ai toate actele pentru prima discuție.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - 031 632 01 83">
-              <a href="tel:+40316320183">☎ Sună-mă acum - 031 632 01 83</a>
-            </Button>
+            <WhatsAppDocsCta lang="ro" variant="green" />
           </div>
         </div>
 

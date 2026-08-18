@@ -186,17 +186,30 @@ export default function MalpracticeEn() {
 
         <div className="mt-8 space-y-4">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">How I can help in a medical malpractice case</h2>
-          <p className="text-base leading-relaxed text-muted-foreground">
+          <div className="space-y-3 text-base leading-relaxed text-foreground">
+            <p>Not sure if what happened is actually malpractice, what evidence you need or what procedure to start?</p>
+            <p>You may have suffered damage and want compensation, lost a close person, or, as a doctor, have already received a summons or notice.</p>
+            <p>I analyse the case and tell you concretely what options you have, what is worth doing and what should be avoided from the start. Depending on the situation, compensation, a complaint to the Malpractice Committee or professional body, or defence in a criminal case may be needed.</p>
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
+              <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
+            </Button>
+          </div>
+
+          <p className="mt-[30px] text-base leading-relaxed text-muted-foreground">
             Choose below the topic you are interested in; you will find details, frequently asked questions and the concrete action for your case.
           </p>
+
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
               <CardContent className="p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="space-y-2">
                   <h2 className="text-xl font-semibold leading-tight">{sub.title}</h2>
-                  <p className="text-base leading-relaxed text-muted-foreground">{sub.text}</p>
+                  <p className="text-base leading-relaxed text-foreground">{sub.text}</p>
                 </div>
-                <Button asChild variant="outline" className="shrink-0 gap-2">
+                <Button asChild variant="outline" className="shrink-0 gap-2 bg-[#faf0e6] hover:bg-[#f0e6da] border-[#faf0e6] hover:border-[#f0e6da] text-foreground">
                   <Link to={sub.to}>
                     See the page <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -206,7 +219,7 @@ export default function MalpracticeEn() {
           ))}
         </div>
 
-        <div className="mt-8 space-y-3 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-8 space-y-3 text-base leading-relaxed text-foreground">
           <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">When can medical malpractice exist?</h2>
           <p>
             An unfavourable medical outcome does not automatically mean malpractice. In a specific case, the conduct of the doctor or medical unit, the applicable professional standard, the damage caused and the link between the act and the consequences for the patient must be analysed.
@@ -216,18 +229,16 @@ export default function MalpracticeEn() {
           </p>
         </div>
 
-        <div className="mt-8 space-y-3">
-          <h2 className="text-2xl font-semibold leading-none tracking-tight">What documents are important from the start?</h2>
-          <p className="text-base leading-relaxed text-muted-foreground">
+        <div className="mt-8 space-y-3 text-foreground">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">What documents are important from the start?</h2>
+          <p className="text-base leading-relaxed">
             For an initial assessment, the discharge letter, observation sheet, investigations, informed consent, medical recommendations and any expert report or complaint already filed are useful. If you do not have the complete medical file, we can establish which documents need to be requested.
           </p>
-          <p className="text-base leading-relaxed text-muted-foreground">
+          <p className="text-base leading-relaxed">
             You do not need to have all the documents for the first discussion.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
-              <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
-            </Button>
+            <WhatsAppDocsCta lang="en" variant="green" />
           </div>
         </div>
 
