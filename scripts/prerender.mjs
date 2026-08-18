@@ -89,8 +89,21 @@ function buildHead(route, head) {
       tags.push(`<link rel="alternate" hreflang="x-default" href="${escapeHtml(absolute(alternates.xDefault))}" />`);
   }
 
-  for (const schema of head?.schemas ?? []) {
-    const json = JSON.stringify(schema).replace(/</g, "\\u003c");
+  const schemas = head?.schemas ?? [];
+  if (schemas.length > 0) {
+    let payload;
+    if (schemas.length === 1 && schemas[0]["@graph"]) {
+      // A single @graph object is passed through as-is.
+      payload = schemas[0];
+    } else {
+      // Combine multiple schemas into one @graph.
+      const graph = schemas.map((schema) => {
+        const { ["@context"]: _, ...rest } = schema;
+        return rest;
+      });
+      payload = { "@context": "https://schema.org", "@graph": graph };
+    }
+    const json = JSON.stringify(payload).replace(/</g, "\\u003c");
     tags.push(`<script type="application/ld+json" data-managed="true">${json}</script>`);
   }
 

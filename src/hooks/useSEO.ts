@@ -123,14 +123,22 @@ export function useSEO({ title, description, keywords, canonical, alternates, lo
       const existingSchemas = document.head.querySelectorAll('script[type="application/ld+json"][data-managed="true"]');
       existingSchemas.forEach(el => el.remove());
 
-      // Inject new schemas
-      schemas.forEach((schema, index) => {
-        const script = document.createElement('script');
-        script.setAttribute('type', 'application/ld+json');
-        script.setAttribute('data-managed', 'true');
-        script.textContent = JSON.stringify(schema);
-        document.head.appendChild(script);
-      });
+      // Inject all schemas as a single @graph so prerender and hydration match.
+      let payload: object;
+      if (schemas.length === 1 && (schemas[0] as Record<string, unknown>)["@graph"]) {
+        payload = schemas[0];
+      } else {
+        const graph = schemas.map((schema) => {
+          const { ["@context"]: _, ...rest } = schema as Record<string, unknown>;
+          return rest;
+        });
+        payload = { "@context": "https://schema.org", "@graph": graph };
+      }
+      const script = document.createElement('script');
+      script.setAttribute('type', 'application/ld+json');
+      script.setAttribute('data-managed', 'true');
+      script.textContent = JSON.stringify(payload);
+      document.head.appendChild(script);
     }
   }, [title, description, canonical, alternates, locale, robotsDirectives, schemas]);
 }

@@ -140,6 +140,13 @@ function validateFaqHeadings(route, html) {
 }
 
 function collectJsonLd(route, html) {
+  const managedScripts = [
+    ...html.matchAll(/<script type="application\/ld\+json"[^>]*data-managed="true"[^>]*>/g),
+  ];
+  if (managedScripts.length > 1) {
+    err(route, `expected at most one data-managed JSON-LD script, found ${managedScripts.length}`);
+  }
+
   const types = [];
   for (const match of html.matchAll(
     /<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g,
