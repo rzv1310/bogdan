@@ -72,13 +72,13 @@ const FAQ = [
 
 export default function Malpraxis() {
   useSEO({
-    keywords: "avocat malpraxis medical bucuresti, avocat neglijenta profesionala, avocat neglijenta in serviciu, raspundere penala medic",
+    keywords: "avocat malpraxis medical bucuresti",
     canonical: "/servicii/neglijenta-profesionala-si-malpraxis",
     alternates: { ro: "/servicii/neglijenta-profesionala-si-malpraxis", en: "/en/services/professional-negligence-and-malpractice", xDefault: "/servicii/neglijenta-profesionala-si-malpraxis" },
     locale: "ro_RO",
-    title: "Avocat Malpraxis Medical București - Bogdan Lamatic | Neglijență în serviciu",
+    title: "Avocat Malpraxis Medical București - Bogdan Lamatic",
     description:
-      "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal.",
+      "Avocat malpraxis medical în București. Evaluare rapidă, strategie integrată civil & penal. Suna acum!",
   });
 
   return (
@@ -108,8 +108,8 @@ export default function Malpraxis() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Servicii avocat neglijență profesională și malpraxis",
-            description: "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
+            name: "Avocat Malpraxis Medical București - Bogdan Lamatic",
+            description: "Avocat malpraxis medical în București. Evaluare rapidă, strategie integrată civil & penal. Suna acum!",
             url: "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis",
             areaServed: [{ "@type": "Country", name: "România" }, { "@type": "Place", name: "Uniunea Europeană" }],
             availableLanguage: ["ro", "en"],
@@ -162,7 +162,7 @@ export default function Malpraxis() {
           </Breadcrumb>
 
           <h1 className="text-2xl font-semibold mb-4">
-            Avocat Malpraxis Medical București - Bogdan Lamatic | Neglijență în serviciu
+            Avocat Malpraxis Medical București
           </h1>
 
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
@@ -180,7 +180,7 @@ export default function Malpraxis() {
 
         <div className="mt-8 space-y-4">
           <p className="text-base leading-relaxed text-muted-foreground">
-            Pagina-părinte oferă un rezumat pentru fiecare direcție. Alege mai jos subiectul care te interesează, unde găsești detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
+            Alege mai jos subiectul care te interesează, vei găsi detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
           </p>
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
