@@ -21,7 +21,7 @@ Rulez o verificare automată pe toate paginile prerendate (`dist/**/index.html`)
 Adaug o regulă nouă: eroare dacă o pagină conține de două ori același `@type` top-level (`WebSite`, `FAQPage`, `LegalService`, `Person`, `BreadcrumbList`), sau mai mult de un script `ld+json` `data-managed`. Dacă în viitor apare o dublare reală, build-ul o semnalează imediat.
 
 ### 3. Curățare defensivă a `@id`-urilor referențiate
-Dacă verificarea de la pasul 1 arată că validatorul vede două `WebSite` din cauza referințelor `@id`, adaug `@id` explicit pe nodul `WebSite` (ex. `https://avocatpenalbucuresti.ro/#website`) și pe `FAQPage` (`.../#faq`), astfel încât validatorul să lege nodurile în loc să le dubleze. Aceeași convenție și pe EN.
+Peste tot se folosește exclusiv acest `@id`: `https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html`. Nu introduc `@id`-uri noi (fără `#website`, `#faq` etc.) - orice referință de entitate din scheme, RO și EN, trimite doar la acest id.
 
 ### 4. Fix trailing slash (301 `/servicii` -> `/servicii/`)
 Sitemap-ul și canonical-urile sunt fără slash, dar hostingul redirecționează către varianta cu slash - inconsistent. Dezactivez normalizarea cu slash la nivel de hosting (`netlify.toml`: `[build.processing.html] pretty_urls = false`) și verific după deploy că `/servicii` răspunde 200 direct, fără redirect, iar `/servicii/` face 301 către varianta fără slash.
