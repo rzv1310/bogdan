@@ -8543,14 +8543,14 @@ export const loviriVatamareCorporalaRo: SubServicePageData = {
     {
       h2: "Ce analizez imediat",
       paragraphs: [
+        "Verific cum a început conflictul, cine a exercitat primul act de violență, declarațiile martorilor, imaginile video, mesajele existente și documentele medico-legale.",
+        "Un punct important este dacă fapta descrisă de persoana vătămată corespunde probelor și dacă încadrarea juridică este corectă.",
+        "Lovirea sau alte violențe și vătămarea corporală sunt reglementate distinct de Codul penal, iar gravitatea leziunilor și consecințele acestora pot schimba încadrarea juridică.",
         [
           { text: "Pentru celelalte acuzații din aceeași categorie, vezi și pagina despre " },
           { text: "infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
           { text: "." },
         ],
-        "Verific cum a început conflictul, cine a exercitat primul act de violență, declarațiile martorilor, imaginile video, mesajele existente și documentele medico-legale.",
-        "Un punct important este dacă fapta descrisă de persoana vătămată corespunde probelor și dacă încadrarea juridică este corectă.",
-        "Lovirea sau alte violențe și vătămarea corporală sunt reglementate distinct de Codul penal, iar gravitatea leziunilor și consecințele acestora pot schimba încadrarea juridică.",
       ],
       cta: "☎ Sună-mă acum - 031 632 01 83",
       ctaIcon: false,
