@@ -309,6 +309,13 @@ export default function AppRoutes() {
 
           <Route path="/en/services/money-laundering-and-asset-concealment" element={<MoneyLaunderingEn />} />
           <Route path="/en/services/professional-negligence-and-malpractice" element={<MalpracticeEn />} />
+          <Route path="/en/services/medical-malpractice-compensation" element={<MedicalMalpracticeCompensationEn />} />
+          <Route path="/en/services/doctor-criminal-liability" element={<DoctorCriminalLiabilityEn />} />
+          <Route path="/en/services/malpractice-committee" element={<MalpracticeCommitteeEn />} />
+          <Route path="/en/services/medical-negligence-bodily-injury" element={<MedicalNegligenceBodilyInjuryEn />} />
+          <Route path="/en/services/medical-negligence-manslaughter" element={<MedicalNegligenceManslaughterEn />} />
+          <Route path="/en/services/complaint-college-of-physicians" element={<ComplaintCollegeOfPhysiciansEn />} />
+          <Route path="/en/services/dental-malpractice" element={<DentalMalpracticeEn />} />
           <Route path="/en/services/road-traffic-offenses" element={<RoadTrafficEn />} />
           <Route path="/en/services/drunk-driving" element={<DrunkDrivingEn />} />
           <Route path="/en/services/drug-driving" element={<DrugDrivingEn />} />
