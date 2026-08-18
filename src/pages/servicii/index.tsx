@@ -135,8 +135,13 @@ export default function ServiciiPage() {
 
           <h1 className="text-2xl font-semibold mb-4">Servicii avocat drept penal în București</h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            Ofer asistență și reprezentare în dosare penale complexe, de la audieri, reținere și arest preventiv până la cauze DIICOT, criminalitate economică, corupție, infracțiuni rutiere și reprezentarea victimelor.
+            Ofer asistență și reprezentare în dosare penale complexe, ca{" "}
+            <Link to="/" className="text-foreground underline underline-offset-2 transition-colors hover:text-accent">
+              avocat penal în București
+            </Link>
+            , de la audieri, reținere și arest preventiv până la cauze DIICOT, criminalitate economică, corupție, infracțiuni rutiere și reprezentarea victimelor.
           </p>
+
           <LawyerBioBlock path="/servicii" lang="ro" className="mt-5" />
           <GoogleReviewStars lang="ro" className="mt-3" />
           <div className="mt-5">
