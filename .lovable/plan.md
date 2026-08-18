@@ -30,6 +30,6 @@ Replacement global de string, nu pe proprietăți individuale. Toate cele 9 apar
 
 ## Verificare
 
-1. `rg` în tot `src/` și `scripts/`: 0 apariții ale stringului vechi
+1. `rg` în tot repository-ul (`rg "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" .`, cu excluderi pentru `node_modules`, `.git` și `dist` la prima trecere): 0 apariții ale stringului vechi
 2. Build complet, apoi `rg` în `dist/`: 0 apariții în cele 138 de pagini prerenderate
 3. Confirmare că pe homepage RO și EN nodul `LegalService` are noul `@id`, iar `itemReviewed` / `worksFor` trimit la exact același `@id`
