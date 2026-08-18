@@ -147,10 +147,7 @@ async function main() {
     const outFile =
       route === "/" ? path.join(distDir, "index.html") : path.join(distDir, route, "index.html");
     await mkdir(path.dirname(outFile), { recursive: true });
-    if (route === "/") console.log("[debug before strip] priceRange:", page.match(/priceRange[^,]+/)[0]);
-    const final = stripFancyDashes(page);
-    if (route === "/") console.log("[debug final] priceRange:", final.match(/priceRange[^,]+/)[0]);
-    await writeFile(outFile, final, "utf8");
+    await writeFile(outFile, stripFancyDashes(page), "utf8");
     console.log(`[prerender] ${route} -> ${path.relative(distDir, outFile)}`);
   }
 
