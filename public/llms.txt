@@ -15,6 +15,9 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Contact](/contact): Formular și date de contact în română.
 - [Contact](/en/contact): Contact form and details in English.
 - [Calculator despăgubiri](/calculator-despagubiri): Instrument de estimare a despăgubirilor.
+- [Compensation Calculator](/en/compensation-calculator): Compensation estimate tool.
+- [Harta site](/harta-site): Index cu toate paginile în română.
+- [Sitemap](/en/sitemap): Index of all pages in English.
 - [Sitemap](/sitemap.xml): Harta site-ului.
 
 ## Services
