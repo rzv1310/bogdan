@@ -38,7 +38,7 @@ Pe `/servicii/neglijenta-profesionala-si-malpraxis` (RO și EN):
 
 ## Linkuri interne
 
-Se implementează exact schema pe care ai dat-o pentru fiecare pagină (părinte după primul paragraf, legături între copii pe intent, plus linkuri către pagini existente din afara clusterului de malpraxis - „reprezentarea victimelor în procese penale”, „urmărire penală”, „măsuri preventive” - acolo unde ai indicat). Excepție respectată: pe „Malpraxis stomatologic” nu se pune link cu anchor „Plângere Colegiul Medicilor”; se menționează CMSR ca instituție distinctă.
+Se implementează exact schema pe care ai dat-o pentru fiecare pagină (părinte după primul paragraf, legături între copii pe intent, plus linkuri către pagini existente din afara clusterului de malpraxis - „reprezentarea victimelor în procese penale” - acolo unde ai indicat). Excepție respectată: pe „Malpraxis stomatologic” nu se pune link cu anchor „Plângere Colegiul Medicilor”; se menționează CMSR ca instituție distinctă.
 
 Bullets din caseta „Malpraxis” de pe `/servicii` și din bio-block-ul paginii-părinte devin linkuri active către cele 7 pagini noi.
 
