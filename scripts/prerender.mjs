@@ -132,9 +132,9 @@ async function main() {
     const lang = head?.lang === "en" ? "en" : "ro";
 
     let page = template
-      .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
-      .replace("</head>", `${buildHead(route, head)}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+      .replace(/<html\s+lang="[^"]*"/i, () => `<html lang="${lang}"`)
+      .replace("</head>", () => `${buildHead(route, head)}\n  </head>`)
+      .replace('<div id="root"></div>', () => `<div id="root">${html}</div>`);
 
     // Per-page keywords override the sitewide default from index.html.
     if (head?.keywords) {
