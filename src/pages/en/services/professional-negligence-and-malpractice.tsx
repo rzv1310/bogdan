@@ -192,7 +192,7 @@ export default function MalpracticeEn() {
             <p>I analyse the case and tell you concretely what options you have, what is worth doing and what should be avoided from the start. Depending on the situation, compensation, a complaint to the Malpractice Committee or professional body, or defence in a criminal case may be needed.</p>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="mt-6 mb-[30px] flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
               <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
             </Button>
