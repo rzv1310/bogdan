@@ -9361,6 +9361,7 @@ export const despagubiriMalpraxisMedicalRo: SubServicePageData = {
     },
     {
       h2: "Cum dovedești malpraxisul?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "Cele mai importante elemente sunt, de regulă, dosarul medical complet, protocoalele și standardele aplicabile, evoluția pacientului și expertiza de specialitate." },
@@ -9378,6 +9379,7 @@ export const despagubiriMalpraxisMedicalRo: SubServicePageData = {
     },
     {
       h2: "Ce să îmi trimiți",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Ideal: biletul de externare, foaia de observație, investigațiile, consimțământul informat, recomandările ulterioare și documentele care arată cheltuielile sau consecințele produse.",
         "Dacă nu ai dosarul complet, stabilim mai întâi ce trebuie obținut.",
@@ -9465,6 +9467,7 @@ export const raspunderePenalaMedicRo: SubServicePageData = {
     },
     {
       h2: "Ai primit citație?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Trimite-mi citația și spune-mi: ce calitate procesuală ai; ce act medical este cercetat; când a avut loc; dacă există deja o expertiză.",
         "Discută strategia înainte de declarație.",
@@ -9532,6 +9535,7 @@ export const comisiaDeMalpraxisRo: SubServicePageData = {
     },
     {
       h2: "Ce pregătim înainte de sesizare",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Nu aș trimite doar o reclamație generală.",
         "Construiesc o cronologie clară a actului medical și selectez documentele relevante: dosarul medical, investigațiile, consimțământul informat, documentele privind evoluția ulterioară și celelalte probe necesare.",
@@ -9615,6 +9619,7 @@ export const vatamareCorporalaDinCulpaMedicalaRo: SubServicePageData = {
   sections: [
     {
       h2: "Ce trebuie dovedit în dosar",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Nu este suficient să existe o complicație și nici simplul fapt că pacientul a avut nevoie de tratament ulterior.",
         "Analiza trebuie să privească: conduita medicală concretă; regula profesională presupus încălcată; caracterul culpabil al conduitei; consecința medicală; legătura dintre conduită și consecință.",
@@ -9697,6 +9702,7 @@ export const ucidereDinCulpaMedicalaRo: SubServicePageData = {
   sections: [
     {
       h2: "Ce analizez în primele etape",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Verific dosarul medical, raportul operator atunci când există, documentația ATI, rezultatele investigațiilor, cronologia deteriorării stării pacientului, raportul medico-legal și expertizele efectuate.",
         "Întrebarea centrală este dacă rezultatul fatal poate fi atribuit juridic conduitei cercetate.",
@@ -9808,6 +9814,7 @@ export const plangereColegiulMedicilorRo: SubServicePageData = {
     },
     {
       h2: "Ai deja documentația medicală?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Trimite-mi actele și cronologia evenimentelor pentru a stabili ce demers are sens în cazul tău.",
       ],
@@ -9890,6 +9897,7 @@ export const malpraxisStomatologicRo: SubServicePageData = {
     },
     {
       h2: "Ce să îmi trimiți",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Fișa tratamentului, planul terapeutic, radiografiile/CBCT, facturile, consimțământul informat și documentele de la medicul care a evaluat problema ulterior.",
       ],

@@ -7854,6 +7854,7 @@ export const medicalMalpracticeCompensationEn: SubServicePageData = {
     },
     {
       h2: "How do you prove malpractice?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         [
           { text: "The most important elements are usually the complete medical file, the applicable protocols and standards, the patient's evolution and the specialist expertise." },
@@ -7871,6 +7872,7 @@ export const medicalMalpracticeCompensationEn: SubServicePageData = {
     },
     {
       h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Ideally: discharge letter, observation sheet, investigations, informed consent, further recommendations and documents showing expenses or consequences.",
         "If you do not have the complete file, we first establish what needs to be obtained.",
@@ -7958,6 +7960,7 @@ export const doctorCriminalLiabilityEn: SubServicePageData = {
     },
     {
       h2: "Have you received a summons?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Send me the summons and tell me: what procedural capacity you have; what medical act is being investigated; when it took place; whether there is already an expert report.",
         "Discuss the strategy before giving a statement.",
@@ -8025,6 +8028,7 @@ export const malpracticeCommitteeEn: SubServicePageData = {
     },
     {
       h2: "What we prepare before filing",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "I would not send just a general complaint.",
         "I build a clear chronology of the medical act and select the relevant documents: medical file, investigations, informed consent, documents on subsequent evolution and any other necessary evidence.",
@@ -8108,6 +8112,7 @@ export const medicalNegligenceBodilyInjuryEn: SubServicePageData = {
   sections: [
     {
       h2: "What must be proven in the case",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "It is not enough that there was a complication, nor that the patient simply needed further treatment.",
         "The analysis must cover: the concrete medical conduct; the professional rule allegedly breached; the culpable nature of the conduct; the medical consequence; and the causal link between conduct and consequence.",
@@ -8190,6 +8195,7 @@ export const medicalNegligenceManslaughterEn: SubServicePageData = {
   sections: [
     {
       h2: "What I analyse in the first stages",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "I check the medical file, the operating report where available, the ICU documentation, the investigation results, the chronology of the patient's deterioration, the medico-legal report and the expert reports carried out.",
         "The central question is whether the fatal outcome can be legally attributed to the conduct under investigation.",
@@ -8301,6 +8307,7 @@ export const complaintCollegeOfPhysiciansEn: SubServicePageData = {
     },
     {
       h2: "Do you already have the medical documentation?",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Send me the documents and the chronology of events to establish which approach makes sense in your case.",
       ],
@@ -8383,6 +8390,7 @@ export const dentalMalpracticeEn: SubServicePageData = {
     },
     {
       h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
       paragraphs: [
         "Treatment file, therapeutic plan, radiographs/CBCT, invoices, informed consent and documents from the doctor who later evaluated the problem.",
       ],
