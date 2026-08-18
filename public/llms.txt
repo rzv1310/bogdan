@@ -25,7 +25,6 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Servicii](/servicii): Toate serviciile de drept penal, în română.
 - [Services](/en/services): All criminal law services, in English.
 
-## Services
 
 - [Urmărire penală](/servicii/urmarire-penala): Apărare din prima oră în faza de urmărire penală.
 - [Criminal Investigation](/en/services/criminal-investigation): Defense from the first hour of the investigation.
