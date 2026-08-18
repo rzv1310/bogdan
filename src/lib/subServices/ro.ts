@@ -5137,6 +5137,10 @@ export const conflictDeIntereseRo: SubServicePageData = {
       q: "Contractul semnat poate fi anulat?",
       a: "Da. Actele încheiate cu încălcarea regulilor privind conflictul de interese pot fi lovite de nulitate.",
     },
+    {
+      q: "Ce fac dacă am fost citat pentru audiere într-un dosar de conflict de interese?",
+      a: "Înainte de declarație verific ce act administrativ ți se impută, ce raport de rudenie sau interes patrimonial se invocă și ce documente există la dosar. Prima declarație stabilește adesea cadrul întregii apărări.",
+    },
   ],
   resources: [
     { text: "Codul penal - art. 301 privind folosirea funcției pentru favorizarea unor persoane.", href: CP, linkLabel: "Legislație" },
