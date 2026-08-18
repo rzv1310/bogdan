@@ -22,6 +22,20 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 
 ## Services
 
+- [Urmărire penală](/servicii/urmarire-penala): Apărare din prima oră în faza de urmărire penală.
+- [Criminal Investigation](/en/services/criminal-investigation): Defense from the first hour of the investigation.
+- [Măsuri preventive](/servicii/masuri-preventive): Reținere, arest preventiv, control judiciar, arest la domiciliu.
+- [Preventive Measures](/en/services/preventive-measures): Custody, pre-trial detention, judicial control, house arrest.
+- [Reținere 24 de ore](/servicii/retinere-24-ore): Asistență imediată în primele 24 de ore de reținere.
+- [Police Custody 24 Hours](/en/services/police-custody-24-hours): Immediate assistance during the first 24 hours.
+- [Arest preventiv](/servicii/arest-preventiv): Apărare la propunerea și prelungirea arestului preventiv.
+- [Pre-trial Detention](/en/services/pre-trial-detention): Defense against pre-trial detention requests and extensions.
+- [Control judiciar](/servicii/control-judiciar): Contestarea și modificarea obligațiilor din controlul judiciar.
+- [Judicial Control](/en/services/judicial-control): Challenging and amending judicial control obligations.
+- [Arest la domiciliu](/servicii/arest-la-domiciliu): Solicitarea și respectarea arestului la domiciliu.
+- [House Arrest](/en/services/house-arrest): Requesting and complying with house arrest.
+- [Infracțiuni contra persoanei](/servicii/infractiuni-contra-persoanei): Apărare în acuzații de violență, agresiune și omor.
+- [Violent Crime Defense](/en/services/offenses-against-persons): Defense in violence, assault and homicide cases.
 - [Audiere Poliție și Parchet](/servicii/audiere-politie-parchet): Asistență la audiere ca suspect, inculpat sau martor.
 - [Police and Prosecutor Questioning](/en/services/police-prosecutor-questioning): Assistance during questioning.
 - [Percheziție domiciliară](/servicii/perchezitie-domiciliara): Asistență în timpul percheziției la domiciliu sau la firmă.
