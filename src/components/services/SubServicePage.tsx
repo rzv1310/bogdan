@@ -38,7 +38,7 @@ export interface SubServiceSection {
   h2: string;
   /** Optional DOM id, used as in-page anchor target. */
   id?: string;
-  paragraphs?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphs?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   bullets?: (string | { bold: string; rest: string })[];
   /** Renders a CTA button at the end of the section, with this label. */
   cta?: string;
@@ -54,7 +54,7 @@ export interface SubServiceSection {
   /** Optional inline CTA button rendered inside the callout. */
   calloutCta?: string;
   /** Optional paragraphs rendered after the bullets. */
-  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string }[])[];
+  paragraphsAfterBullets?: (string | { text: string; bold?: boolean; to?: string; href?: string }[])[];
   /** Optional bullets rendered after the paragraphs-after-bullets. */
   bulletsAfterBullets?: (string | { bold: string; rest: string })[];
   /** Optional small highlighted callout rendered after the bullets. */
