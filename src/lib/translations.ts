@@ -38,7 +38,7 @@ export const translations = {
       "disponibilitate 16 ore pe zi.",
     ],
     homeBio: {
-      name: "Avocat Bogdan Lamatic",
+      name: "Avocat Bogdan Lamatic · Drept Penal",
       line1: "Baroul București · 18+ ani experiență",
       line2: "Legal 500 · White-Collar Crime",
     },
