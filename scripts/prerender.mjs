@@ -132,15 +132,15 @@ async function main() {
     const lang = head?.lang === "en" ? "en" : "ro";
 
     let page = template
-      .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
-      .replace("</head>", `${buildHead(route, head)}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+      .replace(/<html\s+lang="[^"]*"/i, () => `<html lang="${lang}"`)
+      .replace("</head>", () => `${buildHead(route, head)}\n  </head>`)
+      .replace('<div id="root"></div>', () => `<div id="root">${html}</div>`);
 
     // Per-page keywords override the sitewide default from index.html.
     if (head?.keywords) {
       page = page.replace(
         /<meta\s+name="keywords"[^>]*>/i,
-        `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
+        () => `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
       );
     }
 
@@ -156,9 +156,9 @@ async function main() {
     const { html, head } = render("/pagina-inexistenta-404");
     const lang = head?.lang === "en" ? "en" : "ro";
     const page = template
-      .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
-      .replace("</head>", `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+      .replace(/<html\s+lang="[^"]*"/i, () => `<html lang="${lang}"`)
+      .replace("</head>", () => `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
+      .replace('<div id="root"></div>', () => `<div id="root">${html}</div>`);
     await writeFile(path.join(distDir, "404.html"), stripFancyDashes(page), "utf8");
     console.log("[prerender] 404 -> 404.html");
   }
