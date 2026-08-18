@@ -58,10 +58,13 @@ export const relatedServices: Record<string, string[]> = {
     "/servicii/neglijenta-profesionala-si-malpraxis",
   ],
   "/servicii/neglijenta-profesionala-si-malpraxis": [
-    "/servicii/raspundere-penala-incidente-locul-de-munca",
-    "/servicii/infractiuni-contra-persoanei",
-    "/servicii/reprezentarea-victimelor-in-procese-penale",
-    "/servicii/infractiuni-rutiere-cu-victime",
+    "/servicii/despagubiri-malpraxis-medical",
+    "/servicii/raspundere-penala-medic",
+    "/servicii/comisia-de-malpraxis",
+    "/servicii/vatamare-corporala-din-culpa-medicala",
+    "/servicii/ucidere-din-culpa-medicala",
+    "/servicii/plangere-colegiul-medicilor",
+    "/servicii/malpraxis-stomatologic",
   ],
   "/servicii/raspundere-penala-incidente-locul-de-munca": [
     "/servicii/neglijenta-profesionala-si-malpraxis",
