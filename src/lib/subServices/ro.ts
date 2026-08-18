@@ -8510,3 +8510,807 @@ export const despagubiriVatamareCorporalaRo: SubServicePageData = {
   contactWhatsAppLabel: "Trimite actele pe WhatsApp",
   parent: PARENT_VIC,
 };
+
+const PARENT_PERS = {
+  to: "/servicii/infractiuni-contra-persoanei",
+  label: "infracțiuni contra persoanei",
+  breadcrumbLabel: "Infracțiuni contra persoanei",
+};
+
+export const loviriVatamareCorporalaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/loviri-vatamare-corporala",
+  altPath: "/en/services/assault-and-bodily-injury",
+  roPath: "/servicii/loviri-vatamare-corporala",
+  title: "Avocat Loviri și Vătămare Corporală București | Lamatic",
+  h1: "Avocat pentru Loviri și Vătămare Corporală în București",
+  description:
+    "Ești acuzat de lovire sau vătămare corporală? Apărare penală, analiză certificat medico-legal, probe și împrejurările conflictului.",
+  keywords:
+    "avocat vătămare corporală București, avocat lovire București, loviri și alte violențe avocat, apărare vătămare corporală, avocat art 193 Cod penal, avocat art 194 Cod penal",
+  breadcrumbLabel: "Loviri și vătămare corporală",
+  serviceName: "Avocat loviri și vătămare corporală București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost acuzat de lovire sau vătămare corporală?",
+    "Un conflict de câteva minute poate ajunge rapid într-un dosar penal. Declarațiile celor implicați pot fi diferite, iar certificatul medico-legal nu spune întotdeauna întreaga poveste despre cum s-au produs leziunile.",
+    "Dacă ai fost reclamat, citat la Poliție sau Parchet ori ai aflat că există un dosar penal împotriva ta, este important să analizezi situația înainte de prima declarație.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane acuzate de lovire, alte violențe sau vătămare corporală, de la prima audiere până la soluționarea cauzei.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez imediat",
+      paragraphs: [
+        [
+          { text: "Pentru celelalte acuzații din aceeași categorie, vezi și pagina despre " },
+          { text: "infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: "." },
+        ],
+        "Verific cum a început conflictul, cine a exercitat primul act de violență, declarațiile martorilor, imaginile video, mesajele existente și documentele medico-legale.",
+        "Un punct important este dacă fapta descrisă de persoana vătămată corespunde probelor și dacă încadrarea juridică este corectă.",
+        "Lovirea sau alte violențe și vătămarea corporală sunt reglementate distinct de Codul penal, iar gravitatea leziunilor și consecințele acestora pot schimba încadrarea juridică.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Certificatul medico-legal nu este singura probă",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Numărul zilelor de îngrijiri medicale este important, dar apărarea nu trebuie redusă la acest document.",
+        "Analizez inclusiv mecanismul producerii leziunilor, momentul examinării, eventualele imagini video, declarațiile martorilor și dacă există elemente care susțin o situație de legitimă apărare sau un alt context relevant.",
+      ],
+    },
+    {
+      h2: "Dacă incidentul s-a produs într-un accident",
+      paragraphs: [
+        "Pagina aceasta este destinată în principal violenței fizice intenționate.",
+        [
+          { text: "Dacă acuzația este de vătămare corporală din culpă după un accident auto, informațiile relevante sunt pe pagina despre " },
+          { text: "infracțiuni rutiere cu victime", to: "/servicii/infractiuni-rutiere-cu-victime" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Dacă persoana a decedat",
+      paragraphs: [
+        "Un deces schimbă fundamental analiza juridică. Forma de vinovăție, mecanismul producerii rezultatului și legătura de cauzalitate devin esențiale.",
+        [
+          { text: "Vezi separat pagina despre " },
+          { text: "omor și ucidere din culpă", to: "/servicii/omor-ucidere-din-culpa" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce să îmi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Dacă le ai, trimite-mi:"],
+      bullets: [
+        "citația, plângerea sau actul primit;",
+        "certificatul medico-legal despre care ai cunoștință;",
+        "fotografiile făcute după incident;",
+        "conversațiile relevante cu persoana care te-a reclamat;",
+        "orice informații despre martori.",
+      ],
+      calloutAfterBullets: "Nu trebuie să ai toate actele pentru a mă contacta.",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ai fost chemat la audiere?",
+      paragraphs: [
+        "Sună înainte să dai declarația. Analizăm ce ți se impută și care sunt probele relevante pentru apărare.",
+        [
+          { text: "Modul în care se desfășoară procedura este explicat pe pagina despre " },
+          { text: "urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Care este diferența dintre lovire și vătămare corporală?",
+      a: "Lovirea sau alte violențe (art. 193 Cod penal) presupune, de regulă, o suferință fizică fără consecințe grave, în timp ce vătămarea corporală (art. 194 Cod penal) presupune urmări mai grave: infirmitate, prejudiciu estetic grav și permanent, avort sau punerea în primejdie a vieții. Încadrarea influențează direct gravitatea acuzației și procedura.",
+    },
+    {
+      q: "Se poate retrage plângerea pentru lovire?",
+      a: "Pentru lovire sau alte violențe, acțiunea penală se pune în mișcare la plângerea prealabilă, iar retragerea plângerii sau împăcarea părților poate duce la încetarea procesului penal. Verific dacă fapta reținută permite legal această variantă.",
+    },
+    {
+      q: "Ce înseamnă zilele de îngrijiri medicale?",
+      a: "Reprezintă timpul necesar, din punct de vedere medical, pentru vindecarea leziunilor, nu durata concediului medical. Numărul lor influențează încadrarea juridică, dar poate fi contestat printr-o nouă expertiză.",
+    },
+    {
+      q: "Dacă m-am apărat, tot răspund penal?",
+      a: "Legitima apărare înlătură caracterul penal al faptei, dacă sunt îndeplinite condițiile prevăzute de lege. De aceea contează cine a inițiat conflictul și cum s-a desfășurat, nu doar rezultatul final.",
+    },
+    {
+      q: "Pot fi condamnat doar pe baza declarației persoanei vătămate?",
+      a: "O singură declarație nu este suficientă dacă nu se coroborează cu alte probe. Analizez întregul material probatoriu și contest concluziile care nu au susținere.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 193 și art. 194 privind lovirea sau alte violențe și vătămarea corporală.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind plângerea prealabilă și audierea.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};
+
+export const violentaDomesticaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/violenta-domestica",
+  altPath: "/en/services/domestic-violence",
+  roPath: "/servicii/violenta-domestica",
+  title: "Avocat Violență Domestică București | Bogdan Lamatic",
+  h1: "Avocat Violență Domestică în București",
+  description:
+    "Acuzat de violență domestică? Apărare penală în dosare de violență în familie, inclusiv când există ordin de protecție sau acuzații contradictorii.",
+  keywords:
+    "avocat violență domestică București, avocat violență în familie, apărare violență domestică, avocat ordin protecție, avocat agresiune familie",
+  breadcrumbLabel: "Violență domestică",
+  serviceName: "Avocat violență domestică București - Bogdan Lamatic",
+  urgency: [
+    "Ești acuzat de violență domestică?",
+    "Dosarele de violență în familie apar frecvent în contexte tensionate: separări, divorțuri, conflicte privind copiii sau episoade în care fiecare persoană descrie diferit ceea ce s-a întâmplat.",
+    "În paralel cu dosarul penal poate exista și o procedură privind un ordin de protecție, ceea ce înseamnă că trebuie analizate separat atât acuzația penală, cât și restricțiile deja impuse.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane acuzate în dosare de violență în familie, inclusiv atunci când există deja un ordin de protecție.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce verific în dosarul tău",
+      paragraphs: [
+        [
+          { text: "Această apărare face parte din serviciile mele privind " },
+          { text: "infracțiunile contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: ", dar are reguli proprii." },
+        ],
+        "Mă interesează în primul rând cronologia incidentului, declarațiile persoanelor implicate, apelurile la 112, mesajele, fotografiile, certificatul medico-legal, martorii și eventualele înregistrări.",
+        "În cauzele privind membri de familie există reguli penale specifice, iar legislația privind violența domestică reglementează separat măsurile de protecție.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Există deja un ordin de protecție?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Nu trata ordinul de protecție ca pe un simplu document din dosarul penal.",
+        "Spune-mi exact ce obligații și interdicții conține și când ți-a fost comunicat. Dacă există restricții privind apropierea sau contactarea unei persoane, acestea trebuie respectate cât timp produc efecte.",
+        "Legea nr. 217/2003 și legislația privind ordinul de protecție au fost modificate inclusiv în ultimii ani, motiv pentru care situația trebuie verificată după actul concret primit.",
+      ],
+    },
+    {
+      h2: "Violență domestică sau un conflict fără relevanță penală?",
+      paragraphs: [
+        "Nu orice ceartă de familie înseamnă automat existența unei infracțiuni.",
+        "Analizez fapta concretă și probele existente, fără să pornesc de la presupunerea că simpla formulare a unei plângeri dovedește acuzația.",
+        [
+          { text: "Dacă discuția privește exclusiv o agresiune fizică și nu există contextul specific familial, informațiile relevante sunt pe pagina despre " },
+          { text: "loviri și vătămare corporală", to: "/servicii/loviri-vatamare-corporala" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ai fost chemat la Poliție sau Parchet?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Nu încerca să rezolvi situația contactând persoana care a făcut plângerea, mai ales dacă există o interdicție de contact.",
+        "Trimite-mi citația sau actele primite și spune-mi:",
+      ],
+      bullets: [
+        "când s-a produs incidentul;",
+        "cine era prezent;",
+        "dacă există înregistrări;",
+        "dacă a fost emis un ordin de protecție.",
+      ],
+      calloutAfterBullets: "Nu ai încă toate actele?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Apărare înainte de prima declarație",
+      paragraphs: [
+        "Primele declarații pot stabili direcția dosarului.",
+        [
+          { text: "Dacă dosarul se află la Poliție sau Parchet, vezi și serviciul meu de apărare " },
+          { text: "în faza de urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "." },
+        ],
+        [
+          { text: "Dacă se discută o restrângere de libertate, pregătim în paralel apărarea privind " },
+          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Ce se întâmplă dacă am primit un ordin de protecție?",
+      a: "Ordinul de protecție impune obligații și interdicții care trebuie respectate imediat, de exemplu păstrarea unei distanțe sau interdicția de a contacta persoana protejată. Există posibilitatea de a-l contesta sau de a solicita modificarea lui, în condițiile legii și în termenele prevăzute.",
+    },
+    {
+      q: "Dacă partenerul retrage plângerea, dosarul se închide?",
+      a: "Depinde de fapta reținută. Pentru unele infracțiuni săvârșite asupra unui membru de familie acțiunea penală continuă din oficiu, chiar dacă plângerea este retrasă.",
+    },
+    {
+      q: "Pot fi arestat într-un dosar de violență în familie?",
+      a: "Da, în funcție de gravitatea faptei și de circumstanțe, procurorul poate propune o măsură preventivă. Apărarea privind măsura se pregătește separat de apărarea pe fondul acuzației.",
+    },
+    {
+      q: "Ce fac dacă acuzația este falsă?",
+      a: "Nu contacta persoana care a formulat plângerea și nu șterge conversații. Strângem probele care arată cronologia reală: mesaje, martori, înregistrări, documente.",
+    },
+    {
+      q: "Ordinul de protecție îmi interzice să îmi văd copiii?",
+      a: "Poate conține și dispoziții privind locuința sau programul de legături personale. Trebuie citit exact, pentru că încălcarea lui constituie infracțiune distinctă.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 199 privind violența în familie.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Legea nr. 217/2003 privind prevenirea și combaterea violenței domestice, inclusiv ordinul de protecție.",
+      href: "https://legislatie.just.ro/Public/DetaliiDocument/44014",
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};
+
+export const lipsireDeLibertateAmenintareRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/lipsire-de-libertate-amenintare",
+  altPath: "/en/services/unlawful-detention-and-threats",
+  roPath: "/servicii/lipsire-de-libertate-amenintare",
+  title: "Avocat Lipsire de Libertate și Amenințare | București",
+  h1: "Avocat pentru Lipsire de Libertate și Amenințare în București",
+  description:
+    "Apărare în dosare de lipsire de libertate și amenințare. Analiza mesajelor, declarațiilor, contextului și probelor înainte de audiere.",
+  keywords:
+    "avocat lipsire de libertate București, avocat amenințare București, lipsire de libertate în mod ilegal avocat, apărare amenințare, avocat art 205, avocat art 206",
+  breadcrumbLabel: "Lipsire de libertate și amenințare",
+  serviceName: "Avocat lipsire de libertate și amenințare București - Bogdan Lamatic",
+  urgency: [
+    "Ești acuzat că ai amenințat sau ai împiedicat o persoană să plece?",
+    "În astfel de dosare, câteva minute de conflict pot fi descrise ulterior în moduri complet diferite.",
+    "Trebuie stabilit exact ce s-a spus, ce s-a făcut și dacă persoana a fost efectiv împiedicată să plece sau dacă acuzația privește numai un schimb de replici.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane acuzate de lipsire de libertate în mod ilegal sau de amenințare, cu accent pe contextul real al conflictului.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez",
+      paragraphs: [
+        [
+          { text: "Pagina face parte din serviciile mele privind " },
+          { text: "infracțiunile contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: ", dar este concentrată exclusiv pe lipsirea de libertate și amenințare." },
+        ],
+        "Pentru lipsirea de libertate verific locul, durata, posibilitatea reală de deplasare, comportamentul persoanelor prezente, camerele video și declarațiile martorilor.",
+        "Pentru amenințare analizez cuvintele exacte, mesajele sau înregistrările, contextul în care au fost transmise și efectul pe care acuzația susține că l-au produs.",
+        "Cele două infracțiuni sunt reglementate distinct prin art. 205 și art. 206 din Codul penal.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "O ceartă nu înseamnă automat amenințare penală",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Într-un conflict pot exista expresii agresive sau afirmații spuse sub impulsul momentului.",
+        "Întrebarea juridică este dacă fapta concretă întrunește elementele prevăzute de lege. De aceea este important să vedem conversația integrală, nu doar un screenshot sau o frază izolată.",
+      ],
+    },
+    {
+      h2: "Amenințare sau șantaj?",
+      paragraphs: [
+        "Diferența este importantă.",
+        "Dacă acuzația nu privește numai intimidarea unei persoane, ci folosirea presiunii pentru a o determina să facă, să nu facă sau să accepte ceva în vederea obținerii unui folos injust, trebuie analizată separat posibilitatea unei acuzații de șantaj.",
+        [
+          { text: "Pentru această situație vezi pagina despre " },
+          { text: "șantaj și hărțuire", to: "/servicii/santaj-hartuire" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce să păstrezi",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Nu șterge conversații, înregistrări sau alte informații care pot explica contextul."],
+      bullets: [
+        "citația sau actul primit;",
+        "mesajele relevante, în forma lor completă;",
+        "informații despre persoanele prezente;",
+        "locurile în care există camere video.",
+      ],
+      calloutAfterBullets: "Nu ai toate informațiile?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Urmează audierea?",
+      paragraphs: [
+        [
+          { text: "În " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: ", strategia trebuie stabilită înainte de declarație, nu după." },
+        ],
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Când este vorba despre lipsire de libertate în mod ilegal?",
+      a: "Atunci când o persoană este lipsită efectiv de posibilitatea de a se deplasa liber, fără drept. Durata, locul și existența unei constrângeri reale sunt elementele analizate în concret.",
+    },
+    {
+      q: "Un mesaj trimis la nervi poate fi amenințare?",
+      a: "Nu automat. Se analizează conținutul exact, contextul, relația dintre persoane și dacă fapta este de natură să producă o stare de temere justificată.",
+    },
+    {
+      q: "Contează dacă nu am dus amenințarea la îndeplinire?",
+      a: "Infracțiunea de amenințare nu presupune realizarea răului anunțat, dar contextul și seriozitatea afirmației rămân esențiale pentru apărare.",
+    },
+    {
+      q: "Pot fi cercetat dacă am blocat ușa în timpul unei certe?",
+      a: "Depinde de situația concretă: durata, posibilitatea persoanei de a pleca și comportamentul celor prezenți. Fiecare element trebuie dovedit, nu presupus.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 205 și art. 206 privind lipsirea de libertate în mod ilegal și amenințarea.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind audierea suspectului sau inculpatului.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};
+
+export const santajHartuireRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/santaj-hartuire",
+  altPath: "/en/services/blackmail-and-harassment",
+  roPath: "/servicii/santaj-hartuire",
+  title: "Avocat Șantaj și Hărțuire București | Bogdan Lamatic",
+  h1: "Avocat Șantaj și Hărțuire în București",
+  description:
+    "Acuzat de șantaj sau hărțuire? Analizez mesajele, înregistrările, presupusa constrângere, folosul urmărit și contextul complet al comunicărilor.",
+  keywords:
+    "avocat șantaj București, avocat hărțuire București, apărare șantaj, hărțuire penală, acuzație șantaj, avocat art 207, avocat art 208",
+  breadcrumbLabel: "Șantaj și hărțuire",
+  serviceName: "Avocat șantaj și hărțuire București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost acuzat de șantaj sau hărțuire?",
+    "Mesaje WhatsApp, emailuri, apeluri telefonice sau discuții private pot deveni probe centrale într-un dosar penal.",
+    "Problema este că un mesaj izolat poate avea un sens complet diferit dacă este citit fără conversația care îl precedă sau fără contextul conflictului.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane acuzate de șantaj sau hărțuire, cu analiza integrală a comunicărilor invocate în dosar.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez înainte să dai declarația",
+      paragraphs: [
+        [
+          { text: "Acest serviciu face parte din apărarea în cauze privind " },
+          { text: "infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: "." },
+        ],
+        "Într-o acuzație de șantaj verific presupusa constrângere sau presiune, ceea ce ți se reproșează că ai cerut și dacă acuzația susține existența unui folos injust.",
+        "Într-un dosar de hărțuire mă interesează caracterul și repetitivitatea comportamentului, istoricul relației și toate comunicările dintre persoane.",
+        "Șantajul și hărțuirea sunt infracțiuni distincte, reglementate de art. 207 și art. 208 Cod penal.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Șantaj sau simplă amenințare?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Cele două acuzații nu trebuie confundate.",
+        "O amenințare urmărește în esență intimidarea persoanei, în timp ce într-o acuzație de șantaj trebuie analizată suplimentar constrângerea exercitată și scopul urmărit.",
+        [
+          { text: "Dacă dosarul privește doar o presupusă amenințare, vezi pagina despre " },
+          { text: "lipsire de libertate și amenințare", to: "/servicii/lipsire-de-libertate-amenintare" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Hărțuire sau comunicări nedorite?",
+      paragraphs: [
+        "Faptul că două persoane au avut multe conversații sau că una dintre ele a insistat să comunice nu rezolvă singur problema juridică.",
+        "Trebuie analizate frecvența, conținutul, reacțiile celeilalte persoane și contextul complet.",
+        "Nu șterge mesajele care par nefavorabile. Uneori exact conversația completă explică sensul unei fraze prezentate separat în plângere.",
+      ],
+    },
+    {
+      h2: "Ce să îmi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Trimite-mi:"],
+      bullets: [
+        "citația sau actul primit;",
+        "conversațiile în forma lor completă;",
+        "o cronologie scurtă a relației dintre persoane;",
+        "informații despre eventualele înregistrări audio sau video.",
+      ],
+      paragraphsAfterBullets: [
+        "Dacă există înregistrări audio sau video, spune-mi despre ele înainte de audiere.",
+      ],
+      calloutAfterBullets: "Nu ai încă toate conversațiile?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Nu explica dosarul prin mesaje persoanei care te-a reclamat",
+      paragraphs: [
+        "O discuție nouă poate deveni o probă nouă.",
+        [
+          { text: "Discută mai întâi cu avocatul și stabilește strategia pentru " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "." },
+        ],
+        [
+          { text: "Dacă apare riscul unei restrângeri de libertate, pregătim separat apărarea privind " },
+          { text: "măsurile preventive", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Ce diferență este între șantaj și amenințare?",
+      a: "La amenințare se urmărește intimidarea persoanei. La șantaj, constrângerea este folosită pentru a determina persoana să facă, să nu facă sau să suporte ceva, în vederea obținerii unui folos injust.",
+    },
+    {
+      q: "Mesajele pot fi folosite ca probă?",
+      a: "Da. De aceea contează conversația completă, nu un fragment izolat prezentat în plângere.",
+    },
+    {
+      q: "Când o insistență devine hărțuire?",
+      a: "Se analizează repetitivitatea, conținutul comunicărilor, reacțiile celeilalte persoane și efectul produs. Nu orice serie de mesaje are relevanță penală.",
+    },
+    {
+      q: "Ce fac dacă mi se cere să șterg conversațiile?",
+      a: "Nu șterge nimic. Ștergerea poate fi interpretată în defavoarea ta, iar conversația completă este deseori cel mai bun argument al apărării.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 207 și art. 208 privind șantajul și hărțuirea.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind mijloacele de probă.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};
+
+export const violAgresiuneSexualaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/viol-agresiune-sexuala",
+  altPath: "/en/services/rape-and-sexual-assault",
+  roPath: "/servicii/viol-agresiune-sexuala",
+  title: "Avocat Viol și Agresiune Sexuală București | Lamatic",
+  h1: "Avocat pentru Viol și Agresiune Sexuală în București",
+  description:
+    "Apărare penală confidențială în acuzații de viol și agresiune sexuală. Analiza probelor, mesajelor, cronologiei și declarațiilor din dosar.",
+  keywords:
+    "avocat viol București, avocat agresiune sexuală București, apărare acuzație viol, avocat infracțiuni sexuale, apărare agresiune sexuală",
+  breadcrumbLabel: "Viol și agresiune sexuală",
+  serviceName: "Avocat viol și agresiune sexuală București - Bogdan Lamatic",
+  urgency: [
+    "Ai fost acuzat de viol sau agresiune sexuală?",
+    "O asemenea acuzație poate avea consecințe imediate asupra libertății, reputației și vieții personale.",
+    "Nu încerca să explici situația prin mesaje persoanei care a formulat acuzația și nu da o declarație nepregătită doar pentru că simți că „nu ai nimic de ascuns”.",
+  ],
+  bio: [
+    `${BIO_INTRO} Discuția este confidențială, iar eu mă ocup personal de apărare, de la prima audiere până la finalul cauzei.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce verific imediat",
+      paragraphs: [
+        [
+          { text: "Aceste cauze fac parte din categoria mai largă a " },
+          { text: "infracțiunilor contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: ", dar au reguli probatorii proprii." },
+        ],
+        "În astfel de cauze, cronologia exactă este esențială.",
+        "Analizez declarațiile persoanelor implicate, conversațiile înainte și după momentul reclamat, datele telefonului, imaginile disponibile, martorii și documentele medico-legale existente.",
+        "Violul și agresiunea sexuală au reglementări distincte în Codul penal, iar legislația acestor infracțiuni a fost modificată în ultimii ani. Încadrarea trebuie verificată după situația concretă și forma actuală a legii.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Nu modifica și nu șterge conversațiile",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Mesajele anterioare și ulterioare evenimentului pot deveni importante pentru stabilirea cronologiei și contextului.",
+        "Păstrează telefonul și conversațiile în forma în care există.",
+      ],
+    },
+    {
+      h2: "Ai fost chemat la audiere?",
+      paragraphs: ["Înainte de declarație trebuie să știm:"],
+      bullets: [
+        "ce faptă este cercetată;",
+        "care este calitatea ta procesuală;",
+        "ce acte ți-au fost comunicate;",
+        "ce probe cunoști deja.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "Dacă dosarul se află la Poliție sau Parchet, vezi și serviciul meu de apărare în " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Se discută reținerea sau arestarea?",
+      paragraphs: [
+        "În cauzele grave poate apărea separat problema unei măsuri preventive.",
+        "Dacă ai fost reținut ori procurorul solicită o astfel de măsură, apărarea privind acuzația și apărarea privind privarea de libertate trebuie pregătite în paralel.",
+        [
+          { text: "Vezi pagina despre " },
+          { text: "măsuri preventive", to: "/servicii/masuri-preventive" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Ce să îmi trimiți",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Trimite-mi:"],
+      bullets: [
+        "citația sau orice document primit;",
+        "o cronologie a evenimentelor;",
+        "informații despre conversațiile care pot confirma contextul;",
+        "datele persoanelor care au fost prezente.",
+      ],
+      paragraphsAfterBullets: [
+        "Nu este necesar să ai acces la întreg dosarul pentru prima discuție.",
+      ],
+      calloutAfterBullets: "Ai o audiere apropiată?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Contactează-mă înainte să dai declarația",
+      paragraphs: [
+        "Prima declarație poate influența decisiv direcția dosarului, iar în aceste cauze detaliile de cronologie contează enorm.",
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Pot fi arestat preventiv pentru o acuzație de agresiune sexuală?",
+      a: "Da, în funcție de gravitatea faptei și de circumstanțe, procurorul poate propune o măsură preventivă, inclusiv arestarea preventivă. Apărarea privind măsura se pregătește separat, în paralel cu apărarea pe fondul acuzației.",
+    },
+    {
+      q: "Discuția cu avocatul este confidențială?",
+      a: "Da. Secretul profesional al avocatului acoperă tot ce îmi comunici, indiferent dacă ulterior semnăm sau nu un contract de asistență.",
+    },
+    {
+      q: "Ce fac dacă acuzația este nereală?",
+      a: "Nu contacta persoana care a formulat plângerea și nu modifica nimic pe telefon. Strângem cronologia, conversațiile și martorii care pot confirma contextul real.",
+    },
+    {
+      q: "Trebuie să dau declarație la prima chemare?",
+      a: "Ai dreptul să te consulți cu avocatul înainte și în timpul audierii și ai dreptul la tăcere. Decizia se ia după ce știm exact ce faptă este cercetată.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 218 și art. 219 privind violul și agresiunea sexuală.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind drepturile suspectului și ale inculpatului.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};
+
+export const omorUcidereDinCulpaRo: SubServicePageData = {
+  lang: "ro",
+  path: "/servicii/omor-ucidere-din-culpa",
+  altPath: "/en/services/homicide-and-manslaughter",
+  roPath: "/servicii/omor-ucidere-din-culpa",
+  title: "Avocat Omor și Ucidere din Culpă București | Lamatic",
+  h1: "Avocat Omor și Ucidere din Culpă în București",
+  description:
+    "Apărare penală în dosare de omor, omor calificat și ucidere din culpă. Analiza intenției, cauzalității, expertizelor și probelor medico-legale.",
+  keywords:
+    "avocat omor București, avocat ucidere din culpă București, avocat omor calificat, apărare omor, apărare ucidere din culpă, avocat dosar omor",
+  breadcrumbLabel: "Omor și ucidere din culpă",
+  serviceName: "Avocat omor și ucidere din culpă București - Bogdan Lamatic",
+  urgency: [
+    "Ești cercetat într-un dosar în care o persoană a decedat?",
+    "Diferența dintre posibilele încadrări juridice poate depinde de modul în care s-a produs fapta, de forma de vinovăție, de cauza efectivă a decesului și de legătura dintre conduita persoanei cercetate și rezultat.",
+    "Apărarea trebuie construită de la început împreună cu analiza probelor tehnice și medico-legale.",
+  ],
+  bio: [
+    `${BIO_INTRO} Apăr persoane cercetate în dosare de omor, forme agravate și ucidere din culpă, cu analiza probelor tehnice și medico-legale.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "Ce analizez imediat",
+      paragraphs: [
+        [
+          { text: "Aceste dosare aparțin categoriei " },
+          { text: "infracțiuni contra persoanei", to: "/servicii/infractiuni-contra-persoanei" },
+          { text: ", dar sunt cele mai tehnice dintre toate." },
+        ],
+        "Verific actele de urmărire penală disponibile, declarațiile, expertizele și constatările medico-legale, imaginile, obiectele ridicate și succesiunea exactă a evenimentelor.",
+        "În funcție de situație, trebuie făcută distincția între omor, formele agravante, loviri sau vătămări care au avut ca urmare decesul și uciderea din culpă. Codul penal reglementează separat aceste ipoteze.",
+      ],
+      cta: "☎ Sună-mă acum - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Omor sau ucidere din culpă?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Faptul că rezultatul este același, decesul unei persoane, nu înseamnă că forma de vinovăție este aceeași.",
+        "În cazul acuzației de omor, analiza intenției este centrală.",
+        "În cazul uciderii din culpă, trebuie analizată conduita imputată, obligația de prudență invocată și legătura de cauzalitate dintre aceasta și deces.",
+      ],
+    },
+    {
+      h2: "Expertiza medico-legală poate fi decisivă",
+      paragraphs: [
+        "Trebuie verificată cauza morții și dacă mecanismul descris de acuzare este susținut de constatările medico-legale.",
+        "În anumite dosare pot deveni relevante și alte expertize tehnice sau reconstituirea succesiunii faptelor.",
+      ],
+    },
+    {
+      h2: "Accident rutier sau accident de muncă?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "Pentru un deces produs într-un accident auto, informațiile potrivite sunt pe pagina despre " },
+          { text: "infracțiuni rutiere cu victime", to: "/servicii/infractiuni-rutiere-cu-victime" },
+          { text: "." },
+        ],
+        [
+          { text: "Pentru un deces produs la locul de muncă, pagina specializată este cea privind " },
+          { text: "răspunderea penală pentru accidente de muncă", to: "/servicii/raspundere-penala-incidente-locul-de-munca" },
+          { text: "." },
+        ],
+      ],
+      calloutAfterBullets: "Nu știi în ce categorie intră dosarul tău?",
+      calloutAfterBulletsCta: "Sună oricum.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
+    },
+    {
+      h2: "Ai fost reținut sau se solicită arestarea preventivă?",
+      paragraphs: [
+        "Sună imediat.",
+        [
+          { text: "În paralel cu apărarea pe fondul acuzației trebuie pregătită separat apărarea privind " },
+          { text: "arestul preventiv", to: "/servicii/arest-preventiv" },
+          { text: " sau o altă măsură restrictivă." },
+        ],
+      ],
+    },
+    {
+      h2: "Dosarele cu acuzații de omor nu trebuie tratate după prima declarație",
+      paragraphs: [
+        [
+          { text: "Strategia trebuie stabilită înainte, încă din " },
+          { text: "faza de urmărire penală", to: "/servicii/urmarire-penala" },
+          { text: "." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Care este diferența dintre omor și ucidere din culpă?",
+      a: "Diferența ține de forma de vinovăție. La omor se analizează intenția, iar la uciderea din culpă se analizează încălcarea unei obligații de prudență și legătura de cauzalitate dintre aceasta și deces.",
+    },
+    {
+      q: "Ce înseamnă loviri cauzatoare de moarte?",
+      a: "Este o încadrare distinctă, în care fapta de violență este intenționată, dar decesul se produce din culpă. Delimitarea față de omor se face pe baza probelor și a expertizei medico-legale.",
+    },
+    {
+      q: "Pot contesta concluziile expertizei medico-legale?",
+      a: "Da. Se poate cere o nouă expertiză sau completarea concluziilor, cu obiective clare, atunci când mecanismul reținut nu este susținut de datele din dosar.",
+    },
+    {
+      q: "Cât durează un dosar de omor?",
+      a: "Depinde de complexitatea probelor și de numărul expertizelor. Important este ca apărarea să fie construită corect din faza de urmărire penală, nu în ultima etapă.",
+    },
+  ],
+  resources: [
+    {
+      text: "Portal Legislativ - Codul penal, art. 188-192 privind omorul, omorul calificat și uciderea din culpă.",
+      href: CP,
+      linkLabel: "Legislație",
+    },
+    {
+      text: "Portal Legislativ - Codul de procedură penală, dispozițiile privind expertiza și constatarea medico-legală.",
+      href: CPP,
+      linkLabel: "Legislație",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Trimite actele pe WhatsApp",
+  parent: PARENT_PERS,
+};

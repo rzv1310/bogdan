@@ -7074,3 +7074,736 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
   contactWhatsAppLabel: "Send the documents on WhatsApp",
   parent: PARENT_VIC_EN,
 };
+
+const PARENT_PERS_EN = {
+  to: "/en/services/offenses-against-persons",
+  label: "violent crime defense",
+  breadcrumbLabel: "Violent Crime Defense",
+};
+
+export const assaultAndBodilyInjuryEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/assault-and-bodily-injury",
+  altPath: "/servicii/loviri-vatamare-corporala",
+  roPath: "/servicii/loviri-vatamare-corporala",
+  title: "Assault & Bodily Harm Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Assault and Bodily Harm Defense Lawyer in Bucharest",
+  description:
+    "Accused of assault or bodily harm in Romania? Defense from the first questioning, with analysis of the forensic certificate, witnesses and full context.",
+  keywords: "assault lawyer bucharest, bodily harm lawyer romania, criminal defense assault romania",
+  breadcrumbLabel: "Assault and bodily harm",
+  serviceName: "Assault and bodily harm lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you been accused of assault or bodily harm?",
+    "A conflict of a few minutes can become a criminal file. Statements differ, and a forensic certificate does not always explain how the injuries occurred.",
+    "If you have been summoned by the police or the prosecutor, the situation should be analysed before your first statement.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people accused of assault, other acts of violence or bodily harm, from the first questioning to the end of the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I check first",
+      paragraphs: [
+        [
+          { text: "For the other charges in the same category, see the page on " },
+          { text: "violent crime defense", to: "/en/services/offenses-against-persons" },
+          { text: "." },
+        ],
+        "I check how the conflict started, who acted first, witness statements, video footage, messages and the forensic documents.",
+        "A key point is whether the facts described in the complaint match the evidence and whether the legal classification is correct.",
+        "Assault and bodily harm are regulated separately by the Criminal Code, and the severity of the injuries can change the classification.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "The forensic certificate is not the only evidence",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "The number of days of medical care matters, but the defense cannot be reduced to that single document.",
+        "I also analyse the mechanism of the injuries, the moment of examination, video footage, witness statements and whether self-defense or another relevant context applies.",
+      ],
+    },
+    {
+      h2: "If the injuries came from a road accident",
+      paragraphs: [
+        "This page covers intentional physical violence.",
+        [
+          { text: "If the charge is negligent bodily injury after a car crash, see the page on " },
+          { text: "road traffic offences", to: "/en/services/road-traffic-offenses" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["If you have them, send me:"],
+      bullets: [
+        "the summons, complaint or document you received;",
+        "any forensic certificate you know of;",
+        "photographs taken after the incident;",
+        "the relevant conversations with the complainant;",
+        "any information about witnesses.",
+      ],
+      calloutAfterBullets: "You do not need all the documents to contact me.",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Summoned for questioning?",
+      paragraphs: [
+        [
+          { text: "Call before you give a statement. The procedure is explained on the page about the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " stage." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between assault and bodily harm?",
+      a: "Assault (art. 193 Criminal Code) generally involves physical suffering without serious consequences, while bodily harm (art. 194) requires more serious results such as infirmity, serious permanent aesthetic damage or endangerment of life.",
+    },
+    {
+      q: "Can the complaint be withdrawn?",
+      a: "For assault, criminal action is triggered by a prior complaint, so withdrawal or reconciliation can end the criminal proceedings. I check whether the charge in your file allows this.",
+    },
+    {
+      q: "What do days of medical care mean?",
+      a: "They represent the medically necessary healing time, not the sick-leave period. The number influences the legal classification and can be challenged through a new expert report.",
+    },
+    {
+      q: "If I defended myself, am I still liable?",
+      a: "Self-defense removes the criminal character of the act if the legal conditions are met. That is why who started the conflict matters, not only the final result.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 193 and art. 194 on assault and bodily harm.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on the prior complaint and questioning.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};
+
+export const domesticViolenceEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/domestic-violence",
+  altPath: "/servicii/violenta-domestica",
+  roPath: "/servicii/violenta-domestica",
+  title: "Domestic Violence Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Domestic Violence Defense Lawyer in Bucharest",
+  description:
+    "Accused of domestic violence in Romania? Defense in family violence files, including when a protection order is already in force.",
+  keywords: "domestic violence lawyer bucharest, family violence defense romania, protection order romania lawyer",
+  breadcrumbLabel: "Domestic violence",
+  serviceName: "Domestic violence lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you been accused of domestic violence?",
+    "These files usually appear in tense contexts: separations, divorces or disputes about children, where each person describes the events differently.",
+    "A protection order procedure may run in parallel with the criminal file, so both the charge and the restrictions already imposed must be handled.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people accused in family violence files, including where a protection order has already been issued.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I check in your file",
+      paragraphs: [
+        [
+          { text: "This defense is part of my work on " },
+          { text: "violent crime cases", to: "/en/services/offenses-against-persons" },
+          { text: ", but it follows its own rules." },
+        ],
+        "I look at the chronology of the incident, the statements, the emergency calls, messages, photographs, the forensic certificate, witnesses and any recordings.",
+        "Cases involving family members have specific criminal rules, and protection measures are regulated separately.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Is a protection order already in force?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Do not treat the protection order as a simple document in the criminal file.",
+        "Tell me exactly what obligations and prohibitions it contains and when it was served. Any restriction on approaching or contacting a person must be respected while it produces effects.",
+        "Breaching a protection order is a separate criminal offence.",
+      ],
+    },
+    {
+      h2: "Domestic violence or a conflict without criminal relevance?",
+      paragraphs: [
+        "Not every family argument amounts to a criminal offence.",
+        "I analyse the specific act and the available evidence, without assuming that filing a complaint proves the accusation.",
+        [
+          { text: "If the case concerns only physical violence outside the family context, see the page on " },
+          { text: "assault and bodily harm", to: "/en/services/assault-and-bodily-injury" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Summoned by the police or the prosecutor?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Do not try to solve the situation by contacting the complainant, especially if a no-contact restriction exists.",
+        "Send me the summons and tell me:",
+      ],
+      bullets: [
+        "when the incident happened;",
+        "who was present;",
+        "whether recordings exist;",
+        "whether a protection order was issued.",
+      ],
+      calloutAfterBullets: "You do not have all the documents yet?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Defense before the first statement",
+      paragraphs: [
+        [
+          { text: "If the file is with the police or the prosecutor, see my defense service in the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " stage." },
+        ],
+        [
+          { text: "If a restriction of liberty is discussed, we prepare the defense on " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: " in parallel." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What happens if I received a protection order?",
+      a: "It imposes obligations that apply immediately, such as keeping a distance or not contacting the protected person. It can be challenged or modified under the conditions and deadlines set by law.",
+    },
+    {
+      q: "If my partner withdraws the complaint, is the file closed?",
+      a: "It depends on the charge. For some offences committed against a family member the criminal action continues ex officio even if the complaint is withdrawn.",
+    },
+    {
+      q: "Can I be detained in a family violence file?",
+      a: "Yes. Depending on the seriousness and the circumstances, the prosecutor may request a preventive measure. That defense is prepared separately from the defense on the merits.",
+    },
+    {
+      q: "What if the accusation is false?",
+      a: "Do not contact the complainant and do not delete conversations. We gather the evidence showing the real chronology: messages, witnesses, recordings, documents.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 199 on family violence.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Law no. 217/2003 on preventing and combating domestic violence, including the protection order.",
+      href: "https://legislatie.just.ro/Public/DetaliiDocument/44014",
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};
+
+export const unlawfulDetentionAndThreatsEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/unlawful-detention-and-threats",
+  altPath: "/servicii/lipsire-de-libertate-amenintare",
+  roPath: "/servicii/lipsire-de-libertate-amenintare",
+  title: "Unlawful Detention & Threats Lawyer Bucharest | Lamatic",
+  h1: "Unlawful Deprivation of Liberty and Threats Lawyer in Bucharest",
+  description:
+    "Defense in files on unlawful deprivation of liberty and threats. Analysis of messages, statements, context and evidence before questioning.",
+  keywords: "unlawful detention lawyer romania, threats criminal lawyer bucharest, deprivation of liberty defense",
+  breadcrumbLabel: "Unlawful detention and threats",
+  serviceName: "Unlawful detention and threats lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you accused of threatening someone or preventing them from leaving?",
+    "In these files, a few minutes of conflict can later be described in completely different ways.",
+    "It must be established what was said, what was done and whether the person was actually prevented from leaving.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people accused of unlawful deprivation of liberty or threats, focusing on the real context of the conflict.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse",
+      paragraphs: [
+        [
+          { text: "This page is part of my " },
+          { text: "violent crime defense", to: "/en/services/offenses-against-persons" },
+          { text: " work, focused only on deprivation of liberty and threats." },
+        ],
+        "For deprivation of liberty I check the place, the duration, the real possibility of moving, the behaviour of those present, video cameras and witness statements.",
+        "For threats I analyse the exact words, the messages or recordings, the context and the effect the accusation claims they produced.",
+        "The two offences are regulated separately by art. 205 and art. 206 of the Criminal Code.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "An argument is not automatically a criminal threat",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "In a conflict there may be aggressive expressions said in the heat of the moment.",
+        "The legal question is whether the specific act meets the conditions set by law. That is why the full conversation matters, not one screenshot.",
+      ],
+    },
+    {
+      h2: "Threats or blackmail?",
+      paragraphs: [
+        "The difference matters.",
+        "If the accusation is not only about intimidation but about using pressure to make someone do, not do or accept something for an unjust benefit, a blackmail charge must be analysed separately.",
+        [
+          { text: "For that situation see the page on " },
+          { text: "blackmail and harassment", to: "/en/services/blackmail-and-harassment" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "What to keep",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Do not delete conversations, recordings or anything that can explain the context."],
+      bullets: [
+        "the summons or document you received;",
+        "the relevant messages, in full;",
+        "information about the persons present;",
+        "the places where video cameras exist.",
+      ],
+      calloutAfterBullets: "You do not have all the information?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Is questioning coming up?",
+      paragraphs: [
+        [
+          { text: "In the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " stage, the strategy must be set before the statement, not after." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "When is it unlawful deprivation of liberty?",
+      a: "When a person is effectively deprived, without any right, of the possibility of moving freely. Duration, place and real constraint are analysed concretely.",
+    },
+    {
+      q: "Can an angry message be a threat?",
+      a: "Not automatically. The exact content, the context, the relationship between the persons and whether the act could cause justified fear are all analysed.",
+    },
+    {
+      q: "Does it matter that I never acted on the threat?",
+      a: "The offence of threat does not require carrying out the announced harm, but the context and seriousness of the statement remain essential for the defense.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 205 and art. 206 on unlawful deprivation of liberty and threats.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on questioning the suspect or defendant.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};
+
+export const blackmailAndHarassmentEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/blackmail-and-harassment",
+  altPath: "/servicii/santaj-hartuire",
+  roPath: "/servicii/santaj-hartuire",
+  title: "Blackmail & Harassment Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Blackmail and Harassment Defense Lawyer in Bucharest",
+  description:
+    "Accused of blackmail or harassment? I analyse the messages, recordings, the alleged constraint, the benefit sought and the full context.",
+  keywords: "blackmail lawyer bucharest, harassment criminal lawyer romania, extortion defense romania",
+  breadcrumbLabel: "Blackmail and harassment",
+  serviceName: "Blackmail and harassment lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you been accused of blackmail or harassment?",
+    "WhatsApp messages, emails, calls or private discussions can become the central evidence of a criminal file.",
+    "An isolated message can mean something completely different without the conversation that preceded it.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people accused of blackmail or harassment, analysing in full the communications relied on in the file.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse before you give a statement",
+      paragraphs: [
+        [
+          { text: "This service is part of my defense in " },
+          { text: "violent crime cases", to: "/en/services/offenses-against-persons" },
+          { text: "." },
+        ],
+        "In a blackmail charge I check the alleged constraint, what you are said to have asked for and whether the accusation claims an unjust benefit.",
+        "In a harassment file I look at the nature and repetitiveness of the conduct, the history of the relationship and all communications.",
+        "Blackmail and harassment are distinct offences, regulated by art. 207 and art. 208 of the Criminal Code.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Blackmail or a simple threat?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "The two charges should not be confused.",
+        "A threat essentially seeks to intimidate, while a blackmail charge also requires analysing the constraint exercised and the purpose pursued.",
+        [
+          { text: "If the file concerns only an alleged threat, see the page on " },
+          { text: "unlawful detention and threats", to: "/en/services/unlawful-detention-and-threats" },
+          { text: "." },
+        ],
+      ],
+    },
+    {
+      h2: "Harassment or unwanted communication?",
+      paragraphs: [
+        "The fact that two people exchanged many messages does not settle the legal question.",
+        "Frequency, content, the other person's reactions and the full context must be analysed.",
+        "Do not delete messages that look unfavourable. Often the full conversation explains a sentence presented separately in the complaint.",
+      ],
+    },
+    {
+      h2: "What to send me",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: ["Send me:"],
+      bullets: [
+        "the summons or document received;",
+        "the conversations in full;",
+        "a short chronology of the relationship;",
+        "information about any audio or video recordings.",
+      ],
+      calloutAfterBullets: "You do not have all the conversations yet?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Do not explain the case by messaging the complainant",
+      paragraphs: [
+        "A new discussion can become new evidence.",
+        [
+          { text: "Talk to the lawyer first and set the strategy for the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " stage." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between blackmail and a threat?",
+      a: "A threat seeks to intimidate. Blackmail uses constraint to make the person do, not do or endure something, in order to obtain an unjust benefit.",
+    },
+    {
+      q: "Can messages be used as evidence?",
+      a: "Yes. That is why the complete conversation matters, not a fragment presented in the complaint.",
+    },
+    {
+      q: "When does insistence become harassment?",
+      a: "Repetitiveness, the content of the communications, the other person's reactions and the effect produced are analysed. Not every series of messages is criminally relevant.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 207 and art. 208 on blackmail and harassment.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on means of evidence.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};
+
+export const rapeAndSexualAssaultEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/rape-and-sexual-assault",
+  altPath: "/servicii/viol-agresiune-sexuala",
+  roPath: "/servicii/viol-agresiune-sexuala",
+  title: "Rape & Sexual Assault Defense Lawyer Bucharest | Lamatic",
+  h1: "Rape and Sexual Assault Defense Lawyer in Bucharest",
+  description:
+    "Confidential criminal defense in rape and sexual assault accusations. Analysis of evidence, messages, chronology and statements in the file.",
+  keywords: "rape defense lawyer bucharest, sexual assault lawyer romania, sexual offence criminal defense romania",
+  breadcrumbLabel: "Rape and sexual assault",
+  serviceName: "Rape and sexual assault defense lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Have you been accused of rape or sexual assault?",
+    "Such an accusation can have immediate consequences for your liberty, reputation and personal life.",
+    "Do not try to explain the situation by messaging the complainant and do not give an unprepared statement.",
+  ],
+  bio: [
+    `${BIO_INTRO} The discussion is confidential and I handle the defense personally, from the first questioning to the end of the case.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I check immediately",
+      paragraphs: [
+        [
+          { text: "These cases belong to the wider category of " },
+          { text: "violent crime defense", to: "/en/services/offenses-against-persons" },
+          { text: ", but they have their own evidentiary rules." },
+        ],
+        "The exact chronology is essential.",
+        "I analyse the statements, the conversations before and after the reported moment, phone data, available images, witnesses and the forensic documents.",
+        "Rape and sexual assault are regulated distinctly by the Criminal Code, and this legislation has been amended in recent years, so the classification must be checked against the current law.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Do not modify or delete conversations",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "Messages before and after the event can be decisive for establishing the chronology and the context.",
+        "Keep the phone and the conversations as they are.",
+      ],
+    },
+    {
+      h2: "Summoned for questioning?",
+      paragraphs: ["Before the statement we must know:"],
+      bullets: [
+        "which act is investigated;",
+        "your procedural capacity;",
+        "which documents were served on you;",
+        "which evidence you already know of.",
+      ],
+      paragraphsAfterBullets: [
+        [
+          { text: "If the file is with the police or the prosecutor, see my defense service in the " },
+          { text: "criminal investigation", to: "/en/services/criminal-investigation" },
+          { text: " stage." },
+        ],
+      ],
+    },
+    {
+      h2: "Is detention or arrest being discussed?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "In serious cases a preventive measure may be requested separately.",
+        [
+          { text: "See the page on " },
+          { text: "preventive measures", to: "/en/services/preventive-measures" },
+          { text: "." },
+        ],
+      ],
+      calloutAfterBullets: "Do you have questioning scheduled soon?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Contact me before you give a statement",
+      paragraphs: [
+        "The first statement can decisively influence the direction of the file, and in these cases chronology details matter enormously.",
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "Can I be detained on remand for a sexual assault accusation?",
+      a: "Yes. Depending on the seriousness and the circumstances, the prosecutor may request a preventive measure, including pre-trial detention. That defense is prepared in parallel with the defense on the merits.",
+    },
+    {
+      q: "Is the discussion with the lawyer confidential?",
+      a: "Yes. Professional secrecy covers everything you tell me, whether or not we later sign an assistance contract.",
+    },
+    {
+      q: "What if the accusation is untrue?",
+      a: "Do not contact the complainant and do not change anything on your phone. We gather the chronology, conversations and witnesses that confirm the real context.",
+    },
+    {
+      q: "Must I give a statement at the first summons?",
+      a: "You have the right to consult a lawyer before and during questioning, and the right to remain silent. The decision is taken once we know exactly which act is investigated.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 218 and art. 219 on rape and sexual assault.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on the rights of the suspect and defendant.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};
+
+export const homicideAndManslaughterEn: SubServicePageData = {
+  lang: "en",
+  path: "/en/services/homicide-and-manslaughter",
+  altPath: "/servicii/omor-ucidere-din-culpa",
+  roPath: "/servicii/omor-ucidere-din-culpa",
+  title: "Homicide & Manslaughter Lawyer Bucharest | Bogdan Lamatic",
+  h1: "Homicide and Manslaughter Defense Lawyer in Bucharest",
+  description:
+    "Defense in homicide, aggravated murder and manslaughter files. Analysis of intent, causation, expert reports and forensic evidence.",
+  keywords: "homicide lawyer bucharest, manslaughter lawyer romania, murder defense romania",
+  breadcrumbLabel: "Homicide and manslaughter",
+  serviceName: "Homicide and manslaughter lawyer Bucharest - Bogdan Lamatic",
+  urgency: [
+    "Are you investigated in a file where a person died?",
+    "The difference between the possible legal classifications can depend on the form of guilt, the actual cause of death and the causal link with the conduct under investigation.",
+    "The defense must be built from the start, together with the analysis of the technical and forensic evidence.",
+  ],
+  bio: [
+    `${BIO_INTRO} I defend people investigated for homicide, aggravated forms and manslaughter, with full analysis of the technical and forensic evidence.`,
+    LEGAL500,
+  ],
+  sections: [
+    {
+      h2: "What I analyse immediately",
+      paragraphs: [
+        [
+          { text: "These files belong to the " },
+          { text: "violent crime defense", to: "/en/services/offenses-against-persons" },
+          { text: " category, but they are the most technical of all." },
+        ],
+        "I check the available investigation documents, the statements, the expert and forensic reports, images, seized objects and the exact sequence of events.",
+        "Depending on the situation, a distinction must be made between murder, its aggravated forms, violence resulting in death and manslaughter.",
+      ],
+      cta: "☎ Call now - 031 632 01 83",
+      ctaIcon: false,
+    },
+    {
+      h2: "Murder or manslaughter?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        "The same result, the death of a person, does not mean the same form of guilt.",
+        "In a murder charge, the analysis of intent is central.",
+        "In manslaughter, the imputed conduct, the duty of care invoked and the causal link with the death must be analysed.",
+      ],
+    },
+    {
+      h2: "The forensic report can be decisive",
+      paragraphs: [
+        "The cause of death must be verified, together with whether the mechanism described by the prosecution is supported by the forensic findings.",
+        "In some files other technical expert reports or a reconstruction of the events become relevant.",
+      ],
+    },
+    {
+      h2: "Road accident or workplace accident?",
+      cardClassName: "bg-[#faf0e6]",
+      paragraphs: [
+        [
+          { text: "For a death in a car crash, the right page is the one on " },
+          { text: "road traffic offences", to: "/en/services/road-traffic-offenses" },
+          { text: "." },
+        ],
+        [
+          { text: "For a death at the workplace, see " },
+          { text: "workplace criminal liability", to: "/en/services/workplace-criminal-liability" },
+          { text: "." },
+        ],
+      ],
+      calloutAfterBullets: "Not sure which category your file falls into?",
+      calloutAfterBulletsCta: "Call anyway.",
+      ctaWhatsApp: true,
+      ctaWhatsAppLabel: "Send documents on WhatsApp",
+    },
+    {
+      h2: "Detained or is arrest requested?",
+      paragraphs: [
+        "Call immediately.",
+        [
+          { text: "Alongside the defense on the merits, the defense on " },
+          { text: "pre-trial detention", to: "/en/services/pre-trial-detention" },
+          { text: " or another restrictive measure must be prepared separately." },
+        ],
+      ],
+      cta: "☎ 031 632 01 83",
+      ctaIcon: false,
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between murder and manslaughter?",
+      a: "The form of guilt. Murder involves intent, while manslaughter involves breaching a duty of care and the causal link between that breach and the death.",
+    },
+    {
+      q: "What are violent acts resulting in death?",
+      a: "A distinct classification where the violence is intentional but the death occurs through negligence. The delimitation from murder is based on evidence and the forensic report.",
+    },
+    {
+      q: "Can I challenge the forensic report?",
+      a: "Yes. A new expert report or completion of the conclusions can be requested when the retained mechanism is not supported by the data in the file.",
+    },
+  ],
+  resources: [
+    {
+      text: "Legislative Portal - Criminal Code, art. 188-192 on murder, aggravated murder and manslaughter.",
+      href: CP,
+      linkLabel: "Legislation",
+    },
+    {
+      text: "Legislative Portal - Criminal Procedure Code, provisions on expert and forensic reports.",
+      href: CPP,
+      linkLabel: "Legislation",
+    },
+  ],
+  contactText: CONTACT,
+  contactWhatsApp: true,
+  contactWhatsAppLabel: "Send documents on WhatsApp",
+  parent: PARENT_PERS_EN,
+};

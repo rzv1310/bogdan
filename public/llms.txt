@@ -85,6 +85,12 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Accident rutier cu victime](/servicii/accident-rutier-cu-victime): Apărarea șoferului cercetat penal pentru accident cu victime.
 - [Despăgubiri accident rutier](/servicii/despagubiri-accident-rutier): Reprezentarea victimei ca parte civilă pentru daune materiale și morale după un accident rutier.
 - [Despăgubiri vătămare corporală](/servicii/despagubiri-vatamare-corporala): Despăgubiri pentru persoana vătămată prin agresiune sau alte fapte care au produs leziuni.
+- [Loviri și vătămare corporală](/servicii/loviri-vatamare-corporala): Apărare în acuzații de lovire sau vătămare corporală.
+- [Violență domestică](/servicii/violenta-domestica): Apărare în dosare de violență în familie și ordin de protecție.
+- [Lipsire de libertate și amenințare](/servicii/lipsire-de-libertate-amenintare): Apărare în dosare de lipsire de libertate și amenințare.
+- [Șantaj și hărțuire](/servicii/santaj-hartuire): Apărare în acuzații de șantaj și hărțuire.
+- [Viol și agresiune sexuală](/servicii/viol-agresiune-sexuala): Apărare confidențială în acuzații de infracțiuni sexuale.
+- [Omor și ucidere din culpă](/servicii/omor-ucidere-din-culpa): Apărare în dosare de omor și ucidere din culpă.
 - [Road Traffic Offenses](/en/services/road-traffic-offenses): Serious road traffic offenses.
 - [Răspundere penală incidente locul de muncă](/servicii/raspundere-penala-incidente-locul-de-munca): Accidente de muncă, securitate.
 - [Workplace Criminal Liability](/en/services/workplace-criminal-liability): Criminal liability for workplace incidents.
