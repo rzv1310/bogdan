@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
+import { HERO_CTA_CLASS } from "@/lib/cta";
 
 
 import RelatedServices from "@/components/RelatedServices";
@@ -183,6 +184,7 @@ export default function Malpraxis() {
         </div>
 
         <div className="mt-8 space-y-4">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">Cum te pot ajuta într-un caz de malpraxis medical</h2>
           <p className="text-base leading-relaxed text-muted-foreground">
             Alege mai jos subiectul care te interesează, vei găsi detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
           </p>
@@ -201,6 +203,31 @@ export default function Malpraxis() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">Când poate exista malpraxis medical?</h2>
+          <p>
+            Un rezultat medical nefavorabil nu înseamnă automat malpraxis. Într-un caz concret trebuie analizate conduita medicului sau a unității medicale, standardul profesional aplicabil, prejudiciul produs și legătura dintre faptă și consecințele pentru pacient.
+          </p>
+          <p>
+            În funcție de situație, răspunderea poate fi civilă, disciplinară sau penală, iar aceste proceduri au obiective și reguli diferite. Primul pas este analiza documentației medicale și alegerea căii juridice potrivite cazului.
+          </p>
+        </div>
+
+        <div className="mt-8 space-y-3">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">Ce documente sunt importante de la început?</h2>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            Pentru o primă evaluare sunt utile biletul de externare, foaia de observație, investigațiile, consimțământul informat, recomandările medicale și orice expertiză sau sesizare deja formulată. Dacă nu ai dosarul medical complet, putem stabili ce documente trebuie solicitate.
+          </p>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            Nu trebuie să ai toate actele pentru prima discuție.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - 031 632 01 83">
+              <a href="tel:+40316320183">☎ Sună-mă acum - 031 632 01 83</a>
+            </Button>
+          </div>
         </div>
 
         <ServiceFaq title="Întrebări frecvente" ordered items={FAQ} />
