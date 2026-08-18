@@ -12,7 +12,7 @@ import ServiceFaq from "@/components/services/ServiceFaq";
 export default function VictimRepresentationEn() {
   useSEO({
     keywords: "victim representation lawyer romania, civil party criminal case, injured party attorney",
-    title: "Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest",
+    title: "Personal Injury Lawyer Bucharest, Romania | Bogdan Lamatic",
     description: "Compensation for traffic accidents and bodily harm.",
     alternates: { en: "/en/services/victim-representation-in-criminal-cases", ro: "/servicii/reprezentarea-victimelor-in-procese-penale" , xDefault: "/servicii/reprezentarea-victimelor-in-procese-penale"},
     locale: "en_US",
