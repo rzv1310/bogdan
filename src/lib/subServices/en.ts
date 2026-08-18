@@ -3977,6 +3977,10 @@ export const conflictOfInterestEn: SubServicePageData = {
       q: "Can the signed contract be annulled?",
       a: "Yes. Acts concluded in breach of the conflict of interest rules can be null and void.",
     },
+    {
+      q: "What should I do if I am summoned for questioning in a conflict of interest case?",
+      a: "Before the statement I check which administrative act is imputed to you, what family relationship or patrimonial interest is alleged, and what documents are already in the file. The first statement often frames the entire defence.",
+    },
   ],
   resources: [
     { text: "Criminal Code - art. 301 on the use of office to favour certain persons.", href: CP, linkLabel: "Legislation" },
