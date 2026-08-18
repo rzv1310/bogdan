@@ -189,7 +189,7 @@ export default function Malpraxis() {
           <div className="space-y-3 text-base leading-relaxed text-foreground">
             <p>Nu știi dacă ceea ce s-a întâmplat este într-adevăr malpraxis, ce probe îți trebuie sau ce procedură trebuie începută?</p>
             <p>Poate ai suferit un prejudiciu și vrei despăgubiri, ai pierdut o persoană apropiată sau, ca medic, ai primit deja o sesizare ori o citație.</p>
-            <p>Analizez cazul și îți spun concret ce opțiuni ai, ce merită făcut și ce trebuie evitat de la început. În funcție de situație, pot fi necesare despăgubiri, sesizarea Comisiei de malpraxis sau a organismului profesional ori apărarea într-un dosar penal.</p>
+            <p className="mb-[30px]">Analizez cazul și îți spun concret ce opțiuni ai, ce merită făcut și ce trebuie evitat de la început. În funcție de situație, pot fi necesare despăgubiri, sesizarea Comisiei de malpraxis sau a organismului profesional ori apărarea într-un dosar penal.</p>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
