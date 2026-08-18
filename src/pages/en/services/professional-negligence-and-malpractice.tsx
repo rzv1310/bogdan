@@ -184,8 +184,9 @@ export default function MalpracticeEn() {
         </div>
 
         <div className="mt-8 space-y-4">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">How I can help in a medical malpractice case</h2>
           <p className="text-base leading-relaxed text-muted-foreground">
-            This parent page gives a summary for each direction. Choose the topic below for details, frequently asked questions and the concrete action for your case.
+            Choose below the topic you are interested in; you will find details, frequently asked questions and the concrete action for your case.
           </p>
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
@@ -202,6 +203,31 @@ export default function MalpracticeEn() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight text-foreground">When can medical malpractice exist?</h2>
+          <p>
+            An unfavourable medical outcome does not automatically mean malpractice. In a specific case, the conduct of the doctor or medical unit, the applicable professional standard, the damage caused and the link between the act and the consequences for the patient must be analysed.
+          </p>
+          <p>
+            Depending on the situation, liability may be civil, disciplinary or criminal, and these procedures have different objectives and rules. The first step is to analyse the medical documentation and choose the appropriate legal route for the case.
+          </p>
+        </div>
+
+        <div className="mt-8 space-y-3">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">What documents are important from the start?</h2>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            For an initial assessment, the discharge letter, observation sheet, investigations, informed consent, medical recommendations and any expert report or complaint already filed are useful. If you do not have the complete medical file, we can establish which documents need to be requested.
+          </p>
+          <p className="text-base leading-relaxed text-muted-foreground">
+            You do not need to have all the documents for the first discussion.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
+              <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
+            </Button>
+          </div>
         </div>
 
         <ServiceFaq title="Frequently asked questions" ordered items={FAQ} />
