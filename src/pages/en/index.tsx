@@ -8,8 +8,8 @@ export default function EnIndex() {
   useEffect(() => { setLang("en"); }, [setLang]);
 
   useSEO({
-    title: "Attorney Bogdan Lamatic - Criminal Defense Lawyer | Bucharest",
-    description: "Defense in white-collar crime, corruption, road traffic, crypto, malpractice.",
+    title: "Criminal Defense Lawyer in Bucharest, Romania | Bogdan Lamatic",
+    description: "Criminal defense lawyer in Bucharest, Romania. Strategic defense in white-collar crime, corruption, road traffic, crypto and malpractice cases.",
     canonical: "/en",
     alternates: { en: "/en", ro: "/", xDefault: "/" },
     locale: "en_US",

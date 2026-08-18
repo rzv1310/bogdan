@@ -129,7 +129,7 @@ export const translations = {
       "availability 16 hours a day.",
     ],
     homeBio: {
-      name: "Attorney Bogdan Lamatic",
+      name: "Criminal Defense Lawyer  Bogdan Lamatic",
       line1: "Bucharest Bar · 18+ years of experience",
       line2: "Legal 500 · White-Collar Crime",
     },
