@@ -123,7 +123,7 @@ export default function VictimRepresentationEn() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className="text-2xl font-semibold mb-4">Compensation for accident victims / bodily injury | Attorney Bogdan Lamatic, Bucharest</h1>
+        <h1 className="text-2xl font-semibold mb-4">Personal Injury Lawyer in Bucharest, Romania</h1>
 
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="text-foreground">
