@@ -108,8 +108,8 @@ export default function Malpraxis() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Servicii avocat neglijență profesională și malpraxis",
-            description: "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal",
+            name: "Avocat Malpraxis Medical București - Bogdan Lamatic",
+            description: "Avocat malpraxis medical în București. Evaluare rapidă, strategie integrată civil & penal. Suna acum!",
             url: "https://avocatpenalbucuresti.ro/servicii/neglijenta-profesionala-si-malpraxis",
             areaServed: [{ "@type": "Country", name: "România" }, { "@type": "Place", name: "Uniunea Europeană" }],
             availableLanguage: ["ro", "en"],
