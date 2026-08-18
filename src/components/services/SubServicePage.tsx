@@ -312,6 +312,10 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
                 <Link key={sIdx} to={segment.to} className="text-primary underline hover:text-primary/80">
                   {segment.text}
                 </Link>
+              ) : segment.href ? (
+                <a key={sIdx} href={segment.href} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+                  {segment.text}
+                </a>
               ) : segment.bold ? (
                 <strong key={sIdx}>{segment.text}</strong>
               ) : (
