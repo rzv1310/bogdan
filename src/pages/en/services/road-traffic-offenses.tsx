@@ -81,7 +81,7 @@ export default function RoadTrafficEn() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Road accident lawyer - Bogdan Lamatic, Bucharest</h1>
+        <h1 className="text-2xl font-semibold mb-4">Road traffic offenses with/without victims | Bogdan Lamatic, Bucharest</h1>
         <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
           <p className="text-foreground">
             <span className="block"><strong>After a road accident, the first hours matter most.</strong></span>
