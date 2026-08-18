@@ -48,6 +48,27 @@ const subPages = [
   },
 ];
 
+const FAQ = [
+  {
+    q: "Can I claim damages without a criminal trial?",
+    a: "Yes. Civil liability can be pursued separately (Malpractice Committee + civil action), independently of criminal proceedings.",
+  },
+  {
+    q: "What is the limitation period?",
+    a: "Generally 3 years for civil malpractice; for criminal offenses (e.g., arts. 192/196 CP) criminal limitation periods apply.",
+  },
+  {
+    q: "What if the unit/doctor has no insurance?",
+    a: "It is a sanctionable breach; civil liability remains and damages can be pursued directly.",
+  },
+  {
+    q: "How do I choose the right path for my situation?",
+    a: "Depending on your goal: compensation (civil), criminal defence (criminal), Committee decision (appeal) or disciplinary liability (College of Physicians). We discuss together which path makes sense.",
+  },
+];
+
+
+
 export default function MalpracticeEn() {
   useSEO({
     keywords: "medical malpractice lawyer romania, professional negligence attorney, malpractice defense",
