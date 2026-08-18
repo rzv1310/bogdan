@@ -180,7 +180,7 @@ export default function Malpraxis() {
 
         <div className="mt-8 space-y-4">
           <p className="text-base leading-relaxed text-muted-foreground">
-            Pagina-părinte oferă un rezumat pentru fiecare direcție. Alege mai jos subiectul care te interesează, unde găsești detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
+            Alege mai jos subiectul care te interesează, vei găsi detalii, întrebări frecvente și acțiunea concretă pentru cazul tău.
           </p>
           {subPages.map((sub) => (
             <Card key={sub.to} className="border-accent">
