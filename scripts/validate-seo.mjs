@@ -139,13 +139,107 @@ function validateFaqHeadings(route, html) {
   }
 }
 
-function collectJsonLd(route, html) {
-  const managedScripts = [
-    ...html.matchAll(/<script type="application\/ld\+json"[^>]*data-managed="true"[^>]*>/g),
+/** The business entity was previously identified by an S3 URL. It must be gone. */
+const LEGACY_BUSINESS_ID = "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html";
+
+const HOME_REQUIRED_NODES = {
+  "/": [
+    ["LegalService", `${SITE_ORIGIN}/#legalservice`],
+    ["Person", `${SITE_ORIGIN}/despre-mine#person`],
+    ["WebSite", `${SITE_ORIGIN}/#website`],
+    ["FAQPage", `${SITE_ORIGIN}/#faq`],
+  ],
+};
+
+/** Accepted FAQPage @id values for the English homepage. */
+const EN_FAQ_IDS = new Set([`${SITE_ORIGIN}/en#faq`, `${SITE_ORIGIN}/en/#faq`]);
+
+/**
+ * Guards the single-script @graph shape: one data-managed script per page, a
+ * payload of @context + @graph, and exactly one top-level definition per @id.
+ * Repeated @id values used as references (publisher, worksFor, itemReviewed,
+ * provider, isPartOf, ...) are expected and are not duplicates.
+ */
+function validateGraphShape(route, html) {
+  const managed = [
+    ...html.matchAll(
+      /<script type="application\/ld\+json"[^>]*data-managed="true"[^>]*>([\s\S]*?)<\/script>/g,
+    ),
   ];
-  if (managedScripts.length > 1) {
-    err(route, `expected at most one data-managed JSON-LD script, found ${managedScripts.length}`);
+  if (managed.length > 1) {
+    err(route, `expected exactly one data-managed JSON-LD script, found ${managed.length}`);
   }
+  if (managed.length === 0) return;
+
+  let parsed;
+  try {
+    parsed = JSON.parse(managed[0][1].replace(/\\u003c/g, "<"));
+  } catch {
+    return; // parse errors are reported by collectJsonLd
+  }
+
+  if (!parsed["@context"]) err(route, "JSON-LD payload has no @context");
+  if (!Array.isArray(parsed["@graph"])) {
+    err(route, "JSON-LD payload is not an @context + @graph structure");
+    return;
+  }
+
+  // Top-level definitions only: reference stubs never appear at graph level.
+  const seenIds = new Map();
+  for (const node of parsed["@graph"]) {
+    const id = node?.["@id"];
+    if (!id) continue;
+    const count = (seenIds.get(id) ?? 0) + 1;
+    seenIds.set(id, count);
+    if (count === 2) err(route, `duplicate top-level @graph definition for @id "${id}"`);
+  }
+
+  const required = HOME_REQUIRED_NODES[route];
+  if (required) {
+    for (const [type, id] of required) {
+      const node = parsed["@graph"].find((n) => n?.["@id"] === id);
+      if (!node) err(route, `homepage @graph is missing node ${type} (${id})`);
+      else {
+        const typeList = Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]];
+        if (!typeList.includes(type)) err(route, `node ${id} is not a ${type}`);
+      }
+    }
+  }
+
+  if (route === "/en") {
+    const faq = parsed["@graph"].find((n) => {
+      const typeList = Array.isArray(n?.["@type"]) ? n["@type"] : [n?.["@type"]];
+      return typeList.includes("FAQPage");
+    });
+    if (!faq) err(route, "English homepage @graph is missing the FAQPage node");
+    else if (!EN_FAQ_IDS.has(faq["@id"])) {
+      err(route, `English FAQPage @id must be ${SITE_ORIGIN}/en/#faq (found ${faq["@id"]})`);
+    }
+    for (const [type, id] of [
+      ["LegalService", `${SITE_ORIGIN}/#legalservice`],
+      ["Person", `${SITE_ORIGIN}/despre-mine#person`],
+    ]) {
+      if (!parsed["@graph"].some((n) => n?.["@id"] === id)) {
+        err(route, `English homepage @graph is missing the global ${type} node (${id})`);
+      }
+    }
+  }
+
+  // Legacy business @id must be gone everywhere.
+  if (html.includes(LEGACY_BUSINESS_ID)) err(route, "legacy S3 business @id is still present");
+
+  // priceRange: exactly one occurrence, value "$$".
+  const priceRanges = [...html.matchAll(/"priceRange"\s*:\s*"([^"]*)"/g)].map((m) => m[1]);
+  if (priceRanges.length > 1) {
+    err(route, `priceRange appears ${priceRanges.length} times (expected at most one)`);
+  }
+  for (const value of priceRanges) {
+    if (value !== "$$") err(route, `priceRange must be "$$" (found "${value}")`);
+  }
+}
+
+function collectJsonLd(route, html) {
+  validateGraphShape(route, html);
 
   const types = [];
   for (const match of html.matchAll(
