@@ -72,13 +72,13 @@ const FAQ = [
 
 export default function Malpraxis() {
   useSEO({
-    keywords: "avocat malpraxis medical bucuresti, avocat neglijenta profesionala, avocat neglijenta in serviciu, raspundere penala medic",
+    keywords: "avocat malpraxis medical bucuresti",
     canonical: "/servicii/neglijenta-profesionala-si-malpraxis",
     alternates: { ro: "/servicii/neglijenta-profesionala-si-malpraxis", en: "/en/services/professional-negligence-and-malpractice", xDefault: "/servicii/neglijenta-profesionala-si-malpraxis" },
     locale: "ro_RO",
-    title: "Avocat Malpraxis Medical București - Bogdan Lamatic | Neglijență în serviciu",
+    title: "Avocat Malpraxis Medical București - Bogdan Lamatic",
     description:
-      "Avocat malpraxis medical & neglijență în serviciu în București. Evaluare rapidă, strategie integrată civil & penal.",
+      "Avocat malpraxis medical în București. Evaluare rapidă, strategie integrată civil & penal. Suna acum!",
   });
 
   return (
