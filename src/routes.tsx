@@ -152,6 +152,18 @@ const DespagubiriAccidentRutier = lazyRoute(() => import("./pages/services/despa
 const RoadAccidentCompensationEn = lazyRoute(() => import("./pages/en/services/road-accident-compensation"));
 const DespagubiriVatamareCorporala = lazyRoute(() => import("./pages/services/despagubiri-vatamare-corporala"));
 const BodilyInjuryCompensationEn = lazyRoute(() => import("./pages/en/services/bodily-injury-compensation"));
+const LoviriVatamareCorporala = lazyRoute(() => import("./pages/services/loviri-vatamare-corporala"));
+const ViolentaDomestica = lazyRoute(() => import("./pages/services/violenta-domestica"));
+const LipsireDeLibertateAmenintare = lazyRoute(() => import("./pages/services/lipsire-de-libertate-amenintare"));
+const SantajHartuire = lazyRoute(() => import("./pages/services/santaj-hartuire"));
+const ViolAgresiuneSexuala = lazyRoute(() => import("./pages/services/viol-agresiune-sexuala"));
+const OmorUcidereDinCulpa = lazyRoute(() => import("./pages/services/omor-ucidere-din-culpa"));
+const AssaultAndBodilyInjuryEn = lazyRoute(() => import("./pages/en/services/assault-and-bodily-injury"));
+const DomesticViolenceEn = lazyRoute(() => import("./pages/en/services/domestic-violence"));
+const UnlawfulDetentionAndThreatsEn = lazyRoute(() => import("./pages/en/services/unlawful-detention-and-threats"));
+const BlackmailAndHarassmentEn = lazyRoute(() => import("./pages/en/services/blackmail-and-harassment"));
+const RapeAndSexualAssaultEn = lazyRoute(() => import("./pages/en/services/rape-and-sexual-assault"));
+const HomicideAndManslaughterEn = lazyRoute(() => import("./pages/en/services/homicide-and-manslaughter"));
 
 
 export default function AppRoutes() {
@@ -202,6 +214,12 @@ export default function AppRoutes() {
           <Route path="/servicii/reprezentarea-victimelor-in-procese-penale" element={<ReprezentareaVictimelor />} />
           <Route path="/servicii/despagubiri-accident-rutier" element={<DespagubiriAccidentRutier />} />
           <Route path="/servicii/despagubiri-vatamare-corporala" element={<DespagubiriVatamareCorporala />} />
+          <Route path="/servicii/loviri-vatamare-corporala" element={<LoviriVatamareCorporala />} />
+          <Route path="/servicii/violenta-domestica" element={<ViolentaDomestica />} />
+          <Route path="/servicii/lipsire-de-libertate-amenintare" element={<LipsireDeLibertateAmenintare />} />
+          <Route path="/servicii/santaj-hartuire" element={<SantajHartuire />} />
+          <Route path="/servicii/viol-agresiune-sexuala" element={<ViolAgresiuneSexuala />} />
+          <Route path="/servicii/omor-ucidere-din-culpa" element={<OmorUcidereDinCulpa />} />
           <Route path="/servicii/evaziune-fiscala" element={<EvaziuneFiscala />} />
           <Route path="/servicii/inselaciune-frauda" element={<InselaciuneFrauda />} />
           <Route path="/servicii/delapidare" element={<Delapidare />} />
@@ -279,6 +297,12 @@ export default function AppRoutes() {
           <Route path="/en/services/victim-representation-in-criminal-cases" element={<VictimRepresentationEn />} />
           <Route path="/en/services/road-accident-compensation" element={<RoadAccidentCompensationEn />} />
           <Route path="/en/services/bodily-injury-compensation" element={<BodilyInjuryCompensationEn />} />
+          <Route path="/en/services/assault-and-bodily-injury" element={<AssaultAndBodilyInjuryEn />} />
+          <Route path="/en/services/domestic-violence" element={<DomesticViolenceEn />} />
+          <Route path="/en/services/unlawful-detention-and-threats" element={<UnlawfulDetentionAndThreatsEn />} />
+          <Route path="/en/services/blackmail-and-harassment" element={<BlackmailAndHarassmentEn />} />
+          <Route path="/en/services/rape-and-sexual-assault" element={<RapeAndSexualAssaultEn />} />
+          <Route path="/en/services/homicide-and-manslaughter" element={<HomicideAndManslaughterEn />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
