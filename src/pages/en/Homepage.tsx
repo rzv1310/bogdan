@@ -311,15 +311,15 @@ const HomepageEN = () => {
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5",
-              "bestRating": "5",
-              "reviewCount": "28"
+              "ratingValue": 5,
+              "bestRating": 5,
+              "reviewCount": 28
             },
             "review": googleReviews.map((review) => ({
               "@type": "Review",
               "inLanguage": "ro-RO",
               "author": { "@type": "Person", "name": review.author },
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5, "worstRating": 1 },
               "reviewBody": review.reviewBody,
               "itemReviewed": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
               "publisher": { "@type": "Organization", "name": "Google" },
@@ -438,17 +438,20 @@ const HomepageEN = () => {
           },
           {
             "@type": "WebSite",
+            "@id": "https://avocatpenalbucuresti.ro/#website",
             "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
             "url": "https://avocatpenalbucuresti.ro/en",
             "description": "Official website of lawyer Bogdan Lamatic - criminal defense, white-collar crime, and crypto investigations in Bucharest.",
             "inLanguage": "en-US",
             "publisher": {
-              "@type": "LegalService",
               "@id": "https://avocatpenalbucuresti.ro/#legalservice"
             }
           },
           {
             "@type": "FAQPage",
+            "@id": "https://avocatpenalbucuresti.ro/en#faq",
+            "inLanguage": "en-US",
+            "isPartOf": { "@id": "https://avocatpenalbucuresti.ro/#website" },
             "mainEntity": [
               {
                 "@type": "Question",
