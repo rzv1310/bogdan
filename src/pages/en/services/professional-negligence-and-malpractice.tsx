@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceHeroCta } from "@/components/services/ServiceHeroCta";
+import { HERO_CTA_CLASS } from "@/lib/cta";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent } from "@/components/ui/card";
 
