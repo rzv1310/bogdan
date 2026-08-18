@@ -156,9 +156,9 @@ async function main() {
     const { html, head } = render("/pagina-inexistenta-404");
     const lang = head?.lang === "en" ? "en" : "ro";
     const page = template
-      .replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
-      .replace("</head>", `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+      .replace(/<html\s+lang="[^"]*"/i, () => `<html lang="${lang}"`)
+      .replace("</head>", () => `${buildHead("/404", { ...head, canonical: "/404" })}\n  </head>`)
+      .replace('<div id="root"></div>', () => `<div id="root">${html}</div>`);
     await writeFile(path.join(distDir, "404.html"), stripFancyDashes(page), "utf8");
     console.log("[prerender] 404 -> 404.html");
   }
