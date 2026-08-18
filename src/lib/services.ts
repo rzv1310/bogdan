@@ -25,5 +25,5 @@ export const servicesEn = [
   { label: "Road traffic offenses with victims", to: "/en/services/road-traffic-offenses" },
   { label: "Criminal liability for incidents at the workplace", to: "/en/services/workplace-criminal-liability" },
   { label: "Representation of victims in criminal proceedings", to: "/en/services/victim-representation-in-criminal-cases" },
-  { label: "Offenses against persons", to: "/en/services/offenses-against-persons" },
+  { label: "Violent Crime Defense Lawyer", to: "/en/services/offenses-against-persons" },
 ] as const;
