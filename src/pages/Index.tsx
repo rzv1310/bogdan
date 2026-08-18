@@ -486,9 +486,9 @@ const Index = () => {
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5",
-              "bestRating": "5",
-              "reviewCount": "28"
+              "ratingValue": 5,
+              "bestRating": 5,
+              "reviewCount": 28
             },
             "review": googleReviews.map((review) => ({
               "@type": "Review",
