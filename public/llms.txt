@@ -116,10 +116,24 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Viol și agresiune sexuală](/servicii/viol-agresiune-sexuala): Apărare confidențială în acuzații de infracțiuni sexuale.
 - [Omor și ucidere din culpă](/servicii/omor-ucidere-din-culpa): Apărare în dosare de omor și ucidere din culpă.
 - [Road Traffic Offenses](/en/services/road-traffic-offenses): Serious road traffic offenses.
+- [Drunk Driving](/en/services/drunk-driving): Driving under the influence of alcohol, art. 336 Criminal Code.
+- [Drug Driving](/en/services/drug-driving): Driving under the influence of psychoactive substances.
+- [Leaving the Accident Scene](/en/services/leaving-the-accident-scene): Defense in hit and run cases, art. 338 Criminal Code.
+- [Refusal to Provide Biological Samples](/en/services/refusal-to-provide-biological-samples): Refusal of biological sampling, art. 337 Criminal Code.
+- [Driving Without a Licence](/en/services/driving-without-a-licence): Cases of driving without a valid licence.
+- [Road Accident with Victims](/en/services/road-accident-with-victims): Defense of drivers investigated for accidents with victims.
+- [Car Accident Lawyer](/en/services/road-accident-compensation): Compensation claims for road accident victims and families.
+- [Bodily Injury Compensation](/en/services/bodily-injury-compensation): Compensation for victims of assault and injury.
+- [Assault and Bodily Injury](/en/services/assault-and-bodily-injury): Defense in assault and bodily harm accusations.
+- [Domestic Violence](/en/services/domestic-violence): Defense in domestic violence and protection order cases.
+- [Unlawful Detention and Threats](/en/services/unlawful-detention-and-threats): Defense in unlawful detention and threat cases.
+- [Blackmail and Harassment](/en/services/blackmail-and-harassment): Defense in blackmail and harassment accusations.
+- [Rape and Sexual Assault](/en/services/rape-and-sexual-assault): Confidential defense in sexual offense accusations.
+- [Homicide and Manslaughter](/en/services/homicide-and-manslaughter): Defense in homicide and manslaughter cases.
 - [Răspundere penală incidente locul de muncă](/servicii/raspundere-penala-incidente-locul-de-munca): Accidente de muncă, securitate.
 - [Workplace Criminal Liability](/en/services/workplace-criminal-liability): Criminal liability for workplace incidents.
 - [Reprezentarea victimelor în procese penale](/servicii/reprezentarea-victimelor-in-procese-penale): Asistență persoane vătămate.
-- [Victim Representation in Criminal Cases](/en/services/victim-representation-in-criminal-cases): Representation of victims in criminal proceedings.
+- [Personal Injury Lawyer](/en/services/victim-representation-in-criminal-cases): Representation of victims in criminal proceedings.
 
 ## Legal
 
