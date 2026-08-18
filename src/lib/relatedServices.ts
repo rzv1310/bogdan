@@ -128,6 +128,14 @@ export const subServiceGroups: Record<string, string[]> = {
     "/servicii/despagubiri-accident-rutier",
     "/servicii/despagubiri-vatamare-corporala",
   ],
+  "/servicii/infractiuni-contra-persoanei": [
+    "/servicii/loviri-vatamare-corporala",
+    "/servicii/violenta-domestica",
+    "/servicii/lipsire-de-libertate-amenintare",
+    "/servicii/santaj-hartuire",
+    "/servicii/viol-agresiune-sexuala",
+    "/servicii/omor-ucidere-din-culpa",
+  ],
   "/servicii/cauze-penale-privind-droguri": [
     "/servicii/avocat-diicot",
     "/servicii/detinere-droguri-consum-propriu",
