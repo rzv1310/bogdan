@@ -200,11 +200,56 @@ export const SUB_SERVICE_ROUTES = new Set([
   "/en/services/complaint-college-of-physicians",
   "/servicii/malpraxis-stomatologic",
   "/en/services/dental-malpractice",
+  "/servicii/evaziune-fiscala",
+  "/en/services/tax-evasion",
+  "/servicii/inselaciune-frauda",
+  "/en/services/fraud-and-deception",
+  "/servicii/delapidare",
+  "/en/services/embezzlement",
+  "/servicii/fals-si-uz-de-fals",
+  "/en/services/forgery-and-use-of-forgery",
+  "/servicii/bancruta-frauduloasa",
+  "/en/services/fraudulent-bankruptcy",
+  "/servicii/frauda-informatica",
+  "/en/services/computer-fraud",
+  "/servicii/fonduri-europene",
+  "/en/services/eu-funds-fraud",
+  "/servicii/dare-luare-de-mita",
+  "/en/services/bribery-giving-and-taking",
+  "/servicii/trafic-de-influenta",
+  "/en/services/influence-peddling",
+  "/servicii/abuz-in-serviciu",
+  "/en/services/abuse-of-office",
+  "/servicii/neglijenta-in-serviciu",
+  "/en/services/negligence-in-office",
+  "/servicii/conflict-de-interese",
+  "/en/services/conflict-of-interest",
+  "/servicii/alcool-la-volan",
+  "/en/services/drunk-driving",
+  "/servicii/droguri-la-volan",
+  "/en/services/drug-driving",
+  "/servicii/parasirea-locului-accidentului",
+  "/en/services/leaving-the-accident-scene",
+  "/servicii/refuz-prelevare-probe-biologice",
+  "/en/services/refusal-to-provide-biological-samples",
+  "/servicii/conducere-fara-permis",
+  "/en/services/driving-without-a-licence",
+  "/servicii/accident-rutier-cu-victime",
+  "/en/services/road-accident-with-victims",
+  "/servicii/sechestru-asigurator",
+  "/en/services/asset-freezing-order",
+  "/servicii/confiscare",
+  "/en/services/confiscation",
+  "/servicii/despagubiri-accident-rutier",
+  "/en/services/road-accident-compensation",
+  "/servicii/despagubiri-vatamare-corporala",
+  "/en/services/bodily-injury-compensation",
 ]);
 
 /** Priority hints for the sitemap. */
 export function priorityFor(route) {
   if (route === "/" || route === "/en") return "1.0";
+  if (route === "/servicii" || route === "/en/services") return "0.8";
   if (SUB_SERVICE_ROUTES.has(route)) return "0.8";
   if (route.startsWith("/servicii/") || route.startsWith("/en/services/")) return "0.9";
   if (["/despre-mine", "/contact", "/en/about", "/en/contact"].includes(route)) return "0.8";
@@ -212,3 +257,4 @@ export function priorityFor(route) {
     return "0.3";
   return "0.6";
 }
+
