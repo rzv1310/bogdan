@@ -19,21 +19,10 @@ const DESCRIPTION =
 
 const FAQ = [
   {
-    q: "Care este diferența dintre lovire și vătămare corporală?",
-    a: "Lovirea sau alte violențe (art. 193 CP) presupune, de regulă, o suferință fizică fără zile de îngrijiri medicale semnificative, în timp ce vătămarea corporală (art. 194 CP) implică o formă agravată, cu consecințe mai grave asupra sănătății victimei - încadrarea corectă influențează direct gravitatea acuzației.",
+    q: "Cum aleg pagina potrivită pentru situația mea?",
+    a: "Fiecare tip de acuzație are o pagină dedicată: lovire sau vătămare corporală, violență domestică, lipsire de libertate și amenințare, șantaj și hărțuire, viol și agresiune sexuală, omor și ucidere din culpă. Dacă nu ești sigur, sună-mă și îți spun exact ce este relevant pentru dosarul tău.",
   },
-  {
-    q: "Se poate retrage o plângere pentru violență sau amenințare?",
-    a: "Pentru unele fapte din această categorie, acțiunea penală se pune în mișcare la plângerea prealabilă a persoanei vătămate, iar retragerea plângerii sau împăcarea părților poate duce la încetarea procesului penal. Depinde de fapta concretă și de stadiul procesual - o analizez punctual pentru fiecare caz.",
-  },
-  {
-    q: "Ce se întâmplă dacă am primit un ordin de protecție?",
-    a: "Ordinul de protecție impune obligații și interdicții (de exemplu, distanța față de victimă) care trebuie respectate imediat. Există posibilitatea de a-l contesta sau de a solicita modificarea lui, în condițiile legii.",
-  },
-  {
-    q: "Pot fi arestat preventiv pentru o acuzație de violență în familie sau infracțiune sexuală?",
-    a: "Da, în funcție de gravitatea faptei și de circumstanțe, procurorul poate propune o măsură preventivă, inclusiv arestarea preventivă. Intervin imediat pentru a formula apărări solide încă din faza propunerii.",
-  },
+
   {
     q: "Cât costă un avocat pentru o cauză de infracțiuni contra persoanei?",
     a: "Onorariul depinde de complexitatea cauzei și de etapa procesuală. Ofer o primă discuție gratuită pentru evaluarea situației și un tarif estimativ transparent, prevăzut integral în contract. Sunați-mă la +40 (31) 632 01 83.",
