@@ -13,7 +13,7 @@ import ServiceSubServices from "@/components/services/ServiceSubServices";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 const PAGE_URL = "https://avocatpenalbucuresti.ro/en/services/offenses-against-persons";
-const TITLE = "Offenses Against Persons Lawyer Bucharest - Defending Your Freedom and Reputation | Bogdan Lamatic";
+const TITLE = "Violent Crime Defense Lawyer Bucharest, Romania | Bogdan Lamatic";
 const DESCRIPTION =
   "Offenses against persons lawyer Bucharest - assault, threats, bodily harm, sexual offenses. 18+ years of experience. Call now!";
 
