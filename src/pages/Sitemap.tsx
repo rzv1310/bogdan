@@ -17,6 +17,7 @@ export default function Sitemap() {
     { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic", icon: User },
     { url: "/contact", title: "Contact - Consultații Juridice", icon: Phone },
     { url: "/blog", title: "Resurse - Articole Juridice", icon: FileText },
+    { url: "/calculator-despagubiri", title: "Calculator Despăgubiri", icon: FileText },
   ];
 
   const services = [
@@ -66,6 +67,13 @@ export default function Sitemap() {
     { url: "/servicii/santaj-hartuire", title: "Șantaj și hărțuire" },
     { url: "/servicii/viol-agresiune-sexuala", title: "Viol și agresiune sexuală" },
     { url: "/servicii/omor-ucidere-din-culpa", title: "Omor și ucidere din culpă" },
+    { url: "/servicii/detinere-droguri-consum-propriu", title: "Deținere droguri pentru consum propriu" },
+    { url: "/servicii/grup-infractional-organizat", title: "Grup infracțional organizat" },
+    { url: "/servicii/trafic-international-de-droguri", title: "Trafic internațional de droguri" },
+    { url: "/servicii/retinere-24-ore", title: "Reținere 24 de ore" },
+    { url: "/servicii/arest-preventiv", title: "Arest preventiv" },
+    { url: "/servicii/control-judiciar", title: "Control judiciar" },
+    { url: "/servicii/arest-la-domiciliu", title: "Arest la domiciliu" },
   ];
 
   const englishPages = [
