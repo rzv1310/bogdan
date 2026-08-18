@@ -24,7 +24,7 @@ export default function About() {
         "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
         "email": "contact@avocatpenalbucuresti.ro",
         "telephone": "+40316320183",
-        "worksFor": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+        "worksFor": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Strada Colonel Stefan Stoika 22",

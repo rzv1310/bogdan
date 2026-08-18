@@ -184,7 +184,7 @@ const HomepageEN = () => {
         "@graph": [
           {
             "@type": "LegalService",
-            "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html",
+            "@id": "https://avocatpenalbucuresti.ro/#legalservice",
             "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
@@ -321,7 +321,7 @@ const HomepageEN = () => {
               "author": { "@type": "Person", "name": review.author },
               "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
               "reviewBody": review.reviewBody,
-              "itemReviewed": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+              "itemReviewed": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
               "publisher": { "@type": "Organization", "name": "Google" },
               ...(review.ownerReply
                 ? {
@@ -343,7 +343,7 @@ const HomepageEN = () => {
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
             "telephone": "+40316320183",
             "email": "contact@avocatpenalbucuresti.ro",
-            "worksFor": { "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html" },
+            "worksFor": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
             "affiliation": [
               { "@type": "Organization", "name": "Wolf Theiss" },
               { "@type": "Organization", "name": "Enache Pirtea & Asociații S.p.a.r.l." },
@@ -444,7 +444,7 @@ const HomepageEN = () => {
             "inLanguage": "en-US",
             "publisher": {
               "@type": "LegalService",
-              "@id": "https://s3.amazonaws.com/slstacks/avocatpenalbucuresti/id.html"
+              "@id": "https://avocatpenalbucuresti.ro/#legalservice"
             }
           },
           {
