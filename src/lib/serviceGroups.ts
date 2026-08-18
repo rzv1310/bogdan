@@ -416,7 +416,7 @@ export const enServiceGroups: ServiceGroup[] = [
         cta: "See the road traffic offense page",
       },
       {
-        title: "Offenses against persons",
+        title: "Violent Crime Defense Lawyer",
         description: "Defense in cases of assault, bodily harm, domestic violence, threats, blackmail, harassment and unlawful deprivation of liberty.",
         subServices: [
           { label: "Assault / Bodily harm" },
@@ -427,7 +427,7 @@ export const enServiceGroups: ServiceGroup[] = [
           { label: "Murder / Manslaughter" },
         ],
         to: "/en/services/offenses-against-persons",
-        cta: "See the offenses against persons page",
+        cta: "See the Violent Crime Defense page",
       },
       {
         title: "Professional negligence and malpractice",
