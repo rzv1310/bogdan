@@ -67,6 +67,13 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 
 - [Fonduri europene](/servicii/fonduri-europene): Fraudă cu fonduri UE, nereguli în proiecte, controale DLAF.
 - [Economic Crime](/en/services/financial-crime): Financial crime defense.
+- [Tax Evasion](/en/services/tax-evasion): Tax evasion cases, ANAF audits, damage assessment.
+- [Fraud and Deception](/en/services/fraud-and-deception): Defense and representation in fraud cases.
+- [Embezzlement](/en/services/embezzlement): Embezzlement and management shortfall cases.
+- [Forgery and Use of Forgery](/en/services/forgery-and-use-of-forgery): Document forgery and use of forged documents.
+- [Fraudulent Bankruptcy](/en/services/fraudulent-bankruptcy): Insolvency-related criminal cases and asset transfers.
+- [Computer Fraud](/en/services/computer-fraud): Fraudulent financial operations and online fraud.
+- [EU Funds Fraud](/en/services/eu-funds-fraud): EU funds fraud, project irregularities, DLAF audits.
 - [Infracțiuni de corupție](/servicii/infractiuni-de-coruptie-si-fapte-legate-de-exercitarea-functiei-publice): Mită, abuz în serviciu, trafic de influență.
 - [Corruption and Public Office Offenses](/en/services/corruption-and-public-office-offenses): Bribery, abuse of office, influence peddling.
 - [Bribery](/en/services/bribery-giving-and-taking): Defense in giving and taking bribe cases.
