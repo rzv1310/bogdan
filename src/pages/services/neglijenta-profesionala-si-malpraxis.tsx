@@ -184,28 +184,8 @@ export default function Malpraxis() {
           ))}
         </div>
 
-        <ServiceFaq
-          title="Întrebări frecvente"
-          ordered
-          items={[
-            {
-              q: "Pot cere despăgubiri fără proces penal?",
-              a: "Da. Răspunderea civilă se poate valorifica separat (Comisie de malpraxis + acțiune civilă), independent de latura penală.",
-            },
-            {
-              q: "Care este termenul de prescripție?",
-              a: "De regulă, 3 ani pentru malpraxis pe cale civilă; pentru infracțiuni (ex. art. 192/196 CP) se aplică termenele penale.",
-            },
-            {
-              q: "Ce se întâmplă dacă unitatea/medicul nu are asigurare?",
-              a: "E abatere sancționabilă; răspunderea civilă rămâne, iar despăgubirile pot fi urmărite direct.",
-            },
-            {
-              q: "Cum aleg calea potrivită pentru situația mea?",
-              a: "În funcție de obiectiv: despăgubiri (civil), apărare penală (penal), decizia Comisiei (contestare) sau răspundere disciplinară (Colegiu). Discutăm împreună care cale are sens.",
-            },
-          ]}
-        />
+        <ServiceFaq title="Întrebări frecvente" ordered items={FAQ} />
+
 
         <RelatedServices current="/servicii/neglijenta-profesionala-si-malpraxis" />
       </section>
