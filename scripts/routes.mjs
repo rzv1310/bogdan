@@ -186,6 +186,20 @@ export const SUB_SERVICE_ROUTES = new Set([
   "/en/services/pre-trial-detention",
   "/en/services/judicial-control",
   "/en/services/house-arrest",
+  "/servicii/despagubiri-malpraxis-medical",
+  "/en/services/medical-malpractice-compensation",
+  "/servicii/raspundere-penala-medic",
+  "/en/services/doctor-criminal-liability",
+  "/servicii/comisia-de-malpraxis",
+  "/en/services/malpractice-committee",
+  "/servicii/vatamare-corporala-din-culpa-medicala",
+  "/en/services/medical-negligence-bodily-injury",
+  "/servicii/ucidere-din-culpa-medicala",
+  "/en/services/medical-negligence-manslaughter",
+  "/servicii/plangere-colegiul-medicilor",
+  "/en/services/complaint-college-of-physicians",
+  "/servicii/malpraxis-stomatologic",
+  "/en/services/dental-malpractice",
 ]);
 
 /** Priority hints for the sitemap. */
