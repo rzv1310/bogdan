@@ -192,7 +192,7 @@ export default function Malpraxis() {
             <p className="pb-[30px]">Analizez cazul și îți spun concret ce opțiuni ai, ce merită făcut și ce trebuie evitat de la început. În funcție de situație, pot fi necesare despăgubiri, sesizarea Comisiei de malpraxis sau a organismului profesional ori apărarea într-un dosar penal.</p>
           </div>
 
-          <div className="mt-[30px] flex flex-wrap items-center gap-3">
+          <div className="mt-[30px] mb-[30px] flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - 031 632 01 83">
               <a href="tel:+40316320183">☎ Sună-mă acum - 031 632 01 83</a>
             </Button>
