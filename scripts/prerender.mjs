@@ -104,6 +104,7 @@ function buildHead(route, head) {
       payload = { "@context": "https://schema.org", "@graph": graph };
     }
     const json = JSON.stringify(payload).replace(/</g, "\\u003c");
+    if (route === "/") console.log("[debug] priceRange in json:", json.match(/priceRange[^,]+/)[0]);
     tags.push(`<script type="application/ld+json" data-managed="true">${json}</script>`);
   }
 
