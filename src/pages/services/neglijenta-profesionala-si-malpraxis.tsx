@@ -51,6 +51,10 @@ const subPages = [
 
 const FAQ = [
   {
+    q: "Un rezultat medical nefavorabil înseamnă automat malpraxis?",
+    a: "Nu. Trebuie analizat dacă a existat o abatere de la standardul profesional, dacă s-a produs un prejudiciu și dacă există o legătură între conduita medicală și acel prejudiciu.",
+  },
+  {
     q: "Pot cere despăgubiri fără proces penal?",
     a: "Da. Răspunderea civilă se poate valorifica separat (Comisie de malpraxis + acțiune civilă), independent de latura penală.",
   },
@@ -167,9 +171,9 @@ export default function Malpraxis() {
 
           <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
             <p className="text-foreground">
-              <span className="block"><strong>În dosarele de malpraxis, primele zile contează cel mai mult.</strong></span>
-              <span className="block">Documentația medicală, expertizele medico-legale și declarațiile date la începutul anchetei pot decide dacă răspunderea penală este reținută sau nu.</span>
-              <span className="block">Nu aștepta trimiterea în judecată ca să ceri ajutor.</span>
+              <span className="block"><strong>În cazurile de malpraxis, primele zile pot conta decisiv.</strong></span>
+              <span className="block">Documentația medicală, expertizele și primele demersuri pot influența atât obținerea despăgubirilor de către pacient, cât și stabilirea unei eventuale răspunderi penale a medicului.</span>
+              <span className="block">Analizez cazul de la început și stabilesc calea juridică potrivită.</span>
             </p>
           </div>
 
