@@ -199,7 +199,7 @@ export const roServiceGroups: ServiceGroup[] = [
         cta: "Vezi pagina privind infracțiunile contra persoanei",
       },
       {
-        title: "Malpraxis și neglijență profesională",
+        title: "Malpraxis medical",
         description: "Reprezentare în cauze de neglijență profesională și malpraxis medical, inclusiv răspundere penală a personalului medical.",
         subServices: [
           { label: "Despăgubiri malpraxis medical", to: "/servicii/despagubiri-malpraxis-medical" },
