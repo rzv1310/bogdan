@@ -3755,7 +3755,7 @@ export const dareLuareDeMitaRo: SubServicePageData = {
     {
       h2: "Denunțul, constrângerea și nepedepsirea la darea de mită",
       paragraphs: [
-        "Art. 290 Cod penal conține două supape importante pentru persoana care a dat mită: situația în care fapta a fost săvârșită sub constrângere și cauza de nepedepsire prin denunț. Ambele au condiții stricte de aplicare.",
+        "Art. 290 Cod penal conține două avantaje importante pentru persoana care a dat mită: situația în care fapta a fost săvârșită sub constrângere și cauza de nepedepsire prin denunț. Ambele au condiții stricte de aplicare.",
       ],
       subsections: [
         {
