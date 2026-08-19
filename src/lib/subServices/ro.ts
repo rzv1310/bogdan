@@ -4250,7 +4250,7 @@ export const abuzInServiciuRo: SubServicePageData = {
   serviceName: "Avocat abuz în serviciu București - Bogdan Lamatic",
   urgency: [
     "Ești cercetat pentru abuz în serviciu, după un control, un raport al Curții de Conturi sau o plângere?",
-    "În aceste dosare, apărarea începe de la atribuțiile tale exacte și de la textul legal despre care se spune că a fost încălcat.",
+    "În aceste dosare, apărarea începe de la atribuțiile de serviciu și de la textul legal despre care se spune că a fost încălcat.",
   ],
   bio: [
     `${BIO_INTRO} Asist funcționari publici, primari, directori, membri ai comisiilor de achiziții și administratori din mediul privat, în dosare de abuz în serviciu.`,
