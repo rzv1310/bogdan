@@ -4408,7 +4408,7 @@ export const abuzInServiciuRo: SubServicePageData = {
     {
       h2: "Cine răspunde când actul a fost avizat și semnat de mai multe persoane?",
       paragraphs: [
-        "În administrație, aproape niciun act nu este emis de o singură persoană. Există referate, avize, vize de control financiar preventiv, semnături de conformitate și, uneori, decizii colegiale. Apărarea începe prin reconstituirea completă a circuitului documentului.",
+        "În administrația publică, aproape niciun act nu este emis de o singură persoană. Există referate, avize, vize de control financiar preventiv, semnături de conformitate și, uneori, decizii colegiale. Apărarea începe prin reconstituirea completă a circuitului documentului.",
       ],
       subsections: [
         {
