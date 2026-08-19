@@ -9321,7 +9321,7 @@ export const omorUcidereDinCulpaRo: SubServicePageData = {
 
 
 /* ============================================================
-   Subservicii - pagina-pilon Malpraxis și neglijență profesională
+   Subservicii - pagina-pilon Malpraxis medical
    ============================================================ */
 
 const L95 = "https://legislatie.just.ro/Public/DetaliiDocument/16203";
@@ -9330,8 +9330,8 @@ const CMSR = "https://www.cmsr.ro";
 
 const PARENT_MALPRAXIS = {
   to: "/servicii/neglijenta-profesionala-si-malpraxis",
-  label: "malpraxis medical și neglijență profesională",
-  breadcrumbLabel: "Malpraxis și neglijență profesională",
+  label: "malpraxis medical",
+  breadcrumbLabel: "Malpraxis medical",
 };
 
 export const despagubiriMalpraxisMedicalRo: SubServicePageData = {
