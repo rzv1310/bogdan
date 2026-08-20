@@ -4,9 +4,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
 import MobileConversionBar from "./MobileConversionBar";
+import { useSyncLangWithPath } from "@/context/language";
 
 export default function Layout() {
   const location = useLocation();
+  useSyncLangWithPath(location.pathname);
+  
+
   
   useEffect(() => {
     if (typeof window !== "undefined") {
