@@ -3720,7 +3720,7 @@ export const dareLuareDeMitaRo: SubServicePageData = {
             { bold: "Ora și locul:", rest: "dacă se potrivesc cu celelalte probe din dosar, inclusiv cu datele din telefon sau din camerele de supraveghere." },
             { bold: "Martorii asistenți:", rest: "dacă au fost prezenți efectiv și dacă au semnat în condițiile prevăzute de lege." },
             { bold: "Descrierea sumei sau a foloaselor:", rest: "seriile bancnotelor, modul de marcare, locul exact unde au fost găsite bunurile." },
-            { bold: "Concordanța cu autorizarea:", rest: "dacă activitatea desfășurată se încadrează în ceea ce fusese autorizat de judecător sau de procuror." },
+            { bold: "Concordanța cu autorizarea:", rest: "dacă activitatea desfășurată se încadrează în ceea ce fusese autorizat de judecător." },
           ],
         },
         {
