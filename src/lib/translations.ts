@@ -50,7 +50,7 @@ export const translations = {
     googleReviews: "din 28 de recenzii Google",
     ctaLawyerButton: "Vreau avocat!",
     rightsReserved: "Toate drepturile rezervate.",
-    servicesTitle: "Cum te pot ajuta",
+    servicesTitle: "Cum te pot ajuta în dosare penale în București",
     services: [
       {
         title: "Urgențe penale",
