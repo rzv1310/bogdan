@@ -9,6 +9,7 @@ import { roServiceGroups } from "@/lib/serviceGroups";
 import { CTA_CLASS } from "@/lib/cta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import GoogleReviewStars from "@/components/services/GoogleReviewStars";
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii";
 const TITLE = "Servicii avocat penal București - av. Bogdan Lamatic";
