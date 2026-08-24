@@ -9,6 +9,7 @@ import { roServiceGroups } from "@/lib/serviceGroups";
 import { CTA_CLASS } from "@/lib/cta";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import GoogleReviewStars from "@/components/services/GoogleReviewStars";
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 
 const PAGE_URL = "https://avocatpenalbucuresti.ro/servicii";
 const TITLE = "Servicii avocat penal București - av. Bogdan Lamatic";
@@ -152,7 +153,7 @@ export default function ServiciiPage() {
 
         {/* Service groups */}
         <div className="space-y-14 md:space-y-20">
-          {filteredGroups.map((group) => (
+          {filteredGroups.map((group, groupIndex) => (
             <section key={group.id}>
               <h2 className="text-xl md:text-2xl font-semibold mb-6">
                 {group.title}
@@ -193,6 +194,11 @@ export default function ServiciiPage() {
                   </GlowCard>
                 ))}
               </div>
+              {groupIndex === 0 && (
+                <div className="mt-6 flex justify-center">
+                  <WhatsAppDocsCta lang="ro" />
+                </div>
+              )}
             </section>
           ))}
         </div>
