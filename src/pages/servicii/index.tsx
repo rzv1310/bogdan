@@ -195,7 +195,7 @@ export default function ServiciiPage() {
                 ))}
               </div>
               {groupIndex === 0 && (
-                <div className="mt-6 flex justify-center">
+                <div className="mt-6 flex justify-start">
                   <WhatsAppDocsCta lang="ro" />
                 </div>
               )}
