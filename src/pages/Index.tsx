@@ -283,12 +283,8 @@ const renderTextWithLinks = (text: string) => {
   let processedText = text.replace(urlRegex, (url) => `||URL||${url}||URL||`);
   
   // Then handle phone numbers
-  const phoneRegex = /\+40 \(31\) 632 01 83/g;
+  const phoneRegex = /\+40 745 506 443/g;
   processedText = processedText.replace(phoneRegex, '||PHONE||+40 745 506 443||PHONE||');
-  
-  // Also handle the phone number without parentheses format
-  const phoneRegex2 = /+40 745 506 443/g;
-  processedText = processedText.replace(phoneRegex2, '||PHONE2||+40 745 506 443||PHONE2||');
   
   // Handle line breaks
   processedText = processedText.replace(/\n/g, '||BR||');
