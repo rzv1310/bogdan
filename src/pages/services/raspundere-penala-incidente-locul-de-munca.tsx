@@ -54,8 +54,8 @@ export default function RaspunderePenalaMunca() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -157,7 +157,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 3rd card */}
         <div className="mt-6 text-center">
-              <a href="tel:+40316320183" aria-label="Vreau avocat - Sună acum">
+              <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
@@ -240,7 +240,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 6th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40316320183" aria-label="Vreau avocat - Sună acum">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
@@ -310,7 +310,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 9th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40316320183" aria-label="Vreau avocat - Sună acum">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!
@@ -377,7 +377,7 @@ export default function RaspunderePenalaMunca() {
 
         {/* CTA Button after 12th card */}
         <div className="mt-6 text-center">
-          <a href="tel:+40316320183" aria-label="Vreau avocat - Sună acum">
+          <a href="tel:+40745506443" aria-label="Vreau avocat - Sună acum">
             <Button variant="premium" size="lg" className="border border-hero-foreground relative overflow-hidden after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
               <Phone className="mr-2 h-5 w-5" />
               Vreau avocat!

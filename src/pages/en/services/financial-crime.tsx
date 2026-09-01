@@ -77,9 +77,9 @@ export default function FinancialCrimeEn() {
             provider: {
               "@type": "Person",
               name: "Bogdan Lamatic",
-              telephone: "+40 (31) 632 01 83",
+              telephone: "+40 745 506 443",
             },
-            telephone: "+40 (31) 632 01 83",
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -184,7 +184,7 @@ export default function FinancialCrimeEn() {
 
         <div className="mt-8">
           <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-            <a href="tel:+40316320183" aria-label="Call now for a case review">
+            <a href="tel:+40745506443" aria-label="Call now for a case review">
               <Phone className="mr-2" /> Request a quick case review
             </a>
           </Button>

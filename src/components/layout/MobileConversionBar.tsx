@@ -24,7 +24,7 @@ export default function MobileConversionBar({ lang = 'ro' }: MobileConversionBar
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] flex border-t border-border bg-background pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_10px_rgba(0,0,0,0.15)] md:hidden">
       <a
-        href="tel:+40316320183"
+        href="tel:+40745506443"
         className="flex basis-[68%] items-center justify-center gap-2 bg-accent px-3 py-4 text-base font-semibold text-accent-foreground"
         aria-label={callLabel}
       >

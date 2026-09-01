@@ -106,7 +106,7 @@ export const audierePolitieParchetRo: SubServicePageData = {
     },
     {
       q: "Cât costă asistența unui avocat la audiere?",
-      a: "Onorariul depinde de situația concretă, urgență, instituția în fața căreia are loc audierea și complexitatea dosarului. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de situația concretă, urgență, instituția în fața căreia are loc audierea și complexitatea dosarului. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 745 506 443.",
     },
   ],
   resources: [
@@ -150,7 +150,7 @@ export const perchezitieDomiciliaraRo: SubServicePageData = {
       ],
       callout: "Ai dreptul să contactezi un avocat !",
       calloutClassName: "font-semibold bg-white",
-      cta: "Sună-mă imediat - 031 632 01 83",
+      cta: "Sună-mă imediat - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -497,7 +497,7 @@ export const avocatDiicotRo: SubServicePageData = {
     },
     {
       q: "Cât costă apărarea într-un dosar DIICOT?",
-      a: "Onorariul depinde de complexitatea dosarului, stadiul procedurii, urgență și volumul activităților necesare. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de complexitatea dosarului, stadiul procedurii, urgență și volumul activităților necesare. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 745 506 443.",
     },
   ],
   resources: [
@@ -625,7 +625,7 @@ export const avocatDnaRo: SubServicePageData = {
     },
     {
       q: "Cât costă apărarea într-un dosar DNA?",
-      a: "Onorariul depinde de complexitatea și stadiul cauzei, urgență și activitatea efectiv necesară. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 (31) 632 01 83.",
+      a: "Onorariul depinde de complexitatea și stadiul cauzei, urgență și activitatea efectiv necesară. Ofer o primă discuție fără niciun cost, pentru evaluarea situației. Sunați la +40 745 506 443.",
     },
   ],
   resources: [
@@ -756,7 +756,7 @@ export const retinere24OreRo: SubServicePageData = {
           ],
         },
       ],
-      cta: "Sună acum - 031 632 01 83",
+      cta: "Sună acum - +40 745 506 443",
     },
     {
       h2: "Poți contesta reținerea de 24 de ore?",
@@ -795,7 +795,7 @@ export const retinere24OreRo: SubServicePageData = {
           ],
         },
       ],
-      cta: "Sună acum - 031 632 01 83",
+      cta: "Sună acum - +40 745 506 443",
     },
     {
       h2: "Cum se calculează cele 24 de ore de reținere?",
@@ -931,7 +931,7 @@ export const arestPreventivRo: SubServicePageData = {
       ],
       calloutAfterSubsections:
         "O persoană apropiată este reținută și urmează propunerea de arestare? Mă poți contacta tu chiar dacă nu ai toate actele dosarului.",
-      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez la o propunere de arestare preventivă",
@@ -1278,7 +1278,7 @@ export const controlJudiciarRo: SubServicePageData = {
         "Contează foarte mult contextul: o neprezentare cauzată de o problemă medicală sau de o comunicare greșită a datei nu este același lucru cu o sustragere deliberată de la supraveghere. De aceea explicațiile trebuie pregătite cu documente, nu improvizate.",
       ],
       calloutAfterBullets: "Ai încălcat o obligație? Sună înainte de următoarea audiere.",
-      cta: "Sună acum - 031 632 01 83",
+      cta: "Sună acum - +40 745 506 443",
     },
     {
       h2: "Cât durează controlul judiciar și cum se prelungește?",
@@ -1310,7 +1310,7 @@ export const controlJudiciarRo: SubServicePageData = {
         },
       ],
       calloutAfterSubsections: "Ai primit un act de prelungire? Termenul de contestare este scurt.",
-      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Contestarea măsurii și termenele",
@@ -1340,7 +1340,7 @@ export const controlJudiciarRo: SubServicePageData = {
       ],
       calloutAfterSubsections:
         "Spune-mi data exactă la care ți-a fost comunicat actul: termenul de 48 de ore curge repede.",
-      ctaAfterSubsections: "Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Controlul judiciar pe cauțiune",
@@ -1451,7 +1451,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
             "posibilitatea revocării;",
             "posibilitatea înlocuirii cu control judiciar sau control judiciar pe cauțiune.",
           ],
-          cta: "☎ Sună acum - 031 632 01 83",
+          cta: "☎ Sună acum - +40 745 506 443",
           ctaIcon: false,
         },
         {
@@ -1896,7 +1896,7 @@ export const arestLaDomiciliuRo: SubServicePageData = {
     { text: "Art. 241-242 CPP - încetarea de drept, revocarea și înlocuirea măsurilor preventive.", href: CPP, linkLabel: "Legislație" },
     { text: "Art. 285 Cod penal - evadarea.", href: CP, linkLabel: "Legislație" },
   ],
-  contactText: "Bogdan Lamatic - avocat drept penal, București. Telefon: 031 632 01 83",
+  contactText: "Bogdan Lamatic - avocat drept penal, București. Telefon: +40 745 506 443",
   contactWhatsApp: true,
   contactWhatsAppLabel: "Trimite încheierea pe WhatsApp",
   parent: PARENT_MP,
@@ -5225,7 +5225,7 @@ export const detinereDroguriConsumPropriuRo: SubServicePageData = {
             "Familia mă poate contacta chiar dacă nu are toate documentele dosarului.",
             "Spune-mi unde se află persoana, ce s-a întâmplat și ce acte aveți în acest moment.",
           ],
-          cta: "Sună-mă acum - 031 632 01 83",
+          cta: "Sună-mă acum - +40 745 506 443",
           ctaIcon: false,
         },
       ],
@@ -5252,7 +5252,7 @@ export const detinereDroguriConsumPropriuRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "Nu există în lege un prag cantitativ fix care să transforme automat deținerea pentru consum propriu în trafic. Încadrarea se stabilește în funcție de ansamblul probelor și de scopul deținerii. Înalta Curte a subliniat în 2025 opțiunea legiuitorului de a nu stabili un asemenea prag.",
       ],
-      cta: "Sună-mă acum - 031 632 01 83",
+      cta: "Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5389,7 +5389,7 @@ export const detinereDroguriConsumPropriuRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "Sună-mă acum - 031 632 01 83",
+      cta: "Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -5516,7 +5516,7 @@ export const grupInfractionalOrganizatRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat într-o acuzație de grup infracțional organizat",
@@ -5539,7 +5539,7 @@ export const grupInfractionalOrganizatRo: SubServicePageData = {
         "legătura dintre client și infracțiunile care ar fi intrat în scopul grupului;",
         "dacă probele descriu un grup organizat sau doar contacte și activități punctuale.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5755,7 +5755,7 @@ export const grupInfractionalOrganizatRo: SubServicePageData = {
         "De asemenea, dacă persoana care a săvârșit una dintre faptele prevăzute de art. 367 alin. (1)-(3) înlesnește, în cursul urmăririi penale, aflarea adevărului și tragerea la răspundere penală a unuia sau mai multor membri ai grupului, limitele speciale ale pedepsei se reduc la jumătate.",
         "Aceste dispoziții au condiții și momente procedurale precise. Nu lua o decizie privind declarații sau cooperarea înainte să înțelegi efectele juridice concrete.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5802,7 +5802,7 @@ export const grupInfractionalOrganizatRo: SubServicePageData = {
         "Nu pornesc de la premisa că activitatea atribuită celorlalte persoane poate fi transferată automat asupra clientului.",
         "Mă ocup personal de strategia dosarului și de reprezentarea pentru care preiau mandatul.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5818,7 +5818,7 @@ export const grupInfractionalOrganizatRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "trimite-mi actul în care este descrisă acuzația și spune-mi când urmează următoarea audiere.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Trimite actele pe WhatsApp",
@@ -5970,7 +5970,7 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
         "lanțul de custodie al probelor;",
         "rolul concret atribuit fiecărei persoane.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6092,7 +6092,7 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6181,7 +6181,7 @@ export const traficInternationalDeDroguriRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "Strategia se construiește după dosar, nu după presupuneri.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -6314,7 +6314,7 @@ export const sechestruAsiguratorRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat într-un dosar cu sechestru asigurător",
@@ -6333,7 +6333,7 @@ export const sechestruAsiguratorRo: SubServicePageData = {
         "dacă există bunuri care pot fi înlocuite cu o cauțiune sau cu alte garanții;",
         "efectele măsurii asupra activității firmei și asupra plăților esențiale.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6416,7 +6416,7 @@ export const sechestruAsiguratorRo: SubServicePageData = {
         "evaluarea greșită a bunurilor;",
         "afectarea nejustificată a activității unei societăți.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6469,7 +6469,7 @@ export const sechestruAsiguratorRo: SubServicePageData = {
         "nu se solicită restrângerea măsurii atunci când valoarea depășește prejudiciul;",
         "terții nu își valorifică dreptul de a-și apăra bunul în procesul penal.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6593,7 +6593,7 @@ export const confiscareRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat într-un dosar cu risc de confiscare",
@@ -6612,7 +6612,7 @@ export const confiscareRo: SubServicePageData = {
         "raportul dintre confiscare și despăgubirile civile cerute;",
         "evaluarea bunurilor și eventualele erori de calcul.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6699,7 +6699,7 @@ export const confiscareRo: SubServicePageData = {
       paragraphsAfterBullets: [
         "Este important ca fiecare achiziție să fie explicată în ordine cronologică, cu documentele corespunzătoare, iar calculul acuzării să fie verificat în detaliu.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6747,7 +6747,7 @@ export const confiscareRo: SubServicePageData = {
         "formulez cereri și concluzii scrise pe capătul privind confiscarea;",
         "susțin poziția în fața instanței și, dacă este cazul, în apel.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -6872,7 +6872,7 @@ export const alcoolLaVolanRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat într-un dosar de alcool la volan",
@@ -6891,7 +6891,7 @@ export const alcoolLaVolanRo: SubServicePageData = {
         "existența unor afecțiuni medicale sau tratamente care influențează rezultatul;",
         "posibilitatea unei expertize medico-legale de recalculare a alcoolemiei.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6938,7 +6938,7 @@ export const alcoolLaVolanRo: SubServicePageData = {
         "În funcție de faza în care se afla organismul, alcoolemia la momentul conducerii poate fi mai mică decât cea rezultată din analiză. Această diferență se stabilește prin expertiză medico-legală.",
         "Solicitarea expertizei se face motivat și cu date concrete despre cantitatea consumată, momentul consumului, alimentație și greutate corporală.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6979,7 +6979,7 @@ export const alcoolLaVolanRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7098,7 +7098,7 @@ export const droguriLaVolanRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat într-un dosar de droguri la volan",
@@ -7117,7 +7117,7 @@ export const droguriLaVolanRo: SubServicePageData = {
         "eventuala asociere cu alte fapte rutiere;",
         "oportunitatea unei expertize toxicologice.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7162,7 +7162,7 @@ export const droguriLaVolanRo: SubServicePageData = {
         "Anumite tratamente pentru durere, anxietate sau tulburări de somn conțin substanțe care pot apărea în analize.",
         "În aceste situații se verifică dacă tratamentul era prescris, dacă a fost respectată doza recomandată și dacă pacientul a fost informat cu privire la efectele asupra capacității de a conduce.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7303,7 +7303,7 @@ export const parasireaLoculuiAccidentuluiRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în acest tip de dosar",
@@ -7322,7 +7322,7 @@ export const parasireaLoculuiAccidentuluiRo: SubServicePageData = {
         "posibilitatea acoperirii pagubei și efectul acesteia asupra laturii civile;",
         "oportunitatea unei expertize tehnice auto.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7374,7 +7374,7 @@ export const parasireaLoculuiAccidentuluiRo: SubServicePageData = {
         "Această apărare se susține cu date obiective: viteza redusă, tipul avariei, zgomotul de fond, poziția vehiculelor, vizibilitatea din interiorul mașinii.",
         "În aceste situații, expertiza tehnică auto poate stabili dacă impactul putea fi perceput de conducătorul auto.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7509,7 +7509,7 @@ export const refuzPrelevareProbeRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în dosarele de refuz",
@@ -7528,7 +7528,7 @@ export const refuzPrelevareProbeRo: SubServicePageData = {
         "declarațiile martorilor și ale agenților;",
         "eventualele acuzații conexe din același dosar.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7574,7 +7574,7 @@ export const refuzPrelevareProbeRo: SubServicePageData = {
         "Persoana trebuie informată cu privire la scopul prelevării și la consecințele refuzului. Lipsa acestei informări poate fi invocată în apărare.",
         "Verific și dacă procesul-verbal reflectă real ceea ce s-a discutat la fața locului sau la spital.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7706,7 +7706,7 @@ export const conducereFaraPermisRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în dosarele de conducere fără permis",
@@ -7725,7 +7725,7 @@ export const conducereFaraPermisRo: SubServicePageData = {
         "eventualele acuzații conexe reținute în același dosar;",
         "antecedentele și conduita, pentru individualizarea pedepsei.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7771,7 +7771,7 @@ export const conducereFaraPermisRo: SubServicePageData = {
         "Nu toate vehiculele necesită permis, iar unele categorii au reguli speciale. Verific încadrarea concretă a vehiculului condus.",
         "În egală măsură, fapta presupune conducerea pe drum public. Manevrele efectuate într-o incintă privată, care nu este deschisă circulației publice, se analizează diferit.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7917,7 +7917,7 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în dosarul tău",
@@ -7936,7 +7936,7 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
         "existența unor acuzații conexe în același dosar;",
         "situația poliței RCA și modul de intervenție al asigurătorului.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7975,7 +7975,7 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
         "Se analizează viteza, distanța de vizibilitate, timpul de reacție, posibilitatea de evitare a impactului și conduita celorlalți participanți la trafic.",
         "Un raport de expertiză tehnică auto bine fundamentat poate schimba complet reprezentarea asupra dinamicii accidentului.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8001,7 +8001,7 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
         "Asigurătorul RCA este chemat în proces și răspunde în limitele prevăzute de lege și de poliță. Analizez întinderea acoperirii și partea care ar putea rămâne în sarcina ta.",
         "Verific și cuantumul pretențiilor solicitate, pentru că sumele cerute sunt frecvent disproporționate față de prejudiciul dovedit.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8151,7 +8151,7 @@ export const despagubiriAccidentRutierRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în cazul tău",
@@ -8167,7 +8167,7 @@ export const despagubiriAccidentRutierRo: SubServicePageData = {
         "termenele pentru constituirea ca parte civilă;",
         "oferta asigurătorului, dacă a fost deja formulată.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8206,7 +8206,7 @@ export const despagubiriAccidentRutierRo: SubServicePageData = {
         "Daunele morale acoperă suferința fizică și psihică, limitările în viața de zi cu zi, sechelele estetice și pierderea unei persoane apropiate. Nu se dovedesc cu bonuri, ci prin probe privind impactul real asupra vieții tale.",
         "În practică, sumele acordate depind de gravitatea leziunilor, de durata recuperării, de sechelele rămase și de modul în care sunt susținute în fața instanței.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8232,7 +8232,7 @@ export const despagubiriAccidentRutierRo: SubServicePageData = {
         "Înainte de a semna orice tranzacție, verifică dacă suma acoperă și prejudiciul viitor, pentru că o înțelegere semnată poate închide definitiv discuția.",
         "Analizez oferta primită și îți arăt diferența dintre ce ți se propune și ce se obține, în mod curent, în situații similare.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8363,7 +8363,7 @@ export const despagubiriVatamareCorporalaRo: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Sună-mă acum - 031 632 01 83",
+      ctaAfterSubsections: "☎ Sună-mă acum - +40 745 506 443",
     },
     {
       h2: "Ce analizez imediat în cazul tău",
@@ -8378,7 +8378,7 @@ export const despagubiriVatamareCorporalaRo: SubServicePageData = {
         "termenul pentru plângerea prealabilă, acolo unde legea o cere;",
         "solvabilitatea autorului și posibilitatea de recuperare efectivă a sumelor.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8417,7 +8417,7 @@ export const despagubiriVatamareCorporalaRo: SubServicePageData = {
         "Numărul zilelor de îngrijiri medicale nu reprezintă durata concediului medical, ci timpul necesar, din punct de vedere medical, pentru vindecare.",
         "Dacă evaluarea inițială nu reflectă situația reală, se poate cere o nouă expertiză sau o completare a concluziilor, cu obiective clare.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8455,7 +8455,7 @@ export const despagubiriVatamareCorporalaRo: SubServicePageData = {
         "O tranzacție corect redactată poate aduce banii rapid, fără ani de proces, dar trebuie să acopere și consecințele viitoare, nu doar cheltuielile de până acum.",
         "Verific fiecare clauză înainte de semnare, ca să nu renunți, fără să îți dai seama, la despăgubiri viitoare.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8556,7 +8556,7 @@ export const loviriVatamareCorporalaRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8615,7 +8615,7 @@ export const loviriVatamareCorporalaRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -8693,7 +8693,7 @@ export const violentaDomesticaRo: SubServicePageData = {
         "Mă interesează în primul rând cronologia incidentului, declarațiile persoanelor implicate, apelurile la 112, mesajele, fotografiile, certificatul medico-legal, martorii și eventualele înregistrări.",
         "În cauzele privind membri de familie există reguli penale specifice, iar legislația privind violența domestică reglementează separat măsurile de protecție.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8750,7 +8750,7 @@ export const violentaDomesticaRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -8829,7 +8829,7 @@ export const lipsireDeLibertateAmenintareRo: SubServicePageData = {
         "Pentru amenințare analizez cuvintele exacte, mesajele sau înregistrările, contextul în care au fost transmise și efectul pe care acuzația susține că l-au produs.",
         "Cele două infracțiuni sunt reglementate distinct prin art. 205 și art. 206 din Codul penal.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -8876,7 +8876,7 @@ export const lipsireDeLibertateAmenintareRo: SubServicePageData = {
           { text: ", strategia trebuie stabilită înainte de declarație, nu după." },
         ],
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -8951,7 +8951,7 @@ export const santajHartuireRo: SubServicePageData = {
         "Într-un dosar de hărțuire mă interesează caracterul și repetitivitatea comportamentului, istoricul relației și toate comunicările dintre persoane.",
         "Șantajul și hărțuirea sunt infracțiuni distincte, reglementate de art. 207 și art. 208 Cod penal.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -9008,7 +9008,7 @@ export const santajHartuireRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -9083,7 +9083,7 @@ export const violAgresiuneSexualaRo: SubServicePageData = {
         "Analizez declarațiile persoanelor implicate, conversațiile înainte și după momentul reclamat, datele telefonului, imaginile disponibile, martorii și documentele medico-legale existente.",
         "Violul și agresiunea sexuală au reglementări distincte în Codul penal, iar legislația acestor infracțiuni a fost modificată în ultimii ani. Încadrarea trebuie verificată după situația concretă și forma actuală a legii.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -9146,7 +9146,7 @@ export const violAgresiuneSexualaRo: SubServicePageData = {
       paragraphs: [
         "Prima declarație poate influența decisiv direcția dosarului, iar în aceste cauze detaliile de cronologie contează enorm.",
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -9220,7 +9220,7 @@ export const omorUcidereDinCulpaRo: SubServicePageData = {
         "Verific actele de urmărire penală disponibile, declarațiile, expertizele și constatările medico-legale, imaginile, obiectele ridicate și succesiunea exactă a evenimentelor.",
         "În funcție de situație, trebuie făcută distincția între omor, formele agravante, loviri sau vătămări care au avut ca urmare decesul și uciderea din culpă. Codul penal reglementează separat aceste ipoteze.",
       ],
-      cta: "☎ Sună-mă acum - 031 632 01 83",
+      cta: "☎ Sună-mă acum - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -9279,7 +9279,7 @@ export const omorUcidereDinCulpaRo: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],

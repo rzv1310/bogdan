@@ -36,7 +36,7 @@ const FAQ = [
   },
   {
     q: "How much does a lawyer cost for an offenses against persons case?",
-    a: "The fee depends on the complexity of the case and the procedural stage. I offer a free initial discussion to assess your situation and a transparent estimated fee, fully set out in the contract. Call me at +40 (31) 632 01 83.",
+    a: "The fee depends on the complexity of the case and the procedural stage. I offer a free initial discussion to assess your situation and a transparent estimated fee, fully set out in the contract. Call me at +40 745 506 443.",
   },
   {
     q: "I am wrongly accused - what can I do?",
@@ -52,7 +52,7 @@ function CallCta({ label = "Call now!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - offenses against persons lawyer`}>
-        <a href="tel:+40316320183">
+        <a href="tel:+40745506443">
           <Phone className="mr-2 h-4 w-4" /> {label}
         </a>
       </Button>
@@ -102,12 +102,12 @@ export default function OffensesAgainstPersons() {
           addressCountry: "RO",
         },
         hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-        telephone: "+40 (31) 632 01 83",
+        telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
           "@type": "Attorney",
           name: "Bogdan Lamatic",
-          telephone: "+40 (31) 632 01 83",
+          telephone: "+40 745 506 443",
         },
       },
       {
@@ -314,7 +314,7 @@ export default function OffensesAgainstPersons() {
           a: item.q.startsWith("How much does") ? (
             <>
               The fee depends on the complexity of the case and the procedural stage. I offer a free initial discussion to assess your situation and a transparent estimated fee, fully set out in the contract. Call me at{" "}
-              <a href="tel:+40316320183" className="text-primary underline underline-offset-2">+40 (31) 632 01 83</a>.
+              <a href="tel:+40745506443" className="text-primary underline underline-offset-2">+40 745 506 443</a>.
             </>
           ) : (
             item.a
@@ -333,7 +333,7 @@ export default function OffensesAgainstPersons() {
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Call now</a>
             </Button>
             <Button asChild variant="outline">
               <a href="mailto:contact@avocatpenalbucuresti.ro">Send email</a>

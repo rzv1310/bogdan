@@ -238,12 +238,12 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           addressCountry: "RO",
         },
         hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-        telephone: "+40 (31) 632 01 83",
+        telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
           "@type": "Attorney",
           name: "Bogdan Lamatic",
-          telephone: "+40 (31) 632 01 83",
+          telephone: "+40 745 506 443",
         },
       },
       {
@@ -261,7 +261,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
   const CallCta = ({ label = callLabel }: { label?: string }) => (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - ${data.serviceName}`}>
-        <a href="tel:+40316320183">
+        <a href="tel:+40745506443">
           <Phone className="mr-2 h-4 w-4" /> {label}
         </a>
       </Button>
@@ -330,7 +330,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           <span>{callout}</span>
           {calloutCta && (
             <Button asChild variant="warning" size="sm" aria-label={`${calloutCta} - ${data.serviceName}`}>
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 <Phone className="mr-1 h-3.5 w-3.5" /> {calloutCta}
               </a>
             </Button>
@@ -397,7 +397,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           <span>{calloutAfterBullets}</span>
           {calloutAfterBulletsCta && (
             <Button asChild variant="warning" size="sm" aria-label={`${calloutAfterBulletsCta} - ${data.serviceName}`}>
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 <Phone className="mr-1 h-3.5 w-3.5" /> {calloutAfterBulletsCta}
               </a>
             </Button>
@@ -439,7 +439,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
         <div className="mt-6 flex flex-wrap items-center gap-3">
           {cta && (
             <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${cta} - ${data.serviceName}`}>
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 {ctaIcon && <Phone className="mr-2 h-4 w-4" />} {cta}
               </a>
             </Button>
@@ -581,7 +581,7 @@ export default function SubServicePage({ data }: { data: SubServicePageData }) {
           <p>{data.contactText}</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 <Phone className="mr-2 h-4 w-4" /> {callLabel}
               </a>
             </Button>

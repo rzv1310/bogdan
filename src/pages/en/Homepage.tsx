@@ -190,7 +190,7 @@ const HomepageEN = () => {
             "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
             "description": "Criminal law firm in Bucharest - defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
             "url": "https://avocatpenalbucuresti.ro/en",
-            "telephone": "+40316320183",
+            "telephone": "+40745506443",
             "email": "contact@avocatpenalbucuresti.ro",
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/cabinet_avocat_bogdan_lamatic.jpeg",
             "priceRange": "$$",
@@ -341,7 +341,7 @@ const HomepageEN = () => {
             "name": "Bogdan Lamatic",
             "jobTitle": "Avocat specializat în drept penal",
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
-            "telephone": "+40316320183",
+            "telephone": "+40745506443",
             "email": "contact@avocatpenalbucuresti.ro",
             "worksFor": { "@id": "https://avocatpenalbucuresti.ro/#legalservice" },
             "affiliation": [
@@ -458,7 +458,7 @@ const HomepageEN = () => {
                 "name": "How much does representation in a criminal case cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Fees depend on the complexity of the case and its procedural stage. During the first consultation (free), I provide an estimate and all costs are transparently listed in the contract. Call me at +40 (31) 632 01 83."
+                  "text": "Fees depend on the complexity of the case and its procedural stage. During the first consultation (free), I provide an estimate and all costs are transparently listed in the contract. Call me at +40 745 506 443."
                 }
               },
               {
@@ -466,7 +466,7 @@ const HomepageEN = () => {
                 "name": "Do you offer a free initial consultation?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, I offer a free initial discussion to evaluate your legal situation and possible defense strategies. Phone +40 (31) 632 01 83."
+                  "text": "Yes, I offer a free initial discussion to evaluate your legal situation and possible defense strategies. Phone +40 745 506 443."
                 }
               },
               {
@@ -482,7 +482,7 @@ const HomepageEN = () => {
                 "name": "How long does a criminal trial take?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "It can vary from a few months to several years, depending on complexity and procedural stages. I will do everything possible to expedite proceedings within the law. Call +40 (31) 632 01 83 for a free consultation."
+                  "text": "It can vary from a few months to several years, depending on complexity and procedural stages. I will do everything possible to expedite proceedings within the law. Call +40 745 506 443 for a free consultation."
                 }
               },
               {
@@ -490,7 +490,7 @@ const HomepageEN = () => {
                 "name": "What are my rights as a suspect or defendant?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You have the right to counsel, to be properly informed of the charges, to consult the file, and to a fair trial. I will explain these in detail in relation to your case. Phone +40 (31) 632 01 83."
+                  "text": "You have the right to counsel, to be properly informed of the charges, to consult the file, and to a fair trial. I will explain these in detail in relation to your case. Phone +40 745 506 443."
                 }
               },
               {
@@ -522,7 +522,7 @@ const HomepageEN = () => {
                 "name": "How can I find a good lawyer in Romania or Bucharest?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "My experience and expertise are detailed here: https://avocatpenalbucuresti.ro/despre-mine Call me for a free consultation at 0316320183."
+                  "text": "My experience and expertise are detailed here: https://avocatpenalbucuresti.ro/despre-mine Call me for a free consultation at +40 745 506 443."
                 }
               },
               {
@@ -530,7 +530,7 @@ const HomepageEN = () => {
                 "name": "Can I avoid a criminal record if I plead guilty?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "In some situations, the law allows penalties without entry in the criminal record (e.g., waiver of prosecution, administrative fine, waiver of applying the penalty). Each case is analyzed individually. Call +40 (31) 632 01 83."
+                  "text": "In some situations, the law allows penalties without entry in the criminal record (e.g., waiver of prosecution, administrative fine, waiver of applying the penalty). Each case is analyzed individually. Call +40 745 506 443."
                 }
               },
               {
@@ -538,7 +538,7 @@ const HomepageEN = () => {
                 "name": "What are my rights if I am detained by the police?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You have the right to be informed of the reasons, to have a chosen or court-appointed lawyer, to request an interpreter if you do not speak Romanian, and to receive medical assistance if needed. You can call me from 6 AM. Phone +40 (31) 632 01 83."
+                  "text": "You have the right to be informed of the reasons, to have a chosen or court-appointed lawyer, to request an interpreter if you do not speak Romanian, and to receive medical assistance if needed. You can call me from 6 AM. Phone +40 745 506 443."
                 }
               },
               {
@@ -554,7 +554,7 @@ const HomepageEN = () => {
                 "name": "How long can a criminal investigation last?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Duration depends on complexity and the amount of evidence; the law does not set maximum terms for each stage. Call me at +40 (31) 632 01 83."
+                  "text": "Duration depends on complexity and the amount of evidence; the law does not set maximum terms for each stage. Call me at +40 745 506 443."
                 }
               },
               {
@@ -570,7 +570,7 @@ const HomepageEN = () => {
                 "name": "What should I do if I disagree with the charges against me?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Contact me immediately at +40 (31) 632 01 83. I will review the charges, prepare the defense, and challenge unlawful evidence or procedures to protect your rights."
+                  "text": "Contact me immediately at +40 745 506 443. I will review the charges, prepare the defense, and challenge unlawful evidence or procedures to protect your rights."
                 }
               },
               {
@@ -578,7 +578,7 @@ const HomepageEN = () => {
                 "name": "I was caught driving under the influence. What do I risk?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Depending on blood alcohol level, the act may be a misdemeanor or a crime. It can lead to a criminal case, license suspension, and even imprisonment. Proper defense can reduce the sanction. Call +40 (31) 632 01 83."
+                  "text": "Depending on blood alcohol level, the act may be a misdemeanor or a crime. It can lead to a criminal case, license suspension, and even imprisonment. Proper defense can reduce the sanction. Call +40 745 506 443."
                 }
               },
               {
@@ -594,7 +594,7 @@ const HomepageEN = () => {
                 "name": "I was accused of theft but there is no clear evidence. How can I defend myself?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Insufficient or illegally obtained evidence may lead to dismissal or acquittal. We will review the case file and make the necessary defenses. Phone +40 (31) 632 01 83."
+                  "text": "Insufficient or illegally obtained evidence may lead to dismissal or acquittal. We will review the case file and make the necessary defenses. Phone +40 745 506 443."
                 }
               },
               {
@@ -602,7 +602,7 @@ const HomepageEN = () => {
                 "name": "What happens if I refuse breathalyzer or drug testing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Refusal is a separate criminal offense and triggers a criminal case. It is more serious than a positive result, so seek legal assistance immediately. Call +40 (31) 632 01 83."
+                  "text": "Refusal is a separate criminal offense and triggers a criminal case. It is more serious than a positive result, so seek legal assistance immediately. Call +40 745 506 443."
                 }
               },
               {
@@ -610,7 +610,7 @@ const HomepageEN = () => {
                 "name": "I am suspected of domestic violence. What are the consequences?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Domestic violence is a criminal offense; protection orders may also be issued. We will build your defense considering witness statements, evidence, and circumstances. Phone +40 (31) 632 01 83."
+                  "text": "Domestic violence is a criminal offense; protection orders may also be issued. We will build your defense considering witness statements, evidence, and circumstances. Phone +40 745 506 443."
                 }
               },
               {
@@ -626,7 +626,7 @@ const HomepageEN = () => {
                 "name": "What should I do if I'm falsely accused?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Contact a lawyer immediately. Call me at +40 (31) 632 01 83. We will challenge the evidence, bring witnesses and independent expert opinions; in some cases we may file a complaint for false accusation."
+                  "text": "Contact a lawyer immediately. Call me at +40 745 506 443. We will challenge the evidence, bring witnesses and independent expert opinions; in some cases we may file a complaint for false accusation."
                 }
               },
               {
@@ -683,7 +683,7 @@ const HomepageEN = () => {
                  <p className="text-lg md:text-xl italic font-light font-signature text-right py-[2px] px-[22px] text-hero-foreground/80 -mt-2">- 18 years by your side !</p>
                </div>
               <div className="mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
-                <a href="tel:+40316320183" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
+                <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
                   </Button>
@@ -756,7 +756,7 @@ const HomepageEN = () => {
             <p className="text-foreground mb-6 max-w-3xl">{t.ctaText}</p>
             <div className="flex justify-center">
               <GeminiButtonEffect>
-                <a href="tel:+40316320183" aria-label={t.ctaLawyerButton}>
+                <a href="tel:+40745506443" aria-label={t.ctaLawyerButton}>
                   <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                     <Phone /> {t.ctaLawyerButton}
                   </Button>
@@ -817,9 +817,9 @@ const HomepageEN = () => {
                 className="relative w-full h-[180px] md:h-[220px]"
               >
                 <div className="flex justify-center">
-                  <a href="tel:+40316320183" aria-label={lang === "ro" ? "Apelează (31) 632 01 83" : "Call (31) 632 01 83"}>
+                  <a href="tel:+40745506443" aria-label={lang === "ro" ? "Apelează +40 745 506 443" : "Call +40 745 506 443"}>
                     <Button variant="premium" size="lg" className="border border-hero-foreground">
-                      <Phone /> (31) 632 01 83
+                      <Phone /> +40 745 506 443
                     </Button>
                   </a>
                 </div>

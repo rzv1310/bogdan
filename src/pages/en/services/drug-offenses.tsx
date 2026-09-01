@@ -57,8 +57,8 @@ export default function DrugOffensesEn() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -211,7 +211,7 @@ export default function DrugOffensesEn() {
               <li>Full representation at all court levels</li>
             </ul>
             <div className="pt-4">
-              <a href="tel:+40316320183" aria-label="Call now">
+              <a href="tel:+40745506443" aria-label="Call now">
                 <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                   <Phone /> Call now
                 </Button>

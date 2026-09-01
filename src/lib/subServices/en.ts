@@ -91,7 +91,7 @@ export const policeProsecutorQuestioningEn: SubServicePageData = {
     },
     {
       q: "How much does assistance at a hearing cost?",
-      a: "It depends on urgency and complexity. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+      a: "It depends on urgency and complexity. I offer a first free assessment discussion. Call +40 745 506 443.",
     },
   ],
   resources: [
@@ -341,7 +341,7 @@ export const diicotLawyerEn: SubServicePageData = {
     },
     {
       q: "How much does defense in a DIICOT case cost?",
-      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 745 506 443.",
     },
   ],
   resources: [
@@ -423,7 +423,7 @@ export const dnaLawyerEn: SubServicePageData = {
     },
     {
       q: "How much does defense in a DNA case cost?",
-      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 (31) 632 01 83.",
+      a: "It depends on the complexity of the case. I offer a first free assessment discussion. Call +40 745 506 443.",
     },
   ],
   resources: [
@@ -4064,7 +4064,7 @@ export const drugPossessionPersonalUseEn: SubServicePageData = {
           paragraphs: [
             "Family can contact me even if they do not have all the file documents. Tell me where the person is, what happened and what documents you currently have.",
           ],
-          cta: "Call now - 031 632 01 83",
+          cta: "Call now - +40 745 506 443",
           ctaIcon: false,
         },
       ],
@@ -4091,7 +4091,7 @@ export const drugPossessionPersonalUseEn: SubServicePageData = {
       paragraphsAfterBullets: [
         "There is no fixed quantity threshold in the law that automatically turns personal-use possession into trafficking. The charge is determined by the overall evidence and the purpose of possession. The High Court emphasised in 2025 the legislator's choice not to set such a threshold.",
       ],
-      cta: "Call now - 031 632 01 83",
+      cta: "Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -4226,7 +4226,7 @@ export const drugPossessionPersonalUseEn: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "Call now - 031 632 01 83",
+      cta: "Call now - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -4340,7 +4340,7 @@ export const organizedCrimeGroupEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call now - +40 745 506 443",
     },
     {
       h2: "What I immediately analyse in an organized crime group charge",
@@ -4363,7 +4363,7 @@ export const organizedCrimeGroupEn: SubServicePageData = {
         "the link between the client and the offenses said to be part of the group's purpose;",
         "whether the evidence describes an organized group or only contacts and isolated activities.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -4579,7 +4579,7 @@ export const organizedCrimeGroupEn: SubServicePageData = {
         "In addition, if the person who committed one of the acts under art. 367 para. (1)-(3) facilitates, during the criminal investigation, the establishment of the truth and the criminal liability of one or more members of the group, the special limits of the penalty are reduced by half.",
         "These provisions have precise conditions and procedural moments. Do not decide on statements or cooperation before you understand the concrete legal effects.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -4626,7 +4626,7 @@ export const organizedCrimeGroupEn: SubServicePageData = {
         "I do not start from the premise that activity attributed to the other persons can automatically be transferred to the client.",
         "I personally handle the case strategy and the representation for which I take the mandate.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -4642,7 +4642,7 @@ export const organizedCrimeGroupEn: SubServicePageData = {
       paragraphsAfterBullets: [
         "send me the document describing the charge and tell me when the next hearing takes place.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
       ctaWhatsApp: true,
       ctaWhatsAppLabel: "Send documents on WhatsApp",
@@ -4794,7 +4794,7 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
         "the chain of custody of the evidence;",
         "the concrete role attributed to each person.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -4916,7 +4916,7 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
           { text: "." },
         ],
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5005,7 +5005,7 @@ export const internationalDrugTraffickingEn: SubServicePageData = {
       paragraphsAfterBullets: [
         "Strategy is built from the case, not from assumptions.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -5138,7 +5138,7 @@ export const assetFreezingOrderEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in a case with a seizure order",
@@ -5157,7 +5157,7 @@ export const assetFreezingOrderEn: SubServicePageData = {
         "whether some assets can be replaced by a bond or other guarantees;",
         "the effects of the measure on company activity and on essential payments.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5240,7 +5240,7 @@ export const assetFreezingOrderEn: SubServicePageData = {
         "incorrect valuation of the assets;",
         "unjustified impact on a company's activity.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5293,7 +5293,7 @@ export const assetFreezingOrderEn: SubServicePageData = {
         "not asking for the measure to be limited when the value exceeds the damage;",
         "third parties not exercising their right to defend their asset in the criminal proceedings.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5417,7 +5417,7 @@ export const confiscationEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in a case with confiscation risk",
@@ -5436,7 +5436,7 @@ export const confiscationEn: SubServicePageData = {
         "the relationship between confiscation and the civil damages claimed;",
         "the valuation of the assets and any calculation errors.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5523,7 +5523,7 @@ export const confiscationEn: SubServicePageData = {
       paragraphsAfterBullets: [
         "Each acquisition should be explained chronologically, with the corresponding documents, and the prosecution's calculation must be verified in detail.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5571,7 +5571,7 @@ export const confiscationEn: SubServicePageData = {
         "I file requests and written conclusions on the confiscation issue;",
         "I argue the position before the court and, where needed, on appeal.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -5695,7 +5695,7 @@ export const drunkDrivingEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in a drunk driving case",
@@ -5714,7 +5714,7 @@ export const drunkDrivingEn: SubServicePageData = {
         "medical conditions or treatments that may influence the result;",
         "the option of a forensic expert report recalculating the blood alcohol level.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5760,7 +5760,7 @@ export const drunkDrivingEn: SubServicePageData = {
         "Depending on the phase, the blood alcohol level at the time of driving may be lower than the laboratory result. This difference is established through a forensic expert report.",
         "The request must be reasoned and supported by concrete data on quantity consumed, timing, food intake and body weight.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5798,7 +5798,7 @@ export const drunkDrivingEn: SubServicePageData = {
         "ignoring the summons for questioning;",
         "driving while the right to drive is suspended.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -5894,7 +5894,7 @@ export const drugDrivingEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in a drug driving case",
@@ -5913,7 +5913,7 @@ export const drugDrivingEn: SubServicePageData = {
         "any related road offences in the same case;",
         "whether a toxicological expert report is appropriate.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -5958,7 +5958,7 @@ export const drugDrivingEn: SubServicePageData = {
         "Certain treatments for pain, anxiety or sleep disorders contain substances that may appear in the analysis.",
         "In such situations it matters whether the treatment was prescribed, whether the recommended dose was respected and whether the patient was informed about the effects on driving.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6076,7 +6076,7 @@ export const leavingAccidentSceneEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in this type of case",
@@ -6095,7 +6095,7 @@ export const leavingAccidentSceneEn: SubServicePageData = {
         "the possibility of covering the damage and its effect on the civil claim;",
         "whether a technical vehicle expert report is appropriate.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6146,7 +6146,7 @@ export const leavingAccidentSceneEn: SubServicePageData = {
         "The offence requires intent. If the driver was not aware of the accident, the subjective element is not met.",
         "This defence is supported by objective data: low speed, the type of damage, background noise, the position of the vehicles and visibility from inside the car.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6227,7 +6227,7 @@ export const refusalBiologicalSamplesEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in refusal cases",
@@ -6246,7 +6246,7 @@ export const refusalBiologicalSamplesEn: SubServicePageData = {
         "the statements of witnesses and officers;",
         "any related charges in the same case.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6291,7 +6291,7 @@ export const refusalBiologicalSamplesEn: SubServicePageData = {
         "The request must come from a competent officer and fall within the situations provided by law.",
         "The person must be informed about the purpose of the sampling and the consequences of refusal. The absence of that information can be invoked in defence.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6364,7 +6364,7 @@ export const drivingWithoutLicenceEn: SubServicePageData = {
         { h3: "You drove a vehicle of another category", paragraphs: ["Driving a vehicle for which you do not hold the corresponding category also falls under art. 335. I check the classification of the vehicle."] },
         { h3: "You hold a licence issued abroad", paragraphs: ["It is examined whether the licence is recognised in Romania, whether it was valid at the time and whether exchange was required."] },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in these cases",
@@ -6383,7 +6383,7 @@ export const drivingWithoutLicenceEn: SubServicePageData = {
         "any related charges in the same case;",
         "your record and conduct, for sentencing purposes.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6428,7 +6428,7 @@ export const drivingWithoutLicenceEn: SubServicePageData = {
         "Not all vehicles require a licence, and some categories have special rules. I check the concrete classification of the vehicle driven.",
         "The offence also requires driving on a public road. Manoeuvres in a private area not open to public traffic are analysed differently.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6519,7 +6519,7 @@ export const roadAccidentWithVictimsEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in your case",
@@ -6538,7 +6538,7 @@ export const roadAccidentWithVictimsEn: SubServicePageData = {
         "any related charges in the same case;",
         "the insurance policy and how the insurer intervenes.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6577,7 +6577,7 @@ export const roadAccidentWithVictimsEn: SubServicePageData = {
         "Speed, visibility distance, reaction time, the possibility of avoiding the impact and the conduct of other road users are analysed.",
         "A well-founded technical vehicle expert report can completely change the picture of the accident dynamics.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6603,7 +6603,7 @@ export const roadAccidentWithVictimsEn: SubServicePageData = {
         "The motor insurer is summoned and is liable within the limits provided by law and by the policy. I assess the extent of cover and the part that could remain your responsibility.",
         "I also review the amounts claimed, as they are frequently disproportionate to the damage actually proven.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6716,7 +6716,7 @@ export const roadAccidentCompensationEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in your case",
@@ -6732,7 +6732,7 @@ export const roadAccidentCompensationEn: SubServicePageData = {
         "the deadlines for joining as civil party;",
         "the insurer's offer, if already made.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6771,7 +6771,7 @@ export const roadAccidentCompensationEn: SubServicePageData = {
         "Moral damages cover physical and psychological suffering, limitations in daily life, aesthetic consequences and the loss of a close person. They are not proven with receipts, but with evidence of the real impact on your life.",
         "In practice, the amounts awarded depend on the severity of the injuries, the recovery period, the remaining consequences and how the claim is argued before the court.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6797,7 +6797,7 @@ export const roadAccidentCompensationEn: SubServicePageData = {
         "Before signing any settlement, check whether the amount also covers future loss, because a signed agreement can close the discussion for good.",
         "I review the offer received and show you the difference between what is proposed and what is commonly obtained in similar situations.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6927,7 +6927,7 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
           ],
         },
       ],
-      ctaAfterSubsections: "☎ Call me now - 031 632 01 83",
+      ctaAfterSubsections: "☎ Call me now - +40 745 506 443",
     },
     {
       h2: "What I review immediately in your case",
@@ -6942,7 +6942,7 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
         "the deadline for the prior complaint, where the law requires it;",
         "the perpetrator's solvency and the chance of actually recovering the money.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -6981,7 +6981,7 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
         "The number of days of medical care is not the length of sick leave, but the time medically necessary for healing.",
         "If the initial assessment does not reflect the real situation, a new expert report or a supplement to the conclusions can be requested, with clear objectives.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7019,7 +7019,7 @@ export const bodilyInjuryCompensationEn: SubServicePageData = {
         "A properly drafted settlement can bring the money quickly, without years of litigation, but it must also cover future consequences, not only past expenses.",
         "I review every clause before signing, so that you do not unknowingly waive future compensation.",
       ],
-      cta: "☎ Call me now - 031 632 01 83",
+      cta: "☎ Call me now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7119,7 +7119,7 @@ export const assaultAndBodilyInjuryEn: SubServicePageData = {
         "A key point is whether the facts described in the complaint match the evidence and whether the legal classification is correct.",
         "Assault and bodily harm are regulated separately by the Criminal Code, and the severity of the injuries can change the classification.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7166,7 +7166,7 @@ export const assaultAndBodilyInjuryEn: SubServicePageData = {
           { text: " stage." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -7239,7 +7239,7 @@ export const domesticViolenceEn: SubServicePageData = {
         "I look at the chronology of the incident, the statements, the emergency calls, messages, photographs, the forensic certificate, witnesses and any recordings.",
         "Cases involving family members have specific criminal rules, and protection measures are regulated separately.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7295,7 +7295,7 @@ export const domesticViolenceEn: SubServicePageData = {
           { text: " in parallel." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -7369,7 +7369,7 @@ export const unlawfulDetentionAndThreatsEn: SubServicePageData = {
         "For threats I analyse the exact words, the messages or recordings, the context and the effect the accusation claims they produced.",
         "The two offences are regulated separately by art. 205 and art. 206 of the Criminal Code.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7416,7 +7416,7 @@ export const unlawfulDetentionAndThreatsEn: SubServicePageData = {
           { text: " stage, the strategy must be set before the statement, not after." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -7486,7 +7486,7 @@ export const blackmailAndHarassmentEn: SubServicePageData = {
         "In a harassment file I look at the nature and repetitiveness of the conduct, the history of the relationship and all communications.",
         "Blackmail and harassment are distinct offences, regulated by art. 207 and art. 208 of the Criminal Code.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7535,7 +7535,7 @@ export const blackmailAndHarassmentEn: SubServicePageData = {
           { text: " stage." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -7605,7 +7605,7 @@ export const rapeAndSexualAssaultEn: SubServicePageData = {
         "I analyse the statements, the conversations before and after the reported moment, phone data, available images, witnesses and the forensic documents.",
         "Rape and sexual assault are regulated distinctly by the Criminal Code, and this legislation has been amended in recent years, so the classification must be checked against the current law.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7654,7 +7654,7 @@ export const rapeAndSexualAssaultEn: SubServicePageData = {
       paragraphs: [
         "The first statement can decisively influence the direction of the file, and in these cases chronology details matter enormously.",
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],
@@ -7727,7 +7727,7 @@ export const homicideAndManslaughterEn: SubServicePageData = {
         "I check the available investigation documents, the statements, the expert and forensic reports, images, seized objects and the exact sequence of events.",
         "Depending on the situation, a distinction must be made between murder, its aggravated forms, violence resulting in death and manslaughter.",
       ],
-      cta: "☎ Call now - 031 632 01 83",
+      cta: "☎ Call now - +40 745 506 443",
       ctaIcon: false,
     },
     {
@@ -7776,7 +7776,7 @@ export const homicideAndManslaughterEn: SubServicePageData = {
           { text: " or another restrictive measure must be prepared separately." },
         ],
       ],
-      cta: "☎ 031 632 01 83",
+      cta: "☎ +40 745 506 443",
       ctaIcon: false,
     },
   ],

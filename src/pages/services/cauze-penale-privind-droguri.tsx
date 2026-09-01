@@ -76,7 +76,7 @@ export default function CauzeDroguri() {
     description: pageDescription,
     url: pageUrl,
     areaServed: "București, România",
-    telephone: "+40 (31) 632 01 83",
+    telephone: "+40 745 506 443",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Strada Colonel Stefan Stoika 22",
@@ -291,7 +291,7 @@ export default function CauzeDroguri() {
             <li>Asigur apărarea la toate instanțele, inclusiv la Înalta Curte.</li>
           </ul>
           <div className="pt-4">
-            <a href="tel:+40316320183" aria-label="Sună acum">
+            <a href="tel:+40745506443" aria-label="Sună acum">
               <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
                 <Phone /> Sună acum
               </Button>
@@ -552,7 +552,7 @@ export default function CauzeDroguri() {
         </CardContent>
       </Card>
       <div className="pt-4">
-        <a href="tel:+40316320183" aria-label="Sună acum">
+        <a href="tel:+40745506443" aria-label="Sună acum">
           <Button variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
             <Phone /> Sună acum
           </Button>
@@ -621,7 +621,7 @@ export default function CauzeDroguri() {
             Experiența mea în dosare penale complexe îți poate oferi șansa unei apărări eficiente și strategice.
           </p>
           <p>📍 Adresă: Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5, Sector 1, București</p>
-          <p>📞 Telefon: +40 (31) 632 01 83</p>
+          <p>📞 Telefon: +40 745 506 443</p>
           <p>📧 E-mail: contact@avocatpenalbucuresti.ro</p>
         </CardContent>
       </Card>
