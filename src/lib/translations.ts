@@ -47,7 +47,7 @@ export const translations = {
       "În drept penal, fiecare oră contează. Sună-mă Azi pentru o evaluare gratuită și confidențială și află cum îți poți apăra libertatea și reputația.",
     callNow: "Sună acum",
     googleRating: "5,0",
-    googleReviews: "din 28 de recenzii Google",
+    googleReviews: "din 29 de recenzii Google",
     ctaLawyerButton: "Vreau avocat!",
     rightsReserved: "Toate drepturile rezervate.",
     servicesTitle: "Cum te pot ajuta în dosare penale în București",
