@@ -14,7 +14,7 @@ function CallCta({ label = "Sună-mă acum!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - avocat spălare de bani`}>
-        <a href="tel:+40316320183">
+        <a href="tel:+40745506443">
           <Phone className="mr-2 h-4 w-4" /> {label}
         </a>
       </Button>
@@ -71,8 +71,8 @@ export default function SpalareDeBani() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -350,7 +350,7 @@ export default function SpalareDeBani() {
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
               <Button asChild variant="premium" className={CTA_CLASS}>
-                <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+                <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
               </Button>
               <Button asChild variant="outline">
                 <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>

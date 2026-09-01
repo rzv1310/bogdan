@@ -131,8 +131,8 @@ export default function MalpracticeEn() {
               url: "https://www.google.com/maps?cid=17818591254142574295",
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -193,8 +193,8 @@ export default function MalpracticeEn() {
           </div>
 
           <div className="mt-6 mb-[30px] flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - 031 632 01 83">
-              <a href="tel:+40316320183">☎ Call now - 031 632 01 83</a>
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Call now - +40 745 506 443">
+              <a href="tel:+40745506443">☎ Call now - +40 745 506 443</a>
             </Button>
           </div>
 

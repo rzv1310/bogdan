@@ -129,7 +129,7 @@ export default function Malpraxis() {
               url: "https://www.google.com/maps?cid=17818591254142574295",
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Attorney", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
+            provider: { "@type": "Attorney", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
           }),
         }}
       />
@@ -193,8 +193,8 @@ export default function Malpraxis() {
           </div>
 
           <div className="mt-[30px] mb-[30px] flex flex-wrap items-center gap-3">
-            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - 031 632 01 83">
-              <a href="tel:+40316320183">☎ Sună-mă acum - 031 632 01 83</a>
+            <Button asChild variant="premium" size="lg" className={HERO_CTA_CLASS} aria-label="☎ Sună-mă acum - +40 745 506 443">
+              <a href="tel:+40745506443">☎ Sună-mă acum - +40 745 506 443</a>
             </Button>
           </div>
 

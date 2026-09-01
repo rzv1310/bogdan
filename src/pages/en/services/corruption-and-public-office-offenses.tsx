@@ -57,8 +57,8 @@ export default function CorruptionPublicOfficeEn() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -157,7 +157,7 @@ export default function CorruptionPublicOfficeEn() {
             </ul>
             <div className="pt-2">
               <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none" aria-label="Call for a quick consultation">
-                <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now</a>
+                <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Call now</a>
               </Button>
             </div>
           </CardContent>

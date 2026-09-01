@@ -189,7 +189,7 @@ export default function Contact() {
             name: "Cabinet Avocat Bogdan Lamatic",
             url: "https://avocatpenalbucuresti.ro/contact",
             areaServed: servedAreasSchema,
-            telephone: "+40 (31) 632 01 83",
+            telephone: "+40 745 506 443",
             email: "contact@avocatpenalbucuresti.ro",
             address: {
               "@type": "PostalAddress",
@@ -203,7 +203,7 @@ export default function Contact() {
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
             openingHours: ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
             sameAs: ["https://avocatpenalbucuresti.ro"],
-            contactPoint: [{ "@type": "ContactPoint", telephone: "+40 (31) 632 01 83", contactType: "customer service" }],
+            contactPoint: [{ "@type": "ContactPoint", telephone: "+40 745 506 443", contactType: "customer service" }],
           }),
         }}
       />
@@ -221,8 +221,8 @@ export default function Contact() {
       <GoogleReviewStars lang="ro" className="mt-3" />
       <div className="mt-5">
         <Button asChild size="lg" variant="premium" className="whitespace-normal h-auto min-h-11 w-full py-2.5 text-sm md:w-auto md:whitespace-nowrap md:h-11 md:py-0 md:text-base">
-          <a href="tel:+40316320183" aria-label="Sună-mă acum - 031 632 01 83">
-            <Phone /> Sună-mă acum - 031 632 01 83
+          <a href="tel:+40745506443" aria-label="Sună-mă acum - +40 745 506 443">
+            <Phone /> Sună-mă acum - +40 745 506 443
           </a>
         </Button>
       </div>

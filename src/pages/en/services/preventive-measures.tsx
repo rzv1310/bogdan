@@ -72,7 +72,7 @@ function CallCta({ label = "Call me now!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - preventive measures lawyer`}>
-        <a href="tel:+40316320183">
+        <a href="tel:+40745506443">
           <Phone className="mr-2 h-4 w-4" /> {label}
         </a>
       </Button>
@@ -149,12 +149,12 @@ export default function PreventiveMeasures() {
           addressCountry: "RO",
         },
         hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-        telephone: "+40 (31) 632 01 83",
+        telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
           "@type": "Attorney",
           name: "Bogdan Lamatic",
-          telephone: "+40 (31) 632 01 83",
+          telephone: "+40 745 506 443",
         },
       },
       {
@@ -234,7 +234,7 @@ export default function PreventiveMeasures() {
               <strong>I prepare the defence</strong> - challenge, rejection, revocation or a lighter measure.
             </li>
           </ol>
-          <CallCta label="Call now - 031 632 01 83" />
+          <CallCta label="Call now - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -260,7 +260,7 @@ export default function PreventiveMeasures() {
           <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
             <h3 className="text-lg font-semibold">Not sure whether it is police custody, judicial control or a detention proposal?</h3>
             <p className="mt-1">You do not need to know the legal terms. Tell me what happened and I will tell you what needs to be checked immediately.</p>
-            <CallCta label="Call now - 031 632 01 83" />
+            <CallCta label="Call now - +40 745 506 443" />
           </div>
         </CardContent>
       </Card>
@@ -278,7 +278,7 @@ export default function PreventiveMeasures() {
           <div className="mt-2 flex flex-wrap items-center gap-3 rounded-r-md border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground">
             <span className="font-semibold">Don't have all the documents?</span>
             <Button asChild variant="warning" size="sm" aria-label="Call anyway - Preventive measures lawyer Bucharest">
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 <Phone className="mr-1 h-3.5 w-3.5" /> Call anyway
               </a>
             </Button>
@@ -310,7 +310,7 @@ export default function PreventiveMeasures() {
           <p>
             <strong>Discretion and confidentiality.</strong> Discussions with the lawyer and the information received in the exercise of the profession are protected by the rules on professional secrecy.
           </p>
-          <CallCta label="Call now - 031 632 01 83" />
+          <CallCta label="Call now - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -390,7 +390,7 @@ export default function PreventiveMeasures() {
           <p>
             <strong>The measure was ordered or extended recently.</strong> Tell me the date and time of the pronouncement or communication. In certain procedures the deadline for the remedy is only 48 hours.
           </p>
-          <CallCta label="Call now - 031 632 01 83" />
+          <CallCta label="Call now - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -421,7 +421,7 @@ export default function PreventiveMeasures() {
           <p className="font-semibold">If it is an urgent situation, say from the start: „It is about a preventive measure."</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Call now - 031 632 01 83</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Call now - +40 745 506 443</a>
             </Button>
             <WhatsAppDocsCta lang="en" />
             <Button asChild variant="outline">

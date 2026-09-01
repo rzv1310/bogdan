@@ -103,7 +103,7 @@ export default function TermeniSiConditii() {
         </p>
         <p className="font-semibold">Contact</p>
         <p>
-          Pentru întrebări privind acești Termeni: București, Sector 1, Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 (31) 632 01 83 • E‑mail: contact@avocatpenalbucuresti.ro
+          Pentru întrebări privind acești Termeni: București, Sector 1, Str. Ștefan Stoika nr. 22, bl. 17B, sc. 1, et. 1, ap. 5 • Tel.: +40 745 506 443 • E‑mail: contact@avocatpenalbucuresti.ro
         </p>
       </div>
       </div>

@@ -11,8 +11,8 @@ interface ServiceHeroCtaProps {
 export function ServiceHeroCta({ lang, ariaLabel: _ariaLabel }: ServiceHeroCtaProps) {
   const label =
     lang === "en"
-      ? "☎ Call now - 031 632 01 83"
-      : "☎ Sună-mă acum - 031 632 01 83";
+      ? "☎ Call now - +40 745 506 443"
+      : "☎ Sună-mă acum - +40 745 506 443";
   return (
     <>
       <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -23,7 +23,7 @@ export function ServiceHeroCta({ lang, ariaLabel: _ariaLabel }: ServiceHeroCtaPr
           className={HERO_CTA_CLASS}
           aria-label={label}
         >
-          <a href="tel:+40316320183">{label}</a>
+          <a href="tel:+40745506443">{label}</a>
         </Button>
       </div>
 

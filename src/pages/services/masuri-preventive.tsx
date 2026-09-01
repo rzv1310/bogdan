@@ -72,7 +72,7 @@ function CallCta({ label = "Sună-mă acum!" }: { label?: string }) {
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Button asChild variant="premium" size="lg" className={CTA_CLASS} aria-label={`${label} - avocat măsuri preventive`}>
-        <a href="tel:+40316320183">
+        <a href="tel:+40745506443">
           <Phone className="mr-2 h-4 w-4" /> {label}
         </a>
       </Button>
@@ -149,12 +149,12 @@ export default function MasuriPreventive() {
           addressCountry: "RO",
         },
         hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-        telephone: "+40 (31) 632 01 83",
+        telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
           "@type": "Attorney",
           name: "Bogdan Lamatic",
-          telephone: "+40 (31) 632 01 83",
+          telephone: "+40 745 506 443",
         },
       },
       {
@@ -234,7 +234,7 @@ export default function MasuriPreventive() {
               <strong>Pregătesc apărarea</strong> - contestare, respingere, revocare sau măsură mai ușoară.
             </li>
           </ol>
-          <CallCta label="Sună acum - 031 632 01 83" />
+          <CallCta label="Sună acum - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -260,7 +260,7 @@ export default function MasuriPreventive() {
           <div className="rounded-lg border border-accent bg-[#faf0e6] px-5 py-4">
             <h3 className="text-lg font-semibold">Nu știi dacă este reținere, control judiciar sau propunere de arestare?</h3>
             <p className="mt-1">Nu trebuie să cunoști termenii juridici. Spune-mi ce s-a întâmplat și îți spun ce trebuie verificat imediat.</p>
-            <CallCta label="Sună acum - 031 632 01 83" />
+            <CallCta label="Sună acum - +40 745 506 443" />
           </div>
         </CardContent>
       </Card>
@@ -278,7 +278,7 @@ export default function MasuriPreventive() {
           <div className="mt-2 flex flex-wrap items-center gap-3 rounded-r-md border-l-4 border-primary bg-primary/10 px-4 py-3 text-foreground">
             <span className="font-semibold">Nu ai toate documentele?</span>
             <Button asChild variant="warning" size="sm" aria-label="Sună oricum - Avocat măsuri preventive București">
-              <a href="tel:+40316320183">
+              <a href="tel:+40745506443">
                 <Phone className="mr-1 h-3.5 w-3.5" /> Sună oricum
               </a>
             </Button>
@@ -310,7 +310,7 @@ export default function MasuriPreventive() {
           <p>
             <strong>Discreție și confidențialitate.</strong> Discuțiile cu avocatul și informațiile primite în exercitarea profesiei sunt protejate de regulile privind secretul profesional.
           </p>
-          <CallCta label="Sună acum - 031 632 01 83" />
+          <CallCta label="Sună acum - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -390,7 +390,7 @@ export default function MasuriPreventive() {
           <p>
             <strong>Măsura a fost dispusă sau prelungită recent.</strong> Spune-mi data și ora pronunțării sau comunicării. În anumite proceduri termenul de atac este de numai 48 de ore.
           </p>
-          <CallCta label="Sună acum - 031 632 01 83" />
+          <CallCta label="Sună acum - +40 745 506 443" />
         </CardContent>
       </Card>
 
@@ -421,7 +421,7 @@ export default function MasuriPreventive() {
           <p className="font-semibold">Dacă este o situație urgentă, spune de la început: „Este vorba despre o măsură preventivă.”</p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className={CTA_CLASS}>
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum - 031 632 01 83</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum - +40 745 506 443</a>
             </Button>
             <WhatsAppDocsCta lang="ro" />
             <Button asChild variant="outline">

@@ -55,8 +55,8 @@ export default function MoneyLaunderingEn() {
               url: "https://www.google.com/maps?cid=17818591254142574295"
             },
             hasMap: "https://www.google.com/maps?cid=17818591254142574295",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 (31) 632 01 83" },
-            telephone: "+40 (31) 632 01 83",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
+            telephone: "+40 745 506 443",
           }),
         }}
       />
@@ -122,7 +122,7 @@ export default function MoneyLaunderingEn() {
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40316320183" aria-label="Call now">
+              <a href="tel:+40745506443" aria-label="Call now">
                 <Phone className="mr-2" /> Call now
               </a>
             </Button>
@@ -325,7 +325,7 @@ export default function MoneyLaunderingEn() {
             <p>If you are under investigation, act quickly: document the lawful origin of assets, consult a specialist and prepare your defense early in the investigation.</p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <Button asChild variant="premium" size="lg" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-                <a href="tel:+40316320183" aria-label="Call now for a confidential review">
+                <a href="tel:+40745506443" aria-label="Call now for a confidential review">
                   <Phone className="mr-2" /> Call now
                 </a>
               </Button>

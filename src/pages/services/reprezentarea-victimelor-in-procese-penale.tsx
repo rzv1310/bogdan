@@ -86,7 +86,7 @@ export default function ReprezentareaVictimelor() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40 (31) 632 01 83"
+                  "telephone": "+40 745 506 443"
                 }
               })
             }}
@@ -339,7 +339,7 @@ export default function ReprezentareaVictimelor() {
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
             <Button asChild variant="premium" className="relative overflow-hidden border border-hero-foreground after:content-[''] after:absolute after:inset-[2px] after:rounded-md after:border after:border-hero-foreground after:pointer-events-none">
-              <a href="tel:+40316320183"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
+              <a href="tel:+40745506443"><Phone className="mr-2 h-4 w-4" /> Sună acum</a>
             </Button>
             <Button asChild variant="outline">
               <a href="mailto:contact@avocatpenalbucuresti.ro">Trimite email</a>
