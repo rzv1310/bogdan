@@ -26,7 +26,7 @@ export const translations = {
       "raspundere-penala-incidente-locul-de-munca": "Răspundere penală pentru incidente la locul de muncă",
       "reprezentarea-victimelor-in-procese-penale": "Reprezentarea victimelor în procese penale",
     },
-    heroTitle: "Avocat Drept Penal Bucuresti\nBogdan Lamatic",
+    heroTitle: "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
     heroQuote: "„Încrederea reciprocă salvează!\nÎți ascult povestea.\nÎți înțeleg temerile.\nÎți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Vei primi:",
