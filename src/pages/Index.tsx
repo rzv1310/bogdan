@@ -614,7 +614,7 @@ const Index = () => {
           {
             "@type": "WebSite",
             "@id": "https://avocatpenalbucuresti.ro/#website",
-            "name": "Avocat Drept Penal Bucuresti Bogdan Lamatic",
+            "name": "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
             "url": "https://avocatpenalbucuresti.ro/",
             "description": "Site oficial avocat Bogdan Lamatic - specializat în apărare penală, criminalitate economică și investigații crypto în București",
             "inLanguage": "ro-RO",

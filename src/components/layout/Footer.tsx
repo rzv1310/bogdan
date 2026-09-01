@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} className="hover:underline">{lang === "en" ? "Criminal Defense Lawyer Bucharest Bogdan Lamatic" : "Avocat Drept Penal Bucuresti Bogdan Lamatic"}</Link></h2>
+            <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} className="hover:underline">{lang === "en" ? "Criminal Defense Lawyer Bucharest Bogdan Lamatic" : "Avocat Bogdan Lamatic - Drept Penal Bucuresti"}</Link></h2>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
