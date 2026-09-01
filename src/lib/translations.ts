@@ -138,7 +138,7 @@ export const translations = {
       "In criminal law, every hour counts. Call me today for a free and confidential evaluation and learn how to protect your freedom and reputation.",
     callNow: "Call now",
     googleRating: "5.0",
-    googleReviews: "from 28 Google reviews",
+    googleReviews: "from 29 Google reviews",
     ctaLawyerButton: "I need a lawyer!",
     rightsReserved: "All rights reserved.",
     servicesTitle: "How I can help",
