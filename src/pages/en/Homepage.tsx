@@ -313,7 +313,7 @@ const HomepageEN = () => {
               "@type": "AggregateRating",
               "ratingValue": 5,
               "bestRating": 5,
-              "reviewCount": 29
+              "reviewCount": 31
             },
             "review": googleReviews.map((review) => ({
               "@type": "Review",
