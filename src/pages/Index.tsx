@@ -358,7 +358,7 @@ const Index = () => {
             "@id": "https://avocatpenalbucuresti.ro/#legalservice",
             "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
-            "name": "Avocat Drept Penal București Bogdan Lamatic",
+            "name": "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
             "description": "Cabinet avocat penal București - Apărare în criminalitate economică, corupție, cauze rutiere, investigații crypto și malpraxis",
             "url": "https://avocatpenalbucuresti.ro/",
             "telephone": "+40745506443",
@@ -590,7 +590,7 @@ const Index = () => {
             ],
             "workLocation": {
               "@type": "Place",
-              "name": "Avocat Drept Penal București Bogdan Lamatic",
+              "name": "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Strada Colonel Stefan Stoika 22",
