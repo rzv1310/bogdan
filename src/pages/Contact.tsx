@@ -409,6 +409,16 @@ export default function Contact() {
           </CardContent>
         </Card>
       </div>
+      <div className="mt-8 overflow-hidden rounded-lg">
+        <iframe
+          title="Avocat Bogdan Lamatic - Drept Penal București"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39879.919760396675!2d26.0242759!3d44.4401054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201c1d1905a29%3A0xf7485a56b50cded7!2sAvocat%20Bogdan%20Lamatic!5e1!3m2!1sro!2sro!4v1787900565947!5m2!1sro!2sro"
+          className="w-full h-[320px] md:h-[450px] border-0"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
+      </div>
       <ServicesQuickLinks />
       <Breadcrumb className="mt-8">
         <BreadcrumbList>
