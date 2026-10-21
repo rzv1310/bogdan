@@ -16,3 +16,13 @@ status = 200
 from = "/en/*"
 to = "/index.html"
 status = 200
+
+[[redirects]]
+from = "/feed"
+to = "/feed.xml"
+status = 301
+
+[[headers]]
+for = "/feed.xml"
+  [headers.values]
+  Content-Type = "application/rss+xml; charset=utf-8"
