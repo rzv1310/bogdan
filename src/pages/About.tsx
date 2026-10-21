@@ -108,7 +108,7 @@ export default function About() {
         ],
         "workLocation": {
           "@type": "Place",
-          "name": "Avocat Drept Penal București Bogdan Lamatic",
+          "name": "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Strada Colonel Stefan Stoika 22",
