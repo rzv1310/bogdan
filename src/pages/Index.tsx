@@ -884,7 +884,7 @@ const Index = () => {
                   </>
                 );
               })()}
-              {lang === "ro" && <p className="md:hidden mt-[21px] -mb-3 text-center font-semibold text-hero-foreground">Ești citat, cercetat sau reținut?</p>}
+              {lang === "ro" && <p className="md:hidden mt-[19px] -mb-[10px] text-center font-semibold text-hero-foreground">Ești citat, cercetat sau reținut?</p>}
               <div className={`${lang === "ro" ? "mt-0" : "mt-[21px]"} md:mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]`}>
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
