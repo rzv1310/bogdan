@@ -832,7 +832,7 @@ const Index = () => {
               <h1 className="text-[26px] md:text-4xl font-semibold leading-tight tracking-tight mb-6 py-0 whitespace-pre-line">
                 {t.heroTitle}
               </h1>
-              <div className="md:hidden flex justify-center -mt-3 mb-2">
+              <div className="md:hidden flex justify-start -mt-3 mb-2">
                 <div className="flex items-center gap-1.5 text-sm text-hero-foreground/90">
                   <span className="font-semibold">{t.googleRating}</span>
                   <span className="flex text-yellow-400">
@@ -885,7 +885,7 @@ const Index = () => {
                 );
               })()}
               {lang === "ro" && <p className="md:hidden mt-[21px] -mb-3 text-center font-semibold text-hero-foreground">Ești citat, cercetat sau reținut?</p>}
-              <div className="mt-[21px] md:mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
+              <div className={`${lang === "ro" ? "mt-0" : "mt-[21px]"} md:mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]`}>
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
                     <Phone /> {t.callNow}
