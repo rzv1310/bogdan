@@ -832,6 +832,17 @@ const Index = () => {
               <h1 className="text-[26px] md:text-4xl font-semibold leading-tight tracking-tight mb-6 py-0 whitespace-pre-line">
                 {t.heroTitle}
               </h1>
+              <div className="md:hidden flex justify-center -mt-3 mb-2">
+                <div className="flex items-center gap-1.5 text-sm text-hero-foreground/90">
+                  <span className="font-semibold">{t.googleRating}</span>
+                  <span className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                  </span>
+                  <span>{t.googleReviews}</span>
+                </div>
+              </div>
               {/* Mobile-only image right after H1 */}
               <div className="mt-4 block md:hidden relative max-w-[68%] mx-auto">
                 <Legal500BadgeStrip />
@@ -849,8 +860,8 @@ const Index = () => {
                     const parts = t.heroQuote.split("\n");
                     return (
                       <>
-                        <p className="mb-2">{parts[0]}</p>
-                        <p className="mb-2">{[parts[1], parts[2]].filter(Boolean).join(" ")}</p>
+                        {lang !== "ro" && <p className="mb-2">{parts[0]}</p>}
+                        <p className="mb-2">{lang === "ro" ? "„" : ""}{[parts[1], parts[2]].filter(Boolean).join(" ")}</p>
                         <p className="mb-0">{parts[3]}</p>
                       </>
                     );
@@ -873,6 +884,7 @@ const Index = () => {
                   </>
                 );
               })()}
+              {lang === "ro" && <p className="md:hidden mt-[21px] -mb-3 text-center font-semibold text-hero-foreground">Ești citat, cercetat sau reținut?</p>}
               <div className="mt-[21px] md:mt-6 flex md:justify-start justify-center mx-[24px] px-0 py-[11px]">
                 <a href="tel:+40745506443" aria-label={lang === "ro" ? "Sună acum" : "Call now"}>
                   <Button variant="static" size="lg" className="border border-hero-foreground">
@@ -880,7 +892,8 @@ const Index = () => {
                   </Button>
                 </a>
               </div>
-              <div className="flex md:justify-start justify-center mx-[24px] px-0 -mt-2 mb-2">
+              {lang === "ro" && <p className="md:hidden -mt-2 mb-2 text-center text-sm text-hero-foreground/90">Consultație telefonică gratuită</p>}
+              <div className="hidden md:flex md:justify-start justify-center mx-[24px] px-0 -mt-2 mb-2">
                 <div className="flex items-center gap-1.5 text-sm text-hero-foreground/90">
                   <span className="font-semibold">{t.googleRating}</span>
                   <span className="flex text-yellow-400">
