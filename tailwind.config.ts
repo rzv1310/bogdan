@@ -20,7 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				signature: ['"Sacramento"', 'cursive'],
-				inter: ['Inter', 'system-ui', 'sans-serif'],
+				inter: ['Inter', 'Inter Fallback', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
