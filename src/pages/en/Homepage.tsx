@@ -412,6 +412,7 @@ const HomepageEN = () => {
             },
             "sameAs": [
               "https://www.baroul-bucuresti.ro/avocat/08624/lamatic-bogdan-constantin",
+              "https://www.avocat365.ro/avocat/lamatic-bogdan-constantin",
               "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
               "https://profesionisti.juridice.ro/bogdan-lamatic",
               "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
