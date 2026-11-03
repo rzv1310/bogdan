@@ -259,7 +259,7 @@ export default function About() {
         <main className="mt-6 space-y-8">
           <header>
             <p className="text-sm text-muted-foreground">Curriculum vitae</p>
-            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - Despre mine</h1>
+            <h1 className="text-2xl font-semibold tracking-tight">Despre mine</h1>
           </header>
 
           <section aria-labelledby="personal-info-ro" className="grid gap-4">
