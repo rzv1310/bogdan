@@ -1,14 +1,15 @@
-## Where "Constantin" still appears
+## Result: yes, "Constantin" appears in the hidden Google data (schema)
 
-The name "Constantin" no longer appears in any text visitors see. It still appears in 4 places in the hidden data Google reads (not visible on the page):
+It appears in exactly 4 places, all in the hidden data Google reads:
 
-1. "Despre mine" page (RO and EN): your full name, "Bogdan-Constantin Lamatic"
-2. "Despre mine" page (RO and EN): your first name, "Bogdan-Constantin"
-3. "Despre mine" page (RO and EN): the page name, "Despre mine - Bogdan-Constantin Lamatic"
-4. Home page (RO): your full name, "Bogdan-Constantin Lamatic"
+- **"Despre mine" page (RO and EN):**
+  - full name: "Bogdan-Constantin Lamatic"
+  - first name: "Bogdan-Constantin"
+  - page name: "Despre mine - Bogdan-Constantin Lamatic"
+- **Home page (RO):** full name "Bogdan-Constantin Lamatic"
 
-## Proposal
+It doesn't appear anywhere else: not in the visible text, the menus, the footer, the other pages, the English home page, or the files for AI and the site map.
 
-Change all of these to "Bogdan Lamatic" (and the first name to "Bogdan"), so they match the visible text. I will leave the last name "Lamatic" as it is.
+## If you approve
 
-Note: some lawyers keep their full legal name in the hidden data so Google links it to their official listing with the bar association. If you'd like to keep "Bogdan-Constantin" there, skip this plan and nothing will change.
+Change these 4 to "Bogdan Lamatic" (first name "Bogdan"), so they match the visible text. If you'd rather keep the full name in the hidden data, skip this plan and nothing will change.
