@@ -9,8 +9,4 @@ Yes, it's a good idea: "Bogdan Lamatic" everywhere on the site, plus a link in t
 
 1. In the 4 places in the hidden data (Despre mine RO and EN, Home page RO), the name becomes "Bogdan Lamatic" and the first name "Bogdan".
 2. I add alternateName "Bogdan-Constantin Lamatic" to your profile data.
-3. I add the link to your Baroul București page to sameAs, once you send it to me.
-
-## What I need from you
-
-The link to your page on the Baroul București website (or in the UNBR register). If you don't have it handy, I'll make steps 1 and 2 now and add the link later.
+3. I add https://www.baroul-bucuresti.ro/avocat/08624/lamatic-bogdan-constantin to sameAs, next to the social media links, everywhere your profile appears in the hidden data.
