@@ -339,6 +339,7 @@ const HomepageEN = () => {
             "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
             "url": "https://avocatpenalbucuresti.ro/despre-mine",
             "name": "Bogdan Lamatic",
+            "alternateName": "Bogdan-Constantin Lamatic",
             "jobTitle": "Avocat specializat în drept penal",
             "image": "https://avocatpenalbucuresti.ro/lovable-uploads/49019fba-928b-46d2-b2b3-fedace8aacf9.png",
             "telephone": "+40745506443",
