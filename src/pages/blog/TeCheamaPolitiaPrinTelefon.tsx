@@ -90,7 +90,34 @@ export default function TeCheamaPolitiaPrinTelefon() {
             </Card>
           </section>
 
-          {/*__SECTIONS__*/}
+          <section className="mb-10">
+            <h2 className="text-xl font-semibold mb-3 text-foreground">Este valabilă citarea telefonică dacă nu ai primit o citație pe hârtie?</h2>
+            <p className="mb-3">
+              <strong>Da, în procesul penal, citarea se poate face și prin telefon.</strong> Art. 257 alin. (1) din Codul de procedură penală permite citarea prin notă telefonică. Organul judiciar consemnează această modalitate într-un proces-verbal. Așadar, dacă ai fost citat telefonic, poți avea obligația să te prezinți chiar dacă nu ai primit și un plic acasă.
+            </p>
+            <p>
+              Contează însă ce ți s-a comunicat efectiv. Dacă apelantul ți-a spus doar „treceți pe la noi” și a închis fără să stabilească o dată sau un loc, contactează unitatea și cere detaliile chemării. Dacă ai deja o dată stabilită, dar un motiv serios te împiedică să ajungi, anunță organul care te-a citat, explică situația și cere confirmarea unei alte date. Simpla cerere de reprogramare nu schimbă automat termenul. În condițiile art. 265 alin. (1), absența nejustificată a unei persoane citate poate duce la emiterea unui mandat de aducere dacă audierea ori prezența ei este necesară.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-xl font-semibold mb-3 text-foreground">Ce drepturi ai la audiere ca martor, suspect sau persoană vătămată?</h2>
+            <p className="mb-3">
+              <strong>Dacă ești chemat ca martor</strong>, regula este să te prezinți și să spui adevărul despre ceea ce cunoști. Poate ai văzut cine era la volan, dar nu și momentul impactului. Spune exact ce ai văzut și precizează ce ai aflat ulterior de la altcineva. Dacă răspunsul la o întrebare ar dezvălui fapte care te-ar incrimina, ai dreptul să nu le declari. Organul judiciar trebuie să îți comunice acest drept înaintea fiecărei audieri. Dacă vii însoțit de avocat, acesta poate asista la audiere, potrivit art. 118.
+            </p>
+            <p className="mb-3">
+              <strong>Dacă ești suspect</strong>, înainte de prima audiere trebuie să afli ce faptă ți se impută și care este încadrarea ei juridică. Poți discuta cu un avocat și poți alege să nu dai declarații. Exercitarea acestui drept nu poate avea consecințe defavorabile pentru tine. Dacă alegi să dai o declarație, ea poate fi folosită ca probă inclusiv împotriva ta. Aceste garanții rezultă din art. 78, 83, 108 și 109.
+            </p>
+            <p className="mb-3">
+              <strong>Dacă ești persoană vătămată</strong>, ai dreptul să fii ascultat, să propui probe și să fii asistat de avocat. De exemplu, dacă ai reclamat o înșelăciune, poți indica mesajele primite și documentele de plată care susțin relatarea ta. Art. 81 și 93 reglementează aceste drepturi.
+            </p>
+            <p className="mb-3">
+              Dacă ai fost chemat la audieri în București și ai nevoie să îți clarifici situația înainte de a da o declarație, îl poți contacta pe <strong>avocatul Bogdan Lamatic</strong> la <a href="tel:+40745506443" className="font-semibold underline">+40 745 506 443</a>. Pentru consultație, pregătește detaliile pe care le-ai notat în timpul apelului și citația, dacă ai primit una.
+            </p>
+            <p className="text-sm mt-6">
+              <em>Sursă legislativă: <a href="https://legislatie.just.ro/Public/DetaliiDocument/120611" target="_blank" rel="noopener noreferrer" className="underline">Codul de procedură penală, Legea nr. 135/2010</a>.</em>
+            </p>
+          </section>
         </article>
 
         <section className="mt-6 mb-8 max-w-3xl">
