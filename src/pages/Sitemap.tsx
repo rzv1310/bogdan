@@ -16,9 +16,12 @@ export default function Sitemap() {
     { url: "/", title: "Pagina Principală - Avocat Penal București", icon: Home },
     { url: "/despre-mine", title: "Despre Mine - Avocat Bogdan Lamatic", icon: User },
     { url: "/contact", title: "Contact - Consultații Juridice", icon: Phone },
-    { url: "/blog", title: "Resurse - Articole Juridice", icon: FileText },
-    { url: "/calculator-despagubiri", title: "Calculator Despăgubiri", icon: FileText },
-    { url: "/te-cheama-politia-prin-telefon", title: "Te cheamă poliția prin telefon?", icon: FileText },
+  ];
+
+  const resourcePages = [
+    { url: "/blog", title: "Resurse - Articole Juridice" },
+    { url: "/calculator-despagubiri", title: "Calculator Despăgubiri" },
+    { url: "/te-cheama-politia-prin-telefon", title: "Te cheamă poliția prin telefon?" },
   ];
 
   const services = [
@@ -200,6 +203,27 @@ export default function Sitemap() {
 
           {/* Medium & Low Priority */}
           <section className="space-y-8">
+            {/* Resources */}
+            <div className="bg-hero-foreground/3 rounded-lg p-6 border border-hero-foreground/10">
+              <div className="flex items-center gap-3 mb-6">
+                <FileText className="h-6 w-6 text-accent/80" />
+                <h2 className="text-2xl font-semibold">Resurse</h2>
+                <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded text-sm font-medium">Prioritate Medie</span>
+              </div>
+              <ul className="space-y-2">
+                {resourcePages.map((page) => (
+                  <li key={page.url}>
+                    <Link
+                      to={page.url}
+                      className="text-hero-foreground/80 hover:text-accent/80 transition-colors duration-200 hover:underline block text-sm"
+                    >
+                      {page.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* English Pages */}
             <div className="bg-hero-foreground/3 rounded-lg p-6 border border-hero-foreground/10">
               <div className="flex items-center gap-3 mb-6">
