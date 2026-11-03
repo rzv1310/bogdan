@@ -210,7 +210,7 @@ const HomepageEN = () => {
               "postalCode": "012244",
               "addressCountry": "RO"
             },
-            "hasMap": "https://www.google.com/maps?cid=17818591254142574295",
+            "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 44.4572663,
@@ -412,7 +412,7 @@ const HomepageEN = () => {
             "sameAs": [
               "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
               "https://profesionisti.juridice.ro/bogdan-lamatic",
-              "https://www.google.com/maps?cid=17818591254142574295",
+              "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
               "https://www.instagram.com/bogdanlamatic/",
               "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
               "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
@@ -433,7 +433,7 @@ const HomepageEN = () => {
                 "latitude": 44.4572663,
                 "longitude": 26.0635712
               },
-              "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+              "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc"
             }
           },
           {
