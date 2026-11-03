@@ -68,7 +68,9 @@ export default function TeCheamaPolitiaPrinTelefon() {
 
           <div className="mb-10 flex justify-center">
             <video
-              className="w-full max-w-[340px] aspect-[9/16] rounded-2xl shadow-lg bg-black"
+              className="block w-[300px] max-w-full h-auto aspect-[9/16] rounded-2xl shadow-lg bg-black"
+              width={720}
+              height={1280}
               src={VIDEO_URL}
               poster={POSTER_URL}
               controls
