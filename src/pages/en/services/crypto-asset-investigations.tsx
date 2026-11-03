@@ -72,9 +72,9 @@ export default function CryptoInvestigationsEn() {
               addressRegion: "Bucuresti",
               postalCode: "012244",
               addressCountry: "RO",
-              url: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc"
+              url: "https://www.google.com/maps?cid=17818591254142574295"
             },
-            hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
+            hasMap: "https://www.google.com/maps?cid=17818591254142574295",
             provider: {
               "@type": "Person",
               name: "Bogdan Lamatic",

@@ -148,7 +148,7 @@ export default function PreventiveMeasures() {
           postalCode: "012244",
           addressCountry: "RO",
         },
-        hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
+        hasMap: "https://www.google.com/maps?cid=17818591254142574295",
         telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
