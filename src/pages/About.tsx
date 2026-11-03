@@ -1,3 +1,4 @@
+import { SocialLinks } from "@/components/layout/SocialLinks";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -273,8 +274,8 @@ export default function About() {
                 <dd className="font-medium"><a href="https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, București 012244</a></dd>
               </div>
               <div>
-                <dt className="text-sm text-muted-foreground">LinkedIn</dt>
-                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">LinkedIn - av. Bogdan Lamatic</a></dd>
+                <dt className="text-sm text-muted-foreground">Social media</dt>
+                <dd><SocialLinks className="flex flex-wrap gap-4 mt-1" linkClassName="text-primary hover:opacity-70 transition-opacity" /></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
