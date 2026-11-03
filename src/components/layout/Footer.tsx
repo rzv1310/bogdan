@@ -5,7 +5,7 @@ import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Linkedin, Twitter, Instagram, Facebook, Music, Pin, Cookie, ChevronDown } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Facebook, Youtube, Music, Pin, Cookie, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function Footer() {
@@ -204,6 +204,14 @@ export default function Footer() {
                   aria-label="Facebook"
                 >
                   <Facebook size={24} />
+                </a>
+                <a 
+                  href="https://www.youtube.com/@AvocatBogdanLamatic-DreptPenal"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <Youtube size={24} />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@avocatdreptpenal"
