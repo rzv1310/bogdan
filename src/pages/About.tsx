@@ -195,7 +195,7 @@ export default function About() {
         <main className="mt-6 space-y-8">
           <header>
             <p className="text-sm text-muted-foreground">Curriculum vitae</p>
-            <h1 className="text-2xl font-semibold tracking-tight">Bogdan Lamatic - About Me</h1>
+            <h1 className="text-2xl font-semibold tracking-tight">About Me</h1>
           </header>
 
           <section aria-labelledby="personal-info" className="grid gap-4">
@@ -210,8 +210,8 @@ export default function About() {
                 <dd className="font-medium"><a href="https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, Bucuresti 012244</a></dd>
               </div>
               <div>
-                <dt className="text-sm text-muted-foreground">LinkedIn</dt>
-                <dd className="font-medium"><a href="https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8/" target="_blank" rel="noopener noreferrer" className="text-primary underline">LinkedIn Profile - Attorney Bogdan Lamatic</a></dd>
+                <dt className="text-sm text-muted-foreground">Social media</dt>
+                <dd><SocialLinks className="flex flex-wrap gap-4 mt-1" linkClassName="text-primary hover:opacity-70 transition-opacity" /></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">E-mail</dt>
