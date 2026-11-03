@@ -17,8 +17,9 @@ export default function About() {
       {
         "@type": "Person",
         "@id": "https://avocatpenalbucuresti.ro/despre-mine#person",
-        "name": "Bogdan-Constantin Lamatic",
-        "givenName": "Bogdan-Constantin",
+        "name": "Bogdan Lamatic",
+        "alternateName": "Bogdan-Constantin Lamatic",
+        "givenName": "Bogdan",
         "familyName": "Lamatic",
         "jobTitle": "Avocat specializat în drept penal",
         "url": "https://avocatpenalbucuresti.ro/despre-mine",
@@ -100,6 +101,7 @@ export default function About() {
           ]
         },
         "sameAs": [
+          "https://www.baroul-bucuresti.ro/avocat/08624/lamatic-bogdan-constantin",
           "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
           "https://profesionisti.juridice.ro/bogdan-lamatic",
           "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
@@ -130,7 +132,7 @@ export default function About() {
         "@type": "WebPage",
         "@id": "https://avocatpenalbucuresti.ro/despre-mine#webpage",
         "url": "https://avocatpenalbucuresti.ro/despre-mine",
-        "name": "Despre mine - Bogdan-Constantin Lamatic",
+        "name": "Despre mine - Bogdan Lamatic",
         "inLanguage": "ro-RO",
         "about": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
         "mainEntity": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
