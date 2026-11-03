@@ -7,9 +7,9 @@ import ServicesQuickLinks from "@/components/ServicesQuickLinks";
 import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import GoogleReviewStars from "@/components/services/GoogleReviewStars";
 import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
-import videoAsset from "@/assets/te-suna-politia.mp4.asset.json";
-import posterAsset from "@/assets/te-suna-politia-poster.jpg.asset.json";
 
+const VIDEO_URL = "/media/te-suna-politia.mp4";
+const POSTER_URL = "/media/te-suna-politia-poster.jpg";
 const ORIGIN = "https://avocatpenalbucuresti.ro";
 const PATH = "/te-cheama-politia-prin-telefon";
 const TITLE = "Te cheamă poliția prin telefon? Ce întrebi și ce drepturi ai";
@@ -48,8 +48,8 @@ export default function TeCheamaPolitiaPrinTelefon() {
           "@type": "VideoObject",
           name: "Te sună poliția? Pune întrebarea asta înainte să spui „Da, vin”",
           description: "Ce întrebi când te cheamă poliția prin telefon și ce drepturi ai la audiere.",
-          thumbnailUrl: `${ORIGIN}${posterAsset.url}`,
-          contentUrl: `${ORIGIN}${videoAsset.url}`,
+          thumbnailUrl: `${ORIGIN}${POSTER_URL}`,
+          contentUrl: `${ORIGIN}${VIDEO_URL}`,
           uploadDate: "2026-11-03",
           duration: "PT58S",
         },
@@ -69,11 +69,11 @@ export default function TeCheamaPolitiaPrinTelefon() {
           <div className="mb-10 flex justify-center">
             <video
               className="w-full max-w-[340px] aspect-[9/16] rounded-2xl shadow-lg bg-black"
-              src={videoAsset.url}
-              poster={posterAsset.url}
+              src={VIDEO_URL}
+              poster={POSTER_URL}
               controls
               playsInline
-              preload="none"
+              preload="metadata"
               aria-label="Clip video: Te sună poliția? Ce întrebi înainte să mergi la secție"
             />
           </div>
