@@ -33,7 +33,7 @@ export default function Blog() {
 
       <h1 className="text-2xl font-semibold mb-2">Resurse</h1>
 
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-6 grid grid-cols-1 auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article className="h-full">
           <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
             <CardHeader>
