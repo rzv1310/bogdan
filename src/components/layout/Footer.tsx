@@ -5,7 +5,8 @@ import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Linkedin, Twitter, Instagram, Facebook, Youtube, MapPin, Music, Pin, Cookie, ChevronDown } from "lucide-react";
+import { Cookie, ChevronDown } from "lucide-react";
+import { SocialLinks } from "./SocialLinks";
 import { useState } from "react";
 
 export default function Footer() {
@@ -172,72 +173,7 @@ export default function Footer() {
               <h3 className="text-sm font-semibold tracking-wide uppercase mb-4">
                 {lang === "en" ? "Follow me" : "Urmărește-mă"}
               </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <a 
-                  href="http://linkedin.com/in/bogdan-lamatic-b36a2a1b8"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={24} />
-                </a>
-                <a 
-                  href="https://x.com/BogdanLamatic" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="X (Twitter)"
-                >
-                  <Twitter size={24} />
-                </a>
-                <a 
-                  href="https://www.instagram.com/bogdanlamatic/"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={24} />
-                </a>
-                <a 
-                  href="https://www.facebook.com/profile.php?id=61580770400222"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={24} />
-                </a>
-                <a 
-                  href="https://www.youtube.com/@AvocatBogdanLamatic-DreptPenal"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="YouTube"
-                >
-                  <Youtube size={24} />
-                </a>
-                <a 
-                  href="https://maps.app.goo.gl/V5Fi3ojd24VDrARe8"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Google Maps"
-                >
-                  <MapPin size={24} />
-                </a>
-                <a 
-                  href="https://www.tiktok.com/@avocatdreptpenal"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="TikTok"
-                >
-                  <Music size={24} />
-                </a>
-                <a 
-                  href="https://ro.pinterest.com/AvocatDreptPenalBogdanLamatic/"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Pinterest"
-                >
-                  <Pin size={24} />
-                </a>
-              </div>
+              <SocialLinks className="grid grid-cols-2 gap-4" />
             </div>
           </nav>
         </div>
