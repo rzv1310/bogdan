@@ -65,6 +65,7 @@ const FraudulentBankruptcyEn = lazyRoute(() => import("./pages/en/services/fraud
 const ComputerFraudEn = lazyRoute(() => import("./pages/en/services/computer-fraud"));
 const EuFundsFraudEn = lazyRoute(() => import("./pages/en/services/eu-funds-fraud"));
 const CalculatorDespagubiri = lazyRoute(() => import("./pages/CalculatorDespagubiri"));
+const TeCheamaPolitia = lazyRoute(() => import("./pages/blog/TeCheamaPolitiaPrinTelefon"));
 const ServiciiPage = lazyRoute(() => import("./pages/servicii"));
 const TermeniSiConditii = lazyRoute(() => import("./pages/termeni-si-conditii"));
 const GDPR = lazyRoute(() => import("./pages/gdpr"));
@@ -193,6 +194,7 @@ export default function AppRoutes() {
           <Route path="/despre-mine" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/calculator-despagubiri" element={<CalculatorDespagubiri />} />
+          <Route path="/te-cheama-politia-prin-telefon" element={<TeCheamaPolitia />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/servicii" element={<ServiciiPage />} />
           <Route path="/servicii/urmarire-penala" element={<UrmarirePenala />} />

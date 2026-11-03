@@ -18,6 +18,7 @@ export default function Sitemap() {
     { url: "/contact", title: "Contact - Consultații Juridice", icon: Phone },
     { url: "/blog", title: "Resurse - Articole Juridice", icon: FileText },
     { url: "/calculator-despagubiri", title: "Calculator Despăgubiri", icon: FileText },
+    { url: "/te-cheama-politia-prin-telefon", title: "Te cheamă poliția prin telefon?", icon: FileText },
   ];
 
   const services = [
