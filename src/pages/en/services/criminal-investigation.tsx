@@ -104,7 +104,7 @@ export default function CriminalInvestigation() {
           postalCode: "012244",
           addressCountry: "RO",
         },
-        hasMap: "https://www.google.com/maps?cid=17818591254142574295",
+        hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
         telephone: "+40 745 506 443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {

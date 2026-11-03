@@ -53,9 +53,9 @@ export default function VictimRepresentationEn() {
               addressRegion: "Bucuresti",
               postalCode: "012244",
               addressCountry: "RO",
-              url: "https://www.google.com/maps?cid=17818591254142574295"
+              url: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc"
             },
-            hasMap: "https://www.google.com/maps?cid=17818591254142574295",
+            hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
             provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
             telephone: "+40 745 506 443",
           }),

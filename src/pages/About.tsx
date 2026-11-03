@@ -101,7 +101,7 @@ export default function About() {
         "sameAs": [
           "https://www.wolftheiss.com/lawyer/bogdan-lamatic/",
           "https://profesionisti.juridice.ro/bogdan-lamatic",
-          "https://www.google.com/maps?cid=17818591254142574295",
+          "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
           "https://www.instagram.com/bogdanlamatic/",
           "https://www.linkedin.com/in/bogdan-lamatic-b36a2a1b8",
           "https://www.legal500.com/firms/11986-wolf-theiss-rechtsanwalte-gmbh-co-kg/c-romania/lawyers/4275126-bogdan-lamatic"
@@ -122,7 +122,7 @@ export default function About() {
             "latitude": 44.4572663,
             "longitude": 26.0635712
           },
-          "hasMap": "https://www.google.com/maps?cid=17818591254142574295"
+          "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc"
         }
       },
       {
@@ -206,7 +206,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Address</dt>
-                <dd className="font-medium"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, Bucuresti 012244</a></dd>
+                <dd className="font-medium"><a href="https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, Bucuresti 012244</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
@@ -270,7 +270,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Adresă</dt>
-                <dd className="font-medium"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, București 012244</a></dd>
+                <dd className="font-medium"><a href="https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Strada Colonel Stefan Stoika 22, București 012244</a></dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">LinkedIn</dt>
