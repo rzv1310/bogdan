@@ -247,9 +247,19 @@ export const SUB_SERVICE_ROUTES = new Set([
   "/en/services/bodily-injury-compensation",
 ]);
 
+/** Resurse (blog) hub + articles: medium sitemap priority. Add every new article here. */
+export const BLOG_ROUTES = new Set([
+  "/blog",
+  "/en/blog",
+  "/calculator-despagubiri",
+  "/en/compensation-calculator",
+  "/te-cheama-politia-prin-telefon",
+]);
+
 /** Priority hints for the sitemap. */
 export function priorityFor(route) {
   if (route === "/" || route === "/en") return "1.0";
+  if (BLOG_ROUTES.has(route)) return "0.5";
   if (route === "/servicii" || route === "/en/services") return "0.8";
   if (SUB_SERVICE_ROUTES.has(route)) return "0.8";
   if (route.startsWith("/servicii/") || route.startsWith("/en/services/")) return "0.9";

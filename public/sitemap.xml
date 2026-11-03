@@ -25,7 +25,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/blog" />
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://avocatpenalbucuresti.ro/calculator-despagubiri</loc>
@@ -34,7 +34,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/calculator-despagubiri" />
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://avocatpenalbucuresti.ro/te-cheama-politia-prin-telefon</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://avocatpenalbucuresti.ro/contact</loc>
@@ -718,7 +724,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/blog" />
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://avocatpenalbucuresti.ro/en/contact</loc>
@@ -772,7 +778,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avocatpenalbucuresti.ro/calculator-despagubiri" />
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://avocatpenalbucuresti.ro/en/services</loc>
