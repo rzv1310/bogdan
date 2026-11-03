@@ -16,6 +16,7 @@ const distDir = path.join(root, "dist");
 /** Routes that intentionally exist only in Romanian (no hreflang pair). */
 const RO_ONLY = new Set([
   "/calculator-despagubiri",
+  "/te-cheama-politia-prin-telefon",
   "/harta-site",
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",

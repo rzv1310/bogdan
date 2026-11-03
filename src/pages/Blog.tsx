@@ -47,6 +47,19 @@ export default function Blog() {
             </CardContent>
           </Card>
         </article>
+        <article>
+          <Card className="transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+            <CardHeader>
+              <CardTitle as="h2">Te cheamă poliția prin telefon?</CardTitle>
+              <CardDescription className="text-hero-foreground/90">Ce întrebi la telefon și ce drepturi ai la audiere.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link to="/te-cheama-politia-prin-telefon" aria-label="Citește articolul despre citarea telefonică">
+                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </article>
       </div>
       </div>
           <ServicesQuickLinks />

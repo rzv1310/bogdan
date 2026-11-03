@@ -9,6 +9,7 @@ export const ROUTES = [
   "/despre-mine",
   "/blog",
   "/calculator-despagubiri",
+  "/te-cheama-politia-prin-telefon",
   "/contact",
   "/servicii",
   "/servicii/urmarire-penala",
