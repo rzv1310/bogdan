@@ -255,7 +255,13 @@ export default function About() {
             </ul>
           </section>
 
-          {/* More English sections would continue here */}
+          <section aria-labelledby="memberships" className="grid gap-4">
+            <h2 id="memberships" className="text-xl font-medium">Affiliation</h2>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><a href="https://www.baroul-bucuresti.ro/avocat/08624/lamatic-bogdan-constantin" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Member of the Bucharest Bar</a></li>
+              <li>Member of the National Union of Romanian Bar Associations</li>
+            </ul>
+          </section>
         </main>
       ) : (
         /* Romanian Version */
@@ -322,7 +328,7 @@ export default function About() {
           <section aria-labelledby="memberships-ro" className="grid gap-4">
             <h2 id="memberships-ro" className="text-xl font-medium">Afiliere</h2>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Membru al Baroului București</li>
+              <li><a href="https://www.baroul-bucuresti.ro/avocat/08624/lamatic-bogdan-constantin" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline">Membru al Baroului București</a></li>
               <li>Membru al Uniunii Naționale a Barourilor din România</li>
             </ul>
           </section>
