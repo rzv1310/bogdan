@@ -5,7 +5,7 @@ import { translations } from "@/lib/translations";
 import { services, servicesEn } from "@/lib/services";
 import { mapPathToLang } from "@/lib/routeMap";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Linkedin, Twitter, Instagram, Facebook, Youtube, Music, Pin, Cookie, ChevronDown } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Facebook, Youtube, MapPin, Music, Pin, Cookie, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function Footer() {
@@ -212,6 +212,14 @@ export default function Footer() {
                   aria-label="YouTube"
                 >
                   <Youtube size={24} />
+                </a>
+                <a 
+                  href="https://maps.app.goo.gl/V5Fi3ojd24VDrARe8"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Google Maps"
+                >
+                  <MapPin size={24} />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@avocatdreptpenal"
