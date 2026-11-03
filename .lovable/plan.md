@@ -1,15 +1,16 @@
-## Result: yes, "Constantin" appears in the hidden Google data (schema)
+## Recommendation
 
-It appears in exactly 4 places, all in the hidden data Google reads:
+Yes, it's a good idea: "Bogdan Lamatic" everywhere on the site, plus a link in the hidden data to the full name from the Baroul București listing. One small correction: "sameAs" accepts only links (web addresses), not names. The right setup is:
 
-- **"Despre mine" page (RO and EN):**
-  - full name: "Bogdan-Constantin Lamatic"
-  - first name: "Bogdan-Constantin"
-  - page name: "Despre mine - Bogdan-Constantin Lamatic"
-- **Home page (RO):** full name "Bogdan-Constantin Lamatic"
+- **alternateName: "Bogdan-Constantin Lamatic"**: tells Google that this is also your full official name.
+- **sameAs**: the link to your page on the Baroul București website (and/or the UNBR lawyers' register), next to the social media links. This is how Google confirms the two names belong to the same person.
 
-It doesn't appear anywhere else: not in the visible text, the menus, the footer, the other pages, the English home page, or the files for AI and the site map.
+## What I change
 
-## If you approve
+1. In the 4 places in the hidden data (Despre mine RO and EN, Home page RO), the name becomes "Bogdan Lamatic" and the first name "Bogdan".
+2. I add alternateName "Bogdan-Constantin Lamatic" to your profile data.
+3. I add the link to your Baroul București page to sameAs, once you send it to me.
 
-Change these 4 to "Bogdan Lamatic" (first name "Bogdan"), so they match the visible text. If you'd rather keep the full name in the hidden data, skip this plan and nothing will change.
+## What I need from you
+
+The link to your page on the Baroul București website (or in the UNBR register). If you don't have it handy, I'll make steps 1 and 2 now and add the link later.
