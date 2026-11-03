@@ -199,11 +199,11 @@ export default function About() {
           </header>
 
           <section aria-labelledby="personal-info" className="grid gap-4">
-            <h2 id="personal-info" className="text-xl font-medium">Personal information</h2>
+            <h2 id="personal-info" className="text-xl font-medium">General information</h2>
             <dl className="grid gap-2 sm:grid-cols-2">
               <div>
-                <dt className="text-sm text-muted-foreground">Name/Surname</dt>
-                <dd className="font-medium">Lamatic Bogdan-Constantin</dd>
+                <dt className="text-sm text-muted-foreground">First name/Last name</dt>
+                <dd className="font-medium">Bogdan Lamatic</dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Address</dt>
@@ -263,11 +263,11 @@ export default function About() {
           </header>
 
           <section aria-labelledby="personal-info-ro" className="grid gap-4">
-            <h2 id="personal-info-ro" className="text-xl font-medium">Informații personale</h2>
+            <h2 id="personal-info-ro" className="text-xl font-medium">Informații generale</h2>
             <dl className="grid gap-2 sm:grid-cols-2">
               <div>
-                <dt className="text-sm text-muted-foreground">Nume/Prenume</dt>
-                <dd className="font-medium">Lamatic Bogdan-Constantin</dd>
+                <dt className="text-sm text-muted-foreground">Prenume/Nume</dt>
+                <dd className="font-medium">Bogdan Lamatic</dd>
               </div>
               <div>
                 <dt className="text-sm text-muted-foreground">Adresă</dt>
