@@ -60,6 +60,19 @@ export default function Blog() {
             </CardContent>
           </Card>
         </article>
+        <article className="h-full">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+            <CardHeader>
+              <CardTitle as="h2">Ceartă pentru un loc de parcare</CardTitle>
+              <CardDescription className="text-hero-foreground/90">Când riști dosar penal pentru amenințare, lovire sau distrugere.</CardDescription>
+            </CardHeader>
+            <CardContent className="mt-auto">
+              <Link to="/cearta-loc-parcare-dosar-penal" aria-label="Citește articolul despre cearta pentru un loc de parcare">
+                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </article>
       </div>
       </div>
           <ServicesQuickLinks />

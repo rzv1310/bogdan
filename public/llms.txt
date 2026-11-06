@@ -16,6 +16,7 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Contact](/en/contact): Contact form and details in English.
 - [Calculator despăgubiri](/calculator-despagubiri): Instrument de estimare a despăgubirilor.
 - [Te cheamă poliția prin telefon?](/te-cheama-politia-prin-telefon): Când este valabilă citarea telefonică și ce drepturi ai la audiere.
+- [Ceartă pentru un loc de parcare](/cearta-loc-parcare-dosar-penal): Când un conflict în parcare ajunge dosar penal: amenințare, lovire, distrugere.
 - [Compensation Calculator](/en/compensation-calculator): Compensation estimate tool.
 - [Harta site](/harta-site): Index cu toate paginile în română.
 - [Sitemap](/en/sitemap): Index of all pages in English.
