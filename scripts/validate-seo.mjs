@@ -17,6 +17,7 @@ const distDir = path.join(root, "dist");
 const RO_ONLY = new Set([
   "/calculator-despagubiri",
   "/te-cheama-politia-prin-telefon",
+  "/cearta-loc-parcare-dosar-penal",
   "/harta-site",
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",
