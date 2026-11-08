@@ -43,6 +43,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://avocatpenalbucuresti.ro/cearta-loc-parcare-dosar-penal</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://avocatpenalbucuresti.ro/contact</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://avocatpenalbucuresti.ro/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://avocatpenalbucuresti.ro/en/contact" />
