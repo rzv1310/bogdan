@@ -66,7 +66,7 @@ export default function TeCheamaPolitiaPrinTelefon() {
             „Bună ziua, de la poliție. Veniți până la secție, doar să discutăm puțin.” Poate că primul impuls este să iei cheile și să pleci. Sau poate te întrebi dacă trebuie să mergi câtă vreme nu ai primit nimic în scris. Înainte să închizi, pune o întrebare simplă: <strong>„În ce calitate sunt chemat?”</strong> Dacă este vorba despre un dosar penal, răspunsul te ajută să înțelegi de ce se dorește audierea ta și ce drepturi ai când ajungi la secție.
           </p>
 
-          <div className="mb-10 flex justify-center">
+          <div className="mb-10 flex flex-col items-center">
             <video
               className="block w-[300px] max-w-full h-auto aspect-[9/16] rounded-2xl shadow-lg bg-black"
               width={720}
@@ -78,6 +78,14 @@ export default function TeCheamaPolitiaPrinTelefon() {
               preload="metadata"
               aria-label="Clip video: Te sună poliția? Ce întrebi înainte să mergi la secție"
             />
+            <a
+              href="https://share.google/4UIZErr8y5LfJRSTP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 text-sm italic text-muted-foreground hover:underline text-center"
+            >
+              AVOCAT BOGDAN LAMATIC - DREPT PENAL BUCURESTI
+            </a>
           </div>
 
           <section className="mb-10">
