@@ -37,7 +37,7 @@ function circularDiff(i: number, active: number, n: number) {
   return diff;
 }
 
-export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
+export function ReviewsCarousel3D({ reviews, cardClassName }: { reviews: Review[]; cardClassName?: string }) {
   const isSm = useMediaQuery("(max-width: 640px)");
   const cardW = isSm ? 300 : 300; // larger on mobile
   const gap = isSm ? 14 : 18; // equal gap
@@ -83,7 +83,8 @@ export function ReviewsCarousel3D({ reviews }: { reviews: Review[] }) {
               key={`${r.name}-${i}`}
               className={cn(
                 "absolute left-1/2 top-[90px] md:top-[90px]",
-                "rounded-xl border bg-card text-card-foreground shadow-sm"
+                "rounded-xl border bg-card text-card-foreground shadow-sm",
+                cardClassName
               )}
               style={{
                 width: cardW,
