@@ -411,35 +411,35 @@ export default function About() {
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>
                 Aspecte teoretice legate de infracţiunile informatice, 2026, Juridice.ro, {" "}
-                <a href="https://www.juridice.ro/820855/aspecte-teoretice-legate-de-infractiunile-informatice.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.juridice.ro/820855/aspecte-teoretice-legate-de-infractiunile-informatice.html" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Cele mai noi sancțiuni UE împotriva Rusiei vizează capacitățile militare, instrumentele de propagandă și altele, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Legea avertizorilor revizuită și îmbunătățită, adoptată în România, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Wolf Theiss Corporate Investigations Guide 2022, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Evoluții privind protecția avertizorilor în România, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Sancțiunile UE împotriva Rusiei și actualizări ale programelor de conformitate, 2022, Wolf Theiss, {" "}
-                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Articol despre Directiva privind Avertizorii de Integritate, 2023, Bizlawyer.ro, {" "}
-                <a href="https://bizlawyer.ro/avocat/bogdan-lamatic" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://bizlawyer.ro/avocat/bogdan-lamatic" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Articol „Aspecte teoretice și practice legate de măsurile preventive în vechiul și actualul Cod de procedură penală”, 2023, Juridice.ro, {" "}
-                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>Diverse alerte pentru clienți și articole pe teme de drept penal, conformitate și legea avertizorilor.</li>
             </ul>
