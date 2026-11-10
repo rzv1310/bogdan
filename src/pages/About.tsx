@@ -431,7 +431,7 @@ export default function About() {
               </li>
               <li>
                 Articol despre Directiva privind Avertizorii de Integritate, 2023, Bizlawyer.ro, {" "}
-                <a href="https://www.bizlawyer.ro/stiri/piata-avocaturii/totul-despre-modul-de-aplicare-a-legii-privind-protectia-avertizorilor-in-intere" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+                <a href="https://bizlawyer.ro/avocat/bogdan-lamatic" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
               <li>
                 Articol „Aspecte teoretice și practice legate de măsurile preventive în vechiul și actualul Cod de procedură penală”, 2023, Juridice.ro, {" "}
