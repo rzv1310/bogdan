@@ -37,7 +37,7 @@ function circularDiff(i: number, active: number, n: number) {
   return diff;
 }
 
-export function ReviewsCarousel3D({ reviews, cardClassName }: { reviews: Review[]; cardClassName?: string }) {
+export function ReviewsCarousel3D({ reviews, cardClassName, arrowClassName }: { reviews: Review[]; cardClassName?: string; arrowClassName?: string }) {
   const isSm = useMediaQuery("(max-width: 640px)");
   const cardW = isSm ? 300 : 300; // larger on mobile
   const gap = isSm ? 14 : 18; // equal gap
@@ -116,7 +116,7 @@ export function ReviewsCarousel3D({ reviews, cardClassName }: { reviews: Review[
           type="button"
           aria-label="Anterior"
           onClick={() => setActive((a) => (a - 1 + n) % n)}
-          className="pointer-events-auto h-9 w-9 md:h-10 md:w-10 rounded-full border border-accent/50 bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105 transition"
+          className={cn("pointer-events-auto h-9 w-9 md:h-10 md:w-10 rounded-full border border-accent/50 bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105 transition", arrowClassName)}
         >
           ‹
         </button>
@@ -124,7 +124,7 @@ export function ReviewsCarousel3D({ reviews, cardClassName }: { reviews: Review[
           type="button"
           aria-label="Următor"
           onClick={() => setActive((a) => (a + 1) % n)}
-          className="pointer-events-auto h-9 w-9 md:h-10 md:w-10 rounded-full border border-accent/50 bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105 transition"
+          className={cn("pointer-events-auto h-9 w-9 md:h-10 md:w-10 rounded-full border border-accent/50 bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105 transition", arrowClassName)}
         >
           ›
         </button>

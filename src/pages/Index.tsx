@@ -1050,7 +1050,7 @@ const Index = () => {
               </>
             )}
           </h2>
-          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} cardClassName="bg-[#faf0e6]" />
+          <ReviewsCarousel3D reviews={lang === "ro" ? reviewsRO : reviewsEN} cardClassName="bg-[#faf0e6]" arrowClassName="bg-[#faf0e6] hover:bg-[#faf0e6]/90 text-foreground" />
         </section>
 
         {/* FAQ Section */}
