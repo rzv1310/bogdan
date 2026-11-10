@@ -35,9 +35,11 @@ export default function LawyerBioBlock({
         className="h-[72px] w-[72px] rounded-full object-cover border border-accent"
       />
       <div className="text-sm leading-relaxed">
-        <span className="block text-base font-semibold text-foreground">
-          {isEn ? "Lawyer Bogdan Lamatic" : "Avocat Bogdan Lamatic"}
-        </span>
+        <h2 className="block text-base font-semibold text-foreground m-0">
+          <a href="https://maps.app.goo.gl/AgVtSv4ev4ms3zvs5" target="_blank" rel="noopener" className="hover:underline">
+            {isEn ? "Lawyer Bogdan Lamatic" : "Avocat Bogdan Lamatic - Drept Penal Bucuresti"}
+          </a>
+        </h2>
         <span className="block text-foreground">
           {isEn ? "Bucharest Bar · 18+ years of experience" : "Baroul București · 18+ ani experiență"}
         </span>
