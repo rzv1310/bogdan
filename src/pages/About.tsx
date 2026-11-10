@@ -410,6 +410,10 @@ export default function About() {
             <h2 id="publications-ro" className="text-xl font-medium">Publicații</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>
+                Aspecte teoretice legate de infracţiunile informatice, 2026, Juridice.ro, {" "}
+                <a href="https://www.juridice.ro/820855/aspecte-teoretice-legate-de-infractiunile-informatice.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
                 Cele mai noi sancțiuni UE împotriva Rusiei vizează capacitățile militare, instrumentele de propagandă și altele, 2022, Wolf Theiss, {" "}
                 <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="noopener noreferrer" className="text-primary underline">link</a>
               </li>
