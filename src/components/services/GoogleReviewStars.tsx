@@ -8,11 +8,11 @@ export default function GoogleReviewStars({ lang, className = "" }: GoogleReview
     <p className={`text-sm text-foreground ${className}`}>
       {lang === "en" ? (
         <>
-          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 31 Google reviews
+          5.0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> from 32 Google reviews
         </>
       ) : (
         <>
-          5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 31 de recenzii Google
+          5,0 <span className="text-yellow-400" aria-hidden="true">★★★★★</span> din 32 de recenzii Google
         </>
       )}
     </p>
