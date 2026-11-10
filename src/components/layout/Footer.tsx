@@ -142,6 +142,9 @@ export default function Footer() {
             </AccordionHeading>
             <ul className={`mt-4 space-y-2 text-sm ${isMobile && !open.useful ? "hidden" : "block"}`}>
               <li>
+                <Link to={mapPathToLang("/despre-mine", lang)} className="hover:underline">{t.nav.about}</Link>
+              </li>
+              <li>
                 <Link to={mapPathToLang("/contact", lang)} className="hover:underline">{t.nav.contact}</Link>
               </li>
               <li>
