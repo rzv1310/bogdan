@@ -1011,7 +1011,7 @@ const Index = () => {
               />
             </div>
             <div className="mt-6 text-center text-hero-foreground">
-              <h2 className="text-lg font-semibold">{t.homeBio.name}</h2>
+              <h2 className="text-lg font-semibold"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener" className="hover:underline">{t.homeBio.name}</a></h2>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line1}</p>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line2}</p>
             </div>
