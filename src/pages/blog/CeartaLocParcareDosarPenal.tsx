@@ -165,7 +165,7 @@ export default function CeartaLocParcareDosarPenal() {
             </p>
             <h3 className="text-base font-semibold mt-6 mb-2 text-foreground">Surse legislative</h3>
             <p className="text-sm">
-              <em>Legea nr. 286/2009 privind Codul penal, cu modificările și completările ulterioare - art. 184, art. 193, art. 206, art. 253 și art. 371. Textul oficial este disponibil pe <a href={LAW_URL} target="_blank" rel="nofollow noopener noreferrer" className="underline">Portalul Legislativ al Ministerului Justiției</a>.</em>
+              <em>Legea nr. 286/2009 privind Codul penal, cu modificările și completările ulterioare - art. 184, art. 193, art. 206, art. 253 și art. 371. Textul este disponibil pe <a href={LAW_URL} target="_blank" rel="nofollow noopener noreferrer" className="underline">Lege5.ro</a>.</em>
             </p>
           </section>
         </article>
