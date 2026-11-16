@@ -18,6 +18,7 @@ Site-ul prezintă serviciile, experiența și modalitățile de contact ale avoc
 - [Te cheamă poliția prin telefon?](/te-cheama-politia-prin-telefon): Când este valabilă citarea telefonică și ce drepturi ai la audiere.
 - [Ceartă pentru un loc de parcare](/cearta-loc-parcare-dosar-penal): Când un conflict în parcare ajunge dosar penal: amenințare, lovire, distrugere.
 - [Protest București: amendă sau dosar penal](/protest-bucuresti-amenda-sau-dosar-penal): Diferența dintre imobilizare, amendă, reținere și dosar penal după un protest; drepturile tale și contestarea în 15 zile.
+- [Delapidare la Universitatea din București](/delapidare-universitatea-bucuresti-arestare): De ce o acuzație de delapidare nu înseamnă automat arestare; condițiile arestării preventive și obligațiile controlului judiciar.
 - [Compensation Calculator](/en/compensation-calculator): Compensation estimate tool.
 - [Harta site](/harta-site): Index cu toate paginile în română.
 - [Sitemap](/en/sitemap): Index of all pages in English.

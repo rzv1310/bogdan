@@ -12,6 +12,7 @@ export const ROUTES = [
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
   "/protest-bucuresti-amenda-sau-dosar-penal",
+  "/delapidare-universitatea-bucuresti-arestare",
   "/contact",
   "/servicii",
   "/servicii/urmarire-penala",
@@ -258,6 +259,7 @@ export const BLOG_ROUTES = new Set([
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
   "/protest-bucuresti-amenda-sau-dosar-penal",
+  "/delapidare-universitatea-bucuresti-arestare",
 ]);
 
 /** Priority hints for the sitemap. */

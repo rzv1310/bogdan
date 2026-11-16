@@ -19,6 +19,7 @@ const RO_ONLY = new Set([
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
   "/protest-bucuresti-amenda-sau-dosar-penal",
+  "/delapidare-universitatea-bucuresti-arestare",
   "/harta-site",
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",
