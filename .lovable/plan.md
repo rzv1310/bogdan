@@ -22,3 +22,8 @@ O pagină nouă în Resurse, la adresa `/protest-bucuresti-amenda-sau-dosar-pena
 ## Detalii tehnice
 - Pagină nouă `src/pages/blog/ProtestBucurestiAmendaDosarPenal.tsx`, rută în `src/routes.tsx`, intrare în `BLOG_ROUTES` (`scripts/routes.mjs`), `Blog.tsx`, `Sitemap.tsx`, `generate-feed.mjs`, `public/llms.txt`; doar în română.
 - Linkurile externe către legislație cu target _blank + rel noopener.
+
+## Title tag și H1
+- **H1:** „Doi participanți imobilizați la protestul din București: care este diferența dintre amendă și dosar penal?” (titlul din textul tău)
+- **Title tag (propus, ~55 caractere):** „Protest București: amendă sau dosar penal? | Avocat Lamatic”
+- **Meta description (propusă):** „Imobilizat sau amendat la protestul din Parcul Izvor? Diferența dintre amendă, reținere și dosar penal, drepturile tale și termenul de contestare de 15 zile.”
