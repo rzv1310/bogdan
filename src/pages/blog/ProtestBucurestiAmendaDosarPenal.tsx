@@ -24,7 +24,6 @@ const L218 = "https://lege5.ro/Gratuit/gm3deojzgy4a/legea-nr-218-2002-privind-or
 const CPP = "https://lege5.ro/Gratuit/geztkobvha/codul-de-procedura-penala-din-2010";
 
 const WA_ANALIZA = `https://wa.me/40745506443?text=${encodeURIComponent("Bună ziua, am fost amendat după un protest în București și aș dori o analiză a procesului-verbal.")}`;
-const WA_CONSULT = `https://wa.me/40745506443?text=${encodeURIComponent("Bună ziua, aș dori o consultație privind o situație apărută după un protest în București.")}`;
 
 const Ext = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <a href={href} target="_blank" rel="nofollow noopener noreferrer" className="underline">{children}</a>
