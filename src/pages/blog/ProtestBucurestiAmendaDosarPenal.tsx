@@ -83,7 +83,7 @@ export default function ProtestBucurestiAmendaDosarPenal() {
           <p className="mb-3">
             În informațiile citate nu sunt prezentate procesele-verbale, cuvintele exacte imputate participanților sau punctul lor de vedere. Aceste lipsuri nu permit o concluzie despre legalitatea fiecărei intervenții.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 border border-[#e8d9c5] rounded-md p-4">
             <strong>Participanții au dreptul să ceară justificarea măsurilor luate împotriva lor, să conteste sancțiunile și să beneficieze de apărare.</strong>
           </p>
 
@@ -118,7 +118,7 @@ export default function ProtestBucurestiAmendaDosarPenal() {
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border border-border bg-background">
                 <thead>
-                  <tr className="bg-muted text-left">
+                  <tr className="bg-[#faf0e6] text-left">
                     <th className="p-3 border-b border-border font-semibold text-foreground">Măsura</th>
                     <th className="p-3 border-b border-border font-semibold text-foreground">Ce înseamnă</th>
                   </tr>
