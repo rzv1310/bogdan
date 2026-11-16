@@ -3,6 +3,8 @@ interface WhatsAppDocsCtaProps {
   className?: string;
   variant?: "default" | "green";
   label?: string;
+  href?: string;
+  rel?: string;
 }
 
 const WHATSAPP_URL = "https://wa.me/40745506443";
