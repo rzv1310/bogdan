@@ -125,7 +125,7 @@ export default function TeCheamaPolitiaPrinTelefon() {
               Dacă ai fost chemat la audieri în București și ai nevoie să îți clarifici situația înainte de a da o declarație, îl poți contacta pe <strong>avocatul Bogdan Lamatic</strong> la <a href="tel:+40745506443" className="font-semibold underline">+40 745 506 443</a>. Pentru consultație, pregătește detaliile pe care le-ai notat în timpul apelului și citația, dacă ai primit una.
             </p>
             <p className="text-sm mt-6">
-              <em>Sursă legislativă: <a href="https://legislatie.just.ro/Public/DetaliiDocument/120611" target="_blank" rel="noopener noreferrer" className="underline">Codul de procedură penală, Legea nr. 135/2010</a>.</em>
+              <em>Sursă legislativă: <a href="https://lege5.ro/Gratuit/geztkobvha/codul-de-procedura-penala-din-2010" target="_blank" rel="nofollow noopener noreferrer" className="underline">Codul de procedură penală, Legea nr. 135/2010</a>.</em>
             </p>
           </section>
         </article>
