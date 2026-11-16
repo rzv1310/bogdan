@@ -73,6 +73,19 @@ export default function Blog() {
             </CardContent>
           </Card>
         </article>
+        <article className="h-full">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+            <CardHeader>
+              <CardTitle as="h2">Protest București: amendă sau dosar penal?</CardTitle>
+              <CardDescription className="text-hero-foreground/90">Imobilizare, amendă, reținere: ce înseamnă fiecare și cum contești sancțiunea.</CardDescription>
+            </CardHeader>
+            <CardContent className="mt-auto">
+              <Link to="/protest-bucuresti-amenda-sau-dosar-penal" aria-label="Citește articolul despre protestul din București">
+                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </article>
       </div>
       </div>
           <ServicesQuickLinks />

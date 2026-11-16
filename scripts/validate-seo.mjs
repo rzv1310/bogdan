@@ -18,6 +18,7 @@ const RO_ONLY = new Set([
   "/calculator-despagubiri",
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
+  "/protest-bucuresti-amenda-sau-dosar-penal",
   "/harta-site",
   "/servicii/urmarire-penala",
   "/servicii/masuri-preventive",

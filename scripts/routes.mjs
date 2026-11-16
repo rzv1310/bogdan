@@ -11,6 +11,7 @@ export const ROUTES = [
   "/calculator-despagubiri",
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
+  "/protest-bucuresti-amenda-sau-dosar-penal",
   "/contact",
   "/servicii",
   "/servicii/urmarire-penala",
@@ -256,6 +257,7 @@ export const BLOG_ROUTES = new Set([
   "/en/compensation-calculator",
   "/te-cheama-politia-prin-telefon",
   "/cearta-loc-parcare-dosar-penal",
+  "/protest-bucuresti-amenda-sau-dosar-penal",
 ]);
 
 /** Priority hints for the sitemap. */
