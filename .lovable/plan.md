@@ -5,7 +5,7 @@ Pagină nouă în Resurse, în același stil ca articolul despre protest (RO onl
 
 - URL: /delapidare-universitatea-bucuresti-arestare
 - H1: "Dosarul taxelor de la Universitatea din București: de ce o acuzație de delapidare nu înseamnă automat arestare"
-- Title tag: "Delapidare UB: de ce nu înseamnă arestare | Avocat Bogdan Lamatic"
+- Title tag: "Dosar de delapidare la Universitatea din București | Avocat Bogdan Lamatic"
 - Meta description: "Dosarul taxelor de la Universitatea din București: ce trebuie dovedit la delapidare, de ce prejudiciul nu impune arestarea și ce presupune controlul judiciar."
 - Textul integral din fișier, secțiunile îngroșate devin H2, lista de la art. 215 rămâne listă.
 - Cratimele lungi devin cratimă simplă "-".
