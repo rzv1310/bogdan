@@ -1,3 +1,4 @@
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 import { MessageCircle, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
@@ -192,11 +193,7 @@ export default function ProtestBucurestiAmendaDosarPenal() {
           <aside className="mb-10 rounded-lg border border-border bg-background p-5">
             <p className="font-semibold text-foreground mb-2">Consideri că ai fost amendat pe nedrept?</p>
             <p className="text-sm mb-4">Solicită o analiză a procesului-verbal pentru a afla ce motive de contestare pot exista în cazul tău.</p>
-            <Button asChild variant="outline" size="sm">
-              <a href={WA_ANALIZA} target="_blank" rel="nofollow noopener noreferrer">
-                <MessageCircle className="w-4 h-4" /> Solicită analiza procesului-verbal
-              </a>
-            </Button>
+            <WhatsAppDocsCta href={WA_ANALIZA} rel="nofollow noopener noreferrer" label="Solicită analiza procesului-verbal" />
           </aside>
 
           <section className="mb-10">
