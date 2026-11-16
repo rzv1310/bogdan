@@ -72,7 +72,7 @@ export default function DelapidareUniversitateaBucuresti() {
           <p className="mb-3">
             <strong>Procurorii au cerut arestarea preventivă a două dintre persoanele cercetate în dosarul presupusei delapidări de la Universitatea din București. Judecătoria Sectorului 5 a respins propunerea și a dispus control judiciar, potrivit informațiilor comunicate de Parchet și publicate pe 11 noiembrie 2026. Prejudiciul invocat de anchetatori depășește 1,6 milioane de lei.</strong>
           </p>
-          <p className="mb-10">
+          <p className="mb-10 border border-[#e8d9c5] rounded-md p-4 bg-[#faf0e6]">
             Decizia pune în discuție o diferență esențială: existența unei acuzații penale și necesitatea arestării sunt chestiuni juridice distincte. Valoarea prejudiciului contează, dar nu înlocuiește condițiile legale pentru privarea de libertate.
           </p>
 
@@ -119,7 +119,7 @@ export default function DelapidareUniversitateaBucuresti() {
             <p className="mb-3">
               Distinct, alin. (2) permite arestarea pentru anumite infracțiuni, inclusiv pentru cele care ating pragul legal de pedeapsă, dacă evaluarea împrejurărilor arată că privarea de libertate este necesară pentru înlăturarea unei stări de pericol pentru ordinea publică. Judecătorul trebuie să examineze gravitatea și circumstanțele faptei, antecedentele și împrejurările referitoare la persoana inculpatului.
             </p>
-            <p>
+            <p className="border border-[#e8d9c5] rounded-md p-4 bg-[#faf0e6]">
               Așadar, <strong>cuantumul mare al prejudiciului poate conta în evaluare, dar nu produce automat un mandat de arestare</strong>. Necesitatea măsurii trebuie justificată în cazul concret.
             </p>
           </section>
