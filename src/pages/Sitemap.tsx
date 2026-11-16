@@ -23,6 +23,7 @@ export default function Sitemap() {
     { url: "/calculator-despagubiri", title: "Calculator Despăgubiri" },
     { url: "/te-cheama-politia-prin-telefon", title: "Te cheamă poliția prin telefon?" },
     { url: "/cearta-loc-parcare-dosar-penal", title: "Ceartă pentru un loc de parcare" },
+    { url: "/protest-bucuresti-amenda-sau-dosar-penal", title: "Protest București: amendă sau dosar penal" },
   ];
 
   const services = [
