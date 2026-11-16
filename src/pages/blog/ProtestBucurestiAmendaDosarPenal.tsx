@@ -208,16 +208,13 @@ export default function ProtestBucurestiAmendaDosarPenal() {
           <Card className="mb-10 border border-accent bg-[#faf0e6] p-6">
             <h2 className="text-xl font-semibold mb-3 text-foreground">Ai fost amendat sau chemat la audieri după un protest în București?</h2>
             <p className="mb-5">
-              Află ce poți contesta și cum îți poți pregăti apărarea. Discută cu avocatul Bogdan Lamatic despre situația ta și documentele primite.
+              Află ce poți contesta și cum îți poți pregăti apărarea. Discută direct cu avocatul Bogdan Lamatic despre situația ta și documentele primite.
             </p>
-            <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Discută cu un avocat">
+            <Button asChild variant="premium" size="lg" className="border border-hero-foreground" aria-label="Sună aici !">
               <a href="tel:+40745506443">
-                <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Discută cu un avocat</span>
+                <span className="inline-flex items-center gap-2"><Phone className="w-5 h-5" /> Sună aici !</span>
               </a>
             </Button>
-            <p className="mt-3 text-sm">
-              <a href={WA_CONSULT} target="_blank" rel="nofollow noopener noreferrer" className="underline">Solicită o consultație pe WhatsApp</a>
-            </p>
           </Card>
         </article>
 
