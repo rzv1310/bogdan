@@ -15,7 +15,7 @@ const PATH = "/cearta-loc-parcare-dosar-penal";
 const TITLE = "Ceartă pentru un loc de parcare - când riști dosar penal";
 const DESC =
   "Un conflict pentru un loc de parcare poate ajunge la dosar penal. Află ce spune legea despre amenințări, lovire și distrugerea mașinii.";
-const LAW_URL = "https://legislatie.just.ro/Public/DetaliiDocument/109855";
+const LAW_URL = "https://lege5.ro/Gratuit/gezdmnrzgi/codul-penal-din-2009";
 
 export default function CeartaLocParcareDosarPenal() {
   useSEO({
@@ -165,7 +165,7 @@ export default function CeartaLocParcareDosarPenal() {
             </p>
             <h3 className="text-base font-semibold mt-6 mb-2 text-foreground">Surse legislative</h3>
             <p className="text-sm">
-              <em>Legea nr. 286/2009 privind Codul penal, cu modificările și completările ulterioare - art. 184, art. 193, art. 206, art. 253 și art. 371. Textul oficial este disponibil pe <a href={LAW_URL} target="_blank" rel="noopener noreferrer" className="underline">Portalul Legislativ al Ministerului Justiției</a>.</em>
+              <em>Legea nr. 286/2009 privind Codul penal, cu modificările și completările ulterioare - art. 184, art. 193, art. 206, art. 253 și art. 371. Textul oficial este disponibil pe <a href={LAW_URL} target="_blank" rel="nofollow noopener noreferrer" className="underline">Portalul Legislativ al Ministerului Justiției</a>.</em>
             </p>
           </section>
         </article>
