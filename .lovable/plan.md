@@ -25,5 +25,5 @@ O pagină nouă în Resurse, la adresa `/protest-bucuresti-amenda-sau-dosar-pena
 
 ## Title tag și H1
 - **H1:** „Doi participanți imobilizați la protestul din București: care este diferența dintre amendă și dosar penal?” (titlul din textul tău)
-- **Title tag (propus, ~55 caractere):** „Protest București: amendă sau dosar penal? | Avocat Lamatic”
+- **Title tag (propus, ~62 caractere):** „Protest București: amendă sau dosar penal? | Avocat Bogdan Lamatic”
 - **Meta description (propusă):** „Imobilizat sau amendat la protestul din Parcul Izvor? Diferența dintre amendă, reținere și dosar penal, drepturile tale și termenul de contestare de 15 zile.”
