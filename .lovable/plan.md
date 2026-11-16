@@ -16,9 +16,10 @@
 - Linkurile spre pagina de servicii de pe site-ul tău („reținerea”) rămân normale (sunt interne).
 - În datele pentru Google, sursele citate se actualizează cu aceleași adrese Lege5.
 
-## Ce nu se schimbă
-Articolul despre cearta pe locul de parcare are și el un link spre site-ul Ministerului Justiției. Nu îl schimb acum. Îl pot trece și pe acela pe Lege5 dacă vrei.
+## Articolul despre cearta pe locul de parcare
+Linkul spre Codul penal (secțiunea „Surse legislative”) trece și el pe Lege5: https://lege5.ro/Gratuit/gezdmnrzgi/codul-penal-din-2009, cu rel="nofollow noopener noreferrer". Se actualizează și sursa din datele pentru Google.
 
 ## Detalii tehnice
 - Fișier: `src/pages/blog/ProtestBucurestiAmendaDosarPenal.tsx`: constantele URL, componenta `Ext` (rel nofollow) și cele 2 linkuri WhatsApp.
+- Fișier: `src/pages/blog/CeartaLocParcareDosarPenal.tsx`: constanta `LAW_URL` și rel-ul linkului.
 - Verificare: deschid pagina în preview și confirm că fiecare link extern are adresa Lege5 și rel nofollow.
