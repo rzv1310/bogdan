@@ -35,66 +35,66 @@ export default function Blog() {
 
       <div className="mt-6 grid grid-cols-1 auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article className="h-full">
-          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border border-[#e8d9c5] bg-[#faf0e6] text-foreground hover-scale">
             <CardHeader>
               <CardTitle as="h2">Calculator despăgubiri</CardTitle>
-              <CardDescription className="text-hero-foreground/90">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
+              <CardDescription className="text-muted-foreground">Instrument rapid pentru estimarea despăgubirilor.</CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/calculator-despagubiri" aria-label="Deschide calculatorul de despăgubiri">
-                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Deschide</Button>
+                <Button variant="outline" size="sm">Deschide</Button>
               </Link>
             </CardContent>
           </Card>
         </article>
         <article className="h-full">
-          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border border-[#e8d9c5] bg-[#faf0e6] text-foreground hover-scale">
             <CardHeader>
               <CardTitle as="h2">Te cheamă poliția prin telefon?</CardTitle>
-              <CardDescription className="text-hero-foreground/90">Ce întrebi la telefon și ce drepturi ai la audiere.</CardDescription>
+              <CardDescription className="text-muted-foreground">Ce întrebi la telefon și ce drepturi ai la audiere.</CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/te-cheama-politia-prin-telefon" aria-label="Citește articolul despre citarea telefonică">
-                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+                <Button variant="outline" size="sm">Citește articolul</Button>
               </Link>
             </CardContent>
           </Card>
         </article>
         <article className="h-full">
-          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border border-[#e8d9c5] bg-[#faf0e6] text-foreground hover-scale">
             <CardHeader>
               <CardTitle as="h2">Ceartă pentru un loc de parcare</CardTitle>
-              <CardDescription className="text-hero-foreground/90">Când riști dosar penal pentru amenințare, lovire sau distrugere.</CardDescription>
+              <CardDescription className="text-muted-foreground">Când riști dosar penal pentru amenințare, lovire sau distrugere.</CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/cearta-loc-parcare-dosar-penal" aria-label="Citește articolul despre cearta pentru un loc de parcare">
-                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+                <Button variant="outline" size="sm">Citește articolul</Button>
               </Link>
             </CardContent>
           </Card>
         </article>
         <article className="h-full">
-          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border border-[#e8d9c5] bg-[#faf0e6] text-foreground hover-scale">
             <CardHeader>
               <CardTitle as="h2">Protest București: amendă sau dosar penal?</CardTitle>
-              <CardDescription className="text-hero-foreground/90">Imobilizare, amendă, reținere: ce înseamnă fiecare și cum contești sancțiunea.</CardDescription>
+              <CardDescription className="text-muted-foreground">Imobilizare, amendă, reținere: ce înseamnă fiecare și cum contești sancțiunea.</CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/protest-bucuresti-amenda-sau-dosar-penal" aria-label="Citește articolul despre protestul din București">
-                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+                <Button variant="outline" size="sm">Citește articolul</Button>
               </Link>
             </CardContent>
           </Card>
         </article>
         <article className="h-full">
-          <Card className="h-full flex flex-col transition-all hover:shadow-lg border-transparent bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-hero-foreground hover-scale">
+          <Card className="h-full flex flex-col transition-all hover:shadow-lg border border-[#e8d9c5] bg-[#faf0e6] text-foreground hover-scale">
             <CardHeader>
               <CardTitle as="h2">Delapidare la Universitatea din București</CardTitle>
-              <CardDescription className="text-hero-foreground/90">De ce o acuzație de delapidare nu înseamnă automat arestare și ce presupune controlul judiciar.</CardDescription>
+              <CardDescription className="text-muted-foreground">De ce o acuzație de delapidare nu înseamnă automat arestare și ce presupune controlul judiciar.</CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/delapidare-universitatea-bucuresti-arestare" aria-label="Citește articolul despre dosarul de delapidare de la Universitatea din București">
-                <Button variant="hero" size="sm" className="border-hero-foreground/20 bg-hero-foreground/10 text-hero-foreground hover:bg-hero-foreground/20">Citește articolul</Button>
+                <Button variant="outline" size="sm">Citește articolul</Button>
               </Link>
             </CardContent>
           </Card>
