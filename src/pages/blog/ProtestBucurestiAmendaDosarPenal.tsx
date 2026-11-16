@@ -16,17 +16,17 @@ const DESC =
   "Imobilizat sau amendat la protestul din Parcul Izvor? Diferența dintre amendă, reținere și dosar penal, drepturile tale și termenul de contestare de 15 zile.";
 const CRUMB = "Protest București: amendă sau dosar penal";
 
-const CONSTITUTIE = "https://legislatie.just.ro/Public/DetaliiDocument/1413";
-const OG2 = "https://legislatie.just.ro/Public/FormaPrintabila/00000G0I1GFL237IA8703UI610XSI6K3";
-const L61 = "https://legislatie.just.ro/Public/DetaliiDocument/279788";
-const L218 = "https://legislatie.just.ro/public/detaliidocument/157719";
-const CPP = "https://legislatie.just.ro/Public/FormaPrintabila/00000G1CZXID497DLZO2N5F1VMT5R5VF";
+const CONSTITUTIE = "https://lege5.ro/Gratuit/gy3donjs/constitutia-din-1991";
+const OG2 = "https://lege5.ro/Gratuit/gm2dmmbu/ordonanta-nr-2-2001-privind-regimul-juridic-al-contraventiilor";
+const L61 = "https://lege5.ro/Gratuit/gm3dcnzsgyyq/art-2-lege-61-1991?dp=gmytaobvgaztsni";
+const L218 = "https://lege5.ro/Gratuit/gm3deojzgy4a/legea-nr-218-2002-privind-organizarea-si-functionarea-politiei-romane";
+const CPP = "https://lege5.ro/Gratuit/geztkobvha/codul-de-procedura-penala-din-2010";
 
 const WA_ANALIZA = `https://wa.me/40745506443?text=${encodeURIComponent("Bună ziua, am fost amendat după un protest în București și aș dori o analiză a procesului-verbal.")}`;
 const WA_CONSULT = `https://wa.me/40745506443?text=${encodeURIComponent("Bună ziua, aș dori o consultație privind o situație apărută după un protest în București.")}`;
 
 const Ext = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="underline">{children}</a>
+  <a href={href} target="_blank" rel="nofollow noopener noreferrer" className="underline">{children}</a>
 );
 
 export default function ProtestBucurestiAmendaDosarPenal() {
@@ -193,7 +193,7 @@ export default function ProtestBucurestiAmendaDosarPenal() {
             <p className="font-semibold text-foreground mb-2">Consideri că ai fost amendat pe nedrept?</p>
             <p className="text-sm mb-4">Solicită o analiză a procesului-verbal pentru a afla ce motive de contestare pot exista în cazul tău.</p>
             <Button asChild variant="outline" size="sm">
-              <a href={WA_ANALIZA} target="_blank" rel="noopener noreferrer">
+              <a href={WA_ANALIZA} target="_blank" rel="nofollow noopener noreferrer">
                 <MessageCircle className="w-4 h-4" /> Solicită analiza procesului-verbal
               </a>
             </Button>
@@ -219,7 +219,7 @@ export default function ProtestBucurestiAmendaDosarPenal() {
               </a>
             </Button>
             <p className="mt-3 text-sm">
-              <a href={WA_CONSULT} target="_blank" rel="noopener noreferrer" className="underline">Solicită o consultație pe WhatsApp</a>
+              <a href={WA_CONSULT} target="_blank" rel="nofollow noopener noreferrer" className="underline">Solicită o consultație pe WhatsApp</a>
             </p>
           </Card>
         </article>
