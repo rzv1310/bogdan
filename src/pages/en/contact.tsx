@@ -191,7 +191,7 @@ export default function ContactEn() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Attorney",
-            name: "Attorney Bogdan Lamatic",
+            name: "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
             url: "https://avocatpenalbucuresti.ro/en/contact",
             areaServed: "Romania",
             telephone: "+40745506443",

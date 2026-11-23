@@ -187,7 +187,7 @@ const HomepageEN = () => {
             "@id": "https://avocatpenalbucuresti.ro/#legalservice",
             "founder": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
             "employee": { "@id": "https://avocatpenalbucuresti.ro/despre-mine#person" },
-            "name": "Criminal Defense Lawyer Bucharest - Bogdan Lamatic",
+            "name": "Avocat Bogdan Lamatic - Drept Penal Bucuresti",
             "description": "Criminal law firm in Bucharest - defense in white-collar crime, corruption, traffic offenses, crypto investigations, and medical malpractice.",
             "url": "https://avocatpenalbucuresti.ro/en",
             "telephone": "+40745506443",

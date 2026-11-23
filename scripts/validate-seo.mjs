@@ -9,6 +9,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROUTES, SITE_ORIGIN } from "./routes.mjs";
+import { checkNap } from "./nap.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = path.join(root, "dist");
@@ -256,6 +257,7 @@ function collectJsonLd(route, html) {
       err(route, `JSON-LD does not parse (${error.message})`);
       continue;
     }
+    for (const problem of checkNap(parsed)) err(route, `NAP mismatch: ${problem}`);
     const nodes = Array.isArray(parsed["@graph"]) ? parsed["@graph"] : [parsed];
     for (const node of nodes) {
       if (!node || !node["@type"]) {
