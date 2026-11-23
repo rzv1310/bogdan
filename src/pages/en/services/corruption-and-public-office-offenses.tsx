@@ -57,8 +57,8 @@ export default function CorruptionPublicOfficeEn() {
               url: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc"
             },
             hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
-            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40 745 506 443" },
-            telephone: "+40 745 506 443",
+            provider: { "@type": "Person", name: "Bogdan Lamatic", telephone: "+40745506443" },
+            telephone: "+40745506443",
           }),
         }}
       />

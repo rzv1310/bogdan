@@ -194,7 +194,7 @@ export default function ContactEn() {
             name: "Attorney Bogdan Lamatic",
             url: "https://avocatpenalbucuresti.ro/en/contact",
             areaServed: "Romania",
-            telephone: "+40 745 506 443",
+            telephone: "+40745506443",
             email: "contact@avocatpenalbucuresti.ro",
             address: {
               "@type": "PostalAddress",
@@ -208,7 +208,7 @@ export default function ContactEn() {
             hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
             openingHours: ["Mo-Fr 06:00-22:00", "Sa-Su 09:00-20:00"],
             sameAs: ["https://avocatpenalbucuresti.ro"],
-            contactPoint: [{ "@type": "ContactPoint", telephone: "+40 745 506 443", contactType: "customer service" }],
+            contactPoint: [{ "@type": "ContactPoint", telephone: "+40745506443", contactType: "customer service" }],
           }),
         }}
       />

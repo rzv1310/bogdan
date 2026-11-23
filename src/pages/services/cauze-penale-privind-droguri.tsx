@@ -76,7 +76,7 @@ export default function CauzeDroguri() {
     description: pageDescription,
     url: pageUrl,
     areaServed: "București, România",
-    telephone: "+40 745 506 443",
+    telephone: "+40745506443",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Strada Colonel Stefan Stoika 22",

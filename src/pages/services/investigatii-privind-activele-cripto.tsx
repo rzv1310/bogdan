@@ -112,7 +112,7 @@ export default function InvestigatiiCripto() {
                 "provider": {
                   "@type": "Attorney",
                   "name": "Bogdan Lamatic",
-                  "telephone": "+40 745 506 443"
+                  "telephone": "+40745506443"
                 }
               })
             }}

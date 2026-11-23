@@ -102,12 +102,12 @@ export default function OffensesAgainstPersons() {
           addressCountry: "RO",
         },
         hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJKVqQ0cEBskAR194MtVZaSPc",
-        telephone: "+40 745 506 443",
+        telephone: "+40745506443",
         email: "contact@avocatpenalbucuresti.ro",
         provider: {
           "@type": "Attorney",
           name: "Bogdan Lamatic",
-          telephone: "+40 745 506 443",
+          telephone: "+40745506443",
         },
       },
       {
