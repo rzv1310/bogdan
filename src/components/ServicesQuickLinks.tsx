@@ -5,6 +5,7 @@ interface ServicesQuickLinksProps {
   lang?: "ro" | "en";
   className?: string;
   exclude?: string[];
+  replace?: Record<string, { to: string; label: string }>;
 }
 
 
@@ -32,10 +33,10 @@ const linksEn = [
   { to: "/en/contact", label: "Contact - book an assessment" },
 ];
 
-const ServicesQuickLinks = ({ lang = "ro", className = "", exclude = [] }: ServicesQuickLinksProps) => {
+const ServicesQuickLinks = ({ lang = "ro", className = "", exclude = [], replace = {} }: ServicesQuickLinksProps) => {
   const { pathname } = useLocation();
   const currentPath = pathname.replace(/\/$/, "") || "/";
-  const links = (lang === "en" ? linksEn : linksRo).filter(
+  const links = (lang === "en" ? linksEn : linksRo).map((l) => replace[l.to] ?? l).filter(
     (link) => link.to !== currentPath && !exclude.includes(link.to)
   );
 
