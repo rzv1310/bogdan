@@ -372,9 +372,9 @@ export default function About() {
             </article>
           </section>
 
-          <section aria-labelledby="relevant-record-ro" className="grid gap-4">
+          <section aria-labelledby="relevant-record-ro" className="grid gap-4 rounded-lg p-6" style={{ backgroundColor: "#faf0e6" }}>
             <h2 id="relevant-record-ro" className="text-xl font-medium scroll-mt-24">Cazuri reprezentative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
+            <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed [&>li]:px-3 [&>li]:py-2 [&>li:nth-child(odd)]:bg-background [&>li:nth-child(odd)]:rounded-md">
               <li>Asistență unui fond global de private equity într-o investigație internă sensibilă privind o fraudă în una dintre subsidiarele din România și acțiuni conexe de limitare a expunerii potențiale a mai multor companii și acționari, împreună cu asistență complexă în recuperarea de active, infracțiuni economice și procese de conformitate.</li>
               <li>Asistență unui mare fond de investiții european în legătură cu achiziția propusă a unui proiect de energie regenerabilă de peste 100 MW și evaluarea dimensiunilor de asset recovery și criminalitate economică relevante pentru achiziție și structurarea tranzacției.</li>
               <li>Asistență unui important grup energetic european în legătură cu o analiză internă și cu aspecte de recuperare de active și alte dimensiuni de criminalitate economică referitoare la posibile fraude și alte nereguli.</li>
