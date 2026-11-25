@@ -1,3 +1,4 @@
+import WhatsAppDocsCta from "@/components/services/WhatsAppDocsCta";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
@@ -405,6 +406,9 @@ export default function About() {
               <li>Asistență și reprezentare a unui fost reprezentant al Statului Român într-o organizație financiară internațională, cu privire la acuzații de corupție activă în raport cu magistrați, pentru obținerea unei hotărâri favorabile.</li>
             </ul>
           </section>
+          <div>
+            <WhatsAppDocsCta label="Scrie-mi in WhatsApp" />
+          </div>
 
           <section aria-labelledby="publications-ro" className="grid gap-4">
             <h2 id="publications-ro" className="text-xl font-medium">Publicații</h2>
