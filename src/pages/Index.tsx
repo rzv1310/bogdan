@@ -1016,7 +1016,13 @@ const Index = () => {
               <h2 className="text-lg font-semibold"><a href="https://www.google.com/maps?cid=17818591254142574295" target="_blank" rel="noopener" className="hover:underline">{t.homeBio.name}</a></h2>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line1}</p>
               <p className="text-sm text-hero-foreground/80">{t.homeBio.line2}</p>
-              <p className="text-sm text-hero-foreground/80 mt-3">Avocat Bogdan Lamatic - Drept Penal București este cabinetul meu de avocatură din Sectorul 1 al Capitalei, dedicat exclusiv dreptului penal. Cu peste 18 ani de experiență în avocatură, ofer consultanță în materie penală și asistență la audieri și percheziții. Asigur reprezentare în cauze penale în fața instanțelor de toate gradele, de la judecătorii și tribunale până la curțile de apel și Înalta Curte de Casație și Justiție. Apăr persoane cercetate sau trimise în judecată în dosare de criminalitate economică, corupție, infracțiuni rutiere și trafic de droguri. De asemenea, asist și reprezint persoanele vătămate.</p>
+              <p className="text-sm text-hero-foreground/80 mt-3 space-y-1">
+                <span className="block">Avocat Bogdan Lamatic - Drept Penal București este cabinetul meu de avocatură din Sectorul 1 al Capitalei, dedicat exclusiv dreptului penal.</span>
+                <span className="block">Cu peste 18 ani de experiență în avocatură, ofer consultanță în materie penală și asistență la audieri și percheziții.</span>
+                <span className="block">Asigur reprezentare în cauze penale în fața instanțelor de toate gradele, de la judecătorii și tribunale până la curțile de apel și Înalta Curte de Casație și Justiție.</span>
+                <span className="block">Apăr persoane cercetate sau trimise în judecată în dosare de criminalitate economică, corupție, infracțiuni rutiere și trafic de droguri.</span>
+                <span className="block">De asemenea, asist și reprezint persoanele vătămate.</span>
+              </p>
             </div>
             <div className="h-[30px]" aria-hidden="true"></div>
             <div className="mt-10">
