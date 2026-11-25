@@ -13,7 +13,7 @@ import LawyerBioBlock from "@/components/services/LawyerBioBlock";
 import ServiceFaq from "@/components/services/ServiceFaq";
 export default function InfractiuniRutiere() {
   useSEO({
-    keywords: "avocat accidente rutiere bucuresti, avocat infractiuni rutiere",
+    keywords: "avocat infractiuni rutiere bucuresti",
     canonical: "/servicii/infractiuni-rutiere-cu-victime",
     alternates: { ro: "/servicii/infractiuni-rutiere-cu-victime", en: "/en/services/road-traffic-offenses", xDefault: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "ro_RO",
