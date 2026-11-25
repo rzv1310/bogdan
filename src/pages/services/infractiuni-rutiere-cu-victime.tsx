@@ -17,7 +17,7 @@ export default function InfractiuniRutiere() {
     canonical: "/servicii/infractiuni-rutiere-cu-victime",
     alternates: { ro: "/servicii/infractiuni-rutiere-cu-victime", en: "/en/services/road-traffic-offenses", xDefault: "/servicii/infractiuni-rutiere-cu-victime" },
     locale: "ro_RO",
-    title: "Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic",
+    title: "Avocat infracțiuni rutiere București - Bogdan Lamatic",
     description:
       "Avocat penal Bogdan Lamatic, București. Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime. Consultanță rapidă.",
   });
@@ -150,7 +150,7 @@ export default function InfractiuniRutiere() {
       </Breadcrumb>
 
       <h1 className="text-2xl font-semibold mb-4">
-        Avocat accidente rutiere București | Avocat infracțiuni rutiere - Bogdan Lamatic
+        Avocat infracțiuni rutiere București - Bogdan Lamatic
       </h1>
       <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
         <p className="text-foreground">
