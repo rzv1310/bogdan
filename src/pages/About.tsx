@@ -263,6 +263,83 @@ export default function About() {
               <li>Member of the National Union of Romanian Bar Associations</li>
             </ul>
           </section>
+
+          <section aria-labelledby="relevant-record" className="grid gap-4 rounded-lg p-6" style={{ backgroundColor: "#faf0e6" }}>
+            <h2 id="relevant-record" className="text-xl font-medium scroll-mt-24">Representative Cases</h2>
+            <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed [&>li]:px-3 [&>li]:py-2 [&>li:nth-child(odd)]:bg-background [&>li:nth-child(odd)]:rounded-md">
+              <li>Assisting a global private equity fund in a sensitive internal investigation concerning fraud at one of its Romanian subsidiaries and related actions to limit the potential exposure of several companies and shareholders, together with complex assistance in asset recovery, economic crime and compliance processes.</li>
+              <li>Assisting a major European investment fund in connection with the proposed acquisition of a renewable energy project of over 100 MW and the assessment of the asset recovery and economic crime aspects relevant to the acquisition and the structuring of the transaction.</li>
+              <li>Assisting a major European energy group in connection with an internal review and with asset recovery and other economic crime aspects concerning possible fraud and other irregularities.</li>
+              <li>Assisting and advising a leading international logistics group in various internal investigations, compliance and remediation measures concerning subsidiaries in Romania and the CEE region, including the successful design and implementation of steps to protect the group from material risks in several jurisdictions.</li>
+              <li>Assisting Health Tech Media GmbH in an investigation into an internal fraud, assessing asset recovery angles and other economic crime aspects; the case combines complex local elements with cross-border legal dimensions, while also coordinating non-legal expertise for the client (tax, accounting, IT).</li>
+              <li>Assisting an international engineering, technology and infrastructure group in a sensitive internal corporate investigation and in investigations conducted by authorities in several jurisdictions, covering compliance, economic crime, regulatory, operational and cross-border cooperation matters.</li>
+              <li>Assisting a listed energy player in a highly sensitive internal investigation into fraud and measures to limit the exposure of companies and shareholders, including complex assistance in asset recovery, economic crime and compliance processes (data access and processing, cybercrime, asset tracing, contractual matters).</li>
+              <li>Assisting an international shipping group in a complex internal review and corporate investigation steps on potential compliance and economic crime issues, requiring the rapid structuring of the investigation and immediate multidisciplinary assistance (Compliance, Investigations, White-Collar Crime, Data Protection, Corporate M&A, Employment, etc.).</li>
+              <li>Assisting a European life science group in stages of an internal investigation concerning its subsidiaries, successfully addressing compliance and economic crime aspects and implementing remediation measures to protect the group in Romania and other jurisdictions, with interaction with multiple authorities.</li>
+              <li>Assisting the leader in electricity before the criminal investigation bodies in connection with various types of offences committed against the company or allegedly by employees (including recovery of the related damages).</li>
+              <li>Representing an aviation authority in the criminal case handled by the Prosecutor's Office attached to the High Court of Cassation and Justice concerning an air accident that occurred in January 2014 in Romania.</li>
+              <li>Assisting and representing the leader of the Romanian energy and gas market in various complex criminal cases, both before the criminal investigation bodies and the criminal courts, including the settlement of civil claims.</li>
+              <li>Representing a global corporation (Spain), a leader in the manufacture and supply of rolling stock and railway solutions, in connection with corruption allegations against public officials concerning public procurement of over EUR 300 million.</li>
+              <li>Representing one of the world's leading financial services providers in a multidisciplinary debt recovery project, including insolvency and economic crime investigations.</li>
+              <li>Assisting one of Romania's industrial giants, specialised in consulting and trade for industrial projects (especially the metallurgical industry), before the criminal investigation bodies, concerning an alleged tax fraud of over EUR 2,500,000.</li>
+              <li>Assisting and representing one of the largest insurance companies in Romania before the criminal investigation bodies and the courts, for the recovery or reduction of the compensation payable.</li>
+              <li>Representing a pension fund in connection with criminal complaints filed by former business partners.</li>
+              <li>Assisting the leading energy distribution company in internal investigations concerning employees, activities and procedures relating to the status of confidential or secret data and information.</li>
+              <li>Assisting and representing a private Romanian company specialised in the import and distribution of metal construction products before the criminal investigation bodies.</li>
+              <li>Assisting a provider of specialised medical services in internal investigations concerning potential acts of corruption or illicit practices.</li>
+              <li>Assisting the members of the Board of a state-owned media company in connection with abuse of office allegations concerning the acquisition of Radio Chisinau (Republic of Moldova), consisting in the overvaluation of the share price and damage of over EUR 650,000 in public funds.</li>
+              <li>Assisting and representing a former Secretary of State in the Ministry of Transport in connection with bribery allegations amounting to EUR 2 million.</li>
+              <li>Assisting and representing a top-ranking politician (former MP, former deputy minister and former deputy mayor) investigated for corruption (influence peddling) in connection with his candidacy for Mayor of Bucharest.</li>
+              <li>Assisting and representing a city mayor in connection with abuse of office allegations that caused significant damage to the local budget.</li>
+              <li>Assisting and representing a former city mayor, investigated and tried for abuse of office concerning the allocation of local subsidies and funding exceeding EUR 400,000.</li>
+              <li>Assisting and representing a Romanian businessman before the criminal investigation bodies and the court in a case concerning the setting up of an organised criminal group of about 30 persons and high-ranking public officials to commit economic offences in connection with the production and sale of petroleum products, with damage exceeding EUR 50,000,000.</li>
+              <li>Assisting and representing the General Manager of a national pharmacy chain in a criminal investigation concerning the possible embezzlement of public funds and medicine subsidies, as well as forgery of documents, with damage of over EUR 4,000,000.</li>
+              <li>Assisting and representing a former representative of the Romanian State in an international financial organisation regarding allegations of active bribery of judges to obtain a favourable ruling.</li>
+            </ul>
+          </section>
+          <div>
+            <WhatsAppDocsCta lang="en" label="Message me on WhatsApp" />
+          </div>
+
+          <section aria-labelledby="publications" className="grid gap-4">
+            <h2 id="publications" className="text-xl font-medium">Publications</h2>
+            <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
+              <li>
+                Theoretical aspects of cybercrime offences, 2026, Juridice.ro (in Romanian), {" "}
+                <a href="https://www.juridice.ro/820855/aspecte-teoretice-legate-de-infractiunile-informatice.html" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Newest EU sanctions against Russia target military capabilities, propaganda tools and more, 2022, Wolf Theiss, {" "}
+                <a href="https://www.wolftheiss.com/insights/newest-eu-sanctions-against-russia-target-military-capabilities-propaganda-tools-and-more/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Revised and improved whistleblowing law adopted in Romania, 2022, Wolf Theiss, {" "}
+                <a href="https://www.wolftheiss.com/insights/revised-and-improved-whistleblowing-law-adopted-in-romania/?trk=public_post-text" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Wolf Theiss Corporate Investigations Guide 2022, 2022, Wolf Theiss, {" "}
+                <a href="https://www.wolftheiss.com/insights/corporate-investigations-guide/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Developments on whistleblowers protection in Romania, 2022, Wolf Theiss, {" "}
+                <a href="https://www.wolftheiss.com/insights/developments-on-whistleblowers-protection-in-romania/" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                EU sanctions against Russia and updates to compliance programmes, 2022, Wolf Theiss, {" "}
+                <a href="https://www.wolftheiss.com/insights/eu-sanctions-against-russia-and-updates-to-compliance-programmes/?trk=public_post_share-upda" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Article on the Whistleblower Directive, 2023, Bizlawyer.ro (in Romanian), {" "}
+                <a href="https://bizlawyer.ro/avocat/bogdan-lamatic" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>
+                Article “Theoretical and practical aspects of preventive measures in the former and current Code of Criminal Procedure”, 2023, Juridice.ro (in Romanian), {" "}
+                <a href="https://www.juridice.ro/695393/aspecte-teoretice-si-practice-legate-de-masurile-preventive-in-vechiul-si-actualul-cod-de-procedu" target="_blank" rel="nofollow noopener noreferrer" className="text-primary underline">link</a>
+              </li>
+              <li>Various client alerts and articles on criminal law, compliance and whistleblowing law.</li>
+            </ul>
+          </section>
+
         </main>
       ) : (
         /* Romanian Version */
