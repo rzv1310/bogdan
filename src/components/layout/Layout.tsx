@@ -13,18 +13,25 @@ export default function Layout() {
 
   
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Immediate scroll to top
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-      
-      // Additional scroll for mobile devices with a small delay
-      const timeoutId = setTimeout(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    if (typeof window === "undefined") return;
+    const hash = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+    if (hash) {
+      let tries = 0;
+      const id = setInterval(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "instant" as ScrollBehavior, block: "start" });
+          if (++tries > 3) clearInterval(id);
+        } else if (++tries > 30) clearInterval(id);
       }, 100);
-      
-      return () => clearTimeout(timeoutId);
+      return () => clearInterval(id);
     }
-  }, [location.pathname]);
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    const timeoutId = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, 100);
+    return () => clearTimeout(timeoutId);
+  }, [location.pathname, location.hash]);
 
   const path = location.pathname;
   const isServicePage = path.startsWith("/servicii") || path.startsWith("/en/services");
