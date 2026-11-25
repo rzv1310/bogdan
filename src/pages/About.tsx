@@ -543,7 +543,7 @@ export default function About() {
       <ServicesQuickLinks
         lang={lang === "en" ? "en" : "ro"}
         replace={{
-          "/blog": { to: "/servicii/infractiuni-rutiere-cu-victime", label: "Avocat accidente rutiere București" },
+          "/blog": { to: "/servicii/infractiuni-rutiere-cu-victime", label: "Avocat infracțiuni rutiere" },
           "/en/blog": { to: "/en/services/road-traffic-offenses", label: "Road traffic offenses with/without victims" },
         }}
       />
