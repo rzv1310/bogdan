@@ -60,7 +60,7 @@ export const translations = {
       },
       {
         title: "Criminalitate economică",
-        body: "Apărare în dosare de evaziune fiscală, fraudă, delapidare, fals sau fonduri europene.",
+        body: "Apărare strategică în dosare de evaziune fiscală, fraudă, delapidare, fals sau fonduri europene.",
         to: "/servicii/criminalitate-economica",
       },
       {
