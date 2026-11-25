@@ -54,8 +54,8 @@ export const translations = {
     servicesTitle: "Cum te pot ajuta în dosare penale în București",
     services: [
       {
-        title: "Urgențe penale",
-        body: "Asistență imediată la audieri, reținere, percheziții sau ridicări de bunuri. Intervin rapid, inclusiv în afara programului.",
+        title: "Urgențe penale în București",
+        body: "Asistență imediată la audieri, reținere / arestare, percheziții / ridicări de bunuri. Intervin și în afara programului.",
         to: "/servicii/urmarire-penala",
       },
       {
