@@ -121,12 +121,11 @@ export const translations = {
       "“In criminal law, trust can save lives.\nI listen to your story. I understand your fears. I defend your rights as if they were my own.”",
     heroAuthor: "attorney Bogdan Lamatic",
     valuesTitle: "You will receive:",
-    values: ["total commitment.", "respect.", "absolute discretion."],
+    values: ["total commitment.", "respect.", "absolute discretion.", "availability 16 hours a day."],
     reasonsTitle: "Why work with me",
     reasons: [
       "proven track record of over 18 years in acquittals and sentence reductions in complex criminal cases.",
       "swift and effective defense, from hearings to trial.",
-      "availability 16 hours a day.",
     ],
     homeBio: {
       name: "Criminal Defense Lawyer  Bogdan Lamatic",
