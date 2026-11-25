@@ -373,7 +373,7 @@ export default function About() {
           </section>
 
           <section aria-labelledby="relevant-record-ro" className="grid gap-4">
-            <h2 id="relevant-record-ro" className="text-xl font-medium">Experiență profesională relevantă</h2>
+            <h2 id="relevant-record-ro" className="text-xl font-medium">Cazuri reprezentative</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">
               <li>Asistență unui fond global de private equity într-o investigație internă sensibilă privind o fraudă în una dintre subsidiarele din România și acțiuni conexe de limitare a expunerii potențiale a mai multor companii și acționari, împreună cu asistență complexă în recuperarea de active, infracțiuni economice și procese de conformitate.</li>
               <li>Asistență unui mare fond de investiții european în legătură cu achiziția propusă a unui proiect de energie regenerabilă de peste 100 MW și evaluarea dimensiunilor de asset recovery și criminalitate economică relevante pentru achiziție și structurarea tranzacției.</li>
