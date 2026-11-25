@@ -21,6 +21,8 @@ const distDir = path.join(root, "dist");
 // Safety net for publish output limits - keep well below platform caps.
 const MAX_PRERENDER_PAGES = 200;
 
+const AUTHOR_OVERRIDES = { "/": "Avocat Penal Bucuresti Bogdan Lamatic" };
+
 
 const escapeHtml = (value) =>
   String(value)
@@ -141,6 +143,15 @@ async function main() {
       page = page.replace(
         /<meta\s+name="keywords"[^>]*>/i,
         () => `<meta name="keywords" content="${escapeHtml(head.keywords)}" />`,
+      );
+    }
+
+    // Per-route author/publisher overrides (RO homepage only).
+    const authorOverride = AUTHOR_OVERRIDES[route];
+    if (authorOverride) {
+      page = page.replace(
+        /<meta\s+name="(author|publisher)"[^>]*>/gi,
+        (_m, name) => `<meta name="${name}" content="${escapeHtml(authorOverride)}" />`,
       );
     }
 

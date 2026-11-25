@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLanguage } from "@/context/language";
 import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
@@ -341,6 +342,20 @@ const Index = () => {
   
   const currentReviews = lang === "ro" ? reviewsRO : reviewsEN;
   const origin = "https://avocatpenalbucuresti.ro";
+
+  // RO homepage only: author/publisher meta
+  useEffect(() => {
+    if (lang !== "ro") return;
+    const value = "Avocat Penal Bucuresti Bogdan Lamatic";
+    const prev: Array<[HTMLMetaElement, string]> = [];
+    ["author", "publisher"].forEach((name) => {
+      let el = document.head.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
+      if (!el) { el = document.createElement("meta"); el.name = name; document.head.appendChild(el); }
+      prev.push([el, el.content]);
+      el.content = value;
+    });
+    return () => prev.forEach(([el, c]) => { el.content = c; });
+  }, [lang]);
   
   useSEO({
     keywords: "avocat drept penal, avocat penalist, avocat penal bucuresti",
