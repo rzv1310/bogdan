@@ -7859,10 +7859,10 @@ export const accidentRutierCuVictimeRo: SubServicePageData = {
   path: "/servicii/accident-rutier-cu-victime",
   altPath: "/en/services/road-accident-with-victims",
   roPath: "/servicii/accident-rutier-cu-victime",
-  title: "Avocat accident rutier cu victime | Bogdan Lamatic",
+  title: "Avocat accidente rutiere București | Bogdan Lamatic",
   h1: "Avocat pentru șoferul cercetat penal după un accident rutier cu victime",
   description:
-    "Ești șofer cercetat penal după un accident cu victime? Apărare pe vătămare corporală din culpă și ucidere din culpă, culpă, expertiză și pretenții civile.",
+    "Ești șofer cercetat penal după un accident cu victime? Apărare pentru vătămare corporală / ucidere din culpă, expertiză și pretenții civile. +40 745 506 443",
   keywords:
     "avocat accident rutier cu victime, sofer cercetat penal accident, vatamare corporala din culpa, ucidere din culpa avocat",
   breadcrumbLabel: "Accident rutier cu victime",
