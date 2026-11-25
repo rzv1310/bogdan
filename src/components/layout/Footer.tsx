@@ -70,6 +70,9 @@ export default function Footer() {
           {/* Col 1: Contact */}
           <section aria-labelledby="footer-contact">
             <h2 id="footer-contact" className="text-sm font-semibold tracking-wide uppercase"><Link to={mapPathToLang("/", lang)} className="hover:underline">{lang === "en" ? "Criminal Defense Lawyer Bucharest Bogdan Lamatic" : "Avocat Bogdan Lamatic - Drept Penal Bucuresti"}</Link></h2>
+            {lang !== "en" && (
+              <p className="mt-3 text-sm opacity-90">Am peste 18 ani de experiență în avocatură, iar în cabinetul meu din Sectorul 1 al Bucureștiului mă ocup exclusiv de cauze penale. Ofer asistență juridică la audieri și percheziții, precum și în procedurile privind arestarea preventivă. Reprezint clienți în fața instanțelor de toate gradele.</p>
+            )}
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span>{lang === "en" ? "Address:" : "Adresă:"}</span>{" "}
