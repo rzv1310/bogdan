@@ -359,7 +359,7 @@ const Index = () => {
   
   useSEO({
     keywords: "avocat drept penal, avocat penalist, avocat penal bucuresti",
-    title: "Avocat Penal București - Bogdan Lamatic | 18+ Ani Experiență în Drept Penal",
+    title: "Avocat Penal București Bogdan Lamatic - Experiență 18+ Ani în Drept Penal - Sector 1 - Asistență și reprezentare în spețe penale în fața instanțelor de toate gradele",
     description: "Avocat Penal Bucuresti Bogdan Lamatic - Apărare în infracțiuni economice, corupție, accidente rutiere, alcool, droguri, malpraxis, măsuri preventive, victime",
     alternates: { ro: "/", en: "/en", xDefault: "/" },
     locale: "ro_RO",
