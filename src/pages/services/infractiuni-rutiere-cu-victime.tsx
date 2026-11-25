@@ -19,7 +19,7 @@ export default function InfractiuniRutiere() {
     locale: "ro_RO",
     title: "Avocat infracțiuni rutiere București - Bogdan Lamatic",
     description:
-      "Avocat penal Bogdan Lamatic, București. Apărare în infracțiuni rutiere (alcool/droguri, fără permis, părăsire loc). Accidente cu/fără victime. Consultanță rapidă.",
+      "Avocat penal Bogdan Lamatic, București. Apărare în infracțiuni rutiere - alcool/droguri, fără permis, părăsire loc accident cu/fără victime. +40 745 506 443",
   });
 
   return (
