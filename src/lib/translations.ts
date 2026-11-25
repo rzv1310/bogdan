@@ -30,12 +30,11 @@ export const translations = {
     heroQuote: "„Încrederea reciprocă salvează!\nÎți ascult povestea.\nÎți înțeleg temerile.\nÎți apăr drepturile ca și cum ar fi ale mele.”",
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Vei primi:",
-    values: ["implicare totală.", "respect.", "discreție absolută."],
+    values: ["implicare totală.", "respect.", "discreție absolută.", "disponibilitate 16 ore pe zi."],
     reasonsTitle: "De ce sa lucrezi cu mine:",
     reasons: [
       "experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
       "apărare rapidă și eficientă, de la audieri până la instanță.",
-      "disponibilitate 16 ore pe zi.",
     ],
     homeBio: {
       name: "Avocat Penal Bucuresti - Bogdan Lamatic",
