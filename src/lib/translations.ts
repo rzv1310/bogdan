@@ -80,7 +80,7 @@ export const translations = {
       },
       {
         title: "Infracțiuni rutiere",
-        body: "Apărare în cazuri de alcool sau droguri la volan, accidente cu victime sau refuz de probe.",
+        body: "Apărare penală în cazuri de alcool / droguri la volan, accidente cu victime sau refuz de probe, conducere fără permis.",
         to: "/servicii/infractiuni-rutiere-cu-victime",
       },
       {
