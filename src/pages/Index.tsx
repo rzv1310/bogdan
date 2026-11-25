@@ -950,6 +950,12 @@ const Index = () => {
                         <span>{r}</span>
                       </li>
                     ))}
+                    {lang !== "en" && (
+                      <li className="flex items-start gap-3 text-foreground animate-in fade-in-50 zoom-in-50 duration-500" style={{ animationDelay: `${t.reasons.length * 120}ms` }}>
+                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+                        <Link to="/despre-mine#relevant-record-ro" className="underline hover:no-underline">Vezi cazurile mele reprezentative</Link>
+                      </li>
+                    )}
                   </ul>
                 </div>
               </div>
