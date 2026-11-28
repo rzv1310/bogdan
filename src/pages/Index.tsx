@@ -185,7 +185,7 @@ const faqData = [
   },
   {
     question: "2. Oferiți consultanță inițială gratuită?",
-    answer: "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 745 506 443"
+    answer: "Da. Prima discuție este gratuită și confidențială. Îmi spuneți ce s-a întâmplat, iar eu vă explic ce opțiuni aveți și care sunt pașii următori.\n\nCabinet Avocat Bogdan Lamatic · Telefon +40 745 506 443"
   },
   {
     question: "3. Aveți experiență în cauze penale legate de droguri?",
@@ -200,8 +200,8 @@ const faqData = [
     answer: "Aveți dreptul la avocat, la informarea corectă asupra acuzațiilor, la consultarea dosarului și la un proces echitabil. Le voi explica detaliat în raport cu cazul dvs. Telefon +40 745 506 443"
   },
   {
-    question: "6. Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
-    answer: "Da, mă ocup personal de dosar și de reprezentarea în fața instanței. Dacă este nevoie, colaborez și cu parteneri de încredere, dar eu rămân avocatul de contact."
+    question: "6. Vă ocupați personal de dosarul meu, de la audieri până în instanță?",
+    answer: "Da, mă ocup personal de dosarul dumneavoastră. Vă asist la audieri în fața organelor de urmărire penală și vă reprezint în instanță. Dacă este nevoie, colaborez și cu alți avocați de încredere, dar eu rămân avocatul dumneavoastră de contact."
   },
   {
     question: "7. Ce opțiuni am dacă hotărârea instanței nu îmi este favorabilă?",
@@ -212,8 +212,8 @@ const faqData = [
     answer: "Da, în anumite condiții puteți obține avocat din oficiu sau sprijin prin sistemul de asistență juridică. Vă pot ajuta să verificați eligibilitatea."
   },
   {
-    question: "9. Cum pot găsi un avocat penalist bun în România sau in București?",
-    answer: "Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine\nSunați-mă pentru o consultație gratuită la +40 745 506 443"
+    question: "9. Cum pot găsi un avocat penalist bun în România sau în București?",
+    answer: "Când alegeți un avocat penalist, întrebați ce experiență are în domeniul dreptului penal și dacă a mai asistat clienți în situații asemănătoare cu a dumneavoastră. Despre experiența mea și tipurile de dosare de care m-am ocupat puteți citi pe pagina Despre mine.\n\nSunați-mă pentru o consultație gratuită la +40 745 506 443"
   },
   {
     question: "10. Pot evita cazierul judiciar dacă îmi recunosc vina?",
@@ -237,11 +237,11 @@ const faqData = [
   },
   {
     question: "15. Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
-    answer: "Contactați-mă imediat la +40 745 506 443. Voi analiza acuzațiile, voi pregăti apărarea și voi contesta probele sau procedurile ilegale pentru a vă proteja drepturile."
+    answer: "Sunați-mă la +40 745 506 443 și spuneți-mi ce anume contestați. Analizez acuzațiile și probele din dosar, apoi vă propun o strategie de apărare adaptată situației dumneavoastră. Discutăm ce documente sau martori pot susține versiunea dumneavoastră asupra faptelor și dacă există motive pentru a contesta modul în care au fost obținute probele."
   },
   {
     question: "16. Am fost prins conducând sub influența alcoolului. Ce risc?",
-    answer: "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 745 506 443"
+    answer: "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Pentru conducere sub influența alcoolului se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 745 506 443"
   },
   {
     question: "17. Poliția a găsit droguri asupra mea, dar erau pentru consum propriu. Ce urmează?",
@@ -291,11 +291,14 @@ const renderTextWithLinks = (text: string) => {
   const phoneRegex = /\+40 745 506 443/g;
   processedText = processedText.replace(phoneRegex, '||PHONE||+40 745 506 443||PHONE||');
   
+  // Internal link to the About page
+  processedText = processedText.replace(/pagina Despre mine/g, 'pagina ||ABOUT||Despre mine||ABOUT||');
+
   // Handle line breaks
   processedText = processedText.replace(/\n/g, '||BR||');
   
   // Split by all markers and process
-  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2)\|\|[^|]+\|\|(?:URL|PHONE|PHONE2)\|\||\|\|BR\|\|)/);
+  const parts = processedText.split(/(\|\|(?:URL|PHONE|PHONE2|ABOUT)\|\|[^|]+\|\|(?:URL|PHONE|PHONE2|ABOUT)\|\||\|\|BR\|\|)/);
   
   return parts.map((part, index) => {
     if (part.startsWith('||URL||') && part.endsWith('||URL||')) {
@@ -332,6 +335,12 @@ const renderTextWithLinks = (text: string) => {
         >
           {phone}
         </a>
+      );
+    } else if (part.startsWith('||ABOUT||') && part.endsWith('||ABOUT||')) {
+      return (
+        <Link key={index} to="/despre-mine" className="underline hover:no-underline text-primary">
+          {part.slice(9, -9)}
+        </Link>
       );
     } else if (part === '||BR||') {
       return <br key={index} />;
@@ -659,7 +668,7 @@ const Index = () => {
                 "name": "Oferiți consultanță inițială gratuită?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 745 506 443"
+                  "text": "Da. Prima discuție este gratuită și confidențială. Îmi spuneți ce s-a întâmplat, iar eu vă explic ce opțiuni aveți și care sunt pașii următori. Cabinet Avocat Bogdan Lamatic · Telefon +40 745 506 443"
                 }
               },
               {
@@ -688,10 +697,10 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "Mă reprezentați dvs. personal în instanță sau trimiteți pe altcineva din echipă?",
+                "name": "Vă ocupați personal de dosarul meu, de la audieri până în instanță?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Da, mă ocup personal de dosar și de reprezentarea în fața instanței. Dacă este nevoie, colaborez și cu parteneri de încredere, dar eu rămân avocatul de contact."
+                  "text": "Da, mă ocup personal de dosarul dumneavoastră. Vă asist la audieri în fața organelor de urmărire penală și vă reprezint în instanță. Dacă este nevoie, colaborez și cu alți avocați de încredere, dar eu rămân avocatul dumneavoastră de contact."
                 }
               },
               {
@@ -712,10 +721,10 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "Cum pot găsi un avocat penalist bun în România sau in București?",
+                "name": "Cum pot găsi un avocat penalist bun în România sau în București?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Experiența și expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Sunați-mă pentru o consultație gratuită la +40 745 506 443"
+                  "text": "Când alegeți un avocat penalist, întrebați ce experiență are în domeniul dreptului penal și dacă a mai asistat clienți în situații asemănătoare cu a dumneavoastră. Despre experiența mea și tipurile de dosare de care m-am ocupat puteți citi pe pagina Despre mine. Sunați-mă pentru o consultație gratuită la +40 745 506 443"
                 }
               },
               {
@@ -763,7 +772,7 @@ const Index = () => {
                 "name": "Ce trebuie să fac dacă nu sunt de acord cu acuzațiile care mi se aduc?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Contactați-mă imediat la +40 745 506 443. Voi analiza acuzațiile, voi pregăti apărarea și voi contesta probele sau procedurile ilegale pentru a vă proteja drepturile."
+                  "text": "Sunați-mă la +40 745 506 443 și spuneți-mi ce anume contestați. Analizez acuzațiile și probele din dosar, apoi vă propun o strategie de apărare adaptată situației dumneavoastră. Discutăm ce documente sau martori pot susține versiunea dumneavoastră asupra faptelor și dacă există motive pentru a contesta modul în care au fost obținute probele."
                 }
               },
               {
@@ -771,7 +780,7 @@ const Index = () => {
                 "name": "Am fost prins conducând sub influența alcoolului. Ce risc?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 745 506 443"
+                  "text": "În funcție de alcoolemie, fapta poate fi contravenție sau infracțiune. Pentru conducere sub influența alcoolului se poate ajunge la dosar penal, suspendarea permisului și chiar pedeapsă cu închisoarea. Apărarea corectă poate reduce sancțiunea. Sunați-mă la +40 745 506 443"
                 }
               },
               {
