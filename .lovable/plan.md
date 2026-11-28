@@ -10,7 +10,7 @@ Doar pagina în română. Versiunea în engleză rămâne neschimbată.
 
 ## 3. Secțiunea „De ce sa lucrezi cu mine"
 - Titlu (H2): „De ce sa lucrezi cu un avocat specializat în drept penal:"
-- Bifa 1: „am experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe."
+- Bifa 1: „Am experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe."
 - Bifa 2: „Ofer apărare rapidă și eficientă, de la audieri până la instanță."
 - Bifa 3: „Vezi cazurile mele reprezentative", cu același link spre secțiunea „Cazuri reprezentative".
 
