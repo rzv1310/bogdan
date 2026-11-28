@@ -188,7 +188,7 @@ const faqData = [
     answer: "Da, ofer o primă discuție gratuită pentru evaluarea situației juridice și a posibilelor strategii de apărare. Telefon +40 745 506 443"
   },
   {
-    question: "3. Aveți experiență în dosare penale legate de droguri?",
+    question: "3. Aveți experiență în cauze penale legate de droguri?",
     answer: "Da, am reprezentat clienți în cauze variate - de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri - cu rezultate favorabile."
   },
   {
@@ -212,7 +212,7 @@ const faqData = [
     answer: "Da, în anumite condiții puteți obține avocat din oficiu sau sprijin prin sistemul de asistență juridică. Vă pot ajuta să verificați eligibilitatea."
   },
   {
-    question: "9. Cum pot găsi un avocat bun în România sau in București?",
+    question: "9. Cum pot găsi un avocat penalist bun în România sau in București?",
     answer: "Experiența si expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine\nSunați-mă pentru o consultație gratuită la +40 745 506 443"
   },
   {
@@ -220,7 +220,7 @@ const faqData = [
     answer: "În anumite situații, legea permite aplicarea unor pedepse fără înscriere în cazier (ex. renunțarea la urmărirea penală, amenda administrativă, renunțarea la aplicarea pedepsei). Fiecare caz se analizează individual. Sunați-ma la +40 745 506 443"
   },
   {
-    question: "11. Ce drepturi am în cazul reținerii de către poliție?",
+    question: "11. Ce alte drepturi am în cazul reținerii de către poliție, în afara de apărare penală din oficiu ?",
     answer: "Aveți dreptul să fiți informat asupra motivelor, să beneficiați de avocat ales sau din oficiu, să cereți un interpret dacă nu vorbiți româna și să primiți asistență medicală dacă este nevoie. Mă puteți suna începând cu ora 6 dimineața. Telefon +40 745 506 443"
   },
   {
@@ -274,6 +274,10 @@ const faqData = [
   {
     question: "24. Ce înseamnă acord de recunoaștere a vinovăției?",
     answer: "Este o procedură prin care recunoașteți fapta în schimbul unei pedepse reduse. Se aplică doar în anumite situații și trebuie analizat cu atenție, pentru a nu accepta o soluție dezavantajoasă."
+  },
+  {
+    question: "25. De ce e importantă colaborarea cu un avocat în București, mai ales cu un avocat specializat exclusiv în materie penală?",
+    answer: "Dacă dosarul dumneavoastră se desfășoară în București, un avocat local vă poate însoți la audieri și vă poate reprezenta în fața instanței. Un avocat care se ocupă exclusiv de dosare penale lucrează zi de zi cu problemele care vă preocupă încă de la prima citație. În ce calitate sunteți chemat? Ce presupune audierea? Cum vă pregătiți?\n\nVă explic ce drepturi aveți înainte de a da o declarație. Dacă sunteți acuzat, analizez probele împreună cu dumneavoastră și stabilim cum vă pregătim apărarea. Pentru o primă consultație gratuită și confidențială, sunați-mă la +40 745 506 443."
   }
 ];
 
@@ -359,8 +363,8 @@ const Index = () => {
   
   useSEO({
     keywords: "avocat drept penal, avocat penalist, avocat penal bucuresti",
-    title: "Avocat Penal București Bogdan Lamatic - Experiență 18+ Ani în Drept Penal - Sector 1 - Asistență și reprezentare în spețe penale în fața instanțelor de toate gradele",
-    description: "Avocat Penal Bucuresti Bogdan Lamatic - Apărare în infracțiuni economice, corupție, accidente rutiere, alcool, droguri, malpraxis, măsuri preventive, victime",
+    title: "Avocat Penal Bucuresti Bogdan Lamatic - Experiență 18+ Ani - Cabinet avocat specializat în Drept Penal - Sector 1 - Asistență și reprezentare în spețe penale în fața instanțelor de toate gradele",
+    description: "Avocat Penal Bucuresti Bogdan Lamatic - Apărare în dosare penale complexe de corupție, accidente rutiere, alcool, droguri, măsuri preventive, victime",
     alternates: { ro: "/", en: "/en", xDefault: "/" },
     locale: "ro_RO",
     robotsDirectives: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -660,7 +664,7 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "Aveți experiență în dosare penale legate de droguri?",
+                "name": "Aveți experiență în cauze penale legate de droguri?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Da, am reprezentat clienți în cauze variate - de la infracțiuni economice, la infracțiuni contra persoanei sau trafic de droguri - cu rezultate favorabile."
@@ -708,7 +712,7 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "Cum pot găsi un avocat bun în România sau în București?",
+                "name": "Cum pot găsi un avocat penalist bun în România sau in București?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Experiența și expertiza mea sunt detaliate aici: https://avocatpenalbucuresti.ro/despre-mine Sunați-mă pentru o consultație gratuită la +40 745 506 443"
@@ -724,7 +728,7 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "Ce drepturi am în cazul reținerii de către poliție?",
+                "name": "Ce alte drepturi am în cazul reținerii de către poliție, în afara de apărare penală din oficiu ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Aveți dreptul să fiți informat asupra motivelor, să beneficiați de avocat ales sau din oficiu, să cereți un interpret dacă nu vorbiți româna și să primiți asistență medicală dacă este nevoie. Mă puteți suna începând cu ora 6 dimineața. Telefon +40 745 506 443"
@@ -832,6 +836,14 @@ const Index = () => {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Este o procedură prin care recunoașteți fapta în schimbul unei pedepse reduse. Se aplică doar în anumite situații și trebuie analizat cu atenție."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "De ce e importantă colaborarea cu un avocat în București, mai ales cu un avocat specializat exclusiv în materie penală?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dacă dosarul dumneavoastră se desfășoară în București, un avocat local vă poate însoți la audieri și vă poate reprezenta în fața instanței. Un avocat care se ocupă exclusiv de dosare penale lucrează zi de zi cu problemele care vă preocupă încă de la prima citație. În ce calitate sunteți chemat? Ce presupune audierea? Cum vă pregătiți? Vă explic ce drepturi aveți înainte de a da o declarație. Dacă sunteți acuzat, analizez probele împreună cu dumneavoastră și stabilim cum vă pregătim apărarea. Pentru o primă consultație gratuită și confidențială, sunați-mă la +40 745 506 443."
                 }
               }
             ]

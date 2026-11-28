@@ -31,10 +31,10 @@ export const translations = {
     heroAuthor: "avocat Bogdan Lamatic",
     valuesTitle: "Vei primi:",
     values: ["implicare totală.", "respect.", "discreție absolută.", "disponibilitate 16 ore pe zi."],
-    reasonsTitle: "De ce sa lucrezi cu mine:",
+    reasonsTitle: "De ce sa lucrezi cu un avocat specializat în drept penal:",
     reasons: [
-      "experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
-      "apărare rapidă și eficientă, de la audieri până la instanță.",
+      "Am experiență de peste 18 ani dovedită în achitări și reduceri de pedeapsă în dosare penale complexe.",
+      "Ofer apărare rapidă și eficientă, de la audieri până la instanță.",
     ],
     homeBio: {
       name: "Avocat Penal Bucuresti - Bogdan Lamatic",
